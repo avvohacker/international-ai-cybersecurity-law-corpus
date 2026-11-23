@@ -6,7 +6,7 @@ Last updated: **2026-11-23**. This file records what exists, what is only planne
 
 - [x] Repository inspection (README-only initial commit).
 - [x] Working architecture: JSON catalog, per-instrument corpus directories, JSON Schemas, deterministic build.
-- [x] Candidate register: 20 entries (6 included, 7 pending, 7 excluded).
+- [x] Candidate register: 22 entries (8 included, 7 pending, 7 excluded).
 - [x] First complete pipeline on CETS 225: official text, metadata, article units, status, checks.
 - [x] Sixteen full texts stored and segmented: CETS 225; UNGA 78/241, 78/265, 78/311, 79/1, 79/62, 79/239, 79/325, 80/57 and 80/58; DEPA; SADEA; G7 Hiroshima Code; OECD AI Recommendation; Paris AI Action Summit Statement; China's Global AI Governance Initiative.
 - [x] Fifteen originals acquired and SHA-256 hashed (14 PDFs and the China HTML); manifests generated.
@@ -15,14 +15,16 @@ Last updated: **2026-11-23**. This file records what exists, what is only planne
 - [x] CCW GGE on LAWS catalogued as the first category-6 record, with the 2026 report and 2027–2028 negotiating mandate.
 - [x] EU AI Act, UNESCO Recommendation, UKSDEA, KSDPA, AfCFTA Protocol, military declaration, Bletchley/Seoul/Frontier, NATO, AU, ASEAN, five ISO/IEC standards, CETS explanatory report, EU GPAI Code.
 - [x] Paris AI Action Summit Statement verified on the official Élysée page and PDF: 65 endorsers on the page, 64 in the PDF, 60 in a contemporaneous official release; the discrepancy is recorded, not hidden.
-- [x] Party-level lists reproduced for Bletchley (29 States + EU), Seoul (10 States + EU) and the military AI declaration (58 States); the atlas maps five instruments with a neutral non-participation colour and a supranational marker for the EU and AU Commission.
+- [x] Party-level lists reproduced for Bletchley (29 States + EU), Seoul (10 States + EU), the military AI declaration (58 States), Pax Silica (25 States + EU) and WAICO (37 identified of 38 reported); the atlas maps seven instruments with a neutral non-participation colour and a supranational marker for the EU and AU Commission.
 - [x] China's Global AI Governance Initiative catalogued as the documented Chinese-pole instrument, with the official English text and the Chinese original cross-checked.
+- [x] WAICO Establishment Agreement catalogued as a treaty: 38 founding members reported by China's MFA, 37 individually identified, no deposited ratification verified, not in force (three required by Article 15); China's NPC approval of 6 November 2026 recorded without being counted as a deposit.
+- [x] Pax Silica Declaration catalogued as a non-binding political declaration: 26 signatories (25 States and the EU) as of 23 October 2026, with the United States included and Taiwan recorded as a non-signatory participant; the separate AI Opportunity Statement is excluded from the party count.
 - [x] UK–US AI Safety MOU (signed 1 April 2024) catalogued from the official GOV.UK publication and press release; the full MOU was not published, so the record is metadata-only and does not infer missing clauses.
 - [x] AfCFTA Digital Trade Protocol rechecked against AU primary documents: adoption, compiled annexes and the Assembly progress report. The record no longer relies on a tralac backgrounder and does not assert a ratification count without the depositary record.
 - [x] ICCPR and VCLT rechecked on OHCHR and the UN Treaty Collection; the VCLT adoption date was corrected to 22 May 1969, with opening for signature on 23 May 1969.
 - [x] US–EU TTC AI-safety dialogue commitment (5 April 2024) catalogued from the official European Commission and USTR joint statement and the NIST/European Commission technical-dialogue pages; recorded as a political commitment in a broader joint statement, not as an MOU or administrative arrangement.
-- [x] Human-readable GitHub Pages atlas generated from the records: five maps, chronology, a three-pole heuristic checked against the legal record, cross-membership matrix and filterable catalogue. The deployment workflow is ready; Pages is enabled, and a push to `main` publishes the atlas.
-- [x] Validator and 21 tests: schema rules, hash integrity, unit-anchor integrity, declarations cannot be binding, Paris/China/US–UK/US–EU record checks, party lists for Bletchley/Seoul/military AI, candidate-register counts, map completeness and neutrality, deterministic build.
+- [x] Human-readable GitHub Pages atlas generated from the records: seven maps, chronology, a three-pole heuristic checked against the legal record, cross-membership matrix and filterable catalogue. The deployment workflow is ready; Pages is enabled, and a push to `main` publishes the atlas.
+- [x] Validator and 23 tests: schema rules, hash integrity, unit-anchor integrity, declarations cannot be binding, Paris/China/US–UK/US–EU/WAICO/Pax Silica record checks, party lists for Bletchley/Seoul/military AI, candidate-register counts, map completeness and neutrality, deterministic build.
 - [x] Research log, coverage matrix, methodology and README updated to actual contents.
 - [x] `build/catalog.json`, `build/CATALOG.md`, `build/checksums.sha256`.
 
@@ -41,7 +43,7 @@ Last updated: **2026-11-23**. This file records what exists, what is only planne
 ## Next precise searches
 
 1. **Transatlantic AI-safety follow-up.** Track any post-2024 renewal, terms of reference or successor to the UK–US MOU and the US–EU TTC AI-safety dialogue; check the current names and status of the UK AI Security Institute and the US Center for AI Standards and Innovation on official pages. Do not treat the 2024 records as a binding regime.
-2. **China's 2025 follow-up.** Decide whether to catalogue the Global AI Governance Action Plan (2025), whose text was read for the 2023 record, and verify the proposed World AI Cooperation Organization on official Chinese sources; determine whether either has an adherence list and add only what is documented.
+2. **WAICO follow-up.** Identify the 38th founding member from a depositary or MFA list; verify whether China or any other State has deposited an instrument of ratification, and whether the depositary has notified entry into force. Also decide whether to catalogue the Global AI Governance Action Plan (2025), whose text was read for the 2023 record, and add only what is documented.
 3. **AfCFTA ratification and annex.** Obtain the AU depositary ratification table for the Digital Trade Protocol, verify whether entry into force has been notified, and read the Annex on Emerging and Advanced Technologies in full; record the annex provisions and any schedules.
 4. **Latin America.** Search SICE/FTA and national treaty registries for AI clauses in Chile, Brazil, Mexico, Colombia, Peru, Uruguay and Mercosur/Pacific Alliance instruments; check the Chile–EU Advanced Framework Agreement and CPTPP digital chapters with a full-text keyword search.
 5. **Middle East and Central Asia.** Search GCC, UAE, Saudi Arabia, Israel and Central Asian bilateral agreements for AI-specific clauses; check the Abraham Accords-adjacent digital agreements.

@@ -1,25 +1,25 @@
 {
   "counts": {
     "by_binding": {
-      "binding": 9,
-      "non_binding": 31
+      "binding": 10,
+      "non_binding": 32
     },
     "by_category": {
       "agreement_ai_provisions": 5,
-      "ai_treaty": 1,
+      "ai_treaty": 2,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 23,
+      "non_binding_instrument": 24,
       "preparatory_interpretive": 2,
       "supranational_law": 1,
       "technical_standard": 5
     },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 30
+      "metadata_verified": 32
     },
     "full_texts": 16,
-    "total": 40,
+    "total": 42,
     "with_local_original": 15
   },
   "full_text_ids": [
@@ -3446,6 +3446,316 @@
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
       "dates": {
+        "notes": "Signed at the first Pax Silica Summit in Washington, D.C. on 12 December 2025 by Australia, Israel, Japan, the Republic of Korea, Singapore, the United Kingdom and the United States. Further partners joined during 2026; Paraguay became the 26th signatory on 23 October 2026.",
+        "published": "2025-12-12",
+        "signed": "2025-12-12",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "The United States is omitted from the State Department's partner list; its signature is confirmed by other official sources but the list itself is incomplete.",
+        "No complete signature chronology is published; the dates of individual accessions are only partly available.",
+        "Taiwan is a non-signatory participant that endorsed the principles through a separate joint statement; it is not counted as a signatory.",
+        "The separate Joint Statement on AI Opportunity Partnership (54 endorsers as of September 2026) is a different instrument and is not catalogued here.",
+        "The declaration is a supply-chain and economic-security text, not a comprehensive AI regulation; it does not create AI safety, testing or liability rules.",
+        "No full text is stored; the record is metadata-only."
+      ],
+      "id": "pax-silica-declaration-2025",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "Pax Silica Summit participants, convened by the United States Department of State",
+          "role": "issuer",
+          "url": "https://www.state.gov/pax-silica"
+        },
+        {
+          "name": "United States Department of State",
+          "role": "convenor",
+          "url": "https://www.state.gov/pax-silica"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English. There is no authentic-language clause because the declaration is not a treaty; the official English text was read.",
+        "translations": []
+      },
+      "parties": {
+        "as_of": "2026-10-23",
+        "declarations": [],
+        "entries": [
+          {
+            "party": "Argentina"
+          },
+          {
+            "party": "Australia"
+          },
+          {
+            "party": "Chile"
+          },
+          {
+            "party": "Costa Rica"
+          },
+          {
+            "party": "El Salvador"
+          },
+          {
+            "notes": [
+              "Participating organisation, not a State."
+            ],
+            "party": "European Union"
+          },
+          {
+            "party": "Finland"
+          },
+          {
+            "party": "Germany"
+          },
+          {
+            "party": "Greece"
+          },
+          {
+            "party": "India"
+          },
+          {
+            "party": "Israel"
+          },
+          {
+            "party": "Italy"
+          },
+          {
+            "party": "Japan"
+          },
+          {
+            "party": "Kazakhstan"
+          },
+          {
+            "party": "Netherlands"
+          },
+          {
+            "party": "Norway"
+          },
+          {
+            "party": "Panama"
+          },
+          {
+            "notes": [
+              "26th signatory, announced by the State Department on 23 October 2026."
+            ],
+            "party": "Paraguay"
+          },
+          {
+            "party": "Philippines"
+          },
+          {
+            "party": "Qatar"
+          },
+          {
+            "party": "Republic of Korea"
+          },
+          {
+            "party": "Singapore"
+          },
+          {
+            "party": "Sweden"
+          },
+          {
+            "party": "United Arab Emirates"
+          },
+          {
+            "party": "United Kingdom"
+          },
+          {
+            "notes": [
+              "The State Department partner list omits the United States because it is the host.",
+              "The United States is a signatory per the Australian government's 12 December 2025 publication and the State Department's 26 June 2026 release."
+            ],
+            "party": "United States of America"
+          }
+        ],
+        "notifications": [],
+        "objections": [],
+        "ratifications_total": 0,
+        "reservations": [
+          "None: the declaration is not a treaty and has no reservations."
+        ],
+        "signatories_total": 26,
+        "source_ids": [
+          "state-pax-silica",
+          "state-second-summit",
+          "state-paraguay",
+          "australia-declaration",
+          "state-taiwan-joint-statement",
+          "state-ai-opportunity"
+        ],
+        "summary": "26 signatories: 25 States and the European Union. The United States is a signatory; the State Department's partner list omits the United States because it is the host. Taiwan is a non-signatory participant that endorsed the principles through a separate joint statement and is not counted.",
+        "unknowns": [
+          "The State Department page lists 25 partners but omits the United States from the signatory list; the United States is confirmed as a signatory by the Australian government's 12 December 2025 publication and the State Department's 26 June 2026 release.",
+          "The date on which each partner signed is not published on the main list; the 26 June 2026 and 23 October 2026 releases give some dates, and the 12 December 2025 Australian publication gives the seven founding signatories.",
+          "Taiwan is a non-signatory participant; no other observer roster is published on the State Department page.",
+          "The separate Joint Statement on AI Opportunity Partnership (June 2026) has 54 endorsers as of September 2026; it is a different instrument and is not included in this party count."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "CSIS 2026 analysis of global AI governance cited Pax Silica; the record was opened after the State Department and Australian government primary sources were located.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "waico-establishment-agreement-2026",
+          "note": "The China-led WAICO treaty is the counterpart architecture. Kazakhstan is a signatory of both the Pax Silica Declaration and the WAICO Agreement.",
+          "relation": "counterpart"
+        },
+        {
+          "id": "political-declaration-military-ai-2023",
+          "note": "The earlier US-led political declaration on military AI; Pax Silica is a supply-chain and economic-security coalition, not a military-AI instrument.",
+          "relation": "related"
+        },
+        {
+          "id": "bletchley-declaration-2023",
+          "note": "The UK–US AI-safety process and Pax Silica are both US-aligned vehicles, but they address different objects: AI safety and secure supply chains.",
+          "relation": "related"
+        },
+        {
+          "id": "paris-ai-action-summit-statement-2025",
+          "note": "The United States did not endorse the Paris Statement; Pax Silica is a separate US-led coalition, not a Paris implementation vehicle.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Recognizes AI as a transformative force for long-term prosperity and treats trustworthy systems as essential to security and prosperity.",
+          "Encourages partnership on strategic stacks of the global technology supply chain, including frontier foundation models, information connectivity, compute, semiconductors, advanced manufacturing and energy.",
+          "Supports a shared and trusted ecosystem of AI developers and vendors.",
+          "Seeks trusted information networks, including ICT systems, fibre-optic cables and data centres.",
+          "Intends to strengthen economic and national-security cooperation, including on investment security and non-market practices."
+        ],
+        "excluded_scope": "A political declaration on economic security and technology supply chains. It creates no binding obligation, ratification, depositary, monitoring or dispute settlement, and it is not a comprehensive AI regulation. The separate Joint Statement on AI Opportunity Partnership (June 2026) is not this instrument and is not included in the party count.",
+        "reason": "The founding political declaration of the US-led Pax Silica initiative on secure artificial-intelligence and technology supply chains. It affirms shared principles on economic security, trusted supply chains, AI infrastructure and investment, and it is the US-led architecture cited in the three-pole analysis. It is a declaration, not a treaty: it creates no legal obligation, no ratification and no depositary. It is included to document the coalition separately from the 2023 military-AI declaration and from the later Joint Statement on AI Opportunity Partnership."
+      },
+      "rights": {
+        "licence": "US Government work; Australian Government publication",
+        "note": "Official government publications. No full text is stored in this corpus; the declaration text is available on the official pages.",
+        "status": "public_official_text"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "state-pax-silica",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official Pax Silica page. Contains the full declaration text, the partner signatory list (25 names, including the European Union and Paraguay, but not the United States) and Taiwan as a non-signatory participant.",
+          "publisher": "United States Department of State",
+          "url": "https://www.state.gov/pax-silica"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "state-second-summit",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Fact sheet, 26 June 2026: ten additional partners signed the declaration; Pax Silica counted 24 signatories, listing the United States among them.",
+          "publisher": "United States Department of State",
+          "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/outcomes-of-the-second-pax-silica-summit"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "state-paraguay",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Press release, 23 October 2026: Paraguay becomes the 26th signatory to the Pax Silica Declaration.",
+          "publisher": "United States Department of State",
+          "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/10/united-states-welcomes-paraguay-as-newest-pax-silica-signatory"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "australia-declaration",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Australian government publication of the declaration, 13 December 2025: Australia, Japan, the Republic of Korea, the United Kingdom, Singapore, Israel and the United States signed at the 12 December 2025 summit.",
+          "publisher": "Australian Government, Department of Industry, Science and Resources",
+          "url": "https://www.industry.gov.au/publications/pax-silica-declaration-countries-attending-pax-silica-summit-12-december-2025"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": null,
+          "id": "australia-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Signed PDF of the declaration linked from the Australian government publication (818 KB). Not downloaded or stored; the HTML text was read.",
+          "publisher": "Australian Government, Department of Industry, Science and Resources",
+          "url": "https://www.industry.gov.au/sites/default/files/2025-12/pax-silica-declaration-signed.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "state-taiwan-joint-statement",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Joint statement, 27 January 2026, in which Taiwan endorsed the Pax Silica declaration principles; the State Department lists Taiwan as a non-signatory participant, not a signatory.",
+          "publisher": "United States Department of State",
+          "url": "https://www.state.gov/releases/under-secretary-for-economic-affairs/2026/01/joint-statement-on-the-pax-silica-declaration-and-u-s-taiwan-economic-security-cooperation"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "state-ai-opportunity",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official page for the separate Joint Statement on AI Opportunity Partnership: 54 countries had endorsed it as of September 2026. Used only to distinguish that instrument from the Pax Silica Declaration.",
+          "publisher": "United States Department of State",
+          "url": "https://www.state.gov/ai-opportunity-statement"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Political declaration, not a treaty. The official US and Australian publications call the participants 'signatories'; the act is an endorsement of shared principles, not a treaty signature. As of 23 October 2026 the list contains 26 signatories: 25 States and the European Union. The United States is a signatory but is omitted from the State Department's partner list because it is the host. No ratification, depositary, monitoring or enforcement is established. Taiwan is listed as a non-signatory participant that endorsed the declaration principles through a separate joint statement.",
+      "title": {
+        "official": "Pax Silica Declaration",
+        "short": "Pax Silica Declaration"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Declaration text and partner list read on the State Department page.",
+            "date": "2026-11-23",
+            "result": "The text is a political declaration ('We affirm', 'We recognize', 'We declare', 'We intend'); the partner list contains 25 names, including the EU and Paraguay, and omits the United States."
+          },
+          {
+            "check": "Founding signatories checked on the Australian government publication.",
+            "date": "2026-11-23",
+            "result": "Seven founding signatories on 12 December 2025: Australia, Japan, the Republic of Korea, the United Kingdom, Singapore, Israel and the United States."
+          },
+          {
+            "check": "Later signatories and total checked on State Department releases.",
+            "date": "2026-11-23",
+            "result": "24 signatories after the 26 June 2026 summit, including the United States; Italy joined on 31 July 2026; Paraguay became the 26th signatory on 23 October 2026."
+          },
+          {
+            "check": "Legal nature checked from the text and official descriptions.",
+            "date": "2026-11-23",
+            "result": "Political declaration, not a treaty; no ratification, depositary, monitoring or enforcement. 'Signatory' means endorsement, not treaty signature."
+          },
+          {
+            "check": "Separate AI Opportunity Statement checked.",
+            "date": "2026-11-23",
+            "result": "The Joint Statement on AI Opportunity Partnership is a distinct instrument with 54 endorsers as of September 2026; it is not included in the Pax Silica Declaration party count."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from official US and Australian sources. The record is metadata-only; the declaration text is not stored. The US omission from the State Department partner list and the Taiwan non-signatory status are recorded explicitly rather than inferred."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
         "adopted": "2023-02-16",
         "notes": "Launched at the REAIM Summit in The Hague on 16 February 2023. A revised text was published on 9 November 2023.",
         "published": "2023-11-09",
@@ -5841,6 +6151,403 @@
         ],
         "level": "metadata_verified",
         "notes": "Included as a general-treaty selection because it supplies the interpretive framework for AI treaties. Not an AI-specific instrument. Party-by-party reservations remain uncaptured."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "ai_treaty",
+      "dates": {
+        "closed_for_signature": "2026-07-31",
+        "notes": "Signed at the Shanghai ceremony on 16 July 2026. The Agreement was open for signature from 1 May to 31 July 2026. China's National People's Congress Standing Committee approved ratification on 6 November 2026; the deposit of the instrument of ratification and any depositary notification of entry into force were not verified.",
+        "opened_for_signature": "2026-05-01",
+        "signed": "2026-07-16",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "The Agreement is not in force: Article 15 requires three deposited ratifications, acceptances or approvals, and none was verified.",
+        "China's NPC approved ratification on 6 November 2026, but the deposit of the instrument and any depositary notification were not verified; no ratification is counted.",
+        "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located.",
+        "No depositary register or status table for signatures, ratifications and accessions was located.",
+        "The full official text was not acquired; the record is metadata-only and relies on a reproduction for the article analysis.",
+        "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",
+        "The Council, Secretariat, rules of procedure, budget and implementing instruments do not yet exist or were not verified."
+      ],
+      "id": "waico-establishment-agreement-2026",
+      "instrument_type": "treaty",
+      "issuer": [
+        {
+          "name": "Founding States of the World Artificial Intelligence Cooperation Organization",
+          "role": "issuer",
+          "url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html"
+        },
+        {
+          "name": "Government of the People's Republic of China",
+          "role": "depositary",
+          "url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "Article 18: Arabic, Chinese, English, French, Russian and Spanish texts are equally authentic. Only the English reproduction of the Agreement was read; no official deposited text was acquired.",
+        "translations": []
+      },
+      "parties": {
+        "as_of": "2026-11-23",
+        "declarations": [],
+        "entries": [
+          {
+            "party": "Algeria",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Belarus",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Brazil",
+            "signature": "2026-07-16"
+          },
+          {
+            "notes": [
+              "Signed on 31 July 2026."
+            ],
+            "party": "Brunei",
+            "signature": "2026-07-31"
+          },
+          {
+            "party": "Cambodia",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Cameroon",
+            "signature": "2026-07-16"
+          },
+          {
+            "approval": "2026-11-06",
+            "notes": [
+              "Approved by the Standing Committee of the 14th National People's Congress on 6 November 2026.",
+              "Deposit of the instrument of ratification was not verified; no ratification is counted."
+            ],
+            "party": "China",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Cuba",
+            "signature": "2026-07-16"
+          },
+          {
+            "notes": [
+              "Signed on 30 July 2026."
+            ],
+            "party": "Dominica",
+            "signature": "2026-07-30"
+          },
+          {
+            "party": "Ethiopia",
+            "signature": "2026-07-16"
+          },
+          {
+            "notes": [
+              "Signed on 31 July 2026."
+            ],
+            "party": "Georgia",
+            "signature": "2026-07-31"
+          },
+          {
+            "party": "Indonesia",
+            "signature": "2026-07-16"
+          },
+          {
+            "notes": [
+              "Signed on 31 July 2026."
+            ],
+            "party": "Iran",
+            "signature": "2026-07-31"
+          },
+          {
+            "party": "Kazakhstan",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Kenya",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Kyrgyzstan",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Laos",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Lesotho",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Malaysia",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Mozambique",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Myanmar",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Nicaragua",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Oman",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Pakistan",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Republic of the Congo",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Russia",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Senegal",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Serbia",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "South Africa",
+            "signature": "2026-07-16"
+          },
+          {
+            "notes": [
+              "Signed on 31 July 2026."
+            ],
+            "party": "Sudan",
+            "signature": "2026-07-31"
+          },
+          {
+            "party": "Tajikistan",
+            "signature": "2026-07-16"
+          },
+          {
+            "notes": [
+              "Signed on 31 July 2026."
+            ],
+            "party": "Tanzania",
+            "signature": "2026-07-31"
+          },
+          {
+            "notes": [
+              "Signed on 31 July 2026."
+            ],
+            "party": "Togo",
+            "signature": "2026-07-31"
+          },
+          {
+            "party": "Uzbekistan",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Venezuela",
+            "signature": "2026-07-16"
+          },
+          {
+            "notes": [
+              "Signed on 31 July 2026."
+            ],
+            "party": "Vietnam",
+            "signature": "2026-07-31"
+          },
+          {
+            "party": "Zambia",
+            "signature": "2026-07-16"
+          }
+        ],
+        "notifications": [],
+        "objections": [],
+        "ratifications_total": 0,
+        "reservations": [],
+        "signatories_total": 38,
+        "source_ids": [
+          "mfa-signing",
+          "mfa-ratification",
+          "npc-decision",
+          "mfa-progress-report",
+          "mfa-31-july",
+          "indonesia-founding-list"
+        ],
+        "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight additional States on 30–31 July 2026. China's NPC approved ratification on 6 November 2026, but no deposit was verified. The identity of the 38th reported founding member is not stated in the official sources located.",
+        "unknowns": [
+          "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The 38th member is not named in the MFA statements, the October 2026 MFA progress report or the Indonesian government's list of the 29 initial signatories.",
+          "No depositary register or notification of signatures, ratifications or entry into force was located. The count of deposited ratifications is therefore 0, notwithstanding China's national approval on 6 November 2026.",
+          "The Agreement remains open to accession after 31 July 2026 (Article 14(3)); later accessions are not Founding Members and are not included in this list.",
+          "The exact date on which the MFA's 38-country count was reached is not stated; the October 2026 progress report already gives 38."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "CSIS 2026 analysis of global AI governance cited WAICO; the record was opened after the official MFA signing and ratification sources were located.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "china-global-ai-governance-initiative-2023",
+          "note": "China's 2023 Global AI Governance Initiative is the policy line that led to the proposal for WAICO; it is a unilateral non-binding document, whereas the WAICO Agreement is a treaty.",
+          "relation": "policy_line"
+        },
+        {
+          "id": "coe-cets-225",
+          "note": "The other AI-specific treaty in the corpus. CETS 225 is a human-rights framework convention; WAICO is a constituent instrument of an intergovernmental organization. Neither is in force.",
+          "relation": "related"
+        },
+        {
+          "id": "pax-silica-declaration-2025",
+          "note": "The US-led Pax Silica coalition is the counterpart architecture. Kazakhstan is a signatory of both the Pax Silica Declaration and the WAICO Agreement.",
+          "relation": "counterpart"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Article 1 — establishes WAICO as an independent intergovernmental international organization with international legal personality",
+          "Article 2 — purposes: human-centric AI, international cooperation, bridging the AI divide, risk mitigation and trustworthy AI",
+          "Article 3 — functions, including capacity building, alignment of governance rules and technical standards, open-source cooperation and support for the UN framework; functions are limited exclusively to the civilian domain",
+          "Article 4 — principles: UN Charter, sovereignty, diversity of civilizations, equality, multilateralism and extensive consultation",
+          "Articles 5–8 — Council, decision-making, Secretariat and financing",
+          "Article 10 — membership open to all States; Founding Members are States that sign during the open-for-signature period",
+          "Article 14 — signature from 1 May to 31 July 2026; ratification, acceptance or approval; accession thereafter",
+          "Article 15 — entry into force on the third instrument of ratification, acceptance or approval",
+          "Article 18 — China as depositary; Arabic, Chinese, English, French, Russian and Spanish texts equally authentic"
+        ],
+        "excluded_scope": "Military AI is excluded: Article 3(2) limits the Organization's functions exclusively to the civilian domain. The Agreement establishes an organization and a cooperation framework; it does not itself set product rules, prohibitions, testing standards or a judicial dispute-settlement mechanism. Disputes are to be settled by consultation (Article 13).",
+        "reason": "The constituent treaty of the first intergovernmental international organization specifically dedicated to artificial intelligence. It establishes WAICO as an independent intergovernmental organization with international legal personality, headquartered in Shanghai, with a Council and a Secretariat, and limits its functions exclusively to the civilian domain of AI (Article 3(2)). It is subject to ratification, acceptance or approval and enters into force on the deposit of the third such instrument (Article 15). It is a treaty, not a political declaration, and it is the second AI-specific treaty in the corpus alongside CETS 225."
+      },
+      "rights": {
+        "licence": "Chinese Government official publications; Digital Watch reproduction CC BY-NC-ND 4.0",
+        "note": "Official government pages and the MFA progress report are public official materials. The Digital Watch reproduction is used for reading only. No full text is stored in this corpus.",
+        "status": "public_official_text"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "mfa-signing",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official English account of the 16 July 2026 signing ceremony. States that WAICO is an independent intergovernmental international organization headquartered in Shanghai, that the Agreement follows the purposes of the UN Charter, and that representatives of 29 countries signed and became founding members.",
+          "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
+          "url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "mfa-ratification",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Spokesperson Guo Jiakun, 9 November 2026: 38 countries became founding members; China is taking the lead in ratifying the Agreement. The statement does not list the 38.",
+          "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
+          "url": "https://www.mfa.gov.cn/eng/xw/fyrbt/202611/t20261109_12056171.html"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "npc-decision",
+          "kind": "official_primary",
+          "language": "zh",
+          "note": "Decision of the Standing Committee of the 14th National People's Congress, 6 November 2026, approving the Agreement signed in Shanghai on 16 July 2026. This is a national approval decision, not a depositary record of ratification.",
+          "publisher": "National People's Congress of the People's Republic of China",
+          "url": "https://www.npc.gov.cn/npc/c2/c30834/202611/t20261106_458551.html"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "mfa-progress-report",
+          "kind": "official_primary",
+          "language": "zh",
+          "note": "October 2026 progress report on the AI Capacity-Building Plan. States that 29 States signed at the 16 July ceremony and that 'Brunei, Vietnam, Georgia, Tanzania and other 9 countries' later signed, bringing the total to 38. It does not name all nine.",
+          "publisher": "Ministry of Foreign Affairs of the People's Republic of China / Global AI Innovation Governance Center",
+          "url": "https://www.mfa.gov.cn/wjbzhd/202610/P020261023815175879929.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "mfa-31-july",
+          "kind": "official_primary",
+          "language": "zh",
+          "note": "Official account of 31 July 2026 naming the eight additional signatories: Brunei, Togo, Iran, Sudan, Vietnam, Georgia, Tanzania and Dominica (Dominica signed on 30 July).",
+          "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
+          "url": "https://www.fmprc.gov.cn/wjbxw_new/202607/t20260731_11996584.shtml"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "indonesia-founding-list",
+          "kind": "official_primary",
+          "language": "id",
+          "note": "Official press release dated 16 July 2026 listing the 29 founding signatories, including China, Russia, Kazakhstan, Indonesia, Brazil, South Africa and the other initial signatories.",
+          "publisher": "Coordinating Ministry for Economic Affairs, Republic of Indonesia",
+          "url": "https://www.ekon.go.id/publikasi/detail/7017/indonesia-resmi-jadi-founding-member-waico-menko-airlangga-tegaskan-komitmen-untuk-jembatani-kesenjangan-ai-global"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "digwatch-text",
+          "kind": "secondary",
+          "language": "en",
+          "note": "Reproduction of the Agreement text. Articles 1, 3, 10, 14, 15 and 18 were read. The depositary's official text was not located; the reproduction is used for the legal analysis, not as a substitute for the official text.",
+          "publisher": "Digital Watch Observatory (Geneva Internet Platform)",
+          "url": "https://dig.watch/resource/agreement-on-the-establishment-of-the-world-artificial-intelligence-cooperation-organization"
+        }
+      ],
+      "status": "not_in_force",
+      "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no depositary register or notification of a deposited ratification was located, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight additional States on 30–31 July 2026. The 38th member is not named in the primary record; the discrepancy is recorded, not resolved.",
+      "title": {
+        "official": "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization",
+        "short": "WAICO Establishment Agreement"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Signing ceremony and legal nature checked on the official MFA English page.",
+            "date": "2026-11-23",
+            "result": "WAICO is described as an independent intergovernmental international organization headquartered in Shanghai; 29 countries signed the Agreement at the 16 July 2026 ceremony."
+          },
+          {
+            "check": "Founding membership checked against the Indonesian government list and the MFA's later statements.",
+            "date": "2026-11-23",
+            "result": "29 initial signatories are individually identified; eight additional signatories are named in the 31 July 2026 MFA account. The MFA reports 38 founding members, leaving one unnamed."
+          },
+          {
+            "check": "Entry-into-force rule checked against the Agreement text and China's ratification decision.",
+            "date": "2026-11-23",
+            "result": "Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026, but no deposited ratification or entry-into-force notification was verified."
+          },
+          {
+            "check": "Treaty text checked against a reproduction and cross-checked with official descriptions.",
+            "date": "2026-11-23",
+            "result": "Articles 1, 3(2), 10, 14, 15 and 18 confirm the organization's legal personality, civilian-domain limitation, membership, signature/accession, entry into force and depositary. The official deposited text was not acquired."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from official Chinese and Indonesian government sources. The record is metadata-only: no full text is stored. The 38th founding member and the deposit of China's instrument of ratification remain unverified and are recorded as unknowns rather than inferred."
       }
     }
   ],

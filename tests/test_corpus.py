@@ -186,9 +186,69 @@ class TestCatalogue(unittest.TestCase):
         self.assertIn("ec-ttc-joint-statement", source_ids)
         self.assertIn("ustr-ttc-joint-statement", source_ids)
 
+    def test_waico_record(self) -> None:
+        inst = read_instrument("waico-establishment-agreement-2026")
+        self.assertEqual(inst["instrument_type"], "treaty")
+        self.assertEqual(inst["category"], "ai_treaty")
+        self.assertEqual(inst["binding_status"], "binding")
+        self.assertEqual(inst["status"], "not_in_force")
+        self.assertEqual(inst["verification"]["level"], "metadata_verified")
+        self.assertNotIn("text", inst)
+        parties = inst["parties"]
+        self.assertEqual(parties["signatories_total"], 38)
+        self.assertEqual(parties["ratifications_total"], 0)
+        self.assertEqual(len(parties["entries"]), 37)
+        names = {entry["party"] for entry in parties["entries"]}
+        for name in (
+            "China",
+            "Russia",
+            "Brazil",
+            "South Africa",
+            "Kazakhstan",
+            "Brunei",
+            "Dominica",
+        ):
+            self.assertIn(name, names)
+        self.assertNotIn("United States of America", names)
+        self.assertNotIn("India", names)
+        china = next(entry for entry in parties["entries"] if entry["party"] == "China")
+        self.assertEqual(china["signature"], "2026-07-16")
+        self.assertEqual(china["approval"], "2026-11-06")
+        self.assertNotIn("ratification", china)
+        unknowns = " ".join(parties["unknowns"])
+        self.assertIn("38", unknowns)
+        self.assertIn("37", unknowns)
+        self.assertIn("deposit", unknowns)
+
+    def test_pax_silica_record(self) -> None:
+        inst = read_instrument("pax-silica-declaration-2025")
+        self.assertEqual(inst["instrument_type"], "declaration")
+        self.assertEqual(inst["category"], "non_binding_instrument")
+        self.assertEqual(inst["binding_status"], "non_binding")
+        self.assertEqual(inst["status"], "adopted")
+        self.assertEqual(inst["verification"]["level"], "metadata_verified")
+        self.assertNotIn("text", inst)
+        parties = inst["parties"]
+        self.assertEqual(parties["signatories_total"], 26)
+        self.assertEqual(len(parties["entries"]), 26)
+        names = {entry["party"] for entry in parties["entries"]}
+        for name in (
+            "United States of America",
+            "United Kingdom",
+            "European Union",
+            "Kazakhstan",
+            "India",
+            "Paraguay",
+        ):
+            self.assertIn(name, names)
+        for name in ("China", "Russia", "Brazil", "South Africa", "Taiwan"):
+            self.assertNotIn(name, names)
+        self.assertIn("not a treaty", inst["status_note"])
+        self.assertIn("26", inst["status_note"])
+
     def test_candidate_register_counts(self) -> None:
         entries = json.loads((ROOT / "catalog" / "candidates.json").read_text(encoding="utf-8"))
-        self.assertEqual(len(entries), 20)
+        self.assertEqual(len(entries), 22)
         decisions = {"included": 0, "pending": 0, "excluded": 0}
         instruments = corpuslib.load_instruments()
         for entry in entries:
@@ -197,7 +257,7 @@ class TestCatalogue(unittest.TestCase):
                 self.assertIn(entry["instrument_id"], instruments)
             else:
                 self.assertIsNone(entry["instrument_id"])
-        self.assertEqual(decisions, {"included": 6, "pending": 7, "excluded": 7})
+        self.assertEqual(decisions, {"included": 8, "pending": 7, "excluded": 7})
 
     def test_pact_units_are_citable(self) -> None:
         units = corpuslib.load_units("un-ga-res-79-1")
@@ -281,20 +341,23 @@ class TestBuild(unittest.TestCase):
         )
         self.assertGreaterEqual(summary["counts"]["full_texts"], 6)
         self.assertEqual(summary["counts"]["by_category"]["draft_negotiation"], 1)
+        self.assertEqual(summary["counts"]["by_category"]["ai_treaty"], 2)
 
     def test_site_maps_are_complete_and_neutral(self) -> None:
         import build_site
 
         build_site.main()
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(page.count('class="map-frame"'), 5)
-        self.assertEqual(page.count('class="map-key"'), 5)
+        self.assertEqual(page.count('class="map-frame"'), 7)
+        self.assertEqual(page.count('class="map-key"'), 7)
         for title in (
             "Paris 2025",
             "Bletchley 2023",
             "Seoul 2024",
             "Military AI 2023",
             "CETS 225",
+            "WAICO 2026",
+            "Pax Silica 2025",
         ):
             self.assertIn(title, page)
         self.assertNotIn("USA / UK: no", page)
@@ -303,6 +366,9 @@ class TestBuild(unittest.TestCase):
         self.assertIn("AU African Union Commission", page)
         self.assertIn("Supranational: endorsed", page)
         self.assertIn("Signed + ratified", page)
+        self.assertIn("State: signed only", page)
+        self.assertIn("States only", page)
+        self.assertIn("37 confirmed of 38 reported", page)
 
 
 if __name__ == "__main__":

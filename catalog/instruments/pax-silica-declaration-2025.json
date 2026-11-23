@@ -1,0 +1,254 @@
+{
+  "id": "pax-silica-declaration-2025",
+  "title": {
+    "official": "Pax Silica Declaration",
+    "short": "Pax Silica Declaration"
+  },
+  "category": "non_binding_instrument",
+  "instrument_type": "declaration",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [
+    {
+      "name": "Pax Silica Summit participants, convened by the United States Department of State",
+      "role": "issuer",
+      "url": "https://www.state.gov/pax-silica"
+    },
+    {
+      "name": "United States Department of State",
+      "role": "convenor",
+      "url": "https://www.state.gov/pax-silica"
+    }
+  ],
+  "relevance": {
+    "reason": "The founding political declaration of the US-led Pax Silica initiative on secure artificial-intelligence and technology supply chains. It affirms shared principles on economic security, trusted supply chains, AI infrastructure and investment, and it is the US-led architecture cited in the three-pole analysis. It is a declaration, not a treaty: it creates no legal obligation, no ratification and no depositary. It is included to document the coalition separately from the 2023 military-AI declaration and from the later Joint Statement on AI Opportunity Partnership.",
+    "ai_provisions": [
+      "Recognizes AI as a transformative force for long-term prosperity and treats trustworthy systems as essential to security and prosperity.",
+      "Encourages partnership on strategic stacks of the global technology supply chain, including frontier foundation models, information connectivity, compute, semiconductors, advanced manufacturing and energy.",
+      "Supports a shared and trusted ecosystem of AI developers and vendors.",
+      "Seeks trusted information networks, including ICT systems, fibre-optic cables and data centres.",
+      "Intends to strengthen economic and national-security cooperation, including on investment security and non-market practices."
+    ],
+    "excluded_scope": "A political declaration on economic security and technology supply chains. It creates no binding obligation, ratification, depositary, monitoring or dispute settlement, and it is not a comprehensive AI regulation. The separate Joint Statement on AI Opportunity Partnership (June 2026) is not this instrument and is not included in the party count."
+  },
+  "dates": {
+    "signed": "2025-12-12",
+    "published": "2025-12-12",
+    "verified_on": "2026-11-23",
+    "notes": "Signed at the first Pax Silica Summit in Washington, D.C. on 12 December 2025 by Australia, Israel, Japan, the Republic of Korea, Singapore, the United Kingdom and the United States. Further partners joined during 2026; Paraguay became the 26th signatory on 23 October 2026."
+  },
+  "status_note": "Political declaration, not a treaty. The official US and Australian publications call the participants 'signatories'; the act is an endorsement of shared principles, not a treaty signature. As of 23 October 2026 the list contains 26 signatories: 25 States and the European Union. The United States is a signatory but is omitted from the State Department's partner list because it is the host. No ratification, depositary, monitoring or enforcement is established. Taiwan is listed as a non-signatory participant that endorsed the declaration principles through a separate joint statement.",
+  "parties": {
+    "as_of": "2026-10-23",
+    "summary": "26 signatories: 25 States and the European Union. The United States is a signatory; the State Department's partner list omits the United States because it is the host. Taiwan is a non-signatory participant that endorsed the principles through a separate joint statement and is not counted.",
+    "source_ids": [
+      "state-pax-silica",
+      "state-second-summit",
+      "state-paraguay",
+      "australia-declaration",
+      "state-taiwan-joint-statement",
+      "state-ai-opportunity"
+    ],
+    "signatories_total": 26,
+    "ratifications_total": 0,
+    "entries": [
+      {"party": "Argentina"},
+      {"party": "Australia"},
+      {"party": "Chile"},
+      {"party": "Costa Rica"},
+      {"party": "El Salvador"},
+      {
+        "party": "European Union",
+        "notes": ["Participating organisation, not a State."]
+      },
+      {"party": "Finland"},
+      {"party": "Germany"},
+      {"party": "Greece"},
+      {"party": "India"},
+      {"party": "Israel"},
+      {"party": "Italy"},
+      {"party": "Japan"},
+      {"party": "Kazakhstan"},
+      {"party": "Netherlands"},
+      {"party": "Norway"},
+      {"party": "Panama"},
+      {
+        "party": "Paraguay",
+        "notes": ["26th signatory, announced by the State Department on 23 October 2026."]
+      },
+      {"party": "Philippines"},
+      {"party": "Qatar"},
+      {"party": "Republic of Korea"},
+      {"party": "Singapore"},
+      {"party": "Sweden"},
+      {"party": "United Arab Emirates"},
+      {"party": "United Kingdom"},
+      {
+        "party": "United States of America",
+        "notes": [
+          "The State Department partner list omits the United States because it is the host.",
+          "The United States is a signatory per the Australian government's 12 December 2025 publication and the State Department's 26 June 2026 release."
+        ]
+      }
+    ],
+    "reservations": ["None: the declaration is not a treaty and has no reservations."],
+    "declarations": [],
+    "objections": [],
+    "notifications": [],
+    "withdrawals": [],
+    "unknowns": [
+      "The State Department page lists 25 partners but omits the United States from the signatory list; the United States is confirmed as a signatory by the Australian government's 12 December 2025 publication and the State Department's 26 June 2026 release.",
+      "The date on which each partner signed is not published on the main list; the 26 June 2026 and 23 October 2026 releases give some dates, and the 12 December 2025 Australian publication gives the seven founding signatories.",
+      "Taiwan is a non-signatory participant; no other observer roster is published on the State Department page.",
+      "The separate Joint Statement on AI Opportunity Partnership (June 2026) has 54 endorsers as of September 2026; it is a different instrument and is not included in this party count."
+    ]
+  },
+  "languages": {
+    "authentic": ["en"],
+    "translations": [],
+    "note": "English. There is no authentic-language clause because the declaration is not a treaty; the official English text was read."
+  },
+  "sources": [
+    {
+      "id": "state-pax-silica",
+      "url": "https://www.state.gov/pax-silica",
+      "publisher": "United States Department of State",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official Pax Silica page. Contains the full declaration text, the partner signatory list (25 names, including the European Union and Paraguay, but not the United States) and Taiwan as a non-signatory participant."
+    },
+    {
+      "id": "state-second-summit",
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/outcomes-of-the-second-pax-silica-summit",
+      "publisher": "United States Department of State",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Fact sheet, 26 June 2026: ten additional partners signed the declaration; Pax Silica counted 24 signatories, listing the United States among them."
+    },
+    {
+      "id": "state-paraguay",
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/10/united-states-welcomes-paraguay-as-newest-pax-silica-signatory",
+      "publisher": "United States Department of State",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Press release, 23 October 2026: Paraguay becomes the 26th signatory to the Pax Silica Declaration."
+    },
+    {
+      "id": "australia-declaration",
+      "url": "https://www.industry.gov.au/publications/pax-silica-declaration-countries-attending-pax-silica-summit-12-december-2025",
+      "publisher": "Australian Government, Department of Industry, Science and Resources",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Australian government publication of the declaration, 13 December 2025: Australia, Japan, the Republic of Korea, the United Kingdom, Singapore, Israel and the United States signed at the 12 December 2025 summit."
+    },
+    {
+      "id": "australia-pdf",
+      "url": "https://www.industry.gov.au/sites/default/files/2025-12/pax-silica-declaration-signed.pdf",
+      "publisher": "Australian Government, Department of Industry, Science and Resources",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": null,
+      "language": "en",
+      "note": "Signed PDF of the declaration linked from the Australian government publication (818 KB). Not downloaded or stored; the HTML text was read."
+    },
+    {
+      "id": "state-taiwan-joint-statement",
+      "url": "https://www.state.gov/releases/under-secretary-for-economic-affairs/2026/01/joint-statement-on-the-pax-silica-declaration-and-u-s-taiwan-economic-security-cooperation",
+      "publisher": "United States Department of State",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Joint statement, 27 January 2026, in which Taiwan endorsed the Pax Silica declaration principles; the State Department lists Taiwan as a non-signatory participant, not a signatory."
+    },
+    {
+      "id": "state-ai-opportunity",
+      "url": "https://www.state.gov/ai-opportunity-statement",
+      "publisher": "United States Department of State",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official page for the separate Joint Statement on AI Opportunity Partnership: 54 countries had endorsed it as of September 2026. Used only to distinguish that instrument from the Pax Silica Declaration."
+    }
+  ],
+  "rights": {
+    "status": "public_official_text",
+    "licence": "US Government work; Australian Government publication",
+    "note": "Official government publications. No full text is stored in this corpus; the declaration text is available on the official pages."
+  },
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {
+        "check": "Declaration text and partner list read on the State Department page.",
+        "result": "The text is a political declaration ('We affirm', 'We recognize', 'We declare', 'We intend'); the partner list contains 25 names, including the EU and Paraguay, and omits the United States.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Founding signatories checked on the Australian government publication.",
+        "result": "Seven founding signatories on 12 December 2025: Australia, Japan, the Republic of Korea, the United Kingdom, Singapore, Israel and the United States.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Later signatories and total checked on State Department releases.",
+        "result": "24 signatories after the 26 June 2026 summit, including the United States; Italy joined on 31 July 2026; Paraguay became the 26th signatory on 23 October 2026.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Legal nature checked from the text and official descriptions.",
+        "result": "Political declaration, not a treaty; no ratification, depositary, monitoring or enforcement. 'Signatory' means endorsement, not treaty signature.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Separate AI Opportunity Statement checked.",
+        "result": "The Joint Statement on AI Opportunity Partnership is a distinct instrument with 54 endorsers as of September 2026; it is not included in the Pax Silica Declaration party count.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Metadata verified from official US and Australian sources. The record is metadata-only; the declaration text is not stored. The US omission from the State Department partner list and the Taiwan non-signatory status are recorded explicitly rather than inferred."
+  },
+  "related": [
+    {
+      "id": "waico-establishment-agreement-2026",
+      "relation": "counterpart",
+      "note": "The China-led WAICO treaty is the counterpart architecture. Kazakhstan is a signatory of both the Pax Silica Declaration and the WAICO Agreement."
+    },
+    {
+      "id": "political-declaration-military-ai-2023",
+      "relation": "related",
+      "note": "The earlier US-led political declaration on military AI; Pax Silica is a supply-chain and economic-security coalition, not a military-AI instrument."
+    },
+    {
+      "id": "bletchley-declaration-2023",
+      "relation": "related",
+      "note": "The UK–US AI-safety process and Pax Silica are both US-aligned vehicles, but they address different objects: AI safety and secure supply chains."
+    },
+    {
+      "id": "paris-ai-action-summit-statement-2025",
+      "relation": "related",
+      "note": "The United States did not endorse the Paris Statement; Pax Silica is a separate US-led coalition, not a Paris implementation vehicle."
+    }
+  ],
+  "gaps": [
+    "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "The United States is omitted from the State Department's partner list; its signature is confirmed by other official sources but the list itself is incomplete.",
+    "No complete signature chronology is published; the dates of individual accessions are only partly available.",
+    "Taiwan is a non-signatory participant that endorsed the principles through a separate joint statement; it is not counted as a signatory.",
+    "The separate Joint Statement on AI Opportunity Partnership (54 endorsers as of September 2026) is a different instrument and is not catalogued here.",
+    "The declaration is a supply-chain and economic-security text, not a comprehensive AI regulation; it does not create AI safety, testing or liability rules.",
+    "No full text is stored; the record is metadata-only."
+  ],
+  "provenance": {
+    "discovered_via": "CSIS 2026 analysis of global AI governance cited Pax Silica; the record was opened after the State Department and Australian government primary sources were located.",
+    "search_dates": ["2026-11-23"]
+  }
+}

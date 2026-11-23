@@ -258,5 +258,31 @@
     "searched_on": "2026-11-23",
     "evidence": "UN Digital Library, UNGA resolutions and Global Digital Compact consulted.",
     "gaps": "No exhaustive search of all UN proposals or academic drafts; negative result is provisional."
+  },
+  {
+    "id": "waico-establishment-agreement-2026",
+    "title": "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization (WAICO)",
+    "issuer": "Founding States of WAICO; China is the depositary and host",
+    "decision": "included",
+    "instrument_id": "waico-establishment-agreement-2026",
+    "reason": "Official MFA signing and ratification statements, the NPC ratification decision, the October 2026 MFA progress report, the 31 July 2026 MFA account and the Indonesian government's list of the 29 initial signatories were read. The Agreement is a treaty establishing an independent intergovernmental international organization with international legal personality, subject to ratification and not in force. The record is included as a separate AI-specific treaty, not as a political declaration.",
+    "candidate_type": "treaty",
+    "official_url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html",
+    "searched_on": "2026-11-23",
+    "evidence": "MFA English signing article; MFA spokesperson statement of 9 November 2026; NPC Standing Committee decision of 6 November 2026; MFA progress report of October 2026 (29 plus 9 equals 38); MFA account of 31 July 2026 naming eight additional signatories; Indonesian government list of the 29 initial signatories; Digital Watch reproduction of the Agreement text.",
+    "gaps": "The MFA reports 38 founding members while the signing records identify 37; the 38th is unnamed. China's NPC approved ratification but no deposit was verified; the Agreement is not in force. No depositary register or full official text was acquired."
+  },
+  {
+    "id": "pax-silica-declaration-2025",
+    "title": "Pax Silica Declaration",
+    "issuer": "Pax Silica Summit participants, convened by the United States Department of State",
+    "decision": "included",
+    "instrument_id": "pax-silica-declaration-2025",
+    "reason": "Official State Department and Australian government publications were read. The Declaration is a non-binding political declaration on secure AI and technology supply chains, with 26 signatories (25 States and the EU) as of 23 October 2026. It is included as the US-led architecture cited in the three-pole analysis and as a distinct instrument from the 2023 military-AI declaration.",
+    "candidate_type": "declaration",
+    "official_url": "https://www.state.gov/pax-silica",
+    "searched_on": "2026-11-23",
+    "evidence": "State Department Pax Silica page with the declaration text and partner list; State Department 26 June 2026 fact sheet (24 signatories including the United States); State Department 23 October 2026 release (Paraguay as 26th signatory); Australian government publication of the 12 December 2025 declaration (seven founding signatories); State Department Taiwan joint statement (non-signatory participant).",
+    "gaps": "Non-binding. The State Department partner list omits the United States, whose signature is confirmed by other official sources. Taiwan is a non-signatory participant. The separate AI Opportunity Statement (54 endorsers) is not catalogued here."
   }
 ]

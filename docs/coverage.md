@@ -21,7 +21,8 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 | Military AI initiatives | 4 | Political Declaration, two UNGA tracks, CCW GGE negotiation | no binding instrument; 2027–2028 negotiating text; REAIM outcomes |
 | General international law | 2 | ICCPR, VCLT | UN Charter, UDHR, ECHR, Convention 108+ and other general instruments not catalogued; this is a scope limit, not a finding |
 | AI Action Summit (France–India) | 1 | Paris Statement (2025), 65 endorsers | endorser list inconsistent across official publications (60/64/65); no depositary or update log |
-| China (MFA) | 1 | Global AI Governance Initiative (2023) | unilateral; no formal adherence list; 2025 Action Plan not separately catalogued |
+| China-led instruments | 2 | Global AI Governance Initiative (2023); WAICO Establishment Agreement (2026) | WAICO: 38th founding member and deposited ratifications unverified; initiative: unilateral, no formal adherence list |
+| United States (Pax Silica) | 1 | Pax Silica Declaration (2025), 26 signatories | separate AI Opportunity Statement not counted; Taiwan is a non-signatory participant |
 
 ## By region
 
@@ -39,9 +40,9 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 
 | Category | Count | Notes |
 |---|---:|---|
-| `ai_treaty` | 1 | CETS 225 only |
+| `ai_treaty` | 2 | CETS 225 and the WAICO Establishment Agreement; neither in force |
 | `agreement_ai_provisions` | 5 | all digital/trade; cooperative AI clauses |
-| `non_binding_instrument` | 23 | UN resolutions, declarations, strategies, codes; Paris Statement, China initiative, UK–US MOU and US–EU TTC dialogue commitment |
+| `non_binding_instrument` | 24 | UN resolutions, declarations, strategies, codes; Paris Statement, Pax Silica, China initiative, UK–US MOU and US–EU TTC dialogue commitment |
 | `preparatory_interpretive` | 2 | CETS explanatory report; EU GPAI Code |
 | `technical_standard` | 5 | ISO/IEC, metadata only |
 | `draft_negotiation` | 1 | CCW GGE on LAWS; no adopted instrument |
@@ -53,14 +54,14 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 | Level | Count |
 |---|---:|
 | `full_text_checked` | 10 |
-| `metadata_verified` | 30 |
+| `metadata_verified` | 32 |
 | `source_located` | 0 |
 
 Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records whose text is stored and segmented but was not read end-to-end).
 
 ## Explicit gaps
 
-1. **Only one AI-specific treaty.** The corpus does not establish that no others exist; it records that none was located in this cycle.
+1. **Two AI-specific treaties, neither in force.** CETS 225 and the WAICO Establishment Agreement are catalogued; the corpus does not establish that no others exist, only that no others were located in this cycle. CETS 225 lacks the five ratifications required by Article 30(3); WAICO lacks the three required by Article 15, and no deposited ratification was verified.
 2. **Only one negotiation record.** The CCW GGE on LAWS is catalogued, but no draft protocol or adopted instrument exists; the CoE drafting history and any UN framework-convention proposal were not acquired.
 3. **Military AI** is covered by non-binding resolutions and a political declaration, not by a binding instrument. CETS 225 excludes national defence; the UN Panel/Dialogue exclude military AI.
 4. **CETS 225 party data are captured** at 23 November 2026: 21 signatories and 2 ratifications (Bosnia and Herzegovina, 28 October 2026; EU, 15 May 2026). Declarations by the EU, Norway and Ukraine are reproduced; no reservations or objections are recorded. The treaty is not in force.
@@ -75,7 +76,8 @@ Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records
 13. **China's initiative has no adherence list.** It is a unilateral non-binding proposal, not an agreed instrument; the record does not attribute it to any State other than China.
 14. **The transatlantic AI-safety records are not treaties.** The UK–US MOU is non-binding and its full text was not published; the US–EU commitment is one AI section of a broad TTC joint statement and creates no binding obligation. Neither record supports a claim of a binding transatlantic AI-safety regime.
 15. **General international law is not comprehensively covered.** The `general_treaty` layer is a deliberately minimal background selection: the VCLT for treaty law and the ICCPR for human rights. The UN Charter, the Universal Declaration of Human Rights, the ECHR, Convention 108+ and other general instruments are not catalogued; their absence is a scope limit, not a finding that they are irrelevant to AI.
+16. **WAICO party data are incomplete.** China's MFA reports 38 founding members, but only 37 are individually identified across the official statements; the 38th is recorded as unknown. No depositary register was located, and China's approval on 6 November 2026 is not counted as a deposited ratification. The map therefore shows signatures, not ratifications.
 
 ## What “coverage” means here
 
-It means: 40 records, each with at least one official source and a declared verification level; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register of 20 entries that records both inclusions and exclusions. It does not mean that every international AI instrument has been found.
+It means: 42 records, each with at least one official source and a declared verification level; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register of 22 entries that records both inclusions and exclusions. It does not mean that every international AI instrument has been found.

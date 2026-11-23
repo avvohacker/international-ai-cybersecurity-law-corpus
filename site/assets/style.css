@@ -315,7 +315,7 @@ p { margin: 0 0 14px; }
 
 .matrix-title { margin-top: 46px; }
 .table-wrap-dark { overflow-x: auto; margin-top: 10px; }
-.matrix { width: 100%; min-width: 760px; border-collapse: collapse; margin-top: 10px; font-size: 14px; }
+.matrix { width: 100%; min-width: 980px; border-collapse: collapse; margin-top: 10px; font-size: 14px; }
 .matrix caption { text-align: left; color: #b9ae9a; font-size: 12px; padding-bottom: 8px; }
 .matrix th, .matrix td { text-align: left; padding: 9px 10px; border-bottom: 1px solid #3a352b; }
 .matrix thead th { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #b9ae9a; white-space: nowrap; }

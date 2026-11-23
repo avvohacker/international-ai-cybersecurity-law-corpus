@@ -32,6 +32,8 @@ CHINA_ID = "china-global-ai-governance-initiative-2023"
 BLETCHLEY_ID = "bletchley-declaration-2023"
 SEOUL_ID = "seoul-declaration-2024"
 MILITARY_ID = "political-declaration-military-ai-2023"
+WAICO_ID = "waico-establishment-agreement-2026"
+PAX_ID = "pax-silica-declaration-2025"
 
 CATEGORY_LABELS = {
     "ai_treaty": "AI-specific treaty",
@@ -74,6 +76,7 @@ MICRO = {
     "AD": (1.52, 42.51),
     "AG": (-61.80, 17.10),
     "BH": (50.55, 26.07),
+    "DM": (-61.37, 15.41),
     "LI": (9.55, 47.15),
     "MC": (7.42, 43.74),
     "MT": (14.37, 35.94),
@@ -85,6 +88,7 @@ ISO_OVERRIDES = {
     "Antigua and Barbuda": "AG",
     "Bahrain": "BH",
     "Côte d’Ivoire": "CI",
+    "Dominica": "DM",
     "Kingdom of Saudi Arabia": "SA",
     "Liechtenstein": "LI",
     "Malta": "MT",
@@ -577,11 +581,15 @@ def main() -> int:
     bletchley = by_id[BLETCHLEY_ID]
     seoul = by_id[SEOUL_ID]
     military = by_id[MILITARY_ID]
+    waico = by_id[WAICO_ID]
+    pax = by_id[PAX_ID]
 
     paris_orgs = {"European Union", "African Union Commission"}
     cets_orgs = {"European Union"}
     bletchley_orgs = {"European Union"}
     seoul_orgs = {"European Union"}
+    pax_orgs = {"European Union"}
+    waico_orgs: set[str] = set()
 
     def state_names(inst: dict, orgs: set[str]) -> list[str]:
         return [
@@ -595,6 +603,8 @@ def main() -> int:
     bletchley_states = state_names(bletchley, bletchley_orgs)
     seoul_states = state_names(seoul, seoul_orgs)
     military_states = state_names(military, set())
+    waico_states = state_names(waico, waico_orgs)
+    pax_states = state_names(pax, pax_orgs)
     cets_entries = cets["parties"]["entries"]
     cets_ratified_states = [
         entry["party"]
@@ -624,6 +634,8 @@ def main() -> int:
     bletchley_iso = iso_set(bletchley_states, "Bletchley 2023")
     seoul_iso = iso_set(seoul_states, "Seoul 2024")
     military_iso = iso_set(military_states, "Military AI 2023")
+    waico_iso = iso_set(waico_states, "WAICO 2026")
+    pax_iso = iso_set(pax_states, "Pax Silica 2025")
     cets_ratified_iso = iso_set(cets_ratified_states, "CETS 225 ratifications")
 
     for map_name, values in (
@@ -632,6 +644,8 @@ def main() -> int:
         ("Bletchley 2023", bletchley_iso),
         ("Seoul 2024", seoul_iso),
         ("Military AI 2023", military_iso),
+        ("WAICO 2026", waico_iso),
+        ("Pax Silica 2025", pax_iso),
     ):
         absent = sorted(iso for iso in values if iso not in by_iso and iso not in MICRO)
         if absent:
@@ -643,6 +657,8 @@ def main() -> int:
     bletchley_status = {iso: "endorsed" for iso in bletchley_iso}
     seoul_status = {iso: "endorsed" for iso in seoul_iso}
     military_status = {iso: "endorsed" for iso in military_iso}
+    waico_status = {iso: "signed" for iso in waico_iso}
+    pax_status = {iso: "endorsed" for iso in pax_iso}
     cets_status = {iso: "signed" for iso in cets_iso}
     for iso in cets_ratified_iso:
         cets_status[iso] = "ratified"
@@ -668,6 +684,10 @@ def main() -> int:
         {"color": LIGHT_BLUE, "label": "State: signature only"},
         {"color": LAND, "label": "State: no signature"},
         {"color": GOLD, "label": "EU: signature + ratification", "shape": "diamond", "ratified": True},
+    ]
+    waico_legend = [
+        {"color": LIGHT_BLUE, "label": "State: signed only"},
+        {"color": LAND, "label": "State: no signature"},
     ]
 
     paris_map = render_map(
@@ -722,12 +742,33 @@ def main() -> int:
         legend=cets_legend,
         legend_note="EU European Union",
     )
+    waico_map = render_map(
+        "waico",
+        "WAICO Agreement signatures (2026)",
+        f"World map. Light blue: {len(waico_states)} confirmed States that signed the WAICO Agreement. Sand: States with no recorded signature. China's MFA reports 38 founding members; 37 are individually identified.",
+        waico_status,
+        labels={"CN": "China", "RU": "Russia", "BR": "Brazil", "ZA": "South Africa", "ID": "Indonesia"},
+        legend=waico_legend,
+        legend_note="States only · 37 of 38 reported founding members identified",
+    )
+    pax_map = render_map(
+        "pax",
+        "Pax Silica Declaration endorsers (2025)",
+        f"World map. Teal: {len(pax_states)} States that endorsed the Pax Silica Declaration. Gold diamond: the European Union. Sand: States with no recorded endorsement.",
+        pax_status,
+        org_markers=eu_marker,
+        labels={"US": "US", "GB": "UK", "IN": "India", "JP": "Japan"},
+        legend=endorsement_legend,
+        legend_note="EU European Union · US United States · UK United Kingdom",
+    )
 
     # Cross-membership for the matrix.
     paris_set = set(paris_states) | paris_orgs
     bletchley_set = set(bletchley_states) | bletchley_orgs
     seoul_set = set(seoul_states) | seoul_orgs
     military_set = set(military_states)
+    pax_set = set(pax_states) | pax_orgs
+    waico_by_party = {entry["party"]: entry for entry in waico["parties"]["entries"]}
     cets_by_party = {entry["party"]: entry for entry in cets_entries}
     matrix_rows = []
     for label, party in (
@@ -735,6 +776,7 @@ def main() -> int:
         ("United Kingdom", "United Kingdom"),
         ("China", "China"),
         ("India", "India"),
+        ("Kazakhstan", "Kazakhstan"),
         ("France", "France"),
         ("Germany", "Germany"),
         ("Japan", "Japan"),
@@ -751,12 +793,16 @@ def main() -> int:
             cets_state = "Signed"
         else:
             cets_state = "No"
+        waico_entry = waico_by_party.get(party)
+        waico_state = "Signed" if waico_entry else "No"
         cells = [
             ("Yes" if party in paris_set else "No", party in paris_set),
             ("Yes" if party in bletchley_set else "No", party in bletchley_set),
             ("Yes" if party in seoul_set else "No", party in seoul_set),
             (cets_state, bool(entry)),
             ("Yes" if party in military_set else "No", party in military_set),
+            ("Yes" if party in pax_set else "No", party in pax_set),
+            (waico_state, bool(waico_entry)),
         ]
         matrix_rows.append(
             f'<tr><th scope="row">{esc(label)}</th>'
@@ -773,26 +819,26 @@ def main() -> int:
     cards = [
         (
             "Washington",
-            "Market-led model · political declaration",
-            "Political Declaration on Responsible Military Use of AI and Autonomy",
-            "58 endorsing States",
-            "The principal US-led international instrument in the corpus. It is non-binding and creates no definition or prohibition. The United States also signed CETS 225 and endorsed Bletchley and Seoul, but did not endorse Paris.",
-            "political-declaration-military-ai-2023",
+            "Market-led model · political coalition",
+            "Pax Silica Declaration",
+            "26 signatories · 25 States + EU",
+            "The 2025 US-led declaration on secure AI and technology supply chains. It is non-binding and creates no treaty obligation. The United States also convened the 2023 military declaration (58 endorsers) and signed CETS 225, Bletchley and Seoul, but did not endorse Paris.",
+            PAX_ID,
         ),
         (
             "Beijing",
-            "State-led model · government proposal",
-            "Global AI Governance Initiative",
-            "No adherence list",
-            "A unilateral 2023 proposal emphasising sovereignty, development and a central UN role. China endorsed Bletchley and Paris, but did not sign CETS 225 or the military declaration. The 2025 Action Plan is a later document in the same policy line.",
-            CHINA_ID,
+            "State-led model · constituent treaty",
+            "WAICO Establishment Agreement",
+            "38 reported founding members · not in force",
+            "The 2026 treaty establishing the World AI Cooperation Organization, headquartered in Shanghai. It is the second AI-specific treaty in the corpus and is limited to the civilian domain. China's 2023 Global AI Governance Initiative remains the policy line; China endorsed Bletchley and Paris but did not sign CETS 225 or the military declaration.",
+            WAICO_ID,
         ),
         (
             "Brussels / Strasbourg",
             "Rights-based model · treaty and regulation",
             "Council of Europe Framework Convention on AI (CETS 225)",
             "21 signatures · 2 ratifications",
-            "The only AI-specific treaty, binding once in force. The EU has signed and ratified; not all EU member States are individual signatories. The EU AI Act is the separate supranational layer.",
+            "One of two AI-specific treaties, binding once in force. The EU has signed and ratified; not all EU member States are individual signatories. The EU AI Act is the separate supranational layer.",
             CETS_ID,
         ),
     ]
@@ -807,7 +853,7 @@ def main() -> int:
     stat_cards = [
         (str(total), "catalogued instruments", "One record per instrument, with source and verification level."),
         (str(binding), "binding instruments", f"{in_force} in force; {not_in_force} not yet in force."),
-        ("1", "AI-specific treaty", "CETS 225: 21 signatures, 2 ratifications, not in force."),
+        (str(category_counts.get("ai_treaty", 0)), "AI-specific treaties", "CETS 225: 21 signatures, 2 ratifications, not in force. WAICO: 38 reported founding members, not in force."),
         (str(full_texts), "full texts", f"{originals} originals preserved and SHA-256 hashed."),
     ]
     stats_html = "".join(
@@ -823,7 +869,7 @@ def main() -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI Law Atlas</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI law.">
-<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/style.css?v=4">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -851,7 +897,7 @@ def main() -> int:
       <div class="intro-grid">
         <div>
           <h2>The shape of the corpus</h2>
-          <p class="lede">One AI-specific treaty, five trade agreements with AI provisions, a stack of declarations and resolutions, technical standards, and a negotiation on autonomous weapons. The binding layer is thin; the political layer is dense.</p>
+          <p class="lede">Two AI-specific treaties, five trade agreements with AI provisions, a stack of declarations and resolutions, technical standards, and a negotiation on autonomous weapons. The binding layer is thin; the political layer is dense.</p>
         </div>
         <aside class="callout">
           <p><strong>Key point.</strong> There is no single international AI regime. There are overlapping regimes, with different obligations, different members and different legal force.</p>
@@ -874,7 +920,7 @@ def main() -> int:
       <div class="two-col">
         <div>
           <h3>What “binding” means here</h3>
-          <p>A treaty in force, a trade agreement in force, European Union law and two general framework treaties. It does not mean the obligation is detailed: CETS 225 is a framework treaty and the AfCFTA is not yet in force.</p>
+          <p>A treaty in force, a trade agreement in force, European Union law and two general framework treaties. It does not mean the obligation is detailed: CETS 225 and the WAICO Agreement are not in force, and the AfCFTA is not yet in force.</p>
           <p>Declarations, UN resolutions, recommendations, codes of conduct and technical standards are non-binding. They are not irrelevant: they set direction, create expectations and prepare the ground for later rules.</p>
         </div>
         <div>
@@ -897,7 +943,7 @@ def main() -> int:
         <ul>
           <li><strong>Regime complexity.</strong> The AI governance landscape has no focal institution and low hierarchy: the United States, China and the EU pursue competing preferences through overlapping institutions, producing fragmentation rather than a tripolar legal order (<a href="https://academic.oup.com/isagsq/article/6/4/ksag145/8993928" target="_blank" rel="noopener">Geith, Lundgren &amp; Tallberg, <em>Global Studies Quarterly</em>, 2026</a>).</li>
           <li><strong>Three models, not three alliances.</strong> Comparative policy analysis describes an American market-driven model, a Chinese state-driven model and a European rights-driven model, but treats them as ideal types, not legal blocs (<a href="https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.13444" target="_blank" rel="noopener">Mokry, <em>Global Policy</em>, 2024</a>; Bradford, <em>Digital Empires</em>, 2023).</li>
-          <li><strong>The number depends on the axis.</strong> Policy analysis in 2026 describes two consolidating architectures (US-led Pax Silica, China-led WAICO) plus a UN track without capacity, and notes that many States join multiple frameworks (<a href="https://www.csis.org/analysis/state-ai-global-governance-and-its-implications-us-china-summit" target="_blank" rel="noopener">CSIS, 2026</a>). On a forum axis, the triad is UN commons / US club / China–Global South diffusion (<a href="https://eastasiaforum.org/2026/10/22/three-competing-approaches-to-global-ai-governance" target="_blank" rel="noopener">Tiberghien, <em>East Asia Forum</em>, 2026</a>).</li>
+          <li><strong>The number depends on the axis.</strong> Policy analysis in 2026 describes two consolidating architectures (<a href="{record_url(by_id[PAX_ID])}" target="_blank" rel="noopener">US-led Pax Silica</a>, <a href="{record_url(by_id[WAICO_ID])}" target="_blank" rel="noopener">China-led WAICO</a>) plus a UN track without capacity, and notes that many States join multiple frameworks (<a href="https://www.csis.org/analysis/state-ai-global-governance-and-its-implications-us-china-summit" target="_blank" rel="noopener">CSIS, 2026</a>). On a forum axis, the triad is UN commons / US club / China–Global South diffusion (<a href="https://eastasiaforum.org/2026/10/22/three-competing-approaches-to-global-ai-governance" target="_blank" rel="noopener">Tiberghien, <em>East Asia Forum</em>, 2026</a>).</li>
         </ul>
         <p class="note">The number of poles therefore depends on the axis chosen: regulatory model, institutional vehicle or diplomatic coalition. The record below tests the metaphor against the legal acts.</p>
       </div>
@@ -912,22 +958,22 @@ def main() -> int:
       <h3 class="matrix-title">Who stands where</h3>
       <div class="table-wrap-dark">
         <table class="matrix">
-          <caption>Paris, Bletchley, Seoul and the military declaration record political endorsement; CETS 225 records treaty signature and ratification. “Signed” means signature without ratification; “Signed + ratified” means both. Data as of 23 November 2026; the military declaration list is dated 27 November 2024.</caption>
-          <thead><tr><th scope="col">State / organisation</th><th scope="col">Paris 2025</th><th scope="col">Bletchley 2023</th><th scope="col">Seoul 2024</th><th scope="col">CETS 225</th><th scope="col">Military AI 2023</th></tr></thead>
+          <caption>Paris, Bletchley, Seoul, the military declaration and Pax Silica record political endorsement; CETS 225 and the WAICO Agreement record treaty signature. CETS 225 also records ratification; China's approval of WAICO is noted but no deposit is counted. “Signed” means signature without ratification; “Signed + ratified” means both. Data as of 23 November 2026; the military declaration list is dated 27 November 2024; Pax Silica as of 23 October 2026. The MFA reports 38 WAICO founding members; 37 are individually identified.</caption>
+          <thead><tr><th scope="col">State / organisation</th><th scope="col">Paris 2025</th><th scope="col">Bletchley 2023</th><th scope="col">Seoul 2024</th><th scope="col">CETS 225</th><th scope="col">Military AI 2023</th><th scope="col">Pax Silica 2025</th><th scope="col">WAICO 2026</th></tr></thead>
           <tbody>{matrix}</tbody>
         </table>
       </div>
-      <p class="note">The overlap is the point. The United States and the United Kingdom signed CETS 225 without ratifying it, but did not endorse Paris. China and India endorsed Paris and Bletchley, but did not sign CETS 225 or the military declaration. France and Germany endorsed Paris and the military declaration, but are not recorded as individual signatories of CETS 225. Political alignment does not map onto treaty participation.</p>
+      <p class="note">The overlap is the point. The United States and the United Kingdom signed CETS 225 without ratifying it, but did not endorse Paris. China and India endorsed Paris and Bletchley, but did not sign CETS 225 or the military declaration. France and Germany endorsed Paris and the military declaration, but are not recorded as individual signatories of CETS 225. Kazakhstan endorsed Paris and signed both Pax Silica and the WAICO Agreement; Brazil and South Africa signed WAICO but not Pax Silica; India and Japan signed Pax Silica but not WAICO. China's NPC approved ratification of WAICO on 6 November 2026, but no deposit was verified, so the matrix records signature only. Political alignment does not map onto treaty participation.</p>
       <p class="note">Note on Paris: the Élysée page lists 65 endorsers; the 19 February 2025 PDF lists 64; a contemporaneous Canadian release listed 60, including South Africa, the United Arab Emirates and the Holy See. The matrix follows the current Élysée list, which does not include South Africa; the discrepancy is recorded in the Paris record.</p>
-      <p class="takeaway"><strong>What follows legally.</strong> There is no single legal order to join or leave. A State can endorse a political declaration, sign a treaty, ratify it or join a military declaration independently, and the same State can sit in different camps on different instruments. The three-pole image describes regulatory competition; it does not describe legal blocs.</p>
+      <p class="takeaway"><strong>What follows legally.</strong> There is no single legal order to join or leave. A State can endorse a political declaration, sign a treaty, ratify it or join a military declaration independently, and the same State can sit in different camps on different instruments: Kazakhstan endorsed Paris and signed both Pax Silica and the WAICO Agreement. The three-pole image describes regulatory competition; it does not describe legal blocs.</p>
     </div>
   </section>
 
   <section id="maps" class="section">
     <div class="wrap">
-      <p class="eyebrow">03 · Five maps</p>
+      <p class="eyebrow">03 · Seven maps</p>
       <h2>Who signs what</h2>
-      <p class="lede">Five instruments, five legal acts. The colour records the act, not the degree of alignment. Non-participation is shown in the same neutral colour for every State.</p>
+      <p class="lede">Seven instruments, seven legal acts. The colour records the act, not the degree of alignment. Non-participation is shown in the same neutral colour for every State.</p>
       <div class="maps">
         <figure class="map-card map-card-wide">
           <figcaption><span class="map-title">Paris 2025</span><span class="map-sub">{len(paris_states)} States · EU · AU Commission</span></figcaption>
@@ -954,9 +1000,19 @@ def main() -> int:
           {cets_map}
           <p class="note">Treaty signature and ratification. Bosnia and Herzegovina (28 October 2026) and the EU (15 May 2026) have ratified; the treaty is not in force. Five ratifications are required, including three Council of Europe member States. France and Germany are EU member States but are not recorded as individual signatories on the Treaty Office chart.</p>
         </figure>
+        <figure class="map-card">
+          <figcaption><span class="map-title">WAICO 2026</span><span class="map-sub">{len(waico_states)} confirmed of 38 reported</span></figcaption>
+          {waico_map}
+          <p class="note">Treaty signature, not ratification. 37 of the 38 founding members reported by China's MFA are individually identified: 29 at the 16 July 2026 ceremony and eight on 30–31 July 2026. China's NPC approved ratification on 6 November 2026, but no deposit was verified; the Agreement is not in force (three ratifications required, Article 15). The 38th member is not named in the primary record.</p>
+        </figure>
+        <figure class="map-card">
+          <figcaption><span class="map-title">Pax Silica 2025</span><span class="map-sub">{len(pax_states)} States · EU</span></figcaption>
+          {pax_map}
+          <p class="note">Political declaration, not a treaty. 26 signatories (25 States and the EU) as of 23 October 2026; the United States is a signatory. Taiwan endorsed the principles through a separate joint statement but is not a signatory. The separate AI Opportunity Statement (54 endorsers as of September 2026) is not mapped here.</p>
+        </figure>
       </div>
       <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. Labels are orientation only. “Endorsed” is used for political declarations, which create no treaty signature or ratification.</p>
-      <p class="source-note"><strong>Selection.</strong> The five maps cover the instruments in the corpus with a published State-level list and a distinct legal act: four political instruments and one treaty. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the OECD and UNESCO recommendations, the EU AI Act, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment.</p>
+      <p class="source-note"><strong>Selection.</strong> The seven maps cover the instruments in the corpus with a published State-level list and a distinct legal act: five political instruments and two treaties. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the OECD and UNESCO recommendations, the EU AI Act, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate Pax Silica deliverables (the June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration), and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment.</p>
     </div>
   </section>
 
@@ -1009,7 +1065,8 @@ def main() -> int:
           <h3>What is missing</h3>
           <ul class="checks">
             <li>CETS 225 is not in force: 21 signatures, 2 ratifications.</li>
-            <li>Only one AI-specific treaty: this does not mean no others exist, but that no other has been located and verified.</li>
+            <li>WAICO is not in force: 38 reported founding members; no deposited ratification was verified.</li>
+            <li>Two AI-specific treaties: CETS 225 and the WAICO Agreement. This does not mean no others exist, but that no other has been located and verified.</li>
             <li>No international complaint, sanction or judicial review mechanism is established by these instruments.</li>
             <li>Latin America, the Middle East and Central Asia remain uncovered by verified regional instruments.</li>
             <li>ISO/IEC standards are paywalled: metadata only. English texts only; no translation is presented as authentic.</li>
