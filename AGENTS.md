@@ -54,8 +54,6 @@ python3 tools/make_manifest.py             # regenerate manifests after file cha
   documentation, generated files or GitHub metadata.
 - Do not commit caches, virtual environments, secrets or files outside the
   repository.
-- Push only when explicitly requested. Do not force-push or rewrite published
-  history unless requested.
 
 ## Output
 
