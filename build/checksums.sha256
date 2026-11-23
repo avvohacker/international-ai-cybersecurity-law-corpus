@@ -18,7 +18,6 @@
 29579cc3e25332a5d77f7ed70abfb07d9a5a0edcb2ca37bb31885b14d3c51b30  corpus/un-ga-res-78-241/source/A_RES_78_241-en.pdf
 2c8bf0909e018ee478348d18278a2faed8a121cebdef347f5ed27802c5f53758  corpus/un-ga-res-78-311/pages.json
 31f36cb3ce15fe4af4fe067af306f6f28dee60992676ced438039ff876c895a9  corpus/un-ga-res-80-57/text/en.txt
-34b458a48e612fce1a8ddc3fb575192fadeb4795101baa13705af3bdd8b2734d  corpus/coe-cets-225/manifest.json
 354d07150f997365985e78a03febf85ce7bd624d2807952ecb955caa73f01863  corpus/un-ga-res-78-311/manifest.json
 36401fa62fbfb40c58d6b96f5b4205fca6413f5c471f0663f98bf1bd2d1bfac8  corpus/coe-cets-225/text/en.txt
 3f0ef60b311779f1b42e6e8f774a83b6304a4783548a5b87aa7f2c95f6e92d90  corpus/un-ga-res-78-265/units.jsonl
@@ -34,13 +33,15 @@
 73f092755f4f726cd6081fb9e83cf194aa5897f0d85fdfcb727681c18deed6b6  corpus/un-ga-res-80-57/manifest.json
 7fabd6bd6d1eb7a8a4c2b79172c1837aa60ed8483da13b0f70eab2f503048d9a  corpus/un-ga-res-80-58/text/en.txt
 8136f248040a35cc2c31c790aa37b2cc5939e2d1c9b2a355bef183afaa3b95b4  corpus/un-ga-res-78-265/text/en.txt
+8254d25ab5b082925bda8b45fb45d44f9415d3edae114f98a103e1d7f808bb4b  corpus/coe-cets-225/manifest.json
 83887bee43ad1d5065de9f48c8ad5b7e81807944a3d2ec89023e3da3f61159d9  corpus/un-ga-res-78-265/source/A_RES_78_265-en.pdf
 88227000e69be9aad5864155bd3e06ebead1e76c5b7cf662d63c1605408e5060  corpus/oecd-ai-recommendation-2019/source/OECD-LEGAL-0449-en.pdf
+928f161331784058b3a6048ea45b68e85f9a1eb1eacaa8862c31a4b9d0595c42  corpus/README.md
 98e919310b9972793f16a3ae65bfc1716e62c988a52cdfb8a71dc2cb4a6f13fa  corpus/un-ga-res-80-58/units.jsonl
 99f17e7202d3692d107a8c979660e8db2af7107937ca583199d84a8325c56e5c  corpus/un-ga-res-79-325/source/A_RES_79_325-en.pdf
+9a32939da2ea2f31f5692d02b5e4f268d6ef7cdf49e69dabc2a105f193cc5bf8  corpus/un-ga-res-79-1/units.jsonl
 9af156ca949e3e616db513ccf8c6e3ae7c527794d2cd791a63985af62be3abe6  corpus/g7-hiroshima-code-2023/text/en.txt
 9c85533e3f116a87d0ea3e7659727043d665e6ab6b455329a26dd2b460ceeddb  corpus/sadea-2020/units.jsonl
-9ca7ccaa87d75d5792dbb686c4b47e06c1416d31d17d95bff179618160c3c66f  corpus/README.md
 a6b67d5414379ff813dedae9358475ad2bef2ce52549fde838ef4d05e41f1d1e  corpus/un-ga-res-79-239/units.jsonl
 ac62bef44e17795a0948039be904bfd8139b71f0767afa7a0b25356e8c188d3f  corpus/un-ga-res-79-325/pages.json
 ae63abb67a0cf3dbccb15f8d34cd2dfac968149a04a24c0ed46d770806de377e  corpus/un-ga-res-79-1/pages.json
@@ -48,10 +49,8 @@ b10104017e211f312b2c7134be048d4cdf991c7ead7237183837aa32a0701140  corpus/oecd-ai
 b527c16c4767b33c0aed7735d3b9a867936b25f747f3acde4ccc973a0a9bb107  corpus/un-ga-res-80-57/units.jsonl
 c016e316a5d431cda21f8785ecbd1bc2ba0d40d09a3ef22456c43f5a4240fcdc  corpus/coe-cets-225/pages.json
 c1ad24b270f4bc90c634de41346acb482be3173cb4f159e88831bc4c79a5f47a  corpus/un-ga-res-78-311/source/A_RES_78_311-en.pdf
-c95d65ad6b5718223be3a2036fb433cad4401b1e8492523987f8ebb35f80ea9d  corpus/un-ga-res-79-1/manifest.json
 cf6a3d5c848a19756700f0e5ac3d1223b2dffb973136ba4c1658a6fa70ccd7cb  corpus/un-ga-res-79-325/units.jsonl
 d13d1485b4f82a86814e6946e07fee5d01382ca9f11d0a69b4777fb716679cb3  corpus/un-ga-res-80-57/pages.json
-db077de6de503a825f53c119fe430622b4b71278870bb4c92ea81aa8eb7baf45  corpus/un-ga-res-79-1/units.jsonl
 de7ee302f60e6263afb3e5f11587897eb1a0ef48d30209e944ea3648bc66ddb1  corpus/depa-2020/units.jsonl
 de84079f3d9ac1a2923fbd0ce0f59c0d657697bb4d01a3532f24210fdfb3c964  corpus/g7-hiroshima-code-2023/manifest.json
 dfca6db0705410562402916cc5f131879617d9c3151f3c87896d848f5f0e71db  corpus/un-ga-res-79-62/pages.json
@@ -66,5 +65,7 @@ f50cfb8713604862c0d43e51131658e988806b81c0c6d72e07e453ed0a7b5383  corpus/sadea-2
 f89f11137bcb0a9d96bd07d5937806ba26ce9ae4ff41c05a147d03314c1949a1  corpus/oecd-ai-recommendation-2019/manifest.json
 f93e6ffaba3f35950dfec4fc04c29ba963ee0f71a6235a153a922e909c3a9b45  corpus/sadea-2020/manifest.json
 fb1763090735ed3f308c84f75655e890af40f107ad2e208f14a833a59c7b04a5  corpus/g7-hiroshima-code-2023/pages.json
+fcdcc7396f9eb557feb0ac646406cd72bb790186bd6cecee54cdfd15e5c277df  corpus/coe-cets-225/status/coe-cets-225-status-2026-11-23.json
 fd9e337b3779af4105fd4070180983ae17afae9f02e2dd33a75937d11f2432ca  corpus/un-ga-res-79-239/source/A_RES_79_239-en.pdf
+fe2b4fb78994ffd0fb2f485a6b65c2abb4e83959bf3ea3a4c335a35b5fdadbd3  corpus/un-ga-res-79-1/manifest.json
 ff671290ff9a10dfe0e440a744b0d1679b4e0e5736c4d0c5436be8d82bceab77  corpus/un-ga-res-79-62/text/en.txt

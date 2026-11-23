@@ -11,7 +11,7 @@ Last updated: **2026-11-23**. This file records what exists, what is only planne
 - [x] Fourteen full texts stored and segmented: CETS 225; UNGA 78/241, 78/265, 78/311, 79/1, 79/62, 79/239, 79/325, 80/57 and 80/58; DEPA; SADEA; G7 Hiroshima Code; OECD AI Recommendation.
 - [x] Thirteen official PDFs acquired and SHA-256 hashed; manifests generated.
 - [x] CETS 225 per-party chart captured (21 signatories, 2 ratifications), Article 3(1)(b) declarations reproduced and reservations checked.
-- [x] Pact for the Future segmented into 247 citable units across the Pact, Global Digital Compact and Declaration on Future Generations.
+- [x] Pact for the Future segmented into 248 citable units across the Pact, Global Digital Compact and Declaration on Future Generations.
 - [x] CCW GGE on LAWS catalogued as the first category-6 record, with the 2026 report and 2027–2028 negotiating mandate.
 - [x] EU AI Act, UNESCO Recommendation, UKSDEA, KSDPA, AfCFTA Protocol, military declaration, Bletchley/Seoul/Frontier, NATO, AU, ASEAN, five ISO/IEC standards, CETS explanatory report, EU GPAI Code.
 - [x] Validator and 12 tests: schema rules, hash integrity, unit-anchor integrity, declarations cannot be binding, deterministic build.

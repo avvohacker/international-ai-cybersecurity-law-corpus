@@ -23,7 +23,7 @@ NUMBERED_RE = re.compile(r"(?m)^\s*(\d{1,2}(?:\.\d{1,2})?)\.\s+(?=\S)")
 PACT_TITLE_RE = re.compile(r"(?m)^  The Pact for the Future$")
 PACT_SECTION_RE = re.compile(r"(?m)^  (I|II|III|IV|V)\. (.+)$")
 PACT_PARA_RE = re.compile(r"(?m)^(\d{1,3})\.\s+(?=\S)")
-PACT_ACTION_RE = re.compile(r"(?m)^Action (\d+)\.\s+(?=\S)")
+PACT_ACTION_RE = re.compile(r"(?m)^Action (\d+)\s*\.\s+(?=\S)")
 
 
 def page_for(pages: list[dict], offset: int) -> int:

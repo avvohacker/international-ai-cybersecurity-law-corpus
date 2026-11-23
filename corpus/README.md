@@ -8,10 +8,11 @@ corpus/<id>/
   text/en.txt           extracted or transcribed text; role "text"
   pages.json            page-to-character map; role "metadata"
   units.jsonl           citable units; role "units"
+  status/*.json         status snapshot; role "status_snapshot"
   manifest.json         hashes, sizes, roles, source URLs
 ```
 
-`manifest.json` is the integrity contract checked by `make validate`. Every file listed there must exist, match its SHA-256 and size, and be unique by content. The build also checks that each unit's `text` equals the exact slice of `text/en.txt` at `char_start:char_end`, and that the unit start lies on the declared page.
+`manifest.json` is the integrity contract checked by `make validate`. Every file listed there must exist, match its SHA-256 and size, and be unique by content. Files under `status/` are local snapshots of dynamic official pages, not official exports; the snapshot itself records its source URL and capture method. The build also checks that each unit's `text` equals the exact slice of `text/en.txt` at `char_start:char_end`, and that the unit start lies on the declared page.
 
 ## Anchors
 

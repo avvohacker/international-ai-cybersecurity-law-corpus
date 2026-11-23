@@ -332,7 +332,7 @@ def validate_corpus_text(inst: dict[str, Any], report: Report) -> None:
         else:
             seen_hashes[digest] = rel
         role = entry.get("role")
-        if role not in {"original", "text", "units", "metadata"}:
+        if role not in {"original", "text", "units", "metadata", "status_snapshot"}:
             report.error("bad_file_role", iid, f"unknown role {role!r} for {rel}")
 
     pages_path = CORPUS_DIR / iid / "pages.json"

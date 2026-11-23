@@ -48,6 +48,14 @@ deliverable is a corpus, not an interface.
   apparatus. It was not adopted because the current texts are extracted plain
   text with page/character anchors, and TEI would add a large encoding layer
   before the corpus has a stable instrument set.
+- **Akoma Ntoso / LegalDocumentML** is the main XML vocabulary for legislative
+  and judicial documents. It could represent the Pact's preamble, sections,
+  actions and paragraphs, and would help exchange the corpus with
+  legal-information systems. It was not adopted because the canonical need here
+  is exact plain-text slices with character/page anchors and JSONL units;
+  encoding every instrument would add a schema and validation layer without
+  improving source fidelity. A derived Akoma Ntoso export can be added later
+  using the stable unit IDs, while JSON/JSONL remains canonical.
 - **RDF/JSON-LD** would help link instruments, parties and legal relations across
   datasets. The current `related` and `sources` fields already expose the graph in
   a simple form; exporting JSON-LD later is straightforward and does not require
@@ -73,3 +81,6 @@ current size (36+ instruments and a few hundred citable units).
   add TEI alongside the plain text, linked by the same unit IDs.
 - External data exchange: publish JSON-LD or a documented CSV view generated from
   the canonical JSON, rather than replacing it.
+- Legal-information interoperability: add a derived Akoma Ntoso export generated
+  from `units.jsonl`, with the same IDs and source anchors; do not replace the
+  canonical JSON/JSONL.

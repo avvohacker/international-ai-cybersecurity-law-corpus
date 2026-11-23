@@ -9,7 +9,7 @@
   },
   "gaps": [
     "Non-binding.",
-    "The full 56-page text was segmented into 247 units and AI-relevant paragraphs were identified, but it was not read end-to-end; verification remains metadata_verified.",
+    "The full 56-page text was segmented into 248 units and AI-relevant paragraphs were identified, but it was not read end-to-end; verification remains metadata_verified.",
     "Only English acquired.",
     "The Pact's follow-up and review mechanisms are not assessed."
   ],
@@ -78,7 +78,7 @@
   "status": "adopted",
   "status_note": "Adopted. Non-binding; no signature or ratification.",
   "text": {
-    "extraction_note": "Text extracted from the official English PDF with pypdf and segmented by Pact section, annex, numbered paragraph and action into 247 citable units. Labels preserve section/annex context. The full text was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
+    "extraction_note": "Text extracted from the official English PDF with pypdf and segmented by Pact section, annex, numbered paragraph and action into 248 citable units. Labels preserve section/annex context. The full text was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
     "full_text": true,
     "manifest": "manifest.json",
     "primary_language": "en",
@@ -104,10 +104,10 @@
       {
         "check": "Full text segmented by Pact section, annex, numbered paragraph and action.",
         "date": "2026-11-23",
-        "result": "247 units; unique labels; exact character anchors; Pact paras. 1–84, GDC paras. 1–74, Declaration paras. 1–32, and 55 actions."
+        "result": "248 units; unique labels; exact character anchors; Pact paras. 1–84, GDC paras. 1–74, Declaration paras. 1–32, and 56 actions."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Original preserved and hashed; full 56-page text segmented into 247 units. The AI-specific paragraphs in the Global Digital Compact were identified (paras. 7, 14 and 49–63), but the full text was not read end-to-end. Text extracted from the official English PDF with pypdf."
+    "notes": "Original preserved and hashed; full 56-page text segmented into 248 units. The AI-specific paragraphs in the Global Digital Compact were identified (paras. 7, 14 and 49–63), but the full text was not read end-to-end. Text extracted from the official English PDF with pypdf."
   }
 }

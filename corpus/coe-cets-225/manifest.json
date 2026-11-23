@@ -20,6 +20,13 @@
       "path": "units.jsonl",
       "role": "units",
       "sha256": "e57ffb6fdc958ede7cdc53c1ed3130c0d7956423f756be3a2e13b13b5566296d"
+    },
+    {
+      "bytes": 7959,
+      "media_type": "application/json",
+      "path": "status/coe-cets-225-status-2026-11-23.json",
+      "role": "status_snapshot",
+      "sha256": "fcdcc7396f9eb557feb0ac646406cd72bb790186bd6cecee54cdfd15e5c277df"
     }
   ],
   "instrument_id": "coe-cets-225",

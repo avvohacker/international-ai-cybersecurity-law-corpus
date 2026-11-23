@@ -66,15 +66,28 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(by_party["European Union"]["ratification"], "2026-05-15")
         self.assertEqual(len(parties["declarations"]), 5)
         self.assertIn("None recorded", parties["reservations"][0])
+        snapshot = ROOT / "corpus" / "coe-cets-225" / "status" / "coe-cets-225-status-2026-11-23.json"
+        self.assertTrue(snapshot.exists())
+        manifest = json.loads(
+            (ROOT / "corpus" / "coe-cets-225" / "manifest.json").read_text(encoding="utf-8")
+        )
+        status_files = [f for f in manifest["files"] if f["role"] == "status_snapshot"]
+        self.assertEqual(len(status_files), 1)
+        self.assertEqual(status_files[0]["sha256"], corpuslib.sha256_file(snapshot))
+        snapshot_data = json.loads(snapshot.read_text(encoding="utf-8"))
+        self.assertEqual(snapshot_data["status_date"], "2026-11-23")
+        self.assertFalse(snapshot_data["official_static_export_found"])
 
     def test_pact_units_are_citable(self) -> None:
         units = corpuslib.load_units("un-ga-res-79-1")
-        self.assertEqual(len(units), 247)
+        self.assertEqual(len(units), 248)
         labels = [unit["label"] for unit in units]
         self.assertEqual(len(labels), len(set(labels)))
         self.assertIn("Pact for the Future — Preamble, para. 1", labels)
         self.assertIn("Global Digital Compact — Annex I, para. 49", labels)
         self.assertIn("Declaration on Future Generations — Annex II, para. 32", labels)
+        self.assertIn("Pact for the Future — Section II: International peace and security, Action 13", labels)
+        self.assertIn("Pact for the Future — Section V: Transforming global governance, Action 56", labels)
 
     def test_acquisitions_hashes_match_stored_files(self) -> None:
         entries = json.loads((ROOT / "catalog" / "acquisitions.json").read_text(encoding="utf-8"))

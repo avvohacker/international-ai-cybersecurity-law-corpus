@@ -66,6 +66,24 @@ def main() -> int:
                         "media_type": media,
                     }
                 )
+        for path in sorted((base / "status").glob("*")):
+            if not path.is_file():
+                continue
+            media = {
+                ".json": "application/json",
+                ".html": "text/html; charset=utf-8",
+                ".txt": "text/plain; charset=utf-8",
+                ".pdf": "application/pdf",
+            }.get(path.suffix, "application/octet-stream")
+            files.append(
+                {
+                    "path": path.relative_to(base).as_posix(),
+                    "role": "status_snapshot",
+                    "sha256": sha256_file(path),
+                    "bytes": path.stat().st_size,
+                    "media_type": media,
+                }
+            )
         if not files:
             continue
         manifest = {

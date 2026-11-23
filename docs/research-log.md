@@ -26,8 +26,8 @@ This log records the searches actually run and their outcome. It is not a list o
 | 16 | EU General-Purpose AI Code of Practice | Implementation material | Published 10 July 2025; adequacy confirmed 1 August 2025 |
 | 17 | Council of Europe explanatory report CETS 225 | Interpretive material | Official report located; opening read; full text not acquired |
 | 18 | ISO/IEC JTC 1/SC 42 standards catalogue | Standards coverage | Confirmed the five catalogued standards and the JTC 1/SC 42 source |
-| 19 | CETS 225 Treaty Office chart and declarations page | Complete party data and Article 3(1)(b) declarations | 21 signatures, 2 ratifications (Bosnia and Herzegovina 28/10/2026; EU 15/05/2026); declarations by EU, Norway and Ukraine; no reservations/objections |
-| 20 | Pact for the Future structure and AI paragraphs | Citable segmentation | 247 units; GDC AI-related paras. 7, 14 and 49–63; Pact paras. 48 and 51 |
+| 19 | CETS 225 Treaty Office chart and declarations page | Complete party data and Article 3(1)(b) declarations | 21 signatures, 2 ratifications (Bosnia and Herzegovina 28/10/2026; EU 15/05/2026); declarations by EU, Norway and Ukraine; no reservations/objections. No official static export was available; local JSON snapshot stored with manifest hash |
+| 20 | Pact for the Future structure and AI paragraphs | Citable segmentation | 248 units and 56 actions; GDC AI-related paras. 7, 14 and 49–63; Pact paras. 48 and 51 |
 | 21 | CCW GGE LAWS 2026 final report and Seventh Review Conference Decision 1 | Category-6 negotiation record | CCW/GGE.1/2026/3 (4 September 2026); mandate to elaborate an instrument; report due 2028 |
 
 ## Documents read or acquired
@@ -36,7 +36,7 @@ This log records the searches actually run and their outcome. It is not a list o
 - A/RES/78/265, 78/311, 78/241, 79/62, 79/239, 79/325, 79/1, 80/57, 80/58 (official English PDFs; 13 originals including the four agreements/codes below).
 - DEPA English signing text (67 pages), SADEA (39 pages), G7 Hiroshima Code (8 pages), OECD/LEGAL/0449 booklet (12 pages).
 - Official pages for UNESCO, OECD, EUR-Lex, UK Treaty Series, Singapore MTI, AU, ASEAN, NATO, ISO, GOV.UK.
-- CETS 225 Treaty Office chart (status 23/11/2026), declarations page and EU instrument texts.
+- CETS 225 Treaty Office chart (status 23/11/2026), declarations page and EU instrument texts. The chart/declaration data is preserved in `corpus/coe-cets-225/status/coe-cets-225-status-2026-11-23.json`; this is a local snapshot, not a CoE-generated export.
 - CCW/GGE.1/2026/3 final report and CCW/CONF.VII/CRP.1/Rev.3 final document of the Seventh Review Conference.
 
 ## Access failures and how they are recorded

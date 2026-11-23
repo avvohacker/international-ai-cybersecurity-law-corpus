@@ -125,7 +125,7 @@ Every record declares one of:
 
 ## Known limitations
 
-1. **CETS 225 is not in force.** Its party table is captured at 23 November 2026 (21 signatories; Bosnia and Herzegovina and the EU have ratified), but no Conference of the Parties exists and implementation is not assessed.
+1. **CETS 225 is not in force.** Its party table is captured at 23 November 2026 (21 signatories; Bosnia and Herzegovina and the EU have ratified), but no Conference of the Parties exists and implementation is not assessed. The Treaty Office publishes the chart dynamically and exposes no static export; a local JSON snapshot of the official chart/declarations is stored at `corpus/coe-cets-225/status/coe-cets-225-status-2026-11-23.json` and hashed in the manifest.
 2. **Three official PDFs could not be acquired:** CETS 225 (HTTP 403; English text transcribed through an extraction tool), its Explanatory Report (403; metadata only) and the UNESCO Recommendation (403; metadata only). The official image/PDF is not stored for these.
 3. **EUR-Lex PDFs returned HTTP 202/empty.** The EU AI Act and the EU OJ version of CETS 225 are catalogued with metadata, not stored full texts.
 4. **Only English is stored** for texts. Other authentic language versions are recorded in metadata but not acquired.
