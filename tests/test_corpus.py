@@ -55,6 +55,27 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(articles[0]["label"], "Article 1 — Object and purpose")
         self.assertEqual(articles[-1]["label"], "Article 36 — Notification")
 
+    def test_cets_party_data_complete(self) -> None:
+        inst = read_instrument("coe-cets-225")
+        parties = inst["parties"]
+        self.assertEqual(parties["signatories_total"], 21)
+        self.assertEqual(parties["ratifications_total"], 2)
+        self.assertEqual(len(parties["entries"]), 21)
+        by_party = {entry["party"]: entry for entry in parties["entries"]}
+        self.assertEqual(by_party["Bosnia and Herzegovina"]["ratification"], "2026-10-28")
+        self.assertEqual(by_party["European Union"]["ratification"], "2026-05-15")
+        self.assertEqual(len(parties["declarations"]), 5)
+        self.assertIn("None recorded", parties["reservations"][0])
+
+    def test_pact_units_are_citable(self) -> None:
+        units = corpuslib.load_units("un-ga-res-79-1")
+        self.assertEqual(len(units), 247)
+        labels = [unit["label"] for unit in units]
+        self.assertEqual(len(labels), len(set(labels)))
+        self.assertIn("Pact for the Future — Preamble, para. 1", labels)
+        self.assertIn("Global Digital Compact — Annex I, para. 49", labels)
+        self.assertIn("Declaration on Future Generations — Annex II, para. 32", labels)
+
     def test_acquisitions_hashes_match_stored_files(self) -> None:
         entries = json.loads((ROOT / "catalog" / "acquisitions.json").read_text(encoding="utf-8"))
         self.assertGreater(len(entries), 0)
@@ -125,6 +146,7 @@ class TestBuild(unittest.TestCase):
             sum(summary["counts"]["by_category"].values()), summary["counts"]["total"]
         )
         self.assertGreaterEqual(summary["counts"]["full_texts"], 6)
+        self.assertEqual(summary["counts"]["by_category"]["draft_negotiation"], 1)
 
 
 if __name__ == "__main__":

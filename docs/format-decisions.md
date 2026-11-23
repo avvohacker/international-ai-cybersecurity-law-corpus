@@ -1,0 +1,75 @@
+# Format and language decisions
+
+This note records why the corpus uses its current formats and language, and what
+was considered instead. The choices favour verifiability, local reproducibility
+and long-term readability over query features or presentation.
+
+## Current formats
+
+| Layer | Format | Why |
+|---|---|---|
+| Instrument records | JSON, one object per file | Schema-validatable, nested, diff-friendly, no database required |
+| Candidate register | JSON array | Single reviewable register of inclusion, exclusion and pending decisions |
+| Acquisition register | JSON | URL, access date, byte count and SHA-256 in one auditable file |
+| Citable units | JSON Lines (`.jsonl`) | One record per line, streaming-friendly, line-level diffs, exact character and page anchors |
+| Extracted text | UTF-8 plain text | Stable, tool-neutral, easy to hash and compare; no markup silently added |
+| Original documents | PDF where redistributable | Preserves the official file and its internal pagination; protected standards remain links only |
+| Page map | JSON | Character offsets to file pages; explicit and independent of PDF libraries |
+| Schemas | JSON Schema (draft 2020-12) | Language-neutral validation contract |
+| Documentation | Markdown | Readable in Git and on GitHub, no build step |
+| Build outputs | JSON, Markdown, SHA-256 text | Offline, deterministic, reviewable artefacts |
+
+## Language and tooling
+
+The build, validation, acquisition and segmentation tools are **Python 3.12**,
+using only the standard library. PDF extraction is a separate optional step
+using `pypdf` (plus `cryptography` for the encrypted G7 PDF). `make` provides the
+stable entry points.
+
+Python was chosen because it is available in the environment, has no runtime
+service to deploy, handles UTF-8 and JSON cleanly, and keeps the build auditable.
+There is no JavaScript/TypeScript application, database, API or web server: the
+deliverable is a corpus, not an interface.
+
+## Alternatives considered
+
+- **SQLite** would make joins and full-text search easier. It was not used for
+  the source of truth because a binary database is harder to review in pull
+  requests, obscures per-record diffs and adds a schema-migration burden. It is a
+  plausible derived index later (for example a generated `corpus.db` with FTS5),
+  never the only copy.
+- **PostgreSQL** would support concurrent editing and richer queries, but it
+  requires a service and credentials, which conflicts with the offline build.
+- **CSV/TSV** is easy to inspect but poor at nested parties, sources, reservations
+  and per-unit metadata; flattening would lose structure.
+- **YAML** is pleasant to read but has more parsing ambiguities and is not needed:
+  the records are machine-generated and validated, not hand-edited prose.
+- **XML/TEI** would be strong for diplomatic transcription and scholarly
+  apparatus. It was not adopted because the current texts are extracted plain
+  text with page/character anchors, and TEI would add a large encoding layer
+  before the corpus has a stable instrument set.
+- **RDF/JSON-LD** would help link instruments, parties and legal relations across
+  datasets. The current `related` and `sources` fields already expose the graph in
+  a simple form; exporting JSON-LD later is straightforward and does not require
+  changing the source records.
+- **Git LFS** was not needed: the 13 PDFs are small. It remains an option if the
+  corpus grows to many large official files.
+- **A static site generator** was not used: the brief explicitly excludes
+  interfaces. The generated Markdown catalogue is enough for review.
+
+## Migration path
+
+The stable `id`, `instrument_id` and `unit_id` values are the join keys. If the
+corpus grows, a derived SQLite/FTS5 index or JSON-LD export can be generated from
+the JSON/JSONL sources without changing the canonical records. A move to a
+database would be justified by query volume or multi-user editing, not by the
+current size (36+ instruments and a few hundred citable units).
+
+## What would trigger a format change
+
+- Hundreds of thousands of units or multi-user editing: derived SQLite/Postgres
+  index, with JSON/JSONL still exported.
+- A need for diplomatic transcription, text variants or scholarly annotations:
+  add TEI alongside the plain text, linked by the same unit IDs.
+- External data exchange: publish JSON-LD or a documented CSV view generated from
+  the canonical JSON, rather than replacing it.

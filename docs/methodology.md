@@ -24,7 +24,7 @@ The legal nature is determined from the instrument and its issuer, not from its 
 | Level | Meaning | This cycle |
 |---|---|---:|
 | `full_text_checked` | Full text stored, hashed, segmented, read; key passages asserted by tests. | 8 |
-| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 25 |
+| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 26 |
 | `source_located` | Official URL recorded; metadata from an established reference, not re-read. | 2 |
 
 Fourteen full texts are stored (13 acquired PDFs plus the CETS 225 transcription); only the eight marked `full_text_checked` were read end-to-end and are covered by key-passage tests. Six further texts are stored and segmented but remain `metadata_verified` because they were not read end-to-end. The levels are deliberately coarse and honest. `metadata_verified` is not a guarantee that every field, party or declaration was checked. Each record lists its own `verification.checks`, and `gaps` records what remains unknown.
@@ -78,4 +78,4 @@ The determinism test builds twice and compares the bytes. Network acquisition an
 
 ## 8. Limits of this cycle
 
-This is a first corpus, not a comprehensive survey. The principal limits are: one AI-specific treaty only; five digital agreements with cooperative AI clauses; no category-6 draft; incomplete CETS 225 party data; mostly English texts; metadata-only records for paywalled standards and for several official PDFs that returned access errors; and no systematic search of national bilateral treaty registries. These limits are stated in the coverage matrix and the progress file rather than hidden in the aggregate counts.
+This is a first corpus, not a comprehensive survey. The principal limits are: one AI-specific treaty only; five digital agreements with cooperative AI clauses; one category-6 negotiation record (CCW) but no adopted draft protocol; CETS 225 not in force; mostly English texts; metadata-only records for paywalled standards and for several official PDFs that returned access errors; and no systematic search of national bilateral treaty registries. These limits are stated in the coverage matrix and the progress file rather than hidden in the aggregate counts.

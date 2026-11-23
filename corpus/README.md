@@ -26,7 +26,7 @@ corpus/<id>/
 python3 -m venv .venv
 .venv/bin/pip install -r requirements-tools.txt
 .venv/bin/python tools/extract_text.py <id> source/<file>.pdf
-.venv/bin/python tools/segment.py <id> --mode treaty|resolution|numbered|whole
+.venv/bin/python tools/segment.py <id> --mode treaty|resolution|numbered|whole|pact
 .venv/bin/python tools/make_manifest.py
 ```
 
