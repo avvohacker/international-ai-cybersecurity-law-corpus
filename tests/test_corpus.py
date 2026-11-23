@@ -97,6 +97,58 @@ class TestCatalogue(unittest.TestCase):
         self.assertIn("64. European Union", body)
         self.assertNotIn("Zimbabwe", body)
 
+    def test_bletchley_party_list(self) -> None:
+        inst = read_instrument("bletchley-declaration-2023")
+        parties = inst["parties"]
+        self.assertEqual(parties["signatories_total"], 30)
+        self.assertEqual(parties["ratifications_total"], 0)
+        self.assertEqual(len(parties["entries"]), 30)
+        names = {entry["party"] for entry in parties["entries"]}
+        for name in (
+            "China",
+            "United States of America",
+            "United Kingdom",
+            "New Zealand",
+            "European Union",
+        ):
+            self.assertIn(name, names)
+        self.assertNotIn("Russia", names)
+
+    def test_seoul_party_list(self) -> None:
+        inst = read_instrument("seoul-declaration-2024")
+        parties = inst["parties"]
+        self.assertEqual(parties["signatories_total"], 11)
+        self.assertEqual(len(parties["entries"]), 11)
+        names = {entry["party"] for entry in parties["entries"]}
+        for name in (
+            "United States of America",
+            "United Kingdom",
+            "France",
+            "Germany",
+            "European Union",
+        ):
+            self.assertIn(name, names)
+        for name in ("China", "India", "Brazil", "South Africa"):
+            self.assertNotIn(name, names)
+
+    def test_military_declaration_party_list(self) -> None:
+        inst = read_instrument("political-declaration-military-ai-2023")
+        parties = inst["parties"]
+        self.assertEqual(parties["as_of"], "2024-11-27")
+        self.assertEqual(parties["signatories_total"], 58)
+        self.assertEqual(len(parties["entries"]), 58)
+        names = {entry["party"] for entry in parties["entries"]}
+        for name in (
+            "United States of America",
+            "United Kingdom",
+            "France",
+            "Germany",
+            "Japan",
+        ):
+            self.assertIn(name, names)
+        for name in ("China", "India", "Brazil", "South Africa", "Russia"):
+            self.assertNotIn(name, names)
+
     def test_china_initiative_record(self) -> None:
         inst = read_instrument("china-global-ai-governance-initiative-2023")
         self.assertEqual(inst["binding_status"], "non_binding")
@@ -229,6 +281,28 @@ class TestBuild(unittest.TestCase):
         )
         self.assertGreaterEqual(summary["counts"]["full_texts"], 6)
         self.assertEqual(summary["counts"]["by_category"]["draft_negotiation"], 1)
+
+    def test_site_maps_are_complete_and_neutral(self) -> None:
+        import build_site
+
+        build_site.main()
+        page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        self.assertEqual(page.count('class="map-frame"'), 5)
+        self.assertEqual(page.count('class="map-key"'), 5)
+        for title in (
+            "Paris 2025",
+            "Bletchley 2023",
+            "Seoul 2024",
+            "Military AI 2023",
+            "CETS 225",
+        ):
+            self.assertIn(title, page)
+        self.assertNotIn("USA / UK: no", page)
+        self.assertNotIn("Non-signatory", page)
+        self.assertIn("EU European Union", page)
+        self.assertIn("AU African Union Commission", page)
+        self.assertIn("Supranational: endorsed", page)
+        self.assertIn("Signed + ratified", page)
 
 
 if __name__ == "__main__":

@@ -12,7 +12,39 @@
     "excluded_scope": "Non-binding; no legal obligations or enforcement."
   },
   "dates": {"adopted": "2024-05-21", "verified_on": "2026-11-23", "notes": "Adopted at the Leaders' Session of the AI Seoul Summit on 21 May 2024."},
-  "status_note": "Adopted by Australia, Canada, the European Union, France, Germany, Italy, Japan, the Republic of Korea, Singapore, the United Kingdom and the United States.",
+  "status_note": "Adopted by 10 States and the European Union at the Leaders' Session on 21 May 2024. Political declaration, not a treaty signature or ratification. The separate Seoul Ministerial Statement of 22 May 2024 (27 States and the EU) is not this instrument.",
+  "parties": {
+    "as_of": "2026-11-23",
+    "summary": "10 States and the European Union are recorded as participants in the Leaders' Session: Australia, Canada, France, Germany, Italy, Japan, the Republic of Korea, Singapore, the United Kingdom and the United States, plus the EU. The separate Seoul Ministerial Statement of 22 May 2024 had 27 States and the EU and is not this instrument.",
+    "source_ids": [
+      "govuk-seoul",
+      "govuk-network"
+    ],
+    "signatories_total": 11,
+    "ratifications_total": 0,
+    "entries": [
+      {"party": "Australia"},
+      {"party": "Canada"},
+      {"party": "France"},
+      {"party": "Germany"},
+      {"party": "Italy"},
+      {"party": "Japan"},
+      {"party": "Republic of Korea"},
+      {"party": "Singapore"},
+      {"party": "United Kingdom"},
+      {"party": "United States of America"},
+      {"party": "European Union", "notes": ["Participating organisation, not a State."]}
+    ],
+    "reservations": ["None: the declaration is not a treaty and has no reservations."],
+    "declarations": [],
+    "objections": [],
+    "notifications": [],
+    "withdrawals": [],
+    "unknowns": [
+      "No depositary or formal endorsement procedure is published; the GOV.UK text is the source for the participant list.",
+      "The relationship between the Leaders' Declaration and the Seoul Ministerial Statement is one of sequence and shared summit context, not of legal succession; no formal link is stated in the texts consulted."
+    ]
+  },
   "languages": {"authentic": ["en"], "translations": [], "note": "English text; no authentic-language clause."},
   "sources": [
     {"id": "govuk-seoul", "url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024", "publisher": "UK Government", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official text and list of participating leaders."},
@@ -22,15 +54,16 @@
   "verification": {
     "level": "metadata_verified",
     "checks": [
-      {"check": "Date and participants checked on the GOV.UK text.", "result": "21 May 2024; 10 countries plus the EU.", "date": "2026-11-23"},
-      {"check": "Nature checked: leaders' declaration, non-binding.", "result": "Political declaration; no signature/ratification.", "date": "2026-11-23"}
+      {"check": "Date and participants checked on the GOV.UK text.", "result": "21 May 2024; 10 States plus the EU at the Leaders' Session.", "date": "2026-11-23"},
+      {"check": "Nature checked: leaders' declaration, non-binding.", "result": "Political declaration; no signature/ratification.", "date": "2026-11-23"},
+      {"check": "Scope of the declaration checked against the official text and the Australian government's publication note.", "result": "The Leaders' Declaration was adopted by 10 States and the EU; the Seoul Ministerial Statement of 22 May 2024 is a separate document adopted by 27 States and the EU.", "date": "2026-11-23"}
     ],
-    "notes": "Metadata verified; full text not stored."
+    "notes": "Metadata verified; full text not stored. The participant list is reproduced party by party from the GOV.UK text; the separate ministerial statement is noted but not catalogued or mapped."
   },
   "related": [
     {"id": "bletchley-declaration-2023", "relation": "predecessor", "note": "Previous summit declaration."},
     {"id": "frontier-ai-safety-commitments-2024", "relation": "related", "note": "Company commitments launched at the same summit."}
   ],
-  "gaps": ["Non-binding.", "Full text not stored.", "No monitoring mechanism.", "Participation is limited to a group of like-minded States and the EU."],
+  "gaps": ["Non-binding.", "Full text not stored.", "No monitoring mechanism.", "Participation is limited to 10 States and the EU; it is not a universal instrument.", "The separate Seoul Ministerial Statement of 22 May 2024 (27 States and the EU) is not catalogued or mapped.", "The declaration is a leaders' text; it creates no treaty signature or ratification."],
   "provenance": {"discovered_via": "GOV.UK AI Seoul Summit publications.", "search_dates": ["2026-11-23"]}
 }

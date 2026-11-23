@@ -1,7 +1,7 @@
 # Natural Earth boundary data
 
 `ne_110m_admin_0_countries.geojson` is the Natural Earth 1:110m Admin 0
-Countries layer, used only to draw the two maps in the generated atlas.
+Countries layer, used only to draw the maps in the generated atlas.
 
 - Source: <https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson>
 - Upstream project: <https://www.naturalearthdata.com/>

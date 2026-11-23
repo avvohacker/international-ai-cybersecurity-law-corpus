@@ -29,6 +29,9 @@ REPO = "https://github.com/avvohacker/international-ai-law-corpus"
 PARIS_ID = "paris-ai-action-summit-statement-2025"
 CETS_ID = "coe-cets-225"
 CHINA_ID = "china-global-ai-governance-initiative-2023"
+BLETCHLEY_ID = "bletchley-declaration-2023"
+SEOUL_ID = "seoul-declaration-2024"
+MILITARY_ID = "political-declaration-military-ai-2023"
 
 CATEGORY_LABELS = {
     "ai_treaty": "AI-specific treaty",
@@ -66,9 +69,11 @@ VERIFICATION_LABELS = {
 }
 
 # Natural Earth 1:110m omits several microstates. They are drawn as dots so that
-# every party on the two maps is represented.
+# every party on the maps is represented.
 MICRO = {
     "AD": (1.52, 42.51),
+    "AG": (-61.80, 17.10),
+    "BH": (50.55, 26.07),
     "LI": (9.55, 47.15),
     "MC": (7.42, 43.74),
     "MT": (14.37, 35.94),
@@ -77,13 +82,17 @@ MICRO = {
 }
 
 ISO_OVERRIDES = {
+    "Antigua and Barbuda": "AG",
+    "Bahrain": "BH",
     "Côte d’Ivoire": "CI",
+    "Kingdom of Saudi Arabia": "SA",
     "Liechtenstein": "LI",
     "Malta": "MT",
     "Monaco": "MC",
     "Singapore": "SG",
     "Andorra": "AD",
     "San Marino": "SM",
+    "Türkiye": "TR",
 }
 
 NAME_ALIASES = {
@@ -94,13 +103,27 @@ NAME_ALIASES = {
 }
 
 TEAL = "#0e6b62"
-RED = "#b23a2b"
 BLUE = "#1e3a8a"
 LIGHT_BLUE = "#8fb4dd"
+GOLD = "#c98a2e"
 LAND = "#e3ddd0"
 OCEAN = "#eaf0ef"
 INK = "#17150f"
 PAPER = "#f7f2e7"
+
+# The maps encode the legal act, not the degree of political alignment.
+STATUS_FILL = {
+    "endorsed": TEAL,
+    "signed": LIGHT_BLUE,
+    "ratified": BLUE,
+    "none": LAND,
+}
+STATUS_TITLE = {
+    "endorsed": "endorsed",
+    "signed": "signature only",
+    "ratified": "signature and ratification",
+    "none": "no recorded act",
+}
 
 
 def esc(value: object) -> str:
@@ -231,33 +254,20 @@ def feature_path(feature: dict) -> str:
     return " ".join(filter(None, (ring_path(ring) for ring in rings)))
 
 
-def map_fill_paris(iso: str, members: set[str]) -> tuple[str, str]:
-    if iso in members:
-        return TEAL, "Paris Statement signatory"
-    if iso in {"US", "GB"}:
-        return RED, "non-signatory (highlighted)"
-    return LAND, "non-signatory"
-
-
-def map_fill_cets(iso: str, members: set[str], ratified: set[str]) -> tuple[str, str]:
-    if iso in ratified:
-        return BLUE, "signature and ratification"
-    if iso in members:
-        return LIGHT_BLUE, "signature, no ratification"
-    return LAND, "non-signatory"
-
-
 def render_map(
     kind: str,
     title: str,
     description: str,
-    members: set[str],
-    ratified: set[str] | None = None,
+    state_status: dict[str, str],
+    org_markers: list[dict] | None = None,
     labels: dict[str, str] | None = None,
+    legend: list[dict] | None = None,
+    legend_note: str = "",
 ) -> str:
     features, _, by_iso = load_geo()
-    ratified = ratified or set()
+    org_markers = org_markers or []
     labels = labels or {}
+    legend = legend or []
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" '
         f'class="map-svg" role="img" aria-labelledby="map-{kind}-title map-{kind}-desc">',
@@ -277,27 +287,45 @@ def render_map(
         if iso in (None, "", "-99"):
             iso = props.get("ISO_A2")
         iso = iso if iso not in (None, "-99") else ""
-        if kind == "paris":
-            fill, status = map_fill_paris(iso, members)
-        else:
-            fill, status = map_fill_cets(iso, members, ratified)
+        status = state_status.get(iso, "none")
+        fill = STATUS_FILL[status]
         path = feature_path(feature)
         if not path:
             continue
         parts.append(
             f'<path d="{path}" fill="{fill}" stroke="{PAPER}" stroke-width="0.7" '
-            f'data-iso="{esc(iso)}"><title>{esc(props["ADMIN"])} — {esc(status)}</title></path>'
+            f'data-iso="{esc(iso)}"><title>{esc(props["ADMIN"])} — {esc(STATUS_TITLE[status])}</title></path>'
         )
     for iso, (lon, lat) in sorted(MICRO.items()):
-        if iso not in members:
+        if iso not in state_status:
             continue
         if iso in by_iso:
             continue
-        fill = BLUE if iso in ratified else (TEAL if kind == "paris" else LIGHT_BLUE)
+        status = state_status[iso]
+        fill = STATUS_FILL[status]
         x, y = project(lon, lat)
         parts.append(
             f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.8" fill="{fill}" '
-            f'stroke="{PAPER}" stroke-width="1"><title>{esc(iso)} — member</title></circle>'
+            f'stroke="{PAPER}" stroke-width="1"><title>{esc(iso)} — {esc(STATUS_TITLE[status])}</title></circle>'
+        )
+    for marker in org_markers:
+        status = marker.get("status", "endorsed")
+        # Supranational participants keep one intermediate colour; a blue
+        # outline distinguishes the EU's signature plus ratification in CETS 225.
+        stroke = BLUE if status == "ratified" else PAPER
+        stroke_width = "2" if status == "ratified" else "1.2"
+        x, y = project(marker["lon"], marker["lat"])
+        size = 5.4
+        points = (
+            f"{x:.1f},{y - size:.1f} {x + size:.1f},{y:.1f} "
+            f"{x:.1f},{y + size:.1f} {x - size:.1f},{y:.1f}"
+        )
+        parts.append(
+            f'<polygon points="{points}" fill="{GOLD}" stroke="{stroke}" stroke-width="{stroke_width}">'
+            f'<title>{esc(marker["name"])} — {esc(STATUS_TITLE[status])}</title></polygon>'
+        )
+        parts.append(
+            f'<text x="{x + 8:.1f}" y="{y + 4:.1f}" class="map-org-label">{esc(marker["label"])}</text>'
         )
     for iso, label in labels.items():
         feature = by_iso.get(iso)
@@ -309,7 +337,20 @@ def render_map(
             f'<text x="{x:.1f}" y="{y:.1f}" class="map-label">{esc(label)}</text>'
         )
     parts.append("</svg>")
-    return "".join(parts)
+
+    key_rows = []
+    for item in legend:
+        shape = item.get("shape", "square")
+        css = "swatch swatch-org" if shape == "diamond" else "swatch"
+        if item.get("ratified"):
+            css += " swatch-org-ratified"
+        key_rows.append(
+            f'<span class="key-row"><i class="{css}" style="background:{item["color"]}"></i>'
+            f'{esc(item["label"])}</span>'
+        )
+    note = f'<p class="key-note">{esc(legend_note)}</p>' if legend_note else ""
+    key = f'<div class="map-key" aria-label="Map legend">{"".join(key_rows)}{note}</div>'
+    return f'<div class="map-frame">{"".join(parts)}{key}</div>'
 
 
 def category_bars(category_counts: Counter) -> str:
@@ -484,7 +525,7 @@ def milestones(instruments_by_id: dict[str, dict]) -> str:
         "un-ga-res-78-265": "First UN resolution on AI adopted by consensus.",
         "coe-cets-225": "The only AI-specific treaty; not yet in force.",
         "un-ga-res-79-1": "Pact for the Future and Global Digital Compact.",
-        "paris-ai-action-summit-statement-2025": "The Paris Statement: China and India in, the United States and the UK out.",
+        "paris-ai-action-summit-statement-2025": "The Paris Statement: China and India endorsed; the United States and the UK did not.",
         "ccw-gge-laws-2026": "2027–2028 mandate to negotiate an instrument on autonomous weapons.",
     }
     items = []
@@ -533,68 +574,197 @@ def main() -> int:
 
     paris = by_id[PARIS_ID]
     cets = by_id[CETS_ID]
-    paris_entries = paris["parties"]["entries"]
+    bletchley = by_id[BLETCHLEY_ID]
+    seoul = by_id[SEOUL_ID]
+    military = by_id[MILITARY_ID]
+
     paris_orgs = {"European Union", "African Union Commission"}
-    paris_states = [entry["party"] for entry in paris_entries if entry["party"] not in paris_orgs]
+    cets_orgs = {"European Union"}
+    bletchley_orgs = {"European Union"}
+    seoul_orgs = {"European Union"}
+
+    def state_names(inst: dict, orgs: set[str]) -> list[str]:
+        return [
+            entry["party"]
+            for entry in inst["parties"]["entries"]
+            if entry["party"] not in orgs
+        ]
+
+    paris_states = state_names(paris, paris_orgs)
+    cets_states = state_names(cets, cets_orgs)
+    bletchley_states = state_names(bletchley, bletchley_orgs)
+    seoul_states = state_names(seoul, seoul_orgs)
+    military_states = state_names(military, set())
     cets_entries = cets["parties"]["entries"]
-    cets_states = [entry["party"] for entry in cets_entries if entry["party"] != "European Union"]
-    cets_ratified = [entry["party"] for entry in cets_entries if entry.get("ratification")]
-    cets_ratified_states = [name for name in cets_ratified if name != "European Union"]
+    cets_ratified_states = [
+        entry["party"]
+        for entry in cets_entries
+        if entry.get("ratification") and entry["party"] not in cets_orgs
+    ]
 
-    _, by_name, _ = load_geo()
-    paris_iso = {iso_for(name, by_name) for name in paris_states}
-    cets_iso = {iso_for(name, by_name) for name in cets_states}
-    missing = [name for name in paris_states + cets_states if not iso_for(name, by_name)]
-    if missing:
-        raise SystemExit("map name lookup failed for: " + ", ".join(sorted(set(missing))))
-    paris_iso.discard("")
-    cets_iso.discard("")
-    cets_ratified_iso = {iso_for(name, by_name) for name in cets_ratified_states}
-    cets_ratified_iso.discard("")
+    _, by_name, by_iso = load_geo()
 
-    labels = {"US": "USA", "GB": "UK", "CN": "China", "IN": "India", "BR": "Brazil"}
+    def iso_set(names: list[str], map_name: str) -> set[str]:
+        values: set[str] = set()
+        missing: list[str] = []
+        for name in names:
+            iso = iso_for(name, by_name)
+            if not iso:
+                missing.append(name)
+            else:
+                values.add(iso)
+        if missing:
+            raise SystemExit(
+                f"map {map_name}: name lookup failed for: " + ", ".join(sorted(set(missing)))
+            )
+        return values
+
+    paris_iso = iso_set(paris_states, "Paris 2025")
+    cets_iso = iso_set(cets_states, "CETS 225")
+    bletchley_iso = iso_set(bletchley_states, "Bletchley 2023")
+    seoul_iso = iso_set(seoul_states, "Seoul 2024")
+    military_iso = iso_set(military_states, "Military AI 2023")
+    cets_ratified_iso = iso_set(cets_ratified_states, "CETS 225 ratifications")
+
+    for map_name, values in (
+        ("Paris 2025", paris_iso),
+        ("CETS 225", cets_iso),
+        ("Bletchley 2023", bletchley_iso),
+        ("Seoul 2024", seoul_iso),
+        ("Military AI 2023", military_iso),
+    ):
+        absent = sorted(iso for iso in values if iso not in by_iso and iso not in MICRO)
+        if absent:
+            raise SystemExit(
+                f"map {map_name}: no polygon or micro dot for: " + ", ".join(absent)
+            )
+
+    paris_status = {iso: "endorsed" for iso in paris_iso}
+    bletchley_status = {iso: "endorsed" for iso in bletchley_iso}
+    seoul_status = {iso: "endorsed" for iso in seoul_iso}
+    military_status = {iso: "endorsed" for iso in military_iso}
+    cets_status = {iso: "signed" for iso in cets_iso}
+    for iso in cets_ratified_iso:
+        cets_status[iso] = "ratified"
+
+    def org_marker(name: str, label: str, lon: float, lat: float, status: str) -> dict:
+        return {"name": name, "label": label, "lon": lon, "lat": lat, "status": status}
+
+    paris_org_markers = [
+        org_marker("European Union", "EU", 4.35, 50.85, "endorsed"),
+        org_marker("African Union Commission", "AU", 38.75, 9.03, "endorsed"),
+    ]
+    eu_marker = [org_marker("European Union", "EU", 4.35, 50.85, "endorsed")]
+    eu_ratified_marker = [org_marker("European Union", "EU", 4.35, 50.85, "ratified")]
+
+    labels = {"US": "US", "GB": "UK", "CN": "China", "IN": "India", "BR": "Brazil"}
+    endorsement_legend = [
+        {"color": TEAL, "label": "State: endorsed"},
+        {"color": GOLD, "label": "Supranational: endorsed", "shape": "diamond"},
+        {"color": LAND, "label": "State: not endorsed"},
+    ]
+    cets_legend = [
+        {"color": BLUE, "label": "State: signature + ratification"},
+        {"color": LIGHT_BLUE, "label": "State: signature only"},
+        {"color": LAND, "label": "State: no signature"},
+        {"color": GOLD, "label": "EU: signature + ratification", "shape": "diamond", "ratified": True},
+    ]
+
     paris_map = render_map(
         "paris",
-        "Paris Statement signatories (2025)",
-        f"{len(paris_states)} signatory States; the United States and the United Kingdom are highlighted in red; China and India in green.",
-        paris_iso,
+        "Paris Statement endorsers (2025)",
+        f"World map. Teal: {len(paris_states)} States that endorsed the Paris Statement. Gold diamonds: the European Union and the African Union Commission. Sand: States with no recorded endorsement.",
+        paris_status,
+        org_markers=paris_org_markers,
         labels=labels,
+        legend=endorsement_legend,
+        legend_note="EU European Union · AU African Union Commission · US United States · UK United Kingdom",
+    )
+    bletchley_map = render_map(
+        "bletchley",
+        "Bletchley Declaration endorsers (2023)",
+        f"World map. Teal: {len(bletchley_states)} States that endorsed the Bletchley Declaration. Gold diamond: the European Union. Sand: States with no recorded endorsement.",
+        bletchley_status,
+        org_markers=eu_marker,
+        labels=labels,
+        legend=endorsement_legend,
+        legend_note="EU European Union · US United States · UK United Kingdom",
+    )
+    seoul_map = render_map(
+        "seoul",
+        "Seoul Declaration endorsers (2024)",
+        f"World map. Teal: {len(seoul_states)} States that adopted the Seoul Declaration. Gold diamond: the European Union. Sand: States with no recorded endorsement.",
+        seoul_status,
+        org_markers=eu_marker,
+        labels=labels,
+        legend=endorsement_legend,
+        legend_note="EU European Union · US United States · UK United Kingdom",
+    )
+    military_map = render_map(
+        "military",
+        "Military AI Declaration endorsers (2023)",
+        f"World map. Teal: {len(military_states)} States that endorsed the Political Declaration on military AI. Sand: States with no recorded endorsement.",
+        military_status,
+        labels=labels,
+        legend=[
+            {"color": TEAL, "label": "State: endorsed"},
+            {"color": LAND, "label": "State: not endorsed"},
+        ],
+        legend_note="US United States · UK United Kingdom",
     )
     cets_map = render_map(
         "cets",
         "CETS 225 signatures and ratifications",
-        f"{len(cets_states)} signatory States; {len(cets_ratified_states)} State has ratified. The European Union is a party but is not shown.",
-        cets_iso,
-        ratified=cets_ratified_iso,
+        f"World map. Dark blue: States that signed and ratified CETS 225. Light blue: States that signed without ratification. Gold diamond: the European Union, which signed and ratified. Sand: States with no recorded signature.",
+        cets_status,
+        org_markers=eu_ratified_marker,
         labels=labels,
+        legend=cets_legend,
+        legend_note="EU European Union",
     )
 
     # Cross-membership for the matrix.
-    paris_set = set(paris_states)
+    paris_set = set(paris_states) | paris_orgs
+    bletchley_set = set(bletchley_states) | bletchley_orgs
+    seoul_set = set(seoul_states) | seoul_orgs
+    military_set = set(military_states)
     cets_by_party = {entry["party"]: entry for entry in cets_entries}
     matrix_rows = []
     for label, party in (
-        ("China", "China"),
         ("United States", "United States of America"),
         ("United Kingdom", "United Kingdom"),
+        ("China", "China"),
         ("India", "India"),
         ("France", "France"),
+        ("Germany", "Germany"),
         ("Japan", "Japan"),
         ("Canada", "Canada"),
         ("Brazil", "Brazil"),
+        ("South Africa", "South Africa"),
+        ("European Union", "European Union"),
+        ("African Union Commission", "African Union Commission"),
     ):
-        in_paris = party in paris_set
         entry = cets_by_party.get(party)
         if entry and entry.get("ratification"):
-            cets_state = "signature + ratification"
+            cets_state = "Signed + ratified"
         elif entry:
-            cets_state = "signature"
+            cets_state = "Signed"
         else:
-            cets_state = "no"
+            cets_state = "No"
+        cells = [
+            ("Yes" if party in paris_set else "No", party in paris_set),
+            ("Yes" if party in bletchley_set else "No", party in bletchley_set),
+            ("Yes" if party in seoul_set else "No", party in seoul_set),
+            (cets_state, bool(entry)),
+            ("Yes" if party in military_set else "No", party in military_set),
+        ]
         matrix_rows.append(
             f'<tr><th scope="row">{esc(label)}</th>'
-            f'<td class="{"yes" if in_paris else "no"}">{"yes" if in_paris else "no"}</td>'
-            f'<td class="{"yes" if entry else "no"}">{esc(cets_state)}</td></tr>'
+            + "".join(
+                f'<td class="{"yes" if positive else "no"}">{esc(value)}</td>'
+                for value, positive in cells
+            )
+            + "</tr>"
         )
     matrix = "".join(matrix_rows)
 
@@ -603,26 +773,26 @@ def main() -> int:
     cards = [
         (
             "Washington",
-            "Political declaration",
+            "Market-led model · political declaration",
             "Political Declaration on Responsible Military Use of AI and Autonomy",
-            "58 States",
-            "endorsers as of December 2024; non-binding; the list is not reproduced country by country.",
+            "58 endorsing States",
+            "The principal US-led international instrument in the corpus. It is non-binding and creates no definition or prohibition. The United States also signed CETS 225 and endorsed Bletchley and Seoul, but did not endorse Paris.",
             "political-declaration-military-ai-2023",
         ),
         (
             "Beijing",
-            "Government proposal",
+            "State-led model · government proposal",
             "Global AI Governance Initiative",
             "No adherence list",
-            "2023 unilateral initiative; non-binding; the 2025 Action Plan is a later document in the same policy line.",
+            "A unilateral 2023 proposal emphasising sovereignty, development and a central UN role. China endorsed Bletchley and Paris, but did not sign CETS 225 or the military declaration. The 2025 Action Plan is a later document in the same policy line.",
             CHINA_ID,
         ),
         (
             "Brussels / Strasbourg",
-            "Council of Europe treaty",
+            "Rights-based model · treaty and regulation",
             "Council of Europe Framework Convention on AI (CETS 225)",
             "21 signatures · 2 ratifications",
-            "binding treaty, not in force; open to non-European States as well.",
+            "The only AI-specific treaty, binding once in force. The EU has signed and ratified; not all EU member States are individual signatories. The EU AI Act is the separate supranational layer.",
             CETS_ID,
         ),
     ]
@@ -665,7 +835,7 @@ def main() -> int:
     <nav class="toc" aria-label="Sections">
       <a href="#overview">Overview</a>
       <a href="#binding">Binding or not</a>
-      <a href="#poles">Three poles</a>
+      <a href="#poles">Three poles?</a>
       <a href="#maps">Maps</a>
       <a href="#timeline">Timeline</a>
       <a href="#catalogue">Catalogue</a>
@@ -717,54 +887,76 @@ def main() -> int:
 
   <section id="poles" class="section section-dark">
     <div class="wrap">
-      <p class="eyebrow">02 · Three poles</p>
-      <h2>Three poles</h2>
+      <p class="eyebrow">02 · Three poles?</p>
+      <h2>Three poles?</h2>
+      <p class="lede">The three-pole image is a shorthand from policy analysis, not a finding of this corpus. It was a working hypothesis, and the legal record does not support reading it as three blocs. International law classifies the act and the party; it does not classify States into poles.</p>
       <div class="poles">{cards_html}</div>
+      <div class="frame-note">
+        <h3>The frame, not a legal category</h3>
+        <p>“Poles” and “blocs” are terms of political analysis. International law asks which act — treaty, political commitment, resolution, recommendation — and which party — State or international organisation. The literature does not converge on a fixed number:</p>
+        <ul>
+          <li><strong>Regime complexity.</strong> The AI governance landscape has no focal institution and low hierarchy: the United States, China and the EU pursue competing preferences through overlapping institutions, producing fragmentation rather than a tripolar legal order (<a href="https://academic.oup.com/isagsq/article/6/4/ksag145/8993928" target="_blank" rel="noopener">Geith, Lundgren &amp; Tallberg, <em>Global Studies Quarterly</em>, 2026</a>).</li>
+          <li><strong>Three models, not three alliances.</strong> Comparative policy analysis describes an American market-driven model, a Chinese state-driven model and a European rights-driven model, but treats them as ideal types, not legal blocs (<a href="https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.13444" target="_blank" rel="noopener">Mokry, <em>Global Policy</em>, 2024</a>; Bradford, <em>Digital Empires</em>, 2023).</li>
+          <li><strong>The number depends on the axis.</strong> Policy analysis in 2026 describes two consolidating architectures (US-led Pax Silica, China-led WAICO) plus a UN track without capacity, and notes that many States join multiple frameworks (<a href="https://www.csis.org/analysis/state-ai-global-governance-and-its-implications-us-china-summit" target="_blank" rel="noopener">CSIS, 2026</a>). On a forum axis, the triad is UN commons / US club / China–Global South diffusion (<a href="https://eastasiaforum.org/2026/10/22/three-competing-approaches-to-global-ai-governance" target="_blank" rel="noopener">Tiberghien, <em>East Asia Forum</em>, 2026</a>).</li>
+        </ul>
+        <p class="note">The number of poles therefore depends on the axis chosen: regulatory model, institutional vehicle or diplomatic coalition. The record below tests the metaphor against the legal acts.</p>
+      </div>
       <div class="paris-band">
         <div>
           <p class="eyebrow">Cross-cutting</p>
-          <h3>Paris 2025: China and India in, the United States and the UK out</h3>
-          <p>The Paris Statement is endorsed by {len(paris_states)} States, the European Union and the African Union Commission. It is the broadest instrument of the period and shows a fracture that does not track the China–US axis.</p>
+          <h3>Paris 2025: China and India endorsed; the United States and the United Kingdom did not</h3>
+          <p>The Paris Statement is endorsed by {len(paris_states)} States, the European Union and the African Union Commission. It is the broadest instrument in the corpus. Its list cuts across the US–China axis: China and India are in, the United States and the United Kingdom are out. That is a political alignment, not a legal bloc.</p>
         </div>
-        <p class="paris-metric">{len(paris_states)}<span>signatory States</span></p>
+        <p class="paris-metric">{len(paris_states)}<span>endorsing States</span></p>
       </div>
       <h3 class="matrix-title">Who stands where</h3>
-      <table class="matrix">
-        <caption>Membership derived from the corpus records. “Signature” means signature without ratification.</caption>
-        <thead><tr><th scope="col">Country</th><th scope="col">Paris 2025</th><th scope="col">CETS 225</th></tr></thead>
-        <tbody>{matrix}</tbody>
-      </table>
-      <p class="note">The overlap is the point: the United States and the United Kingdom signed CETS 225 but not the Paris Statement; China endorsed Paris but did not sign CETS 225. Normative alignments do not match military ones.</p>
+      <div class="table-wrap-dark">
+        <table class="matrix">
+          <caption>Paris, Bletchley, Seoul and the military declaration record political endorsement; CETS 225 records treaty signature and ratification. “Signed” means signature without ratification; “Signed + ratified” means both. Data as of 23 November 2026; the military declaration list is dated 27 November 2024.</caption>
+          <thead><tr><th scope="col">State / organisation</th><th scope="col">Paris 2025</th><th scope="col">Bletchley 2023</th><th scope="col">Seoul 2024</th><th scope="col">CETS 225</th><th scope="col">Military AI 2023</th></tr></thead>
+          <tbody>{matrix}</tbody>
+        </table>
+      </div>
+      <p class="note">The overlap is the point. The United States and the United Kingdom signed CETS 225 without ratifying it, but did not endorse Paris. China and India endorsed Paris and Bletchley, but did not sign CETS 225 or the military declaration. France and Germany endorsed Paris and the military declaration, but are not recorded as individual signatories of CETS 225. Political alignment does not map onto treaty participation.</p>
+      <p class="note">Note on Paris: the Élysée page lists 65 endorsers; the 19 February 2025 PDF lists 64; a contemporaneous Canadian release listed 60, including South Africa, the United Arab Emirates and the Holy See. The matrix follows the current Élysée list, which does not include South Africa; the discrepancy is recorded in the Paris record.</p>
+      <p class="takeaway"><strong>What follows legally.</strong> There is no single legal order to join or leave. A State can endorse a political declaration, sign a treaty, ratify it or join a military declaration independently, and the same State can sit in different camps on different instruments. The three-pole image describes regulatory competition; it does not describe legal blocs.</p>
     </div>
   </section>
 
   <section id="maps" class="section">
     <div class="wrap">
-      <p class="eyebrow">03 · Two maps</p>
+      <p class="eyebrow">03 · Five maps</p>
       <h2>Who signs what</h2>
+      <p class="lede">Five instruments, five legal acts. The colour records the act, not the degree of alignment. Non-participation is shown in the same neutral colour for every State.</p>
       <div class="maps">
-        <figure class="map-card">
-          <figcaption><span class="map-title">Paris 2025</span><span class="map-sub">{len(paris_states)} signatory States; EU and AU Commission not shown</span></figcaption>
+        <figure class="map-card map-card-wide">
+          <figcaption><span class="map-title">Paris 2025</span><span class="map-sub">{len(paris_states)} States · EU · AU Commission</span></figcaption>
           {paris_map}
-          <div class="map-legend">
-            <span><i class="swatch" style="background:{TEAL}"></i>Signatory</span>
-            <span><i class="swatch" style="background:{RED}"></i>USA / UK: no</span>
-            <span><i class="swatch" style="background:{LAND}"></i>Non-signatory</span>
-          </div>
-          <p class="note">The list is the Élysée page as accessed on {esc(verified_on)}. The official PDF of 19 February 2025 lists 64; the page lists 65. The difference is documented in the record.</p>
+          <p class="note">Endorsement, not signature or ratification. The Élysée page lists 65 endorsers (63 States, the EU and the AU Commission); the 19 February 2025 PDF lists 64. The difference is documented in the record.</p>
         </figure>
         <figure class="map-card">
-          <figcaption><span class="map-title">CETS 225</span><span class="map-sub">{len(cets_states)} signatory States; 1 State has ratified; EU party not shown</span></figcaption>
+          <figcaption><span class="map-title">Bletchley 2023</span><span class="map-sub">{len(bletchley_states)} States · EU</span></figcaption>
+          {bletchley_map}
+          <p class="note">Political endorsement, not a treaty signature. 28 States and the EU at adoption; New Zealand joined on 23 October 2024.</p>
+        </figure>
+        <figure class="map-card">
+          <figcaption><span class="map-title">Seoul 2024</span><span class="map-sub">{len(seoul_states)} States · EU</span></figcaption>
+          {seoul_map}
+          <p class="note">Leaders' declaration, not a treaty signature. 10 States and the EU. The Seoul Ministerial Statement of 22 May 2024 (27 States and the EU) is a separate document and is not mapped here.</p>
+        </figure>
+        <figure class="map-card">
+          <figcaption><span class="map-title">Military AI 2023</span><span class="map-sub">{len(military_states)} endorsing States</span></figcaption>
+          {military_map}
+          <p class="note">Political endorsement, not a signature or ratification. 58 States as of 27 November 2024; later accessions are not reflected.</p>
+        </figure>
+        <figure class="map-card">
+          <figcaption><span class="map-title">CETS 225</span><span class="map-sub">{len(cets_states)} States · EU · 2 ratifications</span></figcaption>
           {cets_map}
-          <div class="map-legend">
-            <span><i class="swatch" style="background:{BLUE}"></i>Signature + ratification</span>
-            <span><i class="swatch" style="background:{LIGHT_BLUE}"></i>Signature</span>
-            <span><i class="swatch" style="background:{LAND}"></i>Non-signatory</span>
-          </div>
-          <p class="note">Bosnia and Herzegovina ratified on 28 October 2026; the European Union on 15 May 2026. The treaty is not in force: five ratifications are required, including three Council of Europe member States.</p>
+          <p class="note">Treaty signature and ratification. Bosnia and Herzegovina (28 October 2026) and the EU (15 May 2026) have ratified; the treaty is not in force. Five ratifications are required, including three Council of Europe member States. France and Germany are EU member States but are not recorded as individual signatories on the Treaty Office chart.</p>
         </figure>
       </div>
-      <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty.</p>
+      <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. Labels are orientation only. “Endorsed” is used for political declarations, which create no treaty signature or ratification.</p>
+      <p class="source-note"><strong>Selection.</strong> The five maps cover the instruments in the corpus with a published State-level list and a distinct legal act: four political instruments and one treaty. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the OECD and UNESCO recommendations, the EU AI Act, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment.</p>
     </div>
   </section>
 

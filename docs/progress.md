@@ -15,13 +15,14 @@ Last updated: **2026-11-23**. This file records what exists, what is only planne
 - [x] CCW GGE on LAWS catalogued as the first category-6 record, with the 2026 report and 2027–2028 negotiating mandate.
 - [x] EU AI Act, UNESCO Recommendation, UKSDEA, KSDPA, AfCFTA Protocol, military declaration, Bletchley/Seoul/Frontier, NATO, AU, ASEAN, five ISO/IEC standards, CETS explanatory report, EU GPAI Code.
 - [x] Paris AI Action Summit Statement verified on the official Élysée page and PDF: 65 endorsers on the page, 64 in the PDF, 60 in a contemporaneous official release; the discrepancy is recorded, not hidden.
+- [x] Party-level lists reproduced for Bletchley (29 States + EU), Seoul (10 States + EU) and the military AI declaration (58 States); the atlas maps five instruments with a neutral non-participation colour and a supranational marker for the EU and AU Commission.
 - [x] China's Global AI Governance Initiative catalogued as the documented Chinese-pole instrument, with the official English text and the Chinese original cross-checked.
 - [x] UK–US AI Safety MOU (signed 1 April 2024) catalogued from the official GOV.UK publication and press release; the full MOU was not published, so the record is metadata-only and does not infer missing clauses.
 - [x] AfCFTA Digital Trade Protocol rechecked against AU primary documents: adoption, compiled annexes and the Assembly progress report. The record no longer relies on a tralac backgrounder and does not assert a ratification count without the depositary record.
 - [x] ICCPR and VCLT rechecked on OHCHR and the UN Treaty Collection; the VCLT adoption date was corrected to 22 May 1969, with opening for signature on 23 May 1969.
 - [x] US–EU TTC AI-safety dialogue commitment (5 April 2024) catalogued from the official European Commission and USTR joint statement and the NIST/European Commission technical-dialogue pages; recorded as a political commitment in a broader joint statement, not as an MOU or administrative arrangement.
-- [x] Human-readable GitHub Pages atlas generated from the records: two maps, chronology, three-pole analysis, cross-membership matrix and filterable catalogue. The deployment workflow is ready; Pages is enabled, and a push to `main` publishes the atlas.
-- [x] Validator and 17 tests: schema rules, hash integrity, unit-anchor integrity, declarations cannot be binding, Paris/China/US–UK/US–EU record checks, candidate-register counts, deterministic build.
+- [x] Human-readable GitHub Pages atlas generated from the records: five maps, chronology, a three-pole heuristic checked against the legal record, cross-membership matrix and filterable catalogue. The deployment workflow is ready; Pages is enabled, and a push to `main` publishes the atlas.
+- [x] Validator and 21 tests: schema rules, hash integrity, unit-anchor integrity, declarations cannot be binding, Paris/China/US–UK/US–EU record checks, party lists for Bletchley/Seoul/military AI, candidate-register counts, map completeness and neutrality, deterministic build.
 - [x] Research log, coverage matrix, methodology and README updated to actual contents.
 - [x] `build/catalog.json`, `build/CATALOG.md`, `build/checksums.sha256`.
 

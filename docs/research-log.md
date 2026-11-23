@@ -35,6 +35,11 @@ This log records the searches actually run and their outcome. It is not a list o
 | 25 | US–EU AI Safety Dialogue and TTC joint statement | Determine whether a standalone US–EU AI-safety agreement exists | European Commission and USTR TTC joint statement, 5 April 2024: the European AI Office and US AI Safety Institute “committed to establishing a Dialogue”; no standalone MOU, administrative arrangement or terms of reference located; NIST and European Commission pages confirm the first technical dialogue on 11 July 2024 |
 | 26 | AfCFTA Digital Trade Protocol adoption, annexes and ratification status | Replace a secondary status account with AU primary sources | AU treaty pages: adoption 18 February 2024; compiled annexes adopted by the 38th Assembly in February 2025; Assembly/AU/9(XXXVIII), para. 25; the AU page displays no entry-into-force date or ratification table; depositary record not read, so no ratification count asserted |
 | 27 | ICCPR and VCLT official treaty pages | Recheck the two general-treaty records | OHCHR: adopted 16 December 1966, entry into force 23 March 1976; UNTC: VCLT adopted 22 May 1969, opened for signature 23 May 1969, entry into force 27 January 1980, 45 signatories and 119 parties at 2 November 2026 |
+| 28 | Three poles AI governance; AI regime complex; AI governance blocs | Test the three-pole/bloc framing against current scholarship | Literature does not converge on a tripolar legal order: regime-complex research finds fragmentation and no focal institution; comparative work treats the US/China/EU models as ideal types; 2026 policy analysis describes two consolidating architectures plus a UN track and notes overlapping membership. Used in section 02, with links to Geith/Lundgren/Tallberg 2026, Mokry 2024, CSIS 2026 and Tiberghien 2026 |
+| 29 | Bletchley Declaration signatories and New Zealand accession | Party-level data for the map | GOV.UK: 28 States and the EU at adoption; New Zealand joined 23 October 2024; 29 States and the EU in total |
+| 30 | Seoul Declaration signatories | Party-level data and scope | GOV.UK and the Australian government note: 10 States and the EU at the Leaders' Session; the separate Seoul Ministerial Statement of 22 May 2024 had 27 States and the EU |
+| 31 | Political Declaration on Responsible Military Use of AI and Autonomy endorsing States | Party-level data for the map | U.S. State Department: 58 endorsing States as of 27 November 2024; list reproduced party by party |
+| 32 | CETS 225 France and Germany signature status | Verify the cross-membership matrix | Official CoE Treaty Office chart and AI page: 21 signatories; France and Germany are not recorded as individual signatories; the EU signed and ratified |
 
 ## Documents read or acquired
 
@@ -49,6 +54,8 @@ This log records the searches actually run and their outcome. It is not a list o
 - OHCHR page for the ICCPR and UN Treaty Collection page for the VCLT, read to correct the VCLT adoption/opening dates and verify the general-treaty metadata.
 - Official pages for UNESCO, OECD, EUR-Lex, UK Treaty Series, Singapore MTI, AU, ASEAN, NATO, ISO, GOV.UK.
 - CETS 225 Treaty Office chart (status 23/11/2026), declarations page and EU instrument texts. The chart/declaration data is preserved in `corpus/coe-cets-225/status/coe-cets-225-status-2026-11-23.json`; this is a local snapshot, not a CoE-generated export.
+- GOV.UK Bletchley Declaration page and update note; GOV.UK Seoul Declaration text; U.S. State Department Political Declaration page (endorsers as of 27 November 2024); Council of Europe Treaty Office chart for CETS 225 (status 17/11/2026, read 23/11/2026).
+- Secondary literature for the analytical frame only: Geith, Lundgren & Tallberg, “The Emerging Regime Complex for Artificial Intelligence”, *Global Studies Quarterly* 6(4) (2026); Mokry, “Competing ambitions regarding the global governance of artificial intelligence”, *Global Policy* (2024); CSIS, “The State of AI Global Governance and Its Implications for the U.S.-China Summit” (2026); Tiberghien, “Three competing approaches to global AI governance”, *East Asia Forum* (2026).
 - CCW/GGE.1/2026/3 final report and CCW/CONF.VII/CRP.1/Rev.3 final document of the Seventh Review Conference.
 
 ## Access failures and how they are recorded
@@ -71,6 +78,8 @@ Search snippets were used to locate candidates and, in some cases, to read an of
 - full text stored and checked;
 - official page/excerpt read;
 - official source merely located.
+
+Secondary literature is used only in the atlas's analytical frame (section 02) and is cited there. It is not used to establish the legal status, parties or dates of any instrument; those remain based on primary sources.
 
 The candidate register contains 20 entries: 6 included (ISO/IEC 23053, the CCW GGE on LAWS, the Paris AI Action Summit Statement, China's Global AI Governance Initiative, the UK–US AI Safety MOU and the US–EU TTC AI-safety dialogue commitment), 7 pending and 7 excluded. Pending items include the International AI Safety Report, Council of Europe Recommendation CM/Rec(2020)1, ITU-T Y.3172, IEEE 7000 and CEN-CENELEC JTC 21.
 

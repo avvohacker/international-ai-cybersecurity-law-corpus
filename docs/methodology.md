@@ -58,6 +58,8 @@ Sources are never overwritten. If a later retrieval differs from the registered 
 - Signature, ratification, acceptance, approval, accession and entry into force are separate fields.
 - Reservations, declarations, objections, notifications and withdrawals are separate lists.
 - A Party's position is never inferred from the position of an international organisation of which it is a member. The EU is recorded as a party to CETS 225 only because the EU deposited an instrument; EU member States are not thereby recorded as parties.
+- Political declarations have no signature or ratification. Their records list endorsers in `parties.entries`; the atlas labels the act as endorsement, not signature, and uses a separate marker for international organisations.
+- Party names are normalized to a common English form for matching across records; the official spelling remains on the source page.
 - Where a party table could not be captured, aggregate counts are stored with the exact status date, and the missing rows are listed in `parties.unknowns`.
 
 ## 6. Rights
