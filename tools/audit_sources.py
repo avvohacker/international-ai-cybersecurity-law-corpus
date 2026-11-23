@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit the official links used by the atlas instrument panels.
+"""Audit the official links used by the atlas instrument panels or by every record.
 
 The audit is deliberately separate from ``make test``. It is the only part of
 this repository that touches the network; the tests exercise ``classify`` with
@@ -8,6 +8,8 @@ synthetic responses and never call ``probe``.
 Usage:
     python3 tools/audit_sources.py
     python3 tools/audit_sources.py --json --output build/link-audit.json
+    python3 tools/audit_sources.py --scope catalog --workers 8 \\
+        --json --output build/catalog-link-audit.json
     python3 tools/audit_sources.py --only waico-establishment-agreement-2026
 
 Exit status:
@@ -27,6 +29,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
@@ -97,8 +100,22 @@ class Result:
     detail: str = ""
 
 
+CATALOG_SOURCE_KINDS = build_site.OFFICIAL_SOURCE_KINDS | {"official_secondary"}
+
+
+def _target(instrument_id: str, source: dict) -> Target:
+    return Target(
+        instrument_id=instrument_id,
+        source_id=source["id"],
+        label=build_site.SOURCE_LABELS.get(
+            source["id"], source.get("publisher") or source["id"]
+        ),
+        url=source["url"],
+    )
+
+
 def targets() -> list[Target]:
-    """Return the official links used by the eight map panels."""
+    """Return the official links used by the nine map panels."""
     instruments = corpuslib.load_instruments()
     found: list[Target] = []
     for instrument_id in build_site.MAP_INSTRUMENT_IDS:
@@ -109,16 +126,27 @@ def targets() -> list[Target]:
             url = source.get("url")
             if not url:
                 continue
-            found.append(
-                Target(
-                    instrument_id=instrument_id,
-                    source_id=source["id"],
-                    label=build_site.SOURCE_LABELS.get(
-                        source["id"], source.get("publisher") or source["id"]
-                    ),
-                    url=url,
-                )
-            )
+            found.append(_target(instrument_id, source))
+    return sorted(found, key=lambda target: (target.instrument_id, target.source_id))
+
+
+def catalog_targets() -> list[Target]:
+    """Return every official source link in the 45-record catalogue.
+
+    ``official_secondary`` pages are included because they are official
+    government or institutional publications. The two clearly secondary
+    sources are excluded. Duplicate URLs are kept because each result is
+    attached to its record and source id.
+    """
+    instruments = corpuslib.load_instruments()
+    found: list[Target] = []
+    for instrument_id, inst in sorted(instruments.items()):
+        for source in inst.get("sources") or []:
+            if source.get("kind") not in CATALOG_SOURCE_KINDS:
+                continue
+            if not source.get("url"):
+                continue
+            found.append(_target(instrument_id, source))
     return sorted(found, key=lambda target: (target.instrument_id, target.source_id))
 
 
@@ -273,6 +301,13 @@ def probe(target: Target, timeout: float) -> Result:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--timeout", type=float, default=15.0)
+    parser.add_argument(
+        "--scope",
+        choices=("panels", "catalog"),
+        default="panels",
+        help="panels: nine map panels; catalog: every official source in all records",
+    )
+    parser.add_argument("--workers", type=int, default=1, help="parallel probes (default 1)")
     parser.add_argument("--json", action="store_true", help="print JSON instead of a table")
     parser.add_argument("--output", type=Path, help="write the JSON report to this path")
     parser.add_argument("--only", help="audit only this instrument id")
@@ -283,17 +318,22 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args(argv)
 
-    selected = targets()
+    selected = catalog_targets() if args.scope == "catalog" else targets()
     if args.only:
         selected = [target for target in selected if target.instrument_id == args.only]
         if not selected:
             print(f"no official links found for instrument {args.only!r}", file=sys.stderr)
             return 2
 
-    results = [probe(target, args.timeout) for target in selected]
+    if args.workers > 1:
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            results = list(pool.map(lambda target: probe(target, args.timeout), selected))
+    else:
+        results = [probe(target, args.timeout) for target in selected]
     summary = Counter(result.outcome for result in results)
     payload = {
         "checked": len(results),
+        "scope": args.scope,
         "instruments": len({result.instrument_id for result in results}),
         "summary": {
             key: summary.get(key, 0)
@@ -311,8 +351,8 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(payload, indent=2, ensure_ascii=False))
     else:
         print(
-            f"Link audit: {payload['checked']} official links in "
-            f"{payload['instruments']} instrument panels"
+            f"Link audit ({args.scope}): {payload['checked']} official links in "
+            f"{payload['instruments']} instruments"
         )
         marks = {
             "ok": "OK",

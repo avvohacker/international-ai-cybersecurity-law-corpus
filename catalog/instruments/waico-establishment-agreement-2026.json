@@ -184,13 +184,13 @@
     },
     {
       "id": "bss-bangladesh-observer",
-      "url": "https://b.bssnews.net/news/410714",
+      "url": "https://www.bssnews.net/news/410714",
       "publisher": "Bangladesh Sangbad Sangstha (BSS), national news agency",
       "kind": "official_secondary",
       "accessed": "2026-11-23",
       "http_status": 200,
       "language": "en",
-      "note": "Report of 1 August 2026 quoting the Ministry of Foreign Affairs statement that Bangladesh has decided to join WAICO 'initially as an observer'. It does not describe Bangladesh as a founding member and does not say that an observer application has been approved by the Council."
+      "note": "Report of 1 August 2026 quoting the Ministry of Foreign Affairs statement that Bangladesh has decided to join WAICO 'initially as an observer'. It does not describe Bangladesh as a founding member and does not say that an observer application has been approved by the Council. The newspaper-host URL uses the main www.bssnews.net host; the b.bssnews.net subdomain does not resolve."
     },
     {
       "id": "thestar-singapore-invite",

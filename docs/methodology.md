@@ -80,7 +80,7 @@ The build uses Python's standard library only and does not access the network. I
 
 The determinism test builds twice and compares the bytes. Network acquisition and PDF extraction are separate commands; their outputs are stored, so a rebuild from the repository does not depend on the network or on a PDF library. The atlas is generated from the catalogue, the stored Natural Earth boundaries and the organisation membership lists in `data/organisations.json`; it is not an independent dataset.
 
-The link audit is a third, network-only command: `make audit-links` or `python3 tools/audit_sources.py`. It checks the official links used by the eight instrument panels, classifies broken links separately from anti-bot blocks and transient errors, and is deliberately excluded from `make test`.
+The link audit is a third, network-only command: `make audit-links` or `python3 tools/audit_sources.py`. It checks the official links used by the nine instrument panels, classifies broken links separately from anti-bot blocks and transient errors, and is deliberately excluded from `make test`.
 
 ## 8. Limits of this cycle
 
@@ -97,3 +97,41 @@ The corpus is a register of written instruments. It covers treaties, declaration
 - unilateral acts and national legislation, except the EU AI Act.
 
 These are scope limits, not findings that the sources are irrelevant. A claim about “international AI law” in this repository is a claim about the written instruments catalogued, not about the whole of international law. The audit of other candidates and the reason each was included, left pending or excluded is recorded in `catalog/candidates.json`, `docs/research-log.md` and `docs/coverage.md`.
+
+## 10. Scope review: why two instruments were nearly missed
+
+The first cycle exposed two near-misses: **A/HRC/RES/63/15** (6 October 2026), a dedicated AI and human-rights resolution of the Human Rights Council, and the **2025 BRICS leaders’ statement on global AI governance**. Both are now in the corpus. The reasons they were nearly missed matter more than the repairs.
+
+### 10.1 Two different questions were being treated as one
+
+Corpus scope answers: *is this an international AI instrument with an official text and an identifiable issuer?* Map scope answers: *is there a published State-level list of an individual legal act that can be drawn on a world map?* The first cycle sometimes used the second question to answer the first. The BRICS statement was set aside because it has no individual signature block. That is a reason not to draw eleven separate signatures; it is not a reason to leave a collective intergovernmental statement out of the corpus. The Human Rights Council resolution was set aside because the discovery path was organized around treaties, the UN General Assembly, summits and standards, and the Council was not a separate source family in the working checklist. It is an AI-specific resolution by a subsidiary organ of the UN with an official text and a recorded adoption; it belongs in the corpus even though it is non-binding and has no party list.
+
+### 10.2 Revised inclusion rule
+
+An instrument enters the corpus when all of the following hold:
+
+1. It has an AI-specific object or an express, more-than-incidental AI provision.
+2. Its issuer is an intergovernmental body, an international organisation, a treaty body or another authoritative standard-setter; national legislation remains outside the corpus except the EU AI Act as supranational law.
+3. An official text, official excerpt or official status page is available and cited.
+4. The record can state the act and its legal nature without inventing a signature, ratification or party where none exists.
+
+The legal family, the forum and the presence of an individual signature block are not inclusion tests. A collective statement, a resolution adopted without a vote and a treaty opened for signature can all qualify. The record must distinguish **issuing States**, **endorsers**, **signatories**, **ratifying States** and **members of an organisation** rather than forcing them into one vocabulary.
+
+### 10.3 Maps are a view, not a gate
+
+A record may be in the corpus without being mapped. A map requires a published State-level act: an individual signature, ratification, endorsement or a collective issue attributable to named States. When a record cannot be mapped, the reason is written in the page and in this methodology, not left implicit. The BRICS map is therefore a map of **issuing States**, with a distinct status and legend; it is not presented as eleven signatures. The New Delhi map is a map of **endorsers**; the CETS 225 map is a map of **signatures and ratifications**; the WAICO map is a map of **signatures**, not approvals. The map key and the record use the same verb.
+
+### 10.4 Source-family watchlist and omission test
+
+Every cycle checks the following families even when no new instrument is expected: AI-specific treaties; UN General Assembly; UN Security Council; Human Rights Council; UN system recommendations; Council of Europe; G7; G20; BRICS; the AI summit series; China-led instruments; US-led instruments; military AI (UNODA, CCW, First Committee); trade agreements with AI provisions; regional organisations (EU, AU, ASEAN, NATO and regional human-rights bodies); technical standards; multistakeholder calls; and general international law relevant to AI. A family with no qualifying instrument is recorded as a **negative result with its register and date**, not omitted from the checklist.
+
+The omission test at the end of a cycle is deliberately mechanical:
+
+- compare the records with the candidate register: every included candidate has a record, and every excluded or pending candidate has a written reason;
+- compare the records with the source-family checklist: every family has a result, including a negative one;
+- compare the records with the map list: every record with a published State-level act is either mapped or has a written map-exclusion reason;
+- re-read the source families that produced the last near-misses (Human Rights Council and BRICS) before closing the cycle.
+
+### 10.5 What this changes in practice
+
+The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has nine maps and 45 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.

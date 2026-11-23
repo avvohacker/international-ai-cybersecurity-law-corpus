@@ -428,12 +428,14 @@ class TestBuild(unittest.TestCase):
 
         build_site.main()
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(page.count('class="map-frame"'), 8)
-        self.assertEqual(page.count('class="map-key"'), 8)
+        self.assertEqual(page.count('class="map-frame"'), 9)
+        self.assertEqual(page.count('class="map-key"'), 9)
+        self.assertEqual(page.count('class="map-participation"'), 9)
+        self.assertNotIn('class="map-sub"', page)
         figures = re.findall(r'<figure class="map-card">(.*?)</figure>', page, re.S)
-        self.assertEqual(len(figures), 8)
+        self.assertEqual(len(figures), 9)
         self.assertNotIn("What it is", page)
-        self.assertEqual(page.count('class="reading"'), 3)
+        self.assertEqual(page.count('class="reading"'), 4)
         self.assertEqual(page.count('<table class="record-table'), 2)
         by_title = {
             re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
@@ -449,6 +451,7 @@ class TestBuild(unittest.TestCase):
                 "Military AI 2023",
                 "Bletchley 2023",
                 "Pax Silica 2025",
+                "BRICS 2025",
                 "Seoul 2024",
             ],
         )
@@ -493,11 +496,29 @@ class TestBuild(unittest.TestCase):
         self.assertIn("State: signed only", page)
         self.assertIn("States only", page)
         self.assertIn("37 confirmed of 38 reported", page)
-        self.assertEqual(page.count('class="map-parties"'), 8)
+        self.assertEqual(page.count('class="map-parties"'), 9)
         self.assertEqual(by_title["New Delhi 2026"].count('fill="#a9c0e0"'), 0)
         self.assertIn('data-status="Ratified"', page)
         self.assertIn('data-status="Signed only"', page)
         self.assertIn('data-status="Endorsed"', page)
+        self.assertIn('data-status="Issuing States"', page)
+        self.assertIn("State: issuing government (collective statement)", page)
+
+    def test_timeline_lists_every_record_and_sections_follow_the_new_order(self) -> None:
+        import build_site
+
+        build_site.main()
+        page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        ids = set(re.findall(r'<li data-instrument-id="([^"]+)"', page))
+        self.assertEqual(ids, set(corpuslib.load_instruments()))
+        self.assertEqual(page.count('data-instrument-id='), 45)
+        self.assertIn("02 · Nine maps", page)
+        self.assertIn("The treaties, declarations and statements", page)
+        self.assertIn("03 · How we got here", page)
+        self.assertIn("04 · Geopolitics", page)
+        self.assertIn("How to read the legal instruments, geopolitically", page)
+        self.assertLess(page.find('id="maps"'), page.find('id="timeline"'))
+        self.assertLess(page.find('id="timeline"'), page.find('id="geopolitics"'))
 
     def test_map_order_follows_binding_then_adopters(self) -> None:
         import build_site
@@ -515,6 +536,7 @@ class TestBuild(unittest.TestCase):
                 "Military AI 2023",
                 "Bletchley 2023",
                 "Pax Silica 2025",
+                "BRICS 2025",
                 "Seoul 2024",
             ],
         )
@@ -528,6 +550,7 @@ class TestBuild(unittest.TestCase):
             ("CETS 225", "coe-cets-225"),
             ("WAICO 2026", "waico-establishment-agreement-2026"),
             ("Pax Silica 2025", "pax-silica-declaration-2025"),
+            ("BRICS 2025", "brics-ai-statement-2025"),
         ):
             official = html.escape(instruments[iid]["title"]["official"])
             self.assertIn(
@@ -630,7 +653,7 @@ class TestBuild(unittest.TestCase):
 
         build_site.main()
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(page.count('class="map-about"'), 8)
+        self.assertEqual(page.count('class="map-about"'), 9)
         figures = {
             re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
             for figure in re.findall(
@@ -646,6 +669,7 @@ class TestBuild(unittest.TestCase):
             ("CETS 225", "coe-cets-225"),
             ("WAICO 2026", "waico-establishment-agreement-2026"),
             ("Pax Silica 2025", "pax-silica-declaration-2025"),
+            ("BRICS 2025", "brics-ai-statement-2025"),
         ]
         for title, iid in cases:
             record = read_instrument(iid)
@@ -770,7 +794,7 @@ class TestBuild(unittest.TestCase):
         self.assertIn("New Zealand joined on 23 October 2024", bletchley["status_note"])
         self.assertIn("Seoul Ministerial Statement of 22 May 2024", page)
         self.assertIn("22 May 2024", seoul["status_note"])
-        self.assertIn("report due 2028", page)
+        self.assertIn("report to the 2028 Meeting of High Contracting Parties", page)
         self.assertIn("2028 Meeting of High Contracting Parties", ccw["status_note"])
         self.assertIn(
             "Five ratifications are required, including three Council of Europe member States",
@@ -780,7 +804,7 @@ class TestBuild(unittest.TestCase):
             "five ratifications including at least three Council of Europe member States",
             cets["status_note"],
         )
-        self.assertIn("three ratifications required, Article 15", page)
+        self.assertIn("Article 15 requires three instruments of ratification", page)
         self.assertIn("three instruments of ratification", waico["status_note"])
         self.assertIn("54 endorsers as of September 2026", page)
         self.assertIn("54 endorsers as of September 2026", pax["parties"]["unknowns"][-1])
@@ -832,11 +856,21 @@ class TestLinkAudit(unittest.TestCase):
             ("broken", "http_404"),
         )
 
-    def test_targets_cover_the_eight_panels(self) -> None:
+    def test_catalog_targets_cover_all_official_sources(self) -> None:
+        targets = self.audit.catalog_targets()
+        self.assertEqual(len(targets), 112)
+        self.assertEqual(len({target.instrument_id for target in targets}), 45)
+        self.assertTrue(all(target.url.startswith("https://") for target in targets))
+        self.assertEqual(
+            targets,
+            sorted(targets, key=lambda target: (target.instrument_id, target.source_id)),
+        )
+
+    def test_targets_cover_the_nine_panels(self) -> None:
         import build_site
 
         targets = self.audit.targets()
-        self.assertEqual(len(build_site.MAP_INSTRUMENT_IDS), 8)
+        self.assertEqual(len(build_site.MAP_INSTRUMENT_IDS), 9)
         self.assertEqual(
             {target.instrument_id for target in targets},
             set(build_site.MAP_INSTRUMENT_IDS),

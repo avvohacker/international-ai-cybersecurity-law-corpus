@@ -90,7 +90,7 @@ The build is offline and deterministic; it needs only Python 3.12 and the standa
 ```bash
 make validate     # schema and cross-record checks
 make build        # build/catalog.json, CATALOG.md, checksums.sha256
-make test         # build + 35 integrity/determinism tests
+make test         # build + 37 integrity/determinism tests
 make site         # build + generate the static atlas in site/
 ```
 
@@ -117,19 +117,20 @@ python3 tools/acquire.py                  # fetch missing originals, never overw
 
 ## Human-readable atlas (GitHub Pages)
 
-The generated page is a consultable public catalogue: counts, eight maps with the recorded parties listed under each map, an analytical section that reads the “three poles” image against the record, a chronology, and a filterable catalogue. The analytical section opens with a table of the instruments’ legal form, participation and status, then sets out three readings (regulatory models, institutional vehicles and diplomatic coalitions), a vocabulary of member, signatory, endorser, observer and ratification, and the sources used. Each map carries the instrument’s full official title on the same line as its short locator, plus a panel with its description, dates, history and links to its official sources, all read from the record. It is built from the same records, with no editorial database of its own. The membership lists used by the maps are in `data/organisations.json`, with the official EU and AU sources and access dates; the page does not hold a separate dataset.
+The generated page is a consultable public catalogue: counts, nine maps with the recorded parties listed under each map, an analytical section that reads the geopolitical competition behind the instruments, a complete chronology of all 45 records, and a filterable catalogue. The analytical section is section 04, “How to read the legal instruments, geopolitically”. It opens with a table of the instruments’ legal form, participation and status, then sets out four readings (technological competition, forum choice, hedging and overlapping coalitions, and the limits of legal form), a vocabulary of member, signatory, endorser, observer and ratification, and the sources used. The timeline lists every record with its date, title, category, legal force, status and source note. Each map carries the instrument’s full official title on the same line as its short locator, the participation count immediately below the title, plus a panel with its description, dates, history and links to its official sources, all read from the record. It is built from the same records, with no editorial database of its own. The membership lists used by the maps are in `data/organisations.json`, with the official EU and AU sources and access dates; the page does not hold a separate dataset.
 
 ```bash
 make site        # validates, builds and regenerates site/index.html
 ```
 
-The official links used by the eight instrument panels can be audited separately:
+The official links used by the nine instrument panels, and all official source links in the 45 records, can be audited separately:
 
 ```bash
-make audit-links
+make audit-links          # nine map panels
+make audit-catalog-links  # every official source entry in all 45 records
 ```
 
-The audit is network-only and classifies broken links separately from anti-bot blocks; `make test` never touches the network.
+The catalog-wide run writes `build/catalog-link-audit.json`. Both audits are network-only and classify broken links separately from anti-bot blocks and transient errors; `make test` never touches the network. The 23 November 2026 run checked 112 entries (111 unique URLs): 78 resolved, 26 anti-bot, 2 broken and 6 transient. The two broken entries are the `brics.br` URLs that do not resolve by DNS from this environment; they are reported, not replaced with an unofficial source.
 
 The static output lives in `site/`; run `make site` to generate `site/index.html` locally, or publish it with the workflow in `.github/workflows/pages.yml`. The generated HTML is not tracked, so a fresh clone rebuilds it from the records. Pages is already enabled with **Settings → Pages → Source: GitHub Actions**; the workflow publishes on push to `main`. After the workflow runs, the page is served at `https://avvohacker.github.io/international-ai-law-corpus/`. The workflow rebuilds the catalogue and the atlas before uploading, so the published page cannot silently drift from the records.
 
@@ -175,7 +176,7 @@ Not legal advice. Before quoting or relying on an instrument, check the official
 
 ## Summary
 
-This repository builds a first verifiable corpus of international AI law. It contains 45 catalogued instruments, 16 stored full texts and 15 originals with SHA-256 hashes. The two treaties specifically dedicated to AI are the Council of Europe Framework Convention (CETS 225), with 21 signatures and 2 ratified instruments, and the WAICO Establishment Agreement, with 38 reported founding members; neither is in force as of 23 November 2026. The CCW GGE on LAWS is the only record in category 6 (negotiations in progress), with no adopted instrument. The other binding agreements with AI provisions are digital trade agreements (DEPA, SADEA, UKSDEA, KSDPA, AfCFTA protocol), with cooperative rather than prescriptive clauses. The 2025 Paris Statement (63 States, the EU and the AU Commission; China and India endorsed, the United States and the UK did not), the 2023 Chinese initiative, the 2025 Pax Silica Declaration (26 signatories), the 2025 BRICS leaders’ statement (issued collectively by 11 member States) and the 2026 New Delhi Declaration (92 itemised endorsers: 90 States, the EU and IFAD) document competing political coalitions and summit declarations without creating legal blocs. The atlas treats the three-pole image as a heuristic, not a legal classification: the eight maps, with the recorded parties listed under each map, show that treaty participation and political endorsement cut across it. The 2024 UK–US MOU and the US–EU TTC AI-safety dialogue commitment add the transatlantic layer: one bilateral MOU whose full text is unpublished, and one political commitment inside a broader joint statement. The corpus distinguishes binding and non-binding instruments, full texts and metadata-only records, verified and unknown data. It is not complete: gaps, searches performed and checks run are documented in `docs/`.
+This repository builds a first verifiable corpus of international AI law. It contains 45 catalogued instruments, 16 stored full texts and 15 originals with SHA-256 hashes. The two treaties specifically dedicated to AI are the Council of Europe Framework Convention (CETS 225), with 21 signatures and 2 ratified instruments, and the WAICO Establishment Agreement, with 38 reported founding members; neither is in force as of 23 November 2026. The CCW GGE on LAWS is the only record in category 6 (negotiations in progress), with no adopted instrument. The other binding agreements with AI provisions are digital trade agreements (DEPA, SADEA, UKSDEA, KSDPA, AfCFTA protocol), with cooperative rather than prescriptive clauses. The 2025 Paris Statement (63 States, the EU and the AU Commission; China and India endorsed, the United States and the UK did not), the 2023 Chinese initiative, the 2025 Pax Silica Declaration (26 signatories), the 2025 BRICS leaders’ statement (issued collectively by 11 member States) and the 2026 New Delhi Declaration (92 itemised endorsers: 90 States, the EU and IFAD) document competing political coalitions and summit declarations without creating legal blocs. The atlas treats the three-pole image as a heuristic, not a legal classification: the nine maps, with the recorded parties or issuing States listed under each map, show that treaty participation and political endorsement cut across it. The 2025 BRICS statement is the ninth map, drawn as 11 issuing States rather than 11 individual signatures. The 2024 UK–US MOU and the US–EU TTC AI-safety dialogue commitment add the transatlantic layer: one bilateral MOU whose full text is unpublished, and one political commitment inside a broader joint statement. The corpus distinguishes binding and non-binding instruments, full texts and metadata-only records, verified and unknown data. It is not complete: gaps, searches performed and checks run are documented in `docs/`.
 
 ## Documentation
 
