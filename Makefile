@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: validate build test extract segment checksums
+.PHONY: validate build test extract segment checksums site
 
 validate:
 	$(PY) tools/build.py --check
@@ -10,6 +10,9 @@ build:
 
 test: build
 	$(PY) -m unittest discover -s tests -v
+
+site: build
+	$(PY) tools/build_site.py
 
 # Example: make extract ID=un-ga-res-78-265 SRC=source/A_RES_78_265-en.pdf
 extract:

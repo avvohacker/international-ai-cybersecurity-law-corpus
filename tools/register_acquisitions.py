@@ -92,6 +92,20 @@ SOURCES = [
         "Australia-Singapore Digital Economy Agreement, text reproduced on the Singapore Government Isomer platform.",
     ),
     (
+        "paris-ai-action-summit-statement-2025",
+        "source/statement-2025-02-11-en.pdf",
+        "https://www.elysee.fr/admin/upload/default/0001/17/0efc53b2025d5bc1f0fc68556c41370cee166e7f.pdf",
+        "application/pdf",
+        "Official Élysée PDF of the Paris AI Action Summit statement, published 19 February 2025.",
+    ),
+    (
+        "china-global-ai-governance-initiative-2023",
+        "source/global-ai-governance-initiative-en.html",
+        "https://www.mfa.gov.cn/mfa_eng/zy/gb/202405/t20240531_11367503.html",
+        "text/html; charset=utf-8",
+        "Official English text of China's Global AI Governance Initiative, Ministry of Foreign Affairs.",
+    ),
+    (
         "g7-hiroshima-code-2023",
         "source/HAIP-Code-of-Conduct-2023-10-30-en.pdf",
         "https://www.soumu.go.jp/hiroshimaaiprocess/pdf/document05_en.pdf",

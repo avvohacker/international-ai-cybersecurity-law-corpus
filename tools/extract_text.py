@@ -49,8 +49,20 @@ def extract_pdf(path: Path) -> tuple[str, list[dict]]:
     return body, pages
 
 
-def extract_html(path: Path) -> tuple[str, list[dict]]:
+def extract_html(
+    path: Path, start_marker: str | None = None, end_marker: str | None = None
+) -> tuple[str, list[dict]]:
     raw = path.read_text(encoding="utf-8", errors="replace")
+    if start_marker:
+        start = raw.find(start_marker)
+        if start < 0:
+            raise SystemExit(f"start marker not found: {start_marker!r}")
+        raw = raw[start:]
+    if end_marker:
+        end = raw.find(end_marker)
+        if end < 0:
+            raise SystemExit(f"end marker not found: {end_marker!r}")
+        raw = raw[:end]
     raw = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", "", raw)
     raw = re.sub(r"(?i)<br\s*/?>", "\n", raw)
     raw = re.sub(r"(?i)</(p|div|li|h[1-6]|tr|article)>", "\n", raw)
@@ -66,6 +78,8 @@ def main() -> int:
     parser.add_argument("source", help="path relative to corpus/<id>/")
     parser.add_argument("--out", default="text/en.txt")
     parser.add_argument("--mode", choices=["pdf", "html"], default="pdf")
+    parser.add_argument("--html-start", help="optional literal marker to start HTML extraction")
+    parser.add_argument("--html-end", help="optional literal marker to end HTML extraction")
     args = parser.parse_args()
 
     base = CORPUS_DIR / args.instrument_id
@@ -75,7 +89,7 @@ def main() -> int:
     if args.mode == "pdf":
         body, pages = extract_pdf(src)
     else:
-        body, pages = extract_html(src)
+        body, pages = extract_html(src, args.html_start, args.html_end)
     out = base / args.out
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(body, encoding="utf-8")

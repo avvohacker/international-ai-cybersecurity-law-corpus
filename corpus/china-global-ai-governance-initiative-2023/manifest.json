@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 25152,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official English text of China's Global AI Governance Initiative, Ministry of Foreign Affairs.",
+      "path": "source/global-ai-governance-initiative-en.html",
+      "role": "original",
+      "sha256": "073933c76fa44d0cf1f30d1cbe95b17ad6a625f29abd12024e3550f2adde5b59",
+      "source_url": "https://www.mfa.gov.cn/mfa_eng/zy/gb/202405/t20240531_11367503.html"
+    },
+    {
+      "bytes": 6423,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "7dd0fb5ea3c4eb13f227d1ff9cd2082ad4d0fc24de38ca9e49bf80748fe9e3cf"
+    },
+    {
+      "bytes": 129,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "e0f23e37b61841d9031ec08bb3d34dbe358aea3f728c29f37511a1b0f7aaff26"
+    },
+    {
+      "bytes": 6684,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "a02a56553d2035eeb8e54f554e9ef6563ecca2ca2de446d98201c7c6939adcb7"
+    }
+  ],
+  "instrument_id": "china-global-ai-governance-initiative-2023",
+  "primary_text": "text/en.txt"
+}

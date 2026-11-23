@@ -19,17 +19,19 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 | Bilateral digital agreements | 4 | DEPA, SADEA, UKSDEA, KSDPA | other bilateral AI clauses and MOUs; depositary records |
 | Military AI initiatives | 4 | Political Declaration, two UNGA tracks, CCW GGE negotiation | no binding instrument; 2027–2028 negotiating text; REAIM outcomes |
 | General international law | 2 | ICCPR, VCLT | other general treaties (e.g. Geneva Conventions, Convention 108+) |
+| AI Action Summit (France–India) | 1 | Paris Statement (2025), 65 endorsers | endorser list inconsistent across official publications (60/64/65); no depositary or update log |
+| China (MFA) | 1 | Global AI Governance Initiative (2023) | unilateral; no formal adherence list; 2025 Action Plan not separately catalogued |
 
 ## By region
 
 | Region | Coverage | Gap assessment |
 |---|---|---|
 | Europe | Strongest: CETS 225, EU AI Act, CoE explanatory report, OECD, NATO | CoE party data captured; Council of Europe Recommendation CM/Rec(2020)1 pending |
-| North America | U.S. military declaration; general treaties | no U.S.–UK/US–EU AI-safety arrangement verified; no bilateral AI treaty |
-| Latin America and Caribbean | Only Chile’s participation in DEPA | no regional AI instrument verified; no bilateral Latin American AI agreement |
-| Africa | AU strategy; AfCFTA protocol; Kenya and Nigeria in AI declarations | no AU AI treaty; AfCFTA not in force; ratification status secondary |
-| Asia-Pacific | DEPA, SADEA, UKSDEA, KSDPA, ASEAN Guide; China/India in Bletchley | no regional binding AI treaty; many bilateral digital agreements not checked |
-| Middle East | UAE, Saudi Arabia, Israel in Bletchley/military declaration | no regional or bilateral AI treaty verified |
+| North America | U.S. military declaration; general treaties; U.S. and Canada signed CETS 225 (not ratified) | U.S. did not endorse the Paris Statement; no U.S.–UK/US–EU AI-safety arrangement verified; no bilateral AI treaty |
+| Latin America and Caribbean | Chile in DEPA; Brazil, Chile, Colombia, Peru and Uruguay endorsed the Paris Statement | no regional AI instrument verified; no bilateral Latin American AI agreement |
+| Africa | AU strategy; AfCFTA protocol; Kenya and Nigeria in AI declarations; many African States endorsed the Paris Statement | no AU AI treaty; AfCFTA not in force; ratification status secondary |
+| Asia-Pacific | DEPA, SADEA, UKSDEA, KSDPA, ASEAN Guide; China/India in Bletchley; China's initiative; China and India endorsed the Paris Statement | no regional binding AI treaty; many bilateral digital agreements not checked |
+| Middle East | UAE, Saudi Arabia, Israel in Bletchley/military declaration; Israel signed CETS 225 | no regional or bilateral AI treaty verified |
 | Central Asia / Caucasus | Armenia, Azerbaijan, Georgia in CoE process | no dedicated instrument verified |
 
 ## By category
@@ -38,7 +40,7 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 |---|---:|---|
 | `ai_treaty` | 1 | CETS 225 only |
 | `agreement_ai_provisions` | 5 | all digital/trade; cooperative AI clauses |
-| `non_binding_instrument` | 19 | UN resolutions, declarations, strategies, codes |
+| `non_binding_instrument` | 21 | UN resolutions, declarations, strategies, codes; Paris Statement and China initiative |
 | `preparatory_interpretive` | 2 | CETS explanatory report; EU GPAI Code |
 | `technical_standard` | 5 | ISO/IEC, metadata only |
 | `draft_negotiation` | 1 | CCW GGE on LAWS; no adopted instrument |
@@ -49,11 +51,11 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 
 | Level | Count |
 |---|---:|
-| `full_text_checked` | 8 |
+| `full_text_checked` | 10 |
 | `metadata_verified` | 26 |
 | `source_located` | 2 |
 
-Stored full texts: 14 (8 `full_text_checked` plus 6 `metadata_verified` records whose text is stored and segmented but was not read end-to-end).
+Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records whose text is stored and segmented but was not read end-to-end).
 
 ## Explicit gaps
 
@@ -68,7 +70,9 @@ Stored full texts: 14 (8 `full_text_checked` plus 6 `metadata_verified` records 
 9. **The candidate exclusions** for WTO JSI, CPTPP, USMCA and RCEP are provisional: no full-text AI keyword check was performed.
 10. **Search coverage** was English-language and institutional; multilingual searches were limited to the official language pages encountered. This is not a global exhaustive search.
 11. **CCW record is metadata-only.** The 2026 report and Review Conference decision were read, but no full text or units are stored; the 2027–2028 negotiating text is not yet available.
+12. **The Paris Statement's endorser list is inconsistent.** The official Élysée PDF of 19 February 2025 lists 64 entries; the official page accessed on 23 November 2026 lists 65 (Zimbabwe added). A contemporaneous Canadian release listed 60, including South Africa, the United Arab Emirates and the Holy See (listed as “Vatican”), which are absent from the Élysée lists. No withdrawal or correction is documented.
+13. **China's initiative has no adherence list.** It is a unilateral non-binding proposal, not an agreed instrument; the record does not attribute it to any State other than China.
 
 ## What “coverage” means here
 
-It means: 36 records, each with at least one official source and a declared verification level; 14 stored full texts with hashed originals or transcribed text; 13 acquired originals; one category-6 negotiation record; and a candidate register that records both inclusions and exclusions. It does not mean that every international AI instrument has been found.
+It means: 38 records, each with at least one official source and a declared verification level; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register that records both inclusions and exclusions. It does not mean that every international AI instrument has been found.

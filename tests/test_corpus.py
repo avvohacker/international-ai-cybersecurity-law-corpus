@@ -78,6 +78,34 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(snapshot_data["status_date"], "2026-11-23")
         self.assertFalse(snapshot_data["official_static_export_found"])
 
+    def test_paris_statement_record(self) -> None:
+        inst = read_instrument("paris-ai-action-summit-statement-2025")
+        self.assertEqual(inst["binding_status"], "non_binding")
+        self.assertEqual(inst["verification"]["level"], "full_text_checked")
+        parties = inst["parties"]
+        self.assertEqual(parties["signatories_total"], 65)
+        self.assertEqual(len(parties["entries"]), 65)
+        names = {entry["party"] for entry in parties["entries"]}
+        for name in ("China", "India", "Brazil", "France", "Zimbabwe", "European Union", "African Union Commission"):
+            self.assertIn(name, names)
+        self.assertNotIn("United States of America", names)
+        self.assertNotIn("United Kingdom", names)
+        body = (ROOT / "corpus" / inst["id"] / "text" / "en.txt").read_text(encoding="utf-8")
+        self.assertIn("civil applications", body)
+        self.assertIn("Global Dialogue on AI governance", body)
+        # The stored PDF has 64 entries; Zimbabwe appears only on the later official page.
+        self.assertIn("64. European Union", body)
+        self.assertNotIn("Zimbabwe", body)
+
+    def test_china_initiative_record(self) -> None:
+        inst = read_instrument("china-global-ai-governance-initiative-2023")
+        self.assertEqual(inst["binding_status"], "non_binding")
+        self.assertEqual(inst["verification"]["level"], "full_text_checked")
+        body = (ROOT / "corpus" / inst["id"] / "text" / "en.txt").read_text(encoding="utf-8")
+        self.assertIn("exclusive groups", body)
+        self.assertIn("international institution to govern AI", body)
+        self.assertIn("prudent and responsible attitude", body)
+
     def test_pact_units_are_citable(self) -> None:
         units = corpuslib.load_units("un-ga-res-79-1")
         self.assertEqual(len(units), 248)

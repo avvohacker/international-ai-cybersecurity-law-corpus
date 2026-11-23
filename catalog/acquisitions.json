@@ -1,6 +1,16 @@
 [
   {
     "accessed": "2026-11-23",
+    "bytes": 25152,
+    "dest": "source/global-ai-governance-initiative-en.html",
+    "instrument_id": "china-global-ai-governance-initiative-2023",
+    "media_type": "text/html; charset=utf-8",
+    "note": "Official English text of China's Global AI Governance Initiative, Ministry of Foreign Affairs.",
+    "sha256": "073933c76fa44d0cf1f30d1cbe95b17ad6a625f29abd12024e3550f2adde5b59",
+    "url": "https://www.mfa.gov.cn/mfa_eng/zy/gb/202405/t20240531_11367503.html"
+  },
+  {
+    "accessed": "2026-11-23",
     "bytes": 680817,
     "dest": "source/DEPA-signing-text-2020-06-11-en.pdf",
     "instrument_id": "depa-2020",
@@ -28,6 +38,16 @@
     "note": "OECD/LEGAL/0449, official OECD Legal Instruments booklet (2024 revision).",
     "sha256": "88227000e69be9aad5864155bd3e06ebead1e76c5b7cf662d63c1605408e5060",
     "url": "https://legalinstruments.oecd.org/public/doc/648/648.en.pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 84984,
+    "dest": "source/statement-2025-02-11-en.pdf",
+    "instrument_id": "paris-ai-action-summit-statement-2025",
+    "media_type": "application/pdf",
+    "note": "Official Élysée PDF of the Paris AI Action Summit statement, published 19 February 2025.",
+    "sha256": "9a19a426c0d1ffdcd2dab40340074663ca4e8ff3eaeb1c3d1d2067e3fd9a2c64",
+    "url": "https://www.elysee.fr/admin/upload/default/0001/17/0efc53b2025d5bc1f0fc68556c41370cee166e7f.pdf"
   },
   {
     "accessed": "2026-11-23",

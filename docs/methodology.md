@@ -23,11 +23,11 @@ The legal nature is determined from the instrument and its issuer, not from its 
 
 | Level | Meaning | This cycle |
 |---|---|---:|
-| `full_text_checked` | Full text stored, hashed, segmented, read; key passages asserted by tests. | 8 |
+| `full_text_checked` | Full text stored, hashed, segmented, read; key passages asserted by tests. | 10 |
 | `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 26 |
 | `source_located` | Official URL recorded; metadata from an established reference, not re-read. | 2 |
 
-Fourteen full texts are stored (13 acquired PDFs plus the CETS 225 transcription); only the eight marked `full_text_checked` were read end-to-end and are covered by key-passage tests. Six further texts are stored and segmented but remain `metadata_verified` because they were not read end-to-end. The levels are deliberately coarse and honest. `metadata_verified` is not a guarantee that every field, party or declaration was checked. Each record lists its own `verification.checks`, and `gaps` records what remains unknown.
+Sixteen full texts are stored (15 acquired originals — 14 PDFs and one HTML — plus the CETS 225 transcription); only the ten marked `full_text_checked` were read end-to-end and are covered by key-passage tests. Six further texts are stored and segmented but remain `metadata_verified` because they were not read end-to-end. The levels are deliberately coarse and honest. `metadata_verified` is not a guarantee that every field, party or declaration was checked. Each record lists its own `verification.checks`, and `gaps` records what remains unknown.
 
 ## 3. Sources and discovery
 
@@ -72,10 +72,11 @@ The build uses Python's standard library only and does not access the network. I
 2. verifies every stored file against its manifest hash and size;
 3. checks that each unit's text equals the exact slice of the primary text at its stored offsets, and that the unit start lies on the declared page;
 4. checks that candidate decisions point to existing instruments when included, and do not point to catalogued instruments when excluded/pending;
-5. writes `build/catalog.json`, `build/CATALOG.md`, `build/checksums.sha256` and `build/verification-report.json` with sorted keys and no timestamps.
+5. writes `build/catalog.json`, `build/CATALOG.md`, `build/checksums.sha256` and `build/verification-report.json` with sorted keys and no timestamps;
+6. optionally writes the static atlas in `site/` from the same records (`make site`), without a second data source.
 
-The determinism test builds twice and compares the bytes. Network acquisition and PDF extraction are separate commands; their outputs are stored, so a rebuild from the repository does not depend on the network or on a PDF library.
+The determinism test builds twice and compares the bytes. Network acquisition and PDF extraction are separate commands; their outputs are stored, so a rebuild from the repository does not depend on the network or on a PDF library. The atlas is generated from the catalogue and the stored Natural Earth boundaries; it is not an independent dataset.
 
 ## 8. Limits of this cycle
 
-This is a first corpus, not a comprehensive survey. The principal limits are: one AI-specific treaty only; five digital agreements with cooperative AI clauses; one category-6 negotiation record (CCW) but no adopted draft protocol; CETS 225 not in force; mostly English texts; metadata-only records for paywalled standards and for several official PDFs that returned access errors; and no systematic search of national bilateral treaty registries. These limits are stated in the coverage matrix and the progress file rather than hidden in the aggregate counts.
+This is a first corpus, not a comprehensive survey. The principal limits are: one AI-specific treaty only; five digital agreements with cooperative AI clauses; one category-6 negotiation record (CCW) but no adopted draft protocol; CETS 225 not in force; an inconsistent Paris Statement endorser list (60/64/65 across official publications); a unilateral Chinese initiative with no adherence list; mostly English texts; metadata-only records for paywalled standards and for several official PDFs that returned access errors; and no systematic search of national bilateral treaty registries. These limits are stated in the coverage matrix and the progress file rather than hidden in the aggregate counts.

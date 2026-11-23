@@ -6,15 +6,18 @@ Last updated: **2026-11-23**. This file records what exists, what is only planne
 
 - [x] Repository inspection (README-only initial commit).
 - [x] Working architecture: JSON catalog, per-instrument corpus directories, JSON Schemas, deterministic build.
-- [x] Candidate register: 19 entries (2 included, 10 pending, 7 excluded).
+- [x] Candidate register: 20 entries (4 included, 9 pending, 7 excluded).
 - [x] First complete pipeline on CETS 225: official text, metadata, article units, status, checks.
-- [x] Fourteen full texts stored and segmented: CETS 225; UNGA 78/241, 78/265, 78/311, 79/1, 79/62, 79/239, 79/325, 80/57 and 80/58; DEPA; SADEA; G7 Hiroshima Code; OECD AI Recommendation.
-- [x] Thirteen official PDFs acquired and SHA-256 hashed; manifests generated.
+- [x] Sixteen full texts stored and segmented: CETS 225; UNGA 78/241, 78/265, 78/311, 79/1, 79/62, 79/239, 79/325, 80/57 and 80/58; DEPA; SADEA; G7 Hiroshima Code; OECD AI Recommendation; Paris AI Action Summit Statement; China's Global AI Governance Initiative.
+- [x] Fifteen originals acquired and SHA-256 hashed (14 PDFs and the China HTML); manifests generated.
 - [x] CETS 225 per-party chart captured (21 signatories, 2 ratifications), Article 3(1)(b) declarations reproduced and reservations checked.
 - [x] Pact for the Future segmented into 248 citable units across the Pact, Global Digital Compact and Declaration on Future Generations.
 - [x] CCW GGE on LAWS catalogued as the first category-6 record, with the 2026 report and 2027–2028 negotiating mandate.
 - [x] EU AI Act, UNESCO Recommendation, UKSDEA, KSDPA, AfCFTA Protocol, military declaration, Bletchley/Seoul/Frontier, NATO, AU, ASEAN, five ISO/IEC standards, CETS explanatory report, EU GPAI Code.
-- [x] Validator and 12 tests: schema rules, hash integrity, unit-anchor integrity, declarations cannot be binding, deterministic build.
+- [x] Paris AI Action Summit Statement verified on the official Élysée page and PDF: 65 endorsers on the page, 64 in the PDF, 60 in a contemporaneous official release; the discrepancy is recorded, not hidden.
+- [x] China's Global AI Governance Initiative catalogued as the documented Chinese-pole instrument, with the official English text and the Chinese original cross-checked.
+- [x] Human-readable GitHub Pages atlas generated from the records: two maps, chronology, three-pole analysis, cross-membership matrix and filterable catalogue. The deployment workflow is ready; Pages is enabled, and a push to `main` publishes the atlas.
+- [x] Validator and 14 tests: schema rules, hash integrity, unit-anchor integrity, declarations cannot be binding, Paris/China record checks, deterministic build.
 - [x] Research log, coverage matrix, methodology and README updated to actual contents.
 - [x] `build/catalog.json`, `build/CATALOG.md`, `build/checksums.sha256`.
 
@@ -22,7 +25,7 @@ Last updated: **2026-11-23**. This file records what exists, what is only planne
 
 - [ ] Full CETS 225 PDF, explanatory report PDF and UNESCO PDF (access errors).
 - [ ] Full EU AI Act text and consolidated amendment analysis.
-- [ ] Paris AI Action Summit statement, US–UK MOU, US–EU arrangement, International AI Safety Report.
+- [ ] US–UK MOU, US–EU arrangement, International AI Safety Report.
 - [ ] CCW GGE 2027–2028 negotiating text and legal-form recommendation.
 - [ ] Latin America, Middle East, Central Asia regional and bilateral instruments.
 - [ ] Systematic national treaty-registry search for bilateral AI clauses.
@@ -32,8 +35,8 @@ Last updated: **2026-11-23**. This file records what exists, what is only planne
 
 ## Next precise searches
 
-1. **Paris AI Action Summit.** Open the official Élysée/Summit statement; verify the title, date, endorsing States and the reported non-endorsements; add as a non-binding declaration if confirmed.
-2. **US–UK and US–EU AI-safety instruments.** Locate the official texts (UK treaty series / State Department / European Commission); determine whether they are MOUs, administrative arrangements or political commitments; record legal status without inflating it.
+1. **US–UK and US–EU AI-safety instruments.** Locate the official texts (UK treaty series / State Department / European Commission); determine whether they are MOUs, administrative arrangements or political commitments; record legal status without inflating it.
+2. **China's 2025 follow-up.** Decide whether to catalogue the Global AI Governance Action Plan (2025), whose text was read for the 2023 record, and verify the proposed World AI Cooperation Organization on official Chinese sources; determine whether either has an adherence list and add only what is documented.
 3. **AfCFTA ratification.** Obtain the AU depositary record for the Digital Trade Protocol and the Annex on Emerging and Advanced Technologies; replace the secondary tralac status with a primary source and record adoption dates of the annexes.
 4. **Latin America.** Search SICE/FTA and national treaty registries for AI clauses in Chile, Brazil, Mexico, Colombia, Peru, Uruguay and Mercosur/Pacific Alliance instruments; check the Chile–EU Advanced Framework Agreement and CPTPP digital chapters with a full-text keyword search.
 5. **Middle East and Central Asia.** Search GCC, UAE, Saudi Arabia, Israel and Central Asian bilateral agreements for AI-specific clauses; check the Abraham Accords-adjacent digital agreements.
@@ -47,5 +50,5 @@ Last updated: **2026-11-23**. This file records what exists, what is only planne
 1. Read `catalog/instruments/coe-cets-225.json` and `corpus/coe-cets-225/manifest.json` as the reference pattern.
 2. Add a record by copying an existing JSON, changing the id/title/sources/verification, and placing any acquired file under `corpus/<id>/source/`.
 3. Register the URL and hash in `catalog/acquisitions.json`; run `tools/make_manifest.py`.
-4. Extract and segment only if a full text is acquired; otherwise set `text.full_text: false` and keep the original. For A/RES/79/1 use `--mode pact`.
+4. Extract and segment only if a full text is acquired; otherwise set `text.full_text: false` and keep the original. For A/RES/79/1 use `--mode pact`; for an official HTML page use `--mode html` and, where necessary, `--html-start`/`--html-end`.
 5. Run `make test`. Fix errors rather than suppressing them. Update `docs/coverage.md` and this file.

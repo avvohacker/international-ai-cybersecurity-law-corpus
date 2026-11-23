@@ -11,7 +11,7 @@
     "ai_provisions": ["Whole summary — AI readiness, responsible use, principles of responsible use (PRUs), protection of AI technologies and countering adversarial AI"],
     "excluded_scope": "Non-binding alliance policy; not addressed to non-NATO States and not a source of international legal obligations."
   },
-  "dates": {"adopted": "2021-10-22", "published": "2024-07-10", "verified_on": "2026-11-23", "notes": "Original NATO AI Strategy summary published 22 October 2021; revised strategy summary published 10 July 2024."},
+  "dates": {"adopted": "2024-07-10", "published": "2024-07-10", "verified_on": "2026-11-23", "notes": "Revised strategy summary published 10 July 2024; the original NATO AI Strategy summary was published on 22 October 2021 and is a separate document."},
   "status_note": "Revised strategy adopted by NATO Allies in 2024; only the public summary is available. Non-binding.",
   "languages": {"authentic": ["en", "fr"], "translations": [], "note": "NATO official texts are published in English and French. The summary is an official public version, not the full classified strategy."},
   "sources": [

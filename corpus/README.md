@@ -4,7 +4,7 @@ Each instrument may have a directory named after its `id`:
 
 ```text
 corpus/<id>/
-  source/<file>.pdf     acquired original; role "original" in the manifest
+  source/<file>.*       acquired original (PDF, HTML); role "original" in the manifest
   text/en.txt           extracted or transcribed text; role "text"
   pages.json            page-to-character map; role "metadata"
   units.jsonl           citable units; role "units"
@@ -27,6 +27,8 @@ corpus/<id>/
 python3 -m venv .venv
 .venv/bin/pip install -r requirements-tools.txt
 .venv/bin/python tools/extract_text.py <id> source/<file>.pdf
+.venv/bin/python tools/extract_text.py <id> source/<file>.html --mode html \
+  --html-start '<div class="content_text">' --html-end '<!-- Footer  -->'
 .venv/bin/python tools/segment.py <id> --mode treaty|resolution|numbered|whole|pact
 .venv/bin/python tools/make_manifest.py
 ```

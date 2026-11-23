@@ -60,10 +60,15 @@ deliverable is a corpus, not an interface.
   datasets. The current `related` and `sources` fields already expose the graph in
   a simple form; exporting JSON-LD later is straightforward and does not require
   changing the source records.
-- **Git LFS** was not needed: the 13 PDFs are small. It remains an option if the
-  corpus grows to many large official files.
-- **A static site generator** was not used: the brief explicitly excludes
-  interfaces. The generated Markdown catalogue is enough for review.
+- **Git LFS** was not needed: the 14 PDFs and the China HTML page are small. It
+  remains an option if the corpus grows to many large official files.
+- **A static site generator** is used, but only as a deterministic renderer of
+  the records: `tools/build_site.py` reads the catalogue and the stored Natural
+  Earth boundaries, writes `site/index.html`, and uses no network, database,
+  external font or JavaScript framework. The earlier decision not to build an
+  interface was reversed when the brief asked for a consultable GitHub Pages
+  “README for humans”; the canonical data remain JSON/JSONL, and the site is
+  not an independent source.
 
 ## Migration path
 
@@ -71,7 +76,7 @@ The stable `id`, `instrument_id` and `unit_id` values are the join keys. If the
 corpus grows, a derived SQLite/FTS5 index or JSON-LD export can be generated from
 the JSON/JSONL sources without changing the canonical records. A move to a
 database would be justified by query volume or multi-user editing, not by the
-current size (36+ instruments and a few hundred citable units).
+current size (38 instruments and a few hundred citable units).
 
 ## What would trigger a format change
 

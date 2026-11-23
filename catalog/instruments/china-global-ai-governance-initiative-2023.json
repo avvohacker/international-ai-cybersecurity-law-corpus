@@ -1,0 +1,142 @@
+{
+  "id": "china-global-ai-governance-initiative-2023",
+  "title": {
+    "official": "Global AI Governance Initiative",
+    "short": "China's Global AI Governance Initiative"
+  },
+  "category": "non_binding_instrument",
+  "instrument_type": "principles",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [
+    {
+      "name": "Ministry of Foreign Affairs of the People's Republic of China",
+      "role": "issuer",
+      "url": "https://www.mfa.gov.cn/mfa_eng/zy/gb/202405/t20240531_11367503.html"
+    }
+  ],
+  "relevance": {
+    "reason": "A unilateral Chinese government proposal for international AI governance, announced by President Xi Jinping on 18 October 2023 and published in English by the Ministry of Foreign Affairs. It is not an agreed international instrument and creates no legal obligation, but it is a primary articulation of China's position on sovereignty, development, UN-centred governance, military-AI prudence and opposition to exclusive groups. It is included to document the Chinese pole of the international AI-governance debate alongside the U.S.-led military declaration and the Council of Europe treaty.",
+    "ai_provisions": [
+      "Whole document — people-centred development, sovereignty, international law, military-AI prudence, risk-tiered testing, privacy, fairness, ethics and developing-country representation",
+      "Paragraph on military AI — all countries, especially major countries, should adopt a prudent and responsible attitude to military AI research, development and application",
+      "Paragraph on exclusivity — opposition to drawing ideological lines or forming exclusive groups and to technological monopolies and unilateral coercive measures",
+      "Final paragraph — support for UN-framework discussions on an international AI institution"
+    ],
+    "excluded_scope": "Unilateral policy initiative; no negotiating mandate, signature, ratification, endorsement procedure, monitoring or enforcement."
+  },
+  "dates": {
+    "adopted": "2023-10-18",
+    "published": "2023-10-20",
+    "verified_on": "2026-11-23",
+    "notes": "Announced by President Xi Jinping at the Third Belt and Road Forum for International Cooperation on 18 October 2023; the MFA English text was posted on 20 October 2023."
+  },
+  "status_note": "Issued by the Chinese government as a policy initiative; not a treaty. No formal list of endorsing States or organisations is published. A later Chinese document, the 2025 Global AI Governance Action Plan, addresses the same policy area; the MFA page does not state a formal legal relationship to the 2023 Initiative.",
+  "languages": {
+    "authentic": ["zh"],
+    "translations": ["en"],
+    "note": "Chinese original; the Ministry of Foreign Affairs publishes an official English translation. The English text is stored and analysed. There is no authentic-language clause because the initiative is not a treaty."
+  },
+  "sources": [
+    {
+      "id": "mfa-en",
+      "url": "https://www.mfa.gov.cn/mfa_eng/zy/gb/202405/t20240531_11367503.html",
+      "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official English text, updated 20 October 2023. HTML downloaded and stored.",
+      "sha256": "073933c76fa44d0cf1f30d1cbe95b17ad6a625f29abd12024e3550f2adde5b59",
+      "local_path": "source/global-ai-governance-initiative-en.html"
+    },
+    {
+      "id": "cac-zh",
+      "url": "https://www.cac.gov.cn/2023-10/18/c_1699291032884978.htm",
+      "publisher": "Cyberspace Administration of China",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "zh",
+      "note": "Chinese original, published 18 October 2023; consulted to confirm the date and the existence of the Chinese text, not stored."
+    },
+    {
+      "id": "mfa-action-plan-2025",
+      "url": "https://www.mfa.gov.cn/mfa_eng/zy/gb/202507/t20250729_11679232.html",
+      "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Later Chinese document: Global AI Governance Action Plan, published 26 July 2025. Read to check its relationship to the 2023 Initiative; it refers to the Pact for the Future and the Global Digital Compact but does not state that it formally builds on the Initiative."
+    }
+  ],
+  "rights": {
+    "status": "public_official_text",
+    "licence": "Chinese Government terms",
+    "note": "Official government publication. No open licence identified; stored for research and verification. Reusers should consult the publishing ministry's terms."
+  },
+  "verification": {
+    "level": "full_text_checked",
+    "checks": [
+      {
+        "check": "Official English text opened and read end-to-end.",
+        "result": "Complete initiative: preamble, people-centred development, sovereignty, military AI, exclusivity, risk-tiered governance, privacy, fairness, ethics and UN institution.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Date and Chinese original checked on the Cyberspace Administration page.",
+        "result": "Published 18 October 2023; MFA English text updated 20 October 2023.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Legal nature and endorsement mechanism checked.",
+        "result": "Unilateral government initiative; no signature, ratification, depositary or published endorsement list.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "2025 follow-up checked on the MFA page.",
+        "result": "Global AI Governance Action Plan (26 July 2025) refers to the Pact for the Future and the Global Digital Compact; it does not state a formal legal relationship to the 2023 Initiative.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Full English text stored and read. The Chinese original is not stored. No formal adherence list exists, so the record does not attribute the initiative to any State other than China."
+  },
+  "related": [
+    {
+      "id": "paris-ai-action-summit-statement-2025",
+      "relation": "related",
+      "note": "China endorsed the Paris statement, which was also endorsed by India and Brazil but not by the United States or the United Kingdom."
+    },
+    {
+      "id": "un-ga-res-78-311",
+      "relation": "related",
+      "note": "China proposed the UNGA capacity-building resolution; the initiative likewise emphasises developing-country capacity."
+    },
+    {
+      "id": "un-ga-res-79-1",
+      "relation": "related",
+      "note": "The 2025 Global AI Governance Action Plan, a later Chinese document in the same policy line, refers to the Pact for the Future and the Global Digital Compact."
+    }
+  ],
+  "text": {
+    "manifest": "manifest.json",
+    "full_text": true,
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole",
+    "extraction_note": "Body extracted from the official MFA English HTML page (the content_text container); site navigation, scripts and footer were omitted. The whole document is one citable unit."
+  },
+  "gaps": [
+    "Unilateral policy initiative, not an agreed international instrument; no legal obligation.",
+    "No formal endorsement or adherence list is published; the record does not claim that any other State has endorsed it.",
+    "Only the official English translation is stored; the Chinese original is not acquired.",
+    "The 2025 Global AI Governance Action Plan is a later document in the same policy area but is not separately catalogued; its formal relationship to the 2023 Initiative is not stated.",
+    "No implementation, monitoring or dispute-settlement mechanism.",
+    "The military-AI passage is a general call for prudence, not a prohibition or a definition."
+  ],
+  "provenance": {
+    "discovered_via": "Chinese Ministry of Foreign Affairs official text; cross-checked with the Cyberspace Administration of China original.",
+    "search_dates": ["2026-11-23"]
+  }
+}
