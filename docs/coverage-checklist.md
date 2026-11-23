@@ -1,0 +1,61 @@
+# Coverage checklist: international AI instruments by source family
+
+**Last full check: 23 November 2026.** This checklist records, for each family of international AI sources, the canonical register used, the date it was checked, what was found and what was decided. It is a working instrument for the corpus, not a claim that every source has been found. A "negative" result means that no qualifying instrument was located in the named register on the date shown; it is not a statement of global non-existence.
+
+The corpus scope is written instruments with an AI-specific object or express AI provisions. National legislation (except the EU AI Act as supranational law), academic literature, news commentary and company policies are outside it.
+
+## 1. Checklist
+
+| Family | Canonical source(s) | Last checked | What was checked | Result and decision |
+|---|---|---|---|---|
+| AI-specific treaties | Council of Europe Treaty Office, CETS 225; China MFA / WAICO depositary materials | 2026-11-23 | Signature and ratification charts; WAICO signing, ratification and progress statements; treaty registries | CETS 225: 21 signatures, 2 ratifications, not in force. WAICO: 38 reported founding members, 37 identified, no deposited ratification, not in force. No other adopted AI-specific treaty located. Both catalogued. |
+| UN General Assembly | [UN Digital Library](https://digitallibrary.un.org/) | 2026-11-23 | AI resolutions 2023–2026; 81st session First Committee drafts | Nine UNGA instruments catalogued (AI resolutions 2023–2025, plus the Pact for the Future, which contains the Global Digital Compact). `A/C.1/81/L.34` (military AI) and `A/C.1/81/L.37` (LAWS) were adopted in the First Committee in October 2026 but are not yet `A/RES/81/...`; recorded as pending candidates, not instruments. |
+| UN Security Council | [UN Digital Library](https://digitallibrary.un.org/); Security Council meeting records | 2026-11-23 | AI-specific resolutions and presidential statements | No AI-specific Security Council resolution located. The September 2026 meeting on AI is a meeting, not an instrument. Negative result; scope limit recorded. |
+| Human Rights Council | [UN Digital Library](https://digitallibrary.un.org/); [OHCHR](https://www.ohchr.org/en/hrbodies/hrc/home) | 2026-11-23 | AI-specific resolutions of the 63rd session | **A/HRC/RES/63/15**, "Implications of artificial intelligence for the promotion and protection of human rights", adopted without a vote on 6 October 2026. Added as record `un-hrc-res-63-15` (metadata verified; official PDF read in full). Follow-up: panel at the 65th session and OHCHR report to the 66th. |
+| UN system recommendations | UNESCO; OECD | 2026-11-23 | AI recommendations and their status pages | UNESCO Recommendation on the Ethics of AI (2021) and OECD Recommendation OECD/LEGAL/0449 (2019) catalogued. No new AI-specific UN-system recommendation located. |
+| Council of Europe | [Treaty Office](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225); Committee of Ministers | 2026-11-23 | CETS 225; AI-related recommendations | CETS 225 catalogued, with Explanatory Report; 21 signatures, 2 ratifications, not in force. Recommendation CM/Rec(2020)1 remains pending (not verified on the official page in this cycle). No new AI-specific CoE treaty located. |
+| G7 | [GOV.UK G7 2026](https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026); Hiroshima AI Process pages | 2026-11-23 | Hiroshima Code; 2026 Digital and Technology Ministerial Declaration; Guiding Principles; Reporting Framework | Hiroshima Process Code of Conduct catalogued. The **G7 Digital and Technology Ministerial Declaration of 29 May 2026** has substantial AI safety and AI adoption sections but is a broad digital/tech declaration; recorded as a pending candidate. Guiding Principles and Reporting Framework remain pending. No separate G7 AI treaty. |
+| G20 | [G20 2026 Innovation Ministerial](https://www.gov.uk/government/publications/g20-innovation-ministerial-statement-2-september-2026); White House; METI | 2026-11-23 | Innovation Ministerial Statement; AI Prosperity Compact; AI Prosperity Objectives; G20 AI Principles | The **G20 Innovation Ministerial Statement (2 September 2026)** is broad and AI is one of six pillars; excluded from the instrument register. The AI-specific **G20 AI Prosperity Compact and AI Prosperity Objectives** are identified in official materials but not yet read; recorded as a pending candidate. The G20 AI Principles are the OECD principles as endorsed, not a separate text. The 2025 G20 AI Task Force Chair's Statement is a chair's summary, not an adopted G20 instrument; not catalogued. |
+| BRICS | [BRICS official membership page](https://brics.br/en/about-the-brics); 2025 Presidency documents | 2026-11-23 | 2025 leaders' statement; membership; 2026 summit outcomes | 2025 statement catalogued. It was issued collectively by the **11 BRICS member States** (Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, UAE, Ethiopia, Indonesia, Iran); the text has no individual signature block. Record corrected to list the 11 issuing States; it remains a collective political statement, not a treaty. The 2026 New Delhi summit reaffirmed implementation of the 2025 statement; no new stand-alone AI instrument was located. |
+| AI summit series | Host-government pages: GOV.UK, Élysée, MEA, PIB | 2026-11-23 | Bletchley 2023, Seoul 2024, Paris 2025, New Delhi 2026 | Four declarations catalogued. **New Delhi**: the PIB annex lists 92 endorsers as of 5 March 2026 (90 States, EU, IFAD); the MEA page lists 91 and omits Colombia. Record corrected to 92 itemised entries and added to the eight-map atlas. Paris: 65 on the Élysée page, 64 in the PDF and 60 in a contemporaneous release; discrepancy recorded. No 2027 summit text located. |
+| China-led instruments | China MFA; WAICO depositary materials | 2026-11-23 | Global AI Governance Initiative; WAICO Agreement; ratification status | Both catalogued. China's NPC approved WAICO ratification on 6 November 2026, but no deposit was verified; the Agreement remains not in force. No new China-led AI treaty located. |
+| US-led instruments | US State Department; Australian Government | 2026-11-23 | Pax Silica Declaration; AI Opportunity Statement; San Francisco Declaration | Pax Silica catalogued (26 signatories: 25 States + EU, as of 23 October 2026). The AI Opportunity Statement (June 2026) and San Francisco Declaration (November 2026) are separate deliverables, not mapped or counted with Pax Silica. No US-led AI treaty located. |
+| Military AI | UNODA; CCW; UNGA First Committee | 2026-11-23 | CCW GGE on LAWS; 2026 Review Conference; UNGA 81 drafts | CCW GGE record catalogued; 2026 report contains elements of an instrument, and the Seventh Review Conference continued the mandate to 2028. No binding instrument. UNGA 81 drafts L.34 and L.37 pending. |
+| Trade agreements with AI provisions | Official treaty registries and government texts | 2026-11-23 | DEPA, SADEA, UKSDEA, KSDPA, AfCFTA Digital Trade Protocol; WTO JSI, CPTPP, USMCA, RCEP | Five agreements catalogued. DEPA, SADEA, UKSDEA and KSDPA are in force; the AfCFTA Protocol is not. WTO JSI, CPTPP, USMCA and RCEP remain excluded provisionally because no express AI-specific provision was located. No AI-specific bilateral treaty located. |
+| General international law | UN Treaty Collection; OHCHR | 2026-11-23 | ICCPR, VCLT; UN Charter, UDHR, ECHR, Convention 108+, IHL | ICCPR and VCLT catalogued as background. The UN Charter, UDHR, ECHR, Convention 108+ and IHL are not systematically covered; customary law, general principles, *jus cogens* and Security Council resolutions are outside the register. Scope limit, not a negative finding. |
+| Technical standards | ISO/IEC; ITU; IEEE; CEN-CENELEC | 2026-11-23 | ISO/IEC AI standards; ITU-T Y.3172; IEEE 7000; CEN-CENELEC JTC 21 | Five ISO/IEC standards catalogued as metadata. ITU-T Y.3172, IEEE 7000 and CEN-CENELEC JTC 21 remain pending. Standards are not treaties and are not treated as binding international law. |
+| Regional instruments | EU; African Union; ASEAN; NATO | 2026-11-23 | EU AI Act; AU Continental AI Strategy and AfCFTA Protocol; ASEAN Guide; NATO strategy | EU AI Act, AU strategy, AfCFTA Protocol, ASEAN Guide and NATO strategy summary catalogued. No binding regional AI treaty outside the EU AI Act (which is supranational law). |
+| Multistakeholder and political calls | Élysée; official campaign pages | 2026-11-23 | Paris Call for AI Safety and Security (9 November 2026); Call for Control of Frontier AI Models (September 2026) | **Paris Call**: 19 governments, 11 companies and 11 civil-society organisations on the Élysée page; open to new endorsements. It is a multi-stakeholder declaration, not an intergovernmental instrument; excluded from the register and recorded as a candidate. The Call for Control is an advocacy statement, not an instrument; not catalogued. |
+| Scientific and advisory materials | International AI Safety Report; expert panels | 2026-11-23 | International AI Safety Report and successor editions | The International AI Safety Report remains a pending candidate for an authoritative-materials layer; it is not an instrument and is not counted in the 45 records. |
+
+## 2. What this checklist changed
+
+1. **New Delhi now has a party list.** The earlier record said no itemised list existed. The PIB annex lists 92 endorsers as of 5 March 2026: 90 States, the EU and IFAD. The MEA page lists 91 and omits Colombia. The record now has 92 entries, distinguishes the two official lists and does not infer the reason for the difference. New Delhi is the eighth map.
+2. **BRICS now lists its issuing States.** The statement is still collective and has no individual signature block, but its 11 issuing States are officially identified. The record lists them as issuers, not as individual signatories, and explains the distinction.
+3. **The Human Rights Council layer was missing.** A/HRC/RES/63/15 (6 October 2026) is a dedicated AI and human-rights resolution adopted without a vote. It is now a metadata-verified record. It is non-binding and has no party list.
+4. **Three current processes are pending, not adopted.** `A/C.1/81/L.34` and `A/C.1/81/L.37` are First Committee drafts, not yet `A/RES/81/...`; the G20 AI Prosperity Compact and Objectives are identified but not yet read. They are in the candidate register as pending, not in the 45 records.
+5. **Two texts were considered and excluded, with reasons.** The Paris Call is multi-stakeholder and open-ended; the G20 Innovation Ministerial Statement is broad rather than AI-specific. Both are in the candidate register with their official URLs and reasons.
+6. **No new AI-specific treaty was found.** CETS 225 and WAICO remain the only two; neither is in force. The checklist does not convert a diplomatic meeting, a chair's summary or a voluntary call into an instrument.
+
+## 3. What remains open
+
+- CETS 225: three more ratifications, including at least two Council of Europe member States, are needed for entry into force.
+- WAICO: the 38th founding member is unnamed; no deposited ratification was verified; the official deposited text was not acquired.
+- New Delhi: the reason for the 91/92 difference is not published; the MEA page may lag the PIB annex.
+- BRICS: no individual signature record exists; the 11 entries are member States, not signatories.
+- HRC 63/15: the 65th-session panel and the 66th-session OHCHR report have not yet occurred.
+- G7 2026, G20 AI Compact/Objectives and UNGA 81 drafts: decisions and final texts are pending.
+- The candidate register is not exhaustive: it records the searches and decisions made in this cycle, not every document that mentions AI.
+
+## 4. Counts on 23 November 2026
+
+| Measure | Count |
+|---|---:|
+| Catalogued instruments | 45 |
+| Binding instruments | 10 |
+| Non-binding instruments | 35 |
+| Stored full texts | 16 |
+| Candidate-register entries | 31 (11 included, 11 pending, 9 excluded) |
+| Maps | 8 |
+
+This checklist is linked from [`docs/coverage.md`](coverage.md), [`docs/progress.md`](progress.md) and the [README](../README.md).

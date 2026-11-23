@@ -72,6 +72,8 @@ BOT_SERVERS = ("cloudflare", "akamai", "datadome", "imperva", "sucuri")
 # should still open the link. The key is the exact hostname.
 BROWSER_ONLY_HOSTS = {
     "www.state.gov": "State Department serves 404/405 to automated clients",
+    "www.mti.gov.sg": "Singapore MTI serves 404 to automated clients; the page was read through the extraction tool",
+    "www.meti.gov.sg": "Singapore METI serves 404 to automated clients; the page was read through the extraction tool",
 }
 
 
@@ -96,7 +98,7 @@ class Result:
 
 
 def targets() -> list[Target]:
-    """Return the official links used by the seven map panels."""
+    """Return the official links used by the eight map panels."""
     instruments = corpuslib.load_instruments()
     found: list[Target] = []
     for instrument_id in build_site.MAP_INSTRUMENT_IDS:

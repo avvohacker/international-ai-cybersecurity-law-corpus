@@ -1,0 +1,561 @@
+{
+  "checked": 55,
+  "summary": {
+    "ok": 41,
+    "anti_bot": 13,
+    "broken": 0,
+    "transient": 1
+  },
+  "results": [
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-01",
+      "label": "www.coe.int",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-02",
+      "label": "rm.coe.int",
+      "url": "https://rm.coe.int/1680afae3c",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-03",
+      "label": "www.mfa.gov.cn",
+      "url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-04",
+      "label": "www.mfa.gov.cn",
+      "url": "https://www.mfa.gov.cn/eng/xw/fyrbt/202611/t20261109_12056171.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-05",
+      "label": "www.mfa.gov.cn",
+      "url": "https://www.mfa.gov.cn/wjbzhd/202610/P020261023815175879929.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-06",
+      "label": "www.fmprc.gov.cn",
+      "url": "https://www.fmprc.gov.cn/wjbxw_new/202607/t20260731_11996584.shtml",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-07",
+      "label": "portal.komdigi.go.id",
+      "url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/10399",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-08",
+      "label": "dig.watch",
+      "url": "https://dig.watch/resource/agreement-on-the-establishment-of-the-world-artificial-intelligence-cooperation-organization",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-09",
+      "label": "fta.motir.go.kr",
+      "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/support/DEPA/depa_all_eng.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-10",
+      "label": "www.mfat.govt.nz",
+      "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/overview",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-11",
+      "label": "isomer-user-content.by.gov.sg",
+      "url": "https://isomer-user-content.by.gov.sg/1004/769c26eb-17cf-4e2d-962b-1277a22df9db/australia-singapore-digital-economy-agreement%20-%20Jun%2023.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-12",
+      "label": "assets.publishing.service.gov.uk",
+      "url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-13",
+      "label": "fta.motir.go.kr",
+      "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/ksdpa/1/KSDPA_eng.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-14",
+      "label": "www.meti.gov.sg",
+      "url": "https://www.meti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/ksdpa",
+      "status": 404,
+      "outcome": "anti_bot",
+      "reason": "known_browser_only",
+      "detail": "Singapore METI serves 404 to automated clients; the page was read through the extraction tool"
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-15",
+      "label": "au.int",
+      "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-16",
+      "label": "archives.au.int",
+      "url": "https://archives.au.int/bitstream/handle/123456789/10707/Assembly%20AU%209%20%28XXXVIII%29%20_E.pdf?isAllowed=y&sequence=1",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-17",
+      "label": "www.ohchr.org",
+      "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-18",
+      "label": "treaties.un.org",
+      "url": "https://treaties.un.org/Pages/ViewDetailsIII.aspx?src=TREATY&mtdsg_no=XXIII-1&chapter=23&Temp=mtdsg3&clang=_en",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-19",
+      "label": "eur-lex.europa.eu",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-20",
+      "label": "documents.un.org",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F265&t=pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-21",
+      "label": "digitallibrary.un.org",
+      "url": "https://digitallibrary.un.org/record/4043244",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-22",
+      "label": "digitallibrary.un.org",
+      "url": "https://digitallibrary.un.org/nanna/record/4087699/files/A_RES_79_325-EN.pdf?withWatermark=0&withMetadata=0&registerDownload=1&version=1",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-23",
+      "label": "digitallibrary.un.org",
+      "url": "https://digitallibrary.un.org/record/4087699",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-24",
+      "label": "documents.un.org",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F79%2F1&t=pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-25",
+      "label": "documents.un.org",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F241&t=pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-26",
+      "label": "digitallibrary.un.org",
+      "url": "https://digitallibrary.un.org/record/4071100/files/A_RES_79_62-EN.pdf",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-27",
+      "label": "digitallibrary.un.org",
+      "url": "https://digitallibrary.un.org/record/4095989/files/A_RES_80_57-EN.pdf",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-28",
+      "label": "documents.un.org",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F79%2F239&t=pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-29",
+      "label": "digitallibrary.un.org",
+      "url": "https://digitallibrary.un.org/nanna/record/4095956/files/A_RES_80_58-EN.pdf?withWatermark=0&withMetadata=0&registerDownload=1&version=1",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-30",
+      "label": "www.unesco.org",
+      "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-31",
+      "label": "legalinstruments.oecd.org",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-32",
+      "label": "www.soumu.go.jp",
+      "url": "https://www.soumu.go.jp/hiroshimaaiprocess/pdf/document05_en.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-33",
+      "label": "www.gov.uk",
+      "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-34",
+      "label": "www.gov.uk",
+      "url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-35",
+      "label": "www.elysee.fr",
+      "url": "https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-36",
+      "label": "www.elysee.fr",
+      "url": "https://www.elysee.fr/admin/upload/default/0001/17/0efc53b2025d5bc1f0fc68556c41370cee166e7f.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-37",
+      "label": "mea.gov.in",
+      "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-38",
+      "label": "www.pib.gov.in",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&reg=3&lang=1",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-39",
+      "label": "www.gov.br",
+      "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-40",
+      "label": "www.state.gov",
+      "url": "https://www.state.gov/pax-silica",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-41",
+      "label": "www.industry.gov.au",
+      "url": "https://www.industry.gov.au/publications/pax-silica-declaration-countries-attending-pax-silica-summit-12-december-2025",
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "TimeoutError"
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-42",
+      "label": "www.mfa.gov.cn",
+      "url": "https://www.mfa.gov.cn/mfa_eng/zy/gb/202405/t20240531_11367503.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-43",
+      "label": "www.state.gov",
+      "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/",
+      "status": 404,
+      "outcome": "anti_bot",
+      "reason": "known_browser_only",
+      "detail": "State Department serves 404/405 to automated clients"
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-44",
+      "label": "www.gov.uk",
+      "url": "https://www.gov.uk/government/publications/collaboration-on-the-safety-of-ai-uk-us-memorandum-of-understanding/collaboration-on-the-safety-of-ai-uk-us-memorandum-of-understanding",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-45",
+      "label": "ec.europa.eu",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_24_1828",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-46",
+      "label": "docs.un.org",
+      "url": "https://docs.un.org/en/CCW/GGE.1/2026/3",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-47",
+      "label": "docs-library.unoda.org",
+      "url": "https://docs-library.unoda.org/Convention_on_Certain_Conventional_Weapons_-SeventhReview_Conference_%282026%29/CCW-CONF.VII-CRP.1-Rev.3.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-48",
+      "label": "www.un.org",
+      "url": "https://www.un.org/global-dialogue-ai-governance/en",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-49",
+      "label": "www.iso.org",
+      "url": "https://www.iso.org/standard/74438.html",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-50",
+      "label": "academic.oup.com",
+      "url": "https://academic.oup.com/isagsq/article/6/4/ksag145/8993928",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-51",
+      "label": "onlinelibrary.wiley.com",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.13444",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-52",
+      "label": "www.csis.org",
+      "url": "https://www.csis.org/analysis/state-ai-global-governance-and-its-implications-us-china-summit",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-53",
+      "label": "eastasiaforum.org",
+      "url": "https://eastasiaforum.org/2026/10/22/three-competing-approaches-to-global-ai-governance/",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-54",
+      "label": "digitallibrary.un.org",
+      "url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "doc-international-ai-law",
+      "source_id": "url-55",
+      "label": "digitallibrary.un.org",
+      "url": "https://digitallibrary.un.org/record/4130748",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    }
+  ]
+}

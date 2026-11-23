@@ -277,8 +277,16 @@ class TestCatalogue(unittest.TestCase):
         parties = inst["parties"]
         self.assertEqual(parties["signatories_total"], 92)
         self.assertEqual(parties["ratifications_total"], 0)
-        self.assertEqual(parties["entries"], [])
-        self.assertIn("itemised", " ".join(parties["unknowns"]))
+        self.assertEqual(len(parties["entries"]), 92)
+        names = {entry["party"] for entry in parties["entries"]}
+        self.assertIn("Colombia", names)
+        self.assertIn("European Union", names)
+        self.assertIn("International Fund for Agricultural Development", names)
+        self.assertEqual(
+            len(names - {"European Union", "International Fund for Agricultural Development"}),
+            90,
+        )
+        self.assertNotIn("no itemised", " ".join(parties["unknowns"]).lower())
         source_ids = {source["id"] for source in inst["sources"]}
         self.assertIn("mea-declaration", source_ids)
         self.assertIn("pib-summit", source_ids)
@@ -291,15 +299,36 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(inst["dates"]["adopted"], "2025-07-06")
         self.assertEqual(inst["verification"]["level"], "metadata_verified")
         self.assertNotIn("text", inst)
-        self.assertIsNone(inst["parties"]["signatories_total"])
-        self.assertEqual(inst["parties"]["entries"], [])
+        self.assertEqual(inst["parties"]["signatories_total"], 11)
+        self.assertEqual(len(inst["parties"]["entries"]), 11)
+        names = {entry["party"] for entry in inst["parties"]["entries"]}
+        self.assertIn("Brazil", names)
+        self.assertIn("China", names)
+        self.assertIn("Iran", names)
         source_ids = {source["id"] for source in inst["sources"]}
         self.assertIn("brics-presidency-pdf", source_ids)
         self.assertIn("brazil-mfa-page", source_ids)
+        self.assertIn("brics-members", source_ids)
+
+    def test_hrc_resolution_record(self) -> None:
+        inst = read_instrument("un-hrc-res-63-15")
+        self.assertEqual(inst["category"], "non_binding_instrument")
+        self.assertEqual(inst["instrument_type"], "resolution")
+        self.assertEqual(inst["binding_status"], "non_binding")
+        self.assertEqual(inst["status"], "adopted")
+        self.assertEqual(inst["dates"]["adopted"], "2026-10-06")
+        self.assertEqual(inst["verification"]["level"], "metadata_verified")
+        self.assertNotIn("text", inst)
+        self.assertIsNone(inst["parties"]["signatories_total"])
+        self.assertEqual(inst["parties"]["entries"], [])
+        self.assertIn("adopted without a vote", inst["status_note"].lower())
+        source_ids = {source["id"] for source in inst["sources"]}
+        self.assertIn("hrc-resolution", source_ids)
+        self.assertIn("hrc-record", source_ids)
 
     def test_candidate_register_counts(self) -> None:
         entries = json.loads((ROOT / "catalog" / "candidates.json").read_text(encoding="utf-8"))
-        self.assertEqual(len(entries), 24)
+        self.assertEqual(len(entries), 31)
         decisions = {"included": 0, "pending": 0, "excluded": 0}
         instruments = corpuslib.load_instruments()
         for entry in entries:
@@ -308,7 +337,7 @@ class TestCatalogue(unittest.TestCase):
                 self.assertIn(entry["instrument_id"], instruments)
             else:
                 self.assertIsNone(entry["instrument_id"])
-        self.assertEqual(decisions, {"included": 10, "pending": 7, "excluded": 7})
+        self.assertEqual(decisions, {"included": 11, "pending": 11, "excluded": 9})
 
     def test_pact_units_are_citable(self) -> None:
         units = corpuslib.load_units("un-ga-res-79-1")
@@ -399,10 +428,10 @@ class TestBuild(unittest.TestCase):
 
         build_site.main()
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(page.count('class="map-frame"'), 7)
-        self.assertEqual(page.count('class="map-key"'), 7)
+        self.assertEqual(page.count('class="map-frame"'), 8)
+        self.assertEqual(page.count('class="map-key"'), 8)
         figures = re.findall(r'<figure class="map-card">(.*?)</figure>', page, re.S)
-        self.assertEqual(len(figures), 7)
+        self.assertEqual(len(figures), 8)
         self.assertNotIn("What it is", page)
         self.assertEqual(page.count('class="reading"'), 3)
         self.assertEqual(page.count('<table class="record-table'), 2)
@@ -415,6 +444,7 @@ class TestBuild(unittest.TestCase):
             [
                 "WAICO 2026",
                 "CETS 225",
+                "New Delhi 2026",
                 "Paris 2025",
                 "Military AI 2023",
                 "Bletchley 2023",
@@ -463,7 +493,8 @@ class TestBuild(unittest.TestCase):
         self.assertIn("State: signed only", page)
         self.assertIn("States only", page)
         self.assertIn("37 confirmed of 38 reported", page)
-        self.assertEqual(page.count('class="map-parties"'), 7)
+        self.assertEqual(page.count('class="map-parties"'), 8)
+        self.assertEqual(by_title["New Delhi 2026"].count('fill="#a9c0e0"'), 0)
         self.assertIn('data-status="Ratified"', page)
         self.assertIn('data-status="Signed only"', page)
         self.assertIn('data-status="Endorsed"', page)
@@ -479,6 +510,7 @@ class TestBuild(unittest.TestCase):
             [
                 "WAICO 2026",
                 "CETS 225",
+                "New Delhi 2026",
                 "Paris 2025",
                 "Military AI 2023",
                 "Bletchley 2023",
@@ -488,6 +520,7 @@ class TestBuild(unittest.TestCase):
         )
         instruments = corpuslib.load_instruments()
         for title, iid in (
+            ("New Delhi 2026", "new-delhi-declaration-2026"),
             ("Paris 2025", "paris-ai-action-summit-statement-2025"),
             ("Bletchley 2023", "bletchley-declaration-2023"),
             ("Seoul 2024", "seoul-declaration-2024"),
@@ -538,6 +571,7 @@ class TestBuild(unittest.TestCase):
             )
         }
         cases = [
+            ("New Delhi 2026", "new-delhi-declaration-2026", "Endorsed"),
             ("Paris 2025", "paris-ai-action-summit-statement-2025", "Endorsed"),
             ("Bletchley 2023", "bletchley-declaration-2023", "Endorsed"),
             ("Seoul 2024", "seoul-declaration-2024", "Endorsed"),
@@ -596,7 +630,7 @@ class TestBuild(unittest.TestCase):
 
         build_site.main()
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(page.count('class="map-about"'), 7)
+        self.assertEqual(page.count('class="map-about"'), 8)
         figures = {
             re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
             for figure in re.findall(
@@ -604,6 +638,7 @@ class TestBuild(unittest.TestCase):
             )
         }
         cases = [
+            ("New Delhi 2026", "new-delhi-declaration-2026"),
             ("Paris 2025", "paris-ai-action-summit-statement-2025"),
             ("Bletchley 2023", "bletchley-declaration-2023"),
             ("Seoul 2024", "seoul-declaration-2024"),
@@ -797,11 +832,11 @@ class TestLinkAudit(unittest.TestCase):
             ("broken", "http_404"),
         )
 
-    def test_targets_cover_the_seven_panels(self) -> None:
+    def test_targets_cover_the_eight_panels(self) -> None:
         import build_site
 
         targets = self.audit.targets()
-        self.assertEqual(len(build_site.MAP_INSTRUMENT_IDS), 7)
+        self.assertEqual(len(build_site.MAP_INSTRUMENT_IDS), 8)
         self.assertEqual(
             {target.instrument_id for target in targets},
             set(build_site.MAP_INSTRUMENT_IDS),

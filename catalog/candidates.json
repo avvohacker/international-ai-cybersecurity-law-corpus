@@ -18,12 +18,12 @@
     "issuer": "Government of India and participating States and international organisations",
     "decision": "included",
     "instrument_id": "new-delhi-declaration-2026",
-    "reason": "Official Ministry of External Affairs text and Press Information Bureau release read. A non-binding declaration adopted on 19 February 2026 and endorsed by 92 countries and international organisations; the fourth summit in the Bletchley-Seoul-Paris series. Added after the summit-series audit found it missing from the corpus.",
+    "reason": "Official Ministry of External Affairs text and Press Information Bureau release read. A non-binding declaration adopted on 19 February 2026 and endorsed by 92 countries and international organisations; the PIB annex itemises 90 States, the EU and IFAD as of 5 March 2026, while the MEA page lists 91 and omits Colombia. The fourth summit in the Bletchley-Seoul-Paris series; added after the summit-series audit found it missing from the corpus.",
     "candidate_type": "declaration",
     "official_url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809",
     "searched_on": "2026-11-23",
-    "evidence": "Official MEA declaration text; PIB release of 21 February 2026 giving the 92-endorser count; official AI Impact Summit outcome page.",
-    "gaps": "No itemised list of the 92 endorsers; no follow-up mechanism verified; count includes international organisations as well as States."
+    "evidence": "Official MEA declaration text; PIB release with the 92-name annex (as of 5 March 2026, https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&reg=3&lang=1); official AI Impact Summit outcome page.",
+    "gaps": "The MEA page lists 91 and omits Colombia while the PIB annex lists 92; the discrepancy is unexplained; no follow-up mechanism verified; the count includes the EU and IFAD."
   },
   {
     "id": "brics-ai-statement-2025",
@@ -31,12 +31,12 @@
     "issuer": "BRICS Leaders, 17th BRICS Summit, Rio de Janeiro",
     "decision": "included",
     "instrument_id": "brics-ai-statement-2025",
-    "reason": "Official BRICS Presidency PDF and Brazilian Ministry of Foreign Affairs page read. The first stand-alone BRICS leaders' statement on global AI governance, adopted on 6 July 2025; non-binding and without an itemised signatory list. Added after the audit of other international AI instruments.",
+    "reason": "Official BRICS Presidency PDF and Brazilian Ministry of Foreign Affairs page read. The first stand-alone BRICS leaders' statement on global AI governance, adopted on 6 July 2025; non-binding and without an individual signature block. Its 11 issuing States are identified from the official BRICS membership page. Added after the audit of other international AI instruments.",
     "candidate_type": "declaration",
-    "official_url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
+    "official_url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial",
     "searched_on": "2026-11-23",
     "evidence": "Official BRICS Presidency PDF of the statement; Brazilian MFA page confirming the date and the 17th BRICS Summit setting.",
-    "gaps": "No itemised signatory list; no follow-up mechanism; relationship to WAICO not formal; no full text stored."
+    "gaps": "No individual signature block; the 11 issuing States are identified, not individual signatories; no follow-up mechanism; relationship to WAICO not formal; no full text stored."
   },
   {
     "id": "china-global-ai-governance-initiative-2023",
@@ -310,5 +310,96 @@
     "searched_on": "2026-11-23",
     "evidence": "State Department Pax Silica page with the declaration text and partner list; State Department 26 June 2026 fact sheet (24 signatories including the United States); State Department 23 October 2026 release (Paraguay as 26th signatory); Australian government publication of the 12 December 2025 declaration (seven founding signatories); State Department Taiwan joint statement (non-signatory participant).",
     "gaps": "Non-binding. The State Department partner list omits the United States, whose signature is confirmed by other official sources. Taiwan is a non-signatory participant. The separate AI Opportunity Statement (54 endorsers) is not catalogued here."
+  },
+  {
+    "id": "un-hrc-res-63-15",
+    "title": "Implications of artificial intelligence for the promotion and protection of human rights (A/HRC/RES/63/15)",
+    "issuer": "United Nations Human Rights Council, 63rd session",
+    "decision": "included",
+    "instrument_id": "un-hrc-res-63-15",
+    "reason": "Official A/HRC/RES/63/15 read in full. Adopted without a vote on 6 October 2026; a dedicated Human Rights Council resolution applying international human-rights law across the AI life cycle. Added after the coverage checklist identified the HRC layer as missing from the corpus.",
+    "candidate_type": "resolution",
+    "official_url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf",
+    "searched_on": "2026-11-23",
+    "evidence": "Official English PDF A/HRC/RES/63/15 (6 pages, read in full); UN Digital Library record; summary record A/HRC/63/SR.41. Adopted without a vote, 41st meeting, 6 October 2026.",
+    "gaps": "Non-binding; no vote or signatory list; no enforcement; only English read; PDF linked but not stored."
+  },
+  {
+    "id": "g7-digital-technology-ministerial-declaration-2026",
+    "title": "G7 Digital and Technology Ministerial Declaration: 29 May 2026",
+    "issuer": "G7 Digital and Technology Ministers (France presidency)",
+    "decision": "pending",
+    "instrument_id": null,
+    "reason": "Official GOV.UK text read. The declaration has substantial AI safety and AI adoption sections, but it is a broad digital-and-technology ministerial declaration, not an AI-specific instrument. Pending a decision whether to catalogue it as a non-binding declaration or as implementation material for the Hiroshima process.",
+    "candidate_type": "declaration",
+    "official_url": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026",
+    "searched_on": "2026-11-23",
+    "evidence": "Official GOV.UK publication, agreed in Paris on 29 May 2026 and published 1 June 2026; sections on promoting secure AI, boosting AI adoption, digital resilience and minors online.",
+    "gaps": "Broad digital/tech scope; no decision on cataloguing; the separate G7 Evian leaders’ AI meeting and the Paris Call are not part of this text."
+  },
+  {
+    "id": "un-ga-81-l34-military-ai",
+    "title": "Artificial intelligence in the military domain and its implications for international peace and security (A/C.1/81/L.34)",
+    "issuer": "United Nations General Assembly, First Committee, 81st session",
+    "decision": "pending",
+    "instrument_id": null,
+    "reason": "Draft resolution, not yet an adopted A/RES. The First Committee adopted it in October 2026; the plenary is expected in December 2026. It is therefore pending rather than catalogued as an adopted instrument.",
+    "candidate_type": "draft_resolution",
+    "official_url": "https://digitallibrary.un.org/record/4130554/files/A_C.1_81_L.34-EN.pdf",
+    "searched_on": "2026-11-23",
+    "evidence": "UN Digital Library record A/C.1/81/L.34, draft resolution dated 2026; First Committee adoption reported for 29 October 2026; no A/RES/81 symbol assigned as of 23 November 2026.",
+    "gaps": "Not yet adopted by the plenary; no final resolution number or text; vote details not verified."
+  },
+  {
+    "id": "un-ga-81-l37-laws",
+    "title": "Lethal autonomous weapons systems (A/C.1/81/L.37)",
+    "issuer": "United Nations General Assembly, First Committee, 81st session",
+    "decision": "pending",
+    "instrument_id": null,
+    "reason": "Draft resolution, not yet an adopted A/RES. The First Committee adopted it in October 2026; the plenary is expected in December 2026. It is therefore pending rather than catalogued as an adopted instrument.",
+    "candidate_type": "draft_resolution",
+    "official_url": "https://digitallibrary.un.org/record/4130858/files/A_C.1_81_L.37-EN.pdf",
+    "searched_on": "2026-11-23",
+    "evidence": "UN Digital Library record A/C.1/81/L.37, draft resolution dated 2026; First Committee adoption reported for 30 October 2026; no A/RES/81 symbol assigned as of 23 November 2026.",
+    "gaps": "Not yet adopted by the plenary; no final resolution number or text; vote details not verified."
+  },
+  {
+    "id": "g20-ai-prosperity-compact-2026",
+    "title": "G20 AI Prosperity Compact and G20 AI Prosperity Objectives (2026)",
+    "issuer": "G20 Innovation Ministers, Chapel Hill, 2 September 2026",
+    "decision": "pending",
+    "instrument_id": null,
+    "reason": "Official White House release and Japanese METI page identify the AI Prosperity Compact and the G20 AI Prosperity Objectives as AI-specific deliverables of the 2026 G20 Innovation Ministerial. The texts have not yet been read and their legal form is not confirmed; pending.",
+    "candidate_type": "ministerial_deliverable",
+    "official_url": "https://www.meti.go.jp/english/press/2026/09/20260907002.html",
+    "searched_on": "2026-11-23",
+    "evidence": "White House release of 2 September 2026 on the G20 Innovation Ministerial; METI page listing the G20 AI Prosperity Objectives, the AI Prosperity Compact and the Carolina Principles as related materials.",
+    "gaps": "Texts not acquired; issuer, adoption procedure and legal form need verification; whether the Compact is a consensus G20 text or a presidency product is unclear."
+  },
+  {
+    "id": "paris-call-ai-safety-2026",
+    "title": "Paris Call for AI Safety and Security",
+    "issuer": "Governments, AI companies and civil-society organisations, convened by the President of France",
+    "decision": "excluded",
+    "instrument_id": null,
+    "reason": "A multi-stakeholder voluntary declaration, not an intergovernmental instrument. The Élysée page lists 19 governments alongside 11 companies and 11 civil-society organisations, and the list remains open to new endorsements. It is excluded from the instrument corpus but recorded as a political call; it may be relevant to an authoritative-materials layer.",
+    "candidate_type": "multi_stakeholder_declaration",
+    "official_url": "https://www.elysee.fr/en/emmanuel-macron/2026/11/09/paris-call-for-ai-safety-and-security",
+    "searched_on": "2026-11-23",
+    "evidence": "Official Élysée page, posted 9 November 2026, with the text and a signatory list that is updated as new endorsements arrive; the page lists governments, companies and civil society, not States alone.",
+    "gaps": "Not an intergovernmental instrument; no treaty, ratification, depositary or enforcement; signatory list changes; the US is not a signatory."
+  },
+  {
+    "id": "g20-innovation-ministerial-statement-2026",
+    "title": "G20 Innovation Ministerial Statement: 2 September 2026",
+    "issuer": "G20 Innovation Ministers, Chapel Hill, United States",
+    "decision": "excluded",
+    "instrument_id": null,
+    "reason": "A broad innovation ministerial statement across six pillars. AI is one pillar, but the text is not AI-specific and does not create legal obligations; the separate G20 AI Prosperity Compact and Objectives are pending as their own candidate. Excluded as a general innovation statement.",
+    "candidate_type": "ministerial_statement",
+    "official_url": "https://www.gov.uk/government/publications/g20-innovation-ministerial-statement-2-september-2026",
+    "searched_on": "2026-11-23",
+    "evidence": "Official GOV.UK publication of the statement agreed in North Carolina on 2 September 2026; White House release describing six pillars, including AI.",
+    "gaps": "Broad innovation scope; AI-specific G20 deliverables are pending; no legal obligation."
   }
 ]

@@ -2,24 +2,24 @@
   "counts": {
     "by_binding": {
       "binding": 10,
-      "non_binding": 34
+      "non_binding": 35
     },
     "by_category": {
       "agreement_ai_provisions": 5,
       "ai_treaty": 2,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 26,
+      "non_binding_instrument": 27,
       "preparatory_interpretive": 2,
       "supranational_law": 1,
       "technical_standard": 5
     },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 34
+      "metadata_verified": 35
     },
     "full_texts": 16,
-    "total": 44,
+    "total": 45,
     "with_local_original": 15
   },
   "full_text_ids": [
@@ -666,9 +666,9 @@
       },
       "gaps": [
         "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
-        "No itemised list of signatories was located; the statement is issued collectively by the BRICS leaders.",
+        "No individual signature block; the 11 entries are the BRICS member States, not individual signatories.",
         "No follow-up mechanism, review cycle or implementation reporting was verified.",
-        "The statement's relationship to WAICO and to the 2026 BRICS summit was not verified.",
+        "The relationship between this statement and the later WAICO Agreement is political, not institutional; no formal linkage was verified.",
         "No full text is stored; the record is metadata-only."
       ],
       "id": "brics-ai-statement-2025",
@@ -683,6 +683,11 @@
           "name": "Federative Republic of Brazil, 2025 BRICS Presidency",
           "role": "host",
           "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial"
+        },
+        {
+          "name": "BRICS member States",
+          "role": "issuer",
+          "url": "https://brics.br/en/about-the-brics"
         }
       ],
       "languages": {
@@ -695,19 +700,87 @@
       "parties": {
         "as_of": "2025-07-06",
         "declarations": [],
-        "entries": [],
+        "entries": [
+          {
+            "notes": [
+              "Federative Republic of Brazil — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "Brazil"
+          },
+          {
+            "notes": [
+              "Russian Federation — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "Russian Federation"
+          },
+          {
+            "notes": [
+              "Republic of India — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "India"
+          },
+          {
+            "notes": [
+              "People's Republic of China — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "China"
+          },
+          {
+            "notes": [
+              "Republic of South Africa — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "South Africa"
+          },
+          {
+            "notes": [
+              "Kingdom of Saudi Arabia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "Saudi Arabia"
+          },
+          {
+            "notes": [
+              "Arab Republic of Egypt — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "Egypt"
+          },
+          {
+            "notes": [
+              "United Arab Emirates — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "United Arab Emirates"
+          },
+          {
+            "notes": [
+              "Federal Democratic Republic of Ethiopia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "Ethiopia"
+          },
+          {
+            "notes": [
+              "Republic of Indonesia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "Indonesia"
+          },
+          {
+            "notes": [
+              "Islamic Republic of Iran — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+            ],
+            "party": "Iran"
+          }
+        ],
         "notifications": [],
         "objections": [],
         "ratifications_total": 0,
         "reservations": [],
-        "signatories_total": null,
+        "signatories_total": 11,
         "source_ids": [
           "brics-presidency-pdf",
-          "brazil-mfa-page"
+          "brazil-mfa-page",
+          "brics-members"
         ],
-        "summary": "Issued collectively by the BRICS leaders at the 17th BRICS Summit. The official text does not publish an itemised signature list, so the record does not infer individual party entries or a membership count.",
+        "summary": "Issued collectively by the leaders of the 11 BRICS member States at the 17th BRICS Summit: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The official statement has no individual signature block; the entries record the issuing States, not individual signatures.",
         "unknowns": [
-          "The official text is a collective leaders' statement and does not include an itemised signatory list; no party-by-party entries are recorded.",
+          "The official text is a collective leaders' statement and has no individual signature block; the 11 entries are the BRICS member States identified on the official BRICS page, not individual signatories.",
           "The statement creates no depositary, ratification, accession or withdrawal record.",
           "No follow-up mechanism, reporting cycle or review conference was verified.",
           "The relationship between this statement and the later WAICO Agreement is political, not institutional; no formal linkage was verified."
@@ -753,7 +826,7 @@
           "International cooperation — the statement warns that a proliferation of initiatives and diverging views may aggravate asymmetries and the legitimacy gap in global digital governance."
         ],
         "excluded_scope": "A political statement by BRICS leaders. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. It does not establish an institution or a follow-up mechanism. National implementation is not assessed.",
-        "reason": "The first stand-alone BRICS leaders' statement on the global governance of artificial intelligence, adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. It sets out a collective position centred on digital sovereignty, the right to development, the UN Charter, capacity building and the concerns of the Global South. It is a political statement, not a treaty: it creates no legal obligation, ratification, depositary or monitoring. It is included because it is a distinct coalition instrument that the three-pole reading would otherwise miss, and because it documents the China–Global South diffusion position before WAICO was established."
+        "reason": "The first stand-alone BRICS leaders' statement on the global governance of artificial intelligence, adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025 by the leaders of the 11 BRICS member States. It sets out a collective position centred on digital sovereignty, the right to development, the UN Charter, capacity building and the concerns of the Global South. It is a political statement, not a treaty: it creates no legal obligation, ratification, depositary or monitoring. It is included because it is a distinct coalition instrument that the three-pole reading would otherwise miss, and because it documents the China-Global South diffusion position before WAICO was established."
       },
       "rights": {
         "licence": "BRICS 2025 Presidency / Government of Brazil official publication",
@@ -763,11 +836,11 @@
       "sources": [
         {
           "accessed": "2026-11-23",
-          "http_status": 200,
+          "http_status": null,
           "id": "brics-presidency-pdf",
           "kind": "official_primary",
           "language": "en",
-          "note": "Official PDF of the BRICS Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025.",
+          "note": "Official PDF of the BRICS Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The host did not resolve from this environment during the 23 November 2026 audit; the text was read earlier and the Brazilian MFA page links to it.",
           "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
           "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
         },
@@ -780,10 +853,20 @@
           "note": "Official Brazilian MFA page for the statement, with a link to the English text; confirms the date and the 17th BRICS Summit setting.",
           "publisher": "Ministry of Foreign Affairs, Federative Republic of Brazil",
           "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": null,
+          "id": "brics-members",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official page listing the 11 BRICS member States: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The host did not resolve from this environment during the 23 November 2026 audit; the page was read through the extraction tool.",
+          "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
+          "url": "https://brics.br/en/about-the-brics"
         }
       ],
       "status": "adopted",
-      "status_note": "Non-binding political statement, not a treaty. It was issued collectively by the BRICS leaders at the Rio de Janeiro summit; the official text does not include an itemised list of signatories, and no ratification, depositary, monitoring or enforcement is established. It is a coalition statement, not an instrument of the BRICS organization with legal personality.",
+      "status_note": "Non-binding political statement, not a treaty. It was issued collectively by the leaders of the 11 BRICS member States at the Rio de Janeiro summit; the official text has no individual signature block. The 11 issuing States are identified from the official BRICS membership page, not from a signature list. No ratification, depositary, monitoring or enforcement is established. It is a coalition statement, not an instrument of the BRICS organization with legal personality.",
       "title": {
         "official": "BRICS Leaders' Statement on the Global Governance of Artificial Intelligence",
         "short": "BRICS AI Statement"
@@ -801,9 +884,9 @@
             "result": "The Brazilian Ministry of Foreign Affairs page confirms the statement was issued at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025."
           },
           {
-            "check": "Party-level data checked for an itemised list.",
+            "check": "Party-level data checked against the official BRICS membership page.",
             "date": "2026-11-23",
-            "result": "The official text is a collective statement and does not include an itemised list of signatories; no party entries are recorded."
+            "result": "The official BRICS page lists 11 member States; the statement is collective and has no individual signature block. The record lists the 11 issuing States, not individual signatures."
           },
           {
             "check": "Legal nature checked against the text and official descriptions.",
@@ -812,7 +895,7 @@
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official BRICS Presidency PDF and the Brazilian MFA page. The record is metadata-only: no full text is stored. The absence of an itemised signatory list is recorded as an unknown rather than filled by inference."
+        "notes": "Metadata verified from the official BRICS Presidency PDF, the Brazilian MFA page and the official BRICS membership page. The record is metadata-only: no full text is stored. The statement has no individual signature block; the 11 entries are the member States that issued it collectively."
       }
     },
     {
@@ -2876,12 +2959,12 @@
         ],
         "summary": "Two Parties: the Republic of Korea and Singapore.",
         "unknowns": [
-          "No depositary register was consulted; dates rely on the Singapore MTI page and the signed text."
+          "No depositary register was consulted; dates rely on the Singapore METI page and the signed text."
         ],
         "withdrawals": []
       },
       "provenance": {
-        "discovered_via": "Singapore MTI and Korean MOTIE treaty pages; article number cross-checked in an ADB comparative study.",
+        "discovered_via": "Singapore METI and Korean MOTIE treaty pages; article number cross-checked in an ADB comparative study.",
         "search_dates": [
           "2026-11-23"
         ]
@@ -2914,7 +2997,7 @@
         "licence": "Government of Korea / Government of Singapore terms",
         "note": "Official treaty text; no open licence identified. Metadata only in this corpus.",
         "status": "public_official_text",
-        "url": "https://www.mti.gov.sg/terms-of-use"
+        "url": "https://www.meti.gov.sg/terms-of-use/"
       },
       "sources": [
         {
@@ -2929,11 +3012,12 @@
         },
         {
           "accessed": "2026-11-23",
+          "http_status": null,
           "id": "mti-page",
           "kind": "official_secondary",
-          "note": "Confirms signature 21 November 2022 and entry into force 14 January 2023.",
-          "publisher": "Ministry of Trade and Industry, Singapore",
-          "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/ksdpa"
+          "note": "Official KSDPA page, moved from MTI to METI on 1 October 2026. Confirms signature 21 November 2022 and entry into force 14 January 2023; returns 404 to some automated clients but was read through the extraction tool.",
+          "publisher": "Ministry of Energy, Trade and Industry, Singapore",
+          "url": "https://www.meti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/ksdpa"
         }
       ],
       "status": "in_force",
@@ -2945,7 +3029,7 @@
       "verification": {
         "checks": [
           {
-            "check": "Signature and entry-into-force dates checked on the Singapore MTI page and press release.",
+            "check": "Signature and entry-into-force dates checked on the Singapore METI page and press release.",
             "date": "2026-11-23",
             "result": "Signed 21 November 2022; in force 14 January 2023."
           },
@@ -3070,12 +3154,12 @@
       "category": "non_binding_instrument",
       "dates": {
         "adopted": "2026-02-19",
-        "notes": "Adopted at the AI Impact Summit in New Delhi on 19 February 2026; the summit ran from 18 to 19 February 2026. The Ministry of External Affairs and the Press Information Bureau report 92 endorsing countries and international organisations. The text has no signature, ratification, depositary or entry-into-force clause.",
+        "notes": "Adopted at the AI Impact Summit in New Delhi on 19 February 2026; the summit ran from 18 to 19 February 2026. The Press Information Bureau's annex states that the list is 'as of 5th March 2026' and names 92 endorsers; the Ministry of External Affairs page was last updated on 21 February 2026 and lists 91, without Colombia. The text has no signature, ratification, depositary or entry-into-force clause.",
         "verified_on": "2026-11-23"
       },
       "gaps": [
         "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
-        "No itemised list of the 92 endorsers was located; the State/organisation split is not published in the pages read.",
+        "Two official lists disagree: the MEA page of 21 February 2026 lists 91 and omits Colombia; the PIB annex as of 5 March 2026 lists 92 and includes Colombia. No official explanation was located.",
         "No follow-up mechanism, review cycle or implementation reporting was verified.",
         "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate instrument and are not catalogued here.",
         "The declaration's relationship to the UN Global Dialogue on AI Governance and to the Paris and Seoul texts is political, not institutional; no formal linkage was verified.",
@@ -3103,9 +3187,295 @@
         "translations": []
       },
       "parties": {
-        "as_of": "2026-11-23",
+        "as_of": "2026-03-05",
         "declarations": [],
-        "entries": [],
+        "entries": [
+          {
+            "party": "Albania"
+          },
+          {
+            "party": "Armenia"
+          },
+          {
+            "party": "Australia"
+          },
+          {
+            "party": "Austria"
+          },
+          {
+            "party": "Bangladesh"
+          },
+          {
+            "party": "Belgium"
+          },
+          {
+            "party": "Bhutan"
+          },
+          {
+            "party": "Bolivia"
+          },
+          {
+            "party": "Botswana"
+          },
+          {
+            "party": "Brazil"
+          },
+          {
+            "party": "Bulgaria"
+          },
+          {
+            "party": "Cambodia"
+          },
+          {
+            "party": "Canada"
+          },
+          {
+            "party": "Chile"
+          },
+          {
+            "party": "China"
+          },
+          {
+            "party": "Croatia"
+          },
+          {
+            "notes": [
+              "Included in the PIB list of 5 March 2026; absent from the MEA page updated 21 February 2026."
+            ],
+            "party": "Colombia"
+          },
+          {
+            "party": "Costa Rica"
+          },
+          {
+            "party": "Cuba"
+          },
+          {
+            "party": "Cyprus"
+          },
+          {
+            "party": "Czech Republic"
+          },
+          {
+            "party": "Denmark"
+          },
+          {
+            "party": "Egypt"
+          },
+          {
+            "party": "Estonia"
+          },
+          {
+            "party": "Ethiopia"
+          },
+          {
+            "party": "Fiji"
+          },
+          {
+            "party": "Finland"
+          },
+          {
+            "party": "France"
+          },
+          {
+            "party": "Gambia"
+          },
+          {
+            "party": "Germany"
+          },
+          {
+            "party": "Greece"
+          },
+          {
+            "party": "Guatemala"
+          },
+          {
+            "party": "Guyana"
+          },
+          {
+            "party": "Hungary"
+          },
+          {
+            "party": "Iceland"
+          },
+          {
+            "party": "India"
+          },
+          {
+            "party": "Indonesia"
+          },
+          {
+            "party": "Iran"
+          },
+          {
+            "party": "Ireland"
+          },
+          {
+            "party": "Israel"
+          },
+          {
+            "party": "Italy"
+          },
+          {
+            "party": "Japan"
+          },
+          {
+            "party": "Kazakhstan"
+          },
+          {
+            "party": "Kenya"
+          },
+          {
+            "party": "Kyrgyzstan"
+          },
+          {
+            "party": "Latvia"
+          },
+          {
+            "party": "Liechtenstein"
+          },
+          {
+            "party": "Lithuania"
+          },
+          {
+            "party": "Luxembourg"
+          },
+          {
+            "party": "Maldives"
+          },
+          {
+            "party": "Malta"
+          },
+          {
+            "party": "Mauritius"
+          },
+          {
+            "party": "Mexico"
+          },
+          {
+            "party": "Morocco"
+          },
+          {
+            "party": "Mozambique"
+          },
+          {
+            "party": "Myanmar"
+          },
+          {
+            "party": "Nepal"
+          },
+          {
+            "party": "Netherlands"
+          },
+          {
+            "party": "New Zealand"
+          },
+          {
+            "party": "Norway"
+          },
+          {
+            "party": "Oman"
+          },
+          {
+            "party": "Paraguay"
+          },
+          {
+            "party": "Peru"
+          },
+          {
+            "party": "Philippines"
+          },
+          {
+            "party": "Poland"
+          },
+          {
+            "party": "Portugal"
+          },
+          {
+            "party": "Romania"
+          },
+          {
+            "party": "Russian Federation"
+          },
+          {
+            "party": "Rwanda"
+          },
+          {
+            "party": "Saudi Arabia"
+          },
+          {
+            "party": "Senegal"
+          },
+          {
+            "party": "Serbia"
+          },
+          {
+            "party": "Seychelles"
+          },
+          {
+            "party": "Singapore"
+          },
+          {
+            "party": "Slovakia"
+          },
+          {
+            "party": "Slovenia"
+          },
+          {
+            "party": "Republic of Korea"
+          },
+          {
+            "party": "Spain"
+          },
+          {
+            "party": "Sri Lanka"
+          },
+          {
+            "party": "Suriname"
+          },
+          {
+            "party": "Sweden"
+          },
+          {
+            "party": "Switzerland"
+          },
+          {
+            "party": "Tajikistan"
+          },
+          {
+            "party": "Tanzania"
+          },
+          {
+            "party": "Trinidad and Tobago"
+          },
+          {
+            "party": "United Arab Emirates"
+          },
+          {
+            "party": "Ukraine"
+          },
+          {
+            "party": "United Kingdom"
+          },
+          {
+            "party": "United States of America"
+          },
+          {
+            "party": "Uzbekistan"
+          },
+          {
+            "notes": [
+              "Participating international organisation, not a State."
+            ],
+            "party": "European Union"
+          },
+          {
+            "notes": [
+              "Participating international organisation (UN specialised agency), not a State."
+            ],
+            "party": "International Fund for Agricultural Development"
+          }
+        ],
         "notifications": [],
         "objections": [],
         "ratifications_total": 0,
@@ -3116,9 +3486,9 @@
           "pib-summit",
           "india-outcomes"
         ],
-        "summary": "92 countries and international organisations are reported as endorsers by India's Ministry of External Affairs and Press Information Bureau. No itemised public list was located in the official pages read, so the record does not infer party-by-party entries or a State/organisation split.",
+        "summary": "92 endorsers itemised by the Press Information Bureau as of 5 March 2026: 90 States, the European Union and IFAD. The Ministry of External Affairs page of 21 February 2026 lists 91 and omits Colombia; the difference is recorded, not resolved.",
         "unknowns": [
-          "No itemised list of the 92 endorsers was located on the official MEA or PIB pages read. The count includes international organisations as well as States, and the split between them is not stated.",
+          "The MEA page (21 February 2026) lists 91 endorsers and omits Colombia; the PIB annex (as of 5 March 2026) lists 92 and includes Colombia. No official explanation for the difference was located.",
           "The declaration is non-binding; there is no depositary, ratification, accession or withdrawal record.",
           "No follow-up mechanism, reporting cycle or review conference was verified.",
           "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate industry commitment and are not counted here."
@@ -3126,7 +3496,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "discovered_via": "Search for the outcome of the 2026 AI Impact Summit while auditing the summit series against the corpus. The declaration was missing from the 42-record corpus; the official MEA text and the PIB release were then read.",
+        "discovered_via": "Search for the outcome of the 2026 AI Impact Summit while auditing the summit series against the corpus. The declaration was missing from the 42-record corpus; the official MEA text and the PIB release were then read. The PIB annex was subsequently found to contain the full 92-name list, correcting an earlier record that said no itemised list existed.",
         "search_dates": [
           "2026-11-23"
         ]
@@ -3169,7 +3539,7 @@
           "Complementarity with existing international initiatives — the declaration is to be read alongside, not instead of, other international and regional AI processes."
         ],
         "excluded_scope": "A political declaration. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. The separate New Delhi Frontier AI Impact Commitments, announced by 13 model providers at the same summit, are a different instrument and are not counted as parties to the declaration. National implementation is not assessed.",
-        "reason": "The declaration adopted at the AI Impact Summit in New Delhi on 19 February 2026, the fourth summit in the series that began at Bletchley Park in 2023. India's Ministry of External Affairs and Press Information Bureau report that 92 countries and international organisations endorsed it, the widest endorsement count among the summit declarations in the corpus. It marks the series' shift from AI safety to AI impact and development, and it is a political declaration, not a treaty: it creates no legal obligation, ratification, depositary, monitoring or dispute settlement. It is included because the corpus already catalogues the Bletchley, Seoul and Paris summit texts and would otherwise omit the 2026 stage of the same series."
+        "reason": "The declaration adopted at the AI Impact Summit in New Delhi on 19 February 2026, the fourth summit in the series that began at Bletchley Park in 2023. The Press Information Bureau's annex lists 92 endorsers as of 5 March 2026: 90 States, the European Union and IFAD, the widest endorsement count among the summit declarations in the corpus. It marks the series' shift from AI safety to AI impact and development, and it is a political declaration, not a treaty: it creates no legal obligation, ratification, depositary, monitoring or dispute settlement. It is included because the corpus already catalogues the Bletchley, Seoul and Paris summit texts and would otherwise omit the 2026 stage of the same series."
       },
       "rights": {
         "licence": "Government of India official publication",
@@ -3183,7 +3553,7 @@
           "id": "mea-declaration",
           "kind": "official_primary",
           "language": "en",
-          "note": "Official text of the AI Impact Summit Declaration, New Delhi, 18-19 February 2026. The page reproduces the preamble and the seven pillars.",
+          "note": "Official text of the AI Impact Summit Declaration, New Delhi, 18-19 February 2026. The page reproduces the preamble and the seven pillars; its endorser list was last updated on 21 February 2026 and names 91, without Colombia.",
           "publisher": "Ministry of External Affairs, Government of India",
           "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809"
         },
@@ -3193,7 +3563,7 @@
           "id": "pib-summit",
           "kind": "official_secondary",
           "language": "en",
-          "note": "Official press release of 21 February 2026: the AI Impact Summit concluded with the adoption of the New Delhi Declaration on AI Impact, endorsed by 92 countries and international organisations; lists the seven pillars and the voluntary deliverables.",
+          "note": "Official press release posted on 21 February 2026. Its annex lists 92 endorsers 'as of 5th March 2026', including Colombia; the list is the basis for the 92 entries in this record.",
           "publisher": "Press Information Bureau, Government of India",
           "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&reg=3&lang=1"
         },
@@ -3209,7 +3579,7 @@
         }
       ],
       "status": "adopted",
-      "status_note": "Non-binding political declaration, not a treaty. 92 countries and international organisations endorsed it, according to the Government of India; the official declaration page does not publish an itemised list of the 92 in the text consulted, and the count includes international organisations as well as States. It creates no legal obligation, ratification, depositary, monitoring or dispute settlement. The separate New Delhi Frontier AI Impact Commitments were announced by 13 model providers and are not part of this declaration.",
+      "status_note": "Non-binding political declaration, not a treaty. The Press Information Bureau's annex lists 92 endorsers as of 5 March 2026: 90 States, the European Union and IFAD. The Ministry of External Affairs page updated 21 February 2026 lists 91 and omits Colombia. The record uses the later PIB list and records the discrepancy; it does not infer any other missing endorsement. The declaration creates no legal obligation, ratification, depositary, monitoring or dispute settlement. The separate New Delhi Frontier AI Impact Commitments were announced by 13 model providers and are not part of this declaration.",
       "title": {
         "official": "AI Impact Summit Declaration, New Delhi",
         "short": "New Delhi Declaration on AI Impact"
@@ -3224,12 +3594,12 @@
           {
             "check": "Adoption date and endorser count checked against the official press release.",
             "date": "2026-11-23",
-            "result": "The Press Information Bureau release of 21 February 2026 states that the summit concluded with the adoption of the New Delhi Declaration on AI Impact and that 92 countries and international organisations endorsed it."
+            "result": "The Press Information Bureau release states that the summit adopted the New Delhi Declaration on AI Impact and that its annex lists 92 endorsers as of 5 March 2026."
           },
           {
-            "check": "Party-level data checked for an itemised list.",
+            "check": "Party-level data checked against both official lists.",
             "date": "2026-11-23",
-            "result": "The MEA declaration page and the PIB release give the aggregate count but no itemised list of the 92 endorsers; no party-by-party entries are recorded."
+            "result": "The PIB annex itemises 92 endorsers: 90 States, the EU and IFAD, including Colombia. The MEA page lists 91 and omits Colombia. The record uses the later PIB list and records the discrepancy."
           },
           {
             "check": "Legal nature checked against the text and official descriptions.",
@@ -3238,7 +3608,7 @@
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from official Indian government sources. The record is metadata-only: no full text is stored. The 92-endorser count is reproduced as reported; the absence of an itemised list is recorded as an unknown rather than filled by inference."
+        "notes": "Metadata verified from official Indian government sources. The record is metadata-only: no full text is stored. The 92-endorser count is reproduced from the PIB annex and itemised; the MEA page lists 91 and omits Colombia. The difference is recorded as an unknown rather than filled by inference."
       }
     },
     {
@@ -5967,6 +6337,182 @@
         ],
         "level": "metadata_verified",
         "notes": "Original preserved and hashed; full text not segmented. Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2026-10-06",
+        "notes": "Adopted without a vote at the 41st meeting of the Human Rights Council's 63rd session, 6 October 2026. Official English document A/HRC/RES/63/15, 6 pages.",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding: no ratification, depositary, monitoring, reporting or enforcement.",
+        "Adopted without a vote, so there is no State-by-State voting record.",
+        "No military-AI prohibition; international humanitarian law is referenced only as applicable.",
+        "Only the English text was read; the other five authentic UN language versions were not acquired.",
+        "No full text is stored in the corpus; the record is metadata-only.",
+        "The requested panel discussion and OHCHR report are future follow-up, not implementation."
+      ],
+      "id": "un-hrc-res-63-15",
+      "instrument_type": "resolution",
+      "issuer": [
+        {
+          "name": "United Nations Human Rights Council (63rd session)",
+          "role": "issuer",
+          "url": "https://www.ohchr.org/en/hrbodies/hrc/home"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UN official languages. The English PDF was read; the Arabic, Chinese, French, Russian and Spanish versions were not acquired.",
+        "translations": []
+      },
+      "parties": {
+        "as_of": "2026-10-06",
+        "declarations": [],
+        "entries": [],
+        "notifications": [],
+        "objections": [],
+        "ratifications_total": 0,
+        "reservations": [],
+        "signatories_total": null,
+        "source_ids": [
+          "hrc-resolution",
+          "hrc-record",
+          "hrc-meeting"
+        ],
+        "summary": "Adopted by the 47-member Human Rights Council without a vote. There is no individual vote or signatory list; Council membership is not a party list for this resolution.",
+        "unknowns": [
+          "No vote is recorded because the resolution was adopted without a vote; no State-by-State position is published.",
+          "No signature or ratification is possible; the resolution creates no depositary or party status.",
+          "No implementation reporting, review cycle or compliance mechanism is established beyond the requested panel discussion and OHCHR report.",
+          "Only the English text was read; the other five authentic UN language versions were not acquired."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "Coverage-checklist review of UN human-rights bodies; A/HRC/RES/63/15 was identified on the UN Digital Library and its official English PDF was read.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-79-1",
+          "note": "The resolution welcomes the Pact for the Future and the Global Digital Compact, including their commitment to international human-rights law throughout the life cycle of digital and emerging technologies.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-79-325",
+          "note": "The resolution welcomes the first Global Dialogue on AI Governance in July 2026 and takes note of the Independent International Scientific Panel's preliminary report.",
+          "relation": "related"
+        },
+        {
+          "id": "unesco-ethics-ai-2021",
+          "note": "The resolution recalls the UNESCO Recommendation on the Ethics of AI (23 November 2021).",
+          "relation": "related"
+        },
+        {
+          "id": "coe-cets-225",
+          "note": "CETS 225 is the binding AI-specific human-rights treaty; the HRC resolution is universal but non-binding.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-78-265",
+          "note": "Earlier UNGA AI resolution; the HRC resolution builds on the UN's AI-governance track.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Operative paragraph 1 — recognises AI's potential to contribute to human rights and sustainable development, while acknowledging risks to the enjoyment of human rights.",
+          "Operative paragraph 2 — affirms that the design, development, deployment and use of AI must be consistent with international law, including international human rights law and international humanitarian law as applicable.",
+          "Operative paragraphs 3–7 — AI governance under human-rights law; legislative and regulatory measures; participation of developing countries; access to information; human dignity, equality, privacy, transparency, explainability, accountability, accessibility, human oversight and effective remedies.",
+          "Operative paragraph 8 — States should refrain from or cease uses of AI that cannot be operated consistently with international human rights law or that pose undue risks, including systems whose capabilities could reasonably be expected to cause loss of human control.",
+          "Operative paragraphs 9–10 — human-rights due diligence and impact assessments; meaningful human oversight, information, human review and effective remedies where AI plays a material role in decisions affecting rights.",
+          "Operative paragraphs 11–13 — freedom of opinion and expression, privacy, differentiated impacts on vulnerable groups, and the responsibility of business enterprises under the Guiding Principles on Business and Human Rights.",
+          "Operative paragraphs 14–17 — AI literacy, international cooperation and capacity building, digital public goods and open models, and coherence among international initiatives.",
+          "Operative paragraphs 20–23 — a panel discussion at the 65th session on AI capacity building and the AI divide; an OHCHR report to the 66th session; the Council remains seized of the matter."
+        ],
+        "excluded_scope": "A non-binding Human Rights Council resolution. It creates no signature, ratification, depositary, monitoring or enforcement mechanism, and it does not establish a military-AI prohibition. It applies existing human-rights obligations rather than creating new ones.",
+        "reason": "A dedicated Human Rights Council resolution on the human-rights implications of artificial intelligence, adopted without a vote on 6 October 2026. It complements the General Assembly resolutions and CETS 225 by applying existing international human-rights law across the AI life cycle: discrimination, privacy, freedom of expression, human oversight, due diligence, remedies and capacity building. It is non-binding and creates no enforcement mechanism, but it is the Human Rights Council's principal AI-specific text and was missing from the corpus."
+      },
+      "rights": {
+        "licence": "United Nations terms of use",
+        "note": "Official UN document; UN copyright and terms of use apply. The PDF is linked, not stored.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "hrc-resolution",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official English PDF of A/HRC/RES/63/15, 6 pages; read in full. The PDF is not stored in the corpus.",
+          "publisher": "United Nations Human Rights Council",
+          "url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "hrc-record",
+          "kind": "registry",
+          "note": "Bibliographic record: symbol A/HRC/RES/63/15; adopted 6 October 2026; 41st meeting; adopted without a vote.",
+          "publisher": "UN Digital Library",
+          "url": "https://digitallibrary.un.org/record/4130748"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "hrc-meeting",
+          "kind": "registry",
+          "note": "Summary record A/HRC/63/SR.41 of the meeting at which the resolution was adopted.",
+          "publisher": "UN Digital Library",
+          "url": "https://digitallibrary.un.org/record/4132633"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted without a vote on 6 October 2026. The resolution is non-binding and creates no ratification, depositary, monitoring or enforcement mechanism. It applies international human-rights law to AI and requests follow-up through a panel discussion at the 65th session and an OHCHR report to the 66th session.",
+      "title": {
+        "official": "Implications of artificial intelligence for the promotion and protection of human rights",
+        "short": "HRC resolution 63/15 on AI and human rights"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official English PDF opened and read.",
+            "date": "2026-11-23",
+            "result": "A/HRC/RES/63/15, 6 pages; title, symbol, 63rd session and adoption date 6 October 2026 confirmed; adopted without a vote."
+          },
+          {
+            "check": "Operative paragraphs checked for AI-specific content.",
+            "date": "2026-11-23",
+            "result": "The resolution applies international human rights law and, as applicable, international humanitarian law to the AI life cycle; it addresses discrimination, privacy, expression, human oversight, due diligence, remedies and capacity building."
+          },
+          {
+            "check": "Party-level data checked.",
+            "date": "2026-11-23",
+            "result": "No individual vote or signatory list exists; the resolution was adopted by the 47-member Council without a vote."
+          },
+          {
+            "check": "Legal nature checked.",
+            "date": "2026-11-23",
+            "result": "A non-binding resolution; no ratification, depositary, monitoring or enforcement mechanism."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "The official PDF was read in full but is not stored, so the record is metadata-verified rather than full-text-checked. The resolution's follow-up (65th-session panel and 66th-session report) has not yet occurred."
       }
     },
     {

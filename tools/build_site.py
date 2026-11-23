@@ -45,7 +45,14 @@ MAP_INSTRUMENT_IDS = (
     CETS_ID,
     WAICO_ID,
     PAX_ID,
+    NEW_DELHI_ID,
 )
+
+# IFAD endorsed the New Delhi Declaration but is a UN specialised agency, not a
+# State. It is named outside the map frame, without shading its members.
+EXTRA_PARTICIPATING_ORGS = {
+    "International Fund for Agricultural Development": "IFAD",
+}
 
 CATEGORY_LABELS = {
     "ai_treaty": "AI-specific treaty",
@@ -176,6 +183,7 @@ MICRO = {
     "MU": (57.60, -20.30),
     "ST": (6.60, 0.30),
     "SC": (55.50, -4.60),
+    "MV": (73.50, 3.20),
 }
 
 ISO_OVERRIDES = {
@@ -197,12 +205,14 @@ ISO_OVERRIDES = {
     "Sahrawi Arab Democratic Republic": "EH",
     "São Tomé and Príncipe": "ST",
     "Seychelles": "SC",
+    "Maldives": "MV",
 }
 
 NAME_ALIASES = {
     "czech republic": "czechia",
     "republic of korea": "south korea",
     "republic of moldova": "moldova",
+    "russian federation": "russia",
     "united states": "united states of america",
 }
 
@@ -665,7 +675,7 @@ def main() -> int:
     brics = by_id[BRICS_ID]
 
     organisations = load_organisations()
-    org_names = set(organisations)
+    org_names = set(organisations) | set(EXTRA_PARTICIPATING_ORGS)
 
     def state_names(inst: dict) -> list[str]:
         return [
@@ -681,6 +691,7 @@ def main() -> int:
     military_states = state_names(military)
     waico_states = state_names(waico)
     pax_states = state_names(pax)
+    new_delhi_states = state_names(new_delhi)
     cets_entries = cets["parties"]["entries"]
 
     def entries(inst: dict) -> list[dict]:
@@ -698,8 +709,16 @@ def main() -> int:
         return "in force" if inst.get("status") == "in_force" else "not in force"
 
     def org_short(inst: dict) -> str:
-        labels = {"European Union": "EU", "African Union Commission": "AU Commission"}
-        order = {"European Union": 0, "African Union Commission": 1}
+        labels = {
+            "European Union": "EU",
+            "African Union Commission": "AU Commission",
+            **EXTRA_PARTICIPATING_ORGS,
+        }
+        order = {
+            "European Union": 0,
+            "African Union Commission": 1,
+            "International Fund for Agricultural Development": 2,
+        }
         parties = sorted(
             (
                 entry["party"]
@@ -734,6 +753,7 @@ def main() -> int:
     military_iso = iso_set(military_states, "Military AI 2023")
     waico_iso = iso_set(waico_states, "WAICO 2026")
     pax_iso = iso_set(pax_states, "Pax Silica 2025")
+    new_delhi_iso = iso_set(new_delhi_states, "New Delhi 2026")
 
     for map_name, values in (
         ("Paris 2025", paris_iso),
@@ -743,6 +763,7 @@ def main() -> int:
         ("Military AI 2023", military_iso),
         ("WAICO 2026", waico_iso),
         ("Pax Silica 2025", pax_iso),
+        ("New Delhi 2026", new_delhi_iso),
     ):
         absent = sorted(iso for iso in values if iso not in by_iso and iso not in MICRO)
         if absent:
@@ -756,6 +777,7 @@ def main() -> int:
     military_status = {iso: "endorsed" for iso in military_iso}
     waico_status = {iso: "signed" for iso in waico_iso}
     pax_status = {iso: "endorsed" for iso in pax_iso}
+    new_delhi_status = {iso: "endorsed" for iso in new_delhi_iso}
     cets_status = {iso: "signed" for iso in cets_iso}
     for entry in cets_entries:
         if entry.get("ratification") and entry["party"] not in org_names:
@@ -771,6 +793,8 @@ def main() -> int:
         notes: list[str] = []
         parties = {entry["party"] for entry in inst["parties"]["entries"]}
         for name in sorted(parties & org_names):
+            if name not in organisations:
+                continue
             org = organisations[name]
             covered = 0
             for member in org["members"]:
@@ -808,6 +832,7 @@ def main() -> int:
     seoul_org_notes = add_org_members(seoul_status, seoul, "endorsed")
     cets_org_notes = add_org_members(cets_status, cets, "signed")
     pax_org_notes = add_org_members(pax_status, pax, "endorsed")
+    new_delhi_org_notes = add_org_members(new_delhi_status, new_delhi, "endorsed")
 
     endorsement_legend = [
         {"color": ACT_BLUE, "label": "State: endorsed"},
@@ -1011,6 +1036,25 @@ def main() -> int:
             ),
         ),
         map_figure(
+            new_delhi,
+            "new-delhi",
+            "New Delhi 2026",
+            f"{len(new_delhi_states)} States + {org_short(new_delhi)}",
+            f"World map. Medium blue: {len(new_delhi_states)} States that endorsed the New Delhi Declaration. Sand: States with no recorded endorsement.",
+            new_delhi_status,
+            new_delhi_org_notes,
+            endorsement_legend,
+            note=(
+                f"Endorsement, not signature or ratification. The PIB list of 5 March 2026 "
+                f"names {reported_total(new_delhi)} endorsers: {len(new_delhi_states)} States, the EU "
+                "and IFAD. The MEA page of 21 February 2026 lists 91 and omits Colombia. "
+                "IFAD is a UN specialised agency and is not shown on the State map."
+            ),
+            legend_note=(
+                f"{len(new_delhi_states)} endorsing States + EU + IFAD"
+            ),
+        ),
+        map_figure(
             bletchley,
             "bletchley",
             "Bletchley 2023",
@@ -1140,8 +1184,8 @@ def main() -> int:
             <tr><td><strong>Bletchley Declaration</strong><span>2023</span></td><td>Political declaration</td><td>None</td><td>{len(bletchley_states)} States + EU</td><td>Adopted</td></tr>
             <tr><td><strong>Seoul Declaration</strong><span>2024</span></td><td>Leaders' declaration</td><td>None</td><td>{len(seoul_states)} States + EU</td><td>Adopted</td></tr>
             <tr><td><strong>Paris Statement</strong><span>2025</span></td><td>Political statement</td><td>None</td><td>{len(paris_states)} States + EU + AU Commission</td><td>Adopted</td></tr>
-            <tr><td><strong>New Delhi Declaration</strong><span>2026</span></td><td>Summit declaration</td><td>None</td><td>{new_delhi_total} countries and international organisations; no itemised list</td><td>Adopted</td></tr>
-            <tr><td><strong>BRICS AI Statement</strong><span>2025</span></td><td>Leaders' statement</td><td>None</td><td>BRICS leaders; no itemised list</td><td>Adopted</td></tr>
+            <tr><td><strong>New Delhi Declaration</strong><span>2026</span></td><td>Summit declaration</td><td>None</td><td>{new_delhi_total} endorsers: {len(new_delhi_states)} States + EU + IFAD</td><td>Adopted</td></tr>
+            <tr><td><strong>BRICS AI Statement</strong><span>2025</span></td><td>Leaders' statement</td><td>None</td><td>11 BRICS member States; collective statement</td><td>Adopted</td></tr>
             <tr><td><strong>Military AI Declaration</strong><span>2023</span></td><td>Political declaration</td><td>None</td><td>{len(military_states)} States</td><td>Adopted</td></tr>
             <tr><td><strong>Pax Silica Declaration</strong><span>2025</span></td><td>Political declaration</td><td>None</td><td>{reported_total(pax)} signatories: {len(pax_states)} States + EU</td><td>Adopted</td></tr>
             <tr><td><strong>CETS 225</strong><span>2024</span></td><td>Treaty</td><td>Binding when in force</td><td>{len(cets_entries)} signatures; {len(cets_ratifications)} ratifications</td><td>Not in force</td></tr>
@@ -1194,7 +1238,7 @@ def main() -> int:
           <p>On 1 August 2026, the same day a US special envoy told Bangladesh's prime minister that Bangladesh could become a partner in Pax Silica, Bangladesh's Ministry of Foreign Affairs announced that the country would join <a href="{esc(record_url(waico))}" target="_blank" rel="noopener">WAICO</a> “initially as an observer” (<a href="https://b.bssnews.net/news/410714" target="_blank" rel="noopener">BSS</a>; <a href="https://www.thedailystar.net/news/bangladesh/news/bangladesh-walks-ai-tightrope-us-china-build-rival-tech-blocs-4238821" target="_blank" rel="noopener">The Daily Star</a>). It did not become a founding member: the signature period had closed on 31 July, Article 11 requires an observer application and Council approval, and no admission is recorded. The episode is a textbook hedge, and it shows how easily an observer is mistaken for a member.</p>
           <p>Singapore is the mirror image. It was a founding signatory of Pax Silica in December 2025 and has been reported as considering an invitation to WAICO; its minister told parliament that there is no ASEAN position on either initiative and that Singapore will weigh the invitation against its broader engagements with China and the United States (<a href="https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/09/singapore-considering-invitation-to-join-china-led-ai-bloc" target="_blank" rel="noopener">The Star</a>). It is not a WAICO member. The “invitee” label used in some lists is accurate only in that sense.</p>
           <p>Kazakhstan is the only State identified in both Pax Silica and WAICO. <a href="https://www.csis.org/analysis/state-ai-global-governance-and-its-implications-us-china-summit" target="_blank" rel="noopener">CSIS</a> calls the two groups “almost entirely nonoverlapping” and notes that many middle powers are “joining everything” rather than choosing. In August 2026 US officials reportedly told partners they had to “pick a side”. That is evidence of an attempt to form blocs, not evidence that blocs have formed. Tiberghien describes the same field as three approaches — a UN-led global commons, a US-led securitised club and a China–Global South diffusion model — and concludes that none provides effective safeguards. That is a reading of diplomacy, not a legal classification.</p>
-          <p>The 2025 <a href="https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file" target="_blank" rel="noopener">BRICS leaders' statement</a> had already set out a similar Global South position — digital sovereignty, the UN Charter, capacity building — a year before WAICO. It is another coalition text, not a legal bloc, and it has no itemised signatory list.</p>
+          <p>The 2025 <a href="https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file" target="_blank" rel="noopener">BRICS leaders' statement</a> had already set out a similar Global South position — digital sovereignty, the UN Charter, capacity building — a year before WAICO. It is another coalition text, not a legal bloc; it was issued collectively by the 11 BRICS member States, with no individual signature block.</p>
         </article>
       </div>
 
@@ -1204,7 +1248,7 @@ def main() -> int:
           <li><strong>No universal membership.</strong> The widest list is New Delhi ({new_delhi_total} endorsers), then Paris ({reported_total(paris)}), then the military declaration ({len(military_states)}). None is universal, and none of the three creates a legal obligation.</li>
           <li><strong>Different legal forms.</strong> A “pole” can be a treaty organization (WAICO), a treaty not in force (CETS 225), a coalition (Pax Silica), a deliberative track (UN Global Dialogue) or a summit declaration (New Delhi). Counting them as equivalent hides what matters legally: what the instrument obliges, and whether it is in force.</li>
           <li><strong>Overlapping participation.</strong> Kazakhstan is in both Pax Silica and WAICO; the EU is in Pax Silica and has ratified CETS 225; the United States signed CETS 225 and Pax Silica but did not endorse Paris; China endorsed Paris and Bletchley but did not sign CETS 225 or Pax Silica. A State can be inside several vehicles and outside others.</li>
-          <li><strong>The counts are political, not depositary.</strong> WAICO's 38 is an MFA count; 37 are named; the 38th is unknown. Bangladesh is an observer applicant, not the 38th member. Pax Silica's 26 “signatories” are endorsers. New Delhi's 92 includes international organisations and has no itemised list. A pole count is not a party table.</li>
+          <li><strong>The counts are political, not depositary.</strong> WAICO's 38 is an MFA count; 37 are named; the 38th is unknown. Bangladesh is an observer applicant, not the 38th member. Pax Silica's 26 “signatories” are endorsers. New Delhi's 92 are itemised: 90 States, the EU and IFAD. A pole count is not a party table.</li>
           <li><strong>The legal question is narrower than the diplomatic one.</strong> The corpus can establish which act was done by which party; it cannot establish that a State belongs to a “bloc”. That is why the maps below show acts, not alignments.</li>
         </ul>
       </div>
@@ -1221,7 +1265,7 @@ def main() -> int:
         <div>
           <p class="eyebrow">Cross-cutting</p>
           <h3>Paris 2025: China and India in, the United States and the United Kingdom out</h3>
-          <p>The Paris Statement is endorsed by {len(paris_states)} States, the European Union and the African Union Commission. That is the widest State-level list among the seven mapped instruments, and it cuts across the regulatory models: China and India endorsed; the United States and the United Kingdom did not. The alignment is political, not legal.</p>
+          <p>The Paris Statement is endorsed by {len(paris_states)} States, the European Union and the African Union Commission. It cuts across the regulatory models: China and India endorsed; the United States and the United Kingdom did not. The 2026 New Delhi list is larger ({len(new_delhi_states)} States), but it is a different text, adopted a year later; the Paris alignment remains political, not legal.</p>
         </div>
         <p class="paris-metric">{len(paris_states)}<span>endorsing States</span></p>
       </div>
@@ -1334,7 +1378,7 @@ def main() -> int:
         {maps_html}
       </div>
       <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. “Endorsed” is used for political declarations, which create no treaty signature or ratification.</p>
-      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} political instruments and {number_word(map_binding_count)} treaties. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the 2026 New Delhi Declaration and the 2025 BRICS statement (no itemised State-level list), the OECD and UNESCO recommendations, the EU AI Act, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate Pax Silica deliverables (the June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration), and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment.</p>
+      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} political instruments and {number_word(map_binding_count)} treaties. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the 2025 BRICS statement (issued collectively, with no individual signature block), the OECD and UNESCO recommendations, the EU AI Act, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate Pax Silica deliverables (the June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration), and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment.</p>
     </div>
   </section>
 

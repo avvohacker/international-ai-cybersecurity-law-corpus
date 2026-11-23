@@ -1,0 +1,272 @@
+{
+  "checked": 26,
+  "instruments": 8,
+  "summary": {
+    "ok": 20,
+    "anti_bot": 4,
+    "broken": 0,
+    "transient": 2
+  },
+  "results": [
+    {
+      "instrument_id": "bletchley-declaration-2023",
+      "source_id": "govuk-declaration",
+      "label": "GOV.UK declaration",
+      "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-225",
+      "source_id": "coe-declarations",
+      "label": "CETS 225 declarations",
+      "url": "https://www.coe.int/en/web/conventions/full-list2?codeNature=0&module=declarations-by-treaty&numSte=225",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-225",
+      "source_id": "coe-status",
+      "label": "CETS 225 status chart",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-225",
+      "source_id": "coe-text",
+      "label": "CETS 225 text",
+      "url": "https://rm.coe.int/1680afae3c",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-225",
+      "source_id": "eu-decision-2026-1080",
+      "label": "EU Council Decision",
+      "url": "https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-225",
+      "source_id": "eu-oj-2026-1081",
+      "label": "EU Official Journal",
+      "url": "https://eur-lex.europa.eu/eli/agree_internation/2026/1081/oj/eng",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "new-delhi-declaration-2026",
+      "source_id": "mea-declaration",
+      "label": "Ministry of External Affairs, Government of India",
+      "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "paris-ai-action-summit-statement-2025",
+      "source_id": "elysee-fr",
+      "label": "Élysée French text",
+      "url": "https://www.elysee.fr/emmanuel-macron/2025/02/11/declaration-sur-une-intelligence-artificielle-inclusive-et-durable-pour-les-peuples-et-la-planete",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "paris-ai-action-summit-statement-2025",
+      "source_id": "elysee-page",
+      "label": "Élysée page",
+      "url": "https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "paris-ai-action-summit-statement-2025",
+      "source_id": "elysee-pdf",
+      "label": "Élysée PDF",
+      "url": "https://www.elysee.fr/admin/upload/default/0001/17/0efc53b2025d5bc1f0fc68556c41370cee166e7f.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "pax-silica-declaration-2025",
+      "source_id": "australia-declaration",
+      "label": "Australian Government declaration",
+      "url": "https://www.industry.gov.au/publications/pax-silica-declaration-countries-attending-pax-silica-summit-12-december-2025",
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "TimeoutError"
+    },
+    {
+      "instrument_id": "pax-silica-declaration-2025",
+      "source_id": "australia-pdf",
+      "label": "Australian Government signed PDF",
+      "url": "https://www.industry.gov.au/sites/default/files/2025-12/pax-silica-declaration-signed.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "pax-silica-declaration-2025",
+      "source_id": "australia-san-francisco",
+      "label": "Australian Government, Department of Industry, Science and Resources",
+      "url": "https://www.industry.gov.au/publications/san-francisco-declaration-secure-foundations-enduring-prosperity-signed-countries-attending-pax-silica-summit-15-november-2026",
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "TimeoutError"
+    },
+    {
+      "instrument_id": "pax-silica-declaration-2025",
+      "source_id": "state-ai-opportunity",
+      "label": "State Department AI Opportunity page",
+      "url": "https://www.state.gov/ai-opportunity-statement",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "pax-silica-declaration-2025",
+      "source_id": "state-paraguay",
+      "label": "State Department Paraguay release",
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/10/united-states-welcomes-paraguay-as-newest-pax-silica-signatory",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "pax-silica-declaration-2025",
+      "source_id": "state-pax-silica",
+      "label": "State Department Pax Silica page",
+      "url": "https://www.state.gov/pax-silica",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "pax-silica-declaration-2025",
+      "source_id": "state-san-francisco",
+      "label": "United States Department of State",
+      "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "pax-silica-declaration-2025",
+      "source_id": "state-second-summit",
+      "label": "State Department second-summit fact sheet",
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/outcomes-of-the-second-pax-silica-summit",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "pax-silica-declaration-2025",
+      "source_id": "state-taiwan-joint-statement",
+      "label": "State Department Taiwan statement",
+      "url": "https://www.state.gov/releases/under-secretary-for-economic-affairs/2026/01/joint-statement-on-the-pax-silica-declaration-and-u-s-taiwan-economic-security-cooperation",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "political-declaration-military-ai-2023",
+      "source_id": "state-page",
+      "label": "State Department page",
+      "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/",
+      "status": 404,
+      "outcome": "anti_bot",
+      "reason": "known_browser_only",
+      "detail": "State Department serves 404/405 to automated clients"
+    },
+    {
+      "instrument_id": "seoul-declaration-2024",
+      "source_id": "govuk-seoul",
+      "label": "GOV.UK Seoul declaration",
+      "url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "indonesia-founding-list",
+      "label": "Indonesia founding list",
+      "url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/10399",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "mfa-31-july",
+      "label": "MFA 31 July account",
+      "url": "https://www.fmprc.gov.cn/wjbxw_new/202607/t20260731_11996584.shtml",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "mfa-progress-report",
+      "label": "MFA progress report",
+      "url": "https://www.mfa.gov.cn/wjbzhd/202610/P020261023815175879929.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "mfa-ratification",
+      "label": "MFA ratification statement",
+      "url": "https://www.mfa.gov.cn/eng/xw/fyrbt/202611/t20261109_12056171.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "mfa-signing",
+      "label": "MFA signing account",
+      "url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    }
+  ]
+}

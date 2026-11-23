@@ -24,7 +24,7 @@ The legal nature is determined from the instrument and its issuer, not from its 
 | Level | Meaning | This cycle |
 |---|---|---:|
 | `full_text_checked` | Full text stored, hashed, segmented, read; key passages asserted by tests. | 10 |
-| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 34 |
+| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 35 |
 | `source_located` | Official URL recorded; metadata from an established reference, not re-read. | 0 |
 
 Sixteen full texts are stored (15 acquired originals — 14 PDFs and one HTML — plus the CETS 225 transcription); only the ten marked `full_text_checked` were read end-to-end and are covered by key-passage tests. Six further texts are stored and segmented but remain `metadata_verified` because they were not read end-to-end. The levels are deliberately coarse and honest. `metadata_verified` is not a guarantee that every field, party or declaration was checked. Each record lists its own `verification.checks`, and `gaps` records what remains unknown.
@@ -80,11 +80,11 @@ The build uses Python's standard library only and does not access the network. I
 
 The determinism test builds twice and compares the bytes. Network acquisition and PDF extraction are separate commands; their outputs are stored, so a rebuild from the repository does not depend on the network or on a PDF library. The atlas is generated from the catalogue, the stored Natural Earth boundaries and the organisation membership lists in `data/organisations.json`; it is not an independent dataset.
 
-The link audit is a third, network-only command: `make audit-links` or `python3 tools/audit_sources.py`. It checks the official links used by the seven instrument panels, classifies broken links separately from anti-bot blocks and transient errors, and is deliberately excluded from `make test`.
+The link audit is a third, network-only command: `make audit-links` or `python3 tools/audit_sources.py`. It checks the official links used by the eight instrument panels, classifies broken links separately from anti-bot blocks and transient errors, and is deliberately excluded from `make test`.
 
 ## 8. Limits of this cycle
 
-This is a first corpus, not a comprehensive survey. The principal limits are: two AI-specific treaties, neither in force; five digital agreements with cooperative AI clauses; one category-6 negotiation record (CCW) but no adopted draft protocol; CETS 225 and WAICO not in force; an inconsistent Paris Statement endorser list (60/64/65 across official publications); a unilateral Chinese initiative with no adherence list; a WAICO membership count that names 37 of 38 reported founding members and an observer announcement by Bangladesh that is not a membership; a New Delhi endorsement count of 92 and a BRICS statement with no itemised lists; mostly English texts; metadata-only records for paywalled standards and for several official PDFs that returned access errors; and no systematic search of national bilateral treaty registries. These limits are stated in the coverage matrix and the progress file rather than hidden in the aggregate counts.
+This is a first corpus, not a comprehensive survey. The principal limits are: two AI-specific treaties, neither in force; five digital agreements with cooperative AI clauses; one category-6 negotiation record (CCW) but no adopted draft protocol; CETS 225 and WAICO not in force; an inconsistent Paris Statement endorser list (60/64/65 across official publications); a unilateral Chinese initiative with no adherence list; a WAICO membership count that names 37 of 38 reported founding members and an observer announcement by Bangladesh that is not a membership; New Delhi's 92 itemised endorsers but a 91/92 discrepancy between the MEA and PIB lists; a BRICS statement with 11 issuing States but no individual signatures; mostly English texts; metadata-only records for paywalled standards and for several official PDFs that returned access errors; and no systematic search of national bilateral treaty registries. These limits are stated in the coverage matrix and the progress file rather than hidden in the aggregate counts.
 
 ## 9. Sources of international law
 
