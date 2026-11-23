@@ -1,0 +1,120 @@
+{
+  "id": "un-ga-res-79-62",
+  "title": {
+    "official": "Lethal autonomous weapons systems",
+    "short": "UNGA resolution 79/62 on lethal autonomous weapons systems"
+  },
+  "category": "non_binding_instrument",
+  "instrument_type": "resolution",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [
+    {
+      "name": "United Nations General Assembly (79th session)",
+      "role": "issuer",
+      "url": "https://www.un.org/en/ga/"
+    }
+  ],
+  "relevance": {
+    "reason": "General Assembly resolution on lethal autonomous weapons systems, adopted on the report of the First Committee. It affirms that international law, including international humanitarian law and human rights law, applies to autonomous weapons systems and addresses AI and autonomy in the military domain. It is non-binding and does not create a treaty regime.",
+    "ai_provisions": [
+      "Preamble — concerns about AI and autonomy in weapons systems, humanitarian, legal, security and ethical perspectives",
+      "Operative paragraphs — affirmation that international law applies; request for views of States; decision to keep the item on the agenda"
+    ],
+    "excluded_scope": "Non-binding resolution; no prohibition, no definition of lethal autonomous weapons systems, no verification mechanism."
+  },
+  "dates": {
+    "adopted": "2024-12-02",
+    "published": "2024-12-10",
+    "verified_on": "2026-11-23",
+    "notes": "Adopted on the report of the First Committee (A/79/408, para. 114). Document distributed 10 December 2024."
+  },
+  "status_note": "Adopted. Non-binding; no signature or ratification.",
+  "languages": {
+    "authentic": ["ar", "zh", "en", "fr", "ru", "es"],
+    "translations": [],
+    "note": "UN official languages; only the English version was acquired."
+  },
+  "sources": [
+    {
+      "id": "un-doc",
+      "url": "https://digitallibrary.un.org/record/4071100/files/A_RES_79_62-EN.pdf",
+      "publisher": "United Nations",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official A/RES/79/62 English PDF, 3 pages; downloaded and stored."
+    },
+    {
+      "id": "un-library",
+      "url": "https://digitallibrary.un.org/record/4071100",
+      "publisher": "UN Digital Library",
+      "kind": "registry",
+      "accessed": "2026-11-23",
+      "note": "Bibliographic record for A/RES/79/62, 79th session, First Committee."
+    }
+  ],
+  "rights": {
+    "status": "public_official_text",
+    "licence": "United Nations terms of use",
+    "note": "Official UN document; UN copyright and terms of use apply. Stored for research and verification.",
+    "url": "https://www.un.org/en/about-us/terms-of-use"
+  },
+  "verification": {
+    "level": "full_text_checked",
+    "checks": [
+      {
+        "check": "PDF downloaded and hashed.",
+        "result": "HTTP 200, 3 pages, SHA-256 0a06e67957a7cc571ec9e65dac1025c9ada4e95b60dd7d4ae4429ec926e1c622.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Resolution number, title and adoption date checked on the document.",
+        "result": "A/RES/79/62; adopted 2 December 2024; title 'Lethal autonomous weapons systems'.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Relationship to earlier resolution checked in the preamble.",
+        "result": "Recalls resolution 78/241 of 22 December 2023.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Full text preserved. It is a political resolution, not a treaty; the title refers to weapons systems, but the text expressly frames AI and autonomy in the military domain."
+  },
+  "related": [
+    {
+      "id": "un-ga-res-78-241",
+      "relation": "predecessor",
+      "note": "Earlier UNGA resolution on lethal autonomous weapons systems, 22 December 2023."
+    },
+    {
+      "id": "un-ga-res-79-239",
+      "relation": "related",
+      "note": "Separate 2024 resolution on AI in the military domain and international peace and security."
+    },
+    {
+      "id": "un-ga-res-80-57",
+      "relation": "successor",
+      "note": "2025 resolution on lethal autonomous weapons systems."
+    }
+  ],
+  "text": {
+    "manifest": "manifest.json",
+    "full_text": true,
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "resolution",
+    "extraction_note": "Text extracted from the official English PDF with pypdf; paragraph anchors refer to file pages."
+  },
+  "gaps": [
+    "Non-binding and does not define lethal autonomous weapons systems or establish prohibitions.",
+    "No vote record or formal military-AI negotiating mandate is captured in this record.",
+    "Only English acquired.",
+    "The resolution does not itself create a negotiating forum; the CCW/GGE track is recorded separately as a draft/negotiation candidate."
+  ],
+  "provenance": {
+    "discovered_via": "UN Digital Library; cross-referenced from A/RES/79/239 and A/RES/80/57.",
+    "search_dates": ["2026-11-23"]
+  }
+}

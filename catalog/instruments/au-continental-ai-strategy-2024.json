@@ -1,0 +1,36 @@
+{
+  "id": "au-continental-ai-strategy-2024",
+  "title": {"official": "Continental Artificial Intelligence Strategy", "short": "AU Continental AI Strategy"},
+  "category": "non_binding_instrument",
+  "instrument_type": "strategy",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "African Union (Executive Council)", "role": "issuer", "url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy"}],
+  "relevance": {
+    "reason": "The African Union's continental policy framework for AI, endorsed by the Executive Council in July 2024. It sets a common vision, five focus areas and fifteen action areas for AI development and governance in Africa. It is a strategy, not a treaty.",
+    "ai_provisions": ["Whole strategy — AI benefits, capabilities, risk mitigation, investment and cooperation", "Implementation timeframe 2025–2030"],
+    "excluded_scope": "Non-binding continental strategy; implementation depends on AU Member States and regional bodies."
+  },
+  "dates": {"adopted": "2024-07-19", "published": "2024-08-09", "verified_on": "2026-11-23", "notes": "Endorsed by the AU Executive Council at its 45th Ordinary Session in Accra, Ghana, on 18–19 July 2024; document page dated 9 August 2024."},
+  "status_note": "Endorsed by the Executive Council. Non-binding; implementation phase proposed for 2025–2030.",
+  "languages": {"authentic": ["en"], "translations": ["fr", "ar", "pt"], "note": "AU page links English, French, Arabic and Portuguese versions; English was consulted and is recorded as the acquired language, not as a verified sole authentic text."},
+  "sources": [
+    {"id": "au-page", "url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy", "publisher": "African Union", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official document page: endorsement by the Executive Council on 18–19 July 2024; links to language versions."},
+    {"id": "au-pdf", "url": "https://au.int/sites/default/files/documents/44004-doc-EN-_Continental_AI_Strategy_July_2024.pdf", "publisher": "African Union", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "English PDF of the strategy; contains the 2025–2030 implementation timeframe."}
+  ],
+  "rights": {"status": "public_official_text", "licence": "African Union terms", "note": "Official AU publication; no open licence identified. Metadata only in this corpus.", "url": "https://au.int/en/copyright"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Endorsement date and organ checked on the AU page.", "result": "Executive Council, 45th Ordinary Session, Accra, 18–19 July 2024.", "date": "2026-11-23"},
+      {"check": "Implementation timeframe checked in the PDF.", "result": "Five-year timeframe 2025–2030, in two phases.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata verified; full text not stored. The strategy is non-binding and implementation-dependent."
+  },
+  "related": [
+    {"id": "afcfta-digital-trade-protocol-2024", "relation": "related", "note": "Continental digital-trade instrument with an emerging-technologies annex."},
+    {"id": "asean-ai-guide-2024", "relation": "related", "note": "Another regional non-binding AI governance instrument."}
+  ],
+  "gaps": ["Non-binding strategy.", "Full text not stored.", "National and regional implementation measures are not assessed.", "Only English consulted; other language versions not acquired."],
+  "provenance": {"discovered_via": "African Union documents portal.", "search_dates": ["2026-11-23"]}
+}

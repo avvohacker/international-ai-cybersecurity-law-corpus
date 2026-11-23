@@ -1,0 +1,122 @@
+{
+  "id": "sadea-2020",
+  "title": {
+    "official": "Australia-Singapore Digital Economy Agreement",
+    "short": "SADEA"
+  },
+  "category": "agreement_ai_provisions",
+  "instrument_type": "agreement",
+  "binding_status": "binding",
+  "status": "in_force",
+  "issuer": [
+    {
+      "name": "Australia and Singapore",
+      "role": "co_issuer"
+    }
+  ],
+  "relevance": {
+    "reason": "A bilateral digital-economy agreement that replaces the electronic-commerce chapter of the Singapore-Australia Free Trade Agreement and contains a dedicated article on artificial intelligence. The AI article is cooperative and expressly refers to internationally recognised principles and AI governance frameworks.",
+    "ai_provisions": [
+      "Article 31 — Artificial Intelligence: cooperation on research and industry practices, responsible adoption, commercialisation; ethical governance frameworks; alignment through regional and international fora; consideration of internationally recognised principles"
+    ],
+    "excluded_scope": "Article 31 uses 'shall cooperate' and 'shall endeavour'; it does not impose product requirements, prohibitions or enforcement obligations specific to AI."
+  },
+  "dates": {
+    "signed": "2020-08-06",
+    "entered_into_force": "2020-12-08",
+    "verified_on": "2026-11-23",
+    "notes": "Signed at Adelaide and Singapore on 6 August 2020; entered into force on 8 December 2020."
+  },
+  "status_note": "In force between Australia and Singapore.",
+  "parties": {
+    "as_of": "2026-11-23",
+    "summary": "Two Parties: Australia and Singapore.",
+    "source_ids": ["dfat-page", "sadea-text"],
+    "entries": [
+      {"party": "Australia", "signature": "2020-08-06", "entry_into_force": "2020-12-08", "notes": []},
+      {"party": "Singapore", "signature": "2020-08-06", "entry_into_force": "2020-12-08", "notes": []}
+    ],
+    "reservations": [],
+    "declarations": [],
+    "objections": [],
+    "notifications": [],
+    "withdrawals": [],
+    "unknowns": ["No depositary register was consulted; the record relies on the official DFAT page and the text."]
+  },
+  "languages": {
+    "authentic": ["en"],
+    "translations": [],
+    "note": "The acquired text is in English. A separate authentic-language clause was not located in the extracted text; this is recorded as a gap rather than inferred."
+  },
+  "sources": [
+    {
+      "id": "sadea-text",
+      "url": "https://isomer-user-content.by.gov.sg/1004/769c26eb-17cf-4e2d-962b-1277a22df9db/australia-singapore-digital-economy-agreement%20-%20Jun%2023.pdf",
+      "publisher": "Government of Singapore (Isomer)",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Australia-Singapore Digital Economy Agreement text, 39 pages; downloaded and stored."
+    },
+    {
+      "id": "dfat-page",
+      "url": "https://www.dfat.gov.au/trade/services-and-digital-trade/australia-and-singapore-digital-economy-agreement",
+      "publisher": "Australian Department of Foreign Affairs and Trade",
+      "kind": "official_secondary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "note": "States entry into force on 8 December 2020 and identifies the agreement as replacing the SAFTA electronic-commerce chapter."
+    }
+  ],
+  "rights": {
+    "status": "public_official_text",
+    "licence": "Government of Singapore / Commonwealth of Australia terms",
+    "note": "Official treaty text published by a Party government. No open licence identified; stored for research and verification. Reusers should consult the publishing governments' terms.",
+    "url": "https://www.dfat.gov.au/about-us/copyright"
+  },
+  "verification": {
+    "level": "full_text_checked",
+    "checks": [
+      {
+        "check": "Article 31 located and read in the acquired text.",
+        "result": "Dedicated AI article present; cooperation and best-efforts obligations; reference to AI governance frameworks and internationally recognised principles.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Entry into force clause checked in the text.",
+        "result": "Article 5: entry into force on the later note confirming completion of domestic requirements.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Signature and entry-into-force dates checked against the DFAT page.",
+        "result": "Signed 6 August 2020; in force 8 December 2020.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Full text preserved. The AI clause is treaty language but programmatic rather than prescriptive."
+  },
+  "related": [
+    {"id": "depa-2020", "relation": "related", "note": "Parallel digital-economy agreement with an AI article (Article 8.2)."},
+    {"id": "uksdea-2022", "relation": "related", "note": "Parallel digital-economy agreement with an AI article (Article 8.61-R)."},
+    {"id": "ksdpa-2022", "relation": "related", "note": "Parallel digital partnership agreement with an AI article (Article 14.28)."}
+  ],
+  "text": {
+    "manifest": "manifest.json",
+    "full_text": true,
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty",
+    "extraction_note": "Text extracted from the stored PDF with pypdf. Article headings in the consolidated text use upper-case 'ARTICLE'; page anchors are file pages."
+  },
+  "gaps": [
+    "No authentic-language clause was located in the extracted text; English is recorded as the acquired language, not as a verified sole authentic language.",
+    "The agreement amends the SAFTA; the consolidated text and the amending relationship were not independently verified against the SAFTA.",
+    "The separate MOU on Cooperation on Artificial Intelligence concluded alongside SADEA was not acquired.",
+    "Article 31 creates no enforceable AI standard."
+  ],
+  "provenance": {
+    "discovered_via": "Official Singapore MTI/DFAT digital-economy agreement pages; comparative ADB study used only to locate the AI article number.",
+    "search_dates": ["2026-11-23"]
+  }
+}

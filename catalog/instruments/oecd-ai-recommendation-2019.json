@@ -1,0 +1,120 @@
+{
+  "id": "oecd-ai-recommendation-2019",
+  "title": {
+    "official": "Recommendation of the Council on Artificial Intelligence",
+    "short": "OECD AI Recommendation (OECD/LEGAL/0449)"
+  },
+  "category": "non_binding_instrument",
+  "instrument_type": "recommendation",
+  "binding_status": "non_binding",
+  "status": "in_force",
+  "issuer": [
+    {
+      "name": "OECD Council",
+      "role": "issuer",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449"
+    }
+  ],
+  "relevance": {
+    "reason": "The first intergovernmental AI standard and the source of the OECD AI Principles, which were taken up by the G20 in 2019 and underpin later codes and national policies. It is a Recommendation: politically authoritative for adherents but not legally binding.",
+    "ai_provisions": [
+      "Section I — definition of 'AI system' (revised 2023)",
+      "Section II, principles 1.1–1.5 — inclusive growth, human rights and democratic values, transparency and explainability, robustness and safety, accountability",
+      "Section II, policy recommendations 2.1–2.5 — investment, ecosystem, governance, human capacity, international cooperation"
+    ],
+    "excluded_scope": "OECD Recommendations are not treaties and do not create directly enforceable rights or obligations; implementation is reviewed through OECD committees."
+  },
+  "dates": {
+    "adopted": "2019-05-22",
+    "published": "2019-05-22",
+    "entered_into_force": "2019-05-22",
+    "verified_on": "2026-11-23",
+    "notes": "Adopted 22 May 2019; amended 8 November 2023 (definition of AI system) and 3 May 2024 (revised Recommendation). The OECD records the instrument as in force."
+  },
+  "status_note": "In force as an OECD legal instrument. Adherents include OECD Members and a number of non-Members; the OECD reported 38 Members plus eight adherents as of December 2023.",
+  "languages": {
+    "authentic": ["en", "fr"],
+    "translations": ["ar", "de", "ja", "es"],
+    "note": "English and French are the OECD official languages and the only official versions. Arabic, German, Japanese and Spanish translations are listed by the OECD as unofficial translations."
+  },
+  "sources": [
+    {
+      "id": "oecd-instrument",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+      "publisher": "OECD",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "note": "Official Compendium record: adopted 22/05/2019, amended 08/11/2023 and 03/05/2024, status in force, adherents and translations."
+    },
+    {
+      "id": "oecd-pdf",
+      "url": "https://legalinstruments.oecd.org/public/doc/648/648.en.pdf",
+      "publisher": "OECD",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official OECD Legal Instruments booklet reproducing OECD/LEGAL/0449, 12 pages; downloaded and stored."
+    },
+    {
+      "id": "oecd-report-2024",
+      "url": "https://one.oecd.org/document/C/MIN(2024)17/en/pdf",
+      "publisher": "OECD",
+      "kind": "official_secondary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "note": "2024 report on implementation, dissemination and continued relevance; records the 2023 and 2024 revisions and adherents as of December 2023."
+    }
+  ],
+  "rights": {
+    "status": "reuse_permitted",
+    "licence": "OECD reuse notice in the document",
+    "note": "The OECD booklet states that it is provided free of charge and may be reproduced and distributed free of charge without further permission, provided it is not altered and is not sold. The stored text is an unaltered extraction; the PDF itself should be used for redistribution.",
+    "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449"
+  },
+  "verification": {
+    "level": "full_text_checked",
+    "checks": [
+      {
+        "check": "Adoption and amendment dates checked on the OECD Compendium record.",
+        "result": "Adopted 22 May 2019; amended 8 November 2023 and 3 May 2024; in force.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Definition and principle numbering checked in the stored PDF.",
+        "result": "Definition in Section I; principles 1.1–1.5; policy recommendations 2.1–2.5.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Legal nature checked against the OECD's own description of Recommendations.",
+        "result": "Non-binding legal instrument; adherence is political, with implementation reporting.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Full text preserved. The PDF is the 2024 revised booklet, not the original 2019 text; version history is recorded in the dates."
+  },
+  "related": [
+    {"id": "g7-hiroshima-code-2023", "relation": "related", "note": "The G7 Code builds on the OECD AI Principles."},
+    {"id": "unesco-ethics-ai-2021", "relation": "related", "note": "Parallel universal non-binding AI ethics instrument adopted in 2021."},
+    {"id": "eu-ai-act", "relation": "related", "note": "The EU AI Act's definition of AI system is similar but not identical; no formal incorporation of the OECD Recommendation."}
+  ],
+  "text": {
+    "manifest": "manifest.json",
+    "full_text": true,
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "numbered",
+    "extraction_note": "Text extracted from the official OECD booklet with pypdf. Numbered units are generated from the Recommendation's paragraph numbering; cover and background material remain in the text and in the first units."
+  },
+  "gaps": [
+    "The 2019 original text is not stored separately; the 2024 revised booklet is the acquired version.",
+    "The list of adherents is not reproduced party by party; the OECD's own adherents table should be consulted.",
+    "Implementation is reviewed by OECD committees; no sanctions for non-implementation.",
+    "The Recommendation is not AI-specific law in the sense of a treaty and does not bind non-adherent States."
+  ],
+  "provenance": {
+    "discovered_via": "OECD Legal Instruments Compendium; cited by the G7 Hiroshima Process and the G20 AI Principles.",
+    "search_dates": ["2026-11-23"]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 649956,
+      "media_type": "application/pdf",
+      "note": "Official UN document A/RES/79/1 (English), including the Global Digital Compact annex.",
+      "path": "source/A_RES_79_1-en.pdf",
+      "role": "original",
+      "sha256": "0c3968d0ce8d55cf107309794adea6879d70f9aea60e6d6d64e3a8da4b028336",
+      "source_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F79%2F1&t=pdf"
+    },
+    {
+      "bytes": 196174,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "1b151842db84367ef5004ff274eb8ce4b9e6e73fa568aaf9475791df08563cb9"
+    },
+    {
+      "bytes": 4681,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "ae63abb67a0cf3dbccb15f8d34cd2dfac968149a04a24c0ed46d770806de377e"
+    },
+    {
+      "bytes": 199400,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "5757d93c86c27bf28b275c75a5c150ffd7d37b5c8ea79ee3b31432d88fd380d6"
+    }
+  ],
+  "instrument_id": "un-ga-res-79-1",
+  "primary_text": "text/en.txt"
+}

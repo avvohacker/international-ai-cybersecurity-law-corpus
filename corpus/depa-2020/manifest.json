@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 680817,
+      "media_type": "application/pdf",
+      "note": "Signing text of the Digital Economy Partnership Agreement, reproduced by the Republic of Korea Ministry of Trade, Industry and Energy; depositary is New Zealand.",
+      "path": "source/DEPA-signing-text-2020-06-11-en.pdf",
+      "role": "original",
+      "sha256": "587f8d22b561aff72dc1b8d38bb66cccb6236eb451948ac41a4d2aed22d25253",
+      "source_url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/support/DEPA/depa_all_eng.pdf"
+    },
+    {
+      "bytes": 119673,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "e9ae53a02f600f925f7fd3fa1459c60337a3d4f9e536035c6c75f8e93a02d0ce"
+    },
+    {
+      "bytes": 5547,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "08d72cbc27dc2c19ae4a2b99e17f957a2258d95841fade8ac45d23712e68c66b"
+    },
+    {
+      "bytes": 135184,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "de7ee302f60e6263afb3e5f11587897eb1a0ef48d30209e944ea3648bc66ddb1"
+    }
+  ],
+  "instrument_id": "depa-2020",
+  "primary_text": "text/en.txt"
+}

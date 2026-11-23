@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 217628,
+      "media_type": "application/pdf",
+      "note": "Official UN document A/RES/78/311 (English).",
+      "path": "source/A_RES_78_311-en.pdf",
+      "role": "original",
+      "sha256": "c1ad24b270f4bc90c634de41346acb482be3173cb4f159e88831bc4c79a5f47a",
+      "source_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F311&t=pdf"
+    },
+    {
+      "bytes": 15045,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "057a22779026b637aa284224135b9c1270fd2320bfebd4c46301cfe0281d783d"
+    },
+    {
+      "bytes": 450,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "2c8bf0909e018ee478348d18278a2faed8a121cebdef347f5ed27802c5f53758"
+    },
+    {
+      "bytes": 18652,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "687b950a21d6015f7b55e539e2a3956c20c830d62f4fd234825f1839bfc6b51d"
+    }
+  ],
+  "instrument_id": "un-ga-res-78-311",
+  "primary_text": "text/en.txt"
+}

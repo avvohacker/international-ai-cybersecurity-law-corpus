@@ -1,0 +1,116 @@
+{
+  "id": "un-ga-res-79-325",
+  "title": {
+    "official": "Terms of reference and modalities for the establishment and functioning of the Independent International Scientific Panel on Artificial Intelligence and the Global Dialogue on Artificial Intelligence Governance",
+    "short": "UNGA resolution 79/325 on the AI Scientific Panel and Global Dialogue"
+  },
+  "category": "non_binding_instrument",
+  "instrument_type": "resolution",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [
+    {
+      "name": "United Nations General Assembly (79th session)",
+      "role": "issuer",
+      "url": "https://www.un.org/en/ga/"
+    }
+  ],
+  "relevance": {
+    "reason": "Establishes the terms of reference and modalities for the Independent International Scientific Panel on Artificial Intelligence and the Global Dialogue on Artificial Intelligence Governance, the principal universal AI-governance follow-up to the Global Digital Compact. It is an institutional, non-binding resolution limited to the non-military domain.",
+    "ai_provisions": [
+      "Operative paragraph 1 — establishes the Independent International Scientific Panel on AI",
+      "Operative paragraphs on the Global Dialogue on AI Governance — mandate, participation and modalities",
+      "Preamble — recalls the Pact for the Future and the Global Digital Compact; limits the Panel and Dialogue to the non-military domain"
+    ],
+    "excluded_scope": "Non-military domain only; does not create legal obligations or a treaty body with binding decision-making power."
+  },
+  "dates": {
+    "adopted": "2025-08-26",
+    "published": "2025-08-27",
+    "verified_on": "2026-11-23",
+    "notes": "Adopted without reference to a Main Committee (A/79/L.118); document distributed 27 August 2025."
+  },
+  "status_note": "Adopted. Institutional follow-up under the General Assembly; non-binding.",
+  "languages": {
+    "authentic": ["ar", "zh", "en", "fr", "ru", "es"],
+    "translations": [],
+    "note": "UN official languages; only English acquired."
+  },
+  "sources": [
+    {
+      "id": "un-doc",
+      "url": "https://digitallibrary.un.org/nanna/record/4087699/files/A_RES_79_325-EN.pdf?withWatermark=0&withMetadata=0&registerDownload=1&version=1",
+      "publisher": "United Nations",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official A/RES/79/325 English PDF, 4 pages; downloaded and stored."
+    },
+    {
+      "id": "un-library",
+      "url": "https://digitallibrary.un.org/record/4087699",
+      "publisher": "UN Digital Library",
+      "kind": "registry",
+      "accessed": "2026-11-23",
+      "note": "Bibliographic record for A/RES/79/325."
+    }
+  ],
+  "rights": {
+    "status": "public_official_text",
+    "licence": "United Nations terms of use",
+    "note": "Official UN document; UN copyright and terms of use apply. Stored for research and verification.",
+    "url": "https://www.un.org/en/about-us/terms-of-use"
+  },
+  "verification": {
+    "level": "full_text_checked",
+    "checks": [
+      {
+        "check": "PDF downloaded and hashed.",
+        "result": "HTTP 200, 4 pages, SHA-256 99f17e7202d3692d107a8c979660e8db2af7107937ca583199d84a8325c56e5c.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Title, resolution number and adoption date checked on the document.",
+        "result": "A/RES/79/325; adopted 26 August 2025; title as recorded.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Non-military limitation checked in the preamble.",
+        "result": "The resolution and the activities of the Panel and Dialogue are limited to the non-military domain and do not refer to AI for military purposes.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Full text preserved. The Panel and Dialogue are institutional mechanisms, not a treaty or a standard-setting body with binding outputs."
+  },
+  "related": [
+    {
+      "id": "un-ga-res-79-1",
+      "relation": "implements",
+      "note": "Implements the decision in the Global Digital Compact, annexed to the Pact for the Future (A/RES/79/1), to establish the Panel and initiate the Dialogue."
+    },
+    {
+      "id": "un-ga-res-78-265",
+      "relation": "related",
+      "note": "Earlier UNGA AI resolution recalled in the preamble."
+    }
+  ],
+  "text": {
+    "manifest": "manifest.json",
+    "full_text": true,
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "resolution",
+    "extraction_note": "Text extracted from the official English PDF with pypdf; paragraph anchors refer to file pages."
+  },
+  "gaps": [
+    "Non-binding: the Panel and Dialogue produce scientific and deliberative outputs, not legal obligations.",
+    "The mandate expressly excludes military AI, so it does not fill the military-AI governance gap.",
+    "Appointment of Panel members, rules of procedure and work programme are not covered by the resolution and were not verified.",
+    "Only the English version is stored."
+  ],
+  "provenance": {
+    "discovered_via": "UN Digital Library; identified through the Global Digital Compact follow-up.",
+    "search_dates": ["2026-11-23"]
+  }
+}

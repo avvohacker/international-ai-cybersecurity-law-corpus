@@ -1,0 +1,4267 @@
+{
+  "counts": {
+    "by_binding": {
+      "binding": 9,
+      "non_binding": 26
+    },
+    "by_category": {
+      "agreement_ai_provisions": 5,
+      "ai_treaty": 1,
+      "draft_negotiation": 0,
+      "general_treaty": 2,
+      "non_binding_instrument": 19,
+      "preparatory_interpretive": 2,
+      "supranational_law": 1,
+      "technical_standard": 5
+    },
+    "by_verification": {
+      "full_text_checked": 8,
+      "metadata_verified": 25,
+      "source_located": 2
+    },
+    "full_texts": 14,
+    "total": 35,
+    "with_local_original": 13
+  },
+  "full_text_ids": [
+    "coe-cets-225",
+    "depa-2020",
+    "g7-hiroshima-code-2023",
+    "oecd-ai-recommendation-2019",
+    "sadea-2020",
+    "un-ga-res-78-241",
+    "un-ga-res-78-265",
+    "un-ga-res-78-311",
+    "un-ga-res-79-1",
+    "un-ga-res-79-239",
+    "un-ga-res-79-325",
+    "un-ga-res-79-62",
+    "un-ga-res-80-57",
+    "un-ga-res-80-58"
+  ],
+  "instruments": [
+    {
+      "binding_status": "binding",
+      "category": "agreement_ai_provisions",
+      "dates": {
+        "adopted": "2024-02-18",
+        "entered_into_force": null,
+        "notes": "Adopted by the AU Assembly on 18 February 2024. Eight annexes, including the Annex on Emerging and Advanced Technologies, were adopted in 2025 according to a 2026 tralac backgrounder. Entry into force requires 22 ratifications.",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Not in force; no ratifications deposited as of the secondary source date.",
+        "Ratification status relies on a non-official source.",
+        "The Annex on Emerging and Advanced Technologies was not read in full.",
+        "AI obligations are cooperative and framework-based.",
+        "Only English metadata consulted; other authentic languages not acquired."
+      ],
+      "id": "afcfta-digital-trade-protocol-2024",
+      "instrument_type": "protocol",
+      "issuer": [
+        {
+          "name": "African Union / AfCFTA State Parties",
+          "role": "issuer",
+          "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade"
+        },
+        {
+          "name": "Chairperson of the African Union Commission",
+          "role": "depositary"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr",
+          "ar",
+          "pt",
+          "es"
+        ],
+        "note": "The AU treaty page lists English, French, Arabic, Portuguese and Spanish texts of the Protocol; the compiled annexes also include Swahili. Only English metadata was consulted, so the authentic-language clause was not verified.",
+        "translations": [
+          "sw"
+        ]
+      },
+      "parties": {
+        "as_of": "2026-09-23",
+        "declarations": [],
+        "entries": [],
+        "notifications": [],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "au-page",
+          "tralac-status"
+        ],
+        "summary": "No ratifications deposited as of the tralac backgrounder date; entry into force requires 22 ratifications.",
+        "unknowns": [
+          "Ratification status is taken from a non-official tralac backgrounder; the AU depositary record was not read.",
+          "The exact legal effect of the 2025 annexes and their adoption dates was not verified on an AU primary document."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "African Union treaty portal; ratification status from tralac; AI annex content from a parliamentary analysis and civil-society summary used as finding aids.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "depa-2020",
+          "note": "Another digital-trade agreement with express AI provisions, in force.",
+          "relation": "related"
+        },
+        {
+          "id": "sadea-2020",
+          "note": "Another digital-trade agreement with express AI provisions, in force.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Article 3 — specific objectives, including promotion of emerging and advanced technologies",
+          "Annex on Emerging and Advanced Technologies — responsible development and use of AI and other emerging technologies, regulatory cooperation, risk assessment, regulatory sandboxes"
+        ],
+        "excluded_scope": "Not in force; AI provisions are framework/cooperation provisions, not directly applicable product rules.",
+        "reason": "A continental digital-trade protocol whose objectives expressly include emerging and advanced technologies and which is accompanied by an Annex on Emerging and Advanced Technologies addressing AI, IoT, blockchain and related technologies. It is binding once in force, but it is not yet in force and its AI provisions are largely cooperative."
+      },
+      "rights": {
+        "licence": "African Union terms",
+        "note": "Official AU treaty text; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://au.int/en/copyright"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "au-page",
+          "kind": "official_primary",
+          "note": "Official treaty page: adoption 18 February 2024; links to the text and compiled annexes in several languages.",
+          "publisher": "African Union",
+          "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "tralac-status",
+          "kind": "secondary",
+          "note": "September 2026 backgrounder: entry into force requires 22 ratifications; no ratification deposited at that date; Nigeria's approval not deposited.",
+          "publisher": "tralac",
+          "url": "https://www.tralac.org/documents/events/tralac/2026-annual-conference/8037-update-on-the-implementation-of-the-afcfta-protocol-on-digital-trade-2026-annual-conference-backgrounder-17/file.html"
+        }
+      ],
+      "status": "not_in_force",
+      "status_note": "Adopted but not in force. As of the September 2026 tralac backgrounder consulted, no State Party had deposited an instrument of ratification, although Nigeria's Federal Executive Council approved ratification in November 2025.",
+      "title": {
+        "official": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Digital Trade",
+        "short": "AfCFTA Digital Trade Protocol"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Adoption date and text links checked on the AU treaty page.",
+            "date": "2026-11-23",
+            "result": "Adopted 18 February 2024; six language versions and compiled annexes listed."
+          },
+          {
+            "check": "Entry-into-force requirement and ratification status checked in a tralac backgrounder.",
+            "date": "2026-11-23",
+            "result": "22 ratifications required; none deposited as of September 2026."
+          },
+          {
+            "check": "AI content checked in an official parliamentary analysis and a civil-society summary of the annexes.",
+            "date": "2026-11-23",
+            "result": "Emerging and advanced technologies, including AI, are an objective and an annex subject."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; full text not stored. The AI annex was not read in full, and its exact article numbering is not asserted."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-02-02",
+        "notes": "Launched at the 4th ASEAN Digital Ministers' Meeting on 2 February 2024; the PDF itself carries a December 2023 version date.",
+        "published": "2024-02-02",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding and voluntary.",
+        "Full text not stored.",
+        "Implementation by ASEAN Member States is not assessed.",
+        "Covers commercial and non-military/dual-use applications; military AI is outside its scope."
+      ],
+      "id": "asean-ai-guide-2024",
+      "instrument_type": "guidance",
+      "issuer": [
+        {
+          "name": "Association of Southeast Asian Nations (ASEAN)",
+          "role": "issuer",
+          "url": "https://asean.org/book/asean-guide-on-ai-governance-and-ethics"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "ASEAN working language is English; only the English guide was consulted.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "ASEAN Secretariat publication page and PDF.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "au-continental-ai-strategy-2024",
+          "note": "Another regional non-binding AI instrument.",
+          "relation": "related"
+        },
+        {
+          "id": "oecd-ai-recommendation-2019",
+          "note": "The Guide draws on internationally recognised AI principles, including the OECD AI Principles.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole guide — guiding principles, risk assessment, governance components and national/regional recommendations"
+        ],
+        "excluded_scope": "Voluntary guidance; no legal obligation, market-access rule or enforcement.",
+        "reason": "A regional voluntary guide for organisations and governments in Southeast Asia on designing, developing and deploying AI responsibly. It is the principal ASEAN AI governance instrument and is expressly non-binding."
+      },
+      "rights": {
+        "licence": "ASEAN Secretariat terms",
+        "note": "Official ASEAN publication; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://asean.org/terms-of-use/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "asean-pdf",
+          "kind": "official_primary",
+          "note": "Official PDF of the Guide; states that adoption is voluntary and that it is a living document.",
+          "publisher": "ASEAN Secretariat",
+          "url": "https://asean.org/wp-content/uploads/2024/02/ASEAN-Guide-on-AI-Governance-and-Ethics_beautified_201223_v2.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "asean-page",
+          "kind": "official_secondary",
+          "note": "ASEAN publication page, 2024, English.",
+          "publisher": "ASEAN Secretariat",
+          "url": "https://asean.org/book/asean-guide-on-ai-governance-and-ethics"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted/launched as a voluntary guide. Non-binding.",
+      "title": {
+        "official": "ASEAN Guide on AI Governance and Ethics",
+        "short": "ASEAN AI Guide"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Voluntary nature checked in the Guide's own text.",
+            "date": "2026-11-23",
+            "result": "Adoption is voluntary; practical guide and living document."
+          },
+          {
+            "check": "Publisher, year and scope checked on the ASEAN publication page and PDF.",
+            "date": "2026-11-23",
+            "result": "ASEAN Secretariat, 2024; commercial and non-military/dual-use AI applications."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; full text not stored."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-07-19",
+        "notes": "Endorsed by the AU Executive Council at its 45th Ordinary Session in Accra, Ghana, on 18–19 July 2024; document page dated 9 August 2024.",
+        "published": "2024-08-09",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding strategy.",
+        "Full text not stored.",
+        "National and regional implementation measures are not assessed.",
+        "Only English consulted; other language versions not acquired."
+      ],
+      "id": "au-continental-ai-strategy-2024",
+      "instrument_type": "strategy",
+      "issuer": [
+        {
+          "name": "African Union (Executive Council)",
+          "role": "issuer",
+          "url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "AU page links English, French, Arabic and Portuguese versions; English was consulted and is recorded as the acquired language, not as a verified sole authentic text.",
+        "translations": [
+          "fr",
+          "ar",
+          "pt"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "African Union documents portal.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "afcfta-digital-trade-protocol-2024",
+          "note": "Continental digital-trade instrument with an emerging-technologies annex.",
+          "relation": "related"
+        },
+        {
+          "id": "asean-ai-guide-2024",
+          "note": "Another regional non-binding AI governance instrument.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole strategy — AI benefits, capabilities, risk mitigation, investment and cooperation",
+          "Implementation timeframe 2025–2030"
+        ],
+        "excluded_scope": "Non-binding continental strategy; implementation depends on AU Member States and regional bodies.",
+        "reason": "The African Union's continental policy framework for AI, endorsed by the Executive Council in July 2024. It sets a common vision, five focus areas and fifteen action areas for AI development and governance in Africa. It is a strategy, not a treaty."
+      },
+      "rights": {
+        "licence": "African Union terms",
+        "note": "Official AU publication; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://au.int/en/copyright"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "au-page",
+          "kind": "official_primary",
+          "note": "Official document page: endorsement by the Executive Council on 18–19 July 2024; links to language versions.",
+          "publisher": "African Union",
+          "url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "au-pdf",
+          "kind": "official_primary",
+          "note": "English PDF of the strategy; contains the 2025–2030 implementation timeframe.",
+          "publisher": "African Union",
+          "url": "https://au.int/sites/default/files/documents/44004-doc-EN-_Continental_AI_Strategy_July_2024.pdf"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Endorsed by the Executive Council. Non-binding; implementation phase proposed for 2025–2030.",
+      "title": {
+        "official": "Continental Artificial Intelligence Strategy",
+        "short": "AU Continental AI Strategy"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Endorsement date and organ checked on the AU page.",
+            "date": "2026-11-23",
+            "result": "Executive Council, 45th Ordinary Session, Accra, 18–19 July 2024."
+          },
+          {
+            "check": "Implementation timeframe checked in the PDF.",
+            "date": "2026-11-23",
+            "result": "Five-year timeframe 2025–2030, in two phases."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; full text not stored. The strategy is non-binding and implementation-dependent."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2023-11-01",
+        "notes": "Agreed at the AI Safety Summit, Bletchley Park, 1–2 November 2023. New Zealand joined the declaration on 23 October 2024.",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding.",
+        "Full text not stored.",
+        "Endorsement list is date-sensitive and not reproduced party by party.",
+        "No implementation or monitoring mechanism."
+      ],
+      "id": "bletchley-declaration-2023",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "Countries attending the AI Safety Summit (UK-hosted), including the European Union",
+          "role": "issuer",
+          "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English text and a Latin American Spanish translation are published on GOV.UK. No authentic-language clause.",
+        "translations": [
+          "es"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "GOV.UK AI Safety Summit publications.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "seoul-declaration-2024",
+          "note": "Follow-up summit declaration in May 2024.",
+          "relation": "successor"
+        },
+        {
+          "id": "frontier-ai-safety-commitments-2024",
+          "note": "Company commitments launched at the Seoul summit.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole declaration — frontier AI risks, safety, international cooperation and continued dialogue"
+        ],
+        "excluded_scope": "Non-binding political declaration; no legal obligations, monitoring or enforcement.",
+        "reason": "The first international political declaration on frontier AI safety, agreed by 28 countries and the European Union at Bletchley Park. It establishes a shared understanding of opportunities and risks and a commitment to international cooperation, but is non-binding."
+      },
+      "rights": {
+        "licence": "Open Government Licence v3.0",
+        "note": "GOV.UK content is licensed under OGL v3.0 except where otherwise stated. Reuse with attribution.",
+        "status": "open_licence",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "govuk-declaration",
+          "kind": "official_primary",
+          "note": "Official text and list of participating countries; records New Zealand's accession on 23 October 2024.",
+          "publisher": "UK Government",
+          "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "govuk-news",
+          "kind": "official_secondary",
+          "note": "Official announcement: 28 countries plus the EU; lists endorsing countries.",
+          "publisher": "UK Government",
+          "url": "https://www.gov.uk/government/news/countries-agree-to-safe-and-responsible-development-of-frontier-ai-in-landmark-bletchley-declaration"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted by 28 countries and the EU; New Zealand subsequently joined. Open political endorsement, not signature/ratification.",
+      "title": {
+        "official": "The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 November 2023",
+        "short": "Bletchley Declaration"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Date, participating countries and non-binding character checked on the GOV.UK publication.",
+            "date": "2026-11-23",
+            "result": "1–2 November 2023; 28 countries plus the EU; political declaration."
+          },
+          {
+            "check": "New Zealand accession checked in the GOV.UK update note.",
+            "date": "2026-11-23",
+            "result": "Joined 23 October 2024."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; full text not stored. The declaration is political and does not create legal obligations."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "ai_treaty",
+      "dates": {
+        "adopted": "2024-05-17",
+        "entered_into_force": null,
+        "notes": "Adopted by the Committee of Ministers on 17 May 2024 at its 133rd Session; opened for signature at Vilnius on 5 September 2024. Published in the EU Official Journal on 13 May 2026 (OJ L, 2026/1081). Not in force on the verification date.",
+        "opened_for_signature": "2024-09-05",
+        "published": "2026-05-13",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "The Convention is not in force; its Conference of the Parties, rules of procedure and reporting format do not yet exist.",
+        "Party-level signature and ratification data are incomplete in this record because the Treaty Office table could not be captured in full.",
+        "Declarations under Article 3(1)(b), reservations and objections are not reproduced.",
+        "The official PDF bytes were not acquired (HTTP 403); only the extracted English text is stored.",
+        "No implementing protocol or additional protocol has been adopted.",
+        "The Convention excludes national defence and may exclude national-security activities; coverage of military AI is therefore not provided by this treaty."
+      ],
+      "id": "coe-cets-225",
+      "instrument_type": "treaty",
+      "issuer": [
+        {
+          "name": "Council of Europe",
+          "role": "issuer",
+          "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence"
+        },
+        {
+          "name": "Secretary General of the Council of Europe",
+          "role": "depositary",
+          "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=225"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr"
+        ],
+        "note": "Article 36 final clause: done in English and French, both texts equally authentic. The Council of Europe Treaty Office also lists German, Italian and Russian texts; the EU Official Journal publishes translations in all EU official languages. Only English and French are authentic for the treaty.",
+        "translations": [
+          "de",
+          "it",
+          "ru",
+          "bg",
+          "cs",
+          "da",
+          "el",
+          "es",
+          "et",
+          "fi",
+          "ga",
+          "hr",
+          "hu",
+          "lt",
+          "lv",
+          "mt",
+          "nl",
+          "pl",
+          "pt",
+          "ro",
+          "sk",
+          "sl",
+          "sv"
+        ]
+      },
+      "parties": {
+        "as_of": "2026-11-10",
+        "declarations": [
+          "Article 3(1)(b) requires each Party to deposit a declaration on how it will address risks from private actors; the declarations are not reproduced here."
+        ],
+        "entries": [
+          {
+            "approval": "2026-04-21",
+            "entry_into_force": null,
+            "notes": [
+              "Council Decision (EU) 2026/1080 of 21 April 2026 on the conclusion of the Convention.",
+              "Instrument deposited on 15 May 2026 at the 135th Session of the Committee of Ministers in Chișinău."
+            ],
+            "party": "European Union",
+            "ratification": "2026-05-15",
+            "signature": "2024-09-05"
+          }
+        ],
+        "notifications": [],
+        "objections": [],
+        "ratifications_total": 2,
+        "reservations": [
+          "Article 34 permits only the reservation provided for in Article 33(1) (federal clause). No specific reservation was captured in this session."
+        ],
+        "signatories_total": 21,
+        "source_ids": [
+          "coe-status",
+          "coe-ai-page",
+          "eu-oj-2026-1081"
+        ],
+        "summary": "Two ratifications were recorded, one of them by the European Union on 15 May 2026. The identity of the second ratifying party was not captured from the official chart in this session; a secondary compilation reports Bosnia and Herzegovina on 28 October 2026, which is recorded here as unverified.",
+        "unknowns": [
+          "Full per-party signature and ratification table was not captured: the Treaty Office chart is JavaScript-rendered and the captured excerpt gives aggregate totals plus the EU row.",
+          "Identity of the second ratification and the dates of individual signatures are not treated as verified.",
+          "Article 3(1)(b) declarations, reservations and any objections were not captured."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "Official Council of Europe AI and Treaty Office pages; EUR-Lex publication following EU ratification.",
+        "notes": "Candidate identified from primary sources (Council of Europe), not from secondary commentary.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "coe-cets-225-explanatory-report",
+          "note": "Explanatory Report to CETS No. 225, Vilnius, 5 September 2024; it states that it is not an authoritative interpretation.",
+          "relation": "explanatory_report"
+        },
+        {
+          "id": "eu-ai-act",
+          "note": "Article 27(2) allows EU member States to apply EU rules in their mutual relations. The AI Act is the principal EU instrument in the field; no formal implementation link between the two instruments was verified in this session.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Article 2 — definition of AI system",
+          "Article 3 — scope, including public authorities, private actors and the national-defence exclusion",
+          "Articles 4–5 — human rights, democratic processes and rule of law",
+          "Articles 7–13 — dignity, transparency, accountability, non-discrimination, privacy, reliability, safe innovation",
+          "Articles 14–16 — remedies, procedural safeguards, risk and impact management",
+          "Articles 23–26 — Conference of the Parties, reporting, international cooperation, oversight",
+          "Articles 30–34 — signature, entry into force, accession, federal clause, reservations"
+        ],
+        "excluded_scope": "Matters relating to national defence do not fall within the scope of the Convention (Article 3(4)); national-security activities may be excluded under Article 3(2).",
+        "reason": "The first international legally binding treaty specifically dedicated to artificial intelligence. It requires Parties to ensure that activities within the lifecycle of AI systems are consistent with human rights, democracy and the rule of law, through principles, risk management, remedies and a Conference of the Parties. It is a framework convention and does not itself regulate a particular technology."
+      },
+      "rights": {
+        "licence": "No single reuse licence identified",
+        "note": "Treaty text is an official Council of Europe text. Council of Europe copyright applies; the EU Official Journal version may be reused under Commission Decision 2011/833/EU. This corpus stores extracted English text for research and verification; reusers must check the applicable terms before republication.",
+        "status": "public_official_text",
+        "url": "https://www.coe.int/en/web/portal/disclaimer"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": null,
+          "id": "coe-text",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official CETS No. 225 English text, 12 pages. Direct PDF download returned HTTP 403 to automated clients; the text was retrieved through the environment's text-extraction tool and transcribed into text/en.txt. Running headers and page numbers were removed; wording was not altered.",
+          "publisher": "Council of Europe Treaty Office",
+          "url": "https://rm.coe.int/1680afae3c"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "coe-status",
+          "kind": "registry",
+          "language": "en",
+          "note": "Chart of signatures and ratifications, status as of 10/11/2026. Captured excerpt: 19 signatures not followed by ratifications; 2 ratifications/accessions. Per-party rows are rendered by JavaScript.",
+          "publisher": "Council of Europe Treaty Office",
+          "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "coe-ai-page",
+          "kind": "official_secondary",
+          "note": "Official presentation page; links the Convention and Explanatory Report and states it is the first international legally binding treaty in the field.",
+          "publisher": "Council of Europe",
+          "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "eu-oj-2026-1081",
+          "kind": "official_journal",
+          "language": "en",
+          "note": "OJ L, 2026/1081, 13.5.2026. Publication of the Convention text; EUR-Lex records legal status as not in force (pending notification).",
+          "publisher": "Official Journal of the European Union",
+          "url": "https://eur-lex.europa.eu/eli/agree_internation/2026/1081/oj/eng"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "eu-decision-2026-1080",
+          "kind": "official_journal",
+          "language": "en",
+          "note": "Council Decision (EU) 2026/1080 of 21 April 2026 on the conclusion of the Convention on behalf of the European Union.",
+          "publisher": "Official Journal of the European Union",
+          "url": "https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng"
+        }
+      ],
+      "status": "not_in_force",
+      "status_note": "As of the Treaty Office chart status date 10 November 2026: 21 signatories in total, 19 signatures not followed by ratification and 2 ratifications. Article 30(3) requires five ratifications including at least three Council of Europe member States. Not in force.",
+      "text": {
+        "extraction_note": "Transcribed from the official English text retrieved through the extraction tool. Running headers ('CETS 225 – Artificial Intelligence, 5.IX.2024') and page numbers were removed. Article headings and paragraph breaks preserved. No wording changes were made; consult the official PDF for diplomatic formatting.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
+      "title": {
+        "english": "Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+        "official": "Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+        "short": "CoE Framework Convention on AI (CETS No. 225)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Full English text read end-to-end and compared with the official CETS 225 structure (Preamble, Chapters I–VIII, Articles 1–36).",
+            "date": "2026-11-23",
+            "result": "36 articles present; final clauses and authentic-language clause present."
+          },
+          {
+            "check": "Entry-into-force formula checked against Article 30(3).",
+            "date": "2026-11-23",
+            "result": "Five ratifications including at least three Council of Europe member States; three months after the fifth deposit, entering into force on the first day of the following month."
+          },
+          {
+            "check": "Signature/ratification totals checked against the official Treaty Office chart excerpt.",
+            "date": "2026-11-23",
+            "result": "21 signatories, 2 ratifications, 19 signatures without ratification; not in force."
+          },
+          {
+            "check": "Authentic languages checked against the final clause.",
+            "date": "2026-11-23",
+            "result": "English and French equally authentic; other languages are translations."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "Full text acquired, but the original PDF bytes were not acquired because of the 403 response. The stored text is therefore an extraction/transcription, not the official PDF. Hash integrity covers the stored text and units, not the unavailable official file."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "preparatory_interpretive",
+      "dates": {
+        "adopted": "2024-09-05",
+        "notes": "Dated Vilnius, 5 September 2024; the Convention was adopted by the Committee of Ministers on 17 May 2024.",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Not an authoritative interpretation.",
+        "Full text not acquired (HTTP 403).",
+        "Article-by-article commentary not verified in detail."
+      ],
+      "id": "coe-cets-225-explanatory-report",
+      "instrument_type": "report",
+      "issuer": [
+        {
+          "name": "Council of Europe",
+          "role": "issuer",
+          "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr"
+        ],
+        "note": "English and French versions; the report itself states it is not an authoritative interpretation.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "Council of Europe AI page and Treaty Office.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "coe-cets-225",
+          "note": "Explanatory Report to CETS 225.",
+          "relation": "explanatory_report"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Commentary on the Preamble and Articles 1–36 of CETS 225"
+        ],
+        "excluded_scope": "Interpretive document, not a source of binding obligations; not an authoritative interpretation.",
+        "reason": "The official explanatory report accompanying CETS 225, commenting on the Preamble and Articles 1–36. It facilitates understanding of the Convention but expressly does not provide an authoritative interpretation."
+      },
+      "rights": {
+        "licence": "Council of Europe copyright",
+        "note": "Official Council of Europe document; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.coe.int/en/web/portal/disclaimer"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": null,
+          "id": "coe-report",
+          "kind": "official_primary",
+          "note": "Official Explanatory Report; direct download returned HTTP 403 to automated clients, but the opening and structure were read through the extraction tool.",
+          "publisher": "Council of Europe Treaty Office",
+          "url": "https://rm.coe.int/1680afae67"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "coe-ai-page",
+          "kind": "official_secondary",
+          "note": "Official page linking the Convention and the Explanatory Report.",
+          "publisher": "Council of Europe",
+          "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Published with the Convention. Non-binding interpretive material.",
+      "title": {
+        "official": "Explanatory Report to the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+        "short": "CETS 225 Explanatory Report"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Title, date and non-authoritative character checked in the report's opening paragraphs.",
+            "date": "2026-11-23",
+            "result": "Vilnius, 5 September 2024; expressly not an authoritative interpretation."
+          },
+          {
+            "check": "Relationship to the Convention checked on the official CoE page.",
+            "date": "2026-11-23",
+            "result": "Linked as the Explanatory Report to CETS 225."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Only the opening and structure were read; the full report was not acquired or segmented."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "agreement_ai_provisions",
+      "dates": {
+        "entered_into_force": "2021-01-07",
+        "notes": "Signed by New Zealand, Chile and Singapore on 11 June 2020 GMT (12 June 2020 New Zealand time). Entered into force for New Zealand and Singapore on 7 January 2021 and for Chile on 23 November 2021. Korea's accession took effect on 3 May 2024. A Protocol to the DEPA was signed on 15 July 2023; sources differ between 19 and 20 March 2024 for its entry into force.",
+        "signed": "2020-06-11",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "No depositary-certified copy was acquired; the stored text is a Party government's reproduction.",
+        "The Protocol to the DEPA and its legal effect on the AI article were not analysed.",
+        "Only English acquired; the Spanish version referenced by Chile was not acquired.",
+        "The AI article contains no enforceable substantive standard and no monitoring mechanism.",
+        "Costa Rica's 2026 accession is not verified against the depositary."
+      ],
+      "id": "depa-2020",
+      "instrument_type": "agreement",
+      "issuer": [
+        {
+          "name": "New Zealand, Chile and Singapore (original Parties)",
+          "role": "co_issuer"
+        },
+        {
+          "name": "Government of New Zealand",
+          "role": "depositary",
+          "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "The authenticated signing text acquired is in English. A Spanish version is referenced by Chile's SUBREI page; it was not acquired and is not treated as authentic here.",
+        "translations": []
+      },
+      "parties": {
+        "as_of": "2026-11-23",
+        "declarations": [],
+        "entries": [
+          {
+            "entry_into_force": "2021-01-07",
+            "notes": [],
+            "party": "New Zealand",
+            "signature": "2020-06-11"
+          },
+          {
+            "entry_into_force": "2021-01-07",
+            "notes": [],
+            "party": "Singapore",
+            "signature": "2020-06-11"
+          },
+          {
+            "entry_into_force": "2021-11-23",
+            "notes": [],
+            "party": "Chile",
+            "signature": "2020-06-11"
+          },
+          {
+            "accession": "2024-03-04",
+            "entry_into_force": "2024-05-03",
+            "notes": [
+              "Accession; instrument deposited 4 March 2024 according to an official APEC presentation; entry into force 3 May 2024 per the New Zealand MFAT page."
+            ],
+            "party": "Korea"
+          }
+        ],
+        "notifications": [],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "depa-mfat-overview",
+          "depa-text"
+        ],
+        "summary": "Four Parties as of the verification date: New Zealand, Singapore, Chile and Korea. The depositary is New Zealand.",
+        "unknowns": [
+          "Full depositary notification record and any reservations/declarations were not read.",
+          "Costa Rica's accession is not verified against the depositary.",
+          "The Protocol to the DEPA is not analysed in this record."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "Comparative digital-trade research; verified on the New Zealand MFAT depositary pages and the Korean government text.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "sadea-2020",
+          "note": "Parallel digital-economy agreement with an AI article (Article 31).",
+          "relation": "related"
+        },
+        {
+          "id": "uksdea-2022",
+          "note": "Parallel digital-economy agreement with an AI article (Article 8.61-R).",
+          "relation": "related"
+        },
+        {
+          "id": "ksdpa-2022",
+          "note": "Parallel digital partnership agreement with an AI article (Article 14.28).",
+          "relation": "related"
+        },
+        {
+          "id": "oecd-ai-recommendation-2019",
+          "note": "The DEPA AI article refers to internationally recognised principles and guidelines; the OECD AI Principles are the principal intergovernmental reference.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Article 8.2 — Artificial Intelligence: recognition of AI's economic and social importance; promotion of ethical and governance frameworks; consideration of internationally recognised principles including explainability, transparency, fairness and human-centred values"
+        ],
+        "excluded_scope": "The AI article does not create enforceable substantive standards, conformity assessment or market-access conditions; it commits the Parties to promote and endeavour.",
+        "reason": "A binding digital-economy agreement whose Module 8 contains a dedicated article on artificial intelligence. The AI provision is expressly included in a treaty, although its operative language is cooperative and best-efforts ('shall endeavour'), not a set of prohibitions or product rules."
+      },
+      "rights": {
+        "licence": "Government of New Zealand / Government of Korea terms",
+        "note": "Treaty text reproduced by a Party government. No open licence identified; stored for research and verification. Reusers should consult the depositary and the reproducing government's terms.",
+        "status": "public_official_text",
+        "url": "https://www.mfat.govt.nz/en/about-us/terms-of-use/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "depa-text",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "English signing text reproduced by the Korean government, 67 pages; downloaded and stored. The depositary is New Zealand; this is a government reproduction, not the depositary's certified copy.",
+          "publisher": "Ministry of Trade, Industry and Energy (Korea)",
+          "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/support/DEPA/depa_all_eng.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "depa-mfat-overview",
+          "kind": "official_secondary",
+          "note": "Confirms signature, entry-into-force dates for New Zealand, Singapore and Chile, the 2023 Protocol, and Korean accession in May 2024.",
+          "publisher": "New Zealand Ministry of Foreign Affairs and Trade",
+          "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/overview"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "depa-mfat-text",
+          "kind": "official_secondary",
+          "note": "Depositary government's text and resources page; entry into force stated as 7 January 2021 (NZ/SG), 23 November 2021 (Chile), 3 May 2024 (Korea).",
+          "publisher": "New Zealand Ministry of Foreign Affairs and Trade",
+          "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force for New Zealand, Singapore, Chile and Korea. Costa Rica was invited to accede and, according to Singapore's MTI page consulted in this session, joined in September 2026; that accession is recorded as a gap because the depositary record was not read.",
+      "text": {
+        "extraction_note": "Text extracted from the stored PDF with pypdf. Article-level units follow the treaty's Article headings. Page anchors are file pages, not printed page numbers.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
+      "title": {
+        "official": "Digital Economy Partnership Agreement",
+        "short": "DEPA"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Article 8.2 located in the acquired English signing text and read in full.",
+            "date": "2026-11-23",
+            "result": "Present under Module 8 (Emerging Trends and Technologies); four numbered paragraphs; best-efforts language."
+          },
+          {
+            "check": "Final provisions and entry into force checked in the text.",
+            "date": "2026-11-23",
+            "result": "Article 16.1 designates New Zealand as depositary; Article 16.2 sets entry into force 90 days after notifications by at least two signatories."
+          },
+          {
+            "check": "Signature and entry-into-force dates checked against the depositary government's pages.",
+            "date": "2026-11-23",
+            "result": "Signed 11/12 June 2020; in force 7 January 2021 for NZ and Singapore, 23 November 2021 for Chile, 3 May 2024 for Korea."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "Full text preserved. The AI clause is treaty language but its normative force is hortatory; classification as binding refers to the agreement, not to a hard AI obligation."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "supranational_law",
+      "dates": {
+        "adopted": "2024-06-13",
+        "entered_into_force": "2024-08-01",
+        "notes": "Published in OJ L, 2024/1689, 12 July 2024; entered into force on the twentieth day after publication. Applies from 2 August 2026, with staged earlier and later dates. A 2026 amendment is incorporated in the consolidated version of 27 July 2026 (M1), including changes to Article 113.",
+        "published": "2024-07-12",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Not an international treaty; it binds EU Member States and market actors within EU law, not third States.",
+        "Full text not stored; the consolidated version is evolving.",
+        "National implementing measures, harmonised standards and guidance are not analysed.",
+        "Military and national-security exclusions reduce coverage of military AI.",
+        "The 2026 amendment (M1) is recorded but its full policy content is not analysed."
+      ],
+      "id": "eu-ai-act",
+      "instrument_type": "regulation",
+      "issuer": [
+        {
+          "name": "European Parliament and Council of the European Union",
+          "role": "co_issuer",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "bg",
+          "es",
+          "cs",
+          "da",
+          "de",
+          "et",
+          "el",
+          "en",
+          "fr",
+          "ga",
+          "hr",
+          "it",
+          "lv",
+          "lt",
+          "hu",
+          "mt",
+          "nl",
+          "pl",
+          "pt",
+          "ro",
+          "sk",
+          "sl",
+          "fi",
+          "sv"
+        ],
+        "note": "All official languages of the European Union; each language version of the OJ act is authentic under EU law.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "EUR-Lex; official EU AI policy pages.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "coe-cets-225",
+          "note": "The EU ratified CETS 225; Article 27(2) of the Convention allows EU member States to apply EU rules in their mutual relations. No formal implementation link was verified in this session.",
+          "relation": "related"
+        },
+        {
+          "id": "eu-gpai-code-of-practice-2025",
+          "note": "Voluntary code assessed as an adequate tool for demonstrating compliance with AI Act obligations for general-purpose AI models.",
+          "relation": "implemented_by"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Articles 1–113 and Annexes I–XIII",
+          "Article 5 — prohibited AI practices",
+          "Articles 6–49 — high-risk AI systems and obligations",
+          "Articles 51–56 — general-purpose AI models",
+          "Articles 57–99 — governance, market surveillance and enforcement",
+          "Article 113 — entry into force and staged application"
+        ],
+        "excluded_scope": "Supranational EU law; territorial and market-access scope under EU law, not a treaty regime. Military, defence and national-security uses are largely excluded by Article 2.",
+        "reason": "The European Union's binding horizontal regulation of AI, collected separately from international treaties because it is supranational legislation. It establishes risk-based obligations for AI systems and providers of general-purpose AI models, prohibits certain practices and provides market-surveillance and enforcement machinery. It is not an international treaty and does not bind non-EU States as such."
+      },
+      "rights": {
+        "licence": "Commission Decision 2011/833/EU on the reuse of Commission documents",
+        "note": "EUR-Lex content may be reused under the EU reuse decision, with attribution and no distortion. The stored catalogue does not redistribute the consolidated text.",
+        "status": "reuse_permitted",
+        "url": "https://eur-lex.europa.eu/en/legal-content/terms-of-use.html"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "eurlex-act",
+          "kind": "official_journal",
+          "language": "en",
+          "note": "Original act, OJ L, 2024/1689, 12.7.2024; ELI data.europa.eu/eli/reg/2024/1689/oj.",
+          "publisher": "Official Journal of the European Union",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "eurlex-consolidated",
+          "kind": "official_journal",
+          "language": "en",
+          "note": "Consolidated text of 27 July 2026, incorporating amendment M1; Article 113 application dates checked here.",
+          "publisher": "Official Journal of the European Union",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "eurlex-summary",
+          "kind": "official_secondary",
+          "note": "Official summary of application dates and staged obligations.",
+          "publisher": "EUR-Lex",
+          "url": "https://eur-lex.europa.eu/EN/legal-content/summary/rules-for-trustworthy-artificial-intelligence-in-the-eu.html"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force and applicable from 2 August 2026 in stages. The EUR-Lex consolidated version of 27 July 2026 reflects an amendment; the original 2024 text remains separately available.",
+      "title": {
+        "official": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)",
+        "short": "EU Artificial Intelligence Act"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Title, adoption date, OJ citation and CELEX/ELI checked on EUR-Lex.",
+            "date": "2026-11-23",
+            "result": "Regulation (EU) 2024/1689, 13 June 2024, OJ L 2024/1689, 12 July 2024."
+          },
+          {
+            "check": "Application dates checked in Article 113 of the consolidated text of 27 July 2026.",
+            "date": "2026-11-23",
+            "result": "In force; applies from 2 August 2026 with staged dates; M1 amendments incorporated."
+          },
+          {
+            "check": "Legal nature checked: EU regulation, not a treaty.",
+            "date": "2026-11-23",
+            "result": "Supranational legislation, directly applicable in Member States."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; the full consolidated text is not stored in the corpus. Article-level citations should be checked against the current consolidated version because amendment M1 changed Article 113 and other provisions."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "preparatory_interpretive",
+      "dates": {
+        "adopted": "2025-07-10",
+        "notes": "Final version received and published on 10 July 2025; approved as adequate by the Commission and the AI Board on 1 August 2025.",
+        "published": "2025-07-10",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Voluntary and EU-specific; not an international treaty.",
+        "Full text not stored.",
+        "Signatory list and adequacy assessment details are not analysed.",
+        "Does not bind non-EU providers except through the AI Act's market rules."
+      ],
+      "id": "eu-gpai-code-of-practice-2025",
+      "instrument_type": "code_of_conduct",
+      "issuer": [
+        {
+          "name": "European Commission, following a multi-stakeholder process with independent experts",
+          "role": "issuer",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English version published; no treaty-style authentic-language clause.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "European Commission digital-strategy pages.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "eu-ai-act",
+          "note": "Voluntary implementation tool for AI Act obligations on general-purpose AI models.",
+          "relation": "implements"
+        },
+        {
+          "id": "g7-hiroshima-code-2023",
+          "note": "Comparable voluntary code for advanced AI developers, in a different legal context.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Chapter on Transparency",
+          "Chapter on Copyright",
+          "Chapter on Safety and Security (for models with systemic risk)"
+        ],
+        "excluded_scope": "Voluntary EU implementation tool; does not create obligations independent of the AI Act and does not bind non-EU actors as such.",
+        "reason": "A voluntary code designed to help providers of general-purpose AI models demonstrate compliance with the EU AI Act's obligations on transparency, copyright, safety and security. It is implementation material for a supranational regulation, not an international treaty."
+      },
+      "rights": {
+        "licence": "Commission Decision 2011/833/EU",
+        "note": "European Commission publication; reuse under the EU reuse decision with attribution. Metadata only in this corpus.",
+        "status": "reuse_permitted",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "ec-page",
+          "kind": "official_primary",
+          "note": "Official page: published 10 July 2025; voluntary tool; three chapters; adequacy confirmation.",
+          "publisher": "European Commission",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "ec-press",
+          "kind": "official_secondary",
+          "note": "Press release: final version received 10 July 2025; three chapters; relation to AI Act rules applicable from 2 August 2025.",
+          "publisher": "European Commission",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1787"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Voluntary code; providers may sign it to demonstrate compliance with Articles 53 and 55 of the AI Act.",
+      "title": {
+        "official": "General-Purpose AI Code of Practice",
+        "short": "EU GPAI Code of Practice"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Publication date, voluntary nature and three chapters checked on the Commission page.",
+            "date": "2026-11-23",
+            "result": "Published 10 July 2025; voluntary; transparency, copyright, safety and security."
+          },
+          {
+            "check": "Relationship to the AI Act checked in the Commission press release and FAQ.",
+            "date": "2026-11-23",
+            "result": "Helps demonstrate compliance with Articles 53 and 55; approved as adequate on 1 August 2025."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; the code's full text was not acquired or segmented. It is not an international instrument."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-05-21",
+        "notes": "Launched on 21 May 2024 with 16 companies; the UK page records later additions (Magic, Minimax, 01.ai and NVIDIA), bringing the list to 20.",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Voluntary and corporate; not binding international law.",
+        "Full text not stored.",
+        "Compliance and safety frameworks are not assessed.",
+        "Endorsement list is date-sensitive."
+      ],
+      "id": "frontier-ai-safety-commitments-2024",
+      "instrument_type": "code_of_conduct",
+      "issuer": [
+        {
+          "name": "AI companies endorsing the commitments, facilitated by the UK and Republic of Korea governments",
+          "role": "issuer",
+          "url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English text; no authentic-language clause.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "GOV.UK AI Seoul Summit publications.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "seoul-declaration-2024",
+          "note": "Leaders' declaration adopted at the same summit.",
+          "relation": "related"
+        },
+        {
+          "id": "bletchley-declaration-2023",
+          "note": "Earlier summit declaration in the same process.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole document — voluntary commitments on risk assessment, safety frameworks, governance and transparency for frontier AI"
+        ],
+        "excluded_scope": "Voluntary corporate commitments; no legal obligation, no State party, no enforcement.",
+        "reason": "Voluntary safety commitments by leading AI companies, launched at the AI Seoul Summit, covering severe-risk assessment, governance and transparency for frontier models. It is an industry commitment, not an international instrument adopted by States."
+      },
+      "rights": {
+        "licence": "Open Government Licence v3.0",
+        "note": "GOV.UK content licensed under OGL v3.0 except where otherwise stated.",
+        "status": "open_licence",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "govuk-commitments",
+          "kind": "official_primary",
+          "note": "Official text and list of endorsing organisations.",
+          "publisher": "UK Government",
+          "url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "govuk-news",
+          "kind": "official_secondary",
+          "note": "Official announcement: 16 companies at launch, including companies from the US, China, the UAE and Europe.",
+          "publisher": "UK Government",
+          "url": "https://www.gov.uk/government/news/historic-first-as-companies-spanning-north-america-asia-europe-and-middle-east-agree-safety-commitments-on-development-of-ai"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Voluntary commitments; companies endorse and publish safety frameworks. Not a treaty and not a State-level instrument.",
+      "title": {
+        "official": "Frontier AI Safety Commitments, AI Seoul Summit 2024",
+        "short": "Frontier AI Safety Commitments"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Launch date and company list checked on the GOV.UK publication.",
+            "date": "2026-11-23",
+            "result": "21 May 2024; 16 initial endorsers, with four later additions listed."
+          },
+          {
+            "check": "Nature checked: voluntary corporate commitments.",
+            "date": "2026-11-23",
+            "result": "No State parties, no legal obligation."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; full text not stored. The commitments are not an instrument of international law."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2023-10-30",
+        "notes": "Issued as part of the Hiroshima AI Process and welcomed in the G7 Leaders' Statement of 30 October 2023.",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Voluntary; no legal obligation or enforcement.",
+        "The separate Hiroshima Process Reporting Framework, its questionnaires and company responses are not analysed in this record.",
+        "Only the English text is stored; the Japanese version was not acquired.",
+        "The Code is addressed to organisations, not to States, and does not address military AI."
+      ],
+      "id": "g7-hiroshima-code-2023",
+      "instrument_type": "code_of_conduct",
+      "issuer": [
+        {
+          "name": "G7 (2023 Japanese Presidency)",
+          "role": "issuer",
+          "url": "https://www.soumu.go.jp/hiroshimaaiprocess/en/documents.html"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English text acquired. The Japanese government publishes Japanese materials; the English text is the version acquired and analysed. No authentic-language clause exists because the instrument is not a treaty.",
+        "translations": [
+          "ja"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "Official Japanese MIC Hiroshima AI Process pages; cross-checked with the G7 Leaders' Statement.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "oecd-ai-recommendation-2019",
+          "note": "The Code states that it builds on the existing OECD AI Principles.",
+          "relation": "related"
+        },
+        {
+          "id": "eu-gpai-code-of-practice-2025",
+          "note": "Later voluntary code implementing AI Act obligations for general-purpose AI models; comparable function, different legal context.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole document — risk identification and mitigation across the AI lifecycle; transparency; security; incident reporting; content authentication; research investment; governance",
+          "Preamble — voluntary guidance; living document; applies to advanced AI systems including foundation models and generative AI"
+        ],
+        "excluded_scope": "Voluntary and addressed to organisations, not States; no enforcement, conformity assessment or market-access consequences.",
+        "reason": "A voluntary G7 code of conduct addressed to organisations developing the most advanced AI systems, including foundation models and generative AI. It is a leading non-binding implementation instrument and builds on the OECD AI Principles. It is not a treaty and creates no legal obligation."
+      },
+      "rights": {
+        "licence": "Japanese Government terms",
+        "note": "Official government publication. No open licence identified; stored for research and verification. Reusers should consult the publishing government's terms.",
+        "status": "public_official_text",
+        "url": "https://www.soumu.go.jp/menu_kyotsuu/policy/terms.html"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "mic-code",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official English PDF, 8 pages; downloaded and stored. The PDF is encrypted with an owner password but permits text extraction.",
+          "publisher": "Ministry of Internal Affairs and Communications, Japan",
+          "url": "https://www.soumu.go.jp/hiroshimaaiprocess/pdf/document05_en.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "mic-documents",
+          "kind": "official_secondary",
+          "note": "Official Hiroshima AI Process documents page, listing the Code of Conduct and related Guiding Principles.",
+          "publisher": "Ministry of Internal Affairs and Communications, Japan",
+          "url": "https://www.soumu.go.jp/hiroshimaaiprocess/en/documents.html"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted and published as a voluntary code. No signature or ratification; organisations may endorse it and report under the separate Hiroshima Process Reporting Framework.",
+      "text": {
+        "extraction_note": "Text extracted with pypdf from an owner-password-protected PDF. The code's actions are numbered without periods, so the whole document is stored as one citable unit; section-level anchors were not generated.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
+      "title": {
+        "official": "Hiroshima Process International Code of Conduct for Organizations Developing Advanced AI Systems",
+        "short": "G7 Hiroshima AI Process Code of Conduct"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Full English text extracted and read.",
+            "date": "2026-11-23",
+            "result": "8 pages; voluntary guidance; actions across the lifecycle; no binding language."
+          },
+          {
+            "check": "Nature checked against the G7 documents page and the text's own framing.",
+            "date": "2026-11-23",
+            "result": "Voluntary code of conduct for organisations; living document; not a treaty."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "Full text preserved. The PDF is owner-password protected; extraction succeeded, and the extracted text is stored. No monitoring data is included in this record."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "general_treaty",
+      "dates": {
+        "adopted": "1966-12-16",
+        "entered_into_force": "1976-03-23",
+        "notes": "Adopted by UNGA resolution 2200A (XXI) on 16 December 1966; entered into force 23 March 1976.",
+        "opened_for_signature": "1966-12-16",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Not AI-specific.",
+        "Metadata not re-verified on the official page.",
+        "Reservations, derogations and jurisprudence are not analysed.",
+        "Only the treaty framework is recorded; interpretations by the Human Rights Committee are outside this record."
+      ],
+      "id": "iccpr-1966",
+      "instrument_type": "treaty",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly",
+          "role": "issuer",
+          "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "Article 53: Chinese, English, French, Russian and Spanish texts equally authentic.",
+        "translations": []
+      },
+      "parties": {
+        "as_of": "2026-11-23",
+        "declarations": [],
+        "entries": [],
+        "notifications": [],
+        "objections": [],
+        "ratifications_total": null,
+        "reservations": [],
+        "signatories_total": null,
+        "source_ids": [
+          "ohchr"
+        ],
+        "summary": "Party-by-party signature, ratification and reservation data were not captured in this cycle. The UN Treaty Collection and OHCHR are the authoritative registers.",
+        "unknowns": [
+          "Party list, reservations, derogations and declarations were not captured."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "General international human rights law; invoked in the CETS 225 preamble.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "coe-cets-225",
+          "note": "The CoE Convention's preamble invokes the ICCPR; the Convention is to be read consistently with it.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Article 2 — non-discrimination and effective remedy",
+          "Article 14 — fair trial",
+          "Article 17 — privacy",
+          "Article 19 — freedom of expression",
+          "Article 26 — equality before the law and non-discrimination"
+        ],
+        "excluded_scope": "General human rights treaty; no AI-specific provision, institution or risk-management duty.",
+        "reason": "A general human rights treaty selected because its obligations apply to AI-driven interferences with privacy, expression, non-discrimination, fair trial and effective remedy. It is not AI-specific; it supplies the human rights baseline against which AI measures are assessed."
+      },
+      "rights": {
+        "licence": "United Nations terms",
+        "note": "Official UN treaty text; UN terms apply. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": null,
+          "id": "ohchr",
+          "kind": "official_primary",
+          "note": "Official OHCHR page for the Covenant, text and status. Metadata recorded from established reference; page not re-read in this session.",
+          "publisher": "OHCHR",
+          "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force. General treaty; not AI-specific.",
+      "title": {
+        "official": "International Covenant on Civil and Political Rights",
+        "short": "ICCPR"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official OHCHR URL recorded; adoption and entry-into-force dates and authentic-language clause taken from the established treaty record, not re-read in this session.",
+            "date": "2026-11-23",
+            "result": "Metadata not independently re-verified; source located."
+          }
+        ],
+        "level": "source_located",
+        "notes": "Included as a reasoned general-treaty selection, not as an AI-specific instrument. Verify article text and reservations on OHCHR before quoting."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "technical_standard",
+      "dates": {
+        "notes": "Publication month July 2022; exact day not verified. Edition 1, 60 pages. ISO lists the standard at CHF 0.",
+        "published": null,
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Not downloaded; metadata only.",
+        "Voluntary and not law.",
+        "Terminology may differ from treaty definitions, including the CoE Convention and the EU AI Act."
+      ],
+      "id": "iso-iec-22989-2022",
+      "instrument_type": "standard",
+      "issuer": [
+        {
+          "name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)",
+          "role": "issuer",
+          "url": "https://www.iso.org/committee/6794475.html"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "ISO catalogue lists English and French; French corrected version dated 2025-12.",
+        "translations": [
+          "fr"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "ISO catalogue and JTC 1/SC 42 list.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "iso-iec-23053-2022",
+          "note": "Companion framework for AI systems using machine learning.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole standard — AI concepts, terminology and system lifecycle"
+        ],
+        "excluded_scope": "Terminology standard; no legal obligations.",
+        "reason": "International terminology and conceptual framework for AI, widely used as a reference for definitions in standards and policy. It is a voluntary technical standard and is available free of charge from ISO."
+      },
+      "rights": {
+        "licence": "ISO copyright; free download",
+        "note": "Available at no charge from ISO but still subject to ISO copyright. Metadata and link only.",
+        "status": "restricted",
+        "url": "https://www.iso.org/standard/74296.html"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "iso-catalogue",
+          "kind": "official_primary",
+          "note": "Official catalogue page: published July 2022, edition 1, 60 pages, CHF 0.",
+          "publisher": "ISO",
+          "url": "https://www.iso.org/standard/74296.html"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Published international standard. Voluntary.",
+      "title": {
+        "official": "ISO/IEC 22989:2022 Information technology — Artificial intelligence — Artificial intelligence concepts and terminology",
+        "short": "ISO/IEC 22989:2022"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Title, edition, publication month, page count and price checked on the ISO catalogue page.",
+            "date": "2026-11-23",
+            "result": "ISO/IEC 22989:2022, edition 1, 2022-07, 60 pages, CHF 0."
+          },
+          {
+            "check": "Legal nature checked: voluntary technical standard.",
+            "date": "2026-11-23",
+            "result": "Not a treaty."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata only; the standard was not downloaded."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "technical_standard",
+      "dates": {
+        "notes": "ISO catalogue records publication in June 2022 (edition 1, 36 pages); the exact day was not verified.",
+        "published": null,
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Paywalled; full text not accessed.",
+        "Voluntary and not law.",
+        "National adoptions are not assessed."
+      ],
+      "id": "iso-iec-23053-2022",
+      "instrument_type": "standard",
+      "issuer": [
+        {
+          "name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)",
+          "role": "issuer",
+          "url": "https://www.iso.org/committee/6794475.html"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "ISO catalogue lists English and French.",
+        "translations": [
+          "fr"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "ISO catalogue and JTC 1/SC 42 list.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "iso-iec-22989-2022",
+          "note": "Companion terminology standard.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole standard — framework for AI systems using machine learning"
+        ],
+        "excluded_scope": "Voluntary technical standard; no legal obligation and no public full text.",
+        "reason": "International technical framework describing AI systems that use machine learning. It is a voluntary standard and a companion to ISO/IEC 22989; it is not law."
+      },
+      "rights": {
+        "licence": "ISO copyright; paid standard",
+        "note": "Sold by ISO; metadata and link only.",
+        "status": "restricted",
+        "url": "https://www.iso.org/standard/74438.html"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "iso-catalogue",
+          "kind": "official_primary",
+          "note": "Official catalogue page: published June 2022, edition 1, 36 pages, CHF 196.",
+          "publisher": "ISO",
+          "url": "https://www.iso.org/standard/74438.html"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Published international standard. Voluntary.",
+      "title": {
+        "official": "ISO/IEC 23053:2022 Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML)",
+        "short": "ISO/IEC 23053:2022"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Title, edition, publication month, page count and price checked on the ISO catalogue page.",
+            "date": "2026-11-23",
+            "result": "ISO/IEC 23053:2022, edition 1, 2022-06, 36 pages, CHF 196."
+          },
+          {
+            "check": "Legal nature checked: voluntary technical standard.",
+            "date": "2026-11-23",
+            "result": "Not a treaty."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata only; full text paywalled."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "technical_standard",
+      "dates": {
+        "notes": "Publication month February 2023; exact day not verified. Edition 1, 26 pages.",
+        "published": null,
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Paywalled; full text not accessed.",
+        "Voluntary and not law.",
+        "Relationship to national AI risk frameworks is not assessed."
+      ],
+      "id": "iso-iec-23894-2023",
+      "instrument_type": "standard",
+      "issuer": [
+        {
+          "name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)",
+          "role": "issuer",
+          "url": "https://www.iso.org/committee/6794475.html"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "ISO catalogue lists English and French.",
+        "translations": [
+          "fr"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "ISO catalogue and JTC 1/SC 42 list.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "iso-iec-42001-2023",
+          "note": "AI management-system requirements; risk management supports the management system.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole standard — AI risk management guidance and processes"
+        ],
+        "excluded_scope": "Voluntary guidance; no legal obligation and no public full text.",
+        "reason": "International guidance on managing AI-specific risk and integrating it into organisational risk management. It is a voluntary technical standard supporting AI governance and regulation."
+      },
+      "rights": {
+        "licence": "ISO copyright; paid standard",
+        "note": "Sold by ISO; metadata and link only, no reproduction.",
+        "status": "restricted",
+        "url": "https://www.iso.org/standard/77304.html"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "iso-catalogue",
+          "kind": "official_primary",
+          "note": "Official catalogue page: published February 2023, edition 1, 26 pages, JTC 1/SC 42; price CHF 155.",
+          "publisher": "ISO",
+          "url": "https://www.iso.org/standard/77304.html"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Published international standard. Voluntary.",
+      "title": {
+        "official": "ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management",
+        "short": "ISO/IEC 23894:2023"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Title, edition, publication month, page count and committee checked on the ISO catalogue page.",
+            "date": "2026-11-23",
+            "result": "ISO/IEC 23894:2023, edition 1, 2023-02, 26 pages, JTC 1/SC 42."
+          },
+          {
+            "check": "Legal nature checked: voluntary technical guidance.",
+            "date": "2026-11-23",
+            "result": "Not a treaty; no binding effect."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata only; full text paywalled."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "technical_standard",
+      "dates": {
+        "notes": "Publication month December 2023; the exact publication day was not verified. Edition 1, 51 pages.",
+        "published": null,
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Paywalled; full text not accessed.",
+        "Voluntary and not law.",
+        "National adoptions and certification schemes are not assessed."
+      ],
+      "id": "iso-iec-42001-2023",
+      "instrument_type": "standard",
+      "issuer": [
+        {
+          "name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)",
+          "role": "issuer",
+          "url": "https://www.iso.org/committee/6794475.html"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "ISO publishes English and French versions; the ISO catalogue lists English and French. No treaty-style authentic-language clause.",
+        "translations": [
+          "fr"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "ISO catalogue and ISO/IEC JTC 1/SC 42 standards list.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "iso-iec-23894-2023",
+          "note": "Companion AI risk-management guidance.",
+          "relation": "related"
+        },
+        {
+          "id": "iso-iec-42006-2025",
+          "note": "Requirements for bodies auditing and certifying AI management systems under ISO/IEC 42001.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole standard — AI management system requirements and controls"
+        ],
+        "excluded_scope": "Voluntary technical standard; no legal obligation and no public full text.",
+        "reason": "The first international management-system standard for AI. It specifies requirements for establishing, implementing, maintaining and continually improving an AI management system. It is a voluntary technical standard, not law, and is sold by ISO."
+      },
+      "rights": {
+        "licence": "ISO copyright; paid standard",
+        "note": "The standard is sold by ISO. This corpus stores metadata and a link only; it does not reproduce or circumvent access restrictions.",
+        "status": "restricted",
+        "url": "https://www.iso.org/standard/42001.html"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "iso-catalogue",
+          "kind": "official_primary",
+          "note": "Official catalogue page: published December 2023, edition 1, 51 pages, ISO/IEC JTC 1/SC 42.",
+          "publisher": "ISO",
+          "url": "https://www.iso.org/standard/42001.html"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Published international standard. Certification is voluntary; national adoption may vary.",
+      "title": {
+        "official": "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system",
+        "short": "ISO/IEC 42001:2023"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Title, edition, publication month, page count and committee checked on the ISO catalogue page.",
+            "date": "2026-11-23",
+            "result": "ISO/IEC 42001:2023, edition 1, 2023-12, 51 pages, JTC 1/SC 42."
+          },
+          {
+            "check": "Legal nature checked: voluntary international standard, not a treaty.",
+            "date": "2026-11-23",
+            "result": "Technical standard; no binding legal effect."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata only. The full standard is paywalled and was not accessed."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "technical_standard",
+      "dates": {
+        "notes": "Publication month July 2025; exact day not verified. Edition 1.",
+        "published": null,
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Paywalled; full text not accessed.",
+        "Voluntary and not law.",
+        "Accreditation and certification schemes are not assessed."
+      ],
+      "id": "iso-iec-42006-2025",
+      "instrument_type": "standard",
+      "issuer": [
+        {
+          "name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)",
+          "role": "issuer",
+          "url": "https://www.iso.org/committee/6794475.html"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English edition listed; other language versions not verified.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "ISO catalogue.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "iso-iec-42001-2023",
+          "note": "The certification requirements build on ISO/IEC 42001.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole standard — competence and process requirements for AIMS audit and certification bodies"
+        ],
+        "excluded_scope": "Voluntary technical standard; no legal obligation and no public full text.",
+        "reason": "International requirements for bodies that audit and certify AI management systems under ISO/IEC 42001. It is a voluntary conformity-assessment standard and a building block for AI certification schemes."
+      },
+      "rights": {
+        "licence": "ISO copyright; paid standard",
+        "note": "Sold by ISO; metadata and link only.",
+        "status": "restricted",
+        "url": "https://www.iso.org/standard/42006"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "iso-catalogue",
+          "kind": "official_primary",
+          "note": "Official catalogue page: published July 2025, edition 1, CHF 159.",
+          "publisher": "ISO",
+          "url": "https://www.iso.org/standard/42006"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Published international standard. Voluntary.",
+      "title": {
+        "official": "ISO/IEC 42006:2025 Information technology — Artificial intelligence — Requirements for bodies providing audit and certification of artificial intelligence management systems",
+        "short": "ISO/IEC 42006:2025"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Title, edition, publication month and scope checked on the ISO catalogue page.",
+            "date": "2026-11-23",
+            "result": "ISO/IEC 42006:2025, edition 1, 2025-07, requirements for AIMS audit and certification bodies."
+          },
+          {
+            "check": "Legal nature checked: voluntary technical standard.",
+            "date": "2026-11-23",
+            "result": "Not a treaty."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata only; full text paywalled."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "agreement_ai_provisions",
+      "dates": {
+        "entered_into_force": "2023-01-14",
+        "notes": "Signed in Singapore on 21 November 2022; entered into force on 14 January 2023.",
+        "signed": "2022-11-21",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Full text not stored; only metadata verified.",
+        "AI article is cooperative, not prescriptive.",
+        "Korean language version not acquired.",
+        "No depositary record consulted."
+      ],
+      "id": "ksdpa-2022",
+      "instrument_type": "agreement",
+      "issuer": [
+        {
+          "name": "Republic of Korea and Singapore",
+          "role": "co_issuer"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "The signed English text is identified; a Korean version is likely but was not acquired. Authentic-language status was not verified.",
+        "translations": [
+          "ko"
+        ]
+      },
+      "parties": {
+        "as_of": "2026-11-23",
+        "declarations": [],
+        "entries": [
+          {
+            "entry_into_force": "2023-01-14",
+            "notes": [],
+            "party": "Korea",
+            "signature": "2022-11-21"
+          },
+          {
+            "entry_into_force": "2023-01-14",
+            "notes": [],
+            "party": "Singapore",
+            "signature": "2022-11-21"
+          }
+        ],
+        "notifications": [],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "mti-page",
+          "ksdpa-text"
+        ],
+        "summary": "Two Parties: the Republic of Korea and Singapore.",
+        "unknowns": [
+          "No depositary register was consulted; dates rely on the Singapore MTI page and the signed text."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "Singapore MTI and Korean MOTIE treaty pages; article number cross-checked in an ADB comparative study.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "depa-2020",
+          "note": "Parallel digital agreement with an AI article.",
+          "relation": "related"
+        },
+        {
+          "id": "sadea-2020",
+          "note": "Parallel digital agreement with an AI article.",
+          "relation": "related"
+        },
+        {
+          "id": "uksdea-2022",
+          "note": "Parallel digital agreement with an AI article.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Article 14.28 — Artificial Intelligence: cross-border opportunities for business innovation; adoption of AI governance and ethics frameworks; trusted, safe and responsible use"
+        ],
+        "excluded_scope": "The AI article is programmatic and does not impose enforceable AI standards or prohibitions.",
+        "reason": "A bilateral digital partnership agreement amending the Korea-Singapore Free Trade Agreement's electronic-commerce chapter and containing a dedicated AI article. The AI provision promotes AI governance and ethics frameworks and cross-border business opportunities; it is cooperative."
+      },
+      "rights": {
+        "licence": "Government of Korea / Government of Singapore terms",
+        "note": "Official treaty text; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.mti.gov.sg/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "ksdpa-text",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Signed English text, hosted by the Korean government.",
+          "publisher": "Ministry of Trade, Industry and Energy (Korea)",
+          "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/ksdpa/1/KSDPA_eng.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "mti-page",
+          "kind": "official_secondary",
+          "note": "Confirms signature 21 November 2022 and entry into force 14 January 2023.",
+          "publisher": "Ministry of Trade and Industry, Singapore",
+          "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/ksdpa"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force between Korea and Singapore.",
+      "title": {
+        "official": "Korea-Singapore Digital Partnership Agreement",
+        "short": "KSDPA"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Signature and entry-into-force dates checked on the Singapore MTI page and press release.",
+            "date": "2026-11-23",
+            "result": "Signed 21 November 2022; in force 14 January 2023."
+          },
+          {
+            "check": "AI article number cross-checked in the ADB comparative table and in the treaty text's article sequence.",
+            "date": "2026-11-23",
+            "result": "Article 14.28; AI governance and ethics cooperation."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; full text not stored. Article 14.28 wording should be checked against the signed PDF before quotation."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2021-10-22",
+        "notes": "Original NATO AI Strategy summary published 22 October 2021; revised strategy summary published 10 July 2024.",
+        "published": "2024-07-10",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Only the public summary is available; the full strategy is not public.",
+        "Non-binding internal alliance policy.",
+        "No treaty status and no direct obligations for non-NATO States.",
+        "Military AI governance remains outside the UN Panel and Global Dialogue."
+      ],
+      "id": "nato-ai-strategy-2024",
+      "instrument_type": "strategy",
+      "issuer": [
+        {
+          "name": "North Atlantic Treaty Organization (NATO)",
+          "role": "issuer",
+          "url": "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2024/07/10/summary-of-natos-revised-artificial-intelligence-ai-strategy"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr"
+        ],
+        "note": "NATO official texts are published in English and French. The summary is an official public version, not the full classified strategy.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "NATO official texts portal.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "political-declaration-military-ai-2023",
+          "note": "Separate multinational political declaration on military AI; NATO is not a party as such.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-79-239",
+          "note": "UN military AI resolution; different forum and membership.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole summary — AI readiness, responsible use, principles of responsible use (PRUs), protection of AI technologies and countering adversarial AI"
+        ],
+        "excluded_scope": "Non-binding alliance policy; not addressed to non-NATO States and not a source of international legal obligations.",
+        "reason": "NATO's revised AI strategy summary, setting out Allied political and military objectives for responsible AI adoption in defence and security. It is an internal alliance strategy, not a treaty or a binding international instrument."
+      },
+      "rights": {
+        "licence": "NATO terms of use",
+        "note": "Official NATO publication; NATO copyright and terms apply. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.nato.int/cps/en/natohq/terms_of_use.htm"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "nato-revised",
+          "kind": "official_primary",
+          "note": "Official summary of the revised AI strategy, 10 July 2024.",
+          "publisher": "NATO",
+          "url": "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2024/07/10/summary-of-natos-revised-artificial-intelligence-ai-strategy"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "nato-2021",
+          "kind": "official_primary",
+          "note": "Official summary of the 2021 AI strategy, 22 October 2021.",
+          "publisher": "NATO",
+          "url": "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2021/10/22/summary-of-the-nato-artificial-intelligence-strategy"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Revised strategy adopted by NATO Allies in 2024; only the public summary is available. Non-binding.",
+      "title": {
+        "official": "Summary of NATO's revised Artificial Intelligence (AI) strategy",
+        "short": "NATO AI Strategy (revised 2024)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Original and revised dates checked on NATO official texts pages.",
+            "date": "2026-11-23",
+            "result": "2021 strategy summary 22 October 2021; revised strategy summary 10 July 2024."
+          },
+          {
+            "check": "Nature checked: alliance strategy, public summary, non-binding.",
+            "date": "2026-11-23",
+            "result": "Internal NATO policy; not a treaty."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; full text not stored. The complete strategy is not public; only the summary is analysed."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2019-05-22",
+        "entered_into_force": "2019-05-22",
+        "notes": "Adopted 22 May 2019; amended 8 November 2023 (definition of AI system) and 3 May 2024 (revised Recommendation). The OECD records the instrument as in force.",
+        "published": "2019-05-22",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "The 2019 original text is not stored separately; the 2024 revised booklet is the acquired version.",
+        "The list of adherents is not reproduced party by party; the OECD's own adherents table should be consulted.",
+        "Implementation is reviewed by OECD committees; no sanctions for non-implementation.",
+        "The Recommendation is not AI-specific law in the sense of a treaty and does not bind non-adherent States."
+      ],
+      "id": "oecd-ai-recommendation-2019",
+      "instrument_type": "recommendation",
+      "issuer": [
+        {
+          "name": "OECD Council",
+          "role": "issuer",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr"
+        ],
+        "note": "English and French are the OECD official languages and the only official versions. Arabic, German, Japanese and Spanish translations are listed by the OECD as unofficial translations.",
+        "translations": [
+          "ar",
+          "de",
+          "ja",
+          "es"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "OECD Legal Instruments Compendium; cited by the G7 Hiroshima Process and the G20 AI Principles.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "g7-hiroshima-code-2023",
+          "note": "The G7 Code builds on the OECD AI Principles.",
+          "relation": "related"
+        },
+        {
+          "id": "unesco-ethics-ai-2021",
+          "note": "Parallel universal non-binding AI ethics instrument adopted in 2021.",
+          "relation": "related"
+        },
+        {
+          "id": "eu-ai-act",
+          "note": "The EU AI Act's definition of AI system is similar but not identical; no formal incorporation of the OECD Recommendation.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Section I — definition of 'AI system' (revised 2023)",
+          "Section II, principles 1.1–1.5 — inclusive growth, human rights and democratic values, transparency and explainability, robustness and safety, accountability",
+          "Section II, policy recommendations 2.1–2.5 — investment, ecosystem, governance, human capacity, international cooperation"
+        ],
+        "excluded_scope": "OECD Recommendations are not treaties and do not create directly enforceable rights or obligations; implementation is reviewed through OECD committees.",
+        "reason": "The first intergovernmental AI standard and the source of the OECD AI Principles, which were taken up by the G20 in 2019 and underpin later codes and national policies. It is a Recommendation: politically authoritative for adherents but not legally binding."
+      },
+      "rights": {
+        "licence": "OECD reuse notice in the document",
+        "note": "The OECD booklet states that it is provided free of charge and may be reproduced and distributed free of charge without further permission, provided it is not altered and is not sold. The stored text is an unaltered extraction; the PDF itself should be used for redistribution.",
+        "status": "reuse_permitted",
+        "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "oecd-instrument",
+          "kind": "official_primary",
+          "note": "Official Compendium record: adopted 22/05/2019, amended 08/11/2023 and 03/05/2024, status in force, adherents and translations.",
+          "publisher": "OECD",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "oecd-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official OECD Legal Instruments booklet reproducing OECD/LEGAL/0449, 12 pages; downloaded and stored.",
+          "publisher": "OECD",
+          "url": "https://legalinstruments.oecd.org/public/doc/648/648.en.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "oecd-report-2024",
+          "kind": "official_secondary",
+          "note": "2024 report on implementation, dissemination and continued relevance; records the 2023 and 2024 revisions and adherents as of December 2023.",
+          "publisher": "OECD",
+          "url": "https://one.oecd.org/document/C/MIN(2024)17/en/pdf"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force as an OECD legal instrument. Adherents include OECD Members and a number of non-Members; the OECD reported 38 Members plus eight adherents as of December 2023.",
+      "text": {
+        "extraction_note": "Text extracted from the official OECD booklet with pypdf. Numbered units are generated from the Recommendation's paragraph numbering; cover and background material remain in the text and in the first units.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "numbered"
+      },
+      "title": {
+        "official": "Recommendation of the Council on Artificial Intelligence",
+        "short": "OECD AI Recommendation (OECD/LEGAL/0449)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Adoption and amendment dates checked on the OECD Compendium record.",
+            "date": "2026-11-23",
+            "result": "Adopted 22 May 2019; amended 8 November 2023 and 3 May 2024; in force."
+          },
+          {
+            "check": "Definition and principle numbering checked in the stored PDF.",
+            "date": "2026-11-23",
+            "result": "Definition in Section I; principles 1.1–1.5; policy recommendations 2.1–2.5."
+          },
+          {
+            "check": "Legal nature checked against the OECD's own description of Recommendations.",
+            "date": "2026-11-23",
+            "result": "Non-binding legal instrument; adherence is political, with implementation reporting."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "Full text preserved. The PDF is the 2024 revised booklet, not the original 2019 text; version history is recorded in the dates."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2023-02-16",
+        "notes": "Launched at the REAIM Summit in The Hague on 16 February 2023. A revised text was published on 9 November 2023.",
+        "published": "2023-11-09",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding; no verification or enforcement.",
+        "Endorsement list is date-sensitive and not reproduced party by party.",
+        "Full text not stored.",
+        "The declaration does not create a definition or prohibition.",
+        "It is a U.S.-led initiative and is not endorsed by all States, including several major military powers."
+      ],
+      "id": "political-declaration-military-ai-2023",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "United States of America (initiative); endorsing States",
+          "role": "issuer",
+          "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English text is the initiative text; the U.S. State Department publishes translations. No authentic-language clause exists for a political declaration.",
+        "translations": [
+          "es",
+          "ar",
+          "fr",
+          "zh",
+          "ru"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "U.S. State Department official page; endorsement count from Japan's Ministry of Defense.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-79-239",
+          "note": "UNGA military AI resolution; different forum and universal membership.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-79-62",
+          "note": "UNGA LAWS resolution; overlapping subject matter.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole declaration — ten measures on responsible development, deployment and use of military AI and autonomy"
+        ],
+        "excluded_scope": "Non-binding political declaration; no verification, enforcement or legal obligation; not all States endorse it.",
+        "reason": "The principal political declaration on responsible military use of AI and autonomy. It sets out non-legally binding measures for States across the lifecycle of military AI capabilities, including human command and control and compliance with international humanitarian law. It is not a treaty."
+      },
+      "rights": {
+        "licence": "U.S. Government work",
+        "note": "U.S. Government publication; generally not subject to U.S. copyright, but third-party content may be. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "state-page",
+          "kind": "official_primary",
+          "note": "Official page: launch at REAIM 2023, links to the declaration and translations, list of endorsing States as of 27 November 2024.",
+          "publisher": "U.S. Department of State",
+          "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "japan-mod",
+          "kind": "official_secondary",
+          "note": "States that 58 States had endorsed the declaration as of December 2024 and that it is not legally binding.",
+          "publisher": "Ministry of Defense, Japan",
+          "url": "https://www.mod.go.jp/atla/soubiseisaku/ai_guideline/ai_guideline_ver.01_eng_202506.pdf"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Open for endorsement by States; 58 endorsing States as of December 2024 according to Japan's Ministry of Defense. Endorsement is political, not a signature or ratification.",
+      "title": {
+        "official": "Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy",
+        "short": "U.S.-led Political Declaration on military AI"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Launch date and non-binding character checked on the State Department page and fact sheet.",
+            "date": "2026-11-23",
+            "result": "Launched February 2023 at REAIM; consists of non-legally binding guidelines."
+          },
+          {
+            "check": "Endorsement count checked against Japan's Ministry of Defense publication.",
+            "date": "2026-11-23",
+            "result": "58 endorsing States as of December 2024; the State Department page lists endorsers as of 27 November 2024."
+          },
+          {
+            "check": "Legal nature checked: political declaration, not a treaty.",
+            "date": "2026-11-23",
+            "result": "No signature/ratification; endorsement only."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; the full declaration text is not stored. The endorsing-State list differs across dates and was not reconciled party by party."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "agreement_ai_provisions",
+      "dates": {
+        "entered_into_force": "2020-12-08",
+        "notes": "Signed at Adelaide and Singapore on 6 August 2020; entered into force on 8 December 2020.",
+        "signed": "2020-08-06",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "No authentic-language clause was located in the extracted text; English is recorded as the acquired language, not as a verified sole authentic language.",
+        "The agreement amends the SAFTA; the consolidated text and the amending relationship were not independently verified against the SAFTA.",
+        "The separate MOU on Cooperation on Artificial Intelligence concluded alongside SADEA was not acquired.",
+        "Article 31 creates no enforceable AI standard."
+      ],
+      "id": "sadea-2020",
+      "instrument_type": "agreement",
+      "issuer": [
+        {
+          "name": "Australia and Singapore",
+          "role": "co_issuer"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "The acquired text is in English. A separate authentic-language clause was not located in the extracted text; this is recorded as a gap rather than inferred.",
+        "translations": []
+      },
+      "parties": {
+        "as_of": "2026-11-23",
+        "declarations": [],
+        "entries": [
+          {
+            "entry_into_force": "2020-12-08",
+            "notes": [],
+            "party": "Australia",
+            "signature": "2020-08-06"
+          },
+          {
+            "entry_into_force": "2020-12-08",
+            "notes": [],
+            "party": "Singapore",
+            "signature": "2020-08-06"
+          }
+        ],
+        "notifications": [],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "dfat-page",
+          "sadea-text"
+        ],
+        "summary": "Two Parties: Australia and Singapore.",
+        "unknowns": [
+          "No depositary register was consulted; the record relies on the official DFAT page and the text."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "Official Singapore MTI/DFAT digital-economy agreement pages; comparative ADB study used only to locate the AI article number.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "depa-2020",
+          "note": "Parallel digital-economy agreement with an AI article (Article 8.2).",
+          "relation": "related"
+        },
+        {
+          "id": "uksdea-2022",
+          "note": "Parallel digital-economy agreement with an AI article (Article 8.61-R).",
+          "relation": "related"
+        },
+        {
+          "id": "ksdpa-2022",
+          "note": "Parallel digital partnership agreement with an AI article (Article 14.28).",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Article 31 — Artificial Intelligence: cooperation on research and industry practices, responsible adoption, commercialisation; ethical governance frameworks; alignment through regional and international fora; consideration of internationally recognised principles"
+        ],
+        "excluded_scope": "Article 31 uses 'shall cooperate' and 'shall endeavour'; it does not impose product requirements, prohibitions or enforcement obligations specific to AI.",
+        "reason": "A bilateral digital-economy agreement that replaces the electronic-commerce chapter of the Singapore-Australia Free Trade Agreement and contains a dedicated article on artificial intelligence. The AI article is cooperative and expressly refers to internationally recognised principles and AI governance frameworks."
+      },
+      "rights": {
+        "licence": "Government of Singapore / Commonwealth of Australia terms",
+        "note": "Official treaty text published by a Party government. No open licence identified; stored for research and verification. Reusers should consult the publishing governments' terms.",
+        "status": "public_official_text",
+        "url": "https://www.dfat.gov.au/about-us/copyright"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "sadea-text",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Australia-Singapore Digital Economy Agreement text, 39 pages; downloaded and stored.",
+          "publisher": "Government of Singapore (Isomer)",
+          "url": "https://isomer-user-content.by.gov.sg/1004/769c26eb-17cf-4e2d-962b-1277a22df9db/australia-singapore-digital-economy-agreement%20-%20Jun%2023.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "dfat-page",
+          "kind": "official_secondary",
+          "note": "States entry into force on 8 December 2020 and identifies the agreement as replacing the SAFTA electronic-commerce chapter.",
+          "publisher": "Australian Department of Foreign Affairs and Trade",
+          "url": "https://www.dfat.gov.au/trade/services-and-digital-trade/australia-and-singapore-digital-economy-agreement"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force between Australia and Singapore.",
+      "text": {
+        "extraction_note": "Text extracted from the stored PDF with pypdf. Article headings in the consolidated text use upper-case 'ARTICLE'; page anchors are file pages.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
+      "title": {
+        "official": "Australia-Singapore Digital Economy Agreement",
+        "short": "SADEA"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Article 31 located and read in the acquired text.",
+            "date": "2026-11-23",
+            "result": "Dedicated AI article present; cooperation and best-efforts obligations; reference to AI governance frameworks and internationally recognised principles."
+          },
+          {
+            "check": "Entry into force clause checked in the text.",
+            "date": "2026-11-23",
+            "result": "Article 5: entry into force on the later note confirming completion of domestic requirements."
+          },
+          {
+            "check": "Signature and entry-into-force dates checked against the DFAT page.",
+            "date": "2026-11-23",
+            "result": "Signed 6 August 2020; in force 8 December 2020."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "Full text preserved. The AI clause is treaty language but programmatic rather than prescriptive."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-05-21",
+        "notes": "Adopted at the Leaders' Session of the AI Seoul Summit on 21 May 2024.",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding.",
+        "Full text not stored.",
+        "No monitoring mechanism.",
+        "Participation is limited to a group of like-minded States and the EU."
+      ],
+      "id": "seoul-declaration-2024",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "Participants in the AI Seoul Summit (Republic of Korea and United Kingdom hosts)",
+          "role": "issuer",
+          "url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English text; no authentic-language clause.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "GOV.UK AI Seoul Summit publications.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "bletchley-declaration-2023",
+          "note": "Previous summit declaration.",
+          "relation": "predecessor"
+        },
+        {
+          "id": "frontier-ai-safety-commitments-2024",
+          "note": "Company commitments launched at the same summit.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole declaration — safe, innovative and inclusive AI; international cooperation; follow-up to Bletchley"
+        ],
+        "excluded_scope": "Non-binding; no legal obligations or enforcement.",
+        "reason": "Leaders' declaration from the AI Seoul Summit, continuing the Bletchley process with commitments to safe, innovative and inclusive AI and international cooperation. It is a political declaration, not a treaty."
+      },
+      "rights": {
+        "licence": "Open Government Licence v3.0",
+        "note": "GOV.UK content licensed under OGL v3.0 except where otherwise stated.",
+        "status": "open_licence",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "govuk-seoul",
+          "kind": "official_primary",
+          "note": "Official text and list of participating leaders.",
+          "publisher": "UK Government",
+          "url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "govuk-network",
+          "kind": "official_secondary",
+          "note": "Official announcement of the Seoul Declaration and the AI Safety Institute network.",
+          "publisher": "UK Government",
+          "url": "https://www.gov.uk/government/news/global-leaders-agree-to-launch-first-international-network-of-ai-safety-institutes-to-boost-understanding-of-ai"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted by Australia, Canada, the European Union, France, Germany, Italy, Japan, the Republic of Korea, Singapore, the United Kingdom and the United States.",
+      "title": {
+        "official": "Seoul Declaration for safe, innovative and inclusive AI",
+        "short": "Seoul Declaration"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Date and participants checked on the GOV.UK text.",
+            "date": "2026-11-23",
+            "result": "21 May 2024; 10 countries plus the EU."
+          },
+          {
+            "check": "Nature checked: leaders' declaration, non-binding.",
+            "date": "2026-11-23",
+            "result": "Political declaration; no signature/ratification."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; full text not stored."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "agreement_ai_provisions",
+      "dates": {
+        "entered_into_force": "2022-06-14",
+        "notes": "Signed in Singapore on 25 February 2022; entered into force on 14 June 2022.",
+        "signed": "2022-02-25",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Full text not stored; only metadata verified.",
+        "AI article is cooperative, not prescriptive.",
+        "No depositary record consulted.",
+        "No assessment of the UK-Singapore AI cooperation beyond the treaty article."
+      ],
+      "id": "uksdea-2022",
+      "instrument_type": "agreement",
+      "issuer": [
+        {
+          "name": "United Kingdom and Singapore",
+          "role": "co_issuer"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English text acquired; no multilingual authentic-text clause verified.",
+        "translations": []
+      },
+      "parties": {
+        "as_of": "2026-11-23",
+        "declarations": [],
+        "entries": [
+          {
+            "entry_into_force": "2022-06-14",
+            "notes": [],
+            "party": "United Kingdom",
+            "signature": "2022-02-25"
+          },
+          {
+            "entry_into_force": "2022-06-14",
+            "notes": [],
+            "party": "Singapore",
+            "signature": "2022-02-25"
+          }
+        ],
+        "notifications": [],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "mti-page",
+          "uk-treaty"
+        ],
+        "summary": "Two Parties: the United Kingdom and Singapore.",
+        "unknowns": [
+          "No depositary register was consulted; dates rely on the UK treaty series and Singapore MTI page."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "UK treaty series and Singapore MTI digital-economy pages; article number cross-checked in an ADB comparative study used only as a finding aid.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "depa-2020",
+          "note": "Parallel digital-economy agreement with an AI article.",
+          "relation": "related"
+        },
+        {
+          "id": "sadea-2020",
+          "note": "Parallel digital-economy agreement with an AI article.",
+          "relation": "related"
+        },
+        {
+          "id": "ksdpa-2022",
+          "note": "Parallel digital partnership agreement with an AI article.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Article 8.61-R — AI and emerging technologies: domestic governance and policy frameworks, international principles, cooperation on AI challenges including human diversity and unintended biases, technical standards and algorithmic transparency"
+        ],
+        "excluded_scope": "The AI article does not create substantive market-access rules, prohibitions or enforcement obligations.",
+        "reason": "A bilateral digital-economy agreement containing a dedicated AI and emerging-technologies article. The AI provision is cooperative and best-efforts, but it expressly addresses AI governance, algorithmic transparency and bias."
+      },
+      "rights": {
+        "licence": "Crown copyright / Government of Singapore terms",
+        "note": "Official treaty text. The UK treaty series is subject to Crown copyright; stored metadata only.",
+        "status": "public_official_text",
+        "url": "https://www.gov.uk/government/publications/uksingapore-digital-economy-agreement-ts-no222023"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "uk-treaty",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "UK Treaty Series No. 22 (2023), CP 912; records signature 25 February 2022 and entry into force 14 June 2022.",
+          "publisher": "UK Foreign, Commonwealth and Development Office",
+          "url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "mti-page",
+          "kind": "official_secondary",
+          "note": "Confirms signature and entry into force and identifies AI as a cooperative element.",
+          "publisher": "Ministry of Trade and Industry, Singapore",
+          "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force between the United Kingdom and Singapore.",
+      "title": {
+        "official": "Digital Economy Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Singapore",
+        "short": "UK-Singapore Digital Economy Agreement (UKSDEA)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Signature and entry-into-force dates checked on the UK Treaty Series PDF and Singapore MTI page.",
+            "date": "2026-11-23",
+            "result": "Signed 25 February 2022; in force 14 June 2022."
+          },
+          {
+            "check": "AI article number and content checked in secondary official-facing analysis and the ADB comparative table.",
+            "date": "2026-11-23",
+            "result": "Article 8.61-R; cooperative AI and emerging-technology provisions."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; the full treaty text is not stored. The precise wording of Article 8.61-R should be checked against the UK Treaty Series PDF before quotation."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2023-12-22",
+        "notes": "Adopted on the report of the First Committee (A/78/409, para. 89); document distributed 28 December 2023.",
+        "published": "2023-12-28",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding.",
+        "Only metadata-level verification.",
+        "Only English acquired.",
+        "No negotiating mandate or prohibition."
+      ],
+      "id": "un-ga-res-78-241",
+      "instrument_type": "resolution",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly (78th session)",
+          "role": "issuer",
+          "url": "https://www.un.org/en/ga/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UN official languages; only English acquired.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "UN documents service; predecessor cited by A/RES/79/62.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-79-62",
+          "note": "2024 resolution on lethal autonomous weapons systems.",
+          "relation": "successor"
+        },
+        {
+          "id": "un-ga-res-80-57",
+          "note": "2025 resolution on lethal autonomous weapons systems.",
+          "relation": "successor"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Preamble and operative paragraphs on autonomous weapons systems, AI and autonomy, international humanitarian law and human rights law"
+        ],
+        "excluded_scope": "Non-binding; no definition, prohibition or negotiation mandate with binding effect.",
+        "reason": "First UN General Assembly resolution devoted to lethal autonomous weapons systems. It affirms that international law applies and frames concerns about AI and autonomy in weapons systems; it is a non-binding first step later followed by resolutions 79/62 and 80/57."
+      },
+      "rights": {
+        "licence": "United Nations terms of use",
+        "note": "Official UN document; UN copyright and terms of use apply.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "un-doc",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official A/RES/78/241 English PDF, 2 pages; downloaded and stored.",
+          "publisher": "United Nations",
+          "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F241&t=pdf"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted. Non-binding resolution.",
+      "text": {
+        "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "resolution"
+      },
+      "title": {
+        "official": "Lethal autonomous weapons systems",
+        "short": "UNGA resolution 78/241 on lethal autonomous weapons systems"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "PDF downloaded and first page inspected.",
+            "date": "2026-11-23",
+            "result": "A/RES/78/241; title 'Lethal autonomous weapons systems'; adopted 22 December 2023."
+          },
+          {
+            "check": "Relationship to later resolutions checked in their preambles.",
+            "date": "2026-11-23",
+            "result": "Recalled by A/RES/79/62 and A/RES/80/57."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Original preserved and hashed; full text not segmented. Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-03-21",
+        "notes": "Adopted at the 63rd plenary meeting of the 78th session, without a vote (UN Digital Library action note). Document distributed 1 April 2024.",
+        "published": "2024-04-01",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding: the resolution does not create legal obligations or a monitoring mechanism.",
+        "Only the English version is stored; the five other official-language versions are catalogued through the UN Digital Library but not acquired.",
+        "No formal follow-up or implementation report specific to this resolution was identified.",
+        "The resolution does not address military uses of AI."
+      ],
+      "id": "un-ga-res-78-265",
+      "instrument_type": "resolution",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly (78th session)",
+          "role": "issuer",
+          "url": "https://www.un.org/en/ga/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UN official languages. A German translation is listed in the UN Digital Library; it is not an authentic text.",
+        "translations": [
+          "de"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "UN Digital Library and documents.un.org; cited in later UNGA resolution 79/325.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-78-311",
+          "note": "Later 2024 UNGA resolution on international cooperation on AI capacity-building.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-79-325",
+          "note": "2025 resolution establishing the Independent International Scientific Panel and the Global Dialogue on AI Governance.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Preamble — opportunities and risks of AI for sustainable development and human rights",
+          "Operative paragraphs — safe, secure and trustworthy AI systems; international cooperation; capacity-building; bridging digital divides"
+        ],
+        "excluded_scope": "Non-binding General Assembly resolution; no monitoring or enforcement mechanism; it does not address military AI.",
+        "reason": "The first United Nations General Assembly resolution devoted to artificial intelligence. It is a political, non-binding resolution that recognises opportunities and risks of AI systems and calls for safe, secure and trustworthy AI, international cooperation and capacity-building, especially for developing countries. It creates no treaty obligation."
+      },
+      "rights": {
+        "licence": "United Nations terms of use",
+        "note": "Official UN document. UN copyright and terms of use apply; stored for research and verification, not for commercial redistribution.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "un-doc",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official A/RES/78/265 English PDF, 8 pages; downloaded and stored; SHA-256 recorded in the corpus manifest.",
+          "publisher": "United Nations",
+          "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F265&t=pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "un-library",
+          "kind": "registry",
+          "note": "Bibliographic record: symbol A/RES/78/265, action note 2024-03-21, adopted without vote at the 63rd plenary meeting; links to all six language versions.",
+          "publisher": "UN Digital Library",
+          "url": "https://digitallibrary.un.org/record/4043244"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted without vote. A non-binding resolution; no signature, ratification or entry into force.",
+      "text": {
+        "extraction_note": "Text extracted from the official English PDF with pypdf. Running headers, document symbols, distribution codes and page numbers remain where extraction preserved them. Paragraph units are defined by operative numbering.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "resolution"
+      },
+      "title": {
+        "official": "Seizing the opportunities of safe, secure and trustworthy artificial intelligence systems for sustainable development",
+        "short": "UNGA resolution 78/265 on AI systems for sustainable development"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "PDF downloaded from the official UN document service and hashed.",
+            "date": "2026-11-23",
+            "result": "HTTP 200, 8 pages, SHA-256 83887bee43ad1d5065de9f48c8ad5b7e81807944a3d2ec89023e3da3f61159d9."
+          },
+          {
+            "check": "Title, resolution number and adoption date checked on the document itself.",
+            "date": "2026-11-23",
+            "result": "A/RES/78/265; adopted 21 March 2024; title as recorded."
+          },
+          {
+            "check": "Adoption without vote checked against the UN Digital Library action note.",
+            "date": "2026-11-23",
+            "result": "Adopted without vote, 63rd plenary meeting."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "Full text preserved. PDF extraction inserts spaces in some words (for example 'Seventy -eighth'); this is an extraction artefact, not a textual variant."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-07-01",
+        "notes": "Adopted 1 July 2024; document distributed 5 July 2024.",
+        "published": "2024-07-05",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding.",
+        "Only metadata-level verification; full text not segmented.",
+        "Only English acquired.",
+        "No implementation or financing commitments are assessed."
+      ],
+      "id": "un-ga-res-78-311",
+      "instrument_type": "resolution",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly (78th session)",
+          "role": "issuer",
+          "url": "https://www.un.org/en/ga/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UN official languages; only English acquired.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "UN documents service; recalled in A/RES/79/325.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-78-265",
+          "note": "Earlier 2024 UNGA AI resolution.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-79-325",
+          "note": "Later institutional follow-up.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Operative paragraphs on AI capacity-building, international cooperation, sharing of best practices and bridging the AI divide"
+        ],
+        "excluded_scope": "Non-binding; no treaty obligations, finance mechanism or monitoring body.",
+        "reason": "UN General Assembly resolution focused on international cooperation and capacity-building for artificial intelligence, particularly for developing countries. It is non-binding and complements resolution 78/265."
+      },
+      "rights": {
+        "licence": "United Nations terms of use",
+        "note": "Official UN document; UN copyright and terms of use apply.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "un-doc",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official A/RES/78/311 English PDF, 5 pages; downloaded and stored.",
+          "publisher": "United Nations",
+          "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F311&t=pdf"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted. Non-binding resolution; no signature or ratification.",
+      "text": {
+        "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "resolution"
+      },
+      "title": {
+        "official": "Enhancing international cooperation on capacity-building of artificial intelligence",
+        "short": "UNGA resolution 78/311 on AI capacity-building"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "PDF downloaded and first pages inspected.",
+            "date": "2026-11-23",
+            "result": "A/RES/78/311; title 'Enhancing international cooperation on capacity-building of artificial intelligence'; adopted 1 July 2024."
+          },
+          {
+            "check": "Resolution number cross-checked in the preamble of A/RES/79/325.",
+            "date": "2026-11-23",
+            "result": "Recalled as resolution 78/311 of 1 July 2024."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Original PDF preserved and hashed, but the full text was not segmented or read end-to-end; verification is metadata-level. Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-09-22",
+        "notes": "Adopted without reference to a Main Committee (A/79/L.2) on 22 September 2024.",
+        "published": "2024-09-22",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding.",
+        "Only metadata-level verification; the Global Digital Compact's AI paragraphs are not individually analysed.",
+        "Only English acquired.",
+        "The Pact's follow-up and review mechanisms are not assessed."
+      ],
+      "id": "un-ga-res-79-1",
+      "instrument_type": "resolution",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly (79th session)",
+          "role": "issuer",
+          "url": "https://www.un.org/en/ga/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UN official languages; only English acquired.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "UN documents service; cross-referenced from A/RES/79/325.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-79-325",
+          "note": "Gives effect to the decision to establish the AI Panel and Global Dialogue.",
+          "relation": "implemented_by"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Global Digital Compact annex — AI governance commitments, international cooperation, scientific understanding and inclusive dialogue",
+          "Follow-up institutional design given effect by A/RES/79/325"
+        ],
+        "excluded_scope": "Non-binding political declaration; no legal obligations; military AI is not covered by the AI Panel/Dialogue mandate.",
+        "reason": "The Pact for the Future contains the Global Digital Compact, which sets out political commitments on AI governance, including the decision to establish the Independent International Scientific Panel on AI and the Global Dialogue on AI Governance. It is a non-binding summit outcome, not a treaty."
+      },
+      "rights": {
+        "licence": "United Nations terms of use",
+        "note": "Official UN document; UN copyright and terms of use apply.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "un-doc",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official A/RES/79/1 English PDF, 56 pages; downloaded and stored. Includes the Global Digital Compact annex.",
+          "publisher": "United Nations",
+          "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F79%2F1&t=pdf"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted. Non-binding; no signature or ratification.",
+      "text": {
+        "extraction_note": "Text extracted from the official English PDF with pypdf and stored as one citable unit (56 pages). It was not paragraph-segmented or read end-to-end in this cycle, so the verification level remains metadata_verified.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
+      "title": {
+        "official": "The Pact for the Future",
+        "short": "Pact for the Future, including the Global Digital Compact (A/RES/79/1)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "PDF downloaded and title page inspected.",
+            "date": "2026-11-23",
+            "result": "A/RES/79/1; 'The Pact for the Future'; adopted 22 September 2024."
+          },
+          {
+            "check": "Follow-up resolution cross-checked.",
+            "date": "2026-11-23",
+            "result": "A/RES/79/325 recalls the Global Digital Compact and establishes the Panel and Dialogue."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Original preserved and hashed; full 56-page text not segmented. The AI-specific paragraph numbers in the Global Digital Compact were not verified in this session. Text extracted from the official English PDF with pypdf and stored as one citable unit (56 pages). It was not paragraph-segmented or read end-to-end in this cycle, so the verification level remains metadata_verified."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-12-24",
+        "notes": "Adopted on the report of the First Committee (A/79/408, para. 114); document distributed 31 December 2024.",
+        "published": "2024-12-31",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding.",
+        "Only metadata-level verification.",
+        "Only English acquired.",
+        "No operative prohibition or transparency mechanism.",
+        "Military AI remains outside the mandates of the UN AI Panel and Global Dialogue (A/RES/79/325)."
+      ],
+      "id": "un-ga-res-79-239",
+      "instrument_type": "resolution",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly (79th session)",
+          "role": "issuer",
+          "url": "https://www.un.org/en/ga/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UN official languages; only English acquired.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "UN documents service and UN Digital Library.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-80-58",
+          "note": "2025 resolution on AI in the military domain.",
+          "relation": "successor"
+        },
+        {
+          "id": "un-ga-res-79-62",
+          "note": "Parallel 2024 resolution on lethal autonomous weapons systems.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Preamble and operative paragraphs on military AI across the lifecycle, international law, responsible use and international peace and security"
+        ],
+        "excluded_scope": "Non-binding; expressly covers the military domain and not civilian AI; no prohibition or verification regime.",
+        "reason": "The first UN General Assembly resolution specifically on artificial intelligence in the military domain. It affirms that international law applies throughout the lifecycle of military AI capabilities and addresses responsible application, while remaining non-binding."
+      },
+      "rights": {
+        "licence": "United Nations terms of use",
+        "note": "Official UN document; UN copyright and terms of use apply.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "un-doc",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official A/RES/79/239 English PDF, 4 pages; downloaded and stored.",
+          "publisher": "United Nations",
+          "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F79%2F239&t=pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "un-library",
+          "kind": "registry",
+          "note": "Record for A/RES/79/239, 79th session, First Committee.",
+          "publisher": "UN Digital Library",
+          "url": "https://digitallibrary.un.org/record/4071348"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted. Non-binding resolution.",
+      "text": {
+        "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "resolution"
+      },
+      "title": {
+        "official": "Artificial intelligence in the military domain and its implications for international peace and security",
+        "short": "UNGA resolution 79/239 on military AI"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "PDF downloaded and first page inspected.",
+            "date": "2026-11-23",
+            "result": "A/RES/79/239; title as recorded; adopted 24 December 2024."
+          },
+          {
+            "check": "Scope checked in the preamble.",
+            "date": "2026-11-23",
+            "result": "Covers AI capabilities in the military domain and states that the resolution does not cover AI in the civilian domain."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Original preserved and hashed; full text not segmented. Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2025-08-26",
+        "notes": "Adopted without reference to a Main Committee (A/79/L.118); document distributed 27 August 2025.",
+        "published": "2025-08-27",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding: the Panel and Dialogue produce scientific and deliberative outputs, not legal obligations.",
+        "The mandate expressly excludes military AI, so it does not fill the military-AI governance gap.",
+        "Appointment of Panel members, rules of procedure and work programme are not covered by the resolution and were not verified.",
+        "Only the English version is stored."
+      ],
+      "id": "un-ga-res-79-325",
+      "instrument_type": "resolution",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly (79th session)",
+          "role": "issuer",
+          "url": "https://www.un.org/en/ga/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UN official languages; only English acquired.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "UN Digital Library; identified through the Global Digital Compact follow-up.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-79-1",
+          "note": "Implements the decision in the Global Digital Compact, annexed to the Pact for the Future (A/RES/79/1), to establish the Panel and initiate the Dialogue.",
+          "relation": "implements"
+        },
+        {
+          "id": "un-ga-res-78-265",
+          "note": "Earlier UNGA AI resolution recalled in the preamble.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Operative paragraph 1 — establishes the Independent International Scientific Panel on AI",
+          "Operative paragraphs on the Global Dialogue on AI Governance — mandate, participation and modalities",
+          "Preamble — recalls the Pact for the Future and the Global Digital Compact; limits the Panel and Dialogue to the non-military domain"
+        ],
+        "excluded_scope": "Non-military domain only; does not create legal obligations or a treaty body with binding decision-making power.",
+        "reason": "Establishes the terms of reference and modalities for the Independent International Scientific Panel on Artificial Intelligence and the Global Dialogue on Artificial Intelligence Governance, the principal universal AI-governance follow-up to the Global Digital Compact. It is an institutional, non-binding resolution limited to the non-military domain."
+      },
+      "rights": {
+        "licence": "United Nations terms of use",
+        "note": "Official UN document; UN copyright and terms of use apply. Stored for research and verification.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "un-doc",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official A/RES/79/325 English PDF, 4 pages; downloaded and stored.",
+          "publisher": "United Nations",
+          "url": "https://digitallibrary.un.org/nanna/record/4087699/files/A_RES_79_325-EN.pdf?withWatermark=0&withMetadata=0&registerDownload=1&version=1"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "un-library",
+          "kind": "registry",
+          "note": "Bibliographic record for A/RES/79/325.",
+          "publisher": "UN Digital Library",
+          "url": "https://digitallibrary.un.org/record/4087699"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted. Institutional follow-up under the General Assembly; non-binding.",
+      "text": {
+        "extraction_note": "Text extracted from the official English PDF with pypdf; paragraph anchors refer to file pages.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "resolution"
+      },
+      "title": {
+        "official": "Terms of reference and modalities for the establishment and functioning of the Independent International Scientific Panel on Artificial Intelligence and the Global Dialogue on Artificial Intelligence Governance",
+        "short": "UNGA resolution 79/325 on the AI Scientific Panel and Global Dialogue"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "PDF downloaded and hashed.",
+            "date": "2026-11-23",
+            "result": "HTTP 200, 4 pages, SHA-256 99f17e7202d3692d107a8c979660e8db2af7107937ca583199d84a8325c56e5c."
+          },
+          {
+            "check": "Title, resolution number and adoption date checked on the document.",
+            "date": "2026-11-23",
+            "result": "A/RES/79/325; adopted 26 August 2025; title as recorded."
+          },
+          {
+            "check": "Non-military limitation checked in the preamble.",
+            "date": "2026-11-23",
+            "result": "The resolution and the activities of the Panel and Dialogue are limited to the non-military domain and do not refer to AI for military purposes."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "Full text preserved. The Panel and Dialogue are institutional mechanisms, not a treaty or a standard-setting body with binding outputs."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-12-02",
+        "notes": "Adopted on the report of the First Committee (A/79/408, para. 114). Document distributed 10 December 2024.",
+        "published": "2024-12-10",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding and does not define lethal autonomous weapons systems or establish prohibitions.",
+        "No vote record or formal military-AI negotiating mandate is captured in this record.",
+        "Only English acquired.",
+        "The resolution does not itself create a negotiating forum; the CCW/GGE track is recorded separately as a draft/negotiation candidate."
+      ],
+      "id": "un-ga-res-79-62",
+      "instrument_type": "resolution",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly (79th session)",
+          "role": "issuer",
+          "url": "https://www.un.org/en/ga/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UN official languages; only the English version was acquired.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "UN Digital Library; cross-referenced from A/RES/79/239 and A/RES/80/57.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-78-241",
+          "note": "Earlier UNGA resolution on lethal autonomous weapons systems, 22 December 2023.",
+          "relation": "predecessor"
+        },
+        {
+          "id": "un-ga-res-79-239",
+          "note": "Separate 2024 resolution on AI in the military domain and international peace and security.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-80-57",
+          "note": "2025 resolution on lethal autonomous weapons systems.",
+          "relation": "successor"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Preamble — concerns about AI and autonomy in weapons systems, humanitarian, legal, security and ethical perspectives",
+          "Operative paragraphs — affirmation that international law applies; request for views of States; decision to keep the item on the agenda"
+        ],
+        "excluded_scope": "Non-binding resolution; no prohibition, no definition of lethal autonomous weapons systems, no verification mechanism.",
+        "reason": "General Assembly resolution on lethal autonomous weapons systems, adopted on the report of the First Committee. It affirms that international law, including international humanitarian law and human rights law, applies to autonomous weapons systems and addresses AI and autonomy in the military domain. It is non-binding and does not create a treaty regime."
+      },
+      "rights": {
+        "licence": "United Nations terms of use",
+        "note": "Official UN document; UN copyright and terms of use apply. Stored for research and verification.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "un-doc",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official A/RES/79/62 English PDF, 3 pages; downloaded and stored.",
+          "publisher": "United Nations",
+          "url": "https://digitallibrary.un.org/record/4071100/files/A_RES_79_62-EN.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "un-library",
+          "kind": "registry",
+          "note": "Bibliographic record for A/RES/79/62, 79th session, First Committee.",
+          "publisher": "UN Digital Library",
+          "url": "https://digitallibrary.un.org/record/4071100"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted. Non-binding; no signature or ratification.",
+      "text": {
+        "extraction_note": "Text extracted from the official English PDF with pypdf; paragraph anchors refer to file pages.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "resolution"
+      },
+      "title": {
+        "official": "Lethal autonomous weapons systems",
+        "short": "UNGA resolution 79/62 on lethal autonomous weapons systems"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "PDF downloaded and hashed.",
+            "date": "2026-11-23",
+            "result": "HTTP 200, 3 pages, SHA-256 0a06e67957a7cc571ec9e65dac1025c9ada4e95b60dd7d4ae4429ec926e1c622."
+          },
+          {
+            "check": "Resolution number, title and adoption date checked on the document.",
+            "date": "2026-11-23",
+            "result": "A/RES/79/62; adopted 2 December 2024; title 'Lethal autonomous weapons systems'."
+          },
+          {
+            "check": "Relationship to earlier resolution checked in the preamble.",
+            "date": "2026-11-23",
+            "result": "Recalls resolution 78/241 of 22 December 2023."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "Full text preserved. It is a political resolution, not a treaty; the title refers to weapons systems, but the text expressly frames AI and autonomy in the military domain."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2025-12-01",
+        "notes": "Adopted on the report of the First Committee (A/80/534, para. 7); document distributed 5 December 2025.",
+        "published": "2025-12-05",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding.",
+        "Only metadata-level verification.",
+        "Only English acquired.",
+        "No prohibition or binding commitment.",
+        "The informal consultations' outcome is not reproduced."
+      ],
+      "id": "un-ga-res-80-57",
+      "instrument_type": "resolution",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly (80th session)",
+          "role": "issuer",
+          "url": "https://www.un.org/en/ga/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UN official languages; only English acquired.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "UN Digital Library; successor to 79/62.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-79-62",
+          "note": "2024 LAWS resolution.",
+          "relation": "predecessor"
+        },
+        {
+          "id": "un-ga-res-78-241",
+          "note": "2023 LAWS resolution.",
+          "relation": "predecessor"
+        },
+        {
+          "id": "un-ga-res-80-58",
+          "note": "Parallel 2025 resolution on military AI.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Preamble and operative paragraphs on autonomous weapons systems, AI and autonomy, international humanitarian law and the 2025 informal consultations"
+        ],
+        "excluded_scope": "Non-binding; no definition, prohibition or binding negotiation outcome.",
+        "reason": "The 2025 General Assembly resolution continuing the LAWS sequence. It reaffirms that international law applies, notes the open informal consultations held in 2025, and keeps the item on the Assembly's agenda. It is non-binding."
+      },
+      "rights": {
+        "licence": "United Nations terms of use",
+        "note": "Official UN document; UN copyright and terms of use apply.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "un-doc",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official A/RES/80/57 English PDF, 3 pages; downloaded and stored.",
+          "publisher": "United Nations",
+          "url": "https://digitallibrary.un.org/record/4095989/files/A_RES_80_57-EN.pdf"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "un-library",
+          "kind": "registry",
+          "note": "Record for A/RES/80/57.",
+          "publisher": "UN Digital Library",
+          "url": "https://digitallibrary.un.org/record/4095989"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted. Non-binding resolution.",
+      "text": {
+        "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "resolution"
+      },
+      "title": {
+        "official": "Lethal autonomous weapons systems",
+        "short": "UNGA resolution 80/57 on lethal autonomous weapons systems"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "PDF downloaded and first page inspected.",
+            "date": "2026-11-23",
+            "result": "A/RES/80/57; title 'Lethal autonomous weapons systems'; adopted 1 December 2025."
+          },
+          {
+            "check": "Prior resolutions checked in the preamble.",
+            "date": "2026-11-23",
+            "result": "Recalls 78/241 and 79/62."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Original preserved and hashed; full text not segmented. Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2025-12-01",
+        "notes": "Adopted on the report of the First Committee (A/80/534, para. 7); document distributed 5 December 2025.",
+        "published": "2025-12-05",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding.",
+        "Only metadata-level verification.",
+        "Only English acquired.",
+        "No operative prohibition or transparency mechanism."
+      ],
+      "id": "un-ga-res-80-58",
+      "instrument_type": "resolution",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly (80th session)",
+          "role": "issuer",
+          "url": "https://www.un.org/en/ga/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UN official languages; only English acquired.",
+        "translations": []
+      },
+      "provenance": {
+        "discovered_via": "UN Digital Library; successor to A/RES/79/239.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-ga-res-79-239",
+          "note": "2024 military AI resolution.",
+          "relation": "predecessor"
+        },
+        {
+          "id": "un-ga-res-80-57",
+          "note": "Parallel 2025 LAWS resolution.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Preamble and operative paragraphs on the lifecycle of military AI capabilities, responsible application, international law and international peace and security"
+        ],
+        "excluded_scope": "Non-binding; military-domain scope; no prohibition, verification or reporting mechanism.",
+        "reason": "The 2025 follow-up to resolution 79/239 on artificial intelligence in the military domain. It reaffirms the applicability of international law, including international humanitarian law and human rights law, across the lifecycle of military AI capabilities. It remains non-binding."
+      },
+      "rights": {
+        "licence": "United Nations terms of use",
+        "note": "Official UN document; UN copyright and terms of use apply.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "un-doc",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official A/RES/80/58 English PDF, 4 pages; downloaded and stored.",
+          "publisher": "United Nations",
+          "url": "https://digitallibrary.un.org/nanna/record/4095956/files/A_RES_80_58-EN.pdf?withWatermark=0&withMetadata=0&registerDownload=1&version=1"
+        },
+        {
+          "accessed": "2026-11-23",
+          "id": "un-library",
+          "kind": "registry",
+          "note": "Record for A/RES/80/58.",
+          "publisher": "UN Digital Library",
+          "url": "https://digitallibrary.un.org/record/4095956"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted. Non-binding resolution.",
+      "text": {
+        "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "resolution"
+      },
+      "title": {
+        "official": "Artificial intelligence in the military domain and its implications for international peace and security",
+        "short": "UNGA resolution 80/58 on military AI"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "PDF downloaded and first page inspected.",
+            "date": "2026-11-23",
+            "result": "A/RES/80/58; title as recorded; adopted 1 December 2025."
+          },
+          {
+            "check": "Prior resolution checked in the preamble.",
+            "date": "2026-11-23",
+            "result": "Recalls A/RES/79/239 of 24 December 2024."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Original preserved and hashed; full text not segmented. Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2021-11-23",
+        "notes": "Adopted at the 41st session of the UNESCO General Conference in Paris on 23 November 2021.",
+        "published": "2021-11-23",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Voluntary and non-binding.",
+        "Full text not acquired (HTTP 403); only metadata verified.",
+        "Implementation reports and national responses are not analysed.",
+        "No military-AI-specific provisions."
+      ],
+      "id": "unesco-ethics-ai-2021",
+      "instrument_type": "recommendation",
+      "issuer": [
+        {
+          "name": "UNESCO General Conference (41st session)",
+          "role": "issuer",
+          "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "UNESCO publishes the Recommendation in its six official languages; these are official language versions, not treaty authentic texts. Additional translations are listed in UNESDOC.",
+        "translations": [
+          "pt",
+          "lt",
+          "mn",
+          "uz"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "UNESCO legal-affairs portal and UNESDOC.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "oecd-ai-recommendation-2019",
+          "note": "Parallel non-binding intergovernmental AI principles.",
+          "relation": "related"
+        },
+        {
+          "id": "g7-hiroshima-code-2023",
+          "note": "Later voluntary code addressed to AI developers.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole instrument — ethical values and principles, policy areas, and implementation recommendations for AI"
+        ],
+        "excluded_scope": "Voluntary recommendation; no treaty obligations, enforcement or dispute settlement.",
+        "reason": "The first global standard-setting instrument on the ethics of artificial intelligence, adopted by UNESCO's Member States at the 41st General Conference. It is a Recommendation: it sets ethical principles and policy recommendations, is applied voluntarily, and creates no legally binding obligations."
+      },
+      "rights": {
+        "licence": "CC BY-NC-SA 3.0 IGO",
+        "note": "UNESDOC records the publication under CC BY-NC-SA 3.0 IGO. The Recommendation text itself is an official UNESCO standard-setting instrument; the licence permits non-commercial sharing with attribution and share-alike.",
+        "status": "open_licence",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/igo/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "unesco-page",
+          "kind": "official_primary",
+          "note": "Official legal-affairs page: adoption date and place, text, and the recommendation that Member States apply it on a voluntary basis.",
+          "publisher": "UNESCO",
+          "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "unesdoc-record",
+          "kind": "registry",
+          "note": "UNESDOC record SHS/BIO/PI/2021/1, 43 pages, CC BY-NC-SA licence, language versions.",
+          "publisher": "UNESCO Digital Library",
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000381137"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted. Voluntary implementation by Member States; UNESCO monitors and reports on implementation.",
+      "title": {
+        "official": "Recommendation on the Ethics of Artificial Intelligence",
+        "short": "UNESCO AI Ethics Recommendation (2021)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Adoption date, place and voluntary nature checked on the official UNESCO legal-affairs page.",
+            "date": "2026-11-23",
+            "result": "Adopted 23 November 2021, Paris; Member States recommended to apply it on a voluntary basis."
+          },
+          {
+            "check": "Document code and licence checked on the UNESDOC record.",
+            "date": "2026-11-23",
+            "result": "SHS/BIO/PI/2021/1; CC BY-NC-SA 3.0 IGO."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified; the full text was not acquired or segmented because the UNESDOC PDF endpoint returned HTTP 403 in this session. The official HTML page hosts the text."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "general_treaty",
+      "dates": {
+        "adopted": "1969-05-23",
+        "entered_into_force": "1980-01-27",
+        "notes": "Adopted at Vienna on 23 May 1969 (A/CONF.39/27); entered into force 27 January 1980.",
+        "opened_for_signature": "1969-05-23",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Not AI-specific.",
+        "Metadata not re-verified on the official page.",
+        "The Convention's application to treaties concluded by international organisations is governed by the 1986 Vienna Convention, not analysed here.",
+        "No analysis of specific interpretive disputes."
+      ],
+      "id": "vclt-1969",
+      "instrument_type": "treaty",
+      "issuer": [
+        {
+          "name": "United Nations Conference on the Law of Treaties",
+          "role": "issuer",
+          "url": "https://treaties.un.org/Pages/ViewDetailsIII.aspx?src=TREATY&mtdsg_no=XXIII-1&chapter=23&Temp=mtdsg3&clang=_en"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "zh",
+          "en",
+          "fr",
+          "ru",
+          "es"
+        ],
+        "note": "Article 85: Chinese, English, French, Russian and Spanish texts equally authentic.",
+        "translations": []
+      },
+      "parties": {
+        "as_of": "2026-11-23",
+        "declarations": [],
+        "entries": [],
+        "notifications": [],
+        "objections": [],
+        "ratifications_total": null,
+        "reservations": [],
+        "signatories_total": null,
+        "source_ids": [
+          "un-treaty-collection"
+        ],
+        "summary": "Party-by-party signature, ratification and reservation data were not captured in this cycle. The UN Treaty Collection is the authoritative register.",
+        "unknowns": [
+          "Party list, reservations and declarations were not captured."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "General international law; framework for CETS 225 final clauses.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "coe-cets-225",
+          "note": "The Convention's interpretation, reservations and amendment clauses operate within general treaty law.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Articles 19–23 — reservations and objections",
+          "Articles 26–27 — pacta sunt servanda and internal law",
+          "Articles 31–33 — interpretation and authentic texts",
+          "Articles 39–41 — amendment and modification",
+          "Articles 53–64 — peremptory norms, termination and suspension"
+        ],
+        "excluded_scope": "General treaty law; no AI-specific rule.",
+        "reason": "The general law of treaties, selected because it governs how AI treaties are interpreted, amended, reserved and terminated. It is not AI-specific but is essential to reading CETS 225 and any future AI treaty."
+      },
+      "rights": {
+        "licence": "United Nations terms",
+        "note": "Official UN treaty text; UN terms apply. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.un.org/en/about-us/terms-of-use"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": null,
+          "id": "un-treaty-collection",
+          "kind": "registry",
+          "note": "Official UN Treaty Collection record. Metadata recorded from established reference; page not re-read in this session.",
+          "publisher": "United Nations Treaty Collection",
+          "url": "https://treaties.un.org/Pages/ViewDetailsIII.aspx?src=TREATY&mtdsg_no=XXIII-1&chapter=23&Temp=mtdsg3&clang=_en"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force. General treaty; not AI-specific.",
+      "title": {
+        "official": "Vienna Convention on the Law of Treaties",
+        "short": "VCLT"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official UN Treaty Collection URL recorded; dates and authentic-language clause taken from the established treaty record, not re-read in this session.",
+            "date": "2026-11-23",
+            "result": "Metadata not independently re-verified; source located."
+          }
+        ],
+        "level": "source_located",
+        "notes": "Included as a general-treaty selection because it supplies the interpretive framework for AI treaties. Not an AI-specific instrument."
+      }
+    }
+  ],
+  "schema_version": 1
+}

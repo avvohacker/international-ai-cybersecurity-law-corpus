@@ -1,0 +1,201 @@
+{
+  "id": "coe-cets-225",
+  "title": {
+    "official": "Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+    "short": "CoE Framework Convention on AI (CETS No. 225)",
+    "english": "Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law"
+  },
+  "category": "ai_treaty",
+  "instrument_type": "treaty",
+  "binding_status": "binding",
+  "status": "not_in_force",
+  "issuer": [
+    {
+      "name": "Council of Europe",
+      "role": "issuer",
+      "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence"
+    },
+    {
+      "name": "Secretary General of the Council of Europe",
+      "role": "depositary",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=225"
+    }
+  ],
+  "relevance": {
+    "reason": "The first international legally binding treaty specifically dedicated to artificial intelligence. It requires Parties to ensure that activities within the lifecycle of AI systems are consistent with human rights, democracy and the rule of law, through principles, risk management, remedies and a Conference of the Parties. It is a framework convention and does not itself regulate a particular technology.",
+    "ai_provisions": [
+      "Article 2 — definition of AI system",
+      "Article 3 — scope, including public authorities, private actors and the national-defence exclusion",
+      "Articles 4–5 — human rights, democratic processes and rule of law",
+      "Articles 7–13 — dignity, transparency, accountability, non-discrimination, privacy, reliability, safe innovation",
+      "Articles 14–16 — remedies, procedural safeguards, risk and impact management",
+      "Articles 23–26 — Conference of the Parties, reporting, international cooperation, oversight",
+      "Articles 30–34 — signature, entry into force, accession, federal clause, reservations"
+    ],
+    "excluded_scope": "Matters relating to national defence do not fall within the scope of the Convention (Article 3(4)); national-security activities may be excluded under Article 3(2)."
+  },
+  "dates": {
+    "adopted": "2024-05-17",
+    "opened_for_signature": "2024-09-05",
+    "published": "2026-05-13",
+    "entered_into_force": null,
+    "verified_on": "2026-11-23",
+    "notes": "Adopted by the Committee of Ministers on 17 May 2024 at its 133rd Session; opened for signature at Vilnius on 5 September 2024. Published in the EU Official Journal on 13 May 2026 (OJ L, 2026/1081). Not in force on the verification date."
+  },
+  "status_note": "As of the Treaty Office chart status date 10 November 2026: 21 signatories in total, 19 signatures not followed by ratification and 2 ratifications. Article 30(3) requires five ratifications including at least three Council of Europe member States. Not in force.",
+  "parties": {
+    "as_of": "2026-11-10",
+    "summary": "Two ratifications were recorded, one of them by the European Union on 15 May 2026. The identity of the second ratifying party was not captured from the official chart in this session; a secondary compilation reports Bosnia and Herzegovina on 28 October 2026, which is recorded here as unverified.",
+    "source_ids": ["coe-status", "coe-ai-page", "eu-oj-2026-1081"],
+    "signatories_total": 21,
+    "ratifications_total": 2,
+    "entries": [
+      {
+        "party": "European Union",
+        "signature": "2024-09-05",
+        "approval": "2026-04-21",
+        "ratification": "2026-05-15",
+        "entry_into_force": null,
+        "notes": [
+          "Council Decision (EU) 2026/1080 of 21 April 2026 on the conclusion of the Convention.",
+          "Instrument deposited on 15 May 2026 at the 135th Session of the Committee of Ministers in Chișinău."
+        ]
+      }
+    ],
+    "reservations": [
+      "Article 34 permits only the reservation provided for in Article 33(1) (federal clause). No specific reservation was captured in this session."
+    ],
+    "declarations": [
+      "Article 3(1)(b) requires each Party to deposit a declaration on how it will address risks from private actors; the declarations are not reproduced here."
+    ],
+    "objections": [],
+    "notifications": [],
+    "withdrawals": [],
+    "unknowns": [
+      "Full per-party signature and ratification table was not captured: the Treaty Office chart is JavaScript-rendered and the captured excerpt gives aggregate totals plus the EU row.",
+      "Identity of the second ratification and the dates of individual signatures are not treated as verified.",
+      "Article 3(1)(b) declarations, reservations and any objections were not captured."
+    ]
+  },
+  "languages": {
+    "authentic": ["en", "fr"],
+    "translations": ["de", "it", "ru", "bg", "cs", "da", "el", "es", "et", "fi", "ga", "hr", "hu", "lt", "lv", "mt", "nl", "pl", "pt", "ro", "sk", "sl", "sv"],
+    "note": "Article 36 final clause: done in English and French, both texts equally authentic. The Council of Europe Treaty Office also lists German, Italian and Russian texts; the EU Official Journal publishes translations in all EU official languages. Only English and French are authentic for the treaty."
+  },
+  "sources": [
+    {
+      "id": "coe-text",
+      "url": "https://rm.coe.int/1680afae3c",
+      "publisher": "Council of Europe Treaty Office",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": null,
+      "language": "en",
+      "note": "Official CETS No. 225 English text, 12 pages. Direct PDF download returned HTTP 403 to automated clients; the text was retrieved through the environment's text-extraction tool and transcribed into text/en.txt. Running headers and page numbers were removed; wording was not altered."
+    },
+    {
+      "id": "coe-status",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225",
+      "publisher": "Council of Europe Treaty Office",
+      "kind": "registry",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Chart of signatures and ratifications, status as of 10/11/2026. Captured excerpt: 19 signatures not followed by ratifications; 2 ratifications/accessions. Per-party rows are rendered by JavaScript."
+    },
+    {
+      "id": "coe-ai-page",
+      "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence",
+      "publisher": "Council of Europe",
+      "kind": "official_secondary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "note": "Official presentation page; links the Convention and Explanatory Report and states it is the first international legally binding treaty in the field."
+    },
+    {
+      "id": "eu-oj-2026-1081",
+      "url": "https://eur-lex.europa.eu/eli/agree_internation/2026/1081/oj/eng",
+      "publisher": "Official Journal of the European Union",
+      "kind": "official_journal",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "OJ L, 2026/1081, 13.5.2026. Publication of the Convention text; EUR-Lex records legal status as not in force (pending notification)."
+    },
+    {
+      "id": "eu-decision-2026-1080",
+      "url": "https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng",
+      "publisher": "Official Journal of the European Union",
+      "kind": "official_journal",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Council Decision (EU) 2026/1080 of 21 April 2026 on the conclusion of the Convention on behalf of the European Union."
+    }
+  ],
+  "rights": {
+    "status": "public_official_text",
+    "licence": "No single reuse licence identified",
+    "note": "Treaty text is an official Council of Europe text. Council of Europe copyright applies; the EU Official Journal version may be reused under Commission Decision 2011/833/EU. This corpus stores extracted English text for research and verification; reusers must check the applicable terms before republication.",
+    "url": "https://www.coe.int/en/web/portal/disclaimer"
+  },
+  "verification": {
+    "level": "full_text_checked",
+    "checks": [
+      {
+        "check": "Full English text read end-to-end and compared with the official CETS 225 structure (Preamble, Chapters I–VIII, Articles 1–36).",
+        "result": "36 articles present; final clauses and authentic-language clause present.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Entry-into-force formula checked against Article 30(3).",
+        "result": "Five ratifications including at least three Council of Europe member States; three months after the fifth deposit, entering into force on the first day of the following month.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Signature/ratification totals checked against the official Treaty Office chart excerpt.",
+        "result": "21 signatories, 2 ratifications, 19 signatures without ratification; not in force.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Authentic languages checked against the final clause.",
+        "result": "English and French equally authentic; other languages are translations.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Full text acquired, but the original PDF bytes were not acquired because of the 403 response. The stored text is therefore an extraction/transcription, not the official PDF. Hash integrity covers the stored text and units, not the unavailable official file."
+  },
+  "related": [
+    {
+      "id": "coe-cets-225-explanatory-report",
+      "relation": "explanatory_report",
+      "note": "Explanatory Report to CETS No. 225, Vilnius, 5 September 2024; it states that it is not an authoritative interpretation."
+    },
+    {
+      "id": "eu-ai-act",
+      "relation": "related",
+      "note": "Article 27(2) allows EU member States to apply EU rules in their mutual relations. The AI Act is the principal EU instrument in the field; no formal implementation link between the two instruments was verified in this session."
+    }
+  ],
+  "text": {
+    "manifest": "manifest.json",
+    "full_text": true,
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty",
+    "extraction_note": "Transcribed from the official English text retrieved through the extraction tool. Running headers ('CETS 225 – Artificial Intelligence, 5.IX.2024') and page numbers were removed. Article headings and paragraph breaks preserved. No wording changes were made; consult the official PDF for diplomatic formatting."
+  },
+  "gaps": [
+    "The Convention is not in force; its Conference of the Parties, rules of procedure and reporting format do not yet exist.",
+    "Party-level signature and ratification data are incomplete in this record because the Treaty Office table could not be captured in full.",
+    "Declarations under Article 3(1)(b), reservations and objections are not reproduced.",
+    "The official PDF bytes were not acquired (HTTP 403); only the extracted English text is stored.",
+    "No implementing protocol or additional protocol has been adopted.",
+    "The Convention excludes national defence and may exclude national-security activities; coverage of military AI is therefore not provided by this treaty."
+  ],
+  "provenance": {
+    "discovered_via": "Official Council of Europe AI and Treaty Office pages; EUR-Lex publication following EU ratification.",
+    "search_dates": ["2026-11-23"],
+    "notes": "Candidate identified from primary sources (Council of Europe), not from secondary commentary."
+  }
+}

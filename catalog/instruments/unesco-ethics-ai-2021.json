@@ -1,0 +1,43 @@
+{
+  "id": "unesco-ethics-ai-2021",
+  "title": {
+    "official": "Recommendation on the Ethics of Artificial Intelligence",
+    "short": "UNESCO AI Ethics Recommendation (2021)"
+  },
+  "category": "non_binding_instrument",
+  "instrument_type": "recommendation",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "UNESCO General Conference (41st session)", "role": "issuer", "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence"}],
+  "relevance": {
+    "reason": "The first global standard-setting instrument on the ethics of artificial intelligence, adopted by UNESCO's Member States at the 41st General Conference. It is a Recommendation: it sets ethical principles and policy recommendations, is applied voluntarily, and creates no legally binding obligations.",
+    "ai_provisions": ["Whole instrument — ethical values and principles, policy areas, and implementation recommendations for AI"],
+    "excluded_scope": "Voluntary recommendation; no treaty obligations, enforcement or dispute settlement."
+  },
+  "dates": {"adopted": "2021-11-23", "published": "2021-11-23", "verified_on": "2026-11-23", "notes": "Adopted at the 41st session of the UNESCO General Conference in Paris on 23 November 2021."},
+  "status_note": "Adopted. Voluntary implementation by Member States; UNESCO monitors and reports on implementation.",
+  "languages": {
+    "authentic": ["ar", "zh", "en", "fr", "ru", "es"],
+    "translations": ["pt", "lt", "mn", "uz"],
+    "note": "UNESCO publishes the Recommendation in its six official languages; these are official language versions, not treaty authentic texts. Additional translations are listed in UNESDOC."
+  },
+  "sources": [
+    {"id": "unesco-page", "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence", "publisher": "UNESCO", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official legal-affairs page: adoption date and place, text, and the recommendation that Member States apply it on a voluntary basis."},
+    {"id": "unesdoc-record", "url": "https://unesdoc.unesco.org/ark:/48223/pf0000381137", "publisher": "UNESCO Digital Library", "kind": "registry", "accessed": "2026-11-23", "http_status": 200, "note": "UNESDOC record SHS/BIO/PI/2021/1, 43 pages, CC BY-NC-SA licence, language versions."}
+  ],
+  "rights": {"status": "open_licence", "licence": "CC BY-NC-SA 3.0 IGO", "note": "UNESDOC records the publication under CC BY-NC-SA 3.0 IGO. The Recommendation text itself is an official UNESCO standard-setting instrument; the licence permits non-commercial sharing with attribution and share-alike.", "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/igo/"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Adoption date, place and voluntary nature checked on the official UNESCO legal-affairs page.", "result": "Adopted 23 November 2021, Paris; Member States recommended to apply it on a voluntary basis.", "date": "2026-11-23"},
+      {"check": "Document code and licence checked on the UNESDOC record.", "result": "SHS/BIO/PI/2021/1; CC BY-NC-SA 3.0 IGO.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata verified; the full text was not acquired or segmented because the UNESDOC PDF endpoint returned HTTP 403 in this session. The official HTML page hosts the text."
+  },
+  "related": [
+    {"id": "oecd-ai-recommendation-2019", "relation": "related", "note": "Parallel non-binding intergovernmental AI principles."},
+    {"id": "g7-hiroshima-code-2023", "relation": "related", "note": "Later voluntary code addressed to AI developers."}
+  ],
+  "gaps": ["Voluntary and non-binding.", "Full text not acquired (HTTP 403); only metadata verified.", "Implementation reports and national responses are not analysed.", "No military-AI-specific provisions."],
+  "provenance": {"discovered_via": "UNESCO legal-affairs portal and UNESDOC.", "search_dates": ["2026-11-23"]}
+}

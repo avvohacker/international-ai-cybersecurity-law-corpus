@@ -1,0 +1,110 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2024-07-01",
+    "notes": "Adopted 1 July 2024; document distributed 5 July 2024.",
+    "published": "2024-07-05",
+    "verified_on": "2026-11-23"
+  },
+  "gaps": [
+    "Non-binding.",
+    "Only metadata-level verification; full text not segmented.",
+    "Only English acquired.",
+    "No implementation or financing commitments are assessed."
+  ],
+  "id": "un-ga-res-78-311",
+  "instrument_type": "resolution",
+  "issuer": [
+    {
+      "name": "United Nations General Assembly (78th session)",
+      "role": "issuer",
+      "url": "https://www.un.org/en/ga/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "ar",
+      "zh",
+      "en",
+      "fr",
+      "ru",
+      "es"
+    ],
+    "note": "UN official languages; only English acquired.",
+    "translations": []
+  },
+  "provenance": {
+    "discovered_via": "UN documents service; recalled in A/RES/79/325.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "un-ga-res-78-265",
+      "note": "Earlier 2024 UNGA AI resolution.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-79-325",
+      "note": "Later institutional follow-up.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Operative paragraphs on AI capacity-building, international cooperation, sharing of best practices and bridging the AI divide"
+    ],
+    "excluded_scope": "Non-binding; no treaty obligations, finance mechanism or monitoring body.",
+    "reason": "UN General Assembly resolution focused on international cooperation and capacity-building for artificial intelligence, particularly for developing countries. It is non-binding and complements resolution 78/265."
+  },
+  "rights": {
+    "licence": "United Nations terms of use",
+    "note": "Official UN document; UN copyright and terms of use apply.",
+    "status": "public_official_text",
+    "url": "https://www.un.org/en/about-us/terms-of-use"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "un-doc",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official A/RES/78/311 English PDF, 5 pages; downloaded and stored.",
+      "publisher": "United Nations",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F311&t=pdf"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Adopted. Non-binding resolution; no signature or ratification.",
+  "text": {
+    "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "resolution"
+  },
+  "title": {
+    "official": "Enhancing international cooperation on capacity-building of artificial intelligence",
+    "short": "UNGA resolution 78/311 on AI capacity-building"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "PDF downloaded and first pages inspected.",
+        "date": "2026-11-23",
+        "result": "A/RES/78/311; title 'Enhancing international cooperation on capacity-building of artificial intelligence'; adopted 1 July 2024."
+      },
+      {
+        "check": "Resolution number cross-checked in the preamble of A/RES/79/325.",
+        "date": "2026-11-23",
+        "result": "Recalled as resolution 78/311 of 1 July 2024."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Original PDF preserved and hashed, but the full text was not segmented or read end-to-end; verification is metadata-level. Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "iso-iec-23894-2023",
+  "title": {"official": "ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management", "short": "ISO/IEC 23894:2023"},
+  "category": "technical_standard",
+  "instrument_type": "standard",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)", "role": "issuer", "url": "https://www.iso.org/committee/6794475.html"}],
+  "relevance": {
+    "reason": "International guidance on managing AI-specific risk and integrating it into organisational risk management. It is a voluntary technical standard supporting AI governance and regulation.",
+    "ai_provisions": ["Whole standard — AI risk management guidance and processes"],
+    "excluded_scope": "Voluntary guidance; no legal obligation and no public full text."
+  },
+  "dates": {"published": null, "verified_on": "2026-11-23", "notes": "Publication month February 2023; exact day not verified. Edition 1, 26 pages."},
+  "status_note": "Published international standard. Voluntary.",
+  "languages": {"authentic": ["en"], "translations": ["fr"], "note": "ISO catalogue lists English and French."},
+  "sources": [
+    {"id": "iso-catalogue", "url": "https://www.iso.org/standard/77304.html", "publisher": "ISO", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official catalogue page: published February 2023, edition 1, 26 pages, JTC 1/SC 42; price CHF 155."}
+  ],
+  "rights": {"status": "restricted", "licence": "ISO copyright; paid standard", "note": "Sold by ISO; metadata and link only, no reproduction.", "url": "https://www.iso.org/standard/77304.html"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Title, edition, publication month, page count and committee checked on the ISO catalogue page.", "result": "ISO/IEC 23894:2023, edition 1, 2023-02, 26 pages, JTC 1/SC 42.", "date": "2026-11-23"},
+      {"check": "Legal nature checked: voluntary technical guidance.", "result": "Not a treaty; no binding effect.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata only; full text paywalled."
+  },
+  "related": [
+    {"id": "iso-iec-42001-2023", "relation": "related", "note": "AI management-system requirements; risk management supports the management system."}
+  ],
+  "gaps": ["Paywalled; full text not accessed.", "Voluntary and not law.", "Relationship to national AI risk frameworks is not assessed."],
+  "provenance": {"discovered_via": "ISO catalogue and JTC 1/SC 42 list.", "search_dates": ["2026-11-23"]}
+}

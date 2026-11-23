@@ -1,0 +1,48 @@
+{
+  "id": "ksdpa-2022",
+  "title": {"official": "Korea-Singapore Digital Partnership Agreement", "short": "KSDPA"},
+  "category": "agreement_ai_provisions",
+  "instrument_type": "agreement",
+  "binding_status": "binding",
+  "status": "in_force",
+  "issuer": [{"name": "Republic of Korea and Singapore", "role": "co_issuer"}],
+  "relevance": {
+    "reason": "A bilateral digital partnership agreement amending the Korea-Singapore Free Trade Agreement's electronic-commerce chapter and containing a dedicated AI article. The AI provision promotes AI governance and ethics frameworks and cross-border business opportunities; it is cooperative.",
+    "ai_provisions": ["Article 14.28 — Artificial Intelligence: cross-border opportunities for business innovation; adoption of AI governance and ethics frameworks; trusted, safe and responsible use"],
+    "excluded_scope": "The AI article is programmatic and does not impose enforceable AI standards or prohibitions."
+  },
+  "dates": {"signed": "2022-11-21", "entered_into_force": "2023-01-14", "verified_on": "2026-11-23", "notes": "Signed in Singapore on 21 November 2022; entered into force on 14 January 2023."},
+  "status_note": "In force between Korea and Singapore.",
+  "parties": {
+    "as_of": "2026-11-23",
+    "summary": "Two Parties: the Republic of Korea and Singapore.",
+    "source_ids": ["mti-page", "ksdpa-text"],
+    "entries": [
+      {"party": "Korea", "signature": "2022-11-21", "entry_into_force": "2023-01-14", "notes": []},
+      {"party": "Singapore", "signature": "2022-11-21", "entry_into_force": "2023-01-14", "notes": []}
+    ],
+    "reservations": [], "declarations": [], "objections": [], "notifications": [], "withdrawals": [],
+    "unknowns": ["No depositary register was consulted; dates rely on the Singapore MTI page and the signed text."]
+  },
+  "languages": {"authentic": ["en"], "translations": ["ko"], "note": "The signed English text is identified; a Korean version is likely but was not acquired. Authentic-language status was not verified."},
+  "sources": [
+    {"id": "ksdpa-text", "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/ksdpa/1/KSDPA_eng.pdf", "publisher": "Ministry of Trade, Industry and Energy (Korea)", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "language": "en", "note": "Signed English text, hosted by the Korean government."},
+    {"id": "mti-page", "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/ksdpa", "publisher": "Ministry of Trade and Industry, Singapore", "kind": "official_secondary", "accessed": "2026-11-23", "note": "Confirms signature 21 November 2022 and entry into force 14 January 2023."}
+  ],
+  "rights": {"status": "public_official_text", "licence": "Government of Korea / Government of Singapore terms", "note": "Official treaty text; no open licence identified. Metadata only in this corpus.", "url": "https://www.mti.gov.sg/terms-of-use"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Signature and entry-into-force dates checked on the Singapore MTI page and press release.", "result": "Signed 21 November 2022; in force 14 January 2023.", "date": "2026-11-23"},
+      {"check": "AI article number cross-checked in the ADB comparative table and in the treaty text's article sequence.", "result": "Article 14.28; AI governance and ethics cooperation.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata verified; full text not stored. Article 14.28 wording should be checked against the signed PDF before quotation."
+  },
+  "related": [
+    {"id": "depa-2020", "relation": "related", "note": "Parallel digital agreement with an AI article."},
+    {"id": "sadea-2020", "relation": "related", "note": "Parallel digital agreement with an AI article."},
+    {"id": "uksdea-2022", "relation": "related", "note": "Parallel digital agreement with an AI article."}
+  ],
+  "gaps": ["Full text not stored; only metadata verified.", "AI article is cooperative, not prescriptive.", "Korean language version not acquired.", "No depositary record consulted."],
+  "provenance": {"discovered_via": "Singapore MTI and Korean MOTIE treaty pages; article number cross-checked in an ADB comparative study.", "search_dates": ["2026-11-23"]}
+}

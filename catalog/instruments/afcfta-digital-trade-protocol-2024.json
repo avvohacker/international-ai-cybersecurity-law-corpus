@@ -1,0 +1,48 @@
+{
+  "id": "afcfta-digital-trade-protocol-2024",
+  "title": {"official": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Digital Trade", "short": "AfCFTA Digital Trade Protocol"},
+  "category": "agreement_ai_provisions",
+  "instrument_type": "protocol",
+  "binding_status": "binding",
+  "status": "not_in_force",
+  "issuer": [
+    {"name": "African Union / AfCFTA State Parties", "role": "issuer", "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade"},
+    {"name": "Chairperson of the African Union Commission", "role": "depositary"}
+  ],
+  "relevance": {
+    "reason": "A continental digital-trade protocol whose objectives expressly include emerging and advanced technologies and which is accompanied by an Annex on Emerging and Advanced Technologies addressing AI, IoT, blockchain and related technologies. It is binding once in force, but it is not yet in force and its AI provisions are largely cooperative.",
+    "ai_provisions": ["Article 3 — specific objectives, including promotion of emerging and advanced technologies", "Annex on Emerging and Advanced Technologies — responsible development and use of AI and other emerging technologies, regulatory cooperation, risk assessment, regulatory sandboxes"],
+    "excluded_scope": "Not in force; AI provisions are framework/cooperation provisions, not directly applicable product rules."
+  },
+  "dates": {"adopted": "2024-02-18", "entered_into_force": null, "verified_on": "2026-11-23", "notes": "Adopted by the AU Assembly on 18 February 2024. Eight annexes, including the Annex on Emerging and Advanced Technologies, were adopted in 2025 according to a 2026 tralac backgrounder. Entry into force requires 22 ratifications."},
+  "status_note": "Adopted but not in force. As of the September 2026 tralac backgrounder consulted, no State Party had deposited an instrument of ratification, although Nigeria's Federal Executive Council approved ratification in November 2025.",
+  "parties": {
+    "as_of": "2026-09-23",
+    "summary": "No ratifications deposited as of the tralac backgrounder date; entry into force requires 22 ratifications.",
+    "source_ids": ["au-page", "tralac-status"],
+    "entries": [],
+    "reservations": [], "declarations": [], "objections": [], "notifications": [], "withdrawals": [],
+    "unknowns": ["Ratification status is taken from a non-official tralac backgrounder; the AU depositary record was not read.", "The exact legal effect of the 2025 annexes and their adoption dates was not verified on an AU primary document."]
+  },
+  "languages": {"authentic": ["en", "fr", "ar", "pt", "es"], "translations": ["sw"], "note": "The AU treaty page lists English, French, Arabic, Portuguese and Spanish texts of the Protocol; the compiled annexes also include Swahili. Only English metadata was consulted, so the authentic-language clause was not verified."},
+  "sources": [
+    {"id": "au-page", "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade", "publisher": "African Union", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official treaty page: adoption 18 February 2024; links to the text and compiled annexes in several languages."},
+    {"id": "tralac-status", "url": "https://www.tralac.org/documents/events/tralac/2026-annual-conference/8037-update-on-the-implementation-of-the-afcfta-protocol-on-digital-trade-2026-annual-conference-backgrounder-17/file.html", "publisher": "tralac", "kind": "secondary", "accessed": "2026-11-23", "note": "September 2026 backgrounder: entry into force requires 22 ratifications; no ratification deposited at that date; Nigeria's approval not deposited."}
+  ],
+  "rights": {"status": "public_official_text", "licence": "African Union terms", "note": "Official AU treaty text; no open licence identified. Metadata only in this corpus.", "url": "https://au.int/en/copyright"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Adoption date and text links checked on the AU treaty page.", "result": "Adopted 18 February 2024; six language versions and compiled annexes listed.", "date": "2026-11-23"},
+      {"check": "Entry-into-force requirement and ratification status checked in a tralac backgrounder.", "result": "22 ratifications required; none deposited as of September 2026.", "date": "2026-11-23"},
+      {"check": "AI content checked in an official parliamentary analysis and a civil-society summary of the annexes.", "result": "Emerging and advanced technologies, including AI, are an objective and an annex subject.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata verified; full text not stored. The AI annex was not read in full, and its exact article numbering is not asserted."
+  },
+  "related": [
+    {"id": "depa-2020", "relation": "related", "note": "Another digital-trade agreement with express AI provisions, in force."},
+    {"id": "sadea-2020", "relation": "related", "note": "Another digital-trade agreement with express AI provisions, in force."}
+  ],
+  "gaps": ["Not in force; no ratifications deposited as of the secondary source date.", "Ratification status relies on a non-official source.", "The Annex on Emerging and Advanced Technologies was not read in full.", "AI obligations are cooperative and framework-based.", "Only English metadata consulted; other authentic languages not acquired."],
+  "provenance": {"discovered_via": "African Union treaty portal; ratification status from tralac; AI annex content from a parliamentary analysis and civil-society summary used as finding aids.", "search_dates": ["2026-11-23"]}
+}

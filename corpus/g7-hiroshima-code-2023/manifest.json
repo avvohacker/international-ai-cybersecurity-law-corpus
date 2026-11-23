@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 281151,
+      "media_type": "application/pdf",
+      "note": "Hiroshima Process International Code of Conduct, official Japanese MIC publication.",
+      "path": "source/HAIP-Code-of-Conduct-2023-10-30-en.pdf",
+      "role": "original",
+      "sha256": "14cfe36633502daa48231b49ca7f186c53a72add181b328047665763ecb13ac4",
+      "source_url": "https://www.soumu.go.jp/hiroshimaaiprocess/pdf/document05_en.pdf"
+    },
+    {
+      "bytes": 17927,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "9af156ca949e3e616db513ccf8c6e3ae7c527794d2cd791a63985af62be3abe6"
+    },
+    {
+      "bytes": 689,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "fb1763090735ed3f308c84f75655e890af40f107ad2e208f14a833a59c7b04a5"
+    },
+    {
+      "bytes": 0,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "instrument_id": "g7-hiroshima-code-2023",
+  "primary_text": "text/en.txt"
+}

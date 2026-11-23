@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/international-ai-law-corpus/candidate.schema.json",
+  "title": "Candidate register entry",
+  "type": "object",
+  "required": ["id", "title", "issuer", "decision", "reason", "searched_on"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string"},
+    "title": {"type": "string"},
+    "issuer": {"type": "string"},
+    "decision": {"enum": ["included", "excluded", "pending"]},
+    "instrument_id": {"type": ["string", "null"]},
+    "reason": {"type": "string"},
+    "candidate_type": {"type": "string"},
+    "official_url": {"type": ["string", "null"], "format": "uri"},
+    "searched_on": {"type": "string", "format": "date"},
+    "evidence": {"type": "string"},
+    "gaps": {"type": ["string", "null"]}
+  }
+}

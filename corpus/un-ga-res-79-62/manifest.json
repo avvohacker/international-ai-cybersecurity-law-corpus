@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 196808,
+      "media_type": "application/pdf",
+      "note": "Official UN document A/RES/79/62 (English).",
+      "path": "source/A_RES_79_62-en.pdf",
+      "role": "original",
+      "sha256": "0a06e67957a7cc571ec9e65dac1025c9ada4e95b60dd7d4ae4429ec926e1c622",
+      "source_url": "https://digitallibrary.un.org/record/4071100/files/A_RES_79_62-EN.pdf"
+    },
+    {
+      "bytes": 9354,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "ff671290ff9a10dfe0e440a744b0d1679b4e0e5736c4d0c5436be8d82bceab77"
+    },
+    {
+      "bytes": 287,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "dfca6db0705410562402916cc5f131879617d9c3151f3c87896d848f5f0e71db"
+    },
+    {
+      "bytes": 12203,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "525992a332744a5e2519deac58c02586c8519075144f131222ed264cf8e0d216"
+    }
+  ],
+  "instrument_id": "un-ga-res-79-62",
+  "primary_text": "text/en.txt"
+}

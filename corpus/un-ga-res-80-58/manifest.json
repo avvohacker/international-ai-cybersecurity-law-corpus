@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 198737,
+      "media_type": "application/pdf",
+      "note": "Official UN document A/RES/80/58 (English).",
+      "path": "source/A_RES_80_58-en.pdf",
+      "role": "original",
+      "sha256": "65edd5d41f159a1bc98fcaf31d0eb8b6d9868d706bf939a05e690ec98cd30261",
+      "source_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F58&t=pdf"
+    },
+    {
+      "bytes": 11479,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "7fabd6bd6d1eb7a8a4c2b79172c1837aa60ed8483da13b0f70eab2f503048d9a"
+    },
+    {
+      "bytes": 367,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "efbb437aa78dcc19e26883de001fd49117a9ed352483f001d6b5ebe8af855544"
+    },
+    {
+      "bytes": 14159,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "98e919310b9972793f16a3ae65bfc1716e62c988a52cdfb8a71dc2cb4a6f13fa"
+    }
+  ],
+  "instrument_id": "un-ga-res-80-58",
+  "primary_text": "text/en.txt"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "iso-iec-42006-2025",
+  "title": {"official": "ISO/IEC 42006:2025 Information technology — Artificial intelligence — Requirements for bodies providing audit and certification of artificial intelligence management systems", "short": "ISO/IEC 42006:2025"},
+  "category": "technical_standard",
+  "instrument_type": "standard",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)", "role": "issuer", "url": "https://www.iso.org/committee/6794475.html"}],
+  "relevance": {
+    "reason": "International requirements for bodies that audit and certify AI management systems under ISO/IEC 42001. It is a voluntary conformity-assessment standard and a building block for AI certification schemes.",
+    "ai_provisions": ["Whole standard — competence and process requirements for AIMS audit and certification bodies"],
+    "excluded_scope": "Voluntary technical standard; no legal obligation and no public full text."
+  },
+  "dates": {"published": null, "verified_on": "2026-11-23", "notes": "Publication month July 2025; exact day not verified. Edition 1."},
+  "status_note": "Published international standard. Voluntary.",
+  "languages": {"authentic": ["en"], "translations": [], "note": "English edition listed; other language versions not verified."},
+  "sources": [
+    {"id": "iso-catalogue", "url": "https://www.iso.org/standard/42006", "publisher": "ISO", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official catalogue page: published July 2025, edition 1, CHF 159."}
+  ],
+  "rights": {"status": "restricted", "licence": "ISO copyright; paid standard", "note": "Sold by ISO; metadata and link only.", "url": "https://www.iso.org/standard/42006"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Title, edition, publication month and scope checked on the ISO catalogue page.", "result": "ISO/IEC 42006:2025, edition 1, 2025-07, requirements for AIMS audit and certification bodies.", "date": "2026-11-23"},
+      {"check": "Legal nature checked: voluntary technical standard.", "result": "Not a treaty.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata only; full text paywalled."
+  },
+  "related": [
+    {"id": "iso-iec-42001-2023", "relation": "related", "note": "The certification requirements build on ISO/IEC 42001."}
+  ],
+  "gaps": ["Paywalled; full text not accessed.", "Voluntary and not law.", "Accreditation and certification schemes are not assessed."],
+  "provenance": {"discovered_via": "ISO catalogue.", "search_dates": ["2026-11-23"]}
+}

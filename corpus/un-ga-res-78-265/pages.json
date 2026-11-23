@@ -1,0 +1,45 @@
+{
+  "pages": [
+    {
+      "char_end": 2163,
+      "char_start": 0,
+      "page": 1
+    },
+    {
+      "char_end": 6357,
+      "char_start": 2164,
+      "page": 2
+    },
+    {
+      "char_end": 10487,
+      "char_start": 6358,
+      "page": 3
+    },
+    {
+      "char_end": 14393,
+      "char_start": 10488,
+      "page": 4
+    },
+    {
+      "char_end": 18326,
+      "char_start": 14394,
+      "page": 5
+    },
+    {
+      "char_end": 22328,
+      "char_start": 18327,
+      "page": 6
+    },
+    {
+      "char_end": 26816,
+      "char_start": 22329,
+      "page": 7
+    },
+    {
+      "char_end": 27945,
+      "char_start": 26817,
+      "page": 8
+    }
+  ],
+  "primary_text": "text/en.txt"
+}

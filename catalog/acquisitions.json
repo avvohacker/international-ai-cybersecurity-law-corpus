@@ -1,0 +1,132 @@
+[
+  {
+    "accessed": "2026-11-23",
+    "bytes": 680817,
+    "dest": "source/DEPA-signing-text-2020-06-11-en.pdf",
+    "instrument_id": "depa-2020",
+    "media_type": "application/pdf",
+    "note": "Signing text of the Digital Economy Partnership Agreement, reproduced by the Republic of Korea Ministry of Trade, Industry and Energy; depositary is New Zealand.",
+    "sha256": "587f8d22b561aff72dc1b8d38bb66cccb6236eb451948ac41a4d2aed22d25253",
+    "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/support/DEPA/depa_all_eng.pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 281151,
+    "dest": "source/HAIP-Code-of-Conduct-2023-10-30-en.pdf",
+    "instrument_id": "g7-hiroshima-code-2023",
+    "media_type": "application/pdf",
+    "note": "Hiroshima Process International Code of Conduct, official Japanese MIC publication.",
+    "sha256": "14cfe36633502daa48231b49ca7f186c53a72add181b328047665763ecb13ac4",
+    "url": "https://www.soumu.go.jp/hiroshimaaiprocess/pdf/document05_en.pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 679046,
+    "dest": "source/OECD-LEGAL-0449-en.pdf",
+    "instrument_id": "oecd-ai-recommendation-2019",
+    "media_type": "application/pdf",
+    "note": "OECD/LEGAL/0449, official OECD Legal Instruments booklet (2024 revision).",
+    "sha256": "88227000e69be9aad5864155bd3e06ebead1e76c5b7cf662d63c1605408e5060",
+    "url": "https://legalinstruments.oecd.org/public/doc/648/648.en.pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 287516,
+    "dest": "source/SADEA-2020-08-06-en.pdf",
+    "instrument_id": "sadea-2020",
+    "media_type": "application/pdf",
+    "note": "Australia-Singapore Digital Economy Agreement, text reproduced on the Singapore Government Isomer platform.",
+    "sha256": "ee973daac741a0f3e4016d5d97883f539f937d41a646ef2301104521a5312183",
+    "url": "https://isomer-user-content.by.gov.sg/1004/769c26eb-17cf-4e2d-962b-1277a22df9db/australia-singapore-digital-economy-agreement%20-%20Jun%2023.pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 185114,
+    "dest": "source/A_RES_78_241-en.pdf",
+    "instrument_id": "un-ga-res-78-241",
+    "media_type": "application/pdf",
+    "note": "Official UN document A/RES/78/241 (English).",
+    "sha256": "29579cc3e25332a5d77f7ed70abfb07d9a5a0edcb2ca37bb31885b14d3c51b30",
+    "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F241&t=pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 275137,
+    "dest": "source/A_RES_78_265-en.pdf",
+    "instrument_id": "un-ga-res-78-265",
+    "media_type": "application/pdf",
+    "note": "Official UN document A/RES/78/265 (English).",
+    "sha256": "83887bee43ad1d5065de9f48c8ad5b7e81807944a3d2ec89023e3da3f61159d9",
+    "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F265&t=pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 217628,
+    "dest": "source/A_RES_78_311-en.pdf",
+    "instrument_id": "un-ga-res-78-311",
+    "media_type": "application/pdf",
+    "note": "Official UN document A/RES/78/311 (English).",
+    "sha256": "c1ad24b270f4bc90c634de41346acb482be3173cb4f159e88831bc4c79a5f47a",
+    "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F311&t=pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 649956,
+    "dest": "source/A_RES_79_1-en.pdf",
+    "instrument_id": "un-ga-res-79-1",
+    "media_type": "application/pdf",
+    "note": "Official UN document A/RES/79/1 (English), including the Global Digital Compact annex.",
+    "sha256": "0c3968d0ce8d55cf107309794adea6879d70f9aea60e6d6d64e3a8da4b028336",
+    "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F79%2F1&t=pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 196590,
+    "dest": "source/A_RES_79_239-en.pdf",
+    "instrument_id": "un-ga-res-79-239",
+    "media_type": "application/pdf",
+    "note": "Official UN document A/RES/79/239 (English).",
+    "sha256": "fd9e337b3779af4105fd4070180983ae17afae9f02e2dd33a75937d11f2432ca",
+    "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F79%2F239&t=pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 195276,
+    "dest": "source/A_RES_79_325-en.pdf",
+    "instrument_id": "un-ga-res-79-325",
+    "media_type": "application/pdf",
+    "note": "Official UN document A/RES/79/325 (English).",
+    "sha256": "99f17e7202d3692d107a8c979660e8db2af7107937ca583199d84a8325c56e5c",
+    "url": "https://digitallibrary.un.org/nanna/record/4087699/files/A_RES_79_325-EN.pdf?withWatermark=0&withMetadata=0&registerDownload=1&version=1"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 196808,
+    "dest": "source/A_RES_79_62-en.pdf",
+    "instrument_id": "un-ga-res-79-62",
+    "media_type": "application/pdf",
+    "note": "Official UN document A/RES/79/62 (English).",
+    "sha256": "0a06e67957a7cc571ec9e65dac1025c9ada4e95b60dd7d4ae4429ec926e1c622",
+    "url": "https://digitallibrary.un.org/record/4071100/files/A_RES_79_62-EN.pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 189522,
+    "dest": "source/A_RES_80_57-en.pdf",
+    "instrument_id": "un-ga-res-80-57",
+    "media_type": "application/pdf",
+    "note": "Official UN document A/RES/80/57 (English).",
+    "sha256": "69df02fe8aa7a82dc5404011374d115a3601fed1aa61dd51538656cbe9908d2f",
+    "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F57&t=pdf"
+  },
+  {
+    "accessed": "2026-11-23",
+    "bytes": 198737,
+    "dest": "source/A_RES_80_58-en.pdf",
+    "instrument_id": "un-ga-res-80-58",
+    "media_type": "application/pdf",
+    "note": "Official UN document A/RES/80/58 (English).",
+    "sha256": "65edd5d41f159a1bc98fcaf31d0eb8b6d9868d706bf939a05e690ec98cd30261",
+    "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F58&t=pdf"
+  }
+]

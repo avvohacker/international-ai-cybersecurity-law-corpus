@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 679046,
+      "media_type": "application/pdf",
+      "note": "OECD/LEGAL/0449, official OECD Legal Instruments booklet (2024 revision).",
+      "path": "source/OECD-LEGAL-0449-en.pdf",
+      "role": "original",
+      "sha256": "88227000e69be9aad5864155bd3e06ebead1e76c5b7cf662d63c1605408e5060",
+      "source_url": "https://legalinstruments.oecd.org/public/doc/648/648.en.pdf"
+    },
+    {
+      "bytes": 33195,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "0ee398e58bb50afb7f259e155c33af8b03fd4685035b9399edaffc3c6873e4d7"
+    },
+    {
+      "bytes": 1014,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "030dece5ac2144ad78cfb8fc8b5d4ac474cee98fca1d26c8961534c9bdda919e"
+    },
+    {
+      "bytes": 29446,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "b10104017e211f312b2c7134be048d4cdf991c7ead7237183837aa32a0701140"
+    }
+  ],
+  "instrument_id": "oecd-ai-recommendation-2019",
+  "primary_text": "text/en.txt"
+}

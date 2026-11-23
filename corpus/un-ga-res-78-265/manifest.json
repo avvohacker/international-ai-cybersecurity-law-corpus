@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 275137,
+      "media_type": "application/pdf",
+      "note": "Official UN document A/RES/78/265 (English).",
+      "path": "source/A_RES_78_265-en.pdf",
+      "role": "original",
+      "sha256": "83887bee43ad1d5065de9f48c8ad5b7e81807944a3d2ec89023e3da3f61159d9",
+      "source_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F265&t=pdf"
+    },
+    {
+      "bytes": 28002,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "8136f248040a35cc2c31c790aa37b2cc5939e2d1c9b2a355bef183afaa3b95b4"
+    },
+    {
+      "bytes": 693,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "205f183bc0c5e8286fd752799f57607aa261ec1c2a25025227af01047c7cc418"
+    },
+    {
+      "bytes": 31366,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "3f0ef60b311779f1b42e6e8f774a83b6304a4783548a5b87aa7f2c95f6e92d90"
+    }
+  ],
+  "instrument_id": "un-ga-res-78-265",
+  "primary_text": "text/en.txt"
+}

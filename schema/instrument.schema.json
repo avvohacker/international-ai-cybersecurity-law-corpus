@@ -1,0 +1,234 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/international-ai-law-corpus/instrument.schema.json",
+  "title": "Corpus instrument record",
+  "type": "object",
+  "required": [
+    "id", "title", "category", "instrument_type", "binding_status", "status",
+    "issuer", "relevance", "dates", "languages", "sources", "rights",
+    "verification", "gaps"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,80}$"},
+    "title": {
+      "type": "object",
+      "required": ["official"],
+      "additionalProperties": false,
+      "properties": {
+        "official": {"type": "string"},
+        "short": {"type": "string"},
+        "english": {"type": "string"},
+        "other": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "category": {
+      "enum": [
+        "ai_treaty", "agreement_ai_provisions", "non_binding_instrument",
+        "preparatory_interpretive", "technical_standard", "draft_negotiation",
+        "supranational_law", "general_treaty"
+      ]
+    },
+    "instrument_type": {
+      "enum": [
+        "treaty", "protocol", "agreement", "mou", "declaration", "resolution",
+        "recommendation", "principles", "code_of_conduct", "strategy", "report",
+        "guidance", "standard", "regulation", "directive", "draft", "framework",
+        "terms_of_reference", "decision"
+      ]
+    },
+    "binding_status": {"enum": ["binding", "non_binding", "mixed", "unknown"]},
+    "status": {
+      "enum": [
+        "in_force", "not_in_force", "adopted", "open_for_signature",
+        "in_negotiation", "withdrawn", "superseded", "unknown"
+      ]
+    },
+    "issuer": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {"type": "string"},
+          "role": {"enum": ["issuer", "depositary", "secretariat", "co_issuer", "host"]},
+          "url": {"type": "string", "format": "uri"}
+        }
+      }
+    },
+    "relevance": {
+      "type": "object",
+      "required": ["reason", "ai_provisions"],
+      "additionalProperties": false,
+      "properties": {
+        "reason": {"type": "string"},
+        "ai_provisions": {"type": "array", "items": {"type": "string"}},
+        "excluded_scope": {"type": "string"}
+      }
+    },
+    "dates": {
+      "type": "object",
+      "required": ["verified_on"],
+      "additionalProperties": false,
+      "properties": {
+        "adopted": {"type": ["string", "null"], "format": "date"},
+        "signed": {"type": ["string", "null"], "format": "date"},
+        "opened_for_signature": {"type": ["string", "null"], "format": "date"},
+        "published": {"type": ["string", "null"], "format": "date"},
+        "entered_into_force": {"type": ["string", "null"], "format": "date"},
+        "verified_on": {"type": "string", "format": "date"},
+        "notes": {"type": "string"}
+      }
+    },
+    "status_note": {"type": "string"},
+    "parties": {
+      "type": "object",
+      "required": ["as_of", "summary", "source_ids"],
+      "additionalProperties": false,
+      "properties": {
+        "as_of": {"type": "string", "format": "date"},
+        "summary": {"type": "string"},
+        "source_ids": {"type": "array", "items": {"type": "string"}},
+        "signatories_total": {"type": ["integer", "null"]},
+        "ratifications_total": {"type": ["integer", "null"]},
+        "entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["party"],
+            "additionalProperties": false,
+            "properties": {
+              "party": {"type": "string"},
+              "signature": {"type": ["string", "null"], "format": "date"},
+              "ratification": {"type": ["string", "null"], "format": "date"},
+              "acceptance": {"type": ["string", "null"], "format": "date"},
+              "approval": {"type": ["string", "null"], "format": "date"},
+              "accession": {"type": ["string", "null"], "format": "date"},
+              "entry_into_force": {"type": ["string", "null"], "format": "date"},
+              "notes": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "reservations": {"type": "array", "items": {"type": "string"}},
+        "declarations": {"type": "array", "items": {"type": "string"}},
+        "objections": {"type": "array", "items": {"type": "string"}},
+        "notifications": {"type": "array", "items": {"type": "string"}},
+        "withdrawals": {"type": "array", "items": {"type": "string"}},
+        "unknowns": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "languages": {
+      "type": "object",
+      "required": ["authentic"],
+      "additionalProperties": false,
+      "properties": {
+        "authentic": {"type": "array", "items": {"type": "string"}},
+        "translations": {"type": "array", "items": {"type": "string"}},
+        "note": {"type": "string"}
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "url", "kind", "accessed"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "url": {"type": "string", "format": "uri"},
+          "publisher": {"type": "string"},
+          "kind": {
+            "enum": ["official_primary", "official_secondary", "registry", "official_journal", "secondary"]
+          },
+          "accessed": {"type": "string", "format": "date"},
+          "http_status": {"type": ["integer", "null"]},
+          "language": {"type": "string"},
+          "note": {"type": "string"},
+          "sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+          "local_path": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "rights": {
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": ["public_official_text", "reuse_permitted", "open_licence", "restricted", "unknown"]
+        },
+        "licence": {"type": "string"},
+        "note": {"type": "string"},
+        "url": {"type": "string", "format": "uri"}
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": ["level", "checks"],
+      "additionalProperties": false,
+      "properties": {
+        "level": {"enum": ["full_text_checked", "metadata_verified", "source_located"]},
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["check", "result"],
+            "additionalProperties": false,
+            "properties": {
+              "check": {"type": "string"},
+              "result": {"type": "string"},
+              "date": {"type": "string", "format": "date"}
+            }
+          }
+        },
+        "notes": {"type": "string"}
+      }
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "relation"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "relation": {
+            "enum": [
+              "explanatory_report", "implemented_by", "implements", "amends",
+              "supersedes", "superseded_by", "related", "protocol_to",
+              "annex_to", "successor", "predecessor", "interpreted_by"
+            ]
+          },
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "text": {
+      "type": "object",
+      "required": ["manifest"],
+      "additionalProperties": false,
+      "properties": {
+        "manifest": {"type": "string"},
+        "full_text": {"type": "boolean"},
+        "primary_language": {"type": "string"},
+        "primary_text": {"type": "string"},
+        "units_mode": {"enum": ["treaty", "resolution", "sections", "whole"]},
+        "extraction_note": {"type": "string"},
+        "files": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "gaps": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "discovered_via": {"type": "string"},
+        "search_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
+        "notes": {"type": "string"}
+      }
+    }
+  }
+}

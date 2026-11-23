@@ -1,0 +1,11 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "char_start": 0,
+      "char_end": 31838
+    }
+  ],
+  "primary_text": "text/en.txt",
+  "note": "Single logical page: official PDF pagination was not acquired (HTTP 403). Char anchors remain exact against text/en.txt."
+}

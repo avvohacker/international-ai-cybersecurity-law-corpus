@@ -1,0 +1,36 @@
+{
+  "id": "nato-ai-strategy-2024",
+  "title": {"official": "Summary of NATO's revised Artificial Intelligence (AI) strategy", "short": "NATO AI Strategy (revised 2024)"},
+  "category": "non_binding_instrument",
+  "instrument_type": "strategy",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "North Atlantic Treaty Organization (NATO)", "role": "issuer", "url": "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2024/07/10/summary-of-natos-revised-artificial-intelligence-ai-strategy"}],
+  "relevance": {
+    "reason": "NATO's revised AI strategy summary, setting out Allied political and military objectives for responsible AI adoption in defence and security. It is an internal alliance strategy, not a treaty or a binding international instrument.",
+    "ai_provisions": ["Whole summary — AI readiness, responsible use, principles of responsible use (PRUs), protection of AI technologies and countering adversarial AI"],
+    "excluded_scope": "Non-binding alliance policy; not addressed to non-NATO States and not a source of international legal obligations."
+  },
+  "dates": {"adopted": "2021-10-22", "published": "2024-07-10", "verified_on": "2026-11-23", "notes": "Original NATO AI Strategy summary published 22 October 2021; revised strategy summary published 10 July 2024."},
+  "status_note": "Revised strategy adopted by NATO Allies in 2024; only the public summary is available. Non-binding.",
+  "languages": {"authentic": ["en", "fr"], "translations": [], "note": "NATO official texts are published in English and French. The summary is an official public version, not the full classified strategy."},
+  "sources": [
+    {"id": "nato-revised", "url": "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2024/07/10/summary-of-natos-revised-artificial-intelligence-ai-strategy", "publisher": "NATO", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official summary of the revised AI strategy, 10 July 2024."},
+    {"id": "nato-2021", "url": "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2021/10/22/summary-of-the-nato-artificial-intelligence-strategy", "publisher": "NATO", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official summary of the 2021 AI strategy, 22 October 2021."}
+  ],
+  "rights": {"status": "public_official_text", "licence": "NATO terms of use", "note": "Official NATO publication; NATO copyright and terms apply. Metadata only in this corpus.", "url": "https://www.nato.int/cps/en/natohq/terms_of_use.htm"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Original and revised dates checked on NATO official texts pages.", "result": "2021 strategy summary 22 October 2021; revised strategy summary 10 July 2024.", "date": "2026-11-23"},
+      {"check": "Nature checked: alliance strategy, public summary, non-binding.", "result": "Internal NATO policy; not a treaty.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata verified; full text not stored. The complete strategy is not public; only the summary is analysed."
+  },
+  "related": [
+    {"id": "political-declaration-military-ai-2023", "relation": "related", "note": "Separate multinational political declaration on military AI; NATO is not a party as such."},
+    {"id": "un-ga-res-79-239", "relation": "related", "note": "UN military AI resolution; different forum and membership."}
+  ],
+  "gaps": ["Only the public summary is available; the full strategy is not public.", "Non-binding internal alliance policy.", "No treaty status and no direct obligations for non-NATO States.", "Military AI governance remains outside the UN Panel and Global Dialogue."],
+  "provenance": {"discovered_via": "NATO official texts portal.", "search_dates": ["2026-11-23"]}
+}

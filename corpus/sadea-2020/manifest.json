@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 287516,
+      "media_type": "application/pdf",
+      "note": "Australia-Singapore Digital Economy Agreement, text reproduced on the Singapore Government Isomer platform.",
+      "path": "source/SADEA-2020-08-06-en.pdf",
+      "role": "original",
+      "sha256": "ee973daac741a0f3e4016d5d97883f539f937d41a646ef2301104521a5312183",
+      "source_url": "https://isomer-user-content.by.gov.sg/1004/769c26eb-17cf-4e2d-962b-1277a22df9db/australia-singapore-digital-economy-agreement%20-%20Jun%2023.pdf"
+    },
+    {
+      "bytes": 71924,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "194b60eb4c37172c965dc63d7ff6877f9e70400c8e737ccc2d14ba3203551a80"
+    },
+    {
+      "bytes": 3220,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "f50cfb8713604862c0d43e51131658e988806b81c0c6d72e07e453ed0a7b5383"
+    },
+    {
+      "bytes": 80323,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "9c85533e3f116a87d0ea3e7659727043d665e6ab6b455329a26dd2b460ceeddb"
+    }
+  ],
+  "instrument_id": "sadea-2020",
+  "primary_text": "text/en.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "frontier-ai-safety-commitments-2024",
+  "title": {"official": "Frontier AI Safety Commitments, AI Seoul Summit 2024", "short": "Frontier AI Safety Commitments"},
+  "category": "non_binding_instrument",
+  "instrument_type": "code_of_conduct",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "AI companies endorsing the commitments, facilitated by the UK and Republic of Korea governments", "role": "issuer", "url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024"}],
+  "relevance": {
+    "reason": "Voluntary safety commitments by leading AI companies, launched at the AI Seoul Summit, covering severe-risk assessment, governance and transparency for frontier models. It is an industry commitment, not an international instrument adopted by States.",
+    "ai_provisions": ["Whole document — voluntary commitments on risk assessment, safety frameworks, governance and transparency for frontier AI"],
+    "excluded_scope": "Voluntary corporate commitments; no legal obligation, no State party, no enforcement."
+  },
+  "dates": {"adopted": "2024-05-21", "verified_on": "2026-11-23", "notes": "Launched on 21 May 2024 with 16 companies; the UK page records later additions (Magic, Minimax, 01.ai and NVIDIA), bringing the list to 20."},
+  "status_note": "Voluntary commitments; companies endorse and publish safety frameworks. Not a treaty and not a State-level instrument.",
+  "languages": {"authentic": ["en"], "translations": [], "note": "English text; no authentic-language clause."},
+  "sources": [
+    {"id": "govuk-commitments", "url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024", "publisher": "UK Government", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official text and list of endorsing organisations."},
+    {"id": "govuk-news", "url": "https://www.gov.uk/government/news/historic-first-as-companies-spanning-north-america-asia-europe-and-middle-east-agree-safety-commitments-on-development-of-ai", "publisher": "UK Government", "kind": "official_secondary", "accessed": "2026-11-23", "note": "Official announcement: 16 companies at launch, including companies from the US, China, the UAE and Europe."}
+  ],
+  "rights": {"status": "open_licence", "licence": "Open Government Licence v3.0", "note": "GOV.UK content licensed under OGL v3.0 except where otherwise stated.", "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Launch date and company list checked on the GOV.UK publication.", "result": "21 May 2024; 16 initial endorsers, with four later additions listed.", "date": "2026-11-23"},
+      {"check": "Nature checked: voluntary corporate commitments.", "result": "No State parties, no legal obligation.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata verified; full text not stored. The commitments are not an instrument of international law."
+  },
+  "related": [
+    {"id": "seoul-declaration-2024", "relation": "related", "note": "Leaders' declaration adopted at the same summit."},
+    {"id": "bletchley-declaration-2023", "relation": "related", "note": "Earlier summit declaration in the same process."}
+  ],
+  "gaps": ["Voluntary and corporate; not binding international law.", "Full text not stored.", "Compliance and safety frameworks are not assessed.", "Endorsement list is date-sensitive."],
+  "provenance": {"discovered_via": "GOV.UK AI Seoul Summit publications.", "search_dates": ["2026-11-23"]}
+}

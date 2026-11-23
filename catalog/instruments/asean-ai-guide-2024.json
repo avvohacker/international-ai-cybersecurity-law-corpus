@@ -1,0 +1,36 @@
+{
+  "id": "asean-ai-guide-2024",
+  "title": {"official": "ASEAN Guide on AI Governance and Ethics", "short": "ASEAN AI Guide"},
+  "category": "non_binding_instrument",
+  "instrument_type": "guidance",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "Association of Southeast Asian Nations (ASEAN)", "role": "issuer", "url": "https://asean.org/book/asean-guide-on-ai-governance-and-ethics"}],
+  "relevance": {
+    "reason": "A regional voluntary guide for organisations and governments in Southeast Asia on designing, developing and deploying AI responsibly. It is the principal ASEAN AI governance instrument and is expressly non-binding.",
+    "ai_provisions": ["Whole guide — guiding principles, risk assessment, governance components and national/regional recommendations"],
+    "excluded_scope": "Voluntary guidance; no legal obligation, market-access rule or enforcement."
+  },
+  "dates": {"adopted": "2024-02-02", "published": "2024-02-02", "verified_on": "2026-11-23", "notes": "Launched at the 4th ASEAN Digital Ministers' Meeting on 2 February 2024; the PDF itself carries a December 2023 version date."},
+  "status_note": "Adopted/launched as a voluntary guide. Non-binding.",
+  "languages": {"authentic": ["en"], "translations": [], "note": "ASEAN working language is English; only the English guide was consulted."},
+  "sources": [
+    {"id": "asean-pdf", "url": "https://asean.org/wp-content/uploads/2024/02/ASEAN-Guide-on-AI-Governance-and-Ethics_beautified_201223_v2.pdf", "publisher": "ASEAN Secretariat", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official PDF of the Guide; states that adoption is voluntary and that it is a living document."},
+    {"id": "asean-page", "url": "https://asean.org/book/asean-guide-on-ai-governance-and-ethics", "publisher": "ASEAN Secretariat", "kind": "official_secondary", "accessed": "2026-11-23", "note": "ASEAN publication page, 2024, English."}
+  ],
+  "rights": {"status": "public_official_text", "licence": "ASEAN Secretariat terms", "note": "Official ASEAN publication; no open licence identified. Metadata only in this corpus.", "url": "https://asean.org/terms-of-use/"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Voluntary nature checked in the Guide's own text.", "result": "Adoption is voluntary; practical guide and living document.", "date": "2026-11-23"},
+      {"check": "Publisher, year and scope checked on the ASEAN publication page and PDF.", "result": "ASEAN Secretariat, 2024; commercial and non-military/dual-use AI applications.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata verified; full text not stored."
+  },
+  "related": [
+    {"id": "au-continental-ai-strategy-2024", "relation": "related", "note": "Another regional non-binding AI instrument."},
+    {"id": "oecd-ai-recommendation-2019", "relation": "related", "note": "The Guide draws on internationally recognised AI principles, including the OECD AI Principles."}
+  ],
+  "gaps": ["Non-binding and voluntary.", "Full text not stored.", "Implementation by ASEAN Member States is not assessed.", "Covers commercial and non-military/dual-use applications; military AI is outside its scope."],
+  "provenance": {"discovered_via": "ASEAN Secretariat publication page and PDF.", "search_dates": ["2026-11-23"]}
+}

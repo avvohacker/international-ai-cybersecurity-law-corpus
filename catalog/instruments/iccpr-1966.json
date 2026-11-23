@@ -1,0 +1,113 @@
+{
+  "binding_status": "binding",
+  "category": "general_treaty",
+  "dates": {
+    "adopted": "1966-12-16",
+    "entered_into_force": "1976-03-23",
+    "notes": "Adopted by UNGA resolution 2200A (XXI) on 16 December 1966; entered into force 23 March 1976.",
+    "opened_for_signature": "1966-12-16",
+    "verified_on": "2026-11-23"
+  },
+  "gaps": [
+    "Not AI-specific.",
+    "Metadata not re-verified on the official page.",
+    "Reservations, derogations and jurisprudence are not analysed.",
+    "Only the treaty framework is recorded; interpretations by the Human Rights Committee are outside this record."
+  ],
+  "id": "iccpr-1966",
+  "instrument_type": "treaty",
+  "issuer": [
+    {
+      "name": "United Nations General Assembly",
+      "role": "issuer",
+      "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "zh",
+      "en",
+      "fr",
+      "ru",
+      "es"
+    ],
+    "note": "Article 53: Chinese, English, French, Russian and Spanish texts equally authentic.",
+    "translations": []
+  },
+  "parties": {
+    "as_of": "2026-11-23",
+    "declarations": [],
+    "entries": [],
+    "notifications": [],
+    "objections": [],
+    "ratifications_total": null,
+    "reservations": [],
+    "signatories_total": null,
+    "source_ids": [
+      "ohchr"
+    ],
+    "summary": "Party-by-party signature, ratification and reservation data were not captured in this cycle. The UN Treaty Collection and OHCHR are the authoritative registers.",
+    "unknowns": [
+      "Party list, reservations, derogations and declarations were not captured."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "discovered_via": "General international human rights law; invoked in the CETS 225 preamble.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "coe-cets-225",
+      "note": "The CoE Convention's preamble invokes the ICCPR; the Convention is to be read consistently with it.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Article 2 — non-discrimination and effective remedy",
+      "Article 14 — fair trial",
+      "Article 17 — privacy",
+      "Article 19 — freedom of expression",
+      "Article 26 — equality before the law and non-discrimination"
+    ],
+    "excluded_scope": "General human rights treaty; no AI-specific provision, institution or risk-management duty.",
+    "reason": "A general human rights treaty selected because its obligations apply to AI-driven interferences with privacy, expression, non-discrimination, fair trial and effective remedy. It is not AI-specific; it supplies the human rights baseline against which AI measures are assessed."
+  },
+  "rights": {
+    "licence": "United Nations terms",
+    "note": "Official UN treaty text; UN terms apply. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.un.org/en/about-us/terms-of-use"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": null,
+      "id": "ohchr",
+      "kind": "official_primary",
+      "note": "Official OHCHR page for the Covenant, text and status. Metadata recorded from established reference; page not re-read in this session.",
+      "publisher": "OHCHR",
+      "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force. General treaty; not AI-specific.",
+  "title": {
+    "official": "International Covenant on Civil and Political Rights",
+    "short": "ICCPR"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Official OHCHR URL recorded; adoption and entry-into-force dates and authentic-language clause taken from the established treaty record, not re-read in this session.",
+        "date": "2026-11-23",
+        "result": "Metadata not independently re-verified; source located."
+      }
+    ],
+    "level": "source_located",
+    "notes": "Included as a reasoned general-treaty selection, not as an AI-specific instrument. Verify article text and reservations on OHCHR before quoting."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 195276,
+      "media_type": "application/pdf",
+      "note": "Official UN document A/RES/79/325 (English).",
+      "path": "source/A_RES_79_325-en.pdf",
+      "role": "original",
+      "sha256": "99f17e7202d3692d107a8c979660e8db2af7107937ca583199d84a8325c56e5c",
+      "source_url": "https://digitallibrary.un.org/nanna/record/4087699/files/A_RES_79_325-EN.pdf?withWatermark=0&withMetadata=0&registerDownload=1&version=1"
+    },
+    {
+      "bytes": 9711,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "eca2a621c2d4c7500ce84ab9f26c860aca7d3fc3b0eb6cc06e2718f71c32fb7d"
+    },
+    {
+      "bytes": 366,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "ac62bef44e17795a0948039be904bfd8139b71f0767afa7a0b25356e8c188d3f"
+    },
+    {
+      "bytes": 12600,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "cf6a3d5c848a19756700f0e5ac3d1223b2dffb973136ba4c1658a6fa70ccd7cb"
+    }
+  ],
+  "instrument_id": "un-ga-res-79-325",
+  "primary_text": "text/en.txt"
+}

@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-23",
+      "bytes": 196590,
+      "media_type": "application/pdf",
+      "note": "Official UN document A/RES/79/239 (English).",
+      "path": "source/A_RES_79_239-en.pdf",
+      "role": "original",
+      "sha256": "fd9e337b3779af4105fd4070180983ae17afae9f02e2dd33a75937d11f2432ca",
+      "source_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F79%2F239&t=pdf"
+    },
+    {
+      "bytes": 10771,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "0ef03adeac79854139ed6be3e3015e2220c81a25213dc8aa83840a27a45a91ed"
+    },
+    {
+      "bytes": 367,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "6d4983f2c3fc0aa232504329f0a816423ba04787081a172140119b3b2f46fbaa"
+    },
+    {
+      "bytes": 13047,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "a6b67d5414379ff813dedae9358475ad2bef2ce52549fde838ef4d05e41f1d1e"
+    }
+  ],
+  "instrument_id": "un-ga-res-79-239",
+  "primary_text": "text/en.txt"
+}

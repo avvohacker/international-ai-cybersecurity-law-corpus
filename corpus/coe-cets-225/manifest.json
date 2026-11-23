@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "bytes": 31935,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "36401fa62fbfb40c58d6b96f5b4205fca6413f5c471f0663f98bf1bd2d1bfac8"
+    },
+    {
+      "bytes": 264,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "c016e316a5d431cda21f8785ecbd1bc2ba0d40d09a3ef22456c43f5a4240fcdc"
+    },
+    {
+      "bytes": 35286,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "e57ffb6fdc958ede7cdc53c1ed3130c0d7956423f756be3a2e13b13b5566296d"
+    }
+  ],
+  "instrument_id": "coe-cets-225",
+  "primary_text": "text/en.txt"
+}

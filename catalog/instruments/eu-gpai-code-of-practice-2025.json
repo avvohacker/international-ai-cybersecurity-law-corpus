@@ -1,0 +1,36 @@
+{
+  "id": "eu-gpai-code-of-practice-2025",
+  "title": {"official": "General-Purpose AI Code of Practice", "short": "EU GPAI Code of Practice"},
+  "category": "preparatory_interpretive",
+  "instrument_type": "code_of_conduct",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "European Commission, following a multi-stakeholder process with independent experts", "role": "issuer", "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice"}],
+  "relevance": {
+    "reason": "A voluntary code designed to help providers of general-purpose AI models demonstrate compliance with the EU AI Act's obligations on transparency, copyright, safety and security. It is implementation material for a supranational regulation, not an international treaty.",
+    "ai_provisions": ["Chapter on Transparency", "Chapter on Copyright", "Chapter on Safety and Security (for models with systemic risk)"],
+    "excluded_scope": "Voluntary EU implementation tool; does not create obligations independent of the AI Act and does not bind non-EU actors as such."
+  },
+  "dates": {"adopted": "2025-07-10", "published": "2025-07-10", "verified_on": "2026-11-23", "notes": "Final version received and published on 10 July 2025; approved as adequate by the Commission and the AI Board on 1 August 2025."},
+  "status_note": "Voluntary code; providers may sign it to demonstrate compliance with Articles 53 and 55 of the AI Act.",
+  "languages": {"authentic": ["en"], "translations": [], "note": "English version published; no treaty-style authentic-language clause."},
+  "sources": [
+    {"id": "ec-page", "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice", "publisher": "European Commission", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official page: published 10 July 2025; voluntary tool; three chapters; adequacy confirmation."},
+    {"id": "ec-press", "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1787", "publisher": "European Commission", "kind": "official_secondary", "accessed": "2026-11-23", "note": "Press release: final version received 10 July 2025; three chapters; relation to AI Act rules applicable from 2 August 2025."}
+  ],
+  "rights": {"status": "reuse_permitted", "licence": "Commission Decision 2011/833/EU", "note": "European Commission publication; reuse under the EU reuse decision with attribution. Metadata only in this corpus.", "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Publication date, voluntary nature and three chapters checked on the Commission page.", "result": "Published 10 July 2025; voluntary; transparency, copyright, safety and security.", "date": "2026-11-23"},
+      {"check": "Relationship to the AI Act checked in the Commission press release and FAQ.", "result": "Helps demonstrate compliance with Articles 53 and 55; approved as adequate on 1 August 2025.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata verified; the code's full text was not acquired or segmented. It is not an international instrument."
+  },
+  "related": [
+    {"id": "eu-ai-act", "relation": "implements", "note": "Voluntary implementation tool for AI Act obligations on general-purpose AI models."},
+    {"id": "g7-hiroshima-code-2023", "relation": "related", "note": "Comparable voluntary code for advanced AI developers, in a different legal context."}
+  ],
+  "gaps": ["Voluntary and EU-specific; not an international treaty.", "Full text not stored.", "Signatory list and adequacy assessment details are not analysed.", "Does not bind non-EU providers except through the AI Act's market rules."],
+  "provenance": {"discovered_via": "European Commission digital-strategy pages.", "search_dates": ["2026-11-23"]}
+}

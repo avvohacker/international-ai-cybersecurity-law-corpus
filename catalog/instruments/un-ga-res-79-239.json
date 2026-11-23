@@ -1,0 +1,119 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2024-12-24",
+    "notes": "Adopted on the report of the First Committee (A/79/408, para. 114); document distributed 31 December 2024.",
+    "published": "2024-12-31",
+    "verified_on": "2026-11-23"
+  },
+  "gaps": [
+    "Non-binding.",
+    "Only metadata-level verification.",
+    "Only English acquired.",
+    "No operative prohibition or transparency mechanism.",
+    "Military AI remains outside the mandates of the UN AI Panel and Global Dialogue (A/RES/79/325)."
+  ],
+  "id": "un-ga-res-79-239",
+  "instrument_type": "resolution",
+  "issuer": [
+    {
+      "name": "United Nations General Assembly (79th session)",
+      "role": "issuer",
+      "url": "https://www.un.org/en/ga/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "ar",
+      "zh",
+      "en",
+      "fr",
+      "ru",
+      "es"
+    ],
+    "note": "UN official languages; only English acquired.",
+    "translations": []
+  },
+  "provenance": {
+    "discovered_via": "UN documents service and UN Digital Library.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "un-ga-res-80-58",
+      "note": "2025 resolution on AI in the military domain.",
+      "relation": "successor"
+    },
+    {
+      "id": "un-ga-res-79-62",
+      "note": "Parallel 2024 resolution on lethal autonomous weapons systems.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Preamble and operative paragraphs on military AI across the lifecycle, international law, responsible use and international peace and security"
+    ],
+    "excluded_scope": "Non-binding; expressly covers the military domain and not civilian AI; no prohibition or verification regime.",
+    "reason": "The first UN General Assembly resolution specifically on artificial intelligence in the military domain. It affirms that international law applies throughout the lifecycle of military AI capabilities and addresses responsible application, while remaining non-binding."
+  },
+  "rights": {
+    "licence": "United Nations terms of use",
+    "note": "Official UN document; UN copyright and terms of use apply.",
+    "status": "public_official_text",
+    "url": "https://www.un.org/en/about-us/terms-of-use"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "un-doc",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official A/RES/79/239 English PDF, 4 pages; downloaded and stored.",
+      "publisher": "United Nations",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F79%2F239&t=pdf"
+    },
+    {
+      "accessed": "2026-11-23",
+      "id": "un-library",
+      "kind": "registry",
+      "note": "Record for A/RES/79/239, 79th session, First Committee.",
+      "publisher": "UN Digital Library",
+      "url": "https://digitallibrary.un.org/record/4071348"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Adopted. Non-binding resolution.",
+  "text": {
+    "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "resolution"
+  },
+  "title": {
+    "official": "Artificial intelligence in the military domain and its implications for international peace and security",
+    "short": "UNGA resolution 79/239 on military AI"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "PDF downloaded and first page inspected.",
+        "date": "2026-11-23",
+        "result": "A/RES/79/239; title as recorded; adopted 24 December 2024."
+      },
+      {
+        "check": "Scope checked in the preamble.",
+        "date": "2026-11-23",
+        "result": "Covers AI capabilities in the military domain and states that the resolution does not cover AI in the civilian domain."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Original preserved and hashed; full text not segmented. Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified."
+  }
+}

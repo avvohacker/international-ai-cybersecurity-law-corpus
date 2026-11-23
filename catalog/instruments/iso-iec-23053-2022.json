@@ -1,0 +1,34 @@
+{
+  "id": "iso-iec-23053-2022",
+  "title": {"official": "ISO/IEC 23053:2022 Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML)", "short": "ISO/IEC 23053:2022"},
+  "category": "technical_standard",
+  "instrument_type": "standard",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)", "role": "issuer", "url": "https://www.iso.org/committee/6794475.html"}],
+  "relevance": {
+    "reason": "International technical framework describing AI systems that use machine learning. It is a voluntary standard and a companion to ISO/IEC 22989; it is not law.",
+    "ai_provisions": ["Whole standard — framework for AI systems using machine learning"],
+    "excluded_scope": "Voluntary technical standard; no legal obligation and no public full text."
+  },
+  "dates": {"published": null, "verified_on": "2026-11-23", "notes": "ISO catalogue records publication in June 2022 (edition 1, 36 pages); the exact day was not verified."},
+  "status_note": "Published international standard. Voluntary.",
+  "languages": {"authentic": ["en"], "translations": ["fr"], "note": "ISO catalogue lists English and French."},
+  "sources": [
+    {"id": "iso-catalogue", "url": "https://www.iso.org/standard/74438.html", "publisher": "ISO", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official catalogue page: published June 2022, edition 1, 36 pages, CHF 196."}
+  ],
+  "rights": {"status": "restricted", "licence": "ISO copyright; paid standard", "note": "Sold by ISO; metadata and link only.", "url": "https://www.iso.org/standard/74438.html"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Title, edition, publication month, page count and price checked on the ISO catalogue page.", "result": "ISO/IEC 23053:2022, edition 1, 2022-06, 36 pages, CHF 196.", "date": "2026-11-23"},
+      {"check": "Legal nature checked: voluntary technical standard.", "result": "Not a treaty.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata only; full text paywalled."
+  },
+  "related": [
+    {"id": "iso-iec-22989-2022", "relation": "related", "note": "Companion terminology standard."}
+  ],
+  "gaps": ["Paywalled; full text not accessed.", "Voluntary and not law.", "National adoptions are not assessed."],
+  "provenance": {"discovered_via": "ISO catalogue and JTC 1/SC 42 list.", "search_dates": ["2026-11-23"]}
+}

@@ -1,0 +1,20 @@
+{
+  "pages": [
+    {
+      "char_end": 2128,
+      "char_start": 0,
+      "page": 1
+    },
+    {
+      "char_end": 5930,
+      "char_start": 2129,
+      "page": 2
+    },
+    {
+      "char_end": 9345,
+      "char_start": 5931,
+      "page": 3
+    }
+  ],
+  "primary_text": "text/en.txt"
+}

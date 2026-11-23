@@ -1,0 +1,36 @@
+{
+  "id": "bletchley-declaration-2023",
+  "title": {"official": "The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 November 2023", "short": "Bletchley Declaration"},
+  "category": "non_binding_instrument",
+  "instrument_type": "declaration",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "Countries attending the AI Safety Summit (UK-hosted), including the European Union", "role": "issuer", "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration"}],
+  "relevance": {
+    "reason": "The first international political declaration on frontier AI safety, agreed by 28 countries and the European Union at Bletchley Park. It establishes a shared understanding of opportunities and risks and a commitment to international cooperation, but is non-binding.",
+    "ai_provisions": ["Whole declaration — frontier AI risks, safety, international cooperation and continued dialogue"],
+    "excluded_scope": "Non-binding political declaration; no legal obligations, monitoring or enforcement."
+  },
+  "dates": {"adopted": "2023-11-01", "verified_on": "2026-11-23", "notes": "Agreed at the AI Safety Summit, Bletchley Park, 1–2 November 2023. New Zealand joined the declaration on 23 October 2024."},
+  "status_note": "Adopted by 28 countries and the EU; New Zealand subsequently joined. Open political endorsement, not signature/ratification.",
+  "languages": {"authentic": ["en"], "translations": ["es"], "note": "English text and a Latin American Spanish translation are published on GOV.UK. No authentic-language clause."},
+  "sources": [
+    {"id": "govuk-declaration", "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023", "publisher": "UK Government", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official text and list of participating countries; records New Zealand's accession on 23 October 2024."},
+    {"id": "govuk-news", "url": "https://www.gov.uk/government/news/countries-agree-to-safe-and-responsible-development-of-frontier-ai-in-landmark-bletchley-declaration", "publisher": "UK Government", "kind": "official_secondary", "accessed": "2026-11-23", "note": "Official announcement: 28 countries plus the EU; lists endorsing countries."}
+  ],
+  "rights": {"status": "open_licence", "licence": "Open Government Licence v3.0", "note": "GOV.UK content is licensed under OGL v3.0 except where otherwise stated. Reuse with attribution.", "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Date, participating countries and non-binding character checked on the GOV.UK publication.", "result": "1–2 November 2023; 28 countries plus the EU; political declaration.", "date": "2026-11-23"},
+      {"check": "New Zealand accession checked in the GOV.UK update note.", "result": "Joined 23 October 2024.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata verified; full text not stored. The declaration is political and does not create legal obligations."
+  },
+  "related": [
+    {"id": "seoul-declaration-2024", "relation": "successor", "note": "Follow-up summit declaration in May 2024."},
+    {"id": "frontier-ai-safety-commitments-2024", "relation": "related", "note": "Company commitments launched at the Seoul summit."}
+  ],
+  "gaps": ["Non-binding.", "Full text not stored.", "Endorsement list is date-sensitive and not reproduced party by party.", "No implementation or monitoring mechanism."],
+  "provenance": {"discovered_via": "GOV.UK AI Safety Summit publications.", "search_dates": ["2026-11-23"]}
+}

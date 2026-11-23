@@ -1,0 +1,36 @@
+{
+  "id": "seoul-declaration-2024",
+  "title": {"official": "Seoul Declaration for safe, innovative and inclusive AI", "short": "Seoul Declaration"},
+  "category": "non_binding_instrument",
+  "instrument_type": "declaration",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [{"name": "Participants in the AI Seoul Summit (Republic of Korea and United Kingdom hosts)", "role": "issuer", "url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024"}],
+  "relevance": {
+    "reason": "Leaders' declaration from the AI Seoul Summit, continuing the Bletchley process with commitments to safe, innovative and inclusive AI and international cooperation. It is a political declaration, not a treaty.",
+    "ai_provisions": ["Whole declaration — safe, innovative and inclusive AI; international cooperation; follow-up to Bletchley"],
+    "excluded_scope": "Non-binding; no legal obligations or enforcement."
+  },
+  "dates": {"adopted": "2024-05-21", "verified_on": "2026-11-23", "notes": "Adopted at the Leaders' Session of the AI Seoul Summit on 21 May 2024."},
+  "status_note": "Adopted by Australia, Canada, the European Union, France, Germany, Italy, Japan, the Republic of Korea, Singapore, the United Kingdom and the United States.",
+  "languages": {"authentic": ["en"], "translations": [], "note": "English text; no authentic-language clause."},
+  "sources": [
+    {"id": "govuk-seoul", "url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024", "publisher": "UK Government", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official text and list of participating leaders."},
+    {"id": "govuk-network", "url": "https://www.gov.uk/government/news/global-leaders-agree-to-launch-first-international-network-of-ai-safety-institutes-to-boost-understanding-of-ai", "publisher": "UK Government", "kind": "official_secondary", "accessed": "2026-11-23", "note": "Official announcement of the Seoul Declaration and the AI Safety Institute network."}
+  ],
+  "rights": {"status": "open_licence", "licence": "Open Government Licence v3.0", "note": "GOV.UK content licensed under OGL v3.0 except where otherwise stated.", "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"},
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {"check": "Date and participants checked on the GOV.UK text.", "result": "21 May 2024; 10 countries plus the EU.", "date": "2026-11-23"},
+      {"check": "Nature checked: leaders' declaration, non-binding.", "result": "Political declaration; no signature/ratification.", "date": "2026-11-23"}
+    ],
+    "notes": "Metadata verified; full text not stored."
+  },
+  "related": [
+    {"id": "bletchley-declaration-2023", "relation": "predecessor", "note": "Previous summit declaration."},
+    {"id": "frontier-ai-safety-commitments-2024", "relation": "related", "note": "Company commitments launched at the same summit."}
+  ],
+  "gaps": ["Non-binding.", "Full text not stored.", "No monitoring mechanism.", "Participation is limited to a group of like-minded States and the EU."],
+  "provenance": {"discovered_via": "GOV.UK AI Seoul Summit publications.", "search_dates": ["2026-11-23"]}
+}
