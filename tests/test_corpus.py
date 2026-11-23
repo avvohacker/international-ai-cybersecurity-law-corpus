@@ -351,33 +351,108 @@ class TestBuild(unittest.TestCase):
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
         self.assertEqual(page.count('class="map-frame"'), 7)
         self.assertEqual(page.count('class="map-key"'), 7)
-        for title in (
-            "Paris 2025",
-            "Bletchley 2023",
-            "Seoul 2024",
-            "Military AI 2023",
-            "CETS 225",
-            "WAICO 2026",
-            "Pax Silica 2025",
-        ):
-            self.assertIn(title, page)
+        figures = re.findall(r'<figure class="map-card">(.*?)</figure>', page, re.S)
+        self.assertEqual(len(figures), 7)
+        by_title = {
+            re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
+            for figure in figures
+        }
+        self.assertEqual(
+            list(by_title),
+            [
+                "WAICO 2026",
+                "CETS 225",
+                "Paris 2025",
+                "Military AI 2023",
+                "Bletchley 2023",
+                "Pax Silica 2025",
+                "Seoul 2024",
+            ],
+        )
+        for figure in figures:
+            self.assertNotIn("<text", figure)
+            self.assertNotIn("map-label", figure)
+            self.assertNotIn("map-org-label", figure)
+            self.assertNotIn("map-org-leader", figure)
+        self.assertEqual(page.count('class="map-org-note"'), 5)
+        self.assertIn(
+            "European Union: ratified. 27 EU member States without an individual signature",
+            by_title["CETS 225"],
+        )
+        self.assertIn(
+            "European Union: endorsed. 21 EU member States without an individual endorsement",
+            by_title["Bletchley 2023"],
+        )
+        self.assertIn(
+            "European Union: endorsed. 24 EU member States without an individual endorsement",
+            by_title["Seoul 2024"],
+        )
+        self.assertIn(
+            "European Union: endorsed. 21 EU member States without an individual endorsement",
+            by_title["Pax Silica 2025"],
+        )
+        self.assertIn(
+            "African Union Commission: endorsed. 46 African Union member States",
+            by_title["Paris 2025"],
+        )
+        # All 27 EU member States endorsed Paris individually, so the EU is not
+        # indicated on that map at all.
+        self.assertNotIn("European Union", by_title["Paris 2025"])
+        self.assertEqual(by_title["CETS 225"].count('fill="#a9c0e0"'), 27)
+        self.assertEqual(by_title["Paris 2025"].count('fill="#a9c0e0"'), 46)
+        self.assertEqual(by_title["WAICO 2026"].count('fill="#a9c0e0"'), 0)
         self.assertNotIn("USA / UK: no", page)
         self.assertNotIn("Non-signatory", page)
-        self.assertIn("European Union", page)
-        self.assertIn("African Union Commission", page)
-        self.assertIn("United States", page)
-        self.assertIn("United Kingdom", page)
-        self.assertIn("International organisation: endorsed", page)
-        self.assertIn("International organisation: ratified", page)
+        self.assertNotIn("International organisation", page)
         self.assertNotIn("Supranational:", page)
+        self.assertIn("State: member of a participating organisation", page)
         self.assertIn("State: ratified", page)
         self.assertIn("Signed + ratified", page)
         self.assertIn("State: signed only", page)
         self.assertIn("States only", page)
         self.assertIn("37 confirmed of 38 reported", page)
-        self.assertIn("map-org-leader", page)
-        self.assertIn("map-label-leader", page)
-        self.assertIn("map-org-label-mid", page)
+
+    def test_map_order_follows_binding_then_adopters(self) -> None:
+        import build_site
+
+        build_site.main()
+        page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        titles = re.findall(r'<span class="map-title">([^<]+)</span>', page)
+        self.assertEqual(
+            titles,
+            [
+                "WAICO 2026",
+                "CETS 225",
+                "Paris 2025",
+                "Military AI 2023",
+                "Bletchley 2023",
+                "Pax Silica 2025",
+                "Seoul 2024",
+            ],
+        )
+
+    def test_organisation_membership_is_complete_and_resolves(self) -> None:
+        import build_site
+
+        data = json.loads(
+            (ROOT / "data" / "organisations.json").read_text(encoding="utf-8")
+        )
+        organisations = {org["name"]: org for org in data["organisations"]}
+        self.assertEqual(
+            set(organisations), {"European Union", "African Union Commission"}
+        )
+        self.assertEqual(len(organisations["European Union"]["members"]), 27)
+        self.assertEqual(
+            len(organisations["African Union Commission"]["members"]), 55
+        )
+        _, by_name, by_iso = build_site.load_geo()
+        for org in organisations.values():
+            self.assertTrue(org["sources"])
+            self.assertEqual(len(org["members"]), len(set(org["members"])))
+            for member in org["members"]:
+                iso = build_site.iso_for(member, by_name)
+                self.assertTrue(iso, member)
+                self.assertTrue(iso in by_iso or iso in build_site.MICRO, member)
 
     def test_matrix_matches_records(self) -> None:
         import build_site

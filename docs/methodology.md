@@ -58,7 +58,7 @@ Sources are never overwritten. If a later retrieval differs from the registered 
 - Signature, ratification, acceptance, approval, accession and entry into force are separate fields.
 - Reservations, declarations, objections, notifications and withdrawals are separate lists.
 - A Party's position is never inferred from the position of an international organisation of which it is a member. The EU is recorded as a party to CETS 225 only because the EU deposited an instrument; EU member States are not thereby recorded as parties.
-- Political declarations have no signature or ratification. Their records list endorsers in `parties.entries`; the atlas labels the act as endorsement, not signature, and uses a separate marker for international organisations.
+- Political declarations have no signature or ratification. Their records list endorsers in `parties.entries`; the atlas labels the act as endorsement, not signature. An international organisation that is a party is named outside the map frame; its member States are shown in a lighter tone only where they did not sign, ratify or endorse individually.
 - Party names are normalized to a common English form for matching across records; the official spelling remains on the source page.
 - Where a party table could not be captured, aggregate counts are stored with the exact status date, and the missing rows are listed in `parties.unknowns`.
 
@@ -77,7 +77,7 @@ The build uses Python's standard library only and does not access the network. I
 5. writes `build/catalog.json`, `build/CATALOG.md`, `build/checksums.sha256` and `build/verification-report.json` with sorted keys and no timestamps;
 6. optionally writes the static atlas in `site/` from the same records (`make site`), without a second data source.
 
-The determinism test builds twice and compares the bytes. Network acquisition and PDF extraction are separate commands; their outputs are stored, so a rebuild from the repository does not depend on the network or on a PDF library. The atlas is generated from the catalogue and the stored Natural Earth boundaries; it is not an independent dataset.
+The determinism test builds twice and compares the bytes. Network acquisition and PDF extraction are separate commands; their outputs are stored, so a rebuild from the repository does not depend on the network or on a PDF library. The atlas is generated from the catalogue, the stored Natural Earth boundaries and the organisation membership lists in `data/organisations.json`; it is not an independent dataset.
 
 ## 8. Limits of this cycle
 
