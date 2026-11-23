@@ -797,7 +797,7 @@ class TestBuild(unittest.TestCase):
         self.assertIn("report to the 2028 Meeting of High Contracting Parties", page)
         self.assertIn("2028 Meeting of High Contracting Parties", ccw["status_note"])
         self.assertIn(
-            "Five ratifications are required, including three Council of Europe member States",
+            "Five ratifications are required, including at least three Council of Europe member States",
             page,
         )
         self.assertIn(
