@@ -69,7 +69,7 @@ SOURCE_LABELS = {
     "coe-declarations": "CETS 225 declarations",
     "mfa-signing": "MFA signing account",
     "mfa-ratification": "MFA ratification statement",
-    "npc-decision": "NPC decision",
+    "xinhua-npc-decision": "Xinhua report on NPC decision",
     "mfa-progress-report": "MFA progress report",
     "mfa-31-july": "MFA 31 July account",
     "indonesia-founding-list": "Indonesia founding list",
@@ -686,11 +686,16 @@ def main() -> int:
 
     def org_short(inst: dict) -> str:
         labels = {"European Union": "EU", "African Union Commission": "AU Commission"}
-        return " + ".join(
-            labels.get(entry["party"], entry["party"])
-            for entry in entries(inst)
-            if entry["party"] in org_names
+        order = {"European Union": 0, "African Union Commission": 1}
+        parties = sorted(
+            (
+                entry["party"]
+                for entry in entries(inst)
+                if entry["party"] in org_names
+            ),
+            key=lambda party: (order.get(party, 99), party),
         )
+        return " + ".join(labels.get(party, party) for party in parties)
 
     _, by_name, by_iso = load_geo()
 
@@ -935,10 +940,13 @@ def main() -> int:
         default = "endorsed" if "endorsed" in status.values() else "signed"
         party_html = render_party_list(inst, default)
         about_html = render_instrument_about(inst)
+        official_title = (inst.get("title") or {}).get("official") or ""
         figure = (
             f'<figure class="map-card">'
             f'<figcaption><span class="map-title">{esc(title)}</span>'
-            f'<span class="map-sub">{esc(sub)}</span></figcaption>'
+            f'<span class="map-sub">{esc(sub)}</span>'
+            f'<span class="map-full-title">{esc(official_title)}</span>'
+            f'</figcaption>'
             f"{org_html}"
             f"{render_map(kind, title, description, status, legend=legend, legend_note=legend_note)}"
             f"{party_html}"
@@ -979,7 +987,7 @@ def main() -> int:
             paris,
             "paris",
             "Paris 2025",
-            f"{len(paris_states)} States",
+            f"{len(paris_states)} States + {org_short(paris)}",
             f"World map. Medium blue: {len(paris_states)} States that endorsed the Paris Statement. Sand: States with no recorded endorsement.",
             paris_status,
             paris_org_notes,
@@ -1112,36 +1120,36 @@ def main() -> int:
 
     cards = [
         (
-            "Washington",
-            "Market-led model · political coalition",
-            "Pax Silica Declaration",
-            f"{reported_total(pax)} signatories · {len(pax_states)} States + {org_short(pax)}",
-            f"The 2025 US-led declaration on secure AI and technology supply chains. It is non-binding and creates no treaty obligation. The United States also convened the 2023 military declaration ({len(military_states)} endorsers) and signed CETS 225, Bletchley and Seoul, but did not endorse Paris.",
-            PAX_ID,
+            "Reading 1 · Regulatory model",
+            "Ideal types, not legal blocs",
+            "Market, state, rights",
+            "US · China · EU",
+            "Comparative work distinguishes a US market-driven model, a Chinese state-led model and an EU rights-based model. These are analytical models of regulatory approach, not legal classifications of States or treaty membership. "
+            '<a href="https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.13444" target="_blank" rel="noopener">Mokry &amp; Gurol, <em>Global Policy</em>, 2024</a>; Bradford, <em>Digital Empires</em>, 2023.',
         ),
         (
-            "Beijing",
-            "State-led model · constituent treaty",
-            "WAICO Establishment Agreement",
-            f"{reported_total(waico)} reported founding members · {force_phrase(waico)}",
-            "The 2026 treaty establishing the World AI Cooperation Organization, headquartered in Shanghai. It is one of the corpus's AI-specific treaties and is limited to the civilian domain. China's 2023 Global AI Governance Initiative remains the policy line; China endorsed Bletchley and Paris but did not sign CETS 225 or the military declaration.",
-            WAICO_ID,
+            "Reading 2 · Institutional vehicle",
+            "Regime complex, no focal institution",
+            "No focal institution",
+            "Pax · WAICO · CETS",
+            f"Regime-complex research finds no central regulatory institution, only partially overlapping arrangements. A 2026 CSIS report describes three institutional visions: US-led <a href=\"{esc(record_url(by_id[PAX_ID]))}\" target=\"_blank\" rel=\"noopener\">Pax Silica</a>, the UN Global Dialogue on AI Governance and China-led <a href=\"{esc(record_url(by_id[WAICO_ID]))}\" target=\"_blank\" rel=\"noopener\">WAICO</a>. The legal records add the detail: Pax Silica has {reported_total(pax)} signatories, WAICO reports {reported_total(waico)} founding members ({len(waico_states)} identified), and <a href=\"{esc(record_url(by_id[CETS_ID]))}\" target=\"_blank\" rel=\"noopener\">CETS 225</a> has {len(cets_entries)} signatures and {len(cets_ratifications)} ratifications. "
+            '<a href="https://academic.oup.com/isagsq/article/6/4/ksag145/8993928" target="_blank" rel="noopener">Geith, Lundgren &amp; Tallberg, <em>Global Studies Quarterly</em>, 2026</a>; <a href="https://www.csis.org/analysis/state-ai-global-governance-and-its-implications-us-china-summit" target="_blank" rel="noopener">CSIS, 2026</a>.',
         ),
         (
-            "Brussels / Strasbourg",
-            "Rights-based model · treaty and regulation",
-            "Council of Europe Framework Convention on AI (CETS 225)",
-            f"{len(cets_entries)} signatures · {len(cets_ratifications)} ratifications",
-            f"One of {number_word(ai_count)} AI-specific treaties, binding once in force. The EU has signed and ratified; not all EU member States are individual signatories. The EU AI Act is the separate supranational layer.",
-            CETS_ID,
+            "Reading 3 · Diplomatic coalition",
+            "A 2026 reading, not a legal status",
+            "Commons, club, diffusion",
+            "UN · US · China–Global South",
+            "Tiberghien describes three competing approaches: a UN-led global commons, a US-led securitised club good and a China–Global South diffusion model. This is an analysis of diplomacy in 2026, not a legal classification; the same States appear in several vehicles. "
+            '<a href="https://eastasiaforum.org/2026/10/22/three-competing-approaches-to-global-ai-governance/" target="_blank" rel="noopener">Tiberghien, <em>East Asia Forum</em>, 2026</a>.',
         ),
     ]
     cards_html = "".join(
         f'<article class="pole"><p class="pole-place">{esc(place)}</p>'
         f'<p class="pole-tag">{esc(tag)}</p>'
-        f'<h3><a href="{esc(record_url(by_id[iid]))}" target="_blank" rel="noopener">{esc(title)}</a></h3>'
-        f'<p class="pole-metric">{esc(metric)}</p><p class="pole-note">{esc(note)}</p></article>'
-        for place, tag, title, metric, note, iid in cards
+        f'<h3>{esc(title)}</h3>'
+        f'<p class="pole-metric">{esc(metric)}</p><p class="pole-note">{note}</p></article>'
+        for place, tag, title, metric, note in cards
     )
 
     ai_note = (
@@ -1168,7 +1176,7 @@ def main() -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI Law Atlas</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI law.">
-<link rel="stylesheet" href="assets/style.css?v=8">
+<link rel="stylesheet" href="assets/style.css?v=9">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -1180,7 +1188,7 @@ def main() -> int:
     <nav class="toc" aria-label="Sections">
       <a href="#overview">Overview</a>
       <a href="#binding">Binding or not</a>
-      <a href="#poles">Three poles?</a>
+      <a href="#poles">Three readings</a>
       <a href="#maps">Maps</a>
       <a href="#timeline">Timeline</a>
       <a href="#catalogue">Catalogue</a>
@@ -1232,31 +1240,31 @@ def main() -> int:
 
   <section id="poles" class="section section-dark">
     <div class="wrap">
-      <p class="eyebrow">02 · Three poles?</p>
-      <h2>Three poles?</h2>
-      <p class="lede">The three-pole image is a shorthand from policy analysis, not a finding of this corpus. It was a working hypothesis, and the legal record does not support reading it as three blocs. International law classifies the act and the party; it does not classify States into poles.</p>
+      <p class="eyebrow">02 · Three readings</p>
+      <h2>Three poles, or three readings?</h2>
+      <p class="lede">The “three poles” image is a question, not a finding. It can mean three regulatory models, three institutional vehicles or three diplomatic coalitions. Those are different axes, and they do not produce the same map. The corpus can settle only the legal-participation question: which act, by which party.</p>
       <div class="poles">{cards_html}</div>
       <div class="frame-note">
-        <h3>The frame, not a legal category</h3>
-        <p>“Poles” and “blocs” are terms of political analysis. International law asks which act — treaty, political commitment, resolution, recommendation — and which party — State or international organisation. The literature does not converge on a fixed number:</p>
+        <h3>What the record adds</h3>
+        <p>The three readings overlap, but they are not interchangeable. The legal record shows what a pole count obscures:</p>
         <ul>
-          <li><strong>Regime complexity.</strong> The AI governance landscape has no focal institution and low hierarchy: the United States, China and the EU pursue competing preferences through overlapping institutions, producing fragmentation rather than a tripolar legal order (<a href="https://academic.oup.com/isagsq/article/6/4/ksag145/8993928" target="_blank" rel="noopener">Geith, Lundgren &amp; Tallberg, <em>Global Studies Quarterly</em>, 2026</a>).</li>
-          <li><strong>Three models, not three alliances.</strong> Comparative policy analysis describes an American market-driven model, a Chinese state-driven model and a European rights-driven model, but treats them as ideal types, not legal blocs (<a href="https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.13444" target="_blank" rel="noopener">Mokry, <em>Global Policy</em>, 2024</a>; Bradford, <em>Digital Empires</em>, 2023).</li>
-          <li><strong>The number depends on the axis.</strong> Policy analysis in 2026 describes two consolidating architectures (<a href="{record_url(by_id[PAX_ID])}" target="_blank" rel="noopener">US-led Pax Silica</a>, <a href="{record_url(by_id[WAICO_ID])}" target="_blank" rel="noopener">China-led WAICO</a>) plus a UN track without capacity, and notes that many States join multiple frameworks (<a href="https://www.csis.org/analysis/state-ai-global-governance-and-its-implications-us-china-summit" target="_blank" rel="noopener">CSIS, 2026</a>). On a forum axis, the triad is UN commons / US club / China–Global South diffusion (<a href="https://eastasiaforum.org/2026/10/22/three-competing-approaches-to-global-ai-governance" target="_blank" rel="noopener">Tiberghien, <em>East Asia Forum</em>, 2026</a>).</li>
+          <li><strong>No universal membership.</strong> CETS 225 has {len(cets_entries)} signatures and {len(cets_ratifications)} ratifications. WAICO reports {reported_total(waico)} founding members, of which {len(waico_states)} are individually identified. Pax Silica has {reported_total(pax)} signatories. None is a universal regime.</li>
+          <li><strong>Overlapping participation.</strong> Kazakhstan endorsed Paris and signed both Pax Silica and WAICO. The United States signed CETS 225 and Pax Silica, endorsed Bletchley, Seoul and the military declaration, but did not endorse Paris. A State can therefore be inside several vehicles at once, and outside others.</li>
+          <li><strong>The Paris list cuts across the models.</strong> {len(paris_states)} States, the European Union and the African Union Commission endorsed it; China and India are in, the United States and the United Kingdom are out. It is the widest political list among the seven mapped instruments, and it creates no legal obligation.</li>
         </ul>
-        <p class="note">The number of poles therefore depends on the axis chosen: regulatory model, institutional vehicle or diplomatic coalition. The record below tests the metaphor against the legal acts.</p>
+        <p class="note"><strong>Analytical sources.</strong> Johannes Geith, Magnus Lundgren and Jonas Tallberg, “The Emerging Regime Complex for Artificial Intelligence”, <em>Global Studies Quarterly</em> 6(4) (2026), <a href="https://academic.oup.com/isagsq/article/6/4/ksag145/8993928" target="_blank" rel="noopener">article</a>; Sabine Mokry and Julia Gurol, “Competing ambitions regarding the global governance of artificial intelligence: China, the US, and the EU”, <em>Global Policy</em> 15(5) (2024), <a href="https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.13444" target="_blank" rel="noopener">article</a>; Anu Bradford, <em>Digital Empires: The Global Battle to Regulate Technology</em> (Oxford University Press, 2023); Christopher Collins and Aalok Mehta, “The State of AI Global Governance and Its Implications for the U.S.-China Summit”, CSIS, 21 September 2026, <a href="https://www.csis.org/analysis/state-ai-global-governance-and-its-implications-us-china-summit" target="_blank" rel="noopener">report</a>; Yves Tiberghien, “Three competing approaches to global AI governance”, <em>East Asia Forum</em>, 22 October 2026, <a href="https://eastasiaforum.org/2026/10/22/three-competing-approaches-to-global-ai-governance/" target="_blank" rel="noopener">article</a>. Participation claims come from the records, not from this literature.</p>
       </div>
       <div class="paris-band">
         <div>
           <p class="eyebrow">Cross-cutting</p>
-          <h3>Paris 2025: China and India endorsed; the United States and the United Kingdom did not</h3>
-          <p>The Paris Statement is endorsed by {len(paris_states)} States, the European Union and the African Union Commission. It is the broadest instrument in the corpus. Its list cuts across the US–China axis: China and India are in, the United States and the United Kingdom are out. That is a political alignment, not a legal bloc.</p>
+          <h3>Paris 2025: China and India in, the United States and the United Kingdom out</h3>
+          <p>The Paris Statement is endorsed by {len(paris_states)} States, the European Union and the African Union Commission. That is the widest State-level list among the seven mapped instruments, and it cuts across the regulatory models: China and India endorsed; the United States and the United Kingdom did not. The alignment is political, not legal.</p>
         </div>
         <p class="paris-metric">{len(paris_states)}<span>endorsing States</span></p>
       </div>
-      <p class="note">Participation differs by instrument. The United States and the United Kingdom signed CETS 225 without ratifying it, but did not endorse Paris. China and India endorsed Paris and Bletchley, but did not sign CETS 225 or the military declaration. France and Germany endorsed Paris and the military declaration, but are not recorded as individual signatories of CETS 225. Kazakhstan endorsed Paris and signed both Pax Silica and the WAICO Agreement; Brazil and South Africa signed WAICO but not Pax Silica; India and Japan signed Pax Silica but not WAICO. Political alignment does not map onto treaty participation.</p>
+      <p class="note">Participation differs by instrument. The United States and the United Kingdom signed CETS 225 without ratifying it, but did not endorse Paris. China and India endorsed Paris and Bletchley, but did not sign CETS 225 or the military declaration. France and Germany endorsed Paris and the military declaration, but are not recorded as individual signatories of CETS 225. Kazakhstan endorsed Paris and signed both Pax Silica and WAICO; Brazil and South Africa signed WAICO but not Pax Silica; India and Japan signed Pax Silica but not WAICO. Political alignment does not map onto treaty participation.</p>
       <p class="note">Note on Paris: the Élysée page lists {reported_total(paris)} endorsers; the 19 February 2025 PDF lists 64; a contemporaneous Canadian release listed 60, including South Africa, the United Arab Emirates and the Holy See. The map follows the current Élysée list, which does not include South Africa; the discrepancy is recorded in the Paris record.</p>
-      <p class="takeaway"><strong>What follows legally.</strong> There is no single legal order to join or leave. A State can endorse a political declaration, sign a treaty, ratify it or join a military declaration independently, and the same State can sit in different camps on different instruments: Kazakhstan endorsed Paris and signed both Pax Silica and the WAICO Agreement. The three-pole image describes regulatory competition; it does not describe legal blocs.</p>
+      <p class="takeaway"><strong>What follows legally.</strong> There is no single legal order to join or leave. A State can endorse a political declaration, sign a treaty, ratify it or join a military declaration independently, and the same State can sit in different camps on different instruments. The three-pole image describes regulatory competition; it does not describe legal blocs. The records here establish the acts; the three readings are aids to interpretation, not legal categories.</p>
     </div>
   </section>
 

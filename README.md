@@ -116,7 +116,7 @@ python3 tools/acquire.py                  # fetch missing originals, never overw
 
 ## Human-readable atlas (GitHub Pages)
 
-The generated page is a consultable public catalogue: counts, seven maps with the recorded parties listed under each map, a chronology, a three-pole heuristic checked against the legal record, and a filterable catalogue. Each map also carries a “What it is” panel with the instrument’s description, dates, history and links to its official sources, all read from the record. It is built from the same records, with no editorial database of its own. The membership lists used by the maps are in `data/organisations.json`, with the official EU and AU sources and access dates; the page does not hold a separate dataset.
+The generated page is a consultable public catalogue: counts, seven maps with the recorded parties listed under each map, a chronology, three readings of the “three poles” image checked against the legal record, and a filterable catalogue. Each map also carries a “What it is” panel with the instrument’s description, dates, history and links to its official sources, all read from the record. It is built from the same records, with no editorial database of its own. The membership lists used by the maps are in `data/organisations.json`, with the official EU and AU sources and access dates; the page does not hold a separate dataset.
 
 ```bash
 make site        # validates, builds and regenerates site/index.html
@@ -124,7 +124,7 @@ make site        # validates, builds and regenerates site/index.html
 
 The static output lives in `site/`; run `make site` to generate `site/index.html` locally, or publish it with the workflow in `.github/workflows/pages.yml`. The generated HTML is not tracked, so a fresh clone rebuilds it from the records. Pages is already enabled with **Settings → Pages → Source: GitHub Actions**; the workflow publishes on push to `main`. After the workflow runs, the page is served at `https://avvohacker.github.io/international-ai-law-corpus/`. The workflow rebuilds the catalogue and the atlas before uploading, so the published page cannot silently drift from the records.
 
-The maps use Natural Earth 1:110m Admin 0 Countries (public domain) and the membership lists in `data/organisations.json`. No State names are drawn inside the maps. An international organisation that is a party is named below the map title, outside the map frame; its member States are shown in a lighter tone only where they did not act individually. The analytical labels “Washington / Beijing / Brussels–Strasbourg” are explicitly a reading of the record set, not a legal classification; the page says so.
+The maps use Natural Earth 1:110m Admin 0 Countries (public domain) and the membership lists in `data/organisations.json`. No State names are drawn inside the maps. An international organisation that is a party is named below the map title, outside the map frame; its member States are shown in a lighter tone only where they did not act individually. The analytical section separates regulatory models, institutional vehicles and diplomatic coalitions; it treats them as readings of the record set, not as legal classifications. The page says so.
 
 ## Verification levels
 

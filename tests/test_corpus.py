@@ -434,6 +434,20 @@ class TestBuild(unittest.TestCase):
                 "Seoul 2024",
             ],
         )
+        instruments = corpuslib.load_instruments()
+        for title, iid in (
+            ("Paris 2025", "paris-ai-action-summit-statement-2025"),
+            ("Bletchley 2023", "bletchley-declaration-2023"),
+            ("Seoul 2024", "seoul-declaration-2024"),
+            ("Military AI 2023", "political-declaration-military-ai-2023"),
+            ("CETS 225", "coe-cets-225"),
+            ("WAICO 2026", "waico-establishment-agreement-2026"),
+            ("Pax Silica 2025", "pax-silica-declaration-2025"),
+        ):
+            official = html.escape(instruments[iid]["title"]["official"])
+            self.assertIn(
+                f'<span class="map-full-title">{official}</span>', page, title
+            )
 
     def test_organisation_membership_is_complete_and_resolves(self) -> None:
         import build_site
@@ -614,6 +628,14 @@ class TestBuild(unittest.TestCase):
         )
         self.assertIn(f"{len(pax['parties']['entries'])} signatories", page)
         self.assertIn(f"{len(paris['parties']['entries'])} endorsers", page)
+        paris_states = [
+            entry
+            for entry in paris["parties"]["entries"]
+            if entry["party"] not in {"European Union", "African Union Commission"}
+        ]
+        self.assertIn(
+            f"{len(paris_states)} States + EU + AU Commission", page
+        )
         bletchley_states = [
             entry
             for entry in bletchley["parties"]["entries"]

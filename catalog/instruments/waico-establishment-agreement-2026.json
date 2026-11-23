@@ -42,14 +42,14 @@
     "verified_on": "2026-11-23",
     "notes": "Signed at the Shanghai ceremony on 16 July 2026. The Agreement was open for signature from 1 May to 31 July 2026. China's National People's Congress Standing Committee approved ratification on 6 November 2026; the deposit of the instrument of ratification and any depositary notification of entry into force were not verified. Article 18 designates the Government of the People's Republic of China as depositary; no public depositary status table or notification was located."
   },
-  "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no deposited instrument was verified, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight additional States on 30–31 July 2026. The 38th member is not named in the primary record; the discrepancy is recorded, not resolved. The Government of China is the depositary under Article 18; no public depositary register or notification of a deposited ratification was located.",
+  "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no deposited instrument was verified, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. The discrepancy is recorded, not resolved. The Government of China is the depositary under Article 18; no public depositary register or notification of a deposited ratification was located.",
   "parties": {
     "as_of": "2026-11-23",
-    "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight additional States on 30–31 July 2026. China's NPC approved ratification on 6 November 2026, but no deposit was verified. The identity of the 38th reported founding member is not stated in the official sources located.",
+    "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. China's NPC approved ratification on 6 November 2026, but no deposit was verified.",
     "source_ids": [
       "mfa-signing",
       "mfa-ratification",
-      "npc-decision",
+      "xinhua-npc-decision",
       "mfa-progress-report",
       "mfa-31-july",
       "indonesia-founding-list"
@@ -109,7 +109,7 @@
     "notifications": [],
     "withdrawals": [],
     "unknowns": [
-      "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The 38th member is not named in the MFA statements, the October 2026 MFA progress report or the Indonesian government's list of the 29 initial signatories.",
+      "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The October 2026 progress report says nine States joined after the initial 29; eight are named in the 31 July account, so one of the nine - the 38th member - is not named in the MFA statements, the progress report or the Indonesian government's list of the 29 initial signatories.",
       "China is the depositary under Article 18. No public depositary register, status table or notification of signatures, ratifications or entry into force was located in the Chinese treaty database or MFA pages. The count of deposited ratifications is therefore 0, notwithstanding China's national approval on 6 November 2026.",
       "The Agreement remains open to accession after 31 July 2026 (Article 14(3)); later accessions are not Founding Members and are not included in this list.",
       "The exact date on which the MFA's 38-country count was reached is not stated; the October 2026 progress report already gives 38."
@@ -142,14 +142,14 @@
       "note": "Spokesperson Guo Jiakun, 9 November 2026: 38 countries became founding members; China was the first to approve the Agreement. The statement does not list the 38."
     },
     {
-      "id": "npc-decision",
-      "url": "https://www.npc.gov.cn/npc/c2/c30834/202611/t20261106_458551.html",
-      "publisher": "National People's Congress of the People's Republic of China",
-      "kind": "official_primary",
+      "id": "xinhua-npc-decision",
+      "url": "https://english.news.cn/20261106/2f56df42479942b48aa006bc3ce67200/c.html",
+      "publisher": "Xinhua News Agency",
+      "kind": "official_secondary",
       "accessed": "2026-11-23",
       "http_status": 200,
-      "language": "zh",
-      "note": "Decision of the Standing Committee of the 14th National People's Congress, 6 November 2026, approving the Agreement signed in Shanghai on 16 July 2026. This is a national approval decision, not a depositary record of ratification."
+      "language": "en",
+      "note": "Xinhua report of 6 November 2026 on the closing meeting of the 25th session of the 14th NPC Standing Committee, which voted to ratify the Agreement on establishing WAICO. The NPC's own page could not be opened because its TLS configuration is unsupported by current browsers; this official report is used for the date and decision, and is not a depositary record of ratification."
     },
     {
       "id": "mfa-progress-report",
@@ -159,7 +159,7 @@
       "accessed": "2026-11-23",
       "http_status": 200,
       "language": "zh",
-      "note": "October 2026 progress report on the AI Capacity-Building Plan. States that 29 States signed at the 16 July ceremony and that 'Brunei, Vietnam, Georgia, Tanzania and other 9 countries' later signed, bringing the total to 38. It does not name all nine."
+      "note": "October 2026 progress report on the AI Capacity-Building Plan. States that 29 States signed at the 16 July ceremony and that nine more, including Brunei, Vietnam, Georgia and Tanzania, later signed, bringing the total to 38. It names only four of the nine. The 31 July MFA account names eight of them; one of the nine remains unnamed."
     },
     {
       "id": "mfa-31-july",
@@ -207,7 +207,7 @@
       },
       {
         "check": "Founding membership checked against the Indonesian government list and the MFA's later statements.",
-        "result": "29 initial signatories are individually identified; eight additional signatories are named in the 31 July 2026 MFA account. The MFA reports 38 founding members, leaving one unnamed.",
+        "result": "29 initial signatories are individually identified; the October 2026 progress report says nine more signed, and the 31 July 2026 MFA account names eight of them. The MFA reports 38 founding members, leaving one of the nine later signatories unnamed.",
         "date": "2026-11-23"
       },
       {
