@@ -1,0 +1,148 @@
+{
+  "id": "us-eu-ttc-ai-safety-dialogue-2024",
+  "title": {
+    "official": "Joint Statement EU-US Trade and Technology Council of 4-5 April 2024 in Leuven, Belgium",
+    "short": "U.S.–EU TTC AI Safety Dialogue"
+  },
+  "category": "non_binding_instrument",
+  "instrument_type": "joint_statement",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [
+    {
+      "name": "European Union",
+      "role": "co_issuer",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_24_1828"
+    },
+    {
+      "name": "United States of America",
+      "role": "co_issuer",
+      "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases/2024/april/us-eu-joint-statement-trade-and-technology-council"
+    }
+  ],
+  "relevance": {
+    "reason": "The AI section of the sixth U.S.–EU Trade and Technology Council joint statement records a political commitment by the European AI Office and the U.S. AI Safety Institute to establish a Dialogue for scientific information exchange on benchmarks, potential risks and future technological trends. It is not a standalone US–EU AI-safety MOU, administrative arrangement or treaty; no separate terms of reference or binding text was located. The record catalogues the joint statement because it is the primary source of the commitment.",
+    "ai_provisions": [
+      "The parties reaffirm a risk-based approach to AI and coordination in the G7, OECD, G20, Council of Europe and UN processes.",
+      "Leaders from the European AI Office and the U.S. AI Safety Institute briefed one another on their approaches and mandates.",
+      "The two institutions 'committed to establishing a Dialogue' to deepen collaboration and foster scientific information exchange on benchmarks, potential risks and future technological trends.",
+      "The cooperation is linked to the Joint Roadmap on Evaluation and Measurement Tools for Trustworthy AI and Risk Management and to interoperable international standards.",
+      "The parties encourage advanced AI developers to apply the Hiroshima Process International Code of Conduct."
+    ],
+    "excluded_scope": "The joint statement is broad — trade, technology, standards, economic security and human rights. Only the AI-related commitments are catalogued. There is no standalone AI-safety agreement, MOU, administrative arrangement, binding obligation, ratification or dispute settlement."
+  },
+  "dates": {
+    "adopted": "2024-04-05",
+    "published": "2024-04-05",
+    "verified_on": "2026-11-23",
+    "notes": "Sixth ministerial meeting of the U.S.–EU Trade and Technology Council, Leuven, 4–5 April 2024; the joint statement was published on 5 April 2024. The first technical Dialogue under the commitment was held on 11 July 2024."
+  },
+  "status_note": "Political joint statement, not a treaty. The AI-safety commitment is the establishment of a Dialogue between the European AI Office and the U.S. AI Safety Institute. No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located. The separate U.S.–EU Administrative Arrangement on AI and computing is a research-cooperation instrument, not an AI-safety agreement. The joint statement creates no binding obligations, ratification, depositary or dispute settlement.",
+  "languages": {
+    "authentic": ["en"],
+    "translations": [],
+    "note": "English versions published by the European Commission and the U.S. Trade Representative were read. Other language versions were not checked; there is no authentic-language clause because the instrument is not a treaty."
+  },
+  "sources": [
+    {
+      "id": "ec-ttc-joint-statement",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_24_1828",
+      "publisher": "European Commission",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official joint statement, 5 April 2024. The AI section was read; it contains the commitment to establish a Dialogue between the European AI Office and the U.S. AI Safety Institute."
+    },
+    {
+      "id": "ustr-ttc-joint-statement",
+      "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases/2024/april/us-eu-joint-statement-trade-and-technology-council",
+      "publisher": "Office of the United States Trade Representative",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official US version of the same joint statement; the AI section was cross-checked against the European Commission version."
+    },
+    {
+      "id": "nist-technical-dialogue",
+      "url": "https://www.nist.gov/news-events/news/2024/07/us-ai-safety-institute-and-european-ai-office-hold-technical-dialogue",
+      "publisher": "National Institute of Standards and Technology (United States)",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official NIST announcement, 12 July 2024: the first U.S. AI Safety Institute–European AI Office technical dialogue was held on 11 July 2024."
+    },
+    {
+      "id": "eu-technical-dialogue",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/us-ai-safety-institute-and-european-ai-office-technical-dialogue",
+      "publisher": "European Commission, Shaping Europe’s digital future",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official European Commission announcement of the 11 July 2024 technical dialogue and its initial topics."
+    }
+  ],
+  "rights": {
+    "status": "public_official_text",
+    "licence": "European Commission reuse policy; U.S. Government work",
+    "note": "Official publications; metadata only in this corpus. Reusers should consult the European Commission and USTR terms. No full text is stored."
+  },
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {
+        "check": "European Commission and USTR joint statements opened and read.",
+        "result": "The AI section records the European AI Office and U.S. AI Safety Institute commitment to establish a Dialogue for scientific information exchange; no standalone agreement or binding text.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "First technical dialogue checked on NIST and European Commission pages.",
+        "result": "The dialogue was held on 11 July 2024; initial topics included watermarking and content authentication, government compute infrastructure and AI for societal good.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Legal nature checked from the official text.",
+        "result": "Political joint statement; the institutions 'committed to establishing a Dialogue'; no ratification, depositary, dispute settlement, monitoring or enforcement.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Search for a standalone US–EU AI-safety instrument.",
+        "result": "No standalone MOU, administrative arrangement or terms of reference was located on the European Commission, USTR, NIST or Commerce pages. The Administrative Arrangement on AI and computing is a separate research-cooperation instrument.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Metadata verified from the official joint statement and official technical-dialogue pages. The record deliberately does not call the commitment an MOU or an administrative arrangement."
+  },
+  "related": [
+    {
+      "id": "us-uk-ai-safety-mou-2024",
+      "relation": "related",
+      "note": "Parallel transatlantic AI-safety cooperation in 2024; the UK–US instrument is an MOU, while the US–EU side is a political dialogue commitment."
+    },
+    {
+      "id": "bletchley-declaration-2023",
+      "relation": "related",
+      "note": "The TTC statement places the AI-safety dialogue in the wider international AI-safety process."
+    },
+    {
+      "id": "oecd-ai-recommendation-2019",
+      "relation": "related",
+      "note": "The joint statement refers to coordinating contributions to the OECD, among other multilateral fora."
+    }
+  ],
+  "gaps": [
+    "No standalone US–EU AI-safety agreement, MOU, administrative arrangement or terms of reference was located.",
+    "The AI-safety commitment is one section of a broad TTC joint statement covering many non-AI issues; only the AI section was analysed.",
+    "The joint statement creates no binding obligations, ratification, depositary, monitoring, reporting or dispute settlement.",
+    "Current status after the 2025 changes in US AI institutions was not verified on a later official source.",
+    "Only the English versions were read; other language versions were not checked.",
+    "The separate U.S.–EU Administrative Arrangement on AI and computing is not catalogued as an AI-safety agreement."
+  ],
+  "provenance": {
+    "discovered_via": "European Commission and USTR TTC pages; NIST and European Commission technical-dialogue pages.",
+    "search_dates": ["2026-11-23"]
+  }
+}

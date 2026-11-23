@@ -2,15 +2,15 @@
   "binding_status": "binding",
   "category": "general_treaty",
   "dates": {
-    "adopted": "1969-05-23",
+    "adopted": "1969-05-22",
     "entered_into_force": "1980-01-27",
-    "notes": "Adopted at Vienna on 23 May 1969 (A/CONF.39/27); entered into force 27 January 1980.",
+    "notes": "Adopted at Vienna on 22 May 1969 and opened for signature on 23 May 1969 (A/CONF.39/27); entered into force 27 January 1980.",
     "opened_for_signature": "1969-05-23",
     "verified_on": "2026-11-23"
   },
   "gaps": [
     "Not AI-specific.",
-    "Metadata not re-verified on the official page.",
+    "Party list, reservations and declarations are not captured in structured form.",
     "The Convention's application to treaties concluded by international organisations is governed by the 1986 Vienna Convention, not analysed here.",
     "No analysis of specific interpretive disputes."
   ],
@@ -35,18 +35,18 @@
     "translations": []
   },
   "parties": {
-    "as_of": "2026-11-23",
+    "as_of": "2026-11-02",
     "declarations": [],
     "entries": [],
     "notifications": [],
     "objections": [],
-    "ratifications_total": null,
+    "ratifications_total": 119,
     "reservations": [],
-    "signatories_total": null,
+    "signatories_total": 45,
     "source_ids": [
       "un-treaty-collection"
     ],
-    "summary": "Party-by-party signature, ratification and reservation data were not captured in this cycle. The UN Treaty Collection is the authoritative register.",
+    "summary": "UN Treaty Collection status at 2 November 2026: 45 signatories and 119 parties. Party-by-party entries and reservations were not captured in structured form.",
     "unknowns": [
       "Party list, reservations and declarations were not captured."
     ],
@@ -85,10 +85,10 @@
   "sources": [
     {
       "accessed": "2026-11-23",
-      "http_status": null,
+      "http_status": 200,
       "id": "un-treaty-collection",
       "kind": "registry",
-      "note": "Official UN Treaty Collection record. Metadata recorded from established reference; page not re-read in this session.",
+      "note": "Official UN Treaty Collection record, status as at 2 November 2026; read on 23 November 2026.",
       "publisher": "United Nations Treaty Collection",
       "url": "https://treaties.un.org/Pages/ViewDetailsIII.aspx?src=TREATY&mtdsg_no=XXIII-1&chapter=23&Temp=mtdsg3&clang=_en"
     }
@@ -102,12 +102,12 @@
   "verification": {
     "checks": [
       {
-        "check": "Official UN Treaty Collection URL recorded; dates and authentic-language clause taken from the established treaty record, not re-read in this session.",
+        "check": "Official UN Treaty Collection page read for adoption, opening for signature, entry into force and status.",
         "date": "2026-11-23",
-        "result": "Metadata not independently re-verified; source located."
+        "result": "Adopted 22 May 1969; opened for signature 23 May 1969; entered into force 27 January 1980; status at 2 November 2026: 45 signatories and 119 parties."
       }
     ],
-    "level": "source_located",
-    "notes": "Included as a general-treaty selection because it supplies the interpretive framework for AI treaties. Not an AI-specific instrument."
+    "level": "metadata_verified",
+    "notes": "Included as a general-treaty selection because it supplies the interpretive framework for AI treaties. Not an AI-specific instrument. Party-by-party reservations remain uncaptured."
   }
 }

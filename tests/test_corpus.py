@@ -106,6 +106,47 @@ class TestCatalogue(unittest.TestCase):
         self.assertIn("international institution to govern AI", body)
         self.assertIn("prudent and responsible attitude", body)
 
+    def test_us_uk_ai_safety_mou_record(self) -> None:
+        inst = read_instrument("us-uk-ai-safety-mou-2024")
+        self.assertEqual(inst["instrument_type"], "mou")
+        self.assertEqual(inst["binding_status"], "non_binding")
+        self.assertEqual(inst["dates"]["signed"], "2024-04-01")
+        self.assertEqual(inst["verification"]["level"], "metadata_verified")
+        self.assertNotIn("text", inst)
+        self.assertIn("not a treaty", inst["status_note"])
+        source_ids = {source["id"] for source in inst["sources"]}
+        self.assertIn("govuk-mou-summary", source_ids)
+        self.assertIn("govuk-press-release", source_ids)
+        self.assertEqual(inst["parties"]["signatories_total"], 2)
+
+    def test_us_eu_ttc_ai_safety_dialogue_record(self) -> None:
+        inst = read_instrument("us-eu-ttc-ai-safety-dialogue-2024")
+        self.assertEqual(inst["instrument_type"], "joint_statement")
+        self.assertEqual(inst["binding_status"], "non_binding")
+        self.assertEqual(inst["dates"]["adopted"], "2024-04-05")
+        self.assertEqual(inst["verification"]["level"], "metadata_verified")
+        self.assertNotIn("text", inst)
+        self.assertIn("not a treaty", inst["status_note"])
+        self.assertIn("No standalone", inst["status_note"])
+        provisions = " ".join(inst["relevance"]["ai_provisions"])
+        self.assertIn("committed to establishing a Dialogue", provisions)
+        source_ids = {source["id"] for source in inst["sources"]}
+        self.assertIn("ec-ttc-joint-statement", source_ids)
+        self.assertIn("ustr-ttc-joint-statement", source_ids)
+
+    def test_candidate_register_counts(self) -> None:
+        entries = json.loads((ROOT / "catalog" / "candidates.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(entries), 20)
+        decisions = {"included": 0, "pending": 0, "excluded": 0}
+        instruments = corpuslib.load_instruments()
+        for entry in entries:
+            decisions[entry["decision"]] += 1
+            if entry["decision"] == "included":
+                self.assertIn(entry["instrument_id"], instruments)
+            else:
+                self.assertIsNone(entry["instrument_id"])
+        self.assertEqual(decisions, {"included": 6, "pending": 7, "excluded": 7})
+
     def test_pact_units_are_citable(self) -> None:
         units = corpuslib.load_units("un-ga-res-79-1")
         self.assertEqual(len(units), 248)

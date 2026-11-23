@@ -10,7 +10,7 @@
   },
   "gaps": [
     "Not AI-specific.",
-    "Metadata not re-verified on the official page.",
+    "Party list, reservations, derogations and jurisprudence are not captured.",
     "Reservations, derogations and jurisprudence are not analysed.",
     "Only the treaty framework is recorded; interpretations by the Human Rights Committee are outside this record."
   ],
@@ -85,10 +85,10 @@
   "sources": [
     {
       "accessed": "2026-11-23",
-      "http_status": null,
+      "http_status": 200,
       "id": "ohchr",
       "kind": "official_primary",
-      "note": "Official OHCHR page for the Covenant, text and status. Metadata recorded from established reference; page not re-read in this session.",
+      "note": "Official OHCHR page for the Covenant, text and status; read on 23 November 2026.",
       "publisher": "OHCHR",
       "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
     }
@@ -102,12 +102,12 @@
   "verification": {
     "checks": [
       {
-        "check": "Official OHCHR URL recorded; adoption and entry-into-force dates and authentic-language clause taken from the established treaty record, not re-read in this session.",
+        "check": "Official OHCHR page read for adoption, entry into force and authentic languages.",
         "date": "2026-11-23",
-        "result": "Metadata not independently re-verified; source located."
+        "result": "Adopted 16 December 1966 by General Assembly resolution 2200A (XXI); entered into force 23 March 1976; Article 53 declares the Chinese, English, French, Russian and Spanish texts equally authentic."
       }
     ],
-    "level": "source_located",
-    "notes": "Included as a reasoned general-treaty selection, not as an AI-specific instrument. Verify article text and reservations on OHCHR before quoting."
+    "level": "metadata_verified",
+    "notes": "Included as a reasoned general-treaty selection, not as an AI-specific instrument. Party-level data and reservations remain uncaptured."
   }
 }

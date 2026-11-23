@@ -5,7 +5,7 @@ One JSON file per instrument, named `<id>.json`. The filename must equal the rec
 ## Field guide
 
 - `category`: one of the eight scope layers in `tools/corpuslib.py`.
-- `instrument_type`: treaty, agreement, resolution, declaration, standard, regulation, report, strategy, guidance, etc.
+- `instrument_type`: treaty, protocol, agreement, mou, joint_statement, declaration, resolution, recommendation, principles, code_of_conduct, commitment, strategy, report, guidance, standard, regulation, directive, draft, framework, terms_of_reference, decision.
 - `binding_status`: `binding`, `non_binding`, `mixed`, `unknown`. A declaration or resolution cannot be `binding` (validator error).
 - `status`: `in_force`, `not_in_force`, `adopted`, `open_for_signature`, `in_negotiation`, `withdrawn`, `superseded`, `unknown`.
 - `relevance.reason`: why the instrument is in the corpus; `relevance.ai_provisions`: the specific provisions or parts relied on.

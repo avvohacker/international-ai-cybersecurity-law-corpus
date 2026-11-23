@@ -31,10 +31,10 @@
     },
     "instrument_type": {
       "enum": [
-        "treaty", "protocol", "agreement", "mou", "declaration", "resolution",
-        "recommendation", "principles", "code_of_conduct", "strategy", "report",
-        "guidance", "standard", "regulation", "directive", "draft", "framework",
-        "terms_of_reference", "decision"
+        "treaty", "protocol", "agreement", "mou", "joint_statement", "declaration",
+        "resolution", "recommendation", "principles", "code_of_conduct", "commitment",
+        "strategy", "report", "guidance", "standard", "regulation", "directive",
+        "draft", "framework", "terms_of_reference", "decision"
       ]
     },
     "binding_status": {"enum": ["binding", "non_binding", "mixed", "unknown"]},

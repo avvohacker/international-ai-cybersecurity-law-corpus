@@ -17,8 +17,9 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 | NATO | 1 | revised AI strategy summary | full classified strategy unavailable |
 | ISO/IEC JTC 1/SC 42 | 5 | AI standards metadata | full standards paywalled; national adoptions |
 | Bilateral digital agreements | 4 | DEPA, SADEA, UKSDEA, KSDPA | other bilateral AI clauses and MOUs; depositary records |
+| Transatlantic AI safety | 2 | UK–US AI Safety MOU (2024); US–EU TTC AI-safety Dialogue commitment (2024) | full UK–US MOU unpublished; US–EU side is a political commitment, not a standalone agreement; no binding transatlantic AI-safety treaty |
 | Military AI initiatives | 4 | Political Declaration, two UNGA tracks, CCW GGE negotiation | no binding instrument; 2027–2028 negotiating text; REAIM outcomes |
-| General international law | 2 | ICCPR, VCLT | other general treaties (e.g. Geneva Conventions, Convention 108+) |
+| General international law | 2 | ICCPR, VCLT | UN Charter, UDHR, ECHR, Convention 108+ and other general instruments not catalogued; this is a scope limit, not a finding |
 | AI Action Summit (France–India) | 1 | Paris Statement (2025), 65 endorsers | endorser list inconsistent across official publications (60/64/65); no depositary or update log |
 | China (MFA) | 1 | Global AI Governance Initiative (2023) | unilateral; no formal adherence list; 2025 Action Plan not separately catalogued |
 
@@ -27,7 +28,7 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 | Region | Coverage | Gap assessment |
 |---|---|---|
 | Europe | Strongest: CETS 225, EU AI Act, CoE explanatory report, OECD, NATO | CoE party data captured; Council of Europe Recommendation CM/Rec(2020)1 pending |
-| North America | U.S. military declaration; general treaties; U.S. and Canada signed CETS 225 (not ratified) | U.S. did not endorse the Paris Statement; no U.S.–UK/US–EU AI-safety arrangement verified; no bilateral AI treaty |
+| North America | U.S. military declaration; general treaties; U.S. and Canada signed CETS 225 (not ratified); U.S.–UK MOU and U.S.–EU TTC AI-safety dialogue commitment | U.S. did not endorse the Paris Statement; the UK–US instrument is a non-binding MOU whose full text is unpublished; the US–EU commitment is political, not a standalone agreement; no bilateral AI treaty |
 | Latin America and Caribbean | Chile in DEPA; Brazil, Chile, Colombia, Peru and Uruguay endorsed the Paris Statement | no regional AI instrument verified; no bilateral Latin American AI agreement |
 | Africa | AU strategy; AfCFTA protocol; Kenya and Nigeria in AI declarations; many African States endorsed the Paris Statement | no AU AI treaty; AfCFTA not in force; ratification status secondary |
 | Asia-Pacific | DEPA, SADEA, UKSDEA, KSDPA, ASEAN Guide; China/India in Bletchley; China's initiative; China and India endorsed the Paris Statement | no regional binding AI treaty; many bilateral digital agreements not checked |
@@ -40,7 +41,7 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 |---|---:|---|
 | `ai_treaty` | 1 | CETS 225 only |
 | `agreement_ai_provisions` | 5 | all digital/trade; cooperative AI clauses |
-| `non_binding_instrument` | 21 | UN resolutions, declarations, strategies, codes; Paris Statement and China initiative |
+| `non_binding_instrument` | 23 | UN resolutions, declarations, strategies, codes; Paris Statement, China initiative, UK–US MOU and US–EU TTC dialogue commitment |
 | `preparatory_interpretive` | 2 | CETS explanatory report; EU GPAI Code |
 | `technical_standard` | 5 | ISO/IEC, metadata only |
 | `draft_negotiation` | 1 | CCW GGE on LAWS; no adopted instrument |
@@ -52,8 +53,8 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 | Level | Count |
 |---|---:|
 | `full_text_checked` | 10 |
-| `metadata_verified` | 26 |
-| `source_located` | 2 |
+| `metadata_verified` | 30 |
+| `source_located` | 0 |
 
 Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records whose text is stored and segmented but was not read end-to-end).
 
@@ -65,14 +66,16 @@ Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records
 4. **CETS 225 party data are captured** at 23 November 2026: 21 signatories and 2 ratifications (Bosnia and Herzegovina, 28 October 2026; EU, 15 May 2026). Declarations by the EU, Norway and Ukraine are reproduced; no reservations or objections are recorded. The treaty is not in force.
 5. **Languages.** Texts are stored in English only. French, Spanish and other official versions are recorded but not acquired; no translations were produced.
 6. **Standards.** All five ISO/IEC records are metadata-only because the standards are paywalled. No ITU-T or IEEE standard was verified.
-7. **National bilateral registries.** No systematic search of national treaty registries (for example the U.S. TIAS, UK treaty series or national gazettes) was completed.
+7. **National bilateral registries.** No systematic search of national treaty registries (for example the U.S. TIAS, UK treaty series or national gazettes) was completed. A targeted search of official UK, EU and US pages located the UK–US MOU summary and the US–EU TTC commitment, but not a full UK–US MOU text or a standalone US–EU AI-safety agreement.
 8. **Latin America, the Middle East and Central Asia** have no verified regional AI instrument in this cycle.
 9. **The candidate exclusions** for WTO JSI, CPTPP, USMCA and RCEP are provisional: no full-text AI keyword check was performed.
 10. **Search coverage** was English-language and institutional; multilingual searches were limited to the official language pages encountered. This is not a global exhaustive search.
 11. **CCW record is metadata-only.** The 2026 report and Review Conference decision were read, but no full text or units are stored; the 2027–2028 negotiating text is not yet available.
 12. **The Paris Statement's endorser list is inconsistent.** The official Élysée PDF of 19 February 2025 lists 64 entries; the official page accessed on 23 November 2026 lists 65 (Zimbabwe added). A contemporaneous Canadian release listed 60, including South Africa, the United Arab Emirates and the Holy See (listed as “Vatican”), which are absent from the Élysée lists. No withdrawal or correction is documented.
 13. **China's initiative has no adherence list.** It is a unilateral non-binding proposal, not an agreed instrument; the record does not attribute it to any State other than China.
+14. **The transatlantic AI-safety records are not treaties.** The UK–US MOU is non-binding and its full text was not published; the US–EU commitment is one AI section of a broad TTC joint statement and creates no binding obligation. Neither record supports a claim of a binding transatlantic AI-safety regime.
+15. **General international law is not comprehensively covered.** The `general_treaty` layer is a deliberately minimal background selection: the VCLT for treaty law and the ICCPR for human rights. The UN Charter, the Universal Declaration of Human Rights, the ECHR, Convention 108+ and other general instruments are not catalogued; their absence is a scope limit, not a finding that they are irrelevant to AI.
 
 ## What “coverage” means here
 
-It means: 38 records, each with at least one official source and a declared verification level; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register that records both inclusions and exclusions. It does not mean that every international AI instrument has been found.
+It means: 40 records, each with at least one official source and a declared verification level; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register of 20 entries that records both inclusions and exclusions. It does not mean that every international AI instrument has been found.

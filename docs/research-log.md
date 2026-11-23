@@ -31,6 +31,10 @@ This log records the searches actually run and their outcome. It is not a list o
 | 21 | CCW GGE LAWS 2026 final report and Seventh Review Conference Decision 1 | Category-6 negotiation record | CCW/GGE.1/2026/3 (4 September 2026); mandate to elaborate an instrument; report due 2028 |
 | 22 | Paris AI Action Summit statement official page and PDF | Verify the primary text, endorsers and status | Élysée page: 65 endorsers (63 States, EU, AUC); official PDF (19 February 2025): 64; contemporaneous Canadian release: 60 including South Africa, UAE and the Holy See (listed as “Vatican”); non-binding; discrepancy recorded |
 | 23 | China Global AI Governance Initiative, MFA and CAC | Document the Chinese-pole instrument | Official English text and Chinese original; issued 18 October 2023; unilateral, non-binding, no adherence list; 2025 Action Plan noted as a later document, without a stated formal relationship |
+| 24 | UK–US AI safety memorandum of understanding | Locate the bilateral instrument and determine its legal nature | Official GOV.UK publication and press release, 2 April 2024: MOU signed 1 April 2024 by Michelle Donelan and Gina Raimondo; non-binding; summary of key elements only, no full MOU text linked |
+| 25 | US–EU AI Safety Dialogue and TTC joint statement | Determine whether a standalone US–EU AI-safety agreement exists | European Commission and USTR TTC joint statement, 5 April 2024: the European AI Office and US AI Safety Institute “committed to establishing a Dialogue”; no standalone MOU, administrative arrangement or terms of reference located; NIST and European Commission pages confirm the first technical dialogue on 11 July 2024 |
+| 26 | AfCFTA Digital Trade Protocol adoption, annexes and ratification status | Replace a secondary status account with AU primary sources | AU treaty pages: adoption 18 February 2024; compiled annexes adopted by the 38th Assembly in February 2025; Assembly/AU/9(XXXVIII), para. 25; the AU page displays no entry-into-force date or ratification table; depositary record not read, so no ratification count asserted |
+| 27 | ICCPR and VCLT official treaty pages | Recheck the two general-treaty records | OHCHR: adopted 16 December 1966, entry into force 23 March 1976; UNTC: VCLT adopted 22 May 1969, opened for signature 23 May 1969, entry into force 27 January 1980, 45 signatories and 119 parties at 2 November 2026 |
 
 ## Documents read or acquired
 
@@ -39,6 +43,10 @@ This log records the searches actually run and their outcome. It is not a list o
 - DEPA English signing text (67 pages), SADEA (39 pages), G7 Hiroshima Code (8 pages), OECD/LEGAL/0449 booklet (12 pages).
 - Paris AI Action Summit statement, official Élysée PDF (3 pages, 19 February 2025) and English page; French official version consulted but not stored.
 - China's Global AI Governance Initiative, official MFA English HTML (body extracted) and Chinese original on the CAC page.
+- GOV.UK publication and press release on the UK–US AI Safety MOU (2 April 2024); the publication is an official summary, not the full MOU.
+- European Commission and USTR versions of the sixth U.S.–EU TTC joint statement (5 April 2024), AI section; NIST and European Commission pages on the first U.S. AI Safety Institute–European AI Office technical dialogue (11 July 2024).
+- African Union treaty pages for the AfCFTA Digital Trade Protocol (adoption and text links); compiled certified annexes (38th Assembly, February 2025); Assembly/AU/9(XXXVIII) progress report; AfCFTA Agreement Article 23(2) on the 22-ratification threshold.
+- OHCHR page for the ICCPR and UN Treaty Collection page for the VCLT, read to correct the VCLT adoption/opening dates and verify the general-treaty metadata.
 - Official pages for UNESCO, OECD, EUR-Lex, UK Treaty Series, Singapore MTI, AU, ASEAN, NATO, ISO, GOV.UK.
 - CETS 225 Treaty Office chart (status 23/11/2026), declarations page and EU instrument texts. The chart/declaration data is preserved in `corpus/coe-cets-225/status/coe-cets-225-status-2026-11-23.json`; this is a local snapshot, not a CoE-generated export.
 - CCW/GGE.1/2026/3 final report and CCW/CONF.VII/CRP.1/Rev.3 final document of the Seventh Review Conference.
@@ -54,6 +62,7 @@ This log records the searches actually run and their outcome. It is not a list o
 | CoE Treaty Office chart | React assets returned HTTP 403 in the Cloud browser; plain `read_url` dropped the widget | Full table captured through rendered-text extraction of the official URL; status date 23/11/2026 |
 | DFAT SADEA PDF | Connection timed out once | Acquired the same treaty text from the Singapore Government Isomer copy |
 | G7 PDF | Owner-password encrypted (AES) | Installed `cryptography` in the local venv; text extraction succeeded |
+| U.S. Commerce Department UK–US announcement | HTTP 403 to automated retrieval; the extracted page contained navigation only | Bilateral facts verified from the official GOV.UK publication and press release; the record notes that the US page was not read |
 
 ## Discovery versus verification
 
@@ -63,13 +72,13 @@ Search snippets were used to locate candidates and, in some cases, to read an of
 - official page/excerpt read;
 - official source merely located.
 
-The candidate register contains 20 entries: 4 included (ISO/IEC 23053, the CCW GGE on LAWS, the Paris AI Action Summit Statement and China's Global AI Governance Initiative), 9 pending and 7 excluded. Pending items include the US–UK and US–EU AI-safety arrangements, the International AI Safety Report, Council of Europe Recommendation CM/Rec(2020)1, ITU-T Y.3172, IEEE 7000 and CEN-CENELEC JTC 21.
+The candidate register contains 20 entries: 6 included (ISO/IEC 23053, the CCW GGE on LAWS, the Paris AI Action Summit Statement, China's Global AI Governance Initiative, the UK–US AI Safety MOU and the US–EU TTC AI-safety dialogue commitment), 7 pending and 7 excluded. Pending items include the International AI Safety Report, Council of Europe Recommendation CM/Rec(2020)1, ITU-T Y.3172, IEEE 7000 and CEN-CENELEC JTC 21.
 
 ## Negative and provisional results
 
 - No adopted treaty specifically dedicated to AI other than CETS 225 was located.
 - No adopted UN framework convention specific to AI was located.
-- No adopted AU or ASEAN treaty specific to AI was located; both organisations have non-binding strategies/guides.
+- No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located; the April 2024 commitment is a political Dialogue inside the TTC joint statement, not a binding agreement.
 - China's Global AI Governance Initiative is a unilateral government proposal, not an agreed international instrument; no formal adherence list was found, and the record does not attribute it to other States.
 - WTO JSI e-commerce, CPTPP, USMCA and RCEP were recorded as excluded **provisionally**, because a full-text AI keyword check was not performed. They are not claims that those agreements contain no AI reference.
 - Category 6 now contains one negotiation record (CCW GGE on LAWS); no adopted draft protocol or treaty text exists.

@@ -13,19 +13,19 @@ The catalogue separates eight layers:
 5. International technical standards.
 6. Drafts and negotiations in progress.
 7. Supranational legislation, collected separately.
-8. A reasoned selection of general treaties applicable to AI.
+8. A deliberately minimal selection of general treaties applicable to AI. It currently contains the VCLT (treaty law) and the ICCPR (human rights); it is not a general international-law inventory. The UN Charter, the UDHR, the ECHR, Convention 108+ and other general instruments are outside the corpus.
 
 An instrument enters layer 2 only if an **express AI provision** is located in the text or an official excerpt, and it is more than incidental. A trade agreement with a general digital chapter but no AI reference is recorded in the candidate register as excluded (provisionally, if a full-text keyword check was not performed).
 
-The legal nature is determined from the instrument and its issuer, not from its title. Declarations and resolutions are `non_binding`; OECD Recommendations are non-binding legal instruments; ISO/IEC documents are voluntary technical standards; the EU AI Act is supranational legislation, not a treaty.
+The legal nature is determined from the instrument and its issuer, not from its title. Declarations and resolutions are `non_binding`; a joint statement is recorded as `joint_statement` rather than forced into `declaration`; voluntary company pledges are recorded as `commitment`; OECD Recommendations are non-binding legal instruments; ISO/IEC documents are voluntary technical standards; the EU AI Act is supranational legislation, not a treaty.
 
 ## 2. Verification levels
 
 | Level | Meaning | This cycle |
 |---|---|---:|
 | `full_text_checked` | Full text stored, hashed, segmented, read; key passages asserted by tests. | 10 |
-| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 26 |
-| `source_located` | Official URL recorded; metadata from an established reference, not re-read. | 2 |
+| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 30 |
+| `source_located` | Official URL recorded; metadata from an established reference, not re-read. | 0 |
 
 Sixteen full texts are stored (15 acquired originals — 14 PDFs and one HTML — plus the CETS 225 transcription); only the ten marked `full_text_checked` were read end-to-end and are covered by key-passage tests. Six further texts are stored and segmented but remain `metadata_verified` because they were not read end-to-end. The levels are deliberately coarse and honest. `metadata_verified` is not a guarantee that every field, party or declaration was checked. Each record lists its own `verification.checks`, and `gaps` records what remains unknown.
 

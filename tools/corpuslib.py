@@ -250,7 +250,7 @@ def validate_instrument(
 
     # Legal-nature consistency: declarations/resolutions cannot be binding.
     itype = inst.get("instrument_type")
-    if itype in {"declaration", "resolution", "recommendation", "principles", "code_of_conduct", "strategy", "report", "guidance"} and inst.get("binding_status") == "binding":
+    if itype in {"joint_statement", "declaration", "resolution", "recommendation", "principles", "code_of_conduct", "commitment", "strategy", "report", "guidance"} and inst.get("binding_status") == "binding":
         report.error(
             "category_mismatch",
             path_label,

@@ -34,7 +34,7 @@ CATEGORY_LABELS = {
     "ai_treaty": "AI-specific treaty",
     "agreement_ai_provisions": "Agreement with AI provisions",
     "non_binding_instrument": "Non-binding instrument",
-    "preparatory_interpretive": "Interpretive material",
+    "preparatory_interpretive": "Implementation / interpretation",
     "technical_standard": "Technical standard",
     "draft_negotiation": "Negotiation in progress",
     "supranational_law": "EU law",
@@ -479,6 +479,8 @@ def milestones(instruments_by_id: dict[str, dict]) -> str:
         "china-global-ai-governance-initiative-2023": "The Chinese proposal: sovereignty, development and a central UN role.",
         "g7-hiroshima-code-2023": "Voluntary code for advanced AI developers.",
         "bletchley-declaration-2023": "28 States and the EU on frontier-model risk.",
+        "us-uk-ai-safety-mou-2024": "A bilateral AI-safety MOU between the UK and US institutes.",
+        "us-eu-ttc-ai-safety-dialogue-2024": "The US–EU TTC statement commits the European AI Office and the US AI Safety Institute to a technical Dialogue.",
         "un-ga-res-78-265": "First UN resolution on AI adopted by consensus.",
         "coe-cets-225": "The only AI-specific treaty; not yet in force.",
         "un-ga-res-79-1": "Pact for the Future and Global Digital Compact.",
@@ -601,7 +603,7 @@ def main() -> int:
     cards = [
         (
             "Washington",
-            "US-led initiative",
+            "Political declaration",
             "Political Declaration on Responsible Military Use of AI and Autonomy",
             "58 States",
             "endorsers as of December 2024; non-binding; the list is not reproduced country by country.",
@@ -609,7 +611,7 @@ def main() -> int:
         ),
         (
             "Beijing",
-            "China-led proposal",
+            "Government proposal",
             "Global AI Governance Initiative",
             "No adherence list",
             "2023 unilateral initiative; non-binding; the 2025 Action Plan is a later document in the same policy line.",
@@ -617,7 +619,7 @@ def main() -> int:
         ),
         (
             "Brussels / Strasbourg",
-            "The European normative pole",
+            "Council of Europe treaty",
             "Council of Europe Framework Convention on AI (CETS 225)",
             "21 signatures · 2 ratifications",
             "binding treaty, not in force; open to non-European States as well.",
@@ -650,7 +652,7 @@ def main() -> int:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI Law Atlas</title>
-<meta name="description" content="A README for humans on international AI law: verified instruments, maps, timeline and catalogue.">
+<meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI law.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -659,7 +661,6 @@ def main() -> int:
   <div class="wrap">
     <p class="kicker">Verified corpus · verification {esc(verified_on)}</p>
     <h1>International AI Law Atlas</h1>
-    <p class="standfirst">A README for humans: what actually exists, what is binding, and where the fractures run.</p>
     <p class="byline">{total} instruments · {full_texts} full texts · {originals} originals with SHA-256 · {binding} binding</p>
     <nav class="toc" aria-label="Sections">
       <a href="#overview">Overview</a>
@@ -679,11 +680,11 @@ def main() -> int:
       <div class="stats">{stats_html}</div>
       <div class="intro-grid">
         <div>
-          <h2>International AI law is not a vacuum</h2>
-          <p class="lede">It is an archipelago. One AI-specific treaty, five trade agreements with AI provisions, a stack of declarations and resolutions, technical standards, and a negotiation on autonomous weapons. The binding layer is thin; the political layer is dense.</p>
+          <h2>The shape of the corpus</h2>
+          <p class="lede">One AI-specific treaty, five trade agreements with AI provisions, a stack of declarations and resolutions, technical standards, and a negotiation on autonomous weapons. The binding layer is thin; the political layer is dense.</p>
         </div>
         <aside class="callout">
-          <p><strong>The line to remember.</strong> There is no single international AI regime. There are overlapping regimes, with different obligations, different members and different legal force.</p>
+          <p><strong>Key point.</strong> There is no single international AI regime. There are overlapping regimes, with different obligations, different members and different legal force.</p>
           <p><a href="{REPO}/blob/main/README.md" target="_blank" rel="noopener">Read the corpus README</a></p>
         </aside>
       </div>
@@ -694,7 +695,7 @@ def main() -> int:
     <div class="wrap">
       <p class="eyebrow">01 · What binds</p>
       <h2>Binding or not</h2>
-      <p class="lede">The distinction is not academic: it changes who can invoke what, before whom. In the corpus, {binding} instruments are binding and {non_binding} are not.</p>
+      <p class="lede">In the corpus, {binding} instruments are binding and {non_binding} are not.</p>
       {binding_bar(instruments)}
       <div class="legend">
         <span><i class="swatch swatch-binding"></i>Binding</span>
@@ -707,7 +708,7 @@ def main() -> int:
           <p>Declarations, UN resolutions, recommendations, codes of conduct and technical standards are non-binding. They are not irrelevant: they set direction, create expectations and prepare the ground for later rules.</p>
         </div>
         <div>
-          <h3>By category</h3>
+          <h3>By category · {sum(category_counts.values())} instruments</h3>
           <div class="bars">{category_bars(category_counts)}</div>
         </div>
       </div>
@@ -716,13 +717,12 @@ def main() -> int:
 
   <section id="poles" class="section section-dark">
     <div class="wrap">
-      <p class="eyebrow">02 · Variable geometries</p>
-      <h2>Three poles, not three blocs</h2>
-      <p class="lede">Washington, Beijing and Brussels/Strasbourg produce instruments with different logics. But the labels “pro-US” and “pro-China” are an analytical lens, not a legal status: none of these instruments creates a formal bloc.</p>
+      <p class="eyebrow">02 · Three poles</p>
+      <h2>Three poles</h2>
       <div class="poles">{cards_html}</div>
       <div class="paris-band">
         <div>
-          <p class="eyebrow">The cross-cutting bridge</p>
+          <p class="eyebrow">Cross-cutting</p>
           <h3>Paris 2025: China and India in, the United States and the UK out</h3>
           <p>The Paris Statement is endorsed by {len(paris_states)} States, the European Union and the African Union Commission. It is the broadest instrument of the period and shows a fracture that does not track the China–US axis.</p>
         </div>
@@ -742,7 +742,6 @@ def main() -> int:
     <div class="wrap">
       <p class="eyebrow">03 · Two maps</p>
       <h2>Who signs what</h2>
-      <p class="lede">The maps use Natural Earth 1:110m boundaries and the signature data of the two broadest instruments: the Paris Statement and CETS 225. Hover over a country for detail; microstates are dots.</p>
       <div class="maps">
         <figure class="map-card">
           <figcaption><span class="map-title">Paris 2025</span><span class="map-sub">{len(paris_states)} signatory States; EU and AU Commission not shown</span></figcaption>

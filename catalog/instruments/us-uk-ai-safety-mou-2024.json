@@ -1,0 +1,157 @@
+{
+  "id": "us-uk-ai-safety-mou-2024",
+  "title": {
+    "official": "Collaboration on the safety of AI: UK-US memorandum of understanding",
+    "short": "UK–US AI Safety MOU"
+  },
+  "category": "non_binding_instrument",
+  "instrument_type": "mou",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [
+    {
+      "name": "Government of the United Kingdom",
+      "role": "co_issuer",
+      "url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology"
+    },
+    {
+      "name": "Government of the United States of America",
+      "role": "co_issuer",
+      "url": "https://www.commerce.gov/"
+    }
+  ],
+  "relevance": {
+    "reason": "A bilateral government memorandum of understanding on AI safety science, signed on 1 April 2024 by the UK Secretary of State for Science, Innovation and Technology and the US Secretary of Commerce. It provides the basis for cooperation between the UK and US AI Safety Institutes on model evaluations, joint testing, technical research, personnel exchanges and information sharing. It is a non-binding MOU, not a treaty, and the official GOV.UK publication is a summary of key elements rather than the full MOU text.",
+    "ai_provisions": [
+      "The Institutes intend to develop an interoperable programme of work and approach to safety research.",
+      "They intend to develop a shared approach to model evaluations, including methodologies, infrastructures and processes.",
+      "They intend to perform at least one joint testing exercise on a publicly accessible model.",
+      "They intend to collaborate on AI safety technical research and to explore personnel exchanges.",
+      "They intend to share information across their activities, subject to national laws, regulations and contracts.",
+      "The partners intend to work with other governments on international standards for AI safety testing and related standards."
+    ],
+    "excluded_scope": "Non-binding bilateral cooperation on AI safety science and institute-to-institute work. No treaty obligation, ratification, depositary, dispute settlement or enforcement; no general AI regulation or military-AI commitment."
+  },
+  "dates": {
+    "signed": "2024-04-01",
+    "published": "2024-04-02",
+    "verified_on": "2026-11-23",
+    "notes": "Signed on 1 April 2024 by Michelle Donelan, UK Secretary of State for Science, Innovation and Technology, and Gina Raimondo, US Secretary of Commerce. The GOV.UK publication and press release are dated 2 April 2024."
+  },
+  "status_note": "Bilateral memorandum of understanding between the United Kingdom and the United States. It is a non-binding political and technical cooperation instrument, not a treaty. The classification follows the MOU form and the absence of binding language in the official summary; the full MOU text was not published. The summary states no ratification, depositary, duration, termination, review or dispute-settlement procedure.",
+  "parties": {
+    "as_of": "2026-11-23",
+    "summary": "Two governments: the United Kingdom and the United States of America. The MOU is implemented by their respective AI Safety Institutes; the signature was by the UK Technology Secretary and the US Commerce Secretary.",
+    "source_ids": [
+      "govuk-mou-summary",
+      "govuk-press-release"
+    ],
+    "signatories_total": 2,
+    "ratifications_total": 0,
+    "entries": [
+      {
+        "party": "United Kingdom",
+        "signature": "2024-04-01",
+        "notes": ["Signed by Michelle Donelan, Secretary of State for Science, Innovation and Technology."]
+      },
+      {
+        "party": "United States of America",
+        "signature": "2024-04-01",
+        "notes": ["Signed by Gina Raimondo, Secretary of Commerce."]
+      }
+    ],
+    "reservations": [],
+    "declarations": [],
+    "objections": [],
+    "notifications": [],
+    "withdrawals": [],
+    "unknowns": [
+      "The full MOU text is not published; its legal-status clause, duration, termination and review provisions cannot be checked.",
+      "No depositary or registration is stated; an MOU is not a treaty and no UN Charter Article 102 registration is recorded.",
+      "The published summary gives no monitoring, reporting or evaluation mechanism."
+    ]
+  },
+  "languages": {
+    "authentic": ["en"],
+    "translations": [],
+    "note": "English. There is no authentic-language clause because the instrument is not a treaty; the MOU text itself was not published."
+  },
+  "sources": [
+    {
+      "id": "govuk-mou-summary",
+      "url": "https://www.gov.uk/government/publications/collaboration-on-the-safety-of-ai-uk-us-memorandum-of-understanding/collaboration-on-the-safety-of-ai-uk-us-memorandum-of-understanding",
+      "publisher": "Department for Science, Innovation and Technology (United Kingdom)",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official GOV.UK publication, 2 April 2024. It states that it summarises key elements of the MOU agreed on 1 April 2024; no full MOU text or PDF is linked."
+    },
+    {
+      "id": "govuk-press-release",
+      "url": "https://www.gov.uk/government/news/uk-united-states-announce-partnership-on-science-of-ai-safety",
+      "publisher": "Department for Science, Innovation and Technology (United Kingdom)",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official press release, 2 April 2024. Confirms signature on 1 April 2024 by Michelle Donelan and Gina Raimondo and describes the AI Safety Institutes' cooperation."
+    }
+  ],
+  "rights": {
+    "status": "open_licence",
+    "licence": "Open Government Licence v3.0",
+    "note": "The GOV.UK publication is licensed under the Open Government Licence v3.0 except where otherwise stated. The underlying MOU text was not published and is not stored; the US Government announcement is a US Government work.",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {
+        "check": "Official GOV.UK publication and press release opened and read.",
+        "result": "MOU signed 1 April 2024; published 2 April 2024; signatories Michelle Donelan and Gina Raimondo; the publication is a summary of key elements, not the full MOU.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Legal nature and implementation checked from the official summary.",
+        "result": "Bilateral MOU; activities are expressed as intentions; no treaty ratification, depositary, dispute settlement or enforcement is stated. The full MOU text is not published.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Full-text availability checked.",
+        "result": "No full MOU text or PDF was linked from the GOV.UK publication or press release; the record is metadata-only.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "US official announcement checked.",
+        "result": "The U.S. Department of Commerce announcement was identified but returned HTTP 403 to automated retrieval; the bilateral facts are verified from the UK official publication.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Metadata verified from official UK sources. The record does not claim to reproduce or interpret the unpublished MOU; it records only what the official summary states."
+  },
+  "related": [
+    {
+      "id": "bletchley-declaration-2023",
+      "relation": "related",
+      "note": "The MOU follows through on the AI Safety Summit commitments made at Bletchley Park in November 2023."
+    },
+    {
+      "id": "us-eu-ttc-ai-safety-dialogue-2024",
+      "relation": "related",
+      "note": "Parallel transatlantic AI-safety cooperation in 2024; the US–EU side is a political dialogue commitment, not an MOU."
+    }
+  ],
+  "gaps": [
+    "The full MOU text was not published; GOV.UK publishes only a summary of key elements.",
+    "The published summary does not state a legal-status clause, duration, termination, review or dispute-settlement procedure.",
+    "No depositary, ratification or UN Charter Article 102 registration is stated; this is an MOU, not a treaty.",
+    "No monitoring, reporting or evaluation mechanism is published.",
+    "Institutional names are those at signature; later renaming or institutional change is not assessed.",
+    "The U.S. Department of Commerce announcement returned HTTP 403 to automated retrieval; verification relies on the UK official publication."
+  ],
+  "provenance": {
+    "discovered_via": "GOV.UK publication search; the candidate register entry was opened after the primary source was located.",
+    "search_dates": ["2026-11-23"]
+  }
+}
