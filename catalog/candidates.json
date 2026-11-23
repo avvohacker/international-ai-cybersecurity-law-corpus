@@ -13,6 +13,32 @@
     "gaps": "Endorser list inconsistent across official publications (60/64/65); no depositary or update log; US and UK did not endorse."
   },
   {
+    "id": "new-delhi-declaration-2026",
+    "title": "AI Impact Summit Declaration, New Delhi (New Delhi Declaration on AI Impact)",
+    "issuer": "Government of India and participating States and international organisations",
+    "decision": "included",
+    "instrument_id": "new-delhi-declaration-2026",
+    "reason": "Official Ministry of External Affairs text and Press Information Bureau release read. A non-binding declaration adopted on 19 February 2026 and endorsed by 92 countries and international organisations; the fourth summit in the Bletchley-Seoul-Paris series. Added after the summit-series audit found it missing from the corpus.",
+    "candidate_type": "declaration",
+    "official_url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809",
+    "searched_on": "2026-11-23",
+    "evidence": "Official MEA declaration text; PIB release of 21 February 2026 giving the 92-endorser count; official AI Impact Summit outcome page.",
+    "gaps": "No itemised list of the 92 endorsers; no follow-up mechanism verified; count includes international organisations as well as States."
+  },
+  {
+    "id": "brics-ai-statement-2025",
+    "title": "BRICS Leaders' Statement on the Global Governance of Artificial Intelligence",
+    "issuer": "BRICS Leaders, 17th BRICS Summit, Rio de Janeiro",
+    "decision": "included",
+    "instrument_id": "brics-ai-statement-2025",
+    "reason": "Official BRICS Presidency PDF and Brazilian Ministry of Foreign Affairs page read. The first stand-alone BRICS leaders' statement on global AI governance, adopted on 6 July 2025; non-binding and without an itemised signatory list. Added after the audit of other international AI instruments.",
+    "candidate_type": "declaration",
+    "official_url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
+    "searched_on": "2026-11-23",
+    "evidence": "Official BRICS Presidency PDF of the statement; Brazilian MFA page confirming the date and the 17th BRICS Summit setting.",
+    "gaps": "No itemised signatory list; no follow-up mechanism; relationship to WAICO not formal; no full text stored."
+  },
+  {
     "id": "china-global-ai-governance-initiative-2023",
     "title": "Global AI Governance Initiative",
     "issuer": "Ministry of Foreign Affairs of the People's Republic of China",

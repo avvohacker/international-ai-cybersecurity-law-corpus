@@ -19,10 +19,12 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 | Bilateral digital agreements | 4 | DEPA, SADEA, UKSDEA, KSDPA | other bilateral AI clauses and MOUs; depositary records |
 | Transatlantic AI safety | 2 | UK–US AI Safety MOU (2024); US–EU TTC AI-safety Dialogue commitment (2024) | full UK–US MOU unpublished; US–EU side is a political commitment, not a standalone agreement; no binding transatlantic AI-safety treaty |
 | Military AI initiatives | 4 | Political Declaration, two UNGA tracks, CCW GGE negotiation | no binding instrument; 2027–2028 negotiating text; REAIM outcomes |
-| General international law | 2 | ICCPR, VCLT | UN Charter, UDHR, ECHR, Convention 108+ and other general instruments not catalogued; this is a scope limit, not a finding |
+| General international law | 2 | ICCPR, VCLT | UN Charter, UDHR, ECHR, Convention 108+ and other general instruments not catalogued; customary law, general principles, Security Council resolutions and international humanitarian law are not systematically covered; this is a scope limit, not a finding |
 | AI Action Summit (France–India) | 1 | Paris Statement (2025), 65 endorsers | endorser list inconsistent across official publications (60/64/65); no depositary or update log |
-| China-led instruments | 2 | Global AI Governance Initiative (2023); WAICO Establishment Agreement (2026) | WAICO: 38th founding member and deposited ratifications unverified; initiative: unilateral, no formal adherence list |
-| United States (Pax Silica) | 1 | Pax Silica Declaration (2025), 26 signatories | separate AI Opportunity Statement not counted; Taiwan is a non-signatory participant |
+| AI Impact Summit (India) | 1 | New Delhi Declaration (2026), 92 endorsers | no itemised list; no follow-up mechanism verified |
+| BRICS | 1 | Leaders' statement on global AI governance (2025) | no itemised signatory list; no follow-up mechanism verified |
+| China-led instruments | 2 | Global AI Governance Initiative (2023); WAICO Establishment Agreement (2026) | WAICO: 38th founding member and deposited ratifications unverified; Bangladesh is an observer applicant under Article 11, not the 38th member; Singapore is an invitee considering the invitation; initiative: unilateral, no formal adherence list |
+| United States (Pax Silica) | 1 | Pax Silica Declaration (2025), 26 signatories | separate AI Opportunity Statement and San Francisco Declaration not counted; Taiwan is a non-signatory participant; 'signatories' are endorsers, not treaty signatories |
 
 ## By region
 
@@ -42,7 +44,7 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 |---|---:|---|
 | `ai_treaty` | 2 | CETS 225 and the WAICO Establishment Agreement; neither in force |
 | `agreement_ai_provisions` | 5 | all digital/trade; cooperative AI clauses |
-| `non_binding_instrument` | 24 | UN resolutions, declarations, strategies, codes; Paris Statement, Pax Silica, China initiative, UK–US MOU and US–EU TTC dialogue commitment |
+| `non_binding_instrument` | 26 | UN resolutions, declarations, strategies, codes; Paris Statement, New Delhi Declaration, BRICS statement, Pax Silica, China initiative, UK–US MOU and US–EU TTC dialogue commitment |
 | `preparatory_interpretive` | 2 | CETS explanatory report; EU GPAI Code |
 | `technical_standard` | 5 | ISO/IEC, metadata only |
 | `draft_negotiation` | 1 | CCW GGE on LAWS; no adopted instrument |
@@ -54,7 +56,7 @@ Coverage achieved in the cycle ending **2026-11-23**. Counts are generated from 
 | Level | Count |
 |---|---:|
 | `full_text_checked` | 10 |
-| `metadata_verified` | 32 |
+| `metadata_verified` | 34 |
 | `source_located` | 0 |
 
 Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records whose text is stored and segmented but was not read end-to-end).
@@ -75,9 +77,9 @@ Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records
 12. **The Paris Statement's endorser list is inconsistent.** The official Élysée PDF of 19 February 2025 lists 64 entries; the official page accessed on 23 November 2026 lists 65 (Zimbabwe added). A contemporaneous Canadian release listed 60, including South Africa, the United Arab Emirates and the Holy See (listed as “Vatican”), which are absent from the Élysée lists. No withdrawal or correction is documented.
 13. **China's initiative has no adherence list.** It is a unilateral non-binding proposal, not an agreed instrument; the record does not attribute it to any State other than China.
 14. **The transatlantic AI-safety records are not treaties.** The UK–US MOU is non-binding and its full text was not published; the US–EU commitment is one AI section of a broad TTC joint statement and creates no binding obligation. Neither record supports a claim of a binding transatlantic AI-safety regime.
-15. **General international law is not comprehensively covered.** The `general_treaty` layer is a deliberately minimal background selection: the VCLT for treaty law and the ICCPR for human rights. The UN Charter, the Universal Declaration of Human Rights, the ECHR, Convention 108+ and other general instruments are not catalogued; their absence is a scope limit, not a finding that they are irrelevant to AI.
-16. **WAICO party data are incomplete.** China's MFA reports 38 founding members, but only 37 are individually identified across the official statements; the 38th is recorded as unknown. The Government of China is the depositary under Article 18, but no public depositary register, status table or notification was located. China's approval on 6 November 2026 is not counted as a deposited ratification. The map therefore shows signatures, not ratifications.
+15. **General international law is not comprehensively covered.** The `general_treaty` layer is a deliberately minimal background selection: the VCLT for treaty law and the ICCPR for human rights. The UN Charter, the Universal Declaration of Human Rights, the ECHR, Convention 108+ and other general instruments are not catalogued; customary international law, general principles, Security Council resolutions (none AI-specific was located) and international humanitarian law are not systematically covered. Their absence is a scope limit, not a finding that they are irrelevant to AI.
+16. **WAICO party data are incomplete.** China's MFA reports 38 founding members, but only 37 are individually identified across the official statements; the 38th is recorded as unknown. Bangladesh is not that member: on 1 August 2026 it announced that it would join 'initially as an observer', and Article 11 requires an observer application and Council approval; no admission is recorded. Singapore has been reported as considering an invitation and is not a member. The Government of China is the depositary under Article 18, but no public depositary register, status table or notification was located. China's approval on 6 November 2026 is not counted as a deposited ratification. The map therefore shows signatures, not ratifications.
 
 ## What “coverage” means here
 
-It means: 42 records, each with at least one official source and a declared verification level; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register of 22 entries that records both inclusions and exclusions. It does not mean that every international AI instrument has been found.
+It means: 44 records, each with at least one official source and a declared verification level; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register of 24 entries that records both inclusions and exclusions. It does not mean that every international AI instrument has been found.

@@ -2,24 +2,24 @@
   "counts": {
     "by_binding": {
       "binding": 10,
-      "non_binding": 32
+      "non_binding": 34
     },
     "by_category": {
       "agreement_ai_provisions": 5,
       "ai_treaty": 2,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 24,
+      "non_binding_instrument": 26,
       "preparatory_interpretive": 2,
       "supranational_law": 1,
       "technical_standard": 5
     },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 32
+      "metadata_verified": 34
     },
     "full_texts": 16,
-    "total": 42,
+    "total": 44,
     "with_local_original": 15
   },
   "full_text_ids": [
@@ -654,6 +654,165 @@
         ],
         "level": "metadata_verified",
         "notes": "Metadata verified; full text not stored. The declaration is political and does not create legal obligations. The endorser list is reproduced party by party from the GOV.UK page as of 23 November 2026."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2025-07-06",
+        "notes": "Adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The official text is a leaders' statement; it has no signature, ratification, depositary or entry-into-force clause.",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "No itemised list of signatories was located; the statement is issued collectively by the BRICS leaders.",
+        "No follow-up mechanism, review cycle or implementation reporting was verified.",
+        "The statement's relationship to WAICO and to the 2026 BRICS summit was not verified.",
+        "No full text is stored; the record is metadata-only."
+      ],
+      "id": "brics-ai-statement-2025",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "BRICS Leaders, 17th BRICS Summit, Rio de Janeiro",
+          "role": "issuer",
+          "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
+        },
+        {
+          "name": "Federative Republic of Brazil, 2025 BRICS Presidency",
+          "role": "host",
+          "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English text published by the 2025 BRICS Presidency and the Brazilian Ministry of Foreign Affairs. Other language versions were not verified.",
+        "translations": []
+      },
+      "parties": {
+        "as_of": "2025-07-06",
+        "declarations": [],
+        "entries": [],
+        "notifications": [],
+        "objections": [],
+        "ratifications_total": 0,
+        "reservations": [],
+        "signatories_total": null,
+        "source_ids": [
+          "brics-presidency-pdf",
+          "brazil-mfa-page"
+        ],
+        "summary": "Issued collectively by the BRICS leaders at the 17th BRICS Summit. The official text does not publish an itemised signature list, so the record does not infer individual party entries or a membership count.",
+        "unknowns": [
+          "The official text is a collective leaders' statement and does not include an itemised signatory list; no party-by-party entries are recorded.",
+          "The statement creates no depositary, ratification, accession or withdrawal record.",
+          "No follow-up mechanism, reporting cycle or review conference was verified.",
+          "The relationship between this statement and the later WAICO Agreement is political, not institutional; no formal linkage was verified."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "Audit of other international AI instruments after the summit-series and WAICO reviews; the official BRICS Presidency PDF and the Brazilian MFA page were read.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "china-global-ai-governance-initiative-2023",
+          "note": "Both documents assert sovereignty and a UN-centred framework; the BRICS statement is a collective leaders' text, whereas China's initiative is a unilateral government proposal.",
+          "relation": "related"
+        },
+        {
+          "id": "waico-establishment-agreement-2026",
+          "note": "The BRICS statement precedes WAICO by a year and expresses a similar Global South capacity-building position, but it creates no institution and has no formal link to WAICO.",
+          "relation": "policy_line"
+        },
+        {
+          "id": "new-delhi-declaration-2026",
+          "note": "Both are non-binding summit statements with a development and access agenda; New Delhi is a wider summit declaration, while the BRICS statement is a coalition statement.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-79-1",
+          "note": "The UN's Global Digital Compact is the universal digital-cooperation framework; the BRICS statement is a separate coalition text that calls for the UN to be at the core of AI governance.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Digital sovereignty and the right to development — all countries may adopt their own AI regulatory frameworks, develop AI capacities and pursue technological autonomy within their jurisdictions.",
+          "Global governance under the UN Charter — AI governance must respect national sovereignty, be representative, development-oriented, accessible and inclusive, and place the United Nations at its core.",
+          "Market regulation and data governance — personal data protection, information integrity and the rights and interests of humanity.",
+          "AI for sustainable development — innovation, productivity, sustainable practices and the reduction of digital and data divides within and between countries.",
+          "Capacity building — support for developing countries, technology transfer and access to AI technologies and skills.",
+          "Risk mitigation — collective action on safety, transparency, accountability and the risks arising from AI, without creating binding obligations.",
+          "International cooperation — the statement warns that a proliferation of initiatives and diverging views may aggravate asymmetries and the legitimacy gap in global digital governance."
+        ],
+        "excluded_scope": "A political statement by BRICS leaders. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. It does not establish an institution or a follow-up mechanism. National implementation is not assessed.",
+        "reason": "The first stand-alone BRICS leaders' statement on the global governance of artificial intelligence, adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. It sets out a collective position centred on digital sovereignty, the right to development, the UN Charter, capacity building and the concerns of the Global South. It is a political statement, not a treaty: it creates no legal obligation, ratification, depositary or monitoring. It is included because it is a distinct coalition instrument that the three-pole reading would otherwise miss, and because it documents the China–Global South diffusion position before WAICO was established."
+      },
+      "rights": {
+        "licence": "BRICS 2025 Presidency / Government of Brazil official publication",
+        "note": "Official government publication. No full text is stored in this corpus; the statement is read from the official PDF and MFA page.",
+        "status": "public_official_text"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "brics-presidency-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official PDF of the BRICS Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025.",
+          "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
+          "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "brazil-mfa-page",
+          "kind": "official_primary",
+          "language": "pt",
+          "note": "Official Brazilian MFA page for the statement, with a link to the English text; confirms the date and the 17th BRICS Summit setting.",
+          "publisher": "Ministry of Foreign Affairs, Federative Republic of Brazil",
+          "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding political statement, not a treaty. It was issued collectively by the BRICS leaders at the Rio de Janeiro summit; the official text does not include an itemised list of signatories, and no ratification, depositary, monitoring or enforcement is established. It is a coalition statement, not an instrument of the BRICS organization with legal personality.",
+      "title": {
+        "official": "BRICS Leaders' Statement on the Global Governance of Artificial Intelligence",
+        "short": "BRICS AI Statement"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Statement text read on the official BRICS Presidency PDF.",
+            "date": "2026-11-23",
+            "result": "The text is a leaders' statement, with sections on digital sovereignty, the UN Charter, market regulation, sustainable development, capacity building and risk mitigation; it has no signature or ratification clause."
+          },
+          {
+            "check": "Date and summit setting checked on the Brazilian MFA page.",
+            "date": "2026-11-23",
+            "result": "The Brazilian Ministry of Foreign Affairs page confirms the statement was issued at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025."
+          },
+          {
+            "check": "Party-level data checked for an itemised list.",
+            "date": "2026-11-23",
+            "result": "The official text is a collective statement and does not include an itemised list of signatories; no party entries are recorded."
+          },
+          {
+            "check": "Legal nature checked against the text and official descriptions.",
+            "date": "2026-11-23",
+            "result": "The instrument is a political statement, not a treaty; it creates no binding obligation, depositary, ratification or dispute settlement."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from the official BRICS Presidency PDF and the Brazilian MFA page. The record is metadata-only: no full text is stored. The absence of an itemised signatory list is recorded as an unknown rather than filled by inference."
       }
     },
     {
@@ -2910,6 +3069,182 @@
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
       "dates": {
+        "adopted": "2026-02-19",
+        "notes": "Adopted at the AI Impact Summit in New Delhi on 19 February 2026; the summit ran from 18 to 19 February 2026. The Ministry of External Affairs and the Press Information Bureau report 92 endorsing countries and international organisations. The text has no signature, ratification, depositary or entry-into-force clause.",
+        "verified_on": "2026-11-23"
+      },
+      "gaps": [
+        "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "No itemised list of the 92 endorsers was located; the State/organisation split is not published in the pages read.",
+        "No follow-up mechanism, review cycle or implementation reporting was verified.",
+        "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate instrument and are not catalogued here.",
+        "The declaration's relationship to the UN Global Dialogue on AI Governance and to the Paris and Seoul texts is political, not institutional; no formal linkage was verified.",
+        "No full text is stored; the record is metadata-only."
+      ],
+      "id": "new-delhi-declaration-2026",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "Government of India, Ministry of External Affairs, and participating States and international organisations",
+          "role": "issuer",
+          "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809"
+        },
+        {
+          "name": "AI Impact Summit 2026, New Delhi",
+          "role": "host",
+          "url": "https://impact.indiaai.gov.in/outcome-resources"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English text published by the Ministry of External Affairs. The preamble includes the Sanskrit principle 'Sarvajan Hitaya, Sarvajan Sukhaya'; no other authentic-language version was verified.",
+        "translations": []
+      },
+      "parties": {
+        "as_of": "2026-11-23",
+        "declarations": [],
+        "entries": [],
+        "notifications": [],
+        "objections": [],
+        "ratifications_total": 0,
+        "reservations": [],
+        "signatories_total": 92,
+        "source_ids": [
+          "mea-declaration",
+          "pib-summit",
+          "india-outcomes"
+        ],
+        "summary": "92 countries and international organisations are reported as endorsers by India's Ministry of External Affairs and Press Information Bureau. No itemised public list was located in the official pages read, so the record does not infer party-by-party entries or a State/organisation split.",
+        "unknowns": [
+          "No itemised list of the 92 endorsers was located on the official MEA or PIB pages read. The count includes international organisations as well as States, and the split between them is not stated.",
+          "The declaration is non-binding; there is no depositary, ratification, accession or withdrawal record.",
+          "No follow-up mechanism, reporting cycle or review conference was verified.",
+          "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate industry commitment and are not counted here."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "Search for the outcome of the 2026 AI Impact Summit while auditing the summit series against the corpus. The declaration was missing from the 42-record corpus; the official MEA text and the PIB release were then read.",
+        "search_dates": [
+          "2026-11-23"
+        ]
+      },
+      "related": [
+        {
+          "id": "paris-ai-action-summit-statement-2025",
+          "note": "The previous stage of the same summit series: Paris 2025 was an 'AI Action Summit'; New Delhi 2026 was an 'AI Impact Summit'. Both are non-binding political declarations.",
+          "relation": "policy_line"
+        },
+        {
+          "id": "bletchley-declaration-2023",
+          "note": "The first summit of the series, focused on frontier-model safety; New Delhi marks the series' shift toward impact, development and access.",
+          "relation": "policy_line"
+        },
+        {
+          "id": "seoul-declaration-2024",
+          "note": "The second summit of the series; Seoul combined safety and innovation themes.",
+          "relation": "policy_line"
+        },
+        {
+          "id": "waico-establishment-agreement-2026",
+          "note": "WAICO was signed five months after the New Delhi Declaration and also addresses AI capacity building in the Global South, but it is a treaty establishing an intergovernmental organization, not a summit declaration.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-79-1",
+          "note": "The Global Digital Compact in the Pact for the Future is the UN's universal digital-cooperation framework; the New Delhi Declaration is a separate, non-binding summit text.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Preamble — AI's promise is best realised when its benefits are shared by humanity; the participants adopt the principle 'Sarvajan Hitaya, Sarvajan Sukhaya' (welfare for all, happiness for all).",
+          "Seven pillars (Chakras) — democratising AI resources; economic growth and social good; secure and trusted AI; AI for science; access for social empowerment; human capital development; resilient, efficient and innovative AI systems.",
+          "Democratising AI resources — robust digital infrastructure and affordable access, with international cooperation on compute, data, models and skills.",
+          "Secure and trusted AI — trustworthy frameworks, risk management and respect for national sovereignty.",
+          "AI for science and for social empowerment — use of AI in research and public services, including for development priorities.",
+          "Human capital development — skilling and reskilling, including the Equitable AI Transitions Playbook produced with the International Labour Organization.",
+          "Complementarity with existing international initiatives — the declaration is to be read alongside, not instead of, other international and regional AI processes."
+        ],
+        "excluded_scope": "A political declaration. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. The separate New Delhi Frontier AI Impact Commitments, announced by 13 model providers at the same summit, are a different instrument and are not counted as parties to the declaration. National implementation is not assessed.",
+        "reason": "The declaration adopted at the AI Impact Summit in New Delhi on 19 February 2026, the fourth summit in the series that began at Bletchley Park in 2023. India's Ministry of External Affairs and Press Information Bureau report that 92 countries and international organisations endorsed it, the widest endorsement count among the summit declarations in the corpus. It marks the series' shift from AI safety to AI impact and development, and it is a political declaration, not a treaty: it creates no legal obligation, ratification, depositary, monitoring or dispute settlement. It is included because the corpus already catalogues the Bletchley, Seoul and Paris summit texts and would otherwise omit the 2026 stage of the same series."
+      },
+      "rights": {
+        "licence": "Government of India official publication",
+        "note": "Official government publication. No full text is stored in this corpus; the declaration is read from the official MEA page.",
+        "status": "public_official_text"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "mea-declaration",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official text of the AI Impact Summit Declaration, New Delhi, 18-19 February 2026. The page reproduces the preamble and the seven pillars.",
+          "publisher": "Ministry of External Affairs, Government of India",
+          "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "pib-summit",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Official press release of 21 February 2026: the AI Impact Summit concluded with the adoption of the New Delhi Declaration on AI Impact, endorsed by 92 countries and international organisations; lists the seven pillars and the voluntary deliverables.",
+          "publisher": "Press Information Bureau, Government of India",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&reg=3&lang=1"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "india-outcomes",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Official outcome-resources page listing the declaration and the separate summit deliverables, including the New Delhi Frontier AI Impact Commitments.",
+          "publisher": "AI Impact Summit 2026, Government of India",
+          "url": "https://impact.indiaai.gov.in/outcome-resources"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding political declaration, not a treaty. 92 countries and international organisations endorsed it, according to the Government of India; the official declaration page does not publish an itemised list of the 92 in the text consulted, and the count includes international organisations as well as States. It creates no legal obligation, ratification, depositary, monitoring or dispute settlement. The separate New Delhi Frontier AI Impact Commitments were announced by 13 model providers and are not part of this declaration.",
+      "title": {
+        "official": "AI Impact Summit Declaration, New Delhi",
+        "short": "New Delhi Declaration on AI Impact"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Declaration text read on the official Ministry of External Affairs page.",
+            "date": "2026-11-23",
+            "result": "The page reproduces the AI Impact Summit Declaration, New Delhi, with the preamble, the seven pillars and the closing commitments; it has no signature or ratification clause."
+          },
+          {
+            "check": "Adoption date and endorser count checked against the official press release.",
+            "date": "2026-11-23",
+            "result": "The Press Information Bureau release of 21 February 2026 states that the summit concluded with the adoption of the New Delhi Declaration on AI Impact and that 92 countries and international organisations endorsed it."
+          },
+          {
+            "check": "Party-level data checked for an itemised list.",
+            "date": "2026-11-23",
+            "result": "The MEA declaration page and the PIB release give the aggregate count but no itemised list of the 92 endorsers; no party-by-party entries are recorded."
+          },
+          {
+            "check": "Legal nature checked against the text and official descriptions.",
+            "date": "2026-11-23",
+            "result": "The instrument is a political declaration, not a treaty; it creates no binding obligation, depositary, ratification or dispute settlement."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from official Indian government sources. The record is metadata-only: no full text is stored. The 92-endorser count is reproduced as reported; the absence of an itemised list is recorded as an unknown rather than filled by inference."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
         "adopted": "2019-05-22",
         "entered_into_force": "2019-05-22",
         "notes": "Adopted 22 May 2019; amended 8 November 2023 (definition of AI system) and 3 May 2024 (revised Recommendation). The OECD records the instrument as in force.",
@@ -3457,6 +3792,7 @@
         "No complete signature chronology is published; the dates of individual accessions are only partly available.",
         "Taiwan is a non-signatory participant that endorsed the principles through a separate joint statement; it is not counted as a signatory.",
         "The separate Joint Statement on AI Opportunity Partnership (54 endorsers as of September 2026) is a different instrument and is not catalogued here.",
+        "The San Francisco Declaration on the Secure Foundations of Enduring Prosperity, signed on 15 November 2026 by the United States and nine other Pax Silica participants, is a separate follow-on declaration; its ten signatories are not counted in this record's 26.",
         "The declaration is a supply-chain and economic-security text, not a comprehensive AI regulation; it does not create AI safety, testing or liability rules.",
         "No full text is stored; the record is metadata-only."
       ],
@@ -3712,10 +4048,30 @@
           "note": "Official page for the separate Joint Statement on AI Opportunity Partnership: 54 countries had endorsed it as of September 2026. Used only to distinguish that instrument from the Pax Silica Declaration.",
           "publisher": "United States Department of State",
           "url": "https://www.state.gov/ai-opportunity-statement"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "state-san-francisco",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Release of 15 November 2026: the United States and nine Pax Silica participants signed the San Francisco Declaration on the Secure Foundations of Enduring Prosperity at the Pax Silica Founders Retreat. A separate follow-on declaration, not the 2025 Pax Silica Declaration.",
+          "publisher": "United States Department of State",
+          "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "australia-san-francisco",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Australian government publication listing the ten governments that signed the San Francisco Declaration on 15 November 2026: the United States, Australia, India, Israel, Japan, the Republic of Korea, Qatar, Singapore, the United Arab Emirates and the United Kingdom.",
+          "publisher": "Australian Government, Department of Industry, Science and Resources",
+          "url": "https://www.industry.gov.au/publications/san-francisco-declaration-secure-foundations-enduring-prosperity-signed-countries-attending-pax-silica-summit-15-november-2026"
         }
       ],
       "status": "adopted",
-      "status_note": "Political declaration, not a treaty. The official US and Australian publications call the participants 'signatories'; the act is an endorsement of shared principles, not a treaty signature. As of 23 October 2026 the list contains 26 signatories: 25 States and the European Union. The United States is a signatory but is omitted from the State Department's partner list because it is the host. No ratification, depositary, monitoring or enforcement is established. Taiwan is listed as a non-signatory participant that endorsed the declaration principles through a separate joint statement.",
+      "status_note": "Political declaration, not a treaty. The official US and Australian publications call the participants 'signatories'; the act is an endorsement of shared principles, not a treaty signature, and the word 'signatory' therefore implies no ratification, depositary or legal obligation. The atlas maps the act as endorsement. As of 23 October 2026 the list contains 26 signatories: 25 States and the European Union. The United States is a signatory but is omitted from the State Department's partner list because it is the host. No ratification, depositary, monitoring or enforcement is established. Taiwan is listed as a non-signatory participant that endorsed the declaration principles through a separate joint statement.",
       "title": {
         "official": "Pax Silica Declaration",
         "short": "Pax Silica Declaration"
@@ -3746,6 +4102,11 @@
             "check": "Separate AI Opportunity Statement checked.",
             "date": "2026-11-23",
             "result": "The Joint Statement on AI Opportunity Partnership is a distinct instrument with 54 endorsers as of September 2026; it is not included in the Pax Silica Declaration party count."
+          },
+          {
+            "check": "San Francisco follow-on declaration checked.",
+            "date": "2026-11-23",
+            "result": "The San Francisco Declaration on the Secure Foundations of Enduring Prosperity was signed on 15 November 2026 by the United States and nine other participants. It is a separate instrument and its ten signatories are not counted in the 26 signatories of the 2025 Pax Silica Declaration."
           }
         ],
         "level": "metadata_verified",
@@ -6166,7 +6527,8 @@
       "gaps": [
         "The Agreement is not in force: Article 15 requires three deposited ratifications, acceptances or approvals, and none was verified.",
         "China's NPC approved ratification on 6 November 2026, but the deposit of the instrument and any depositary notification were not verified; no ratification is counted.",
-        "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located.",
+        "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located. Bangladesh is not the 38th member: it announced on 1 August 2026 that it would join 'initially as an observer', subject to Article 11 and Council approval.",
+        "Observer status is not a party status: Article 11 allows the Council to admit non-member States and intergovernmental organisations as observers, who may attend the plenary on invitation and have no vote. No Council admission of Bangladesh is recorded.",
         "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
         "The full official text was not acquired; the record is metadata-only and relies on a reproduction for the article analysis.",
         "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",
@@ -6393,9 +6755,9 @@
           "mfa-31-july",
           "indonesia-founding-list"
         ],
-        "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. China's NPC approved ratification on 6 November 2026, but no deposit was verified.",
+        "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore has been reported as considering an invitation and is not a member. China's NPC approved ratification on 6 November 2026, but no deposit was verified.",
         "unknowns": [
-          "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The October 2026 progress report says nine States joined after the initial 29; eight are named in the 31 July account, so one of the nine - the 38th member - is not named in the MFA statements, the progress report or the Indonesian government's list of the 29 initial signatories.",
+          "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The October 2026 progress report says nine States joined after the initial 29; eight are named in the 31 July account, so one of the nine - the 38th member - is not named in the MFA statements, the progress report or the Indonesian government's list of the 29 initial signatories. Bangladesh is not that member: it announced on 1 August 2026 that it would join 'initially as an observer', and Article 11 requires an observer application and Council approval; no admission is recorded. Singapore has been reported as considering an invitation and is not a member.",
           "China is the depositary under Article 18. No public depositary register, status table or notification of signatures, ratifications or entry into force was located in the Chinese treaty database or MFA pages. The count of deposited ratifications is therefore 0, notwithstanding China's national approval on 6 November 2026.",
           "The Agreement remains open to accession after 31 July 2026 (Article 14(3)); later accessions are not Founding Members and are not included in this list.",
           "The exact date on which the MFA's 38-country count was reached is not stated; the October 2026 progress report already gives 38."
@@ -6433,6 +6795,7 @@
           "Article 4 — principles: UN Charter, sovereignty, diversity of civilizations, equality, multilateralism and extensive consultation",
           "Articles 5–8 — Council, decision-making, Secretariat and financing",
           "Article 10 — membership open to all States; Founding Members are States that sign during the open-for-signature period",
+          "Article 11 — observer status for non-member States and intergovernmental organisations, subject to an application to the Secretariat and approval by the Council; observers may attend the plenary on invitation and have no vote",
           "Article 14 — signature from 1 May to 31 July 2026; ratification, acceptance or approval; accession thereafter",
           "Article 15 — entry into force on the third instrument of ratification, acceptance or approval",
           "Article 18 — China as depositary; Arabic, Chinese, English, French, Russian and Spanish texts equally authentic"
@@ -6502,9 +6865,29 @@
           "id": "indonesia-founding-list",
           "kind": "official_primary",
           "language": "id",
-          "note": "Official press release dated 16 July 2026 listing the 29 founding signatories, including China, Russia, Kazakhstan, Indonesia, Brazil, South Africa and the other initial signatories.",
-          "publisher": "Coordinating Ministry for Economic Affairs, Republic of Indonesia",
-          "url": "https://www.ekon.go.id/publikasi/detail/7017/indonesia-resmi-jadi-founding-member-waico-menko-airlangga-tegaskan-komitmen-untuk-jembatani-kesenjangan-ai-global"
+          "note": "Official press release dated 17 July 2026 listing the 29 founding signatories, including China, Russia, Kazakhstan, Indonesia, Brazil, South Africa and the other initial signatories. The earlier Coordinating Ministry for Economic Affairs page (ekon.go.id) was not used because its TLS chain is incomplete for standard clients.",
+          "publisher": "Ministry of Communication and Digital Affairs, Republic of Indonesia",
+          "url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/10399"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "bss-bangladesh-observer",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Report of 1 August 2026 quoting the Ministry of Foreign Affairs statement that Bangladesh has decided to join WAICO 'initially as an observer'. It does not describe Bangladesh as a founding member and does not say that an observer application has been approved by the Council.",
+          "publisher": "Bangladesh Sangbad Sangstha (BSS), national news agency",
+          "url": "https://b.bssnews.net/news/410714"
+        },
+        {
+          "accessed": "2026-11-23",
+          "http_status": 200,
+          "id": "thestar-singapore-invite",
+          "kind": "secondary",
+          "language": "en",
+          "note": "Report of 9 September 2026: Singapore's Minister for Digital Development and Information told Parliament that Singapore is considering an invitation to join WAICO and that there is no ASEAN position on either WAICO or Pax Silica. Singapore is a Pax Silica founding signatory; the report does not say that Singapore has joined WAICO.",
+          "publisher": "The Star (Malaysia), reporting The Straits Times",
+          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/09/singapore-considering-invitation-to-join-china-led-ai-bloc"
         },
         {
           "accessed": "2026-11-23",
@@ -6518,7 +6901,7 @@
         }
       ],
       "status": "not_in_force",
-      "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no deposited instrument was verified, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. The discrepancy is recorded, not resolved. The Government of China is the depositary under Article 18; no public depositary register or notification of a deposited ratification was located.",
+      "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no deposited instrument was verified, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. Bangladesh is not that member: on 1 August 2026 its Ministry of Foreign Affairs announced that Bangladesh would join \"initially as an observer\", after the signature period had closed. Article 11 requires an observer application and approval by the Council, and no admission is recorded; observers are not Founding Members under Article 10. Singapore has been reported as considering an invitation to join; it is a Pax Silica signatory and not a WAICO member. The discrepancy is recorded, not resolved. The Government of China is the depositary under Article 18; no public depositary register or notification of a deposited ratification was located.",
       "title": {
         "official": "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization",
         "short": "WAICO Establishment Agreement"
@@ -6546,13 +6929,18 @@
             "result": "Articles 1, 3(2), 10, 14, 15 and 18 confirm the organization's legal personality, civilian-domain limitation, membership, signature/accession, entry into force and depositary. The official deposited text was not acquired."
           },
           {
+            "check": "The 38th founding member checked against the Bangladesh and Singapore records.",
+            "date": "2026-11-23",
+            "result": "Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member. Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore was reported on 9 September 2026 as considering an invitation; it is a Pax Silica signatory and not a WAICO member. Neither closes the 37/38 gap."
+          },
+          {
             "check": "Depositary status rechecked for the 38th founding member and China's instrument of ratification.",
             "date": "2026-11-23",
             "result": "Article 18 designates the Government of the People's Republic of China as depositary. No public depositary register or status table for the Agreement, and no notification of a deposited Chinese instrument, was located in the Chinese treaty database or MFA pages. The 9 November 2026 MFA statement reports 38 founding members and says China was the first to approve the Agreement, but does not name the 38th or state that an instrument was deposited. The counts remain 38 reported, 37 identified and 0 deposited ratifications."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from official Chinese and Indonesian government sources. The record is metadata-only: no full text is stored. The depositary is China under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the deposit of China's instrument of ratification remain unverified and are recorded as unknowns rather than inferred."
+        "notes": "Metadata verified from official Chinese and Indonesian government sources. The record is metadata-only: no full text is stored. The depositary is China under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the deposit of China's instrument of ratification remain unverified and are recorded as unknowns rather than inferred. Bangladesh's observer announcement and Singapore's reported invitation are recorded separately and are not treated as membership."
       }
     }
   ],

@@ -29,6 +29,7 @@
       "Article 4 — principles: UN Charter, sovereignty, diversity of civilizations, equality, multilateralism and extensive consultation",
       "Articles 5–8 — Council, decision-making, Secretariat and financing",
       "Article 10 — membership open to all States; Founding Members are States that sign during the open-for-signature period",
+      "Article 11 — observer status for non-member States and intergovernmental organisations, subject to an application to the Secretariat and approval by the Council; observers may attend the plenary on invitation and have no vote",
       "Article 14 — signature from 1 May to 31 July 2026; ratification, acceptance or approval; accession thereafter",
       "Article 15 — entry into force on the third instrument of ratification, acceptance or approval",
       "Article 18 — China as depositary; Arabic, Chinese, English, French, Russian and Spanish texts equally authentic"
@@ -42,10 +43,10 @@
     "verified_on": "2026-11-23",
     "notes": "Signed at the Shanghai ceremony on 16 July 2026. The Agreement was open for signature from 1 May to 31 July 2026. China's National People's Congress Standing Committee approved ratification on 6 November 2026; the deposit of the instrument of ratification and any depositary notification of entry into force were not verified. Article 18 designates the Government of the People's Republic of China as depositary; no public depositary status table or notification was located."
   },
-  "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no deposited instrument was verified, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. The discrepancy is recorded, not resolved. The Government of China is the depositary under Article 18; no public depositary register or notification of a deposited ratification was located.",
+  "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no deposited instrument was verified, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. Bangladesh is not that member: on 1 August 2026 its Ministry of Foreign Affairs announced that Bangladesh would join \"initially as an observer\", after the signature period had closed. Article 11 requires an observer application and approval by the Council, and no admission is recorded; observers are not Founding Members under Article 10. Singapore has been reported as considering an invitation to join; it is a Pax Silica signatory and not a WAICO member. The discrepancy is recorded, not resolved. The Government of China is the depositary under Article 18; no public depositary register or notification of a deposited ratification was located.",
   "parties": {
     "as_of": "2026-11-23",
-    "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. China's NPC approved ratification on 6 November 2026, but no deposit was verified.",
+    "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore has been reported as considering an invitation and is not a member. China's NPC approved ratification on 6 November 2026, but no deposit was verified.",
     "source_ids": [
       "mfa-signing",
       "mfa-ratification",
@@ -109,7 +110,7 @@
     "notifications": [],
     "withdrawals": [],
     "unknowns": [
-      "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The October 2026 progress report says nine States joined after the initial 29; eight are named in the 31 July account, so one of the nine - the 38th member - is not named in the MFA statements, the progress report or the Indonesian government's list of the 29 initial signatories.",
+      "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The October 2026 progress report says nine States joined after the initial 29; eight are named in the 31 July account, so one of the nine - the 38th member - is not named in the MFA statements, the progress report or the Indonesian government's list of the 29 initial signatories. Bangladesh is not that member: it announced on 1 August 2026 that it would join 'initially as an observer', and Article 11 requires an observer application and Council approval; no admission is recorded. Singapore has been reported as considering an invitation and is not a member.",
       "China is the depositary under Article 18. No public depositary register, status table or notification of signatures, ratifications or entry into force was located in the Chinese treaty database or MFA pages. The count of deposited ratifications is therefore 0, notwithstanding China's national approval on 6 November 2026.",
       "The Agreement remains open to accession after 31 July 2026 (Article 14(3)); later accessions are not Founding Members and are not included in this list.",
       "The exact date on which the MFA's 38-country count was reached is not stated; the October 2026 progress report already gives 38."
@@ -173,13 +174,33 @@
     },
     {
       "id": "indonesia-founding-list",
-      "url": "https://www.ekon.go.id/publikasi/detail/7017/indonesia-resmi-jadi-founding-member-waico-menko-airlangga-tegaskan-komitmen-untuk-jembatani-kesenjangan-ai-global",
-      "publisher": "Coordinating Ministry for Economic Affairs, Republic of Indonesia",
+      "url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/10399",
+      "publisher": "Ministry of Communication and Digital Affairs, Republic of Indonesia",
       "kind": "official_primary",
       "accessed": "2026-11-23",
       "http_status": 200,
       "language": "id",
-      "note": "Official press release dated 16 July 2026 listing the 29 founding signatories, including China, Russia, Kazakhstan, Indonesia, Brazil, South Africa and the other initial signatories."
+      "note": "Official press release dated 17 July 2026 listing the 29 founding signatories, including China, Russia, Kazakhstan, Indonesia, Brazil, South Africa and the other initial signatories. The earlier Coordinating Ministry for Economic Affairs page (ekon.go.id) was not used because its TLS chain is incomplete for standard clients."
+    },
+    {
+      "id": "bss-bangladesh-observer",
+      "url": "https://b.bssnews.net/news/410714",
+      "publisher": "Bangladesh Sangbad Sangstha (BSS), national news agency",
+      "kind": "official_secondary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Report of 1 August 2026 quoting the Ministry of Foreign Affairs statement that Bangladesh has decided to join WAICO 'initially as an observer'. It does not describe Bangladesh as a founding member and does not say that an observer application has been approved by the Council."
+    },
+    {
+      "id": "thestar-singapore-invite",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/09/singapore-considering-invitation-to-join-china-led-ai-bloc",
+      "publisher": "The Star (Malaysia), reporting The Straits Times",
+      "kind": "secondary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Report of 9 September 2026: Singapore's Minister for Digital Development and Information told Parliament that Singapore is considering an invitation to join WAICO and that there is no ASEAN position on either WAICO or Pax Silica. Singapore is a Pax Silica founding signatory; the report does not say that Singapore has joined WAICO."
     },
     {
       "id": "digwatch-text",
@@ -221,12 +242,17 @@
         "date": "2026-11-23"
       },
       {
+        "check": "The 38th founding member checked against the Bangladesh and Singapore records.",
+        "result": "Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member. Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore was reported on 9 September 2026 as considering an invitation; it is a Pax Silica signatory and not a WAICO member. Neither closes the 37/38 gap.",
+        "date": "2026-11-23"
+      },
+      {
         "check": "Depositary status rechecked for the 38th founding member and China's instrument of ratification.",
         "result": "Article 18 designates the Government of the People's Republic of China as depositary. No public depositary register or status table for the Agreement, and no notification of a deposited Chinese instrument, was located in the Chinese treaty database or MFA pages. The 9 November 2026 MFA statement reports 38 founding members and says China was the first to approve the Agreement, but does not name the 38th or state that an instrument was deposited. The counts remain 38 reported, 37 identified and 0 deposited ratifications.",
         "date": "2026-11-23"
       }
     ],
-    "notes": "Metadata verified from official Chinese and Indonesian government sources. The record is metadata-only: no full text is stored. The depositary is China under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the deposit of China's instrument of ratification remain unverified and are recorded as unknowns rather than inferred."
+    "notes": "Metadata verified from official Chinese and Indonesian government sources. The record is metadata-only: no full text is stored. The depositary is China under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the deposit of China's instrument of ratification remain unverified and are recorded as unknowns rather than inferred. Bangladesh's observer announcement and Singapore's reported invitation are recorded separately and are not treated as membership."
   },
   "related": [
     {
@@ -248,7 +274,8 @@
   "gaps": [
     "The Agreement is not in force: Article 15 requires three deposited ratifications, acceptances or approvals, and none was verified.",
     "China's NPC approved ratification on 6 November 2026, but the deposit of the instrument and any depositary notification were not verified; no ratification is counted.",
-    "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located.",
+    "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located. Bangladesh is not the 38th member: it announced on 1 August 2026 that it would join 'initially as an observer', subject to Article 11 and Council approval.",
+    "Observer status is not a party status: Article 11 allows the Council to admit non-member States and intergovernmental organisations as observers, who may attend the plenary on invitation and have no vote. No Council admission of Bangladesh is recorded.",
     "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
     "The full official text was not acquired; the record is metadata-only and relies on a reproduction for the article analysis.",
     "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",

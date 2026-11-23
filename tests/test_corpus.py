@@ -6,6 +6,8 @@ import html
 import json
 import re
 import shutil
+import socket
+import ssl
 import sys
 import tempfile
 import unittest
@@ -213,6 +215,8 @@ class TestCatalogue(unittest.TestCase):
             self.assertIn(name, names)
         self.assertNotIn("United States of America", names)
         self.assertNotIn("India", names)
+        self.assertNotIn("Bangladesh", names)
+        self.assertNotIn("Singapore", names)
         china = next(entry for entry in parties["entries"] if entry["party"] == "China")
         self.assertEqual(china["signature"], "2026-07-16")
         self.assertEqual(china["approval"], "2026-11-06")
@@ -221,6 +225,13 @@ class TestCatalogue(unittest.TestCase):
         self.assertIn("38", unknowns)
         self.assertIn("37", unknowns)
         self.assertIn("deposit", unknowns)
+        self.assertIn("Bangladesh", unknowns)
+        self.assertIn("observer", unknowns)
+        self.assertIn("Article 11", unknowns)
+        self.assertIn("Singapore", unknowns)
+        source_ids = {source["id"] for source in inst["sources"]}
+        self.assertIn("bss-bangladesh-observer", source_ids)
+        self.assertIn("thestar-singapore-invite", source_ids)
 
     def test_pax_silica_record(self) -> None:
         inst = read_instrument("pax-silica-declaration-2025")
@@ -247,10 +258,48 @@ class TestCatalogue(unittest.TestCase):
             self.assertNotIn(name, names)
         self.assertIn("not a treaty", inst["status_note"])
         self.assertIn("26", inst["status_note"])
+        self.assertIn("word 'signatory'", inst["status_note"])
+        gaps = " ".join(inst["gaps"])
+        self.assertIn("San Francisco", gaps)
+        source_ids = {source["id"] for source in inst["sources"]}
+        self.assertIn("state-san-francisco", source_ids)
+        self.assertIn("australia-san-francisco", source_ids)
+
+    def test_new_delhi_record(self) -> None:
+        inst = read_instrument("new-delhi-declaration-2026")
+        self.assertEqual(inst["category"], "non_binding_instrument")
+        self.assertEqual(inst["instrument_type"], "declaration")
+        self.assertEqual(inst["binding_status"], "non_binding")
+        self.assertEqual(inst["status"], "adopted")
+        self.assertEqual(inst["verification"]["level"], "metadata_verified")
+        self.assertNotIn("text", inst)
+        self.assertEqual(inst["dates"]["adopted"], "2026-02-19")
+        parties = inst["parties"]
+        self.assertEqual(parties["signatories_total"], 92)
+        self.assertEqual(parties["ratifications_total"], 0)
+        self.assertEqual(parties["entries"], [])
+        self.assertIn("itemised", " ".join(parties["unknowns"]))
+        source_ids = {source["id"] for source in inst["sources"]}
+        self.assertIn("mea-declaration", source_ids)
+        self.assertIn("pib-summit", source_ids)
+
+    def test_brics_record(self) -> None:
+        inst = read_instrument("brics-ai-statement-2025")
+        self.assertEqual(inst["category"], "non_binding_instrument")
+        self.assertEqual(inst["binding_status"], "non_binding")
+        self.assertEqual(inst["status"], "adopted")
+        self.assertEqual(inst["dates"]["adopted"], "2025-07-06")
+        self.assertEqual(inst["verification"]["level"], "metadata_verified")
+        self.assertNotIn("text", inst)
+        self.assertIsNone(inst["parties"]["signatories_total"])
+        self.assertEqual(inst["parties"]["entries"], [])
+        source_ids = {source["id"] for source in inst["sources"]}
+        self.assertIn("brics-presidency-pdf", source_ids)
+        self.assertIn("brazil-mfa-page", source_ids)
 
     def test_candidate_register_counts(self) -> None:
         entries = json.loads((ROOT / "catalog" / "candidates.json").read_text(encoding="utf-8"))
-        self.assertEqual(len(entries), 22)
+        self.assertEqual(len(entries), 24)
         decisions = {"included": 0, "pending": 0, "excluded": 0}
         instruments = corpuslib.load_instruments()
         for entry in entries:
@@ -259,7 +308,7 @@ class TestCatalogue(unittest.TestCase):
                 self.assertIn(entry["instrument_id"], instruments)
             else:
                 self.assertIsNone(entry["instrument_id"])
-        self.assertEqual(decisions, {"included": 8, "pending": 7, "excluded": 7})
+        self.assertEqual(decisions, {"included": 10, "pending": 7, "excluded": 7})
 
     def test_pact_units_are_citable(self) -> None:
         units = corpuslib.load_units("un-ga-res-79-1")
@@ -354,6 +403,9 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(page.count('class="map-key"'), 7)
         figures = re.findall(r'<figure class="map-card">(.*?)</figure>', page, re.S)
         self.assertEqual(len(figures), 7)
+        self.assertNotIn("What it is", page)
+        self.assertEqual(page.count('class="reading"'), 3)
+        self.assertEqual(page.count('<table class="record-table'), 2)
         by_title = {
             re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
             for figure in figures
@@ -697,6 +749,68 @@ class TestBuild(unittest.TestCase):
         self.assertIn("three instruments of ratification", waico["status_note"])
         self.assertIn("54 endorsers as of September 2026", page)
         self.assertIn("54 endorsers as of September 2026", pax["parties"]["unknowns"][-1])
+
+
+class TestLinkAudit(unittest.TestCase):
+    """Offline tests for the link classifier; probe() is never called here."""
+
+    def setUp(self) -> None:
+        import audit_sources
+
+        self.audit = audit_sources
+
+    def test_classification_without_network(self) -> None:
+        classify = self.audit.classify
+        self.assertEqual(classify(200, {"Server": "nginx"}, "<html>ok</html>"), ("ok", "http_2xx"))
+        self.assertEqual(classify(301, {}, ""), ("transient", "http_301"))
+        self.assertEqual(classify(403, {}, ""), ("anti_bot", "http_403"))
+        self.assertEqual(classify(405, {"Server": "nginx"}, ""), ("anti_bot", "http_405"))
+        self.assertEqual(classify(429, {}, ""), ("anti_bot", "http_429"))
+        self.assertEqual(classify(451, {}, ""), ("anti_bot", "http_451"))
+        self.assertEqual(classify(404, {}, ""), ("broken", "http_404"))
+        self.assertEqual(classify(410, {}, ""), ("broken", "http_410"))
+        self.assertEqual(classify(500, {}, ""), ("transient", "http_500"))
+        self.assertEqual(classify(200, {"Server": "cloudflare"}, "Just a moment..."), ("anti_bot", "challenge_on_200"))
+        self.assertEqual(classify(200, {"cf-mitigated": "challenge"}, ""), ("anti_bot", "challenge_on_200"))
+        self.assertEqual(classify(None, error=TimeoutError("timeout")), ("transient", "timeout"))
+        self.assertEqual(classify(None, error=socket.gaierror("dns")), ("broken", "dns"))
+        self.assertEqual(classify(None, error=ConnectionRefusedError()), ("broken", "connection"))
+        self.assertEqual(classify(None, error=ssl.SSLCertVerificationError("cert")), ("broken", "tls_certificate"))
+        self.assertEqual(classify(None, error=ssl.SSLError("handshake")), ("broken", "tls_handshake"))
+        wrapped = __import__("urllib.error", fromlist=["URLError"]).URLError(socket.gaierror("dns"))
+        self.assertEqual(classify(None, error=wrapped), ("broken", "dns"))
+
+    def test_known_browser_only_host(self) -> None:
+        self.assertIn(
+            "State Department",
+            self.audit.browser_only_host(
+                "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
+            ),
+        )
+        self.assertIsNone(self.audit.browser_only_host("https://www.state.gov.example/x"))
+        self.assertEqual(
+            self.audit.override_browser_only("https://www.state.gov/x", 404, "broken", "http_404"),
+            ("anti_bot", "known_browser_only"),
+        )
+        self.assertEqual(
+            self.audit.override_browser_only("https://example.com/x", 404, "broken", "http_404"),
+            ("broken", "http_404"),
+        )
+
+    def test_targets_cover_the_seven_panels(self) -> None:
+        import build_site
+
+        targets = self.audit.targets()
+        self.assertEqual(len(build_site.MAP_INSTRUMENT_IDS), 7)
+        self.assertEqual(
+            {target.instrument_id for target in targets},
+            set(build_site.MAP_INSTRUMENT_IDS),
+        )
+        self.assertTrue(all(target.url.startswith("https://") for target in targets))
+        self.assertEqual(
+            targets,
+            sorted(targets, key=lambda target: (target.instrument_id, target.source_id)),
+        )
 
 
 if __name__ == "__main__":

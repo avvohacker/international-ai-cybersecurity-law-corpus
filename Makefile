@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: validate build test extract segment checksums site
+.PHONY: validate build test extract segment checksums site audit-links
 
 validate:
 	$(PY) tools/build.py --check
@@ -13,6 +13,11 @@ test: build
 
 site: build
 	$(PY) tools/build_site.py
+
+# Network-only audit of the official links in the seven instrument panels.
+# Kept out of `make test` so the test suite never depends on the network.
+audit-links:
+	$(PY) tools/audit_sources.py
 
 # Example: make extract ID=un-ga-res-78-265 SRC=source/A_RES_78_265-en.pdf
 extract:

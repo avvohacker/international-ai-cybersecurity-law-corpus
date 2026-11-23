@@ -1,0 +1,176 @@
+{
+  "id": "new-delhi-declaration-2026",
+  "title": {
+    "official": "AI Impact Summit Declaration, New Delhi",
+    "short": "New Delhi Declaration on AI Impact"
+  },
+  "category": "non_binding_instrument",
+  "instrument_type": "declaration",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [
+    {
+      "name": "Government of India, Ministry of External Affairs, and participating States and international organisations",
+      "role": "issuer",
+      "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809"
+    },
+    {
+      "name": "AI Impact Summit 2026, New Delhi",
+      "role": "host",
+      "url": "https://impact.indiaai.gov.in/outcome-resources"
+    }
+  ],
+  "relevance": {
+    "reason": "The declaration adopted at the AI Impact Summit in New Delhi on 19 February 2026, the fourth summit in the series that began at Bletchley Park in 2023. India's Ministry of External Affairs and Press Information Bureau report that 92 countries and international organisations endorsed it, the widest endorsement count among the summit declarations in the corpus. It marks the series' shift from AI safety to AI impact and development, and it is a political declaration, not a treaty: it creates no legal obligation, ratification, depositary, monitoring or dispute settlement. It is included because the corpus already catalogues the Bletchley, Seoul and Paris summit texts and would otherwise omit the 2026 stage of the same series.",
+    "ai_provisions": [
+      "Preamble — AI's promise is best realised when its benefits are shared by humanity; the participants adopt the principle 'Sarvajan Hitaya, Sarvajan Sukhaya' (welfare for all, happiness for all).",
+      "Seven pillars (Chakras) — democratising AI resources; economic growth and social good; secure and trusted AI; AI for science; access for social empowerment; human capital development; resilient, efficient and innovative AI systems.",
+      "Democratising AI resources — robust digital infrastructure and affordable access, with international cooperation on compute, data, models and skills.",
+      "Secure and trusted AI — trustworthy frameworks, risk management and respect for national sovereignty.",
+      "AI for science and for social empowerment — use of AI in research and public services, including for development priorities.",
+      "Human capital development — skilling and reskilling, including the Equitable AI Transitions Playbook produced with the International Labour Organization.",
+      "Complementarity with existing international initiatives — the declaration is to be read alongside, not instead of, other international and regional AI processes."
+    ],
+    "excluded_scope": "A political declaration. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. The separate New Delhi Frontier AI Impact Commitments, announced by 13 model providers at the same summit, are a different instrument and are not counted as parties to the declaration. National implementation is not assessed."
+  },
+  "dates": {
+    "adopted": "2026-02-19",
+    "verified_on": "2026-11-23",
+    "notes": "Adopted at the AI Impact Summit in New Delhi on 19 February 2026; the summit ran from 18 to 19 February 2026. The Ministry of External Affairs and the Press Information Bureau report 92 endorsing countries and international organisations. The text has no signature, ratification, depositary or entry-into-force clause."
+  },
+  "status_note": "Non-binding political declaration, not a treaty. 92 countries and international organisations endorsed it, according to the Government of India; the official declaration page does not publish an itemised list of the 92 in the text consulted, and the count includes international organisations as well as States. It creates no legal obligation, ratification, depositary, monitoring or dispute settlement. The separate New Delhi Frontier AI Impact Commitments were announced by 13 model providers and are not part of this declaration.",
+  "parties": {
+    "as_of": "2026-11-23",
+    "summary": "92 countries and international organisations are reported as endorsers by India's Ministry of External Affairs and Press Information Bureau. No itemised public list was located in the official pages read, so the record does not infer party-by-party entries or a State/organisation split.",
+    "source_ids": [
+      "mea-declaration",
+      "pib-summit",
+      "india-outcomes"
+    ],
+    "signatories_total": 92,
+    "ratifications_total": 0,
+    "entries": [],
+    "reservations": [],
+    "declarations": [],
+    "objections": [],
+    "notifications": [],
+    "withdrawals": [],
+    "unknowns": [
+      "No itemised list of the 92 endorsers was located on the official MEA or PIB pages read. The count includes international organisations as well as States, and the split between them is not stated.",
+      "The declaration is non-binding; there is no depositary, ratification, accession or withdrawal record.",
+      "No follow-up mechanism, reporting cycle or review conference was verified.",
+      "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate industry commitment and are not counted here."
+    ]
+  },
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "translations": [],
+    "note": "English text published by the Ministry of External Affairs. The preamble includes the Sanskrit principle 'Sarvajan Hitaya, Sarvajan Sukhaya'; no other authentic-language version was verified."
+  },
+  "sources": [
+    {
+      "id": "mea-declaration",
+      "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809",
+      "publisher": "Ministry of External Affairs, Government of India",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official text of the AI Impact Summit Declaration, New Delhi, 18-19 February 2026. The page reproduces the preamble and the seven pillars."
+    },
+    {
+      "id": "pib-summit",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&reg=3&lang=1",
+      "publisher": "Press Information Bureau, Government of India",
+      "kind": "official_secondary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official press release of 21 February 2026: the AI Impact Summit concluded with the adoption of the New Delhi Declaration on AI Impact, endorsed by 92 countries and international organisations; lists the seven pillars and the voluntary deliverables."
+    },
+    {
+      "id": "india-outcomes",
+      "url": "https://impact.indiaai.gov.in/outcome-resources",
+      "publisher": "AI Impact Summit 2026, Government of India",
+      "kind": "official_secondary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official outcome-resources page listing the declaration and the separate summit deliverables, including the New Delhi Frontier AI Impact Commitments."
+    }
+  ],
+  "rights": {
+    "status": "public_official_text",
+    "licence": "Government of India official publication",
+    "note": "Official government publication. No full text is stored in this corpus; the declaration is read from the official MEA page."
+  },
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {
+        "check": "Declaration text read on the official Ministry of External Affairs page.",
+        "result": "The page reproduces the AI Impact Summit Declaration, New Delhi, with the preamble, the seven pillars and the closing commitments; it has no signature or ratification clause.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Adoption date and endorser count checked against the official press release.",
+        "result": "The Press Information Bureau release of 21 February 2026 states that the summit concluded with the adoption of the New Delhi Declaration on AI Impact and that 92 countries and international organisations endorsed it.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Party-level data checked for an itemised list.",
+        "result": "The MEA declaration page and the PIB release give the aggregate count but no itemised list of the 92 endorsers; no party-by-party entries are recorded.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Legal nature checked against the text and official descriptions.",
+        "result": "The instrument is a political declaration, not a treaty; it creates no binding obligation, depositary, ratification or dispute settlement.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Metadata verified from official Indian government sources. The record is metadata-only: no full text is stored. The 92-endorser count is reproduced as reported; the absence of an itemised list is recorded as an unknown rather than filled by inference."
+  },
+  "related": [
+    {
+      "id": "paris-ai-action-summit-statement-2025",
+      "relation": "policy_line",
+      "note": "The previous stage of the same summit series: Paris 2025 was an 'AI Action Summit'; New Delhi 2026 was an 'AI Impact Summit'. Both are non-binding political declarations."
+    },
+    {
+      "id": "bletchley-declaration-2023",
+      "relation": "policy_line",
+      "note": "The first summit of the series, focused on frontier-model safety; New Delhi marks the series' shift toward impact, development and access."
+    },
+    {
+      "id": "seoul-declaration-2024",
+      "relation": "policy_line",
+      "note": "The second summit of the series; Seoul combined safety and innovation themes."
+    },
+    {
+      "id": "waico-establishment-agreement-2026",
+      "relation": "related",
+      "note": "WAICO was signed five months after the New Delhi Declaration and also addresses AI capacity building in the Global South, but it is a treaty establishing an intergovernmental organization, not a summit declaration."
+    },
+    {
+      "id": "un-ga-res-79-1",
+      "relation": "related",
+      "note": "The Global Digital Compact in the Pact for the Future is the UN's universal digital-cooperation framework; the New Delhi Declaration is a separate, non-binding summit text."
+    }
+  ],
+  "gaps": [
+    "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "No itemised list of the 92 endorsers was located; the State/organisation split is not published in the pages read.",
+    "No follow-up mechanism, review cycle or implementation reporting was verified.",
+    "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate instrument and are not catalogued here.",
+    "The declaration's relationship to the UN Global Dialogue on AI Governance and to the Paris and Seoul texts is political, not institutional; no formal linkage was verified.",
+    "No full text is stored; the record is metadata-only."
+  ],
+  "provenance": {
+    "discovered_via": "Search for the outcome of the 2026 AI Impact Summit while auditing the summit series against the corpus. The declaration was missing from the 42-record corpus; the official MEA text and the PIB release were then read.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "brics-ai-statement-2025",
+  "title": {
+    "official": "BRICS Leaders' Statement on the Global Governance of Artificial Intelligence",
+    "short": "BRICS AI Statement"
+  },
+  "category": "non_binding_instrument",
+  "instrument_type": "declaration",
+  "binding_status": "non_binding",
+  "status": "adopted",
+  "issuer": [
+    {
+      "name": "BRICS Leaders, 17th BRICS Summit, Rio de Janeiro",
+      "role": "issuer",
+      "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
+    },
+    {
+      "name": "Federative Republic of Brazil, 2025 BRICS Presidency",
+      "role": "host",
+      "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial"
+    }
+  ],
+  "relevance": {
+    "reason": "The first stand-alone BRICS leaders' statement on the global governance of artificial intelligence, adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. It sets out a collective position centred on digital sovereignty, the right to development, the UN Charter, capacity building and the concerns of the Global South. It is a political statement, not a treaty: it creates no legal obligation, ratification, depositary or monitoring. It is included because it is a distinct coalition instrument that the three-pole reading would otherwise miss, and because it documents the China–Global South diffusion position before WAICO was established.",
+    "ai_provisions": [
+      "Digital sovereignty and the right to development — all countries may adopt their own AI regulatory frameworks, develop AI capacities and pursue technological autonomy within their jurisdictions.",
+      "Global governance under the UN Charter — AI governance must respect national sovereignty, be representative, development-oriented, accessible and inclusive, and place the United Nations at its core.",
+      "Market regulation and data governance — personal data protection, information integrity and the rights and interests of humanity.",
+      "AI for sustainable development — innovation, productivity, sustainable practices and the reduction of digital and data divides within and between countries.",
+      "Capacity building — support for developing countries, technology transfer and access to AI technologies and skills.",
+      "Risk mitigation — collective action on safety, transparency, accountability and the risks arising from AI, without creating binding obligations.",
+      "International cooperation — the statement warns that a proliferation of initiatives and diverging views may aggravate asymmetries and the legitimacy gap in global digital governance."
+    ],
+    "excluded_scope": "A political statement by BRICS leaders. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. It does not establish an institution or a follow-up mechanism. National implementation is not assessed."
+  },
+  "dates": {
+    "adopted": "2025-07-06",
+    "verified_on": "2026-11-23",
+    "notes": "Adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The official text is a leaders' statement; it has no signature, ratification, depositary or entry-into-force clause."
+  },
+  "status_note": "Non-binding political statement, not a treaty. It was issued collectively by the BRICS leaders at the Rio de Janeiro summit; the official text does not include an itemised list of signatories, and no ratification, depositary, monitoring or enforcement is established. It is a coalition statement, not an instrument of the BRICS organization with legal personality.",
+  "parties": {
+    "as_of": "2025-07-06",
+    "summary": "Issued collectively by the BRICS leaders at the 17th BRICS Summit. The official text does not publish an itemised signature list, so the record does not infer individual party entries or a membership count.",
+    "source_ids": [
+      "brics-presidency-pdf",
+      "brazil-mfa-page"
+    ],
+    "signatories_total": null,
+    "ratifications_total": 0,
+    "entries": [],
+    "reservations": [],
+    "declarations": [],
+    "objections": [],
+    "notifications": [],
+    "withdrawals": [],
+    "unknowns": [
+      "The official text is a collective leaders' statement and does not include an itemised signatory list; no party-by-party entries are recorded.",
+      "The statement creates no depositary, ratification, accession or withdrawal record.",
+      "No follow-up mechanism, reporting cycle or review conference was verified.",
+      "The relationship between this statement and the later WAICO Agreement is political, not institutional; no formal linkage was verified."
+    ]
+  },
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "translations": [],
+    "note": "English text published by the 2025 BRICS Presidency and the Brazilian Ministry of Foreign Affairs. Other language versions were not verified."
+  },
+  "sources": [
+    {
+      "id": "brics-presidency-pdf",
+      "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
+      "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official PDF of the BRICS Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025."
+    },
+    {
+      "id": "brazil-mfa-page",
+      "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial",
+      "publisher": "Ministry of Foreign Affairs, Federative Republic of Brazil",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "pt",
+      "note": "Official Brazilian MFA page for the statement, with a link to the English text; confirms the date and the 17th BRICS Summit setting."
+    }
+  ],
+  "rights": {
+    "status": "public_official_text",
+    "licence": "BRICS 2025 Presidency / Government of Brazil official publication",
+    "note": "Official government publication. No full text is stored in this corpus; the statement is read from the official PDF and MFA page."
+  },
+  "verification": {
+    "level": "metadata_verified",
+    "checks": [
+      {
+        "check": "Statement text read on the official BRICS Presidency PDF.",
+        "result": "The text is a leaders' statement, with sections on digital sovereignty, the UN Charter, market regulation, sustainable development, capacity building and risk mitigation; it has no signature or ratification clause.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Date and summit setting checked on the Brazilian MFA page.",
+        "result": "The Brazilian Ministry of Foreign Affairs page confirms the statement was issued at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Party-level data checked for an itemised list.",
+        "result": "The official text is a collective statement and does not include an itemised list of signatories; no party entries are recorded.",
+        "date": "2026-11-23"
+      },
+      {
+        "check": "Legal nature checked against the text and official descriptions.",
+        "result": "The instrument is a political statement, not a treaty; it creates no binding obligation, depositary, ratification or dispute settlement.",
+        "date": "2026-11-23"
+      }
+    ],
+    "notes": "Metadata verified from the official BRICS Presidency PDF and the Brazilian MFA page. The record is metadata-only: no full text is stored. The absence of an itemised signatory list is recorded as an unknown rather than filled by inference."
+  },
+  "related": [
+    {
+      "id": "china-global-ai-governance-initiative-2023",
+      "relation": "related",
+      "note": "Both documents assert sovereignty and a UN-centred framework; the BRICS statement is a collective leaders' text, whereas China's initiative is a unilateral government proposal."
+    },
+    {
+      "id": "waico-establishment-agreement-2026",
+      "relation": "policy_line",
+      "note": "The BRICS statement precedes WAICO by a year and expresses a similar Global South capacity-building position, but it creates no institution and has no formal link to WAICO."
+    },
+    {
+      "id": "new-delhi-declaration-2026",
+      "relation": "related",
+      "note": "Both are non-binding summit statements with a development and access agenda; New Delhi is a wider summit declaration, while the BRICS statement is a coalition statement."
+    },
+    {
+      "id": "un-ga-res-79-1",
+      "relation": "related",
+      "note": "The UN's Global Digital Compact is the universal digital-cooperation framework; the BRICS statement is a separate coalition text that calls for the UN to be at the core of AI governance."
+    }
+  ],
+  "gaps": [
+    "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "No itemised list of signatories was located; the statement is issued collectively by the BRICS leaders.",
+    "No follow-up mechanism, review cycle or implementation reporting was verified.",
+    "The statement's relationship to WAICO and to the 2026 BRICS summit was not verified.",
+    "No full text is stored; the record is metadata-only."
+  ],
+  "provenance": {
+    "discovered_via": "Audit of other international AI instruments after the summit-series and WAICO reviews; the official BRICS Presidency PDF and the Brazilian MFA page were read.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  }
+}

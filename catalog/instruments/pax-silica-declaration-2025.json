@@ -37,7 +37,7 @@
     "verified_on": "2026-11-23",
     "notes": "Signed at the first Pax Silica Summit in Washington, D.C. on 12 December 2025 by Australia, Israel, Japan, the Republic of Korea, Singapore, the United Kingdom and the United States. Further partners joined during 2026; Paraguay became the 26th signatory on 23 October 2026."
   },
-  "status_note": "Political declaration, not a treaty. The official US and Australian publications call the participants 'signatories'; the act is an endorsement of shared principles, not a treaty signature. As of 23 October 2026 the list contains 26 signatories: 25 States and the European Union. The United States is a signatory but is omitted from the State Department's partner list because it is the host. No ratification, depositary, monitoring or enforcement is established. Taiwan is listed as a non-signatory participant that endorsed the declaration principles through a separate joint statement.",
+  "status_note": "Political declaration, not a treaty. The official US and Australian publications call the participants 'signatories'; the act is an endorsement of shared principles, not a treaty signature, and the word 'signatory' therefore implies no ratification, depositary or legal obligation. The atlas maps the act as endorsement. As of 23 October 2026 the list contains 26 signatories: 25 States and the European Union. The United States is a signatory but is omitted from the State Department's partner list because it is the host. No ratification, depositary, monitoring or enforcement is established. Taiwan is listed as a non-signatory participant that endorsed the declaration principles through a separate joint statement.",
   "parties": {
     "as_of": "2026-10-23",
     "summary": "26 signatories: 25 States and the European Union. The United States is a signatory; the State Department's partner list omits the United States because it is the host. Taiwan is a non-signatory participant that endorsed the principles through a separate joint statement and is not counted.",
@@ -178,6 +178,26 @@
       "http_status": 200,
       "language": "en",
       "note": "Official page for the separate Joint Statement on AI Opportunity Partnership: 54 countries had endorsed it as of September 2026. Used only to distinguish that instrument from the Pax Silica Declaration."
+    },
+    {
+      "id": "state-san-francisco",
+      "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity",
+      "publisher": "United States Department of State",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Release of 15 November 2026: the United States and nine Pax Silica participants signed the San Francisco Declaration on the Secure Foundations of Enduring Prosperity at the Pax Silica Founders Retreat. A separate follow-on declaration, not the 2025 Pax Silica Declaration."
+    },
+    {
+      "id": "australia-san-francisco",
+      "url": "https://www.industry.gov.au/publications/san-francisco-declaration-secure-foundations-enduring-prosperity-signed-countries-attending-pax-silica-summit-15-november-2026",
+      "publisher": "Australian Government, Department of Industry, Science and Resources",
+      "kind": "official_primary",
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "language": "en",
+      "note": "Australian government publication listing the ten governments that signed the San Francisco Declaration on 15 November 2026: the United States, Australia, India, Israel, Japan, the Republic of Korea, Qatar, Singapore, the United Arab Emirates and the United Kingdom."
     }
   ],
   "rights": {
@@ -212,6 +232,11 @@
         "check": "Separate AI Opportunity Statement checked.",
         "result": "The Joint Statement on AI Opportunity Partnership is a distinct instrument with 54 endorsers as of September 2026; it is not included in the Pax Silica Declaration party count.",
         "date": "2026-11-23"
+      },
+      {
+        "check": "San Francisco follow-on declaration checked.",
+        "result": "The San Francisco Declaration on the Secure Foundations of Enduring Prosperity was signed on 15 November 2026 by the United States and nine other participants. It is a separate instrument and its ten signatories are not counted in the 26 signatories of the 2025 Pax Silica Declaration.",
+        "date": "2026-11-23"
       }
     ],
     "notes": "Metadata verified from official US and Australian sources. The record is metadata-only; the declaration text is not stored. The US omission from the State Department partner list and the Taiwan non-signatory status are recorded explicitly rather than inferred."
@@ -244,6 +269,7 @@
     "No complete signature chronology is published; the dates of individual accessions are only partly available.",
     "Taiwan is a non-signatory participant that endorsed the principles through a separate joint statement; it is not counted as a signatory.",
     "The separate Joint Statement on AI Opportunity Partnership (54 endorsers as of September 2026) is a different instrument and is not catalogued here.",
+    "The San Francisco Declaration on the Secure Foundations of Enduring Prosperity, signed on 15 November 2026 by the United States and nine other Pax Silica participants, is a separate follow-on declaration; its ten signatories are not counted in this record's 26.",
     "The declaration is a supply-chain and economic-security text, not a comprehensive AI regulation; it does not create AI safety, testing or liability rules.",
     "No full text is stored; the record is metadata-only."
   ],

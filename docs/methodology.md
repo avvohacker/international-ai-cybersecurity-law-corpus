@@ -24,7 +24,7 @@ The legal nature is determined from the instrument and its issuer, not from its 
 | Level | Meaning | This cycle |
 |---|---|---:|
 | `full_text_checked` | Full text stored, hashed, segmented, read; key passages asserted by tests. | 10 |
-| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 32 |
+| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 34 |
 | `source_located` | Official URL recorded; metadata from an established reference, not re-read. | 0 |
 
 Sixteen full texts are stored (15 acquired originals — 14 PDFs and one HTML — plus the CETS 225 transcription); only the ten marked `full_text_checked` were read end-to-end and are covered by key-passage tests. Six further texts are stored and segmented but remain `metadata_verified` because they were not read end-to-end. The levels are deliberately coarse and honest. `metadata_verified` is not a guarantee that every field, party or declaration was checked. Each record lists its own `verification.checks`, and `gaps` records what remains unknown.
@@ -60,7 +60,7 @@ Sources are never overwritten. If a later retrieval differs from the registered 
 - A Party's position is never inferred from the position of an international organisation of which it is a member. The EU is recorded as a party to CETS 225 only because the EU deposited an instrument; EU member States are not thereby recorded as parties.
 - Political declarations have no signature or ratification. Their records list endorsers in `parties.entries`; the atlas labels the act as endorsement, not signature. An international organisation that is a party is named outside the map frame; its member States are shown in a lighter tone only where they did not sign, ratify or endorse individually.
 - Party names are normalized to a common English form for matching across records; the official spelling remains on the source page.
-- Each map has a “What it is” panel built from the record: `relevance.reason`, `dates`, `dates.notes` and the record’s official sources. Its source links point only to sources marked `official_primary`, `registry` or `official_journal`; a final link opens the full record and citation. The panel does not add facts outside the record.
+- Each map has an instrument panel built from the record: `relevance.reason`, `dates`, `dates.notes` and the record’s official sources. Its source links point only to sources marked `official_primary`, `registry` or `official_journal`; a final link opens the full record and citation. The panel does not add facts outside the record, and the heading is not repeated inside every panel.
 - Where a party table could not be captured, aggregate counts are stored with the exact status date, and the missing rows are listed in `parties.unknowns`.
 
 ## 6. Rights
@@ -80,6 +80,20 @@ The build uses Python's standard library only and does not access the network. I
 
 The determinism test builds twice and compares the bytes. Network acquisition and PDF extraction are separate commands; their outputs are stored, so a rebuild from the repository does not depend on the network or on a PDF library. The atlas is generated from the catalogue, the stored Natural Earth boundaries and the organisation membership lists in `data/organisations.json`; it is not an independent dataset.
 
+The link audit is a third, network-only command: `make audit-links` or `python3 tools/audit_sources.py`. It checks the official links used by the seven instrument panels, classifies broken links separately from anti-bot blocks and transient errors, and is deliberately excluded from `make test`.
+
 ## 8. Limits of this cycle
 
-This is a first corpus, not a comprehensive survey. The principal limits are: two AI-specific treaties, neither in force; five digital agreements with cooperative AI clauses; one category-6 negotiation record (CCW) but no adopted draft protocol; CETS 225 and WAICO not in force; an inconsistent Paris Statement endorser list (60/64/65 across official publications); a unilateral Chinese initiative with no adherence list; a WAICO membership count that names 37 of 38 reported founding members; mostly English texts; metadata-only records for paywalled standards and for several official PDFs that returned access errors; and no systematic search of national bilateral treaty registries. These limits are stated in the coverage matrix and the progress file rather than hidden in the aggregate counts.
+This is a first corpus, not a comprehensive survey. The principal limits are: two AI-specific treaties, neither in force; five digital agreements with cooperative AI clauses; one category-6 negotiation record (CCW) but no adopted draft protocol; CETS 225 and WAICO not in force; an inconsistent Paris Statement endorser list (60/64/65 across official publications); a unilateral Chinese initiative with no adherence list; a WAICO membership count that names 37 of 38 reported founding members and an observer announcement by Bangladesh that is not a membership; a New Delhi endorsement count of 92 and a BRICS statement with no itemised lists; mostly English texts; metadata-only records for paywalled standards and for several official PDFs that returned access errors; and no systematic search of national bilateral treaty registries. These limits are stated in the coverage matrix and the progress file rather than hidden in the aggregate counts.
+
+## 9. Sources of international law
+
+The corpus is a register of written instruments. It covers treaties, declarations, resolutions, recommendations, codes, strategies and technical standards, plus a minimal general-treaty layer (VCLT and ICCPR). It does not systematically cover:
+
+- customary international law, general principles of law or *jus cogens*;
+- UN Security Council resolutions (no AI-specific resolution was located);
+- decisions of international courts and tribunals;
+- international humanitarian law (the Geneva Conventions and Additional Protocol I) and general human-rights treaties beyond the ICCPR;
+- unilateral acts and national legislation, except the EU AI Act.
+
+These are scope limits, not findings that the sources are irrelevant. A claim about “international AI law” in this repository is a claim about the written instruments catalogued, not about the whole of international law. The audit of other candidates and the reason each was included, left pending or excluded is recorded in `catalog/candidates.json`, `docs/research-log.md` and `docs/coverage.md`.
