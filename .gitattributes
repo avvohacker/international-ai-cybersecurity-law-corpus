@@ -1,6 +1,5 @@
 # Generated output and third-party data do not define the repository's language mix.
 # Linguist excludes both from GitHub's language statistics.
-site/index.html linguist-generated
 build/** linguist-generated
 corpus/*/units.jsonl linguist-generated
 data/natural-earth/** linguist-vendored

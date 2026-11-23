@@ -77,7 +77,7 @@ tools/                   acquisition, extraction, segmentation, manifest, build 
 tests/                   integrity, schema, anchor and determinism tests
 docs/                    methodology, research log, coverage matrix, progress
 data/                    Natural Earth boundary data and organisation membership lists
-site/                    generated GitHub Pages atlas (HTML, CSS, maps)
+site/                    GitHub Pages atlas source (CSS, JS); the HTML is built, not tracked
 .github/workflows/       GitHub Pages deployment workflow
 build/                   generated catalogue, checksums and verification report
 ```
@@ -122,7 +122,7 @@ The generated page is a consultable public catalogue: counts, seven maps, a chro
 make site        # validates, builds and regenerates site/index.html
 ```
 
-The static output lives in `site/`; open `site/index.html` locally or publish it with the workflow in `.github/workflows/pages.yml`. Pages is already enabled with **Settings → Pages → Source: GitHub Actions**; the workflow publishes on push to `main`. After the workflow runs, the page is served at `https://avvohacker.github.io/international-ai-law-corpus/`. The workflow rebuilds the catalogue and the atlas before uploading, so the published page cannot silently drift from the records.
+The static output lives in `site/`; run `make site` to generate `site/index.html` locally, or publish it with the workflow in `.github/workflows/pages.yml`. The generated HTML is not tracked, so a fresh clone rebuilds it from the records. Pages is already enabled with **Settings → Pages → Source: GitHub Actions**; the workflow publishes on push to `main`. After the workflow runs, the page is served at `https://avvohacker.github.io/international-ai-law-corpus/`. The workflow rebuilds the catalogue and the atlas before uploading, so the published page cannot silently drift from the records.
 
 The maps use Natural Earth 1:110m Admin 0 Countries (public domain) and the membership lists in `data/organisations.json`. No State names are drawn inside the maps. An international organisation that is a party is named below the map title, outside the map frame; its member States are shown in a lighter tone only where they did not act individually. The analytical labels “Washington / Beijing / Brussels–Strasbourg” are explicitly a reading of the record set, not a legal classification; the page says so.
 
