@@ -179,6 +179,7 @@ This repository builds a first verifiable corpus of international AI law. It con
 ## Documentation
 
 - [Methodology and verification rules](docs/methodology.md)
+- [The international law of AI: a short source-verified account](docs/international-ai-law.md)
 - [Research log: searches actually performed](docs/research-log.md)
 - [Coverage matrix and explicit gaps](docs/coverage.md)
 - [Format and language decisions](docs/format-decisions.md)
