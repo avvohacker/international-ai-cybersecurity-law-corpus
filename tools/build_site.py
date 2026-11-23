@@ -54,6 +54,34 @@ BINDING_LABELS = {
     "unknown": "Unknown",
 }
 
+OFFICIAL_SOURCE_KINDS = {"official_primary", "registry", "official_journal"}
+SOURCE_LABELS = {
+    "elysee-page": "Élysée page",
+    "elysee-pdf": "Élysée PDF",
+    "elysee-fr": "Élysée French text",
+    "govuk-declaration": "GOV.UK declaration",
+    "govuk-seoul": "GOV.UK Seoul declaration",
+    "state-page": "State Department page",
+    "coe-text": "CETS 225 text",
+    "coe-status": "CETS 225 status chart",
+    "eu-oj-2026-1081": "EU Official Journal",
+    "eu-decision-2026-1080": "EU Council Decision",
+    "coe-declarations": "CETS 225 declarations",
+    "mfa-signing": "MFA signing account",
+    "mfa-ratification": "MFA ratification statement",
+    "npc-decision": "NPC decision",
+    "mfa-progress-report": "MFA progress report",
+    "mfa-31-july": "MFA 31 July account",
+    "indonesia-founding-list": "Indonesia founding list",
+    "state-pax-silica": "State Department Pax Silica page",
+    "state-second-summit": "State Department second-summit fact sheet",
+    "state-paraguay": "State Department Paraguay release",
+    "australia-declaration": "Australian Government declaration",
+    "australia-pdf": "Australian Government signed PDF",
+    "state-taiwan-joint-statement": "State Department Taiwan statement",
+    "state-ai-opportunity": "State Department AI Opportunity page",
+}
+
 STATUS_LABELS = {
     "in_force": "In force",
     "not_in_force": "Not in force",
@@ -561,7 +589,7 @@ def milestones(instruments_by_id: dict[str, dict]) -> str:
         "us-uk-ai-safety-mou-2024": "A bilateral AI-safety MOU between the UK and US institutes.",
         "us-eu-ttc-ai-safety-dialogue-2024": "The US–EU TTC statement commits the European AI Office and the US AI Safety Institute to a technical Dialogue.",
         "un-ga-res-78-265": "First UN resolution on AI adopted by consensus.",
-        "coe-cets-225": "The only AI-specific treaty; not yet in force.",
+        "coe-cets-225": "The first AI-specific treaty; not yet in force.",
         "un-ga-res-79-1": "Pact for the Future and Global Digital Compact.",
         "paris-ai-action-summit-statement-2025": "The Paris Statement: China and India endorsed; the United States and the UK did not.",
         "ccw-gge-laws-2026": "Mandate to negotiate an instrument on autonomous weapons; report due 2028.",
@@ -819,6 +847,62 @@ def main() -> int:
             f'{"".join(blocks)}</div>'
         )
 
+    def render_instrument_about(inst: dict) -> str:
+        """Explain the instrument and cite the record's official sources."""
+        dates = inst.get("dates") or {}
+        date_parts = [
+            f"{label} {format_date(dates[key])}"
+            for key, label in (
+                ("adopted", "Adopted"),
+                ("signed", "Signed"),
+                ("opened_for_signature", "Opened for signature"),
+                ("closed_for_signature", "Closed for signature"),
+                ("entered_into_force", "In force since"),
+                ("published", "Published"),
+            )
+            if dates.get(key)
+        ]
+        if inst["status"] != "adopted":
+            date_parts.append(
+                f"Status: {STATUS_LABELS.get(inst['status'], inst['status'])}"
+            )
+        official = [
+            source
+            for source in inst.get("sources") or []
+            if source.get("kind") in OFFICIAL_SOURCE_KINDS and source.get("url")
+        ]
+        source_links = "; ".join(
+            f'<a href="{esc(source["url"])}" target="_blank" rel="noopener">'
+            f'{esc(SOURCE_LABELS.get(source["id"], source.get("publisher") or source["id"]))}</a>'
+            for source in official
+        )
+        checked = dates.get("verified_on")
+        checked_text = f" · record checked {format_date(checked)}" if checked else ""
+        reason = (inst.get("relevance") or {}).get("reason") or ""
+        history = dates.get("notes") or ""
+        history_html = (
+            f'<p class="map-about-history"><strong>History:</strong> {esc(history)}</p>'
+            if history
+            else ""
+        )
+        reason_html = f"<p>{esc(reason)}</p>" if reason else ""
+        dates_html = (
+            f'<p class="map-about-dates"><strong>Dates and status:</strong> '
+            f'{esc(" · ".join(date_parts))}.</p>'
+            if date_parts
+            else ""
+        )
+        return (
+            f'<div class="map-about">'
+            f'<p class="map-about-meta">{esc(inst["instrument_type"].replace("_", " ").capitalize())} · '
+            f'{esc(BINDING_LABELS[inst["binding_status"]])}</p>'
+            f'<h3 class="map-about-title">What it is</h3>'
+            f"{reason_html}{dates_html}{history_html}"
+            f'<p class="map-sources"><strong>Sources:</strong> {source_links}'
+            f'{checked_text} · <a href="{esc(record_url(inst))}" target="_blank" rel="noopener">'
+            f"record and full citation</a></p></div>"
+        )
+
     def map_figure(
         inst: dict,
         kind: str,
@@ -850,6 +934,7 @@ def main() -> int:
         )
         default = "endorsed" if "endorsed" in status.values() else "signed"
         party_html = render_party_list(inst, default)
+        about_html = render_instrument_about(inst)
         figure = (
             f'<figure class="map-card">'
             f'<figcaption><span class="map-title">{esc(title)}</span>'
@@ -857,6 +942,7 @@ def main() -> int:
             f"{org_html}"
             f"{render_map(kind, title, description, status, legend=legend, legend_note=legend_note)}"
             f"{party_html}"
+            f"{about_html}"
             f'<p class="note">{esc(note)}</p></figure>'
         )
         return {

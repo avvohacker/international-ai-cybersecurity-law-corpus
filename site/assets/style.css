@@ -353,6 +353,36 @@ p { margin: 0 0 14px; }
 }
 .map-key .swatch { flex: 0 0 auto; width: 13px; height: 13px; }
 .map-card .note { margin: 10px 2px 0; font-size: 11px; }
+.map-about {
+  margin-top: 16px;
+  padding: 14px 16px 15px;
+  background: #f7f2e7;
+  border-left: 3px solid var(--blue);
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #3f3a30;
+}
+.map-about-title {
+  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 600;
+}
+.map-about-meta {
+  margin: 0 0 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.map-about p { margin: 0 0 8px; }
+.map-about p:last-child { margin-bottom: 0; }
+.map-about strong { color: var(--ink); }
+.map-about-dates, .map-about-history { font-size: 12px; }
+.map-sources { font-size: 11px; line-height: 1.5; }
+.map-sources a { color: var(--teal); text-decoration: none; }
+.map-sources a:hover { text-decoration: underline; }
 .map-parties {
   margin-top: 16px;
   padding-top: 12px;

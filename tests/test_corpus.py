@@ -485,7 +485,7 @@ class TestBuild(unittest.TestCase):
             entries = record["parties"]["entries"]
             figure = figures[title]
             body = re.search(
-                r'<div class="map-parties"[^>]*>(.*?)</div>\s*<p class="note">',
+                r'<div class="map-parties"[^>]*>(.*?)</div>\s*<div class="map-about">',
                 figure,
                 re.S,
             )
@@ -524,6 +524,70 @@ class TestBuild(unittest.TestCase):
             "ratification approved 6 November 2026; no deposit verified",
             figures["WAICO 2026"],
         )
+
+    def test_map_about_sections_cite_records(self) -> None:
+        import build_site
+
+        build_site.main()
+        page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        self.assertEqual(page.count('class="map-about"'), 7)
+        figures = {
+            re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
+            for figure in re.findall(
+                r'<figure class="map-card">(.*?)</figure>', page, re.S
+            )
+        }
+        cases = [
+            ("Paris 2025", "paris-ai-action-summit-statement-2025"),
+            ("Bletchley 2023", "bletchley-declaration-2023"),
+            ("Seoul 2024", "seoul-declaration-2024"),
+            ("Military AI 2023", "political-declaration-military-ai-2023"),
+            ("CETS 225", "coe-cets-225"),
+            ("WAICO 2026", "waico-establishment-agreement-2026"),
+            ("Pax Silica 2025", "pax-silica-declaration-2025"),
+        ]
+        for title, iid in cases:
+            record = read_instrument(iid)
+            figure = html.unescape(figures[title])
+            about = re.search(
+                r'<div class="map-about">(.*?)</div>', figures[title], re.S
+            )
+            self.assertIsNotNone(about, title)
+            text = re.sub(
+                r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", about.group(1)))
+            )
+            meta = (
+                record["instrument_type"].replace("_", " ").capitalize()
+                + " · "
+                + build_site.BINDING_LABELS[record["binding_status"]]
+            )
+            self.assertIn(meta, text, title)
+            self.assertIn(record["relevance"]["reason"], text, title)
+            self.assertIn(record["dates"]["notes"], text, title)
+            for key, label in (
+                ("adopted", "Adopted"),
+                ("signed", "Signed"),
+                ("opened_for_signature", "Opened for signature"),
+                ("closed_for_signature", "Closed for signature"),
+                ("entered_into_force", "In force since"),
+                ("published", "Published"),
+            ):
+                if record["dates"].get(key):
+                    self.assertIn(
+                        f"{label} {build_site.format_date(record['dates'][key])}",
+                        text,
+                        title,
+                    )
+            if record["status"] != "adopted":
+                self.assertIn(
+                    f"Status: {build_site.STATUS_LABELS[record['status']]}", text, title
+                )
+            for source in record["sources"]:
+                if source["kind"] in build_site.OFFICIAL_SOURCE_KINDS:
+                    self.assertIn(source["url"], figure, title)
+                else:
+                    self.assertNotIn(source["url"], figure, title)
+            self.assertIn(f"/catalog/instruments/{iid}.json", figure, title)
 
     def test_site_numeric_claims_match_records(self) -> None:
         import build_site

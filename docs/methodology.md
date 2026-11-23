@@ -60,6 +60,7 @@ Sources are never overwritten. If a later retrieval differs from the registered 
 - A Party's position is never inferred from the position of an international organisation of which it is a member. The EU is recorded as a party to CETS 225 only because the EU deposited an instrument; EU member States are not thereby recorded as parties.
 - Political declarations have no signature or ratification. Their records list endorsers in `parties.entries`; the atlas labels the act as endorsement, not signature. An international organisation that is a party is named outside the map frame; its member States are shown in a lighter tone only where they did not sign, ratify or endorse individually.
 - Party names are normalized to a common English form for matching across records; the official spelling remains on the source page.
+- Each map has a “What it is” panel built from the record: `relevance.reason`, `dates`, `dates.notes` and the record’s official sources. Its source links point only to sources marked `official_primary`, `registry` or `official_journal`; a final link opens the full record and citation. The panel does not add facts outside the record.
 - Where a party table could not be captured, aggregate counts are stored with the exact status date, and the missing rows are listed in `parties.unknowns`.
 
 ## 6. Rights

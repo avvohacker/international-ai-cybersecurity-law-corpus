@@ -89,7 +89,7 @@ The build is offline and deterministic; it needs only Python 3.12 and the standa
 ```bash
 make validate     # schema and cross-record checks
 make build        # build/catalog.json, CATALOG.md, checksums.sha256
-make test         # build + 28 integrity/determinism tests
+make test         # build + 29 integrity/determinism tests
 make site         # build + generate the static atlas in site/
 ```
 
@@ -116,7 +116,7 @@ python3 tools/acquire.py                  # fetch missing originals, never overw
 
 ## Human-readable atlas (GitHub Pages)
 
-The generated page is a consultable public catalogue: counts, seven maps with the recorded parties listed under each map, a chronology, a three-pole heuristic checked against the legal record, and a filterable catalogue. It is built from the same records, with no editorial database of its own. The membership lists used by the maps are in `data/organisations.json`, with the official EU and AU sources and access dates; the page does not hold a separate dataset.
+The generated page is a consultable public catalogue: counts, seven maps with the recorded parties listed under each map, a chronology, a three-pole heuristic checked against the legal record, and a filterable catalogue. Each map also carries a “What it is” panel with the instrument’s description, dates, history and links to its official sources, all read from the record. It is built from the same records, with no editorial database of its own. The membership lists used by the maps are in `data/organisations.json`, with the official EU and AU sources and access dates; the page does not hold a separate dataset.
 
 ```bash
 make site        # validates, builds and regenerates site/index.html
