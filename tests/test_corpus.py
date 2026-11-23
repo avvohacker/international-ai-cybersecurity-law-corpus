@@ -375,6 +375,9 @@ class TestBuild(unittest.TestCase):
         self.assertIn("State: signed only", page)
         self.assertIn("States only", page)
         self.assertIn("37 confirmed of 38 reported", page)
+        self.assertIn("map-org-leader", page)
+        self.assertIn("map-label-leader", page)
+        self.assertIn("map-org-label-mid", page)
 
     def test_matrix_matches_records(self) -> None:
         import build_site

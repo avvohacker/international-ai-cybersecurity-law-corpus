@@ -354,6 +354,13 @@ p { margin: 0 0 14px; }
   text-anchor: start;
 }
 .map-org-label-end { text-anchor: end; }
+.map-org-label-mid { text-anchor: middle; }
+.map-org-leader, .map-label-leader {
+  stroke: var(--muted);
+  stroke-width: 0.8;
+  stroke-dasharray: 3 3;
+  opacity: 0.8;
+}
 .map-key {
   display: flex;
   flex-wrap: wrap;
@@ -441,8 +448,22 @@ p { margin: 0 0 14px; }
   white-space: nowrap;
 }
 .bind-binding { color: var(--ink); background: #e8dcc3; border-color: #c9b995; }
-.bind-non_binding { color: var(--teal); background: #e3efe9; border-color: #b9d8d0; }
+.bind-non_binding { color: #0b5c54; background: #e3efe9; border-color: #b9d8d0; }
 .ver-full_text_checked { color: #6b4e12; background: #f2e4bd; border-color: #d8bf7a; }
+.catalogue .badge[class*="cat-"] {
+  background: #f4eee1;
+  color: #3d382e;
+  border-color: #cfc6b4;
+  border-left-width: 4px;
+}
+.catalogue .badge.cat-ai_treaty { border-left-color: var(--red); }
+.catalogue .badge.cat-agreement_ai_provisions { border-left-color: var(--gold); }
+.catalogue .badge.cat-non_binding_instrument { border-left-color: var(--teal); }
+.catalogue .badge.cat-preparatory_interpretive { border-left-color: #6c7a89; }
+.catalogue .badge.cat-technical_standard { border-left-color: #7a6a55; }
+.catalogue .badge.cat-draft_negotiation { border-left-color: #8b5e3c; }
+.catalogue .badge.cat-supranational_law { border-left-color: var(--blue); }
+.catalogue .badge.cat-general_treaty { border-left-color: #4f5d4a; }
 .json-link a { font-family: var(--mono); font-size: 10px; }
 
 /* Method */

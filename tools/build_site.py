@@ -123,9 +123,9 @@ NAME_ALIASES = {
 }
 
 TEAL = "#0e6b62"
-BLUE = "#1e3a8a"
-LIGHT_BLUE = "#8fb4dd"
-ORG_BLUE = "#5578b7"
+ACT_BLUE = "#5a7fbd"
+RATIFIED_BLUE = "#172e6e"
+ORG_BLUE = "#3c5f9e"
 LAND = "#e3ddd0"
 OCEAN = "#eaf0ef"
 INK = "#17150f"
@@ -133,9 +133,9 @@ PAPER = "#f7f2e7"
 
 # The maps encode the legal act, not the degree of political alignment.
 STATUS_FILL = {
-    "endorsed": BLUE,
-    "signed": LIGHT_BLUE,
-    "ratified": BLUE,
+    "endorsed": ACT_BLUE,
+    "signed": ACT_BLUE,
+    "ratified": RATIFIED_BLUE,
     "none": LAND,
 }
 STATUS_TITLE = {
@@ -281,12 +281,14 @@ def render_map(
     state_status: dict[str, str],
     org_markers: list[dict] | None = None,
     labels: dict[str, str] | None = None,
+    label_positions: dict[str, dict] | None = None,
     legend: list[dict] | None = None,
     legend_note: str = "",
 ) -> str:
     features, _, by_iso = load_geo()
     org_markers = org_markers or []
     labels = labels or {}
+    label_positions = label_positions or {}
     legend = legend or []
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" '
@@ -342,21 +344,44 @@ def render_map(
             f'<polygon points="{points}" fill="{ORG_BLUE}" stroke="{PAPER}" stroke-width="1.2">'
             f'<title>{esc(marker["name"])} — {esc(STATUS_TITLE[status])}</title></polygon>'
         )
+        label_lon = marker.get("label_lon", marker["lon"])
+        label_lat = marker.get("label_lat", marker["lat"])
         label_anchor = marker.get("label_anchor", "start")
         label_dx = marker.get("label_dx", 8)
         label_dy = marker.get("label_dy", 4)
-        label_class = "map-org-label map-org-label-end" if label_anchor == "end" else "map-org-label"
-        parts.append(
-            f'<text x="{x + label_dx:.1f}" y="{y + label_dy:.1f}" class="{label_class}">{esc(marker["label"])}</text>'
-        )
+        label_lines = marker.get("label_lines") or [marker["label"]]
+        lx, ly = project(label_lon, label_lat)
+        if (label_lon, label_lat) != (marker["lon"], marker["lat"]):
+            parts.append(
+                f'<line x1="{x:.1f}" y1="{y:.1f}" x2="{lx:.1f}" y2="{ly:.1f}" class="map-org-leader"/>'
+            )
+        if label_anchor == "end":
+            label_class = "map-org-label map-org-label-end"
+        elif label_anchor == "middle":
+            label_class = "map-org-label map-org-label-mid"
+        else:
+            label_class = "map-org-label"
+        for line_index, line in enumerate(label_lines):
+            parts.append(
+                f'<text x="{lx + label_dx:.1f}" y="{ly + label_dy + line_index * 11:.1f}" class="{label_class}">{esc(line)}</text>'
+            )
     for iso, label in labels.items():
         feature = by_iso.get(iso)
         if not feature:
             continue
         props = feature["properties"]
-        x, y = project(props["LABEL_X"], props["LABEL_Y"])
+        fx, fy = project(props["LABEL_X"], props["LABEL_Y"])
+        spec = label_positions.get(iso)
+        if spec:
+            x, y = project(spec["lon"], spec["lat"])
+            parts.append(
+                f'<line x1="{fx:.1f}" y1="{fy:.1f}" x2="{x:.1f}" y2="{y:.1f}" class="map-label-leader"/>'
+            )
+        else:
+            x, y = fx, fy
+        label_class = "map-label map-label-end" if spec and spec.get("anchor") == "end" else "map-label"
         parts.append(
-            f'<text x="{x:.1f}" y="{y:.1f}" class="map-label">{esc(label)}</text>'
+            f'<text x="{x:.1f}" y="{y:.1f}" class="{label_class}">{esc(label)}</text>'
         )
     parts.append("</svg>")
 
@@ -688,8 +713,11 @@ def main() -> int:
         label_anchor: str = "start",
         label_dx: float = 8,
         label_dy: float = 4,
+        label_lon: float | None = None,
+        label_lat: float | None = None,
+        label_lines: tuple[str, ...] | None = None,
     ) -> dict:
-        return {
+        marker = {
             "name": name,
             "label": label,
             "lon": lon,
@@ -699,75 +727,101 @@ def main() -> int:
             "label_dx": label_dx,
             "label_dy": label_dy,
         }
+        if label_lon is not None and label_lat is not None:
+            marker["label_lon"] = label_lon
+            marker["label_lat"] = label_lat
+        if label_lines:
+            marker["label_lines"] = label_lines
+        return marker
 
+    eu_label = dict(
+        label_lon=-35,
+        label_lat=50,
+        label_anchor="end",
+        label_dx=0,
+        label_dy=4,
+    )
+    au_label = dict(
+        label_lon=85,
+        label_lat=-25,
+        label_anchor="middle",
+        label_dx=0,
+        label_dy=-4,
+        label_lines=("African Union", "Commission"),
+    )
     paris_org_markers = [
+        org_marker("European Union", "European Union", 4.35, 50.85, "endorsed", **eu_label),
         org_marker(
-            "European Union", "European Union", 4.35, 50.85, "endorsed", "end", -8, 4
+            "African Union Commission", "African Union Commission", 38.75, 9.03, "endorsed", **au_label
         ),
-        org_marker("African Union Commission", "African Union Commission", 38.75, 9.03, "endorsed"),
     ]
     eu_marker = [
-        org_marker("European Union", "European Union", 4.35, 50.85, "endorsed", "end", -8, 4)
+        org_marker("European Union", "European Union", 4.35, 50.85, "endorsed", **eu_label)
     ]
     eu_ratified_marker = [
-        org_marker("European Union", "European Union", 4.35, 50.85, "ratified", "end", -8, 4)
+        org_marker("European Union", "European Union", 4.35, 50.85, "ratified", **eu_label)
     ]
 
     labels = {"US": "United States", "GB": "United Kingdom", "CN": "China", "IN": "India", "BR": "Brazil"}
+    uk_label = {"GB": {"lon": -8, "lat": 57.5, "anchor": "end"}}
     endorsement_legend = [
-        {"color": BLUE, "label": "State: endorsed"},
+        {"color": ACT_BLUE, "label": "State: endorsed"},
         {"color": ORG_BLUE, "label": "International organisation: endorsed", "shape": "diamond"},
         {"color": LAND, "label": "State: not endorsed"},
     ]
     cets_legend = [
-        {"color": BLUE, "label": "State: ratified"},
-        {"color": LIGHT_BLUE, "label": "State: signed only"},
+        {"color": RATIFIED_BLUE, "label": "State: ratified"},
+        {"color": ACT_BLUE, "label": "State: signed only"},
         {"color": LAND, "label": "State: no signature"},
         {"color": ORG_BLUE, "label": "International organisation: ratified", "shape": "diamond"},
     ]
     waico_legend = [
-        {"color": LIGHT_BLUE, "label": "State: signed only"},
+        {"color": ACT_BLUE, "label": "State: signed only"},
         {"color": LAND, "label": "State: no signature"},
     ]
 
     paris_map = render_map(
         "paris",
         "Paris Statement endorsers (2025)",
-        f"World map. Blue: {len(paris_states)} States that endorsed the Paris Statement. Medium blue diamonds: the European Union and the African Union Commission. Sand: States with no recorded endorsement.",
+        f"World map. Medium blue: {len(paris_states)} States that endorsed the Paris Statement. Intermediate blue diamonds: the European Union and the African Union Commission. Sand: States with no recorded endorsement.",
         paris_status,
         org_markers=paris_org_markers,
         labels=labels,
+        label_positions=uk_label,
         legend=endorsement_legend,
         legend_note="European Union and African Union Commission participated as international organisations.",
     )
     bletchley_map = render_map(
         "bletchley",
         "Bletchley Declaration endorsers (2023)",
-        f"World map. Blue: {len(bletchley_states)} States that endorsed the Bletchley Declaration. Medium blue diamond: the European Union. Sand: States with no recorded endorsement.",
+        f"World map. Medium blue: {len(bletchley_states)} States that endorsed the Bletchley Declaration. Intermediate blue diamond: the European Union. Sand: States with no recorded endorsement.",
         bletchley_status,
         org_markers=eu_marker,
         labels=labels,
+        label_positions=uk_label,
         legend=endorsement_legend,
         legend_note="European Union participated as an international organisation.",
     )
     seoul_map = render_map(
         "seoul",
         "Seoul Declaration endorsers (2024)",
-        f"World map. Blue: {len(seoul_states)} States that adopted the Seoul Declaration. Medium blue diamond: the European Union. Sand: States with no recorded endorsement.",
+        f"World map. Medium blue: {len(seoul_states)} States that adopted the Seoul Declaration. Intermediate blue diamond: the European Union. Sand: States with no recorded endorsement.",
         seoul_status,
         org_markers=eu_marker,
         labels=labels,
+        label_positions=uk_label,
         legend=endorsement_legend,
         legend_note="European Union participated as an international organisation.",
     )
     military_map = render_map(
         "military",
         "Military AI Declaration endorsers (2023)",
-        f"World map. Blue: {len(military_states)} States that endorsed the Political Declaration on military AI. Sand: States with no recorded endorsement.",
+        f"World map. Medium blue: {len(military_states)} States that endorsed the Political Declaration on military AI. Sand: States with no recorded endorsement.",
         military_status,
         labels=labels,
+        label_positions=uk_label,
         legend=[
-            {"color": BLUE, "label": "State: endorsed"},
+            {"color": ACT_BLUE, "label": "State: endorsed"},
             {"color": LAND, "label": "State: not endorsed"},
         ],
         legend_note=f"{len(military_states)} endorsing States as of 27 November 2024.",
@@ -775,17 +829,18 @@ def main() -> int:
     cets_map = render_map(
         "cets",
         "CETS 225 signatures and ratifications",
-        f"World map. Dark blue: States that ratified CETS 225. Light blue: States that signed only. Medium blue diamond: the European Union, which ratified. Sand: States with no recorded signature.",
+        f"World map. Dark blue: States that ratified CETS 225. Medium blue: States that signed only. Intermediate blue diamond: the European Union, which ratified. Sand: States with no recorded signature.",
         cets_status,
         org_markers=eu_ratified_marker,
         labels=labels,
+        label_positions=uk_label,
         legend=cets_legend,
         legend_note="Ratification counts; the European Union ratified as an international organisation.",
     )
     waico_map = render_map(
         "waico",
         "WAICO Agreement signatures (2026)",
-        f"World map. Light blue: {len(waico_states)} confirmed States that signed the WAICO Agreement. Sand: States with no recorded signature. China's MFA reports 38 founding members; 37 are individually identified. China is the depositary.",
+        f"World map. Medium blue: {len(waico_states)} confirmed States that signed the WAICO Agreement. Sand: States with no recorded signature. China's MFA reports 38 founding members; 37 are individually identified. China is the depositary.",
         waico_status,
         labels={"CN": "China", "RU": "Russia", "BR": "Brazil", "ZA": "South Africa", "ID": "Indonesia"},
         legend=waico_legend,
@@ -794,10 +849,11 @@ def main() -> int:
     pax_map = render_map(
         "pax",
         "Pax Silica Declaration endorsers (2025)",
-        f"World map. Blue: {len(pax_states)} States that endorsed the Pax Silica Declaration. Medium blue diamond: the European Union. Sand: States with no recorded endorsement.",
+        f"World map. Medium blue: {len(pax_states)} States that endorsed the Pax Silica Declaration. Intermediate blue diamond: the European Union. Sand: States with no recorded endorsement.",
         pax_status,
         org_markers=eu_marker,
         labels={"US": "United States", "GB": "United Kingdom", "IN": "India", "JP": "Japan"},
+        label_positions=uk_label,
         legend=endorsement_legend,
         legend_note="European Union signed as an international organisation.",
     )
@@ -895,7 +951,7 @@ def main() -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI Law Atlas</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI law.">
-<link rel="stylesheet" href="assets/style.css?v=5">
+<link rel="stylesheet" href="assets/style.css?v=6">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
