@@ -42,7 +42,7 @@
     "verified_on": "2026-11-23",
     "notes": "Signed at the Shanghai ceremony on 16 July 2026. The Agreement was open for signature from 1 May to 31 July 2026. China's National People's Congress Standing Committee approved ratification on 6 November 2026; the deposit of the instrument of ratification and any depositary notification of entry into force were not verified. Article 18 designates the Government of the People's Republic of China as depositary; no public depositary status table or notification was located."
   },
-  "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no depositary register or notification of a deposited ratification was located, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight additional States on 30–31 July 2026. The 38th member is not named in the primary record; the discrepancy is recorded, not resolved. The Government of China is the depositary under Article 18; no public depositary register or notification of a deposited ratification was located.",
+  "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no deposited instrument was verified, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight additional States on 30–31 July 2026. The 38th member is not named in the primary record; the discrepancy is recorded, not resolved. The Government of China is the depositary under Article 18; no public depositary register or notification of a deposited ratification was located.",
   "parties": {
     "as_of": "2026-11-23",
     "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight additional States on 30–31 July 2026. China's NPC approved ratification on 6 November 2026, but no deposit was verified. The identity of the 38th reported founding member is not stated in the official sources located.",
@@ -139,7 +139,7 @@
       "accessed": "2026-11-23",
       "http_status": 200,
       "language": "en",
-      "note": "Spokesperson Guo Jiakun, 9 November 2026: 38 countries became founding members; China is taking the lead in ratifying the Agreement. The statement does not list the 38."
+      "note": "Spokesperson Guo Jiakun, 9 November 2026: 38 countries became founding members; China was the first to approve the Agreement. The statement does not list the 38."
     },
     {
       "id": "npc-decision",
@@ -222,7 +222,7 @@
       },
       {
         "check": "Depositary status rechecked for the 38th founding member and China's instrument of ratification.",
-        "result": "Article 18 designates the Government of the People's Republic of China as depositary. No public depositary register or status table for the Agreement, and no notification of a deposited Chinese instrument, was located in the Chinese treaty database or MFA pages. The 9 November 2026 MFA statement reports 38 founding members and says China is taking the lead in ratifying, but does not name the 38th or state that an instrument was deposited. The counts remain 38 reported, 37 identified and 0 deposited ratifications.",
+        "result": "Article 18 designates the Government of the People's Republic of China as depositary. No public depositary register or status table for the Agreement, and no notification of a deposited Chinese instrument, was located in the Chinese treaty database or MFA pages. The 9 November 2026 MFA statement reports 38 founding members and says China was the first to approve the Agreement, but does not name the 38th or state that an instrument was deposited. The counts remain 38 reported, 37 identified and 0 deposited ratifications.",
         "date": "2026-11-23"
       }
     ],
