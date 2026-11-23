@@ -24,12 +24,14 @@ Last updated: **2026-11-23**. This file records what exists, what is only planne
 - [x] ICCPR and VCLT rechecked on OHCHR and the UN Treaty Collection; the VCLT adoption date was corrected to 22 May 1969, with opening for signature on 23 May 1969.
 - [x] US–EU TTC AI-safety dialogue commitment (5 April 2024) catalogued from the official European Commission and USTR joint statement and the NIST/European Commission technical-dialogue pages; recorded as a political commitment in a broader joint statement, not as an MOU or administrative arrangement.
 - [x] Human-readable GitHub Pages atlas generated from the records: seven maps, chronology, a three-pole heuristic checked against the legal record, cross-membership matrix and filterable catalogue. The deployment workflow is ready; Pages is enabled, and a push to `main` publishes the atlas.
-- [x] Validator and 23 tests: schema rules, hash integrity, unit-anchor integrity, declarations cannot be binding, Paris/China/US–UK/US–EU/WAICO/Pax Silica record checks, party lists for Bletchley/Seoul/military AI, candidate-register counts, map completeness and neutrality, deterministic build.
+- [x] Validator and 24 tests: schema rules, hash integrity, unit-anchor integrity, declarations cannot be binding, Paris/China/US–UK/US–EU/WAICO/Pax Silica record checks, party lists for Bletchley/Seoul/military AI, candidate-register counts, map completeness and neutrality, matrix-to-record consistency, deterministic build.
+- [x] WAICO depositary recheck (23 November 2026): Article 18 designates the Government of China as depositary; no public depositary register, status table or notification of a deposited Chinese instrument was located. The record retains 38 reported founding members, 37 identified and 0 deposited ratifications. The map therefore remains a signature map.
 - [x] Research log, coverage matrix, methodology and README updated to actual contents.
 - [x] `build/catalog.json`, `build/CATALOG.md`, `build/checksums.sha256`.
 
 ## Not completed (explicit)
 
+- [ ] WAICO depositary confirmation: the 38th founding member and the deposit of China's instrument of ratification. The Government of China is the depositary under Article 18; the 9 November 2026 MFA statement reports 38 founding members but does not name the 38th, and no public depositary register or notification was located.
 - [ ] Full CETS 225 PDF, explanatory report PDF and UNESCO PDF (access errors).
 - [ ] Full EU AI Act text and consolidated amendment analysis.
 - [ ] International AI Safety Report; any post-2024 renewal, terms of reference or successor to the UK–US MOU and the US–EU TTC AI-safety dialogue.

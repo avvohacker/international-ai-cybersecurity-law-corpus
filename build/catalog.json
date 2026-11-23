@@ -6158,7 +6158,7 @@
       "category": "ai_treaty",
       "dates": {
         "closed_for_signature": "2026-07-31",
-        "notes": "Signed at the Shanghai ceremony on 16 July 2026. The Agreement was open for signature from 1 May to 31 July 2026. China's National People's Congress Standing Committee approved ratification on 6 November 2026; the deposit of the instrument of ratification and any depositary notification of entry into force were not verified.",
+        "notes": "Signed at the Shanghai ceremony on 16 July 2026. The Agreement was open for signature from 1 May to 31 July 2026. China's National People's Congress Standing Committee approved ratification on 6 November 2026; the deposit of the instrument of ratification and any depositary notification of entry into force were not verified. Article 18 designates the Government of the People's Republic of China as depositary; no public depositary status table or notification was located.",
         "opened_for_signature": "2026-05-01",
         "signed": "2026-07-16",
         "verified_on": "2026-11-23"
@@ -6167,7 +6167,7 @@
         "The Agreement is not in force: Article 15 requires three deposited ratifications, acceptances or approvals, and none was verified.",
         "China's NPC approved ratification on 6 November 2026, but the deposit of the instrument and any depositary notification were not verified; no ratification is counted.",
         "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located.",
-        "No depositary register or status table for signatures, ratifications and accessions was located.",
+        "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
         "The full official text was not acquired; the record is metadata-only and relies on a reproduction for the article analysis.",
         "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",
         "The Council, Secretariat, rules of procedure, budget and implementing instruments do not yet exist or were not verified."
@@ -6396,7 +6396,7 @@
         "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight additional States on 30–31 July 2026. China's NPC approved ratification on 6 November 2026, but no deposit was verified. The identity of the 38th reported founding member is not stated in the official sources located.",
         "unknowns": [
           "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The 38th member is not named in the MFA statements, the October 2026 MFA progress report or the Indonesian government's list of the 29 initial signatories.",
-          "No depositary register or notification of signatures, ratifications or entry into force was located. The count of deposited ratifications is therefore 0, notwithstanding China's national approval on 6 November 2026.",
+          "China is the depositary under Article 18. No public depositary register, status table or notification of signatures, ratifications or entry into force was located in the Chinese treaty database or MFA pages. The count of deposited ratifications is therefore 0, notwithstanding China's national approval on 6 November 2026.",
           "The Agreement remains open to accession after 31 July 2026 (Article 14(3)); later accessions are not Founding Members and are not included in this list.",
           "The exact date on which the MFA's 38-country count was reached is not stated; the October 2026 progress report already gives 38."
         ],
@@ -6518,7 +6518,7 @@
         }
       ],
       "status": "not_in_force",
-      "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no depositary register or notification of a deposited ratification was located, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight additional States on 30–31 July 2026. The 38th member is not named in the primary record; the discrepancy is recorded, not resolved.",
+      "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no depositary register or notification of a deposited ratification was located, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight additional States on 30–31 July 2026. The 38th member is not named in the primary record; the discrepancy is recorded, not resolved. The Government of China is the depositary under Article 18; no public depositary register or notification of a deposited ratification was located.",
       "title": {
         "official": "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization",
         "short": "WAICO Establishment Agreement"
@@ -6544,10 +6544,15 @@
             "check": "Treaty text checked against a reproduction and cross-checked with official descriptions.",
             "date": "2026-11-23",
             "result": "Articles 1, 3(2), 10, 14, 15 and 18 confirm the organization's legal personality, civilian-domain limitation, membership, signature/accession, entry into force and depositary. The official deposited text was not acquired."
+          },
+          {
+            "check": "Depositary status rechecked for the 38th founding member and China's instrument of ratification.",
+            "date": "2026-11-23",
+            "result": "Article 18 designates the Government of the People's Republic of China as depositary. No public depositary register or status table for the Agreement, and no notification of a deposited Chinese instrument, was located in the Chinese treaty database or MFA pages. The 9 November 2026 MFA statement reports 38 founding members and says China is taking the lead in ratifying, but does not name the 38th or state that an instrument was deposited. The counts remain 38 reported, 37 identified and 0 deposited ratifications."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from official Chinese and Indonesian government sources. The record is metadata-only: no full text is stored. The 38th founding member and the deposit of China's instrument of ratification remain unverified and are recorded as unknowns rather than inferred."
+        "notes": "Metadata verified from official Chinese and Indonesian government sources. The record is metadata-only: no full text is stored. The depositary is China under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the deposit of China's instrument of ratification remain unverified and are recorded as unknowns rather than inferred."
       }
     }
   ],

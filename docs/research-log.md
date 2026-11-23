@@ -42,6 +42,7 @@ This log records the searches actually run and their outcome. It is not a list o
 | 32 | CETS 225 France and Germany signature status | Verify the cross-membership matrix | Official CoE Treaty Office chart and AI page: 21 signatories; France and Germany are not recorded as individual signatories; the EU signed and ratified |
 | 33 | World AI Cooperation Organization establishment agreement; MFA signing statements; NPC ratification | Verify WAICO's legal nature, founding members and status | Official MFA English pages: 29 signatories on 16 July 2026, eight more on 30–31 July 2026, 38 founding members reported but 37 named; Agreement text reproduced and cross-checked for Articles 1, 3(2), 10, 14, 15 and 18; NPC approved ratification on 6 November 2026; no deposited ratification or entry-into-force notification located; not in force |
 | 34 | Pax Silica Declaration State Department partner list; Australian government summit record; Paraguay accession | Verify Pax Silica's legal nature, signatories and date | State Department page: political declaration, 25 partners listed but the United States omitted; Australian government: seven founding signatories on 12 December 2025, including the United States; Paraguay became the 26th signatory on 23 October 2026; non-binding, no ratification; Taiwan a non-signatory participant; separate AI Opportunity Statement not counted |
+| 35 | WAICO depositary status: MFA 9 November 2026 statement, Chinese treaty database, Article 18 | Check whether the 38th founding member and China's deposited ratification can be confirmed from the depositary | Article 18 designates the Government of China as depositary. No public depositary register, status table or notification of a deposited Chinese instrument was located. The MFA reports 38 founding members but does not name the 38th; its statement says China is taking the lead in ratifying, not that an instrument was deposited. Counts remain 38 reported, 37 identified and 0 deposited ratifications |
 
 ## Documents read or acquired
 
@@ -50,7 +51,8 @@ This log records the searches actually run and their outcome. It is not a list o
 - DEPA English signing text (67 pages), SADEA (39 pages), G7 Hiroshima Code (8 pages), OECD/LEGAL/0449 booklet (12 pages).
 - Paris AI Action Summit statement, official Élysée PDF (3 pages, 19 February 2025) and English page; French official version consulted but not stored.
 - China's Global AI Governance Initiative, official MFA English HTML (body extracted) and Chinese original on the CAC page.
-- China's MFA pages on the WAICO signing ceremony (16 July 2026), the additional signatories (31 July 2026) and the October 2026 progress report; the NPC decision of 6 November 2026 approving ratification; the Indonesian government list of the 29 initial signatories.
+- China's MFA pages on the WAICO signing ceremony (16 July 2026), the additional signatories (31 July 2026), the 9 November 2026 press conference and the October 2026 progress report; the NPC decision of 6 November 2026 approving ratification; the Indonesian government list of the 29 initial signatories.
+- The Chinese MFA treaty database homepage (`treaty.mfa.gov.cn`) and Article 18 of the WAICO Agreement, consulted for depositary status; no public status table or notification for this Agreement was located.
 - U.S. State Department Pax Silica Declaration page and partner list; the Australian government publication of the 12 December 2025 summit; the State Department release on Paraguay becoming the 26th signatory (23 October 2026).
 - GOV.UK publication and press release on the UK–US AI Safety MOU (2 April 2024); the publication is an official summary, not the full MOU.
 - European Commission and USTR versions of the sixth U.S.–EU TTC joint statement (5 April 2024), AI section; NIST and European Commission pages on the first U.S. AI Safety Institute–European AI Office technical dialogue (11 July 2024).
@@ -90,6 +92,7 @@ The candidate register contains 22 entries: 8 included (ISO/IEC 23053, the CCW G
 ## Negative and provisional results
 
 - No adopted treaty specifically dedicated to AI other than CETS 225 and the WAICO Establishment Agreement was located.
+- No public WAICO depositary register or notification was located; China's national approval is not treated as a deposited ratification, and the 38th founding member remains unnamed in the official record.
 - No adopted UN framework convention specific to AI was located.
 - No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located; the April 2024 commitment is a political Dialogue inside the TTC joint statement, not a binding agreement.
 - China's Global AI Governance Initiative is a unilateral government proposal, not an agreed international instrument; no formal adherence list was found, and the record does not attribute it to other States.

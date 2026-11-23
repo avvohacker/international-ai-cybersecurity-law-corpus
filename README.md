@@ -89,7 +89,7 @@ The build is offline and deterministic; it needs only Python 3.12 and the standa
 ```bash
 make validate     # schema and cross-record checks
 make build        # build/catalog.json, CATALOG.md, checksums.sha256
-make test         # build + 23 integrity/determinism tests
+make test         # build + 24 integrity/determinism tests
 make site         # build + generate the static atlas in site/
 ```
 

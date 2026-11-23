@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import sys
 import tempfile
@@ -362,13 +363,88 @@ class TestBuild(unittest.TestCase):
             self.assertIn(title, page)
         self.assertNotIn("USA / UK: no", page)
         self.assertNotIn("Non-signatory", page)
-        self.assertIn("EU European Union", page)
-        self.assertIn("AU African Union Commission", page)
-        self.assertIn("Supranational: endorsed", page)
+        self.assertIn("European Union", page)
+        self.assertIn("African Union Commission", page)
+        self.assertIn("United States", page)
+        self.assertIn("United Kingdom", page)
+        self.assertIn("International organisation: endorsed", page)
+        self.assertIn("International organisation: ratified", page)
+        self.assertNotIn("Supranational:", page)
+        self.assertIn("State: ratified", page)
         self.assertIn("Signed + ratified", page)
         self.assertIn("State: signed only", page)
         self.assertIn("States only", page)
         self.assertIn("37 confirmed of 38 reported", page)
+
+    def test_matrix_matches_records(self) -> None:
+        import build_site
+
+        build_site.main()
+        page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        match = re.search(r'<table class="matrix">(.*?)</table>', page, re.S)
+        self.assertIsNotNone(match)
+        table = match.group(1)
+        headers = re.findall(r'<th scope="col">([^<]+)</th>', table)
+        self.assertEqual(
+            headers,
+            [
+                "State / organisation",
+                "Paris 2025",
+                "Bletchley 2023",
+                "Seoul 2024",
+                "CETS 225",
+                "Military AI 2023",
+                "Pax Silica 2025",
+                "WAICO 2026",
+            ],
+        )
+
+        actual: dict[str, list[str]] = {}
+        for label, body in re.findall(
+            r'<tr><th scope="row">([^<]+)</th>(.*?)</tr>', table, re.S
+        ):
+            values = re.findall(r'<td class="(?:yes|no)">([^<]+)</td>', body)
+            self.assertEqual(len(values), 7, label)
+            actual[label] = values
+
+        record_ids = {
+            "paris": "paris-ai-action-summit-statement-2025",
+            "bletchley": "bletchley-declaration-2023",
+            "seoul": "seoul-declaration-2024",
+            "cets": "coe-cets-225",
+            "military": "political-declaration-military-ai-2023",
+            "pax": "pax-silica-declaration-2025",
+            "waico": "waico-establishment-agreement-2026",
+        }
+        records = {key: read_instrument(iid) for key, iid in record_ids.items()}
+        party_sets = {
+            key: {entry["party"] for entry in record["parties"]["entries"]}
+            for key, record in records.items()
+        }
+        cets_entries = {
+            entry["party"]: entry for entry in records["cets"]["parties"]["entries"]
+        }
+
+        expected_labels = {label for label, _ in build_site.MATRIX_PARTIES}
+        self.assertEqual(set(actual), expected_labels)
+        for label, party in build_site.MATRIX_PARTIES:
+            cets_entry = cets_entries.get(party)
+            if cets_entry and cets_entry.get("ratification"):
+                cets_cell = "Signed + ratified"
+            elif cets_entry:
+                cets_cell = "Signed"
+            else:
+                cets_cell = "No"
+            expected = [
+                "Yes" if party in party_sets["paris"] else "No",
+                "Yes" if party in party_sets["bletchley"] else "No",
+                "Yes" if party in party_sets["seoul"] else "No",
+                cets_cell,
+                "Yes" if party in party_sets["military"] else "No",
+                "Yes" if party in party_sets["pax"] else "No",
+                "Signed" if party in party_sets["waico"] else "No",
+            ]
+            self.assertEqual(actual[label], expected, label)
 
 
 if __name__ == "__main__":

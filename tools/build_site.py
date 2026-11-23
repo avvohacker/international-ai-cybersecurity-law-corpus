@@ -35,6 +35,22 @@ MILITARY_ID = "political-declaration-military-ai-2023"
 WAICO_ID = "waico-establishment-agreement-2026"
 PAX_ID = "pax-silica-declaration-2025"
 
+MATRIX_PARTIES = (
+    ("United States", "United States of America"),
+    ("United Kingdom", "United Kingdom"),
+    ("China", "China"),
+    ("India", "India"),
+    ("Kazakhstan", "Kazakhstan"),
+    ("France", "France"),
+    ("Germany", "Germany"),
+    ("Japan", "Japan"),
+    ("Canada", "Canada"),
+    ("Brazil", "Brazil"),
+    ("South Africa", "South Africa"),
+    ("European Union", "European Union"),
+    ("African Union Commission", "African Union Commission"),
+)
+
 CATEGORY_LABELS = {
     "ai_treaty": "AI-specific treaty",
     "agreement_ai_provisions": "Agreement with AI provisions",
@@ -109,7 +125,7 @@ NAME_ALIASES = {
 TEAL = "#0e6b62"
 BLUE = "#1e3a8a"
 LIGHT_BLUE = "#8fb4dd"
-GOLD = "#c98a2e"
+ORG_BLUE = "#5578b7"
 LAND = "#e3ddd0"
 OCEAN = "#eaf0ef"
 INK = "#17150f"
@@ -117,7 +133,7 @@ PAPER = "#f7f2e7"
 
 # The maps encode the legal act, not the degree of political alignment.
 STATUS_FILL = {
-    "endorsed": TEAL,
+    "endorsed": BLUE,
     "signed": LIGHT_BLUE,
     "ratified": BLUE,
     "none": LAND,
@@ -125,7 +141,7 @@ STATUS_FILL = {
 STATUS_TITLE = {
     "endorsed": "endorsed",
     "signed": "signature only",
-    "ratified": "signature and ratification",
+    "ratified": "ratified",
     "none": "no recorded act",
 }
 
@@ -314,10 +330,8 @@ def render_map(
         )
     for marker in org_markers:
         status = marker.get("status", "endorsed")
-        # Supranational participants keep one intermediate colour; a blue
-        # outline distinguishes the EU's signature plus ratification in CETS 225.
-        stroke = BLUE if status == "ratified" else PAPER
-        stroke_width = "2" if status == "ratified" else "1.2"
+        # International organisations use one intermediate blue, between the
+        # State act colours and the neutral non-participation colour.
         x, y = project(marker["lon"], marker["lat"])
         size = 5.4
         points = (
@@ -325,11 +339,15 @@ def render_map(
             f"{x:.1f},{y + size:.1f} {x - size:.1f},{y:.1f}"
         )
         parts.append(
-            f'<polygon points="{points}" fill="{GOLD}" stroke="{stroke}" stroke-width="{stroke_width}">'
+            f'<polygon points="{points}" fill="{ORG_BLUE}" stroke="{PAPER}" stroke-width="1.2">'
             f'<title>{esc(marker["name"])} — {esc(STATUS_TITLE[status])}</title></polygon>'
         )
+        label_anchor = marker.get("label_anchor", "start")
+        label_dx = marker.get("label_dx", 8)
+        label_dy = marker.get("label_dy", 4)
+        label_class = "map-org-label map-org-label-end" if label_anchor == "end" else "map-org-label"
         parts.append(
-            f'<text x="{x + 8:.1f}" y="{y + 4:.1f}" class="map-org-label">{esc(marker["label"])}</text>'
+            f'<text x="{x + label_dx:.1f}" y="{y + label_dy:.1f}" class="{label_class}">{esc(marker["label"])}</text>'
         )
     for iso, label in labels.items():
         feature = by_iso.get(iso)
@@ -346,8 +364,6 @@ def render_map(
     for item in legend:
         shape = item.get("shape", "square")
         css = "swatch swatch-org" if shape == "diamond" else "swatch"
-        if item.get("ratified"):
-            css += " swatch-org-ratified"
         key_rows.append(
             f'<span class="key-row"><i class="{css}" style="background:{item["color"]}"></i>'
             f'{esc(item["label"])}</span>'
@@ -663,27 +679,51 @@ def main() -> int:
     for iso in cets_ratified_iso:
         cets_status[iso] = "ratified"
 
-    def org_marker(name: str, label: str, lon: float, lat: float, status: str) -> dict:
-        return {"name": name, "label": label, "lon": lon, "lat": lat, "status": status}
+    def org_marker(
+        name: str,
+        label: str,
+        lon: float,
+        lat: float,
+        status: str,
+        label_anchor: str = "start",
+        label_dx: float = 8,
+        label_dy: float = 4,
+    ) -> dict:
+        return {
+            "name": name,
+            "label": label,
+            "lon": lon,
+            "lat": lat,
+            "status": status,
+            "label_anchor": label_anchor,
+            "label_dx": label_dx,
+            "label_dy": label_dy,
+        }
 
     paris_org_markers = [
-        org_marker("European Union", "EU", 4.35, 50.85, "endorsed"),
-        org_marker("African Union Commission", "AU", 38.75, 9.03, "endorsed"),
+        org_marker(
+            "European Union", "European Union", 4.35, 50.85, "endorsed", "end", -8, 4
+        ),
+        org_marker("African Union Commission", "African Union Commission", 38.75, 9.03, "endorsed"),
     ]
-    eu_marker = [org_marker("European Union", "EU", 4.35, 50.85, "endorsed")]
-    eu_ratified_marker = [org_marker("European Union", "EU", 4.35, 50.85, "ratified")]
+    eu_marker = [
+        org_marker("European Union", "European Union", 4.35, 50.85, "endorsed", "end", -8, 4)
+    ]
+    eu_ratified_marker = [
+        org_marker("European Union", "European Union", 4.35, 50.85, "ratified", "end", -8, 4)
+    ]
 
-    labels = {"US": "US", "GB": "UK", "CN": "China", "IN": "India", "BR": "Brazil"}
+    labels = {"US": "United States", "GB": "United Kingdom", "CN": "China", "IN": "India", "BR": "Brazil"}
     endorsement_legend = [
-        {"color": TEAL, "label": "State: endorsed"},
-        {"color": GOLD, "label": "Supranational: endorsed", "shape": "diamond"},
+        {"color": BLUE, "label": "State: endorsed"},
+        {"color": ORG_BLUE, "label": "International organisation: endorsed", "shape": "diamond"},
         {"color": LAND, "label": "State: not endorsed"},
     ]
     cets_legend = [
-        {"color": BLUE, "label": "State: signature + ratification"},
-        {"color": LIGHT_BLUE, "label": "State: signature only"},
+        {"color": BLUE, "label": "State: ratified"},
+        {"color": LIGHT_BLUE, "label": "State: signed only"},
         {"color": LAND, "label": "State: no signature"},
-        {"color": GOLD, "label": "EU: signature + ratification", "shape": "diamond", "ratified": True},
+        {"color": ORG_BLUE, "label": "International organisation: ratified", "shape": "diamond"},
     ]
     waico_legend = [
         {"color": LIGHT_BLUE, "label": "State: signed only"},
@@ -693,73 +733,73 @@ def main() -> int:
     paris_map = render_map(
         "paris",
         "Paris Statement endorsers (2025)",
-        f"World map. Teal: {len(paris_states)} States that endorsed the Paris Statement. Gold diamonds: the European Union and the African Union Commission. Sand: States with no recorded endorsement.",
+        f"World map. Blue: {len(paris_states)} States that endorsed the Paris Statement. Medium blue diamonds: the European Union and the African Union Commission. Sand: States with no recorded endorsement.",
         paris_status,
         org_markers=paris_org_markers,
         labels=labels,
         legend=endorsement_legend,
-        legend_note="EU European Union · AU African Union Commission · US United States · UK United Kingdom",
+        legend_note="European Union and African Union Commission participated as international organisations.",
     )
     bletchley_map = render_map(
         "bletchley",
         "Bletchley Declaration endorsers (2023)",
-        f"World map. Teal: {len(bletchley_states)} States that endorsed the Bletchley Declaration. Gold diamond: the European Union. Sand: States with no recorded endorsement.",
+        f"World map. Blue: {len(bletchley_states)} States that endorsed the Bletchley Declaration. Medium blue diamond: the European Union. Sand: States with no recorded endorsement.",
         bletchley_status,
         org_markers=eu_marker,
         labels=labels,
         legend=endorsement_legend,
-        legend_note="EU European Union · US United States · UK United Kingdom",
+        legend_note="European Union participated as an international organisation.",
     )
     seoul_map = render_map(
         "seoul",
         "Seoul Declaration endorsers (2024)",
-        f"World map. Teal: {len(seoul_states)} States that adopted the Seoul Declaration. Gold diamond: the European Union. Sand: States with no recorded endorsement.",
+        f"World map. Blue: {len(seoul_states)} States that adopted the Seoul Declaration. Medium blue diamond: the European Union. Sand: States with no recorded endorsement.",
         seoul_status,
         org_markers=eu_marker,
         labels=labels,
         legend=endorsement_legend,
-        legend_note="EU European Union · US United States · UK United Kingdom",
+        legend_note="European Union participated as an international organisation.",
     )
     military_map = render_map(
         "military",
         "Military AI Declaration endorsers (2023)",
-        f"World map. Teal: {len(military_states)} States that endorsed the Political Declaration on military AI. Sand: States with no recorded endorsement.",
+        f"World map. Blue: {len(military_states)} States that endorsed the Political Declaration on military AI. Sand: States with no recorded endorsement.",
         military_status,
         labels=labels,
         legend=[
-            {"color": TEAL, "label": "State: endorsed"},
+            {"color": BLUE, "label": "State: endorsed"},
             {"color": LAND, "label": "State: not endorsed"},
         ],
-        legend_note="US United States · UK United Kingdom",
+        legend_note=f"{len(military_states)} endorsing States as of 27 November 2024.",
     )
     cets_map = render_map(
         "cets",
         "CETS 225 signatures and ratifications",
-        f"World map. Dark blue: States that signed and ratified CETS 225. Light blue: States that signed without ratification. Gold diamond: the European Union, which signed and ratified. Sand: States with no recorded signature.",
+        f"World map. Dark blue: States that ratified CETS 225. Light blue: States that signed only. Medium blue diamond: the European Union, which ratified. Sand: States with no recorded signature.",
         cets_status,
         org_markers=eu_ratified_marker,
         labels=labels,
         legend=cets_legend,
-        legend_note="EU European Union",
+        legend_note="Ratification counts; the European Union ratified as an international organisation.",
     )
     waico_map = render_map(
         "waico",
         "WAICO Agreement signatures (2026)",
-        f"World map. Light blue: {len(waico_states)} confirmed States that signed the WAICO Agreement. Sand: States with no recorded signature. China's MFA reports 38 founding members; 37 are individually identified.",
+        f"World map. Light blue: {len(waico_states)} confirmed States that signed the WAICO Agreement. Sand: States with no recorded signature. China's MFA reports 38 founding members; 37 are individually identified. China is the depositary.",
         waico_status,
         labels={"CN": "China", "RU": "Russia", "BR": "Brazil", "ZA": "South Africa", "ID": "Indonesia"},
         legend=waico_legend,
-        legend_note="States only · 37 of 38 reported founding members identified",
+        legend_note="States only · 37 confirmed of 38 reported founding members",
     )
     pax_map = render_map(
         "pax",
         "Pax Silica Declaration endorsers (2025)",
-        f"World map. Teal: {len(pax_states)} States that endorsed the Pax Silica Declaration. Gold diamond: the European Union. Sand: States with no recorded endorsement.",
+        f"World map. Blue: {len(pax_states)} States that endorsed the Pax Silica Declaration. Medium blue diamond: the European Union. Sand: States with no recorded endorsement.",
         pax_status,
         org_markers=eu_marker,
-        labels={"US": "US", "GB": "UK", "IN": "India", "JP": "Japan"},
+        labels={"US": "United States", "GB": "United Kingdom", "IN": "India", "JP": "Japan"},
         legend=endorsement_legend,
-        legend_note="EU European Union · US United States · UK United Kingdom",
+        legend_note="European Union signed as an international organisation.",
     )
 
     # Cross-membership for the matrix.
@@ -771,21 +811,7 @@ def main() -> int:
     waico_by_party = {entry["party"]: entry for entry in waico["parties"]["entries"]}
     cets_by_party = {entry["party"]: entry for entry in cets_entries}
     matrix_rows = []
-    for label, party in (
-        ("United States", "United States of America"),
-        ("United Kingdom", "United Kingdom"),
-        ("China", "China"),
-        ("India", "India"),
-        ("Kazakhstan", "Kazakhstan"),
-        ("France", "France"),
-        ("Germany", "Germany"),
-        ("Japan", "Japan"),
-        ("Canada", "Canada"),
-        ("Brazil", "Brazil"),
-        ("South Africa", "South Africa"),
-        ("European Union", "European Union"),
-        ("African Union Commission", "African Union Commission"),
-    ):
+    for label, party in MATRIX_PARTIES:
         entry = cets_by_party.get(party)
         if entry and entry.get("ratification"):
             cets_state = "Signed + ratified"
@@ -869,7 +895,7 @@ def main() -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI Law Atlas</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI law.">
-<link rel="stylesheet" href="assets/style.css?v=4">
+<link rel="stylesheet" href="assets/style.css?v=5">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -976,17 +1002,17 @@ def main() -> int:
       <p class="lede">Seven instruments, seven legal acts. The colour records the act, not the degree of alignment. Non-participation is shown in the same neutral colour for every State.</p>
       <div class="maps">
         <figure class="map-card map-card-wide">
-          <figcaption><span class="map-title">Paris 2025</span><span class="map-sub">{len(paris_states)} States · EU · AU Commission</span></figcaption>
+          <figcaption><span class="map-title">Paris 2025</span><span class="map-sub">{len(paris_states)} States · European Union · African Union Commission</span></figcaption>
           {paris_map}
           <p class="note">Endorsement, not signature or ratification. The Élysée page lists 65 endorsers (63 States, the EU and the AU Commission); the 19 February 2025 PDF lists 64. The difference is documented in the record.</p>
         </figure>
         <figure class="map-card">
-          <figcaption><span class="map-title">Bletchley 2023</span><span class="map-sub">{len(bletchley_states)} States · EU</span></figcaption>
+          <figcaption><span class="map-title">Bletchley 2023</span><span class="map-sub">{len(bletchley_states)} States · European Union</span></figcaption>
           {bletchley_map}
           <p class="note">Political endorsement, not a treaty signature. 28 States and the EU at adoption; New Zealand joined on 23 October 2024.</p>
         </figure>
         <figure class="map-card">
-          <figcaption><span class="map-title">Seoul 2024</span><span class="map-sub">{len(seoul_states)} States · EU</span></figcaption>
+          <figcaption><span class="map-title">Seoul 2024</span><span class="map-sub">{len(seoul_states)} States · European Union</span></figcaption>
           {seoul_map}
           <p class="note">Leaders' declaration, not a treaty signature. 10 States and the EU. The Seoul Ministerial Statement of 22 May 2024 (27 States and the EU) is a separate document and is not mapped here.</p>
         </figure>
@@ -996,7 +1022,7 @@ def main() -> int:
           <p class="note">Political endorsement, not a signature or ratification. 58 States as of 27 November 2024; later accessions are not reflected.</p>
         </figure>
         <figure class="map-card">
-          <figcaption><span class="map-title">CETS 225</span><span class="map-sub">{len(cets_states)} States · EU · 2 ratifications</span></figcaption>
+          <figcaption><span class="map-title">CETS 225</span><span class="map-sub">{len(cets_states)} States · European Union · 2 ratifications</span></figcaption>
           {cets_map}
           <p class="note">Treaty signature and ratification. Bosnia and Herzegovina (28 October 2026) and the EU (15 May 2026) have ratified; the treaty is not in force. Five ratifications are required, including three Council of Europe member States. France and Germany are EU member States but are not recorded as individual signatories on the Treaty Office chart.</p>
         </figure>
@@ -1006,9 +1032,9 @@ def main() -> int:
           <p class="note">Treaty signature, not ratification. 37 of the 38 founding members reported by China's MFA are individually identified: 29 at the 16 July 2026 ceremony and eight on 30–31 July 2026. China's NPC approved ratification on 6 November 2026, but no deposit was verified; the Agreement is not in force (three ratifications required, Article 15). The 38th member is not named in the primary record.</p>
         </figure>
         <figure class="map-card">
-          <figcaption><span class="map-title">Pax Silica 2025</span><span class="map-sub">{len(pax_states)} States · EU</span></figcaption>
+          <figcaption><span class="map-title">Pax Silica 2025</span><span class="map-sub">{len(pax_states)} States · European Union</span></figcaption>
           {pax_map}
-          <p class="note">Political declaration, not a treaty. 26 signatories (25 States and the EU) as of 23 October 2026; the United States is a signatory. Taiwan endorsed the principles through a separate joint statement but is not a signatory. The separate AI Opportunity Statement (54 endorsers as of September 2026) is not mapped here.</p>
+          <p class="note">Political declaration, not a treaty. 26 signatories (25 States and the European Union) as of 23 October 2026; the United States is a signatory. Taiwan endorsed the principles through a separate joint statement but is not a signatory. The separate AI Opportunity Statement (54 endorsers as of September 2026) is not mapped here.</p>
         </figure>
       </div>
       <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. Labels are orientation only. “Endorsed” is used for political declarations, which create no treaty signature or ratification.</p>
