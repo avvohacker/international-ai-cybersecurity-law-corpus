@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import html
 import json
 import re
 import shutil
@@ -397,7 +398,7 @@ class TestBuild(unittest.TestCase):
         )
         # All 27 EU member States endorsed Paris individually, so the EU is not
         # indicated on that map at all.
-        self.assertNotIn("European Union", by_title["Paris 2025"])
+        self.assertNotIn("European Union: endorsed", by_title["Paris 2025"])
         self.assertEqual(by_title["CETS 225"].count('fill="#a9c0e0"'), 27)
         self.assertEqual(by_title["Paris 2025"].count('fill="#a9c0e0"'), 46)
         self.assertEqual(by_title["WAICO 2026"].count('fill="#a9c0e0"'), 0)
@@ -407,10 +408,13 @@ class TestBuild(unittest.TestCase):
         self.assertNotIn("Supranational:", page)
         self.assertIn("State: member of a participating organisation", page)
         self.assertIn("State: ratified", page)
-        self.assertIn("Signed + ratified", page)
         self.assertIn("State: signed only", page)
         self.assertIn("States only", page)
         self.assertIn("37 confirmed of 38 reported", page)
+        self.assertEqual(page.count('class="map-parties"'), 7)
+        self.assertIn('data-status="Ratified"', page)
+        self.assertIn('data-status="Signed only"', page)
+        self.assertIn('data-status="Endorsed"', page)
 
     def test_map_order_follows_binding_then_adopters(self) -> None:
         import build_site
@@ -454,75 +458,159 @@ class TestBuild(unittest.TestCase):
                 self.assertTrue(iso, member)
                 self.assertTrue(iso in by_iso or iso in build_site.MICRO, member)
 
-    def test_matrix_matches_records(self) -> None:
+    def test_map_party_lists_match_records(self) -> None:
         import build_site
 
         build_site.main()
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-        match = re.search(r'<table class="matrix">(.*?)</table>', page, re.S)
-        self.assertIsNotNone(match)
-        table = match.group(1)
-        headers = re.findall(r'<th scope="col">([^<]+)</th>', table)
-        self.assertEqual(
-            headers,
-            [
-                "State / organisation",
-                "Paris 2025",
-                "Bletchley 2023",
-                "Seoul 2024",
-                "CETS 225",
-                "Military AI 2023",
-                "Pax Silica 2025",
-                "WAICO 2026",
-            ],
+        self.assertNotIn('class="matrix"', page)
+        self.assertNotIn("Who stands where", page)
+        figures = {
+            re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
+            for figure in re.findall(
+                r'<figure class="map-card">(.*?)</figure>', page, re.S
+            )
+        }
+        cases = [
+            ("Paris 2025", "paris-ai-action-summit-statement-2025", "Endorsed"),
+            ("Bletchley 2023", "bletchley-declaration-2023", "Endorsed"),
+            ("Seoul 2024", "seoul-declaration-2024", "Endorsed"),
+            ("Military AI 2023", "political-declaration-military-ai-2023", "Endorsed"),
+            ("CETS 225", "coe-cets-225", "Ratified"),
+            ("WAICO 2026", "waico-establishment-agreement-2026", "Signed"),
+            ("Pax Silica 2025", "pax-silica-declaration-2025", "Endorsed"),
+        ]
+        for title, iid, expected_group in cases:
+            record = read_instrument(iid)
+            entries = record["parties"]["entries"]
+            figure = figures[title]
+            body = re.search(
+                r'<div class="map-parties"[^>]*>(.*?)</div>\s*<p class="note">',
+                figure,
+                re.S,
+            )
+            self.assertIsNotNone(body, title)
+            groups: dict[str, set[str]] = {}
+            for status, block in re.findall(
+                r'<div class="party-group" data-status="([^"]+)">(.*?)</div>',
+                body.group(1),
+                re.S,
+            ):
+                count = int(re.search(r"<span>(\d+)</span>", block).group(1))
+                listed = [
+                    html.unescape(name)
+                    for name in re.findall(r'<li data-party="([^"]+)">', block)
+                ]
+                self.assertEqual(count, len(listed), title)
+                self.assertEqual(len(listed), len(set(listed)), title)
+                groups[status] = set(listed)
+            ratified = {
+                entry["party"] for entry in entries if entry.get("ratification")
+            }
+            if ratified:
+                expected = {
+                    "Ratified": ratified,
+                    "Signed only": {entry["party"] for entry in entries} - ratified,
+                }
+            else:
+                expected = {expected_group: {entry["party"] for entry in entries}}
+            self.assertEqual(groups, expected, title)
+        self.assertIn(
+            "Bosnia and Herzegovina (28 October 2026) and the European Union "
+            "(15 May 2026) have ratified",
+            page,
+        )
+        self.assertIn(
+            "ratification approved 6 November 2026; no deposit verified",
+            figures["WAICO 2026"],
         )
 
-        actual: dict[str, list[str]] = {}
-        for label, body in re.findall(
-            r'<tr><th scope="row">([^<]+)</th>(.*?)</tr>', table, re.S
-        ):
-            values = re.findall(r'<td class="(?:yes|no)">([^<]+)</td>', body)
-            self.assertEqual(len(values), 7, label)
-            actual[label] = values
+    def test_site_numeric_claims_match_records(self) -> None:
+        import build_site
 
-        record_ids = {
-            "paris": "paris-ai-action-summit-statement-2025",
-            "bletchley": "bletchley-declaration-2023",
-            "seoul": "seoul-declaration-2024",
-            "cets": "coe-cets-225",
-            "military": "political-declaration-military-ai-2023",
-            "pax": "pax-silica-declaration-2025",
-            "waico": "waico-establishment-agreement-2026",
-        }
-        records = {key: read_instrument(iid) for key, iid in record_ids.items()}
-        party_sets = {
-            key: {entry["party"] for entry in record["parties"]["entries"]}
-            for key, record in records.items()
-        }
-        cets_entries = {
-            entry["party"]: entry for entry in records["cets"]["parties"]["entries"]
-        }
+        build_site.main()
+        page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        instruments = list(corpuslib.load_instruments().values())
+        by_id = {inst["id"]: inst for inst in instruments}
+        cets = by_id["coe-cets-225"]
+        waico = by_id["waico-establishment-agreement-2026"]
+        pax = by_id["pax-silica-declaration-2025"]
+        paris = by_id["paris-ai-action-summit-statement-2025"]
+        bletchley = by_id["bletchley-declaration-2023"]
+        cets_entries = cets["parties"]["entries"]
+        ratifications = sum(1 for entry in cets_entries if entry.get("ratification"))
+        ai_count = sum(1 for inst in instruments if inst["category"] == "ai_treaty")
+        self.assertIn(f"{len(instruments)} instruments", page)
+        self.assertIn(
+            f"CETS 225: {len(cets_entries)} signatures, {ratifications} ratifications",
+            page,
+        )
+        self.assertIn(
+            f"{waico['parties']['signatories_total']} reported founding members", page
+        )
+        self.assertIn(f"{len(pax['parties']['entries'])} signatories", page)
+        self.assertIn(f"{len(paris['parties']['entries'])} endorsers", page)
+        bletchley_states = [
+            entry
+            for entry in bletchley["parties"]["entries"]
+            if entry["party"] != "European Union"
+        ]
+        self.assertIn(f"{len(bletchley_states)} States + EU", page)
+        cets_states = [
+            entry for entry in cets_entries if entry["party"] != "European Union"
+        ]
+        self.assertIn(
+            f"{len(cets_states)} States + EU · {ratifications} ratifications", page
+        )
+        self.assertIn(
+            f"{len(waico['parties']['entries'])} confirmed of "
+            f"{waico['parties']['signatories_total']} reported",
+            page,
+        )
+        self.assertIn(
+            f"{build_site.number_word(ai_count).capitalize()} AI-specific treaties", page
+        )
+        self.assertIn(
+            f'<p class="stat-number">{ai_count}</p><p class="stat-label">AI-specific treaties</p>',
+            page,
+        )
+        self.assertNotIn("193 States", page)
+        self.assertNotIn("28 States and the EU", page)
 
-        expected_labels = {label for label, _ in build_site.MATRIX_PARTIES}
-        self.assertEqual(set(actual), expected_labels)
-        for label, party in build_site.MATRIX_PARTIES:
-            cets_entry = cets_entries.get(party)
-            if cets_entry and cets_entry.get("ratification"):
-                cets_cell = "Signed + ratified"
-            elif cets_entry:
-                cets_cell = "Signed"
-            else:
-                cets_cell = "No"
-            expected = [
-                "Yes" if party in party_sets["paris"] else "No",
-                "Yes" if party in party_sets["bletchley"] else "No",
-                "Yes" if party in party_sets["seoul"] else "No",
-                cets_cell,
-                "Yes" if party in party_sets["military"] else "No",
-                "Yes" if party in party_sets["pax"] else "No",
-                "Signed" if party in party_sets["waico"] else "No",
-            ]
-            self.assertEqual(actual[label], expected, label)
+    def test_historical_notes_match_records(self) -> None:
+        import build_site
+
+        build_site.main()
+        page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        paris = read_instrument("paris-ai-action-summit-statement-2025")
+        bletchley = read_instrument("bletchley-declaration-2023")
+        cets = read_instrument("coe-cets-225")
+        waico = read_instrument("waico-establishment-agreement-2026")
+        pax = read_instrument("pax-silica-declaration-2025")
+        seoul = read_instrument("seoul-declaration-2024")
+        ccw = read_instrument("ccw-gge-laws-2026")
+        self.assertIn("the 19 February 2025 PDF lists 64", page)
+        self.assertIn("PDF lists 64", paris["status_note"])
+        self.assertIn("listed 60", page)
+        self.assertIn("listed 60", paris["status_note"])
+        self.assertIn("New Zealand joined on 23 October 2024", page)
+        self.assertIn("New Zealand joined on 23 October 2024", bletchley["status_note"])
+        self.assertIn("Seoul Ministerial Statement of 22 May 2024", page)
+        self.assertIn("22 May 2024", seoul["status_note"])
+        self.assertIn("report due 2028", page)
+        self.assertIn("2028 Meeting of High Contracting Parties", ccw["status_note"])
+        self.assertIn(
+            "Five ratifications are required, including three Council of Europe member States",
+            page,
+        )
+        self.assertIn(
+            "five ratifications including at least three Council of Europe member States",
+            cets["status_note"],
+        )
+        self.assertIn("three ratifications required, Article 15", page)
+        self.assertIn("three instruments of ratification", waico["status_note"])
+        self.assertIn("54 endorsers as of September 2026", page)
+        self.assertIn("54 endorsers as of September 2026", pax["parties"]["unknowns"][-1])
 
 
 if __name__ == "__main__":

@@ -89,7 +89,7 @@ The build is offline and deterministic; it needs only Python 3.12 and the standa
 ```bash
 make validate     # schema and cross-record checks
 make build        # build/catalog.json, CATALOG.md, checksums.sha256
-make test         # build + 24 integrity/determinism tests
+make test         # build + 28 integrity/determinism tests
 make site         # build + generate the static atlas in site/
 ```
 
@@ -116,7 +116,7 @@ python3 tools/acquire.py                  # fetch missing originals, never overw
 
 ## Human-readable atlas (GitHub Pages)
 
-The generated page is a consultable public catalogue: counts, seven maps, a chronology, a three-pole heuristic checked against the legal record, a cross-membership table and a filterable catalogue. It is built from the same records, with no editorial database of its own. The membership lists used by the maps are in `data/organisations.json`, with the official EU and AU sources and access dates; the page does not hold a separate dataset.
+The generated page is a consultable public catalogue: counts, seven maps with the recorded parties listed under each map, a chronology, a three-pole heuristic checked against the legal record, and a filterable catalogue. It is built from the same records, with no editorial database of its own. The membership lists used by the maps are in `data/organisations.json`, with the official EU and AU sources and access dates; the page does not hold a separate dataset.
 
 ```bash
 make site        # validates, builds and regenerates site/index.html
@@ -166,7 +166,7 @@ Not legal advice. Before quoting or relying on an instrument, check the official
 
 ## Summary
 
-This repository builds a first verifiable corpus of international AI law. It contains 42 catalogued instruments, 16 stored full texts and 15 originals with SHA-256 hashes. The two treaties specifically dedicated to AI are the Council of Europe Framework Convention (CETS 225), with 21 signatures and 2 ratified instruments, and the WAICO Establishment Agreement, with 38 reported founding members; neither is in force as of 23 November 2026. The CCW GGE on LAWS is the only record in category 6 (negotiations in progress), with no adopted instrument. The other binding agreements with AI provisions are digital trade agreements (DEPA, SADEA, UKSDEA, KSDPA, AfCFTA protocol), with cooperative rather than prescriptive clauses. The 2025 Paris Statement (63 States, the EU and the AU Commission; China and India endorsed, the United States and the UK did not), the 2023 Chinese initiative and the 2025 Pax Silica Declaration (26 signatories) document competing political coalitions without creating legal blocs. The atlas treats the three-pole image as a heuristic, not a legal classification: the seven maps and the cross-membership matrix show that treaty participation and political endorsement cut across it. The 2024 UK–US MOU and the US–EU TTC AI-safety dialogue commitment add the transatlantic layer: one bilateral MOU whose full text is unpublished, and one political commitment inside a broader joint statement. The corpus distinguishes binding and non-binding instruments, full texts and metadata-only records, verified and unknown data. It is not complete: gaps, searches performed and checks run are documented in `docs/`.
+This repository builds a first verifiable corpus of international AI law. It contains 42 catalogued instruments, 16 stored full texts and 15 originals with SHA-256 hashes. The two treaties specifically dedicated to AI are the Council of Europe Framework Convention (CETS 225), with 21 signatures and 2 ratified instruments, and the WAICO Establishment Agreement, with 38 reported founding members; neither is in force as of 23 November 2026. The CCW GGE on LAWS is the only record in category 6 (negotiations in progress), with no adopted instrument. The other binding agreements with AI provisions are digital trade agreements (DEPA, SADEA, UKSDEA, KSDPA, AfCFTA protocol), with cooperative rather than prescriptive clauses. The 2025 Paris Statement (63 States, the EU and the AU Commission; China and India endorsed, the United States and the UK did not), the 2023 Chinese initiative and the 2025 Pax Silica Declaration (26 signatories) document competing political coalitions without creating legal blocs. The atlas treats the three-pole image as a heuristic, not a legal classification: the seven maps, with the recorded parties listed under each map, show that treaty participation and political endorsement cut across it. The 2024 UK–US MOU and the US–EU TTC AI-safety dialogue commitment add the transatlantic layer: one bilateral MOU whose full text is unpublished, and one political commitment inside a broader joint statement. The corpus distinguishes binding and non-binding instruments, full texts and metadata-only records, verified and unknown data. It is not complete: gaps, searches performed and checks run are documented in `docs/`.
 
 ## Documentation
 
