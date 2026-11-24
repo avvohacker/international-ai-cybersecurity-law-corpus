@@ -9,7 +9,9 @@
       "outlet": "European Journal of Risk Regulation 17(2), 536–565",
       "date": "2025-12-17",
       "url": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/council-of-europe-framework-convention-on-artificial-intelligence-context-regulatory-approach-and-scope-of-obligations/0ED34EFE5AA7C9628F7053720F88F48C",
-      "related": ["coe-cets-225"],
+      "related": [
+        "coe-cets-225"
+      ],
       "adds": "Reads the negotiating drafts against the final text: the Convention ends up reaching public authorities and private actors acting on their behalf, not all private providers. It also argues that the absence of EU-style risk tiers reflects abstraction, not necessarily weaker obligations."
     },
     {
@@ -20,7 +22,10 @@
       "outlet": "The Theory and Practice of Legislation 13(3), 292–311",
       "date": "2025-04-25",
       "url": "https://www.tandfonline.com/doi/full/10.1080/20508840.2025.2492524",
-      "related": ["coe-cets-225", "eu-ai-act"],
+      "related": [
+        "coe-cets-225",
+        "eu-ai-act"
+      ],
       "adds": "A side-by-side doctrinal comparison of definitions, risk architecture and remedies. It explains how Article 27(2) preserves EU law between EU Parties and proposes a “Strasbourg effect” alongside the better-known Brussels effect."
     },
     {
@@ -31,7 +36,9 @@
       "outlet": "International Law Blog",
       "date": "2026-08-24",
       "url": "https://internationallaw.blog/2026/08/24/the-race-for-the-global-regulation-of-ai-the-case-of-waico/",
-      "related": ["waico-establishment-agreement-2026"],
+      "related": [
+        "waico-establishment-agreement-2026"
+      ],
       "adds": "A close reading of the WAICO founding agreement: only a Council and a Secretariat, consensus with a two-thirds fallback, and entry into force after three ratifications. It shows how a very small founding group could control the organisation at the start."
     },
     {
@@ -42,7 +49,10 @@
       "outlet": "German Law Journal 25(4), 646–663",
       "date": "2024-02-19",
       "url": "https://www.cambridge.org/core/journals/german-law-journal/article/brussels-sideeffect-how-the-ai-act-can-reduce-the-global-reach-of-eu-policy/032C72AEC537EBB6AE96C0FD90387E3E",
-      "related": ["eu-ai-act", "coe-cets-225"],
+      "related": [
+        "eu-ai-act",
+        "coe-cets-225"
+      ],
       "adds": "Accepts that the AI Act will travel, but argues that its product-safety architecture underprotects rights and democracy abroad. The result is a “Brussels side-effect”: the text spreads while the EU's constitutional values do not."
     },
     {
@@ -53,7 +63,10 @@
       "outlet": "Carnegie Endowment for International Peace",
       "date": "2026-05-21",
       "url": "https://carnegieendowment.org/research/2026/05/chinas-pivot-on-global-ai",
-      "related": ["waico-establishment-agreement-2026", "china-global-ai-governance-initiative-2023"],
+      "related": [
+        "waico-establishment-agreement-2026",
+        "china-global-ai-governance-initiative-2023"
+      ],
       "adds": "Traces Beijing's move from exporting infrastructure and standards to building institutions. It reads WAICO as a complement to China's UN diplomacy, not a replacement, and cautions that Global South governments have not wholesale endorsed its state-centric vision."
     },
     {
@@ -64,7 +77,9 @@
       "outlet": "Science & Diplomacy (AAAS)",
       "date": "2025-12-08",
       "url": "https://www.sciencediplomacy.org/perspective/2025/brics-perspective-ai-governance-multilateralism-development-and-inclusion",
-      "related": ["brics-ai-statement-2025"],
+      "related": [
+        "brics-ai-statement-2025"
+      ],
       "adds": "A diplomat-scholar reading of the Rio statement as a negotiating instrument: development, technology transfer and digital sovereignty are tied to the UN process. It explains why the statement treats the UN, not the G7 or OECD, as the legitimate forum."
     },
     {
@@ -75,7 +90,9 @@
       "outlet": "Chatham House",
       "date": "2025-09-18",
       "url": "https://www.chathamhouse.org/2025/09/can-uns-new-ai-governance-efforts-weather-ai-race",
-      "related": ["un-ga-res-79-325"],
+      "related": [
+        "un-ga-res-79-325"
+      ],
       "adds": "Assesses the Scientific Panel and Global Dialogue as the most inclusive architecture yet, but “mostly powerless”: design limits, funding uncertainty, the capability gap and the exclusion of military AI are structural, not teething problems."
     },
     {
@@ -86,7 +103,10 @@
       "outlet": "ISAS Brief, National University of Singapore",
       "date": "2026-11-18",
       "url": "https://www.isas.nus.edu.sg/papers/india-and-pax-silica-building-capability-preserving-autonomy/",
-      "related": ["san-francisco-declaration-2026", "pax-silica-declaration-2025"],
+      "related": [
+        "san-francisco-declaration-2026",
+        "pax-silica-declaration-2025"
+      ],
       "adds": "Reads India's signature as an economic-security bargain. The declaration never names China, but “economic coercion” and “concentrated dependencies” do the work; membership only matters if it converts into domestic capability without surrendering regulatory autonomy."
     },
     {
@@ -97,7 +117,9 @@
       "outlet": "Carnegie Endowment for International Peace",
       "date": "2026-11-12",
       "url": "https://carnegieendowment.org/research/2026/11/will-a-un-treaty-on-autonomous-weapons-arrive-too-late",
-      "related": ["ccw-gge-laws-2026"],
+      "related": [
+        "ccw-gge-laws-2026"
+      ],
       "adds": "Compares the 2025 rolling text with the September 2026 GGE report: the definition narrows to systems whose action “results in loss of life”, and restrictions on manufacture and stockpiling fall away. It explains why the Review Conference is the next real test."
     },
     {
@@ -108,7 +130,9 @@
       "outlet": "TechPolicy.Press",
       "date": "2026-02-15",
       "url": "https://techpolicy.press/indias-ai-impact-summit-promises-little-more-than-spectacle",
-      "related": ["new-delhi-declaration-2026"],
+      "related": [
+        "new-delhi-declaration-2026"
+      ],
       "adds": "A civil-society counterpoint published during the summit: corporate parity with governments, the absence of rights, surveillance, bias and caste language, and no pathway from the declaration into Indian regulation."
     },
     {
@@ -130,8 +154,60 @@
       "outlet": "Brookings Institution",
       "date": "2026-09-09",
       "url": "https://www.brookings.edu/articles/advancing-human-control-of-military-ai/",
-      "related": ["political-declaration-military-ai-2023"],
+      "related": [
+        "political-declaration-military-ai-2023"
+      ],
       "adds": "A US–China co-authored proposal to extend the 2024 nuclear human-control understanding to AI-enabled cyber operations against nuclear command, control and communications. It treats presidential leadership, not expert process, as the binding constraint."
+    },
+    {
+      "id": "tropina-un-cybercrime-rights",
+      "strand": "Critique",
+      "author": "Tatiana Tropina",
+      "title": "‘This is not a human rights convention!’: the perils of overlooking human rights in the UN cybercrime treaty",
+      "outlet": "Journal of Cyber Policy 9(2), 200–220",
+      "date": "2024-10-29",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/23738871.2024.2419517",
+      "related": [
+        "un-cybercrime-convention-2024"
+      ],
+      "adds": "Reads the UN cybercrime treaty as a global criminal-justice instrument, not only a cybercrime instrument: the offence catalogue, investigative powers and cross-border evidence rules reach surveillance and prosecution far beyond computer crime. It argues that broad offences and a loose ‘serious crime’ trigger can legitimise criminal law as a tool of digital repression, and that narrow offences and robust rights safeguards are the condition for a defensible convention."
+    },
+    {
+      "id": "sukumar-broeders-kello-informality",
+      "strand": "Analysis",
+      "author": "Arun Sukumar, Dennis Broeders and Monica Kello",
+      "title": "The pervasive informality of the international cybersecurity regime: Geopolitics, non-state actors and diplomacy",
+      "outlet": "Contemporary Security Policy 45(1), 7–44",
+      "date": "2024-01-03",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/13523260.2023.2296739",
+      "related": [
+        "paris-call-cyberspace-2018"
+      ],
+      "adds": "Explains why cyber security is governed through informal, non-binding arrangements: multipolar geopolitics makes formal treaty-making hard, while non-state actors operate critical infrastructure and set de facto standards. The Paris Call and the Global Commission are treated as central cases: multistakeholder work clarifies norms that later feed into the UN GGE and OEWG, so informality should be judged by its outputs, not only by its lack of binding force."
+    },
+    {
+      "id": "ni-aolain-pall-mall-spyware",
+      "strand": "Critique",
+      "author": "Fionnuala Ní Aoláin",
+      "title": "One Step Forward? Agreement on Spyware Regulation in the Pall Mall Process",
+      "outlet": "Just Security",
+      "date": "2025-05-09",
+      "url": "https://www.justsecurity.org/113115/agreement-spyware-regulation-pall-mall-process/",
+      "related": [
+        "pall-mall-code-of-practice-2025"
+      ],
+      "adds": "Reads the 2025 Pall Mall Code as genuine progress — human-rights language in export licensing, vendor assessment, victim support and oversight — but also as a voluntary text that accepts a legitimate State market for intrusion tools. It argues that the arms-control language of ‘proliferation’ and ‘irresponsible use’ can normalise spyware, that key safeguards are discretionary, and that the Code is a floor rather than a ceiling."
+    },
+    {
+      "id": "lubin-colonial-pipeline",
+      "strand": "Doctrine",
+      "author": "Asaf Lubin",
+      "title": "Cyber Plungers: Colonial Pipeline and the Case for an Omnibus Cybersecurity Legislation",
+      "outlet": "Georgia Law Review 57(4), 1605",
+      "date": "2023-07-12",
+      "url": "https://www.repository.law.indiana.edu/facpub/3082",
+      "related": [],
+      "adds": "Tests whether Colonial Pipeline was the ‘galvanizing event’ CISA described. Through the litigation, the TSA pipeline directives and the absence of omnibus legislation, it finds that little changed in duties, enforcement or liability, and argues that incident-by-incident responses cannot allocate responsibility across the data ecosystem. The article is a counterweight to the assumption that a major cyber incident automatically produces legal change."
     }
   ]
 }

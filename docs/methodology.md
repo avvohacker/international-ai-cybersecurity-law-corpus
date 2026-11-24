@@ -14,7 +14,7 @@ The catalogue separates nine layers:
 6. Drafts and negotiations in progress.
 7. Supranational legislation, collected separately.
 8. A deliberately minimal selection of general treaties applicable to AI. It currently contains the VCLT (treaty law) and the ICCPR (human rights); it is not a general international-law inventory. The UN Charter, the UDHR, the ECHR, Convention 108+ and other general instruments are outside the corpus.
-9. International cybersecurity instruments: five cybercrime treaties and, separately, the EU internal-law acts NIS2 and the Cyber Resilience Act. The AI and cyber counts remain separate. In the section 01 sets and in the timeline, “binding” means **binding international law**, so the EU AI Act, NIS2 and the CRA are outside that set even though they are binding within the EU legal order.
+9. International cybersecurity instruments: five cybercrime treaties, two EU internal-law acts (NIS2 and the Cyber Resilience Act) and three non-binding instruments with official State lists (the Paris Call, the OECD Digital Security Recommendation and the Pall Mall Code). The AI and cyber counts remain separate. In the section 01 sets and in the timeline, “binding” means **binding international law**, so the EU AI Act, NIS2 and the CRA are outside that set even though they are binding within the EU legal order.
 
 An instrument enters layer 2 only if an **express AI provision** is located in the text or an official excerpt, and it is more than incidental. A trade agreement with a general digital chapter but no AI reference is recorded in the candidate register as excluded (provisionally, if a full-text keyword check was not performed).
 
@@ -25,7 +25,7 @@ The legal nature is determined from the instrument and its issuer, not from its 
 | Level | Meaning | This cycle |
 |---|---|---:|
 | `full_text_checked` | Full text stored, hashed, segmented, read; key passages asserted by tests. | 10 |
-| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 39 |
+| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 46 |
 | `source_located` | Official URL recorded; metadata from an established reference, not re-read. | 0 |
 
 Sixteen full texts are stored (15 acquired originals — 14 PDFs and one HTML — plus the CETS 225 transcription); only the ten marked `full_text_checked` were read end-to-end and are covered by key-passage tests. Six further texts are stored and segmented but remain `metadata_verified` because they were not read end-to-end. The levels are deliberately coarse and honest. `metadata_verified` is not a guarantee that every field, party or declaration was checked. Each record lists its own `verification.checks`, and `gaps` records what remains unknown.
@@ -83,7 +83,7 @@ The build does not access the network. It uses the published JSON Schema (draft 
 
 The determinism test builds twice and compares the bytes. Network acquisition and PDF extraction are separate commands; their outputs are stored, so a rebuild from the repository does not depend on the network or on a PDF library. The atlas is generated from the catalogue, the stored Natural Earth boundaries and the organisation membership lists in `data/organisations.json`; it is not an independent dataset.
 
-The link audit is a third, network-only command: `make audit-links` or `python3 tools/audit_sources.py`. It checks the official links used by the fifteen instrument panels, classifies broken links separately from anti-bot blocks and transient errors, and is deliberately excluded from `make test`.
+The link audit is a third, network-only command: `make audit-links` or `python3 tools/audit_sources.py`. It checks the official links used by the seventeen instrument panels, classifies broken links separately from anti-bot blocks and transient errors, and is deliberately excluded from `make test`.
 
 ## 8. Limits of this cycle
 
@@ -137,4 +137,4 @@ The omission test at the end of a cycle is deliberately mechanical:
 
 ### 10.5 What this changes in practice
 
-The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has fifteen maps and 54 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.
+The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has seventeen maps and 56 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.

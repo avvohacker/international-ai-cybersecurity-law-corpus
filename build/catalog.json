@@ -2,7 +2,7 @@
   "counts": {
     "by_binding": {
       "binding": 17,
-      "non_binding": 37
+      "non_binding": 39
     },
     "by_category": {
       "agreement_ai_provisions": 5,
@@ -10,22 +10,22 @@
       "cyber_treaty": 5,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 29,
+      "non_binding_instrument": 31,
       "preparatory_interpretive": 2,
       "supranational_law": 3,
       "technical_standard": 5
     },
     "by_domain": {
       "ai": 46,
-      "cyber": 8,
+      "cyber": 10,
       "joint": 0
     },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 44
+      "metadata_verified": 46
     },
     "full_texts": 16,
-    "total": 54,
+    "total": 56,
     "with_local_original": 15
   },
   "full_text_ids": [
@@ -7456,6 +7456,626 @@
         ],
         "level": "full_text_checked",
         "notes": "Full text preserved. The PDF is the 2024 revised booklet, not the original 2019 text; version history is recorded in the dates."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2019-12-11",
+        "entered_into_force": "2019-12-11",
+        "notes": "Adopted by the OECD Council on 11 December 2019; the OECD Compendium records it as in force. It replaces the 2008 Recommendation on the Protection of Critical Information Infrastructures (OECD/LEGAL/0361). The official Compendium lists 39 adherents (38 OECD members and Brazil); the page does not print an explicit 'as of' date.",
+        "published": "2019-12-11",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "Non-binding: the Recommendation creates no treaty obligation, ratification, depositary, sanction or enforceable right.",
+        "The adherent list is maintained live in the OECD Compendium; the record is a snapshot at 24 November 2026, without a separate dated depositary table.",
+        "Only State adherents are recorded. The Recommendation is addressed to governments; implementation by private operators is a matter for adherents' domestic law.",
+        "The full text is not stored as a local text; the official Compendium page is the source.",
+        "The 2022 OECD digital-security package (OECD/LEGAL/0479-0482) is related but not merged into this record, because each recommendation has its own scope."
+      ],
+      "id": "oecd-digital-security-critical-activities-2019",
+      "instrument_type": "recommendation",
+      "issuer": [
+        {
+          "name": "OECD Council",
+          "role": "issuer",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0456"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr"
+        ],
+        "note": "English and French are the OECD's official languages. Only the English page was read for this record.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "An OECD Council Recommendation. It is a non-binding legal instrument: adherents accept political responsibility and report through OECD committees, but no treaty signature, ratification or enforcement follows.",
+        "source_ids": [
+          "oecd-critical-security"
+        ]
+      },
+      "parties": {
+        "act": "endorsement",
+        "as_of": "2026-11-24",
+        "counts": {
+          "endorsements": {
+            "basis": "verified_total",
+            "note": "39 named State adherents: 38 OECD members and Brazil. The OECD calls the list 'Adherents'; the count is reproduced from the official Compendium.",
+            "source_ids": [
+              "oecd-critical-security"
+            ],
+            "total": 39,
+            "verified": 39
+          },
+          "ratifications": {
+            "basis": "not_applicable",
+            "total": null,
+            "verified": 0
+          }
+        },
+        "declarations": [],
+        "entries": [
+          {
+            "party": "Australia",
+            "role": "endorser"
+          },
+          {
+            "party": "Austria",
+            "role": "endorser"
+          },
+          {
+            "party": "Belgium",
+            "role": "endorser"
+          },
+          {
+            "party": "Brazil",
+            "role": "endorser"
+          },
+          {
+            "party": "Canada",
+            "role": "endorser"
+          },
+          {
+            "party": "Chile",
+            "role": "endorser"
+          },
+          {
+            "party": "Colombia",
+            "role": "endorser"
+          },
+          {
+            "party": "Costa Rica",
+            "role": "endorser"
+          },
+          {
+            "party": "Czech Republic",
+            "role": "endorser"
+          },
+          {
+            "party": "Denmark",
+            "role": "endorser"
+          },
+          {
+            "party": "Estonia",
+            "role": "endorser"
+          },
+          {
+            "party": "Finland",
+            "role": "endorser"
+          },
+          {
+            "party": "France",
+            "role": "endorser"
+          },
+          {
+            "party": "Germany",
+            "role": "endorser"
+          },
+          {
+            "party": "Greece",
+            "role": "endorser"
+          },
+          {
+            "party": "Hungary",
+            "role": "endorser"
+          },
+          {
+            "party": "Iceland",
+            "role": "endorser"
+          },
+          {
+            "party": "Ireland",
+            "role": "endorser"
+          },
+          {
+            "party": "Israel",
+            "role": "endorser"
+          },
+          {
+            "party": "Italy",
+            "role": "endorser"
+          },
+          {
+            "party": "Japan",
+            "role": "endorser"
+          },
+          {
+            "party": "Korea",
+            "role": "endorser"
+          },
+          {
+            "party": "Latvia",
+            "role": "endorser"
+          },
+          {
+            "party": "Lithuania",
+            "role": "endorser"
+          },
+          {
+            "party": "Luxembourg",
+            "role": "endorser"
+          },
+          {
+            "party": "Mexico",
+            "role": "endorser"
+          },
+          {
+            "party": "Netherlands",
+            "role": "endorser"
+          },
+          {
+            "party": "New Zealand",
+            "role": "endorser"
+          },
+          {
+            "party": "Norway",
+            "role": "endorser"
+          },
+          {
+            "party": "Poland",
+            "role": "endorser"
+          },
+          {
+            "party": "Portugal",
+            "role": "endorser"
+          },
+          {
+            "party": "Slovak Republic",
+            "role": "endorser"
+          },
+          {
+            "party": "Slovenia",
+            "role": "endorser"
+          },
+          {
+            "party": "Spain",
+            "role": "endorser"
+          },
+          {
+            "party": "Sweden",
+            "role": "endorser"
+          },
+          {
+            "party": "Switzerland",
+            "role": "endorser"
+          },
+          {
+            "party": "Türkiye",
+            "role": "endorser"
+          },
+          {
+            "party": "United Kingdom",
+            "role": "endorser"
+          },
+          {
+            "party": "United States",
+            "role": "endorser"
+          }
+        ],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "oecd-critical-security"
+        ],
+        "summary": "39 States are listed as adherents: the 38 OECD members and Brazil. Adherence is political, not a treaty signature or ratification.",
+        "unknowns": [
+          "The Compendium does not print a separate date for the current adherent count; the record uses the access date.",
+          "No public list of implementation measures by adherent is included here."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "assertions": [
+          {
+            "date": "2026-11-24",
+            "field": "title",
+            "locator": "OECD Compendium, title heading 'Recommendation of the Council on Digital Security of Critical Activities'.",
+            "method": "official_page_read",
+            "source_ids": [
+              "oecd-critical-security"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "dates",
+            "locator": "OECD Compendium record, 'Adopted on: 11/12/2019' and status 'In force'.",
+            "method": "official_page_read",
+            "source_ids": [
+              "oecd-critical-security"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "parties",
+            "locator": "OECD Compendium, Adherents list: 38 OECD members and Brazil.",
+            "method": "official_page_read",
+            "source_ids": [
+              "oecd-critical-security"
+            ]
+          }
+        ],
+        "discovered_via": "OECD Legal Instruments Compendium search for digital-security recommendations.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "eu-nis2-directive-2022",
+          "note": "Both address critical-activity security, but NIS2 is binding EU internal law and this is a non-binding OECD Recommendation.",
+          "relation": "related"
+        },
+        {
+          "id": "paris-call-cyberspace-2018",
+          "note": "Both are non-binding cyber instruments; this one is a formal OECD Recommendation with an adherent list, not a multistakeholder call.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "cyber_provisions": [
+          "Section III — strategic approach: national objectives, governance and risk assessment for critical activities",
+          "Section IV — capacity: incident response, CERT/CSIRT/SOC cooperation, standards and vulnerability disclosure",
+          "Section V–VI — monitoring, supervision and integration into national risk management",
+          "Section VII — operator measures: governance, protection, detection and response, resilience",
+          "Section VIII–IX — partnerships and international cooperation"
+        ],
+        "excluded_scope": "A non-binding Recommendation addressed to States. It creates no treaty obligation, no depositary and no enforcement mechanism. The map records adherents, not signatures or ratifications.",
+        "reason": "The OECD's current recommendation on the digital security of critical activities. It is the formal, State-level OECD instrument in this area and the official Compendium maintains a named adherent list, so it can be catalogued and mapped without inventing a supporter count."
+      },
+      "rights": {
+        "licence": "OECD reuse terms",
+        "note": "The OECD Compendium page is the official source. OECD content is subject to OECD terms and conditions; the record does not relicense the text.",
+        "status": "public_official_text",
+        "url": "https://www.oecd.org/termsandconditions"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "oecd-critical-security",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official OECD Compendium record: adopted 11 December 2019, in force, full Recommendation and the 39 named adherents.",
+          "publisher": "OECD",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0456"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force as an OECD legal instrument. Adopted 11 December 2019; 39 named adherents at access on 24 November 2026. Non-binding; no ratification or enforcement.",
+      "title": {
+        "official": "Recommendation of the Council on Digital Security of Critical Activities",
+        "short": "OECD Digital Security Recommendation (OECD/LEGAL/0456)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Title, adoption date and status checked in the OECD Compendium.",
+            "date": "2026-11-24",
+            "result": "Adopted 11 December 2019; recorded as in force."
+          },
+          {
+            "check": "Adherent list counted and checked.",
+            "date": "2026-11-24",
+            "result": "39 named States: 38 OECD members and Brazil."
+          },
+          {
+            "check": "Legal nature checked.",
+            "date": "2026-11-24",
+            "result": "OECD Recommendation, non-binding, with implementation reporting rather than sanctions."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata and adherents verified from the official OECD Compendium. The full text is not stored locally; the official page is cited."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2025-04-04",
+        "notes": "Code of Practice launched on 4 April 2025 and updated on 23 October 2025. The GOV.UK page lists 27 supporting States in the October 2025 version. It is a voluntary, non-binding code under the multistakeholder Pall Mall Process.",
+        "published": "2025-04-04",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "Voluntary and non-binding: it creates no treaty obligation, ratification, depositary, monitoring or enforcement.",
+        "The supporting-States list is maintained on a GOV.UK page with update dates, not a treaty depositary; the record is a snapshot of the 23 October 2025 version.",
+        "Only supporting States are recorded. International organisations, industry, academia and civil society participate in the wider Pall Mall Process but are not counted as State supporters.",
+        "Kosovo is listed as a supporting State by the UK source. The corpus reproduces the source list and does not thereby imply a position on recognition.",
+        "The Code addresses commercial cyber intrusion capabilities; it is not a general cyber-security or cybercrime instrument."
+      ],
+      "id": "pall-mall-code-of-practice-2025",
+      "instrument_type": "code_of_conduct",
+      "issuer": [
+        {
+          "name": "Pall Mall Process supporting States",
+          "role": "issuer",
+          "url": "https://www.gov.uk/government/publications/the-pall-mall-process-code-of-practice-for-states/the-pall-mall-process-code-of-practice-for-states"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English is the published language of the GOV.UK Code. No authentic-language clause.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A voluntary and non-binding Code of Practice for States. Support is political; the text expressly says it is voluntary and non-binding and creates no treaty obligation.",
+        "source_ids": [
+          "pall-mall-code"
+        ]
+      },
+      "parties": {
+        "act": "endorsement",
+        "as_of": "2025-10-23",
+        "counts": {
+          "endorsements": {
+            "basis": "verified_total",
+            "note": "27 supporting States in the GOV.UK version updated 23 October 2025.",
+            "source_ids": [
+              "pall-mall-code"
+            ],
+            "total": 27,
+            "verified": 27
+          },
+          "ratifications": {
+            "basis": "not_applicable",
+            "total": null,
+            "verified": 0
+          }
+        },
+        "declarations": [],
+        "entries": [
+          {
+            "party": "Austria",
+            "role": "endorser"
+          },
+          {
+            "party": "Belgium",
+            "role": "endorser"
+          },
+          {
+            "party": "Denmark",
+            "role": "endorser"
+          },
+          {
+            "party": "Estonia",
+            "role": "endorser"
+          },
+          {
+            "party": "Finland",
+            "role": "endorser"
+          },
+          {
+            "party": "France",
+            "role": "endorser"
+          },
+          {
+            "party": "Germany",
+            "role": "endorser"
+          },
+          {
+            "party": "Ghana",
+            "role": "endorser"
+          },
+          {
+            "party": "Greece",
+            "role": "endorser"
+          },
+          {
+            "party": "Hungary",
+            "role": "endorser"
+          },
+          {
+            "party": "Ireland",
+            "role": "endorser"
+          },
+          {
+            "party": "Italy",
+            "role": "endorser"
+          },
+          {
+            "party": "Japan",
+            "role": "endorser"
+          },
+          {
+            "party": "Kosovo",
+            "role": "endorser"
+          },
+          {
+            "party": "Latvia",
+            "role": "endorser"
+          },
+          {
+            "party": "Luxembourg",
+            "role": "endorser"
+          },
+          {
+            "party": "Moldova",
+            "role": "endorser"
+          },
+          {
+            "party": "Netherlands",
+            "role": "endorser"
+          },
+          {
+            "party": "Poland",
+            "role": "endorser"
+          },
+          {
+            "party": "Republic of Korea",
+            "role": "endorser"
+          },
+          {
+            "party": "Romania",
+            "role": "endorser"
+          },
+          {
+            "party": "Slovakia",
+            "role": "endorser"
+          },
+          {
+            "party": "Slovenia",
+            "role": "endorser"
+          },
+          {
+            "party": "Sweden",
+            "role": "endorser"
+          },
+          {
+            "party": "Switzerland",
+            "role": "endorser"
+          },
+          {
+            "party": "United Kingdom of Great Britain and Northern Ireland",
+            "role": "endorser"
+          },
+          {
+            "party": "United States of America",
+            "role": "endorser"
+          }
+        ],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "pall-mall-code"
+        ],
+        "summary": "27 States are listed as supporting States in the GOV.UK version updated 23 October 2025. Support is political and the Code is expressly voluntary and non-binding.",
+        "unknowns": [
+          "The list is updated on GOV.UK rather than in a treaty depositary; later additions or withdrawals are not reflected after 23 October 2025.",
+          "No separate national implementation reports were verified."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "assertions": [
+          {
+            "date": "2026-11-24",
+            "field": "title",
+            "locator": "GOV.UK page heading 'The Pall Mall Process Code of Practice for States', updated 23 October 2025.",
+            "method": "official_page_read",
+            "source_ids": [
+              "pall-mall-code"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "parties",
+            "locator": "GOV.UK page, section 'Supporting States': 27 named States.",
+            "method": "official_page_read",
+            "source_ids": [
+              "pall-mall-code"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "legal_nature",
+            "locator": "GOV.UK page, Preface paragraph 1 and Section 2 paragraph 7: 'voluntary and non-binding'.",
+            "method": "official_text_read",
+            "source_ids": [
+              "pall-mall-code"
+            ]
+          }
+        ],
+        "discovered_via": "Research on non-binding cyber instruments with official State lists; GOV.UK Pall Mall Process publication.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "paris-call-cyberspace-2018",
+          "note": "Both are non-binding, State-support cyber instruments; the Paris Call is a broad multistakeholder declaration, the Pall Mall Code is a State-facing code on commercial intrusion capabilities.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "cyber_provisions": [
+          "Pillar 1 — accountability: controls on the development, facilitation, purchase, transfer and use of commercial cyber intrusion capabilities",
+          "Pillar 2 — precision: lawful, necessary and proportionate State use",
+          "Pillar 3 — oversight: assessment and due diligence",
+          "Pillar 4 — transparency: supply-chain understanding, reporting and review"
+        ],
+        "excluded_scope": "A voluntary and non-binding Code. It creates no treaty obligation, depositary, monitoring or enforcement. The map records supporting States, not treaty signatures.",
+        "reason": "A State-facing code of practice on commercial cyber intrusion capabilities, with an official GOV.UK list of 27 supporting States and a dated update. It is a non-binding cyber instrument with a stable, named State list, so it is catalogued and mapped as political support."
+      },
+      "rights": {
+        "licence": "Open Government Licence v3.0",
+        "note": "GOV.UK content is licensed under OGL v3.0 except where otherwise stated. Reuse with attribution.",
+        "status": "open_licence",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "pall-mall-code",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official GOV.UK publication, updated 23 October 2025: voluntary Code and list of 27 supporting States.",
+          "publisher": "UK Government",
+          "url": "https://www.gov.uk/government/publications/the-pall-mall-process-code-of-practice-for-states/the-pall-mall-process-code-of-practice-for-states"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Launched 4 April 2025; updated 23 October 2025. 27 supporting States in that version. Voluntary and non-binding; not a treaty and not in force.",
+      "title": {
+        "official": "The Pall Mall Process Code of Practice for States",
+        "short": "Pall Mall Code 2025"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Title, update date and supporting-States list checked on GOV.UK.",
+            "date": "2026-11-24",
+            "result": "Updated 23 October 2025; 27 named supporting States."
+          },
+          {
+            "check": "Legal nature checked against the text.",
+            "date": "2026-11-24",
+            "result": "Expressly voluntary and non-binding; no treaty, depositary or enforcement."
+          },
+          {
+            "check": "Scope checked.",
+            "date": "2026-11-24",
+            "result": "Commercial cyber intrusion capabilities; four pillars of accountability, precision, oversight and transparency."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata and supporting-States list verified from the official GOV.UK publication. The list is a dated snapshot of an actively updated page."
       }
     },
     {

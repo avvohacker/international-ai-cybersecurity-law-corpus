@@ -75,5 +75,49 @@
       "label": "OpenAI, Announcing the Stargate Project",
       "url": "https://openai.com/index/announcing-the-stargate-project"
     }
+  },
+  {
+    "date": "2015-07-22",
+    "title": "UN GGE adopts the 2015 cyber-norms report",
+    "kind": "norms",
+    "summary": "The UN Group of Governmental Experts reaches consensus on report A/70/174: international law applies to State conduct in cyberspace, and a set of voluntary norms, rules and principles of responsible State behaviour is set out.",
+    "why": "No treaty and no supporter list. The report became the common reference for later political texts: the Paris Call, the Pall Mall Code and national cyber strategies reuse its norms language. It explains why non-binding cyber instruments cluster around the GGE vocabulary rather than around a single convention.",
+    "source": {
+      "label": "UN Digital Library, A/70/174",
+      "url": "https://digitallibrary.un.org/record/799853"
+    }
+  },
+  {
+    "date": "2017-05-12",
+    "title": "WannaCry ransomware attack",
+    "kind": "incident",
+    "summary": "WannaCry encrypts computers in hospitals, companies and public services across many countries. The UK National Audit Office later finds that the NHS was warned about the risk and that patching and contingency planning were inadequate.",
+    "why": "No instrument. The attack made ransomware and unpatched critical infrastructure a leaders' issue and fed the later turn to incident response, supply-chain security and national cyber strategies. It is part of the reason cyber instruments after 2017 focus on critical activities rather than only on criminal procedure.",
+    "source": {
+      "label": "UK National Audit Office, WannaCry investigation",
+      "url": "https://www.nao.org.uk/reports/investigation-wannacry-cyber-attack-and-the-nhs/"
+    }
+  },
+  {
+    "date": "2020-12-13",
+    "title": "SolarWinds supply-chain compromise disclosed",
+    "kind": "incident",
+    "summary": "CISA releases Emergency Directive 21-01 after the SolarWinds Orion code compromise. The incident affects US government agencies and private companies through a trusted software supply chain.",
+    "why": "No instrument. It moved supply-chain security and software integrity to the centre of cyber policy and is part of the background to the OECD critical-activities recommendation, the EU Cyber Resilience Act and later state-level codes.",
+    "source": {
+      "label": "CISA, Emergency Directive 21-01 and SolarWinds advisory",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-352a"
+    }
+  },
+  {
+    "date": "2021-05-07",
+    "title": "Colonial Pipeline ransomware attack",
+    "kind": "incident",
+    "summary": "A ransomware attack forces Colonial Pipeline to shut down a major US fuel pipeline. CISA and the FBI issue a joint advisory on DarkSide ransomware and critical-infrastructure disruption.",
+    "why": "No instrument. The disruption showed that ransomware against critical infrastructure is a national-security and continuity problem, not only a crime. It is part of the context for the International Counter Ransomware Initiative and for the critical-infrastructure focus of later cyber instruments.",
+    "source": {
+      "label": "CISA/FBI, DarkSide ransomware advisory",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-131a"
+    }
   }
 ]

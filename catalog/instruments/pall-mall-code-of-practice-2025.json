@@ -1,0 +1,282 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2025-04-04",
+    "notes": "Code of Practice launched on 4 April 2025 and updated on 23 October 2025. The GOV.UK page lists 27 supporting States in the October 2025 version. It is a voluntary, non-binding code under the multistakeholder Pall Mall Process.",
+    "published": "2025-04-04",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "cyber"
+  ],
+  "gaps": [
+    "Voluntary and non-binding: it creates no treaty obligation, ratification, depositary, monitoring or enforcement.",
+    "The supporting-States list is maintained on a GOV.UK page with update dates, not a treaty depositary; the record is a snapshot of the 23 October 2025 version.",
+    "Only supporting States are recorded. International organisations, industry, academia and civil society participate in the wider Pall Mall Process but are not counted as State supporters.",
+    "Kosovo is listed as a supporting State by the UK source. The corpus reproduces the source list and does not thereby imply a position on recognition.",
+    "The Code addresses commercial cyber intrusion capabilities; it is not a general cyber-security or cybercrime instrument."
+  ],
+  "id": "pall-mall-code-of-practice-2025",
+  "instrument_type": "code_of_conduct",
+  "issuer": [
+    {
+      "name": "Pall Mall Process supporting States",
+      "role": "issuer",
+      "url": "https://www.gov.uk/government/publications/the-pall-mall-process-code-of-practice-for-states/the-pall-mall-process-code-of-practice-for-states"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "English is the published language of the GOV.UK Code. No authentic-language clause.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A voluntary and non-binding Code of Practice for States. Support is political; the text expressly says it is voluntary and non-binding and creates no treaty obligation.",
+    "source_ids": [
+      "pall-mall-code"
+    ]
+  },
+  "parties": {
+    "act": "endorsement",
+    "as_of": "2025-10-23",
+    "counts": {
+      "endorsements": {
+        "basis": "verified_total",
+        "note": "27 supporting States in the GOV.UK version updated 23 October 2025.",
+        "source_ids": [
+          "pall-mall-code"
+        ],
+        "total": 27,
+        "verified": 27
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "party": "Austria",
+        "role": "endorser"
+      },
+      {
+        "party": "Belgium",
+        "role": "endorser"
+      },
+      {
+        "party": "Denmark",
+        "role": "endorser"
+      },
+      {
+        "party": "Estonia",
+        "role": "endorser"
+      },
+      {
+        "party": "Finland",
+        "role": "endorser"
+      },
+      {
+        "party": "France",
+        "role": "endorser"
+      },
+      {
+        "party": "Germany",
+        "role": "endorser"
+      },
+      {
+        "party": "Ghana",
+        "role": "endorser"
+      },
+      {
+        "party": "Greece",
+        "role": "endorser"
+      },
+      {
+        "party": "Hungary",
+        "role": "endorser"
+      },
+      {
+        "party": "Ireland",
+        "role": "endorser"
+      },
+      {
+        "party": "Italy",
+        "role": "endorser"
+      },
+      {
+        "party": "Japan",
+        "role": "endorser"
+      },
+      {
+        "party": "Kosovo",
+        "role": "endorser"
+      },
+      {
+        "party": "Latvia",
+        "role": "endorser"
+      },
+      {
+        "party": "Luxembourg",
+        "role": "endorser"
+      },
+      {
+        "party": "Moldova",
+        "role": "endorser"
+      },
+      {
+        "party": "Netherlands",
+        "role": "endorser"
+      },
+      {
+        "party": "Poland",
+        "role": "endorser"
+      },
+      {
+        "party": "Republic of Korea",
+        "role": "endorser"
+      },
+      {
+        "party": "Romania",
+        "role": "endorser"
+      },
+      {
+        "party": "Slovakia",
+        "role": "endorser"
+      },
+      {
+        "party": "Slovenia",
+        "role": "endorser"
+      },
+      {
+        "party": "Sweden",
+        "role": "endorser"
+      },
+      {
+        "party": "Switzerland",
+        "role": "endorser"
+      },
+      {
+        "party": "United Kingdom of Great Britain and Northern Ireland",
+        "role": "endorser"
+      },
+      {
+        "party": "United States of America",
+        "role": "endorser"
+      }
+    ],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "pall-mall-code"
+    ],
+    "summary": "27 States are listed as supporting States in the GOV.UK version updated 23 October 2025. Support is political and the Code is expressly voluntary and non-binding.",
+    "unknowns": [
+      "The list is updated on GOV.UK rather than in a treaty depositary; later additions or withdrawals are not reflected after 23 October 2025.",
+      "No separate national implementation reports were verified."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-24",
+        "field": "title",
+        "locator": "GOV.UK page heading 'The Pall Mall Process Code of Practice for States', updated 23 October 2025.",
+        "method": "official_page_read",
+        "source_ids": [
+          "pall-mall-code"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "parties",
+        "locator": "GOV.UK page, section 'Supporting States': 27 named States.",
+        "method": "official_page_read",
+        "source_ids": [
+          "pall-mall-code"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "legal_nature",
+        "locator": "GOV.UK page, Preface paragraph 1 and Section 2 paragraph 7: 'voluntary and non-binding'.",
+        "method": "official_text_read",
+        "source_ids": [
+          "pall-mall-code"
+        ]
+      }
+    ],
+    "discovered_via": "Research on non-binding cyber instruments with official State lists; GOV.UK Pall Mall Process publication.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "paris-call-cyberspace-2018",
+      "note": "Both are non-binding, State-support cyber instruments; the Paris Call is a broad multistakeholder declaration, the Pall Mall Code is a State-facing code on commercial intrusion capabilities.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "cyber_provisions": [
+      "Pillar 1 — accountability: controls on the development, facilitation, purchase, transfer and use of commercial cyber intrusion capabilities",
+      "Pillar 2 — precision: lawful, necessary and proportionate State use",
+      "Pillar 3 — oversight: assessment and due diligence",
+      "Pillar 4 — transparency: supply-chain understanding, reporting and review"
+    ],
+    "excluded_scope": "A voluntary and non-binding Code. It creates no treaty obligation, depositary, monitoring or enforcement. The map records supporting States, not treaty signatures.",
+    "reason": "A State-facing code of practice on commercial cyber intrusion capabilities, with an official GOV.UK list of 27 supporting States and a dated update. It is a non-binding cyber instrument with a stable, named State list, so it is catalogued and mapped as political support."
+  },
+  "rights": {
+    "licence": "Open Government Licence v3.0",
+    "note": "GOV.UK content is licensed under OGL v3.0 except where otherwise stated. Reuse with attribution.",
+    "status": "open_licence",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "pall-mall-code",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official GOV.UK publication, updated 23 October 2025: voluntary Code and list of 27 supporting States.",
+      "publisher": "UK Government",
+      "url": "https://www.gov.uk/government/publications/the-pall-mall-process-code-of-practice-for-states/the-pall-mall-process-code-of-practice-for-states"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Launched 4 April 2025; updated 23 October 2025. 27 supporting States in that version. Voluntary and non-binding; not a treaty and not in force.",
+  "title": {
+    "official": "The Pall Mall Process Code of Practice for States",
+    "short": "Pall Mall Code 2025"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Title, update date and supporting-States list checked on GOV.UK.",
+        "date": "2026-11-24",
+        "result": "Updated 23 October 2025; 27 named supporting States."
+      },
+      {
+        "check": "Legal nature checked against the text.",
+        "date": "2026-11-24",
+        "result": "Expressly voluntary and non-binding; no treaty, depositary or enforcement."
+      },
+      {
+        "check": "Scope checked.",
+        "date": "2026-11-24",
+        "result": "Commercial cyber intrusion capabilities; four pillars of accountability, precision, oversight and transparency."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata and supporting-States list verified from the official GOV.UK publication. The list is a dated snapshot of an actively updated page."
+  }
+}

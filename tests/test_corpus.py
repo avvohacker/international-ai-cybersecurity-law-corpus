@@ -43,7 +43,7 @@ class TestCatalogue(unittest.TestCase):
             self.assertLessEqual(set(domains), {"ai", "cyber"}, iid)
             self.assertEqual(len(domains), len(set(domains)), iid)
         self.assertEqual(sum(1 for inst in instruments.values() if "ai" in inst["domains"]), 46)
-        self.assertEqual(sum(1 for inst in instruments.values() if "cyber" in inst["domains"]), 8)
+        self.assertEqual(sum(1 for inst in instruments.values() if "cyber" in inst["domains"]), 10)
 
     def test_budapest_record_is_cyber_domain(self) -> None:
         inst = read_instrument("budapest-convention-2001")
@@ -745,21 +745,21 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(summary["counts"]["by_category"]["draft_negotiation"], 1)
         self.assertEqual(summary["counts"]["by_category"]["ai_treaty"], 2)
         self.assertEqual(summary["counts"]["by_category"]["supranational_law"], 3)
-        self.assertEqual(summary["counts"]["total"], 54)
-        self.assertEqual(summary["counts"]["by_domain"], {"ai": 46, "cyber": 8, "joint": 0})
-        self.assertEqual(summary["counts"]["by_binding"], {"binding": 17, "non_binding": 37})
+        self.assertEqual(summary["counts"]["total"], 56)
+        self.assertEqual(summary["counts"]["by_domain"], {"ai": 46, "cyber": 10, "joint": 0})
+        self.assertEqual(summary["counts"]["by_binding"], {"binding": 17, "non_binding": 39})
 
     def test_site_maps_are_complete_and_neutral(self) -> None:
         import build_site
 
         build_site.main()
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(page.count('class="map-frame"'), 15)
-        self.assertEqual(page.count('class="map-key"'), 15)
-        self.assertEqual(page.count('class="map-participation"'), 15)
+        self.assertEqual(page.count('class="map-frame"'), 17)
+        self.assertEqual(page.count('class="map-key"'), 17)
+        self.assertEqual(page.count('class="map-participation"'), 17)
         self.assertNotIn('class="map-sub"', page)
         figures = re.findall(r'<figure class="map-card">(.*?)</figure>', page, re.S)
-        self.assertEqual(len(figures), 15)
+        self.assertEqual(len(figures), 17)
         self.assertNotIn("What it is", page)
         by_title = {
             re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
@@ -783,6 +783,8 @@ class TestBuild(unittest.TestCase):
                 "BRICS 2025",
                 "Seoul 2024",
                 "Paris Call 2018",
+                "OECD Digital Security 2019",
+                "Pall Mall Code 2025",
             ],
         )
         for figure in figures:
@@ -790,7 +792,7 @@ class TestBuild(unittest.TestCase):
             self.assertNotIn("map-label", figure)
             self.assertNotIn("map-org-label", figure)
             self.assertNotIn("map-org-leader", figure)
-        self.assertEqual(page.count('class="map-org-note"'), 5)
+        self.assertEqual(page.count('class="map-org-note"'), 6)
         self.assertIn(
             "European Union: ratified. 27 EU member States without an individual signature",
             by_title["CETS 225"],
@@ -826,7 +828,7 @@ class TestBuild(unittest.TestCase):
         self.assertIn("State: signed only", page)
         self.assertIn("States only", page)
         self.assertIn("37 confirmed of 38 reported", page)
-        self.assertEqual(page.count('class="map-parties"'), 15)
+        self.assertEqual(page.count('class="map-parties"'), 17)
         self.assertEqual(by_title["Paris Call 2018"].count('fill="#5a7fbd"'), 81)
         self.assertEqual(by_title["Paris Call 2018"].count('<li data-party='), 82)
         self.assertIn("81 States + EU", by_title["Paris Call 2018"])
@@ -857,11 +859,11 @@ class TestBuild(unittest.TestCase):
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
         ids = set(re.findall(r'<li[^>]*data-instrument-id="([^"]+)"', page))
         self.assertEqual(ids, set(corpuslib.load_instruments()))
-        self.assertEqual(page.count('data-instrument-id='), 54)
+        self.assertEqual(page.count('data-instrument-id='), 56)
         for label in (
             "00 · Index",
-            "01 · Sets",
-            "02 · 15 maps",
+            "01 · Situation",
+            "02 · 17 maps",
             "03 · Timeline",
             "04 · Reading room",
             "05 · The catalogue",
@@ -870,6 +872,18 @@ class TestBuild(unittest.TestCase):
             self.assertIn(label, page)
         self.assertIn("The treaties, declarations and statements", page)
         self.assertIn("The argument around the record", page)
+        self.assertIn("Situation at a glance", page)
+        self.assertEqual(page.count('<p class="stat-number">'), 4)
+        for label in (
+            "catalogued instruments",
+            "binding instruments",
+            "non-binding instruments",
+            "State-level maps",
+        ):
+            self.assertIn(label, page)
+        self.assertIn("Only two AI-specific treaties", page)
+        self.assertIn("<h2>Off the record</h2>", page)
+        self.assertNotIn("<h2>Reading room</h2>", page)
         self.assertIn("What this corpus contains", page)
         self.assertIn("<h1>International AI and Cybersecurity Law</h1>", page)
         self.assertIn('class="atlas-subtitle">Atlas</p>', page)
@@ -886,33 +900,35 @@ class TestBuild(unittest.TestCase):
         self.assertIn("EU Artificial Intelligence Act", page)
         self.assertIn("International binding", page)
         self.assertNotIn('class="cyber-status"', page)
-        self.assertEqual(page.count('data-weight="highlight"'), 14)
-        self.assertEqual(page.count('data-weight="record"'), 40)
+        self.assertEqual(page.count('data-weight="highlight"'), 17)
+        self.assertEqual(page.count('data-weight="record"'), 39)
         instruments = corpuslib.load_instruments()
         highlighted = re.findall(
             r'data-weight="highlight" data-instrument-id="([^"]+)"', page
         )
-        self.assertEqual(len(highlighted), 14)
+        self.assertEqual(len(highlighted), 17)
+        self.assertEqual(set(highlighted), set(build_site.MAP_INSTRUMENT_IDS))
         international_binding = {
             iid
             for iid, inst in instruments.items()
             if inst["binding_status"] == "binding"
             and inst["category"] != "supranational_law"
         }
-        self.assertEqual(international_binding, set(highlighted))
+        self.assertEqual(len(international_binding - set(highlighted)), 7)
+        self.assertEqual(page.count("Binding instrument without a map"), 7)
         for iid in ("eu-ai-act", "eu-nis2-directive-2022", "eu-cyber-resilience-act-2024"):
             self.assertNotIn(f'data-weight="highlight" data-instrument-id="{iid}"', page)
             self.assertIn(f'data-weight="record" data-instrument-id="{iid}"', page)
-        self.assertEqual(page.count("EU internal-law record"), 4)
-        self.assertNotIn("data-weight=\"highlight\" data-instrument-id=\"new-delhi-declaration-2026\"", page)
-        self.assertNotIn("data-weight=\"highlight\" data-instrument-id=\"paris-ai-action-summit-statement-2025\"", page)
+        self.assertEqual(page.count("EU internal-law record"), 3)
+        self.assertIn("data-weight=\"highlight\" data-instrument-id=\"new-delhi-declaration-2026\"", page)
+        self.assertIn("data-weight=\"highlight\" data-instrument-id=\"paris-ai-action-summit-statement-2025\"", page)
         self.assertLess(page.find('id="index"'), page.find('id="form"'))
         self.assertLess(page.find('id="form"'), page.find('id="maps"'))
         self.assertLess(page.find('id="maps"'), page.find('id="timeline"'))
         self.assertLess(page.find('id="timeline"'), page.find('id="unseen"'))
         self.assertLess(page.find('id="unseen"'), page.find('id="catalogue"'))
-        self.assertGreaterEqual(page.count('class="tl-item tl-event unseen-item"'), 6)
-        self.assertEqual(page.count('class="tl-item tl-instrument"'), 54)
+        self.assertEqual(page.count('class="tl-item tl-event unseen-item"'), 11)
+        self.assertEqual(page.count('class="tl-item tl-instrument"'), 56)
         self.assertIn("Three sets: AI, cyber and international binding", page)
         self.assertIn("The story, with the instruments in it", page)
         self.assertIn("The argument around the record", page)
@@ -943,6 +959,8 @@ class TestBuild(unittest.TestCase):
                 "BRICS 2025",
                 "Seoul 2024",
                 "Paris Call 2018",
+                "OECD Digital Security 2019",
+                "Pall Mall Code 2025",
             ],
         )
         groups = re.findall(r'data-map-group="([^"]+)">\s*<h3[^>]*>([^<]+)', page)
@@ -1029,6 +1047,8 @@ class TestBuild(unittest.TestCase):
             ("WAICO 2026", "waico-establishment-agreement-2026", "Signed"),
             ("Pax Silica 2025", "pax-silica-declaration-2025", "Endorsed"),
             ("Paris Call 2018", "paris-call-cyberspace-2018", "Endorsed"),
+            ("OECD Digital Security 2019", "oecd-digital-security-critical-activities-2019", "Adherents"),
+            ("Pall Mall Code 2025", "pall-mall-code-of-practice-2025", "Supporting States"),
         ]
         for title, iid, expected_group in cases:
             record = read_instrument(iid)
@@ -1085,7 +1105,7 @@ class TestBuild(unittest.TestCase):
 
         build_site.main()
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(page.count('class="map-about"'), 15)
+        self.assertEqual(page.count('class="map-about"'), 17)
         figures = {
             re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
             for figure in re.findall(
@@ -1108,6 +1128,8 @@ class TestBuild(unittest.TestCase):
             ("Pax Silica 2025", "pax-silica-declaration-2025"),
             ("BRICS 2025", "brics-ai-statement-2025"),
             ("Paris Call 2018", "paris-call-cyberspace-2018"),
+            ("OECD Digital Security 2019", "oecd-digital-security-critical-activities-2019"),
+            ("Pall Mall Code 2025", "pall-mall-code-of-practice-2025"),
         ]
         for title, iid in cases:
             record = read_instrument(iid)
@@ -1230,6 +1252,42 @@ class TestBuild(unittest.TestCase):
         self.assertIn("The Socialist Republic of Viet Nam", record["parties"]["declarations"][1])
         self.assertIn("stable", record["provenance"]["notes"])
 
+    def test_oecd_and_pall_mall_non_binding_records(self) -> None:
+        oecd = read_instrument("oecd-digital-security-critical-activities-2019")
+        pall = read_instrument("pall-mall-code-of-practice-2025")
+        self.assertEqual(oecd["domains"], ["cyber"])
+        self.assertEqual(oecd["binding_status"], "non_binding")
+        self.assertEqual(oecd["status"], "in_force")
+        self.assertEqual(oecd["dates"]["adopted"], "2019-12-11")
+        self.assertEqual(len(oecd["parties"]["entries"]), 39)
+        self.assertEqual(oecd["parties"]["counts"]["endorsements"]["total"], 39)
+        self.assertIn("Brazil", {entry["party"] for entry in oecd["parties"]["entries"]})
+        self.assertEqual(pall["domains"], ["cyber"])
+        self.assertEqual(pall["binding_status"], "non_binding")
+        self.assertEqual(pall["dates"]["adopted"], "2025-04-04")
+        self.assertEqual(len(pall["parties"]["entries"]), 27)
+        self.assertIn("Kosovo", {entry["party"] for entry in pall["parties"]["entries"]})
+        for record in (oecd, pall):
+            urls = {source["url"] for source in record["sources"]}
+            self.assertTrue(any(url.startswith("https://") for url in urls))
+            self.assertTrue(record["provenance"]["assertions"])
+
+    def test_un_cybercrime_eu_marker_is_intermediate(self) -> None:
+        import build_site
+
+        build_site.main()
+        page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        figure = next(
+            block
+            for block in re.findall(r'<figure class="map-card">(.*?)</figure>', page, re.S)
+            if "<span class=\"map-title\">UN Cybercrime Convention</span>" in block
+        )
+        self.assertIn(
+            "European Union: signed. 9 EU member States without an individual signature",
+            figure,
+        )
+        self.assertEqual(figure.count('fill="#a9c0e0"'), 9)
+
     def test_malabo_record_uses_au_status_list(self) -> None:
         record = read_instrument("au-malabo-convention-2014")
         self.assertEqual(record["category"], "cyber_treaty")
@@ -1311,7 +1369,7 @@ class TestBuild(unittest.TestCase):
             f"{build_site.number_word(ai_count).capitalize()} AI-specific treaties", page
         )
         self.assertIn(
-            f'<p class="stat-number">{ai_count}</p><p class="stat-label">AI-specific treaties</p>',
+            f"Only {build_site.number_word(ai_count)} AI-specific treaties",
             page,
         )
         self.assertNotIn("193 States", page)
@@ -1401,8 +1459,8 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 143)
-        self.assertEqual(len({target.instrument_id for target in targets}), 54)
+        self.assertEqual(len(targets), 145)
+        self.assertEqual(len({target.instrument_id for target in targets}), 56)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)
         )
@@ -1415,7 +1473,7 @@ class TestLinkAudit(unittest.TestCase):
         import build_site
 
         targets = self.audit.targets()
-        self.assertEqual(len(build_site.MAP_INSTRUMENT_IDS), 15)
+        self.assertEqual(len(build_site.MAP_INSTRUMENT_IDS), 17)
         self.assertEqual(
             {target.instrument_id for target in targets},
             set(build_site.MAP_INSTRUMENT_IDS),
