@@ -82,6 +82,12 @@ class TestCatalogue(unittest.TestCase):
         )
         self.assertEqual(ets["parties"]["counts"]["ratifications"]["total"], 33)
         self.assertEqual(ets["parties"]["counts"]["accessions"]["total"], 5)
+        self.assertEqual(len(ets["parties"]["reservations"]), 21)
+        self.assertEqual(len(ets["parties"]["declarations"]), 11)
+        self.assertEqual(len(ets["parties"]["notifications"]), 1)
+        self.assertIn("coe-declarations-189", {source["id"] for source in ets["sources"]})
+        self.assertTrue(ets["parties"]["reservations"][0].startswith("Croatia — Reservation"))
+        self.assertTrue(ets["parties"]["notifications"][0].startswith("Ukraine — Communication"))
         self.assertEqual(ets["related"][0]["id"], "budapest-convention-2001")
 
         cets = read_instrument("coe-cets-224")
@@ -92,6 +98,11 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(len(cets["parties"]["entries"]), 52)
         self.assertEqual(cets["parties"]["counts"]["signatures"]["total"], 52)
         self.assertEqual(cets["parties"]["counts"]["ratifications"]["total"], 4)
+        self.assertEqual(len(cets["parties"]["reservations"]), 1)
+        self.assertEqual(len(cets["parties"]["declarations"]), 21)
+        self.assertNotIn("notifications", cets["parties"])
+        self.assertIn("coe-declarations-224", {source["id"] for source in cets["sources"]})
+        self.assertTrue(cets["parties"]["reservations"][0].startswith("Japan — Reservation"))
         self.assertEqual(
             {entry["party"] for entry in cets["parties"]["entries"] if entry.get("ratification")},
             {"Costa Rica", "Hungary", "Japan", "Serbia"},
@@ -1198,7 +1209,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 126)
+        self.assertEqual(len(targets), 128)
         self.assertEqual(len({target.instrument_id for target in targets}), 49)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)

@@ -1388,7 +1388,9 @@ def main() -> int:
                 "First Additional Protocol to the Budapest Convention. In force since "
                 "1 March 2006. The Treaty Office chart of 24 November 2026 lists 38 "
                 "Parties (33 ratifications and 5 accessions) and nine signatories; "
-                "eight listed States have no recorded signature or ratification."
+                "eight listed States have no recorded signature or ratification. "
+                "The declarations page lists 21 reservations, 11 declarations and "
+                "one communication from 16 States; the texts are stored separately."
             ),
             legend_note=(
                 f"{ets189_party_count} Parties + {len(ets189_signatories)} signatories"
@@ -1408,7 +1410,8 @@ def main() -> int:
                 "evidence. Not in force: five ratifications are required and four had "
                 "been recorded by 24 November 2026 (Hungary, Serbia, Costa Rica and "
                 "Japan). The chart lists 52 signatories; 48 signatures are not followed "
-                "by ratification."
+                "by ratification. The declarations page lists one reservation and 21 "
+                "declarations from four States; the texts are stored separately."
             ),
             legend_note=(
                 f"{len(cets224_states)} signatories · {cets224_ratification_count} ratifications · "

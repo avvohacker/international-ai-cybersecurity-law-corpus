@@ -167,7 +167,7 @@ Every record declares one of:
 5. **Most records are metadata-level.** 33 of 49 instruments are catalogued without a stored full text; 6 of the 16 stored texts were not read end-to-end. The distinctions are machine-readable.
 6. **Only one negotiation record** (the CCW GGE); no adopted draft protocol, no Latin American or Middle Eastern regional AI instrument, and no bilateral AI treaty were verified.
 7. **Printed pagination vs file pagination** is modelled only partially: unit `page_start`/`page_end` are PDF file pages; CETS 225 uses one logical page because its PDF was not acquired.
-8. **The cybersecurity layer is still partial.** Three metadata-only records are catalogued: the Budapest Convention (with its full party list, 96 reservations and 280 declarations), ETS 189 and CETS 224. All three are mapped. The UN Cybercrime Convention, regional product/critical-infrastructure law (NIS2 and the CRA), cyber norms, standards and cooperation channels remain pending. See [docs/cybersecurity-integration-plan.md](docs/cybersecurity-integration-plan.md).
+8. **The cybersecurity layer is still partial.** Three metadata-only records are catalogued: the Budapest Convention, ETS 189 and CETS 224. All three have itemised party tables and are mapped; their reservation and declaration pages are now reproduced in the records (Budapest: 96 reservations and 280 declarations; ETS 189: 21 reservations, 11 declarations and one communication; CETS 224: one reservation and 21 declarations). The UN Cybercrime Convention, regional product/critical-infrastructure law (NIS2 and the CRA), cyber norms, standards and cooperation channels remain pending. See [docs/cybersecurity-integration-plan.md](docs/cybersecurity-integration-plan.md).
 
 ## Rights and licence
 
