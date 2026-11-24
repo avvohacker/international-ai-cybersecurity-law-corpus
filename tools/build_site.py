@@ -32,6 +32,7 @@ REPO = "https://github.com/avvohacker/international-ai-cybersecurity-law-corpus"
 PARIS_ID = "paris-ai-action-summit-statement-2025"
 BUDAPEST_ID = "budapest-convention-2001"
 UN_CYBER_ID = "un-cybercrime-convention-2024"
+MALABO_ID = "au-malabo-convention-2014"
 ETS189_ID = "coe-ets-189"
 CETS224_ID = "coe-cets-224"
 CETS_ID = "coe-cets-225"
@@ -50,6 +51,7 @@ MAP_INSTRUMENT_IDS = (
     MILITARY_ID,
     BUDAPEST_ID,
     UN_CYBER_ID,
+    MALABO_ID,
     ETS189_ID,
     CETS224_ID,
     CETS_ID,
@@ -59,22 +61,6 @@ MAP_INSTRUMENT_IDS = (
     BRICS_ID,
 )
 
-# Only texts that changed the legal position or opened a route get a box in 03.
-TIMELINE_HIGHLIGHTS = {
-    "oecd-ai-recommendation-2019",
-    "depa-2020",
-    "unesco-ethics-ai-2021",
-    "bletchley-declaration-2023",
-    "coe-cets-225",
-    "eu-ai-act",
-    "afcfta-digital-trade-protocol-2024",
-    "paris-ai-action-summit-statement-2025",
-    "un-ga-res-79-325",
-    "waico-establishment-agreement-2026",
-    "new-delhi-declaration-2026",
-    "san-francisco-declaration-2026",
-    "budapest-convention-2001",
-}
 
 # IFAD endorsed the New Delhi Declaration but is a UN specialised agency, not a
 # State. It is named outside the map frame, without shading its members.
@@ -678,6 +664,83 @@ AI_ROUTE_CATEGORIES = {"ai_treaty", "agreement_ai_provisions", "supranational_la
 AI_SPECIFIC_CATEGORIES = {"ai_treaty", "supranational_law"}
 
 
+def cyber_status_section(instruments: list[dict]) -> str:
+    """Show the current cyber hard-law layer without merging it into the AI Venn."""
+    cyber = [
+        inst
+        for inst in instruments
+        if "cyber" in inst["domains"] and inst["binding_status"] == "binding"
+    ]
+
+    def party_count(inst: dict) -> int:
+        return sum(
+            1
+            for entry in inst["parties"]["entries"]
+            if entry.get("role") == "party"
+            or entry.get("ratification")
+            or entry.get("accession")
+        )
+
+    def signatory_only_count(inst: dict) -> int:
+        return sum(
+            1
+            for entry in inst["parties"]["entries"]
+            if entry.get("role") == "signatory"
+            and not (entry.get("ratification") or entry.get("accession"))
+        )
+
+    labels = {
+        BUDAPEST_ID: "Budapest Convention",
+        ETS189_ID: "ETS 189",
+        MALABO_ID: "Malabo Convention",
+        CETS224_ID: "CETS 224",
+        UN_CYBER_ID: "UN Cybercrime Convention",
+    }
+
+    def participation(inst: dict) -> str:
+        parties = party_count(inst)
+        counts = inst["parties"].get("counts") or {}
+        signatures = (counts.get("signatures") or {}).get("total")
+        if inst["id"] == UN_CYBER_ID:
+            return f"{parties} Parties of {signatures} signatories"
+        if inst["status"] == "in_force":
+            signatories = signatory_only_count(inst)
+            return f"{parties} Parties" + (
+                f" + {signatories} signatories" if signatories else ""
+            )
+        return f"{parties} ratifications of {signatures} signatories"
+
+    rows = []
+    for inst in sorted(
+        cyber,
+        key=lambda inst: (
+            0 if inst["status"] == "in_force" else 1,
+            -party_count(inst) if inst["status"] == "in_force" else -len(inst["parties"]["entries"]),
+            labels.get(inst["id"], inst["title"]["short"]),
+        ),
+    ):
+        status = "In force" if inst["status"] == "in_force" else "Not in force"
+        rows.append(
+            f'<tr data-cyber-id="{esc(inst["id"])}">'
+            f'<th scope="row"><a href="{esc(record_url(inst))}" target="_blank" rel="noopener">'
+            f'{esc(labels.get(inst["id"], inst["title"]["short"]))}</a></th>'
+            f'<td data-label="Status">{esc(status)}</td>'
+            f'<td data-label="Recorded participation">{esc(participation(inst))}</td></tr>'
+        )
+    return f'''<div class="cyber-status">
+      <h3>Cyber hard law · status at 24 November 2026</h3>
+      <p>Three of the five cyber treaties are in force: Budapest (2001), ETS 189 (2006) and the AU Malabo Convention (2023). The two newest are not: CETS 224 and the UN Cybercrime Convention. This is a separate check: none of them is AI-specific, so none closes the AI gap above.</p>
+      <div class="sets-table-wrap">
+        <table class="sets-table cyber-status-table">
+          <caption>Binding cyber instruments in the corpus</caption>
+          <thead><tr><th scope="col">Instrument</th><th scope="col">Status</th><th scope="col">Recorded participation</th></tr></thead>
+          <tbody>{"".join(rows)}</tbody>
+        </table>
+      </div>
+      <p class="source-note">Counts are read from each record, not typed into this section. “Signatories” in the in-force rows means signatories that have not become Parties. The EU is not a State and is not counted in the State maps.</p>
+    </div>'''
+
+
 def sets_section(instruments: list[dict]) -> str:
     """Show the AI hard-law gap: no text is AI-specific, a treaty and in force."""
     selected = {
@@ -760,7 +823,7 @@ def sets_section(instruments: list[dict]) -> str:
 
 
 def combined_timeline(instruments: list[dict], events: list[dict]) -> str:
-    """One chronology: key instruments as boxes, other records compact, events as rows."""
+    """One chronology: binding instruments as boxes, everything else as news rows."""
     kind_labels = {
         "market": "Market event",
         "bilateral": "Bilateral channel",
@@ -790,13 +853,13 @@ def combined_timeline(instruments: list[dict], events: list[dict]) -> str:
             else ""
         )
         details = f'<details class="tl-details"><summary>Dates and status</summary>{history}</details>' if history else ""
-        if iid in TIMELINE_HIGHLIGHTS:
+        if inst["binding_status"] == "binding":
             body = (
                 f'<li class="tl-item tl-instrument" data-weight="highlight" data-instrument-id="{esc(iid)}">'
                 f'<div class="tl-marker"><time datetime="{esc(date)}">{esc(display_timeline_date(date))}</time>'
                 f'<span class="tl-dot" aria-hidden="true"></span></div>'
                 f'<div class="tl-body tl-card">'
-                f'<p class="tl-meta"><span class="tl-kind">Key instrument</span> · {esc(category)} · '
+                f'<p class="tl-meta"><span class="tl-kind">Binding instrument</span> · {esc(category)} · '
                 f'{esc(binding)} · {esc(status)}</p>'
                 f'<h3><a href="{esc(record_url(inst))}" target="_blank" rel="noopener">{esc(title)}</a></h3>'
                 f'<p class="tl-why">{esc(why)}</p>'
@@ -812,7 +875,7 @@ def combined_timeline(instruments: list[dict], events: list[dict]) -> str:
                 f'<div class="tl-marker"><time datetime="{esc(date)}">{esc(display_timeline_date(date))}</time>'
                 f'<span class="tl-dot" aria-hidden="true"></span></div>'
                 f'<div class="tl-body">'
-                f'<p class="tl-meta"><span class="tl-kind">Instrument</span> · {esc(category)} · '
+                f'<p class="tl-meta"><span class="tl-kind">Non-binding record</span> · {esc(category)} · '
                 f'{esc(binding)} · {esc(status)}</p>'
                 f'<h3><a href="{esc(record_url(inst))}" target="_blank" rel="noopener">{esc(title)}</a></h3>'
                 f'<p class="tl-why">{esc(why)}</p>'
@@ -912,6 +975,7 @@ def main() -> int:
     paris = by_id[PARIS_ID]
     budapest = by_id[BUDAPEST_ID]
     un_cyber = by_id[UN_CYBER_ID]
+    malabo = by_id[MALABO_ID]
     ets189 = by_id[ETS189_ID]
     cets224 = by_id[CETS224_ID]
     cets = by_id[CETS_ID]
@@ -970,6 +1034,19 @@ def main() -> int:
         entry["party"]
         for entry in un_cyber_entries
         if entry.get("ratification") or entry.get("accession")
+    ]
+    malabo_entries = malabo["parties"]["entries"]
+    malabo_states = [entry["party"] for entry in malabo_entries]
+    malabo_parties = [
+        entry["party"]
+        for entry in malabo_entries
+        if entry.get("ratification") or entry.get("accession")
+    ]
+    malabo_signatories = [
+        entry["party"]
+        for entry in malabo_entries
+        if entry.get("role") == "signatory"
+        and not (entry.get("ratification") or entry.get("accession"))
     ]
 
     def entries(inst: dict) -> list[dict]:
@@ -1058,6 +1135,7 @@ def main() -> int:
     )
     cets224_iso = iso_set(cets224_states, "CETS 224")
     un_cyber_iso = iso_set(un_cyber_states, "UN Cybercrime Convention")
+    malabo_iso = iso_set(malabo_states, "Malabo Convention")
 
     for map_name, values in (
         ("Paris 2025", paris_iso),
@@ -1065,6 +1143,7 @@ def main() -> int:
         ("ETS 189", ets189_iso),
         ("CETS 224", cets224_iso),
         ("UN Cybercrime Convention", un_cyber_iso),
+        ("Malabo Convention", malabo_iso),
         ("CETS 225", cets_iso),
         ("Bletchley 2023", bletchley_iso),
         ("Seoul 2024", seoul_iso),
@@ -1108,6 +1187,10 @@ def main() -> int:
     for entry in un_cyber_entries:
         if (entry.get("ratification") or entry.get("accession")) and entry["party"] not in org_names:
             un_cyber_status[iso_for(entry["party"], by_name)] = "ratified"
+    malabo_status = {iso: "signed" for iso in malabo_iso}
+    for entry in malabo_entries:
+        if entry.get("ratification") or entry.get("accession"):
+            malabo_status[iso_for(entry["party"], by_name)] = "ratified"
 
     def add_org_members(status: dict[str, str], inst: dict, default: str) -> list[str]:
         """Mark member States of a party organisation that did not act themselves.
@@ -1435,6 +1518,7 @@ def main() -> int:
     cets224_ratification_count = len(cets224_ratifications)
     un_cyber_party_count = len(un_cyber_parties)
     un_cyber_signed_states = len(un_cyber_states) - un_cyber_party_count
+    malabo_party_count = len(malabo_parties)
 
     map_entries = [
         map_figure(
@@ -1478,6 +1562,28 @@ def main() -> int:
             legend_note=(
                 f"{len(un_cyber_states)} States + EU · {un_cyber_party_count} Parties · "
                 "not in force"
+            ),
+        ),
+        map_figure(
+            malabo,
+            "malabo",
+            "Malabo Convention",
+            f"{malabo_party_count} Parties + {len(malabo_signatories)} signatories",
+            f"World map. Dark blue: {malabo_party_count} States Parties. Medium blue: {len(malabo_signatories)} States that signed only. Sand: States with no recorded act; the AU list covers 55 member States.",
+            malabo_status,
+            [],
+            cyber_party_legend,
+            note=(
+                "Treaty signature and ratification. The African Union status list dated "
+                "2 February 2026 records 55 member States, 21 signatures and 20 Parties "
+                "(20 deposits); 24 member States have no recorded act. The list gives one "
+                "combined ratification/accession column, so the 20 dates are stored as "
+                "ratifications without reclassification. The Convention entered into force "
+                "on 8 June 2023."
+            ),
+            legend_note=(
+                f"{malabo_party_count} Parties + {len(malabo_signatories)} signatories · "
+                "in force since 2023"
             ),
         ),
         map_figure(
@@ -1811,11 +1917,11 @@ def main() -> int:
       <p class="eyebrow">00 · Index</p>
       <h2>What this corpus contains</h2>
       <div class="stats">{stats_html}</div>
-      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer now includes the Budapest Convention, its two protocols (ETS 189 and CETS 224) and the UN Cybercrime Convention; the remaining cyber families are still being built. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
+      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer now includes the Budapest Convention, its two protocols (ETS 189 and CETS 224), the AU Malabo Convention and the UN Cybercrime Convention; the remaining cyber families are still being built. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
       <div class="index-grid">
-        <a class="index-card" href="#form"><span class="index-number">01</span><strong>The hard-law gap</strong><span>No AI-specific treaty is confirmed in force. The section shows what each route actually covers.</span></a>
+        <a class="index-card" href="#form"><span class="index-number">01</span><strong>The hard-law gap</strong><span>No AI-specific treaty is confirmed in force; three cyber treaties are in force and two are not. The section shows both layers, separately.</span></a>
         <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>{number_word(len(map_entries)).capitalize()} maps of the State-level acts recorded in the corpus: signatures, ratifications, accessions, endorsements and collective issuances.</span></a>
-        <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: key texts highlighted, other records compact, events as plain rows.</span></a>
+        <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: only binding instruments are boxed; non-binding records and events are plain rows.</span></a>
         <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Off the record</strong><span>Legal doctrine, think-tank analysis and civil-society critique: the argument around the record, never used as evidence for it.</span></a>
         <a class="index-card" href="#catalogue"><span class="index-number">05</span><strong>Catalogue</strong><span>The filterable table of every record, with legal force, status, verification level and a link to the JSON.</span></a>
         <a class="index-card" href="#method"><span class="index-number">06</span><strong>Method</strong><span>Sources, hashes, validation, the difference between a declared and a verified count, and the limits of the corpus.</span></a>
@@ -1826,15 +1932,16 @@ def main() -> int:
     <section id="form" class="section">
     <div class="wrap">
       <p class="eyebrow">01 · Sets</p>
-      <h2>No AI-specific treaty is confirmed in force</h2>
-      <p class="lede">That is the finding for the AI layer. Among the binding instruments that address AI, no text is at once AI-specific, a treaty and confirmed in force. Each route satisfies a different pair; the table names the instruments and shows the gap.</p>
+      <h2>The hard-law gap, AI and cyber</h2>
+      <p class="lede">No AI-specific treaty is confirmed in force. Among the binding instruments that address AI, no text is at once AI-specific, a treaty and confirmed in force; each route satisfies a different pair. The cyber layer is now shown separately beside that finding: three cyber treaties are in force and two are not.</p>
       {sets_html}
       <div class="sets-reading">
         <p><strong>The AI-specific treaty layer is not in force.</strong> CETS 225 is binding but not in force. WAICO is binding, but no deposit or entry-into-force date was verified, so its status is unconfirmed — not a recorded “no”.</p>
         <p><strong>The treaty layer in force is trade law.</strong> DEPA, KSDPA, SADEA and UKSDEA are in force; their AI clauses are cooperative and sit inside digital-trade agreements. The AfCFTA Protocol has an AI annex with “shall” obligations, but its entry into force is unconfirmed. None is AI-specific.</p>
         <p><strong>The AI-specific instrument in force is regional.</strong> The EU AI Act is binding and in force, but it is EU law, not an international treaty. No international AI-specific instrument occupies the centre of the three sets.</p>
       </div>
-      <p class="source-note">The table covers binding instruments in the AI-treaty, AI-provisions and EU-law categories. General background law (the ICCPR and the VCLT) is not AI-specific and is excluded; non-binding AI instruments are outside this comparison. Membership is derived from <code>category</code>, <code>instrument_type</code> and <code>status</code>. A question mark marks an entry into force that the record treats as unconfirmed, not as a negative. This comparison is confined to the AI layer; cybersecurity instruments are outside it.</p>
+      {cyber_status_section(instruments)}
+      <p class="source-note">The AI table covers binding instruments in the AI-treaty, AI-provisions and EU-law categories. General background law (the ICCPR and the VCLT) is not AI-specific and is excluded; non-binding AI instruments are outside this comparison. Membership is derived from <code>category</code>, <code>instrument_type</code> and <code>status</code>. A question mark marks an entry into force that the record treats as unconfirmed, not as a negative. The cyber table is a separate status check; cybersecurity instruments are not part of the AI three-set comparison.</p>
     </div>
   </section>
 
@@ -1847,7 +1954,7 @@ def main() -> int:
         {maps_html}
       </div>
       <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. “Endorsed” is used for political declarations, which create no treaty signature or ratification; “member State” is used for the BRICS collective statement, which has no individual signature block.</p>
-      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} political instruments and {number_word(map_binding_count)} treaties. They include the four cybersecurity instruments now itemised: the Budapest Convention, its two protocols, and the UN Cybercrime Convention. The {len(brics_states)}-member BRICS statement is mapped as a collective issue by its member States, not as {len(brics_states)} individual signatures. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the OECD and UNESCO recommendations, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate Pax Silica deliverables (the June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration, which is catalogued as a record but not mapped), and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment. The EU AI Act remains catalogue-only because it is EU internal law, not an international instrument; it is not mapped as if it were a treaty.</p>
+      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} political instruments and {number_word(map_binding_count)} treaties. They include the five cybersecurity instruments now itemised: the Budapest Convention, its two protocols, the AU Malabo Convention and the UN Cybercrime Convention. The {len(brics_states)}-member BRICS statement is mapped as a collective issue by its member States, not as {len(brics_states)} individual signatures. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the OECD and UNESCO recommendations, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate Pax Silica deliverables (the June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration, which is catalogued as a record but not mapped), and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment. The EU AI Act remains catalogue-only because it is EU internal law, not an international instrument; it is not mapped as if it were a treaty.</p>
     </div>
   </section>
 
@@ -1855,10 +1962,10 @@ def main() -> int:
     <div class="wrap">
       <p class="eyebrow">03 · Timeline</p>
       <h2>The story, with the instruments in it</h2>
-      <p class="lede">{total} instruments and {len(unseen_events)} events in one chronology, 1966–2026. Only the texts that changed the legal position or opened a route get a box; the rest are compact records. Between them sit the bilaterals, hotlines, summits and market shocks that produced no text.</p>
+      <p class="lede">{total} instruments and {len(unseen_events)} events in one chronology, 1966–2026. Only binding instruments get a box; declarations, recommendations, standards, political texts and events are plain news rows. Between them sit the bilaterals, hotlines, summits and market shocks that produced no text.</p>
       <div class="timeline-key">
-        <span><i class="key-highlight"></i>Key instrument</span>
-        <span><i class="key-record"></i>Other instrument</span>
+        <span><i class="key-highlight"></i>Binding instrument</span>
+        <span><i class="key-record"></i>Non-binding record</span>
         <span><i class="key-event"></i>Event without a text</span>
       </div>
       {combined_timeline(instruments, unseen_events)}

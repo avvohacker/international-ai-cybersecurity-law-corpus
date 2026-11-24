@@ -18,7 +18,8 @@
     "No full text, citable units or original file is stored in this record; it is metadata-only.",
     "The Convention is not in force: Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession, and three Parties had deposited by 24 November 2026.",
     "The UNTC table lists 96 signatories including the European Union; the map shows the 95 States and names the European Union outside the map frame.",
-    "Reservations and declarations made by the Parties are not itemised in this pass.",
+    "The declarations and reservations panel is not a machine-readable table; the 15 entries were transcribed from the page's panel and split by the source's numbered paragraphs.",
+    "The UNTC page displays declaration items only for Azerbaijan, Qatar and Viet Nam; whether other signatories have made declarations that are not shown there is unknown, not zero.",
     "No AI-specific provision is asserted. The record is cyber-domain only.",
     "National implementation and the future Conference of the States Parties are not assessed."
   ],
@@ -75,6 +76,12 @@
         "verified": 96
       }
     },
+    "declarations": [
+      "Azerbaijan — Declaration made upon ratification, Article 37, paragraph 6(a)\n\nIn accordance with Article 37, paragraph 6 (a), of the Convention, the Republic of Azerbaijan will take this Convention as the legal basis for cooperation in extradition with other States Parties.",
+      "Viet Nam — Declaration made upon ratification, paragraph 1\n\nThe Socialist Republic of Viet Nam declares that the provisions of the United Nations Convention against Cybercrime are non-self-executing. The implementation of provisions of this Convention shall be in accordance with constitutional principles and substantive law of the Socialist Republic of Viet Nam, on the basis of bilateral or multilateral cooperative agreements with other States and the principle of reciprocity.",
+      "Viet Nam — Declaration made upon ratification, paragraph 2\n\nThe Socialist Republic of Viet Nam declares that the liability of legal persons under Article 18 of this Convention shall be implemented in accordance with its domestic law, and that criminal liability of legal persons shall apply only within the scope provided for in the Criminal Code of the Socialist Republic of Viet Nam, while legal persons may be subjected to appropriate civil or administrative liability.",
+      "Viet Nam — Declaration made upon ratification, paragraph 3\n\nThe Socialist Republic of Viet Nam declares that it shall consider this Convention as the legal basis for extradition only in its relations with States Parties that also consider this Convention as the legal basis for extradition."
+    ],
     "entries": [
       {
         "party": "Albania",
@@ -560,13 +567,26 @@
         "signature": "2025-10-25"
       }
     ],
+    "reservations": [
+      "Azerbaijan — Reservation made upon signature, Article 7, paragraph 2\n\nIn accordance with Article 7, paragraph 2, of the Convention, the Republic of Azerbaijan declares that criminal liability shall arise only where the acts set forth in Article 7 are committed by infringing security measures with the purpose of obtaining electronic data, or other dishonest or criminal intent.",
+      "Azerbaijan — Reservation made upon signature, Article 9, paragraph 2\n\nIn accordance with Article 9, paragraph 2, of the Convention, the Republic of Azerbaijan declares that criminal liability shall arise only where the conduct described in Article 9, paragraph 1, of the Convention result in serious harm.",
+      "Azerbaijan — Reservation made upon signature, Article 11, paragraph 3\n\nWith respect to Article 11, paragraph 3, of the Convention, the Republic of Azerbaijan declares that the acts referred to in Article 11, paragraph 1, except the sale, distribution or otherwise making available of the items referred to in paragraph 1 (a) (ii) of the article, if considered minor and not deemed socially dangerous, shall be treated not as criminal offences but as punishable legal violations, and that criminal liability shall arise only where such acts result in serious harm.",
+      "Azerbaijan — Reservation made upon signature, Article 63, paragraph 3\n\nIn accordance with Article 63, paragraph 3, of the Convention, the Republic of Azerbaijan declares that it does not consider itself bound by paragraph 2 of Article 63 of the Convention.",
+      "Azerbaijan — Reservation made upon ratification, Article 7, paragraph 2\n\nIn accordance with Article 7, paragraph 2, of the Convention, the Republic of Azerbaijan declares that criminal liability shall arise only where the acts set forth in Article 7 are committed by infringing security measures with the purpose of obtaining electronic data, or other dishonest or criminal intent.",
+      "Azerbaijan — Reservation made upon ratification, Article 9, paragraph 2\n\nIn accordance with Article 9, paragraph 2, of the Convention, the Republic of Azerbaijan declares that criminal liability shall arise only where the conduct described in Article 9, paragraph 1, of the Convention result in serious harm.",
+      "Azerbaijan — Reservation made upon ratification, Article 11, paragraph 3\n\nWith respect to Article 11, paragraph 3, of the Convention, the Republic of Azerbaijan declares that the acts set forth to in Article 11, paragraph 1 of the Convention, except the sale, distribution or otherwise making available of the items referred to in Article 11, paragraph 1 (a) (ii) of the Convention, if considered minor and not deemed socially dangerous, shall be treated not as criminal offences but as punishable legal violations, and that criminal liability shall arise only where such acts result in serious harm.",
+      "Azerbaijan — Reservation made upon ratification, Article 63, paragraph 3\n\nIn accordance with Article 63, paragraph 3, of the Convention, the Republic of Azerbaijan declares that it does not consider itself bound by Article 63, paragraph 2 of the Convention.",
+      "Qatar — Reservation made upon ratification, Articles 14, 15 and 16\n\n(1) The State of Qatar does not consider itself bound by the provisions of Articles (16), (15), and (14) of the Convention, as they contradict the provisions of Islamic Sharia, national legislation, and the social and cultural values of the State of Qatar.",
+      "Qatar — Reservation made upon ratification, Article 63, paragraph 2\n\n(2) The State of Qatar does not consider itself bound by paragraph (2) of Article (63) of the Convention regarding recourse to the International Court of Justice.",
+      "Viet Nam — Reservation made upon ratification, Article 63, paragraph 2\n\nThe Socialist Republic of Viet Nam does not consider itself bound by the provisions of Article 63, paragraph 2 of this Convention."
+    ],
     "source_ids": [
       "untc-status"
     ],
-    "summary": "96 signatories as of 24 November 2026: 95 States and the European Union. Three States are Parties (Qatar, Azerbaijan and Viet Nam); the Convention is not in force. Article 65(1) requires 40 instruments, so 37 more are needed.",
+    "summary": "96 signatories as of 24 November 2026: 95 States and the European Union. Three States are Parties (Qatar, Azerbaijan and Viet Nam); the Convention is not in force. Article 65(1) requires 40 instruments, so 37 more are needed. The UNTC declarations panel lists 11 reservation paragraphs and four declaration paragraphs for those three Parties.",
     "unknowns": [
       "The UNTC table does not spell out A/AA/a in the extracted third-column dates; the three deposit dates are recorded as ratifications and are not reclassified.",
-      "Reservations and declarations made by the Parties were not read in this pass.",
+      "UNTC displays declaration/reservation items for the three Parties only. The absence of items for the other 93 signatories is not treated as proof that none exist.",
       "The complete authentic-language set is not asserted; only the English version was consulted."
     ]
   },
@@ -598,10 +618,19 @@
         "source_ids": [
           "untc-status"
         ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "parties",
+        "locator": "UNTC XVIII-16, Declarations and Reservations panel: Azerbaijan, Qatar and Viet Nam; 11 reservation paragraphs and four declaration paragraphs",
+        "method": "registry_read",
+        "source_ids": [
+          "untc-declarations"
+        ]
       }
     ],
     "discovered_via": "UN Treaty Collection, Chapter XVIII, item 16",
-    "notes": "The depositary table is stable at the cited UNTC URL and was read in a browser on 24 November 2026.",
+    "notes": "The depositary table and the declarations panel are stable at the cited UNTC URL and were read in a browser on 24 November 2026.",
     "search_dates": [
       "2026-11-24"
     ]
@@ -644,10 +673,20 @@
       "note": "Certified true copy linked from the UNTC status page; not downloaded or read in this pass.",
       "publisher": "United Nations",
       "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "untc-declarations",
+      "kind": "registry",
+      "language": "en",
+      "note": "Declarations and Reservations panel of the official UNTC status page, read on 24 November 2026. It lists items for Azerbaijan, Qatar and Viet Nam: 11 reservation paragraphs and four declaration paragraphs. The full wording is reproduced in parties.reservations and parties.declarations.",
+      "publisher": "United Nations Treaty Collection",
+      "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en"
     }
   ],
   "status": "not_in_force",
-  "status_note": "Not in force. Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession; three had been deposited by 24 November 2026, leaving 37. The UNTC depositary table lists 96 signatories (95 States and the European Union) and three Parties (Qatar, Azerbaijan and Viet Nam). Signature remains open until 31 December 2026.",
+  "status_note": "Not in force. Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession; three had been deposited by 24 November 2026, leaving 37. The UNTC depositary table lists 96 signatories (95 States and the European Union) and three Parties (Qatar, Azerbaijan and Viet Nam). Signature remains open until 31 December 2026. The UNTC declarations panel lists 11 reservation paragraphs and four declaration paragraphs for those three Parties.",
   "title": {
     "english": "United Nations Convention against Cybercrime",
     "official": "United Nations Convention against Cybercrime; Strengthening International Cooperation for Combating Certain Crimes Committed by Means of Information and Communications Technology Systems and for the Sharing of Evidence in Electronic Form of Serious Crimes",
@@ -669,9 +708,14 @@
         "check": "Stable depositary table for the map condition",
         "date": "2026-11-24",
         "result": "confirmed: the UNTC page provides a stable URL and a participant table; a map is therefore permitted"
+      },
+      {
+        "check": "UNTC declarations and reservations panel read and itemised",
+        "date": "2026-11-24",
+        "result": "confirmed: Azerbaijan, Qatar and Viet Nam; 11 reservation paragraphs and four declaration paragraphs transcribed"
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata-level record. The status and party table come from the official UNTC depositary page; the treaty text, reservations and declarations, and the legal effect of the deposits are not assessed."
+    "notes": "Metadata-level record. The status, party table and declaration texts come from the official UNTC depositary page. The full treaty text is not stored, and the legal effect of the reservations and declarations is not assessed."
   }
 }

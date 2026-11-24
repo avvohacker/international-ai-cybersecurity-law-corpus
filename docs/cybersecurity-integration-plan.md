@@ -1,6 +1,6 @@
 # Cybersecurity integration plan
 
-**Status:** Phase 2 complete for the Budapest family, and the UN Cybercrime Convention has been added. The corpus is a joint **AI and international cybersecurity law** corpus with four cybersecurity-only records: the Budapest Convention (ETS 185, 84 itemised Parties), ETS 189 (38 Parties), CETS 224 (52 signatories, not in force) and the UN Cybercrime Convention (96 signatories including the EU, three Parties, not in force). All four are mapped and their party tables are itemised. The AI layer remains 46 records; the total is now 50. Phase 3 (the wider cyber hard-law layer) is next.
+**Status:** Phase 2 complete for the Budapest family, and the UN Cybercrime and AU Malabo Conventions have been added. The corpus is a joint **AI and international cybersecurity law** corpus with five cybersecurity-only records: the Budapest Convention (ETS 185, 84 itemised Parties), ETS 189 (38 Parties), CETS 224 (52 signatories, not in force), the AU Malabo Convention (21 signatures, 20 Parties, in force since 2023) and the UN Cybercrime Convention (96 signatories including the EU, three Parties, not in force). All five are mapped and their party tables are itemised. The AI layer remains 46 records; the total is now 51. Phase 3 (critical-infrastructure/product law and the remaining cybercrime treaties) is next.
 
 ## 1. Why cybersecurity is a second domain, not a filter
 
@@ -66,10 +66,24 @@ This is a research register, not a list of confirmed records. Each candidate nee
 
 Candidate examples are included to structure the search. Their inclusion here is not an assertion that they meet the scope rule or that their reported status is correct.
 
+### Audit of 24 November 2026
+
+Covered and mapped: Budapest (ETS 185), ETS 189, CETS 224, the AU Malabo Convention and the UN Cybercrime Convention. Malabo was the material omission found in this audit: it is in force, has a stable official AU status table, and is now a record and a map.
+
+Not added, with the reason stated rather than silently omitted:
+
+- **League of Arab States Convention on Combating Information Technology Offences (2010).** The instrument is identified, but no stable public depositary table with a per-State status was verified in this cycle. Status, parties and reservations therefore remain unknown; it is not mapped and not presented as if its participation were known.
+- **SCO Agreement on Cooperation in the Field of International Information Security (2009) and CIS Agreement on Cooperation in Combating Offences related to Computer Information (2001).** Both are identified as regional instruments. Their current status and party lists were not verified from a stable depositary source, so they remain candidates.
+- **EU NIS2 and the Cyber Resilience Act.** These are EU internal law, not international treaties. They are relevant to the AI–cyber overlap and should be handled as cross-links or as separate supranational records only after a scope decision; they are not mapped as treaties.
+- **UN GGE/OEWG cyber norms and the Paris Call.** These are non-binding norms or multistakeholder calls, not treaties. They belong to a future non-binding cyber layer if that layer is added; they are not counted as cyber treaties.
+- **Technical standards (ISO/IEC 27001/27002, IEC 62443).** Private standards, paywalled; no treaty status and no State party table.
+
+This is a completeness check, not a claim that the list is exhaustive. A later cycle should verify the Arab League and SCO/CIS statuses before adding them.
+
 ## 5. Derived views
 
-- **Maps.** Only cyber instruments with a published State-level list become maps. The Budapest Convention, ETS 189 and CETS 224 have maps from their Treaty Office tables; the UN Cybercrime Convention has a map from the stable UNTC depositary table. NIS2 is not a treaty and should not be mapped as one. The EU AI Act remains catalogue-only because it is EU internal law, not an international instrument.
-- **Timeline.** Keep one chronology, filterable by domain. Cyber-only records must not inherit AI-specific descriptions. The same rule applies as in section 03: only route-changing texts get boxes, the rest are compact records.
+- **Maps.** Only cyber instruments with a published State-level list become maps. The Budapest Convention, ETS 189 and CETS 224 have maps from their Treaty Office tables; the UN Cybercrime Convention has a map from the stable UNTC depositary table; the AU Malabo Convention has a map from the official AU status list dated 2 February 2026. NIS2 is not a treaty and should not be mapped as one. The EU AI Act remains catalogue-only because it is EU internal law, not an international instrument.
+- **Timeline.** Keep one chronology, filterable by domain. Cyber-only records must not inherit AI-specific descriptions. The same rule applies as in section 03: only binding instruments get boxes; non-binding records and events are plain rows.
 - **Catalogue.** Add a domain filter and a visible `AI`, `Cyber` or `AI + Cyber` label. The existing legal-force, status and verification filters remain.
 - **Off the record.** Cyber incidents and policy events enter only when they explain an instrument, a negotiation or an absence; each needs a source and a date.
 - **Index.** The 00 statistics split AI, cyber and joint totals. The current AI totals remain reproducible and must not silently absorb cyber records.
@@ -93,13 +107,13 @@ The existing validation contract extends without a second validator:
 
 **Phase 1 — schema and migration (complete).** Added `domains` and `relevance.cyber_provisions`; migrated all existing records to `["ai"]`; split the build and site counts; renamed the repository and site for the two domains. No cyber record yet.
 
-**Phase 2 — cybercrime treaty pilot (complete for the Budapest family).** The Budapest Convention has an itemised 84-Party table (48 ratifications and 36 accessions), two signatories, eleven further States with no recorded act recorded separately, 96 reservations and 280 declarations/communications/territorial statements, plus a map. ETS 189 and CETS 224 are separate records with itemised party tables and maps. Their reservation/declaration pages are reproduced too: ETS 189 has 21 reservations, 11 declarations and one communication from 16 States; CETS 224 has one reservation and 21 declarations from four States. The UN Cybercrime Convention is added from the UNTC table: 96 signatories (95 States and the EU), three Parties and not in force; the stable table supports the map.
+**Phase 2 — cybercrime treaty pilot (complete for the Budapest family).** The Budapest Convention has an itemised 84-Party table (48 ratifications and 36 accessions), two signatories, eleven further States with no recorded act recorded separately, 96 reservations and 280 declarations/communications/territorial statements, plus a map. ETS 189 and CETS 224 are separate records with itemised party tables and maps. Their reservation/declaration pages are reproduced too: ETS 189 has 21 reservations, 11 declarations and one communication from 16 States; CETS 224 has one reservation and 21 declarations from four States. The UN Cybercrime Convention is added from the UNTC table: 96 signatories (95 States and the EU), three Parties and not in force; the stable table supports the map. Its declarations panel lists 11 reservation paragraphs and four declaration paragraphs for Azerbaijan, Qatar and Viet Nam, now reproduced. The AU Malabo Convention is added from the official AU status list dated 2 February 2026: 55 member States, 21 signatures, 20 Parties, in force since 8 June 2023; 24 member States have no recorded act. The table is stable and supports a map.
 
-**Phase 3 — the cyber hard-law layer.** Add the remaining cybercrime treaties (the African Union Malabo Convention, the Arab League convention and the SCO cooperation agreement) and the regional product/critical-infrastructure law. Record the EU AI Act's cybersecurity provisions as cross-links on the existing AI record rather than as a duplicate. Output: the cyber catalogue, still separate from AI counts.
+**Phase 3 — the cyber hard-law layer.** Add the remaining cybercrime treaties (the Arab League convention and the SCO/CIS instruments) and the regional product/critical-infrastructure law. Record the EU AI Act's cybersecurity provisions as cross-links on the existing AI record rather than as a duplicate. Output: the cyber catalogue, still separate from AI counts.
 
 **Phase 4 — norms, standards and channels.** Add the non-binding UN norms, the international standards and the bilateral cooperation channels, each with its own status and verification level. Do not let a political norm inherit the status of a treaty.
 
-**Phase 5 — derived views (partly complete).** The four cyber maps are in the atlas. The timeline filter, the catalogue domain filter and the separate cyber reading list remain to be built. The naming decision has already been made: the repository is `international-ai-cybersecurity-law-corpus` and the site title is **International AI and Cybersecurity Law**, with **Atlas** as its subtitle.
+**Phase 5 — derived views (partly complete).** The five cyber maps are in the atlas. The timeline filter, the catalogue domain filter and the separate cyber reading list remain to be built. The naming decision has already been made: the repository is `international-ai-cybersecurity-law-corpus` and the site title is **International AI and Cybersecurity Law**, with **Atlas** as its subtitle.
 
 ## 8. Open questions
 
@@ -111,4 +125,4 @@ The existing validation contract extends without a second validator:
 
 ## 9. What this plan does not do
 
-It does not add the remaining cybersecurity records or the timeline/catalogue domain filters. The catalogue now contains 46 AI-layer records plus four cybersecurity-only records (the Budapest Convention, ETS 189, CETS 224 and the UN Cybercrime Convention): 50 in total, 14 binding and 36 non-binding, with thirteen maps. The cyber records are metadata-level for the treaty text, but their party tables are itemised and the Budapest-family reservation/declaration texts are reproduced; they do not assert an AI provision. The next implementation step is Phase 3: the regional product/critical-infrastructure law and the remaining cybercrime treaties, followed by the norms, standards and channels in Phase 4.
+It does not add the remaining cybersecurity records or the timeline/catalogue domain filters. The catalogue now contains 46 AI-layer records plus five cybersecurity-only records (the Budapest Convention, ETS 189, CETS 224, the AU Malabo Convention and the UN Cybercrime Convention): 51 in total, 15 binding and 36 non-binding, with fourteen maps. The cyber records are metadata-level for the treaty text, but their party tables are itemised and the Budapest-family and UN reservation/declaration texts are reproduced; they do not assert an AI provision. The next implementation step is Phase 3: the regional product/critical-infrastructure law and the remaining cybercrime treaties, followed by the norms, standards and channels in Phase 4.

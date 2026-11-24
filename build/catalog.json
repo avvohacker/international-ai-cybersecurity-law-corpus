@@ -1,13 +1,13 @@
 {
   "counts": {
     "by_binding": {
-      "binding": 14,
+      "binding": 15,
       "non_binding": 36
     },
     "by_category": {
       "agreement_ai_provisions": 5,
       "ai_treaty": 2,
-      "cyber_treaty": 4,
+      "cyber_treaty": 5,
       "draft_negotiation": 1,
       "general_treaty": 2,
       "non_binding_instrument": 28,
@@ -17,15 +17,15 @@
     },
     "by_domain": {
       "ai": 46,
-      "cyber": 4,
+      "cyber": 5,
       "joint": 0
     },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 40
+      "metadata_verified": 41
     },
     "full_texts": 16,
-    "total": 50,
+    "total": 51,
     "with_local_original": 15
   },
   "full_text_ids": [
@@ -534,6 +534,390 @@
         ],
         "level": "metadata_verified",
         "notes": "Metadata verified; full text not stored. The strategy is non-binding and implementation-dependent."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "cyber_treaty",
+      "dates": {
+        "adopted": "2014-06-27",
+        "closed_for_signature": null,
+        "entered_into_force": "2023-06-08",
+        "notes": "Adopted in Malabo on 27 June 2014 by the Twenty-third Ordinary Session of the AU Assembly. Entered into force on 8 June 2023 after the deposit of the fifteenth instrument of ratification. The official AU status list is dated 2 February 2026.",
+        "opened_for_signature": "2014-06-27",
+        "published": null,
+        "signed": null,
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "No full text, citable units or original file is stored in this record; it is metadata-only.",
+        "The official AU status list is dated 2 February 2026; later deposits may exist and were not verified.",
+        "The AU table gives one combined ratification/accession column and does not distinguish the two; all 20 deposit dates are recorded as ratifications.",
+        "The status table does not list reservations or declarations; whether any were made is unknown, not zero.",
+        "24 African Union member States have no recorded signature, ratification or accession in the 2 February 2026 list.",
+        "The legal effect of the Convention and its national implementation are not assessed.",
+        "No AI-specific provision is asserted. The record is cyber-domain only."
+      ],
+      "id": "au-malabo-convention-2014",
+      "instrument_type": "treaty",
+      "issuer": [
+        {
+          "name": "African Union",
+          "role": "issuer",
+          "url": "https://au.int/en/treaties/african-union-convention-cyber-security-and-personal-data-protection"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr",
+          "ar",
+          "pt"
+        ],
+        "note": "The AU treaty page links English, French, Arabic and Portuguese versions. Only the English status list and the English page were read.",
+        "source_ids": [
+          "au-treaty-page"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "treaty",
+        "rationale": "A continental treaty adopted by the African Union Assembly and opened for signature, creating binding obligations for States Parties after entry into force. It is not a recommendation or a political declaration.",
+        "source_ids": [
+          "au-treaty-page",
+          "au-status-list"
+        ]
+      },
+      "parties": {
+        "act": "treaty_signature",
+        "as_of": "2026-02-02",
+        "counts": {
+          "ratifications": {
+            "basis": "verified_total",
+            "note": "The AU status list gives 20 ratifications/accessions and 20 deposits. It uses one combined column and does not distinguish ratification from accession; the 20 dates are stored as ratifications without reclassification.",
+            "source_ids": [
+              "au-status-list"
+            ],
+            "total": 20,
+            "verified": 20
+          },
+          "signatures": {
+            "basis": "verified_total",
+            "note": "The status list gives 21 signatures among 55 African Union member States.",
+            "source_ids": [
+              "au-status-list"
+            ],
+            "total": 21,
+            "verified": 21
+          }
+        },
+        "entries": [
+          {
+            "party": "Angola",
+            "ratification": "2020-02-21",
+            "role": "party"
+          },
+          {
+            "party": "Benin",
+            "ratification": "2024-05-14",
+            "role": "party",
+            "signature": "2015-01-28"
+          },
+          {
+            "party": "Cabo Verde",
+            "ratification": "2020-11-13",
+            "role": "party"
+          },
+          {
+            "party": "Cameroon",
+            "role": "signatory",
+            "signature": "2021-08-12"
+          },
+          {
+            "party": "Chad",
+            "role": "signatory",
+            "signature": "2015-06-14"
+          },
+          {
+            "party": "Comoros",
+            "role": "signatory",
+            "signature": "2018-01-29"
+          },
+          {
+            "party": "Côte d’Ivoire",
+            "ratification": "2023-03-08",
+            "role": "party"
+          },
+          {
+            "party": "Democratic Republic of the Congo",
+            "ratification": "2025-03-06",
+            "role": "party"
+          },
+          {
+            "party": "Djibouti",
+            "role": "signatory",
+            "signature": "2023-05-12"
+          },
+          {
+            "party": "Gambia",
+            "role": "signatory",
+            "signature": "2022-12-02"
+          },
+          {
+            "party": "Ghana",
+            "ratification": "2019-05-13",
+            "role": "party",
+            "signature": "2017-07-04"
+          },
+          {
+            "party": "Guinea",
+            "ratification": "2018-07-31",
+            "role": "party"
+          },
+          {
+            "party": "Guinea-Bissau",
+            "role": "signatory",
+            "signature": "2015-01-31"
+          },
+          {
+            "party": "Lesotho",
+            "ratification": "2025-02-05",
+            "role": "party",
+            "signature": "2023-11-30"
+          },
+          {
+            "party": "Madagascar",
+            "ratification": "2025-07-17",
+            "role": "party"
+          },
+          {
+            "party": "Mauritania",
+            "ratification": "2023-04-19",
+            "role": "party",
+            "signature": "2015-02-26"
+          },
+          {
+            "party": "Mauritius",
+            "ratification": "2018-03-06",
+            "role": "party"
+          },
+          {
+            "party": "Mozambique",
+            "ratification": "2019-12-02",
+            "role": "party",
+            "signature": "2018-06-29"
+          },
+          {
+            "party": "Namibia",
+            "ratification": "2019-01-25",
+            "role": "party"
+          },
+          {
+            "party": "Niger",
+            "ratification": "2022-02-22",
+            "role": "party"
+          },
+          {
+            "party": "Nigeria",
+            "role": "signatory",
+            "signature": "2024-01-23"
+          },
+          {
+            "party": "Republic of the Congo",
+            "ratification": "2020-09-24",
+            "role": "party",
+            "signature": "2015-06-12"
+          },
+          {
+            "party": "Rwanda",
+            "ratification": "2019-11-14",
+            "role": "party",
+            "signature": "2019-04-16"
+          },
+          {
+            "party": "Senegal",
+            "ratification": "2016-08-03",
+            "role": "party"
+          },
+          {
+            "party": "Sierra Leone",
+            "role": "signatory",
+            "signature": "2016-01-29"
+          },
+          {
+            "party": "South Africa",
+            "role": "signatory",
+            "signature": "2023-02-16"
+          },
+          {
+            "party": "Sudan",
+            "role": "signatory",
+            "signature": "2023-03-15"
+          },
+          {
+            "party": "São Tomé and Príncipe",
+            "ratification": "2023-09-25",
+            "role": "party",
+            "signature": "2016-01-29"
+          },
+          {
+            "party": "Togo",
+            "ratification": "2021-09-30",
+            "role": "party",
+            "signature": "2019-04-02"
+          },
+          {
+            "party": "Tunisia",
+            "role": "signatory",
+            "signature": "2019-04-23"
+          },
+          {
+            "party": "Zambia",
+            "ratification": "2020-12-15",
+            "role": "party",
+            "signature": "2016-01-29"
+          }
+        ],
+        "source_ids": [
+          "au-status-list"
+        ],
+        "summary": "21 signatories and 20 Parties as of 2 February 2026. The Convention is in force since 8 June 2023. The status list covers 55 African Union member States; 24 have no recorded signature, ratification or accession.",
+        "unknowns": [
+          "The latest official status list located is dated 2 February 2026; later deposits are unknown.",
+          "The AU table does not distinguish ratification from accession.",
+          "Reservations and declarations are not listed in the status table; their existence is unknown, not zero."
+        ]
+      },
+      "provenance": {
+        "assertions": [
+          {
+            "date": "2026-11-24",
+            "field": "status",
+            "locator": "AU status list dated 2 February 2026, note: entered into force 8 June 2023 after the fifteenth deposit",
+            "method": "registry_read",
+            "source_ids": [
+              "au-status-list"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "parties",
+            "locator": "AU status list dated 2 February 2026: 55 countries, 21 signatures, 20 ratifications/accessions and 20 deposits",
+            "method": "registry_read",
+            "source_ids": [
+              "au-status-list"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "dates",
+            "locator": "AU treaty page and status list: adopted 27 June 2014; in force 8 June 2023",
+            "method": "official_page_read",
+            "source_ids": [
+              "au-treaty-page",
+              "au-status-list"
+            ]
+          }
+        ],
+        "discovered_via": "African Union treaty page and official status list",
+        "notes": "The status list is a stable PDF linked from the official AU treaty page. It is an image-based PDF with a text layer; the table was extracted from that text layer and checked against the page totals.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "budapest-convention-2001",
+          "note": "The other regional cybercrime convention in the corpus; both are in force.",
+          "relation": "related"
+        },
+        {
+          "id": "un-cybercrime-convention-2024",
+          "note": "The UN-wide cybercrime convention, not in force, which overlaps in criminalisation and cooperation.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "cyber_provisions": [
+          "National cybersecurity strategy and critical-information infrastructure",
+          "Criminalisation of computer-related offences and procedural powers",
+          "Personal-data protection and electronic transactions",
+          "International cooperation"
+        ],
+        "excluded_scope": "No AI-specific obligation is asserted; the record is cyber-domain only.",
+        "reason": "The African Union's continental cyber and data-protection treaty. It entered into force in 2023 and supplies the African regional layer missing from the Budapest and UN cybercrime records.",
+        "source_ids": [
+          "au-treaty-page",
+          "au-status-list"
+        ]
+      },
+      "rights": {
+        "licence": "African Union terms",
+        "note": "Official African Union text. The record stores metadata and links the official version; it does not relicense the text.",
+        "status": "public_official_text",
+        "url": "https://au.int/en/copyright"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "au-treaty-page",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official AU treaty page: adoption 27 June 2014; links to the English, French, Arabic and Portuguese texts and to the status list.",
+          "publisher": "African Union",
+          "url": "https://au.int/en/treaties/african-union-convention-cyber-security-and-personal-data-protection"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "au-status-list",
+          "kind": "registry",
+          "language": "en",
+          "note": "Official status list dated 2 February 2026: 55 countries, 21 signatures, 20 ratifications/accessions, 20 deposits; in force 8 June 2023.",
+          "publisher": "African Union",
+          "url": "https://au.int/sites/default/files/AFRICAN%20UNION%20CONVENTION%20ON%20CYBER%20SECURITY%20AND%20PERSONAL%20DATA%20PROTECTION%20%281%29.pdf"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "au-text",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official English text linked from the AU treaty page; not downloaded or read in this pass.",
+          "publisher": "African Union",
+          "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force since 8 June 2023. The official AU status list dated 2 February 2026 records 55 member States, 21 signatures and 20 Parties (20 deposits). The list gives one combined ratification/accession column; the 20 dates are stored as ratifications without reclassification. 24 member States have no recorded act.",
+      "title": {
+        "english": "African Union Convention on Cyber Security and Personal Data Protection",
+        "official": "African Union Convention on Cyber Security and Personal Data Protection",
+        "short": "Malabo Convention"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official AU treaty page read for the title, adoption date and language versions",
+            "date": "2026-11-24",
+            "result": "confirmed: adopted 27 June 2014; status list linked from the page"
+          },
+          {
+            "check": "Official AU status list dated 2 February 2026 read for entry into force and the per-State table",
+            "date": "2026-11-24",
+            "result": "confirmed: 55 countries, 21 signatures, 20 ratifications/accessions, 20 deposits; in force 8 June 2023"
+          },
+          {
+            "check": "Party entries counted against the AU status table",
+            "date": "2026-11-24",
+            "result": "confirmed: 31 States with an act (20 Parties and 11 signatories only)"
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata-level record. The status and party table come from the official AU status list; the treaty text, reservations and declarations, and the legal effect of the deposits are not assessed."
       }
     },
     {
@@ -8797,7 +9181,8 @@
         "No full text, citable units or original file is stored in this record; it is metadata-only.",
         "The Convention is not in force: Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession, and three Parties had deposited by 24 November 2026.",
         "The UNTC table lists 96 signatories including the European Union; the map shows the 95 States and names the European Union outside the map frame.",
-        "Reservations and declarations made by the Parties are not itemised in this pass.",
+        "The declarations and reservations panel is not a machine-readable table; the 15 entries were transcribed from the page's panel and split by the source's numbered paragraphs.",
+        "The UNTC page displays declaration items only for Azerbaijan, Qatar and Viet Nam; whether other signatories have made declarations that are not shown there is unknown, not zero.",
         "No AI-specific provision is asserted. The record is cyber-domain only.",
         "National implementation and the future Conference of the States Parties are not assessed."
       ],
@@ -8854,6 +9239,12 @@
             "verified": 96
           }
         },
+        "declarations": [
+          "Azerbaijan — Declaration made upon ratification, Article 37, paragraph 6(a)\n\nIn accordance with Article 37, paragraph 6 (a), of the Convention, the Republic of Azerbaijan will take this Convention as the legal basis for cooperation in extradition with other States Parties.",
+          "Viet Nam — Declaration made upon ratification, paragraph 1\n\nThe Socialist Republic of Viet Nam declares that the provisions of the United Nations Convention against Cybercrime are non-self-executing. The implementation of provisions of this Convention shall be in accordance with constitutional principles and substantive law of the Socialist Republic of Viet Nam, on the basis of bilateral or multilateral cooperative agreements with other States and the principle of reciprocity.",
+          "Viet Nam — Declaration made upon ratification, paragraph 2\n\nThe Socialist Republic of Viet Nam declares that the liability of legal persons under Article 18 of this Convention shall be implemented in accordance with its domestic law, and that criminal liability of legal persons shall apply only within the scope provided for in the Criminal Code of the Socialist Republic of Viet Nam, while legal persons may be subjected to appropriate civil or administrative liability.",
+          "Viet Nam — Declaration made upon ratification, paragraph 3\n\nThe Socialist Republic of Viet Nam declares that it shall consider this Convention as the legal basis for extradition only in its relations with States Parties that also consider this Convention as the legal basis for extradition."
+        ],
         "entries": [
           {
             "party": "Albania",
@@ -9339,13 +9730,26 @@
             "signature": "2025-10-25"
           }
         ],
+        "reservations": [
+          "Azerbaijan — Reservation made upon signature, Article 7, paragraph 2\n\nIn accordance with Article 7, paragraph 2, of the Convention, the Republic of Azerbaijan declares that criminal liability shall arise only where the acts set forth in Article 7 are committed by infringing security measures with the purpose of obtaining electronic data, or other dishonest or criminal intent.",
+          "Azerbaijan — Reservation made upon signature, Article 9, paragraph 2\n\nIn accordance with Article 9, paragraph 2, of the Convention, the Republic of Azerbaijan declares that criminal liability shall arise only where the conduct described in Article 9, paragraph 1, of the Convention result in serious harm.",
+          "Azerbaijan — Reservation made upon signature, Article 11, paragraph 3\n\nWith respect to Article 11, paragraph 3, of the Convention, the Republic of Azerbaijan declares that the acts referred to in Article 11, paragraph 1, except the sale, distribution or otherwise making available of the items referred to in paragraph 1 (a) (ii) of the article, if considered minor and not deemed socially dangerous, shall be treated not as criminal offences but as punishable legal violations, and that criminal liability shall arise only where such acts result in serious harm.",
+          "Azerbaijan — Reservation made upon signature, Article 63, paragraph 3\n\nIn accordance with Article 63, paragraph 3, of the Convention, the Republic of Azerbaijan declares that it does not consider itself bound by paragraph 2 of Article 63 of the Convention.",
+          "Azerbaijan — Reservation made upon ratification, Article 7, paragraph 2\n\nIn accordance with Article 7, paragraph 2, of the Convention, the Republic of Azerbaijan declares that criminal liability shall arise only where the acts set forth in Article 7 are committed by infringing security measures with the purpose of obtaining electronic data, or other dishonest or criminal intent.",
+          "Azerbaijan — Reservation made upon ratification, Article 9, paragraph 2\n\nIn accordance with Article 9, paragraph 2, of the Convention, the Republic of Azerbaijan declares that criminal liability shall arise only where the conduct described in Article 9, paragraph 1, of the Convention result in serious harm.",
+          "Azerbaijan — Reservation made upon ratification, Article 11, paragraph 3\n\nWith respect to Article 11, paragraph 3, of the Convention, the Republic of Azerbaijan declares that the acts set forth to in Article 11, paragraph 1 of the Convention, except the sale, distribution or otherwise making available of the items referred to in Article 11, paragraph 1 (a) (ii) of the Convention, if considered minor and not deemed socially dangerous, shall be treated not as criminal offences but as punishable legal violations, and that criminal liability shall arise only where such acts result in serious harm.",
+          "Azerbaijan — Reservation made upon ratification, Article 63, paragraph 3\n\nIn accordance with Article 63, paragraph 3, of the Convention, the Republic of Azerbaijan declares that it does not consider itself bound by Article 63, paragraph 2 of the Convention.",
+          "Qatar — Reservation made upon ratification, Articles 14, 15 and 16\n\n(1) The State of Qatar does not consider itself bound by the provisions of Articles (16), (15), and (14) of the Convention, as they contradict the provisions of Islamic Sharia, national legislation, and the social and cultural values of the State of Qatar.",
+          "Qatar — Reservation made upon ratification, Article 63, paragraph 2\n\n(2) The State of Qatar does not consider itself bound by paragraph (2) of Article (63) of the Convention regarding recourse to the International Court of Justice.",
+          "Viet Nam — Reservation made upon ratification, Article 63, paragraph 2\n\nThe Socialist Republic of Viet Nam does not consider itself bound by the provisions of Article 63, paragraph 2 of this Convention."
+        ],
         "source_ids": [
           "untc-status"
         ],
-        "summary": "96 signatories as of 24 November 2026: 95 States and the European Union. Three States are Parties (Qatar, Azerbaijan and Viet Nam); the Convention is not in force. Article 65(1) requires 40 instruments, so 37 more are needed.",
+        "summary": "96 signatories as of 24 November 2026: 95 States and the European Union. Three States are Parties (Qatar, Azerbaijan and Viet Nam); the Convention is not in force. Article 65(1) requires 40 instruments, so 37 more are needed. The UNTC declarations panel lists 11 reservation paragraphs and four declaration paragraphs for those three Parties.",
         "unknowns": [
           "The UNTC table does not spell out A/AA/a in the extracted third-column dates; the three deposit dates are recorded as ratifications and are not reclassified.",
-          "Reservations and declarations made by the Parties were not read in this pass.",
+          "UNTC displays declaration/reservation items for the three Parties only. The absence of items for the other 93 signatories is not treated as proof that none exist.",
           "The complete authentic-language set is not asserted; only the English version was consulted."
         ]
       },
@@ -9377,10 +9781,19 @@
             "source_ids": [
               "untc-status"
             ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "parties",
+            "locator": "UNTC XVIII-16, Declarations and Reservations panel: Azerbaijan, Qatar and Viet Nam; 11 reservation paragraphs and four declaration paragraphs",
+            "method": "registry_read",
+            "source_ids": [
+              "untc-declarations"
+            ]
           }
         ],
         "discovered_via": "UN Treaty Collection, Chapter XVIII, item 16",
-        "notes": "The depositary table is stable at the cited UNTC URL and was read in a browser on 24 November 2026.",
+        "notes": "The depositary table and the declarations panel are stable at the cited UNTC URL and were read in a browser on 24 November 2026.",
         "search_dates": [
           "2026-11-24"
         ]
@@ -9423,10 +9836,20 @@
           "note": "Certified true copy linked from the UNTC status page; not downloaded or read in this pass.",
           "publisher": "United Nations",
           "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "untc-declarations",
+          "kind": "registry",
+          "language": "en",
+          "note": "Declarations and Reservations panel of the official UNTC status page, read on 24 November 2026. It lists items for Azerbaijan, Qatar and Viet Nam: 11 reservation paragraphs and four declaration paragraphs. The full wording is reproduced in parties.reservations and parties.declarations.",
+          "publisher": "United Nations Treaty Collection",
+          "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en"
         }
       ],
       "status": "not_in_force",
-      "status_note": "Not in force. Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession; three had been deposited by 24 November 2026, leaving 37. The UNTC depositary table lists 96 signatories (95 States and the European Union) and three Parties (Qatar, Azerbaijan and Viet Nam). Signature remains open until 31 December 2026.",
+      "status_note": "Not in force. Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession; three had been deposited by 24 November 2026, leaving 37. The UNTC depositary table lists 96 signatories (95 States and the European Union) and three Parties (Qatar, Azerbaijan and Viet Nam). Signature remains open until 31 December 2026. The UNTC declarations panel lists 11 reservation paragraphs and four declaration paragraphs for those three Parties.",
       "title": {
         "english": "United Nations Convention against Cybercrime",
         "official": "United Nations Convention against Cybercrime; Strengthening International Cooperation for Combating Certain Crimes Committed by Means of Information and Communications Technology Systems and for the Sharing of Evidence in Electronic Form of Serious Crimes",
@@ -9448,10 +9871,15 @@
             "check": "Stable depositary table for the map condition",
             "date": "2026-11-24",
             "result": "confirmed: the UNTC page provides a stable URL and a participant table; a map is therefore permitted"
+          },
+          {
+            "check": "UNTC declarations and reservations panel read and itemised",
+            "date": "2026-11-24",
+            "result": "confirmed: Azerbaijan, Qatar and Viet Nam; 11 reservation paragraphs and four declaration paragraphs transcribed"
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata-level record. The status and party table come from the official UNTC depositary page; the treaty text, reservations and declarations, and the legal effect of the deposits are not assessed."
+        "notes": "Metadata-level record. The status, party table and declaration texts come from the official UNTC depositary page. The full treaty text is not stored, and the legal effect of the reservations and declarations is not assessed."
       }
     },
     {
