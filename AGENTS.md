@@ -49,11 +49,22 @@ python3 tools/make_manifest.py             # regenerate manifests after file cha
 
 ## Git and publication
 
+- **Commit and push automatically when a change is complete.** A request to
+  edit this repository authorises both the commit and the push to `main`; do
+  not wait for a separate instruction to push. After the relevant checks pass,
+  push the completed work so the owner can inspect it from GitHub Pages. Never
+  leave finished work only on a cloud branch.
+- The remote is
+  `https://github.com/avvohacker/international-ai-cybersecurity-law-corpus`
+  (renamed from `international-ai-law-corpus`); use the current name in
+  documentation, code and links.
 - The sole author for every commit is `Avvohacker <avvohacker@gmail.com>`.
 - Do not add tool, assistant or co-author attribution to commits, source,
   documentation, generated files or GitHub metadata.
 - Do not commit caches, virtual environments, secrets or files outside the
   repository.
+- If a push is rejected, resolve the divergence without discarding user
+  changes, then push. Do not force-push.
 
 ## Output
 
