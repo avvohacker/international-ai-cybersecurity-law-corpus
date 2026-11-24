@@ -878,7 +878,7 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(page.count('<p class="stat-number">'), 4)
         for label in (
             "catalogued instruments",
-            "binding instruments",
+            "treaty-based international instruments",
             "non-binding instruments",
             "State-level maps",
         ):
@@ -892,7 +892,7 @@ class TestBuild(unittest.TestCase):
         self.assertNotIn("International AI and Cybersecurity Law Atlas", page)
         index_block = page[page.find('id="index"'):page.find('id="form"')]
         self.assertNotIn("atlas", index_block.lower())
-        self.assertIn("Three sets: AI, cyber and international binding", page)
+        self.assertIn("Three sets: AI, cyber and treaty-based international law", page)
         self.assertIn('class="membership-table"', page)
         self.assertEqual(page.count("data-set-region="), 7)
         self.assertIn('data-set-region="cyber_only"><th scope="row">Cyber only', page)
@@ -900,7 +900,11 @@ class TestBuild(unittest.TestCase):
         self.assertIn("NIS2 Directive", page)
         self.assertIn("Cyber Resilience Act", page)
         self.assertIn("EU Artificial Intelligence Act", page)
-        self.assertIn("International binding", page)
+        self.assertIn("International treaty-based", page)
+        self.assertIn("13 in force", page)
+        self.assertIn("5 are not confirmed in force", page)
+        self.assertIn("Article 18 VCLT", page)
+        self.assertNotIn("18 instruments are binding international law", page)
         self.assertNotIn('class="cyber-status"', page)
         self.assertEqual(page.count('data-weight="highlight"'), 17)
         self.assertEqual(page.count('data-weight="record"'), 46)
@@ -917,7 +921,7 @@ class TestBuild(unittest.TestCase):
             and inst["category"] not in {"supranational_law", "regional_law"}
         }
         self.assertEqual(len(international_binding - set(highlighted)), 11)
-        self.assertEqual(page.count("Binding instrument without a map"), 11)
+        self.assertEqual(page.count("Treaty-based instrument without a map"), 11)
         for iid in ("eu-ai-act", "eu-nis2-directive-2022", "eu-cyber-resilience-act-2024"):
             self.assertNotIn(f'data-weight="highlight" data-instrument-id="{iid}"', page)
             self.assertIn(f'data-weight="record" data-instrument-id="{iid}"', page)
@@ -931,7 +935,7 @@ class TestBuild(unittest.TestCase):
         self.assertLess(page.find('id="unseen"'), page.find('id="catalogue"'))
         self.assertEqual(page.count('class="tl-item tl-event unseen-item"'), 11)
         self.assertEqual(page.count('class="tl-item tl-instrument"'), 63)
-        self.assertIn("Three sets: AI, cyber and international binding", page)
+        self.assertIn("Three sets: AI, cyber and treaty-based international law", page)
         self.assertIn("The story, with the instruments in it", page)
         self.assertIn("The argument around the record", page)
         self.assertNotIn("The shape of the corpus", page)
@@ -969,8 +973,8 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(
             groups,
             [
-                ("binding_ai", "Binding AI instruments"),
-                ("binding_cyber", "Binding cyber instruments"),
+                ("binding_ai", "Treaty-based AI instruments"),
+                ("binding_cyber", "Treaty-based cyber instruments"),
                 ("nonbinding_ai", "Non-binding AI instruments"),
                 ("nonbinding_cyber", "Non-binding cyber instruments"),
             ],
@@ -1333,6 +1337,26 @@ class TestBuild(unittest.TestCase):
         cets_entries = cets["parties"]["entries"]
         ratifications = sum(1 for entry in cets_entries if entry.get("ratification"))
         ai_count = sum(1 for inst in instruments if inst["category"] == "ai_treaty")
+        international_treaty_based = [
+            inst
+            for inst in instruments
+            if inst["binding_status"] == "binding"
+            and inst["category"] not in {"supranational_law", "regional_law"}
+        ]
+        self.assertEqual(len(international_treaty_based), 18)
+        self.assertEqual(
+            sum(1 for inst in international_treaty_based if inst["status"] == "in_force"),
+            13,
+        )
+        self.assertIn(
+            '<p class="stat-number">18</p><p class="stat-label">'
+            "treaty-based international instruments</p>",
+            page,
+        )
+        self.assertIn("13 in force · 5 not confirmed", page)
+        self.assertIn("18 international instruments have binding form", page)
+        self.assertIn("13 are in force and 5 are not confirmed in force", page)
+        self.assertNotIn("International binding ·", page)
         self.assertIn(f"{len(instruments)} instruments", page)
         self.assertIn(
             f"CETS 225: {len(cets_entries)} signatures, {ratifications} ratifications",

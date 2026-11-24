@@ -202,10 +202,13 @@ p { margin: 0 0 14px; }
 .situation-track { display: flex; height: 17px; overflow: hidden; background: #e3ddd0; border: 1px solid #cbc1ae; }
 .situation-fill { display: block; height: 100%; }
 .sit-international { background: var(--ink); }
+.sit-pending { background: repeating-linear-gradient(135deg, #b9ae9a 0 3px, #e3ddd0 3px 6px); }
 .sit-eu { background: #8b8375; }
 .sit-nonbinding { background: var(--teal); }
 .sit-ai { background: var(--blue); }
 .sit-cyber { background: var(--gold); }
+.situation-note { margin: 14px 0 0; padding: 10px 12px; border-left: 2px solid var(--gold); background: #f4eee1; font-size: 12.5px; line-height: 1.5; color: #3d382e; }
+.situation-note strong { color: var(--ink); }
 .situation-key { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 5px 92px; font-size: 10.5px; color: var(--muted); }
 .situation-key span { display: inline-flex; align-items: center; gap: 5px; }
 .sit-swatch { width: 9px; height: 9px; display: inline-block; }
