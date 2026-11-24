@@ -1,4 +1,4 @@
-"""Core library for the international AI law corpus.
+"""Core library for the international AI and cybersecurity law corpus.
 
 Standard library only. The build is deterministic: no timestamps, sorted keys,
 stable ordering. Network access is confined to tools/acquire.py.
@@ -31,8 +31,10 @@ CATEGORIES = {
     "draft_negotiation": "Draft or negotiation in progress",
     "supranational_law": "Supranational legislation, collected separately",
     "general_treaty": "General treaty applicable to AI (reasoned selection)",
+    "cyber_treaty": "Cybersecurity treaty",
 }
 
+DOMAINS = {"ai", "cyber"}
 BINDING = {"binding", "non_binding", "mixed", "unknown"}
 STATUSES = {
     "in_force",
@@ -152,6 +154,7 @@ REQUIRED_INSTRUMENT_FIELDS = [
     "binding_status",
     "status",
     "issuer",
+    "domains",
     "relevance",
     "dates",
     "languages",
@@ -315,12 +318,35 @@ def validate_instrument(
             if not isinstance(item, dict) or not item.get("name"):
                 report.error("bad_issuer", path_label, f"issuer[{idx}] needs a name")
 
+    domains = inst.get("domains")
+    if not isinstance(domains, list) or not domains:
+        report.error("bad_domains", path_label, "domains must be a non-empty list")
+        domains = []
+    else:
+        unknown_domains = [domain for domain in domains if domain not in DOMAINS]
+        if unknown_domains:
+            report.error(
+                "bad_domains",
+                path_label,
+                f"unknown domain(s): {', '.join(map(str, unknown_domains))}",
+            )
+        if len(set(domains)) != len(domains):
+            report.error("bad_domains", path_label, "domains must be unique")
+
     relevance = inst.get("relevance") or {}
-    if not relevance.get("reason") or not relevance.get("ai_provisions"):
+    if not relevance.get("reason"):
+        report.error("missing_relevance", path_label, "relevance.reason is required")
+    if "ai" in domains and not relevance.get("ai_provisions"):
         report.error(
             "missing_relevance",
             path_label,
-            "relevance.reason and relevance.ai_provisions are required",
+            "an AI-domain record needs relevance.ai_provisions",
+        )
+    if "cyber" in domains and not relevance.get("cyber_provisions"):
+        report.error(
+            "missing_relevance",
+            path_label,
+            "a cyber-domain record needs relevance.cyber_provisions",
         )
 
     for where, value in iter_dates(inst):
@@ -837,11 +863,20 @@ def build() -> dict[str, Any]:
     by_category: dict[str, int] = {k: 0 for k in sorted(CATEGORIES)}
     by_binding: dict[str, int] = {}
     by_verification: dict[str, int] = {}
+    by_domain = {"ai": 0, "cyber": 0, "joint": 0}
     for inst in ordered:
         by_category[inst["category"]] += 1
         by_binding[inst["binding_status"]] = by_binding.get(inst["binding_status"], 0) + 1
         level = inst["verification"]["level"]
         by_verification[level] = by_verification.get(level, 0) + 1
+        has_ai = "ai" in inst["domains"]
+        has_cyber = "cyber" in inst["domains"]
+        if has_ai:
+            by_domain["ai"] += 1
+        if has_cyber:
+            by_domain["cyber"] += 1
+        if has_ai and has_cyber:
+            by_domain["joint"] += 1
 
     full_texts = sorted(
         inst["id"] for inst in ordered if inst.get("text", {}).get("full_text")
@@ -852,6 +887,7 @@ def build() -> dict[str, Any]:
         "counts": {
             "total": len(ordered),
             "by_category": by_category,
+            "by_domain": by_domain,
             "by_binding": dict(sorted(by_binding.items())),
             "by_verification": dict(sorted(by_verification.items())),
             "full_texts": len(full_texts),
@@ -897,6 +933,9 @@ def build() -> dict[str, Any]:
     lines += ["", "## Counts by category", ""]
     for cat, count in sorted(by_category.items()):
         lines.append(f"- `{cat}`: {count} — {CATEGORIES[cat]}")
+    lines += ["", "## Counts by domain", ""]
+    lines.append(f"- `ai`: {by_domain['ai']} (including {by_domain['joint']} joint AI–cyber)")
+    lines.append(f"- `cyber`: {by_domain['cyber']} (including {by_domain['joint']} joint AI–cyber)")
     lines += ["", "## Counts by verification level", ""]
     for level, count in sorted(by_verification.items()):
         lines.append(f"- `{level}`: {count}")

@@ -1,12 +1,13 @@
 {
   "counts": {
     "by_binding": {
-      "binding": 10,
+      "binding": 11,
       "non_binding": 36
     },
     "by_category": {
       "agreement_ai_provisions": 5,
       "ai_treaty": 2,
+      "cyber_treaty": 1,
       "draft_negotiation": 1,
       "general_treaty": 2,
       "non_binding_instrument": 28,
@@ -14,12 +15,17 @@
       "supranational_law": 1,
       "technical_standard": 5
     },
+    "by_domain": {
+      "ai": 46,
+      "cyber": 1,
+      "joint": 0
+    },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 36
+      "metadata_verified": 37
     },
     "full_texts": 16,
-    "total": 46,
+    "total": 47,
     "with_local_original": 15
   },
   "full_text_ids": [
@@ -50,6 +56,9 @@
         "notes": "Adopted by the AU Assembly on 18 February 2024. Eight annexes, including the Annex on Emerging and Advanced Technologies, were adopted by the 38th Ordinary Session of the Assembly in February 2025. Entry into force is governed by Article 47 of the Protocol and Article 23(2) of the AfCFTA Agreement (22 ratifications). No entry-into-force date or ratification table was displayed on the AU treaty page consulted, and no depositary register was read.",
         "verified_on": "2026-11-24"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Entry into force is not confirmed; the AU treaty page displays no entry-into-force date or ratification table.",
         "No depositary register was read; the number of ratifications and deposits is unknown, not zero.",
@@ -314,6 +323,9 @@
         "published": "2024-02-02",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding and voluntary.",
         "Full text not stored.",
@@ -419,6 +431,9 @@
         "published": "2024-08-09",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding strategy.",
         "Full text not stored.",
@@ -529,6 +544,9 @@
         "notes": "Agreed at the AI Safety Summit, Bletchley Park, 1–2 November 2023. New Zealand joined the declaration on 23 October 2024.",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding.",
         "Full text not stored.",
@@ -803,6 +821,9 @@
         "notes": "Adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The official text is a leaders' statement; it has no signature, ratification, depositary or entry-into-force clause.",
         "verified_on": "2026-11-24"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
         "No individual signature block; the 11 entries are the BRICS member States, not individual signatories.",
@@ -1144,6 +1165,225 @@
       }
     },
     {
+      "binding_status": "binding",
+      "category": "cyber_treaty",
+      "dates": {
+        "entered_into_force": "2004-07-01",
+        "notes": "Opened for signature in Budapest on 23 November 2001; entered into force on 1 July 2004 after five ratifications, including at least three Council of Europe member States. Status checked against the Treaty Office chart of 19 November 2026.",
+        "opened_for_signature": "2001-11-23",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "No full text, citable units or original file is stored in this first record; it is metadata-only.",
+        "The 84-Party figure is the Council of Europe page's declared total. The party list, reservations and declarations are not itemised in this record.",
+        "The First Additional Protocol (ETS 189) and Second Additional Protocol (CETS 224) are named on the official page but are not yet separate records.",
+        "National implementation, the 24/7 network in practice and the Convention's supervisory practice are not assessed.",
+        "No AI-specific provision is asserted. The record is cyber-domain only."
+      ],
+      "id": "budapest-convention-2001",
+      "instrument_type": "treaty",
+      "issuer": [
+        {
+          "name": "Council of Europe",
+          "role": "issuer",
+          "url": "https://www.coe.int/en/web/cybercrime/the-budapest-convention"
+        },
+        {
+          "name": "Secretary General of the Council of Europe",
+          "role": "depositary",
+          "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=185"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr"
+        ],
+        "note": "The Treaty Office publishes the English and French official texts; both are authentic. Other language versions are translations or non-official renderings.",
+        "source_ids": [
+          "coe-text"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "treaty",
+        "rationale": "A Council of Europe convention opened for signature at Budapest on 23 November 2001, with ratification, acceptance, approval or accession and entry into force under Article 36. It creates binding obligations for Parties and is a treaty, not a recommendation or a political declaration.",
+        "source_ids": [
+          "coe-text",
+          "coe-treaty-page"
+        ]
+      },
+      "parties": {
+        "act": "mixed",
+        "as_of": "2026-11-19",
+        "counts": {
+          "parties": {
+            "basis": "declared_total",
+            "note": "The Council of Europe's dedicated page states 84 Parties. The Treaty Office chart of 19 November 2026 is the official status source; the party list is not itemised in this record, so verified is zero.",
+            "source_ids": [
+              "coe-budapest-page",
+              "coe-status-chart"
+            ],
+            "total": 84,
+            "verified": 0
+          }
+        },
+        "entries": [],
+        "source_ids": [
+          "coe-budapest-page",
+          "coe-status-chart"
+        ],
+        "summary": "The Council of Europe page states 84 Parties and 13 countries that have signed or been invited to accede. The Treaty Office chart records the underlying signatures, ratifications and accessions; this first record counts only the declared 84 Parties.",
+        "unknowns": [
+          "The identity and individual status of every Party are not reproduced in this record.",
+          "Reservations, declarations and objections are not itemised."
+        ]
+      },
+      "provenance": {
+        "assertions": [
+          {
+            "date": "2026-11-24",
+            "field": "title",
+            "locator": "Treaty Office detail page, title and summary",
+            "method": "official_page_read",
+            "source_ids": [
+              "coe-treaty-page"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "status",
+            "locator": "Treaty Office chart status of 19 November 2026, entry into force row",
+            "method": "registry_read",
+            "source_ids": [
+              "coe-status-chart"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "parties",
+            "locator": "Council of Europe page, 84 Parties and 13 countries signed or invited to accede",
+            "method": "official_page_read",
+            "source_ids": [
+              "coe-budapest-page"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "counts",
+            "locator": "Council of Europe page, 84 Parties",
+            "method": "official_page_read",
+            "source_ids": [
+              "coe-budapest-page"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "scope",
+            "locator": "Treaty Office page, Articles 2–35 summary",
+            "method": "official_page_read",
+            "source_ids": [
+              "coe-text",
+              "coe-treaty-page"
+            ]
+          }
+        ],
+        "discovered_via": "Cybersecurity integration plan, Phase 2 pilot; Treaty Office and Council of Europe cybercrime pages.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "relevance": {
+        "cyber_provisions": [
+          "Criminalisation of offences against the confidentiality, integrity and availability of computer data and systems (Articles 2–10).",
+          "Procedural powers for expedited preservation, production, search and seizure of stored computer data and traffic data (Articles 16–21).",
+          "International cooperation, including mutual assistance and the 24/7 network (Articles 23–35)."
+        ],
+        "reason": "The Budapest Convention is the first binding international treaty on cybercrime. It supplies the criminal-law and cross-border cooperation layer that cybersecurity regulation presupposes, and it is the reference point against which later cybercrime instruments, including the UN Cybercrime Convention, are compared.",
+        "source_ids": [
+          "coe-text"
+        ]
+      },
+      "rights": {
+        "note": "Official Council of Europe text. Reuse remains subject to the Council of Europe's terms; the corpus stores metadata and links, not the text.",
+        "status": "public_official_text",
+        "url": "https://rm.coe.int/1680081561"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "coe-treaty-page",
+          "kind": "official_primary",
+          "language": "en",
+          "publisher": "Council of Europe Treaty Office",
+          "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=185"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "coe-status-chart",
+          "kind": "registry",
+          "language": "en",
+          "publisher": "Council of Europe Treaty Office",
+          "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=185"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "coe-budapest-page",
+          "kind": "official_secondary",
+          "language": "en",
+          "publisher": "Council of Europe Cybercrime",
+          "url": "https://www.coe.int/en/web/cybercrime/the-budapest-convention"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "coe-text",
+          "kind": "official_primary",
+          "language": "en",
+          "publisher": "Council of Europe",
+          "url": "https://rm.coe.int/1680081561"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force since 1 July 2004. The Council of Europe page states 84 Parties; the Treaty Office chart of 19 November 2026 is the official status snapshot. A declared total is recorded, not a verified itemised count.",
+      "title": {
+        "english": "Convention on Cybercrime",
+        "official": "Convention on Cybercrime (ETS No. 185)",
+        "short": "Budapest Convention"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Treaty Office detail page read for the official title, reference, opening date and entry-into-force condition",
+            "date": "2026-11-24",
+            "result": "confirmed"
+          },
+          {
+            "check": "Treaty Office chart status of 19 November 2026 read for entry into force and the party acts",
+            "date": "2026-11-24",
+            "result": "confirmed"
+          },
+          {
+            "check": "Council of Europe cybercrime page read for the declared 84 Parties and 13 signatories or invited countries",
+            "date": "2026-11-24",
+            "result": "confirmed"
+          },
+          {
+            "check": "Official text URL recorded; text not acquired or segmented in this pass",
+            "date": "2026-11-24",
+            "result": "not acquired"
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata-level record. The party list and reservations are left to the next pass rather than inferred from the declared total."
+      }
+    },
+    {
       "binding_status": "non_binding",
       "category": "draft_negotiation",
       "dates": {
@@ -1152,6 +1392,9 @@
         "published": null,
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "No adopted instrument or draft protocol; the 2026 report contains elements of an instrument, not treaty articles.",
         "The final document was read as CCW/CONF.VII/CRP.1/Rev.3; the clean CCW/CONF.VII/11 symbol was not yet available at verification.",
@@ -1313,6 +1556,9 @@
         "published": "2023-10-20",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Unilateral policy initiative, not an agreed international instrument; no legal obligation.",
         "No formal endorsement or adherence list is published; the record does not claim that any other State has endorsed it.",
@@ -1464,6 +1710,9 @@
         "published": "2026-05-13",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "The Convention is not in force; its Conference of the Parties, rules of procedure and reporting format do not yet exist.",
         "No reservation or objection is recorded on the Treaty Office chart as of 2026-11-23; Article 34 permits only the reservation provided for in Article 33(1) (federal clause).",
@@ -1869,6 +2118,9 @@
         "notes": "Dated Vilnius, 5 September 2024; the Convention was adopted by the Committee of Ministers on 17 May 2024.",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Not an authoritative interpretation.",
         "Full text not acquired (HTTP 403).",
@@ -1969,6 +2221,9 @@
         "signed": "2020-06-11",
         "verified_on": "2026-11-24"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "No depositary-certified copy was acquired; the stored text is a Party government's reproduction.",
         "The Protocol to the DEPA and its legal effect on the AI article were not analysed.",
@@ -2264,6 +2519,9 @@
         "published": "2024-07-12",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Not an international treaty; it binds EU Member States and market actors within EU law, not third States.",
         "Full text not stored; the consolidated version is evolving.",
@@ -2414,6 +2672,9 @@
         "published": "2025-07-10",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Voluntary and EU-specific; not an international treaty.",
         "Full text not stored.",
@@ -2520,6 +2781,9 @@
         "notes": "Launched on 21 May 2024 with 16 companies; the UK page records later additions (Magic, Minimax, 01.ai and NVIDIA), bringing the list to 20.",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Voluntary and corporate; not binding international law.",
         "Full text not stored.",
@@ -2624,6 +2888,9 @@
         "notes": "Issued as part of the Hiroshima AI Process and welcomed in the G7 Leaders' Statement of 30 October 2023.",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Voluntary; no legal obligation or enforcement.",
         "The separate Hiroshima Process Reporting Framework, its questionnaires and company responses are not analysed in this record.",
@@ -2743,6 +3010,9 @@
         "opened_for_signature": "1966-12-16",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Not AI-specific.",
         "Party list, reservations, derogations and jurisprudence are not captured.",
@@ -2865,6 +3135,9 @@
         "published": null,
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Not downloaded; metadata only.",
         "Voluntary and not law.",
@@ -2957,6 +3230,9 @@
         "published": null,
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Paywalled; full text not accessed.",
         "Voluntary and not law.",
@@ -3049,6 +3325,9 @@
         "published": null,
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Paywalled; full text not accessed.",
         "Voluntary and not law.",
@@ -3141,6 +3420,9 @@
         "published": null,
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Paywalled; full text not accessed.",
         "Voluntary and not law.",
@@ -3238,6 +3520,9 @@
         "published": null,
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Paywalled; full text not accessed.",
         "Voluntary and not law.",
@@ -3329,6 +3614,9 @@
         "signed": "2022-11-21",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Full text not stored; only metadata verified.",
         "AI article is cooperative, not prescriptive.",
@@ -3492,6 +3780,9 @@
         "published": "2024-07-10",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Only the public summary is available; the full strategy is not public.",
         "Non-binding internal alliance policy.",
@@ -3598,6 +3889,9 @@
         "notes": "Adopted at the AI Impact Summit in New Delhi on 19 February 2026; the summit ran from 18 to 19 February 2026. The Press Information Bureau's annex states that the list is 'as of 5th March 2026' and names 92 endorsers; the Ministry of External Affairs page was last updated on 21 February 2026 and lists 91, without Colombia. The text has no signature, ratification, depositary or entry-into-force clause.",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
         "Two official lists disagree: the MEA page of 21 February 2026 lists 91 and omits Colombia; the PIB annex as of 5 March 2026 lists 92 and includes Colombia. No official explanation was located.",
@@ -4176,6 +4470,9 @@
         "published": "2019-05-22",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "The 2019 original text is not stored separately; the 2024 revised booklet is the acquired version.",
         "The list of adherents is not reproduced party by party; the OECD's own adherents table should be consulted.",
@@ -4318,6 +4615,9 @@
         "published": "2025-02-19",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding; no legal obligation, monitoring, reporting or enforcement.",
         "Covers civil applications only (footnote 1); military AI is outside its scope.",
@@ -4800,6 +5100,9 @@
         "signed": "2025-12-12",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
         "The United States is omitted from the State Department's partner list; its signature is confirmed by other official sources but the list itself is incomplete.",
@@ -5184,6 +5487,9 @@
         "published": "2023-11-09",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding; no verification or enforcement.",
         "The endorsement list is dated 27 November 2024; later accessions are not reflected.",
@@ -5574,6 +5880,9 @@
         "signed": "2020-08-06",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "No authentic-language clause was located in the extracted text; English is recorded as the acquired language, not as a verified sole authentic language.",
         "The agreement amends the SAFTA; the consolidated text and the amending relationship were not independently verified against the SAFTA.",
@@ -5747,6 +6056,9 @@
         "signed": "2026-11-15",
         "verified_on": "2026-11-24"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding: no legal obligation, ratification, depositary, monitoring or enforcement.",
         "Four participants reported as intending to sign later in November 2026 were not verified as signatories.",
@@ -6025,6 +6337,9 @@
         "notes": "Adopted at the Leaders' Session of the AI Seoul Summit on 21 May 2024.",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding.",
         "Full text not stored.",
@@ -6221,6 +6536,9 @@
         "signed": "2022-02-25",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Full text not stored; only metadata verified.",
         "AI article is cooperative, not prescriptive.",
@@ -6381,6 +6699,9 @@
         "published": "2023-12-28",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding.",
         "Only metadata-level verification.",
@@ -6492,6 +6813,9 @@
         "published": "2024-04-01",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding: the resolution does not create legal obligations or a monitoring mechanism.",
         "Only the English version is stored; the five other official-language versions are catalogued through the UN Digital Library but not acquired.",
@@ -6620,6 +6944,9 @@
         "published": "2024-07-05",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding.",
         "Only metadata-level verification; full text not segmented.",
@@ -6731,6 +7058,9 @@
         "published": "2024-09-22",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding.",
         "The full 56-page text was segmented into 248 units and AI-relevant paragraphs were identified, but it was not read end-to-end; verification remains metadata_verified.",
@@ -6845,6 +7175,9 @@
         "published": "2024-12-31",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding.",
         "Only metadata-level verification.",
@@ -6965,6 +7298,9 @@
         "published": "2025-08-27",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding: the Panel and Dialogue produce scientific and deliberative outputs, not legal obligations.",
         "The mandate expressly excludes military AI, so it does not fill the military-AI governance gap.",
@@ -7091,6 +7427,9 @@
         "published": "2024-12-10",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding and does not define lethal autonomous weapons systems or establish prohibitions.",
         "No vote record or formal military-AI negotiating mandate is captured in this record.",
@@ -7221,6 +7560,9 @@
         "published": "2025-12-05",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding.",
         "Only metadata-level verification.",
@@ -7346,6 +7688,9 @@
         "published": "2025-12-05",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding.",
         "Only metadata-level verification.",
@@ -7464,6 +7809,9 @@
         "notes": "Adopted without a vote at the 41st meeting of the Human Rights Council's 63rd session, 6 October 2026. Official English document A/HRC/RES/63/15, 6 pages.",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Non-binding: no ratification, depositary, monitoring, reporting or enforcement.",
         "Adopted without a vote, so there is no State-by-State voting record.",
@@ -7653,6 +8001,9 @@
         "published": "2021-11-23",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Voluntary and non-binding.",
         "Full text not acquired (HTTP 403); only metadata verified.",
@@ -7769,6 +8120,9 @@
         "published": "2024-04-05",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "No standalone US–EU AI-safety agreement, MOU, administrative arrangement or terms of reference was located.",
         "The AI-safety commitment is one section of a broad TTC joint statement covering many non-AI issues; only the AI section was analysed.",
@@ -7922,6 +8276,9 @@
         "signed": "2024-04-01",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "The full MOU text was not published; GOV.UK publishes only a summary of key elements.",
         "The published summary does not state a legal-status clause, duration, termination, review or dispute-settlement procedure.",
@@ -8112,6 +8469,9 @@
         "opened_for_signature": "1969-05-23",
         "verified_on": "2026-11-23"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Not AI-specific.",
         "Party list, reservations and declarations are not captured in structured form.",
@@ -8245,6 +8605,9 @@
         "signed": "2026-07-16",
         "verified_on": "2026-11-24"
       },
+      "domains": [
+        "ai"
+      ],
       "gaps": [
         "Entry into force is not confirmed: Article 15 requires three deposited ratifications, acceptances or approvals, and no deposit was verified. The number of deposits is unknown, not zero.",
         "China's NPC approved ratification on 6 November 2026. That is a domestic authorisation; the deposit of the instrument and any depositary notification were not verified.",

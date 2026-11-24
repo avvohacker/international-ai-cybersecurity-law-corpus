@@ -136,4 +136,4 @@ The omission test at the end of a cycle is deliberately mechanical:
 
 ### 10.5 What this changes in practice
 
-The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has nine maps and 46 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.
+The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has nine maps and 47 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.

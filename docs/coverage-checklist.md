@@ -26,7 +26,7 @@ The corpus scope is written instruments with an AI-specific object or express AI
 | Technical standards | ISO/IEC; ITU; IEEE; CEN-CENELEC | 2026-11-23 | ISO/IEC AI standards; ITU-T Y.3172; IEEE 7000; CEN-CENELEC JTC 21 | Five ISO/IEC standards catalogued as metadata. ITU-T Y.3172, IEEE 7000 and CEN-CENELEC JTC 21 remain pending. Standards are not treaties and are not treated as binding international law. |
 | Regional instruments | EU; African Union; ASEAN; NATO | 2026-11-23 | EU AI Act; AU Continental AI Strategy and AfCFTA Protocol; ASEAN Guide; NATO strategy | EU AI Act, AU strategy, AfCFTA Protocol, ASEAN Guide and NATO strategy summary catalogued. No binding regional AI treaty outside the EU AI Act (which is supranational law). |
 | Multistakeholder and political calls | Élysée; official campaign pages | 2026-11-23 | Paris Call for AI Safety and Security (9 November 2026); Call for Control of Frontier AI Models (September 2026) | **Paris Call**: 19 governments, 11 companies and 11 civil-society organisations on the Élysée page; open to new endorsements. It is a multi-stakeholder declaration, not an intergovernmental instrument; excluded from the register and recorded as a candidate. The Call for Control is an advocacy statement, not an instrument; not catalogued. |
-| Scientific and advisory materials | International AI Safety Report; expert panels | 2026-11-23 | International AI Safety Report and successor editions | The International AI Safety Report remains a pending candidate for an authoritative-materials layer; it is not an instrument and is not counted in the 46 records. |
+| Scientific and advisory materials | International AI Safety Report; expert panels | 2026-11-23 | International AI Safety Report and successor editions | The International AI Safety Report remains a pending candidate for an authoritative-materials layer; it is not an instrument and is not counted in the 46 AI-layer records. |
 
 ## 2. What this checklist changed
 
@@ -55,7 +55,7 @@ Two instruments were nearly missed in the first cycle: **A/HRC/RES/63/15** and t
 
 | Measure | Count |
 |---|---:|
-| Catalogued instruments | 46 |
+| Catalogued instruments | 47 (46 AI-layer + 1 cybersecurity-only) |
 | Binding instruments | 10 |
 | Non-binding instruments | 36 |
 | Stored full texts | 16 |

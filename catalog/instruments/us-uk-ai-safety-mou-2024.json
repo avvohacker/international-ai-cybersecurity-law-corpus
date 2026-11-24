@@ -7,6 +7,9 @@
     "signed": "2024-04-01",
     "verified_on": "2026-11-23"
   },
+  "domains": [
+    "ai"
+  ],
   "gaps": [
     "The full MOU text was not published; GOV.UK publishes only a summary of key elements.",
     "The published summary does not state a legal-status clause, duration, termination, review or dispute-settlement procedure.",

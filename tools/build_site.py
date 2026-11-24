@@ -27,7 +27,7 @@ GEO = ROOT / "data" / "natural-earth" / "ne_110m_admin_0_countries.geojson"
 ORGANISATIONS = ROOT / "data" / "organisations.json"
 UNSEEN = ROOT / "data" / "unseen-events.json"
 OFF_RECORD = ROOT / "data" / "off-the-record.json"
-REPO = "https://github.com/avvohacker/international-ai-law-corpus"
+REPO = "https://github.com/avvohacker/international-ai-cybersecurity-law-corpus"
 
 PARIS_ID = "paris-ai-action-summit-statement-2025"
 CETS_ID = "coe-cets-225"
@@ -65,6 +65,7 @@ TIMELINE_HIGHLIGHTS = {
     "waico-establishment-agreement-2026",
     "new-delhi-declaration-2026",
     "san-francisco-declaration-2026",
+    "budapest-convention-2001",
 }
 
 # IFAD endorsed the New Delhi Declaration but is a UN specialised agency, not a
@@ -82,6 +83,7 @@ CATEGORY_LABELS = {
     "draft_negotiation": "Negotiation in progress",
     "supranational_law": "EU law",
     "general_treaty": "General treaty",
+    "cyber_treaty": "Cybersecurity treaty",
 }
 
 BINDING_LABELS = {
@@ -847,6 +849,12 @@ def main() -> int:
     instruments = list(corpuslib.load_instruments().values())
     by_id = {inst["id"]: inst for inst in instruments}
     total = len(instruments)
+    ai_layer_count = sum(1 for inst in instruments if "ai" in inst["domains"])
+    cyber_layer_count = sum(1 for inst in instruments if "cyber" in inst["domains"])
+    joint_count = sum(
+        1 for inst in instruments if {"ai", "cyber"} <= set(inst["domains"])
+    )
+    cyber_only_count = cyber_layer_count - joint_count
     counts = Counter(inst["binding_status"] for inst in instruments)
     category_counts = Counter(inst["category"] for inst in instruments)
     verification_counts = Counter(inst["verification"]["level"] for inst in instruments)
@@ -1504,7 +1512,12 @@ def main() -> int:
         f"{force_phrase(waico)}."
     )
     stat_cards = [
-        (str(total), "catalogued instruments", "One record per instrument, with source and verification level."),
+        (
+            str(total),
+            "catalogued instruments",
+            f"{ai_layer_count} AI-layer records; {cyber_only_count} cybersecurity-only; "
+            f"{joint_count} joint. The cybersecurity register is in progress.",
+        ),
         (str(binding), "binding instruments", f"{in_force} in force; {not_in_force} not confirmed in force."),
         (str(ai_count), "AI-specific treaties", ai_note),
         (str(full_texts), "full texts", f"{originals} originals preserved and SHA-256 hashed."),
@@ -1520,17 +1533,18 @@ def main() -> int:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>International AI Law Atlas</title>
-<meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI law.">
-<link rel="stylesheet" href="assets/style.css?v=23">
+<title>International AI and Cybersecurity Law — Atlas</title>
+<meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI and cybersecurity law. The AI layer is catalogued; the cybersecurity register is in progress.">
+<link rel="stylesheet" href="assets/style.css?v=24">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
 <header class="masthead">
   <div class="wrap">
     <p class="kicker">Verified corpus · verification {esc(verified_on)}</p>
-    <h1>International AI Law Atlas</h1>
-    <p class="byline">{total} instruments · {full_texts} full texts · {originals} originals with SHA-256 · {binding} binding</p>
+    <h1>International AI and Cybersecurity Law</h1>
+    <p class="atlas-subtitle">Atlas</p>
+    <p class="byline">{total} records · {ai_layer_count} AI-layer · {cyber_layer_count} cyber · {full_texts} full texts · {binding} binding</p>
     <nav class="toc" aria-label="Sections">
       <a href="#index">Index</a>
       <a href="#form">01 Sets</a>
@@ -1549,8 +1563,9 @@ def main() -> int:
       <p class="eyebrow">00 · Index</p>
       <h2>What this corpus contains</h2>
       <div class="stats">{stats_html}</div>
+      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The first cyber record is the Budapest Convention; its party-level list and the remaining cyber families are still being built. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
       <div class="index-grid">
-        <a class="index-card" href="#form"><span class="index-number">01</span><strong>The hard-law gap</strong><span>No instrument in this corpus is AI-specific, a treaty and in force at once. The section shows what each route actually covers.</span></a>
+        <a class="index-card" href="#form"><span class="index-number">01</span><strong>The hard-law gap</strong><span>No AI-specific treaty is confirmed in force. The section shows what each route actually covers.</span></a>
         <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>Nine maps of the State-level acts recorded in the corpus: signatures, ratifications, endorsements and collective issuances.</span></a>
         <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: key texts highlighted, other records compact, events as plain rows.</span></a>
         <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Off the record</strong><span>Legal doctrine, think-tank analysis and civil-society critique: the argument around the record, never used as evidence for it.</span></a>
@@ -1563,15 +1578,15 @@ def main() -> int:
     <section id="form" class="section">
     <div class="wrap">
       <p class="eyebrow">01 · Sets</p>
-      <h2>No instrument in this corpus is AI-specific, a treaty and in force</h2>
-      <p class="lede">That is the finding the three sets expose. Among the binding instruments that address AI, no text satisfies all three properties at once. Each route satisfies a different pair; the table names the instruments and shows the gap.</p>
+      <h2>No AI-specific treaty is confirmed in force</h2>
+      <p class="lede">That is the finding for the AI layer. Among the binding instruments that address AI, no text is at once AI-specific, a treaty and confirmed in force. Each route satisfies a different pair; the table names the instruments and shows the gap.</p>
       {sets_html}
       <div class="sets-reading">
         <p><strong>The AI-specific treaty layer is not in force.</strong> CETS 225 is binding but not in force. WAICO is binding, but no deposit or entry-into-force date was verified, so its status is unconfirmed — not a recorded “no”.</p>
         <p><strong>The treaty layer in force is trade law.</strong> DEPA, KSDPA, SADEA and UKSDEA are in force; their AI clauses are cooperative and sit inside digital-trade agreements. The AfCFTA Protocol has an AI annex with “shall” obligations, but its entry into force is unconfirmed. None is AI-specific.</p>
         <p><strong>The AI-specific instrument in force is regional.</strong> The EU AI Act is binding and in force, but it is EU law, not an international treaty. No international AI-specific instrument occupies the centre of the three sets.</p>
       </div>
-      <p class="source-note">The table covers binding instruments in the AI-treaty, AI-provisions and EU-law categories. General background law (the ICCPR and the VCLT) is not AI-specific and is excluded; non-binding AI instruments are outside this comparison. Membership is derived from <code>category</code>, <code>instrument_type</code> and <code>status</code>. A question mark marks an entry into force that the record treats as unconfirmed, not as a negative.</p>
+      <p class="source-note">The table covers binding instruments in the AI-treaty, AI-provisions and EU-law categories. General background law (the ICCPR and the VCLT) is not AI-specific and is excluded; non-binding AI instruments are outside this comparison. Membership is derived from <code>category</code>, <code>instrument_type</code> and <code>status</code>. A question mark marks an entry into force that the record treats as unconfirmed, not as a negative. This comparison is confined to the AI layer; cybersecurity instruments are outside it.</p>
     </div>
   </section>
 
@@ -1584,7 +1599,7 @@ def main() -> int:
         {maps_html}
       </div>
       <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. “Endorsed” is used for political declarations, which create no treaty signature or ratification; “member State” is used for the BRICS collective statement, which has no individual signature block.</p>
-      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} political instruments and {number_word(map_binding_count)} treaties. The {len(brics_states)}-member BRICS statement is mapped as a collective issue by its member States, not as {len(brics_states)} individual signatures. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the OECD and UNESCO recommendations, the EU AI Act, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate Pax Silica deliverables (the June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration, which is catalogued as a record but not mapped), and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment.</p>
+      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} political instruments and {number_word(map_binding_count)} treaties. The {len(brics_states)}-member BRICS statement is mapped as a collective issue by its member States, not as {len(brics_states)} individual signatures. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the OECD and UNESCO recommendations, the EU AI Act, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate Pax Silica deliverables (the June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration, which is catalogued as a record but not mapped), the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment, and the Budapest Convention, whose party-level list is not yet stored.</p>
     </div>
   </section>
 
@@ -1675,7 +1690,7 @@ def main() -> int:
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <p><strong>International AI Law Atlas</strong><br>Generated by <code>tools/build_site.py</code> from the verified corpus.</p>
+    <p><strong>International AI and Cybersecurity Law</strong><br><span class="footer-atlas">Atlas</span><br>Generated by <code>tools/build_site.py</code> from the verified corpus.</p>
     <p>Verification: {esc(verified_on)}<br>{total} instruments · {full_texts} full texts</p>
   </div>
 </footer>

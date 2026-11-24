@@ -8,6 +8,9 @@
     "opened_for_signature": "1969-05-23",
     "verified_on": "2026-11-23"
   },
+  "domains": [
+    "ai"
+  ],
   "gaps": [
     "Not AI-specific.",
     "Party list, reservations and declarations are not captured in structured form.",

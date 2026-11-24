@@ -7,6 +7,9 @@
     "published": "2025-08-27",
     "verified_on": "2026-11-23"
   },
+  "domains": [
+    "ai"
+  ],
   "gaps": [
     "Non-binding: the Panel and Dialogue produce scientific and deliberative outputs, not legal obligations.",
     "The mandate expressly excludes military AI, so it does not fill the military-AI governance gap.",

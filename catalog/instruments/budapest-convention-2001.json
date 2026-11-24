@@ -1,0 +1,219 @@
+{
+  "binding_status": "binding",
+  "category": "cyber_treaty",
+  "dates": {
+    "entered_into_force": "2004-07-01",
+    "notes": "Opened for signature in Budapest on 23 November 2001; entered into force on 1 July 2004 after five ratifications, including at least three Council of Europe member States. Status checked against the Treaty Office chart of 19 November 2026.",
+    "opened_for_signature": "2001-11-23",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "cyber"
+  ],
+  "gaps": [
+    "No full text, citable units or original file is stored in this first record; it is metadata-only.",
+    "The 84-Party figure is the Council of Europe page's declared total. The party list, reservations and declarations are not itemised in this record.",
+    "The First Additional Protocol (ETS 189) and Second Additional Protocol (CETS 224) are named on the official page but are not yet separate records.",
+    "National implementation, the 24/7 network in practice and the Convention's supervisory practice are not assessed.",
+    "No AI-specific provision is asserted. The record is cyber-domain only."
+  ],
+  "id": "budapest-convention-2001",
+  "instrument_type": "treaty",
+  "issuer": [
+    {
+      "name": "Council of Europe",
+      "role": "issuer",
+      "url": "https://www.coe.int/en/web/cybercrime/the-budapest-convention"
+    },
+    {
+      "name": "Secretary General of the Council of Europe",
+      "role": "depositary",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=185"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en",
+      "fr"
+    ],
+    "note": "The Treaty Office publishes the English and French official texts; both are authentic. Other language versions are translations or non-official renderings.",
+    "source_ids": [
+      "coe-text"
+    ]
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "A Council of Europe convention opened for signature at Budapest on 23 November 2001, with ratification, acceptance, approval or accession and entry into force under Article 36. It creates binding obligations for Parties and is a treaty, not a recommendation or a political declaration.",
+    "source_ids": [
+      "coe-text",
+      "coe-treaty-page"
+    ]
+  },
+  "parties": {
+    "act": "mixed",
+    "as_of": "2026-11-19",
+    "counts": {
+      "parties": {
+        "basis": "declared_total",
+        "note": "The Council of Europe's dedicated page states 84 Parties. The Treaty Office chart of 19 November 2026 is the official status source; the party list is not itemised in this record, so verified is zero.",
+        "source_ids": [
+          "coe-budapest-page",
+          "coe-status-chart"
+        ],
+        "total": 84,
+        "verified": 0
+      }
+    },
+    "entries": [],
+    "source_ids": [
+      "coe-budapest-page",
+      "coe-status-chart"
+    ],
+    "summary": "The Council of Europe page states 84 Parties and 13 countries that have signed or been invited to accede. The Treaty Office chart records the underlying signatures, ratifications and accessions; this first record counts only the declared 84 Parties.",
+    "unknowns": [
+      "The identity and individual status of every Party are not reproduced in this record.",
+      "Reservations, declarations and objections are not itemised."
+    ]
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-24",
+        "field": "title",
+        "locator": "Treaty Office detail page, title and summary",
+        "method": "official_page_read",
+        "source_ids": [
+          "coe-treaty-page"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "status",
+        "locator": "Treaty Office chart status of 19 November 2026, entry into force row",
+        "method": "registry_read",
+        "source_ids": [
+          "coe-status-chart"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "parties",
+        "locator": "Council of Europe page, 84 Parties and 13 countries signed or invited to accede",
+        "method": "official_page_read",
+        "source_ids": [
+          "coe-budapest-page"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "counts",
+        "locator": "Council of Europe page, 84 Parties",
+        "method": "official_page_read",
+        "source_ids": [
+          "coe-budapest-page"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "scope",
+        "locator": "Treaty Office page, Articles 2–35 summary",
+        "method": "official_page_read",
+        "source_ids": [
+          "coe-text",
+          "coe-treaty-page"
+        ]
+      }
+    ],
+    "discovered_via": "Cybersecurity integration plan, Phase 2 pilot; Treaty Office and Council of Europe cybercrime pages.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "relevance": {
+    "cyber_provisions": [
+      "Criminalisation of offences against the confidentiality, integrity and availability of computer data and systems (Articles 2–10).",
+      "Procedural powers for expedited preservation, production, search and seizure of stored computer data and traffic data (Articles 16–21).",
+      "International cooperation, including mutual assistance and the 24/7 network (Articles 23–35)."
+    ],
+    "reason": "The Budapest Convention is the first binding international treaty on cybercrime. It supplies the criminal-law and cross-border cooperation layer that cybersecurity regulation presupposes, and it is the reference point against which later cybercrime instruments, including the UN Cybercrime Convention, are compared.",
+    "source_ids": [
+      "coe-text"
+    ]
+  },
+  "rights": {
+    "note": "Official Council of Europe text. Reuse remains subject to the Council of Europe's terms; the corpus stores metadata and links, not the text.",
+    "status": "public_official_text",
+    "url": "https://rm.coe.int/1680081561"
+  },
+  "status": "in_force",
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "coe-treaty-page",
+      "kind": "official_primary",
+      "language": "en",
+      "publisher": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=185"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "coe-status-chart",
+      "kind": "registry",
+      "language": "en",
+      "publisher": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=185"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "coe-budapest-page",
+      "kind": "official_secondary",
+      "language": "en",
+      "publisher": "Council of Europe Cybercrime",
+      "url": "https://www.coe.int/en/web/cybercrime/the-budapest-convention"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "coe-text",
+      "kind": "official_primary",
+      "language": "en",
+      "publisher": "Council of Europe",
+      "url": "https://rm.coe.int/1680081561"
+    }
+  ],
+  "status_note": "In force since 1 July 2004. The Council of Europe page states 84 Parties; the Treaty Office chart of 19 November 2026 is the official status snapshot. A declared total is recorded, not a verified itemised count.",
+  "title": {
+    "english": "Convention on Cybercrime",
+    "official": "Convention on Cybercrime (ETS No. 185)",
+    "short": "Budapest Convention"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Treaty Office detail page read for the official title, reference, opening date and entry-into-force condition",
+        "date": "2026-11-24",
+        "result": "confirmed"
+      },
+      {
+        "check": "Treaty Office chart status of 19 November 2026 read for entry into force and the party acts",
+        "date": "2026-11-24",
+        "result": "confirmed"
+      },
+      {
+        "check": "Council of Europe cybercrime page read for the declared 84 Parties and 13 signatories or invited countries",
+        "date": "2026-11-24",
+        "result": "confirmed"
+      },
+      {
+        "check": "Official text URL recorded; text not acquired or segmented in this pass",
+        "date": "2026-11-24",
+        "result": "not acquired"
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata-level record. The party list and reservations are left to the next pass rather than inferred from the declared total."
+  }
+}

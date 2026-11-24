@@ -7,6 +7,9 @@
     "published": "2024-09-22",
     "verified_on": "2026-11-23"
   },
+  "domains": [
+    "ai"
+  ],
   "gaps": [
     "Non-binding.",
     "The full 56-page text was segmented into 248 units and AI-relevant paragraphs were identified, but it was not read end-to-end; verification remains metadata_verified.",

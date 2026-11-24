@@ -1,6 +1,6 @@
 # Cybersecurity integration plan
 
-**Status:** Phase 0 decision recorded. The corpus is to become a joint **AI and international cybersecurity law** corpus, not an AI corpus with a few cyber-adjacent records. No cybersecurity record has been added yet, and the current counts still describe the AI corpus only.
+**Status:** Phase 2 started. The corpus is a joint **AI and international cybersecurity law** corpus in structure and has its first cybersecurity-only record, the Budapest Convention (ETS 185), metadata-verified with a declared 84-Party count. The party-level list, the protocols and a map remain pending. The AI layer remains 46 records; the total is now 47.
 
 ## 1. Why cybersecurity is a second domain, not a filter
 
@@ -91,15 +91,15 @@ The existing validation contract extends without a second validator:
 
 **Phase 0 — scope decision (this document).** Adopt the joint AI-and-cyber scope, the domain rule and the separation of counts. No records yet.
 
-**Phase 1 — schema and migration.** Add `domains` and the optional `cyber` block; migrate existing records to `["ai"]`; add the domain filter and split the 00 statistics; prove the AI counts are unchanged. No cyber record yet.
+**Phase 1 — schema and migration (complete).** Added `domains` and `relevance.cyber_provisions`; migrated all existing records to `["ai"]`; split the build and site counts; renamed the repository and site for the two domains. No cyber record yet.
 
-**Phase 2 — cybercrime treaty pilot.** Build one full treaty record with a public depositary chart. The Budapest Convention is the obvious pilot because its status and parties are public; the UN Cybercrime Convention is the second candidate once its depositary picture is clear. Output: one record, one validation run, no map until the party data are complete.
+**Phase 2 — cybercrime treaty pilot (started).** The Budapest Convention is catalogued as a metadata-only record: official title, opening and entry-into-force dates, 84 declared Parties and the cyber provisions it governs. The next pass must itemise the party list, record reservations and declarations, and decide whether to add the two protocols. The UN Cybercrime Convention is the second candidate once its depositary picture is clear. No map until the party data are complete.
 
 **Phase 3 — the cyber hard-law layer.** Add the remaining cybercrime treaties and the regional product/critical-infrastructure law. Record the EU AI Act's cybersecurity provisions as cross-links on the existing AI record rather than as a duplicate. Output: the cyber catalogue, still separate from AI counts.
 
 **Phase 4 — norms, standards and channels.** Add the non-binding UN norms, the international standards and the bilateral cooperation channels, each with its own status and verification level. Do not let a political norm inherit the status of a treaty.
 
-**Phase 5 — derived views and naming.** Add the cyber maps, the timeline filter and the cyber reading list. Then decide whether the site is still “International AI Law Atlas” or has become a two-domain atlas. That naming decision belongs to the maintainer and should follow the data, not precede it.
+**Phase 5 — derived views.** Add the cyber maps, the timeline filter and the cyber reading list. The naming decision has already been made: the repository is `international-ai-cybersecurity-law-corpus` and the site title is **International AI and Cybersecurity Law**, with **Atlas** as its subtitle. The views still have to catch up with the name.
 
 ## 8. Open questions
 
@@ -107,8 +107,8 @@ The existing validation contract extends without a second validator:
 2. Do technical standards belong in the same catalogue as treaties? The AI corpus already includes ISO/IEC standards, so consistency favours inclusion, but the cyber standards set is larger and will need a selection rule.
 3. Should the UN Cybercrime Convention be mapped before its party table is stable? No. A treaty map requires a deposited act, not a signature list inferred from a press release.
 4. How should the site present joint AI–cyber instruments? Use `domains: ["ai", "cyber"]` and show them in both filtered views, but count them once in the joint total.
-5. Does the title change? Not in Phase 0. The AI counts and the site name stay stable until the cyber layer is populated and reviewed.
+5. ~~Does the title change?~~ Resolved by the maintainer on 24 November 2026: the repository is now `international-ai-cybersecurity-law-corpus` and the site title is **International AI and Cybersecurity Law**, with **Atlas** as its subtitle. The AI counts remain visible and separate from the cyber counts.
 
 ## 9. What this plan does not do
 
-It does not add records, schema fields, maps, site sections or tests. It does not assert that any candidate instrument contains an AI provision. It does not change the current counts: 46 records, 10 binding, 36 non-binding. Implementation starts with Phase 1, after the scope decision recorded here.
+It does not add the remaining cybersecurity records, maps or site sections. The catalogue now contains 46 AI-layer records plus the Budapest Convention as one cybersecurity-only record: 47 in total, 11 binding and 36 non-binding. The Budapest record is metadata-level and does not assert an AI provision. The next implementation step is Phase 2 completion: itemise the Budapest party list and add the protocols or the UN Cybercrime Convention.

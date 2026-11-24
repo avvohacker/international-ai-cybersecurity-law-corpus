@@ -7,6 +7,9 @@
     "published": "2021-11-23",
     "verified_on": "2026-11-23"
   },
+  "domains": [
+    "ai"
+  ],
   "gaps": [
     "Voluntary and non-binding.",
     "Full text not acquired (HTTP 403); only metadata verified.",

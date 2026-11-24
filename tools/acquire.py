@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CORPUS = ROOT / "corpus"
 LOCK = ROOT / "catalog" / "acquisitions.json"
-UA = "international-ai-law-corpus/0.1 (research corpus; contact: repository owner)"
+UA = "international-ai-cybersecurity-law-corpus/0.1 (research corpus; contact: repository owner)"
 
 
 def digest(data: bytes) -> str:

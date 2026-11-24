@@ -94,4 +94,4 @@ Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records
 
 ## What “coverage” means here
 
-It means: 46 records, each with at least one official source and a declared verification level; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register of 31 entries (11 included, 11 pending, 9 excluded) that records both inclusions and exclusions. It does not mean that every international AI instrument has been found.
+It means: 47 records (46 AI-layer and the Budapest Convention as the first cybersecurity-only record), each with at least one official source and a declared verification level; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register of 31 entries (11 included, 11 pending, 9 excluded) that records both inclusions and exclusions. The cybersecurity families in the integration plan are not yet catalogued beyond Budapest. It does not mean that every international AI instrument has been found.

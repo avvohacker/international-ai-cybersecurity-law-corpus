@@ -7,6 +7,9 @@
     "signed": "2022-02-25",
     "verified_on": "2026-11-23"
   },
+  "domains": [
+    "ai"
+  ],
   "gaps": [
     "Full text not stored; only metadata verified.",
     "AI article is cooperative, not prescriptive.",

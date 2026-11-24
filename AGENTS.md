@@ -26,6 +26,9 @@ documentation and generated build agree.
 
 - `catalog/instruments/*.json` is the source of truth. `units.jsonl` is
   generated from `text/en.txt`; never hand-edit units.
+- Every record declares at least one domain (`ai`, `cyber`). Keep the AI and
+  cybersecurity counts separate; a cyber-only record must not enter the AI
+  totals, and a joint record is counted once in each layer.
 - Every acquired original has a URL, access date, byte count and SHA-256 in
   `catalog/acquisitions.json`.
 - Every stored file is listed in the instrument manifest with a role, size and
