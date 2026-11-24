@@ -1169,7 +1169,7 @@
       "category": "cyber_treaty",
       "dates": {
         "entered_into_force": "2004-07-01",
-        "notes": "Opened for signature in Budapest on 23 November 2001; entered into force on 1 July 2004 after five ratifications, including at least three Council of Europe member States. Status checked against the Treaty Office chart of 19 November 2026.",
+        "notes": "Opened for signature in Budapest on 23 November 2001; entered into force on 1 July 2004 after five ratifications, including at least three Council of Europe member States. Status checked against the Treaty Office chart of 21 November 2026.",
         "opened_for_signature": "2001-11-23",
         "verified_on": "2026-11-24"
       },
@@ -1217,13 +1217,22 @@
       },
       "parties": {
         "act": "mixed",
-        "as_of": "2026-11-19",
+        "as_of": "2026-11-21",
         "counts": {
           "parties": {
             "basis": "declared_total",
-            "note": "The Council of Europe's dedicated page states 84 Parties. The Treaty Office chart of 19 November 2026 is the official status source; the party list is not itemised in this record, so verified is zero.",
+            "note": "The Council of Europe's dedicated page states 84 Parties. The Treaty Office chart of 21 November 2026 reports 84 ratifications/accessions; the party list is not itemised in this record, so verified is zero.",
             "source_ids": [
               "coe-budapest-page",
+              "coe-status-chart"
+            ],
+            "total": 84,
+            "verified": 0
+          },
+          "ratifications": {
+            "basis": "declared_total",
+            "note": "The Treaty Office chart of 21 November 2026 reports 84 ratifications/accessions. The party list is not itemised in this record, so verified is zero.",
+            "source_ids": [
               "coe-status-chart"
             ],
             "total": 84,
@@ -1235,7 +1244,7 @@
           "coe-budapest-page",
           "coe-status-chart"
         ],
-        "summary": "The Council of Europe page states 84 Parties and 13 countries that have signed or been invited to accede. The Treaty Office chart records the underlying signatures, ratifications and accessions; this first record counts only the declared 84 Parties.",
+        "summary": "The Council of Europe page states 84 Parties and 13 countries that have signed or been invited to accede. The Treaty Office chart of 21 November 2026 reports 84 ratifications/accessions and two signatures not followed by ratification; this first record counts only the declared totals and does not reproduce the party list.",
         "unknowns": [
           "The identity and individual status of every Party are not reproduced in this record.",
           "Reservations, declarations and objections are not itemised."
@@ -1255,7 +1264,7 @@
           {
             "date": "2026-11-24",
             "field": "status",
-            "locator": "Treaty Office chart status of 19 November 2026, entry into force row",
+            "locator": "Treaty Office chart status of 21 November 2026, entry into force row",
             "method": "registry_read",
             "source_ids": [
               "coe-status-chart"
@@ -1350,7 +1359,7 @@
         }
       ],
       "status": "in_force",
-      "status_note": "In force since 1 July 2004. The Council of Europe page states 84 Parties; the Treaty Office chart of 19 November 2026 is the official status snapshot. A declared total is recorded, not a verified itemised count.",
+      "status_note": "In force since 1 July 2004. The Council of Europe page states 84 Parties; the Treaty Office chart of 21 November 2026 reports 84 ratifications/accessions and two signatures not followed by ratification. Declared totals are recorded, not a verified itemised count.",
       "title": {
         "english": "Convention on Cybercrime",
         "official": "Convention on Cybercrime (ETS No. 185)",
