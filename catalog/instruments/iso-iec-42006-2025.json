@@ -1,34 +1,119 @@
 {
-  "id": "iso-iec-42006-2025",
-  "title": {"official": "ISO/IEC 42006:2025 Information technology — Artificial intelligence — Requirements for bodies providing audit and certification of artificial intelligence management systems", "short": "ISO/IEC 42006:2025"},
-  "category": "technical_standard",
-  "instrument_type": "standard",
   "binding_status": "non_binding",
-  "status": "adopted",
-  "issuer": [{"name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)", "role": "issuer", "url": "https://www.iso.org/committee/6794475.html"}],
-  "relevance": {
-    "reason": "International requirements for bodies that audit and certify AI management systems under ISO/IEC 42001. It is a voluntary conformity-assessment standard and a building block for AI certification schemes.",
-    "ai_provisions": ["Whole standard — competence and process requirements for AIMS audit and certification bodies"],
-    "excluded_scope": "Voluntary technical standard; no legal obligation and no public full text."
+  "category": "technical_standard",
+  "dates": {
+    "notes": "Publication month July 2025; exact day not verified. Edition 1.",
+    "published": null,
+    "verified_on": "2026-11-23"
   },
-  "dates": {"published": null, "verified_on": "2026-11-23", "notes": "Publication month July 2025; exact day not verified. Edition 1."},
-  "status_note": "Published international standard. Voluntary.",
-  "languages": {"authentic": ["en"], "translations": [], "note": "English edition listed; other language versions not verified."},
-  "sources": [
-    {"id": "iso-catalogue", "url": "https://www.iso.org/standard/42006", "publisher": "ISO", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official catalogue page: published July 2025, edition 1, CHF 159."}
+  "gaps": [
+    "Paywalled; full text not accessed.",
+    "Voluntary and not law.",
+    "Accreditation and certification schemes are not assessed."
   ],
-  "rights": {"status": "restricted", "licence": "ISO copyright; paid standard", "note": "Sold by ISO; metadata and link only.", "url": "https://www.iso.org/standard/42006"},
-  "verification": {
-    "level": "metadata_verified",
-    "checks": [
-      {"check": "Title, edition, publication month and scope checked on the ISO catalogue page.", "result": "ISO/IEC 42006:2025, edition 1, 2025-07, requirements for AIMS audit and certification bodies.", "date": "2026-11-23"},
-      {"check": "Legal nature checked: voluntary technical standard.", "result": "Not a treaty.", "date": "2026-11-23"}
+  "id": "iso-iec-42006-2025",
+  "instrument_type": "standard",
+  "issuer": [
+    {
+      "name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)",
+      "role": "issuer",
+      "url": "https://www.iso.org/committee/6794475.html"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
     ],
-    "notes": "Metadata only; full text paywalled."
+    "note": "English edition listed; other language versions not verified.",
+    "translations": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "iso-catalogue"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "iso-catalogue"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "iso-catalogue"
+        ]
+      }
+    ],
+    "discovered_via": "ISO catalogue.",
+    "search_dates": [
+      "2026-11-23"
+    ]
   },
   "related": [
-    {"id": "iso-iec-42001-2023", "relation": "related", "note": "The certification requirements build on ISO/IEC 42001."}
+    {
+      "id": "iso-iec-42001-2023",
+      "note": "The certification requirements build on ISO/IEC 42001.",
+      "relation": "related"
+    }
   ],
-  "gaps": ["Paywalled; full text not accessed.", "Voluntary and not law.", "Accreditation and certification schemes are not assessed."],
-  "provenance": {"discovered_via": "ISO catalogue.", "search_dates": ["2026-11-23"]}
+  "relevance": {
+    "ai_provisions": [
+      "Whole standard — competence and process requirements for AIMS audit and certification bodies"
+    ],
+    "excluded_scope": "Voluntary technical standard; no legal obligation and no public full text.",
+    "reason": "International requirements for bodies that audit and certify AI management systems under ISO/IEC 42001. It is a voluntary conformity-assessment standard and a building block for AI certification schemes."
+  },
+  "rights": {
+    "licence": "ISO copyright; paid standard",
+    "note": "Sold by ISO; metadata and link only.",
+    "status": "restricted",
+    "url": "https://www.iso.org/standard/42006"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "iso-catalogue",
+      "kind": "official_primary",
+      "note": "Official catalogue page: published July 2025, edition 1, CHF 159.",
+      "publisher": "ISO",
+      "url": "https://www.iso.org/standard/42006"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Published international standard. Voluntary.",
+  "title": {
+    "official": "ISO/IEC 42006:2025 Information technology — Artificial intelligence — Requirements for bodies providing audit and certification of artificial intelligence management systems",
+    "short": "ISO/IEC 42006:2025"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Title, edition, publication month and scope checked on the ISO catalogue page.",
+        "date": "2026-11-23",
+        "result": "ISO/IEC 42006:2025, edition 1, 2025-07, requirements for AIMS audit and certification bodies."
+      },
+      {
+        "check": "Legal nature checked: voluntary technical standard.",
+        "date": "2026-11-23",
+        "result": "Not a treaty."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata only; full text paywalled."
+  }
 }

@@ -36,6 +36,39 @@
     "translations": []
   },
   "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "un-doc",
+          "un-library"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "un-doc",
+          "un-library"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "un-doc",
+          "un-library"
+        ]
+      }
+    ],
     "discovered_via": "UN Digital Library; successor to 79/62.",
     "search_dates": [
       "2026-11-23"

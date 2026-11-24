@@ -41,7 +41,7 @@ documentation and generated build agree.
 ```bash
 make test                                  # build + integrity/determinism tests
 make build                                 # regenerate build/
-python3 tools/validate.py                  # schema and corpus validation
+python3 tools/build.py --check              # schema and corpus validation
 python3 tools/acquire.py --check           # verify stored original hashes
 python3 tools/segment.py <id> --mode ...   # regenerate units after text changes
 python3 tools/make_manifest.py             # regenerate manifests after file changes

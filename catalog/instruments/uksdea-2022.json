@@ -1,48 +1,202 @@
 {
-  "id": "uksdea-2022",
-  "title": {"official": "Digital Economy Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Singapore", "short": "UK-Singapore Digital Economy Agreement (UKSDEA)"},
-  "category": "agreement_ai_provisions",
-  "instrument_type": "agreement",
   "binding_status": "binding",
-  "status": "in_force",
-  "issuer": [{"name": "United Kingdom and Singapore", "role": "co_issuer"}],
-  "relevance": {
-    "reason": "A bilateral digital-economy agreement containing a dedicated AI and emerging-technologies article. The AI provision is cooperative and best-efforts, but it expressly addresses AI governance, algorithmic transparency and bias.",
-    "ai_provisions": ["Article 8.61-R — AI and emerging technologies: domestic governance and policy frameworks, international principles, cooperation on AI challenges including human diversity and unintended biases, technical standards and algorithmic transparency"],
-    "excluded_scope": "The AI article does not create substantive market-access rules, prohibitions or enforcement obligations."
+  "category": "agreement_ai_provisions",
+  "dates": {
+    "entered_into_force": "2022-06-14",
+    "notes": "Signed in Singapore on 25 February 2022; entered into force on 14 June 2022.",
+    "signed": "2022-02-25",
+    "verified_on": "2026-11-23"
   },
-  "dates": {"signed": "2022-02-25", "entered_into_force": "2022-06-14", "verified_on": "2026-11-23", "notes": "Signed in Singapore on 25 February 2022; entered into force on 14 June 2022."},
-  "status_note": "In force between the United Kingdom and Singapore.",
-  "parties": {
-    "as_of": "2026-11-23",
-    "summary": "Two Parties: the United Kingdom and Singapore.",
-    "source_ids": ["mti-page", "uk-treaty"],
-    "entries": [
-      {"party": "United Kingdom", "signature": "2022-02-25", "entry_into_force": "2022-06-14", "notes": []},
-      {"party": "Singapore", "signature": "2022-02-25", "entry_into_force": "2022-06-14", "notes": []}
-    ],
-    "reservations": [], "declarations": [], "objections": [], "notifications": [], "withdrawals": [],
-    "unknowns": ["No depositary register was consulted; dates rely on the UK treaty series and Singapore MTI page."]
-  },
-  "languages": {"authentic": ["en"], "translations": [], "note": "English text acquired; no multilingual authentic-text clause verified."},
-  "sources": [
-    {"id": "uk-treaty", "url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf", "publisher": "UK Foreign, Commonwealth and Development Office", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "language": "en", "note": "UK Treaty Series No. 22 (2023), CP 912; records signature 25 February 2022 and entry into force 14 June 2022."},
-    {"id": "mti-page", "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea", "publisher": "Ministry of Trade and Industry, Singapore", "kind": "official_secondary", "accessed": "2026-11-23", "note": "Confirms signature and entry into force and identifies AI as a cooperative element."}
+  "gaps": [
+    "Full text not stored; only metadata verified.",
+    "AI article is cooperative, not prescriptive.",
+    "No depositary record consulted.",
+    "No assessment of the UK-Singapore AI cooperation beyond the treaty article."
   ],
-  "rights": {"status": "public_official_text", "licence": "Crown copyright / Government of Singapore terms", "note": "Official treaty text. The UK treaty series is subject to Crown copyright; stored metadata only.", "url": "https://www.gov.uk/government/publications/uksingapore-digital-economy-agreement-ts-no222023"},
-  "verification": {
-    "level": "metadata_verified",
-    "checks": [
-      {"check": "Signature and entry-into-force dates checked on the UK Treaty Series PDF and Singapore MTI page.", "result": "Signed 25 February 2022; in force 14 June 2022.", "date": "2026-11-23"},
-      {"check": "AI article number and content checked in secondary official-facing analysis and the ADB comparative table.", "result": "Article 8.61-R; cooperative AI and emerging-technology provisions.", "date": "2026-11-23"}
+  "id": "uksdea-2022",
+  "instrument_type": "agreement",
+  "issuer": [
+    {
+      "name": "United Kingdom and Singapore",
+      "role": "co_issuer"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
     ],
-    "notes": "Metadata verified; the full treaty text is not stored. The precise wording of Article 8.61-R should be checked against the UK Treaty Series PDF before quotation."
+    "note": "English text acquired; no multilingual authentic-text clause verified.",
+    "translations": []
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-23",
+    "counts": {
+      "parties": {
+        "basis": "verified_total",
+        "total": 2,
+        "verified": 2
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      },
+      "signatures": {
+        "basis": "verified_total",
+        "total": 2,
+        "verified": 2
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "entry_into_force": "2022-06-14",
+        "notes": [],
+        "party": "United Kingdom",
+        "role": "signatory",
+        "signature": "2022-02-25"
+      },
+      {
+        "entry_into_force": "2022-06-14",
+        "notes": [],
+        "party": "Singapore",
+        "role": "signatory",
+        "signature": "2022-02-25"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "mti-page",
+      "uk-treaty"
+    ],
+    "summary": "Two Parties: the United Kingdom and Singapore.",
+    "unknowns": [
+      "No depositary register was consulted; dates rely on the UK treaty series and Singapore MTI page."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "uk-treaty",
+          "mti-page"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "uk-treaty",
+          "mti-page"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "uk-treaty",
+          "mti-page"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "parties",
+        "locator": "parties.entries, parties.counts and parties.as_of",
+        "method": "metadata_only",
+        "source_ids": [
+          "mti-page",
+          "uk-treaty"
+        ]
+      }
+    ],
+    "discovered_via": "UK treaty series and Singapore MTI digital-economy pages; article number cross-checked in an ADB comparative study used only as a finding aid.",
+    "search_dates": [
+      "2026-11-23"
+    ]
   },
   "related": [
-    {"id": "depa-2020", "relation": "related", "note": "Parallel digital-economy agreement with an AI article."},
-    {"id": "sadea-2020", "relation": "related", "note": "Parallel digital-economy agreement with an AI article."},
-    {"id": "ksdpa-2022", "relation": "related", "note": "Parallel digital partnership agreement with an AI article."}
+    {
+      "id": "depa-2020",
+      "note": "Parallel digital-economy agreement with an AI article.",
+      "relation": "related"
+    },
+    {
+      "id": "sadea-2020",
+      "note": "Parallel digital-economy agreement with an AI article.",
+      "relation": "related"
+    },
+    {
+      "id": "ksdpa-2022",
+      "note": "Parallel digital partnership agreement with an AI article.",
+      "relation": "related"
+    }
   ],
-  "gaps": ["Full text not stored; only metadata verified.", "AI article is cooperative, not prescriptive.", "No depositary record consulted.", "No assessment of the UK-Singapore AI cooperation beyond the treaty article."],
-  "provenance": {"discovered_via": "UK treaty series and Singapore MTI digital-economy pages; article number cross-checked in an ADB comparative study used only as a finding aid.", "search_dates": ["2026-11-23"]}
+  "relevance": {
+    "ai_provisions": [
+      "Article 8.61-R — AI and emerging technologies: domestic governance and policy frameworks, international principles, cooperation on AI challenges including human diversity and unintended biases, technical standards and algorithmic transparency"
+    ],
+    "excluded_scope": "The AI article does not create substantive market-access rules, prohibitions or enforcement obligations.",
+    "reason": "A bilateral digital-economy agreement containing a dedicated AI and emerging-technologies article. The AI provision is cooperative and best-efforts, but it expressly addresses AI governance, algorithmic transparency and bias."
+  },
+  "rights": {
+    "licence": "Crown copyright / Government of Singapore terms",
+    "note": "Official treaty text. The UK treaty series is subject to Crown copyright; stored metadata only.",
+    "status": "public_official_text",
+    "url": "https://www.gov.uk/government/publications/uksingapore-digital-economy-agreement-ts-no222023"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "uk-treaty",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "UK Treaty Series No. 22 (2023), CP 912; records signature 25 February 2022 and entry into force 14 June 2022.",
+      "publisher": "UK Foreign, Commonwealth and Development Office",
+      "url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf"
+    },
+    {
+      "accessed": "2026-11-23",
+      "id": "mti-page",
+      "kind": "official_secondary",
+      "note": "Confirms signature and entry into force and identifies AI as a cooperative element.",
+      "publisher": "Ministry of Trade and Industry, Singapore",
+      "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force between the United Kingdom and Singapore.",
+  "title": {
+    "official": "Digital Economy Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Singapore",
+    "short": "UK-Singapore Digital Economy Agreement (UKSDEA)"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Signature and entry-into-force dates checked on the UK Treaty Series PDF and Singapore MTI page.",
+        "date": "2026-11-23",
+        "result": "Signed 25 February 2022; in force 14 June 2022."
+      },
+      {
+        "check": "AI article number and content checked in secondary official-facing analysis and the ADB comparative table.",
+        "date": "2026-11-23",
+        "result": "Article 8.61-R; cooperative AI and emerging-technology provisions."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified; the full treaty text is not stored. The precise wording of Article 8.61-R should be checked against the UK Treaty Series PDF before quotation."
+  }
 }

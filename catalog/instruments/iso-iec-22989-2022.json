@@ -1,34 +1,121 @@
 {
-  "id": "iso-iec-22989-2022",
-  "title": {"official": "ISO/IEC 22989:2022 Information technology — Artificial intelligence — Artificial intelligence concepts and terminology", "short": "ISO/IEC 22989:2022"},
-  "category": "technical_standard",
-  "instrument_type": "standard",
   "binding_status": "non_binding",
-  "status": "adopted",
-  "issuer": [{"name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)", "role": "issuer", "url": "https://www.iso.org/committee/6794475.html"}],
-  "relevance": {
-    "reason": "International terminology and conceptual framework for AI, widely used as a reference for definitions in standards and policy. It is a voluntary technical standard and is available free of charge from ISO.",
-    "ai_provisions": ["Whole standard — AI concepts, terminology and system lifecycle"],
-    "excluded_scope": "Terminology standard; no legal obligations."
+  "category": "technical_standard",
+  "dates": {
+    "notes": "Publication month July 2022; exact day not verified. Edition 1, 60 pages. ISO lists the standard at CHF 0.",
+    "published": null,
+    "verified_on": "2026-11-23"
   },
-  "dates": {"published": null, "verified_on": "2026-11-23", "notes": "Publication month July 2022; exact day not verified. Edition 1, 60 pages. ISO lists the standard at CHF 0."},
-  "status_note": "Published international standard. Voluntary.",
-  "languages": {"authentic": ["en"], "translations": ["fr"], "note": "ISO catalogue lists English and French; French corrected version dated 2025-12."},
-  "sources": [
-    {"id": "iso-catalogue", "url": "https://www.iso.org/standard/74296.html", "publisher": "ISO", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official catalogue page: published July 2022, edition 1, 60 pages, CHF 0."}
+  "gaps": [
+    "Not downloaded; metadata only.",
+    "Voluntary and not law.",
+    "Terminology may differ from treaty definitions, including the CoE Convention and the EU AI Act."
   ],
-  "rights": {"status": "restricted", "licence": "ISO copyright; free download", "note": "Available at no charge from ISO but still subject to ISO copyright. Metadata and link only.", "url": "https://www.iso.org/standard/74296.html"},
-  "verification": {
-    "level": "metadata_verified",
-    "checks": [
-      {"check": "Title, edition, publication month, page count and price checked on the ISO catalogue page.", "result": "ISO/IEC 22989:2022, edition 1, 2022-07, 60 pages, CHF 0.", "date": "2026-11-23"},
-      {"check": "Legal nature checked: voluntary technical standard.", "result": "Not a treaty.", "date": "2026-11-23"}
+  "id": "iso-iec-22989-2022",
+  "instrument_type": "standard",
+  "issuer": [
+    {
+      "name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence)",
+      "role": "issuer",
+      "url": "https://www.iso.org/committee/6794475.html"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
     ],
-    "notes": "Metadata only; the standard was not downloaded."
+    "note": "ISO catalogue lists English and French; French corrected version dated 2025-12.",
+    "translations": [
+      "fr"
+    ]
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "iso-catalogue"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "iso-catalogue"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "iso-catalogue"
+        ]
+      }
+    ],
+    "discovered_via": "ISO catalogue and JTC 1/SC 42 list.",
+    "search_dates": [
+      "2026-11-23"
+    ]
   },
   "related": [
-    {"id": "iso-iec-23053-2022", "relation": "related", "note": "Companion framework for AI systems using machine learning."}
+    {
+      "id": "iso-iec-23053-2022",
+      "note": "Companion framework for AI systems using machine learning.",
+      "relation": "related"
+    }
   ],
-  "gaps": ["Not downloaded; metadata only.", "Voluntary and not law.", "Terminology may differ from treaty definitions, including the CoE Convention and the EU AI Act."],
-  "provenance": {"discovered_via": "ISO catalogue and JTC 1/SC 42 list.", "search_dates": ["2026-11-23"]}
+  "relevance": {
+    "ai_provisions": [
+      "Whole standard — AI concepts, terminology and system lifecycle"
+    ],
+    "excluded_scope": "Terminology standard; no legal obligations.",
+    "reason": "International terminology and conceptual framework for AI, widely used as a reference for definitions in standards and policy. It is a voluntary technical standard and is available free of charge from ISO."
+  },
+  "rights": {
+    "licence": "ISO copyright; free download",
+    "note": "Available at no charge from ISO but still subject to ISO copyright. Metadata and link only.",
+    "status": "restricted",
+    "url": "https://www.iso.org/standard/74296.html"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "iso-catalogue",
+      "kind": "official_primary",
+      "note": "Official catalogue page: published July 2022, edition 1, 60 pages, CHF 0.",
+      "publisher": "ISO",
+      "url": "https://www.iso.org/standard/74296.html"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Published international standard. Voluntary.",
+  "title": {
+    "official": "ISO/IEC 22989:2022 Information technology — Artificial intelligence — Artificial intelligence concepts and terminology",
+    "short": "ISO/IEC 22989:2022"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Title, edition, publication month, page count and price checked on the ISO catalogue page.",
+        "date": "2026-11-23",
+        "result": "ISO/IEC 22989:2022, edition 1, 2022-07, 60 pages, CHF 0."
+      },
+      {
+        "check": "Legal nature checked: voluntary technical standard.",
+        "date": "2026-11-23",
+        "result": "Not a treaty."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata only; the standard was not downloaded."
+  }
 }

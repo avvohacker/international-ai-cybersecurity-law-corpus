@@ -1,13 +1,20 @@
 {
-  "id": "brics-ai-statement-2025",
-  "title": {
-    "official": "BRICS Leaders' Statement on the Global Governance of Artificial Intelligence",
-    "short": "BRICS AI Statement"
-  },
-  "category": "non_binding_instrument",
-  "instrument_type": "declaration",
   "binding_status": "non_binding",
-  "status": "adopted",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2025-07-06",
+    "notes": "Adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The official text is a leaders' statement; it has no signature, ratification, depositary or entry-into-force clause.",
+    "verified_on": "2026-11-24"
+  },
+  "gaps": [
+    "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "No individual signature block; the 11 entries are the BRICS member States, not individual signatories.",
+    "No follow-up mechanism, review cycle or implementation reporting was verified.",
+    "The relationship between this statement and the later WAICO Agreement is political, not institutional; no formal linkage was verified.",
+    "No full text is stored; the record is metadata-only."
+  ],
+  "id": "brics-ai-statement-2025",
+  "instrument_type": "declaration",
   "issuer": [
     {
       "name": "BRICS Leaders, 17th BRICS Summit, Rio de Janeiro",
@@ -25,8 +32,239 @@
       "url": "https://brics.br/en/about-the-brics"
     }
   ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "English text published by the 2025 BRICS Presidency and the Brazilian Ministry of Foreign Affairs. Other language versions were not verified.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A leaders' statement with no signature block, ratification, depositary, entry-into-force clause or institutional follow-up. It is a collective political text, not a treaty.",
+    "source_ids": [
+      "brics-presidency-pdf",
+      "brazil-mfa-page"
+    ]
+  },
+  "parties": {
+    "act": "collective_issue",
+    "as_of": "2026-07-06",
+    "counts": {
+      "members": {
+        "basis": "declared_total",
+        "note": "11 member States are listed by the 2025 presidency. The statement has no signature block, so this is a count of member States, not of individually attributed issuers.",
+        "source_ids": [
+          "brics-members"
+        ],
+        "total": 11,
+        "verified": 11
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      },
+      "signatures": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "notes": [
+          "Federative Republic of Brazil — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "Brazil",
+        "role": "member_state"
+      },
+      {
+        "notes": [
+          "Russian Federation — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "Russian Federation",
+        "role": "member_state"
+      },
+      {
+        "notes": [
+          "Republic of India — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "India",
+        "role": "member_state"
+      },
+      {
+        "notes": [
+          "People's Republic of China — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "China",
+        "role": "member_state"
+      },
+      {
+        "notes": [
+          "Republic of South Africa — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "South Africa",
+        "role": "member_state"
+      },
+      {
+        "notes": [
+          "Kingdom of Saudi Arabia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "Saudi Arabia",
+        "role": "member_state"
+      },
+      {
+        "notes": [
+          "Arab Republic of Egypt — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "Egypt",
+        "role": "member_state"
+      },
+      {
+        "notes": [
+          "United Arab Emirates — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "United Arab Emirates",
+        "role": "member_state"
+      },
+      {
+        "notes": [
+          "Federal Democratic Republic of Ethiopia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "Ethiopia",
+        "role": "member_state"
+      },
+      {
+        "notes": [
+          "Republic of Indonesia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "Indonesia",
+        "role": "member_state"
+      },
+      {
+        "notes": [
+          "Islamic Republic of Iran — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+        ],
+        "party": "Iran",
+        "role": "member_state"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "brics-presidency-pdf",
+      "brazil-mfa-page",
+      "brics-members"
+    ],
+    "summary": "The statement was issued collectively at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The 2025 presidency lists 11 member States: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The official text has no individual signature block, so the record lists the member States and does not attribute a separate signature or a separate act of co-issuance to any of them. Saudi participation is recorded inconsistently by official sources: the presidency lists the Kingdom as a member, while the Saudi Press Agency reported on 7 July 2025 that the Foreign Minister led the delegation 'as an invited country to join the BRICS group'. The record states the conflict and does not resolve it by counting ten.",
+    "unknowns": [
+      "The official text is a collective leaders' statement and has no individual signature block. The 11 entries are the member States listed by the presidency, not individual signatories; individual co-issuance is not evidenced by the document.",
+      "Saudi Arabia is listed as a member by the 2025 presidency, but the Saudi Press Agency reported on 7 July 2025 that the Foreign Minister led the Kingdom's delegation 'as an invited country to join the BRICS group'. No document-specific attribution resolves the conflict; the record does not substitute ten for eleven.",
+      "The statement creates no depositary, ratification, accession or withdrawal record.",
+      "No follow-up mechanism, reporting cycle or review conference was verified.",
+      "The relationship between this statement and the later WAICO Agreement is political, not institutional; no formal linkage was verified."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-24",
+        "field": "status",
+        "locator": "Statement text and Brazilian MFA page",
+        "method": "official_page_read",
+        "source_ids": [
+          "brics-presidency-pdf",
+          "brazil-mfa-page"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "parties",
+        "locator": "Presidency membership list; SPA report of 7 July 2025",
+        "method": "official_page_read",
+        "note": "11 listed member States; individual co-issuance not evidenced; Saudi status contested.",
+        "source_ids": [
+          "brics-members",
+          "spa-saudi-summit"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "counts",
+        "locator": "About the BRICS, member list",
+        "method": "official_page_read",
+        "source_ids": [
+          "brics-members"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "legal_nature",
+        "locator": "Full text: no signature, ratification or depositary clause",
+        "method": "official_text_read",
+        "source_ids": [
+          "brics-presidency-pdf"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "brics-presidency-pdf",
+          "brazil-mfa-page",
+          "brics-members",
+          "spa-saudi-summit",
+          "congresso-nacional-brics"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "brics-presidency-pdf",
+          "brazil-mfa-page",
+          "brics-members",
+          "spa-saudi-summit",
+          "congresso-nacional-brics"
+        ]
+      }
+    ],
+    "discovered_via": "Audit of other international AI instruments after the summit-series and WAICO reviews; the official BRICS Presidency PDF and the Brazilian MFA page were read.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "china-global-ai-governance-initiative-2023",
+      "note": "Both documents assert sovereignty and a UN-centred framework; the BRICS statement is a collective leaders' text, whereas China's initiative is a unilateral government proposal.",
+      "relation": "related"
+    },
+    {
+      "id": "waico-establishment-agreement-2026",
+      "note": "The BRICS statement precedes WAICO by a year and expresses a similar Global South capacity-building position, but it creates no institution and has no formal link to WAICO.",
+      "relation": "policy_line"
+    },
+    {
+      "id": "new-delhi-declaration-2026",
+      "note": "Both are non-binding summit statements with a development and access agenda; New Delhi is a wider summit declaration, while the BRICS statement is a coalition statement.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-79-1",
+      "note": "The UN's Global Digital Compact is the universal digital-cooperation framework; the BRICS statement is a separate coalition text that calls for the UN to be at the core of AI governance.",
+      "relation": "related"
+    }
+  ],
   "relevance": {
-    "reason": "The first stand-alone BRICS leaders' statement on the global governance of artificial intelligence, adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025 by the leaders of the 11 BRICS member States. It sets out a collective position centred on digital sovereignty, the right to development, the UN Charter, capacity building and the concerns of the Global South. It is a political statement, not a treaty: it creates no legal obligation, ratification, depositary or monitoring. It is included because it is a distinct coalition instrument that the three-pole reading would otherwise miss, and because it documents the China-Global South diffusion position before WAICO was established.",
     "ai_provisions": [
       "Digital sovereignty and the right to development — all countries may adopt their own AI regulatory frameworks, develop AI capacities and pursue technological autonomy within their jurisdictions.",
       "Global governance under the UN Charter — AI governance must respect national sovereignty, be representative, development-oriented, accessible and inclusive, and place the United Nations at its core.",
@@ -36,207 +274,101 @@
       "Risk mitigation — collective action on safety, transparency, accountability and the risks arising from AI, without creating binding obligations.",
       "International cooperation — the statement warns that a proliferation of initiatives and diverging views may aggravate asymmetries and the legitimacy gap in global digital governance."
     ],
-    "excluded_scope": "A political statement by BRICS leaders. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. It does not establish an institution or a follow-up mechanism. National implementation is not assessed."
+    "excluded_scope": "A political statement by BRICS leaders. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. It does not establish an institution or a follow-up mechanism. National implementation is not assessed.",
+    "reason": "The first stand-alone BRICS leaders' statement on the global governance of artificial intelligence, adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025 by the leaders of the 11 BRICS member States. It sets out a collective position centred on digital sovereignty, the right to development, the UN Charter, capacity building and the concerns of the Global South. It is a political statement, not a treaty: it creates no legal obligation, ratification, depositary or monitoring. It is included because it is a distinct coalition instrument that the three-pole reading would otherwise miss, and because it documents the China-Global South diffusion position before WAICO was established."
   },
-  "dates": {
-    "adopted": "2025-07-06",
-    "verified_on": "2026-11-23",
-    "notes": "Adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The official text is a leaders' statement; it has no signature, ratification, depositary or entry-into-force clause."
-  },
-  "status_note": "Non-binding political statement, not a treaty. It was issued collectively by the leaders of the 11 BRICS member States at the Rio de Janeiro summit; the official text has no individual signature block. The 11 issuing States are identified from the official BRICS membership page, not from a signature list. No ratification, depositary, monitoring or enforcement is established. It is a coalition statement, not an instrument of the BRICS organization with legal personality.",
-  "parties": {
-    "as_of": "2025-07-06",
-    "summary": "Issued collectively by the leaders of the 11 BRICS member States at the 17th BRICS Summit: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The official statement has no individual signature block; the entries record the issuing States, not individual signatures.",
-    "source_ids": [
-      "brics-presidency-pdf",
-      "brazil-mfa-page",
-      "brics-members"
-    ],
-    "signatories_total": 11,
-    "ratifications_total": 0,
-    "entries": [
-      {
-        "party": "Brazil",
-        "notes": [
-          "Federative Republic of Brazil — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      },
-      {
-        "party": "Russian Federation",
-        "notes": [
-          "Russian Federation — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      },
-      {
-        "party": "India",
-        "notes": [
-          "Republic of India — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      },
-      {
-        "party": "China",
-        "notes": [
-          "People's Republic of China — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      },
-      {
-        "party": "South Africa",
-        "notes": [
-          "Republic of South Africa — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      },
-      {
-        "party": "Saudi Arabia",
-        "notes": [
-          "Kingdom of Saudi Arabia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      },
-      {
-        "party": "Egypt",
-        "notes": [
-          "Arab Republic of Egypt — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      },
-      {
-        "party": "United Arab Emirates",
-        "notes": [
-          "United Arab Emirates — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      },
-      {
-        "party": "Ethiopia",
-        "notes": [
-          "Federal Democratic Republic of Ethiopia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      },
-      {
-        "party": "Indonesia",
-        "notes": [
-          "Republic of Indonesia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      },
-      {
-        "party": "Iran",
-        "notes": [
-          "Islamic Republic of Iran — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
-        ]
-      }
-    ],
-    "reservations": [],
-    "declarations": [],
-    "objections": [],
-    "notifications": [],
-    "withdrawals": [],
-    "unknowns": [
-      "The official text is a collective leaders' statement and has no individual signature block; the 11 entries are the BRICS member States identified on the official BRICS page, not individual signatories.",
-      "The statement creates no depositary, ratification, accession or withdrawal record.",
-      "No follow-up mechanism, reporting cycle or review conference was verified.",
-      "The relationship between this statement and the later WAICO Agreement is political, not institutional; no formal linkage was verified."
-    ]
-  },
-  "languages": {
-    "authentic": [
-      "en"
-    ],
-    "translations": [],
-    "note": "English text published by the 2025 BRICS Presidency and the Brazilian Ministry of Foreign Affairs. Other language versions were not verified."
+  "rights": {
+    "licence": "BRICS 2025 Presidency / Government of Brazil official publication",
+    "note": "Official government publication. No full text is stored in this corpus; the statement is read from the official PDF and MFA page.",
+    "status": "public_official_text"
   },
   "sources": [
     {
-      "id": "brics-presidency-pdf",
-      "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
-      "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
-      "kind": "official_primary",
       "accessed": "2026-11-23",
       "http_status": null,
+      "id": "brics-presidency-pdf",
+      "kind": "official_primary",
       "language": "en",
-      "note": "Official PDF of the BRICS Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The host did not resolve from this environment during the 23 November 2026 audit; the text was read earlier and the Brazilian MFA page links to it."
+      "note": "Official PDF of the BRICS Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The host did not resolve by DNS from this environment during the 23 and 24 November 2026 audits; the search index returned the document, so the site exists, but the URL could not be fetched directly from this VM.",
+      "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
+      "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
     },
     {
-      "id": "brazil-mfa-page",
-      "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial",
-      "publisher": "Ministry of Foreign Affairs, Federative Republic of Brazil",
-      "kind": "official_primary",
       "accessed": "2026-11-23",
       "http_status": 200,
+      "id": "brazil-mfa-page",
+      "kind": "official_primary",
       "language": "pt",
-      "note": "Official Brazilian MFA page for the statement, with a link to the English text; confirms the date and the 17th BRICS Summit setting."
+      "note": "Official Brazilian MFA page for the statement, with a link to the English text; confirms the date and the 17th BRICS Summit setting.",
+      "publisher": "Ministry of Foreign Affairs, Federative Republic of Brazil",
+      "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial"
     },
     {
-      "id": "brics-members",
-      "url": "https://brics.br/en/about-the-brics",
-      "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
-      "kind": "official_primary",
       "accessed": "2026-11-23",
       "http_status": null,
+      "id": "brics-members",
+      "kind": "official_primary",
       "language": "en",
-      "note": "Official page listing the 11 BRICS member States: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The host did not resolve from this environment during the 23 November 2026 audit; the page was read through the extraction tool."
+      "note": "Official page listing the 11 BRICS member States: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The host did not resolve by DNS from this environment during the 23 and 24 November 2026 audits; the search index returned the page content, so the site exists, but the URL could not be fetched directly from this VM.",
+      "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
+      "url": "https://brics.br/en/about-the-brics"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "spa-saudi-summit",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Report of 7 July 2025: on behalf of the Crown Prince, Foreign Minister Prince Faisal bin Farhan arrived in Rio de Janeiro to lead the Kingdom's delegation at the 17th BRICS Summit 'as an invited country to join the BRICS group'. It does not state that Saudi Arabia issued or signed the AI statement.",
+      "publisher": "Saudi Press Agency",
+      "url": "https://www.spa.gov.sa/en/N2353352"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "congresso-nacional-brics",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "Page of the 11th BRICS Parliamentary Forum listing 11 member countries, including Saudi Arabia, and nine partner countries. It confirms the presidency's membership list; it says nothing about the AI statement's attribution.",
+      "publisher": "Congresso Nacional do Brasil",
+      "url": "https://www.congressonacional.leg.br/brics/en/"
     }
   ],
-  "rights": {
-    "status": "public_official_text",
-    "licence": "BRICS 2025 Presidency / Government of Brazil official publication",
-    "note": "Official government publication. No full text is stored in this corpus; the statement is read from the official PDF and MFA page."
+  "status": "adopted",
+  "status_note": "Non-binding political statement, not a treaty. It was issued collectively by the leaders of the BRICS member States at the Rio de Janeiro summit; the official text has no individual signature block. The record therefore counts 11 listed member States, not 11 signatories and not 11 individually evidenced co-issuers. The 2025 presidency lists Saudi Arabia as a member; the Saudi Press Agency described the Kingdom on 7 July 2025 as an invited country and said the Foreign Minister led its delegation. No document-specific list of issuing governments was located. No ratification, depositary, monitoring or enforcement is established.",
+  "title": {
+    "official": "BRICS Leaders' Statement on the Global Governance of Artificial Intelligence",
+    "short": "BRICS AI Statement"
   },
   "verification": {
-    "level": "metadata_verified",
     "checks": [
       {
         "check": "Statement text read on the official BRICS Presidency PDF.",
-        "result": "The text is a leaders' statement, with sections on digital sovereignty, the UN Charter, market regulation, sustainable development, capacity building and risk mitigation; it has no signature or ratification clause.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "The text is a leaders' statement, with sections on digital sovereignty, the UN Charter, market regulation, sustainable development, capacity building and risk mitigation; it has no signature or ratification clause."
       },
       {
         "check": "Date and summit setting checked on the Brazilian MFA page.",
-        "result": "The Brazilian Ministry of Foreign Affairs page confirms the statement was issued at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "The Brazilian Ministry of Foreign Affairs page confirms the statement was issued at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025."
       },
       {
         "check": "Party-level data checked against the official BRICS membership page.",
-        "result": "The official BRICS page lists 11 member States; the statement is collective and has no individual signature block. The record lists the 11 issuing States, not individual signatures.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "The official BRICS page lists 11 member States; the statement is collective and has no individual signature block. The record counts the 11 listed member States at a collective issue, not individually evidenced issuers."
       },
       {
         "check": "Legal nature checked against the text and official descriptions.",
-        "result": "The instrument is a political statement, not a treaty; it creates no binding obligation, depositary, ratification or dispute settlement.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "The instrument is a political statement, not a treaty; it creates no binding obligation, depositary, ratification or dispute settlement."
+      },
+      {
+        "check": "Saudi participation checked against the Saudi Press Agency and the presidency's membership list.",
+        "date": "2026-11-24",
+        "result": "The presidency lists Saudi Arabia among 11 member States; SPA reported on 7 July 2025 that the Foreign Minister led the delegation as an invited country to join the group. No document-specific list of issuers was located. The conflict is recorded; the count remains 11 listed member States, not 11 individually evidenced issuers."
       }
     ],
-    "notes": "Metadata verified from the official BRICS Presidency PDF, the Brazilian MFA page and the official BRICS membership page. The record is metadata-only: no full text is stored. The statement has no individual signature block; the 11 entries are the member States that issued it collectively."
-  },
-  "related": [
-    {
-      "id": "china-global-ai-governance-initiative-2023",
-      "relation": "related",
-      "note": "Both documents assert sovereignty and a UN-centred framework; the BRICS statement is a collective leaders' text, whereas China's initiative is a unilateral government proposal."
-    },
-    {
-      "id": "waico-establishment-agreement-2026",
-      "relation": "policy_line",
-      "note": "The BRICS statement precedes WAICO by a year and expresses a similar Global South capacity-building position, but it creates no institution and has no formal link to WAICO."
-    },
-    {
-      "id": "new-delhi-declaration-2026",
-      "relation": "related",
-      "note": "Both are non-binding summit statements with a development and access agenda; New Delhi is a wider summit declaration, while the BRICS statement is a coalition statement."
-    },
-    {
-      "id": "un-ga-res-79-1",
-      "relation": "related",
-      "note": "The UN's Global Digital Compact is the universal digital-cooperation framework; the BRICS statement is a separate coalition text that calls for the UN to be at the core of AI governance."
-    }
-  ],
-  "gaps": [
-    "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
-    "No individual signature block; the 11 entries are the BRICS member States, not individual signatories.",
-    "No follow-up mechanism, review cycle or implementation reporting was verified.",
-    "The relationship between this statement and the later WAICO Agreement is political, not institutional; no formal linkage was verified.",
-    "No full text is stored; the record is metadata-only."
-  ],
-  "provenance": {
-    "discovered_via": "Audit of other international AI instruments after the summit-series and WAICO reviews; the official BRICS Presidency PDF and the Brazilian MFA page were read.",
-    "search_dates": [
-      "2026-11-23"
-    ]
+    "level": "metadata_verified",
+    "notes": "Metadata verified from the official BRICS Presidency PDF, the Brazilian MFA page and the official BRICS membership page. The record is metadata-only: no full text is stored. The statement has no individual signature block; the 11 entries are the member States listed by the presidency. Saudi participation is recorded inconsistently by official sources and the conflict is documented rather than resolved by inference."
   }
 }

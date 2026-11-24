@@ -1,13 +1,21 @@
 {
-  "id": "new-delhi-declaration-2026",
-  "title": {
-    "official": "AI Impact Summit Declaration, New Delhi",
-    "short": "New Delhi Declaration on AI Impact"
-  },
-  "category": "non_binding_instrument",
-  "instrument_type": "declaration",
   "binding_status": "non_binding",
-  "status": "adopted",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2026-02-19",
+    "notes": "Adopted at the AI Impact Summit in New Delhi on 19 February 2026; the summit ran from 18 to 19 February 2026. The Press Information Bureau's annex states that the list is 'as of 5th March 2026' and names 92 endorsers; the Ministry of External Affairs page was last updated on 21 February 2026 and lists 91, without Colombia. The text has no signature, ratification, depositary or entry-into-force clause.",
+    "verified_on": "2026-11-23"
+  },
+  "gaps": [
+    "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "Two official lists disagree: the MEA page of 21 February 2026 lists 91 and omits Colombia; the PIB annex as of 5 March 2026 lists 92 and includes Colombia. No official explanation was located.",
+    "No follow-up mechanism, review cycle or implementation reporting was verified.",
+    "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate instrument and are not catalogued here.",
+    "The declaration's relationship to the UN Global Dialogue on AI Governance and to the Paris and Seoul texts is political, not institutional; no formal linkage was verified.",
+    "No full text is stored; the record is metadata-only."
+  ],
+  "id": "new-delhi-declaration-2026",
+  "instrument_type": "declaration",
   "issuer": [
     {
       "name": "Government of India, Ministry of External Affairs, and participating States and international organisations",
@@ -20,8 +28,516 @@
       "url": "https://impact.indiaai.gov.in/outcome-resources"
     }
   ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "English text published by the Ministry of External Affairs. The preamble includes the Sanskrit principle 'Sarvajan Hitaya, Sarvajan Sukhaya'; no other authentic-language version was verified.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A summit declaration adopted by acclamation and listed with endorsers; it contains no signature, ratification, depositary or entry-into-force clause.",
+    "source_ids": [
+      "pib-summit"
+    ]
+  },
+  "parties": {
+    "act": "endorsement",
+    "as_of": "2026-03-05",
+    "counts": {
+      "endorsements": {
+        "basis": "declared_total",
+        "source_ids": [
+          "pib-summit"
+        ],
+        "total": 92,
+        "verified": 92
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "party": "Albania",
+        "role": "endorser"
+      },
+      {
+        "party": "Armenia",
+        "role": "endorser"
+      },
+      {
+        "party": "Australia",
+        "role": "endorser"
+      },
+      {
+        "party": "Austria",
+        "role": "endorser"
+      },
+      {
+        "party": "Bangladesh",
+        "role": "endorser"
+      },
+      {
+        "party": "Belgium",
+        "role": "endorser"
+      },
+      {
+        "party": "Bhutan",
+        "role": "endorser"
+      },
+      {
+        "party": "Bolivia",
+        "role": "endorser"
+      },
+      {
+        "party": "Botswana",
+        "role": "endorser"
+      },
+      {
+        "party": "Brazil",
+        "role": "endorser"
+      },
+      {
+        "party": "Bulgaria",
+        "role": "endorser"
+      },
+      {
+        "party": "Cambodia",
+        "role": "endorser"
+      },
+      {
+        "party": "Canada",
+        "role": "endorser"
+      },
+      {
+        "party": "Chile",
+        "role": "endorser"
+      },
+      {
+        "party": "China",
+        "role": "endorser"
+      },
+      {
+        "party": "Croatia",
+        "role": "endorser"
+      },
+      {
+        "notes": [
+          "Included in the PIB list of 5 March 2026; absent from the MEA page updated 21 February 2026."
+        ],
+        "party": "Colombia",
+        "role": "endorser"
+      },
+      {
+        "party": "Costa Rica",
+        "role": "endorser"
+      },
+      {
+        "party": "Cuba",
+        "role": "endorser"
+      },
+      {
+        "party": "Cyprus",
+        "role": "endorser"
+      },
+      {
+        "party": "Czech Republic",
+        "role": "endorser"
+      },
+      {
+        "party": "Denmark",
+        "role": "endorser"
+      },
+      {
+        "party": "Egypt",
+        "role": "endorser"
+      },
+      {
+        "party": "Estonia",
+        "role": "endorser"
+      },
+      {
+        "party": "Ethiopia",
+        "role": "endorser"
+      },
+      {
+        "party": "Fiji",
+        "role": "endorser"
+      },
+      {
+        "party": "Finland",
+        "role": "endorser"
+      },
+      {
+        "party": "France",
+        "role": "endorser"
+      },
+      {
+        "party": "Gambia",
+        "role": "endorser"
+      },
+      {
+        "party": "Germany",
+        "role": "endorser"
+      },
+      {
+        "party": "Greece",
+        "role": "endorser"
+      },
+      {
+        "party": "Guatemala",
+        "role": "endorser"
+      },
+      {
+        "party": "Guyana",
+        "role": "endorser"
+      },
+      {
+        "party": "Hungary",
+        "role": "endorser"
+      },
+      {
+        "party": "Iceland",
+        "role": "endorser"
+      },
+      {
+        "party": "India",
+        "role": "endorser"
+      },
+      {
+        "party": "Indonesia",
+        "role": "endorser"
+      },
+      {
+        "party": "Iran",
+        "role": "endorser"
+      },
+      {
+        "party": "Ireland",
+        "role": "endorser"
+      },
+      {
+        "party": "Israel",
+        "role": "endorser"
+      },
+      {
+        "party": "Italy",
+        "role": "endorser"
+      },
+      {
+        "party": "Japan",
+        "role": "endorser"
+      },
+      {
+        "party": "Kazakhstan",
+        "role": "endorser"
+      },
+      {
+        "party": "Kenya",
+        "role": "endorser"
+      },
+      {
+        "party": "Kyrgyzstan",
+        "role": "endorser"
+      },
+      {
+        "party": "Latvia",
+        "role": "endorser"
+      },
+      {
+        "party": "Liechtenstein",
+        "role": "endorser"
+      },
+      {
+        "party": "Lithuania",
+        "role": "endorser"
+      },
+      {
+        "party": "Luxembourg",
+        "role": "endorser"
+      },
+      {
+        "party": "Maldives",
+        "role": "endorser"
+      },
+      {
+        "party": "Malta",
+        "role": "endorser"
+      },
+      {
+        "party": "Mauritius",
+        "role": "endorser"
+      },
+      {
+        "party": "Mexico",
+        "role": "endorser"
+      },
+      {
+        "party": "Morocco",
+        "role": "endorser"
+      },
+      {
+        "party": "Mozambique",
+        "role": "endorser"
+      },
+      {
+        "party": "Myanmar",
+        "role": "endorser"
+      },
+      {
+        "party": "Nepal",
+        "role": "endorser"
+      },
+      {
+        "party": "Netherlands",
+        "role": "endorser"
+      },
+      {
+        "party": "New Zealand",
+        "role": "endorser"
+      },
+      {
+        "party": "Norway",
+        "role": "endorser"
+      },
+      {
+        "party": "Oman",
+        "role": "endorser"
+      },
+      {
+        "party": "Paraguay",
+        "role": "endorser"
+      },
+      {
+        "party": "Peru",
+        "role": "endorser"
+      },
+      {
+        "party": "Philippines",
+        "role": "endorser"
+      },
+      {
+        "party": "Poland",
+        "role": "endorser"
+      },
+      {
+        "party": "Portugal",
+        "role": "endorser"
+      },
+      {
+        "party": "Romania",
+        "role": "endorser"
+      },
+      {
+        "party": "Russian Federation",
+        "role": "endorser"
+      },
+      {
+        "party": "Rwanda",
+        "role": "endorser"
+      },
+      {
+        "party": "Saudi Arabia",
+        "role": "endorser"
+      },
+      {
+        "party": "Senegal",
+        "role": "endorser"
+      },
+      {
+        "party": "Serbia",
+        "role": "endorser"
+      },
+      {
+        "party": "Seychelles",
+        "role": "endorser"
+      },
+      {
+        "party": "Singapore",
+        "role": "endorser"
+      },
+      {
+        "party": "Slovakia",
+        "role": "endorser"
+      },
+      {
+        "party": "Slovenia",
+        "role": "endorser"
+      },
+      {
+        "party": "Republic of Korea",
+        "role": "endorser"
+      },
+      {
+        "party": "Spain",
+        "role": "endorser"
+      },
+      {
+        "party": "Sri Lanka",
+        "role": "endorser"
+      },
+      {
+        "party": "Suriname",
+        "role": "endorser"
+      },
+      {
+        "party": "Sweden",
+        "role": "endorser"
+      },
+      {
+        "party": "Switzerland",
+        "role": "endorser"
+      },
+      {
+        "party": "Tajikistan",
+        "role": "endorser"
+      },
+      {
+        "party": "Tanzania",
+        "role": "endorser"
+      },
+      {
+        "party": "Trinidad and Tobago",
+        "role": "endorser"
+      },
+      {
+        "party": "United Arab Emirates",
+        "role": "endorser"
+      },
+      {
+        "party": "Ukraine",
+        "role": "endorser"
+      },
+      {
+        "party": "United Kingdom",
+        "role": "endorser"
+      },
+      {
+        "party": "United States of America",
+        "role": "endorser"
+      },
+      {
+        "party": "Uzbekistan",
+        "role": "endorser"
+      },
+      {
+        "notes": [
+          "Participating international organisation, not a State."
+        ],
+        "party": "European Union",
+        "role": "endorser"
+      },
+      {
+        "notes": [
+          "Participating international organisation (UN specialised agency), not a State."
+        ],
+        "party": "International Fund for Agricultural Development",
+        "role": "endorser"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "mea-declaration",
+      "pib-summit",
+      "india-outcomes"
+    ],
+    "summary": "92 endorsers itemised by the Press Information Bureau as of 5 March 2026: 90 States, the European Union and IFAD. The Ministry of External Affairs page of 21 February 2026 lists 91 and omits Colombia; the difference is recorded, not resolved.",
+    "unknowns": [
+      "The MEA page (21 February 2026) lists 91 endorsers and omits Colombia; the PIB annex (as of 5 March 2026) lists 92 and includes Colombia. No official explanation for the difference was located.",
+      "The declaration is non-binding; there is no depositary, ratification, accession or withdrawal record.",
+      "No follow-up mechanism, reporting cycle or review conference was verified.",
+      "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate industry commitment and are not counted here."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "mea-declaration",
+          "pib-summit",
+          "india-outcomes"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "mea-declaration",
+          "pib-summit",
+          "india-outcomes"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "mea-declaration",
+          "pib-summit",
+          "india-outcomes"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "parties",
+        "locator": "parties.entries, parties.counts and parties.as_of",
+        "method": "metadata_only",
+        "source_ids": [
+          "mea-declaration",
+          "pib-summit",
+          "india-outcomes"
+        ]
+      }
+    ],
+    "discovered_via": "Search for the outcome of the 2026 AI Impact Summit while auditing the summit series against the corpus. The declaration was missing from the 42-record corpus; the official MEA text and the PIB release were then read. The PIB annex was subsequently found to contain the full 92-name list, correcting an earlier record that said no itemised list existed.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "paris-ai-action-summit-statement-2025",
+      "note": "The previous stage of the same summit series: Paris 2025 was an 'AI Action Summit'; New Delhi 2026 was an 'AI Impact Summit'. Both are non-binding political declarations.",
+      "relation": "policy_line"
+    },
+    {
+      "id": "bletchley-declaration-2023",
+      "note": "The first summit of the series, focused on frontier-model safety; New Delhi marks the series' shift toward impact, development and access.",
+      "relation": "policy_line"
+    },
+    {
+      "id": "seoul-declaration-2024",
+      "note": "The second summit of the series; Seoul combined safety and innovation themes.",
+      "relation": "policy_line"
+    },
+    {
+      "id": "waico-establishment-agreement-2026",
+      "note": "WAICO was signed five months after the New Delhi Declaration and also addresses AI capacity building in the Global South, but it is a treaty establishing an intergovernmental organization, not a summit declaration.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-79-1",
+      "note": "The Global Digital Compact in the Pact for the Future is the UN's universal digital-cooperation framework; the New Delhi Declaration is a separate, non-binding summit text.",
+      "relation": "related"
+    }
+  ],
   "relevance": {
-    "reason": "The declaration adopted at the AI Impact Summit in New Delhi on 19 February 2026, the fourth summit in the series that began at Bletchley Park in 2023. The Press Information Bureau's annex lists 92 endorsers as of 5 March 2026: 90 States, the European Union and IFAD, the widest endorsement count among the summit declarations in the corpus. It marks the series' shift from AI safety to AI impact and development, and it is a political declaration, not a treaty: it creates no legal obligation, ratification, depositary, monitoring or dispute settlement. It is included because the corpus already catalogues the Bletchley, Seoul and Paris summit texts and would otherwise omit the 2026 stage of the same series.",
     "ai_provisions": [
       "Preamble — AI's promise is best realised when its benefits are shared by humanity; the participants adopt the principle 'Sarvajan Hitaya, Sarvajan Sukhaya' (welfare for all, happiness for all).",
       "Seven pillars (Chakras) — democratising AI resources; economic growth and social good; secure and trusted AI; AI for science; access for social empowerment; human capital development; resilient, efficient and innovative AI systems.",
@@ -31,432 +547,76 @@
       "Human capital development — skilling and reskilling, including the Equitable AI Transitions Playbook produced with the International Labour Organization.",
       "Complementarity with existing international initiatives — the declaration is to be read alongside, not instead of, other international and regional AI processes."
     ],
-    "excluded_scope": "A political declaration. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. The separate New Delhi Frontier AI Impact Commitments, announced by 13 model providers at the same summit, are a different instrument and are not counted as parties to the declaration. National implementation is not assessed."
+    "excluded_scope": "A political declaration. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. The separate New Delhi Frontier AI Impact Commitments, announced by 13 model providers at the same summit, are a different instrument and are not counted as parties to the declaration. National implementation is not assessed.",
+    "reason": "The declaration adopted at the AI Impact Summit in New Delhi on 19 February 2026, the fourth summit in the series that began at Bletchley Park in 2023. The Press Information Bureau's annex lists 92 endorsers as of 5 March 2026: 90 States, the European Union and IFAD, the widest endorsement count among the summit declarations in the corpus. It marks the series' shift from AI safety to AI impact and development, and it is a political declaration, not a treaty: it creates no legal obligation, ratification, depositary, monitoring or dispute settlement. It is included because the corpus already catalogues the Bletchley, Seoul and Paris summit texts and would otherwise omit the 2026 stage of the same series."
   },
-  "dates": {
-    "adopted": "2026-02-19",
-    "verified_on": "2026-11-23",
-    "notes": "Adopted at the AI Impact Summit in New Delhi on 19 February 2026; the summit ran from 18 to 19 February 2026. The Press Information Bureau's annex states that the list is 'as of 5th March 2026' and names 92 endorsers; the Ministry of External Affairs page was last updated on 21 February 2026 and lists 91, without Colombia. The text has no signature, ratification, depositary or entry-into-force clause."
-  },
-  "status_note": "Non-binding political declaration, not a treaty. The Press Information Bureau's annex lists 92 endorsers as of 5 March 2026: 90 States, the European Union and IFAD. The Ministry of External Affairs page updated 21 February 2026 lists 91 and omits Colombia. The record uses the later PIB list and records the discrepancy; it does not infer any other missing endorsement. The declaration creates no legal obligation, ratification, depositary, monitoring or dispute settlement. The separate New Delhi Frontier AI Impact Commitments were announced by 13 model providers and are not part of this declaration.",
-  "parties": {
-    "as_of": "2026-03-05",
-    "summary": "92 endorsers itemised by the Press Information Bureau as of 5 March 2026: 90 States, the European Union and IFAD. The Ministry of External Affairs page of 21 February 2026 lists 91 and omits Colombia; the difference is recorded, not resolved.",
-    "source_ids": [
-      "mea-declaration",
-      "pib-summit",
-      "india-outcomes"
-    ],
-    "signatories_total": 92,
-    "ratifications_total": 0,
-    "entries": [
-      {
-        "party": "Albania"
-      },
-      {
-        "party": "Armenia"
-      },
-      {
-        "party": "Australia"
-      },
-      {
-        "party": "Austria"
-      },
-      {
-        "party": "Bangladesh"
-      },
-      {
-        "party": "Belgium"
-      },
-      {
-        "party": "Bhutan"
-      },
-      {
-        "party": "Bolivia"
-      },
-      {
-        "party": "Botswana"
-      },
-      {
-        "party": "Brazil"
-      },
-      {
-        "party": "Bulgaria"
-      },
-      {
-        "party": "Cambodia"
-      },
-      {
-        "party": "Canada"
-      },
-      {
-        "party": "Chile"
-      },
-      {
-        "party": "China"
-      },
-      {
-        "party": "Croatia"
-      },
-      {
-        "party": "Colombia",
-        "notes": [
-          "Included in the PIB list of 5 March 2026; absent from the MEA page updated 21 February 2026."
-        ]
-      },
-      {
-        "party": "Costa Rica"
-      },
-      {
-        "party": "Cuba"
-      },
-      {
-        "party": "Cyprus"
-      },
-      {
-        "party": "Czech Republic"
-      },
-      {
-        "party": "Denmark"
-      },
-      {
-        "party": "Egypt"
-      },
-      {
-        "party": "Estonia"
-      },
-      {
-        "party": "Ethiopia"
-      },
-      {
-        "party": "Fiji"
-      },
-      {
-        "party": "Finland"
-      },
-      {
-        "party": "France"
-      },
-      {
-        "party": "Gambia"
-      },
-      {
-        "party": "Germany"
-      },
-      {
-        "party": "Greece"
-      },
-      {
-        "party": "Guatemala"
-      },
-      {
-        "party": "Guyana"
-      },
-      {
-        "party": "Hungary"
-      },
-      {
-        "party": "Iceland"
-      },
-      {
-        "party": "India"
-      },
-      {
-        "party": "Indonesia"
-      },
-      {
-        "party": "Iran"
-      },
-      {
-        "party": "Ireland"
-      },
-      {
-        "party": "Israel"
-      },
-      {
-        "party": "Italy"
-      },
-      {
-        "party": "Japan"
-      },
-      {
-        "party": "Kazakhstan"
-      },
-      {
-        "party": "Kenya"
-      },
-      {
-        "party": "Kyrgyzstan"
-      },
-      {
-        "party": "Latvia"
-      },
-      {
-        "party": "Liechtenstein"
-      },
-      {
-        "party": "Lithuania"
-      },
-      {
-        "party": "Luxembourg"
-      },
-      {
-        "party": "Maldives"
-      },
-      {
-        "party": "Malta"
-      },
-      {
-        "party": "Mauritius"
-      },
-      {
-        "party": "Mexico"
-      },
-      {
-        "party": "Morocco"
-      },
-      {
-        "party": "Mozambique"
-      },
-      {
-        "party": "Myanmar"
-      },
-      {
-        "party": "Nepal"
-      },
-      {
-        "party": "Netherlands"
-      },
-      {
-        "party": "New Zealand"
-      },
-      {
-        "party": "Norway"
-      },
-      {
-        "party": "Oman"
-      },
-      {
-        "party": "Paraguay"
-      },
-      {
-        "party": "Peru"
-      },
-      {
-        "party": "Philippines"
-      },
-      {
-        "party": "Poland"
-      },
-      {
-        "party": "Portugal"
-      },
-      {
-        "party": "Romania"
-      },
-      {
-        "party": "Russian Federation"
-      },
-      {
-        "party": "Rwanda"
-      },
-      {
-        "party": "Saudi Arabia"
-      },
-      {
-        "party": "Senegal"
-      },
-      {
-        "party": "Serbia"
-      },
-      {
-        "party": "Seychelles"
-      },
-      {
-        "party": "Singapore"
-      },
-      {
-        "party": "Slovakia"
-      },
-      {
-        "party": "Slovenia"
-      },
-      {
-        "party": "Republic of Korea"
-      },
-      {
-        "party": "Spain"
-      },
-      {
-        "party": "Sri Lanka"
-      },
-      {
-        "party": "Suriname"
-      },
-      {
-        "party": "Sweden"
-      },
-      {
-        "party": "Switzerland"
-      },
-      {
-        "party": "Tajikistan"
-      },
-      {
-        "party": "Tanzania"
-      },
-      {
-        "party": "Trinidad and Tobago"
-      },
-      {
-        "party": "United Arab Emirates"
-      },
-      {
-        "party": "Ukraine"
-      },
-      {
-        "party": "United Kingdom"
-      },
-      {
-        "party": "United States of America"
-      },
-      {
-        "party": "Uzbekistan"
-      },
-      {
-        "party": "European Union",
-        "notes": [
-          "Participating international organisation, not a State."
-        ]
-      },
-      {
-        "party": "International Fund for Agricultural Development",
-        "notes": [
-          "Participating international organisation (UN specialised agency), not a State."
-        ]
-      }
-    ],
-    "reservations": [],
-    "declarations": [],
-    "objections": [],
-    "notifications": [],
-    "withdrawals": [],
-    "unknowns": [
-      "The MEA page (21 February 2026) lists 91 endorsers and omits Colombia; the PIB annex (as of 5 March 2026) lists 92 and includes Colombia. No official explanation for the difference was located.",
-      "The declaration is non-binding; there is no depositary, ratification, accession or withdrawal record.",
-      "No follow-up mechanism, reporting cycle or review conference was verified.",
-      "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate industry commitment and are not counted here."
-    ]
-  },
-  "languages": {
-    "authentic": [
-      "en"
-    ],
-    "translations": [],
-    "note": "English text published by the Ministry of External Affairs. The preamble includes the Sanskrit principle 'Sarvajan Hitaya, Sarvajan Sukhaya'; no other authentic-language version was verified."
+  "rights": {
+    "licence": "Government of India official publication",
+    "note": "Official government publication. No full text is stored in this corpus; the declaration is read from the official MEA page.",
+    "status": "public_official_text"
   },
   "sources": [
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "mea-declaration",
-      "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809",
-      "publisher": "Ministry of External Affairs, Government of India",
       "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "en",
-      "note": "Official text of the AI Impact Summit Declaration, New Delhi, 18-19 February 2026. The page reproduces the preamble and the seven pillars; its endorser list was last updated on 21 February 2026 and names 91, without Colombia."
+      "note": "Official text of the AI Impact Summit Declaration, New Delhi, 18-19 February 2026. The page reproduces the preamble and the seven pillars; its endorser list was last updated on 21 February 2026 and names 91, without Colombia.",
+      "publisher": "Ministry of External Affairs, Government of India",
+      "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "pib-summit",
-      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&reg=3&lang=1",
-      "publisher": "Press Information Bureau, Government of India",
       "kind": "official_secondary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "en",
-      "note": "Official press release posted on 21 February 2026. Its annex lists 92 endorsers 'as of 5th March 2026', including Colombia; the list is the basis for the 92 entries in this record."
+      "note": "Official press release posted on 21 February 2026. Its annex lists 92 endorsers 'as of 5th March 2026', including Colombia; the list is the basis for the 92 entries in this record.",
+      "publisher": "Press Information Bureau, Government of India",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&reg=3&lang=1"
     },
     {
-      "id": "india-outcomes",
-      "url": "https://impact.indiaai.gov.in/outcome-resources",
-      "publisher": "AI Impact Summit 2026, Government of India",
-      "kind": "official_secondary",
       "accessed": "2026-11-23",
       "http_status": 200,
+      "id": "india-outcomes",
+      "kind": "official_secondary",
       "language": "en",
-      "note": "Official outcome-resources page listing the declaration and the separate summit deliverables, including the New Delhi Frontier AI Impact Commitments."
+      "note": "Official outcome-resources page listing the declaration and the separate summit deliverables, including the New Delhi Frontier AI Impact Commitments.",
+      "publisher": "AI Impact Summit 2026, Government of India",
+      "url": "https://impact.indiaai.gov.in/outcome-resources"
     }
   ],
-  "rights": {
-    "status": "public_official_text",
-    "licence": "Government of India official publication",
-    "note": "Official government publication. No full text is stored in this corpus; the declaration is read from the official MEA page."
+  "status": "adopted",
+  "status_note": "Non-binding political declaration, not a treaty. The Press Information Bureau's annex lists 92 endorsers as of 5 March 2026: 90 States, the European Union and IFAD. The Ministry of External Affairs page updated 21 February 2026 lists 91 and omits Colombia. The record uses the later PIB list and records the discrepancy; it does not infer any other missing endorsement. The declaration creates no legal obligation, ratification, depositary, monitoring or dispute settlement. The separate New Delhi Frontier AI Impact Commitments were announced by 13 model providers and are not part of this declaration.",
+  "title": {
+    "official": "AI Impact Summit Declaration, New Delhi",
+    "short": "New Delhi Declaration on AI Impact"
   },
   "verification": {
-    "level": "metadata_verified",
     "checks": [
       {
         "check": "Declaration text read on the official Ministry of External Affairs page.",
-        "result": "The page reproduces the AI Impact Summit Declaration, New Delhi, with the preamble, the seven pillars and the closing commitments; it has no signature or ratification clause.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "The page reproduces the AI Impact Summit Declaration, New Delhi, with the preamble, the seven pillars and the closing commitments; it has no signature or ratification clause."
       },
       {
         "check": "Adoption date and endorser count checked against the official press release.",
-        "result": "The Press Information Bureau release states that the summit adopted the New Delhi Declaration on AI Impact and that its annex lists 92 endorsers as of 5 March 2026.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "The Press Information Bureau release states that the summit adopted the New Delhi Declaration on AI Impact and that its annex lists 92 endorsers as of 5 March 2026."
       },
       {
         "check": "Party-level data checked against both official lists.",
-        "result": "The PIB annex itemises 92 endorsers: 90 States, the EU and IFAD, including Colombia. The MEA page lists 91 and omits Colombia. The record uses the later PIB list and records the discrepancy.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "The PIB annex itemises 92 endorsers: 90 States, the EU and IFAD, including Colombia. The MEA page lists 91 and omits Colombia. The record uses the later PIB list and records the discrepancy."
       },
       {
         "check": "Legal nature checked against the text and official descriptions.",
-        "result": "The instrument is a political declaration, not a treaty; it creates no binding obligation, depositary, ratification or dispute settlement.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "The instrument is a political declaration, not a treaty; it creates no binding obligation, depositary, ratification or dispute settlement."
       }
     ],
+    "level": "metadata_verified",
     "notes": "Metadata verified from official Indian government sources. The record is metadata-only: no full text is stored. The 92-endorser count is reproduced from the PIB annex and itemised; the MEA page lists 91 and omits Colombia. The difference is recorded as an unknown rather than filled by inference."
-  },
-  "related": [
-    {
-      "id": "paris-ai-action-summit-statement-2025",
-      "relation": "policy_line",
-      "note": "The previous stage of the same summit series: Paris 2025 was an 'AI Action Summit'; New Delhi 2026 was an 'AI Impact Summit'. Both are non-binding political declarations."
-    },
-    {
-      "id": "bletchley-declaration-2023",
-      "relation": "policy_line",
-      "note": "The first summit of the series, focused on frontier-model safety; New Delhi marks the series' shift toward impact, development and access."
-    },
-    {
-      "id": "seoul-declaration-2024",
-      "relation": "policy_line",
-      "note": "The second summit of the series; Seoul combined safety and innovation themes."
-    },
-    {
-      "id": "waico-establishment-agreement-2026",
-      "relation": "related",
-      "note": "WAICO was signed five months after the New Delhi Declaration and also addresses AI capacity building in the Global South, but it is a treaty establishing an intergovernmental organization, not a summit declaration."
-    },
-    {
-      "id": "un-ga-res-79-1",
-      "relation": "related",
-      "note": "The Global Digital Compact in the Pact for the Future is the UN's universal digital-cooperation framework; the New Delhi Declaration is a separate, non-binding summit text."
-    }
-  ],
-  "gaps": [
-    "Non-binding: no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
-    "Two official lists disagree: the MEA page of 21 February 2026 lists 91 and omits Colombia; the PIB annex as of 5 March 2026 lists 92 and includes Colombia. No official explanation was located.",
-    "No follow-up mechanism, review cycle or implementation reporting was verified.",
-    "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate instrument and are not catalogued here.",
-    "The declaration's relationship to the UN Global Dialogue on AI Governance and to the Paris and Seoul texts is political, not institutional; no formal linkage was verified.",
-    "No full text is stored; the record is metadata-only."
-  ],
-  "provenance": {
-    "discovered_via": "Search for the outcome of the 2026 AI Impact Summit while auditing the summit series against the corpus. The declaration was missing from the 42-record corpus; the official MEA text and the PIB release were then read. The PIB annex was subsequently found to contain the full 92-name list, correcting an earlier record that said no itemised list existed.",
-    "search_dates": [
-      "2026-11-23"
-    ]
   }
 }

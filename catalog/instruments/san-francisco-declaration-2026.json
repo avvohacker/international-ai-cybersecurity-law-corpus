@@ -1,0 +1,315 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "notes": "Signed on 15 November 2026 at the Pax Silica Founders Retreat in San Francisco. The State Department release states that the United States and nine Pax Silica participants signed and reproduces the text released by the ten governments. The release lists Germany, Sweden, the Netherlands and the European Commission as intending to sign later in November; they are not counted.",
+    "signed": "2026-11-15",
+    "verified_on": "2026-11-24"
+  },
+  "gaps": [
+    "Non-binding: no legal obligation, ratification, depositary, monitoring or enforcement.",
+    "Four participants reported as intending to sign later in November 2026 were not verified as signatories.",
+    "The five working groups are announced, not established; no mandate, membership or output was verified.",
+    "No full text is stored; the record is metadata-only."
+  ],
+  "id": "san-francisco-declaration-2026",
+  "instrument_type": "declaration",
+  "issuer": [
+    {
+      "name": "United States Department of State",
+      "role": "issuer",
+      "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"
+    },
+    {
+      "name": "Pax Silica participating governments",
+      "role": "co_issuer"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "locator": "State Department release, text of the Declaration",
+    "note": "The State Department release reproduces the text released by the ten governments in English. No other language version was verified.",
+    "source_ids": [
+      "state-san-francisco"
+    ],
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A declaration signed by ten governments at the Pax Silica Founders Retreat. It records a common understanding and resolves to establish working groups; it contains no ratification, depositary, entry-into-force or dispute-settlement clause. Signature here is political, not treaty signature.",
+    "source_ids": [
+      "state-san-francisco"
+    ]
+  },
+  "parties": {
+    "act": "political_signature",
+    "as_of": "2026-11-15",
+    "counts": {
+      "accessions": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      },
+      "political_signatures": {
+        "basis": "verified_total",
+        "source_ids": [
+          "state-san-francisco"
+        ],
+        "total": 10,
+        "verified": 10
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "notes": [
+          "Named in the State Department release of 15 November 2026 as a signatory government."
+        ],
+        "party": "United States of America",
+        "political_signature": "2026-11-15",
+        "role": "signatory"
+      },
+      {
+        "notes": [
+          "Named in the State Department release of 15 November 2026 as a signatory government."
+        ],
+        "party": "Australia",
+        "political_signature": "2026-11-15",
+        "role": "signatory"
+      },
+      {
+        "notes": [
+          "Named in the State Department release of 15 November 2026 as a signatory government."
+        ],
+        "party": "India",
+        "political_signature": "2026-11-15",
+        "role": "signatory"
+      },
+      {
+        "notes": [
+          "Named in the State Department release of 15 November 2026 as a signatory government."
+        ],
+        "party": "Israel",
+        "political_signature": "2026-11-15",
+        "role": "signatory"
+      },
+      {
+        "notes": [
+          "Named in the State Department release of 15 November 2026 as a signatory government."
+        ],
+        "party": "Japan",
+        "political_signature": "2026-11-15",
+        "role": "signatory"
+      },
+      {
+        "notes": [
+          "Named in the State Department release of 15 November 2026 as a signatory government."
+        ],
+        "party": "Republic of Korea",
+        "political_signature": "2026-11-15",
+        "role": "signatory"
+      },
+      {
+        "notes": [
+          "Named in the State Department release of 15 November 2026 as a signatory government."
+        ],
+        "party": "Qatar",
+        "political_signature": "2026-11-15",
+        "role": "signatory"
+      },
+      {
+        "notes": [
+          "Named in the State Department release of 15 November 2026 as a signatory government."
+        ],
+        "party": "Singapore",
+        "political_signature": "2026-11-15",
+        "role": "signatory"
+      },
+      {
+        "notes": [
+          "Named in the State Department release of 15 November 2026 as a signatory government."
+        ],
+        "party": "United Arab Emirates",
+        "political_signature": "2026-11-15",
+        "role": "signatory"
+      },
+      {
+        "notes": [
+          "Named in the State Department release of 15 November 2026 as a signatory government."
+        ],
+        "party": "United Kingdom",
+        "political_signature": "2026-11-15",
+        "role": "signatory"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "state-san-francisco"
+    ],
+    "summary": "Ten signatory governments as of 15 November 2026, as listed in the State Department release. Signature is political, not treaty signature. Four further participants were reported as intending to sign later in November and are not counted.",
+    "unknowns": [
+      "The declaration has no treaty clause, so ratification and accession do not apply; their absence is not a zero.",
+      "Germany, Sweden, the Netherlands and the European Commission were reported as intending to sign later in November 2026; no later signature was verified.",
+      "The five working groups are announced, not established; their membership, mandate and outputs were not verified.",
+      "The full legal effect of the declaration under the domestic law of each signatory was not assessed."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-24",
+        "field": "dates",
+        "locator": "Media note, 15 November 2026",
+        "method": "official_page_read",
+        "source_ids": [
+          "state-san-francisco"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "status",
+        "locator": "Media note and full text",
+        "method": "official_text_read",
+        "note": "Signed political declaration; no entry-into-force clause.",
+        "source_ids": [
+          "state-san-francisco"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "parties",
+        "locator": "Media note: 'the United States and nine Pax Silica participants' and the list of ten governments",
+        "method": "official_page_read",
+        "source_ids": [
+          "state-san-francisco"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "provisions",
+        "locator": "Full text, paragraphs on sensitive technologies, critical infrastructure, working groups",
+        "method": "official_text_read",
+        "source_ids": [
+          "state-san-francisco"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "languages",
+        "locator": "Text released in English",
+        "method": "official_page_read",
+        "source_ids": [
+          "state-san-francisco"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "legal_nature",
+        "locator": "Full text: no treaty clause",
+        "method": "official_text_read",
+        "source_ids": [
+          "state-san-francisco"
+        ]
+      }
+    ],
+    "discovered_via": "The Pax Silica record referred to a November 2026 San Francisco Declaration; the official State Department release was located and read for this record.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "pax-silica-declaration-2025",
+      "note": "The San Francisco Declaration is the operational follow-up to the 2025 Pax Silica Declaration and reaffirms cooperation on enforcing policies to protect sensitive technologies and critical infrastructure.",
+      "relation": "related"
+    },
+    {
+      "id": "waico-establishment-agreement-2026",
+      "note": "The US-led Pax Silica architecture is the counterpart to the China-initiated WAICO. The San Francisco Declaration is a political instrument; WAICO is a treaty establishing an organisation.",
+      "relation": "counterpart"
+    },
+    {
+      "id": "china-global-ai-governance-initiative-2023",
+      "note": "Both frame AI governance through national security and sovereignty, from opposite institutional positions: a US-led supply-chain coalition and a Chinese-initiated intergovernmental organisation.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Common understanding of 'sensitive technologies' - goods, software, materials, knowledge, components and means of production essential to SI supply chains whose theft, illicit transfer or acquisition would confer a military or intelligence advantage or undue economic leverage",
+      "Common understanding of 'critical infrastructure' - physical and digital systems and assets underpinning SI supply chains, including ports, terminals, transport, communications, logistics, ICT and energy infrastructure, and the digital platforms that coordinate them",
+      "Economic security as national security - the signatories affirm that safeguarding these technologies and infrastructure is a shared endeavour among aligned partners",
+      "Working groups - the declaration resolves to establish five groups covering pro-innovation policy frameworks, SI adoption in key sectors, supply-chain cooperation, safe harbors and security hubs, and SI security and resilience",
+      "Reduction of dependencies - the text aims to reduce reliance on adversaries for critical minerals, AI models and semiconductors, and to address economic coercion and non-market policies"
+    ],
+    "excluded_scope": "A political declaration. It creates no legal obligation, no ratification, no depositary, no monitoring or dispute-settlement mechanism and no institution with legal personality. The working groups are commitments to cooperate, not treaty bodies. The declaration does not regulate AI models or products directly, and it does not impose supply-chain controls; those would require separate national measures. Participation is by invitation to Pax Silica participants, not universal.",
+    "reason": "A signed political declaration on the security of the technologies and infrastructure underpinning advanced AI and 'super intelligence' supply chains. It is the operational follow-up to the 2025 Pax Silica Declaration and the first Pax Silica document to be signed by named governments rather than endorsed collectively. It belongs in the corpus because it converts a coalition statement into working groups on sensitive technologies, critical infrastructure, supply-chain security and resilience, while remaining non-binding. It is a declaration, not a treaty, and signature does not create legal obligations.",
+    "source_ids": [
+      "state-san-francisco"
+    ]
+  },
+  "rights": {
+    "licence": "United States Government official publication",
+    "note": "Official US government text. No full text is stored in this corpus; the declaration is read from the State Department release.",
+    "status": "public_official_text"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "state-san-francisco",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Media note of 15 November 2026 announcing the signature by the United States and nine Pax Silica participants and reproducing the full text released by the ten governments. It names the signatories and the five proposed working groups.",
+      "publisher": "United States Department of State, Office of the Spokesman",
+      "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "wikipedia-sf",
+      "kind": "secondary",
+      "language": "en",
+      "note": "Encyclopaedia entry used only to locate the official release and the reported intention of four further participants to sign. It is not the source of any legal qualification.",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/San_Francisco_Declaration_on_the_Secure_Foundations_of_Enduring_Prosperity"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Signed political declaration, not a treaty. Ten governments signed on 15 November 2026: the United States, Australia, India, Israel, Japan, the Republic of Korea, Qatar, Singapore, the United Arab Emirates and the United Kingdom. Germany, Sweden, the Netherlands and the European Commission were reported as intending to sign later in November 2026; they are not counted as signatories. No ratification, depositary, entry into force, monitoring or enforcement is established.",
+  "title": {
+    "official": "San Francisco Declaration on the Secure Foundations of Enduring Prosperity",
+    "short": "San Francisco Declaration"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Signature date and signatories checked on the State Department release.",
+        "date": "2026-11-24",
+        "result": "Signed on 15 November 2026 by the United States and nine participants: Australia, India, Israel, Japan, the Republic of Korea, Qatar, Singapore, the United Arab Emirates and the United Kingdom."
+      },
+      {
+        "check": "Legal nature checked against the text.",
+        "date": "2026-11-24",
+        "result": "The text records a common understanding and resolves to establish working groups. It contains no ratification, depositary, entry-into-force or dispute-settlement clause."
+      },
+      {
+        "check": "Reported future signatories checked.",
+        "date": "2026-11-24",
+        "result": "The release itself does not list Germany, Sweden, the Netherlands or the European Commission; the secondary entry reports them as intending to sign later in November 2026. They are excluded from the count."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified from the official State Department release. The record is metadata-only: no full text is stored. Signature is political; the declaration creates no legal obligation."
+  }
+}

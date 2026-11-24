@@ -1,113 +1,11 @@
 {
-  "id": "sadea-2020",
-  "title": {
-    "official": "Australia-Singapore Digital Economy Agreement",
-    "short": "SADEA"
-  },
-  "category": "agreement_ai_provisions",
-  "instrument_type": "agreement",
   "binding_status": "binding",
-  "status": "in_force",
-  "issuer": [
-    {
-      "name": "Australia and Singapore",
-      "role": "co_issuer"
-    }
-  ],
-  "relevance": {
-    "reason": "A bilateral digital-economy agreement that replaces the electronic-commerce chapter of the Singapore-Australia Free Trade Agreement and contains a dedicated article on artificial intelligence. The AI article is cooperative and expressly refers to internationally recognised principles and AI governance frameworks.",
-    "ai_provisions": [
-      "Article 31 — Artificial Intelligence: cooperation on research and industry practices, responsible adoption, commercialisation; ethical governance frameworks; alignment through regional and international fora; consideration of internationally recognised principles"
-    ],
-    "excluded_scope": "Article 31 uses 'shall cooperate' and 'shall endeavour'; it does not impose product requirements, prohibitions or enforcement obligations specific to AI."
-  },
+  "category": "agreement_ai_provisions",
   "dates": {
-    "signed": "2020-08-06",
     "entered_into_force": "2020-12-08",
-    "verified_on": "2026-11-23",
-    "notes": "Signed at Adelaide and Singapore on 6 August 2020; entered into force on 8 December 2020."
-  },
-  "status_note": "In force between Australia and Singapore.",
-  "parties": {
-    "as_of": "2026-11-23",
-    "summary": "Two Parties: Australia and Singapore.",
-    "source_ids": ["dfat-page", "sadea-text"],
-    "entries": [
-      {"party": "Australia", "signature": "2020-08-06", "entry_into_force": "2020-12-08", "notes": []},
-      {"party": "Singapore", "signature": "2020-08-06", "entry_into_force": "2020-12-08", "notes": []}
-    ],
-    "reservations": [],
-    "declarations": [],
-    "objections": [],
-    "notifications": [],
-    "withdrawals": [],
-    "unknowns": ["No depositary register was consulted; the record relies on the official DFAT page and the text."]
-  },
-  "languages": {
-    "authentic": ["en"],
-    "translations": [],
-    "note": "The acquired text is in English. A separate authentic-language clause was not located in the extracted text; this is recorded as a gap rather than inferred."
-  },
-  "sources": [
-    {
-      "id": "sadea-text",
-      "url": "https://isomer-user-content.by.gov.sg/1004/769c26eb-17cf-4e2d-962b-1277a22df9db/australia-singapore-digital-economy-agreement%20-%20Jun%2023.pdf",
-      "publisher": "Government of Singapore (Isomer)",
-      "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "language": "en",
-      "note": "Australia-Singapore Digital Economy Agreement text, 39 pages; downloaded and stored."
-    },
-    {
-      "id": "dfat-page",
-      "url": "https://www.dfat.gov.au/trade/services-and-digital-trade/australia-and-singapore-digital-economy-agreement",
-      "publisher": "Australian Department of Foreign Affairs and Trade",
-      "kind": "official_secondary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "note": "States entry into force on 8 December 2020 and identifies the agreement as replacing the SAFTA electronic-commerce chapter."
-    }
-  ],
-  "rights": {
-    "status": "public_official_text",
-    "licence": "Government of Singapore / Commonwealth of Australia terms",
-    "note": "Official treaty text published by a Party government. No open licence identified; stored for research and verification. Reusers should consult the publishing governments' terms.",
-    "url": "https://www.dfat.gov.au/about-us/copyright"
-  },
-  "verification": {
-    "level": "full_text_checked",
-    "checks": [
-      {
-        "check": "Article 31 located and read in the acquired text.",
-        "result": "Dedicated AI article present; cooperation and best-efforts obligations; reference to AI governance frameworks and internationally recognised principles.",
-        "date": "2026-11-23"
-      },
-      {
-        "check": "Entry into force clause checked in the text.",
-        "result": "Article 5: entry into force on the later note confirming completion of domestic requirements.",
-        "date": "2026-11-23"
-      },
-      {
-        "check": "Signature and entry-into-force dates checked against the DFAT page.",
-        "result": "Signed 6 August 2020; in force 8 December 2020.",
-        "date": "2026-11-23"
-      }
-    ],
-    "notes": "Full text preserved. The AI clause is treaty language but programmatic rather than prescriptive."
-  },
-  "related": [
-    {"id": "depa-2020", "relation": "related", "note": "Parallel digital-economy agreement with an AI article (Article 8.2)."},
-    {"id": "uksdea-2022", "relation": "related", "note": "Parallel digital-economy agreement with an AI article (Article 8.61-R)."},
-    {"id": "ksdpa-2022", "relation": "related", "note": "Parallel digital partnership agreement with an AI article (Article 14.28)."}
-  ],
-  "text": {
-    "manifest": "manifest.json",
-    "full_text": true,
-    "primary_language": "en",
-    "primary_text": "text/en.txt",
-    "units_mode": "treaty",
-    "extraction_note": "Text extracted from the stored PDF with pypdf. Article headings in the consolidated text use upper-case 'ARTICLE'; page anchors are file pages."
+    "notes": "Signed at Adelaide and Singapore on 6 August 2020; entered into force on 8 December 2020.",
+    "signed": "2020-08-06",
+    "verified_on": "2026-11-23"
   },
   "gaps": [
     "No authentic-language clause was located in the extracted text; English is recorded as the acquired language, not as a verified sole authentic language.",
@@ -115,8 +13,204 @@
     "The separate MOU on Cooperation on Artificial Intelligence concluded alongside SADEA was not acquired.",
     "Article 31 creates no enforceable AI standard."
   ],
+  "id": "sadea-2020",
+  "instrument_type": "agreement",
+  "issuer": [
+    {
+      "name": "Australia and Singapore",
+      "role": "co_issuer"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "The acquired text is in English. A separate authentic-language clause was not located in the extracted text; this is recorded as a gap rather than inferred.",
+    "translations": []
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-23",
+    "counts": {
+      "parties": {
+        "basis": "verified_total",
+        "total": 2,
+        "verified": 2
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      },
+      "signatures": {
+        "basis": "verified_total",
+        "total": 2,
+        "verified": 2
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "entry_into_force": "2020-12-08",
+        "notes": [],
+        "party": "Australia",
+        "role": "signatory",
+        "signature": "2020-08-06"
+      },
+      {
+        "entry_into_force": "2020-12-08",
+        "notes": [],
+        "party": "Singapore",
+        "role": "signatory",
+        "signature": "2020-08-06"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "dfat-page",
+      "sadea-text"
+    ],
+    "summary": "Two Parties: Australia and Singapore.",
+    "unknowns": [
+      "No depositary register was consulted; the record relies on the official DFAT page and the text."
+    ],
+    "withdrawals": []
+  },
   "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "official_text_read",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "sadea-text",
+          "dfat-page"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "official_text_read",
+        "source_ids": [
+          "sadea-text",
+          "dfat-page"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "official_text_read",
+        "source_ids": [
+          "sadea-text",
+          "dfat-page"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "parties",
+        "locator": "parties.entries, parties.counts and parties.as_of",
+        "method": "official_text_read",
+        "source_ids": [
+          "dfat-page",
+          "sadea-text"
+        ]
+      }
+    ],
     "discovered_via": "Official Singapore MTI/DFAT digital-economy agreement pages; comparative ADB study used only to locate the AI article number.",
-    "search_dates": ["2026-11-23"]
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "depa-2020",
+      "note": "Parallel digital-economy agreement with an AI article (Article 8.2).",
+      "relation": "related"
+    },
+    {
+      "id": "uksdea-2022",
+      "note": "Parallel digital-economy agreement with an AI article (Article 8.61-R).",
+      "relation": "related"
+    },
+    {
+      "id": "ksdpa-2022",
+      "note": "Parallel digital partnership agreement with an AI article (Article 14.28).",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Article 31 — Artificial Intelligence: cooperation on research and industry practices, responsible adoption, commercialisation; ethical governance frameworks; alignment through regional and international fora; consideration of internationally recognised principles"
+    ],
+    "excluded_scope": "Article 31 uses 'shall cooperate' and 'shall endeavour'; it does not impose product requirements, prohibitions or enforcement obligations specific to AI.",
+    "reason": "A bilateral digital-economy agreement that replaces the electronic-commerce chapter of the Singapore-Australia Free Trade Agreement and contains a dedicated article on artificial intelligence. The AI article is cooperative and expressly refers to internationally recognised principles and AI governance frameworks."
+  },
+  "rights": {
+    "licence": "Government of Singapore / Commonwealth of Australia terms",
+    "note": "Official treaty text published by a Party government. No open licence identified; stored for research and verification. Reusers should consult the publishing governments' terms.",
+    "status": "public_official_text",
+    "url": "https://www.dfat.gov.au/about-us/copyright"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "sadea-text",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Australia-Singapore Digital Economy Agreement text, 39 pages; downloaded and stored.",
+      "publisher": "Government of Singapore (Isomer)",
+      "url": "https://isomer-user-content.by.gov.sg/1004/769c26eb-17cf-4e2d-962b-1277a22df9db/australia-singapore-digital-economy-agreement%20-%20Jun%2023.pdf"
+    },
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "dfat-page",
+      "kind": "official_secondary",
+      "note": "States entry into force on 8 December 2020 and identifies the agreement as replacing the SAFTA electronic-commerce chapter.",
+      "publisher": "Australian Department of Foreign Affairs and Trade",
+      "url": "https://www.dfat.gov.au/trade/services-and-digital-trade/australia-and-singapore-digital-economy-agreement"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force between Australia and Singapore.",
+  "text": {
+    "extraction_note": "Text extracted from the stored PDF with pypdf. Article headings in the consolidated text use upper-case 'ARTICLE'; page anchors are file pages.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
+  },
+  "title": {
+    "official": "Australia-Singapore Digital Economy Agreement",
+    "short": "SADEA"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Article 31 located and read in the acquired text.",
+        "date": "2026-11-23",
+        "result": "Dedicated AI article present; cooperation and best-efforts obligations; reference to AI governance frameworks and internationally recognised principles."
+      },
+      {
+        "check": "Entry into force clause checked in the text.",
+        "date": "2026-11-23",
+        "result": "Article 5: entry into force on the later note confirming completion of domestic requirements."
+      },
+      {
+        "check": "Signature and entry-into-force dates checked against the DFAT page.",
+        "date": "2026-11-23",
+        "result": "Signed 6 August 2020; in force 8 December 2020."
+      }
+    ],
+    "level": "full_text_checked",
+    "notes": "Full text preserved. The AI clause is treaty language but programmatic rather than prescriptive."
   }
 }

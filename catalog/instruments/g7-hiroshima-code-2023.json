@@ -1,93 +1,10 @@
 {
-  "id": "g7-hiroshima-code-2023",
-  "title": {
-    "official": "Hiroshima Process International Code of Conduct for Organizations Developing Advanced AI Systems",
-    "short": "G7 Hiroshima AI Process Code of Conduct"
-  },
-  "category": "non_binding_instrument",
-  "instrument_type": "code_of_conduct",
   "binding_status": "non_binding",
-  "status": "adopted",
-  "issuer": [
-    {
-      "name": "G7 (2023 Japanese Presidency)",
-      "role": "issuer",
-      "url": "https://www.soumu.go.jp/hiroshimaaiprocess/en/documents.html"
-    }
-  ],
-  "relevance": {
-    "reason": "A voluntary G7 code of conduct addressed to organisations developing the most advanced AI systems, including foundation models and generative AI. It is a leading non-binding implementation instrument and builds on the OECD AI Principles. It is not a treaty and creates no legal obligation.",
-    "ai_provisions": [
-      "Whole document — risk identification and mitigation across the AI lifecycle; transparency; security; incident reporting; content authentication; research investment; governance",
-      "Preamble — voluntary guidance; living document; applies to advanced AI systems including foundation models and generative AI"
-    ],
-    "excluded_scope": "Voluntary and addressed to organisations, not States; no enforcement, conformity assessment or market-access consequences."
-  },
+  "category": "non_binding_instrument",
   "dates": {
     "adopted": "2023-10-30",
-    "verified_on": "2026-11-23",
-    "notes": "Issued as part of the Hiroshima AI Process and welcomed in the G7 Leaders' Statement of 30 October 2023."
-  },
-  "status_note": "Adopted and published as a voluntary code. No signature or ratification; organisations may endorse it and report under the separate Hiroshima Process Reporting Framework.",
-  "languages": {
-    "authentic": ["en"],
-    "translations": ["ja"],
-    "note": "English text acquired. The Japanese government publishes Japanese materials; the English text is the version acquired and analysed. No authentic-language clause exists because the instrument is not a treaty."
-  },
-  "sources": [
-    {
-      "id": "mic-code",
-      "url": "https://www.soumu.go.jp/hiroshimaaiprocess/pdf/document05_en.pdf",
-      "publisher": "Ministry of Internal Affairs and Communications, Japan",
-      "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "language": "en",
-      "note": "Official English PDF, 8 pages; downloaded and stored. The PDF is encrypted with an owner password but permits text extraction."
-    },
-    {
-      "id": "mic-documents",
-      "url": "https://www.soumu.go.jp/hiroshimaaiprocess/en/documents.html",
-      "publisher": "Ministry of Internal Affairs and Communications, Japan",
-      "kind": "official_secondary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "note": "Official Hiroshima AI Process documents page, listing the Code of Conduct and related Guiding Principles."
-    }
-  ],
-  "rights": {
-    "status": "public_official_text",
-    "licence": "Japanese Government terms",
-    "note": "Official government publication. No open licence identified; stored for research and verification. Reusers should consult the publishing government's terms.",
-    "url": "https://www.soumu.go.jp/menu_kyotsuu/policy/terms.html"
-  },
-  "verification": {
-    "level": "full_text_checked",
-    "checks": [
-      {
-        "check": "Full English text extracted and read.",
-        "result": "8 pages; voluntary guidance; actions across the lifecycle; no binding language.",
-        "date": "2026-11-23"
-      },
-      {
-        "check": "Nature checked against the G7 documents page and the text's own framing.",
-        "result": "Voluntary code of conduct for organisations; living document; not a treaty.",
-        "date": "2026-11-23"
-      }
-    ],
-    "notes": "Full text preserved. The PDF is owner-password protected; extraction succeeded, and the extracted text is stored. No monitoring data is included in this record."
-  },
-  "related": [
-    {"id": "oecd-ai-recommendation-2019", "relation": "related", "note": "The Code states that it builds on the existing OECD AI Principles."},
-    {"id": "eu-gpai-code-of-practice-2025", "relation": "related", "note": "Later voluntary code implementing AI Act obligations for general-purpose AI models; comparable function, different legal context."}
-  ],
-  "text": {
-    "manifest": "manifest.json",
-    "full_text": true,
-    "primary_language": "en",
-    "primary_text": "text/en.txt",
-    "units_mode": "whole",
-    "extraction_note": "Text extracted with pypdf from an owner-password-protected PDF. The code's actions are numbered without periods, so the whole document is stored as one citable unit; section-level anchors were not generated."
+    "notes": "Issued as part of the Hiroshima AI Process and welcomed in the G7 Leaders' Statement of 30 October 2023.",
+    "verified_on": "2026-11-23"
   },
   "gaps": [
     "Voluntary; no legal obligation or enforcement.",
@@ -95,8 +12,138 @@
     "Only the English text is stored; the Japanese version was not acquired.",
     "The Code is addressed to organisations, not to States, and does not address military AI."
   ],
+  "id": "g7-hiroshima-code-2023",
+  "instrument_type": "code_of_conduct",
+  "issuer": [
+    {
+      "name": "G7 (2023 Japanese Presidency)",
+      "role": "issuer",
+      "url": "https://www.soumu.go.jp/hiroshimaaiprocess/en/documents.html"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "English text acquired. The Japanese government publishes Japanese materials; the English text is the version acquired and analysed. No authentic-language clause exists because the instrument is not a treaty.",
+    "translations": [
+      "ja"
+    ]
+  },
   "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "official_text_read",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "mic-code",
+          "mic-documents"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "official_text_read",
+        "source_ids": [
+          "mic-code",
+          "mic-documents"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "official_text_read",
+        "source_ids": [
+          "mic-code",
+          "mic-documents"
+        ]
+      }
+    ],
     "discovered_via": "Official Japanese MIC Hiroshima AI Process pages; cross-checked with the G7 Leaders' Statement.",
-    "search_dates": ["2026-11-23"]
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "oecd-ai-recommendation-2019",
+      "note": "The Code states that it builds on the existing OECD AI Principles.",
+      "relation": "related"
+    },
+    {
+      "id": "eu-gpai-code-of-practice-2025",
+      "note": "Later voluntary code implementing AI Act obligations for general-purpose AI models; comparable function, different legal context.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Whole document — risk identification and mitigation across the AI lifecycle; transparency; security; incident reporting; content authentication; research investment; governance",
+      "Preamble — voluntary guidance; living document; applies to advanced AI systems including foundation models and generative AI"
+    ],
+    "excluded_scope": "Voluntary and addressed to organisations, not States; no enforcement, conformity assessment or market-access consequences.",
+    "reason": "A voluntary G7 code of conduct addressed to organisations developing the most advanced AI systems, including foundation models and generative AI. It is a leading non-binding implementation instrument and builds on the OECD AI Principles. It is not a treaty and creates no legal obligation."
+  },
+  "rights": {
+    "licence": "Japanese Government terms",
+    "note": "Official government publication. No open licence identified; stored for research and verification. Reusers should consult the publishing government's terms.",
+    "status": "public_official_text",
+    "url": "https://www.soumu.go.jp/menu_kyotsuu/policy/terms.html"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "mic-code",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official English PDF, 8 pages; downloaded and stored. The PDF is encrypted with an owner password but permits text extraction.",
+      "publisher": "Ministry of Internal Affairs and Communications, Japan",
+      "url": "https://www.soumu.go.jp/hiroshimaaiprocess/pdf/document05_en.pdf"
+    },
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "mic-documents",
+      "kind": "official_secondary",
+      "note": "Official Hiroshima AI Process documents page, listing the Code of Conduct and related Guiding Principles.",
+      "publisher": "Ministry of Internal Affairs and Communications, Japan",
+      "url": "https://www.soumu.go.jp/hiroshimaaiprocess/en/documents.html"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Adopted and published as a voluntary code. No signature or ratification; organisations may endorse it and report under the separate Hiroshima Process Reporting Framework.",
+  "text": {
+    "extraction_note": "Text extracted with pypdf from an owner-password-protected PDF. The code's actions are numbered without periods, so the whole document is stored as one citable unit; section-level anchors were not generated.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
+  "title": {
+    "official": "Hiroshima Process International Code of Conduct for Organizations Developing Advanced AI Systems",
+    "short": "G7 Hiroshima AI Process Code of Conduct"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Full English text extracted and read.",
+        "date": "2026-11-23",
+        "result": "8 pages; voluntary guidance; actions across the lifecycle; no binding language."
+      },
+      {
+        "check": "Nature checked against the G7 documents page and the text's own framing.",
+        "date": "2026-11-23",
+        "result": "Voluntary code of conduct for organisations; living document; not a treaty."
+      }
+    ],
+    "level": "full_text_checked",
+    "notes": "Full text preserved. The PDF is owner-password protected; extraction succeeded, and the extracted text is stored. No monitoring data is included in this record."
   }
 }

@@ -1,52 +1,274 @@
 {
-  "id": "afcfta-digital-trade-protocol-2024",
-  "title": {"official": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Digital Trade", "short": "AfCFTA Digital Trade Protocol"},
-  "category": "agreement_ai_provisions",
-  "instrument_type": "protocol",
   "binding_status": "binding",
-  "status": "not_in_force",
+  "category": "agreement_ai_provisions",
+  "dates": {
+    "adopted": "2024-02-18",
+    "entered_into_force": null,
+    "notes": "Adopted by the AU Assembly on 18 February 2024. Eight annexes, including the Annex on Emerging and Advanced Technologies, were adopted by the 38th Ordinary Session of the Assembly in February 2025. Entry into force is governed by Article 47 of the Protocol and Article 23(2) of the AfCFTA Agreement (22 ratifications). No entry-into-force date or ratification table was displayed on the AU treaty page consulted, and no depositary register was read.",
+    "verified_on": "2026-11-24"
+  },
+  "gaps": [
+    "Entry into force is not confirmed; the AU treaty page displays no entry-into-force date or ratification table.",
+    "No depositary register was read; the number of ratifications and deposits is unknown, not zero.",
+    "The Annex on Emerging and Advanced Technologies was read for Articles 1, 4, 5 and 12, not end-to-end.",
+    "The Annex's obligations are real ('shall') but apply only to State Parties and only once the Protocol is in force for them.",
+    "Only the English texts were read; the five other authentic-language texts were not acquired."
+  ],
+  "id": "afcfta-digital-trade-protocol-2024",
+  "instrument_type": "protocol",
   "issuer": [
-    {"name": "African Union / AfCFTA State Parties", "role": "issuer", "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade"},
-    {"name": "Chairperson of the African Union Commission", "role": "depositary"}
+    {
+      "name": "African Union / AfCFTA State Parties",
+      "role": "issuer",
+      "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade"
+    },
+    {
+      "name": "Chairperson of the African Union Commission",
+      "role": "depositary"
+    }
   ],
-  "relevance": {
-    "reason": "A continental digital-trade protocol whose objectives expressly include emerging and advanced technologies and which has an Annex on Emerging and Advanced Technologies. It is binding once in force, but it is not yet in force; the annex was not read in full, so its specific AI obligations are not asserted.",
-    "ai_provisions": ["Article 3 — specific objectives, including promotion of emerging and advanced technologies", "Annex on Emerging and Advanced Technologies — listed in the compiled annexes; provisions not read in full"],
-    "excluded_scope": "Not in force. The Annex on Emerging and Advanced Technologies was not read in full; the record does not characterise its AI obligations beyond the subject matter."
-  },
-  "dates": {"adopted": "2024-02-18", "entered_into_force": null, "verified_on": "2026-11-23", "notes": "Adopted by the AU Assembly on 18 February 2024. Eight annexes, including the Annex on Emerging and Advanced Technologies, were adopted by the 38th Ordinary Session of the Assembly in February 2025 (Assembly/AU/9(XXXVIII), para. 25; compiled annexes). Entry into force is governed by Article 47 of the Protocol and Article 23(2) of the AfCFTA Agreement (22 ratifications)."},
-  "status_note": "Adopted but not in force. The AU treaty page, accessed on 23 November 2026, lists the Protocol and the compiled annexes but displays no entry-into-force date and no ratification table for this Protocol. No depositary record was read, so the record does not assert a ratification count.",
-  "parties": {
-    "as_of": "2026-11-23",
-    "summary": "The AU treaty page lists no entry-into-force date and no ratification table for this Protocol; no depositary record was read. No ratification count is asserted.",
-    "source_ids": ["au-page", "au-agreement"],
-    "entries": [],
-    "reservations": [], "declarations": [], "objections": [], "notifications": [], "withdrawals": [],
-    "unknowns": ["Ratification status and deposits were not read from the AU depositary; no count is asserted.", "No notification of entry into force was located on the AU treaty page consulted."]
-  },
-  "languages": {"authentic": ["en", "fr", "ar", "pt", "es"], "translations": ["sw"], "note": "The AU treaty page lists English, French, Arabic, Portuguese and Spanish texts of the Protocol; the compiled annexes also include Swahili. Only English metadata was consulted, so the authentic-language clause was not verified."},
-  "sources": [
-    {"id": "au-page", "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade", "publisher": "African Union", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official treaty page: links to the Protocol in five languages and compiled annexes in six; no entry-into-force date or ratification table displayed."},
-    {"id": "au-page-2024", "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade-0", "publisher": "African Union", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official treaty page: date of adoption 18 February 2024 and link to the Protocol text."},
-    {"id": "au-annexes", "url": "https://au.int/sites/default/files/treaties/44963-ax-ENG_Circulation_Digital_Trade_Compiled_Certified_Legal_Instruments_38thAssembly_Feb_2025_27_May2025.pdf", "publisher": "African Union", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Compiled certified annexes adopted by the 38th Ordinary Session of the Assembly, February 2025; includes the Annex on Emerging and Advanced Technologies."},
-    {"id": "au-progress", "url": "https://archives.au.int/bitstream/handle/123456789/10707/Assembly%20AU%209%20(XXXVIII)%20_E.pdf?isAllowed=y&sequence=1", "publisher": "African Union", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Assembly/AU/9(XXXVIII) progress report, 15–16 February 2025, para. 25: the eight annexes to the Protocol were adopted by the 38th Ordinary Session."},
-    {"id": "au-agreement", "url": "https://au.int/sites/default/files/treaties/36437-treaty-consolidated_text_on_cfta_-_en.pdf", "publisher": "African Union", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Agreement Establishing the AfCFTA, Article 23(2): the Protocol enters into force thirty days after deposit of the twenty-second instrument of ratification."}
-  ],
-  "rights": {"status": "public_official_text", "licence": "African Union terms", "note": "Official AU treaty text; no open licence identified. Metadata only in this corpus.", "url": "https://au.int/en/copyright"},
-  "verification": {
-    "level": "metadata_verified",
-    "checks": [
-      {"check": "Adoption date and text links checked on the official AU treaty pages.", "result": "Adopted 18 February 2024; text in five languages and compiled annexes in six; no entry-into-force date or ratification table displayed.", "date": "2026-11-23"},
-      {"check": "Annex adoption checked in the compiled annexes and Assembly progress report.", "result": "Eight annexes, including the Annex on Emerging and Advanced Technologies, were adopted by the 38th Assembly in February 2025.", "date": "2026-11-23"},
-      {"check": "Entry-into-force rule checked in the AfCFTA Agreement.", "result": "Article 23(2) sets the twenty-second ratification as the threshold; the Protocol’s Article 47 incorporates it.", "date": "2026-11-23"},
-      {"check": "Annex availability checked.", "result": "The compiled annexes include the Annex on Emerging and Advanced Technologies; the annex was not read in full and its article numbering is not asserted.", "date": "2026-11-23"}
+  "languages": {
+    "authentic": [
+      "ar",
+      "en",
+      "fr",
+      "sw",
+      "pt",
+      "es"
     ],
-    "notes": "Metadata verified; full text not stored. The Annex on Emerging and Advanced Technologies was not read in full, and its exact provisions and article numbering are not asserted."
+    "locator": "Article 52",
+    "note": "Article 52: six original texts in Arabic, English, French, Kiswahili, Portuguese and Spanish, all equally authentic. Only the English texts were read.",
+    "source_ids": [
+      "au-page"
+    ],
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "A protocol to the AfCFTA Agreement, adopted by the Assembly, with signature, ratification or accession (Article 47) and entry into force governed by Article 23(2) of the AfCFTA Agreement. Its Annex on Emerging and Advanced Technologies contains 'shall' obligations, including national treatment and non-discrimination.",
+    "source_ids": [
+      "au-page",
+      "au-agreement",
+      "au-annexes"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-23",
+    "counts": {
+      "ratifications": {
+        "basis": "unknown",
+        "note": "No depositary register or ratification table was read. This is not a verified zero.",
+        "source_ids": [
+          "au-page"
+        ],
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "au-page",
+      "au-agreement"
+    ],
+    "summary": "The AU treaty page displays no entry-into-force date and no ratification table for this Protocol; no depositary register was read. The number of ratifications is unknown, not zero, and no count is asserted.",
+    "unknowns": [
+      "Ratification status and deposits were not read from the AU depositary; the total is unknown and no count is asserted.",
+      "No notification of entry into force was located on the AU treaty page consulted; this is not proof that the Protocol is out of force."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-24",
+        "field": "status",
+        "locator": "AU treaty page (no entry-into-force date or ratification table); Protocol Article 47",
+        "method": "official_page_read",
+        "note": "No definitive status asserted from the absence of a date.",
+        "source_ids": [
+          "au-page"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "provisions",
+        "locator": "Protocol Article 2(2)(f); Annex Articles 1(b), 4, 5 and 12",
+        "method": "official_text_read",
+        "source_ids": [
+          "au-page",
+          "au-annexes"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "languages",
+        "locator": "Article 52",
+        "method": "official_text_read",
+        "source_ids": [
+          "au-page"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "counts",
+        "locator": "AU treaty page",
+        "method": "official_page_read",
+        "note": "Ratifications unknown.",
+        "source_ids": [
+          "au-page"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "legal_nature",
+        "locator": "Protocol Article 47; AfCFTA Agreement Article 23(2)",
+        "method": "official_text_read",
+        "source_ids": [
+          "au-agreement",
+          "au-page"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "parties",
+        "locator": "parties.entries, parties.counts and parties.as_of",
+        "method": "metadata_only",
+        "source_ids": [
+          "au-page",
+          "au-agreement"
+        ]
+      }
+    ],
+    "discovered_via": "African Union treaty portal, compiled annexes and the Assembly progress report; no secondary status source used.",
+    "search_dates": [
+      "2026-11-23"
+    ]
   },
   "related": [
-    {"id": "depa-2020", "relation": "related", "note": "Another digital-trade agreement with express AI provisions, in force."},
-    {"id": "sadea-2020", "relation": "related", "note": "Another digital-trade agreement with express AI provisions, in force."}
+    {
+      "id": "depa-2020",
+      "note": "Another digital-trade agreement with express AI provisions, in force.",
+      "relation": "related"
+    },
+    {
+      "id": "sadea-2020",
+      "note": "Another digital-trade agreement with express AI provisions, in force.",
+      "relation": "related"
+    }
   ],
-  "gaps": ["Not in force; the AU treaty page displays no entry-into-force date or ratification table.", "No depositary record was read; no ratification count is asserted.", "The Annex on Emerging and Advanced Technologies was not read in full.", "AI obligations are cooperative and framework-based.", "Only English metadata consulted; other authentic languages not acquired."],
-  "provenance": {"discovered_via": "African Union treaty portal, compiled annexes and the Assembly progress report; no secondary status source used.", "search_dates": ["2026-11-23"]}
+  "relevance": {
+    "ai_provisions": [
+      "Article 2(2)(f) - a specific objective: encourage trusted, safe, ethical and responsible adoption and regulation of emerging and advanced technologies to support digital trade",
+      "Annex on Emerging and Advanced Technologies, Article 4 - State Parties shall facilitate, promote and foster deployment and use; shall adopt or maintain laws and regulations; shall not deny a person of another State Party digital trade solely on the basis that the person deploys or uses emerging and advanced technologies",
+      "Annex on Emerging and Advanced Technologies, Article 5 - national treatment: no less favourable treatment for emerging and advanced technologies developed in the territory of other State Parties",
+      "Annex on Emerging and Advanced Technologies, Article 12 - technical standards and regulations for safe, responsible and ethical deployment; harmonisation, interoperability, risk-based approach and stakeholder consultation",
+      "Annex on Emerging and Advanced Technologies, Article 1(b) - defines emerging and advanced technologies to include artificial intelligence and machine learning"
+    ],
+    "excluded_scope": "The Protocol is not confirmed in force. The obligations described are those of the text and bind only State Parties once the Protocol is in force and applicable to them. The Annex does not create product-safety certification, a ban on particular AI uses, or an AI-specific supervisory authority; its AI content is framed by digital-trade disciplines. Article 48(4) gives State Parties five years from entry into force to align national laws.",
+    "reason": "A continental digital-trade protocol whose objectives expressly include emerging and advanced technologies (Article 2(2)(f)) and which has an Annex on Emerging and Advanced Technologies. The Annex is not merely cooperative: Article 4 requires each State Party to facilitate deployment and not to deny market access solely because a person uses emerging technologies; Article 5 imposes a national-treatment obligation; Article 12 requires technical standards and regulations for safe, responsible and ethical deployment and their harmonisation. The Protocol is binding once in force, but entry into force is not confirmed.",
+    "source_ids": [
+      "au-page",
+      "au-annexes"
+    ]
+  },
+  "rights": {
+    "licence": "African Union terms",
+    "note": "Official AU treaty text; no open licence identified. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://au.int/en/copyright"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "au-page",
+      "kind": "official_primary",
+      "note": "Official treaty page: links to the Protocol in five languages and compiled annexes in six; no entry-into-force date or ratification table displayed.",
+      "publisher": "African Union",
+      "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade"
+    },
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "au-page-2024",
+      "kind": "official_primary",
+      "note": "Official treaty page: date of adoption 18 February 2024 and link to the Protocol text.",
+      "publisher": "African Union",
+      "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade-0"
+    },
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "au-annexes",
+      "kind": "official_primary",
+      "note": "Compiled certified annexes adopted by the 38th Ordinary Session of the Assembly, February 2025; includes the Annex on Emerging and Advanced Technologies.",
+      "publisher": "African Union",
+      "url": "https://au.int/sites/default/files/treaties/44963-ax-ENG_Circulation_Digital_Trade_Compiled_Certified_Legal_Instruments_38thAssembly_Feb_2025_27_May2025.pdf"
+    },
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "au-progress",
+      "kind": "official_primary",
+      "note": "Assembly/AU/9(XXXVIII) progress report, 15–16 February 2025, para. 25: the eight annexes to the Protocol were adopted by the 38th Ordinary Session.",
+      "publisher": "African Union",
+      "url": "https://archives.au.int/bitstream/handle/123456789/10707/Assembly%20AU%209%20(XXXVIII)%20_E.pdf?isAllowed=y&sequence=1"
+    },
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "au-agreement",
+      "kind": "official_primary",
+      "note": "Agreement Establishing the AfCFTA, Article 23(2): the Protocol enters into force thirty days after deposit of the twenty-second instrument of ratification.",
+      "publisher": "African Union",
+      "url": "https://au.int/sites/default/files/treaties/36437-treaty-consolidated_text_on_cfta_-_en.pdf"
+    }
+  ],
+  "status": "unknown",
+  "status_note": "Adopted, but entry into force is not confirmed. The AU treaty page consulted on 24 November 2026 lists the Protocol and the compiled annexes but displays no entry-into-force date and no ratification table. That absence is not treated as proof that the Protocol is out of force: the number of ratifications and deposits is recorded as unknown, not zero.",
+  "title": {
+    "official": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Digital Trade",
+    "short": "AfCFTA Digital Trade Protocol"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Adoption date and text links checked on the official AU treaty pages.",
+        "date": "2026-11-24",
+        "result": "Adopted 18 February 2024; text in six authentic languages and compiled annexes; no entry-into-force date or ratification table displayed."
+      },
+      {
+        "check": "Objectives article checked in the Protocol text.",
+        "date": "2026-11-24",
+        "result": "Article 2(2)(f) contains the emerging-and-advanced-technologies objective; Article 3 is the scope-of-application provision."
+      },
+      {
+        "check": "Authentic languages checked in the Protocol text.",
+        "date": "2026-11-24",
+        "result": "Article 52 lists six equally authentic texts: Arabic, English, French, Kiswahili, Portuguese and Spanish."
+      },
+      {
+        "check": "Annex on Emerging and Advanced Technologies read.",
+        "date": "2026-11-24",
+        "result": "Articles 1(b), 4, 5 and 12 define emerging and advanced technologies (including AI), impose deployment, market-access and national-treatment obligations, and require technical standards and harmonisation."
+      },
+      {
+        "check": "Annex adoption checked in the compiled annexes and Assembly progress report.",
+        "date": "2026-11-24",
+        "result": "Eight annexes, including the Annex on Emerging and Advanced Technologies, were adopted by the 38th Assembly in February 2025."
+      },
+      {
+        "check": "Entry-into-force rule checked in the AfCFTA Agreement.",
+        "date": "2026-11-24",
+        "result": "Article 47 of the Protocol refers to Article 23(2) of the AfCFTA Agreement, which sets the twenty-second ratification as the threshold. No ratification total was verified."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "The Protocol and the Annex on Emerging and Advanced Technologies were read from the official AU PDFs. The record remains metadata-only because no full text is stored. Content of the provisions, entry into force and applicability are recorded separately: the Annex contains hard 'shall' obligations, but the Protocol's entry into force is not confirmed and the obligations bind only State Parties once it is in force for them."
+  }
 }

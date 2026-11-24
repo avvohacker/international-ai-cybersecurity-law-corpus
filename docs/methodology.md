@@ -58,7 +58,9 @@ Sources are never overwritten. If a later retrieval differs from the registered 
 - Signature, ratification, acceptance, approval, accession and entry into force are separate fields.
 - Reservations, declarations, objections, notifications and withdrawals are separate lists.
 - A Party's position is never inferred from the position of an international organisation of which it is a member. The EU is recorded as a party to CETS 225 only because the EU deposited an instrument; EU member States are not thereby recorded as parties.
-- Political declarations have no signature or ratification. Their records list endorsers in `parties.entries`; the atlas labels the act as endorsement, not signature. An international organisation that is a party is named outside the map frame; its member States are shown in a lighter tone only where they did not sign, ratify or endorse individually.
+- A political declaration creates no treaty obligation, but its record must still state the act accurately. A text may be endorsed, or politically signed, or issued collectively; these are different acts and are labelled as such. `parties.act` is one of `treaty_signature`, `political_signature`, `endorsement`, `collective_issue`, `resolution`, `accession` or another recorded form. An international organisation that is a party is named outside the map frame; its member States are shown in a lighter tone only where they did not act individually.
+- Counts are stored under `parties.counts`, one object per act, with `total`, `verified`, `basis` and source IDs. `basis` distinguishes `verified_total`, `declared_total`, `zero_verified`, `unknown` and `not_applicable`. A `not_applicable` count is not a zero; an `unknown` count has no total. A domestic approval (`domestic_approval`) is never counted as an international deposit.
+- Field-level provenance is stored in `provenance.assertions`: field, source IDs, locator, date and method. A record-level `verification.level` does not imply that every field was checked.
 - Party names are normalized to a common English form for matching across records; the official spelling remains on the source page.
 - Each map has an instrument panel built from the record: `relevance.reason`, `dates`, `dates.notes` and the record’s official sources. Its source links point only to sources marked `official_primary`, `registry` or `official_journal`; a final link opens the full record and citation. The panel does not add facts outside the record, and the heading is not repeated inside every panel.
 - Where a party table could not be captured, aggregate counts are stored with the exact status date, and the missing rows are listed in `parties.unknowns`.
@@ -69,9 +71,9 @@ Each record states the known reuse position. Official texts are not automaticall
 
 ## 7. Build and reproducibility
 
-The build uses Python's standard library only and does not access the network. It:
+The build does not access the network. It uses the published JSON Schema (draft 2020-12) through `jsonschema`, with `FormatChecker` for dates and URIs, and keeps semantic checks separate from structural ones. It:
 
-1. validates required fields, enums, ISO dates and cross-references;
+1. applies `schema/instrument.schema.json` to every record, then validates required fields, calendar dates, count bases and cross-references;
 2. verifies every stored file against its manifest hash and size;
 3. checks that each unit's text equals the exact slice of the primary text at its stored offsets, and that the unit start lies on the declared page;
 4. checks that candidate decisions point to existing instruments when included, and do not point to catalogued instruments when excluded/pending;
@@ -84,7 +86,7 @@ The link audit is a third, network-only command: `make audit-links` or `python3 
 
 ## 8. Limits of this cycle
 
-This is a first corpus, not a comprehensive survey. The principal limits are: two AI-specific treaties, neither in force; five digital agreements with cooperative AI clauses; one category-6 negotiation record (CCW) but no adopted draft protocol; CETS 225 and WAICO not in force; an inconsistent Paris Statement endorser list (60/64/65 across official publications); a unilateral Chinese initiative with no adherence list; a WAICO membership count that names 37 of 38 reported founding members and an observer announcement by Bangladesh that is not a membership; New Delhi's 92 itemised endorsers but a 91/92 discrepancy between the MEA and PIB lists; a BRICS statement with 11 issuing States but no individual signatures; mostly English texts; metadata-only records for paywalled standards and for several official PDFs that returned access errors; and no systematic search of national bilateral treaty registries. These limits are stated in the coverage matrix and the progress file rather than hidden in the aggregate counts.
+This is a first corpus, not a comprehensive survey. The principal limits are: two AI-specific treaties, CETS 225 not in force and WAICO's entry into force unconfirmed; five digital agreements whose AI clauses are mostly cooperative, with the AfCFTA annex using “shall” obligations for State Parties once in force; one category-6 negotiation record (CCW) but no adopted draft protocol; an inconsistent Paris Statement endorser list (60/64/65 across official publications); a unilateral Chinese initiative with no adherence list; a WAICO membership count that names 37 of 38 reported founding members, records deposits as unknown rather than zero, and treats Bangladesh's observer announcement as an application, not a membership; New Delhi's 92 itemised endorsers but a 91/92 discrepancy between the MEA and PIB lists; a BRICS statement with 11 listed member States, no individual signatures and a contested Saudi status; mostly English texts; metadata-only records for paywalled standards and for several official PDFs that returned access errors; and no systematic search of national bilateral treaty registries. These limits are stated in the coverage matrix and the progress file rather than hidden in the aggregate counts.
 
 ## 9. Sources of international law
 
@@ -115,11 +117,11 @@ An instrument enters the corpus when all of the following hold:
 3. An official text, official excerpt or official status page is available and cited.
 4. The record can state the act and its legal nature without inventing a signature, ratification or party where none exists.
 
-The legal family, the forum and the presence of an individual signature block are not inclusion tests. A collective statement, a resolution adopted without a vote and a treaty opened for signature can all qualify. The record must distinguish **issuing States**, **endorsers**, **signatories**, **ratifying States** and **members of an organisation** rather than forcing them into one vocabulary.
+The legal family, the forum and the presence of an individual signature block are not inclusion tests. A collective statement, a resolution adopted without a vote and a treaty opened for signature can all qualify. The record must distinguish **listed members at a collective issue**, **endorsers**, **treaty signatories**, **political signatories**, **ratifying States**, **accessions**, **observers** and **members of an organisation** rather than forcing them into one vocabulary.
 
 ### 10.3 Maps are a view, not a gate
 
-A record may be in the corpus without being mapped. A map requires a published State-level act: an individual signature, ratification, endorsement or a collective issue attributable to named States. When a record cannot be mapped, the reason is written in the page and in this methodology, not left implicit. The BRICS map is therefore a map of **issuing States**, with a distinct status and legend; it is not presented as eleven signatures. The New Delhi map is a map of **endorsers**; the CETS 225 map is a map of **signatures and ratifications**; the WAICO map is a map of **signatures**, not approvals. The map key and the record use the same verb.
+A record may be in the corpus without being mapped. A map requires a published State-level act: an individual signature, ratification, endorsement or a collective issue attributable to named States. When a record cannot be mapped, the reason is written in the page and in this methodology, not left implicit. The BRICS map is therefore a map of **listed member States** at a collective issue, with a distinct status and legend; it is not presented as eleven individual signatures. The New Delhi map is a map of **endorsers**; the CETS 225 map is a map of **signatures and ratifications**; the WAICO map is a map of **signatures**, not approvals. The map key and the record use the same verb.
 
 ### 10.4 Source-family watchlist and omission test
 
@@ -134,4 +136,4 @@ The omission test at the end of a cycle is deliberately mechanical:
 
 ### 10.5 What this changes in practice
 
-The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has nine maps and 45 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.
+The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has nine maps and 46 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.

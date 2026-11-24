@@ -1,107 +1,11 @@
 {
-  "id": "un-ga-res-78-265",
-  "title": {
-    "official": "Seizing the opportunities of safe, secure and trustworthy artificial intelligence systems for sustainable development",
-    "short": "UNGA resolution 78/265 on AI systems for sustainable development"
-  },
-  "category": "non_binding_instrument",
-  "instrument_type": "resolution",
   "binding_status": "non_binding",
-  "status": "adopted",
-  "issuer": [
-    {
-      "name": "United Nations General Assembly (78th session)",
-      "role": "issuer",
-      "url": "https://www.un.org/en/ga/"
-    }
-  ],
-  "relevance": {
-    "reason": "The first United Nations General Assembly resolution devoted to artificial intelligence. It is a political, non-binding resolution that recognises opportunities and risks of AI systems and calls for safe, secure and trustworthy AI, international cooperation and capacity-building, especially for developing countries. It creates no treaty obligation.",
-    "ai_provisions": [
-      "Preamble — opportunities and risks of AI for sustainable development and human rights",
-      "Operative paragraphs — safe, secure and trustworthy AI systems; international cooperation; capacity-building; bridging digital divides"
-    ],
-    "excluded_scope": "Non-binding General Assembly resolution; no monitoring or enforcement mechanism; it does not address military AI."
-  },
+  "category": "non_binding_instrument",
   "dates": {
     "adopted": "2024-03-21",
+    "notes": "Adopted at the 63rd plenary meeting of the 78th session, without a vote (UN Digital Library action note). Document distributed 1 April 2024.",
     "published": "2024-04-01",
-    "verified_on": "2026-11-23",
-    "notes": "Adopted at the 63rd plenary meeting of the 78th session, without a vote (UN Digital Library action note). Document distributed 1 April 2024."
-  },
-  "status_note": "Adopted without vote. A non-binding resolution; no signature, ratification or entry into force.",
-  "languages": {
-    "authentic": ["ar", "zh", "en", "fr", "ru", "es"],
-    "translations": ["de"],
-    "note": "UN official languages. A German translation is listed in the UN Digital Library; it is not an authentic text."
-  },
-  "sources": [
-    {
-      "id": "un-doc",
-      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F265&t=pdf",
-      "publisher": "United Nations",
-      "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "language": "en",
-      "note": "Official A/RES/78/265 English PDF, 8 pages; downloaded and stored; SHA-256 recorded in the corpus manifest."
-    },
-    {
-      "id": "un-library",
-      "url": "https://digitallibrary.un.org/record/4043244",
-      "publisher": "UN Digital Library",
-      "kind": "registry",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "note": "Bibliographic record: symbol A/RES/78/265, action note 2024-03-21, adopted without vote at the 63rd plenary meeting; links to all six language versions."
-    }
-  ],
-  "rights": {
-    "status": "public_official_text",
-    "licence": "United Nations terms of use",
-    "note": "Official UN document. UN copyright and terms of use apply; stored for research and verification, not for commercial redistribution.",
-    "url": "https://www.un.org/en/about-us/terms-of-use"
-  },
-  "verification": {
-    "level": "full_text_checked",
-    "checks": [
-      {
-        "check": "PDF downloaded from the official UN document service and hashed.",
-        "result": "HTTP 200, 8 pages, SHA-256 83887bee43ad1d5065de9f48c8ad5b7e81807944a3d2ec89023e3da3f61159d9.",
-        "date": "2026-11-23"
-      },
-      {
-        "check": "Title, resolution number and adoption date checked on the document itself.",
-        "result": "A/RES/78/265; adopted 21 March 2024; title as recorded.",
-        "date": "2026-11-23"
-      },
-      {
-        "check": "Adoption without vote checked against the UN Digital Library action note.",
-        "result": "Adopted without vote, 63rd plenary meeting.",
-        "date": "2026-11-23"
-      }
-    ],
-    "notes": "Full text preserved. PDF extraction inserts spaces in some words (for example 'Seventy -eighth'); this is an extraction artefact, not a textual variant."
-  },
-  "related": [
-    {
-      "id": "un-ga-res-78-311",
-      "relation": "related",
-      "note": "Later 2024 UNGA resolution on international cooperation on AI capacity-building."
-    },
-    {
-      "id": "un-ga-res-79-325",
-      "relation": "related",
-      "note": "2025 resolution establishing the Independent International Scientific Panel and the Global Dialogue on AI Governance."
-    }
-  ],
-  "text": {
-    "manifest": "manifest.json",
-    "full_text": true,
-    "primary_language": "en",
-    "primary_text": "text/en.txt",
-    "units_mode": "resolution",
-    "extraction_note": "Text extracted from the official English PDF with pypdf. Running headers, document symbols, distribution codes and page numbers remain where extraction preserved them. Paragraph units are defined by operative numbering."
+    "verified_on": "2026-11-23"
   },
   "gaps": [
     "Non-binding: the resolution does not create legal obligations or a monitoring mechanism.",
@@ -109,8 +13,148 @@
     "No formal follow-up or implementation report specific to this resolution was identified.",
     "The resolution does not address military uses of AI."
   ],
+  "id": "un-ga-res-78-265",
+  "instrument_type": "resolution",
+  "issuer": [
+    {
+      "name": "United Nations General Assembly (78th session)",
+      "role": "issuer",
+      "url": "https://www.un.org/en/ga/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "ar",
+      "zh",
+      "en",
+      "fr",
+      "ru",
+      "es"
+    ],
+    "note": "UN official languages. A German translation is listed in the UN Digital Library; it is not an authentic text.",
+    "translations": [
+      "de"
+    ]
+  },
   "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "official_text_read",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "un-doc",
+          "un-library"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "official_text_read",
+        "source_ids": [
+          "un-doc",
+          "un-library"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "official_text_read",
+        "source_ids": [
+          "un-doc",
+          "un-library"
+        ]
+      }
+    ],
     "discovered_via": "UN Digital Library and documents.un.org; cited in later UNGA resolution 79/325.",
-    "search_dates": ["2026-11-23"]
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "un-ga-res-78-311",
+      "note": "Later 2024 UNGA resolution on international cooperation on AI capacity-building.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-79-325",
+      "note": "2025 resolution establishing the Independent International Scientific Panel and the Global Dialogue on AI Governance.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Preamble — opportunities and risks of AI for sustainable development and human rights",
+      "Operative paragraphs — safe, secure and trustworthy AI systems; international cooperation; capacity-building; bridging digital divides"
+    ],
+    "excluded_scope": "Non-binding General Assembly resolution; no monitoring or enforcement mechanism; it does not address military AI.",
+    "reason": "The first United Nations General Assembly resolution devoted to artificial intelligence. It is a political, non-binding resolution that recognises opportunities and risks of AI systems and calls for safe, secure and trustworthy AI, international cooperation and capacity-building, especially for developing countries. It creates no treaty obligation."
+  },
+  "rights": {
+    "licence": "United Nations terms of use",
+    "note": "Official UN document. UN copyright and terms of use apply; stored for research and verification, not for commercial redistribution.",
+    "status": "public_official_text",
+    "url": "https://www.un.org/en/about-us/terms-of-use"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "un-doc",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official A/RES/78/265 English PDF, 8 pages; downloaded and stored; SHA-256 recorded in the corpus manifest.",
+      "publisher": "United Nations",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F78%2F265&t=pdf"
+    },
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "un-library",
+      "kind": "registry",
+      "note": "Bibliographic record: symbol A/RES/78/265, action note 2024-03-21, adopted without vote at the 63rd plenary meeting; links to all six language versions.",
+      "publisher": "UN Digital Library",
+      "url": "https://digitallibrary.un.org/record/4043244"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Adopted without vote. A non-binding resolution; no signature, ratification or entry into force.",
+  "text": {
+    "extraction_note": "Text extracted from the official English PDF with pypdf. Running headers, document symbols, distribution codes and page numbers remain where extraction preserved them. Paragraph units are defined by operative numbering.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "resolution"
+  },
+  "title": {
+    "official": "Seizing the opportunities of safe, secure and trustworthy artificial intelligence systems for sustainable development",
+    "short": "UNGA resolution 78/265 on AI systems for sustainable development"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "PDF downloaded from the official UN document service and hashed.",
+        "date": "2026-11-23",
+        "result": "HTTP 200, 8 pages, SHA-256 83887bee43ad1d5065de9f48c8ad5b7e81807944a3d2ec89023e3da3f61159d9."
+      },
+      {
+        "check": "Title, resolution number and adoption date checked on the document itself.",
+        "date": "2026-11-23",
+        "result": "A/RES/78/265; adopted 21 March 2024; title as recorded."
+      },
+      {
+        "check": "Adoption without vote checked against the UN Digital Library action note.",
+        "date": "2026-11-23",
+        "result": "Adopted without vote, 63rd plenary meeting."
+      }
+    ],
+    "level": "full_text_checked",
+    "notes": "Full text preserved. PDF extraction inserts spaces in some words (for example 'Seventy -eighth'); this is an extraction artefact, not a textual variant."
   }
 }

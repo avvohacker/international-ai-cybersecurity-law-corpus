@@ -1,13 +1,21 @@
 {
-  "id": "un-hrc-res-63-15",
-  "title": {
-    "official": "Implications of artificial intelligence for the promotion and protection of human rights",
-    "short": "HRC resolution 63/15 on AI and human rights"
-  },
-  "category": "non_binding_instrument",
-  "instrument_type": "resolution",
   "binding_status": "non_binding",
-  "status": "adopted",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2026-10-06",
+    "notes": "Adopted without a vote at the 41st meeting of the Human Rights Council's 63rd session, 6 October 2026. Official English document A/HRC/RES/63/15, 6 pages.",
+    "verified_on": "2026-11-23"
+  },
+  "gaps": [
+    "Non-binding: no ratification, depositary, monitoring, reporting or enforcement.",
+    "Adopted without a vote, so there is no State-by-State voting record.",
+    "No military-AI prohibition; international humanitarian law is referenced only as applicable.",
+    "Only the English text was read; the other five authentic UN language versions were not acquired.",
+    "No full text is stored in the corpus; the record is metadata-only.",
+    "The requested panel discussion and OHCHR report are future follow-up, not implementation."
+  ],
+  "id": "un-hrc-res-63-15",
+  "instrument_type": "resolution",
   "issuer": [
     {
       "name": "United Nations Human Rights Council (63rd session)",
@@ -15,8 +23,133 @@
       "url": "https://www.ohchr.org/en/hrbodies/hrc/home"
     }
   ],
+  "languages": {
+    "authentic": [
+      "ar",
+      "zh",
+      "en",
+      "fr",
+      "ru",
+      "es"
+    ],
+    "note": "UN official languages. The English PDF was read; the Arabic, Chinese, French, Russian and Spanish versions were not acquired.",
+    "translations": []
+  },
+  "parties": {
+    "act": "resolution",
+    "as_of": "2026-10-06",
+    "counts": {
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      },
+      "signatures": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "hrc-resolution",
+      "hrc-record",
+      "hrc-meeting"
+    ],
+    "summary": "Adopted by the 47-member Human Rights Council without a vote. There is no individual vote or signatory list; Council membership is not a party list for this resolution.",
+    "unknowns": [
+      "No vote is recorded because the resolution was adopted without a vote; no State-by-State position is published.",
+      "No signature or ratification is possible; the resolution creates no depositary or party status.",
+      "No implementation reporting, review cycle or compliance mechanism is established beyond the requested panel discussion and OHCHR report.",
+      "Only the English text was read; the other five authentic UN language versions were not acquired."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "hrc-resolution",
+          "hrc-record",
+          "hrc-meeting"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "hrc-resolution",
+          "hrc-record",
+          "hrc-meeting"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "hrc-resolution",
+          "hrc-record",
+          "hrc-meeting"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "parties",
+        "locator": "parties.entries, parties.counts and parties.as_of",
+        "method": "metadata_only",
+        "source_ids": [
+          "hrc-resolution",
+          "hrc-record",
+          "hrc-meeting"
+        ]
+      }
+    ],
+    "discovered_via": "Coverage-checklist review of UN human-rights bodies; A/HRC/RES/63/15 was identified on the UN Digital Library and its official English PDF was read.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "un-ga-res-79-1",
+      "note": "The resolution welcomes the Pact for the Future and the Global Digital Compact, including their commitment to international human-rights law throughout the life cycle of digital and emerging technologies.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-79-325",
+      "note": "The resolution welcomes the first Global Dialogue on AI Governance in July 2026 and takes note of the Independent International Scientific Panel's preliminary report.",
+      "relation": "related"
+    },
+    {
+      "id": "unesco-ethics-ai-2021",
+      "note": "The resolution recalls the UNESCO Recommendation on the Ethics of AI (23 November 2021).",
+      "relation": "related"
+    },
+    {
+      "id": "coe-cets-225",
+      "note": "CETS 225 is the binding AI-specific human-rights treaty; the HRC resolution is universal but non-binding.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-78-265",
+      "note": "Earlier UNGA AI resolution; the HRC resolution builds on the UN's AI-governance track.",
+      "relation": "related"
+    }
+  ],
   "relevance": {
-    "reason": "A dedicated Human Rights Council resolution on the human-rights implications of artificial intelligence, adopted without a vote on 6 October 2026. It complements the General Assembly resolutions and CETS 225 by applying existing international human-rights law across the AI life cycle: discrimination, privacy, freedom of expression, human oversight, due diligence, remedies and capacity building. It is non-binding and creates no enforcement mechanism, but it is the Human Rights Council's principal AI-specific text and was missing from the corpus.",
     "ai_provisions": [
       "Operative paragraph 1 — recognises AI's potential to contribute to human rights and sustainable development, while acknowledging risks to the enjoyment of human rights.",
       "Operative paragraph 2 — affirms that the design, development, deployment and use of AI must be consistent with international law, including international human rights law and international humanitarian law as applicable.",
@@ -27,150 +160,75 @@
       "Operative paragraphs 14–17 — AI literacy, international cooperation and capacity building, digital public goods and open models, and coherence among international initiatives.",
       "Operative paragraphs 20–23 — a panel discussion at the 65th session on AI capacity building and the AI divide; an OHCHR report to the 66th session; the Council remains seized of the matter."
     ],
-    "excluded_scope": "A non-binding Human Rights Council resolution. It creates no signature, ratification, depositary, monitoring or enforcement mechanism, and it does not establish a military-AI prohibition. It applies existing human-rights obligations rather than creating new ones."
+    "excluded_scope": "A non-binding Human Rights Council resolution. It creates no signature, ratification, depositary, monitoring or enforcement mechanism, and it does not establish a military-AI prohibition. It applies existing human-rights obligations rather than creating new ones.",
+    "reason": "A dedicated Human Rights Council resolution on the human-rights implications of artificial intelligence, adopted without a vote on 6 October 2026. It complements the General Assembly resolutions and CETS 225 by applying existing international human-rights law across the AI life cycle: discrimination, privacy, freedom of expression, human oversight, due diligence, remedies and capacity building. It is non-binding and creates no enforcement mechanism, but it is the Human Rights Council's principal AI-specific text and was missing from the corpus."
   },
-  "dates": {
-    "adopted": "2026-10-06",
-    "verified_on": "2026-11-23",
-    "notes": "Adopted without a vote at the 41st meeting of the Human Rights Council's 63rd session, 6 October 2026. Official English document A/HRC/RES/63/15, 6 pages."
-  },
-  "status_note": "Adopted without a vote on 6 October 2026. The resolution is non-binding and creates no ratification, depositary, monitoring or enforcement mechanism. It applies international human-rights law to AI and requests follow-up through a panel discussion at the 65th session and an OHCHR report to the 66th session.",
-  "parties": {
-    "as_of": "2026-10-06",
-    "summary": "Adopted by the 47-member Human Rights Council without a vote. There is no individual vote or signatory list; Council membership is not a party list for this resolution.",
-    "source_ids": [
-      "hrc-resolution",
-      "hrc-record",
-      "hrc-meeting"
-    ],
-    "signatories_total": null,
-    "ratifications_total": 0,
-    "entries": [],
-    "reservations": [],
-    "declarations": [],
-    "objections": [],
-    "notifications": [],
-    "withdrawals": [],
-    "unknowns": [
-      "No vote is recorded because the resolution was adopted without a vote; no State-by-State position is published.",
-      "No signature or ratification is possible; the resolution creates no depositary or party status.",
-      "No implementation reporting, review cycle or compliance mechanism is established beyond the requested panel discussion and OHCHR report.",
-      "Only the English text was read; the other five authentic UN language versions were not acquired."
-    ]
-  },
-  "languages": {
-    "authentic": [
-      "ar",
-      "zh",
-      "en",
-      "fr",
-      "ru",
-      "es"
-    ],
-    "translations": [],
-    "note": "UN official languages. The English PDF was read; the Arabic, Chinese, French, Russian and Spanish versions were not acquired."
+  "rights": {
+    "licence": "United Nations terms of use",
+    "note": "Official UN document; UN copyright and terms of use apply. The PDF is linked, not stored.",
+    "status": "public_official_text",
+    "url": "https://www.un.org/en/about-us/terms-of-use"
   },
   "sources": [
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "hrc-resolution",
-      "url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf",
-      "publisher": "United Nations Human Rights Council",
       "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "en",
-      "note": "Official English PDF of A/HRC/RES/63/15, 6 pages; read in full. The PDF is not stored in the corpus."
+      "note": "Official English PDF of A/HRC/RES/63/15, 6 pages; read in full. The PDF is not stored in the corpus.",
+      "publisher": "United Nations Human Rights Council",
+      "url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "hrc-record",
-      "url": "https://digitallibrary.un.org/record/4130748",
-      "publisher": "UN Digital Library",
       "kind": "registry",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "note": "Bibliographic record: symbol A/HRC/RES/63/15; adopted 6 October 2026; 41st meeting; adopted without a vote."
+      "note": "Bibliographic record: symbol A/HRC/RES/63/15; adopted 6 October 2026; 41st meeting; adopted without a vote.",
+      "publisher": "UN Digital Library",
+      "url": "https://digitallibrary.un.org/record/4130748"
     },
     {
-      "id": "hrc-meeting",
-      "url": "https://digitallibrary.un.org/record/4132633",
-      "publisher": "UN Digital Library",
-      "kind": "registry",
       "accessed": "2026-11-23",
       "http_status": 200,
-      "note": "Summary record A/HRC/63/SR.41 of the meeting at which the resolution was adopted."
+      "id": "hrc-meeting",
+      "kind": "registry",
+      "note": "Summary record A/HRC/63/SR.41 of the meeting at which the resolution was adopted.",
+      "publisher": "UN Digital Library",
+      "url": "https://digitallibrary.un.org/record/4132633"
     }
   ],
-  "rights": {
-    "status": "public_official_text",
-    "licence": "United Nations terms of use",
-    "note": "Official UN document; UN copyright and terms of use apply. The PDF is linked, not stored.",
-    "url": "https://www.un.org/en/about-us/terms-of-use"
+  "status": "adopted",
+  "status_note": "Adopted without a vote on 6 October 2026. The resolution is non-binding and creates no ratification, depositary, monitoring or enforcement mechanism. It applies international human-rights law to AI and requests follow-up through a panel discussion at the 65th session and an OHCHR report to the 66th session.",
+  "title": {
+    "official": "Implications of artificial intelligence for the promotion and protection of human rights",
+    "short": "HRC resolution 63/15 on AI and human rights"
   },
   "verification": {
-    "level": "metadata_verified",
     "checks": [
       {
         "check": "Official English PDF opened and read.",
-        "result": "A/HRC/RES/63/15, 6 pages; title, symbol, 63rd session and adoption date 6 October 2026 confirmed; adopted without a vote.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "A/HRC/RES/63/15, 6 pages; title, symbol, 63rd session and adoption date 6 October 2026 confirmed; adopted without a vote."
       },
       {
         "check": "Operative paragraphs checked for AI-specific content.",
-        "result": "The resolution applies international human rights law and, as applicable, international humanitarian law to the AI life cycle; it addresses discrimination, privacy, expression, human oversight, due diligence, remedies and capacity building.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "The resolution applies international human rights law and, as applicable, international humanitarian law to the AI life cycle; it addresses discrimination, privacy, expression, human oversight, due diligence, remedies and capacity building."
       },
       {
         "check": "Party-level data checked.",
-        "result": "No individual vote or signatory list exists; the resolution was adopted by the 47-member Council without a vote.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "No individual vote or signatory list exists; the resolution was adopted by the 47-member Council without a vote."
       },
       {
         "check": "Legal nature checked.",
-        "result": "A non-binding resolution; no ratification, depositary, monitoring or enforcement mechanism.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "A non-binding resolution; no ratification, depositary, monitoring or enforcement mechanism."
       }
     ],
+    "level": "metadata_verified",
     "notes": "The official PDF was read in full but is not stored, so the record is metadata-verified rather than full-text-checked. The resolution's follow-up (65th-session panel and 66th-session report) has not yet occurred."
-  },
-  "related": [
-    {
-      "id": "un-ga-res-79-1",
-      "relation": "related",
-      "note": "The resolution welcomes the Pact for the Future and the Global Digital Compact, including their commitment to international human-rights law throughout the life cycle of digital and emerging technologies."
-    },
-    {
-      "id": "un-ga-res-79-325",
-      "relation": "related",
-      "note": "The resolution welcomes the first Global Dialogue on AI Governance in July 2026 and takes note of the Independent International Scientific Panel's preliminary report."
-    },
-    {
-      "id": "unesco-ethics-ai-2021",
-      "relation": "related",
-      "note": "The resolution recalls the UNESCO Recommendation on the Ethics of AI (23 November 2021)."
-    },
-    {
-      "id": "coe-cets-225",
-      "relation": "related",
-      "note": "CETS 225 is the binding AI-specific human-rights treaty; the HRC resolution is universal but non-binding."
-    },
-    {
-      "id": "un-ga-res-78-265",
-      "relation": "related",
-      "note": "Earlier UNGA AI resolution; the HRC resolution builds on the UN's AI-governance track."
-    }
-  ],
-  "gaps": [
-    "Non-binding: no ratification, depositary, monitoring, reporting or enforcement.",
-    "Adopted without a vote, so there is no State-by-State voting record.",
-    "No military-AI prohibition; international humanitarian law is referenced only as applicable.",
-    "Only the English text was read; the other five authentic UN language versions were not acquired.",
-    "No full text is stored in the corpus; the record is metadata-only.",
-    "The requested panel discussion and OHCHR report are future follow-up, not implementation."
-  ],
-  "provenance": {
-    "discovered_via": "Coverage-checklist review of UN human-rights bodies; A/HRC/RES/63/15 was identified on the UN Digital Library and its official English PDF was read.",
-    "search_dates": [
-      "2026-11-23"
-    ]
   }
 }

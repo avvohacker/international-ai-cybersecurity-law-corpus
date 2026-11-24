@@ -21,9 +21,10 @@ and long-term readability over query features or presentation.
 
 ## Language and tooling
 
-The build, validation, acquisition and segmentation tools are **Python 3.12**,
-using only the standard library. PDF extraction is a separate optional step
-using `pypdf` (plus `cryptography` for the encrypted G7 PDF). `make` provides the
+The build, validation, acquisition and segmentation tools are **Python 3.12**.
+Validation applies the published JSON Schema with `jsonschema`; everything else
+uses the standard library. PDF extraction is a separate optional step using
+`pypdf` (plus `cryptography` for the encrypted G7 PDF). `make` provides the
 stable entry points.
 
 Python was chosen because it is available in the environment, has no runtime
@@ -70,13 +71,31 @@ deliverable is a corpus, not an interface.
   public catalogue; the canonical data remain JSON/JSONL, and the site is
   not an independent source.
 
+## Field migration, November 2026
+
+The correction pass kept the record files as the source of truth and migrated them in place. The mapping is:
+
+| Old field or assumption | New representation | Reason |
+|---|---|---|
+| `parties.signatories_total` | `parties.counts.<act>.total` plus `.verified` | One integer conflated signatures, endorsements and members |
+| `parties.ratifications_total: 0` when no register was found | `counts.ratifications: {basis: "unknown", total: null, verified: 0}` | Absence of a search result is not a verified zero |
+| `parties.ratifications_total: 0` for an act with no ratification | `basis: "not_applicable"`, `total: null` | “Not applicable” is not zero |
+| `parties.entries[].approval` (China, WAICO) | `parties.entries[].domestic_approval` | A domestic authorisation is not international consent or a deposit |
+| Implicit act type | `parties.act` (`treaty_signature`, `political_signature`, `endorsement`, `collective_issue`, `resolution`, etc.) | Different participation acts must remain distinguishable |
+| Binding inferred from the document name | optional `legal_nature` with `qualification`, `rationale`, `source_ids`, required for contested form/force combinations | Qualification needs an argument and a source, not a label |
+| Record-level `verification.level` as a proxy for every field | `provenance.assertions[]` with `field`, `source_ids`, `locator`, `date`, `method` | A level does not prove that status, parties, languages and provisions were each checked |
+| `text.units_mode` without `pact` | schema allows `pact` | The Pact for the Future uses that segmentation |
+| `dates.closed_for_signature` absent from the schema | schema allows it | WAICO records the closing date |
+
+Existing records without `parties` were left without a parties block. Records whose status was previously inferred from an empty field were changed to `unknown` only where no official status source supported a definite value; CETS 225 remains `not_in_force` because its Treaty Office chart supplies the threshold and the count.
+
 ## Migration path
 
 The stable `id`, `instrument_id` and `unit_id` values are the join keys. If the
 corpus grows, a derived SQLite/FTS5 index or JSON-LD export can be generated from
 the JSON/JSONL sources without changing the canonical records. A move to a
 database would be justified by query volume or multi-user editing, not by the
-current size (45 instruments and a few hundred citable units).
+current size (46 instruments and a few hundred citable units).
 
 ## What would trigger a format change
 

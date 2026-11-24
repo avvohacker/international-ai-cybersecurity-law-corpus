@@ -31,12 +31,12 @@
     "issuer": "BRICS Leaders, 17th BRICS Summit, Rio de Janeiro",
     "decision": "included",
     "instrument_id": "brics-ai-statement-2025",
-    "reason": "Official BRICS Presidency PDF and Brazilian Ministry of Foreign Affairs page read. The first stand-alone BRICS leaders' statement on global AI governance, adopted on 6 July 2025; non-binding and without an individual signature block. Its 11 issuing States are identified from the official BRICS membership page. Added after the audit of other international AI instruments.",
+    "reason": "Official BRICS Presidency PDF and Brazilian Ministry of Foreign Affairs page read. The first stand-alone BRICS leaders' statement on global AI governance, adopted on 6 July 2025; non-binding and without an individual signature block. The presidency's list of 11 member States is recorded as a collective issue, not as individual signatures. Added after the audit of other international AI instruments.",
     "candidate_type": "declaration",
     "official_url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial",
     "searched_on": "2026-11-23",
     "evidence": "Official BRICS Presidency PDF of the statement; Brazilian MFA page confirming the date and the 17th BRICS Summit setting.",
-    "gaps": "No individual signature block; the 11 issuing States are identified, not individual signatories; no follow-up mechanism; relationship to WAICO not formal; no full text stored."
+    "gaps": "No individual signature block; 11 member States are listed, not individually evidenced issuers; Saudi status contested; no follow-up mechanism; relationship to WAICO not formal; no full text stored."
   },
   {
     "id": "china-global-ai-governance-initiative-2023",

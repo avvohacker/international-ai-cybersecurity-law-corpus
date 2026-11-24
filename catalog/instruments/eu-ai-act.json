@@ -1,53 +1,186 @@
 {
+  "binding_status": "binding",
+  "category": "supranational_law",
+  "dates": {
+    "adopted": "2024-06-13",
+    "entered_into_force": "2024-08-01",
+    "notes": "Published in OJ L, 2024/1689, 12 July 2024; entered into force on the twentieth day after publication. Applies from 2 August 2026, with staged earlier and later dates. A 2026 amendment is incorporated in the consolidated version of 27 July 2026 (M1), including changes to Article 113.",
+    "published": "2024-07-12",
+    "verified_on": "2026-11-23"
+  },
+  "gaps": [
+    "Not an international treaty; it binds EU Member States and market actors within EU law, not third States.",
+    "Full text not stored; the consolidated version is evolving.",
+    "National implementing measures, harmonised standards and guidance are not analysed.",
+    "Military and national-security exclusions reduce coverage of military AI.",
+    "The 2026 amendment (M1) is recorded but its full policy content is not analysed."
+  ],
   "id": "eu-ai-act",
+  "instrument_type": "regulation",
+  "issuer": [
+    {
+      "name": "European Parliament and Council of the European Union",
+      "role": "co_issuer",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "bg",
+      "es",
+      "cs",
+      "da",
+      "de",
+      "et",
+      "el",
+      "en",
+      "fr",
+      "ga",
+      "hr",
+      "it",
+      "lv",
+      "lt",
+      "hu",
+      "mt",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sk",
+      "sl",
+      "fi",
+      "sv"
+    ],
+    "note": "All official languages of the European Union; each language version of the OJ act is authentic under EU law.",
+    "translations": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "eurlex-act",
+          "eurlex-consolidated",
+          "eurlex-summary"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "eurlex-act",
+          "eurlex-consolidated",
+          "eurlex-summary"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "eurlex-act",
+          "eurlex-consolidated",
+          "eurlex-summary"
+        ]
+      }
+    ],
+    "discovered_via": "EUR-Lex; official EU AI policy pages.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "coe-cets-225",
+      "note": "The EU ratified CETS 225; Article 27(2) of the Convention allows EU member States to apply EU rules in their mutual relations. No formal implementation link was verified in this session.",
+      "relation": "related"
+    },
+    {
+      "id": "eu-gpai-code-of-practice-2025",
+      "note": "Voluntary code assessed as an adequate tool for demonstrating compliance with AI Act obligations for general-purpose AI models.",
+      "relation": "implemented_by"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Articles 1–113 and Annexes I–XIII",
+      "Article 5 — prohibited AI practices",
+      "Articles 6–49 — high-risk AI systems and obligations",
+      "Articles 51–56 — general-purpose AI models",
+      "Articles 57–99 — governance, market surveillance and enforcement",
+      "Article 113 — entry into force and staged application"
+    ],
+    "excluded_scope": "Supranational EU law; territorial and market-access scope under EU law, not a treaty regime. Military, defence and national-security uses are largely excluded by Article 2.",
+    "reason": "The European Union's binding horizontal regulation of AI, collected separately from international treaties because it is supranational legislation. It establishes risk-based obligations for AI systems and providers of general-purpose AI models, prohibits certain practices and provides market-surveillance and enforcement machinery. It is not an international treaty and does not bind non-EU States as such."
+  },
+  "rights": {
+    "licence": "Commission Decision 2011/833/EU on the reuse of Commission documents",
+    "note": "EUR-Lex content may be reused under the EU reuse decision, with attribution and no distortion. The stored catalogue does not redistribute the consolidated text.",
+    "status": "reuse_permitted",
+    "url": "https://eur-lex.europa.eu/en/legal-content/terms-of-use.html"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "eurlex-act",
+      "kind": "official_journal",
+      "language": "en",
+      "note": "Original act, OJ L, 2024/1689, 12.7.2024; ELI data.europa.eu/eli/reg/2024/1689/oj.",
+      "publisher": "Official Journal of the European Union",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+    },
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "eurlex-consolidated",
+      "kind": "official_journal",
+      "language": "en",
+      "note": "Consolidated text of 27 July 2026, incorporating amendment M1; Article 113 application dates checked here.",
+      "publisher": "Official Journal of the European Union",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng"
+    },
+    {
+      "accessed": "2026-11-23",
+      "id": "eurlex-summary",
+      "kind": "official_secondary",
+      "note": "Official summary of application dates and staged obligations.",
+      "publisher": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/legal-content/summary/rules-for-trustworthy-artificial-intelligence-in-the-eu.html"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force and applicable from 2 August 2026 in stages. The EUR-Lex consolidated version of 27 July 2026 reflects an amendment; the original 2024 text remains separately available.",
   "title": {
     "official": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)",
     "short": "EU Artificial Intelligence Act"
   },
-  "category": "supranational_law",
-  "instrument_type": "regulation",
-  "binding_status": "binding",
-  "status": "in_force",
-  "issuer": [
-    {"name": "European Parliament and Council of the European Union", "role": "co_issuer", "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"}
-  ],
-  "relevance": {
-    "reason": "The European Union's binding horizontal regulation of AI, collected separately from international treaties because it is supranational legislation. It establishes risk-based obligations for AI systems and providers of general-purpose AI models, prohibits certain practices and provides market-surveillance and enforcement machinery. It is not an international treaty and does not bind non-EU States as such.",
-    "ai_provisions": ["Articles 1–113 and Annexes I–XIII", "Article 5 — prohibited AI practices", "Articles 6–49 — high-risk AI systems and obligations", "Articles 51–56 — general-purpose AI models", "Articles 57–99 — governance, market surveillance and enforcement", "Article 113 — entry into force and staged application"],
-    "excluded_scope": "Supranational EU law; territorial and market-access scope under EU law, not a treaty regime. Military, defence and national-security uses are largely excluded by Article 2."
-  },
-  "dates": {
-    "adopted": "2024-06-13",
-    "published": "2024-07-12",
-    "entered_into_force": "2024-08-01",
-    "verified_on": "2026-11-23",
-    "notes": "Published in OJ L, 2024/1689, 12 July 2024; entered into force on the twentieth day after publication. Applies from 2 August 2026, with staged earlier and later dates. A 2026 amendment is incorporated in the consolidated version of 27 July 2026 (M1), including changes to Article 113."
-  },
-  "status_note": "In force and applicable from 2 August 2026 in stages. The EUR-Lex consolidated version of 27 July 2026 reflects an amendment; the original 2024 text remains separately available.",
-  "languages": {
-    "authentic": ["bg", "es", "cs", "da", "de", "et", "el", "en", "fr", "ga", "hr", "it", "lv", "lt", "hu", "mt", "nl", "pl", "pt", "ro", "sk", "sl", "fi", "sv"],
-    "translations": [],
-    "note": "All official languages of the European Union; each language version of the OJ act is authentic under EU law."
-  },
-  "sources": [
-    {"id": "eurlex-act", "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng", "publisher": "Official Journal of the European Union", "kind": "official_journal", "accessed": "2026-11-23", "http_status": 200, "language": "en", "note": "Original act, OJ L, 2024/1689, 12.7.2024; ELI data.europa.eu/eli/reg/2024/1689/oj."},
-    {"id": "eurlex-consolidated", "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng", "publisher": "Official Journal of the European Union", "kind": "official_journal", "accessed": "2026-11-23", "http_status": 200, "language": "en", "note": "Consolidated text of 27 July 2026, incorporating amendment M1; Article 113 application dates checked here."},
-    {"id": "eurlex-summary", "url": "https://eur-lex.europa.eu/EN/legal-content/summary/rules-for-trustworthy-artificial-intelligence-in-the-eu.html", "publisher": "EUR-Lex", "kind": "official_secondary", "accessed": "2026-11-23", "note": "Official summary of application dates and staged obligations."}
-  ],
-  "rights": {"status": "reuse_permitted", "licence": "Commission Decision 2011/833/EU on the reuse of Commission documents", "note": "EUR-Lex content may be reused under the EU reuse decision, with attribution and no distortion. The stored catalogue does not redistribute the consolidated text.", "url": "https://eur-lex.europa.eu/en/legal-content/terms-of-use.html"},
   "verification": {
-    "level": "metadata_verified",
     "checks": [
-      {"check": "Title, adoption date, OJ citation and CELEX/ELI checked on EUR-Lex.", "result": "Regulation (EU) 2024/1689, 13 June 2024, OJ L 2024/1689, 12 July 2024.", "date": "2026-11-23"},
-      {"check": "Application dates checked in Article 113 of the consolidated text of 27 July 2026.", "result": "In force; applies from 2 August 2026 with staged dates; M1 amendments incorporated.", "date": "2026-11-23"},
-      {"check": "Legal nature checked: EU regulation, not a treaty.", "result": "Supranational legislation, directly applicable in Member States.", "date": "2026-11-23"}
+      {
+        "check": "Title, adoption date, OJ citation and CELEX/ELI checked on EUR-Lex.",
+        "date": "2026-11-23",
+        "result": "Regulation (EU) 2024/1689, 13 June 2024, OJ L 2024/1689, 12 July 2024."
+      },
+      {
+        "check": "Application dates checked in Article 113 of the consolidated text of 27 July 2026.",
+        "date": "2026-11-23",
+        "result": "In force; applies from 2 August 2026 with staged dates; M1 amendments incorporated."
+      },
+      {
+        "check": "Legal nature checked: EU regulation, not a treaty.",
+        "date": "2026-11-23",
+        "result": "Supranational legislation, directly applicable in Member States."
+      }
     ],
+    "level": "metadata_verified",
     "notes": "Metadata verified; the full consolidated text is not stored in the corpus. Article-level citations should be checked against the current consolidated version because amendment M1 changed Article 113 and other provisions."
-  },
-  "related": [
-    {"id": "coe-cets-225", "relation": "related", "note": "The EU ratified CETS 225; Article 27(2) of the Convention allows EU member States to apply EU rules in their mutual relations. No formal implementation link was verified in this session."},
-    {"id": "eu-gpai-code-of-practice-2025", "relation": "implemented_by", "note": "Voluntary code assessed as an adequate tool for demonstrating compliance with AI Act obligations for general-purpose AI models."}
-  ],
-  "gaps": ["Not an international treaty; it binds EU Member States and market actors within EU law, not third States.", "Full text not stored; the consolidated version is evolving.", "National implementing measures, harmonised standards and guidance are not analysed.", "Military and national-security exclusions reduce coverage of military AI.", "The 2026 amendment (M1) is recorded but its full policy content is not analysed."],
-  "provenance": {"discovered_via": "EUR-Lex; official EU AI policy pages.", "search_dates": ["2026-11-23"]}
+  }
 }

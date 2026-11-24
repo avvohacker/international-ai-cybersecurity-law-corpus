@@ -35,14 +35,24 @@
     "translations": []
   },
   "parties": {
+    "act": "treaty_signature",
     "as_of": "2026-11-23",
+    "counts": {
+      "parties": {
+        "basis": "unknown",
+        "note": "Party-by-party data were not captured; the record does not state a count.",
+        "source_ids": [
+          "ohchr"
+        ],
+        "total": null,
+        "verified": 0
+      }
+    },
     "declarations": [],
     "entries": [],
     "notifications": [],
     "objections": [],
-    "ratifications_total": null,
     "reservations": [],
-    "signatories_total": null,
     "source_ids": [
       "ohchr"
     ],
@@ -53,6 +63,45 @@
     "withdrawals": []
   },
   "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "ohchr"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "ohchr"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "ohchr"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "parties",
+        "locator": "parties.entries, parties.counts and parties.as_of",
+        "method": "metadata_only",
+        "source_ids": [
+          "ohchr"
+        ]
+      }
+    ],
     "discovered_via": "General international human rights law; invoked in the CETS 225 preamble.",
     "search_dates": [
       "2026-11-23"

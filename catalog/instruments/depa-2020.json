@@ -1,13 +1,21 @@
 {
-  "id": "depa-2020",
-  "title": {
-    "official": "Digital Economy Partnership Agreement",
-    "short": "DEPA"
-  },
-  "category": "agreement_ai_provisions",
-  "instrument_type": "agreement",
   "binding_status": "binding",
-  "status": "in_force",
+  "category": "agreement_ai_provisions",
+  "dates": {
+    "entered_into_force": "2021-01-07",
+    "notes": "Signed by New Zealand, Chile and Singapore on 11 June 2020 GMT (12 June 2020 New Zealand time). Entered into force for New Zealand and Singapore on 7 January 2021 and for Chile on 23 November 2021. Korea's accession took effect on 3 May 2024. Costa Rica presented its Instrument of Accession on 17 September 2026; the joint press release does not state the date on which the Agreement enters into force for Costa Rica. A Protocol to the DEPA was signed on 15 July 2023; sources differ between 19 and 20 March 2024 for its entry into force.",
+    "signed": "2020-06-11",
+    "verified_on": "2026-11-24"
+  },
+  "gaps": [
+    "No depositary-certified copy was acquired; the stored text is a Party government's reproduction.",
+    "The Protocol to the DEPA and its legal effect on the AI article were not analysed.",
+    "Only English acquired; the Spanish version referenced by Chile was not acquired.",
+    "The AI article contains no enforceable substantive standard and no monitoring mechanism.",
+    "Costa Rica's accession is verified from the Parties' joint press release; the entry-into-force date for Costa Rica and the depositary notification were not read."
+  ],
+  "id": "depa-2020",
+  "instrument_type": "agreement",
   "issuer": [
     {
       "name": "New Zealand, Chile and Singapore (original Parties)",
@@ -19,126 +27,292 @@
       "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources"
     }
   ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "The authenticated signing text acquired is in English. A Spanish version is referenced by Chile's SUBREI page; it was not acquired and is not treated as authentic here.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "A treaty with final provisions, a depositary (Article 16.1), entry into force on notification by the Parties (Article 16.2) and accession (Article 16.4). The AI provision is hortatory but sits inside a binding agreement.",
+    "source_ids": [
+      "depa-text"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-23",
+    "counts": {
+      "accessions": {
+        "basis": "verified_total",
+        "source_ids": [
+          "depa-mfat-overview",
+          "depa-costa-rica"
+        ],
+        "total": 2,
+        "verified": 2
+      },
+      "parties": {
+        "basis": "verified_total",
+        "source_ids": [
+          "depa-mfat-overview",
+          "depa-costa-rica"
+        ],
+        "total": 5,
+        "verified": 5
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "note": "The DEPA counts Parties; it does not maintain a separate ratification tally in the sources read.",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "entry_into_force": "2021-01-07",
+        "notes": [],
+        "party": "New Zealand",
+        "role": "signatory",
+        "signature": "2020-06-11"
+      },
+      {
+        "entry_into_force": "2021-01-07",
+        "notes": [],
+        "party": "Singapore",
+        "role": "signatory",
+        "signature": "2020-06-11"
+      },
+      {
+        "entry_into_force": "2021-11-23",
+        "notes": [],
+        "party": "Chile",
+        "role": "signatory",
+        "signature": "2020-06-11"
+      },
+      {
+        "accession": "2024-03-04",
+        "entry_into_force": "2024-05-03",
+        "notes": [
+          "Accession; instrument deposited 4 March 2024 according to an official APEC presentation; entry into force 3 May 2024 per the New Zealand MFAT page."
+        ],
+        "party": "Korea",
+        "role": "party"
+      },
+      {
+        "accession": "2026-09-17",
+        "notes": [
+          "Instrument of Accession presented in Auckland on 17 September 2026, making Costa Rica the fifth Party and the second acceding State.",
+          "The joint press release does not state the date on which the Agreement enters into force for Costa Rica; no depositary notification was read."
+        ],
+        "party": "Costa Rica",
+        "role": "party"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "depa-mfat-overview",
+      "depa-text",
+      "depa-costa-rica"
+    ],
+    "summary": "Five Parties as of 24 November 2026: New Zealand, Singapore, Chile, Korea and Costa Rica. The depositary is New Zealand. Costa Rica presented its Instrument of Accession on 17 September 2026; the date of entry into force for Costa Rica is not stated in the joint press release.",
+    "unknowns": [
+      "The full depositary notification record and any reservations or declarations were not read.",
+      "The date of entry into force of the Agreement for Costa Rica is not stated in the joint press release of 17 September 2026 and was not verified against the depositary.",
+      "The Protocol to the DEPA is not analysed in this record."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-24",
+        "field": "status",
+        "locator": "MFAT overview and joint press release of 17 September 2026",
+        "method": "official_page_read",
+        "source_ids": [
+          "depa-mfat-overview",
+          "depa-costa-rica"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "parties",
+        "locator": "MFAT overview; joint press release, paragraphs 1 and 9",
+        "method": "official_page_read",
+        "note": "Entry into force for Costa Rica not stated.",
+        "source_ids": [
+          "depa-mfat-overview",
+          "depa-costa-rica"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "counts",
+        "locator": "Joint press release: 'fifth Party' and 'second member to accede'",
+        "method": "official_page_read",
+        "source_ids": [
+          "depa-mfat-overview",
+          "depa-costa-rica"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "legal_nature",
+        "locator": "Article 16",
+        "method": "official_text_read",
+        "source_ids": [
+          "depa-text"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "official_text_read",
+        "source_ids": [
+          "depa-text",
+          "depa-mfat-overview",
+          "depa-mfat-text",
+          "depa-costa-rica"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "official_text_read",
+        "source_ids": [
+          "depa-text",
+          "depa-mfat-overview",
+          "depa-mfat-text",
+          "depa-costa-rica"
+        ]
+      }
+    ],
+    "discovered_via": "Comparative digital-trade research; verified on the New Zealand MFAT depositary pages and the Korean government text.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "sadea-2020",
+      "note": "Parallel digital-economy agreement with an AI article (Article 31).",
+      "relation": "related"
+    },
+    {
+      "id": "uksdea-2022",
+      "note": "Parallel digital-economy agreement with an AI article (Article 8.61-R).",
+      "relation": "related"
+    },
+    {
+      "id": "ksdpa-2022",
+      "note": "Parallel digital partnership agreement with an AI article (Article 14.28).",
+      "relation": "related"
+    },
+    {
+      "id": "oecd-ai-recommendation-2019",
+      "note": "The DEPA AI article refers to internationally recognised principles and guidelines; the OECD AI Principles are the principal intergovernmental reference.",
+      "relation": "related"
+    }
+  ],
   "relevance": {
-    "reason": "A binding digital-economy agreement whose Module 8 contains a dedicated article on artificial intelligence. The AI provision is expressly included in a treaty, although its operative language is cooperative and best-efforts ('shall endeavour'), not a set of prohibitions or product rules.",
     "ai_provisions": [
       "Article 8.2 — Artificial Intelligence: recognition of AI's economic and social importance; promotion of ethical and governance frameworks; consideration of internationally recognised principles including explainability, transparency, fairness and human-centred values"
     ],
-    "excluded_scope": "The AI article does not create enforceable substantive standards, conformity assessment or market-access conditions; it commits the Parties to promote and endeavour."
+    "excluded_scope": "The AI article does not create enforceable substantive standards, conformity assessment or market-access conditions; it commits the Parties to promote and endeavour.",
+    "reason": "A binding digital-economy agreement whose Module 8 contains a dedicated article on artificial intelligence. The AI provision is expressly included in a treaty, although its operative language is cooperative and best-efforts ('shall endeavour'), not a set of prohibitions or product rules."
   },
-  "dates": {
-    "signed": "2020-06-11",
-    "entered_into_force": "2021-01-07",
-    "verified_on": "2026-11-23",
-    "notes": "Signed by New Zealand, Chile and Singapore on 11 June 2020 GMT (12 June 2020 New Zealand time). Entered into force for New Zealand and Singapore on 7 January 2021 and for Chile on 23 November 2021. Korea's accession took effect on 3 May 2024. A Protocol to the DEPA was signed on 15 July 2023; sources differ between 19 and 20 March 2024 for its entry into force."
-  },
-  "status_note": "In force for New Zealand, Singapore, Chile and Korea. Costa Rica was invited to accede and, according to Singapore's MTI page consulted in this session, joined in September 2026; that accession is recorded as a gap because the depositary record was not read.",
-  "parties": {
-    "as_of": "2026-11-23",
-    "summary": "Four Parties as of the verification date: New Zealand, Singapore, Chile and Korea. The depositary is New Zealand.",
-    "source_ids": ["depa-mfat-overview", "depa-text"],
-    "entries": [
-      {"party": "New Zealand", "signature": "2020-06-11", "entry_into_force": "2021-01-07", "notes": []},
-      {"party": "Singapore", "signature": "2020-06-11", "entry_into_force": "2021-01-07", "notes": []},
-      {"party": "Chile", "signature": "2020-06-11", "entry_into_force": "2021-11-23", "notes": []},
-      {"party": "Korea", "accession": "2024-03-04", "entry_into_force": "2024-05-03", "notes": ["Accession; instrument deposited 4 March 2024 according to an official APEC presentation; entry into force 3 May 2024 per the New Zealand MFAT page."]}
-    ],
-    "reservations": [],
-    "declarations": [],
-    "objections": [],
-    "notifications": [],
-    "withdrawals": [],
-    "unknowns": [
-      "Full depositary notification record and any reservations/declarations were not read.",
-      "Costa Rica's accession is not verified against the depositary.",
-      "The Protocol to the DEPA is not analysed in this record."
-    ]
-  },
-  "languages": {
-    "authentic": ["en"],
-    "translations": [],
-    "note": "The authenticated signing text acquired is in English. A Spanish version is referenced by Chile's SUBREI page; it was not acquired and is not treated as authentic here."
+  "rights": {
+    "licence": "Government of New Zealand / Government of Korea terms",
+    "note": "Treaty text reproduced by a Party government. No open licence identified; stored for research and verification. Reusers should consult the depositary and the reproducing government's terms.",
+    "status": "public_official_text",
+    "url": "https://www.mfat.govt.nz/en/about-us/terms-of-use/"
   },
   "sources": [
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "depa-text",
-      "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/support/DEPA/depa_all_eng.pdf",
-      "publisher": "Ministry of Trade, Industry and Energy (Korea)",
       "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "en",
-      "note": "English signing text reproduced by the Korean government, 67 pages; downloaded and stored. The depositary is New Zealand; this is a government reproduction, not the depositary's certified copy."
+      "note": "English signing text reproduced by the Korean government, 67 pages; downloaded and stored. The depositary is New Zealand; this is a government reproduction, not the depositary's certified copy.",
+      "publisher": "Ministry of Trade, Industry and Energy (Korea)",
+      "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/support/DEPA/depa_all_eng.pdf"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "depa-mfat-overview",
-      "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/overview",
-      "publisher": "New Zealand Ministry of Foreign Affairs and Trade",
       "kind": "official_secondary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "note": "Confirms signature, entry-into-force dates for New Zealand, Singapore and Chile, the 2023 Protocol, and Korean accession in May 2024."
+      "note": "Confirms signature, entry-into-force dates for New Zealand, Singapore and Chile, the 2023 Protocol, and Korean accession in May 2024.",
+      "publisher": "New Zealand Ministry of Foreign Affairs and Trade",
+      "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/overview"
     },
     {
-      "id": "depa-mfat-text",
-      "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources",
-      "publisher": "New Zealand Ministry of Foreign Affairs and Trade",
-      "kind": "official_secondary",
       "accessed": "2026-11-23",
       "http_status": 200,
-      "note": "Depositary government's text and resources page; entry into force stated as 7 January 2021 (NZ/SG), 23 November 2021 (Chile), 3 May 2024 (Korea)."
+      "id": "depa-mfat-text",
+      "kind": "official_secondary",
+      "note": "Depositary government's text and resources page; entry into force stated as 7 January 2021 (NZ/SG), 23 November 2021 (Chile), 3 May 2024 (Korea).",
+      "publisher": "New Zealand Ministry of Foreign Affairs and Trade",
+      "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "depa-costa-rica",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Joint press release of 17 September 2026: Costa Rica presented its Instrument of Accession in Auckland and became the fifth Party, the second member to accede after Korea. No entry-into-force date for Costa Rica is stated.",
+      "publisher": "New Zealand Ministry of Foreign Affairs and Trade, jointly with Chile, Singapore, Korea and Costa Rica",
+      "url": "https://www.mfat.govt.nz/en/media-and-resources/joint-press-release-on-the-successful-accession-of-costa-rica-to-the-digital-economy-partnership-agreement"
     }
   ],
-  "rights": {
-    "status": "public_official_text",
-    "licence": "Government of New Zealand / Government of Korea terms",
-    "note": "Treaty text reproduced by a Party government. No open licence identified; stored for research and verification. Reusers should consult the depositary and the reproducing government's terms.",
-    "url": "https://www.mfat.govt.nz/en/about-us/terms-of-use/"
+  "status": "in_force",
+  "status_note": "In force for New Zealand, Singapore, Chile and Korea. Costa Rica became the fifth Party on presenting its Instrument of Accession in Auckland on 17 September 2026, the second State to accede after Korea. The joint press release announces the accession but does not state an entry-into-force date for Costa Rica; the depositary notification was not read, so that date is recorded as unknown.",
+  "text": {
+    "extraction_note": "Text extracted from the stored PDF with pypdf. Article-level units follow the treaty's Article headings. Page anchors are file pages, not printed page numbers.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
+  },
+  "title": {
+    "official": "Digital Economy Partnership Agreement",
+    "short": "DEPA"
   },
   "verification": {
-    "level": "full_text_checked",
     "checks": [
       {
         "check": "Article 8.2 located in the acquired English signing text and read in full.",
-        "result": "Present under Module 8 (Emerging Trends and Technologies); four numbered paragraphs; best-efforts language.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "Present under Module 8 (Emerging Trends and Technologies); four numbered paragraphs; best-efforts language."
       },
       {
         "check": "Final provisions and entry into force checked in the text.",
-        "result": "Article 16.1 designates New Zealand as depositary; Article 16.2 sets entry into force 90 days after notifications by at least two signatories.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "Article 16.1 designates New Zealand as depositary; Article 16.2 sets entry into force 90 days after notifications by at least two signatories."
       },
       {
         "check": "Signature and entry-into-force dates checked against the depositary government's pages.",
-        "result": "Signed 11/12 June 2020; in force 7 January 2021 for NZ and Singapore, 23 November 2021 for Chile, 3 May 2024 for Korea.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "Signed 11/12 June 2020; in force 7 January 2021 for NZ and Singapore, 23 November 2021 for Chile, 3 May 2024 for Korea."
+      },
+      {
+        "check": "Costa Rica's accession checked against the joint press release of the Parties.",
+        "date": "2026-11-24",
+        "result": "Costa Rica presented its Instrument of Accession on 17 September 2026 and became the fifth Party. The release states the act of accession, not the date of entry into force for Costa Rica."
       }
     ],
-    "notes": "Full text preserved. The AI clause is treaty language but its normative force is hortatory; classification as binding refers to the agreement, not to a hard AI obligation."
-  },
-  "related": [
-    {"id": "sadea-2020", "relation": "related", "note": "Parallel digital-economy agreement with an AI article (Article 31)."},
-    {"id": "uksdea-2022", "relation": "related", "note": "Parallel digital-economy agreement with an AI article (Article 8.61-R)."},
-    {"id": "ksdpa-2022", "relation": "related", "note": "Parallel digital partnership agreement with an AI article (Article 14.28)."},
-    {"id": "oecd-ai-recommendation-2019", "relation": "related", "note": "The DEPA AI article refers to internationally recognised principles and guidelines; the OECD AI Principles are the principal intergovernmental reference."}
-  ],
-  "text": {
-    "manifest": "manifest.json",
-    "full_text": true,
-    "primary_language": "en",
-    "primary_text": "text/en.txt",
-    "units_mode": "treaty",
-    "extraction_note": "Text extracted from the stored PDF with pypdf. Article-level units follow the treaty's Article headings. Page anchors are file pages, not printed page numbers."
-  },
-  "gaps": [
-    "No depositary-certified copy was acquired; the stored text is a Party government's reproduction.",
-    "The Protocol to the DEPA and its legal effect on the AI article were not analysed.",
-    "Only English acquired; the Spanish version referenced by Chile was not acquired.",
-    "The AI article contains no enforceable substantive standard and no monitoring mechanism.",
-    "Costa Rica's 2026 accession is not verified against the depositary."
-  ],
-  "provenance": {
-    "discovered_via": "Comparative digital-trade research; verified on the New Zealand MFAT depositary pages and the Korean government text.",
-    "search_dates": ["2026-11-23"]
+    "level": "full_text_checked",
+    "notes": "Full text preserved. The AI clause is treaty language but its normative force is hortatory; classification as binding refers to the agreement, not to a hard AI obligation. The Costa Rica accession is verified at the level of the Parties' joint announcement; its entry-into-force date is not stated there."
   }
 }

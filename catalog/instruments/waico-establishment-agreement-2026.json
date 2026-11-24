@@ -1,13 +1,25 @@
 {
-  "id": "waico-establishment-agreement-2026",
-  "title": {
-    "official": "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization",
-    "short": "WAICO Establishment Agreement"
-  },
-  "category": "ai_treaty",
-  "instrument_type": "treaty",
   "binding_status": "binding",
-  "status": "not_in_force",
+  "category": "ai_treaty",
+  "dates": {
+    "closed_for_signature": "2026-07-31",
+    "notes": "Signed at the Shanghai ceremony on 16 July 2026; open for signature from 1 May to 31 July 2026. The official Chinese text was published by the National People's Congress on 18 November 2026 and its articles were read for this record. China's NPC Standing Committee approved ratification on 6 November 2026; that is a domestic authorisation, not a deposit. No instrument of ratification, acceptance, approval or accession was verified with the depositary, and no depositary notification of entry into force was located.",
+    "opened_for_signature": "2026-05-01",
+    "signed": "2026-07-16",
+    "verified_on": "2026-11-24"
+  },
+  "gaps": [
+    "Entry into force is not confirmed: Article 15 requires three deposited ratifications, acceptances or approvals, and no deposit was verified. The number of deposits is unknown, not zero.",
+    "China's NPC approved ratification on 6 November 2026. That is a domestic authorisation; the deposit of the instrument and any depositary notification were not verified.",
+    "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located. Bangladesh is not the 38th member: it announced on 1 August 2026 that it would join 'initially as an observer'.",
+    "Observer status is not a party status: Article 11 allows the Council to admit non-member States and intergovernmental organisations as observers. No Council admission of Bangladesh is recorded.",
+    "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
+    "The full official text was read on the NPC page but no certified deposited copy was acquired, so the record is metadata-only and the Chinese text is not stored.",
+    "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",
+    "The Council, Secretariat, rules of procedure, budget and implementing instruments do not yet exist or were not verified."
+  ],
+  "id": "waico-establishment-agreement-2026",
+  "instrument_type": "treaty",
   "issuer": [
     {
       "name": "Founding States of the World Artificial Intelligence Cooperation Organization",
@@ -20,8 +32,378 @@
       "url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html"
     }
   ],
+  "languages": {
+    "authentic": [
+      "ar",
+      "zh",
+      "en",
+      "fr",
+      "ru",
+      "es"
+    ],
+    "note": "Article 18: Arabic, Chinese, English, French, Russian and Spanish texts are equally authentic. Only the English reproduction of the Agreement was read; no official deposited text was acquired.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "The instrument is a constituent treaty: it establishes an intergovernmental organisation with legal personality (Article 1), provides for signature, ratification, acceptance, approval and accession (Article 14), entry into force on the third instrument (Article 15) and a depositary (Article 18).",
+    "source_ids": [
+      "npc-agreement-text",
+      "mfa-signing"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-23",
+    "counts": {
+      "ratifications": {
+        "basis": "unknown",
+        "note": "China is the depositary and no public depositary register or notification was located. No deposited instrument was verified, but the total is unknown rather than zero.",
+        "source_ids": [
+          "mfa-ratification"
+        ],
+        "total": null,
+        "verified": 0
+      },
+      "signatures": {
+        "basis": "declared_total",
+        "note": "38 reported by the MFA; 37 individually identified in the signing records.",
+        "source_ids": [
+          "mfa-ratification",
+          "indonesia-founding-list",
+          "mfa-31-july"
+        ],
+        "total": 38,
+        "verified": 37
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "party": "Algeria",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Belarus",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Brazil",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "notes": [
+          "Signed on 31 July 2026."
+        ],
+        "party": "Brunei",
+        "role": "signatory",
+        "signature": "2026-07-31"
+      },
+      {
+        "party": "Cambodia",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Cameroon",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "domestic_approval": "2026-11-06",
+        "notes": [
+          "Approved by the Standing Committee of the 14th National People's Congress on 6 November 2026: a domestic authorisation to ratify.",
+          "Deposit of the instrument of ratification was not verified; no ratification or deposit is counted."
+        ],
+        "party": "China",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Cuba",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "notes": [
+          "Signed on 30 July 2026."
+        ],
+        "party": "Dominica",
+        "role": "signatory",
+        "signature": "2026-07-30"
+      },
+      {
+        "party": "Ethiopia",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "notes": [
+          "Signed on 31 July 2026."
+        ],
+        "party": "Georgia",
+        "role": "signatory",
+        "signature": "2026-07-31"
+      },
+      {
+        "party": "Indonesia",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "notes": [
+          "Signed on 31 July 2026."
+        ],
+        "party": "Iran",
+        "role": "signatory",
+        "signature": "2026-07-31"
+      },
+      {
+        "party": "Kazakhstan",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Kenya",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Kyrgyzstan",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Laos",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Lesotho",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Malaysia",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Mozambique",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Myanmar",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Nicaragua",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Oman",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Pakistan",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Republic of the Congo",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Russia",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Senegal",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Serbia",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "South Africa",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "notes": [
+          "Signed on 31 July 2026."
+        ],
+        "party": "Sudan",
+        "role": "signatory",
+        "signature": "2026-07-31"
+      },
+      {
+        "party": "Tajikistan",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "notes": [
+          "Signed on 31 July 2026."
+        ],
+        "party": "Tanzania",
+        "role": "signatory",
+        "signature": "2026-07-31"
+      },
+      {
+        "notes": [
+          "Signed on 31 July 2026."
+        ],
+        "party": "Togo",
+        "role": "signatory",
+        "signature": "2026-07-31"
+      },
+      {
+        "party": "Uzbekistan",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "party": "Venezuela",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      },
+      {
+        "notes": [
+          "Signed on 31 July 2026."
+        ],
+        "party": "Vietnam",
+        "role": "signatory",
+        "signature": "2026-07-31"
+      },
+      {
+        "party": "Zambia",
+        "role": "signatory",
+        "signature": "2026-07-16"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "mfa-signing",
+      "mfa-ratification",
+      "xinhua-npc-decision",
+      "mfa-progress-report",
+      "mfa-31-july",
+      "indonesia-founding-list"
+    ],
+    "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member; no Council admission is recorded. Singapore has been reported as considering an invitation and is not a member. China's NPC approved ratification on 6 November 2026, but this is a domestic authorisation and no deposit was verified; the number of deposited instruments is unknown.",
+    "unknowns": [
+      "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The October 2026 progress report says nine States joined after the initial 29; eight are named in the 31 July account, so one of the nine - the 38th member - is not named. Bangladesh is not that member: it announced on 1 August 2026 that it would join 'initially as an observer'. Singapore has been reported as considering an invitation and is not a member.",
+      "China is the depositary under Article 18. No public depositary register, status table or notification of signatures, ratifications, acceptances, approvals, accessions or entry into force was located. The number of deposited instruments is therefore unknown; zero deposits are individually verified, but that is not a verified total of zero.",
+      "China's NPC approval of 6 November 2026 is a domestic authorisation. The date of any deposit, and the treaty's entry into force, were not verified.",
+      "The Agreement remains open to accession after 31 July 2026 (Article 14(3)); later accessions are not Founding Members and are not included in this list.",
+      "The exact date on which the MFA's 38-country count was reached is not stated; the October 2026 progress report already gives 38."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-24",
+        "field": "status",
+        "locator": "Article 15; MFA press conference of 9 November 2026",
+        "method": "official_page_read",
+        "note": "No depositary notification located; entry into force not confirmed, so no definitive in-force or not-in-force status is asserted.",
+        "source_ids": [
+          "npc-agreement-text",
+          "mfa-ratification"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "parties",
+        "locator": "MFA statements of 9 November 2026 and 31 July 2026; Indonesian government list of 17 July 2026; October 2026 progress report",
+        "method": "official_page_read",
+        "note": "38 declared, 37 individually identified.",
+        "source_ids": [
+          "mfa-ratification",
+          "indonesia-founding-list",
+          "mfa-31-july",
+          "mfa-progress-report"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "counts",
+        "locator": "Signing lists and MFA statement",
+        "method": "official_page_read",
+        "note": "Deposits unknown: no depositary register or notification.",
+        "source_ids": [
+          "mfa-ratification",
+          "indonesia-founding-list",
+          "mfa-31-july"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "languages",
+        "locator": "Article 18",
+        "method": "official_text_read",
+        "source_ids": [
+          "npc-agreement-text"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "provisions",
+        "locator": "Articles 1-18",
+        "method": "official_text_read",
+        "source_ids": [
+          "npc-agreement-text"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "legal_nature",
+        "locator": "Articles 1, 14, 15 and 18",
+        "method": "official_text_read",
+        "source_ids": [
+          "npc-agreement-text"
+        ]
+      }
+    ],
+    "discovered_via": "CSIS 2026 analysis of global AI governance cited WAICO; the record was opened after the official MFA signing and ratification sources were located.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "china-global-ai-governance-initiative-2023",
+      "note": "China's 2023 Global AI Governance Initiative is the policy line that led to the proposal for WAICO; it is a unilateral non-binding document, whereas the WAICO Agreement is a treaty.",
+      "relation": "policy_line"
+    },
+    {
+      "id": "coe-cets-225",
+      "note": "The other AI-specific treaty in the corpus. CETS 225 is a human-rights framework convention; WAICO is a constituent instrument of an intergovernmental organization. Neither is in force.",
+      "relation": "related"
+    },
+    {
+      "id": "pax-silica-declaration-2025",
+      "note": "The US-led Pax Silica coalition is the counterpart architecture. Kazakhstan is a signatory of both the Pax Silica Declaration and the WAICO Agreement.",
+      "relation": "counterpart"
+    }
+  ],
   "relevance": {
-    "reason": "The constituent treaty of the first intergovernmental international organization specifically dedicated to artificial intelligence. It establishes WAICO as an independent intergovernmental organization with international legal personality, headquartered in Shanghai, with a Council and a Secretariat, and limits its functions exclusively to the civilian domain of AI (Article 3(2)). It is subject to ratification, acceptance or approval and enters into force on the deposit of the third such instrument (Article 15). It is a treaty, not a political declaration, and it is the second AI-specific treaty in the corpus alongside CETS 225.",
     "ai_provisions": [
       "Article 1 — establishes WAICO as an independent intergovernmental international organization with international legal personality",
       "Article 2 — purposes: human-centric AI, international cooperation, bridging the AI divide, risk mitigation and trustworthy AI",
@@ -34,255 +416,164 @@
       "Article 15 — entry into force on the third instrument of ratification, acceptance or approval",
       "Article 18 — China as depositary; Arabic, Chinese, English, French, Russian and Spanish texts equally authentic"
     ],
-    "excluded_scope": "Military AI is excluded: Article 3(2) limits the Organization's functions exclusively to the civilian domain. The Agreement establishes an organization and a cooperation framework; it does not itself set product rules, prohibitions, testing standards or a judicial dispute-settlement mechanism. Disputes are to be settled by consultation (Article 13)."
-  },
-  "dates": {
-    "signed": "2026-07-16",
-    "opened_for_signature": "2026-05-01",
-    "closed_for_signature": "2026-07-31",
-    "verified_on": "2026-11-23",
-    "notes": "Signed at the Shanghai ceremony on 16 July 2026. The Agreement was open for signature from 1 May to 31 July 2026. China's National People's Congress Standing Committee approved ratification on 6 November 2026; the deposit of the instrument of ratification and any depositary notification of entry into force were not verified. Article 18 designates the Government of the People's Republic of China as depositary; no public depositary status table or notification was located."
-  },
-  "status_note": "Treaty, binding on States that become parties, but not in force as of 23 November 2026. Article 15 requires three instruments of ratification, acceptance or approval for entry into force. China's National People's Congress approved ratification on 6 November 2026; no deposited instrument was verified, so the record does not count a ratification and the map records signature only. China's MFA reports 38 founding members, but the primary signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. Bangladesh is not that member: on 1 August 2026 its Ministry of Foreign Affairs announced that Bangladesh would join \"initially as an observer\", after the signature period had closed. Article 11 requires an observer application and approval by the Council, and no admission is recorded; observers are not Founding Members under Article 10. Singapore has been reported as considering an invitation to join; it is a Pax Silica signatory and not a WAICO member. The discrepancy is recorded, not resolved. The Government of China is the depositary under Article 18; no public depositary register or notification of a deposited ratification was located.",
-  "parties": {
-    "as_of": "2026-11-23",
-    "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30–31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore has been reported as considering an invitation and is not a member. China's NPC approved ratification on 6 November 2026, but no deposit was verified.",
+    "excluded_scope": "Military AI is excluded: Article 3(2) limits the Organization's functions exclusively to the civilian domain. The Agreement establishes an organization and a cooperation framework; it does not itself set product rules, prohibitions, testing standards or a judicial dispute-settlement mechanism. Disputes are to be settled by consultation (Article 13).",
+    "reason": "The constituent treaty of the first intergovernmental international organization specifically dedicated to artificial intelligence. It establishes WAICO as an independent intergovernmental organization with international legal personality, headquartered in Shanghai, with a Council and a Secretariat, and limits its functions exclusively to the civilian domain of AI (Article 3(2)). It is subject to ratification, acceptance or approval and enters into force on the deposit of the third such instrument (Article 15). It is a treaty, not a political declaration, and it is the second AI-specific treaty in the corpus alongside CETS 225. The article references were checked against the official Chinese text published by the National People's Congress.",
     "source_ids": [
-      "mfa-signing",
-      "mfa-ratification",
-      "xinhua-npc-decision",
-      "mfa-progress-report",
-      "mfa-31-july",
-      "indonesia-founding-list"
-    ],
-    "signatories_total": 38,
-    "ratifications_total": 0,
-    "entries": [
-      {"party": "Algeria", "signature": "2026-07-16"},
-      {"party": "Belarus", "signature": "2026-07-16"},
-      {"party": "Brazil", "signature": "2026-07-16"},
-      {"party": "Brunei", "signature": "2026-07-31", "notes": ["Signed on 31 July 2026."]},
-      {"party": "Cambodia", "signature": "2026-07-16"},
-      {"party": "Cameroon", "signature": "2026-07-16"},
-      {
-        "party": "China",
-        "signature": "2026-07-16",
-        "approval": "2026-11-06",
-        "notes": [
-          "Approved by the Standing Committee of the 14th National People's Congress on 6 November 2026.",
-          "Deposit of the instrument of ratification was not verified; no ratification is counted."
-        ]
-      },
-      {"party": "Cuba", "signature": "2026-07-16"},
-      {"party": "Dominica", "signature": "2026-07-30", "notes": ["Signed on 30 July 2026."]},
-      {"party": "Ethiopia", "signature": "2026-07-16"},
-      {"party": "Georgia", "signature": "2026-07-31", "notes": ["Signed on 31 July 2026."]},
-      {"party": "Indonesia", "signature": "2026-07-16"},
-      {"party": "Iran", "signature": "2026-07-31", "notes": ["Signed on 31 July 2026."]},
-      {"party": "Kazakhstan", "signature": "2026-07-16"},
-      {"party": "Kenya", "signature": "2026-07-16"},
-      {"party": "Kyrgyzstan", "signature": "2026-07-16"},
-      {"party": "Laos", "signature": "2026-07-16"},
-      {"party": "Lesotho", "signature": "2026-07-16"},
-      {"party": "Malaysia", "signature": "2026-07-16"},
-      {"party": "Mozambique", "signature": "2026-07-16"},
-      {"party": "Myanmar", "signature": "2026-07-16"},
-      {"party": "Nicaragua", "signature": "2026-07-16"},
-      {"party": "Oman", "signature": "2026-07-16"},
-      {"party": "Pakistan", "signature": "2026-07-16"},
-      {"party": "Republic of the Congo", "signature": "2026-07-16"},
-      {"party": "Russia", "signature": "2026-07-16"},
-      {"party": "Senegal", "signature": "2026-07-16"},
-      {"party": "Serbia", "signature": "2026-07-16"},
-      {"party": "South Africa", "signature": "2026-07-16"},
-      {"party": "Sudan", "signature": "2026-07-31", "notes": ["Signed on 31 July 2026."]},
-      {"party": "Tajikistan", "signature": "2026-07-16"},
-      {"party": "Tanzania", "signature": "2026-07-31", "notes": ["Signed on 31 July 2026."]},
-      {"party": "Togo", "signature": "2026-07-31", "notes": ["Signed on 31 July 2026."]},
-      {"party": "Uzbekistan", "signature": "2026-07-16"},
-      {"party": "Venezuela", "signature": "2026-07-16"},
-      {"party": "Vietnam", "signature": "2026-07-31", "notes": ["Signed on 31 July 2026."]},
-      {"party": "Zambia", "signature": "2026-07-16"}
-    ],
-    "reservations": [],
-    "declarations": [],
-    "objections": [],
-    "notifications": [],
-    "withdrawals": [],
-    "unknowns": [
-      "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The October 2026 progress report says nine States joined after the initial 29; eight are named in the 31 July account, so one of the nine - the 38th member - is not named in the MFA statements, the progress report or the Indonesian government's list of the 29 initial signatories. Bangladesh is not that member: it announced on 1 August 2026 that it would join 'initially as an observer', and Article 11 requires an observer application and Council approval; no admission is recorded. Singapore has been reported as considering an invitation and is not a member.",
-      "China is the depositary under Article 18. No public depositary register, status table or notification of signatures, ratifications or entry into force was located in the Chinese treaty database or MFA pages. The count of deposited ratifications is therefore 0, notwithstanding China's national approval on 6 November 2026.",
-      "The Agreement remains open to accession after 31 July 2026 (Article 14(3)); later accessions are not Founding Members and are not included in this list.",
-      "The exact date on which the MFA's 38-country count was reached is not stated; the October 2026 progress report already gives 38."
+      "npc-agreement-text"
     ]
   },
-  "languages": {
-    "authentic": ["ar", "zh", "en", "fr", "ru", "es"],
-    "translations": [],
-    "note": "Article 18: Arabic, Chinese, English, French, Russian and Spanish texts are equally authentic. Only the English reproduction of the Agreement was read; no official deposited text was acquired."
+  "rights": {
+    "licence": "Chinese Government official publications; Digital Watch reproduction CC BY-NC-ND 4.0",
+    "note": "Official government pages and the MFA progress report are public official materials. The Digital Watch reproduction is used for reading only. No full text is stored in this corpus.",
+    "status": "public_official_text"
   },
   "sources": [
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "mfa-signing",
-      "url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html",
-      "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
       "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "en",
-      "note": "Official English account of the 16 July 2026 signing ceremony. States that WAICO is an independent intergovernmental international organization headquartered in Shanghai, that the Agreement follows the purposes of the UN Charter, and that representatives of 29 countries signed and became founding members."
+      "note": "Official English account of the 16 July 2026 signing ceremony. States that WAICO is an independent intergovernmental international organization headquartered in Shanghai, that the Agreement follows the purposes of the UN Charter, and that representatives of 29 countries signed and became founding members.",
+      "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
+      "url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "mfa-ratification",
-      "url": "https://www.mfa.gov.cn/eng/xw/fyrbt/202611/t20261109_12056171.html",
-      "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
       "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "en",
-      "note": "Spokesperson Guo Jiakun, 9 November 2026: 38 countries became founding members; China was the first to approve the Agreement. The statement does not list the 38."
+      "note": "Spokesperson Guo Jiakun, 9 November 2026: 38 countries became founding members; China was the first to approve the Agreement. The statement does not list the 38.",
+      "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
+      "url": "https://www.mfa.gov.cn/eng/xw/fyrbt/202611/t20261109_12056171.html"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "xinhua-npc-decision",
-      "url": "https://english.news.cn/20261106/2f56df42479942b48aa006bc3ce67200/c.html",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "Xinhua report of 6 November 2026 on the closing meeting of the 25th session of the 14th NPC Standing Committee, which voted to ratify the Agreement on establishing WAICO. The NPC's own page could not be opened because its TLS configuration is unsupported by current browsers; this official report is used for the date and decision, and is not a depositary record of ratification.",
       "publisher": "Xinhua News Agency",
-      "kind": "official_secondary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "language": "en",
-      "note": "Xinhua report of 6 November 2026 on the closing meeting of the 25th session of the 14th NPC Standing Committee, which voted to ratify the Agreement on establishing WAICO. The NPC's own page could not be opened because its TLS configuration is unsupported by current browsers; this official report is used for the date and decision, and is not a depositary record of ratification."
+      "url": "https://english.news.cn/20261106/2f56df42479942b48aa006bc3ce67200/c.html"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "mfa-progress-report",
-      "url": "https://www.mfa.gov.cn/wjbzhd/202610/P020261023815175879929.pdf",
+      "kind": "official_primary",
+      "language": "zh",
+      "note": "October 2026 progress report on the AI Capacity-Building Plan. States that 29 States signed at the 16 July ceremony and that nine more, including Brunei, Vietnam, Georgia and Tanzania, later signed, bringing the total to 38. It names only four of the nine. The 31 July MFA account names eight of them; one of the nine remains unnamed.",
       "publisher": "Ministry of Foreign Affairs of the People's Republic of China / Global AI Innovation Governance Center",
-      "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "language": "zh",
-      "note": "October 2026 progress report on the AI Capacity-Building Plan. States that 29 States signed at the 16 July ceremony and that nine more, including Brunei, Vietnam, Georgia and Tanzania, later signed, bringing the total to 38. It names only four of the nine. The 31 July MFA account names eight of them; one of the nine remains unnamed."
+      "url": "https://www.mfa.gov.cn/wjbzhd/202610/P020261023815175879929.pdf"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "mfa-31-july",
-      "url": "https://www.fmprc.gov.cn/wjbxw_new/202607/t20260731_11996584.shtml",
-      "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
       "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "zh",
-      "note": "Official account of 31 July 2026 naming the eight additional signatories: Brunei, Togo, Iran, Sudan, Vietnam, Georgia, Tanzania and Dominica (Dominica signed on 30 July)."
+      "note": "Official account of 31 July 2026 naming the eight additional signatories: Brunei, Togo, Iran, Sudan, Vietnam, Georgia, Tanzania and Dominica (Dominica signed on 30 July).",
+      "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
+      "url": "https://www.fmprc.gov.cn/wjbxw_new/202607/t20260731_11996584.shtml"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "indonesia-founding-list",
-      "url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/10399",
-      "publisher": "Ministry of Communication and Digital Affairs, Republic of Indonesia",
       "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "id",
-      "note": "Official press release dated 17 July 2026 listing the 29 founding signatories, including China, Russia, Kazakhstan, Indonesia, Brazil, South Africa and the other initial signatories. The earlier Coordinating Ministry for Economic Affairs page (ekon.go.id) was not used because its TLS chain is incomplete for standard clients."
+      "note": "Official press release dated 17 July 2026 listing the 29 founding signatories, including China, Russia, Kazakhstan, Indonesia, Brazil, South Africa and the other initial signatories. The earlier Coordinating Ministry for Economic Affairs page (ekon.go.id) was not used because its TLS chain is incomplete for standard clients.",
+      "publisher": "Ministry of Communication and Digital Affairs, Republic of Indonesia",
+      "url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/10399"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "bss-bangladesh-observer",
-      "url": "https://www.bssnews.net/news/410714",
-      "publisher": "Bangladesh Sangbad Sangstha (BSS), national news agency",
       "kind": "official_secondary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "en",
-      "note": "Report of 1 August 2026 quoting the Ministry of Foreign Affairs statement that Bangladesh has decided to join WAICO 'initially as an observer'. It does not describe Bangladesh as a founding member and does not say that an observer application has been approved by the Council. The newspaper-host URL uses the main www.bssnews.net host; the b.bssnews.net subdomain does not resolve."
+      "note": "Report of 1 August 2026 quoting the Ministry of Foreign Affairs statement that Bangladesh has decided to join WAICO 'initially as an observer'. It does not describe Bangladesh as a founding member and does not say that an observer application has been approved by the Council. The newspaper-host URL uses the main www.bssnews.net host; the b.bssnews.net subdomain does not resolve.",
+      "publisher": "Bangladesh Sangbad Sangstha (BSS), national news agency",
+      "url": "https://www.bssnews.net/news/410714"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "thestar-singapore-invite",
-      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/09/singapore-considering-invitation-to-join-china-led-ai-bloc",
-      "publisher": "The Star (Malaysia), reporting The Straits Times",
       "kind": "secondary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "en",
-      "note": "Report of 9 September 2026: Singapore's Minister for Digital Development and Information told Parliament that Singapore is considering an invitation to join WAICO and that there is no ASEAN position on either WAICO or Pax Silica. Singapore is a Pax Silica founding signatory; the report does not say that Singapore has joined WAICO."
+      "note": "Report of 9 September 2026: Singapore's Minister for Digital Development and Information told Parliament that Singapore is considering an invitation to join WAICO and that there is no ASEAN position on either WAICO or Pax Silica. Singapore is a Pax Silica founding signatory; the report does not say that Singapore has joined WAICO.",
+      "publisher": "The Star (Malaysia), reporting The Straits Times",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/09/singapore-considering-invitation-to-join-china-led-ai-bloc"
     },
     {
-      "id": "digwatch-text",
-      "url": "https://dig.watch/resource/agreement-on-the-establishment-of-the-world-artificial-intelligence-cooperation-organization",
-      "publisher": "Digital Watch Observatory (Geneva Internet Platform)",
-      "kind": "secondary",
       "accessed": "2026-11-23",
       "http_status": 200,
+      "id": "digwatch-text",
+      "kind": "secondary",
       "language": "en",
-      "note": "Reproduction of the Agreement text. Articles 1, 3, 10, 14, 15 and 18 were read. The depositary's official text was not located; the reproduction is used for the legal analysis, not as a substitute for the official text."
+      "note": "Reproduction of the Agreement text consulted on 23 November 2026, before the official Chinese text was located. It is retained as a secondary copy only; the article references in this record are now checked against the NPC official text.",
+      "publisher": "Digital Watch Observatory (Geneva Internet Platform)",
+      "url": "https://dig.watch/resource/agreement-on-the-establishment-of-the-world-artificial-intelligence-cooperation-organization"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "npc-agreement-text",
+      "kind": "official_primary",
+      "language": "zh",
+      "note": "Official Chinese text of the Agreement, published 18 November 2026. Articles 1-18 were read in full: legal personality and civilian-domain limitation (Articles 1 and 3), membership and observers (Articles 10-11), signature and accession (Article 14), entry into force (Article 15) and depositary and authentic texts (Article 18).",
+      "publisher": "National People's Congress of the People's Republic of China",
+      "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html"
     }
   ],
-  "rights": {
-    "status": "public_official_text",
-    "licence": "Chinese Government official publications; Digital Watch reproduction CC BY-NC-ND 4.0",
-    "note": "Official government pages and the MFA progress report are public official materials. The Digital Watch reproduction is used for reading only. No full text is stored in this corpus."
+  "status": "unknown",
+  "status_note": "Treaty, binding on States that become parties, but entry into force is not confirmed as of 24 November 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026; the approval is recorded separately from international consent and no deposited instrument was verified. The number of deposits is unknown, not zero: China is the depositary under Article 18 and no public depositary register or notification was located. China's MFA reports 38 founding members, but the signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer'; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore has been reported as considering an invitation and is not a member. The 37/38 discrepancy is recorded, not resolved.",
+  "title": {
+    "official": "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization",
+    "short": "WAICO Establishment Agreement"
   },
   "verification": {
-    "level": "metadata_verified",
     "checks": [
       {
         "check": "Signing ceremony and legal nature checked on the official MFA English page.",
-        "result": "WAICO is described as an independent intergovernmental international organization headquartered in Shanghai; 29 countries signed the Agreement at the 16 July 2026 ceremony.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "WAICO is described as an independent intergovernmental international organization headquartered in Shanghai; 29 countries signed the Agreement at the 16 July 2026 ceremony."
       },
       {
         "check": "Founding membership checked against the Indonesian government list and the MFA's later statements.",
-        "result": "29 initial signatories are individually identified; the October 2026 progress report says nine more signed, and the 31 July 2026 MFA account names eight of them. The MFA reports 38 founding members, leaving one of the nine later signatories unnamed.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "29 initial signatories are individually identified; the October 2026 progress report says nine more signed, and the 31 July 2026 MFA account names eight of them. The MFA reports 38 founding members, leaving one of the nine later signatories unnamed."
       },
       {
         "check": "Entry-into-force rule checked against the Agreement text and China's ratification decision.",
-        "result": "Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026, but no deposited ratification or entry-into-force notification was verified.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026, but no deposited instrument or entry-into-force notification was verified."
       },
       {
         "check": "Treaty text checked against a reproduction and cross-checked with official descriptions.",
-        "result": "Articles 1, 3(2), 10, 14, 15 and 18 confirm the organization's legal personality, civilian-domain limitation, membership, signature/accession, entry into force and depositary. The official deposited text was not acquired.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "Articles 1, 3(2), 10, 14, 15 and 18 confirm the organization's legal personality, civilian-domain limitation, membership, signature/accession, entry into force and depositary. The official deposited text was not acquired."
       },
       {
         "check": "The 38th founding member checked against the Bangladesh and Singapore records.",
-        "result": "Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member. Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore was reported on 9 September 2026 as considering an invitation; it is a Pax Silica signatory and not a WAICO member. Neither closes the 37/38 gap.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member. Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore was reported on 9 September 2026 as considering an invitation; it is a Pax Silica signatory and not a WAICO member. Neither closes the 37/38 gap."
       },
       {
         "check": "Depositary status rechecked for the 38th founding member and China's instrument of ratification.",
-        "result": "Article 18 designates the Government of the People's Republic of China as depositary. No public depositary register or status table for the Agreement, and no notification of a deposited Chinese instrument, was located in the Chinese treaty database or MFA pages. The 9 November 2026 MFA statement reports 38 founding members and says China was the first to approve the Agreement, but does not name the 38th or state that an instrument was deposited. The counts remain 38 reported, 37 identified and 0 deposited ratifications.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "Article 18 designates the Government of the People's Republic of China as depositary. No public depositary register or status table, and no notification of a deposited Chinese instrument, was located. The 9 November 2026 MFA statement reports 38 founding members and says China was the first to approve the Agreement, but does not name the 38th or state that an instrument was deposited. Counts: 38 reported, 37 identified, deposits unknown (0 individually verified)."
+      },
+      {
+        "check": "Article references checked against the official Chinese text published by the NPC.",
+        "date": "2026-11-24",
+        "result": "The official text confirms Articles 1 (legal personality), 3(2) (civilian domain only), 10 (founding membership), 11 (observers), 14 (signature and accession), 15 (entry into force on the third instrument) and 18 (China as depositary; six equally authentic texts)."
       }
     ],
-    "notes": "Metadata verified from official Chinese and Indonesian government sources. The record is metadata-only: no full text is stored. The depositary is China under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the deposit of China's instrument of ratification remain unverified and are recorded as unknowns rather than inferred. Bangladesh's observer announcement and Singapore's reported invitation are recorded separately and are not treated as membership."
-  },
-  "related": [
-    {
-      "id": "china-global-ai-governance-initiative-2023",
-      "relation": "policy_line",
-      "note": "China's 2023 Global AI Governance Initiative is the policy line that led to the proposal for WAICO; it is a unilateral non-binding document, whereas the WAICO Agreement is a treaty."
-    },
-    {
-      "id": "coe-cets-225",
-      "relation": "related",
-      "note": "The other AI-specific treaty in the corpus. CETS 225 is a human-rights framework convention; WAICO is a constituent instrument of an intergovernmental organization. Neither is in force."
-    },
-    {
-      "id": "pax-silica-declaration-2025",
-      "relation": "counterpart",
-      "note": "The US-led Pax Silica coalition is the counterpart architecture. Kazakhstan is a signatory of both the Pax Silica Declaration and the WAICO Agreement."
-    }
-  ],
-  "gaps": [
-    "The Agreement is not in force: Article 15 requires three deposited ratifications, acceptances or approvals, and none was verified.",
-    "China's NPC approved ratification on 6 November 2026, but the deposit of the instrument and any depositary notification were not verified; no ratification is counted.",
-    "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located. Bangladesh is not the 38th member: it announced on 1 August 2026 that it would join 'initially as an observer', subject to Article 11 and Council approval.",
-    "Observer status is not a party status: Article 11 allows the Council to admit non-member States and intergovernmental organisations as observers, who may attend the plenary on invitation and have no vote. No Council admission of Bangladesh is recorded.",
-    "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
-    "The full official text was not acquired; the record is metadata-only and relies on a reproduction for the article analysis.",
-    "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",
-    "The Council, Secretariat, rules of procedure, budget and implementing instruments do not yet exist or were not verified."
-  ],
-  "provenance": {
-    "discovered_via": "CSIS 2026 analysis of global AI governance cited WAICO; the record was opened after the official MFA signing and ratification sources were located.",
-    "search_dates": ["2026-11-23"]
+    "level": "metadata_verified",
+    "notes": "Metadata verified from official Chinese and Indonesian government sources; the article analysis is checked against the official NPC text. The record is metadata-only: no full text is stored. China is the depositary under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the number of deposited instruments remain unknown and are recorded as such rather than inferred. China's domestic approval is recorded separately from international consent."
   }
 }

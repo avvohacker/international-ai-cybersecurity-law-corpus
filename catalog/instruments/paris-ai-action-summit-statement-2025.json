@@ -1,13 +1,22 @@
 {
-  "id": "paris-ai-action-summit-statement-2025",
-  "title": {
-    "official": "Statement on Inclusive and Sustainable Artificial Intelligence for People and the Planet",
-    "short": "Paris AI Action Summit Statement"
-  },
-  "category": "non_binding_instrument",
-  "instrument_type": "declaration",
   "binding_status": "non_binding",
-  "status": "adopted",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2025-02-11",
+    "notes": "Posted by the Élysée on 11 February 2025 at the close of the summit; the stored official PDF version was published on 19 February 2025.",
+    "published": "2025-02-19",
+    "verified_on": "2026-11-23"
+  },
+  "gaps": [
+    "Non-binding; no legal obligation, monitoring, reporting or enforcement.",
+    "Covers civil applications only (footnote 1); military AI is outside its scope.",
+    "The endorser list is inconsistent across official publications: 60 (11 February), 64 (PDF, 19 February) and 65 (page, accessed 23 November 2026); the difference is not explained.",
+    "The United States and the United Kingdom did not endorse the statement; several other major States are also absent.",
+    "Only the English text is stored; the official French version is recorded but not acquired.",
+    "The statement establishes no implementation or follow-up mechanism of its own."
+  ],
+  "id": "paris-ai-action-summit-statement-2025",
+  "instrument_type": "declaration",
   "issuer": [
     {
       "name": "AI Action Summit, co-chaired by France and India",
@@ -19,239 +28,503 @@
       "role": "co_issuer"
     }
   ],
+  "languages": {
+    "authentic": [
+      "en",
+      "fr"
+    ],
+    "note": "English and French official versions are published by the Élysée. There is no authentic-language clause because the statement is not a treaty. Only the English text is stored.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A summit statement opened for endorsement, with no signature, ratification, depositary or entry-into-force clause. It records political support, not legal obligation.",
+    "source_ids": [
+      "elysee-page"
+    ]
+  },
+  "parties": {
+    "act": "endorsement",
+    "as_of": "2026-11-23",
+    "counts": {
+      "endorsements": {
+        "basis": "declared_total",
+        "note": "The official page lists 65; the 11 February 2025 PDF lists 64.",
+        "source_ids": [
+          "elysee-page"
+        ],
+        "total": 65,
+        "verified": 65
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "party": "Armenia",
+        "role": "endorser"
+      },
+      {
+        "party": "Australia",
+        "role": "endorser"
+      },
+      {
+        "party": "Austria",
+        "role": "endorser"
+      },
+      {
+        "party": "Belgium",
+        "role": "endorser"
+      },
+      {
+        "party": "Brazil",
+        "role": "endorser"
+      },
+      {
+        "party": "Bulgaria",
+        "role": "endorser"
+      },
+      {
+        "party": "Cambodia",
+        "role": "endorser"
+      },
+      {
+        "party": "Canada",
+        "role": "endorser"
+      },
+      {
+        "party": "Chile",
+        "role": "endorser"
+      },
+      {
+        "party": "China",
+        "role": "endorser"
+      },
+      {
+        "party": "Colombia",
+        "role": "endorser"
+      },
+      {
+        "party": "Côte d’Ivoire",
+        "role": "endorser"
+      },
+      {
+        "party": "Croatia",
+        "role": "endorser"
+      },
+      {
+        "party": "Cyprus",
+        "role": "endorser"
+      },
+      {
+        "party": "Czech Republic",
+        "role": "endorser"
+      },
+      {
+        "party": "Denmark",
+        "role": "endorser"
+      },
+      {
+        "party": "Djibouti",
+        "role": "endorser"
+      },
+      {
+        "party": "Egypt",
+        "role": "endorser"
+      },
+      {
+        "party": "Estonia",
+        "role": "endorser"
+      },
+      {
+        "party": "Finland",
+        "role": "endorser"
+      },
+      {
+        "party": "France",
+        "role": "endorser"
+      },
+      {
+        "party": "Germany",
+        "role": "endorser"
+      },
+      {
+        "party": "Greece",
+        "role": "endorser"
+      },
+      {
+        "party": "Hungary",
+        "role": "endorser"
+      },
+      {
+        "party": "Iceland",
+        "role": "endorser"
+      },
+      {
+        "party": "India",
+        "role": "endorser"
+      },
+      {
+        "party": "Indonesia",
+        "role": "endorser"
+      },
+      {
+        "party": "Ireland",
+        "role": "endorser"
+      },
+      {
+        "party": "Italy",
+        "role": "endorser"
+      },
+      {
+        "party": "Japan",
+        "role": "endorser"
+      },
+      {
+        "party": "Kazakhstan",
+        "role": "endorser"
+      },
+      {
+        "party": "Kenya",
+        "role": "endorser"
+      },
+      {
+        "party": "Latvia",
+        "role": "endorser"
+      },
+      {
+        "party": "Liechtenstein",
+        "role": "endorser"
+      },
+      {
+        "party": "Lithuania",
+        "role": "endorser"
+      },
+      {
+        "party": "Luxembourg",
+        "role": "endorser"
+      },
+      {
+        "party": "Malta",
+        "role": "endorser"
+      },
+      {
+        "party": "Mexico",
+        "role": "endorser"
+      },
+      {
+        "party": "Moldova",
+        "role": "endorser"
+      },
+      {
+        "party": "Monaco",
+        "role": "endorser"
+      },
+      {
+        "party": "Morocco",
+        "role": "endorser"
+      },
+      {
+        "party": "Netherlands",
+        "role": "endorser"
+      },
+      {
+        "party": "New Zealand",
+        "role": "endorser"
+      },
+      {
+        "party": "Nigeria",
+        "role": "endorser"
+      },
+      {
+        "party": "Norway",
+        "role": "endorser"
+      },
+      {
+        "party": "Peru",
+        "role": "endorser"
+      },
+      {
+        "party": "Poland",
+        "role": "endorser"
+      },
+      {
+        "party": "Portugal",
+        "role": "endorser"
+      },
+      {
+        "party": "Republic of Korea",
+        "role": "endorser"
+      },
+      {
+        "party": "Romania",
+        "role": "endorser"
+      },
+      {
+        "party": "Rwanda",
+        "role": "endorser"
+      },
+      {
+        "party": "Senegal",
+        "role": "endorser"
+      },
+      {
+        "party": "Serbia",
+        "role": "endorser"
+      },
+      {
+        "party": "Singapore",
+        "role": "endorser"
+      },
+      {
+        "party": "Slovakia",
+        "role": "endorser"
+      },
+      {
+        "party": "Slovenia",
+        "role": "endorser"
+      },
+      {
+        "party": "Spain",
+        "role": "endorser"
+      },
+      {
+        "party": "Sweden",
+        "role": "endorser"
+      },
+      {
+        "party": "Switzerland",
+        "role": "endorser"
+      },
+      {
+        "party": "Thailand",
+        "role": "endorser"
+      },
+      {
+        "party": "Ukraine",
+        "role": "endorser"
+      },
+      {
+        "party": "Uruguay",
+        "role": "endorser"
+      },
+      {
+        "notes": [
+          "Listed on the official Élysée page accessed 23 November 2026; absent from the 19 February 2025 PDF."
+        ],
+        "party": "Zimbabwe",
+        "role": "endorser"
+      },
+      {
+        "notes": [
+          "Participating organisation, not a State."
+        ],
+        "party": "African Union Commission",
+        "role": "endorser"
+      },
+      {
+        "notes": [
+          "Participating organisation, not a State."
+        ],
+        "party": "European Union",
+        "role": "endorser"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [
+      "None: the statement is not a treaty and has no reservations."
+    ],
+    "source_ids": [
+      "elysee-page",
+      "elysee-pdf"
+    ],
+    "summary": "65 endorsers listed on the official Élysée page: 63 States, the European Union and the African Union Commission. Endorsement is political; it is not a signature or ratification.",
+    "unknowns": [
+      "No depositary or formal endorsement procedure is published; the Élysée page is the only list and has no visible update log.",
+      "Contemporaneous official releases listed 60 endorsers, including South Africa, the United Arab Emirates and the Holy See (listed as “Vatican”), which do not appear in the Élysée PDF or page; no withdrawal or correction is documented.",
+      "The date on which Zimbabwe was added to the list is not published."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "official_text_read",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "elysee-page",
+          "elysee-pdf",
+          "elysee-fr",
+          "canada-release"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "official_text_read",
+        "source_ids": [
+          "elysee-page",
+          "elysee-pdf",
+          "elysee-fr",
+          "canada-release"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "official_text_read",
+        "source_ids": [
+          "elysee-page",
+          "elysee-pdf",
+          "elysee-fr",
+          "canada-release"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "parties",
+        "locator": "parties.entries, parties.counts and parties.as_of",
+        "method": "official_text_read",
+        "source_ids": [
+          "elysee-page",
+          "elysee-pdf"
+        ]
+      }
+    ],
+    "discovered_via": "Élysée official AI Action Summit page; candidate register entry opened after the primary text was located.",
+    "search_dates": [
+      "2026-11-23"
+    ]
+  },
+  "related": [
+    {
+      "id": "un-ga-res-79-1",
+      "note": "The statement reaffirms the Global Digital Compact's commitments to a Global Dialogue on AI governance and an Independent International Scientific Panel on AI.",
+      "relation": "related"
+    },
+    {
+      "id": "bletchley-declaration-2023",
+      "note": "The statement commends the Bletchley Park AI Safety Summit.",
+      "relation": "related"
+    },
+    {
+      "id": "seoul-declaration-2024",
+      "note": "The statement commends the Seoul Summit and its voluntary commitments.",
+      "relation": "related"
+    },
+    {
+      "id": "china-global-ai-governance-initiative-2023",
+      "note": "China endorsed the Paris statement; its own initiative sets a different emphasis on sovereignty, development and opposition to exclusive groups.",
+      "relation": "related"
+    }
+  ],
   "relevance": {
-    "reason": "The concluding political statement of the Paris AI Action Summit, co-chaired by France and India. It sets out shared priorities for inclusive, sustainable and trustworthy AI and endorses the Global Digital Compact's AI governance follow-up, but it is a non-binding statement and creates no legal obligation. It is included because it is the broadest recent intergovernmental statement on AI and because its endorser list documents a visible split among major States.",
     "ai_provisions": [
       "Paragraphs 1–3 — priorities on access, openness, transparency, ethics, safety, innovation, work, sustainability and international cooperation",
       "Paragraph 3 — launch of the Public Interest AI Platform and Incubator by the founding members",
       "Paragraph 4 — support for the Global Dialogue on AI Governance and the Independent International Scientific Panel on AI",
       "Paragraph 5 — endorsement of the Bletchley Park and Seoul AI-safety process and continued work on information integrity and transparency"
     ],
-    "excluded_scope": "Non-binding political statement covering civil applications only (footnote 1); no military AI, no legal obligation, no monitoring or enforcement."
+    "excluded_scope": "Non-binding political statement covering civil applications only (footnote 1); no military AI, no legal obligation, no monitoring or enforcement.",
+    "reason": "The concluding political statement of the Paris AI Action Summit, co-chaired by France and India. It sets out shared priorities for inclusive, sustainable and trustworthy AI and endorses the Global Digital Compact's AI governance follow-up, but it is a non-binding statement and creates no legal obligation. It is included because it is the broadest recent intergovernmental statement on AI and because its endorser list documents a visible split among major States."
   },
-  "dates": {
-    "adopted": "2025-02-11",
-    "published": "2025-02-19",
-    "verified_on": "2026-11-23",
-    "notes": "Posted by the Élysée on 11 February 2025 at the close of the summit; the stored official PDF version was published on 19 February 2025."
-  },
-  "status_note": "Political statement, not a treaty. No signature, ratification or depositary. The official Élysée page, accessed 23 November 2026, lists 65 endorsers (63 States, the European Union and the African Union Commission); the 19 February 2025 PDF lists 64 (62 States plus the two organisations), Zimbabwe appearing only on the later page. Contemporaneous official releases listed 60 endorsers, including South Africa, the United Arab Emirates and the Holy See (listed as “Vatican”), which are absent from the Élysée lists. The statement remains a non-binding declaration; the discrepancy is recorded, not resolved.",
-  "parties": {
-    "as_of": "2026-11-23",
-    "summary": "65 endorsers listed on the official Élysée page: 63 States, the European Union and the African Union Commission. Endorsement is political; it is not a signature or ratification.",
-    "source_ids": [
-      "elysee-page",
-      "elysee-pdf"
-    ],
-    "signatories_total": 65,
-    "ratifications_total": 0,
-    "entries": [
-      {"party": "Armenia"},
-      {"party": "Australia"},
-      {"party": "Austria"},
-      {"party": "Belgium"},
-      {"party": "Brazil"},
-      {"party": "Bulgaria"},
-      {"party": "Cambodia"},
-      {"party": "Canada"},
-      {"party": "Chile"},
-      {"party": "China"},
-      {"party": "Colombia"},
-      {"party": "Côte d’Ivoire"},
-      {"party": "Croatia"},
-      {"party": "Cyprus"},
-      {"party": "Czech Republic"},
-      {"party": "Denmark"},
-      {"party": "Djibouti"},
-      {"party": "Egypt"},
-      {"party": "Estonia"},
-      {"party": "Finland"},
-      {"party": "France"},
-      {"party": "Germany"},
-      {"party": "Greece"},
-      {"party": "Hungary"},
-      {"party": "Iceland"},
-      {"party": "India"},
-      {"party": "Indonesia"},
-      {"party": "Ireland"},
-      {"party": "Italy"},
-      {"party": "Japan"},
-      {"party": "Kazakhstan"},
-      {"party": "Kenya"},
-      {"party": "Latvia"},
-      {"party": "Liechtenstein"},
-      {"party": "Lithuania"},
-      {"party": "Luxembourg"},
-      {"party": "Malta"},
-      {"party": "Mexico"},
-      {"party": "Moldova"},
-      {"party": "Monaco"},
-      {"party": "Morocco"},
-      {"party": "Netherlands"},
-      {"party": "New Zealand"},
-      {"party": "Nigeria"},
-      {"party": "Norway"},
-      {"party": "Peru"},
-      {"party": "Poland"},
-      {"party": "Portugal"},
-      {"party": "Republic of Korea"},
-      {"party": "Romania"},
-      {"party": "Rwanda"},
-      {"party": "Senegal"},
-      {"party": "Serbia"},
-      {"party": "Singapore"},
-      {"party": "Slovakia"},
-      {"party": "Slovenia"},
-      {"party": "Spain"},
-      {"party": "Sweden"},
-      {"party": "Switzerland"},
-      {"party": "Thailand"},
-      {"party": "Ukraine"},
-      {"party": "Uruguay"},
-      {
-        "party": "Zimbabwe",
-        "notes": ["Listed on the official Élysée page accessed 23 November 2026; absent from the 19 February 2025 PDF."]
-      },
-      {
-        "party": "African Union Commission",
-        "notes": ["Participating organisation, not a State."]
-      },
-      {
-        "party": "European Union",
-        "notes": ["Participating organisation, not a State."]
-      }
-    ],
-    "reservations": ["None: the statement is not a treaty and has no reservations."],
-    "declarations": [],
-    "objections": [],
-    "notifications": [],
-    "withdrawals": [],
-    "unknowns": [
-      "No depositary or formal endorsement procedure is published; the Élysée page is the only list and has no visible update log.",
-      "Contemporaneous official releases listed 60 endorsers, including South Africa, the United Arab Emirates and the Holy See (listed as “Vatican”), which do not appear in the Élysée PDF or page; no withdrawal or correction is documented.",
-      "The date on which Zimbabwe was added to the list is not published."
-    ]
-  },
-  "languages": {
-    "authentic": ["en", "fr"],
-    "translations": [],
-    "note": "English and French official versions are published by the Élysée. There is no authentic-language clause because the statement is not a treaty. Only the English text is stored."
+  "rights": {
+    "licence": "French Presidency terms of use",
+    "note": "Official government publication. No open licence identified; stored for research and verification. Reusers should consult the Élysée's terms.",
+    "status": "public_official_text"
   },
   "sources": [
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "elysee-page",
-      "url": "https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet",
-      "publisher": "Présidence de la République française (Élysée)",
       "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "en",
-      "note": "Official English page, posted 11 February 2025. Lists 65 signatories and organisations as accessed; no update log is displayed."
+      "note": "Official English page, posted 11 February 2025. Lists 65 signatories and organisations as accessed; no update log is displayed.",
+      "publisher": "Présidence de la République française (Élysée)",
+      "url": "https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet"
     },
     {
+      "accessed": "2026-11-23",
+      "http_status": 200,
       "id": "elysee-pdf",
-      "url": "https://www.elysee.fr/admin/upload/default/0001/17/0efc53b2025d5bc1f0fc68556c41370cee166e7f.pdf",
-      "publisher": "Présidence de la République française (Élysée)",
       "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
       "language": "en",
+      "local_path": "source/statement-2025-02-11-en.pdf",
       "note": "Official 3-page PDF (published 19 February 2025); 64 entries (62 States, EU and African Union Commission). Downloaded, stored and hashed.",
-      "sha256": "9a19a426c0d1ffdcd2dab40340074663ca4e8ff3eaeb1c3d1d2067e3fd9a2c64",
-      "local_path": "source/statement-2025-02-11-en.pdf"
-    },
-    {
-      "id": "elysee-fr",
-      "url": "https://www.elysee.fr/emmanuel-macron/2025/02/11/declaration-sur-une-intelligence-artificielle-inclusive-et-durable-pour-les-peuples-et-la-planete",
       "publisher": "Présidence de la République française (Élysée)",
-      "kind": "official_primary",
-      "accessed": "2026-11-23",
-      "http_status": 200,
-      "language": "fr",
-      "note": "Official French version; consulted for the existence of an official French text, not acquired in full."
+      "sha256": "9a19a426c0d1ffdcd2dab40340074663ca4e8ff3eaeb1c3d1d2067e3fd9a2c64",
+      "url": "https://www.elysee.fr/admin/upload/default/0001/17/0efc53b2025d5bc1f0fc68556c41370cee166e7f.pdf"
     },
     {
-      "id": "canada-release",
-      "url": "https://www.pm.gc.ca/en/news/statements/2025/02/11/statement-inclusive-and-sustainable-artificial-intelligence-people-and",
-      "publisher": "Government of Canada",
-      "kind": "official_secondary",
       "accessed": "2026-11-23",
       "http_status": 200,
+      "id": "elysee-fr",
+      "kind": "official_primary",
+      "language": "fr",
+      "note": "Official French version; consulted for the existence of an official French text, not acquired in full.",
+      "publisher": "Présidence de la République française (Élysée)",
+      "url": "https://www.elysee.fr/emmanuel-macron/2025/02/11/declaration-sur-une-intelligence-artificielle-inclusive-et-durable-pour-les-peuples-et-la-planete"
+    },
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "canada-release",
+      "kind": "official_secondary",
       "language": "en",
-      "note": "Contemporaneous release dated 11 February 2025 listing 60 signatories, including South Africa, the United Arab Emirates and the Holy See (listed as “Vatican”). Used only to document the discrepancy with the Élysée lists."
+      "note": "Contemporaneous release dated 11 February 2025 listing 60 signatories, including South Africa, the United Arab Emirates and the Holy See (listed as “Vatican”). Used only to document the discrepancy with the Élysée lists.",
+      "publisher": "Government of Canada",
+      "url": "https://www.pm.gc.ca/en/news/statements/2025/02/11/statement-inclusive-and-sustainable-artificial-intelligence-people-and"
     }
   ],
-  "rights": {
-    "status": "public_official_text",
-    "licence": "French Presidency terms of use",
-    "note": "Official government publication. No open licence identified; stored for research and verification. Reusers should consult the Élysée's terms."
+  "status": "adopted",
+  "status_note": "Political statement, not a treaty. No signature, ratification or depositary. The official Élysée page, accessed 23 November 2026, lists 65 endorsers (63 States, the European Union and the African Union Commission); the 19 February 2025 PDF lists 64 (62 States plus the two organisations), Zimbabwe appearing only on the later page. Contemporaneous official releases listed 60 endorsers, including South Africa, the United Arab Emirates and the Holy See (listed as “Vatican”), which are absent from the Élysée lists. The statement remains a non-binding declaration; the discrepancy is recorded, not resolved.",
+  "text": {
+    "extraction_note": "Text extracted from the official 3-page PDF with pypdf. The whole document is one citable unit; the numbered list of signatories is part of the text and is reproduced verbatim, including extraction spacing.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
+  "title": {
+    "official": "Statement on Inclusive and Sustainable Artificial Intelligence for People and the Planet",
+    "short": "Paris AI Action Summit Statement"
   },
   "verification": {
-    "level": "full_text_checked",
     "checks": [
       {
         "check": "Official English page and official PDF opened and read.",
-        "result": "Six numbered paragraphs; footnote 1 limits the statement to civil applications; non-binding political statement.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "Six numbered paragraphs; footnote 1 limits the statement to civil applications; non-binding political statement."
       },
       {
         "check": "Signatory lists compared across official publications.",
-        "result": "PDF (19 February 2025): 64 entries (62 States, EU, AUC). Page (23 November 2026): 65 entries; Zimbabwe added. Contemporaneous Canadian release: 60 entries including South Africa, UAE and Holy See, absent from the Élysée lists.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "PDF (19 February 2025): 64 entries (62 States, EU, AUC). Page (23 November 2026): 65 entries; Zimbabwe added. Contemporaneous Canadian release: 60 entries including South Africa, UAE and Holy See, absent from the Élysée lists."
       },
       {
         "check": "Legal nature checked against the text and issuing context.",
-        "result": "Not a treaty; no signature, ratification, depositary, monitoring or enforcement.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "Not a treaty; no signature, ratification, depositary, monitoring or enforcement."
       },
       {
         "check": "Relationship to other instruments checked from the text.",
-        "result": "Welcomes the Bletchley Park and Seoul process and reaffirms the Global Digital Compact's AI Panel and Global Dialogue commitments.",
-        "date": "2026-11-23"
+        "date": "2026-11-23",
+        "result": "Welcomes the Bletchley Park and Seoul process and reaffirms the Global Digital Compact's AI Panel and Global Dialogue commitments."
       }
     ],
+    "level": "full_text_checked",
     "notes": "Full English text stored and read. The endorser list is the principal uncertainty: three official publications give 60, 64 and 65 entries, and the differences are not explained. The record uses the current Élysée page (65) and preserves the discrepancy."
-  },
-  "related": [
-    {
-      "id": "un-ga-res-79-1",
-      "relation": "related",
-      "note": "The statement reaffirms the Global Digital Compact's commitments to a Global Dialogue on AI governance and an Independent International Scientific Panel on AI."
-    },
-    {
-      "id": "bletchley-declaration-2023",
-      "relation": "related",
-      "note": "The statement commends the Bletchley Park AI Safety Summit."
-    },
-    {
-      "id": "seoul-declaration-2024",
-      "relation": "related",
-      "note": "The statement commends the Seoul Summit and its voluntary commitments."
-    },
-    {
-      "id": "china-global-ai-governance-initiative-2023",
-      "relation": "related",
-      "note": "China endorsed the Paris statement; its own initiative sets a different emphasis on sovereignty, development and opposition to exclusive groups."
-    }
-  ],
-  "text": {
-    "manifest": "manifest.json",
-    "full_text": true,
-    "primary_language": "en",
-    "primary_text": "text/en.txt",
-    "units_mode": "whole",
-    "extraction_note": "Text extracted from the official 3-page PDF with pypdf. The whole document is one citable unit; the numbered list of signatories is part of the text and is reproduced verbatim, including extraction spacing."
-  },
-  "gaps": [
-    "Non-binding; no legal obligation, monitoring, reporting or enforcement.",
-    "Covers civil applications only (footnote 1); military AI is outside its scope.",
-    "The endorser list is inconsistent across official publications: 60 (11 February), 64 (PDF, 19 February) and 65 (page, accessed 23 November 2026); the difference is not explained.",
-    "The United States and the United Kingdom did not endorse the statement; several other major States are also absent.",
-    "Only the English text is stored; the official French version is recorded but not acquired.",
-    "The statement establishes no implementation or follow-up mechanism of its own."
-  ],
-  "provenance": {
-    "discovered_via": "Élysée official AI Action Summit page; candidate register entry opened after the primary text was located.",
-    "search_dates": ["2026-11-23"]
   }
 }

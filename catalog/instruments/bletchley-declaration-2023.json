@@ -1,88 +1,316 @@
 {
-  "id": "bletchley-declaration-2023",
-  "title": {"official": "The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 November 2023", "short": "Bletchley Declaration"},
-  "category": "non_binding_instrument",
-  "instrument_type": "declaration",
   "binding_status": "non_binding",
-  "status": "adopted",
-  "issuer": [{"name": "Countries attending the AI Safety Summit (UK-hosted), including the European Union", "role": "issuer", "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration"}],
-  "relevance": {
-    "reason": "The first international political declaration on frontier AI safety, agreed by 28 countries and the European Union at Bletchley Park. It establishes a shared understanding of opportunities and risks and a commitment to international cooperation, but is non-binding.",
-    "ai_provisions": ["Whole declaration — frontier AI risks, safety, international cooperation and continued dialogue"],
-    "excluded_scope": "Non-binding political declaration; no legal obligations, monitoring or enforcement."
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2023-11-01",
+    "notes": "Agreed at the AI Safety Summit, Bletchley Park, 1–2 November 2023. New Zealand joined the declaration on 23 October 2024.",
+    "verified_on": "2026-11-23"
   },
-  "dates": {"adopted": "2023-11-01", "verified_on": "2026-11-23", "notes": "Agreed at the AI Safety Summit, Bletchley Park, 1–2 November 2023. New Zealand joined the declaration on 23 October 2024."},
-  "status_note": "Adopted by 28 States and the European Union on 1 November 2023; New Zealand joined on 23 October 2024. The record lists 29 States and the EU as of 23 November 2026. Political endorsement, not a treaty signature or ratification.",
+  "gaps": [
+    "Non-binding.",
+    "Full text not stored.",
+    "Endorsement list is date-sensitive; the record reflects the GOV.UK page as of 23 November 2026.",
+    "No implementation or monitoring mechanism."
+  ],
+  "id": "bletchley-declaration-2023",
+  "instrument_type": "declaration",
+  "issuer": [
+    {
+      "name": "Countries attending the AI Safety Summit (UK-hosted), including the European Union",
+      "role": "issuer",
+      "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "English text and a Latin American Spanish translation are published on GOV.UK. No authentic-language clause.",
+    "translations": [
+      "es"
+    ]
+  },
   "parties": {
+    "act": "endorsement",
     "as_of": "2026-11-23",
-    "summary": "29 States and the European Union are recorded as endorsers: 28 States and the EU at adoption on 1 November 2023, plus New Zealand, which joined on 23 October 2024. Endorsement is political; it is not a treaty signature or ratification.",
+    "counts": {
+      "endorsements": {
+        "basis": "declared_total",
+        "source_ids": [
+          "govuk-declaration"
+        ],
+        "total": 30,
+        "verified": 30
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "party": "Australia",
+        "role": "endorser"
+      },
+      {
+        "party": "Brazil",
+        "role": "endorser"
+      },
+      {
+        "party": "Canada",
+        "role": "endorser"
+      },
+      {
+        "party": "Chile",
+        "role": "endorser"
+      },
+      {
+        "party": "China",
+        "role": "endorser"
+      },
+      {
+        "party": "France",
+        "role": "endorser"
+      },
+      {
+        "party": "Germany",
+        "role": "endorser"
+      },
+      {
+        "party": "India",
+        "role": "endorser"
+      },
+      {
+        "party": "Indonesia",
+        "role": "endorser"
+      },
+      {
+        "party": "Ireland",
+        "role": "endorser"
+      },
+      {
+        "party": "Israel",
+        "role": "endorser"
+      },
+      {
+        "party": "Italy",
+        "role": "endorser"
+      },
+      {
+        "party": "Japan",
+        "role": "endorser"
+      },
+      {
+        "party": "Kenya",
+        "role": "endorser"
+      },
+      {
+        "party": "Netherlands",
+        "role": "endorser"
+      },
+      {
+        "notes": [
+          "Joined on 23 October 2024; not among the 28 States represented at the 2023 summit."
+        ],
+        "party": "New Zealand",
+        "role": "endorser"
+      },
+      {
+        "party": "Nigeria",
+        "role": "endorser"
+      },
+      {
+        "party": "Philippines",
+        "role": "endorser"
+      },
+      {
+        "party": "Republic of Korea",
+        "role": "endorser"
+      },
+      {
+        "party": "Rwanda",
+        "role": "endorser"
+      },
+      {
+        "party": "Kingdom of Saudi Arabia",
+        "role": "endorser"
+      },
+      {
+        "party": "Singapore",
+        "role": "endorser"
+      },
+      {
+        "party": "Spain",
+        "role": "endorser"
+      },
+      {
+        "party": "Switzerland",
+        "role": "endorser"
+      },
+      {
+        "party": "Türkiye",
+        "role": "endorser"
+      },
+      {
+        "party": "Ukraine",
+        "role": "endorser"
+      },
+      {
+        "party": "United Arab Emirates",
+        "role": "endorser"
+      },
+      {
+        "party": "United Kingdom",
+        "role": "endorser"
+      },
+      {
+        "party": "United States of America",
+        "role": "endorser"
+      },
+      {
+        "notes": [
+          "Participating organisation, not a State."
+        ],
+        "party": "European Union",
+        "role": "endorser"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [
+      "None: the declaration is not a treaty and has no reservations."
+    ],
     "source_ids": [
       "govuk-declaration",
       "govuk-news"
     ],
-    "signatories_total": 30,
-    "ratifications_total": 0,
-    "entries": [
-      {"party": "Australia"},
-      {"party": "Brazil"},
-      {"party": "Canada"},
-      {"party": "Chile"},
-      {"party": "China"},
-      {"party": "France"},
-      {"party": "Germany"},
-      {"party": "India"},
-      {"party": "Indonesia"},
-      {"party": "Ireland"},
-      {"party": "Israel"},
-      {"party": "Italy"},
-      {"party": "Japan"},
-      {"party": "Kenya"},
-      {"party": "Netherlands"},
-      {"party": "New Zealand", "notes": ["Joined on 23 October 2024; not among the 28 States represented at the 2023 summit."]},
-      {"party": "Nigeria"},
-      {"party": "Philippines"},
-      {"party": "Republic of Korea"},
-      {"party": "Rwanda"},
-      {"party": "Kingdom of Saudi Arabia"},
-      {"party": "Singapore"},
-      {"party": "Spain"},
-      {"party": "Switzerland"},
-      {"party": "Türkiye"},
-      {"party": "Ukraine"},
-      {"party": "United Arab Emirates"},
-      {"party": "United Kingdom"},
-      {"party": "United States of America"},
-      {"party": "European Union", "notes": ["Participating organisation, not a State."]}
-    ],
-    "reservations": ["None: the declaration is not a treaty and has no reservations."],
-    "declarations": [],
-    "objections": [],
-    "notifications": [],
-    "withdrawals": [],
+    "summary": "29 States and the European Union are recorded as endorsers: 28 States and the EU at adoption on 1 November 2023, plus New Zealand, which joined on 23 October 2024. Endorsement is political; it is not a treaty signature or ratification.",
     "unknowns": [
       "No depositary or formal endorsement procedure is published; the GOV.UK page and its update note are the source for the list.",
       "The date of New Zealand's accession is recorded on GOV.UK, but no separate instrument of accession is published."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "govuk-declaration",
+          "govuk-news"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "govuk-declaration",
+          "govuk-news"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "govuk-declaration",
+          "govuk-news"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "parties",
+        "locator": "parties.entries, parties.counts and parties.as_of",
+        "method": "metadata_only",
+        "source_ids": [
+          "govuk-declaration",
+          "govuk-news"
+        ]
+      }
+    ],
+    "discovered_via": "GOV.UK AI Safety Summit publications.",
+    "search_dates": [
+      "2026-11-23"
     ]
   },
-  "languages": {"authentic": ["en"], "translations": ["es"], "note": "English text and a Latin American Spanish translation are published on GOV.UK. No authentic-language clause."},
-  "sources": [
-    {"id": "govuk-declaration", "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023", "publisher": "UK Government", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official text and list of participating countries; records New Zealand's accession on 23 October 2024."},
-    {"id": "govuk-news", "url": "https://www.gov.uk/government/news/countries-agree-to-safe-and-responsible-development-of-frontier-ai-in-landmark-bletchley-declaration", "publisher": "UK Government", "kind": "official_secondary", "accessed": "2026-11-23", "note": "Official announcement: 28 countries plus the EU; lists endorsing countries."}
-  ],
-  "rights": {"status": "open_licence", "licence": "Open Government Licence v3.0", "note": "GOV.UK content is licensed under OGL v3.0 except where otherwise stated. Reuse with attribution.", "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"},
-  "verification": {
-    "level": "metadata_verified",
-    "checks": [
-      {"check": "Date, participating countries and non-binding character checked on the GOV.UK publication.", "result": "1–2 November 2023; 28 States plus the EU at adoption; political declaration.", "date": "2026-11-23"},
-      {"check": "New Zealand accession checked in the GOV.UK update note.", "result": "Joined 23 October 2024; the list is 29 States plus the EU in total.", "date": "2026-11-23"},
-      {"check": "Endorser list checked against the GOV.UK publication and its update note.", "result": "28 States and the EU at adoption; New Zealand joined on 23 October 2024; 29 States and the EU in total. The list is reproduced party by party in parties.entries.", "date": "2026-11-23"}
-    ],
-    "notes": "Metadata verified; full text not stored. The declaration is political and does not create legal obligations. The endorser list is reproduced party by party from the GOV.UK page as of 23 November 2026."
-  },
   "related": [
-    {"id": "seoul-declaration-2024", "relation": "successor", "note": "Follow-up summit declaration in May 2024."},
-    {"id": "frontier-ai-safety-commitments-2024", "relation": "related", "note": "Company commitments launched at the Seoul summit."}
+    {
+      "id": "seoul-declaration-2024",
+      "note": "Follow-up summit declaration in May 2024.",
+      "relation": "successor"
+    },
+    {
+      "id": "frontier-ai-safety-commitments-2024",
+      "note": "Company commitments launched at the Seoul summit.",
+      "relation": "related"
+    }
   ],
-  "gaps": ["Non-binding.", "Full text not stored.", "Endorsement list is date-sensitive; the record reflects the GOV.UK page as of 23 November 2026.", "No implementation or monitoring mechanism."],
-  "provenance": {"discovered_via": "GOV.UK AI Safety Summit publications.", "search_dates": ["2026-11-23"]}
+  "relevance": {
+    "ai_provisions": [
+      "Whole declaration — frontier AI risks, safety, international cooperation and continued dialogue"
+    ],
+    "excluded_scope": "Non-binding political declaration; no legal obligations, monitoring or enforcement.",
+    "reason": "The first international political declaration on frontier AI safety, agreed by 28 countries and the European Union at Bletchley Park. It establishes a shared understanding of opportunities and risks and a commitment to international cooperation, but is non-binding."
+  },
+  "rights": {
+    "licence": "Open Government Licence v3.0",
+    "note": "GOV.UK content is licensed under OGL v3.0 except where otherwise stated. Reuse with attribution.",
+    "status": "open_licence",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "govuk-declaration",
+      "kind": "official_primary",
+      "note": "Official text and list of participating countries; records New Zealand's accession on 23 October 2024.",
+      "publisher": "UK Government",
+      "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023"
+    },
+    {
+      "accessed": "2026-11-23",
+      "id": "govuk-news",
+      "kind": "official_secondary",
+      "note": "Official announcement: 28 countries plus the EU; lists endorsing countries.",
+      "publisher": "UK Government",
+      "url": "https://www.gov.uk/government/news/countries-agree-to-safe-and-responsible-development-of-frontier-ai-in-landmark-bletchley-declaration"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Adopted by 28 States and the European Union on 1 November 2023; New Zealand joined on 23 October 2024. The record lists 29 States and the EU as of 23 November 2026. Political endorsement, not a treaty signature or ratification.",
+  "title": {
+    "official": "The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 November 2023",
+    "short": "Bletchley Declaration"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Date, participating countries and non-binding character checked on the GOV.UK publication.",
+        "date": "2026-11-23",
+        "result": "1–2 November 2023; 28 States plus the EU at adoption; political declaration."
+      },
+      {
+        "check": "New Zealand accession checked in the GOV.UK update note.",
+        "date": "2026-11-23",
+        "result": "Joined 23 October 2024; the list is 29 States plus the EU in total."
+      },
+      {
+        "check": "Endorser list checked against the GOV.UK publication and its update note.",
+        "date": "2026-11-23",
+        "result": "28 States and the EU at adoption; New Zealand joined on 23 October 2024; 29 States and the EU in total. The list is reproduced party by party in parties.entries."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified; full text not stored. The declaration is political and does not create legal obligations. The endorser list is reproduced party by party from the GOV.UK page as of 23 November 2026."
+  }
 }

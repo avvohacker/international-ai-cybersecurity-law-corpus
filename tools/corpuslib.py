@@ -14,6 +14,8 @@ from datetime import date
 from pathlib import Path
 from typing import Any, Iterable
 
+from jsonschema import Draft202012Validator, FormatChecker
+
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG_DIR = ROOT / "catalog" / "instruments"
 CORPUS_DIR = ROOT / "corpus"
@@ -55,6 +57,92 @@ SOURCE_KINDS = {
     "secondary",
 }
 DECISIONS = {"included", "excluded", "pending"}
+COUNT_KEYS = {
+    "signatures",
+    "political_signatures",
+    "endorsements",
+    "issuing_states",
+    "accessions",
+    "ratifications",
+    "deposits",
+    "observers",
+    "members",
+    "parties",
+}
+COUNT_BASIS = {"verified_total", "declared_total", "zero_verified", "unknown", "not_applicable"}
+# Acts that express international consent and therefore count as a deposit once
+# performed. A domestic approval or authorisation is deliberately not in this set.
+CONSENT_FIELDS = ("ratification", "acceptance", "approval", "deposit")
+ACCESSION_FIELDS = ("accession",)
+# Count key -> entry field that evidences the act. `None` means the count is of
+# the listed entries themselves.
+COUNT_EVIDENCE = {
+    "signatures": "signature",
+    "political_signatures": "political_signature",
+    "endorsements": "endorsement",
+    "issuing_states": "role:issuing_state",
+    "accessions": "accession",
+    "ratifications": "consent",
+    "accessions": "accession",
+    "deposits": "deposit",
+    "observers": "observer",
+    "members": None,
+    "parties": None,
+}
+POLITICAL_TYPES = {
+    "joint_statement",
+    "declaration",
+    "resolution",
+    "recommendation",
+    "principles",
+    "code_of_conduct",
+    "commitment",
+    "strategy",
+    "report",
+    "guidance",
+}
+TREATY_TYPES = {"treaty", "protocol", "agreement", "mou", "framework"}
+ASSERTION_FIELDS = {
+    "title",
+    "dates",
+    "status",
+    "legal_nature",
+    "parties",
+    "languages",
+    "provisions",
+    "counts",
+    "scope",
+}
+ASSERTION_METHODS = {
+    "official_text_read",
+    "official_page_read",
+    "registry_read",
+    "secondary_corroborated",
+    "metadata_only",
+}
+DATE_FIELDS = {
+    "adopted",
+    "signed",
+    "opened_for_signature",
+    "closed_for_signature",
+    "published",
+    "entered_into_force",
+    "verified_on",
+    "accessed",
+    "as_of",
+    "signature",
+    "political_signature",
+    "endorsement",
+    "ratification",
+    "acceptance",
+    "approval",
+    "accession",
+    "deposit",
+    "domestic_approval",
+    "observer",
+    "entry_into_force",
+    "date",
+}
 
 REQUIRED_INSTRUMENT_FIELDS = [
     "id",
@@ -106,6 +194,45 @@ def is_iso_date(value: Any) -> bool:
     return True
 
 
+_SCHEMA: dict[str, Any] | None = None
+
+
+def instrument_schema() -> dict[str, Any]:
+    global _SCHEMA
+    if _SCHEMA is None:
+        _SCHEMA = load_json(SCHEMA_DIR / "instrument.schema.json")
+    return _SCHEMA
+
+
+def validate_schema(inst: Any, report: Report, path_label: str) -> None:
+    """Apply the published JSON Schema, with format checking for dates and URIs."""
+    try:
+        validator = Draft202012Validator(
+            instrument_schema(), format_checker=FormatChecker()
+        )
+    except Exception as exc:  # a broken schema is a repository error, not a record error
+        report.error("schema_invalid", path_label, f"cannot load schema: {exc}")
+        return
+    errors = sorted(validator.iter_errors(inst), key=lambda err: list(err.absolute_path))
+    for err in errors:
+        where = "/".join(str(part) for part in err.absolute_path) or "(root)"
+        report.error("schema_error", path_label, f"{where}: {err.message}")
+
+
+def iter_dates(node: Any, path: str = "") -> Iterable[tuple[str, Any]]:
+    """Yield (json-path, value) for every field whose name denotes a date."""
+    if isinstance(node, dict):
+        for key, value in node.items():
+            here = f"{path}.{key}" if path else key
+            if key in DATE_FIELDS and value is not None:
+                yield here, value
+            else:
+                yield from iter_dates(value, here)
+    elif isinstance(node, list):
+        for idx, value in enumerate(node):
+            yield from iter_dates(value, f"{path}[{idx}]")
+
+
 @dataclass
 class Issue:
     level: str  # error | warning
@@ -155,6 +282,12 @@ def load_instruments() -> dict[str, dict[str, Any]]:
 def validate_instrument(
     inst: dict[str, Any], report: Report, path_label: str
 ) -> None:
+    # Structural checks come from the published schema. The checks below are
+    # semantic and must not be folded back into hand-written structural rules.
+    if not isinstance(inst, dict):
+        report.error("schema_error", path_label, "record must be a JSON object")
+        return
+    validate_schema(inst, report, path_label)
     for key in REQUIRED_INSTRUMENT_FIELDS:
         if key not in inst:
             report.error("missing_field", path_label, f"missing required field: {key}")
@@ -190,12 +323,27 @@ def validate_instrument(
             "relevance.reason and relevance.ai_provisions are required",
         )
 
+    for where, value in iter_dates(inst):
+        if not is_iso_date(value):
+            report.error(
+                "bad_date",
+                path_label,
+                f"{where} is not an existing calendar date in ISO YYYY-MM-DD form: {value!r}",
+            )
     dates = inst.get("dates") or {}
-    for key in ("adopted", "verified_on"):
-        if key in dates and dates[key] is not None and not is_iso_date(dates[key]):
-            report.error("bad_date", path_label, f"dates.{key} is not ISO YYYY-MM-DD")
     if not dates.get("verified_on"):
         report.error("missing_verified_on", path_label, "dates.verified_on is required")
+    for end, start in (
+        ("closed_for_signature", "opened_for_signature"),
+        ("entered_into_force", "signed"),
+    ):
+        if is_iso_date(dates.get(end)) and is_iso_date(dates.get(start)):
+            if dates[end] < dates[start]:
+                report.error(
+                    "date_order",
+                    path_label,
+                    f"dates.{end} precedes dates.{start}",
+                )
 
     languages = inst.get("languages") or {}
     if not languages.get("authentic"):
@@ -218,8 +366,14 @@ def validate_instrument(
             else:
                 source_ids.add(sid)
             url = src.get("url", "")
-            if not (isinstance(url, str) and url.startswith("https://")):
-                report.error("bad_source_url", path_label, f"sources[{idx}] needs https URL")
+            if not (isinstance(url, str) and url.startswith(("https://", "http://"))):
+                report.error("bad_source_url", path_label, f"sources[{idx}] needs an http(s) URL")
+            elif url.startswith("http://"):
+                report.warn(
+                    "plain_http_source",
+                    path_label,
+                    f"sources[{idx}] uses plain HTTP; the host must not support TLS for this to be acceptable",
+                )
             if not is_iso_date(src.get("accessed")):
                 report.error(
                     "bad_source_access_date",
@@ -248,29 +402,44 @@ def validate_instrument(
     if not isinstance(gaps, list) or not gaps:
         report.error("missing_gaps", path_label, "gaps must be a non-empty list")
 
-    # Legal-nature consistency: declarations/resolutions cannot be binding.
+    # Legal nature is a reasoned qualification, not a label inferred from the
+    # name of the instrument. A political form marked binding, or a treaty form
+    # marked non-binding, must say why and cite the source of that conclusion.
     itype = inst.get("instrument_type")
-    if itype in {"joint_statement", "declaration", "resolution", "recommendation", "principles", "code_of_conduct", "commitment", "strategy", "report", "guidance"} and inst.get("binding_status") == "binding":
+    nature = inst.get("legal_nature")
+    if isinstance(nature, dict):
+        if not str(nature.get("rationale") or "").strip():
+            report.error("legal_nature_unsourced", path_label, "legal_nature.rationale is empty")
+        for sid in nature.get("source_ids") or []:
+            if sid not in source_ids:
+                report.error(
+                    "unknown_source_ref",
+                    path_label,
+                    f"legal_nature references unknown source {sid}",
+                )
+    contested = (
+        itype in POLITICAL_TYPES and inst.get("binding_status") == "binding"
+    ) or (itype in TREATY_TYPES and inst.get("binding_status") == "non_binding")
+    if contested and not isinstance(nature, dict):
         report.error(
-            "category_mismatch",
+            "legal_nature_missing",
             path_label,
-            f"{itype} cannot be marked binding",
+            f"{itype} marked {inst.get('binding_status')} needs a sourced legal_nature rationale",
         )
+
+    for sid in (inst.get("relevance") or {}).get("source_ids") or []:
+        if sid not in source_ids:
+            report.error(
+                "unknown_source_ref",
+                path_label,
+                f"relevance references unknown source {sid}",
+            )
 
     parties = inst.get("parties")
     if parties:
         as_of = parties.get("as_of")
         if not is_iso_date(as_of):
             report.error("bad_parties_date", path_label, "parties.as_of must be ISO date")
-        for idx, entry in enumerate(parties.get("entries", [])):
-            for key in ("signature", "ratification", "accession", "entry_into_force"):
-                value = entry.get(key)
-                if value is not None and not is_iso_date(value):
-                    report.error(
-                        "bad_party_date",
-                        path_label,
-                        f"parties.entries[{idx}].{key} is not ISO date",
-                    )
         if source_ids and parties.get("source_ids"):
             for sid in parties["source_ids"]:
                 if sid not in source_ids:
@@ -279,6 +448,26 @@ def validate_instrument(
                         path_label,
                         f"parties references unknown source {sid}",
                     )
+        validate_parties(parties, report, path_label, source_ids)
+
+    provenance = inst.get("provenance") or {}
+    for idx, assertion in enumerate(provenance.get("assertions") or []):
+        where = f"provenance.assertions[{idx}]"
+        if assertion.get("field") not in ASSERTION_FIELDS:
+            report.error("bad_assertion_field", path_label, f"{where}.field is unknown")
+        if assertion.get("method") not in ASSERTION_METHODS:
+            report.error("bad_assertion_method", path_label, f"{where}.method is unknown")
+        if not str(assertion.get("locator") or "").strip():
+            report.error("bad_assertion_locator", path_label, f"{where}.locator is empty")
+        if not is_iso_date(assertion.get("date")):
+            report.error("bad_assertion_date", path_label, f"{where}.date is not a valid date")
+        for sid in assertion.get("source_ids") or []:
+            if sid not in source_ids:
+                report.error(
+                    "unknown_source_ref",
+                    path_label,
+                    f"{where} references unknown source {sid}",
+                )
 
     for rel in inst.get("related", []):
         if not rel.get("id") or not rel.get("relation"):
@@ -290,6 +479,136 @@ def validate_instrument(
             report.error("missing_corpus_dir", path_label, f"corpus/{iid} does not exist")
         if not text.get("manifest"):
             report.error("missing_text_manifest", path_label, "text.manifest is required")
+
+
+def count_entries(entries: list[dict[str, Any]], key: str) -> int:
+    evidence = COUNT_EVIDENCE[key]
+    if evidence is None:
+        return len(entries)
+    if evidence == "consent":
+        return sum(1 for entry in entries if any(entry.get(field) for field in CONSENT_FIELDS))
+    if evidence == "accession":
+        return sum(1 for entry in entries if any(entry.get(field) for field in ACCESSION_FIELDS))
+    if evidence.startswith("role:"):
+        role = evidence.split(":", 1)[1]
+        return sum(1 for entry in entries if entry.get("role") == role)
+    return sum(1 for entry in entries if entry.get(evidence))
+
+
+def validate_parties(
+    parties: dict[str, Any], report: Report, path_label: str, source_ids: set[str]
+) -> None:
+    """Check that each count states its basis and matches the recorded entries.
+
+    The point is to keep four things apart: a verified zero, a total declared by
+    a source, an unknown total and an act that does not apply. A count of
+    international deposits must never be incremented by a domestic approval.
+    """
+    entries = parties.get("entries") or []
+    counts = parties.get("counts") or {}
+    if not counts:
+        report.error("missing_counts", path_label, "parties.counts must state what was counted")
+        return
+    for key, count in counts.items():
+        where = f"parties.counts.{key}"
+        if key not in COUNT_KEYS:
+            report.error("unknown_count", path_label, f"unknown count {key}")
+            continue
+        if not isinstance(count, dict):
+            report.error("bad_count", path_label, f"{where} is not an object")
+            continue
+        basis = count.get("basis")
+        total = count.get("total")
+        verified = count.get("verified")
+        if basis not in COUNT_BASIS:
+            report.error("bad_count_basis", path_label, f"{where}.basis is unknown")
+            continue
+        if basis in {"unknown", "not_applicable"}:
+            if total is not None:
+                report.error(
+                    "ambiguous_count",
+                    path_label,
+                    f"{where}: a {basis} count must not carry a total",
+                )
+        elif basis == "zero_verified":
+            if total != 0 or verified != 0:
+                report.error(
+                    "ambiguous_count",
+                    path_label,
+                    f"{where}: zero_verified requires total 0 and verified 0",
+                )
+        elif not isinstance(total, int):
+            report.error("bad_count", path_label, f"{where}: a stated total must be an integer")
+        if not isinstance(verified, int) or verified < 0:
+            report.error("bad_count", path_label, f"{where}.verified must be a non-negative integer")
+            continue
+        if isinstance(total, int) and verified > total:
+            report.error(
+                "count_exceeds_total",
+                path_label,
+                f"{where}: {verified} verified entries exceed the stated total {total}",
+            )
+        if basis == "verified_total" and isinstance(total, int) and verified != total:
+            report.error(
+                "count_not_itemised",
+                path_label,
+                f"{where}: verified_total requires {total} itemised entries, found {verified}",
+            )
+        evidenced = count_entries(entries, key)
+        strict = key in {"ratifications", "deposits", "accessions", "observers"} or evidenced > 0
+        if strict and verified != evidenced:
+            report.error(
+                "count_entry_mismatch",
+                path_label,
+                f"{where}: {verified} verified but {evidenced} entries record the act",
+            )
+        if not strict and verified > len(entries):
+            report.error(
+                "count_entry_mismatch",
+                path_label,
+                f"{where}: {verified} verified exceeds the {len(entries)} listed entries",
+            )
+        for sid in count.get("source_ids") or []:
+            if sid not in source_ids:
+                report.error(
+                    "unknown_source_ref",
+                    path_label,
+                    f"{where} references unknown source {sid}",
+                )
+
+    # A recorded international consent must be counted; an internal approval
+    # must not be. This catches the substitution the corpus previously made.
+    consent = count_entries(entries, "ratifications")
+    if consent and "ratifications" not in counts:
+        report.error(
+            "uncounted_consent",
+            path_label,
+            "entries record ratification/acceptance/approval/accession but no ratifications count is declared",
+        )
+    if consent and (counts.get("ratifications") or {}).get("basis") == "not_applicable":
+        report.error(
+            "consent_not_applicable",
+            path_label,
+            "entries record international consent but ratifications are marked not_applicable",
+        )
+    if not consent and (counts.get("ratifications") or {}).get("basis") == "verified_total":
+        report.error(
+            "unverified_consent",
+            path_label,
+            "ratifications are marked verified_total but no entry records a deposit",
+        )
+    if any(entry.get("domestic_approval") for entry in entries) and (
+        counts.get("ratifications") or {}
+    ).get("total") not in (None, 0):
+        pass  # a domestic approval does not by itself invalidate a verified deposit
+    for entry in entries:
+        if entry.get("domestic_approval") and entry.get("ratification"):
+            if entry["domestic_approval"] > entry["ratification"]:
+                report.error(
+                    "approval_after_ratification",
+                    path_label,
+                    f"{entry.get('party')}: domestic approval is later than the recorded ratification",
+                )
 
 
 def validate_corpus_text(inst: dict[str, Any], report: Report) -> None:
@@ -366,18 +685,59 @@ def validate_corpus_text(inst: dict[str, Any], report: Report) -> None:
             if body[start:end] != unit.get("text"):
                 report.error("unit_text_mismatch", iid, f"unit {uid} text does not match stored anchor")
             if pages:
-                for key in ("page_start", "page_end"):
-                    p = unit.get(key)
-                    if not isinstance(p, int) or p < 1 or p > len(pages.get("pages", [])):
-                        report.error("bad_unit_page", iid, f"unit {uid} has invalid {key}")
-                if unit.get("page_start") and unit.get("page_end"):
-                    page = pages["pages"][unit["page_start"] - 1]
-                    if not (page["char_start"] <= start < page["char_end"] + 1):
+                page_list = pages.get("pages")
+                if not isinstance(page_list, list) or not page_list:
+                    report.error("bad_pages", iid, "pages.json has no page list")
+                else:
+                    ps, pe = unit.get("page_start"), unit.get("page_end")
+                    valid_pages = True
+                    for key, value in (("page_start", ps), ("page_end", pe)):
+                        if not isinstance(value, int) or isinstance(value, bool) or not (
+                            1 <= value <= len(page_list)
+                        ):
+                            report.error(
+                                "bad_unit_page",
+                                iid,
+                                f"unit {uid} has invalid {key} {value!r}; pages 1..{len(page_list)}",
+                            )
+                            valid_pages = False
+                    if valid_pages and ps > pe:
                         report.error(
-                            "unit_page_offset_mismatch",
+                            "bad_unit_page",
                             iid,
-                            f"unit {uid} start not inside page {unit['page_start']}",
+                            f"unit {uid} page_start {ps} is after page_end {pe}",
                         )
+                        valid_pages = False
+                    if valid_pages:
+                        first, last = page_list[ps - 1], page_list[pe - 1]
+                        for label, page in (("page_start", first), ("page_end", last)):
+                            bounds = (page.get("char_start"), page.get("char_end"))
+                            if not all(
+                                isinstance(v, int) and not isinstance(v, bool)
+                                for v in bounds
+                            ) or not (0 <= bounds[0] < bounds[1]):
+                                report.error(
+                                    "bad_page_bounds",
+                                    iid,
+                                    f"pages.json entry for {label} of unit {uid} has invalid char bounds",
+                                )
+                                valid_pages = False
+                        if valid_pages:
+                            if not (first["char_start"] <= start < last["char_end"] + 1):
+                                report.error(
+                                    "unit_page_offset_mismatch",
+                                    iid,
+                                    f"unit {uid} char range {start}:{end} is not inside pages {ps}-{pe}",
+                                )
+                            if not (
+                                unit.get("page_start") == unit.get("page_end")
+                                or first["char_start"] <= start < first["char_end"] + 1
+                            ):
+                                report.error(
+                                    "unit_page_offset_mismatch",
+                                    iid,
+                                    f"unit {uid} start is not inside its first page {ps}",
+                                )
 
 
 def validate_candidates(instruments: dict[str, dict[str, Any]], report: Report) -> None:

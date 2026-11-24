@@ -1,35 +1,131 @@
 {
-  "id": "coe-cets-225-explanatory-report",
-  "title": {"official": "Explanatory Report to the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law", "short": "CETS 225 Explanatory Report"},
-  "category": "preparatory_interpretive",
-  "instrument_type": "report",
   "binding_status": "non_binding",
-  "status": "adopted",
-  "issuer": [{"name": "Council of Europe", "role": "issuer", "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence"}],
-  "relevance": {
-    "reason": "The official explanatory report accompanying CETS 225, commenting on the Preamble and Articles 1–36. It facilitates understanding of the Convention but expressly does not provide an authoritative interpretation.",
-    "ai_provisions": ["Commentary on the Preamble and Articles 1–36 of CETS 225"],
-    "excluded_scope": "Interpretive document, not a source of binding obligations; not an authoritative interpretation."
+  "category": "preparatory_interpretive",
+  "dates": {
+    "adopted": "2024-09-05",
+    "notes": "Dated Vilnius, 5 September 2024; the Convention was adopted by the Committee of Ministers on 17 May 2024.",
+    "verified_on": "2026-11-23"
   },
-  "dates": {"adopted": "2024-09-05", "verified_on": "2026-11-23", "notes": "Dated Vilnius, 5 September 2024; the Convention was adopted by the Committee of Ministers on 17 May 2024."},
-  "status_note": "Published with the Convention. Non-binding interpretive material.",
-  "languages": {"authentic": ["en", "fr"], "translations": [], "note": "English and French versions; the report itself states it is not an authoritative interpretation."},
-  "sources": [
-    {"id": "coe-report", "url": "https://rm.coe.int/1680afae67", "publisher": "Council of Europe Treaty Office", "kind": "official_primary", "accessed": "2026-11-23", "http_status": null, "note": "Official Explanatory Report; direct download returned HTTP 403 to automated clients, but the opening and structure were read through the extraction tool."},
-    {"id": "coe-ai-page", "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence", "publisher": "Council of Europe", "kind": "official_secondary", "accessed": "2026-11-23", "note": "Official page linking the Convention and the Explanatory Report."}
+  "gaps": [
+    "Not an authoritative interpretation.",
+    "Full text not acquired (HTTP 403).",
+    "Article-by-article commentary not verified in detail."
   ],
-  "rights": {"status": "public_official_text", "licence": "Council of Europe copyright", "note": "Official Council of Europe document; no open licence identified. Metadata only in this corpus.", "url": "https://www.coe.int/en/web/portal/disclaimer"},
-  "verification": {
-    "level": "metadata_verified",
-    "checks": [
-      {"check": "Title, date and non-authoritative character checked in the report's opening paragraphs.", "result": "Vilnius, 5 September 2024; expressly not an authoritative interpretation.", "date": "2026-11-23"},
-      {"check": "Relationship to the Convention checked on the official CoE page.", "result": "Linked as the Explanatory Report to CETS 225.", "date": "2026-11-23"}
+  "id": "coe-cets-225-explanatory-report",
+  "instrument_type": "report",
+  "issuer": [
+    {
+      "name": "Council of Europe",
+      "role": "issuer",
+      "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en",
+      "fr"
     ],
-    "notes": "Only the opening and structure were read; the full report was not acquired or segmented."
+    "note": "English and French versions; the report itself states it is not an authoritative interpretation.",
+    "translations": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "coe-report",
+          "coe-ai-page"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "coe-report",
+          "coe-ai-page"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "coe-report",
+          "coe-ai-page"
+        ]
+      }
+    ],
+    "discovered_via": "Council of Europe AI page and Treaty Office.",
+    "search_dates": [
+      "2026-11-23"
+    ]
   },
   "related": [
-    {"id": "coe-cets-225", "relation": "explanatory_report", "note": "Explanatory Report to CETS 225."}
+    {
+      "id": "coe-cets-225",
+      "note": "Explanatory Report to CETS 225.",
+      "relation": "explanatory_report"
+    }
   ],
-  "gaps": ["Not an authoritative interpretation.", "Full text not acquired (HTTP 403).", "Article-by-article commentary not verified in detail."],
-  "provenance": {"discovered_via": "Council of Europe AI page and Treaty Office.", "search_dates": ["2026-11-23"]}
+  "relevance": {
+    "ai_provisions": [
+      "Commentary on the Preamble and Articles 1–36 of CETS 225"
+    ],
+    "excluded_scope": "Interpretive document, not a source of binding obligations; not an authoritative interpretation.",
+    "reason": "The official explanatory report accompanying CETS 225, commenting on the Preamble and Articles 1–36. It facilitates understanding of the Convention but expressly does not provide an authoritative interpretation."
+  },
+  "rights": {
+    "licence": "Council of Europe copyright",
+    "note": "Official Council of Europe document; no open licence identified. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.coe.int/en/web/portal/disclaimer"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": null,
+      "id": "coe-report",
+      "kind": "official_primary",
+      "note": "Official Explanatory Report; direct download returned HTTP 403 to automated clients, but the opening and structure were read through the extraction tool.",
+      "publisher": "Council of Europe Treaty Office",
+      "url": "https://rm.coe.int/1680afae67"
+    },
+    {
+      "accessed": "2026-11-23",
+      "id": "coe-ai-page",
+      "kind": "official_secondary",
+      "note": "Official page linking the Convention and the Explanatory Report.",
+      "publisher": "Council of Europe",
+      "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Published with the Convention. Non-binding interpretive material.",
+  "title": {
+    "official": "Explanatory Report to the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+    "short": "CETS 225 Explanatory Report"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Title, date and non-authoritative character checked in the report's opening paragraphs.",
+        "date": "2026-11-23",
+        "result": "Vilnius, 5 September 2024; expressly not an authoritative interpretation."
+      },
+      {
+        "check": "Relationship to the Convention checked on the official CoE page.",
+        "date": "2026-11-23",
+        "result": "Linked as the Explanatory Report to CETS 225."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Only the opening and structure were read; the full report was not acquired or segmented."
+  }
 }

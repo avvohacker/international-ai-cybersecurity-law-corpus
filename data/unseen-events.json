@@ -1,0 +1,66 @@
+[
+  {
+    "date": "2022-11-30",
+    "title": "OpenAI releases ChatGPT",
+    "kind": "market",
+    "summary": "A free research preview of a conversational model reaches the public. The release turns general-purpose AI from a research and policy question into a mass-market product and a subject of national competition.",
+    "why": "No instrument was adopted. The governance response that followed — summit declarations, codes, the EU AI Act's final negotiations and the AI-specific treaties — was driven by the public salience this release created. The legal record begins after the market event, not before it.",
+    "source": {"label": "OpenAI, Introducing ChatGPT", "url": "https://openai.com/index/chatgpt/"}
+  },
+  {
+    "date": "2023-01-31",
+    "title": "United States and India launch the iCET",
+    "kind": "bilateral",
+    "summary": "The inaugural meeting of the US–India Initiative on Critical and Emerging Technology is held in Washington. The fact sheet covers AI, semiconductors, quantum, advanced telecommunications and defence innovation, and announces work on common standards and benchmarks for trustworthy AI.",
+    "why": "A bilateral technology arrangement with no treaty, depositary or ratification. It is one of the earliest US attempts to align AI standards with a partner outside the G7, and it shows how much AI cooperation happens outside the legal instruments in the catalogue.",
+    "source": {"label": "US Embassy in India, iCET fact sheet", "url": "https://in.usembassy.gov/fact-sheet-united-states-and-india-elevate-strategic-partnership-with-the-initiative-on-critical-and-emerging-technology-icet"}
+  },
+  {
+    "date": "2023-11-15",
+    "title": "Biden–Xi summit at Woodside: AI talks and military channels",
+    "kind": "summit",
+    "summary": "The two presidents meet in Woodside, California. They affirm the need to address the risks of advanced AI through government talks, and welcome the resumption of high-level military-to-military communication, including telephone conversations between theater commanders.",
+    "why": "The summit produced no document and no legal instrument. It created a political channel: the AI dialogue that met in Geneva in 2024, and the military telephone links that are a hotline in all but name. Neither appears in a treaty or a declaration.",
+    "source": {"label": "White House readout, 15 November 2023", "url": "https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2023/11/15/readout-of-president-joe-bidens-meeting-with-president-xi-jinping-of-the-peoples-republic-of-china-2"}
+  },
+  {
+    "date": "2024-05-14",
+    "title": "First US–China intergovernmental dialogue on AI, Geneva",
+    "kind": "bilateral",
+    "summary": "Delegations from the White House, State Department and Commerce meet Chinese counterparts from the Foreign Ministry, Science and Technology, the NDRC, the Cyberspace Administration and MIIT. They exchange views on AI risk and safety. No joint statement or deliverable is issued.",
+    "why": "The meeting implements the Woodside understanding without creating an instrument. It is the clearest example of AI risk management conducted through a bilateral channel that has no legal form, no secretariat and no published rules.",
+    "source": {"label": "US Mission Geneva, statement of 15 May 2024", "url": "https://geneva.usmission.gov/2024/05/15/statement-from-nsc-spokesperson-adrienne-watson-on-the-us-prc-talks-on-ai-risk-and-safety"}
+  },
+  {
+    "date": "2024-11-16",
+    "title": "Biden–Xi meeting in Lima: human control over nuclear weapons",
+    "kind": "summit",
+    "summary": "The leaders affirm that human beings, not AI, must make the decision to use nuclear weapons, and stress the need to develop military AI prudently and responsibly. The understanding is recorded in readouts, not in a signed text.",
+    "why": "A verbal understanding between two nuclear powers on the most consequential AI red line. It creates no legal obligation, no verification mechanism and no treaty. Its importance is precisely that it is political and reversible.",
+    "source": {"label": "White House readout, 16 November 2024", "url": "https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2024/11/16/readout-of-president-joe-bidens-meeting-with-president-xi-jinping-of-the-peoples-republic-of-china-3"}
+  },
+  {
+    "date": "2025-01-20",
+    "title": "DeepSeek releases R1",
+    "kind": "market",
+    "summary": "A Chinese lab releases a reasoning model under the MIT licence, with open weights and a technical report, claiming performance comparable to a leading US model at a fraction of the cost. The release moves the cost of frontier capability and the open-weights question to the centre of the policy debate.",
+    "why": "No instrument. The episode changed the premises of export-control and compute policy and exposed how quickly market events outrun the treaty calendar. It is part of the explanation for the supply-chain turn visible in Pax Silica and the San Francisco Declaration.",
+    "source": {"label": "DeepSeek, R1 release note", "url": "https://api-docs.deepseek.com/news/news250120"}
+  },
+  {
+    "date": "2025-01-21",
+    "title": "Stargate announced at the White House",
+    "kind": "market",
+    "summary": "OpenAI, SoftBank, Oracle and MGX announce a new company intended to invest up to $500 billion over four years in AI infrastructure in the United States, starting with data centres in Texas.",
+    "why": "A private infrastructure project announced as a strategic capability. It has no legal form in international law, but it sets the compute baseline against which export controls, supply-chain coalitions and the security framing of the San Francisco Declaration are measured.",
+    "source": {"label": "OpenAI, Announcing the Stargate Project", "url": "https://openai.com/index/announcing-the-stargate-project"}
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Pax Silica Founders Retreat and the San Francisco Declaration",
+    "kind": "summit",
+    "summary": "The United States and nine Pax Silica participants sign the San Francisco Declaration on the Secure Foundations of Enduring Prosperity in San Francisco. The declaration is a signed political text, not a treaty, and it is catalogued separately.",
+    "why": "Listed here only to mark the boundary of this section: the retreat did produce a text, so it is in the catalogue (record san-francisco-declaration-2026) and not in this chronology of events that left no instrument.",
+    "source": {"label": "US Department of State, media note of 15 November 2026", "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"}
+  }
+]

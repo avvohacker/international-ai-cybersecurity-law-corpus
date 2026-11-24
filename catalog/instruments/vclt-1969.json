@@ -35,14 +35,33 @@
     "translations": []
   },
   "parties": {
+    "act": "treaty_signature",
     "as_of": "2026-11-02",
+    "counts": {
+      "ratifications": {
+        "basis": "declared_total",
+        "note": "UN Treaty Collection count of parties; individual instruments were not captured.",
+        "source_ids": [
+          "un-treaty-collection"
+        ],
+        "total": 119,
+        "verified": 0
+      },
+      "signatures": {
+        "basis": "declared_total",
+        "note": "UN Treaty Collection count; individual instruments were not captured.",
+        "source_ids": [
+          "un-treaty-collection"
+        ],
+        "total": 45,
+        "verified": 0
+      }
+    },
     "declarations": [],
     "entries": [],
     "notifications": [],
     "objections": [],
-    "ratifications_total": 119,
     "reservations": [],
-    "signatories_total": 45,
     "source_ids": [
       "un-treaty-collection"
     ],
@@ -53,6 +72,45 @@
     "withdrawals": []
   },
   "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "un-treaty-collection"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "un-treaty-collection"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "un-treaty-collection"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "parties",
+        "locator": "parties.entries, parties.counts and parties.as_of",
+        "method": "metadata_only",
+        "source_ids": [
+          "un-treaty-collection"
+        ]
+      }
+    ],
     "discovered_via": "General international law; framework for CETS 225 final clauses.",
     "search_dates": [
       "2026-11-23"

@@ -1,123 +1,432 @@
 {
-  "id": "political-declaration-military-ai-2023",
-  "title": {
-    "official": "Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy",
-    "short": "U.S.-led Political Declaration on military AI"
-  },
-  "category": "non_binding_instrument",
-  "instrument_type": "declaration",
   "binding_status": "non_binding",
-  "status": "adopted",
-  "issuer": [
-    {"name": "United States of America (initiative); endorsing States", "role": "issuer", "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"}
-  ],
-  "relevance": {
-    "reason": "The principal political declaration on responsible military use of AI and autonomy. It sets out non-legally binding measures for States across the lifecycle of military AI capabilities, including human command and control and compliance with international humanitarian law. It is not a treaty.",
-    "ai_provisions": ["Whole declaration — ten measures on responsible development, deployment and use of military AI and autonomy"],
-    "excluded_scope": "Non-binding political declaration; no verification, enforcement or legal obligation; not all States endorse it."
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2023-02-16",
+    "notes": "Launched at the REAIM Summit in The Hague on 16 February 2023. A revised text was published on 9 November 2023.",
+    "published": "2023-11-09",
+    "verified_on": "2026-11-23"
   },
-  "dates": {"adopted": "2023-02-16", "published": "2023-11-09", "verified_on": "2026-11-23", "notes": "Launched at the REAIM Summit in The Hague on 16 February 2023. A revised text was published on 9 November 2023."},
-  "status_note": "Open for endorsement by States; 58 endorsing States as of 27 November 2024 on the U.S. Department of State list. Endorsement is political, not a signature or ratification.",
+  "gaps": [
+    "Non-binding; no verification or enforcement.",
+    "The endorsement list is dated 27 November 2024; later accessions are not reflected.",
+    "Full text not stored.",
+    "The declaration does not create a definition or prohibition.",
+    "It is a U.S.-led initiative and is not endorsed by all States, including several major military powers."
+  ],
+  "id": "political-declaration-military-ai-2023",
+  "instrument_type": "declaration",
+  "issuer": [
+    {
+      "name": "United States of America (initiative); endorsing States",
+      "role": "issuer",
+      "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "English text is the initiative text; the U.S. State Department publishes translations. No authentic-language clause exists for a political declaration.",
+    "translations": [
+      "es",
+      "ar",
+      "fr",
+      "zh",
+      "ru"
+    ]
+  },
   "parties": {
+    "act": "endorsement",
     "as_of": "2024-11-27",
-    "summary": "58 States are listed as endorsers on the U.S. Department of State page as of 27 November 2024. Endorsement is political; it is not a signature or ratification. The list is date-sensitive and later accessions are not reflected.",
+    "counts": {
+      "endorsements": {
+        "basis": "declared_total",
+        "total": 58,
+        "verified": 58
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "party": "Albania",
+        "role": "endorser"
+      },
+      {
+        "party": "Antigua and Barbuda",
+        "role": "endorser"
+      },
+      {
+        "party": "Armenia",
+        "role": "endorser"
+      },
+      {
+        "party": "Australia",
+        "role": "endorser"
+      },
+      {
+        "party": "Austria",
+        "role": "endorser"
+      },
+      {
+        "party": "Bahrain",
+        "role": "endorser"
+      },
+      {
+        "party": "Belgium",
+        "role": "endorser"
+      },
+      {
+        "party": "Bulgaria",
+        "role": "endorser"
+      },
+      {
+        "party": "Canada",
+        "role": "endorser"
+      },
+      {
+        "party": "Croatia",
+        "role": "endorser"
+      },
+      {
+        "party": "Cyprus",
+        "role": "endorser"
+      },
+      {
+        "party": "Czech Republic",
+        "role": "endorser"
+      },
+      {
+        "party": "Denmark",
+        "role": "endorser"
+      },
+      {
+        "party": "Djibouti",
+        "role": "endorser"
+      },
+      {
+        "party": "Dominican Republic",
+        "role": "endorser"
+      },
+      {
+        "party": "Estonia",
+        "role": "endorser"
+      },
+      {
+        "party": "Ethiopia",
+        "role": "endorser"
+      },
+      {
+        "party": "Finland",
+        "role": "endorser"
+      },
+      {
+        "party": "France",
+        "role": "endorser"
+      },
+      {
+        "party": "Georgia",
+        "role": "endorser"
+      },
+      {
+        "party": "Germany",
+        "role": "endorser"
+      },
+      {
+        "party": "Greece",
+        "role": "endorser"
+      },
+      {
+        "party": "Hungary",
+        "role": "endorser"
+      },
+      {
+        "party": "Iceland",
+        "role": "endorser"
+      },
+      {
+        "party": "Ireland",
+        "role": "endorser"
+      },
+      {
+        "party": "Israel",
+        "role": "endorser"
+      },
+      {
+        "party": "Italy",
+        "role": "endorser"
+      },
+      {
+        "party": "Japan",
+        "role": "endorser"
+      },
+      {
+        "party": "Kosovo",
+        "role": "endorser"
+      },
+      {
+        "party": "Latvia",
+        "role": "endorser"
+      },
+      {
+        "party": "Liberia",
+        "role": "endorser"
+      },
+      {
+        "party": "Libya",
+        "role": "endorser"
+      },
+      {
+        "party": "Lithuania",
+        "role": "endorser"
+      },
+      {
+        "party": "Luxembourg",
+        "role": "endorser"
+      },
+      {
+        "party": "Malawi",
+        "role": "endorser"
+      },
+      {
+        "party": "Malta",
+        "role": "endorser"
+      },
+      {
+        "party": "Montenegro",
+        "role": "endorser"
+      },
+      {
+        "party": "Morocco",
+        "role": "endorser"
+      },
+      {
+        "party": "Netherlands",
+        "role": "endorser"
+      },
+      {
+        "party": "New Zealand",
+        "role": "endorser"
+      },
+      {
+        "party": "North Macedonia",
+        "role": "endorser"
+      },
+      {
+        "party": "Panama",
+        "role": "endorser"
+      },
+      {
+        "party": "Paraguay",
+        "role": "endorser"
+      },
+      {
+        "party": "Poland",
+        "role": "endorser"
+      },
+      {
+        "party": "Portugal",
+        "role": "endorser"
+      },
+      {
+        "party": "Republic of Korea",
+        "role": "endorser"
+      },
+      {
+        "party": "Romania",
+        "role": "endorser"
+      },
+      {
+        "party": "San Marino",
+        "role": "endorser"
+      },
+      {
+        "party": "Singapore",
+        "role": "endorser"
+      },
+      {
+        "party": "Slovakia",
+        "role": "endorser"
+      },
+      {
+        "party": "Slovenia",
+        "role": "endorser"
+      },
+      {
+        "party": "Spain",
+        "role": "endorser"
+      },
+      {
+        "party": "Sweden",
+        "role": "endorser"
+      },
+      {
+        "party": "Switzerland",
+        "role": "endorser"
+      },
+      {
+        "party": "Türkiye",
+        "role": "endorser"
+      },
+      {
+        "party": "Ukraine",
+        "role": "endorser"
+      },
+      {
+        "party": "United Kingdom",
+        "role": "endorser"
+      },
+      {
+        "party": "United States of America",
+        "role": "endorser"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [
+      "None: the declaration is not a treaty and has no reservations."
+    ],
     "source_ids": [
       "state-page",
       "japan-mod"
     ],
-    "signatories_total": 58,
-    "ratifications_total": 0,
-    "entries": [
-      {"party": "Albania"},
-      {"party": "Antigua and Barbuda"},
-      {"party": "Armenia"},
-      {"party": "Australia"},
-      {"party": "Austria"},
-      {"party": "Bahrain"},
-      {"party": "Belgium"},
-      {"party": "Bulgaria"},
-      {"party": "Canada"},
-      {"party": "Croatia"},
-      {"party": "Cyprus"},
-      {"party": "Czech Republic"},
-      {"party": "Denmark"},
-      {"party": "Djibouti"},
-      {"party": "Dominican Republic"},
-      {"party": "Estonia"},
-      {"party": "Ethiopia"},
-      {"party": "Finland"},
-      {"party": "France"},
-      {"party": "Georgia"},
-      {"party": "Germany"},
-      {"party": "Greece"},
-      {"party": "Hungary"},
-      {"party": "Iceland"},
-      {"party": "Ireland"},
-      {"party": "Israel"},
-      {"party": "Italy"},
-      {"party": "Japan"},
-      {"party": "Kosovo"},
-      {"party": "Latvia"},
-      {"party": "Liberia"},
-      {"party": "Libya"},
-      {"party": "Lithuania"},
-      {"party": "Luxembourg"},
-      {"party": "Malawi"},
-      {"party": "Malta"},
-      {"party": "Montenegro"},
-      {"party": "Morocco"},
-      {"party": "Netherlands"},
-      {"party": "New Zealand"},
-      {"party": "North Macedonia"},
-      {"party": "Panama"},
-      {"party": "Paraguay"},
-      {"party": "Poland"},
-      {"party": "Portugal"},
-      {"party": "Republic of Korea"},
-      {"party": "Romania"},
-      {"party": "San Marino"},
-      {"party": "Singapore"},
-      {"party": "Slovakia"},
-      {"party": "Slovenia"},
-      {"party": "Spain"},
-      {"party": "Sweden"},
-      {"party": "Switzerland"},
-      {"party": "Türkiye"},
-      {"party": "Ukraine"},
-      {"party": "United Kingdom"},
-      {"party": "United States of America"}
-    ],
-    "reservations": ["None: the declaration is not a treaty and has no reservations."],
-    "declarations": [],
-    "objections": [],
-    "notifications": [],
-    "withdrawals": [],
+    "summary": "58 States are listed as endorsers on the U.S. Department of State page as of 27 November 2024. Endorsement is political; it is not a signature or ratification. The list is date-sensitive and later accessions are not reflected.",
     "unknowns": [
       "No depositary or formal endorsement procedure is published; the State Department page is the source for the list.",
       "The list is dated 27 November 2024; accessions after that date are not reflected.",
       "The State Department page and Japan's Ministry of Defense publication give the same total (58); the Ministry's list is described as current to December 2024. The record reproduces the State Department list."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-23",
+        "field": "status",
+        "locator": "status, dates and status_note as recorded",
+        "method": "metadata_only",
+        "note": "Record-level status; the listed sources are the ones the record relies on.",
+        "source_ids": [
+          "state-page",
+          "japan-mod"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "languages",
+        "locator": "languages.authentic",
+        "method": "metadata_only",
+        "source_ids": [
+          "state-page",
+          "japan-mod"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "provisions",
+        "locator": "relevance.ai_provisions and relevance.reason",
+        "method": "metadata_only",
+        "source_ids": [
+          "state-page",
+          "japan-mod"
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "field": "parties",
+        "locator": "parties.entries, parties.counts and parties.as_of",
+        "method": "metadata_only",
+        "source_ids": [
+          "state-page",
+          "japan-mod"
+        ]
+      }
+    ],
+    "discovered_via": "U.S. State Department official page; endorsement count from Japan's Ministry of Defense.",
+    "search_dates": [
+      "2026-11-23"
     ]
   },
-  "languages": {"authentic": ["en"], "translations": ["es", "ar", "fr", "zh", "ru"], "note": "English text is the initiative text; the U.S. State Department publishes translations. No authentic-language clause exists for a political declaration."},
-  "sources": [
-    {"id": "state-page", "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/", "publisher": "U.S. Department of State", "kind": "official_primary", "accessed": "2026-11-23", "http_status": 200, "note": "Official page: launch at REAIM 2023, links to the declaration and translations, list of endorsing States as of 27 November 2024."},
-    {"id": "japan-mod", "url": "https://www.mod.go.jp/atla/soubiseisaku/ai_guideline/ai_guideline_ver.01_eng_202506.pdf", "publisher": "Ministry of Defense, Japan", "kind": "official_secondary", "accessed": "2026-11-23", "http_status": 200, "note": "States that 58 States had endorsed the declaration as of December 2024 and that it is not legally binding."}
-  ],
-  "rights": {"status": "public_official_text", "licence": "U.S. Government work", "note": "U.S. Government publication; generally not subject to U.S. copyright, but third-party content may be. Metadata only in this corpus.", "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"},
-  "verification": {
-    "level": "metadata_verified",
-    "checks": [
-      {"check": "Launch date and non-binding character checked on the State Department page and fact sheet.", "result": "Launched February 2023 at REAIM; consists of non-legally binding guidelines.", "date": "2026-11-23"},
-      {"check": "Endorsing-State list read on the U.S. Department of State page.", "result": "58 States listed as of 27 November 2024; the list is reproduced party by party in parties.entries.", "date": "2026-11-23"},
-      {"check": "Endorsement count checked against Japan's Ministry of Defense publication.", "result": "58 endorsing States as of December 2024; consistent with the State Department's 58 as of 27 November 2024.", "date": "2026-11-23"},
-      {"check": "Legal nature checked: political declaration, not a treaty.", "result": "No signature/ratification; endorsement only.", "date": "2026-11-23"}
-    ],
-    "notes": "Metadata verified; the full declaration text is not stored. The endorsing-State list is reproduced party by party from the State Department page, with the list date recorded."
-  },
   "related": [
-    {"id": "un-ga-res-79-239", "relation": "related", "note": "UNGA military AI resolution; different forum and universal membership."},
-    {"id": "un-ga-res-79-62", "relation": "related", "note": "UNGA LAWS resolution; overlapping subject matter."}
+    {
+      "id": "un-ga-res-79-239",
+      "note": "UNGA military AI resolution; different forum and universal membership.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-79-62",
+      "note": "UNGA LAWS resolution; overlapping subject matter.",
+      "relation": "related"
+    }
   ],
-  "gaps": ["Non-binding; no verification or enforcement.", "The endorsement list is dated 27 November 2024; later accessions are not reflected.", "Full text not stored.", "The declaration does not create a definition or prohibition.", "It is a U.S.-led initiative and is not endorsed by all States, including several major military powers."],
-  "provenance": {"discovered_via": "U.S. State Department official page; endorsement count from Japan's Ministry of Defense.", "search_dates": ["2026-11-23"]}
+  "relevance": {
+    "ai_provisions": [
+      "Whole declaration — ten measures on responsible development, deployment and use of military AI and autonomy"
+    ],
+    "excluded_scope": "Non-binding political declaration; no verification, enforcement or legal obligation; not all States endorse it.",
+    "reason": "The principal political declaration on responsible military use of AI and autonomy. It sets out non-legally binding measures for States across the lifecycle of military AI capabilities, including human command and control and compliance with international humanitarian law. It is not a treaty."
+  },
+  "rights": {
+    "licence": "U.S. Government work",
+    "note": "U.S. Government publication; generally not subject to U.S. copyright, but third-party content may be. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "state-page",
+      "kind": "official_primary",
+      "note": "Official page: launch at REAIM 2023, links to the declaration and translations, list of endorsing States as of 27 November 2024.",
+      "publisher": "U.S. Department of State",
+      "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
+    },
+    {
+      "accessed": "2026-11-23",
+      "http_status": 200,
+      "id": "japan-mod",
+      "kind": "official_secondary",
+      "note": "States that 58 States had endorsed the declaration as of December 2024 and that it is not legally binding.",
+      "publisher": "Ministry of Defense, Japan",
+      "url": "https://www.mod.go.jp/atla/soubiseisaku/ai_guideline/ai_guideline_ver.01_eng_202506.pdf"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Open for endorsement by States; 58 endorsing States as of 27 November 2024 on the U.S. Department of State list. Endorsement is political, not a signature or ratification.",
+  "title": {
+    "official": "Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy",
+    "short": "U.S.-led Political Declaration on military AI"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Launch date and non-binding character checked on the State Department page and fact sheet.",
+        "date": "2026-11-23",
+        "result": "Launched February 2023 at REAIM; consists of non-legally binding guidelines."
+      },
+      {
+        "check": "Endorsing-State list read on the U.S. Department of State page.",
+        "date": "2026-11-23",
+        "result": "58 States listed as of 27 November 2024; the list is reproduced party by party in parties.entries."
+      },
+      {
+        "check": "Endorsement count checked against Japan's Ministry of Defense publication.",
+        "date": "2026-11-23",
+        "result": "58 endorsing States as of December 2024; consistent with the State Department's 58 as of 27 November 2024."
+      },
+      {
+        "check": "Legal nature checked: political declaration, not a treaty.",
+        "date": "2026-11-23",
+        "result": "No signature/ratification; endorsement only."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified; the full declaration text is not stored. The endorsing-State list is reproduced party by party from the State Department page, with the list date recorded."
+  }
 }
