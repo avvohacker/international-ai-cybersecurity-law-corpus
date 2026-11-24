@@ -2089,7 +2089,7 @@ def main() -> int:
     situation_html = f'''<div class="situation">
       <div class="situation-main">
         <p class="situation-eyebrow">Situation at a glance</p>
-        <h3>Most of the record is non-binding or not yet in force.</h3>
+        <h3>Most of the record is non-binding or not confirmed in force.</h3>
         <p class="situation-lede">The corpus is broad but uneven: AI dominates by record count, treaty-based international instruments are a minority and only {international_in_force} of them are in force; only {map_count} records have a State-level map. The corpus contains {number_word(ai_count)} AI-specific treaties, CETS 225 and WAICO; the AI layer is mostly non-binding, while the cyber layer is smaller and more treaty-heavy. Read this page first; the maps and the timeline are the evidence behind these totals.</p>
         <p class="situation-breakdown"><strong>What “AI-layer” means.</strong> It is not {ai_layer_count} AI treaties. The AI layer is {ai_breakdown}. The cyber layer is {cyber_breakdown}. The two domains are counted separately; no record is in both.</p>
         <div class="situation-bars">
