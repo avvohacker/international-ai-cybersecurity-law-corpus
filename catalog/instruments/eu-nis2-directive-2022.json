@@ -1,0 +1,191 @@
+{
+  "binding_status": "binding",
+  "category": "supranational_law",
+  "dates": {
+    "adopted": "2022-12-14",
+    "entered_into_force": "2023-01-16",
+    "notes": "OJ L 333, 27.12.2022, pp. 80–152. Member States had to adopt and publish transposition measures by 17 October 2024 and apply them from 18 October 2024.",
+    "published": "2022-12-27",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "cyber"
+  ],
+  "gaps": [
+    "Not an international instrument: it is EU internal legislation and creates no treaty signature, ratification or depositary.",
+    "National transposition measures are not assessed in this record.",
+    "The directive is addressed to EU Member States; its cross-border effects do not make it an international treaty.",
+    "Harmonised standards, guidance and enforcement practice are not analysed."
+  ],
+  "id": "eu-nis2-directive-2022",
+  "instrument_type": "directive",
+  "issuer": [
+    {
+      "name": "European Parliament and Council of the European Union",
+      "role": "co_issuer",
+      "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "bg",
+      "es",
+      "cs",
+      "da",
+      "de",
+      "et",
+      "el",
+      "en",
+      "fr",
+      "ga",
+      "hr",
+      "it",
+      "lv",
+      "lt",
+      "hu",
+      "mt",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sk",
+      "sl",
+      "fi",
+      "sv"
+    ],
+    "note": "All official languages of the European Union; each language version of the OJ act is authentic under EU law.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "supranational_law",
+    "rationale": "A directive adopted under EU law. It binds EU Member States as to the result to be achieved and is not an international treaty.",
+    "source_ids": [
+      "eurlex-nis2"
+    ]
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-24",
+        "field": "title",
+        "locator": "EUR-Lex title and OJ citation, OJ L 333, 27.12.2022, pp. 80–152.",
+        "method": "official_page_read",
+        "source_ids": [
+          "eurlex-nis2"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "dates",
+        "locator": "Article 41(1) (transposition and application) and Article 45 (entry into force).",
+        "method": "official_text_read",
+        "source_ids": [
+          "eurlex-nis2"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "status",
+        "locator": "EUR-Lex page, legal status field: In force.",
+        "method": "official_page_read",
+        "source_ids": [
+          "eurlex-nis2"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "legal_nature",
+        "locator": "Directive adopted under Article 114 TFEU; addressed to the Member States.",
+        "method": "official_text_read",
+        "source_ids": [
+          "eurlex-nis2"
+        ]
+      }
+    ],
+    "discovered_via": "EUR-Lex; European Commission digital strategy pages.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "eu-cyber-resilience-act-2024",
+      "note": "The Cyber Resilience Act regulates products with digital elements; NIS2 regulates the cybersecurity of entities and services. They overlap at the supply-chain and incident-reporting layer but are separate EU acts.",
+      "relation": "related"
+    },
+    {
+      "id": "eu-ai-act",
+      "note": "Both are EU internal law. The AI Act contains cybersecurity duties for certain AI systems; NIS2 is the horizontal infrastructure layer.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "cyber_provisions": [
+      "Articles 20–23 — governance, risk-management and incident-reporting duties",
+      "Article 21 — cybersecurity risk-management measures",
+      "Article 23 — reporting obligations",
+      "Annexes I–II — sectors and entities within scope"
+    ],
+    "excluded_scope": "EU internal law; no treaty signature or ratification. National implementing measures and supervisory practice are outside this record.",
+    "reason": "The EU's horizontal cybersecurity directive for critical and important entities. It is catalogued as internal EU law, not as an international binding instrument, and it is not given a timeline box.",
+    "source_ids": [
+      "eurlex-nis2",
+      "ec-nis2"
+    ]
+  },
+  "rights": {
+    "licence": "Commission Decision 2011/833/EU on the reuse of Commission documents",
+    "note": "EUR-Lex content may be reused under the EU reuse decision, with attribution and no distortion. The full text is not redistributed here.",
+    "status": "reuse_permitted",
+    "url": "https://eur-lex.europa.eu/en/legal-content/terms-of-use.html"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "eurlex-nis2",
+      "kind": "official_journal",
+      "language": "en",
+      "note": "Official Journal text of Directive (EU) 2022/2555.",
+      "publisher": "Official Journal of the European Union",
+      "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "ec-nis2",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "European Commission policy page on the NIS2 Directive.",
+      "publisher": "European Commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force. The directive had to be transposed by 17 October 2024 and applies from 18 October 2024; national transposition is not assessed here.",
+  "title": {
+    "official": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)",
+    "short": "NIS2 Directive"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Title, adoption date, OJ citation and legal status checked on EUR-Lex.",
+        "date": "2026-11-24",
+        "result": "Directive (EU) 2022/2555, 14 December 2022, OJ L 333, 27.12.2022, pp. 80–152; in force."
+      },
+      {
+        "check": "Entry into force and transposition dates checked against Articles 41 and 45.",
+        "date": "2026-11-24",
+        "result": "Entry into force 16 January 2023; transposition by 17 October 2024; application from 18 October 2024."
+      },
+      {
+        "check": "Legal nature checked: EU directive, not a treaty.",
+        "date": "2026-11-24",
+        "result": "Supranational legislation addressed to EU Member States."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified from EUR-Lex and the Commission page. The full text is not stored in the corpus."
+  }
+}

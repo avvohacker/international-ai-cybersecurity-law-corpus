@@ -1,10 +1,10 @@
 # Methodology
 
-Verification date for this cycle: **2026-11-23**. All access dates in records are the date the source was consulted, not the date of the legal event.
+Verification date for this cycle: **2026-11-24**. All access dates in records are the date the source was consulted, not the date of the legal event.
 
 ## 1. Scope and inclusion test
 
-The catalogue separates eight layers:
+The catalogue separates nine layers:
 
 1. Treaties specifically dedicated to AI.
 2. Other international agreements with express, substantive AI provisions (digital, trade, bilateral).
@@ -14,10 +14,11 @@ The catalogue separates eight layers:
 6. Drafts and negotiations in progress.
 7. Supranational legislation, collected separately.
 8. A deliberately minimal selection of general treaties applicable to AI. It currently contains the VCLT (treaty law) and the ICCPR (human rights); it is not a general international-law inventory. The UN Charter, the UDHR, the ECHR, Convention 108+ and other general instruments are outside the corpus.
+9. International cybersecurity instruments: five cybercrime treaties and, separately, the EU internal-law acts NIS2 and the Cyber Resilience Act. The AI and cyber counts remain separate. In the section 01 sets and in the timeline, “binding” means **binding international law**, so the EU AI Act, NIS2 and the CRA are outside that set even though they are binding within the EU legal order.
 
 An instrument enters layer 2 only if an **express AI provision** is located in the text or an official excerpt, and it is more than incidental. A trade agreement with a general digital chapter but no AI reference is recorded in the candidate register as excluded (provisionally, if a full-text keyword check was not performed).
 
-The legal nature is determined from the instrument and its issuer, not from its title. Declarations and resolutions are `non_binding`; a joint statement is recorded as `joint_statement` rather than forced into `declaration`; voluntary company pledges are recorded as `commitment`; OECD Recommendations are non-binding legal instruments; ISO/IEC documents are voluntary technical standards; the EU AI Act is supranational legislation, not a treaty.
+The legal nature is determined from the instrument and its issuer, not from its title. Declarations and resolutions are `non_binding`; a joint statement is recorded as `joint_statement` rather than forced into `declaration`; voluntary company pledges are recorded as `commitment`; OECD Recommendations are non-binding legal instruments; ISO/IEC documents are voluntary technical standards; the EU AI Act, NIS2 and the Cyber Resilience Act are supranational legislation, not treaties.
 
 ## 2. Verification levels
 
@@ -96,7 +97,7 @@ The corpus is a register of written instruments. It covers treaties, declaration
 - UN Security Council resolutions (no AI-specific resolution was located);
 - decisions of international courts and tribunals;
 - international humanitarian law (the Geneva Conventions and Additional Protocol I) and general human-rights treaties beyond the ICCPR;
-- unilateral acts and national legislation, except the EU AI Act.
+- unilateral acts and national legislation, except the EU AI Act, NIS2 and the Cyber Resilience Act, which are collected as EU internal law.
 
 These are scope limits, not findings that the sources are irrelevant. A claim about “international AI law” in this repository is a claim about the written instruments catalogued, not about the whole of international law. The audit of other candidates and the reason each was included, left pending or excluded is recorded in `catalog/candidates.json`, `docs/research-log.md` and `docs/coverage.md`.
 
@@ -113,7 +114,7 @@ Corpus scope answers: *is this an international AI instrument with an official t
 An instrument enters the corpus when all of the following hold:
 
 1. It has an AI-specific object or an express, more-than-incidental AI provision.
-2. Its issuer is an intergovernmental body, an international organisation, a treaty body or another authoritative standard-setter; national legislation remains outside the corpus except the EU AI Act as supranational law.
+2. Its issuer is an intergovernmental body, an international organisation, a treaty body or another authoritative standard-setter; national legislation remains outside the corpus except the EU AI Act, NIS2 and the Cyber Resilience Act as EU internal law.
 3. An official text, official excerpt or official status page is available and cited.
 4. The record can state the act and its legal nature without inventing a signature, ratification or party where none exists.
 
@@ -136,4 +137,4 @@ The omission test at the end of a cycle is deliberately mechanical:
 
 ### 10.5 What this changes in practice
 
-The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has fourteen maps and 51 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.
+The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has fourteen maps and 53 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.
