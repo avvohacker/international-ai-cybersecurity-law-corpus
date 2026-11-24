@@ -575,7 +575,7 @@ p { margin: 0 0 14px; }
 /* Sets: an UpSet-style chart for overlapping definitions */
 .upset {
   display: grid;
-  grid-template-columns: 148px minmax(0, 1fr);
+  grid-template-columns: 186px minmax(0, 1fr);
   grid-template-rows: 24px 150px auto;
   column-gap: 18px;
   margin-top: 34px;
@@ -602,7 +602,7 @@ p { margin: 0 0 14px; }
 .upset-sets { display: grid; grid-template-rows: repeat(6, 26px); }
 .up-set {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 56px 18px;
+  grid-template-columns: minmax(0, 1fr) 50px 18px;
   gap: 6px;
   align-items: center;
 }
@@ -809,6 +809,7 @@ code { font-family: var(--mono); font-size: 0.88em; background: rgba(0,0,0,0.06)
   .upset { grid-template-columns: 96px minmax(0, 1fr); grid-template-rows: 22px 128px auto; column-gap: 10px; padding: 14px 12px; }
   .upset-left { grid-template-rows: 128px auto; }
   .up-column { grid-template-rows: 128px auto; }
+  .upset-sets, .up-dots { grid-template-rows: repeat(6, 30px); }
   .up-set { grid-template-columns: minmax(0, 1fr) 16px; gap: 4px; }
   .up-set-track { display: none; }
   .up-set-name { font-size: 9.5px; }
