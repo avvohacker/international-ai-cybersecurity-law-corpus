@@ -656,8 +656,43 @@ TIMELINE_STORIES = {
 }
 
 
-def venn_chart(instruments: list[dict]) -> tuple[str, dict[str, int]]:
-    """Three overlapping sets, with every region and set total reconciled."""
+SET_DISPLAY = {
+    "iccpr-1966": ("ICCPR", "International Covenant on Civil and Political Rights"),
+    "vclt-1969": ("VCLT", "Vienna Convention on the Law of Treaties"),
+    "depa-2020": ("DEPA", "Digital Economy Partnership Agreement"),
+    "ksdpa-2022": ("KSDPA", "Korea–Singapore Digital Partnership Agreement"),
+    "sadea-2020": ("SADEA", "Singapore–Australia Digital Economy Agreement"),
+    "uksdea-2022": ("UKSDEA", "UK–Singapore Digital Economy Agreement"),
+    "coe-cets-225": ("CETS 225", "Council of Europe Framework Convention on AI"),
+    "waico-establishment-agreement-2026": (
+        "WAICO",
+        "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization",
+    ),
+    "afcfta-digital-trade-protocol-2024": ("AfCFTA", "AfCFTA Digital Trade Protocol"),
+    "eu-ai-act": ("EU AI Act", "Regulation (EU) 2024/1689"),
+    "oecd-ai-recommendation-2019": (
+        "OECD Recommendation",
+        "Recommendation of the Council on Artificial Intelligence",
+    ),
+}
+
+SET_ORDER = (
+    "iccpr-1966",
+    "vclt-1969",
+    "depa-2020",
+    "ksdpa-2022",
+    "sadea-2020",
+    "uksdea-2022",
+    "coe-cets-225",
+    "waico-establishment-agreement-2026",
+    "afcfta-digital-trade-protocol-2024",
+    "eu-ai-act",
+    "oecd-ai-recommendation-2019",
+)
+
+
+def sets_section(instruments: list[dict]) -> str:
+    """Name the instruments in each set instead of counting the regions."""
     binding = {inst["id"] for inst in instruments if inst["binding_status"] == "binding"}
     in_force = {inst["id"] for inst in instruments if inst["status"] == "in_force"}
     treaty = {
@@ -665,64 +700,75 @@ def venn_chart(instruments: list[dict]) -> tuple[str, dict[str, int]]:
         for inst in instruments
         if inst["instrument_type"] in {"treaty", "protocol", "agreement"}
     }
-    all_three = binding & in_force & treaty
-    binding_treaty = (binding & treaty) - in_force
-    binding_in_force = (binding & in_force) - treaty
-    in_force_only = in_force - binding - treaty
-    binding_only = binding - in_force - treaty
-    treaty_only = treaty - binding - in_force
-    in_force_treaty = (in_force & treaty) - binding
-    outside = {inst["id"] for inst in instruments} - binding - in_force - treaty
-    counts = {
-        "binding": len(binding),
-        "in_force": len(in_force),
-        "treaty": len(treaty),
-        "all_three": len(all_three),
-        "binding_treaty": len(binding_treaty),
-        "binding_in_force": len(binding_in_force),
-        "in_force_only": len(in_force_only),
-        "binding_only": len(binding_only),
-        "treaty_only": len(treaty_only),
-        "in_force_treaty": len(in_force_treaty),
-        "outside": len(outside),
-    }
-    total = len(instruments)
-    html = f'''<div class="venn-layout">
-      <div class="venn-main">
-        <div class="venn-legend">
-          <span><i class="venn-key venn-key-binding"></i>Binding · {counts["binding"]}</span>
-          <span><i class="venn-key venn-key-force"></i>In force · {counts["in_force"]}</span>
-          <span><i class="venn-key venn-key-treaty"></i>Treaty / agreement · {counts["treaty"]}</span>
+    selected = binding | in_force | treaty
+    order = {iid: index for index, iid in enumerate(SET_ORDER)}
+    rows = sorted(
+        (inst for inst in instruments if inst["id"] in selected),
+        key=lambda inst: (order.get(inst["id"], len(order)), sort_date(inst), inst["id"]),
+    )
+
+    def mark(belongs: bool, unknown: bool = False) -> str:
+        if belongs:
+            return '<span class="set-mark set-mark-yes" aria-label="Yes">●</span>'
+        if unknown:
+            return '<span class="set-mark set-mark-unknown" aria-label="Entry into force unconfirmed">?</span>'
+        return '<span class="set-mark set-mark-no" aria-label="No">—</span>'
+
+    body = []
+    for inst in rows:
+        iid = inst["id"]
+        label, full = SET_DISPLAY.get(
+            iid,
+            (
+                (inst.get("title") or {}).get("short")
+                or (inst.get("title") or {}).get("official")
+                or iid,
+                "",
+            ),
+        )
+        body.append(
+            f'<tr data-set-id="{esc(iid)}">'
+            f'<th scope="row"><span class="sets-name">{esc(label)}</span>'
+            f'<span class="sets-full">{esc(full)}</span></th>'
+            f'<td>{mark(iid in binding)}</td>'
+            f'<td>{mark(iid in in_force, inst.get("status") == "unknown")}</td>'
+            f'<td>{mark(iid in treaty)}</td>'
+            f'</tr>'
+        )
+
+    return f'''<div class="sets-layout">
+      <figure class="sets-figure">
+        <div class="sets-legend">
+          <span><i class="sets-dot sets-dot-binding"></i>Binding</span>
+          <span><i class="sets-dot sets-dot-force"></i>In force</span>
+          <span><i class="sets-dot sets-dot-treaty"></i>Treaty / agreement</span>
         </div>
-        <svg viewBox="0 0 620 470" class="venn-svg" role="img" aria-labelledby="venn-title venn-desc">
-          <title id="venn-title">Binding, in force and treaty or agreement</title>
-          <desc id="venn-desc">Three overlapping sets over {total} records. Six in all three, three binding treaties not in force, one binding and in force but not a treaty, one in force only, and {counts["outside"]} outside all three.</desc>
-          <circle cx="240" cy="180" r="150" class="venn-circle venn-circle-binding"/>
-          <circle cx="380" cy="180" r="150" class="venn-circle venn-circle-force"/>
-          <circle cx="310" cy="285" r="150" class="venn-circle venn-circle-treaty"/>
-          <text x="310" y="112" class="venn-count">{counts["binding_in_force"]}</text>
-          <text x="310" y="222" class="venn-count venn-count-strong">{counts["all_three"]}</text>
-          <text x="220" y="292" class="venn-count">{counts["binding_treaty"]}</text>
-          <text x="450" y="174" class="venn-count">{counts["in_force_only"]}</text>
+        <svg viewBox="0 0 560 460" class="sets-svg" role="img" aria-labelledby="sets-title sets-desc">
+          <title id="sets-title">Binding, in force and treaty or agreement</title>
+          <desc id="sets-desc">Three overlapping sets. The table names every instrument that belongs to at least one set and marks which sets it belongs to.</desc>
+          <circle cx="205" cy="170" r="145" class="sets-circle sets-circle-binding"/>
+          <circle cx="355" cy="170" r="145" class="sets-circle sets-circle-force"/>
+          <circle cx="280" cy="285" r="145" class="sets-circle sets-circle-treaty"/>
+          <text x="16" y="40" class="sets-circle-label sets-label-binding">Binding</text>
+          <text x="544" y="40" text-anchor="end" class="sets-circle-label sets-label-force">In force</text>
+          <text x="280" y="452" text-anchor="middle" class="sets-circle-label sets-label-treaty">Treaty / agreement</text>
+          <text x="280" y="207" text-anchor="middle" class="sets-region-label">all three</text>
         </svg>
+        <figcaption class="sets-caption">The circles show how the sets overlap; the table applies them instrument by instrument.</figcaption>
+      </figure>
+      <div class="sets-table-wrap">
+        <table class="sets-table">
+          <caption>Set membership, instrument by instrument</caption>
+          <thead>
+            <tr><th scope="col">Instrument</th><th scope="col">Binding</th><th scope="col">In force</th><th scope="col"><span class="sets-th-full">Treaty / agreement</span><span class="sets-th-short">Treaty</span></th></tr>
+          </thead>
+          <tbody>
+            {"".join(body)}
+          </tbody>
+        </table>
+        <p class="sets-key"><span class="set-mark set-mark-yes" aria-hidden="true">●</span> belongs to the set · <span class="set-mark set-mark-no" aria-hidden="true">—</span> does not · <span class="set-mark set-mark-unknown" aria-hidden="true">?</span> entry into force unconfirmed</p>
       </div>
-      <aside class="venn-side">
-        <p class="venn-total"><strong>{total}</strong> records</p>
-        <ul class="venn-list">
-          <li><span>In all three</span><strong>{counts["all_three"]}</strong></li>
-          <li><span>Binding + treaty, not in force</span><strong>{counts["binding_treaty"]}</strong></li>
-          <li><span>Binding + in force, not treaty</span><strong>{counts["binding_in_force"]}</strong></li>
-          <li><span>In force only</span><strong>{counts["in_force_only"]}</strong></li>
-          <li><span>Outside all three</span><strong>{counts["outside"]}</strong></li>
-        </ul>
-        <p class="venn-empty">Empty regions: binding only, treaty only, in force + treaty only (0).</p>
-        <p class="venn-math">{counts["binding"]} binding = {counts["all_three"]} + {counts["binding_treaty"]} + {counts["binding_in_force"]}<br>
-        {counts["in_force"]} in force = {counts["all_three"]} + {counts["binding_in_force"]} + {counts["in_force_only"]}<br>
-        {counts["treaty"]} treaty = {counts["all_three"]} + {counts["binding_treaty"]}<br>
-        {counts["all_three"]} + {counts["binding_treaty"]} + {counts["binding_in_force"]} + {counts["in_force_only"]} + {counts["outside"]} = {total}</p>
-      </aside>
     </div>'''
-    return html, counts
 
 
 def combined_timeline(instruments: list[dict], events: list[dict]) -> str:
@@ -1430,7 +1476,7 @@ def main() -> int:
     unseen_events = json.loads(UNSEEN.read_text(encoding="utf-8"))
     off_record = json.loads(OFF_RECORD.read_text(encoding="utf-8"))
     off_record_html = off_record_cards(off_record["entries"], by_id)
-    venn_html, venn = venn_chart(instruments)
+    sets_html = sets_section(instruments)
 
     ai_treaties = [inst for inst in instruments if inst["category"] == "ai_treaty"]
     ai_count = len(ai_treaties)
@@ -1506,7 +1552,7 @@ def main() -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI Law Atlas</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI law.">
-<link rel="stylesheet" href="assets/style.css?v=17">
+<link rel="stylesheet" href="assets/style.css?v=20">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -1534,7 +1580,7 @@ def main() -> int:
       <h2>What this corpus contains</h2>
       <div class="stats">{stats_html}</div>
       <div class="index-grid">
-        <a class="index-card" href="#form"><span class="index-number">01</span><strong>Overlapping sets</strong><span>Binding, in force and treaty / agreement. The chart counts each region once; the list reconciles the numbers and shows the 35 records outside all three.</span></a>
+        <a class="index-card" href="#form"><span class="index-number">01</span><strong>Overlapping sets</strong><span>Binding, in force and treaty / agreement applied instrument by instrument: the treaties in force, those not in force, and the rules that are not treaties.</span></a>
         <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>Nine maps of the State-level acts recorded in the corpus: signatures, ratifications, endorsements and collective issuances.</span></a>
         <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: highlighted boxes for the texts, plain rows for what left no text.</span></a>
         <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Off the record</strong><span>Legal doctrine, think-tank analysis and civil-society critique: the argument around the record, never used as evidence for it.</span></a>
@@ -1547,14 +1593,14 @@ def main() -> int:
     <section id="form" class="section">
     <div class="wrap">
       <p class="eyebrow">01 · Sets</p>
-      <h2>Three circles, not three boxes</h2>
-      <p class="lede">Binding, in force and treaty / agreement are three different questions asked of the same {total} records. They overlap. The diagram counts each region once; the list beside it reconciles every number to the three circle totals.</p>
-      {venn_html}
-      <div class="venn-reading">
-        <p><strong>What the overlap says.</strong> {venn["all_three"]} instruments are binding, in force and treaty-based. {venn["binding_treaty"]} are binding treaties but not in force: CETS 225, WAICO and the AfCFTA Protocol. The EU AI Act is binding and in force but not a treaty; the OECD recommendation is recorded as in force without binding anyone. The {venn["outside"]} records outside all three include the five technical standards and thirty declarations, resolutions, recommendations, codes, strategies and guidance.</p>
-        <p>“Binding” is a legal property, “in force” is a status, and “treaty / agreement” is a form. None of them implies the other two. That is why mutually exclusive bars hid the overlap instead of explaining it.</p>
+      <h2>The sets, and where the treaties sit</h2>
+      <p class="lede">Binding, in force and treaty / agreement are different questions. A treaty can be binding before it enters into force; a rule can be in force without being a treaty; a political declaration can be neither. The table applies the three sets to the instruments that belong to at least one of them.</p>
+      {sets_html}
+      <div class="sets-reading">
+        <p><strong>The treaty layer.</strong> The ICCPR and the VCLT are general treaties. DEPA, KSDPA, SADEA and UKSDEA are digital trade agreements with AI provisions. All of them are binding and in force. CETS 225 is binding but not in force. WAICO and the AfCFTA Protocol are binding, but their entry into force is unconfirmed — not a recorded “no”.</p>
+        <p><strong>Outside the treaty form.</strong> The EU AI Act is binding and in force, but it is EU law, not an international treaty. The OECD recommendation is recorded as in force in the OECD’s sense, although it binds no one. Declarations, resolutions, standards, strategies, codes and guidance sit outside these three sets.</p>
       </div>
-      <p class="source-note">Sets are derived mechanically from <code>binding_status</code>, <code>status</code> and <code>instrument_type</code>. Every record is counted once; empty regions are shown as zero in the list.</p>
+      <p class="source-note">Membership is derived mechanically from <code>binding_status</code>, <code>status</code> and <code>instrument_type</code>. “In force” is the recorded status of the instrument, not a conclusion that it creates a legal obligation. A question mark marks an entry into force that the record treats as unconfirmed, not as a negative.</p>
     </div>
   </section>
 

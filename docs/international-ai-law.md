@@ -2,7 +2,7 @@
 
 **Status:** 24 November 2026. **Scope:** the 46 instruments recorded in `catalog/instruments/` and counted in [`docs/coverage.md`](coverage.md) [34]. This is a summary of the record, not a claim that the record is complete. Bracketed numbers refer to the citation list at the end; each entry gives the record, the source ID and the official URL. Statements about absence are statements about this corpus and the searches recorded in [`docs/research-log.md`](research-log.md) [30], not assertions that no such source exists anywhere.
 
-**How to cite:** International AI Law Atlas, “The International Law of AI: A Short Source-Verified Account,” 24 November 2026, `docs/international-ai-law.md`.
+**How to cite:** International AI Law Corpus, “The International Law of AI: A Short Source-Verified Account,” 24 November 2026, `docs/international-ai-law.md`.
 
 ## 1. The short answer
 
@@ -78,7 +78,7 @@ No recorded institution is a universal regulator with binding decisions.
 
 ## 6. Analytical reading (not a legal finding)
 
-This section is the Atlas's interpretation, not a legal status. The corpus supports a geopolitical reading of the “three poles” image rather than a legal classification of States: technological competition and regulatory models; forum choice in a regime complex; hedging and overlapping coalitions; and the limits of legal form [33]. The reading is developed in this document and in the atlas's timeline notes; the atlas no longer carries a separate geopolitical essay, and the reading is not a classification of States.
+This section is the account's interpretation, not a legal status. The corpus supports a geopolitical reading of the “three poles” image rather than a legal classification of States: technological competition and regulatory models; forum choice in a regime complex; hedging and overlapping coalitions; and the limits of legal form [33]. The reading is developed in this document and in the atlas's timeline notes; the atlas no longer carries a separate geopolitical essay, and the reading is not a classification of States.
 
 The factual premises cut across the blocs: Kazakhstan appears in Pax Silica and WAICO [2][23]; the EU is in Pax Silica and has ratified CETS 225 [1][23]; the United States signed CETS 225 and Pax Silica but did not endorse Paris [1][20][23]; China endorsed Paris and Bletchley but did not sign CETS 225 or Pax Silica [1][18][20][23].
 
