@@ -1,13 +1,13 @@
 {
   "counts": {
     "by_binding": {
-      "binding": 13,
+      "binding": 14,
       "non_binding": 36
     },
     "by_category": {
       "agreement_ai_provisions": 5,
       "ai_treaty": 2,
-      "cyber_treaty": 3,
+      "cyber_treaty": 4,
       "draft_negotiation": 1,
       "general_treaty": 2,
       "non_binding_instrument": 28,
@@ -17,15 +17,15 @@
     },
     "by_domain": {
       "ai": 46,
-      "cyber": 3,
+      "cyber": 4,
       "joint": 0
     },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 39
+      "metadata_verified": 40
     },
     "full_texts": 16,
-    "total": 49,
+    "total": 50,
     "with_local_original": 15
   },
   "full_text_ids": [
@@ -8775,6 +8775,683 @@
         ],
         "level": "metadata_verified",
         "notes": "Metadata verified; the full treaty text is not stored. The precise wording of Article 8.61-R should be checked against the UK Treaty Series PDF before quotation."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "cyber_treaty",
+      "dates": {
+        "adopted": "2024-12-24",
+        "closed_for_signature": null,
+        "entered_into_force": null,
+        "notes": "Adopted on 24 December 2024 by A/RES/79/243. Opened for signature in Hanoi on 25 October 2025 and at United Nations Headquarters until 31 December 2026. Status checked against the UN Treaty Collection depositary table on 24 November 2026.",
+        "opened_for_signature": "2025-10-25",
+        "published": null,
+        "signed": null,
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "No full text, citable units or original file is stored in this record; it is metadata-only.",
+        "The Convention is not in force: Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession, and three Parties had deposited by 24 November 2026.",
+        "The UNTC table lists 96 signatories including the European Union; the map shows the 95 States and names the European Union outside the map frame.",
+        "Reservations and declarations made by the Parties are not itemised in this pass.",
+        "No AI-specific provision is asserted. The record is cyber-domain only.",
+        "National implementation and the future Conference of the States Parties are not assessed."
+      ],
+      "id": "un-cybercrime-convention-2024",
+      "instrument_type": "treaty",
+      "issuer": [
+        {
+          "name": "United Nations General Assembly",
+          "role": "issuer",
+          "url": "https://www.un.org/en/ga/"
+        },
+        {
+          "name": "Secretary-General of the United Nations",
+          "role": "depositary",
+          "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "The English text and the English UNTC status page were consulted. The record does not assert the complete authentic-language set.",
+        "source_ids": [
+          "untc-status"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "treaty",
+        "rationale": "A United Nations treaty adopted by the General Assembly and opened for signature, intended to create binding obligations for Parties once it enters into force. It is not a recommendation or a political declaration.",
+        "source_ids": [
+          "untc-status"
+        ]
+      },
+      "parties": {
+        "act": "treaty_signature",
+        "as_of": "2026-11-24",
+        "counts": {
+          "ratifications": {
+            "basis": "verified_total",
+            "note": "UNTC third-column deposit dates. The table displays no A/AA/a suffix for these three entries; they are recorded as ratifications on the basis of that column, not reclassified.",
+            "source_ids": [
+              "untc-status"
+            ],
+            "total": 3,
+            "verified": 3
+          },
+          "signatures": {
+            "basis": "verified_total",
+            "note": "96 signatories: 95 States and the European Union.",
+            "source_ids": [
+              "untc-status"
+            ],
+            "total": 96,
+            "verified": 96
+          }
+        },
+        "entries": [
+          {
+            "party": "Albania",
+            "role": "signatory",
+            "signature": "2026-09-24"
+          },
+          {
+            "party": "Algeria",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Angola",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Australia",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Austria",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Azerbaijan",
+            "ratification": "2026-04-15",
+            "role": "party",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Belarus",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Belgium",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Botswana",
+            "role": "signatory",
+            "signature": "2026-09-23"
+          },
+          {
+            "party": "Brazil",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Brunei Darussalam",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Burkina Faso",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Cambodia",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Canada",
+            "role": "signatory",
+            "signature": "2026-07-16"
+          },
+          {
+            "party": "Chile",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "China",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Colombia",
+            "role": "signatory",
+            "signature": "2026-04-21"
+          },
+          {
+            "party": "Costa Rica",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Côte d'Ivoire",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Croatia",
+            "role": "signatory",
+            "signature": "2026-07-23"
+          },
+          {
+            "party": "Cuba",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Czech Republic",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Democratic People's Republic of Korea",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Democratic Republic of the Congo",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Djibouti",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Dominican Republic",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Ecuador",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Egypt",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Estonia",
+            "role": "signatory",
+            "signature": "2026-06-23"
+          },
+          {
+            "party": "European Union",
+            "role": "organisation",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Fiji",
+            "role": "signatory",
+            "signature": "2025-12-17"
+          },
+          {
+            "party": "France",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Gabon",
+            "role": "signatory",
+            "signature": "2026-09-23"
+          },
+          {
+            "party": "Germany",
+            "role": "signatory",
+            "signature": "2026-06-01"
+          },
+          {
+            "party": "Ghana",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Greece",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Guinea-Bissau",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "India",
+            "role": "signatory",
+            "signature": "2026-09-25"
+          },
+          {
+            "party": "Indonesia",
+            "role": "signatory",
+            "signature": "2026-09-24"
+          },
+          {
+            "party": "Iran (Islamic Republic of)",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Ireland",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Jamaica",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Kazakhstan",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Kuwait",
+            "role": "signatory",
+            "signature": "2026-09-25"
+          },
+          {
+            "party": "Kyrgyzstan",
+            "role": "signatory",
+            "signature": "2026-09-22"
+          },
+          {
+            "party": "Lao People's Democratic Republic",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Libya",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Lithuania",
+            "role": "signatory",
+            "signature": "2026-09-22"
+          },
+          {
+            "party": "Luxembourg",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Madagascar",
+            "role": "signatory",
+            "signature": "2026-09-04"
+          },
+          {
+            "party": "Malaysia",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Maldives",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Mali",
+            "role": "signatory",
+            "signature": "2025-10-26"
+          },
+          {
+            "party": "Mauritius",
+            "role": "signatory",
+            "signature": "2025-11-19"
+          },
+          {
+            "party": "Montenegro",
+            "role": "signatory",
+            "signature": "2026-10-23"
+          },
+          {
+            "party": "Morocco",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Mozambique",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Namibia",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Naoero",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Netherlands (Kingdom of the)",
+            "role": "signatory",
+            "signature": "2026-09-23"
+          },
+          {
+            "party": "Nicaragua",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Nigeria",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Norway",
+            "role": "signatory",
+            "signature": "2026-09-25"
+          },
+          {
+            "party": "Palau",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Panama",
+            "role": "signatory",
+            "signature": "2026-07-30"
+          },
+          {
+            "party": "Papua New Guinea",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Peru",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Philippines",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Poland",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Portugal",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Qatar",
+            "ratification": "2026-02-04",
+            "role": "party",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Russian Federation",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Rwanda",
+            "role": "signatory",
+            "signature": "2025-10-26"
+          },
+          {
+            "party": "San Marino",
+            "role": "signatory",
+            "signature": "2026-09-25"
+          },
+          {
+            "party": "Saudi Arabia",
+            "role": "signatory",
+            "signature": "2025-10-26"
+          },
+          {
+            "party": "Slovakia",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Slovenia",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "South Africa",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Spain",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Sri Lanka",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "State of Palestine",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Sweden",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Tajikistan",
+            "role": "signatory",
+            "signature": "2026-03-17"
+          },
+          {
+            "party": "Thailand",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Timor-Leste",
+            "role": "signatory",
+            "signature": "2026-09-24"
+          },
+          {
+            "party": "Togo",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Türkiye",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Uganda",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "United Kingdom of Great Britain and Northern Ireland",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "United Republic of Tanzania",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Uruguay",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Uzbekistan",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Venezuela (Bolivarian Republic of)",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Viet Nam",
+            "ratification": "2026-04-17",
+            "role": "party",
+            "signature": "2025-10-25"
+          },
+          {
+            "party": "Yemen",
+            "role": "signatory",
+            "signature": "2026-09-22"
+          },
+          {
+            "party": "Zimbabwe",
+            "role": "signatory",
+            "signature": "2025-10-25"
+          }
+        ],
+        "source_ids": [
+          "untc-status"
+        ],
+        "summary": "96 signatories as of 24 November 2026: 95 States and the European Union. Three States are Parties (Qatar, Azerbaijan and Viet Nam); the Convention is not in force. Article 65(1) requires 40 instruments, so 37 more are needed.",
+        "unknowns": [
+          "The UNTC table does not spell out A/AA/a in the extracted third-column dates; the three deposit dates are recorded as ratifications and are not reclassified.",
+          "Reservations and declarations made by the Parties were not read in this pass.",
+          "The complete authentic-language set is not asserted; only the English version was consulted."
+        ]
+      },
+      "provenance": {
+        "assertions": [
+          {
+            "date": "2026-11-24",
+            "field": "status",
+            "locator": "UNTC status table XVIII-16, status as at 24 November 2026: not yet in force; Article 65(1)",
+            "method": "registry_read",
+            "source_ids": [
+              "untc-status"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "parties",
+            "locator": "UNTC status table XVIII-16: 96 signatories and 3 Parties as at 24 November 2026",
+            "method": "registry_read",
+            "source_ids": [
+              "untc-status"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "dates",
+            "locator": "UNTC status table note: adopted 24 December 2024 by A/RES/79/243; opened for signature in Hanoi 25-26 October 2025 and at UNHQ until 31 December 2026",
+            "method": "registry_read",
+            "source_ids": [
+              "untc-status"
+            ]
+          }
+        ],
+        "discovered_via": "UN Treaty Collection, Chapter XVIII, item 16",
+        "notes": "The depositary table is stable at the cited UNTC URL and was read in a browser on 24 November 2026.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [],
+      "relevance": {
+        "cyber_provisions": [
+          "Criminalisation of offences committed through information and communications technology systems",
+          "Procedural powers and international cooperation",
+          "Sharing of electronic evidence"
+        ],
+        "excluded_scope": "No AI-specific obligation is asserted; the record is cyber-domain only.",
+        "reason": "The first UN-wide treaty dedicated to cybercrime. It establishes criminalisation, procedural powers and international cooperation for electronic evidence, but it is not an AI-specific instrument.",
+        "source_ids": [
+          "untc-status"
+        ]
+      },
+      "rights": {
+        "note": "The Convention is an official United Nations text. The record stores metadata and links the certified true copy; it does not relicense the text.",
+        "status": "public_official_text",
+        "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "untc-status",
+          "kind": "registry",
+          "language": "en",
+          "note": "Official UN Treaty Collection depositary table. Status as at 24 November 2026: Signatories 96, Parties 3; not yet in force.",
+          "publisher": "United Nations Treaty Collection",
+          "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "untc-certified-copy",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Certified true copy linked from the UNTC status page; not downloaded or read in this pass.",
+          "publisher": "United Nations",
+          "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf"
+        }
+      ],
+      "status": "not_in_force",
+      "status_note": "Not in force. Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession; three had been deposited by 24 November 2026, leaving 37. The UNTC depositary table lists 96 signatories (95 States and the European Union) and three Parties (Qatar, Azerbaijan and Viet Nam). Signature remains open until 31 December 2026.",
+      "title": {
+        "english": "United Nations Convention against Cybercrime",
+        "official": "United Nations Convention against Cybercrime; Strengthening International Cooperation for Combating Certain Crimes Committed by Means of Information and Communications Technology Systems and for the Sharing of Evidence in Electronic Form of Serious Crimes",
+        "short": "UN Cybercrime Convention"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "UNTC status table XVIII-16 read in a browser on 24 November 2026",
+            "date": "2026-11-24",
+            "result": "confirmed: not yet in force; 96 signatories and 3 Parties"
+          },
+          {
+            "check": "Party entries counted against the UNTC participant table",
+            "date": "2026-11-24",
+            "result": "confirmed: 96 rows; 95 States and the European Union; Qatar, Azerbaijan and Viet Nam have deposit dates"
+          },
+          {
+            "check": "Stable depositary table for the map condition",
+            "date": "2026-11-24",
+            "result": "confirmed: the UNTC page provides a stable URL and a participant table; a map is therefore permitted"
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata-level record. The status and party table come from the official UNTC depositary page; the treaty text, reservations and declarations, and the legal effect of the deposits are not assessed."
       }
     },
     {

@@ -43,7 +43,7 @@ class TestCatalogue(unittest.TestCase):
             self.assertLessEqual(set(domains), {"ai", "cyber"}, iid)
             self.assertEqual(len(domains), len(set(domains)), iid)
         self.assertEqual(sum(1 for inst in instruments.values() if "ai" in inst["domains"]), 46)
-        self.assertEqual(sum(1 for inst in instruments.values() if "cyber" in inst["domains"]), 3)
+        self.assertEqual(sum(1 for inst in instruments.values() if "cyber" in inst["domains"]), 4)
 
     def test_budapest_record_is_cyber_domain(self) -> None:
         inst = read_instrument("budapest-convention-2001")
@@ -713,12 +713,12 @@ class TestBuild(unittest.TestCase):
 
         build_site.main()
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(page.count('class="map-frame"'), 12)
-        self.assertEqual(page.count('class="map-key"'), 12)
-        self.assertEqual(page.count('class="map-participation"'), 12)
+        self.assertEqual(page.count('class="map-frame"'), 13)
+        self.assertEqual(page.count('class="map-key"'), 13)
+        self.assertEqual(page.count('class="map-participation"'), 13)
         self.assertNotIn('class="map-sub"', page)
         figures = re.findall(r'<figure class="map-card">(.*?)</figure>', page, re.S)
-        self.assertEqual(len(figures), 12)
+        self.assertEqual(len(figures), 13)
         self.assertNotIn("What it is", page)
         by_title = {
             re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
@@ -727,6 +727,7 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(
             list(by_title),
             [
+                "UN Cybercrime Convention",
                 "Budapest Convention",
                 "CETS 224",
                 "ETS 189",
@@ -782,7 +783,8 @@ class TestBuild(unittest.TestCase):
         self.assertIn("State: signed only", page)
         self.assertIn("States only", page)
         self.assertIn("37 confirmed of 38 reported", page)
-        self.assertEqual(page.count('class="map-parties"'), 12)
+        self.assertEqual(page.count('class="map-parties"'), 13)
+        self.assertIn("95 States + EU · 3 Parties", by_title["UN Cybercrime Convention"])
         self.assertIn("84 Parties + 2 signatories", by_title["Budapest Convention"])
         self.assertIn("38 Parties + 9 signatories", by_title["ETS 189"])
         self.assertIn("52 signatories · 4 ratifications", by_title["CETS 224"])
@@ -808,11 +810,11 @@ class TestBuild(unittest.TestCase):
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
         ids = set(re.findall(r'<li[^>]*data-instrument-id="([^"]+)"', page))
         self.assertEqual(ids, set(corpuslib.load_instruments()))
-        self.assertEqual(page.count('data-instrument-id='), 49)
+        self.assertEqual(page.count('data-instrument-id='), 50)
         for label in (
             "00 · Index",
             "01 · Sets",
-            "02 · Twelve maps",
+            "02 · 13 maps",
             "03 · Timeline",
             "04 · Reading room",
             "05 · The catalogue",
@@ -839,14 +841,14 @@ class TestBuild(unittest.TestCase):
         self.assertNotIn("35 records outside all three", page)
         self.assertNotIn("chart-svg", page)
         self.assertEqual(page.count('data-weight="highlight"'), 13)
-        self.assertEqual(page.count('data-weight="record"'), 36)
+        self.assertEqual(page.count('data-weight="record"'), 37)
         self.assertLess(page.find('id="index"'), page.find('id="form"'))
         self.assertLess(page.find('id="form"'), page.find('id="maps"'))
         self.assertLess(page.find('id="maps"'), page.find('id="timeline"'))
         self.assertLess(page.find('id="timeline"'), page.find('id="unseen"'))
         self.assertLess(page.find('id="unseen"'), page.find('id="catalogue"'))
         self.assertGreaterEqual(page.count('class="tl-item tl-event unseen-item"'), 6)
-        self.assertEqual(page.count('class="tl-item tl-instrument"'), 49)
+        self.assertEqual(page.count('class="tl-item tl-instrument"'), 50)
         self.assertIn("No AI-specific treaty is confirmed in force", page)
         self.assertIn("The story, with the instruments in it", page)
         self.assertIn("The argument around the record", page)
@@ -862,6 +864,7 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(
             titles,
             [
+                "UN Cybercrime Convention",
                 "Budapest Convention",
                 "CETS 224",
                 "ETS 189",
@@ -878,6 +881,7 @@ class TestBuild(unittest.TestCase):
         )
         instruments = corpuslib.load_instruments()
         for title, iid in (
+            ("UN Cybercrime Convention", "un-cybercrime-convention-2024"),
             ("Budapest Convention", "budapest-convention-2001"),
             ("CETS 224", "coe-cets-224"),
             ("ETS 189", "coe-ets-189"),
@@ -933,6 +937,7 @@ class TestBuild(unittest.TestCase):
             )
         }
         cases = [
+            ("UN Cybercrime Convention", "un-cybercrime-convention-2024", "Ratified"),
             ("Budapest Convention", "budapest-convention-2001", "Party (ratified or acceded)"),
             ("CETS 224", "coe-cets-224", "Ratified"),
             ("ETS 189", "coe-ets-189", "Party (ratified or acceded)"),
@@ -949,16 +954,14 @@ class TestBuild(unittest.TestCase):
             record = read_instrument(iid)
             entries = record["parties"]["entries"]
             figure = figures[title]
-            body = re.search(
-                r'<div class="map-parties"[^>]*>(.*?)</div>\s*<div class="map-about">',
-                figure,
-                re.S,
-            )
-            self.assertIsNotNone(body, title)
+            body_text = figure.split('<div class="map-parties"', 1)[1].split(
+                '<div class="map-about">', 1
+            )[0]
+            self.assertTrue(body_text, title)
             groups: dict[str, set[str]] = {}
             for status, block in re.findall(
                 r'<div class="party-group" data-status="([^"]+)">(.*?)</div>',
-                body.group(1),
+                body_text,
                 re.S,
             ):
                 count = int(re.search(r"<span>(\d+)</span>", block).group(1))
@@ -1002,7 +1005,7 @@ class TestBuild(unittest.TestCase):
 
         build_site.main()
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(page.count('class="map-about"'), 12)
+        self.assertEqual(page.count('class="map-about"'), 13)
         figures = {
             re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
             for figure in re.findall(
@@ -1010,6 +1013,7 @@ class TestBuild(unittest.TestCase):
             )
         }
         cases = [
+            ("UN Cybercrime Convention", "un-cybercrime-convention-2024"),
             ("Budapest Convention", "budapest-convention-2001"),
             ("CETS 224", "coe-cets-224"),
             ("ETS 189", "coe-ets-189"),
@@ -1065,6 +1069,78 @@ class TestBuild(unittest.TestCase):
                 else:
                     self.assertNotIn(source["url"], figure, title)
             self.assertIn(f"/catalog/instruments/{iid}.json", figure, title)
+
+    def test_cyber_declaration_texts_are_rendered(self) -> None:
+        import build_site
+
+        build_site.main()
+        page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        figures = {
+            re.search(r'<span class="map-title">([^<]+)</span>', figure).group(1): figure
+            for figure in re.findall(
+                r'<figure class="map-card">(.*?)</figure>', page, re.S
+            )
+        }
+        cases = [
+            ("Budapest Convention", "budapest-convention-2001", 376),
+            ("ETS 189", "coe-ets-189", 33),
+            ("CETS 224", "coe-cets-224", 22),
+        ]
+        for title, iid, total in cases:
+            record = read_instrument(iid)
+            figure = figures[title]
+            details = re.search(
+                r'<details class="map-declarations">(.*?)</details>', figure, re.S
+            )
+            self.assertIsNotNone(details, title)
+            self.assertIn(
+                f"{total} {'entry' if total == 1 else 'entries'}", details.group(1), title
+            )
+            for key, label in (
+                ("reservations", "Reservations"),
+                ("declarations", "Declarations"),
+                ("notifications", "Communications"),
+            ):
+                items = record["parties"].get(key) or []
+                if not items:
+                    continue
+                self.assertIn(f"<h4>{label} <span>{len(items)}</span></h4>", figure)
+                self.assertIn(html.escape(items[0], quote=True), page, title)
+
+    def test_un_cybercrime_record_uses_official_depositary_table(self) -> None:
+        record = read_instrument("un-cybercrime-convention-2024")
+        self.assertEqual(record["category"], "cyber_treaty")
+        self.assertEqual(record["domains"], ["cyber"])
+        self.assertEqual(record["status"], "not_in_force")
+        self.assertIsNone(record["dates"]["entered_into_force"])
+        self.assertEqual(record["dates"]["adopted"], "2024-12-24")
+        self.assertEqual(len(record["parties"]["entries"]), 96)
+        states = [
+            entry
+            for entry in record["parties"]["entries"]
+            if entry["party"] != "European Union"
+        ]
+        self.assertEqual(len(states), 95)
+        parties = {
+            entry["party"]
+            for entry in record["parties"]["entries"]
+            if entry.get("ratification")
+        }
+        self.assertEqual(parties, {"Azerbaijan", "Qatar", "Viet Nam"})
+        self.assertEqual(record["parties"]["counts"]["signatures"]["total"], 96)
+        self.assertEqual(record["parties"]["counts"]["ratifications"]["total"], 3)
+        source_ids = {source["id"] for source in record["sources"]}
+        self.assertIn("untc-status", source_ids)
+        status_source = next(
+            source for source in record["sources"] if source["id"] == "untc-status"
+        )
+        self.assertEqual(
+            status_source["url"],
+            "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en",
+        )
+        self.assertIn("96 signatories", record["parties"]["summary"])
+        self.assertIn("leaving 37", record["status_note"])
+        self.assertIn("stable", record["provenance"]["notes"])
 
     def test_site_numeric_claims_match_records(self) -> None:
         import build_site
@@ -1209,8 +1285,8 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 128)
-        self.assertEqual(len({target.instrument_id for target in targets}), 49)
+        self.assertEqual(len(targets), 130)
+        self.assertEqual(len({target.instrument_id for target in targets}), 50)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)
         )
@@ -1223,7 +1299,7 @@ class TestLinkAudit(unittest.TestCase):
         import build_site
 
         targets = self.audit.targets()
-        self.assertEqual(len(build_site.MAP_INSTRUMENT_IDS), 12)
+        self.assertEqual(len(build_site.MAP_INSTRUMENT_IDS), 13)
         self.assertEqual(
             {target.instrument_id for target in targets},
             set(build_site.MAP_INSTRUMENT_IDS),

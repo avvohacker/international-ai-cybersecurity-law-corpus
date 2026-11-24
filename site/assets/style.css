@@ -365,11 +365,13 @@ p { margin: 0 0 14px; }
 
 /* Maps */
 .maps { display: grid; grid-template-columns: 1fr; gap: 40px; margin-top: 34px; }
-.map-card { margin: 0; background: #fffdf8; border: 1px solid var(--line); padding: 22px 22px 18px; color: var(--ink); }
+.map-card { margin: 0; min-width: 0; background: #fffdf8; border: 1px solid var(--line); padding: 22px 22px 18px; color: var(--ink); }
 .map-card figcaption { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 0 2px 14px; }
 .map-title { font-family: var(--serif); font-size: 26px; font-weight: 600; }
 .map-full-title {
   flex: 1 1 18rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
   font-family: var(--serif);
   font-size: 15px;
   line-height: 1.35;
@@ -381,6 +383,7 @@ p { margin: 0 0 14px; }
   font-family: var(--mono);
   font-size: 12px;
   color: var(--muted);
+  overflow-wrap: anywhere;
 }
 .map-frame { position: relative; }
 .map-svg { display: block; width: 100%; height: auto; background: #eaf0ef; border: 1px solid #dbe4e1; }
@@ -437,9 +440,80 @@ p { margin: 0 0 14px; }
 .map-about p:last-child { margin-bottom: 0; }
 .map-about strong { color: var(--ink); }
 .map-about-dates, .map-about-history { font-size: 12px; }
-.map-sources { font-size: 11px; line-height: 1.5; }
+.map-sources { font-size: 11px; line-height: 1.5; overflow-wrap: anywhere; }
 .map-sources a { color: var(--teal); text-decoration: none; }
 .map-sources a:hover { text-decoration: underline; }
+
+/* Stored reservation and declaration texts */
+.map-declarations {
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  background: #fffaf0;
+  min-width: 0;
+}
+.map-declarations > summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 14px;
+  padding: 11px 13px;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--ink);
+  list-style: none;
+  overflow-wrap: anywhere;
+}
+.map-declarations > summary::-webkit-details-marker { display: none; }
+.map-declarations > summary::before {
+  content: "+";
+  flex: 0 0 auto;
+  color: var(--teal);
+  font-size: 15px;
+  line-height: 1;
+}
+.map-declarations[open] > summary::before { content: "−"; }
+.declaration-summary-label { flex: 1 1 12rem; min-width: 0; }
+.declaration-summary-count {
+  flex: 0 0 auto;
+  padding: 1px 6px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+.declaration-body { padding: 0 13px 15px; min-width: 0; }
+.declaration-intro { margin: 0 0 4px; font-size: 11px; line-height: 1.5; color: var(--muted); }
+.declaration-group { margin-top: 15px; min-width: 0; }
+.declaration-group h4 {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0 0 7px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.declaration-group h4 span { color: var(--muted); font-weight: 400; }
+.declaration-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.declaration-item { min-width: 0; padding-left: 10px; border-left: 2px solid var(--line); }
+.declaration-text {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #3f3a30;
+}
+
+@media (max-width: 520px) {
+  .map-card { padding: 16px 14px 14px; }
+  .map-declarations > summary { align-items: flex-start; flex-direction: column; }
+  .declaration-summary-label { flex: 0 0 auto; }
+  .declaration-summary-count { align-self: flex-start; }
+  .declaration-body { padding: 0 11px 13px; }
+}
 .map-parties {
   margin-top: 16px;
   padding-top: 12px;
@@ -535,10 +609,11 @@ p { margin: 0 0 14px; }
   display: grid;
   grid-template-columns: 172px minmax(0, 1fr);
   gap: 36px;
+  min-width: 0;
   padding: 26px 0 28px;
   border-bottom: 1px solid var(--line);
 }
-.tl-marker { position: relative; }
+.tl-marker { position: relative; min-width: 0; }
 .tl-marker time {
   display: block;
   font-family: var(--mono);
@@ -547,7 +622,8 @@ p { margin: 0 0 14px; }
   color: var(--teal);
 }
 .tl-dot { display: block; width: 9px; height: 9px; margin-top: 12px; background: var(--teal); }
-.tl-body { max-width: 84ch; }
+.tl-body { max-width: 84ch; min-width: 0; }
+.tl-body h3, .tl-why, .tl-history, .tl-links { overflow-wrap: anywhere; }
 .tl-meta {
   margin: 0 0 5px;
   font-family: var(--mono);
