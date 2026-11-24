@@ -1,0 +1,137 @@
+{
+  "note": "Non-official layer: legal doctrine, think-tank analysis and civil-society critique. These sources are not used to verify catalogue facts.",
+  "entries": [
+    {
+      "id": "stoyanova-cets-scope",
+      "strand": "Doctrine",
+      "author": "Vladislava Stoyanova",
+      "title": "Council of Europe Framework Convention on Artificial Intelligence: Context, Regulatory Approach and Scope of Obligations",
+      "outlet": "European Journal of Risk Regulation 17(2), 536–565",
+      "date": "2025-12-17",
+      "url": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/council-of-europe-framework-convention-on-artificial-intelligence-context-regulatory-approach-and-scope-of-obligations/0ED34EFE5AA7C9628F7053720F88F48C",
+      "related": ["coe-cets-225"],
+      "adds": "Reads the negotiating drafts against the final text: the Convention ends up reaching public authorities and private actors acting on their behalf, not all private providers. It also argues that the absence of EU-style risk tiers reflects abstraction, not necessarily weaker obligations."
+    },
+    {
+      "id": "presno-meuwese-joint-analysis",
+      "strand": "Doctrine",
+      "author": "Miguel Ángel Presno Linera and Anne Meuwese",
+      "title": "Regulating AI from Europe: a joint analysis of the AI Act and the Framework Convention on AI",
+      "outlet": "The Theory and Practice of Legislation 13(3), 292–311",
+      "date": "2025-04-25",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/20508840.2025.2492524",
+      "related": ["coe-cets-225", "eu-ai-act"],
+      "adds": "A side-by-side doctrinal comparison of definitions, risk architecture and remedies. It explains how Article 27(2) preserves EU law between EU Parties and proposes a “Strasbourg effect” alongside the better-known Brussels effect."
+    },
+    {
+      "id": "magliveras-waico",
+      "strand": "Doctrine",
+      "author": "Konstantinos D. Magliveras",
+      "title": "The race for the global regulation of AI: The case of WAICO",
+      "outlet": "International Law Blog",
+      "date": "2026-08-24",
+      "url": "https://internationallaw.blog/2026/08/24/the-race-for-the-global-regulation-of-ai-the-case-of-waico/",
+      "related": ["waico-establishment-agreement-2026"],
+      "adds": "A close reading of the WAICO founding agreement: only a Council and a Secretariat, consensus with a two-thirds fallback, and entry into force after three ratifications. It shows how a very small founding group could control the organisation at the start."
+    },
+    {
+      "id": "almada-radu-side-effect",
+      "strand": "Doctrine",
+      "author": "Marco Almada and Anca Radu",
+      "title": "The Brussels Side-Effect: How the AI Act Can Reduce the Global Reach of EU Policy",
+      "outlet": "German Law Journal 25(4), 646–663",
+      "date": "2024-02-19",
+      "url": "https://www.cambridge.org/core/journals/german-law-journal/article/brussels-sideeffect-how-the-ai-act-can-reduce-the-global-reach-of-eu-policy/032C72AEC537EBB6AE96C0FD90387E3E",
+      "related": ["eu-ai-act", "coe-cets-225"],
+      "adds": "Accepts that the AI Act will travel, but argues that its product-safety architecture underprotects rights and democracy abroad. The result is a “Brussels side-effect”: the text spreads while the EU's constitutional values do not."
+    },
+    {
+      "id": "basu-china-pivot",
+      "strand": "Analysis",
+      "author": "Arindrajit Basu",
+      "title": "China’s Pivot on Global AI",
+      "outlet": "Carnegie Endowment for International Peace",
+      "date": "2026-05-21",
+      "url": "https://carnegieendowment.org/research/2026/05/chinas-pivot-on-global-ai",
+      "related": ["waico-establishment-agreement-2026", "china-global-ai-governance-initiative-2023"],
+      "adds": "Traces Beijing's move from exporting infrastructure and standards to building institutions. It reads WAICO as a complement to China's UN diplomacy, not a replacement, and cautions that Global South governments have not wholesale endorsed its state-centric vision."
+    },
+    {
+      "id": "garcia-brics-perspective",
+      "strand": "Analysis",
+      "author": "Eugenio V. Garcia",
+      "title": "A BRICS Perspective on AI Governance: Multilateralism, Development, and Inclusion",
+      "outlet": "Science & Diplomacy (AAAS)",
+      "date": "2025-12-08",
+      "url": "https://www.sciencediplomacy.org/perspective/2025/brics-perspective-ai-governance-multilateralism-development-and-inclusion",
+      "related": ["brics-ai-statement-2025"],
+      "adds": "A diplomat-scholar reading of the Rio statement as a negotiating instrument: development, technology transfer and digital sovereignty are tied to the UN process. It explains why the statement treats the UN, not the G7 or OECD, as the legitimate forum."
+    },
+    {
+      "id": "wilkinson-un-architecture",
+      "strand": "Analysis",
+      "author": "Isabella Wilkinson",
+      "title": "Can the UN’s new AI governance efforts weather the AI race?",
+      "outlet": "Chatham House",
+      "date": "2025-09-18",
+      "url": "https://www.chathamhouse.org/2025/09/can-uns-new-ai-governance-efforts-weather-ai-race",
+      "related": ["un-ga-res-79-325"],
+      "adds": "Assesses the Scientific Panel and Global Dialogue as the most inclusive architecture yet, but “mostly powerless”: design limits, funding uncertainty, the capability gap and the exclusion of military AI are structural, not teething problems."
+    },
+    {
+      "id": "nachiappan-pax-silica",
+      "strand": "Analysis",
+      "author": "Karthik Nachiappan",
+      "title": "India and Pax Silica: Building Capability, Preserving Autonomy",
+      "outlet": "ISAS Brief, National University of Singapore",
+      "date": "2026-11-18",
+      "url": "https://www.isas.nus.edu.sg/papers/india-and-pax-silica-building-capability-preserving-autonomy/",
+      "related": ["san-francisco-declaration-2026", "pax-silica-declaration-2025"],
+      "adds": "Reads India's signature as an economic-security bargain. The declaration never names China, but “economic coercion” and “concentrated dependencies” do the work; membership only matters if it converts into domestic capability without surrendering regulatory autonomy."
+    },
+    {
+      "id": "bhatt-autonomous-weapons",
+      "strand": "Analysis",
+      "author": "Charukeshi Bhatt",
+      "title": "Will a UN Treaty on Autonomous Weapons Arrive Too Late?",
+      "outlet": "Carnegie Endowment for International Peace",
+      "date": "2026-11-12",
+      "url": "https://carnegieendowment.org/research/2026/11/will-a-un-treaty-on-autonomous-weapons-arrive-too-late",
+      "related": ["ccw-gge-laws-2026"],
+      "adds": "Compares the 2025 rolling text with the September 2026 GGE report: the definition narrows to systems whose action “results in loss of life”, and restrictions on manufacture and stockpiling fall away. It explains why the Review Conference is the next real test."
+    },
+    {
+      "id": "gupta-delhi-spectacle",
+      "strand": "Critique",
+      "author": "Apar Gupta",
+      "title": "India’s ‘AI Impact Summit’ Promises Little More Than Spectacle",
+      "outlet": "TechPolicy.Press",
+      "date": "2026-02-15",
+      "url": "https://techpolicy.press/indias-ai-impact-summit-promises-little-more-than-spectacle",
+      "related": ["new-delhi-declaration-2026"],
+      "adds": "A civil-society counterpoint published during the summit: corporate parity with governments, the absence of rights, surveillance, bias and caste language, and no pathway from the declaration into Indian regulation."
+    },
+    {
+      "id": "saalman-su-us-china",
+      "strand": "Analysis",
+      "author": "Lora Saalman and Fei Su",
+      "title": "Building on progress in China–USA talks on AI",
+      "outlet": "SIPRI",
+      "date": "2026-11-05",
+      "url": "https://www.sipri.org/commentary/essay/2026/building-progress-china-usa-talks-ai",
+      "related": [],
+      "adds": "Traces the channel from the 2023–24 consultations to the 2026 summits, including an AI-incident hotline and a deadline for technical talks. It argues that the earlier rounds were normative pledges rather than technical substance."
+    },
+    {
+      "id": "sisson-jiang-human-control",
+      "strand": "Analysis",
+      "author": "Melanie W. Sisson and Tianjiao Jiang",
+      "title": "Advancing human control of military AI",
+      "outlet": "Brookings Institution",
+      "date": "2026-09-09",
+      "url": "https://www.brookings.edu/articles/advancing-human-control-of-military-ai/",
+      "related": ["political-declaration-military-ai-2023"],
+      "adds": "A US–China co-authored proposal to extend the 2024 nuclear human-control understanding to AI-enabled cyber operations against nuclear command, control and communications. It treats presidential leadership, not expert process, as the binding constraint."
+    }
+  ]
+}

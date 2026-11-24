@@ -49,7 +49,7 @@ If a future record needs a genuinely new act type, extend the schema enum with a
 
 - **Maps.** Only instruments with a published State-level list become maps. Do not invent a “cyber map” from membership in an organisation. A Budapest Convention map is possible if the Treaty Office chart is stored; a NIS2 map is not, because it is EU law, not a treaty.
 - **Timeline.** Cyber records use the same two-column timeline and the same text slot: why the instrument exists, what it changed, what it left out. Keep AI and cyber records in one chronology if the page remains an AI atlas; use the `domains` field for filtering rather than for a second timeline.
-- **Off the record.** Add cyber-specific unseen events only when they explain the absence of an instrument: a summit that ended without a text, a hotline or bilateral channel, a market incident that changed the agenda. Each needs a source and a date, as with the current eight events.
+- **Off the record.** Add cyber-specific events to the combined timeline only when they explain the absence of an instrument: a summit that ended without a text, a hotline or bilateral channel, a market incident that changed the agenda. Each needs a source and a date, as with the current seven events.
 - **Catalogue.** Add a domain filter and a visible label. A cyber-only record must not be counted in “AI-specific treaties” or in the AI binding/non-binding totals.
 
 ## 6. Validation and tests

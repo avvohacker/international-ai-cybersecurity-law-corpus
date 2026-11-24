@@ -26,6 +26,7 @@ SITE = ROOT / "site"
 GEO = ROOT / "data" / "natural-earth" / "ne_110m_admin_0_countries.geojson"
 ORGANISATIONS = ROOT / "data" / "organisations.json"
 UNSEEN = ROOT / "data" / "unseen-events.json"
+OFF_RECORD = ROOT / "data" / "off-the-record.json"
 REPO = "https://github.com/avvohacker/international-ai-law-corpus"
 
 PARIS_ID = "paris-ai-action-summit-statement-2025"
@@ -222,6 +223,7 @@ TEAL = "#0e6b62"
 ACT_BLUE = "#5a7fbd"
 CHINA_RED = "#c8102e"
 INDIA_BROWN = "#a67c52"
+BRICS_ORANGE = "#d97706"
 RATIFIED_BLUE = "#172e6e"
 ORG_MEMBER_BLUE = "#a9c0e0"
 ISSUED_GOLD = "#a67c52"
@@ -504,7 +506,7 @@ def year_chart(instruments: list[dict]) -> tuple[str, str]:
             f'<text x="{x + bar / 2:.1f}" y="{base + 20}" class="chart-year">{year}</text>'
         )
     parts.append("</svg>")
-    return "".join(parts), "Years present in the corpus; the scale is not continuous."
+    return "".join(parts), "Instruments only; events in the timeline are not counted. Years present in the corpus; the scale is not continuous."
 
 
 def category_bars(category_counts: Counter) -> str:
@@ -654,10 +656,86 @@ TIMELINE_STORIES = {
 }
 
 
-def timeline(instruments: list[dict]) -> str:
-    """One row per catalogue record, with the explanation outside the marker."""
-    rows = []
-    for inst in sorted(instruments, key=lambda item: (timeline_date(item), item["id"])):
+def set_chart(instruments: list[dict]) -> tuple[str, int]:
+    """Draw an UpSet-style chart of overlapping legal-form sets.
+
+    The catalogue's category field is exclusive; these sets are not. The chart
+    shows both the size of each set and the exact intersections.
+    """
+    definitions = [
+        ("binding", "Binding", lambda inst: inst["binding_status"] == "binding"),
+        ("in_force", "In force", lambda inst: inst["status"] == "in_force"),
+        (
+            "treaty",
+            "Treaty / agreement",
+            lambda inst: inst["instrument_type"] in {"treaty", "protocol", "agreement"},
+        ),
+        ("ai_treaty", "AI-specific treaty", lambda inst: inst["category"] == "ai_treaty"),
+        ("standard", "Technical standard", lambda inst: inst["category"] == "technical_standard"),
+        ("eu_law", "EU law", lambda inst: inst["category"] == "supranational_law"),
+    ]
+    members = []
+    for key, label, predicate in definitions:
+        members.append((key, label, {inst["id"] for inst in instruments if predicate(inst)}))
+    labels = {key: label for key, label, _ in members}
+    combinations = Counter(
+        tuple(key for key, _, ids in members if inst["id"] in ids) for inst in instruments
+    )
+    outside = combinations.pop((), 0)
+    ordered = sorted(combinations.items(), key=lambda item: (-item[1], item[0]))
+    if not ordered:
+        return "", outside
+
+    max_set = max(len(ids) for _, _, ids in members)
+    set_rows = []
+    for key, label, ids in members:
+        width = len(ids) / max_set * 100
+        set_rows.append(
+            f'<div class="up-set"><span class="up-set-name">{esc(label)}</span>'
+            f'<span class="up-set-track"><span class="up-set-fill up-{esc(key)}" '
+            f'style="width:{width:.1f}%"></span></span>'
+            f'<span class="up-set-n">{len(ids)}</span></div>'
+        )
+
+    max_combo = max(count for _, count in ordered)
+    columns = []
+    for combo, count in ordered:
+        height = max(4, round(count / max_combo * 118))
+        active = set(combo)
+        dots = "".join(
+            f'<span class="up-dot{" up-dot-on" if key in active else ""}" aria-hidden="true"></span>'
+            for key, _, _ in members
+        )
+        name = ", ".join(labels[key] for key in combo) or "No set"
+        columns.append(
+            f'<div class="up-column" title="{esc(name)}: {count} instruments">'
+            f'<div class="up-top"><span class="up-count">{count}</span>'
+            f'<span class="up-bar" style="height:{height}px"></span></div>'
+            f'<div class="up-dots">{dots}</div></div>'
+        )
+
+    html = (
+        '<div class="upset" role="img" aria-label="Overlapping sets: binding, in force, treaty or agreement, AI-specific treaty, technical standard and EU law">'
+        '<div class="upset-corner">Set size</div>'
+        '<div class="upset-toplabel"><span class="up-long">Instruments per intersection</span><span class="up-short">Intersections</span></div>'
+        '<div class="upset-left"><div class="upset-spacer"></div>'
+        f'<div class="upset-sets">{"".join(set_rows)}</div></div>'
+        f'<div class="upset-right" style="--cols:{len(ordered)}">'
+        f'{"".join(columns)}</div></div>'
+    )
+    return html, outside
+
+
+def combined_timeline(instruments: list[dict], events: list[dict]) -> str:
+    """One chronology: instruments as highlighted boxes, events as plain rows."""
+    kind_labels = {
+        "market": "Market event",
+        "bilateral": "Bilateral channel",
+        "summit": "Summit without a text",
+        "channel": "Communication channel",
+    }
+    items: list[tuple[str, int, str, str]] = []
+    for inst in instruments:
         date = timeline_date(inst)
         iid = inst["id"]
         title = first_note(inst)
@@ -678,12 +756,13 @@ def timeline(instruments: list[dict]) -> str:
             if source
             else ""
         )
-        rows.append(
-            f'<li class="tl-item" data-instrument-id="{esc(iid)}">'
+        body = (
+            f'<li class="tl-item tl-instrument" data-instrument-id="{esc(iid)}">'
             f'<div class="tl-marker"><time datetime="{esc(date)}">{esc(display_timeline_date(date))}</time>'
             f'<span class="tl-dot" aria-hidden="true"></span></div>'
-            f'<div class="tl-body">'
-            f'<p class="tl-meta">{esc(category)} · {esc(binding)} · {esc(status)}</p>'
+            f'<div class="tl-body tl-card">'
+            f'<p class="tl-meta"><span class="tl-kind">Instrument</span> · {esc(category)} · '
+            f'{esc(binding)} · {esc(status)}</p>'
             f'<h3><a href="{esc(record_url(inst))}" target="_blank" rel="noopener">{esc(title)}</a></h3>'
             f'<p class="tl-why">{esc(why)}</p>'
             f'{history}'
@@ -692,33 +771,60 @@ def timeline(instruments: list[dict]) -> str:
             f'<a href="{esc(record_url(inst))}" target="_blank" rel="noopener">record</a></p>'
             f'</div></li>'
         )
-    return '<ol class="timeline">' + "".join(rows) + "</ol>"
+        items.append((date, 1, iid, body))
 
-
-def unseen_timeline(events: list[dict]) -> str:
-    """Render events that left no instrument, in the same chronological form."""
-    kind_labels = {
-        "market": "Market event",
-        "bilateral": "Bilateral channel",
-        "summit": "Summit without an instrument",
-        "channel": "Communication channel",
-    }
-    rows = []
-    for event in sorted(events, key=lambda item: item["date"]):
+    for event in events:
+        date = event["date"]
         source = event.get("source") or {}
-        rows.append(
-            f'<li class="tl-item unseen-item" data-kind="{esc(event.get("kind", ""))}">'
-            f'<div class="tl-marker"><time datetime="{esc(event["date"])}">{esc(display_timeline_date(event["date"]))}</time>'
+        body = (
+            f'<li class="tl-item tl-event unseen-item" data-kind="{esc(event.get("kind", ""))}">'
+            f'<div class="tl-marker"><time datetime="{esc(date)}">{esc(display_timeline_date(date))}</time>'
             f'<span class="tl-dot" aria-hidden="true"></span></div>'
             f'<div class="tl-body">'
-            f'<p class="tl-meta">{esc(kind_labels.get(event.get("kind"), event.get("kind", "")))}</p>'
+            f'<p class="tl-meta"><span class="tl-kind">Event</span> · '
+            f'{esc(kind_labels.get(event.get("kind"), event.get("kind", "")))}</p>'
             f'<h3>{esc(event["title"])}</h3>'
             f'<p class="tl-why">{esc(event.get("summary", ""))}</p>'
             f'<p class="tl-history">{esc(event.get("why", ""))}</p>'
-            f'<p class="tl-links"><a href="{esc(source.get("url", ""))}" target="_blank" rel="noopener">{esc(source.get("label", "source"))}</a></p>'
+            f'<p class="tl-links"><a href="{esc(source.get("url", ""))}" target="_blank" '
+            f'rel="noopener">{esc(source.get("label", "source"))}</a></p>'
             f'</div></li>'
         )
-    return '<ol class="timeline unseen-list">' + "".join(rows) + "</ol>"
+        items.append((date, 0, event.get("id", event["title"]), body))
+
+    items.sort(key=lambda item: (item[0], item[1], item[2]))
+    return '<ol class="timeline combined">' + "".join(item[3] for item in items) + "</ol>"
+
+
+def off_record_cards(entries: list[dict], by_id: dict[str, dict]) -> str:
+    strand_order = {"Doctrine": 0, "Analysis": 1, "Critique": 2}
+    ordered = sorted(
+        entries,
+        key=lambda entry: (strand_order.get(entry.get("strand"), 9), -int(entry["date"].replace("-", ""))),
+    )
+    cards = []
+    for entry in ordered:
+        related = []
+        for iid in entry.get("related") or []:
+            inst = by_id.get(iid)
+            if not inst:
+                continue
+            related.append(
+                f'<a href="{esc(record_url(inst))}" target="_blank" rel="noopener">'
+                f'{esc(first_note(inst))} record</a>'
+            )
+        related_html = " · ".join(related)
+        cards.append(
+            f'<article class="otr-card">'
+            f'<p class="otr-kind">{esc(entry["strand"])} · {esc(display_timeline_date(entry["date"]))}</p>'
+            f'<h3><a href="{esc(entry["url"])}" target="_blank" rel="noopener">{esc(entry["title"])}</a></h3>'
+            f'<p class="otr-byline">{esc(entry["author"])} · {esc(entry["outlet"])}</p>'
+            f'<p class="otr-adds">{esc(entry["adds"])}</p>'
+            f'<p class="otr-links"><a href="{esc(entry["url"])}" target="_blank" rel="noopener">'
+            f'Read the source</a>{(" · " + related_html) if related_html else ""}</p>'
+            f'</article>'
+        )
+    return "".join(cards)
 
 
 def main() -> int:
@@ -952,7 +1058,7 @@ def main() -> int:
         {"color": LAND, "label": "State: no signature"},
     ]
     brics_legend = [
-        {"color": ISSUED_GOLD, "label": "State: member of the group (collective statement)"},
+        {"color": BRICS_ORANGE, "label": "State: member of the group (collective statement)"},
         {"color": LAND, "label": "State: no recorded act"},
     ]
 
@@ -1185,10 +1291,11 @@ def main() -> int:
             "brics",
             "BRICS 2025",
             f"{len(brics_states)} listed member States",
-            f"World map. Brown: {len(brics_states)} States listed as BRICS members when the statement was issued collectively. Sand: States outside the group. The statement has no individual signature block.",
+            f"World map. Orange: {len(brics_states)} States listed as BRICS members when the statement was issued collectively. Sand: States outside the group. The statement has no individual signature block.",
             brics_status,
             brics_org_notes,
             brics_legend,
+            fills={"issued": BRICS_ORANGE},
             note=(
                 "Collective statement, not a treaty and not an individual signature. "
                 f"The 2025 presidency lists {len(brics_states)} BRICS member States; the "
@@ -1322,7 +1429,9 @@ def main() -> int:
 
     chart, chart_note = year_chart(instruments)
     unseen_events = json.loads(UNSEEN.read_text(encoding="utf-8"))
-    unseen_html = unseen_timeline(unseen_events)
+    off_record = json.loads(OFF_RECORD.read_text(encoding="utf-8"))
+    off_record_html = off_record_cards(off_record["entries"], by_id)
+    set_html, set_outside = set_chart(instruments)
 
     ai_treaties = [inst for inst in instruments if inst["category"] == "ai_treaty"]
     ai_count = len(ai_treaties)
@@ -1398,7 +1507,7 @@ def main() -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI Law Atlas</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI law.">
-<link rel="stylesheet" href="assets/style.css?v=13">
+<link rel="stylesheet" href="assets/style.css?v=15">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -1409,7 +1518,7 @@ def main() -> int:
     <p class="byline">{total} instruments · {full_texts} full texts · {originals} originals with SHA-256 · {binding} binding</p>
     <nav class="toc" aria-label="Sections">
       <a href="#index">Index</a>
-      <a href="#form">01 What binds</a>
+      <a href="#form">01 Sets</a>
       <a href="#maps">02 Instruments</a>
       <a href="#timeline">03 Timeline</a>
       <a href="#unseen">04 Off the record</a>
@@ -1426,10 +1535,10 @@ def main() -> int:
       <h2>What this atlas contains</h2>
       <div class="stats">{stats_html}</div>
       <div class="index-grid">
-        <a class="index-card" href="#form"><span class="index-number">01</span><strong>Binding or not</strong><span>What “binding” means here, and how the corpus splits between binding and non-binding instruments.</span></a>
+        <a class="index-card" href="#form"><span class="index-number">01</span><strong>Overlapping sets</strong><span>Binding, in force, treaty, AI treaty, standard and EU law are not boxes. The chart shows which instruments sit in several sets, and which sit in none.</span></a>
         <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>Nine maps of the State-level acts recorded in the corpus: signatures, ratifications, endorsements and collective issuances.</span></a>
-        <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>All {total} records in chronological order, each with a text slot on why it exists, what it changed and what it left out.</span></a>
-        <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Off the record</strong><span>Bilaterals, hotlines, summits without texts and market events: the part of the story that leaves no legal instrument.</span></a>
+        <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: highlighted boxes for the texts, plain rows for what left no text.</span></a>
+        <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Off the record</strong><span>Legal doctrine, think-tank analysis and civil-society critique: the argument around the record, never used as evidence for it.</span></a>
         <a class="index-card" href="#catalogue"><span class="index-number">05</span><strong>Catalogue</strong><span>The filterable table of every record, with legal force, status, verification level and a link to the JSON.</span></a>
         <a class="index-card" href="#method"><span class="index-number">06</span><strong>Method</strong><span>Sources, hashes, validation, the difference between a declared and a verified count, and the limits of the corpus.</span></a>
       </div>
@@ -1438,25 +1547,28 @@ def main() -> int:
 
     <section id="form" class="section">
     <div class="wrap">
-      <p class="eyebrow">01 · What binds</p>
-      <h2>Binding or not</h2>
-      <p class="lede">In the corpus, {binding} instruments are binding and {non_binding} are not.</p>
-      {binding_bar(instruments)}
-      <div class="legend">
-        <span><i class="swatch swatch-binding"></i>Binding</span>
-        <span><i class="swatch swatch-nonbinding"></i>Non-binding</span>
-      </div>
-      <div class="two-col">
+      <p class="eyebrow">01 · Sets</p>
+      <h2>One corpus, overlapping sets</h2>
+      <p class="lede">Six sets, read across the same {total} records. A treaty can be in force; a recommendation can carry the status “in force” without binding anyone; a standard is neither a treaty nor law. The chart counts the exact intersections instead of forcing every instrument into one box.</p>
+      {set_html}
+      <div class="set-readings">
         <div>
-          <h3>What “binding” means here</h3>
-          <p>A treaty in force, a trade agreement in force, European Union law and {number_word(general_treaty_count)} general framework treaties. It does not mean the obligation is detailed: CETS 225 is not in force, WAICO's entry into force is unconfirmed, and the AfCFTA Protocol's status is unknown.</p>
-          <p>Declarations, UN resolutions, recommendations, codes of conduct and technical standards are non-binding. They are not irrelevant: they set direction, create expectations and prepare the ground for later rules.</p>
+          <p class="set-kicker">Reading 1</p>
+          <h3>Binding is not a synonym for treaty</h3>
+          <p>The EU AI Act is binding and in force, but it is neither a treaty nor an agreement. Six trade and framework treaties are both. The two AI-specific treaties are binding but not in force: CETS 225 still needs five ratifications, and WAICO's entry into force is unconfirmed.</p>
         </div>
         <div>
-          <h3>By category · {sum(category_counts.values())} instruments</h3>
-          <div class="bars">{category_bars(category_counts)}</div>
+          <p class="set-kicker">Reading 2</p>
+          <h3>“In force” is a status, not a force category</h3>
+          <p>The OECD recommendation is recorded as in force and remains non-binding. The AfCFTA Protocol is binding but its status is unknown. WAICO is binding but not confirmed in force. Status and legal force are separate fields, and the chart keeps them separate.</p>
+        </div>
+        <div>
+          <p class="set-kicker">Reading 3</p>
+          <h3>Most of the corpus sits outside all six</h3>
+          <p><strong>{set_outside}</strong> records belong to none of the sets above: declarations, resolutions, recommendations, codes, strategies and guidance. They bind no one, but they are where much of the norm-making happens. The catalogue keeps them as records, not as noise around the binding core.</p>
         </div>
       </div>
+      <p class="source-note">Sets are derived mechanically from <code>binding_status</code>, <code>status</code>, <code>instrument_type</code> and <code>category</code>. They are not a hierarchy and not exclusive: an instrument can be in several sets, or in none.</p>
     </div>
   </section>
 
@@ -1476,11 +1588,15 @@ def main() -> int:
   <section id="timeline" class="section">
     <div class="wrap">
       <p class="eyebrow">03 · Timeline</p>
-      <h2>Timeline: the instruments and why they exist</h2>
-      <p class="lede">All {total} records, from the general framework of 1966 to the instruments of 2026. Each entry has a text slot outside the marker explaining the history and the reason for the instrument; the chart counts instruments adopted per year. The list is the complete catalogue in chronological order.</p>
+      <h2>The story, with the instruments in it</h2>
+      <p class="lede">{total} instruments and {len(unseen_events)} events in one chronology, 1966–2026. The instruments are highlighted boxes; between them sit the bilaterals, hotlines, summits and market shocks that produced no text. The chart counts instruments adopted per year; the events are not counted.</p>
+      <div class="timeline-key">
+        <span><i class="key-instrument"></i>Instrument</span>
+        <span><i class="key-event"></i>Event without a text</span>
+      </div>
       {chart}
       <p class="source-note">{esc(chart_note)}</p>
-      {timeline(instruments)}
+      {combined_timeline(instruments, unseen_events)}
       {timeline_note}
     </div>
   </section>
@@ -1488,10 +1604,12 @@ def main() -> int:
   <section id="unseen" class="section section-dark">
     <div class="wrap">
       <p class="eyebrow">04 · Off the record</p>
-      <h2>What the legal papers do not show</h2>
-      <p class="lede">The corpus is a register of written instruments, so it systematically misses what produced no text: bilateral technology channels, military telephone links, summits that ended in a readout, and market events that changed the premises of the law. This is a sourced selection, not a complete chronology.</p>
-      {unseen_html}
-      <p class="source-note">These events are not catalogue records: they have no legal form, no parties in the sense used above and no status. They are here because a history of the law that leaves them out cannot explain why the instruments exist, why some forums were chosen and why others were not.</p>
+      <h2>Off the record</h2>
+      <p class="lede">The argument around the record: official sources establish what was adopted, but rarely explain the negotiation behind it, the reading that will govern it, or the interests it leaves out. This is the non-official layer — legal doctrine, think-tank analysis and civil-society critique. None of it is used to verify a catalogue fact.</p>
+      <div class="otr-grid">
+        {off_record_html}
+      </div>
+      <p class="source-note"><strong>Status of these texts.</strong> They are scholarship, analysis and reporting, not primary sources for the instruments. Their claims are attributed to their authors; the catalogue records remain based on the official texts and pages cited in each JSON record. The selection is curated, not exhaustive.</p>
     </div>
   </section>
 
@@ -1538,7 +1656,7 @@ def main() -> int:
             <li>{number_word(ai_count).capitalize()} AI-specific treaties: CETS 225 and the WAICO Agreement. This does not mean no others exist, but that no other has been located and verified.</li>
             <li>No international complaint, sanction or judicial review mechanism is established by these instruments.</li>
             <li>Latin America, the Middle East and Central Asia remain uncovered by verified regional instruments.</li>
-            <li><strong>Scope of sources.</strong> This is a register of written instruments, not an inventory of international law. Customary international law, general principles, <em>jus cogens</em>, Security Council resolutions (none AI-specific was located), decisions of courts and tribunals, international humanitarian law and general human-rights treaties beyond the ICCPR are outside the corpus. Section 04 records some events that produced no instrument, but it is a selection, not a register.</li>
+            <li><strong>Scope of sources.</strong> This is a register of written instruments, not an inventory of international law. Customary international law, general principles, <em>jus cogens</em>, Security Council resolutions (none AI-specific was located), decisions of courts and tribunals, international humanitarian law and general human-rights treaties beyond the ICCPR are outside the corpus. Section 03 interleaves some events that produced no instrument, but it is a selection, not a register. Section 04 lists non-official analysis and is not evidence for any record.</li>
             <li>ISO/IEC standards are paywalled: metadata only. English texts only; no translation is presented as authentic.</li>
             <li>No national implementation or compliance data.</li>
           </ul>

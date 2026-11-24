@@ -127,7 +127,7 @@ Search snippets were used to locate candidates and, in some cases, to read an of
 - official page/excerpt read;
 - official source merely located.
 
-Secondary literature is used only in the atlas's analytical frame (now section 04, “Off the record”) and is cited there. It is not used to establish the legal status, parties or dates of any instrument; those remain based on primary sources.
+Secondary literature is used in the atlas's analytical frame and in the curated section 04 reading list (“Off the record”), where each item is attributed to its author. It is not used to establish the legal status, parties or dates of any instrument; those remain based on primary sources.
 
 The candidate register contains 31 entries: 11 included, 11 pending and 9 excluded. The included set adds HRC resolution 63/15 to the previous ten. Pending items include the International AI Safety Report, Council of Europe Recommendation CM/Rec(2020)1, ITU-T Y.3172, IEEE 7000, CEN-CENELEC JTC 21, the G7 2026 Digital and Technology Ministerial Declaration, the G20 AI Prosperity Compact and Objectives, and UNGA 81 drafts L.34/L.37. Excluded items include the Paris Call for AI Safety and Security and the broad G20 Innovation Ministerial Statement. The register records the reason for each decision.
 

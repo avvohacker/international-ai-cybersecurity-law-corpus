@@ -454,6 +454,18 @@ class TestCatalogue(unittest.TestCase):
             for field in curated.get(iid, set()):
                 self.assertIn(field, fields, iid)
 
+    def test_off_record_reading_list_is_attributed_and_linked(self) -> None:
+        data = json.loads((ROOT / "data" / "off-the-record.json").read_text(encoding="utf-8"))
+        entries = data.get("entries") or []
+        self.assertGreaterEqual(len(entries), 10)
+        instrument_ids = set(corpuslib.load_instruments())
+        for entry in entries:
+            for field in ("id", "strand", "author", "title", "outlet", "date", "url", "adds"):
+                self.assertTrue(entry.get(field), entry.get("id"))
+            self.assertTrue(entry["url"].startswith("https://"), entry["id"])
+            for related in entry.get("related") or []:
+                self.assertIn(related, instrument_ids, entry["id"])
+
     def test_hrc_resolution_record(self) -> None:
         inst = read_instrument("un-hrc-res-63-15")
         self.assertEqual(inst["category"], "non_binding_instrument")
@@ -703,6 +715,8 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(by_title["WAICO 2026"].count('fill="#5a7fbd"'), 0)
         self.assertEqual(by_title["New Delhi 2026"].count('fill="#a67c52"'), 90)
         self.assertEqual(by_title["New Delhi 2026"].count('fill="#5a7fbd"'), 0)
+        self.assertEqual(by_title["BRICS 2025"].count('fill="#d97706"'), 11)
+        self.assertEqual(by_title["BRICS 2025"].count('fill="#a67c52"'), 0)
 
     def test_timeline_lists_every_record_and_sections_follow_the_new_order(self) -> None:
         import build_site
@@ -714,7 +728,7 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(page.count('data-instrument-id='), 46)
         for label in (
             "00 · Index",
-            "01 · What binds",
+            "01 · Sets",
             "02 · Nine maps",
             "03 · Timeline",
             "04 · Off the record",
@@ -723,13 +737,19 @@ class TestBuild(unittest.TestCase):
         ):
             self.assertIn(label, page)
         self.assertIn("The treaties, declarations and statements", page)
-        self.assertIn("What the legal papers do not show", page)
+        self.assertIn("The argument around the record", page)
+        self.assertEqual(page.count('class="up-column"'), 6)
+        self.assertIn("records belong to none of the sets above", page)
         self.assertLess(page.find('id="index"'), page.find('id="form"'))
         self.assertLess(page.find('id="form"'), page.find('id="maps"'))
         self.assertLess(page.find('id="maps"'), page.find('id="timeline"'))
         self.assertLess(page.find('id="timeline"'), page.find('id="unseen"'))
         self.assertLess(page.find('id="unseen"'), page.find('id="catalogue"'))
-        self.assertGreaterEqual(page.count('class="tl-item unseen-item"'), 6)
+        self.assertGreaterEqual(page.count('class="tl-item tl-event unseen-item"'), 6)
+        self.assertEqual(page.count('class="tl-item tl-instrument"'), 46)
+        self.assertIn("One corpus, overlapping sets", page)
+        self.assertIn("The story, with the instruments in it", page)
+        self.assertIn("The argument around the record", page)
         self.assertNotIn("The shape of the corpus", page)
         self.assertNotIn("cat-ai_treaty bar-fill", page)
 
