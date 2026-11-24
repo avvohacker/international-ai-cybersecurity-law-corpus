@@ -51,6 +51,22 @@ MAP_INSTRUMENT_IDS = (
     BRICS_ID,
 )
 
+# Only texts that changed the legal position or opened a route get a box in 03.
+TIMELINE_HIGHLIGHTS = {
+    "oecd-ai-recommendation-2019",
+    "depa-2020",
+    "unesco-ethics-ai-2021",
+    "bletchley-declaration-2023",
+    "coe-cets-225",
+    "eu-ai-act",
+    "afcfta-digital-trade-protocol-2024",
+    "paris-ai-action-summit-statement-2025",
+    "un-ga-res-79-325",
+    "waico-establishment-agreement-2026",
+    "new-delhi-declaration-2026",
+    "san-francisco-declaration-2026",
+}
+
 # IFAD endorsed the New Delhi Declaration but is a UN specialised agency, not a
 # State. It is named outside the map frame, without shading its members.
 EXTRA_PARTICIPATING_ORGS = {
@@ -451,64 +467,6 @@ def render_map(
     return f'<div class="map-frame">{"".join(parts)}{key}</div>'
 
 
-def year_chart(instruments: list[dict]) -> tuple[str, str]:
-    by_year: dict[str, dict[str, int]] = defaultdict(lambda: {"binding": 0, "non_binding": 0, "other": 0})
-    for inst in instruments:
-        year = year_of(inst)
-        if year == "—":
-            continue
-        binding = inst.get("binding_status")
-        if binding == "binding":
-            by_year[year]["binding"] += 1
-        elif binding == "non_binding":
-            by_year[year]["non_binding"] += 1
-        else:
-            by_year[year]["other"] += 1
-    years = sorted(by_year)
-    if not years:
-        return "", ""
-    maxima = max(sum(by_year[y].values()) for y in years)
-    base = 212
-    usable = 150
-    slot = 920 / len(years)
-    bar = min(46.0, slot * 0.56)
-    parts = [
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" class="chart-svg" role="img" aria-labelledby="years-title">',
-        '<title id="years-title">Instruments adopted per year, binding and non-binding</title>',
-        f'<line x1="36" y1="{base}" x2="976" y2="{base}" stroke="#8b8375" stroke-width="1"/>',
-    ]
-    for index, year in enumerate(years):
-        counts = by_year[year]
-        total = sum(counts.values())
-        height = total / maxima * usable
-        h_binding = counts["binding"] / maxima * usable
-        h_non = counts["non_binding"] / maxima * usable
-        h_other = counts["other"] / maxima * usable
-        x = 40 + index * slot + (slot - bar) / 2
-        y = base - height
-        parts.append(
-            f'<rect x="{x:.1f}" y="{y + h_binding + h_other:.1f}" width="{bar:.1f}" '
-            f'height="{h_non:.1f}" fill="{TEAL}"><title>{year}: {counts["non_binding"]} non-binding</title></rect>'
-        )
-        parts.append(
-            f'<rect x="{x:.1f}" y="{y + h_other:.1f}" width="{bar:.1f}" '
-            f'height="{h_binding:.1f}" fill="{INK}"><title>{year}: {counts["binding"]} binding</title></rect>'
-        )
-        if h_other:
-            parts.append(
-                f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar:.1f}" height="{h_other:.1f}" '
-                f'fill="#8b8375"><title>{year}: {counts["other"]} other</title></rect>'
-            )
-        parts.append(
-            f'<text x="{x + bar / 2:.1f}" y="{y - 7:.1f}" class="chart-count">{total}</text>'
-        )
-        parts.append(
-            f'<text x="{x + bar / 2:.1f}" y="{base + 20}" class="chart-year">{year}</text>'
-        )
-    parts.append("</svg>")
-    return "".join(parts), "Instruments only; events in the timeline are not counted. Years present in the corpus; the scale is not continuous."
-
-
 def category_bars(category_counts: Counter) -> str:
     maximum = max(category_counts.values()) if category_counts else 1
     rows = []
@@ -657,50 +615,48 @@ TIMELINE_STORIES = {
 
 
 SET_DISPLAY = {
-    "iccpr-1966": ("ICCPR", "International Covenant on Civil and Political Rights"),
-    "vclt-1969": ("VCLT", "Vienna Convention on the Law of Treaties"),
-    "depa-2020": ("DEPA", "Digital Economy Partnership Agreement"),
-    "ksdpa-2022": ("KSDPA", "Korea–Singapore Digital Partnership Agreement"),
-    "sadea-2020": ("SADEA", "Singapore–Australia Digital Economy Agreement"),
-    "uksdea-2022": ("UKSDEA", "UK–Singapore Digital Economy Agreement"),
     "coe-cets-225": ("CETS 225", "Council of Europe Framework Convention on AI"),
     "waico-establishment-agreement-2026": (
         "WAICO",
         "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization",
     ),
+    "depa-2020": ("DEPA", "Digital Economy Partnership Agreement"),
+    "ksdpa-2022": ("KSDPA", "Korea–Singapore Digital Partnership Agreement"),
+    "sadea-2020": ("SADEA", "Singapore–Australia Digital Economy Agreement"),
+    "uksdea-2022": ("UKSDEA", "UK–Singapore Digital Economy Agreement"),
     "afcfta-digital-trade-protocol-2024": ("AfCFTA", "AfCFTA Digital Trade Protocol"),
     "eu-ai-act": ("EU AI Act", "Regulation (EU) 2024/1689"),
-    "oecd-ai-recommendation-2019": (
-        "OECD Recommendation",
-        "Recommendation of the Council on Artificial Intelligence",
-    ),
 }
 
 SET_ORDER = (
-    "iccpr-1966",
-    "vclt-1969",
+    "coe-cets-225",
+    "waico-establishment-agreement-2026",
     "depa-2020",
     "ksdpa-2022",
     "sadea-2020",
     "uksdea-2022",
-    "coe-cets-225",
-    "waico-establishment-agreement-2026",
     "afcfta-digital-trade-protocol-2024",
     "eu-ai-act",
-    "oecd-ai-recommendation-2019",
 )
+
+AI_ROUTE_CATEGORIES = {"ai_treaty", "agreement_ai_provisions", "supranational_law"}
+AI_SPECIFIC_CATEGORIES = {"ai_treaty", "supranational_law"}
 
 
 def sets_section(instruments: list[dict]) -> str:
-    """Name the instruments in each set instead of counting the regions."""
-    binding = {inst["id"] for inst in instruments if inst["binding_status"] == "binding"}
-    in_force = {inst["id"] for inst in instruments if inst["status"] == "in_force"}
+    """Show the AI hard-law gap: no text is AI-specific, a treaty and in force."""
+    selected = {
+        inst["id"]
+        for inst in instruments
+        if inst["category"] in AI_ROUTE_CATEGORIES and inst["binding_status"] == "binding"
+    }
+    ai_specific = {inst["id"] for inst in instruments if inst["category"] in AI_SPECIFIC_CATEGORIES}
     treaty = {
         inst["id"]
         for inst in instruments
         if inst["instrument_type"] in {"treaty", "protocol", "agreement"}
     }
-    selected = binding | in_force | treaty
+    in_force = {inst["id"] for inst in instruments if inst["status"] == "in_force"}
     order = {iid: index for index, iid in enumerate(SET_ORDER)}
     rows = sorted(
         (inst for inst in instruments if inst["id"] in selected),
@@ -730,37 +686,34 @@ def sets_section(instruments: list[dict]) -> str:
             f'<tr data-set-id="{esc(iid)}">'
             f'<th scope="row"><span class="sets-name">{esc(label)}</span>'
             f'<span class="sets-full">{esc(full)}</span></th>'
-            f'<td>{mark(iid in binding)}</td>'
-            f'<td>{mark(iid in in_force, inst.get("status") == "unknown")}</td>'
+            f'<td>{mark(iid in ai_specific)}</td>'
             f'<td>{mark(iid in treaty)}</td>'
+            f'<td>{mark(iid in in_force, inst.get("status") == "unknown")}</td>'
             f'</tr>'
         )
 
     return f'''<div class="sets-layout">
       <figure class="sets-figure">
         <div class="sets-legend">
-          <span><i class="sets-dot sets-dot-binding"></i>Binding</span>
-          <span><i class="sets-dot sets-dot-force"></i>In force</span>
+          <span><i class="sets-dot sets-dot-ai"></i>AI-specific</span>
           <span><i class="sets-dot sets-dot-treaty"></i>Treaty / agreement</span>
+          <span><i class="sets-dot sets-dot-force"></i>In force</span>
         </div>
         <svg viewBox="0 0 560 460" class="sets-svg" role="img" aria-labelledby="sets-title sets-desc">
-          <title id="sets-title">Binding, in force and treaty or agreement</title>
-          <desc id="sets-desc">Three overlapping sets. The table names every instrument that belongs to at least one set and marks which sets it belongs to.</desc>
-          <circle cx="205" cy="170" r="145" class="sets-circle sets-circle-binding"/>
-          <circle cx="355" cy="170" r="145" class="sets-circle sets-circle-force"/>
-          <circle cx="280" cy="285" r="145" class="sets-circle sets-circle-treaty"/>
-          <text x="16" y="40" class="sets-circle-label sets-label-binding">Binding</text>
-          <text x="544" y="40" text-anchor="end" class="sets-circle-label sets-label-force">In force</text>
-          <text x="280" y="452" text-anchor="middle" class="sets-circle-label sets-label-treaty">Treaty / agreement</text>
-          <text x="280" y="207" text-anchor="middle" class="sets-region-label">all three</text>
+          <title id="sets-title">AI-specific, treaty and in force</title>
+          <desc id="sets-desc">Three overlapping sets over the binding AI-relevant instruments. No instrument belongs to all three: the intersection is empty.</desc>
+          <circle cx="205" cy="170" r="145" class="sets-circle sets-circle-ai"/>
+          <circle cx="355" cy="170" r="145" class="sets-circle sets-circle-treaty"/>
+          <circle cx="280" cy="285" r="145" class="sets-circle sets-circle-force"/>
+          <text x="280" y="207" text-anchor="middle" class="sets-region-label">none</text>
         </svg>
-        <figcaption class="sets-caption">The circles show how the sets overlap; the table applies them instrument by instrument.</figcaption>
+        <figcaption class="sets-caption">No instrument belongs to all three sets. Each binding route satisfies a different pair. Section 02 shows who is a party; section 05 searches the catalogue but does not test the three properties together. This is the only view that applies all three at once.</figcaption>
       </figure>
       <div class="sets-table-wrap">
         <table class="sets-table">
-          <caption>Set membership, instrument by instrument</caption>
+          <caption>Binding instruments that address AI, by route</caption>
           <thead>
-            <tr><th scope="col">Instrument</th><th scope="col">Binding</th><th scope="col">In force</th><th scope="col"><span class="sets-th-full">Treaty / agreement</span><span class="sets-th-short">Treaty</span></th></tr>
+            <tr><th scope="col">Instrument</th><th scope="col"><span class="sets-th-full">AI-specific</span><span class="sets-th-short">AI</span></th><th scope="col"><span class="sets-th-full">Treaty / agreement</span><span class="sets-th-short">Treaty</span></th><th scope="col">In force</th></tr>
           </thead>
           <tbody>
             {"".join(body)}
@@ -772,7 +725,7 @@ def sets_section(instruments: list[dict]) -> str:
 
 
 def combined_timeline(instruments: list[dict], events: list[dict]) -> str:
-    """One chronology: instruments as highlighted boxes, events as plain rows."""
+    """One chronology: key instruments as boxes, other records compact, events as rows."""
     kind_labels = {
         "market": "Market event",
         "bilateral": "Bilateral channel",
@@ -801,21 +754,39 @@ def combined_timeline(instruments: list[dict], events: list[dict]) -> str:
             if source
             else ""
         )
-        body = (
-            f'<li class="tl-item tl-instrument" data-instrument-id="{esc(iid)}">'
-            f'<div class="tl-marker"><time datetime="{esc(date)}">{esc(display_timeline_date(date))}</time>'
-            f'<span class="tl-dot" aria-hidden="true"></span></div>'
-            f'<div class="tl-body tl-card">'
-            f'<p class="tl-meta"><span class="tl-kind">Instrument</span> · {esc(category)} · '
-            f'{esc(binding)} · {esc(status)}</p>'
-            f'<h3><a href="{esc(record_url(inst))}" target="_blank" rel="noopener">{esc(title)}</a></h3>'
-            f'<p class="tl-why">{esc(why)}</p>'
-            f'{history}'
-            f'<p class="tl-links">{source_html}'
-            f'{" · " if source_html else ""}'
-            f'<a href="{esc(record_url(inst))}" target="_blank" rel="noopener">record</a></p>'
-            f'</div></li>'
-        )
+        details = f'<details class="tl-details"><summary>Dates and status</summary>{history}</details>' if history else ""
+        if iid in TIMELINE_HIGHLIGHTS:
+            body = (
+                f'<li class="tl-item tl-instrument" data-weight="highlight" data-instrument-id="{esc(iid)}">'
+                f'<div class="tl-marker"><time datetime="{esc(date)}">{esc(display_timeline_date(date))}</time>'
+                f'<span class="tl-dot" aria-hidden="true"></span></div>'
+                f'<div class="tl-body tl-card">'
+                f'<p class="tl-meta"><span class="tl-kind">Key instrument</span> · {esc(category)} · '
+                f'{esc(binding)} · {esc(status)}</p>'
+                f'<h3><a href="{esc(record_url(inst))}" target="_blank" rel="noopener">{esc(title)}</a></h3>'
+                f'<p class="tl-why">{esc(why)}</p>'
+                f'{history}'
+                f'<p class="tl-links">{source_html}'
+                f'{" · " if source_html else ""}'
+                f'<a href="{esc(record_url(inst))}" target="_blank" rel="noopener">record</a></p>'
+                f'</div></li>'
+            )
+        else:
+            body = (
+                f'<li class="tl-item tl-instrument" data-weight="record" data-instrument-id="{esc(iid)}">'
+                f'<div class="tl-marker"><time datetime="{esc(date)}">{esc(display_timeline_date(date))}</time>'
+                f'<span class="tl-dot" aria-hidden="true"></span></div>'
+                f'<div class="tl-body">'
+                f'<p class="tl-meta"><span class="tl-kind">Instrument</span> · {esc(category)} · '
+                f'{esc(binding)} · {esc(status)}</p>'
+                f'<h3><a href="{esc(record_url(inst))}" target="_blank" rel="noopener">{esc(title)}</a></h3>'
+                f'<p class="tl-why">{esc(why)}</p>'
+                f'{details}'
+                f'<p class="tl-links">{source_html}'
+                f'{" · " if source_html else ""}'
+                f'<a href="{esc(record_url(inst))}" target="_blank" rel="noopener">record</a></p>'
+                f'</div></li>'
+            )
         items.append((date, 1, iid, body))
 
     for event in events:
@@ -1472,7 +1443,6 @@ def main() -> int:
     map_binding_count = sum(1 for item in map_entries if item["binding"])
     map_nonbinding_count = len(map_entries) - map_binding_count
 
-    chart, chart_note = year_chart(instruments)
     unseen_events = json.loads(UNSEEN.read_text(encoding="utf-8"))
     off_record = json.loads(OFF_RECORD.read_text(encoding="utf-8"))
     off_record_html = off_record_cards(off_record["entries"], by_id)
@@ -1552,7 +1522,7 @@ def main() -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI Law Atlas</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI law.">
-<link rel="stylesheet" href="assets/style.css?v=20">
+<link rel="stylesheet" href="assets/style.css?v=23">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -1580,9 +1550,9 @@ def main() -> int:
       <h2>What this corpus contains</h2>
       <div class="stats">{stats_html}</div>
       <div class="index-grid">
-        <a class="index-card" href="#form"><span class="index-number">01</span><strong>Overlapping sets</strong><span>Binding, in force and treaty / agreement applied instrument by instrument: the treaties in force, those not in force, and the rules that are not treaties.</span></a>
+        <a class="index-card" href="#form"><span class="index-number">01</span><strong>The hard-law gap</strong><span>No instrument in this corpus is AI-specific, a treaty and in force at once. The section shows what each route actually covers.</span></a>
         <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>Nine maps of the State-level acts recorded in the corpus: signatures, ratifications, endorsements and collective issuances.</span></a>
-        <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: highlighted boxes for the texts, plain rows for what left no text.</span></a>
+        <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: key texts highlighted, other records compact, events as plain rows.</span></a>
         <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Off the record</strong><span>Legal doctrine, think-tank analysis and civil-society critique: the argument around the record, never used as evidence for it.</span></a>
         <a class="index-card" href="#catalogue"><span class="index-number">05</span><strong>Catalogue</strong><span>The filterable table of every record, with legal force, status, verification level and a link to the JSON.</span></a>
         <a class="index-card" href="#method"><span class="index-number">06</span><strong>Method</strong><span>Sources, hashes, validation, the difference between a declared and a verified count, and the limits of the corpus.</span></a>
@@ -1593,14 +1563,15 @@ def main() -> int:
     <section id="form" class="section">
     <div class="wrap">
       <p class="eyebrow">01 · Sets</p>
-      <h2>The sets, and where the treaties sit</h2>
-      <p class="lede">Binding, in force and treaty / agreement are different questions. A treaty can be binding before it enters into force; a rule can be in force without being a treaty; a political declaration can be neither. The table applies the three sets to the instruments that belong to at least one of them.</p>
+      <h2>No instrument in this corpus is AI-specific, a treaty and in force</h2>
+      <p class="lede">That is the finding the three sets expose. Among the binding instruments that address AI, no text satisfies all three properties at once. Each route satisfies a different pair; the table names the instruments and shows the gap.</p>
       {sets_html}
       <div class="sets-reading">
-        <p><strong>The treaty layer.</strong> The ICCPR and the VCLT are general treaties. DEPA, KSDPA, SADEA and UKSDEA are digital trade agreements with AI provisions. All of them are binding and in force. CETS 225 is binding but not in force. WAICO and the AfCFTA Protocol are binding, but their entry into force is unconfirmed — not a recorded “no”.</p>
-        <p><strong>Outside the treaty form.</strong> The EU AI Act is binding and in force, but it is EU law, not an international treaty. The OECD recommendation is recorded as in force in the OECD’s sense, although it binds no one. Declarations, resolutions, standards, strategies, codes and guidance sit outside these three sets.</p>
+        <p><strong>The AI-specific treaty layer is not in force.</strong> CETS 225 is binding but not in force. WAICO is binding, but no deposit or entry-into-force date was verified, so its status is unconfirmed — not a recorded “no”.</p>
+        <p><strong>The treaty layer in force is trade law.</strong> DEPA, KSDPA, SADEA and UKSDEA are in force; their AI clauses are cooperative and sit inside digital-trade agreements. The AfCFTA Protocol has an AI annex with “shall” obligations, but its entry into force is unconfirmed. None is AI-specific.</p>
+        <p><strong>The AI-specific instrument in force is regional.</strong> The EU AI Act is binding and in force, but it is EU law, not an international treaty. No international AI-specific instrument occupies the centre of the three sets.</p>
       </div>
-      <p class="source-note">Membership is derived mechanically from <code>binding_status</code>, <code>status</code> and <code>instrument_type</code>. “In force” is the recorded status of the instrument, not a conclusion that it creates a legal obligation. A question mark marks an entry into force that the record treats as unconfirmed, not as a negative.</p>
+      <p class="source-note">The table covers binding instruments in the AI-treaty, AI-provisions and EU-law categories. General background law (the ICCPR and the VCLT) is not AI-specific and is excluded; non-binding AI instruments are outside this comparison. Membership is derived from <code>category</code>, <code>instrument_type</code> and <code>status</code>. A question mark marks an entry into force that the record treats as unconfirmed, not as a negative.</p>
     </div>
   </section>
 
@@ -1621,13 +1592,12 @@ def main() -> int:
     <div class="wrap">
       <p class="eyebrow">03 · Timeline</p>
       <h2>The story, with the instruments in it</h2>
-      <p class="lede">{total} instruments and {len(unseen_events)} events in one chronology, 1966–2026. The instruments are highlighted boxes; between them sit the bilaterals, hotlines, summits and market shocks that produced no text. The chart counts instruments adopted per year; the events are not counted.</p>
+      <p class="lede">{total} instruments and {len(unseen_events)} events in one chronology, 1966–2026. Only the texts that changed the legal position or opened a route get a box; the rest are compact records. Between them sit the bilaterals, hotlines, summits and market shocks that produced no text.</p>
       <div class="timeline-key">
-        <span><i class="key-instrument"></i>Instrument</span>
+        <span><i class="key-highlight"></i>Key instrument</span>
+        <span><i class="key-record"></i>Other instrument</span>
         <span><i class="key-event"></i>Event without a text</span>
       </div>
-      {chart}
-      <p class="source-note">{esc(chart_note)}</p>
       {combined_timeline(instruments, unseen_events)}
       {timeline_note}
     </div>

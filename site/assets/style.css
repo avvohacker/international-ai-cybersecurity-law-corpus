@@ -469,9 +469,6 @@ p { margin: 0 0 14px; }
 
 
 /* Charts */
-.chart-svg { display: block; width: 100%; height: auto; margin: 20px 0 0; }
-.chart-count { font-family: var(--sans); font-size: 12px; font-weight: 700; fill: var(--ink); text-anchor: middle; }
-.chart-year { font-family: var(--mono); font-size: 11px; fill: var(--muted); text-anchor: middle; }
 
 /* Index */
 .index-grid {
@@ -597,23 +594,14 @@ p { margin: 0 0 14px; }
 }
 .sets-legend span { display: inline-flex; align-items: center; gap: 6px; }
 .sets-dot { width: 11px; height: 11px; flex: none; border: 2px solid; border-radius: 50%; }
-.sets-dot-binding { border-color: var(--teal); }
-.sets-dot-force { border-color: var(--gold); }
+.sets-dot-ai { border-color: var(--teal); }
 .sets-dot-treaty { border-color: var(--blue); }
+.sets-dot-force { border-color: var(--gold); }
 .sets-svg { display: block; width: 100%; height: auto; max-height: 390px; }
 .sets-circle { fill-opacity: 0.07; stroke-width: 1.8; }
-.sets-circle-binding { fill: var(--teal); stroke: var(--teal); }
-.sets-circle-force { fill: var(--gold); stroke: var(--gold); }
+.sets-circle-ai { fill: var(--teal); stroke: var(--teal); }
 .sets-circle-treaty { fill: var(--blue); stroke: var(--blue); }
-.sets-circle-label {
-  font-family: var(--mono);
-  font-size: 14px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
-.sets-label-binding { fill: var(--teal); }
-.sets-label-force { fill: #8a641c; }
-.sets-label-treaty { fill: var(--blue); }
+.sets-circle-force { fill: var(--gold); stroke: var(--gold); }
 .sets-region-label {
   font-family: var(--serif);
   font-size: 16px;
@@ -688,8 +676,8 @@ p { margin: 0 0 14px; }
 }
 .sets-reading {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
   margin-top: 26px;
   padding-top: 20px;
   border-top: 1px solid var(--line);
@@ -709,15 +697,37 @@ p { margin: 0 0 14px; }
   color: var(--muted);
 }
 .timeline-key span { display: inline-flex; align-items: center; gap: 7px; }
-.key-instrument { width: 11px; height: 11px; background: var(--teal); }
+.key-highlight, .key-record, .key-event { display: inline-block; }
+.key-highlight { width: 11px; height: 11px; background: var(--teal); }
+.key-record { width: 7px; height: 7px; background: var(--muted); transform: rotate(45deg); }
 .key-event { width: 9px; height: 9px; border: 1px solid var(--muted); border-radius: 50%; }
-.tl-instrument .tl-card {
+.tl-item[data-weight="highlight"] .tl-card {
   padding: 18px 20px 16px;
   background: #fffdf8;
   border: 1px solid #c9b995;
   border-left: 4px solid var(--teal);
 }
-.tl-instrument .tl-dot { width: 11px; height: 11px; transform: rotate(45deg); }
+.tl-item[data-weight="highlight"] .tl-dot { width: 11px; height: 11px; }
+.tl-item[data-weight="record"] { padding: 18px 0 20px; }
+.tl-details { margin: 8px 0 0; font-size: 12px; color: var(--muted); }
+.tl-details summary {
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.tl-details .tl-history { margin-top: 6px; font-size: 12px; }
+.tl-item[data-weight="record"] .tl-dot {
+  width: 7px;
+  height: 7px;
+  margin-top: 11px;
+  background: var(--muted);
+  transform: rotate(45deg);
+}
+.tl-item[data-weight="record"] .tl-body h3 { font-size: 18px; margin-bottom: 7px; }
+.tl-item[data-weight="record"] .tl-why { font-size: 13.5px; line-height: 1.55; color: var(--muted); }
+.tl-item[data-weight="record"] .tl-links { margin-top: 8px; }
 .tl-event .tl-dot { background: transparent; border: 1px solid var(--muted); border-radius: 50%; }
 .tl-kind { color: var(--teal); font-weight: 600; }
 .tl-event .tl-kind { color: var(--muted); }
@@ -862,7 +872,6 @@ code { font-family: var(--mono); font-size: 0.88em; background: rgba(0,0,0,0.06)
   .otr-grid { grid-template-columns: 1fr; gap: 16px; }
   .tl-instrument .tl-card { padding: 14px 14px 12px; }
   .sets-layout { padding: 14px; }
-  .sets-circle-label, .sets-region-label { display: none; }
   .sets-table thead th:not(:first-child) { width: 40px; font-size: 8px; letter-spacing: 0; }
   .sets-th-full { display: none; }
   .sets-th-short { display: inline; }
