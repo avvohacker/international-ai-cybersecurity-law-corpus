@@ -645,7 +645,7 @@ TIMELINE_STORIES = {
     "brics-ai-statement-2025": "The coalition text. The BRICS leaders issue a statement on AI governance centred on digital sovereignty and the Global South. It has no signature block; the record counts 11 member States rather than 11 signatories, and Saudi participation is contested between the presidency's list and the Saudi news agency.",
     "paris-ai-action-summit-statement-2025": "The widest endorsement. The Paris statement is endorsed by 65 States and organisations on the Élysée page, including China and India and excluding the United States and the United Kingdom. It is political, not legal, and the count itself is disputed between the page and the PDF.",
     "pax-silica-declaration-2025": "The US-led coalition. Pax Silica is built around supply-chain access, trusted technology and national tools, not around a treaty. Its 26 'signatories' endorse a political declaration; the word is the source's, not a legal qualification.",
-    "san-francisco-declaration-2026": "The coalition becomes operational. Ten governments sign a declaration on sensitive technologies, critical infrastructure and supply-chain security, and announce five working groups. It is still political: no depositary, no ratification, no enforcement. It is the sharpest contrast with WAICO's treaty form.",
+    "san-francisco-declaration-2026": "The coalition becomes operational. At the Pax Silica Founders Retreat in San Francisco, ten governments sign a declaration on sensitive technologies, critical infrastructure and supply-chain security, and announce five working groups. It is still political: no depositary, no ratification, no enforcement. It is the sharpest contrast with WAICO's treaty form.",
     "new-delhi-declaration-2026": "The summit list grows. The New Delhi Declaration is endorsed by 92 participants — 90 States, the EU and IFAD — making it the widest State-level AI text in the corpus. It remains a declaration, and the endorsement list differs between the PIB annex and the MEA page.",
     "us-uk-ai-safety-mou-2024": "The bilateral institute channel. The UK and US AI Safety Institutes sign a memorandum of understanding to cooperate on testing and evaluation. The full text is unpublished and the MOU is not a treaty; it is a political commitment between two administrations.",
     "us-eu-ttc-ai-safety-dialogue-2024": "The transatlantic commitment. The US–EU Trade and Technology Council records a commitment to launch an AI-safety dialogue inside a broader joint statement. It is not a stand-alone instrument and creates no legal obligation.",
@@ -1531,7 +1531,7 @@ def main() -> int:
   <section id="index" class="section section-dark">
     <div class="wrap">
       <p class="eyebrow">00 · Index</p>
-      <h2>What this atlas contains</h2>
+      <h2>What this corpus contains</h2>
       <div class="stats">{stats_html}</div>
       <div class="index-grid">
         <a class="index-card" href="#form"><span class="index-number">01</span><strong>Overlapping sets</strong><span>Binding, in force and treaty / agreement. The chart counts each region once; the list reconciles the numbers and shows the 35 records outside all three.</span></a>
