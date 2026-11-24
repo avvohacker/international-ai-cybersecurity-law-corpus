@@ -731,15 +731,17 @@ class TestBuild(unittest.TestCase):
             "01 · Sets",
             "02 · Nine maps",
             "03 · Timeline",
-            "04 · Off the record",
+            "04 · Reading room",
             "05 · The catalogue",
             "06 · Method and limits",
         ):
             self.assertIn(label, page)
         self.assertIn("The treaties, declarations and statements", page)
         self.assertIn("The argument around the record", page)
-        self.assertEqual(page.count('class="up-column"'), 6)
-        self.assertIn("records belong to none of the sets above", page)
+        self.assertIn("Three circles, not three boxes", page)
+        self.assertEqual(page.count('class="venn-count'), 4)
+        self.assertIn("35 records outside all three", page)
+        self.assertIn("10 binding = 6 + 3 + 1", page)
         self.assertLess(page.find('id="index"'), page.find('id="form"'))
         self.assertLess(page.find('id="form"'), page.find('id="maps"'))
         self.assertLess(page.find('id="maps"'), page.find('id="timeline"'))
@@ -747,7 +749,7 @@ class TestBuild(unittest.TestCase):
         self.assertLess(page.find('id="unseen"'), page.find('id="catalogue"'))
         self.assertGreaterEqual(page.count('class="tl-item tl-event unseen-item"'), 6)
         self.assertEqual(page.count('class="tl-item tl-instrument"'), 46)
-        self.assertIn("One corpus, overlapping sets", page)
+        self.assertIn("Three circles, not three boxes", page)
         self.assertIn("The story, with the instruments in it", page)
         self.assertIn("The argument around the record", page)
         self.assertNotIn("The shape of the corpus", page)
