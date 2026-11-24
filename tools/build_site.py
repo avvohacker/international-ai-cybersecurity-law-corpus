@@ -30,6 +30,7 @@ OFF_RECORD = ROOT / "data" / "off-the-record.json"
 REPO = "https://github.com/avvohacker/international-ai-cybersecurity-law-corpus"
 
 PARIS_ID = "paris-ai-action-summit-statement-2025"
+PARIS_CALL_ID = "paris-call-cyberspace-2018"
 BUDAPEST_ID = "budapest-convention-2001"
 UN_CYBER_ID = "un-cybercrime-convention-2024"
 MALABO_ID = "au-malabo-convention-2014"
@@ -46,6 +47,7 @@ NEW_DELHI_ID = "new-delhi-declaration-2026"
 BRICS_ID = "brics-ai-statement-2025"
 MAP_INSTRUMENT_IDS = (
     PARIS_ID,
+    PARIS_CALL_ID,
     BLETCHLEY_ID,
     SEOUL_ID,
     MILITARY_ID,
@@ -115,6 +117,11 @@ SOURCE_LABELS = {
     "australia-pdf": "Australian Government signed PDF",
     "state-taiwan-joint-statement": "State Department Taiwan statement",
     "state-ai-opportunity": "State Department AI Opportunity page",
+    "paris-call-text": "Paris Call text",
+    "paris-call-supporters": "Official supporters list",
+    "paris-call-page": "Official homepage counters",
+    "paris-call-csv": "Official supporters CSV",
+    "paris-call-source": "Official source repository (commit 916433b)",
 }
 
 STATUS_LABELS = {
@@ -624,6 +631,7 @@ TIMELINE_STORIES = {
     "china-global-ai-governance-initiative-2023": "The Chinese position before WAICO. The initiative sets out sovereignty, development, capacity building and UN-centred governance. It is a unilateral policy text, not a treaty; it is the policy line that later becomes an organisation.",
     "waico-establishment-agreement-2026": "The organisation. China convened the signing of a constituent treaty for the World Artificial Intelligence Cooperation Organization in Shanghai: a Council, a Secretariat, a depositary and a civilian-only mandate. It reports 38 founding members, identifies 37, and no deposit was verified; entry into force is not confirmed.",
     "brics-ai-statement-2025": "The coalition text. The BRICS leaders issue a statement on AI governance centred on digital sovereignty and the Global South. It has no signature block; the record counts 11 member States rather than 11 signatories, and Saudi participation is contested between the presidency's list and the Saudi news agency.",
+    "paris-call-cyberspace-2018": "The multistakeholder turn. France launched the Paris Call for Trust and Security in Cyberspace at the Internet Governance Forum and the Paris Peace Forum, opening nine cyber principles to States, local authorities, companies and civil society. It now lists 81 States and the European Union. It is political support, not a treaty, and creates no legal obligation.",
     "paris-ai-action-summit-statement-2025": "The widest endorsement. The Paris statement is endorsed by 65 States and organisations on the Élysée page, including China and India and excluding the United States and the United Kingdom. It is political, not legal, and the count itself is disputed between the page and the PDF.",
     "pax-silica-declaration-2025": "The US-led coalition. Pax Silica is built around supply-chain access, trusted technology and national tools, not around a treaty. Its 26 'signatories' endorse a political declaration; the word is the source's, not a legal qualification.",
     "san-francisco-declaration-2026": "The coalition becomes operational. At the Pax Silica Founders Retreat in San Francisco, ten governments sign a declaration on sensitive technologies, critical infrastructure and supply-chain security, and announce five working groups. It is still political: no depositary, no ratification, no enforcement. It is the sharpest contrast with WAICO's treaty form.",
@@ -934,6 +942,7 @@ def main() -> int:
     verified_on = max((inst.get("dates") or {}).get("verified_on", "") for inst in instruments)
 
     paris = by_id[PARIS_ID]
+    paris_call = by_id[PARIS_CALL_ID]
     budapest = by_id[BUDAPEST_ID]
     un_cyber = by_id[UN_CYBER_ID]
     malabo = by_id[MALABO_ID]
@@ -959,6 +968,7 @@ def main() -> int:
         ]
 
     paris_states = state_names(paris)
+    paris_call_states = state_names(paris_call)
     cets_states = state_names(cets)
     bletchley_states = state_names(bletchley)
     seoul_states = state_names(seoul)
@@ -1080,6 +1090,7 @@ def main() -> int:
         return values
 
     paris_iso = iso_set(paris_states, "Paris 2025")
+    paris_call_iso = iso_set(paris_call_states, "Paris Call 2018")
     cets_iso = iso_set(cets_states, "CETS 225")
     bletchley_iso = iso_set(bletchley_states, "Bletchley 2023")
     seoul_iso = iso_set(seoul_states, "Seoul 2024")
@@ -1100,6 +1111,7 @@ def main() -> int:
 
     for map_name, values in (
         ("Paris 2025", paris_iso),
+        ("Paris Call 2018", paris_call_iso),
         ("Budapest Convention", budapest_iso),
         ("ETS 189", ets189_iso),
         ("CETS 224", cets224_iso),
@@ -1121,6 +1133,7 @@ def main() -> int:
             )
 
     paris_status = {iso: "endorsed" for iso in paris_iso}
+    paris_call_status = {iso: "endorsed" for iso in paris_call_iso}
     bletchley_status = {iso: "endorsed" for iso in bletchley_iso}
     seoul_status = {iso: "endorsed" for iso in seoul_iso}
     military_status = {iso: "endorsed" for iso in military_iso}
@@ -1198,6 +1211,7 @@ def main() -> int:
         return notes
 
     paris_org_notes = add_org_members(paris_status, paris, "endorsed")
+    paris_call_org_notes = add_org_members(paris_call_status, paris_call, "endorsed")
     bletchley_org_notes = add_org_members(bletchley_status, bletchley, "endorsed")
     seoul_org_notes = add_org_members(seoul_status, seoul, "endorsed")
     cets_org_notes = add_org_members(cets_status, cets, "signed")
@@ -1592,6 +1606,27 @@ def main() -> int:
             ),
         ),
         map_figure(
+            paris_call,
+            "paris-call",
+            "Paris Call 2018",
+            f"{len(paris_call_states)} States + {org_short(paris_call)} · current 24 November 2026",
+            f"World map. Medium blue: {len(paris_call_states)} States listed as supporters of the Paris Call. Sand: States not listed. The European Union is a separate supporter and is not shown on the State map.",
+            paris_call_status,
+            paris_call_org_notes,
+            endorsement_legend,
+            note=(
+                f"Political endorsement, not signature or ratification. The official supporters "
+                f"list names {len(paris_call_states)} States and the European Union; the official "
+                "homepage also counts 81 States. The record is a dated snapshot of a dynamic list; "
+                "the official source repository at commit 916433b contains 81 State files. The "
+                "European Union is not shown on the State map, and the non-State supporters are "
+                "outside this map."
+            ),
+            legend_note=(
+                f"{len(paris_call_states)} endorsing States + EU · list current 24 November 2026"
+            ),
+        ),
+        map_figure(
             paris,
             "paris",
             "Paris 2025",
@@ -1896,7 +1931,7 @@ def main() -> int:
       <p class="eyebrow">00 · Index</p>
       <h2>What this corpus contains</h2>
       <div class="stats">{stats_html}</div>
-      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer includes the Budapest Convention, its two protocols (ETS 189 and CETS 224), the AU Malabo Convention, the UN Cybercrime Convention and two EU internal-law acts, NIS2 and the Cyber Resilience Act; the remaining cyber families are still being built. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
+      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer includes the Budapest Convention, its two protocols (ETS 189 and CETS 224), the AU Malabo Convention, the UN Cybercrime Convention, two EU internal-law acts (NIS2 and the Cyber Resilience Act) and the non-binding Paris Call; the remaining cyber families are still being built. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
       <div class="index-grid">
         <a class="index-card" href="#form"><span class="index-number">01</span><strong>AI, cyber and binding</strong><span>Three sets over all records: AI domain, cyber domain and binding international law. EU internal law sits in the AI or cyber set but outside binding.</span></a>
         <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>{number_word(len(map_entries)).capitalize()} maps of the State-level acts recorded in the corpus: signatures, ratifications, accessions, endorsements and collective issuances.</span></a>
@@ -1917,7 +1952,7 @@ def main() -> int:
       <div class="sets-reading">
         <p><strong>{international_binding} instruments are binding international law.</strong> Nine address AI, five address cyber, and none addresses both. They are the boxed records in section 03; their participation and status are in section 02.</p>
         <p><strong>Three EU acts are internal law, not international binding.</strong> The AI Act is in the AI set; NIS2 and the Cyber Resilience Act are in the cyber set. They are catalogued and shown in the timeline without boxes because no State signs or ratifies them and they do not bind third States as treaties.</p>
-        <p><strong>No record is both AI and cyber.</strong> Outside the binding set, the AI side holds 36 non-binding records and the EU AI Act; the cyber side holds NIS2 and the Cyber Resilience Act. The catalogue in section 05 lists every record and its metadata.</p>
+        <p><strong>No record is both AI and cyber.</strong> Outside the binding set, the AI side holds 36 non-binding records and the EU AI Act; the cyber side holds NIS2, the Cyber Resilience Act and the non-binding Paris Call. The catalogue in section 05 lists every record and its metadata.</p>
       </div>
       <p class="source-note">Membership is derived from <code>domains</code>, <code>binding_status</code> and <code>category</code>. “International binding” means a treaty or other binding international instrument; supranational EU legislation is excluded from that set but remains <code>binding</code> in its own legal order. The rows are mutually exclusive and sum to the {total} records. EU internal law is not mapped.</p>
     </div>
@@ -2005,6 +2040,7 @@ def main() -> int:
             <li>WAICO: entry into force is not confirmed. {len(waico_states)} founding members are identified of 38 reported; China approved ratification domestically on 6 November 2026 but no deposit was verified, so the number of deposits is unknown.</li>
             <li>{number_word(ai_count).capitalize()} AI-specific treaties: CETS 225 and the WAICO Agreement. This does not mean no others exist, but that no other has been located and verified.</li>
             <li>The Arab League cybercrime convention is identified but not catalogued: the <a href="http://www.leagueofarabstates.net/ar/legalnetwork/Pages/agreements_details.aspx?RID=73" target="_blank" rel="noopener">official LAS treaty page</a> links a ratification table created in 2018 and undated as a status instrument. It records 18 signatures and 11 ratifications, with the latest deposit in 2017; no current dated depositary table was verified, so no record or map is asserted.</li>
+            <li>The UN GGE and OEWG cyber reports are non-binding consensus reports, not texts opened for endorsement. The GGE publishes an official list of 25 appointed experts and the OEWG was open to all UN member States; neither list records supporters or adherents, so they are not catalogued or mapped as if they had a supporter list. The Paris Call supplies the non-binding cyber map instead.</li>
             <li>No international complaint, sanction or judicial review mechanism is established by these instruments.</li>
             <li>Latin America, the Middle East and Central Asia remain uncovered by verified regional instruments.</li>
             <li><strong>Scope of sources.</strong> This is a register of written instruments, not an inventory of international law. Customary international law, general principles, <em>jus cogens</em>, Security Council resolutions (none AI-specific was located), decisions of courts and tribunals, international humanitarian law and general human-rights treaties beyond the ICCPR are outside the corpus. Section 03 interleaves some events that produced no instrument, but it is a selection, not a register. Section 04 lists non-official analysis and is not evidence for any record.</li>

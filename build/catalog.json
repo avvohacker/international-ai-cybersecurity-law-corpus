@@ -2,7 +2,7 @@
   "counts": {
     "by_binding": {
       "binding": 17,
-      "non_binding": 36
+      "non_binding": 37
     },
     "by_category": {
       "agreement_ai_provisions": 5,
@@ -10,22 +10,22 @@
       "cyber_treaty": 5,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 28,
+      "non_binding_instrument": 29,
       "preparatory_interpretive": 2,
       "supranational_law": 3,
       "technical_standard": 5
     },
     "by_domain": {
       "ai": 46,
-      "cyber": 7,
+      "cyber": 8,
       "joint": 0
     },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 43
+      "metadata_verified": 44
     },
     "full_texts": 16,
-    "total": 53,
+    "total": 54,
     "with_local_original": 15
   },
   "full_text_ids": [
@@ -7941,6 +7941,595 @@
         ],
         "level": "full_text_checked",
         "notes": "Full English text stored and read. The endorser list is the principal uncertainty: three official publications give 60, 64 and 65 entries, and the differences are not explained. The record uses the current Élysée page (65) and preserves the discrepancy."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2018-11-12",
+        "notes": "Launched by the President of the French Republic at the Internet Governance Forum at UNESCO and the Paris Peace Forum. The European Union and the United States joined on 11 November 2021. The supporters list is a current online list, not a dated depositary table; this record is a snapshot at 24 November 2026.",
+        "published": "2018-11-12",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "Non-binding: the Call creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "The official supporters page is a dynamic list with no formal update log or depositary; the record is a snapshot at 24 November 2026 and later additions are not reflected.",
+        "Only the 81 State supporters and the European Union are recorded and mapped; the 36 public authorities, 390 civil-society organisations and 706 private-sector supporters reported by the official homepage are outside this State-level map.",
+        "The homepage counters and the official site's source data do not fully agree for non-State categories (public authorities, organisations and companies differ by one or two); the State count is 81 in both.",
+        "The European Union is a supporter but is not a State and is not shown on the State map.",
+        "No full text is stored; the official English and French texts are linked but not acquired."
+      ],
+      "id": "paris-call-cyberspace-2018",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "President of the French Republic",
+          "role": "issuer",
+          "url": "https://pariscall.international/en/call"
+        },
+        {
+          "name": "Paris Peace Forum",
+          "role": "host",
+          "url": "https://pariscall.international/en"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr"
+        ],
+        "note": "English and French are the two published language versions of the Call. The Call is not a treaty and has no authentic-language clause; only the English text was read.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A call opened to States, local governments, companies and civil-society organisations. It contains no signature, ratification, depositary, entry-into-force or enforcement clause; support is political endorsement, not legal obligation.",
+        "source_ids": [
+          "paris-call-text"
+        ]
+      },
+      "parties": {
+        "act": "endorsement",
+        "as_of": "2026-11-24",
+        "counts": {
+          "endorsements": {
+            "basis": "verified_total",
+            "note": "81 State entries plus the European Union, all read from the official supporter list. The official homepage separately counts 81 States.",
+            "source_ids": [
+              "paris-call-supporters",
+              "paris-call-source"
+            ],
+            "total": 82,
+            "verified": 82
+          },
+          "ratifications": {
+            "basis": "not_applicable",
+            "total": null,
+            "verified": 0
+          }
+        },
+        "declarations": [],
+        "entries": [
+          {
+            "party": "Albania",
+            "role": "endorser"
+          },
+          {
+            "party": "Andorra",
+            "role": "endorser"
+          },
+          {
+            "party": "Argentina",
+            "role": "endorser"
+          },
+          {
+            "party": "Armenia",
+            "role": "endorser"
+          },
+          {
+            "party": "Australia",
+            "role": "endorser"
+          },
+          {
+            "party": "Austria",
+            "role": "endorser"
+          },
+          {
+            "party": "Belgium",
+            "role": "endorser"
+          },
+          {
+            "party": "Benin",
+            "role": "endorser"
+          },
+          {
+            "party": "Bosnia and Herzegovina",
+            "role": "endorser"
+          },
+          {
+            "party": "Bulgaria",
+            "role": "endorser"
+          },
+          {
+            "party": "Burkina Faso",
+            "role": "endorser"
+          },
+          {
+            "party": "Cambodia",
+            "role": "endorser"
+          },
+          {
+            "party": "Canada",
+            "role": "endorser"
+          },
+          {
+            "party": "Central African Republic",
+            "role": "endorser"
+          },
+          {
+            "party": "Chile",
+            "role": "endorser"
+          },
+          {
+            "party": "Colombia",
+            "role": "endorser"
+          },
+          {
+            "party": "Congo",
+            "role": "endorser"
+          },
+          {
+            "party": "Croatia",
+            "role": "endorser"
+          },
+          {
+            "party": "Cyprus",
+            "role": "endorser"
+          },
+          {
+            "party": "Czech Republic",
+            "role": "endorser"
+          },
+          {
+            "party": "Denmark",
+            "role": "endorser"
+          },
+          {
+            "party": "Dominican Republic",
+            "role": "endorser"
+          },
+          {
+            "party": "Ecuador",
+            "role": "endorser"
+          },
+          {
+            "party": "El Salvador",
+            "role": "endorser"
+          },
+          {
+            "party": "Estonia",
+            "role": "endorser"
+          },
+          {
+            "party": "Finland",
+            "role": "endorser"
+          },
+          {
+            "party": "France",
+            "role": "endorser"
+          },
+          {
+            "party": "Gabon",
+            "role": "endorser"
+          },
+          {
+            "party": "Germany",
+            "role": "endorser"
+          },
+          {
+            "party": "Greece",
+            "role": "endorser"
+          },
+          {
+            "party": "Guatemala",
+            "role": "endorser"
+          },
+          {
+            "party": "Guinea",
+            "role": "endorser"
+          },
+          {
+            "party": "Hungary",
+            "role": "endorser"
+          },
+          {
+            "party": "Iceland",
+            "role": "endorser"
+          },
+          {
+            "party": "Ireland",
+            "role": "endorser"
+          },
+          {
+            "party": "Italy",
+            "role": "endorser"
+          },
+          {
+            "party": "Japan",
+            "role": "endorser"
+          },
+          {
+            "party": "Kuwait",
+            "role": "endorser"
+          },
+          {
+            "party": "Latvia",
+            "role": "endorser"
+          },
+          {
+            "party": "Lebanon",
+            "role": "endorser"
+          },
+          {
+            "party": "Liechtenstein",
+            "role": "endorser"
+          },
+          {
+            "party": "Lithuania",
+            "role": "endorser"
+          },
+          {
+            "party": "Luxembourg",
+            "role": "endorser"
+          },
+          {
+            "party": "Malta",
+            "role": "endorser"
+          },
+          {
+            "party": "Mauritania",
+            "role": "endorser"
+          },
+          {
+            "party": "Mauritius",
+            "role": "endorser"
+          },
+          {
+            "party": "Mexico",
+            "role": "endorser"
+          },
+          {
+            "party": "Moldova",
+            "role": "endorser"
+          },
+          {
+            "party": "Monaco",
+            "role": "endorser"
+          },
+          {
+            "party": "Mongolia",
+            "role": "endorser"
+          },
+          {
+            "party": "Montenegro",
+            "role": "endorser"
+          },
+          {
+            "party": "Morocco",
+            "role": "endorser"
+          },
+          {
+            "party": "Netherlands",
+            "role": "endorser"
+          },
+          {
+            "party": "New Zealand",
+            "role": "endorser"
+          },
+          {
+            "party": "North Macedonia",
+            "role": "endorser"
+          },
+          {
+            "party": "Norway",
+            "role": "endorser"
+          },
+          {
+            "party": "Panama",
+            "role": "endorser"
+          },
+          {
+            "party": "Papua New Guinea",
+            "role": "endorser"
+          },
+          {
+            "party": "Paraguay",
+            "role": "endorser"
+          },
+          {
+            "party": "Peru",
+            "role": "endorser"
+          },
+          {
+            "party": "Philippines",
+            "role": "endorser"
+          },
+          {
+            "party": "Poland",
+            "role": "endorser"
+          },
+          {
+            "party": "Portugal",
+            "role": "endorser"
+          },
+          {
+            "party": "Qatar",
+            "role": "endorser"
+          },
+          {
+            "party": "Romania",
+            "role": "endorser"
+          },
+          {
+            "party": "San Marino",
+            "role": "endorser"
+          },
+          {
+            "party": "Senegal",
+            "role": "endorser"
+          },
+          {
+            "party": "Serbia",
+            "role": "endorser"
+          },
+          {
+            "party": "Singapore",
+            "role": "endorser"
+          },
+          {
+            "party": "Slovakia",
+            "role": "endorser"
+          },
+          {
+            "party": "Slovenia",
+            "role": "endorser"
+          },
+          {
+            "party": "South Korea",
+            "role": "endorser"
+          },
+          {
+            "party": "Spain",
+            "role": "endorser"
+          },
+          {
+            "party": "Suriname",
+            "role": "endorser"
+          },
+          {
+            "party": "Sweden",
+            "role": "endorser"
+          },
+          {
+            "party": "Switzerland",
+            "role": "endorser"
+          },
+          {
+            "party": "Tunisia",
+            "role": "endorser"
+          },
+          {
+            "party": "United Arab Emirates",
+            "role": "endorser"
+          },
+          {
+            "party": "United Kingdom",
+            "role": "endorser"
+          },
+          {
+            "party": "United States",
+            "role": "endorser"
+          },
+          {
+            "party": "Uzbekistan",
+            "role": "endorser"
+          },
+          {
+            "notes": [
+              "Participating international organisation, not a State; counted separately from the 81 States."
+            ],
+            "party": "European Union",
+            "role": "endorser"
+          }
+        ],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "paris-call-supporters",
+          "paris-call-source"
+        ],
+        "summary": "81 States and the European Union are listed as supporters. The 27 EU member States are individually listed; the European Union is counted separately as an international organisation, not as a State.",
+        "unknowns": [
+          "No formal depositary, membership procedure or public update log is published; the supporters page is the only current list.",
+          "The date on which each State or the European Union joined is not published on the supporters page.",
+          "The non-State supporter categories are not enumerated here; the official page counts them separately."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "assertions": [
+          {
+            "date": "2026-11-24",
+            "field": "title",
+            "locator": "Official text page, title and opening paragraph.",
+            "method": "official_page_read",
+            "source_ids": [
+              "paris-call-text"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "dates",
+            "locator": "Official text page, closing line: Paris, 12th of November, 2018.",
+            "method": "official_page_read",
+            "source_ids": [
+              "paris-call-text"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "parties",
+            "locator": "Official supporters page, State category (81 entries) and the European Union entry under public authorities.",
+            "method": "official_page_read",
+            "source_ids": [
+              "paris-call-supporters",
+              "paris-call-source"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "counts",
+            "locator": "Official homepage supporter counters and the official source repository's 81 state files at commit 916433b.",
+            "method": "official_page_read",
+            "source_ids": [
+              "paris-call-page",
+              "paris-call-source"
+            ]
+          },
+          {
+            "date": "2026-11-24",
+            "field": "legal_nature",
+            "locator": "Official text page, closing paragraph and list of cooperative measures; no treaty or enforcement clause.",
+            "method": "official_text_read",
+            "source_ids": [
+              "paris-call-text"
+            ]
+          }
+        ],
+        "discovered_via": "Official Paris Call site; its linked public source repository.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "budapest-convention-2001",
+          "note": "The Call describes the Budapest Convention as a key tool against cybercrime; it does not incorporate or amend it.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "cyber_provisions": [
+          "Principle 1 — prevent and recover from malicious cyber activities against individuals and critical infrastructure",
+          "Principle 2 — protect the public core of the Internet",
+          "Principle 3 — prevent malign interference with electoral processes",
+          "Principle 4 — prevent ICT-enabled theft of intellectual property",
+          "Principle 5 — prevent the proliferation of malicious ICT tools and practices",
+          "Principle 6 — strengthen the security of digital processes, products and services throughout their lifecycle and supply chain",
+          "Principle 7 — support advanced cyber hygiene for all actors",
+          "Principle 8 — prevent non-State actors, including the private sector, from hacking back",
+          "Principle 9 — promote international norms of responsible behaviour and confidence-building measures"
+        ],
+        "excluded_scope": "Non-binding political support; no legal obligations, monitoring or enforcement. Only State-level supporters and the European Union are mapped; companies, civil society and local authorities are outside the map.",
+        "reason": "A multistakeholder non-binding cyber declaration launched by France in 2018. It is the first non-binding cyber instrument in the corpus with an official, downloadable State-level supporter list, so it is catalogued and mapped as political endorsement, not as a treaty.",
+        "source_ids": [
+          "paris-call-text",
+          "paris-call-supporters"
+        ]
+      },
+      "rights": {
+        "licence": "No separate licence statement located for the Call text",
+        "note": "The official text and supporter list are public. The website source code is published under the EUPL-1.2 licence; that licence is not asserted for the political text.",
+        "status": "public_official_text",
+        "url": "https://pariscall.international/en/legal-notice"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "paris-call-text",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official English text of the Paris Call of 12 November 2018, with the nine cooperative measures.",
+          "publisher": "Paris Call",
+          "url": "https://pariscall.international/en/call"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "paris-call-supporters",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official supporters list; the State category contains 81 entries and the European Union appears separately. The page links a downloadable CSV.",
+          "publisher": "Paris Call",
+          "url": "https://pariscall.international/en/supporters"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "paris-call-page",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official homepage; supporter counters at access: 81 States, 36 public authorities, 390 organisations and 706 companies.",
+          "publisher": "Paris Call",
+          "url": "https://pariscall.international/en"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": null,
+          "id": "paris-call-csv",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official downloadable CSV generated from the supporter data. Direct retrieval from this environment failed; the State entries were checked against the official source repository instead.",
+          "publisher": "Paris Call",
+          "url": "https://pariscall.international/supporters.csv"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "paris-call-source",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Official public source repository for the Paris Call website, commit 916433b (25 December 2025); 81 `*-state-*.md` supporter files and the CSV template.",
+          "publisher": "AmbaNum / Paris Call",
+          "url": "https://github.com/ambanum/pariscall.international/tree/916433b20a70ce587db86de70b108ce21a25c551/_supporters"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Political call, not a treaty. Launched on 12 November 2018; no signature, ratification, depositary or entry-into-force clause. The official supporters page lists 81 States and the European Union as of 24 November 2026. Support is political endorsement, not legal obligation.",
+      "title": {
+        "official": "Paris Call for Trust and Security in Cyberspace",
+        "short": "Paris Call 2018"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official text read and date checked.",
+            "date": "2026-11-24",
+            "result": "The Call is dated Paris, 12 November 2018 and sets out nine cooperative measures."
+          },
+          {
+            "check": "Official supporters page read; State entries counted.",
+            "date": "2026-11-24",
+            "result": "81 State entries and the European Union; the official homepage counter also reports 81 States."
+          },
+          {
+            "check": "Official source repository checked at a fixed commit.",
+            "date": "2026-11-24",
+            "result": "Commit 916433b contains 81 `*-state-*.md` files; the State list matches the page. Non-State counters differ slightly between the generated page and the source data."
+          },
+          {
+            "check": "Legal nature checked.",
+            "date": "2026-11-24",
+            "result": "Political call with no treaty, signature, ratification, depositary or enforcement clause."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata and supporter list verified from the official page and its official source repository. No full text is stored. The list is a dated snapshot, not a depositary register."
       }
     },
     {

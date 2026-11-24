@@ -83,7 +83,7 @@ The build does not access the network. It uses the published JSON Schema (draft 
 
 The determinism test builds twice and compares the bytes. Network acquisition and PDF extraction are separate commands; their outputs are stored, so a rebuild from the repository does not depend on the network or on a PDF library. The atlas is generated from the catalogue, the stored Natural Earth boundaries and the organisation membership lists in `data/organisations.json`; it is not an independent dataset.
 
-The link audit is a third, network-only command: `make audit-links` or `python3 tools/audit_sources.py`. It checks the official links used by the fourteen instrument panels, classifies broken links separately from anti-bot blocks and transient errors, and is deliberately excluded from `make test`.
+The link audit is a third, network-only command: `make audit-links` or `python3 tools/audit_sources.py`. It checks the official links used by the fifteen instrument panels, classifies broken links separately from anti-bot blocks and transient errors, and is deliberately excluded from `make test`.
 
 ## 8. Limits of this cycle
 
@@ -137,4 +137,4 @@ The omission test at the end of a cycle is deliberately mechanical:
 
 ### 10.5 What this changes in practice
 
-The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has fourteen maps and 53 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.
+The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has fifteen maps and 54 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.
