@@ -1,0 +1,137 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2020-04-08",
+    "notes": "Adopted by the Committee of Ministers of the Council of Europe at the 1373rd meeting of the Ministers' Deputies on 8 April 2020. It is addressed to the governments of the 47 Council of Europe member States and has no signature, ratification or entry-into-force clause.",
+    "published": "2020-04-08",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Non-binding: it creates no legal obligation, ratification, depositary, monitoring or enforcement.",
+    "There is no itemised list of States that have endorsed or implemented the Recommendation; it is addressed to all 47 member States.",
+    "National implementation and the Recommendation's effect in domestic law are not assessed.",
+    "No full text, citable units or original file is stored in this record; it is metadata-only.",
+    "The Recommendation addresses algorithmic systems broadly, not only systems that meet a particular definition of AI."
+  ],
+  "id": "coe-recommendation-algorithmic-systems-2020",
+  "instrument_type": "recommendation",
+  "issuer": [
+    {
+      "name": "Committee of Ministers of the Council of Europe",
+      "role": "issuer",
+      "url": "https://search.coe.int/cm?i=09000016809e1154"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en",
+      "fr"
+    ],
+    "note": "The Recommendation was adopted and published in English and French, the official languages of the Council of Europe. Only the English text was read for this record.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A Recommendation of the Committee of Ministers under Article 15.b of the Statute of the Council of Europe. It is a standard-setting text addressed to member States, not a treaty; it creates no legally binding obligation and has no ratification or depositary.",
+    "source_ids": [
+      "coe-rec-2020"
+    ]
+  },
+  "provenance": {
+    "assertions": [],
+    "discovered_via": "Council of Europe Committee of Ministers legal search and the official PDF; identified as a pending candidate in the AI source-family checklist.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "coe-cets-225",
+      "note": "The later binding Council of Europe framework convention on AI; the 2020 Recommendation is a precursor and a non-binding standard-setting text.",
+      "relation": "predecessor"
+    },
+    {
+      "id": "iccpr-1966",
+      "note": "The Recommendation grounds its guidelines in the European Convention on Human Rights and the ICCPR's rights vocabulary.",
+      "relation": "related"
+    },
+    {
+      "id": "oecd-ai-recommendation-2019",
+      "note": "A parallel non-binding intergovernmental AI recommendation adopted a year earlier.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Guidelines on reviewing legislation, policies and public-sector procurement for algorithmic systems consistently with human rights.",
+      "Guidance on transparency, explainability, data protection, non-discrimination, freedom of expression and access to effective remedies.",
+      "Guidance on oversight and accountability for public and private actors across the design, development and deployment of algorithmic systems.",
+      "Recommendation that member States translate and disseminate the text and evaluate the effectiveness of measures taken."
+    ],
+    "excluded_scope": "A non-binding recommendation addressed to Council of Europe member States. It creates no treaty obligation and does not establish an AI regulator or a conformity-assessment regime.",
+    "reason": "Recommendation CM/Rec(2020)1 is an AI-specific human-rights instrument adopted by the Council of Europe two years before CETS 225. It had been listed as pending and was missing from the corpus, which made the Council of Europe layer look as if it began with the 2024 framework convention.",
+    "source_ids": [
+      "coe-rec-2020",
+      "coe-news-2020"
+    ]
+  },
+  "rights": {
+    "licence": "Council of Europe terms",
+    "note": "Official Council of Europe text; reproduction is subject to the Council's terms. No full text is stored in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.coe.int/en/web/portal"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "coe-rec-2020",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official PDF: Recommendation CM/Rec(2020)1, adopted 8 April 2020 at the 1373rd meeting of the Ministers' Deputies; includes the recommendation and the appendix of guidelines.",
+      "publisher": "Council of Europe",
+      "url": "https://rm.coe.int/09000016809e1154"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "coe-news-2020",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "Council of Europe news release of 8 April 2020 describing the Recommendation and its call on the 47 member States.",
+      "publisher": "Council of Europe",
+      "url": "https://www.coe.int/en/web/portal/-/algorithms-and-automation-new-guidelines-to-prevent-human-rights-breaches"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Adopted and published as a non-binding Recommendation. It is addressed to the 47 Council of Europe member States; there is no signature, ratification, depositary or entry-into-force procedure.",
+  "title": {
+    "official": "Recommendation CM/Rec(2020)1 of the Committee of Ministers to member States on the human rights impacts of algorithmic systems",
+    "short": "CoE Recommendation on algorithmic systems (2020)"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Adoption date and issuing body checked in the official PDF.",
+        "date": "2026-11-24",
+        "result": "Adopted by the Committee of Ministers on 8 April 2020 at the 1373rd meeting of the Ministers' Deputies."
+      },
+      {
+        "check": "Legal nature checked against the text and the Council of Europe's description.",
+        "date": "2026-11-24",
+        "result": "A Recommendation addressed to member States; non-binding, with no ratification or depositary."
+      },
+      {
+        "check": "Scope checked in the guidelines.",
+        "date": "2026-11-24",
+        "result": "Covers human rights impacts across the design, development and deployment of algorithmic systems, including public-sector use and private-sector responsibilities."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata and legal nature verified. No full text is stored; implementation is not assessed."
+  }
+}

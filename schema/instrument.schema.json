@@ -32,7 +32,10 @@
       "enum": [
         "ai_treaty", "agreement_ai_provisions", "non_binding_instrument",
         "preparatory_interpretive", "technical_standard", "draft_negotiation",
-        "supranational_law", "general_treaty", "cyber_treaty"
+                "supranational_law",
+        "regional_law",
+        "general_treaty",
+        "cyber_treaty"
       ]
     },
     "instrument_type": {

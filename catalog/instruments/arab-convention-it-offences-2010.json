@@ -1,0 +1,198 @@
+{
+  "binding_status": "binding",
+  "category": "cyber_treaty",
+  "dates": {
+    "adopted": "2010-12-21",
+    "entered_into_force": "2014-02-07",
+    "notes": "Adopted at Cairo on 21 December 2010 by the Arab Ministers of Interior and Justice. Article 19(3) provides that the Convention enters into force 30 days after the deposit of the seventh instrument of ratification, acceptance or approval. UNODC records entry into force on 7 February 2014. The official LAS ratification table could not be retrieved from this environment, so the current number of Parties is not asserted.",
+    "opened_for_signature": "2010-12-21",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "cyber"
+  ],
+  "gaps": [
+    "The official LAS depositary page and its ratification table were unreachable from this environment on 24 November 2026; no current party-by-party count is asserted.",
+    "The English text was read from a reproduction of the official translation; the Arabic original was not acquired.",
+    "No full text, citable units or original file is stored in this record; it is metadata-only.",
+    "National implementation, reservations and the Convention's institutional practice are not assessed.",
+    "No AI-specific provision is asserted. The record is cyber-domain only."
+  ],
+  "id": "arab-convention-it-offences-2010",
+  "instrument_type": "treaty",
+  "issuer": [
+    {
+      "name": "League of Arab States",
+      "role": "issuer",
+      "url": "https://www.leagueofarabstates.net/"
+    },
+    {
+      "name": "General Secretariat of the League of Arab States",
+      "role": "depositary",
+      "url": "https://www.leagueofarabstates.net/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "ar"
+    ],
+    "note": "The Convention was concluded in Arabic in a single original deposited with the General Secretariat of the League of Arab States. The English text used for this record is an official translation reproduced by UNODC and other legal databases; it is not an authentic text.",
+    "translations": [
+      "en"
+    ]
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "A multilateral convention open to League of Arab States members, subject to ratification, acceptance, approval or accession, with a depositary and an entry-into-force threshold of seven instruments. It creates binding obligations for Parties and is a treaty, not a recommendation or political declaration.",
+    "source_ids": [
+      "las-convention-text",
+      "unodc-compendium"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-24",
+    "counts": {
+      "parties": {
+        "basis": "unknown",
+        "note": "Entry into force in 2014 establishes that at least seven ratifications were deposited. The current LAS table could not be read; no party total is asserted.",
+        "source_ids": [
+          "unodc-compendium",
+          "las-ratification-table"
+        ],
+        "total": null,
+        "verified": 0
+      },
+      "ratifications": {
+        "basis": "unknown",
+        "note": "No current ratification total is asserted; the LAS depositary table was inaccessible.",
+        "source_ids": [
+          "las-ratification-table"
+        ],
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "unodc-compendium",
+      "las-ratification-table"
+    ],
+    "summary": "The Convention is in force, but the current number of Parties is not verified. A 2015 national reproduction lists 22 Arab States in its signature/ratification table, with the United Arab Emirates recorded as having ratified on 21 September 2011; that table is incomplete and is not used to assert a current party count.",
+    "unknowns": [
+      "Current Parties and the date of each deposit.",
+      "Reservations, declarations and objections.",
+      "Whether all 22 League members have signed or acceded."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [],
+    "discovered_via": "UNODC pre-ratification compendium and the League of Arab States legal-network pages; cross-checked against the English text reproduction.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "budapest-convention-2001",
+      "note": "The earlier European cybercrime treaty; the Arab Convention covers similar criminal-law and cooperation ground but has a different membership and institutional setting.",
+      "relation": "related"
+    },
+    {
+      "id": "un-cybercrime-convention-2024",
+      "note": "The later UN cybercrime convention; both are binding cybercrime treaties, but the Arab Convention is regional and predates it.",
+      "relation": "related"
+    },
+    {
+      "id": "au-malabo-convention-2014",
+      "note": "The African Union's regional cyber security and cybercrime convention; a parallel regional instrument.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "cyber_provisions": [
+      "Criminalisation of offences against the confidentiality, integrity and availability of information technology, including unlawful access, interception, interference and data modification.",
+      "Criminalisation of computer-related forgery, fraud and content offences, with provisions on attempt, participation and corporate liability.",
+      "Procedural powers for search, seizure, expedited preservation and production of stored data.",
+      "International cooperation, mutual legal assistance and extradition among Arab States."
+    ],
+    "excluded_scope": "A regional criminal-law treaty. It creates no AI-specific obligation and does not regulate AI systems as such.",
+    "reason": "The League of Arab States' cybercrime convention is a binding regional treaty that had been missing from the corpus. It matters because the cybercrime layer is not limited to the Budapest and UN conventions: Arab States built a parallel criminal-law and cooperation framework, and its existence changes any claim that the field is covered by a single universal instrument.",
+    "source_ids": [
+      "las-convention-text",
+      "unodc-compendium"
+    ]
+  },
+  "rights": {
+    "licence": "League of Arab States terms",
+    "note": "Official treaty text; reproduction is subject to the League's terms. No full text is stored in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.leagueofarabstates.net/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": null,
+      "id": "las-convention-text",
+      "kind": "official_primary",
+      "note": "Official LAS legal-network copy of the Convention (Arabic and English). The endpoint was unreachable from this environment; the English reproduction was used for the text read.",
+      "publisher": "League of Arab States",
+      "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": null,
+      "id": "las-ratification-table",
+      "kind": "official_primary",
+      "note": "Official LAS document 'Ratification of the Arab Convention on Combating Information Technology Offences'; the endpoint was unreachable, so the current table was not read.",
+      "publisher": "League of Arab States",
+      "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%8A%D9%82%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D9%87%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "unodc-compendium",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "UNODC Convention against Cybercrime pre-ratification compendium: records adoption on 21 December 2010, entry into force on 7 February 2014, a seven-State threshold and LAS membership.",
+      "publisher": "UNODC",
+      "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force since 7 February 2014, 30 days after the seventh instrument was deposited. The current number of Parties is unknown, not zero: the LAS depositary table could not be retrieved.",
+  "title": {
+    "english": "Arab Convention on Combating Information Technology Offences",
+    "official": "Arab Convention on Combating Information Technology Offences",
+    "other": [
+      "الاتفاقية العربية لمكافحة جرائم تقنية المعلومات"
+    ],
+    "short": "Arab Convention on IT Offences"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Adoption, entry into force and seven-State threshold checked in the UNODC compendium.",
+        "date": "2026-11-24",
+        "result": "Adopted 21 December 2010; in force 7 February 2014; seven ratifications required."
+      },
+      {
+        "check": "Final clauses and institutional structure checked in the English text reproduction.",
+        "date": "2026-11-24",
+        "result": "Article 19 requires ratification, acceptance, approval or accession; the General Secretariat is depositary; the Convention is open to LAS members."
+      },
+      {
+        "check": "Official LAS depositary page attempted.",
+        "date": "2026-11-24",
+        "result": "The LAS endpoint was unreachable from this environment; no current party count was taken from it."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata and legal nature verified. No full text or party table is stored; the current party count and reservations remain unknown."
+  }
+}

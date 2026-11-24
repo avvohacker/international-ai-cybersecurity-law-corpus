@@ -1,0 +1,203 @@
+{
+  "binding_status": "binding",
+  "category": "cyber_treaty",
+  "dates": {
+    "adopted": "2018-09-28",
+    "entered_into_force": "2020-03-12",
+    "notes": "Signed at Dushanbe on 28 September 2018 by the CIS Heads of State. Article 17 provides that the Agreement enters into force 30 days after the depositary receives the third notification of completion of domestic procedures; it entered into force on 12 March 2020. For Russia it entered into force on 17 July 2022 after ratification. Article 17(2) terminates the 2001 CIS Agreement on computer information crimes in relations between the States that become parties to this Agreement.",
+    "signed": "2018-09-28",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "cyber"
+  ],
+  "gaps": [
+    "The CIS Executive Committee page states that the Agreement is in force but does not display a current party-by-party depositary table. The seven-State list is taken from a Russian legal register, not from the depositary.",
+    "Only the Russian authentic text was read; no English translation is stored.",
+    "No full text, citable units or original file is stored in this record; it is metadata-only.",
+    "The three States that signed but did not complete domestic procedures are not treated as Parties.",
+    "National implementation, reservations and the 2001 predecessor's termination in detail are not assessed."
+  ],
+  "id": "cis-it-crimes-agreement-2018",
+  "instrument_type": "agreement",
+  "issuer": [
+    {
+      "name": "Council of Heads of State of the Commonwealth of Independent States",
+      "role": "issuer",
+      "url": "https://eccis.org/document/5864"
+    },
+    {
+      "name": "CIS Executive Committee",
+      "role": "depositary",
+      "url": "https://eccis.org/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "ru"
+    ],
+    "note": "The Agreement was concluded in a single authentic copy in Russian, deposited with the CIS Executive Committee. No official English text was located or acquired.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "An agreement adopted by the CIS Heads of State, subject to domestic procedures and notified to the depositary, with entry into force after the third notification. It creates binding obligations for the Parties and is a treaty, not a political declaration.",
+    "source_ids": [
+      "cis-document",
+      "cis-registry"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-24",
+    "counts": {
+      "parties": {
+        "basis": "declared_total",
+        "note": "Seven States are listed as Parties in the Russian legal register: Armenia, Belarus, Kazakhstan, Kyrgyzstan, Russia, Tajikistan and Uzbekistan. The CIS depositary page does not display a current party table; the total is therefore declared, not verified against an itemised depositary record.",
+        "source_ids": [
+          "cis-russian-register"
+        ],
+        "total": 7,
+        "verified": 0
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "note": "The Agreement uses notification of completion of domestic procedures rather than a separate ratification tally. Russia's ratification is documented, but no complete ratification count is asserted.",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [],
+    "notifications": [],
+    "objections": [],
+    "reservations": [
+      "Russia made a reservation on 14 June 2022 concerning the treatment of certain offences under Article 3(1)(g), (d), (zh) and (z) as criminal or administrative offences."
+    ],
+    "source_ids": [
+      "cis-russian-register",
+      "cis-document"
+    ],
+    "summary": "Seven States are listed as Parties in the Russian legal register: Armenia, Belarus, Kazakhstan, Kyrgyzstan, Russia, Tajikistan and Uzbekistan. The depositary page confirms that the Agreement is in force but does not publish a current party table; the total is declared, not independently itemised.",
+    "unknowns": [
+      "The exact date of each Party's notification and entry into force.",
+      "Whether any Party has withdrawn or suspended participation.",
+      "The current status of the States that signed but did not complete domestic procedures."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [],
+    "discovered_via": "CIS Executive Committee document register; cross-checked against the Russian Foreign Ministry treaty entry and a Russian legal register for the party list.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "budapest-convention-2001",
+      "note": "The European cybercrime treaty; the CIS Agreement is a regional cooperation instrument with a different membership and a narrower harmonisation scope.",
+      "relation": "related"
+    },
+    {
+      "id": "arab-convention-it-offences-2010",
+      "note": "A parallel regional cybercrime treaty; both show that the cybercrime layer is regional as well as universal.",
+      "relation": "related"
+    },
+    {
+      "id": "un-cybercrime-convention-2024",
+      "note": "The later UN cybercrime convention; the CIS Agreement predates it and is not a substitute for it.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "cyber_provisions": [
+      "Cooperation among the competent authorities of the Parties on preventing, detecting, suppressing, disclosing and investigating information-technology crimes.",
+      "Forms of cooperation, requests for assistance, confidentiality and data protection, and the procedure for executing requests.",
+      "A list of information-technology offences in Article 3, including unlawful access, interception, interference, data modification and the use of malicious programs.",
+      "Accession by CIS member States after entry into force and termination of the 2001 computer-information agreement between Parties."
+    ],
+    "excluded_scope": "A regional cooperation and criminal-law agreement. It creates no AI-specific obligation and does not establish a supranational regulator.",
+    "reason": "The 2018 CIS Agreement is the current regional cybercrime instrument in the post-Soviet space and replaces the 2001 computer-information agreement. It had been missing from the corpus even though it is binding and in force; its absence made the cybercrime layer look more Budapest-centred than it is.",
+    "source_ids": [
+      "cis-document",
+      "cis-russian-register"
+    ]
+  },
+  "rights": {
+    "licence": "CIS official text terms",
+    "note": "Official CIS text; reproduction is subject to the Commonwealth's terms. No full text is stored in this corpus.",
+    "status": "public_official_text",
+    "url": "https://eccis.org/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "cis-document",
+      "kind": "official_primary",
+      "language": "ru",
+      "note": "CIS Executive Committee document page: signed at Dushanbe on 28 September 2018, status 'in force', full Russian text and signature block.",
+      "publisher": "CIS Executive Committee",
+      "url": "https://eccis.org/document/5864"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "cis-registry",
+      "kind": "registry",
+      "language": "ru",
+      "note": "CIS document register entry for the Agreement.",
+      "publisher": "CIS Executive Committee",
+      "url": "https://eccis.org/reestrv2/doc/5864"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "cis-russian-register",
+      "kind": "secondary",
+      "language": "ru",
+      "note": "Russian legal register reproducing the Agreement and listing seven Parties: Armenia, Belarus, Kazakhstan, Kyrgyzstan, Russia, Tajikistan and Uzbekistan; also records Russia's reservation and entry into force for Russia on 17 July 2022.",
+      "publisher": "Meganorm",
+      "url": "https://meganorm.ru/mega_doc/dop1/10/postanovlenie_plenuma_verkhovnogo_suda_rf_ot_15_12_2022_N_37/0/soglashenie_o_sotrudnichestve_gosudarstv_-_uchastnikov.html"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "cis-russia-mfa",
+      "kind": "official_secondary",
+      "language": "ru",
+      "note": "Russian Foreign Ministry treaty entry: signed 28 September 2018; depositary CIS Executive Committee; in force for Russia 17 July 2022.",
+      "publisher": "Ministry of Foreign Affairs of Russia",
+      "url": "https://www.mid.ru/ru/foreign_policy/international_contracts/international_contracts/multilateral_contract/53417"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force since 12 March 2020; for Russia since 17 July 2022. It replaces the 2001 CIS Agreement on computer information crimes in relations between its Parties. The depositary page does not publish a current party table.",
+  "title": {
+    "english": "Agreement on Cooperation among the Member States of the Commonwealth of Independent States in Combating Crimes in the Field of Information Technology",
+    "official": "Соглашение о сотрудничестве государств – участников Содружества Независимых Государств в борьбе с преступлениями в сфере информационных технологий",
+    "short": "CIS IT Crimes Agreement 2018"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Signature date, status and text checked on the CIS Executive Committee document page.",
+        "date": "2026-11-24",
+        "result": "Signed at Dushanbe on 28 September 2018; status 'in force'; Article 17 contains the entry-into-force and predecessor-termination clauses."
+      },
+      {
+        "check": "Entry into force and Russian ratification checked against the Russian Foreign Ministry treaty entry.",
+        "date": "2026-11-24",
+        "result": "In force 12 March 2020; for Russia 17 July 2022; depositary is the CIS Executive Committee."
+      },
+      {
+        "check": "Party list checked against a Russian legal register.",
+        "date": "2026-11-24",
+        "result": "Seven Parties listed; the CIS depositary page itself does not display a current party table."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata, legal nature and entry into force verified. The party count is declared by a secondary legal register, not verified against an itemised depositary table; the record is metadata-only."
+  }
+}

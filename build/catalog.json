@@ -1,31 +1,32 @@
 {
   "counts": {
     "by_binding": {
-      "binding": 17,
-      "non_binding": 39
+      "binding": 22,
+      "non_binding": 41
     },
     "by_category": {
       "agreement_ai_provisions": 5,
       "ai_treaty": 2,
-      "cyber_treaty": 5,
+      "cyber_treaty": 9,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 31,
+      "non_binding_instrument": 33,
       "preparatory_interpretive": 2,
+      "regional_law": 1,
       "supranational_law": 3,
       "technical_standard": 5
     },
     "by_domain": {
-      "ai": 46,
-      "cyber": 10,
+      "ai": 48,
+      "cyber": 15,
       "joint": 0
     },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 46
+      "metadata_verified": 53
     },
     "full_texts": 16,
-    "total": 56,
+    "total": 63,
     "with_local_original": 15
   },
   "full_text_ids": [
@@ -312,6 +313,204 @@
         ],
         "level": "metadata_verified",
         "notes": "The Protocol and the Annex on Emerging and Advanced Technologies were read from the official AU PDFs. The record remains metadata-only because no full text is stored. Content of the provisions, entry into force and applicability are recorded separately: the Annex contains hard 'shall' obligations, but the Protocol's entry into force is not confirmed and the obligations bind only State Parties once it is in force for them."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "cyber_treaty",
+      "dates": {
+        "adopted": "2010-12-21",
+        "entered_into_force": "2014-02-07",
+        "notes": "Adopted at Cairo on 21 December 2010 by the Arab Ministers of Interior and Justice. Article 19(3) provides that the Convention enters into force 30 days after the deposit of the seventh instrument of ratification, acceptance or approval. UNODC records entry into force on 7 February 2014. The official LAS ratification table could not be retrieved from this environment, so the current number of Parties is not asserted.",
+        "opened_for_signature": "2010-12-21",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "The official LAS depositary page and its ratification table were unreachable from this environment on 24 November 2026; no current party-by-party count is asserted.",
+        "The English text was read from a reproduction of the official translation; the Arabic original was not acquired.",
+        "No full text, citable units or original file is stored in this record; it is metadata-only.",
+        "National implementation, reservations and the Convention's institutional practice are not assessed.",
+        "No AI-specific provision is asserted. The record is cyber-domain only."
+      ],
+      "id": "arab-convention-it-offences-2010",
+      "instrument_type": "treaty",
+      "issuer": [
+        {
+          "name": "League of Arab States",
+          "role": "issuer",
+          "url": "https://www.leagueofarabstates.net/"
+        },
+        {
+          "name": "General Secretariat of the League of Arab States",
+          "role": "depositary",
+          "url": "https://www.leagueofarabstates.net/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar"
+        ],
+        "note": "The Convention was concluded in Arabic in a single original deposited with the General Secretariat of the League of Arab States. The English text used for this record is an official translation reproduced by UNODC and other legal databases; it is not an authentic text.",
+        "translations": [
+          "en"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "treaty",
+        "rationale": "A multilateral convention open to League of Arab States members, subject to ratification, acceptance, approval or accession, with a depositary and an entry-into-force threshold of seven instruments. It creates binding obligations for Parties and is a treaty, not a recommendation or political declaration.",
+        "source_ids": [
+          "las-convention-text",
+          "unodc-compendium"
+        ]
+      },
+      "parties": {
+        "act": "treaty_signature",
+        "as_of": "2026-11-24",
+        "counts": {
+          "parties": {
+            "basis": "unknown",
+            "note": "Entry into force in 2014 establishes that at least seven ratifications were deposited. The current LAS table could not be read; no party total is asserted.",
+            "source_ids": [
+              "unodc-compendium",
+              "las-ratification-table"
+            ],
+            "total": null,
+            "verified": 0
+          },
+          "ratifications": {
+            "basis": "unknown",
+            "note": "No current ratification total is asserted; the LAS depositary table was inaccessible.",
+            "source_ids": [
+              "las-ratification-table"
+            ],
+            "total": null,
+            "verified": 0
+          }
+        },
+        "declarations": [],
+        "entries": [],
+        "notifications": [],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "unodc-compendium",
+          "las-ratification-table"
+        ],
+        "summary": "The Convention is in force, but the current number of Parties is not verified. A 2015 national reproduction lists 22 Arab States in its signature/ratification table, with the United Arab Emirates recorded as having ratified on 21 September 2011; that table is incomplete and is not used to assert a current party count.",
+        "unknowns": [
+          "Current Parties and the date of each deposit.",
+          "Reservations, declarations and objections.",
+          "Whether all 22 League members have signed or acceded."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "assertions": [],
+        "discovered_via": "UNODC pre-ratification compendium and the League of Arab States legal-network pages; cross-checked against the English text reproduction.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "budapest-convention-2001",
+          "note": "The earlier European cybercrime treaty; the Arab Convention covers similar criminal-law and cooperation ground but has a different membership and institutional setting.",
+          "relation": "related"
+        },
+        {
+          "id": "un-cybercrime-convention-2024",
+          "note": "The later UN cybercrime convention; both are binding cybercrime treaties, but the Arab Convention is regional and predates it.",
+          "relation": "related"
+        },
+        {
+          "id": "au-malabo-convention-2014",
+          "note": "The African Union's regional cyber security and cybercrime convention; a parallel regional instrument.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "cyber_provisions": [
+          "Criminalisation of offences against the confidentiality, integrity and availability of information technology, including unlawful access, interception, interference and data modification.",
+          "Criminalisation of computer-related forgery, fraud and content offences, with provisions on attempt, participation and corporate liability.",
+          "Procedural powers for search, seizure, expedited preservation and production of stored data.",
+          "International cooperation, mutual legal assistance and extradition among Arab States."
+        ],
+        "excluded_scope": "A regional criminal-law treaty. It creates no AI-specific obligation and does not regulate AI systems as such.",
+        "reason": "The League of Arab States' cybercrime convention is a binding regional treaty that had been missing from the corpus. It matters because the cybercrime layer is not limited to the Budapest and UN conventions: Arab States built a parallel criminal-law and cooperation framework, and its existence changes any claim that the field is covered by a single universal instrument.",
+        "source_ids": [
+          "las-convention-text",
+          "unodc-compendium"
+        ]
+      },
+      "rights": {
+        "licence": "League of Arab States terms",
+        "note": "Official treaty text; reproduction is subject to the League's terms. No full text is stored in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.leagueofarabstates.net/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": null,
+          "id": "las-convention-text",
+          "kind": "official_primary",
+          "note": "Official LAS legal-network copy of the Convention (Arabic and English). The endpoint was unreachable from this environment; the English reproduction was used for the text read.",
+          "publisher": "League of Arab States",
+          "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": null,
+          "id": "las-ratification-table",
+          "kind": "official_primary",
+          "note": "Official LAS document 'Ratification of the Arab Convention on Combating Information Technology Offences'; the endpoint was unreachable, so the current table was not read.",
+          "publisher": "League of Arab States",
+          "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%8A%D9%82%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D9%87%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "unodc-compendium",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "UNODC Convention against Cybercrime pre-ratification compendium: records adoption on 21 December 2010, entry into force on 7 February 2014, a seven-State threshold and LAS membership.",
+          "publisher": "UNODC",
+          "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force since 7 February 2014, 30 days after the seventh instrument was deposited. The current number of Parties is unknown, not zero: the LAS depositary table could not be retrieved.",
+      "title": {
+        "english": "Arab Convention on Combating Information Technology Offences",
+        "official": "Arab Convention on Combating Information Technology Offences",
+        "other": [
+          "الاتفاقية العربية لمكافحة جرائم تقنية المعلومات"
+        ],
+        "short": "Arab Convention on IT Offences"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Adoption, entry into force and seven-State threshold checked in the UNODC compendium.",
+            "date": "2026-11-24",
+            "result": "Adopted 21 December 2010; in force 7 February 2014; seven ratifications required."
+          },
+          {
+            "check": "Final clauses and institutional structure checked in the English text reproduction.",
+            "date": "2026-11-24",
+            "result": "Article 19 requires ratification, acceptance, approval or accession; the General Secretariat is depositary; the Convention is open to LAS members."
+          },
+          {
+            "check": "Official LAS depositary page attempted.",
+            "date": "2026-11-24",
+            "result": "The LAS endpoint was unreachable from this environment; no current party count was taken from it."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata and legal nature verified. No full text or party table is stored; the current party count and reservations remain unknown."
       }
     },
     {
@@ -3081,6 +3280,406 @@
       "binding_status": "binding",
       "category": "cyber_treaty",
       "dates": {
+        "adopted": "2018-09-28",
+        "entered_into_force": "2020-03-12",
+        "notes": "Signed at Dushanbe on 28 September 2018 by the CIS Heads of State. Article 17 provides that the Agreement enters into force 30 days after the depositary receives the third notification of completion of domestic procedures; it entered into force on 12 March 2020. For Russia it entered into force on 17 July 2022 after ratification. Article 17(2) terminates the 2001 CIS Agreement on computer information crimes in relations between the States that become parties to this Agreement.",
+        "signed": "2018-09-28",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "The CIS Executive Committee page states that the Agreement is in force but does not display a current party-by-party depositary table. The seven-State list is taken from a Russian legal register, not from the depositary.",
+        "Only the Russian authentic text was read; no English translation is stored.",
+        "No full text, citable units or original file is stored in this record; it is metadata-only.",
+        "The three States that signed but did not complete domestic procedures are not treated as Parties.",
+        "National implementation, reservations and the 2001 predecessor's termination in detail are not assessed."
+      ],
+      "id": "cis-it-crimes-agreement-2018",
+      "instrument_type": "agreement",
+      "issuer": [
+        {
+          "name": "Council of Heads of State of the Commonwealth of Independent States",
+          "role": "issuer",
+          "url": "https://eccis.org/document/5864"
+        },
+        {
+          "name": "CIS Executive Committee",
+          "role": "depositary",
+          "url": "https://eccis.org/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ru"
+        ],
+        "note": "The Agreement was concluded in a single authentic copy in Russian, deposited with the CIS Executive Committee. No official English text was located or acquired.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "treaty",
+        "rationale": "An agreement adopted by the CIS Heads of State, subject to domestic procedures and notified to the depositary, with entry into force after the third notification. It creates binding obligations for the Parties and is a treaty, not a political declaration.",
+        "source_ids": [
+          "cis-document",
+          "cis-registry"
+        ]
+      },
+      "parties": {
+        "act": "treaty_signature",
+        "as_of": "2026-11-24",
+        "counts": {
+          "parties": {
+            "basis": "declared_total",
+            "note": "Seven States are listed as Parties in the Russian legal register: Armenia, Belarus, Kazakhstan, Kyrgyzstan, Russia, Tajikistan and Uzbekistan. The CIS depositary page does not display a current party table; the total is therefore declared, not verified against an itemised depositary record.",
+            "source_ids": [
+              "cis-russian-register"
+            ],
+            "total": 7,
+            "verified": 0
+          },
+          "ratifications": {
+            "basis": "not_applicable",
+            "note": "The Agreement uses notification of completion of domestic procedures rather than a separate ratification tally. Russia's ratification is documented, but no complete ratification count is asserted.",
+            "total": null,
+            "verified": 0
+          }
+        },
+        "declarations": [],
+        "entries": [],
+        "notifications": [],
+        "objections": [],
+        "reservations": [
+          "Russia made a reservation on 14 June 2022 concerning the treatment of certain offences under Article 3(1)(g), (d), (zh) and (z) as criminal or administrative offences."
+        ],
+        "source_ids": [
+          "cis-russian-register",
+          "cis-document"
+        ],
+        "summary": "Seven States are listed as Parties in the Russian legal register: Armenia, Belarus, Kazakhstan, Kyrgyzstan, Russia, Tajikistan and Uzbekistan. The depositary page confirms that the Agreement is in force but does not publish a current party table; the total is declared, not independently itemised.",
+        "unknowns": [
+          "The exact date of each Party's notification and entry into force.",
+          "Whether any Party has withdrawn or suspended participation.",
+          "The current status of the States that signed but did not complete domestic procedures."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "assertions": [],
+        "discovered_via": "CIS Executive Committee document register; cross-checked against the Russian Foreign Ministry treaty entry and a Russian legal register for the party list.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "budapest-convention-2001",
+          "note": "The European cybercrime treaty; the CIS Agreement is a regional cooperation instrument with a different membership and a narrower harmonisation scope.",
+          "relation": "related"
+        },
+        {
+          "id": "arab-convention-it-offences-2010",
+          "note": "A parallel regional cybercrime treaty; both show that the cybercrime layer is regional as well as universal.",
+          "relation": "related"
+        },
+        {
+          "id": "un-cybercrime-convention-2024",
+          "note": "The later UN cybercrime convention; the CIS Agreement predates it and is not a substitute for it.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "cyber_provisions": [
+          "Cooperation among the competent authorities of the Parties on preventing, detecting, suppressing, disclosing and investigating information-technology crimes.",
+          "Forms of cooperation, requests for assistance, confidentiality and data protection, and the procedure for executing requests.",
+          "A list of information-technology offences in Article 3, including unlawful access, interception, interference, data modification and the use of malicious programs.",
+          "Accession by CIS member States after entry into force and termination of the 2001 computer-information agreement between Parties."
+        ],
+        "excluded_scope": "A regional cooperation and criminal-law agreement. It creates no AI-specific obligation and does not establish a supranational regulator.",
+        "reason": "The 2018 CIS Agreement is the current regional cybercrime instrument in the post-Soviet space and replaces the 2001 computer-information agreement. It had been missing from the corpus even though it is binding and in force; its absence made the cybercrime layer look more Budapest-centred than it is.",
+        "source_ids": [
+          "cis-document",
+          "cis-russian-register"
+        ]
+      },
+      "rights": {
+        "licence": "CIS official text terms",
+        "note": "Official CIS text; reproduction is subject to the Commonwealth's terms. No full text is stored in this corpus.",
+        "status": "public_official_text",
+        "url": "https://eccis.org/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "cis-document",
+          "kind": "official_primary",
+          "language": "ru",
+          "note": "CIS Executive Committee document page: signed at Dushanbe on 28 September 2018, status 'in force', full Russian text and signature block.",
+          "publisher": "CIS Executive Committee",
+          "url": "https://eccis.org/document/5864"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "cis-registry",
+          "kind": "registry",
+          "language": "ru",
+          "note": "CIS document register entry for the Agreement.",
+          "publisher": "CIS Executive Committee",
+          "url": "https://eccis.org/reestrv2/doc/5864"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "cis-russian-register",
+          "kind": "secondary",
+          "language": "ru",
+          "note": "Russian legal register reproducing the Agreement and listing seven Parties: Armenia, Belarus, Kazakhstan, Kyrgyzstan, Russia, Tajikistan and Uzbekistan; also records Russia's reservation and entry into force for Russia on 17 July 2022.",
+          "publisher": "Meganorm",
+          "url": "https://meganorm.ru/mega_doc/dop1/10/postanovlenie_plenuma_verkhovnogo_suda_rf_ot_15_12_2022_N_37/0/soglashenie_o_sotrudnichestve_gosudarstv_-_uchastnikov.html"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "cis-russia-mfa",
+          "kind": "official_secondary",
+          "language": "ru",
+          "note": "Russian Foreign Ministry treaty entry: signed 28 September 2018; depositary CIS Executive Committee; in force for Russia 17 July 2022.",
+          "publisher": "Ministry of Foreign Affairs of Russia",
+          "url": "https://www.mid.ru/ru/foreign_policy/international_contracts/international_contracts/multilateral_contract/53417"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force since 12 March 2020; for Russia since 17 July 2022. It replaces the 2001 CIS Agreement on computer information crimes in relations between its Parties. The depositary page does not publish a current party table.",
+      "title": {
+        "english": "Agreement on Cooperation among the Member States of the Commonwealth of Independent States in Combating Crimes in the Field of Information Technology",
+        "official": "Соглашение о сотрудничестве государств – участников Содружества Независимых Государств в борьбе с преступлениями в сфере информационных технологий",
+        "short": "CIS IT Crimes Agreement 2018"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Signature date, status and text checked on the CIS Executive Committee document page.",
+            "date": "2026-11-24",
+            "result": "Signed at Dushanbe on 28 September 2018; status 'in force'; Article 17 contains the entry-into-force and predecessor-termination clauses."
+          },
+          {
+            "check": "Entry into force and Russian ratification checked against the Russian Foreign Ministry treaty entry.",
+            "date": "2026-11-24",
+            "result": "In force 12 March 2020; for Russia 17 July 2022; depositary is the CIS Executive Committee."
+          },
+          {
+            "check": "Party list checked against a Russian legal register.",
+            "date": "2026-11-24",
+            "result": "Seven Parties listed; the CIS depositary page itself does not display a current party table."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata, legal nature and entry into force verified. The party count is declared by a secondary legal register, not verified against an itemised depositary table; the record is metadata-only."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "cyber_treaty",
+      "dates": {
+        "adopted": "2001-06-01",
+        "entered_into_force": "2002-03-14",
+        "notes": "Signed at Minsk on 1 June 2001 by the CIS Heads of State. UNODC records entry into force on 14 March 2002 after three instruments. The 2018 Dushanbe Agreement replaces this Agreement between the States that become parties to it; for States that have not ratified the Dushanbe Agreement, the Minsk Agreement remains in force. The CIS depositary does not publish a current party table on the document page, so no current party count is asserted.",
+        "signed": "2001-06-01",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "The CIS Executive Committee confirms that the Agreement is in force but does not display a current party-by-party table; no current party count is asserted.",
+        "The 2018 Dushanbe Agreement replaces this Agreement between its Parties, but the exact set of States for which the Minsk Agreement remains in force is not verified.",
+        "Only the Russian authentic text and an English translation were read; no full text, citable units or original file is stored in this record.",
+        "National implementation and reservations are not assessed.",
+        "The Agreement creates no AI-specific obligation."
+      ],
+      "id": "cis-minsk-agreement-2001",
+      "instrument_type": "agreement",
+      "issuer": [
+        {
+          "name": "Council of Heads of State of the Commonwealth of Independent States",
+          "role": "issuer",
+          "url": "https://eccis.org/document/1180"
+        },
+        {
+          "name": "CIS Executive Committee",
+          "role": "depositary",
+          "url": "https://eccis.org/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ru"
+        ],
+        "note": "The Agreement was concluded in Russian and deposited with the CIS Executive Committee. An English translation is reproduced by UNODC and by Azerbaijan's prosecutor training centre; it is not an authentic text.",
+        "translations": [
+          "en"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "treaty",
+        "rationale": "An agreement adopted by the CIS Heads of State, with entry into force after three instruments and a depositary. It creates binding obligations for its Parties and is a treaty, not a recommendation or political declaration.",
+        "source_ids": [
+          "cis-minsk-document",
+          "unodc-compendium"
+        ]
+      },
+      "parties": {
+        "act": "treaty_signature",
+        "as_of": "2026-11-24",
+        "counts": {
+          "parties": {
+            "basis": "unknown",
+            "note": "Entry into force on 14 March 2002 establishes that at least three instruments were deposited. The current party count and the States for which the Agreement remains in force are not verified.",
+            "source_ids": [
+              "cis-minsk-document",
+              "unodc-compendium"
+            ],
+            "total": null,
+            "verified": 0
+          },
+          "ratifications": {
+            "basis": "unknown",
+            "note": "No current ratification total is asserted; the CIS depositary page does not display a party table.",
+            "source_ids": [
+              "cis-minsk-document"
+            ],
+            "total": null,
+            "verified": 0
+          }
+        },
+        "declarations": [],
+        "entries": [],
+        "notifications": [],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "cis-minsk-document",
+          "unodc-compendium"
+        ],
+        "summary": "The Agreement is in force, but the current number of Parties is not verified. The 2018 Dushanbe Agreement replaces it between the States that become parties to that later Agreement; for other CIS States the Minsk Agreement may remain in force.",
+        "unknowns": [
+          "Current Parties and the date of each deposit.",
+          "The States for which the Minsk Agreement remains in force after the Dushanbe Agreement.",
+          "Reservations, declarations and objections."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "assertions": [],
+        "discovered_via": "UNODC pre-ratification compendium factsheet on regional cybercrime treaties; CIS Executive Committee document register; cross-checked against an English translation.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "cis-it-crimes-agreement-2018",
+          "note": "The 2018 Dushanbe Agreement replaces the Minsk Agreement between the States that become parties to it.",
+          "relation": "successor"
+        },
+        {
+          "id": "budapest-convention-2001",
+          "note": "The European cybercrime treaty adopted in the same year; both establish criminal-law and cooperation duties, with different membership.",
+          "relation": "related"
+        },
+        {
+          "id": "arab-convention-it-offences-2010",
+          "note": "A later regional cybercrime treaty with a comparable criminal-law and mutual-assistance structure.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "cyber_provisions": [
+          "A common definition of offences relating to computer information, including illegal access, modification, destruction, blocking or copying of information and disruption of computer systems or networks.",
+          "An obligation for Parties to criminalise the defined conduct under national law and to harmonise their legal systems.",
+          "Cooperation among law-enforcement and judicial authorities in preventing, detecting, suppressing and investigating computer-information offences.",
+          "Procedural cooperation, information exchange and mutual assistance among the competent authorities of the Parties."
+        ],
+        "excluded_scope": "A regional criminal-law cooperation agreement. It creates no AI-specific obligation and does not establish a supranational regulator.",
+        "reason": "The 2001 Minsk Agreement is the first regional cybercrime treaty and remains in force for CIS States that have not joined the 2018 Dushanbe Agreement. Its absence made the CIS layer look as if it began in 2018 and left the predecessor treaty unrecorded.",
+        "source_ids": [
+          "cis-minsk-document",
+          "unodc-compendium"
+        ]
+      },
+      "rights": {
+        "licence": "CIS official text terms",
+        "note": "Official CIS text; reproduction is subject to the Commonwealth's terms. No full text is stored in this corpus.",
+        "status": "public_official_text",
+        "url": "https://eccis.org/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "cis-minsk-document",
+          "kind": "official_primary",
+          "language": "ru",
+          "note": "CIS Executive Committee document page: signed at Minsk on 1 June 2001, status 'in force', Russian text and signature block.",
+          "publisher": "CIS Executive Committee",
+          "url": "https://eccis.org/document/1180"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "unodc-compendium",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "UNODC pre-ratification compendium factsheet: adoption 1 June 2001, entry into force 14 March 2002, three instruments required, and the relationship with the 2018 Dushanbe Agreement.",
+          "publisher": "UNODC",
+          "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "cis-minsk-english",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "English translation of the Agreement reproduced by the Azerbaijani prosecutor training centre; used to check the substantive provisions.",
+          "publisher": "Prosecutor General's Office of Azerbaijan",
+          "url": "https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force since 14 March 2002. The 2018 Dushanbe Agreement replaces it between the States that become parties to that Agreement; for other CIS States it may remain in force. The current party list is not published on the CIS document page.",
+      "title": {
+        "english": "Agreement on Cooperation among the Member States of the Commonwealth of Independent States in Combating Offences relating to Computer Information",
+        "official": "Соглашение о сотрудничестве государств – участников Содружества Независимых Государств в борьбе с преступлениями в сфере компьютерной информации",
+        "short": "CIS Minsk Agreement 2001"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Signature date and status checked on the CIS Executive Committee document page.",
+            "date": "2026-11-24",
+            "result": "Signed at Minsk on 1 June 2001; status 'in force'."
+          },
+          {
+            "check": "Entry into force and relationship with the 2018 Agreement checked in the UNODC compendium.",
+            "date": "2026-11-24",
+            "result": "In force 14 March 2002; the Dushanbe Agreement replaces it from entry into force, but the Minsk Agreement remains in force for States that have not ratified Dushanbe."
+          },
+          {
+            "check": "Substantive provisions checked in an English translation.",
+            "date": "2026-11-24",
+            "result": "Criminalisation, harmonisation and law-enforcement cooperation duties are present; no AI-specific provision."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is metadata-only and is not mapped."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "cyber_treaty",
+      "dates": {
         "entered_into_force": null,
         "notes": "Opened for signature in Strasbourg on 12 May 2022. Not in force on the verification date; five ratifications are required. Party data checked against the Treaty Office chart status of 24 November 2026.",
         "opened_for_signature": "2022-05-12",
@@ -4684,6 +5283,143 @@
       }
     },
     {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2020-04-08",
+        "notes": "Adopted by the Committee of Ministers of the Council of Europe at the 1373rd meeting of the Ministers' Deputies on 8 April 2020. It is addressed to the governments of the 47 Council of Europe member States and has no signature, ratification or entry-into-force clause.",
+        "published": "2020-04-08",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding: it creates no legal obligation, ratification, depositary, monitoring or enforcement.",
+        "There is no itemised list of States that have endorsed or implemented the Recommendation; it is addressed to all 47 member States.",
+        "National implementation and the Recommendation's effect in domestic law are not assessed.",
+        "No full text, citable units or original file is stored in this record; it is metadata-only.",
+        "The Recommendation addresses algorithmic systems broadly, not only systems that meet a particular definition of AI."
+      ],
+      "id": "coe-recommendation-algorithmic-systems-2020",
+      "instrument_type": "recommendation",
+      "issuer": [
+        {
+          "name": "Committee of Ministers of the Council of Europe",
+          "role": "issuer",
+          "url": "https://search.coe.int/cm?i=09000016809e1154"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr"
+        ],
+        "note": "The Recommendation was adopted and published in English and French, the official languages of the Council of Europe. Only the English text was read for this record.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A Recommendation of the Committee of Ministers under Article 15.b of the Statute of the Council of Europe. It is a standard-setting text addressed to member States, not a treaty; it creates no legally binding obligation and has no ratification or depositary.",
+        "source_ids": [
+          "coe-rec-2020"
+        ]
+      },
+      "provenance": {
+        "assertions": [],
+        "discovered_via": "Council of Europe Committee of Ministers legal search and the official PDF; identified as a pending candidate in the AI source-family checklist.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "coe-cets-225",
+          "note": "The later binding Council of Europe framework convention on AI; the 2020 Recommendation is a precursor and a non-binding standard-setting text.",
+          "relation": "predecessor"
+        },
+        {
+          "id": "iccpr-1966",
+          "note": "The Recommendation grounds its guidelines in the European Convention on Human Rights and the ICCPR's rights vocabulary.",
+          "relation": "related"
+        },
+        {
+          "id": "oecd-ai-recommendation-2019",
+          "note": "A parallel non-binding intergovernmental AI recommendation adopted a year earlier.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Guidelines on reviewing legislation, policies and public-sector procurement for algorithmic systems consistently with human rights.",
+          "Guidance on transparency, explainability, data protection, non-discrimination, freedom of expression and access to effective remedies.",
+          "Guidance on oversight and accountability for public and private actors across the design, development and deployment of algorithmic systems.",
+          "Recommendation that member States translate and disseminate the text and evaluate the effectiveness of measures taken."
+        ],
+        "excluded_scope": "A non-binding recommendation addressed to Council of Europe member States. It creates no treaty obligation and does not establish an AI regulator or a conformity-assessment regime.",
+        "reason": "Recommendation CM/Rec(2020)1 is an AI-specific human-rights instrument adopted by the Council of Europe two years before CETS 225. It had been listed as pending and was missing from the corpus, which made the Council of Europe layer look as if it began with the 2024 framework convention.",
+        "source_ids": [
+          "coe-rec-2020",
+          "coe-news-2020"
+        ]
+      },
+      "rights": {
+        "licence": "Council of Europe terms",
+        "note": "Official Council of Europe text; reproduction is subject to the Council's terms. No full text is stored in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.coe.int/en/web/portal"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "coe-rec-2020",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official PDF: Recommendation CM/Rec(2020)1, adopted 8 April 2020 at the 1373rd meeting of the Ministers' Deputies; includes the recommendation and the appendix of guidelines.",
+          "publisher": "Council of Europe",
+          "url": "https://rm.coe.int/09000016809e1154"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "coe-news-2020",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Council of Europe news release of 8 April 2020 describing the Recommendation and its call on the 47 member States.",
+          "publisher": "Council of Europe",
+          "url": "https://www.coe.int/en/web/portal/-/algorithms-and-automation-new-guidelines-to-prevent-human-rights-breaches"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted and published as a non-binding Recommendation. It is addressed to the 47 Council of Europe member States; there is no signature, ratification, depositary or entry-into-force procedure.",
+      "title": {
+        "official": "Recommendation CM/Rec(2020)1 of the Committee of Ministers to member States on the human rights impacts of algorithmic systems",
+        "short": "CoE Recommendation on algorithmic systems (2020)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Adoption date and issuing body checked in the official PDF.",
+            "date": "2026-11-24",
+            "result": "Adopted by the Committee of Ministers on 8 April 2020 at the 1373rd meeting of the Ministers' Deputies."
+          },
+          {
+            "check": "Legal nature checked against the text and the Council of Europe's description.",
+            "date": "2026-11-24",
+            "result": "A Recommendation addressed to member States; non-binding, with no ratification or depositary."
+          },
+          {
+            "check": "Scope checked in the guidelines.",
+            "date": "2026-11-24",
+            "result": "Covers human rights impacts across the design, development and deployment of algorithmic systems, including public-sector use and private-sector responsibilities."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata and legal nature verified. No full text is stored; implementation is not assessed."
+      }
+    },
+    {
       "binding_status": "binding",
       "category": "agreement_ai_provisions",
       "dates": {
@@ -4978,6 +5714,149 @@
         ],
         "level": "full_text_checked",
         "notes": "Full text preserved. The AI clause is treaty language but its normative force is hortatory; classification as binding refers to the agreement, not to a hard AI obligation. The Costa Rica accession is verified at the level of the Parties' joint announcement; its entry-into-force date is not stated there."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "regional_law",
+      "dates": {
+        "adopted": "2011-08-19",
+        "notes": "Adopted by the ECOWAS Council of Ministers at its 66th ordinary session in Abuja, 17–19 August 2011. Article 34 requires publication in the Community Official Journal and in each Member State's gazette; Article 35 required implementation measures by 1 January 2014. The Directive has no separate entry-into-force clause.",
+        "published": "2011-08-19",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "Binding ECOWAS community law, not an international treaty; it is excluded from the international-binding set and collected with internal law.",
+        "No full text, citable units or original file is stored in this record; it is metadata-only.",
+        "National implementation and transposition in the Member States are not assessed.",
+        "Current ECOWAS membership and the effect of suspensions or withdrawals are not assessed.",
+        "The Directive creates no AI-specific obligation."
+      ],
+      "id": "ecowas-cybercrime-directive-2011",
+      "instrument_type": "directive",
+      "issuer": [
+        {
+          "name": "ECOWAS Council of Ministers",
+          "role": "issuer",
+          "url": "https://www.ecowas.int/"
+        },
+        {
+          "name": "ECOWAS Commission",
+          "role": "secretariat",
+          "url": "https://www.ecowas.int/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en",
+          "fr"
+        ],
+        "note": "ECOWAS published signed English and French versions of the Directive. Both are official language versions; only the English text was read for this record.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "supranational_law",
+        "rationale": "A directive of the ECOWAS Council of Ministers, binding on ECOWAS Member States as community law and requiring implementation in national law. It is not an EU act and it is not an international treaty signed and ratified by States; it is therefore classified as regional internal law, alongside the EU internal-law records.",
+        "source_ids": [
+          "ecowas-directive",
+          "africanlii-directive"
+        ]
+      },
+      "provenance": {
+        "assertions": [],
+        "discovered_via": "ECOWAS official treaty and policy publications; AfricanLII consolidation; identified in the cyber-family review.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "au-malabo-convention-2014",
+          "note": "The African Union's continental cyber security and cybercrime convention; the ECOWAS Directive is a regional community-law instrument and predates Malabo's entry into force.",
+          "relation": "related"
+        },
+        {
+          "id": "budapest-convention-2001",
+          "note": "The European cybercrime treaty; the ECOWAS Directive covers comparable criminal-law and procedural ground through community legislation rather than a treaty.",
+          "relation": "related"
+        },
+        {
+          "id": "eu-nis2-directive-2022",
+          "note": "A parallel regional internal-law act in the cyber layer, but with a different institutional and constitutional setting.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "cyber_provisions": [
+          "Harmonisation of substantive criminal law on cybercrime, including unlawful access, interception, data and system interference, computer-related forgery and fraud, and content offences.",
+          "Harmonisation of criminal procedure, including search, seizure, expedited preservation, production orders and electronic evidence.",
+          "Rules on corporate liability, sanctions, jurisdiction and international cooperation among ECOWAS Member States.",
+          "Implementation deadline of 1 January 2014, with national legislative, regulatory and administrative measures."
+        ],
+        "excluded_scope": "A regional community-law directive. It is not an international treaty and creates no AI-specific obligation.",
+        "reason": "The ECOWAS Directive is a binding regional cybercrime instrument that had been missing from the corpus. It shows that the cyber layer includes regional community law beyond the EU: West African States harmonised criminal law and procedure through a directive, not a treaty, and that legal form matters for how the instrument binds and how it should be counted.",
+        "source_ids": [
+          "ecowas-directive",
+          "africanlii-directive"
+        ]
+      },
+      "rights": {
+        "licence": "ECOWAS official text terms",
+        "note": "Official ECOWAS text; reproduction is subject to ECOWAS terms. No full text is stored in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.ecowas.int/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "ecowas-directive",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official signed English text: Directive C/DIR.1/08/11 on Fighting Cyber Crime within ECOWAS, adopted at Abuja on 19 August 2011; Articles 34–35 on publication and implementation.",
+          "publisher": "ECOWAS",
+          "url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "africanlii-directive",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "AfricanLII consolidation of Directive C/DIR.1/08/11, recording publication on 19 August 2011.",
+          "publisher": "AfricanLII",
+          "url": "https://africanlii.org/en/akn/aa-ecowas/act/directive/2011/8-1/eng@2011-12-31"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "Adopted and published as binding ECOWAS community law. Member States were required to implement it by 1 January 2014. It has no separate entry-into-force clause; national implementation is not assessed.",
+      "title": {
+        "official": "Directive C/DIR.1/08/11 on Fighting Cyber Crime within ECOWAS",
+        "short": "ECOWAS Cybercrime Directive 2011"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Adoption date, issuing body and final clauses checked in the official signed English text.",
+            "date": "2026-11-24",
+            "result": "Adopted by the ECOWAS Council of Ministers at Abuja on 19 August 2011; Articles 34–35 provide for publication and implementation by 1 January 2014."
+          },
+          {
+            "check": "Legal form checked against the ECOWAS Treaty framework and the text's own 'Directive' designation.",
+            "date": "2026-11-24",
+            "result": "A binding community-law directive addressed to Member States, not a treaty subject to signature and ratification."
+          },
+          {
+            "check": "Publication date checked against the AfricanLII consolidation.",
+            "date": "2026-11-24",
+            "result": "Published 19 August 2011."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata and legal form verified from the official text. No full text is stored; national implementation is not assessed."
       }
     },
     {
@@ -5730,6 +6609,158 @@
         ],
         "level": "metadata_verified",
         "notes": "Metadata verified; full text not stored. The commitments are not an instrument of international law."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2026-09-02",
+        "notes": "Issued by G20 ministers at the Innovation Ministerial in Chapel Hill, North Carolina, on 2 September 2026. The text is a ministerial deliverable accompanying the G20 Innovation Ministerial Statement; it is not a leaders' communiqué or a treaty.",
+        "published": "2026-09-02",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding: it creates no legal obligation, ratification, depositary, monitoring or enforcement.",
+        "No itemised list of endorsing States is published; the text is a ministerial deliverable of the G20 presidency.",
+        "The companion AI Prosperity Compact is a voluntary private-sector partnership pledge, not an intergovernmental instrument, and is not counted as a separate record here.",
+        "The objectives focus on AI skills and workforce development, not on AI safety, liability or market access.",
+        "No full text, citable units or original file is stored in this record; it is metadata-only."
+      ],
+      "id": "g20-ai-prosperity-objectives-2026",
+      "instrument_type": "principles",
+      "issuer": [
+        {
+          "name": "G20 Innovation Ministers, Chapel Hill, North Carolina",
+          "role": "issuer",
+          "url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives"
+        },
+        {
+          "name": "United States G20 Presidency (2026)",
+          "role": "host",
+          "url": "https://www.commerce.gov/issues/g20-innovation-ministerial"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "The official text is published in English by the US Department of Commerce. No authenticated multilingual text or translation status was located.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A ministerial deliverable adopted at a G20 Innovation Ministerial. It is a political text with voluntary objectives; it has no signature, ratification, depositary or entry-into-force clause and creates no legal obligation.",
+        "source_ids": [
+          "g20-objectives-page",
+          "g20-objectives-pdf"
+        ]
+      },
+      "provenance": {
+        "assertions": [],
+        "discovered_via": "US Department of Commerce G20 Innovation Ministerial pages; the G20 deliverables had been recorded as pending in the candidate register, but the objectives were adopted on 2 September 2026.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "oecd-ai-recommendation-2019",
+          "note": "The objectives acknowledge the G20's prior AI work, including the G20 AI Principles, which are the OECD AI Principles as endorsed.",
+          "relation": "related"
+        },
+        {
+          "id": "g7-hiroshima-code-2023",
+          "note": "A parallel G7 AI deliverable; the G20 text is workforce-focused and non-binding, while the G7 code is addressed to AI developers.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-78-311",
+          "note": "Both address AI capacity-building, but the G20 text is a ministerial political deliverable rather than a UN resolution.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Nine voluntary objectives on AI skills, AI literacy, apprenticeships, technical training, lifelong learning and workforce readiness.",
+          "Commitments to expand access to AI education and hands-on technical training, including through public-private partnerships.",
+          "Encouragement of voluntary information sharing on workforce development and AI adoption.",
+          "Reference to the G20's prior AI work and to human-centric, reliable approaches to AI adoption."
+        ],
+        "excluded_scope": "A non-binding ministerial text on AI workforce development. It does not create AI safety, testing, liability or market-access rules and establishes no monitoring mechanism.",
+        "reason": "The G20 AI Prosperity Objectives are an adopted AI-specific ministerial text from September 2026 and were still marked as pending in the corpus. Leaving them out would have repeated the omission the source-family review was meant to catch: a current instrument absent because an earlier search had stopped at the Innovation Ministerial Statement.",
+        "source_ids": [
+          "g20-objectives-page",
+          "g20-objectives-pdf"
+        ]
+      },
+      "rights": {
+        "licence": "US Government work / official text",
+        "note": "Official US Department of Commerce publication of a G20 ministerial text. No full text is stored in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "g20-objectives-page",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "US Department of Commerce page reproducing the G20 AI Prosperity Objectives; identifies the ministers assembled in Chapel Hill and the voluntary character of the objectives.",
+          "publisher": "US Department of Commerce",
+          "url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "g20-objectives-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official PDF of the G20 AI Prosperity Objectives, September 2026.",
+          "publisher": "US Department of Commerce",
+          "url": "https://www.commerce.gov/sites/default/files/2026-09/THE-G20-AI-PROSPERITY-OBJECTIVES.pdf"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "g20-whitehouse-release",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "White House release of 2 September 2026 recording the Innovation Ministerial and the AI Prosperity Objectives and Compact as deliverables.",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/releases/2026/09/g20-innovation-ministerial-concludes-with-consensus-statement"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted as a G20 ministerial deliverable on 2 September 2026. It is non-binding and has no signature, ratification, depositary or entry-into-force procedure.",
+      "title": {
+        "official": "The G20 AI Prosperity Objectives",
+        "short": "G20 AI Prosperity Objectives (2026)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Text and issuing context checked on the US Department of Commerce page and official PDF.",
+            "date": "2026-11-24",
+            "result": "Ministers assembled in Chapel Hill; nine voluntary objectives on AI skills and workforce development; no legal obligation."
+          },
+          {
+            "check": "Date and ministerial setting checked against the White House release.",
+            "date": "2026-11-24",
+            "result": "G20 Innovation Ministerial concluded on 2 September 2026; the objectives were one of its deliverables."
+          },
+          {
+            "check": "Legal nature checked against the text.",
+            "date": "2026-11-24",
+            "result": "Voluntary ministerial objectives; no signature, ratification or depositary."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata and legal nature verified. No full text is stored; the companion private-sector Compact is not counted as an intergovernmental instrument."
       }
     },
     {
@@ -7474,6 +8505,7 @@
       "gaps": [
         "Non-binding: the Recommendation creates no treaty obligation, ratification, depositary, sanction or enforceable right.",
         "The adherent list is maintained live in the OECD Compendium; the record is a snapshot at 24 November 2026, without a separate dated depositary table.",
+        "The list is essentially the OECD membership: 38 OECD members plus Brazil. It should not be read as an independent measure of global support for the Recommendation.",
         "Only State adherents are recorded. The Recommendation is addressed to governments; implementation by private operators is a matter for adherents' domestic law.",
         "The full text is not stored as a local text; the official Compendium page is the source.",
         "The 2022 OECD digital-security package (OECD/LEGAL/0479-0482) is related but not merged into this record, because each recommendation has its own scope."
@@ -7685,7 +8717,7 @@
         "source_ids": [
           "oecd-critical-security"
         ],
-        "summary": "39 States are listed as adherents: the 38 OECD members and Brazil. Adherence is political, not a treaty signature or ratification.",
+        "summary": "39 States are listed as adherents: the 38 OECD members and Brazil, the only non-member adherent. Adherence is political, not a treaty signature or ratification. The list is essentially OECD membership plus one State and is not evidence of broader global support.",
         "unknowns": [
           "The Compendium does not print a separate date for the current adherent count; the record uses the access date.",
           "No public list of implementation measures by adherent is included here."
@@ -7747,8 +8779,8 @@
           "Section VII — operator measures: governance, protection, detection and response, resilience",
           "Section VIII–IX — partnerships and international cooperation"
         ],
-        "excluded_scope": "A non-binding Recommendation addressed to States. It creates no treaty obligation, no depositary and no enforcement mechanism. The map records adherents, not signatures or ratifications.",
-        "reason": "The OECD's current recommendation on the digital security of critical activities. It is the formal, State-level OECD instrument in this area and the official Compendium maintains a named adherent list, so it can be catalogued and mapped without inventing a supporter count."
+        "excluded_scope": "A non-binding Recommendation addressed to States. It creates no treaty obligation, no depositary and no enforcement mechanism. The map records adherents, not signatures or ratifications. It is not a global supporter list: 38 of the 39 adherents are OECD members, and Brazil is the only non-member adherent.",
+        "reason": "The OECD's current recommendation on the digital security of critical activities. The official Compendium maintains a named adherent list, but the list is essentially the OECD membership plus Brazil: 38 OECD members and one non-member. It is included as an OECD instrument and mapped for completeness, not as evidence of broad global support."
       },
       "rights": {
         "licence": "OECD reuse terms",
@@ -7769,7 +8801,7 @@
         }
       ],
       "status": "in_force",
-      "status_note": "In force as an OECD legal instrument. Adopted 11 December 2019; 39 named adherents at access on 24 November 2026. Non-binding; no ratification or enforcement.",
+      "status_note": "In force as an OECD legal instrument. Adopted 11 December 2019; 39 named adherents at access on 24 November 2026 (38 OECD members and Brazil). Non-binding; no ratification or enforcement.",
       "title": {
         "official": "Recommendation of the Council on Digital Security of Critical Activities",
         "short": "OECD Digital Security Recommendation (OECD/LEGAL/0456)"
@@ -10388,6 +11420,216 @@
         ],
         "level": "metadata_verified",
         "notes": "Metadata verified from the official State Department release. The record is metadata-only: no full text is stored. Signature is political; the declaration creates no legal obligation."
+      }
+    },
+    {
+      "binding_status": "binding",
+      "category": "cyber_treaty",
+      "dates": {
+        "adopted": "2009-06-16",
+        "entered_into_force": "2011-06-02",
+        "notes": "Signed at Yekaterinburg on 16 June 2009 by the governments of the SCO member States. Article 12 requires entry into force on the thirtieth day after the depositary receives the fourth written notification of completion of domestic procedures. The Hong Kong Treaty Series and national ratification records give 2 June 2011 as the entry-into-force date. The UNODC compendium factsheet prints 16 June 2009, which is the signature date, not the entry-into-force date required by Article 12; this record follows the treaty text and the treaty-series record. The SCO Secretariat is the depositary.",
+        "signed": "2009-06-16",
+        "verified_on": "2026-11-24"
+      },
+      "domains": [
+        "cyber"
+      ],
+      "gaps": [
+        "The SCO Secretariat does not publish a current party-by-party table for the Agreement; the six original signatories are known, but accessions by later SCO member States are not verified.",
+        "The UNODC factsheet gives 16 June 2009 as the entry-into-force date, while the treaty text requires four notifications and the treaty-series record gives 2 June 2011; the discrepancy is recorded rather than smoothed over.",
+        "The official English text is a translation; the authentic text is in Russian and Chinese.",
+        "No full text, citable units or original file is stored in this record.",
+        "National implementation, reservations and the Agreement's relationship with later SCO instruments are not assessed.",
+        "The Agreement creates no AI-specific obligation."
+      ],
+      "id": "sco-information-security-agreement-2009",
+      "instrument_type": "agreement",
+      "issuer": [
+        {
+          "name": "Governments of the Member States of the Shanghai Cooperation Organization",
+          "role": "issuer",
+          "url": "https://eng.sectsco.org/20090616/207486.html"
+        },
+        {
+          "name": "Secretariat of the Shanghai Cooperation Organization",
+          "role": "depositary",
+          "url": "https://eng.sectsco.org/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ru",
+          "zh"
+        ],
+        "note": "Article 10 makes Russian and Chinese the working languages. The SCO publishes an English translation; it is not an authentic text.",
+        "translations": [
+          "en"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "treaty",
+        "rationale": "An agreement among governments of the SCO member States, with a depositary, a four-notification entry-into-force threshold, accession and withdrawal clauses. It creates binding obligations for its Parties and is a treaty, not a recommendation or political declaration.",
+        "source_ids": [
+          "sco-agreement",
+          "sco-text"
+        ]
+      },
+      "parties": {
+        "act": "treaty_signature",
+        "as_of": "2026-11-24",
+        "counts": {
+          "parties": {
+            "basis": "unknown",
+            "note": "Six original SCO member States signed at Yekaterinburg in 2009: China, Kazakhstan, Kyrgyzstan, Russia, Tajikistan and Uzbekistan. The Agreement is open to accession by other States, but the depositary does not publish a current party table; no current party total is asserted.",
+            "source_ids": [
+              "sco-agreement",
+              "unodc-compendium"
+            ],
+            "total": null,
+            "verified": 0
+          },
+          "ratifications": {
+            "basis": "unknown",
+            "note": "No current ratification total is asserted; the depositary does not publish an itemised table on the Agreement page.",
+            "source_ids": [
+              "sco-agreement"
+            ],
+            "total": null,
+            "verified": 0
+          }
+        },
+        "declarations": [],
+        "entries": [],
+        "notifications": [],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "sco-agreement",
+          "unodc-compendium"
+        ],
+        "summary": "Six original SCO member States signed the Agreement in 2009. The Agreement is in force and open to accession, but the current party list, including any accessions by later SCO members, is not verified.",
+        "unknowns": [
+          "Current Parties and the date of each notification.",
+          "Whether India, Pakistan, Iran and Belarus acceded after joining the SCO.",
+          "Reservations, declarations and objections."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "assertions": [],
+        "discovered_via": "UNODC pre-ratification compendium factsheet on regional cybercrime treaties; SCO official document page and text; cross-checked against the Hong Kong Treaty Series and national ratification records.",
+        "search_dates": [
+          "2026-11-24"
+        ]
+      },
+      "related": [
+        {
+          "id": "un-cybercrime-convention-2024",
+          "note": "The later global cybercrime convention; the SCO Agreement is a broader information-security cooperation framework and is not a substitute for it.",
+          "relation": "related"
+        },
+        {
+          "id": "cis-it-crimes-agreement-2018",
+          "note": "A parallel regional cooperation instrument in the post-Soviet space, with a narrower cybercrime focus.",
+          "relation": "related"
+        },
+        {
+          "id": "budapest-convention-2001",
+          "note": "The European cybercrime treaty; the SCO Agreement covers information security more broadly and does not establish the same criminal-procedure framework.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "cyber_provisions": [
+          "Cooperation in defining, coordinating and implementing joint measures on international information security.",
+          "A joint monitoring and response system for emerging threats in the information space.",
+          "Combating cybercrime and information terrorism, including through joint measures and information exchange.",
+          "Protection of critical information infrastructure and development of confidence-building measures among the Parties.",
+          "Exchange of legislation, experience and specialist training on information security."
+        ],
+        "excluded_scope": "A broad international information-security cooperation agreement. It is not a cybercrime convention with a detailed procedural and mutual-assistance chapter, and it creates no AI-specific obligation.",
+        "reason": "The SCO Agreement is a binding regional instrument that the UNODC compendium treats as part of the regional cybercrime and information-security framework. It had been missing from the corpus, which made the cyber layer look limited to the Budapest, Arab, African and CIS families.",
+        "source_ids": [
+          "sco-agreement",
+          "unodc-compendium"
+        ]
+      },
+      "rights": {
+        "licence": "SCO official text terms",
+        "note": "Official SCO publication of the Agreement; reproduction is subject to the Organization's terms. No full text is stored in this corpus.",
+        "status": "public_official_text",
+        "url": "https://eng.sectsco.org/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "sco-agreement",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "SCO official document page for the Agreement, signed at Yekaterinburg on 16 June 2009, with the text and final clauses.",
+          "publisher": "Shanghai Cooperation Organization",
+          "url": "https://eng.sectsco.org/20090616/207486.html"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "sco-text",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "SCO official English translation of the Agreement, including Articles 11–12 on the depositary and entry into force.",
+          "publisher": "Shanghai Cooperation Organization",
+          "url": "https://eng.sectsco.org/files/207508/207508"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "unodc-compendium",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "UNODC pre-ratification compendium factsheet: adoption 16 June 2009, four instruments required, open to States sharing the Agreement's goals; describes cybercrime as one of the threats covered.",
+          "publisher": "UNODC",
+          "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf"
+        },
+        {
+          "accessed": "2026-11-24",
+          "http_status": 200,
+          "id": "hklii-sco",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Hong Kong Treaty Series entry: adopted 16 June 2009, entry into force 2 June 2011, with the Agreement text.",
+          "publisher": "Hong Kong Legal Information Institute",
+          "url": "https://hklii.hk/en/legis/hkts/2011/2"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "In force since 2 June 2011 under Article 12, after the fourth notification. The UNODC factsheet's 16 June 2009 entry-into-force date conflicts with the treaty text and the treaty-series record; the discrepancy is recorded. The current party list is not published on the SCO document page.",
+      "title": {
+        "english": "Agreement on Cooperation in Ensuring International Information Security between the Member States of the Shanghai Cooperation Organization",
+        "official": "Соглашение между правительствами государств-членов Шанхайской организации сотрудничества о сотрудничестве в области обеспечения международной информационной безопасности",
+        "short": "SCO Information Security Agreement 2009"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Signature date, text and final clauses checked on the SCO official document page.",
+            "date": "2026-11-24",
+            "result": "Signed at Yekaterinburg on 16 June 2009; Article 12 requires the fourth notification; SCO Secretariat is depositary."
+          },
+          {
+            "check": "Entry into force cross-checked against the Hong Kong Treaty Series and national ratification records.",
+            "date": "2026-11-24",
+            "result": "2 June 2011. The UNODC factsheet's 16 June 2009 date is the signature date and conflicts with Article 12."
+          },
+          {
+            "check": "Scope checked in the text and the UNODC factsheet.",
+            "date": "2026-11-24",
+            "result": "Information security cooperation, including cybercrime, cyber-terrorism, critical infrastructure and confidence-building; no AI-specific provision."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is metadata-only and is not mapped."
       }
     },
     {

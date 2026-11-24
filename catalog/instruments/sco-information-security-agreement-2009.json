@@ -1,0 +1,210 @@
+{
+  "binding_status": "binding",
+  "category": "cyber_treaty",
+  "dates": {
+    "adopted": "2009-06-16",
+    "entered_into_force": "2011-06-02",
+    "notes": "Signed at Yekaterinburg on 16 June 2009 by the governments of the SCO member States. Article 12 requires entry into force on the thirtieth day after the depositary receives the fourth written notification of completion of domestic procedures. The Hong Kong Treaty Series and national ratification records give 2 June 2011 as the entry-into-force date. The UNODC compendium factsheet prints 16 June 2009, which is the signature date, not the entry-into-force date required by Article 12; this record follows the treaty text and the treaty-series record. The SCO Secretariat is the depositary.",
+    "signed": "2009-06-16",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "cyber"
+  ],
+  "gaps": [
+    "The SCO Secretariat does not publish a current party-by-party table for the Agreement; the six original signatories are known, but accessions by later SCO member States are not verified.",
+    "The UNODC factsheet gives 16 June 2009 as the entry-into-force date, while the treaty text requires four notifications and the treaty-series record gives 2 June 2011; the discrepancy is recorded rather than smoothed over.",
+    "The official English text is a translation; the authentic text is in Russian and Chinese.",
+    "No full text, citable units or original file is stored in this record.",
+    "National implementation, reservations and the Agreement's relationship with later SCO instruments are not assessed.",
+    "The Agreement creates no AI-specific obligation."
+  ],
+  "id": "sco-information-security-agreement-2009",
+  "instrument_type": "agreement",
+  "issuer": [
+    {
+      "name": "Governments of the Member States of the Shanghai Cooperation Organization",
+      "role": "issuer",
+      "url": "https://eng.sectsco.org/20090616/207486.html"
+    },
+    {
+      "name": "Secretariat of the Shanghai Cooperation Organization",
+      "role": "depositary",
+      "url": "https://eng.sectsco.org/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "ru",
+      "zh"
+    ],
+    "note": "Article 10 makes Russian and Chinese the working languages. The SCO publishes an English translation; it is not an authentic text.",
+    "translations": [
+      "en"
+    ]
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "An agreement among governments of the SCO member States, with a depositary, a four-notification entry-into-force threshold, accession and withdrawal clauses. It creates binding obligations for its Parties and is a treaty, not a recommendation or political declaration.",
+    "source_ids": [
+      "sco-agreement",
+      "sco-text"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-24",
+    "counts": {
+      "parties": {
+        "basis": "unknown",
+        "note": "Six original SCO member States signed at Yekaterinburg in 2009: China, Kazakhstan, Kyrgyzstan, Russia, Tajikistan and Uzbekistan. The Agreement is open to accession by other States, but the depositary does not publish a current party table; no current party total is asserted.",
+        "source_ids": [
+          "sco-agreement",
+          "unodc-compendium"
+        ],
+        "total": null,
+        "verified": 0
+      },
+      "ratifications": {
+        "basis": "unknown",
+        "note": "No current ratification total is asserted; the depositary does not publish an itemised table on the Agreement page.",
+        "source_ids": [
+          "sco-agreement"
+        ],
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "sco-agreement",
+      "unodc-compendium"
+    ],
+    "summary": "Six original SCO member States signed the Agreement in 2009. The Agreement is in force and open to accession, but the current party list, including any accessions by later SCO members, is not verified.",
+    "unknowns": [
+      "Current Parties and the date of each notification.",
+      "Whether India, Pakistan, Iran and Belarus acceded after joining the SCO.",
+      "Reservations, declarations and objections."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [],
+    "discovered_via": "UNODC pre-ratification compendium factsheet on regional cybercrime treaties; SCO official document page and text; cross-checked against the Hong Kong Treaty Series and national ratification records.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "un-cybercrime-convention-2024",
+      "note": "The later global cybercrime convention; the SCO Agreement is a broader information-security cooperation framework and is not a substitute for it.",
+      "relation": "related"
+    },
+    {
+      "id": "cis-it-crimes-agreement-2018",
+      "note": "A parallel regional cooperation instrument in the post-Soviet space, with a narrower cybercrime focus.",
+      "relation": "related"
+    },
+    {
+      "id": "budapest-convention-2001",
+      "note": "The European cybercrime treaty; the SCO Agreement covers information security more broadly and does not establish the same criminal-procedure framework.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "cyber_provisions": [
+      "Cooperation in defining, coordinating and implementing joint measures on international information security.",
+      "A joint monitoring and response system for emerging threats in the information space.",
+      "Combating cybercrime and information terrorism, including through joint measures and information exchange.",
+      "Protection of critical information infrastructure and development of confidence-building measures among the Parties.",
+      "Exchange of legislation, experience and specialist training on information security."
+    ],
+    "excluded_scope": "A broad international information-security cooperation agreement. It is not a cybercrime convention with a detailed procedural and mutual-assistance chapter, and it creates no AI-specific obligation.",
+    "reason": "The SCO Agreement is a binding regional instrument that the UNODC compendium treats as part of the regional cybercrime and information-security framework. It had been missing from the corpus, which made the cyber layer look limited to the Budapest, Arab, African and CIS families.",
+    "source_ids": [
+      "sco-agreement",
+      "unodc-compendium"
+    ]
+  },
+  "rights": {
+    "licence": "SCO official text terms",
+    "note": "Official SCO publication of the Agreement; reproduction is subject to the Organization's terms. No full text is stored in this corpus.",
+    "status": "public_official_text",
+    "url": "https://eng.sectsco.org/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "sco-agreement",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "SCO official document page for the Agreement, signed at Yekaterinburg on 16 June 2009, with the text and final clauses.",
+      "publisher": "Shanghai Cooperation Organization",
+      "url": "https://eng.sectsco.org/20090616/207486.html"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "sco-text",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "SCO official English translation of the Agreement, including Articles 11–12 on the depositary and entry into force.",
+      "publisher": "Shanghai Cooperation Organization",
+      "url": "https://eng.sectsco.org/files/207508/207508"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "unodc-compendium",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "UNODC pre-ratification compendium factsheet: adoption 16 June 2009, four instruments required, open to States sharing the Agreement's goals; describes cybercrime as one of the threats covered.",
+      "publisher": "UNODC",
+      "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "hklii-sco",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "Hong Kong Treaty Series entry: adopted 16 June 2009, entry into force 2 June 2011, with the Agreement text.",
+      "publisher": "Hong Kong Legal Information Institute",
+      "url": "https://hklii.hk/en/legis/hkts/2011/2"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force since 2 June 2011 under Article 12, after the fourth notification. The UNODC factsheet's 16 June 2009 entry-into-force date conflicts with the treaty text and the treaty-series record; the discrepancy is recorded. The current party list is not published on the SCO document page.",
+  "title": {
+    "english": "Agreement on Cooperation in Ensuring International Information Security between the Member States of the Shanghai Cooperation Organization",
+    "official": "Соглашение между правительствами государств-членов Шанхайской организации сотрудничества о сотрудничестве в области обеспечения международной информационной безопасности",
+    "short": "SCO Information Security Agreement 2009"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Signature date, text and final clauses checked on the SCO official document page.",
+        "date": "2026-11-24",
+        "result": "Signed at Yekaterinburg on 16 June 2009; Article 12 requires the fourth notification; SCO Secretariat is depositary."
+      },
+      {
+        "check": "Entry into force cross-checked against the Hong Kong Treaty Series and national ratification records.",
+        "date": "2026-11-24",
+        "result": "2 June 2011. The UNODC factsheet's 16 June 2009 date is the signature date and conflicts with Article 12."
+      },
+      {
+        "check": "Scope checked in the text and the UNODC factsheet.",
+        "date": "2026-11-24",
+        "result": "Information security cooperation, including cybercrime, cyber-terrorism, critical infrastructure and confidence-building; no AI-specific provision."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is metadata-only and is not mapped."
+  }
+}

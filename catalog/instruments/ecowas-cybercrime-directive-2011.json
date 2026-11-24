@@ -1,0 +1,143 @@
+{
+  "binding_status": "binding",
+  "category": "regional_law",
+  "dates": {
+    "adopted": "2011-08-19",
+    "notes": "Adopted by the ECOWAS Council of Ministers at its 66th ordinary session in Abuja, 17–19 August 2011. Article 34 requires publication in the Community Official Journal and in each Member State's gazette; Article 35 required implementation measures by 1 January 2014. The Directive has no separate entry-into-force clause.",
+    "published": "2011-08-19",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "cyber"
+  ],
+  "gaps": [
+    "Binding ECOWAS community law, not an international treaty; it is excluded from the international-binding set and collected with internal law.",
+    "No full text, citable units or original file is stored in this record; it is metadata-only.",
+    "National implementation and transposition in the Member States are not assessed.",
+    "Current ECOWAS membership and the effect of suspensions or withdrawals are not assessed.",
+    "The Directive creates no AI-specific obligation."
+  ],
+  "id": "ecowas-cybercrime-directive-2011",
+  "instrument_type": "directive",
+  "issuer": [
+    {
+      "name": "ECOWAS Council of Ministers",
+      "role": "issuer",
+      "url": "https://www.ecowas.int/"
+    },
+    {
+      "name": "ECOWAS Commission",
+      "role": "secretariat",
+      "url": "https://www.ecowas.int/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en",
+      "fr"
+    ],
+    "note": "ECOWAS published signed English and French versions of the Directive. Both are official language versions; only the English text was read for this record.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "supranational_law",
+    "rationale": "A directive of the ECOWAS Council of Ministers, binding on ECOWAS Member States as community law and requiring implementation in national law. It is not an EU act and it is not an international treaty signed and ratified by States; it is therefore classified as regional internal law, alongside the EU internal-law records.",
+    "source_ids": [
+      "ecowas-directive",
+      "africanlii-directive"
+    ]
+  },
+  "provenance": {
+    "assertions": [],
+    "discovered_via": "ECOWAS official treaty and policy publications; AfricanLII consolidation; identified in the cyber-family review.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "au-malabo-convention-2014",
+      "note": "The African Union's continental cyber security and cybercrime convention; the ECOWAS Directive is a regional community-law instrument and predates Malabo's entry into force.",
+      "relation": "related"
+    },
+    {
+      "id": "budapest-convention-2001",
+      "note": "The European cybercrime treaty; the ECOWAS Directive covers comparable criminal-law and procedural ground through community legislation rather than a treaty.",
+      "relation": "related"
+    },
+    {
+      "id": "eu-nis2-directive-2022",
+      "note": "A parallel regional internal-law act in the cyber layer, but with a different institutional and constitutional setting.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "cyber_provisions": [
+      "Harmonisation of substantive criminal law on cybercrime, including unlawful access, interception, data and system interference, computer-related forgery and fraud, and content offences.",
+      "Harmonisation of criminal procedure, including search, seizure, expedited preservation, production orders and electronic evidence.",
+      "Rules on corporate liability, sanctions, jurisdiction and international cooperation among ECOWAS Member States.",
+      "Implementation deadline of 1 January 2014, with national legislative, regulatory and administrative measures."
+    ],
+    "excluded_scope": "A regional community-law directive. It is not an international treaty and creates no AI-specific obligation.",
+    "reason": "The ECOWAS Directive is a binding regional cybercrime instrument that had been missing from the corpus. It shows that the cyber layer includes regional community law beyond the EU: West African States harmonised criminal law and procedure through a directive, not a treaty, and that legal form matters for how the instrument binds and how it should be counted.",
+    "source_ids": [
+      "ecowas-directive",
+      "africanlii-directive"
+    ]
+  },
+  "rights": {
+    "licence": "ECOWAS official text terms",
+    "note": "Official ECOWAS text; reproduction is subject to ECOWAS terms. No full text is stored in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.ecowas.int/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "ecowas-directive",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official signed English text: Directive C/DIR.1/08/11 on Fighting Cyber Crime within ECOWAS, adopted at Abuja on 19 August 2011; Articles 34–35 on publication and implementation.",
+      "publisher": "ECOWAS",
+      "url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "africanlii-directive",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "AfricanLII consolidation of Directive C/DIR.1/08/11, recording publication on 19 August 2011.",
+      "publisher": "AfricanLII",
+      "url": "https://africanlii.org/en/akn/aa-ecowas/act/directive/2011/8-1/eng@2011-12-31"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "Adopted and published as binding ECOWAS community law. Member States were required to implement it by 1 January 2014. It has no separate entry-into-force clause; national implementation is not assessed.",
+  "title": {
+    "official": "Directive C/DIR.1/08/11 on Fighting Cyber Crime within ECOWAS",
+    "short": "ECOWAS Cybercrime Directive 2011"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Adoption date, issuing body and final clauses checked in the official signed English text.",
+        "date": "2026-11-24",
+        "result": "Adopted by the ECOWAS Council of Ministers at Abuja on 19 August 2011; Articles 34–35 provide for publication and implementation by 1 January 2014."
+      },
+      {
+        "check": "Legal form checked against the ECOWAS Treaty framework and the text's own 'Directive' designation.",
+        "date": "2026-11-24",
+        "result": "A binding community-law directive addressed to Member States, not a treaty subject to signature and ratification."
+      },
+      {
+        "check": "Publication date checked against the AfricanLII consolidation.",
+        "date": "2026-11-24",
+        "result": "Published 19 August 2011."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata and legal form verified from the official text. No full text is stored; national implementation is not assessed."
+  }
+}

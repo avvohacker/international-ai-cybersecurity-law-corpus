@@ -30,6 +30,7 @@ CATEGORIES = {
     "technical_standard": "International technical standard",
     "draft_negotiation": "Draft or negotiation in progress",
     "supranational_law": "Supranational legislation, collected separately",
+    "regional_law": "Regional community legislation, collected separately",
     "general_treaty": "General treaty applicable to AI (reasoned selection)",
     "cyber_treaty": "Cybersecurity treaty",
 }

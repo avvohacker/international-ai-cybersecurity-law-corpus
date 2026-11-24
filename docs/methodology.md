@@ -14,18 +14,18 @@ The catalogue separates nine layers:
 6. Drafts and negotiations in progress.
 7. Supranational legislation, collected separately.
 8. A deliberately minimal selection of general treaties applicable to AI. It currently contains the VCLT (treaty law) and the ICCPR (human rights); it is not a general international-law inventory. The UN Charter, the UDHR, the ECHR, Convention 108+ and other general instruments are outside the corpus.
-9. International cybersecurity instruments: five cybercrime treaties, two EU internal-law acts (NIS2 and the Cyber Resilience Act) and three non-binding instruments with official State lists (the Paris Call, the OECD Digital Security Recommendation and the Pall Mall Code). The AI and cyber counts remain separate. In the section 01 sets and in the timeline, “binding” means **binding international law**, so the EU AI Act, NIS2 and the CRA are outside that set even though they are binding within the EU legal order.
+9. International cybersecurity instruments: nine cybercrime/cybersecurity treaties (Budapest, ETS 189, CETS 224, AU Malabo, UN Cybercrime, Arab Convention on IT Offences, CIS 2018, CIS 2001 and SCO 2009), three internal-law acts (NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) and three non-binding instruments with official State lists (the Paris Call, the OECD Digital Security Recommendation and the Pall Mall Code). The AI and cyber counts remain separate. In the section 01 sets and in the timeline, “binding” means **binding international law**, so the EU AI Act, NIS2, the CRA and the ECOWAS Directive are outside that set even though they are binding within their own legal orders.
 
 An instrument enters layer 2 only if an **express AI provision** is located in the text or an official excerpt, and it is more than incidental. A trade agreement with a general digital chapter but no AI reference is recorded in the candidate register as excluded (provisionally, if a full-text keyword check was not performed).
 
-The legal nature is determined from the instrument and its issuer, not from its title. Declarations and resolutions are `non_binding`; a joint statement is recorded as `joint_statement` rather than forced into `declaration`; voluntary company pledges are recorded as `commitment`; OECD Recommendations are non-binding legal instruments; ISO/IEC documents are voluntary technical standards; the EU AI Act, NIS2 and the Cyber Resilience Act are supranational legislation, not treaties.
+The legal nature is determined from the instrument and its issuer, not from its title. Declarations and resolutions are `non_binding`; a joint statement is recorded as `joint_statement` rather than forced into `declaration`; voluntary company pledges are recorded as `commitment`; OECD Recommendations are non-binding legal instruments; ISO/IEC documents are voluntary technical standards; the EU AI Act, NIS2 and the Cyber Resilience Act are supranational legislation, not treaties; the ECOWAS Cybercrime Directive is regional community law, also not a treaty.
 
 ## 2. Verification levels
 
 | Level | Meaning | This cycle |
 |---|---|---:|
 | `full_text_checked` | Full text stored, hashed, segmented, read; key passages asserted by tests. | 10 |
-| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 46 |
+| `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 53 |
 | `source_located` | Official URL recorded; metadata from an established reference, not re-read. | 0 |
 
 Sixteen full texts are stored (15 acquired originals — 14 PDFs and one HTML — plus the CETS 225 transcription); only the ten marked `full_text_checked` were read end-to-end and are covered by key-passage tests. Six further texts are stored and segmented but remain `metadata_verified` because they were not read end-to-end. The levels are deliberately coarse and honest. `metadata_verified` is not a guarantee that every field, party or declaration was checked. Each record lists its own `verification.checks`, and `gaps` records what remains unknown.
@@ -137,4 +137,4 @@ The omission test at the end of a cycle is deliberately mechanical:
 
 ### 10.5 What this changes in practice
 
-The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has seventeen maps and 56 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.
+The corpus and the map are now reported separately in the README, the coverage matrix and the generated page. The page has seventeen maps and 63 timeline records; the difference is intentional and explained. The next review should add a standing **scope** entry to the progress file for every cycle, not only a list of new records. If a future instrument is found late, the first question is which family or test failed, not only how to add the record.

@@ -1,0 +1,152 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2026-09-02",
+    "notes": "Issued by G20 ministers at the Innovation Ministerial in Chapel Hill, North Carolina, on 2 September 2026. The text is a ministerial deliverable accompanying the G20 Innovation Ministerial Statement; it is not a leaders' communiqué or a treaty.",
+    "published": "2026-09-02",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Non-binding: it creates no legal obligation, ratification, depositary, monitoring or enforcement.",
+    "No itemised list of endorsing States is published; the text is a ministerial deliverable of the G20 presidency.",
+    "The companion AI Prosperity Compact is a voluntary private-sector partnership pledge, not an intergovernmental instrument, and is not counted as a separate record here.",
+    "The objectives focus on AI skills and workforce development, not on AI safety, liability or market access.",
+    "No full text, citable units or original file is stored in this record; it is metadata-only."
+  ],
+  "id": "g20-ai-prosperity-objectives-2026",
+  "instrument_type": "principles",
+  "issuer": [
+    {
+      "name": "G20 Innovation Ministers, Chapel Hill, North Carolina",
+      "role": "issuer",
+      "url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives"
+    },
+    {
+      "name": "United States G20 Presidency (2026)",
+      "role": "host",
+      "url": "https://www.commerce.gov/issues/g20-innovation-ministerial"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "The official text is published in English by the US Department of Commerce. No authenticated multilingual text or translation status was located.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A ministerial deliverable adopted at a G20 Innovation Ministerial. It is a political text with voluntary objectives; it has no signature, ratification, depositary or entry-into-force clause and creates no legal obligation.",
+    "source_ids": [
+      "g20-objectives-page",
+      "g20-objectives-pdf"
+    ]
+  },
+  "provenance": {
+    "assertions": [],
+    "discovered_via": "US Department of Commerce G20 Innovation Ministerial pages; the G20 deliverables had been recorded as pending in the candidate register, but the objectives were adopted on 2 September 2026.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "oecd-ai-recommendation-2019",
+      "note": "The objectives acknowledge the G20's prior AI work, including the G20 AI Principles, which are the OECD AI Principles as endorsed.",
+      "relation": "related"
+    },
+    {
+      "id": "g7-hiroshima-code-2023",
+      "note": "A parallel G7 AI deliverable; the G20 text is workforce-focused and non-binding, while the G7 code is addressed to AI developers.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-78-311",
+      "note": "Both address AI capacity-building, but the G20 text is a ministerial political deliverable rather than a UN resolution.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Nine voluntary objectives on AI skills, AI literacy, apprenticeships, technical training, lifelong learning and workforce readiness.",
+      "Commitments to expand access to AI education and hands-on technical training, including through public-private partnerships.",
+      "Encouragement of voluntary information sharing on workforce development and AI adoption.",
+      "Reference to the G20's prior AI work and to human-centric, reliable approaches to AI adoption."
+    ],
+    "excluded_scope": "A non-binding ministerial text on AI workforce development. It does not create AI safety, testing, liability or market-access rules and establishes no monitoring mechanism.",
+    "reason": "The G20 AI Prosperity Objectives are an adopted AI-specific ministerial text from September 2026 and were still marked as pending in the corpus. Leaving them out would have repeated the omission the source-family review was meant to catch: a current instrument absent because an earlier search had stopped at the Innovation Ministerial Statement.",
+    "source_ids": [
+      "g20-objectives-page",
+      "g20-objectives-pdf"
+    ]
+  },
+  "rights": {
+    "licence": "US Government work / official text",
+    "note": "Official US Department of Commerce publication of a G20 ministerial text. No full text is stored in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "g20-objectives-page",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "US Department of Commerce page reproducing the G20 AI Prosperity Objectives; identifies the ministers assembled in Chapel Hill and the voluntary character of the objectives.",
+      "publisher": "US Department of Commerce",
+      "url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "g20-objectives-pdf",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official PDF of the G20 AI Prosperity Objectives, September 2026.",
+      "publisher": "US Department of Commerce",
+      "url": "https://www.commerce.gov/sites/default/files/2026-09/THE-G20-AI-PROSPERITY-OBJECTIVES.pdf"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "g20-whitehouse-release",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "White House release of 2 September 2026 recording the Innovation Ministerial and the AI Prosperity Objectives and Compact as deliverables.",
+      "publisher": "The White House",
+      "url": "https://www.whitehouse.gov/releases/2026/09/g20-innovation-ministerial-concludes-with-consensus-statement"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Adopted as a G20 ministerial deliverable on 2 September 2026. It is non-binding and has no signature, ratification, depositary or entry-into-force procedure.",
+  "title": {
+    "official": "The G20 AI Prosperity Objectives",
+    "short": "G20 AI Prosperity Objectives (2026)"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Text and issuing context checked on the US Department of Commerce page and official PDF.",
+        "date": "2026-11-24",
+        "result": "Ministers assembled in Chapel Hill; nine voluntary objectives on AI skills and workforce development; no legal obligation."
+      },
+      {
+        "check": "Date and ministerial setting checked against the White House release.",
+        "date": "2026-11-24",
+        "result": "G20 Innovation Ministerial concluded on 2 September 2026; the objectives were one of its deliverables."
+      },
+      {
+        "check": "Legal nature checked against the text.",
+        "date": "2026-11-24",
+        "result": "Voluntary ministerial objectives; no signature, ratification or depositary."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata and legal nature verified. No full text is stored; the companion private-sector Compact is not counted as an intergovernmental instrument."
+  }
+}

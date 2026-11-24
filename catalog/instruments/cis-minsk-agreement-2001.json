@@ -1,0 +1,197 @@
+{
+  "binding_status": "binding",
+  "category": "cyber_treaty",
+  "dates": {
+    "adopted": "2001-06-01",
+    "entered_into_force": "2002-03-14",
+    "notes": "Signed at Minsk on 1 June 2001 by the CIS Heads of State. UNODC records entry into force on 14 March 2002 after three instruments. The 2018 Dushanbe Agreement replaces this Agreement between the States that become parties to it; for States that have not ratified the Dushanbe Agreement, the Minsk Agreement remains in force. The CIS depositary does not publish a current party table on the document page, so no current party count is asserted.",
+    "signed": "2001-06-01",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "cyber"
+  ],
+  "gaps": [
+    "The CIS Executive Committee confirms that the Agreement is in force but does not display a current party-by-party table; no current party count is asserted.",
+    "The 2018 Dushanbe Agreement replaces this Agreement between its Parties, but the exact set of States for which the Minsk Agreement remains in force is not verified.",
+    "Only the Russian authentic text and an English translation were read; no full text, citable units or original file is stored in this record.",
+    "National implementation and reservations are not assessed.",
+    "The Agreement creates no AI-specific obligation."
+  ],
+  "id": "cis-minsk-agreement-2001",
+  "instrument_type": "agreement",
+  "issuer": [
+    {
+      "name": "Council of Heads of State of the Commonwealth of Independent States",
+      "role": "issuer",
+      "url": "https://eccis.org/document/1180"
+    },
+    {
+      "name": "CIS Executive Committee",
+      "role": "depositary",
+      "url": "https://eccis.org/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "ru"
+    ],
+    "note": "The Agreement was concluded in Russian and deposited with the CIS Executive Committee. An English translation is reproduced by UNODC and by Azerbaijan's prosecutor training centre; it is not an authentic text.",
+    "translations": [
+      "en"
+    ]
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "An agreement adopted by the CIS Heads of State, with entry into force after three instruments and a depositary. It creates binding obligations for its Parties and is a treaty, not a recommendation or political declaration.",
+    "source_ids": [
+      "cis-minsk-document",
+      "unodc-compendium"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-24",
+    "counts": {
+      "parties": {
+        "basis": "unknown",
+        "note": "Entry into force on 14 March 2002 establishes that at least three instruments were deposited. The current party count and the States for which the Agreement remains in force are not verified.",
+        "source_ids": [
+          "cis-minsk-document",
+          "unodc-compendium"
+        ],
+        "total": null,
+        "verified": 0
+      },
+      "ratifications": {
+        "basis": "unknown",
+        "note": "No current ratification total is asserted; the CIS depositary page does not display a party table.",
+        "source_ids": [
+          "cis-minsk-document"
+        ],
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "cis-minsk-document",
+      "unodc-compendium"
+    ],
+    "summary": "The Agreement is in force, but the current number of Parties is not verified. The 2018 Dushanbe Agreement replaces it between the States that become parties to that later Agreement; for other CIS States the Minsk Agreement may remain in force.",
+    "unknowns": [
+      "Current Parties and the date of each deposit.",
+      "The States for which the Minsk Agreement remains in force after the Dushanbe Agreement.",
+      "Reservations, declarations and objections."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [],
+    "discovered_via": "UNODC pre-ratification compendium factsheet on regional cybercrime treaties; CIS Executive Committee document register; cross-checked against an English translation.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "cis-it-crimes-agreement-2018",
+      "note": "The 2018 Dushanbe Agreement replaces the Minsk Agreement between the States that become parties to it.",
+      "relation": "successor"
+    },
+    {
+      "id": "budapest-convention-2001",
+      "note": "The European cybercrime treaty adopted in the same year; both establish criminal-law and cooperation duties, with different membership.",
+      "relation": "related"
+    },
+    {
+      "id": "arab-convention-it-offences-2010",
+      "note": "A later regional cybercrime treaty with a comparable criminal-law and mutual-assistance structure.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "cyber_provisions": [
+      "A common definition of offences relating to computer information, including illegal access, modification, destruction, blocking or copying of information and disruption of computer systems or networks.",
+      "An obligation for Parties to criminalise the defined conduct under national law and to harmonise their legal systems.",
+      "Cooperation among law-enforcement and judicial authorities in preventing, detecting, suppressing and investigating computer-information offences.",
+      "Procedural cooperation, information exchange and mutual assistance among the competent authorities of the Parties."
+    ],
+    "excluded_scope": "A regional criminal-law cooperation agreement. It creates no AI-specific obligation and does not establish a supranational regulator.",
+    "reason": "The 2001 Minsk Agreement is the first regional cybercrime treaty and remains in force for CIS States that have not joined the 2018 Dushanbe Agreement. Its absence made the CIS layer look as if it began in 2018 and left the predecessor treaty unrecorded.",
+    "source_ids": [
+      "cis-minsk-document",
+      "unodc-compendium"
+    ]
+  },
+  "rights": {
+    "licence": "CIS official text terms",
+    "note": "Official CIS text; reproduction is subject to the Commonwealth's terms. No full text is stored in this corpus.",
+    "status": "public_official_text",
+    "url": "https://eccis.org/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "cis-minsk-document",
+      "kind": "official_primary",
+      "language": "ru",
+      "note": "CIS Executive Committee document page: signed at Minsk on 1 June 2001, status 'in force', Russian text and signature block.",
+      "publisher": "CIS Executive Committee",
+      "url": "https://eccis.org/document/1180"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "unodc-compendium",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "UNODC pre-ratification compendium factsheet: adoption 1 June 2001, entry into force 14 March 2002, three instruments required, and the relationship with the 2018 Dushanbe Agreement.",
+      "publisher": "UNODC",
+      "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "cis-minsk-english",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "English translation of the Agreement reproduced by the Azerbaijani prosecutor training centre; used to check the substantive provisions.",
+      "publisher": "Prosecutor General's Office of Azerbaijan",
+      "url": "https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force since 14 March 2002. The 2018 Dushanbe Agreement replaces it between the States that become parties to that Agreement; for other CIS States it may remain in force. The current party list is not published on the CIS document page.",
+  "title": {
+    "english": "Agreement on Cooperation among the Member States of the Commonwealth of Independent States in Combating Offences relating to Computer Information",
+    "official": "Соглашение о сотрудничестве государств – участников Содружества Независимых Государств в борьбе с преступлениями в сфере компьютерной информации",
+    "short": "CIS Minsk Agreement 2001"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Signature date and status checked on the CIS Executive Committee document page.",
+        "date": "2026-11-24",
+        "result": "Signed at Minsk on 1 June 2001; status 'in force'."
+      },
+      {
+        "check": "Entry into force and relationship with the 2018 Agreement checked in the UNODC compendium.",
+        "date": "2026-11-24",
+        "result": "In force 14 March 2002; the Dushanbe Agreement replaces it from entry into force, but the Minsk Agreement remains in force for States that have not ratified Dushanbe."
+      },
+      {
+        "check": "Substantive provisions checked in an English translation.",
+        "date": "2026-11-24",
+        "result": "Criminalisation, harmonisation and law-enforcement cooperation duties are present; no AI-specific provision."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is metadata-only and is not mapped."
+  }
+}

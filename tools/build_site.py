@@ -81,7 +81,8 @@ CATEGORY_LABELS = {
     "preparatory_interpretive": "Implementation / interpretation",
     "technical_standard": "Technical standard",
     "draft_negotiation": "Negotiation in progress",
-    "supranational_law": "EU law",
+    "supranational_law": "EU internal law",
+    "regional_law": "Regional community law",
     "general_treaty": "General treaty",
     "cyber_treaty": "Cybersecurity treaty",
 }
@@ -286,6 +287,7 @@ STATUS_FILL = {
     "endorsed": ACT_BLUE,
     "signed": ACT_BLUE,
     "ratified": RATIFIED_BLUE,
+    "nonmember_endorsed": INDIA_BROWN,
     "organisation": ORG_MEMBER_BLUE,
     "issued": ISSUED_GOLD,
     "none": LAND,
@@ -294,6 +296,7 @@ STATUS_TITLE = {
     "endorsed": "endorsed",
     "signed": "signature only",
     "ratified": "ratified",
+    "nonmember_endorsed": "non-member adherent",
     "organisation": "member of a participating international organisation; no individual act",
     "issued": "issuing government; collective statement, no individual signature",
     "none": "no recorded act",
@@ -637,8 +640,13 @@ TIMELINE_STORIES = {
     "waico-establishment-agreement-2026": "The organisation. China convened the signing of a constituent treaty for the World Artificial Intelligence Cooperation Organization in Shanghai: a Council, a Secretariat, a depositary and a civilian-only mandate. It reports 38 founding members, identifies 37, and no deposit was verified; entry into force is not confirmed.",
     "brics-ai-statement-2025": "The coalition text. The BRICS leaders issue a statement on AI governance centred on digital sovereignty and the Global South. It has no signature block; the record counts 11 member States rather than 11 signatories, and Saudi participation is contested between the presidency's list and the Saudi news agency.",
     "paris-call-cyberspace-2018": "The multistakeholder turn. France launched the Paris Call for Trust and Security in Cyberspace at the Internet Governance Forum and the Paris Peace Forum, opening nine cyber principles to States, local authorities, companies and civil society. It now lists 81 States and the European Union. It is political support, not a treaty, and creates no legal obligation.",
-    "oecd-digital-security-critical-activities-2019": "The critical-infrastructure turn. The OECD Council adopts a Recommendation on the digital security of critical activities, replacing its 2008 critical-information-infrastructure text. It has 39 State adherents and a formal implementation-review cycle, but it remains a non-binding recommendation; it is the bridge between national critical-infrastructure policy and international cyber governance.",
+    "oecd-digital-security-critical-activities-2019": "The critical-infrastructure turn. The OECD Council adopts a Recommendation on the digital security of critical activities, replacing its 2008 critical-information-infrastructure text. It has 39 State adherents — the 38 OECD members and Brazil, the only non-member — and a formal implementation-review cycle, but it remains a non-binding recommendation. The map is essentially OECD membership plus Brazil, not a global supporter map.",
     "pall-mall-code-of-practice-2025": "The spyware-market turn. The Pall Mall Process produces a State-facing Code of Practice for commercial cyber intrusion capabilities: accountability, precision, oversight and transparency, with export controls and victim support. It is voluntary and non-binding, and 27 States are listed as supporters in the October 2025 version.",
+    "arab-convention-it-offences-2010": "The Arab regional route. The League of Arab States adopts a cybercrime convention at Cairo, with criminalisation, procedural powers and mutual assistance. It enters into force in 2014 and remains binding for its Parties, but its depositary table is not publicly stable; the record is therefore catalogue-only and not mapped.",
+    "cis-it-crimes-agreement-2018": "The post-Soviet replacement. The CIS replaces its 2001 computer-information agreement with a 2018 cooperation agreement, in force since 2020. It is narrower than the Budapest Convention and built around competent-authority cooperation; the current party list is declared by a legal register, so the record is not mapped.",
+    "ecowas-cybercrime-directive-2011": "The West African community-law route. ECOWAS harmonises cybercrime law and procedure by directive, not treaty, with an implementation deadline of 2014. It is binding internal community law; like the EU acts, it is catalogued without a State-level box.",
+    "coe-recommendation-algorithmic-systems-2020": "The rights precursor. The Council of Europe's Committee of Ministers recommends human-rights safeguards for algorithmic systems two years before CETS 225. It is non-binding and addressed to all 47 member States; it supplies the rights vocabulary that the later treaty turns into obligations.",
+    "g20-ai-prosperity-objectives-2026": "The workforce turn. G20 ministers adopt nine voluntary objectives on AI skills, literacy and training at Chapel Hill in September 2026. The text is AI-specific but workforce-focused; the companion private-sector Compact is not counted as an intergovernmental instrument.",
     "paris-ai-action-summit-statement-2025": "The widest endorsement. The Paris statement is endorsed by 65 States and organisations on the Élysée page, including China and India and excluding the United States and the United Kingdom. It is political, not legal, and the count itself is disputed between the page and the PDF.",
     "pax-silica-declaration-2025": "The US-led coalition. Pax Silica is built around supply-chain access, trusted technology and national tools, not around a treaty. Its 26 'signatories' endorse a political declaration; the word is the source's, not a legal qualification.",
     "san-francisco-declaration-2026": "The coalition becomes operational. At the Pax Silica Founders Retreat in San Francisco, ten governments sign a declaration on sensitive technologies, critical infrastructure and supply-chain security, and announce five working groups. It is still political: no depositary, no ratification, no enforcement. It is the sharpest contrast with WAICO's treaty form.",
@@ -653,8 +661,19 @@ TIMELINE_STORIES = {
 
 
 def is_international_binding(inst: dict) -> bool:
-    """Binding under international law; EU internal legislation is excluded."""
-    return inst["binding_status"] == "binding" and inst["category"] != "supranational_law"
+    """Binding under international law; internal community legislation is excluded."""
+    return inst["binding_status"] == "binding" and inst["category"] not in (
+        "supranational_law",
+        "regional_law",
+    )
+
+
+def is_internal_law(inst: dict) -> bool:
+    """Binding community law that is not an international treaty."""
+    return inst["binding_status"] == "binding" and inst["category"] in (
+        "supranational_law",
+        "regional_law",
+    )
 
 
 MAP_GROUP_LABELS = {
@@ -757,9 +776,9 @@ def sets_section(instruments: list[dict]) -> str:
           <span><i class="sets-dot sets-dot-treaty"></i>Cyber</span>
           <span><i class="sets-dot sets-dot-force"></i>International binding</span>
         </div>
-        <svg viewBox="0 0 560 460" class="sets-svg" role="img" aria-labelledby="sets-title sets-desc">
+        <svg viewBox="-8 -10 576 480" class="sets-svg" role="img" aria-labelledby="sets-title sets-desc">
           <title id="sets-title">AI, cyber and international binding</title>
-          <desc id="sets-desc">Three overlapping sets over all {len(instruments)} records. AI has {len(ai)}, cyber has {len(cyber)} and international binding has {len(binding)} members. No record belongs to both AI and cyber; the EU internal-law acts are outside the binding set.</desc>
+          <desc id="sets-desc">Three overlapping sets over all {len(instruments)} records. AI has {len(ai)}, cyber has {len(cyber)} and international binding has {len(binding)} members. No record belongs to both AI and cyber; the internal-law acts are outside the binding set.</desc>
           <circle cx="205" cy="170" r="145" class="sets-circle sets-circle-ai"/>
           <circle cx="355" cy="170" r="145" class="sets-circle sets-circle-treaty"/>
           <circle cx="280" cy="285" r="145" class="sets-circle sets-circle-force"/>
@@ -774,7 +793,7 @@ def sets_section(instruments: list[dict]) -> str:
           <text x="365" y="270" text-anchor="middle" class="sets-count">{counts["cyber_binding"]}</text>
           <text x="280" y="360" text-anchor="middle" class="sets-count">{counts["binding_only"]}</text>
         </svg>
-        <figcaption class="sets-caption">AI and cyber do not overlap: no record addresses both domains. The binding set covers international law only; the three EU internal-law acts — the AI Act, NIS2 and the Cyber Resilience Act — sit in the AI or cyber set but outside binding.</figcaption>
+        <figcaption class="sets-caption">AI and cyber do not overlap: no record addresses both domains. The binding set covers international law only; the four internal-law acts — the EU AI Act, NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive — sit in the AI or cyber set but outside binding.</figcaption>
       </figure>
       <div class="sets-membership-wrap">
         <table class="membership-table">
@@ -786,7 +805,7 @@ def sets_section(instruments: list[dict]) -> str:
             {rows}
           </tbody>
         </table>
-        <p class="sets-key"><strong>{len(ai)}</strong> AI · <strong>{len(cyber)}</strong> cyber · <strong>{len(binding)}</strong> international binding. The sets overlap; the rows above are mutually exclusive and sum to {len(instruments)}. EU internal law is not counted as international binding.</p>
+        <p class="sets-key"><strong>{len(ai)}</strong> AI · <strong>{len(cyber)}</strong> cyber · <strong>{len(binding)}</strong> international binding. The sets overlap; the rows above are mutually exclusive and sum to {len(instruments)}. Internal law is not counted as international binding.</p>
       </div>
     </div>'''
 
@@ -853,8 +872,8 @@ def combined_timeline(instruments: list[dict], events: list[dict]) -> str:
             )
         else:
             record_kind = (
-                "EU internal-law record"
-                if inst["category"] == "supranational_law"
+                "Internal-law record"
+                if is_internal_law(inst)
                 else "Binding instrument without a map"
                 if is_international_binding(inst)
                 else "Non-binding record"
@@ -949,7 +968,7 @@ def main() -> int:
     in_force = sum(1 for inst in instruments if inst["binding_status"] == "binding" and inst["status"] == "in_force")
     not_in_force = binding - in_force
     international_binding = sum(1 for inst in instruments if is_international_binding(inst))
-    eu_internal_law = binding - international_binding
+    internal_law = binding - international_binding
     full_texts = sum(1 for inst in instruments if (inst.get("text") or {}).get("full_text"))
     originals = 0
     for inst in instruments:
@@ -1166,6 +1185,9 @@ def main() -> int:
     paris_status = {iso: "endorsed" for iso in paris_iso}
     paris_call_status = {iso: "endorsed" for iso in paris_call_iso}
     oecd_cyber_status = {iso: "endorsed" for iso in oecd_cyber_iso}
+    # Brazil is the only non-member adherent; show it separately so the map does
+    # not read as 39 independent endorsements beyond OECD membership.
+    oecd_cyber_status["BR"] = "nonmember_endorsed"
     pall_mall_status = {iso: "endorsed" for iso in pall_mall_iso}
     bletchley_status = {iso: "endorsed" for iso in bletchley_iso}
     seoul_status = {iso: "endorsed" for iso in seoul_iso}
@@ -1258,7 +1280,8 @@ def main() -> int:
         {"color": LAND, "label": "State: not endorsed"},
     ]
     oecd_cyber_legend = [
-        {"color": ACT_BLUE, "label": "State: OECD adherent"},
+        {"color": ACT_BLUE, "label": "State: OECD member adherent"},
+        {"color": INDIA_BROWN, "label": "Brazil: only non-member adherent"},
         {"color": LAND, "label": "State: not an adherent"},
     ]
     pall_mall_legend = [
@@ -1689,21 +1712,23 @@ def main() -> int:
             oecd_cyber,
             "oecd-cyber",
             "OECD Digital Security 2019",
-            f"{len(oecd_cyber_states)} States · OECD adherents",
-            f"World map. Medium blue: {len(oecd_cyber_states)} States listed by the OECD as adherents of the Recommendation. Sand: States not listed. The list is maintained in the OECD Compendium, not a treaty depositary.",
+            f"{len(oecd_cyber_states)} States · 38 OECD members + Brazil",
+            f"World map. Medium blue: the 38 OECD member States listed as adherents of the Recommendation. Brown: Brazil, the only non-member adherent. Sand: States not listed. The list is maintained in the OECD Compendium, not a treaty depositary.",
             oecd_cyber_status,
             [],
             oecd_cyber_legend,
             note=(
                 "Non-binding OECD Recommendation adopted on 11 December 2019. The "
                 f"official Compendium lists {len(oecd_cyber_states)} adherents: the 38 OECD "
-                "members and Brazil. The page does not print a separate 'as of' date; the "
-                "record is a snapshot at access on 24 November 2026. Adherence is political, "
-                "not a treaty signature or ratification. The Recommendation replaced the "
-                "2008 Recommendation on the Protection of Critical Information Infrastructures."
+                "members and Brazil. This is essentially an OECD membership map plus one "
+                "non-member; it is not evidence of broad global support. The page does not "
+                "print a separate 'as of' date; the record is a snapshot at access on 24 "
+                "November 2026. Adherence is political, not a treaty signature or "
+                "ratification. The Recommendation replaced the 2008 Recommendation on the "
+                "Protection of Critical Information Infrastructures."
             ),
             legend_note=(
-                f"{len(oecd_cyber_states)} adherent States · OECD Compendium, snapshot 24 November 2026"
+                f"38 OECD members + Brazil · OECD Compendium, snapshot 24 November 2026"
             ),
             party_label="Adherents",
         ),
@@ -1942,9 +1967,12 @@ def main() -> int:
       <tr><th scope="row">Technical standard</th><td>{category_counts.get("technical_standard", 0)}</td>
         <td>ISO/IEC vocabulary, governance and management-system standards. They are used in procurement and certification.</td>
         <td>Private standards, not international law. They bind only through contract, regulation or adoption by a public authority.</td></tr>
-      <tr><th scope="row">Supranational law</th><td>{category_counts.get("supranational_law", 0)}</td>
+      <tr><th scope="row">EU internal law</th><td>{category_counts.get("supranational_law", 0)}</td>
         <td>The EU AI Act, NIS2 and the Cyber Resilience Act: EU legislation directly applicable or addressed to the member States, with product, infrastructure and enforcement rules.</td>
         <td>Not international instruments. No State signs or ratifies them, and they are not part of the international binding set.</td></tr>
+      <tr><th scope="row">Regional community law</th><td>{category_counts.get("regional_law", 0)}</td>
+        <td>The ECOWAS Cybercrime Directive: binding community legislation addressed to ECOWAS Member States, with a national implementation duty.</td>
+        <td>Not an international treaty and not EU law; it is internal community law and is excluded from the international binding set.</td></tr>
       <tr><th scope="row">General treaty</th><td>{category_counts.get("general_treaty", 0)}</td>
         <td>The ICCPR and the VCLT: rights and treaty-law background that the AI instruments presuppose.</td>
         <td>Not AI-specific. They do not regulate AI systems, but they govern the rights and the legal technique at issue.</td></tr>
@@ -1985,6 +2013,42 @@ def main() -> int:
     metadata_only = total - full_texts
     cyber_treaties = [inst for inst in instruments if inst["category"] == "cyber_treaty"]
     cyber_treaties_in_force = sum(1 for inst in cyber_treaties if inst["status"] == "in_force")
+    ai_binding = sum(
+        1 for inst in instruments if "ai" in inst["domains"] and is_international_binding(inst)
+    )
+    cyber_binding = sum(
+        1 for inst in instruments if "cyber" in inst["domains"] and is_international_binding(inst)
+    )
+    ai_internal = sum(
+        1 for inst in instruments if "ai" in inst["domains"] and is_internal_law(inst)
+    )
+    cyber_internal = sum(
+        1 for inst in instruments if "cyber" in inst["domains"] and is_internal_law(inst)
+    )
+    ai_nonbinding = ai_layer_count - ai_binding - ai_internal
+    cyber_nonbinding = cyber_only_count - cyber_binding - cyber_internal
+    ai_soft = sum(
+        1
+        for inst in instruments
+        if "ai" in inst["domains"] and inst["category"] == "non_binding_instrument"
+    )
+    cyber_soft = sum(
+        1
+        for inst in instruments
+        if "cyber" in inst["domains"] and inst["category"] == "non_binding_instrument"
+    )
+    ai_breakdown = (
+        f"{ai_count} AI-specific treaties, {trade_count} trade agreements with AI provisions, "
+        f"{general_treaty_count} general background treaties, "
+        f"{category_counts.get('technical_standard', 0)} technical standards, "
+        f"{category_counts.get('preparatory_interpretive', 0)} implementation texts, "
+        "one negotiation record, one EU internal-law act "
+        f"and {ai_soft} other non-binding texts"
+    )
+    cyber_breakdown = (
+        f"{len(cyber_treaties)} treaties, {cyber_soft} non-binding texts and "
+        f"{cyber_internal} internal-law acts"
+    )
     stat_cards = [
         (
             str(total),
@@ -1994,7 +2058,7 @@ def main() -> int:
         (
             str(binding),
             "binding instruments",
-            f"{international_binding} international + {eu_internal_law} EU internal law; "
+            f"{international_binding} international + {internal_law} internal community law; "
             f"{in_force} in force.",
         ),
         (
@@ -2018,10 +2082,11 @@ def main() -> int:
       <div class="situation-main">
         <p class="situation-eyebrow">Situation at a glance</p>
         <h3>Most of the record is political, not binding.</h3>
-        <p class="situation-lede">The corpus is broad but uneven: AI dominates, binding international law is a minority, and only {map_count} records have a State-level map. Only {number_word(ai_count)} AI-specific treaties exist; the AI layer is mostly recommendations, declarations and standards. Read this page first; the maps and the timeline are the evidence behind these totals.</p>
+        <p class="situation-lede">The corpus is broad but uneven: AI dominates by record count, binding international law is a minority, and only {map_count} records have a State-level map. The corpus contains {number_word(ai_count)} AI-specific treaties, CETS 225 and WAICO; the AI layer is mostly non-binding, while the cyber layer is smaller and more treaty-heavy. Read this page first; the maps and the timeline are the evidence behind these totals.</p>
+        <p class="situation-breakdown"><strong>What “AI-layer” means.</strong> It is not {ai_layer_count} AI treaties. The AI layer is {ai_breakdown}. The cyber layer is {cyber_breakdown}. The two domains are counted separately; no record is in both.</p>
         <div class="situation-bars">
-          <div class="situation-row"><span class="situation-label">Legal form</span><span class="situation-track" role="img" aria-label="{international_binding} international binding, {eu_internal_law} EU internal law, {non_binding} non-binding"><i class="situation-fill sit-international" style="width:{international_binding / total * 100:.2f}%"></i><i class="situation-fill sit-eu" style="width:{eu_internal_law / total * 100:.2f}%"></i><i class="situation-fill sit-nonbinding" style="width:{non_binding / total * 100:.2f}%"></i></span><span class="situation-value">{binding} binding</span></div>
-          <div class="situation-key"><span><i class="sit-swatch sit-international"></i>{international_binding} international</span><span><i class="sit-swatch sit-eu"></i>{eu_internal_law} EU internal law</span><span><i class="sit-swatch sit-nonbinding"></i>{non_binding} non-binding</span></div>
+          <div class="situation-row"><span class="situation-label">Legal form</span><span class="situation-track" role="img" aria-label="{international_binding} international binding, {internal_law} internal community law, {non_binding} non-binding"><i class="situation-fill sit-international" style="width:{international_binding / total * 100:.2f}%"></i><i class="situation-fill sit-eu" style="width:{internal_law / total * 100:.2f}%"></i><i class="situation-fill sit-nonbinding" style="width:{non_binding / total * 100:.2f}%"></i></span><span class="situation-value">{binding} binding</span></div>
+          <div class="situation-key"><span><i class="sit-swatch sit-international"></i>{international_binding} international</span><span><i class="sit-swatch sit-eu"></i>{internal_law} internal law</span><span><i class="sit-swatch sit-nonbinding"></i>{non_binding} non-binding</span></div>
           <div class="situation-row"><span class="situation-label">Domain</span><span class="situation-track" role="img" aria-label="{ai_layer_count} AI, {cyber_only_count} cyber, {joint_count} joint"><i class="situation-fill sit-ai" style="width:{ai_layer_count / total * 100:.2f}%"></i><i class="situation-fill sit-cyber" style="width:{cyber_only_count / total * 100:.2f}%"></i></span><span class="situation-value">{joint_count} joint</span></div>
           <div class="situation-key"><span><i class="sit-swatch sit-ai"></i>{ai_layer_count} AI-layer</span><span><i class="sit-swatch sit-cyber"></i>{cyber_only_count} cyber-only</span></div>
         </div>
@@ -2041,7 +2106,7 @@ def main() -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI and Cybersecurity Law — Atlas</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI and cybersecurity law. The AI and cybersecurity layers are catalogued and counted separately.">
-<link rel="stylesheet" href="assets/style.css?v=27">
+<link rel="stylesheet" href="assets/style.css?v=29">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -2050,7 +2115,7 @@ def main() -> int:
     <p class="kicker">Verified corpus · verification {esc(verified_on)}</p>
     <h1>International AI and Cybersecurity Law</h1>
     <p class="atlas-subtitle">Atlas</p>
-    <p class="byline">{total} records · {ai_layer_count} AI-layer · {cyber_layer_count} cyber · {full_texts} full texts · {binding} binding ({international_binding} international)</p>
+    <p class="byline">{total} records · {ai_layer_count} AI-layer · {cyber_layer_count} cyber · {full_texts} full texts · {binding} binding ({international_binding} international, {internal_law} internal)</p>
     <nav class="toc" aria-label="Sections">
       <a href="#index">Index</a>
       <a href="#form">01 Situation</a>
@@ -2069,7 +2134,7 @@ def main() -> int:
       <p class="eyebrow">00 · Index</p>
       <h2>What this corpus contains</h2>
       <div class="stats">{stats_html}</div>
-      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer includes the Budapest Convention, its two protocols (ETS 189 and CETS 224), the AU Malabo Convention, the UN Cybercrime Convention, two EU internal-law acts (NIS2 and the Cyber Resilience Act) and the non-binding Paris Call, OECD Digital Security Recommendation and Pall Mall Code; the remaining cyber families are still being built. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
+      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer includes nine treaties (the Budapest Convention, its two protocols, the AU Malabo Convention, the UN Cybercrime Convention, the Arab Convention on IT Offences, the CIS 2018 Agreement, the CIS Minsk Agreement 2001 and the SCO Information Security Agreement 2009), three cyber internal-law acts (NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) and three non-binding instruments (the Paris Call, the OECD Digital Security Recommendation and the Pall Mall Code). Cyber standards and cooperation channels remain pending. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
       <div class="index-grid">
         <a class="index-card" href="#form"><span class="index-number">01</span><strong>The corpus in one view</strong><span>Situation at a glance: legal form, domain split, evidence and map coverage, before the maps and the timeline. The exact AI, cyber and binding sets follow.</span></a>
         <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>{number_word(len(map_entries)).capitalize()} maps of the State-level acts recorded in the corpus: signatures, ratifications, accessions, endorsements and collective issuances.</span></a>
@@ -2088,27 +2153,27 @@ def main() -> int:
       <p class="lede">Before the maps and the timeline: what this corpus contains, how much of it is legally binding, where the AI and cyber weight sits, and how much evidence has actually been read.</p>
       {situation_html}
       <h3 class="sets-heading">Three sets: AI, cyber and international binding</h3>
-      <p class="lede sets-lede">Every record is tested against three properties: it addresses AI, it addresses cyber, and it is binding international law. The sets overlap. The binding set is international only: the EU AI Act, NIS2 and the Cyber Resilience Act are binding EU law, but they are not international instruments and sit outside it.</p>
+      <p class="lede sets-lede">Every record is tested against three properties: it addresses AI, it addresses cyber, and it is binding international law. The sets overlap. The binding set is international only: the EU AI Act, NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive are binding internal law, but they are not international instruments and sit outside it.</p>
       {sets_html}
       <div class="sets-reading">
-        <p><strong>{international_binding} instruments are binding international law.</strong> Nine address AI, five address cyber, and none addresses both. They are labelled as binding in section 03; seven of them have a State-level map in section 02.</p>
-        <p><strong>Three EU acts are internal law, not international binding.</strong> The AI Act is in the AI set; NIS2 and the Cyber Resilience Act are in the cyber set. They are catalogued and shown as plain timeline rows without a State-level map because no State signs or ratifies them and they do not bind third States as treaties.</p>
-        <p><strong>No record is both AI and cyber.</strong> Outside the binding set, the AI side holds {ai_layer_count - sum(1 for inst in instruments if "ai" in inst["domains"] and is_international_binding(inst)) - sum(1 for inst in instruments if "ai" in inst["domains"] and inst["category"] == "supranational_law")} non-binding records and the EU AI Act; the cyber side holds three non-binding records (Paris Call, OECD Digital Security and Pall Mall Code) and two EU acts. The catalogue in section 05 lists every record and its metadata.</p>
+        <p><strong>{international_binding} instruments are binding international law.</strong> {number_word(ai_binding).capitalize()} address AI, {number_word(cyber_binding)} address cyber, and none addresses both. They are labelled as binding in section 03; {number_word(map_binding_count)} of them have a State-level map in section 02.</p>
+        <p><strong>{number_word(internal_law).capitalize()} acts are internal law, not international binding.</strong> The EU AI Act is in the AI set; NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive are in the cyber set. They are catalogued and shown as plain timeline rows without a State-level map because no State signs or ratifies them and they do not bind third States as treaties.</p>
+        <p><strong>No record is both AI and cyber.</strong> Outside the international-binding set, the AI side holds {ai_nonbinding} records with non-binding status and the EU AI Act; the cyber side holds {cyber_nonbinding} non-binding records (Paris Call, OECD Digital Security and Pall Mall Code) and {cyber_internal} internal-law acts. The catalogue in section 05 lists every record and its metadata.</p>
       </div>
-      <p class="source-note">Membership is derived from <code>domains</code>, <code>binding_status</code> and <code>category</code>. “International binding” means a treaty or other binding international instrument; supranational EU legislation is excluded from that set but remains <code>binding</code> in its own legal order. The rows are mutually exclusive and sum to the {total} records. EU internal law is not mapped.</p>
+      <p class="source-note">Membership is derived from <code>domains</code>, <code>binding_status</code> and <code>category</code>. “International binding” means a treaty or other binding international instrument; EU and ECOWAS internal legislation is excluded from that set but remains <code>binding</code> in its own legal order. The rows are mutually exclusive and sum to the {total} records. Internal law is not mapped.</p>
     </div>
   </section>
 
 <section id="maps" class="section section-dark">
     <div class="wrap">
       <p class="eyebrow">02 · {number_word(len(map_entries)).capitalize()} maps</p>
-      <h2>The treaties, declarations and statements</h2>
+      <h2>The instruments, on the map</h2>
       <p class="lede">{number_word(len(map_entries)).capitalize()} instruments with a published State-level list, ordered by instrument type: binding AI, binding cyber, non-binding AI, then non-binding cyber. Each map also explains the instrument and links its official sources.</p>
       <div class="map-groups">
         {maps_html}
       </div>
       <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. “Endorsed” is used for political declarations, which create no treaty signature or ratification; “member State” is used for the BRICS collective statement, which has no individual signature block.</p>
-      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} political instruments and {number_word(map_binding_count)} treaties. They include the five cybersecurity treaties now itemised: the Budapest Convention, its two protocols, the AU Malabo Convention and the UN Cybercrime Convention. The {len(brics_states)}-member BRICS statement is mapped as a collective issue by its member States, not as {len(brics_states)} individual signatures. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the UNESCO recommendation and the other OECD digital-security recommendations, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate Pax Silica deliverables (the June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration, which is catalogued as a record but not mapped), and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment. The three EU internal-law acts (AI Act, NIS2 and the Cyber Resilience Act) are catalogue-only because they are not international instruments; they are not mapped as if they were treaties.</p>
+      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} non-binding instruments and {number_word(map_binding_count)} treaties. They include five of the nine cybersecurity treaties in the catalogue: the Budapest Convention, its two protocols, the AU Malabo Convention and the UN Cybercrime Convention. The Arab Convention, both CIS agreements and the SCO Agreement are catalogued but not mapped because their current depositary tables are not stable or publicly accessible. The {len(brics_states)}-member BRICS statement is mapped as a collective issue by its member States, not as {len(brics_states)} individual signatures. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the UNESCO recommendation and the other OECD digital-security recommendations, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration (catalogued, not mapped), and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment. The four internal-law acts (AI Act, NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) are catalogue-only because they are not international instruments; they are not mapped as if they were treaties.</p>
     </div>
   </section>
 
@@ -2116,7 +2181,7 @@ def main() -> int:
     <div class="wrap">
       <p class="eyebrow">03 · Timeline</p>
       <h2>The story, with the instruments in it</h2>
-      <p class="lede">{total} instruments and {len(unseen_events)} events in one chronology, 1966–2026. A box marks a record with a State-level map in section 02: its title and “map in 02” open that map. Plain rows have no map. Every row states its legal force, so binding, non-binding and EU internal law remain distinguishable; events are circles without a text.</p>
+      <p class="lede">{total} instruments and {len(unseen_events)} events in one chronology, 1966–2026. A box marks a record with a State-level map in section 02: its title and “map in 02” open that map. Plain rows have no map. Every row states its legal force, so binding, non-binding and internal law remain distinguishable; events are circles without a text.</p>
       <div class="timeline-key">
         <span><i class="key-highlight"></i>Record with a map in section 02 (box) · title and “map in 02” open it</span>
         <span><i class="key-record"></i>Record without a State-level map (plain row)</span>

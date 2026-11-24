@@ -14,6 +14,7 @@
   "gaps": [
     "Non-binding: the Recommendation creates no treaty obligation, ratification, depositary, sanction or enforceable right.",
     "The adherent list is maintained live in the OECD Compendium; the record is a snapshot at 24 November 2026, without a separate dated depositary table.",
+  "The list is essentially the OECD membership: 38 OECD members plus Brazil. It should not be read as an independent measure of global support for the Recommendation.",
     "Only State adherents are recorded. The Recommendation is addressed to governments; implementation by private operators is a matter for adherents' domestic law.",
     "The full text is not stored as a local text; the official Compendium page is the source.",
     "The 2022 OECD digital-security package (OECD/LEGAL/0479-0482) is related but not merged into this record, because each recommendation has its own scope."
@@ -225,7 +226,7 @@
     "source_ids": [
       "oecd-critical-security"
     ],
-    "summary": "39 States are listed as adherents: the 38 OECD members and Brazil. Adherence is political, not a treaty signature or ratification.",
+    "summary": "39 States are listed as adherents: the 38 OECD members and Brazil, the only non-member adherent. Adherence is political, not a treaty signature or ratification. The list is essentially OECD membership plus one State and is not evidence of broader global support.",
     "unknowns": [
       "The Compendium does not print a separate date for the current adherent count; the record uses the access date.",
       "No public list of implementation measures by adherent is included here."
@@ -287,8 +288,8 @@
       "Section VII — operator measures: governance, protection, detection and response, resilience",
       "Section VIII–IX — partnerships and international cooperation"
     ],
-    "excluded_scope": "A non-binding Recommendation addressed to States. It creates no treaty obligation, no depositary and no enforcement mechanism. The map records adherents, not signatures or ratifications.",
-    "reason": "The OECD's current recommendation on the digital security of critical activities. It is the formal, State-level OECD instrument in this area and the official Compendium maintains a named adherent list, so it can be catalogued and mapped without inventing a supporter count."
+    "excluded_scope": "A non-binding Recommendation addressed to States. It creates no treaty obligation, no depositary and no enforcement mechanism. The map records adherents, not signatures or ratifications. It is not a global supporter list: 38 of the 39 adherents are OECD members, and Brazil is the only non-member adherent.",
+    "reason": "The OECD's current recommendation on the digital security of critical activities. The official Compendium maintains a named adherent list, but the list is essentially the OECD membership plus Brazil: 38 OECD members and one non-member. It is included as an OECD instrument and mapped for completeness, not as evidence of broad global support."
   },
   "rights": {
     "licence": "OECD reuse terms",
@@ -309,7 +310,7 @@
     }
   ],
   "status": "in_force",
-  "status_note": "In force as an OECD legal instrument. Adopted 11 December 2019; 39 named adherents at access on 24 November 2026. Non-binding; no ratification or enforcement.",
+  "status_note": "In force as an OECD legal instrument. Adopted 11 December 2019; 39 named adherents at access on 24 November 2026 (38 OECD members and Brazil). Non-binding; no ratification or enforcement.",
   "title": {
     "official": "Recommendation of the Council on Digital Security of Critical Activities",
     "short": "OECD Digital Security Recommendation (OECD/LEGAL/0456)"
