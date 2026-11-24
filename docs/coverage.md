@@ -6,7 +6,7 @@ Coverage achieved in the cycle ending **2026-11-24**. Counts are generated from 
 
 | Institution / forum | Catalogued | Nature of coverage | Principal gaps |
 |---|---:|---|---|
-| Council of Europe | 2 | CETS 225 (binding, not in force) + Explanatory Report | no reservations/objections recorded; implementation and CoP rules not assessed |
+| Council of Europe | 5 | CETS 225 (binding, not in force) + Explanatory Report; Budapest Convention, ETS 189 and CETS 224 (cyber, binding; CETS 224 not in force) | no CETS 225 reservations/objections recorded; implementation and CoP rules not assessed; cyber protocols' reservations/declarations not itemised |
 | United Nations General Assembly | 9 | AI resolutions 2023–2025 and Pact for the Future/GDC | no binding UN AI treaty; military AI outside the Panel/Dialogue mandate; 81st-session drafts L.34/L.37 pending, not yet A/RES |
 | United Nations Human Rights Council | 1 | A/HRC/RES/63/15 on AI and human rights (2026), adopted without a vote | non-binding; no party list; 65th-session panel and 66th-session OHCHR report still to come |
 | OECD | 1 | Recommendation OECD/LEGAL/0449 | adherent-by-adherent implementation not assessed |
@@ -23,7 +23,7 @@ Coverage achieved in the cycle ending **2026-11-24**. Counts are generated from 
 | General international law | 2 | ICCPR, VCLT | UN Charter, UDHR, ECHR, Convention 108+ and other general instruments not catalogued; customary law, general principles, Security Council resolutions and international humanitarian law are not systematically covered; this is a scope limit, not a finding |
 | AI Action Summit (France–India) | 1 | Paris Statement (2025), 65 endorsers | endorser list inconsistent across official publications (60/64/65); no depositary or update log |
 | AI Impact Summit (India) | 1 | New Delhi Declaration (2026), 92 itemised endorsers: 90 States, EU and IFAD | MEA page lists 91 and omits Colombia; PIB annex lists 92; discrepancy unexplained; no follow-up mechanism verified |
-| BRICS | 1 | Leaders' statement on global AI governance (2025), issued collectively by 11 listed member States; mapped as a collective issue (ninth map) | no individual signature block; Saudi participation contested between the presidency list and SPA; no follow-up mechanism verified; 2026 summit reaffirmed implementation but produced no new stand-alone AI text |
+| BRICS | 1 | Leaders' statement on global AI governance (2025), issued collectively by 11 listed member States; mapped as a collective issue | no individual signature block; Saudi participation contested between the presidency list and SPA; no follow-up mechanism verified; 2026 summit reaffirmed implementation but produced no new stand-alone AI text |
 | G20 | 0 | No G20 instrument catalogued; G20 AI Principles are the OECD principles as endorsed | 2026 Innovation Ministerial Statement is broad; AI Prosperity Compact and AI Prosperity Objectives pending; 2025 AI Task Force Chair's Statement is a chair's summary, not an adopted instrument |
 | Multistakeholder calls | 0 | Paris Call for AI Safety and Security (9 November 2026) documented but excluded | 19 governments plus companies and civil society; open-ended list; not an intergovernmental instrument |
 | China-led instruments | 2 | Global AI Governance Initiative (2023); WAICO Establishment Agreement (2026) | WAICO: 38th founding member unknown; deposits unknown, not zero; China's domestic approval not a deposit; Bangladesh is an observer applicant under Article 11, not the 38th member; Singapore is an invitee considering the invitation; initiative: unilateral, no formal adherence list |
@@ -46,6 +46,7 @@ Coverage achieved in the cycle ending **2026-11-24**. Counts are generated from 
 | Category | Count | Notes |
 |---|---:|---|
 | `ai_treaty` | 2 | CETS 225 and the WAICO Establishment Agreement; CETS not in force, WAICO entry into force unconfirmed |
+| `cyber_treaty` | 3 | Budapest Convention (in force), ETS 189 (in force), CETS 224 (not in force) |
 | `agreement_ai_provisions` | 5 | all digital/trade; mostly cooperative AI clauses, but the AfCFTA annex uses “shall” obligations for State Parties |
 | `non_binding_instrument` | 28 | UN resolutions, declarations, strategies, codes; HRC 63/15, Paris Statement, New Delhi Declaration, BRICS statement, Pax Silica, San Francisco Declaration, China initiative, UK–US MOU and US–EU TTC dialogue commitment |
 | `preparatory_interpretive` | 2 | CETS explanatory report; EU GPAI Code |
@@ -59,7 +60,7 @@ Coverage achieved in the cycle ending **2026-11-24**. Counts are generated from 
 | Level | Count |
 |---|---:|
 | `full_text_checked` | 10 |
-| `metadata_verified` | 36 |
+| `metadata_verified` | 39 |
 | `source_located` | 0 |
 
 Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records whose text is stored and segmented but was not read end-to-end).
@@ -92,6 +93,8 @@ Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records
 19. **General international law is not comprehensively covered.** The `general_treaty` layer is a deliberately minimal background selection: the VCLT for treaty law and the ICCPR for human rights. The UN Charter, the Universal Declaration of Human Rights, the ECHR, Convention 108+ and other general instruments are not catalogued; customary international law, general principles, Security Council resolutions (none AI-specific was located) and international humanitarian law are not systematically covered. Their absence is a scope limit, not a finding that they are irrelevant to AI.
 20. **WAICO party data are incomplete.** China's MFA reports 38 founding members, but only 37 are individually identified across the official statements; the 38th is recorded as unknown. Bangladesh is not that member: on 1 August 2026 it announced that it would join 'initially as an observer', and Article 11 requires an observer application and Council approval; no admission is recorded. Singapore has been reported as considering an invitation and is not a member. The Government of China is the depositary under Article 18, but no public depositary register, status table or notification was located. China's approval on 6 November 2026 is a domestic authorisation, not a deposited ratification; deposits are recorded as unknown, not zero, and entry into force is unconfirmed. The map therefore shows signatures, not ratifications.
 
+21. **Cybersecurity coverage is limited to the Budapest family.** The Budapest Convention, ETS 189 and CETS 224 are catalogued and mapped with itemised party data; the Budapest reservations and declarations are reproduced in full. The UN Cybercrime Convention, the African Union Malabo Convention, the Arab League convention, NIS2, the Cyber Resilience Act, cyber norms and standards, and cooperation channels remain outside this cycle. The cyber layer is therefore real but not comprehensive.
+
 ## What “coverage” means here
 
-It means: 47 records (46 AI-layer and the Budapest Convention as the first cybersecurity-only record), each with at least one official source and a declared verification level; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register of 31 entries (11 included, 11 pending, 9 excluded) that records both inclusions and exclusions. The cybersecurity families in the integration plan are not yet catalogued beyond Budapest. It does not mean that every international AI instrument has been found.
+It means: 49 records (46 AI-layer and three cybersecurity-only records: the Budapest Convention, ETS 189 and CETS 224), each with at least one official source and a declared verification level; 13 binding and 36 non-binding instruments; 16 stored full texts with hashed originals or transcribed text; 15 acquired originals; one category-6 negotiation record; and a candidate register of 31 entries (11 included, 11 pending, 9 excluded) that records both inclusions and exclusions. The cybersecurity families in the integration plan beyond the Budapest Convention and its two protocols (UN Cybercrime, NIS2/CRA, cyber norms, standards and cooperation channels) are not yet catalogued. It does not mean that every international AI instrument has been found.

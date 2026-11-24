@@ -1,0 +1,466 @@
+{
+  "binding_status": "binding",
+  "category": "cyber_treaty",
+  "dates": {
+    "entered_into_force": null,
+    "notes": "Opened for signature in Strasbourg on 12 May 2022. Not in force on the verification date; five ratifications are required. Party data checked against the Treaty Office chart status of 24 November 2026.",
+    "opened_for_signature": "2022-05-12",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "cyber"
+  ],
+  "gaps": [
+    "No full text, citable units or original file is stored in this record; it is metadata-only.",
+    "The Protocol is not in force; its cooperation machinery and review structures do not yet operate.",
+    "Reservations and declarations are not itemised in this pass; the status chart flags them but their texts were not acquired.",
+    "No AI-specific provision is asserted. The record is cyber-domain only."
+  ],
+  "id": "coe-cets-224",
+  "instrument_type": "protocol",
+  "issuer": [
+    {
+      "name": "Council of Europe",
+      "role": "issuer",
+      "url": "https://www.coe.int/en/web/cybercrime/the-budapest-convention"
+    },
+    {
+      "name": "Secretary General of the Council of Europe",
+      "role": "depositary",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=224"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en",
+      "fr"
+    ],
+    "note": "The Treaty Office publishes the English and French official texts; both are authentic."
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "A second additional protocol to the Budapest Convention, open for signature by States Parties to ETS 185 and subject to ratification, acceptance or approval. It creates binding obligations once in force and is a treaty, not a recommendation.",
+    "source_ids": [
+      "coe-treaty-page",
+      "coe-status-chart"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-24",
+    "counts": {
+      "ratifications": {
+        "basis": "verified_total",
+        "note": "Itemised from the Treaty Office chart: Hungary, Serbia, Costa Rica and Japan.",
+        "source_ids": [
+          "coe-status-chart"
+        ],
+        "total": 4,
+        "verified": 4
+      },
+      "signatures": {
+        "basis": "verified_total",
+        "note": "Itemised from the Treaty Office chart. 48 signatures are not followed by ratification.",
+        "source_ids": [
+          "coe-status-chart"
+        ],
+        "total": 52,
+        "verified": 52
+      }
+    },
+    "entries": [
+      {
+        "party": "Albania",
+        "role": "signatory",
+        "signature": "2023-02-27"
+      },
+      {
+        "party": "Andorra",
+        "role": "signatory",
+        "signature": "2022-05-20"
+      },
+      {
+        "party": "Argentina",
+        "role": "signatory",
+        "signature": "2023-02-16"
+      },
+      {
+        "party": "Armenia",
+        "role": "signatory",
+        "signature": "2023-11-16"
+      },
+      {
+        "party": "Austria",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Belgium",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Bosnia and Herzegovina",
+        "role": "signatory",
+        "signature": "2025-11-14"
+      },
+      {
+        "party": "Bulgaria",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Cabo Verde",
+        "role": "signatory",
+        "signature": "2023-06-28"
+      },
+      {
+        "party": "Canada",
+        "role": "signatory",
+        "signature": "2023-06-20"
+      },
+      {
+        "party": "Chile",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Colombia",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "entry_into_force": null,
+        "party": "Costa Rica",
+        "ratification": "2026-04-15",
+        "role": "signatory",
+        "signature": "2022-06-13"
+      },
+      {
+        "party": "Croatia",
+        "role": "signatory",
+        "signature": "2022-11-30"
+      },
+      {
+        "party": "Czech Republic",
+        "role": "signatory",
+        "signature": "2024-06-20"
+      },
+      {
+        "party": "Dominican Republic",
+        "role": "signatory",
+        "signature": "2023-01-30"
+      },
+      {
+        "party": "Estonia",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Fiji",
+        "role": "signatory",
+        "signature": "2025-06-05"
+      },
+      {
+        "party": "Finland",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "France",
+        "role": "signatory",
+        "signature": "2023-01-27"
+      },
+      {
+        "party": "Georgia",
+        "role": "signatory",
+        "signature": "2024-06-17"
+      },
+      {
+        "party": "Germany",
+        "role": "signatory",
+        "signature": "2023-01-27"
+      },
+      {
+        "party": "Ghana",
+        "role": "signatory",
+        "signature": "2023-06-28"
+      },
+      {
+        "party": "Greece",
+        "role": "signatory",
+        "signature": "2023-01-20"
+      },
+      {
+        "entry_into_force": null,
+        "party": "Hungary",
+        "ratification": "2026-02-05",
+        "role": "signatory",
+        "signature": "2023-06-28"
+      },
+      {
+        "party": "Iceland",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Italy",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "entry_into_force": null,
+        "party": "Japan",
+        "ratification": "2023-08-10",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Latvia",
+        "role": "signatory",
+        "signature": "2025-03-27"
+      },
+      {
+        "party": "Lithuania",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Luxembourg",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Malta",
+        "role": "signatory",
+        "signature": "2023-06-22"
+      },
+      {
+        "party": "Mauritius",
+        "role": "signatory",
+        "signature": "2023-05-31"
+      },
+      {
+        "party": "Montenegro",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Morocco",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Netherlands",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "North Macedonia",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Norway",
+        "role": "signatory",
+        "signature": "2025-07-09"
+      },
+      {
+        "party": "Paraguay",
+        "role": "signatory",
+        "signature": "2024-09-24"
+      },
+      {
+        "party": "Peru",
+        "role": "signatory",
+        "signature": "2024-12-12"
+      },
+      {
+        "party": "Portugal",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Republic of Moldova",
+        "role": "signatory",
+        "signature": "2022-11-30"
+      },
+      {
+        "party": "Romania",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "entry_into_force": null,
+        "party": "Serbia",
+        "ratification": "2023-02-09",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Sierra Leone",
+        "role": "signatory",
+        "signature": "2024-06-20"
+      },
+      {
+        "party": "Slovenia",
+        "role": "signatory",
+        "signature": "2022-11-30"
+      },
+      {
+        "party": "Spain",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Sri Lanka",
+        "role": "signatory",
+        "signature": "2022-11-30"
+      },
+      {
+        "party": "Sweden",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      },
+      {
+        "party": "Ukraine",
+        "role": "signatory",
+        "signature": "2022-11-30"
+      },
+      {
+        "party": "United Kingdom",
+        "role": "signatory",
+        "signature": "2022-11-30"
+      },
+      {
+        "party": "United States of America",
+        "role": "signatory",
+        "signature": "2022-05-12"
+      }
+    ],
+    "source_ids": [
+      "coe-status-chart"
+    ],
+    "summary": "52 signatories as of 24 November 2026, of which four had ratified (Hungary, Serbia, Costa Rica and Japan). The Protocol is not in force; 48 signatures are not followed by ratification.",
+    "unknowns": [
+      "Because the Protocol is not in force, it has no Parties yet; the four ratifying States are recorded as signatories with a ratification instrument.",
+      "The official text and reservations/declarations texts were not acquired in this pass."
+    ]
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-24",
+        "field": "title",
+        "locator": "Treaty Office detail page, title and reference",
+        "method": "official_page_read",
+        "source_ids": [
+          "coe-treaty-page"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "status",
+        "locator": "Treaty Office chart, entry into force row, status of 24 November 2026",
+        "method": "registry_read",
+        "source_ids": [
+          "coe-status-chart"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "parties",
+        "locator": "Treaty Office chart, full per-State table, status of 24 November 2026",
+        "method": "registry_read",
+        "source_ids": [
+          "coe-status-chart"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "counts",
+        "locator": "Treaty Office chart totals: 52 signatures and four ratifications/accessions; 48 signatures not followed by ratification",
+        "method": "registry_read",
+        "source_ids": [
+          "coe-status-chart"
+        ]
+      }
+    ],
+    "discovered_via": "Council of Europe Treaty Office, Budapest Convention family; status chart read on 24 November 2026.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "budapest-convention-2001",
+      "note": "Second Additional Protocol to the Budapest Convention; it is open for signature by States Parties to ETS 185.",
+      "relation": "protocol_to"
+    }
+  ],
+  "relevance": {
+    "cyber_provisions": [
+      "Enhanced international cooperation on electronic evidence.",
+      "Disclosure of electronic evidence and related procedural cooperation measures."
+    ],
+    "reason": "The Second Additional Protocol extends the Budapest Convention's cooperation framework to enhanced cooperation and disclosure of electronic evidence. It is part of the binding cybercrime layer, although it is not yet in force.",
+    "source_ids": [
+      "coe-treaty-page"
+    ]
+  },
+  "rights": {
+    "note": "Official Council of Europe text. Reuse remains subject to the Council of Europe terms; this corpus stores metadata and links, not the text.",
+    "status": "public_official_text",
+    "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=224"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "coe-treaty-page",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "Treaty Office detail page for CETS 224.",
+      "publisher": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=224"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "coe-status-chart",
+      "kind": "registry",
+      "language": "en",
+      "note": "Chart of signatures and ratifications for CETS 224, status as of 24/11/2026; full per-State table captured.",
+      "publisher": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=224"
+    }
+  ],
+  "status": "not_in_force",
+  "status_note": "Not in force. As of the Treaty Office status of 24 November 2026: 52 signatories, four ratifications (Hungary, Serbia, Costa Rica and Japan), and 48 signatures not followed by ratification. Five ratifications are required; one more is needed.",
+  "title": {
+    "english": "Second Additional Protocol to the Convention on Cybercrime on enhanced co-operation and disclosure of electronic evidence",
+    "official": "Second Additional Protocol to the Convention on Cybercrime on enhanced co-operation and disclosure of electronic evidence (CETS No. 224)",
+    "short": "Second Additional Protocol to the Budapest Convention (CETS No. 224)"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Treaty Office detail page read for the official title, reference, opening date and entry-into-force condition",
+        "date": "2026-11-24",
+        "result": "confirmed"
+      },
+      {
+        "check": "Treaty Office chart status of 24 November 2026 read for entry into force and the full per-State table",
+        "date": "2026-11-24",
+        "result": "confirmed: 52 signatories, four ratifications, 48 signatures without ratification; not in force"
+      },
+      {
+        "check": "Official text and reservations/declarations texts not acquired",
+        "date": "2026-11-24",
+        "result": "not acquired"
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata-level record; signature and ratification data are itemised, but the text and reservations are not stored."
+  }
+}

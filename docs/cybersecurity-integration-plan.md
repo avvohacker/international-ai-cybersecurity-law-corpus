@@ -1,6 +1,6 @@
 # Cybersecurity integration plan
 
-**Status:** Phase 2 started. The corpus is a joint **AI and international cybersecurity law** corpus in structure and has its first cybersecurity-only record, the Budapest Convention (ETS 185), metadata-verified with a declared 84-Party count. The party-level list, the protocols and a map remain pending. The AI layer remains 46 records; the total is now 47.
+**Status:** Phase 2 complete for the Budapest family. The corpus is a joint **AI and international cybersecurity law** corpus with three cybersecurity-only records: the Budapest Convention (ETS 185, 84 itemised Parties), ETS 189 (38 Parties) and CETS 224 (52 signatories, not in force). All three are mapped and their party tables are itemised. The AI layer remains 46 records; the total is now 49. Phase 3 (the wider cyber hard-law layer) is next.
 
 ## 1. Why cybersecurity is a second domain, not a filter
 
@@ -68,7 +68,7 @@ Candidate examples are included to structure the search. Their inclusion here is
 
 ## 5. Derived views
 
-- **Maps.** Only cyber instruments with a published State-level list become maps. The Budapest Convention and the UN Cybercrime Convention are candidates if a depositary table is stored; NIS2 is not a treaty and should not be mapped as one.
+- **Maps.** Only cyber instruments with a published State-level list become maps. The Budapest Convention, ETS 189 and CETS 224 now have maps from their Treaty Office tables; the UN Cybercrime Convention is a candidate once its depositary table is stored. NIS2 is not a treaty and should not be mapped as one. The EU AI Act remains catalogue-only because it is EU internal law, not an international instrument.
 - **Timeline.** Keep one chronology, filterable by domain. Cyber-only records must not inherit AI-specific descriptions. The same rule applies as in section 03: only route-changing texts get boxes, the rest are compact records.
 - **Catalogue.** Add a domain filter and a visible `AI`, `Cyber` or `AI + Cyber` label. The existing legal-force, status and verification filters remain.
 - **Off the record.** Cyber incidents and policy events enter only when they explain an instrument, a negotiation or an absence; each needs a source and a date.
@@ -93,13 +93,13 @@ The existing validation contract extends without a second validator:
 
 **Phase 1 — schema and migration (complete).** Added `domains` and `relevance.cyber_provisions`; migrated all existing records to `["ai"]`; split the build and site counts; renamed the repository and site for the two domains. No cyber record yet.
 
-**Phase 2 — cybercrime treaty pilot (started).** The Budapest Convention is catalogued as a metadata-only record: official title, opening and entry-into-force dates, 84 declared Parties and the cyber provisions it governs. The next pass must itemise the party list, record reservations and declarations, and decide whether to add the two protocols. The UN Cybercrime Convention is the second candidate once its depositary picture is clear. No map until the party data are complete.
+**Phase 2 — cybercrime treaty pilot (complete for the Budapest family).** The Budapest Convention has an itemised 84-Party table (48 ratifications and 36 accessions), two signatories, eleven further States with no recorded act recorded separately, 96 reservations and 280 declarations/communications/territorial statements, plus a map. ETS 189 and CETS 224 are separate records with itemised party tables and maps. The UN Cybercrime Convention remains the next cybercrime candidate once its depositary picture is clear.
 
 **Phase 3 — the cyber hard-law layer.** Add the remaining cybercrime treaties and the regional product/critical-infrastructure law. Record the EU AI Act's cybersecurity provisions as cross-links on the existing AI record rather than as a duplicate. Output: the cyber catalogue, still separate from AI counts.
 
 **Phase 4 — norms, standards and channels.** Add the non-binding UN norms, the international standards and the bilateral cooperation channels, each with its own status and verification level. Do not let a political norm inherit the status of a treaty.
 
-**Phase 5 — derived views.** Add the cyber maps, the timeline filter and the cyber reading list. The naming decision has already been made: the repository is `international-ai-cybersecurity-law-corpus` and the site title is **International AI and Cybersecurity Law**, with **Atlas** as its subtitle. The views still have to catch up with the name.
+**Phase 5 — derived views (partly complete).** The three cyber maps are in the atlas. The timeline filter, the catalogue domain filter and the separate cyber reading list remain to be built. The naming decision has already been made: the repository is `international-ai-cybersecurity-law-corpus` and the site title is **International AI and Cybersecurity Law**, with **Atlas** as its subtitle.
 
 ## 8. Open questions
 
@@ -111,4 +111,4 @@ The existing validation contract extends without a second validator:
 
 ## 9. What this plan does not do
 
-It does not add the remaining cybersecurity records, maps or site sections. The catalogue now contains 46 AI-layer records plus the Budapest Convention as one cybersecurity-only record: 47 in total, 11 binding and 36 non-binding. The Budapest record is metadata-level and does not assert an AI provision. The next implementation step is Phase 2 completion: itemise the Budapest party list and add the protocols or the UN Cybercrime Convention.
+It does not add the remaining cybersecurity records or the timeline/catalogue domain filters. The catalogue now contains 46 AI-layer records plus three cybersecurity-only records (the Budapest Convention, ETS 189 and CETS 224): 49 in total, 13 binding and 36 non-binding, with twelve maps. The cyber records are metadata-level and do not assert an AI provision. The next implementation step is Phase 3: the UN Cybercrime Convention and the regional product/critical-infrastructure law, followed by the norms, standards and channels in Phase 4.

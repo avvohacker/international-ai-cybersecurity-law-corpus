@@ -30,6 +30,9 @@ OFF_RECORD = ROOT / "data" / "off-the-record.json"
 REPO = "https://github.com/avvohacker/international-ai-cybersecurity-law-corpus"
 
 PARIS_ID = "paris-ai-action-summit-statement-2025"
+BUDAPEST_ID = "budapest-convention-2001"
+ETS189_ID = "coe-ets-189"
+CETS224_ID = "coe-cets-224"
 CETS_ID = "coe-cets-225"
 CHINA_ID = "china-global-ai-governance-initiative-2023"
 BLETCHLEY_ID = "bletchley-declaration-2023"
@@ -44,6 +47,9 @@ MAP_INSTRUMENT_IDS = (
     BLETCHLEY_ID,
     SEOUL_ID,
     MILITARY_ID,
+    BUDAPEST_ID,
+    ETS189_ID,
+    CETS224_ID,
     CETS_ID,
     WAICO_ID,
     PAX_ID,
@@ -164,6 +170,8 @@ NUMBER_WORDS = {
     8: "eight",
     9: "nine",
     10: "ten",
+    11: "eleven",
+    12: "twelve",
 }
 
 
@@ -205,6 +213,9 @@ MICRO = {
     "ST": (6.60, 0.30),
     "SC": (55.50, -4.60),
     "MV": (73.50, 3.20),
+    "GD": (-61.68, 12.12),
+    "KI": (173.00, 1.35),
+    "TO": (-175.20, -21.14),
 }
 
 ISO_OVERRIDES = {
@@ -227,6 +238,9 @@ ISO_OVERRIDES = {
     "São Tomé and Príncipe": "ST",
     "Seychelles": "SC",
     "Maldives": "MV",
+    "Grenada": "GD",
+    "Kiribati": "KI",
+    "Tonga": "TO",
 }
 
 NAME_ALIASES = {
@@ -235,6 +249,7 @@ NAME_ALIASES = {
     "republic of moldova": "moldova",
     "russian federation": "russia",
     "united states": "united states of america",
+    "slovak republic": "slovakia",
 }
 
 TEAL = "#0e6b62"
@@ -877,6 +892,9 @@ def main() -> int:
     verified_on = max((inst.get("dates") or {}).get("verified_on", "") for inst in instruments)
 
     paris = by_id[PARIS_ID]
+    budapest = by_id[BUDAPEST_ID]
+    ets189 = by_id[ETS189_ID]
+    cets224 = by_id[CETS224_ID]
     cets = by_id[CETS_ID]
     bletchley = by_id[BLETCHLEY_ID]
     seoul = by_id[SEOUL_ID]
@@ -906,12 +924,35 @@ def main() -> int:
     new_delhi_states = state_names(new_delhi)
     brics_states = state_names(brics)
     cets_entries = cets["parties"]["entries"]
+    budapest_entries = budapest["parties"]["entries"]
+    budapest_party_states = [
+        entry["party"] for entry in budapest_entries if entry.get("role") == "party"
+    ]
+    budapest_signatories = [
+        entry["party"] for entry in budapest_entries if entry.get("role") == "signatory"
+    ]
+    ets189_entries = ets189["parties"]["entries"]
+    ets189_party_states = [
+        entry["party"] for entry in ets189_entries if entry.get("role") == "party"
+    ]
+    ets189_signatories = [
+        entry["party"] for entry in ets189_entries if entry.get("role") == "signatory"
+    ]
+    cets224_entries = cets224["parties"]["entries"]
+    cets224_states = [entry["party"] for entry in cets224_entries]
+    cets224_ratifications = [
+        entry["party"] for entry in cets224_entries if entry.get("ratification")
+    ]
 
     def entries(inst: dict) -> list[dict]:
         return (inst.get("parties") or {}).get("entries") or []
 
     def ratified_entries(inst: dict) -> list[dict]:
-        return [entry for entry in entries(inst) if entry.get("ratification")]
+        return [
+            entry
+            for entry in entries(inst)
+            if entry.get("ratification") or entry.get("accession")
+        ]
 
     def reported_total(inst: dict) -> int:
         counts = (inst.get("parties") or {}).get("counts") or {}
@@ -981,9 +1022,19 @@ def main() -> int:
     pax_iso = iso_set(pax_states, "Pax Silica 2025")
     new_delhi_iso = iso_set(new_delhi_states, "New Delhi 2026")
     brics_iso = iso_set(brics_states, "BRICS 2025")
+    budapest_iso = iso_set(
+        budapest_party_states + budapest_signatories, "Budapest Convention"
+    )
+    ets189_iso = iso_set(
+        ets189_party_states + ets189_signatories, "ETS 189"
+    )
+    cets224_iso = iso_set(cets224_states, "CETS 224")
 
     for map_name, values in (
         ("Paris 2025", paris_iso),
+        ("Budapest Convention", budapest_iso),
+        ("ETS 189", ets189_iso),
+        ("CETS 224", cets224_iso),
         ("CETS 225", cets_iso),
         ("Bletchley 2023", bletchley_iso),
         ("Seoul 2024", seoul_iso),
@@ -1011,6 +1062,18 @@ def main() -> int:
     for entry in cets_entries:
         if entry.get("ratification") and entry["party"] not in org_names:
             cets_status[iso_for(entry["party"], by_name)] = "ratified"
+    budapest_status = {iso: "signed" for iso in budapest_iso}
+    for entry in budapest_entries:
+        if (entry.get("ratification") or entry.get("accession")) and entry["party"] not in org_names:
+            budapest_status[iso_for(entry["party"], by_name)] = "ratified"
+    ets189_status = {iso: "signed" for iso in ets189_iso}
+    for entry in ets189_entries:
+        if (entry.get("ratification") or entry.get("accession")) and entry["party"] not in org_names:
+            ets189_status[iso_for(entry["party"], by_name)] = "ratified"
+    cets224_status = {iso: "signed" for iso in cets224_iso}
+    for entry in cets224_entries:
+        if entry.get("ratification") and entry["party"] not in org_names:
+            cets224_status[iso_for(entry["party"], by_name)] = "ratified"
 
     def add_org_members(status: dict[str, str], inst: dict, default: str) -> list[str]:
         """Mark member States of a party organisation that did not act themselves.
@@ -1077,6 +1140,16 @@ def main() -> int:
         {"color": ACT_BLUE, "label": "State: signed only"},
         {"color": LAND, "label": "State: no signature"},
     ]
+    cyber_party_legend = [
+        {"color": RATIFIED_BLUE, "label": "State: party (ratification or accession)"},
+        {"color": ACT_BLUE, "label": "State: signed only"},
+        {"color": LAND, "label": "State: no recorded act"},
+    ]
+    cyber_signature_legend = [
+        {"color": RATIFIED_BLUE, "label": "State: ratified"},
+        {"color": ACT_BLUE, "label": "State: signed only"},
+        {"color": LAND, "label": "State: no recorded act"},
+    ]
     waico_legend = [
         {"color": CHINA_RED, "label": "State: signed only"},
         {"color": LAND, "label": "State: no signature"},
@@ -1089,10 +1162,12 @@ def main() -> int:
     def render_party_list(inst: dict, default: str) -> str:
         """List the recorded parties under a map, grouped by recorded act."""
         has_ratifications = bool(ratified_entries(inst))
+        has_accessions = any(entry.get("accession") for entry in entries(inst))
+        party_group = "Party (ratified or acceded)" if has_accessions else "Ratified"
         groups: dict[str, list[dict]] = defaultdict(list)
         for entry in entries(inst):
-            if entry.get("ratification"):
-                group = "Ratified"
+            if entry.get("ratification") or entry.get("accession"):
+                group = party_group
             elif has_ratifications:
                 group = "Signed only"
             elif default == "endorsed":
@@ -1104,7 +1179,7 @@ def main() -> int:
             groups[group].append(entry)
         blocks = []
         for group in (
-            "Ratified",
+            party_group,
             "Signed only",
             "Signed",
             "Endorsed",
@@ -1274,7 +1349,72 @@ def main() -> int:
     military_as_of = format_date(military["parties"]["as_of"])
     pax_as_of = format_date(pax["parties"]["as_of"])
 
+    budapest_party_count = len(budapest_party_states)
+    ets189_party_count = len(ets189_party_states)
+    cets224_ratification_count = len(cets224_ratifications)
+
     map_entries = [
+        map_figure(
+            budapest,
+            "budapest",
+            "Budapest Convention",
+            f"{budapest_party_count} Parties + {len(budapest_signatories)} signatories",
+            f"World map. Dark blue: {budapest_party_count} States Parties by ratification or accession. Medium blue: {len(budapest_signatories)} States that signed only. Sand: States with no recorded act.",
+            budapest_status,
+            [],
+            cyber_party_legend,
+            note=(
+                "Treaty signature, ratification and accession. The Treaty Office chart of "
+                "24 November 2026 lists 84 Parties (48 ratifications and 36 accessions), "
+                "two signatories (Ireland and South Africa), and eleven further States "
+                "without a recorded act that are not Parties. The full party list, 96 "
+                "reservations and 280 declaration items are stored in the record."
+            ),
+            legend_note=(
+                f"{budapest_party_count} Parties + {len(budapest_signatories)} signatories · "
+                "eleven non-party States with no recorded act not mapped"
+            ),
+        ),
+        map_figure(
+            ets189,
+            "ets189",
+            "ETS 189",
+            f"{ets189_party_count} Parties + {len(ets189_signatories)} signatories",
+            f"World map. Dark blue: {ets189_party_count} States Parties by ratification or accession. Medium blue: {len(ets189_signatories)} States that signed only. Sand: States with no recorded act.",
+            ets189_status,
+            [],
+            cyber_party_legend,
+            note=(
+                "First Additional Protocol to the Budapest Convention. In force since "
+                "1 March 2006. The Treaty Office chart of 24 November 2026 lists 38 "
+                "Parties (33 ratifications and 5 accessions) and nine signatories; "
+                "eight listed States have no recorded signature or ratification."
+            ),
+            legend_note=(
+                f"{ets189_party_count} Parties + {len(ets189_signatories)} signatories"
+            ),
+        ),
+        map_figure(
+            cets224,
+            "cets224",
+            "CETS 224",
+            f"{len(cets224_states)} signatories · {cets224_ratification_count} ratifications",
+            f"World map. Dark blue: {cets224_ratification_count} States that ratified. Medium blue: {len(cets224_states) - cets224_ratification_count} States that signed only. Sand: States with no recorded act.",
+            cets224_status,
+            [],
+            cyber_signature_legend,
+            note=(
+                "Second Additional Protocol to the Budapest Convention, on electronic "
+                "evidence. Not in force: five ratifications are required and four had "
+                "been recorded by 24 November 2026 (Hungary, Serbia, Costa Rica and "
+                "Japan). The chart lists 52 signatories; 48 signatures are not followed "
+                "by ratification."
+            ),
+            legend_note=(
+                f"{len(cets224_states)} signatories · {cets224_ratification_count} ratifications · "
+                "not in force"
+            ),
+        ),
         map_figure(
             paris,
             "paris",
@@ -1534,7 +1674,7 @@ def main() -> int:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI and Cybersecurity Law — Atlas</title>
-<meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI and cybersecurity law. The AI layer is catalogued; the cybersecurity register is in progress.">
+<meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI and cybersecurity law. The AI and cybersecurity layers are catalogued and counted separately.">
 <link rel="stylesheet" href="assets/style.css?v=24">
 </head>
 <body>
@@ -1563,10 +1703,10 @@ def main() -> int:
       <p class="eyebrow">00 · Index</p>
       <h2>What this corpus contains</h2>
       <div class="stats">{stats_html}</div>
-      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The first cyber record is the Budapest Convention; its party-level list and the remaining cyber families are still being built. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
+      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer now includes the Budapest Convention and its two protocols (ETS 189 and CETS 224); the remaining cyber families are still being built. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
       <div class="index-grid">
         <a class="index-card" href="#form"><span class="index-number">01</span><strong>The hard-law gap</strong><span>No AI-specific treaty is confirmed in force. The section shows what each route actually covers.</span></a>
-        <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>Nine maps of the State-level acts recorded in the corpus: signatures, ratifications, endorsements and collective issuances.</span></a>
+        <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>{number_word(len(map_entries)).capitalize()} maps of the State-level acts recorded in the corpus: signatures, ratifications, accessions, endorsements and collective issuances.</span></a>
         <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: key texts highlighted, other records compact, events as plain rows.</span></a>
         <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Off the record</strong><span>Legal doctrine, think-tank analysis and civil-society critique: the argument around the record, never used as evidence for it.</span></a>
         <a class="index-card" href="#catalogue"><span class="index-number">05</span><strong>Catalogue</strong><span>The filterable table of every record, with legal force, status, verification level and a link to the JSON.</span></a>
@@ -1599,7 +1739,7 @@ def main() -> int:
         {maps_html}
       </div>
       <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. “Endorsed” is used for political declarations, which create no treaty signature or ratification; “member State” is used for the BRICS collective statement, which has no individual signature block.</p>
-      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} political instruments and {number_word(map_binding_count)} treaties. The {len(brics_states)}-member BRICS statement is mapped as a collective issue by its member States, not as {len(brics_states)} individual signatures. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the OECD and UNESCO recommendations, the EU AI Act, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate Pax Silica deliverables (the June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration, which is catalogued as a record but not mapped), the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment, and the Budapest Convention, whose party-level list is not yet stored.</p>
+      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} political instruments and {number_word(map_binding_count)} treaties. They include the three cybersecurity instruments now itemised: the Budapest Convention and its two protocols. The {len(brics_states)}-member BRICS statement is mapped as a collective issue by its member States, not as {len(brics_states)} individual signatures. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the OECD and UNESCO recommendations, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate Pax Silica deliverables (the June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration, which is catalogued as a record but not mapped), and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment. The EU AI Act remains catalogue-only because it is EU internal law, not an international instrument; it is not mapped as if it were a treaty.</p>
     </div>
   </section>
 

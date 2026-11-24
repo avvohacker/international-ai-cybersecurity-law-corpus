@@ -2,20 +2,20 @@
 
 Source-verified corpus of international artificial intelligence and cybersecurity law: treaties, digital agreements, declarations, resolutions, standards and authoritative materials. Faithful texts, traceable citations, signatures, ratifications and reservations, reproducible builds and documented global coverage, distinguishing binding and non-binding instruments.
 
-**Status: first working corpus, verification date 2026-11-24.** The 47 records currently catalogued comprise 46 AI-layer records and one cybersecurity-only record, the Budapest Convention; the schema records `domains` and the integration plan sets the scope. This is a documented partial coverage, not a claim of completeness. See [coverage](docs/coverage.md), [remaining work](docs/progress.md) and the [cybersecurity integration plan](docs/cybersecurity-integration-plan.md).
+**Status: first working corpus, verification date 2026-11-24.** The 49 records currently catalogued comprise 46 AI-layer records and three cybersecurity-only records: the Budapest Convention and its two protocols, ETS 189 and CETS 224. The schema records `domains` and the integration plan sets the scope. This is a documented partial coverage, not a claim of completeness. See [coverage](docs/coverage.md), [remaining work](docs/progress.md) and the [cybersecurity integration plan](docs/cybersecurity-integration-plan.md).
 
 ## At a glance
 
 | Metric | Count |
 |---|---:|
-| Catalogued instruments | 47 |
-| — AI layer / cybersecurity-only / joint | 46 / 1 / 0 |
+| Catalogued instruments | 49 |
+| — AI layer / cybersecurity-only / joint | 46 / 3 / 0 |
 | Instruments with a stored full text and citable units | 16 |
 | Instruments with a stored, SHA-256-hashed original | 15 |
 | Candidate-register entries | 31 (11 included, 11 pending, 9 excluded) |
 | Treaties specifically dedicated to AI | 2 (CETS No. 225; WAICO Establishment Agreement; CETS not in force, WAICO entry into force unconfirmed) |
-| Binding instruments in force | 8 |
-| Binding instruments not confirmed in force | 3 (CETS 225; WAICO; AfCFTA Digital Trade Protocol) |
+| Binding instruments in force | 9 |
+| Binding instruments not confirmed in force | 4 (CETS 225; WAICO; AfCFTA Digital Trade Protocol; CETS 224) |
 | Non-binding instruments | 36 |
 | Draft/negotiation records | 1 (CCW GGE on LAWS) |
 
@@ -92,7 +92,7 @@ The build is offline and deterministic; it needs Python 3.12 and the packages in
 ```bash
 make validate     # schema and cross-record checks
 make build        # build/catalog.json, CATALOG.md, checksums.sha256
-make test         # build + 48 integrity/schema/anchor/determinism tests
+make test         # build + 49 integrity/schema/anchor/determinism tests
 make site         # build + generate the static atlas in site/
 ```
 
@@ -119,17 +119,17 @@ python3 tools/acquire.py                  # fetch missing originals, never overw
 
 ## Human-readable atlas (GitHub Pages)
 
-The generated page is a consultable public catalogue. It opens with a clickable index (00) and section 01, “The hard-law gap”, which shows that no AI-specific treaty is confirmed in force and names the instrument that occupies each pair of properties. Section 02 holds the nine State-level maps. Section 03 is a single chronology of all 47 records and 7 events that left no instrument: only route-changing texts get highlighted boxes, other records are compact entries, and events remain plain rows. Section 04, “Off the record”, is a curated layer of legal doctrine, think-tank analysis and civil-society critique, attributed and kept separate from the primary sources. Section 05 is the filterable catalogue and section 06 records method and limits. Each map carries the instrument’s full official title, the participation count, and a panel with its description, dates, history and official-source links, all read from the record. The page is built from the same records, with no editorial database of its own; the membership lists used by the maps are in `data/organisations.json` and the unseen events in `data/unseen-events.json`.
+The generated page is a consultable public catalogue. It opens with a clickable index (00) and section 01, “The hard-law gap”, which shows that no AI-specific treaty is confirmed in force and names the instrument that occupies each pair of properties. Section 02 holds the twelve State-level maps. Section 03 is a single chronology of all 49 records and 7 events that left no instrument: only route-changing texts get highlighted boxes, other records are compact entries, and events remain plain rows. Section 04, “Off the record”, is a curated layer of legal doctrine, think-tank analysis and civil-society critique, attributed and kept separate from the primary sources. Section 05 is the filterable catalogue and section 06 records method and limits. Each map carries the instrument’s full official title, the participation count, and a panel with its description, dates, history and official-source links, all read from the record. The page is built from the same records, with no editorial database of its own; the membership lists used by the maps are in `data/organisations.json` and the unseen events in `data/unseen-events.json`.
 
 ```bash
 make site        # validates, builds and regenerates site/index.html
 ```
 
-The official links used by the nine instrument panels, and all official source links in the 47 records, can be audited separately:
+The official links used by the twelve instrument panels, and all official source links in the 49 records, can be audited separately:
 
 ```bash
-make audit-links          # nine map panels
-make audit-catalog-links  # every official source entry in all 47 records
+make audit-links          # twelve map panels
+make audit-catalog-links  # every official source entry in all 49 records
 ```
 
 The catalog-wide run writes `build/catalog-link-audit.json`. Both audits are network-only and classify broken links separately from anti-bot blocks and transient errors; `make test` never touches the network. The 23 November 2026 run checked 112 entries (111 unique URLs): 78 resolved, 26 anti-bot, 2 broken and 6 transient. The two broken entries are the `brics.br` URLs that do not resolve by DNS from this environment; they are reported, not replaced with an unofficial source.
@@ -143,7 +143,7 @@ The maps use Natural Earth 1:110m Admin 0 Countries (public domain) and the memb
 Every record declares one of:
 
 - `full_text_checked` (10): a full text is stored, hashed, segmented and inspected; key passages are asserted in tests.
-- `metadata_verified` (37): the official page or official excerpt was read during this session; a full text may be stored but was not read end-to-end.
+- `metadata_verified` (39): the official page or official excerpt was read during this session; a full text may be stored but was not read end-to-end.
 - `source_located` (0): an official URL is recorded, but the metadata comes from an established reference and was not re-read in this session.
 
 `metadata_verified` does **not** mean every field was independently verified. Party lists, reservations and some status details remain explicitly unknown. See [docs/methodology.md](docs/methodology.md).
@@ -164,10 +164,10 @@ Every record declares one of:
 2. **Three official PDFs could not be acquired:** CETS 225 (HTTP 403; English text transcribed through an extraction tool), its Explanatory Report (403; metadata only) and the UNESCO Recommendation (403; metadata only). The official image/PDF is not stored for these.
 3. **EUR-Lex PDFs returned HTTP 202/empty.** The EU AI Act and the EU OJ version of CETS 225 are catalogued with metadata, not stored full texts.
 4. **Only English is stored** for texts. Other authentic language versions are recorded in metadata but not acquired.
-5. **Most records are metadata-level.** 31 of 47 instruments are catalogued without a stored full text; 6 of the 16 stored texts were not read end-to-end. The distinctions are machine-readable.
+5. **Most records are metadata-level.** 33 of 49 instruments are catalogued without a stored full text; 6 of the 16 stored texts were not read end-to-end. The distinctions are machine-readable.
 6. **Only one negotiation record** (the CCW GGE); no adopted draft protocol, no Latin American or Middle Eastern regional AI instrument, and no bilateral AI treaty were verified.
 7. **Printed pagination vs file pagination** is modelled only partially: unit `page_start`/`page_end` are PDF file pages; CETS 225 uses one logical page because its PDF was not acquired.
-8. **The cybersecurity layer is thin.** One metadata-only record (the Budapest Convention) is catalogued; its party list, reservations, protocols and map are not yet recorded, and the remaining cybercrime, regional and standards families in the integration plan are still pending. See [docs/cybersecurity-integration-plan.md](docs/cybersecurity-integration-plan.md).
+8. **The cybersecurity layer is still partial.** Three metadata-only records are catalogued: the Budapest Convention (with its full party list, 96 reservations and 280 declarations), ETS 189 and CETS 224. All three are mapped. The UN Cybercrime Convention, regional product/critical-infrastructure law (NIS2 and the CRA), cyber norms, standards and cooperation channels remain pending. See [docs/cybersecurity-integration-plan.md](docs/cybersecurity-integration-plan.md).
 
 ## Rights and licence
 
@@ -179,7 +179,7 @@ Not legal advice. Before quoting or relying on an instrument, check the official
 
 ## Summary
 
-This repository builds a first verifiable corpus of international AI and cybersecurity law, starting with the AI layer. It contains 47 catalogued instruments (46 AI-layer and the Budapest Convention as the first cybersecurity-only record), 16 stored full texts and 15 originals with SHA-256 hashes. The two treaties specifically dedicated to AI are the Council of Europe Framework Convention (CETS 225), with 21 signatures and 2 ratified instruments and not in force, and the WAICO Establishment Agreement, with 38 reported founding members and 37 identified; WAICO's deposits are unknown, not zero, and entry into force is unconfirmed as of 24 November 2026. The CCW GGE on LAWS is the only record in category 6 (negotiations in progress), with no adopted instrument. The other binding agreements with AI provisions are digital trade agreements (DEPA, with five Parties after Costa Rica's accession; SADEA; UKSDEA; KSDPA; the AfCFTA protocol, status unknown), mostly with cooperative clauses; the AfCFTA annex uses “shall” obligations for State Parties. The 2025 Paris Statement (63 States, the EU and the AU Commission; China and India endorsed, the United States and the UK did not), the 2023 Chinese initiative, the 2025 Pax Silica Declaration (26 signatories), the 2025 BRICS leaders’ statement (issued collectively, 11 listed member States) and the 2026 New Delhi Declaration (92 itemised endorsers: 90 States, the EU and IFAD) document competing political coalitions without creating legal blocs. The 2026 San Francisco Declaration is recorded separately as a political signature by ten governments. The atlas treats the three-pole image as a heuristic, not a legal classification; the nine maps show that treaty participation and political endorsement cut across it. The 2024 UK–US MOU and the US–EU TTC AI-safety dialogue commitment add the transatlantic layer. The corpus distinguishes binding and non-binding instruments, full texts and metadata-only records, verified, declared and unknown data. It is not complete: gaps, searches performed and checks run are documented in `docs/`.
+This repository builds a first verifiable corpus of international AI and cybersecurity law, starting with the AI layer. It contains 49 catalogued instruments (46 AI-layer and three cybersecurity-only records: the Budapest Convention, ETS 189 and CETS 224), 16 stored full texts and 15 originals with SHA-256 hashes. The two treaties specifically dedicated to AI are the Council of Europe Framework Convention (CETS 225), with 21 signatures and 2 ratified instruments and not in force, and the WAICO Establishment Agreement, with 38 reported founding members and 37 identified; WAICO's deposits are unknown, not zero, and entry into force is unconfirmed as of 24 November 2026. The CCW GGE on LAWS is the only record in category 6 (negotiations in progress), with no adopted instrument. The other binding agreements with AI provisions are digital trade agreements (DEPA, with five Parties after Costa Rica's accession; SADEA; UKSDEA; KSDPA; the AfCFTA protocol, status unknown), mostly with cooperative clauses; the AfCFTA annex uses “shall” obligations for State Parties. The 2025 Paris Statement (63 States, the EU and the AU Commission; China and India endorsed, the United States and the UK did not), the 2023 Chinese initiative, the 2025 Pax Silica Declaration (26 signatories), the 2025 BRICS leaders’ statement (issued collectively, 11 listed member States) and the 2026 New Delhi Declaration (92 itemised endorsers: 90 States, the EU and IFAD) document competing political coalitions without creating legal blocs. The 2026 San Francisco Declaration is recorded separately as a political signature by ten governments. The atlas treats the three-pole image as a heuristic, not a legal classification; the twelve maps show that treaty participation and political endorsement cut across it. The 2024 UK–US MOU and the US–EU TTC AI-safety dialogue commitment add the transatlantic layer. The corpus distinguishes binding and non-binding instruments, full texts and metadata-only records, verified, declared and unknown data. It is not complete: gaps, searches performed and checks run are documented in `docs/`.
 
 ## Documentation
 

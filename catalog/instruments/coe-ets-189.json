@@ -1,0 +1,510 @@
+{
+  "binding_status": "binding",
+  "category": "cyber_treaty",
+  "dates": {
+    "entered_into_force": "2006-03-01",
+    "notes": "Opened for signature in Strasbourg on 28 January 2003; entered into force on 1 March 2006. Party data checked against the Treaty Office chart status of 24 November 2026.",
+    "opened_for_signature": "2003-01-28",
+    "verified_on": "2026-11-24"
+  },
+  "domains": [
+    "cyber"
+  ],
+  "gaps": [
+    "No full text, citable units or original file is stored in this record; it is metadata-only.",
+    "Reservations and declarations are not itemised in this pass; the status chart flags them but their texts were not acquired.",
+    "National implementation and the Protocol's supervisory practice are not assessed.",
+    "No AI-specific provision is asserted. The record is cyber-domain only."
+  ],
+  "id": "coe-ets-189",
+  "instrument_type": "protocol",
+  "issuer": [
+    {
+      "name": "Council of Europe",
+      "role": "issuer",
+      "url": "https://www.coe.int/en/web/cybercrime/the-budapest-convention"
+    },
+    {
+      "name": "Secretary General of the Council of Europe",
+      "role": "depositary",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=189"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en",
+      "fr"
+    ],
+    "note": "The Treaty Office publishes the English and French official texts; both are authentic."
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "An additional protocol to the Budapest Convention, open for signature by States that had signed ETS 185 and subject to ratification, acceptance, approval or accession. It creates binding obligations for its Parties and is a treaty, not a recommendation.",
+    "source_ids": [
+      "coe-treaty-page",
+      "coe-status-chart"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-24",
+    "counts": {
+      "accessions": {
+        "basis": "verified_total",
+        "note": "Itemised from the Treaty Office chart. Ratifications and accessions together make the 38 Parties reported there.",
+        "source_ids": [
+          "coe-status-chart"
+        ],
+        "total": 5,
+        "verified": 5
+      },
+      "ratifications": {
+        "basis": "verified_total",
+        "note": "Itemised from the Treaty Office chart; five accessions are counted separately.",
+        "source_ids": [
+          "coe-status-chart"
+        ],
+        "total": 33,
+        "verified": 33
+      }
+    },
+    "entries": [
+      {
+        "entry_into_force": "2006-03-01",
+        "party": "Albania",
+        "ratification": "2004-11-26",
+        "role": "party",
+        "signature": "2003-05-26"
+      },
+      {
+        "entry_into_force": "2017-03-01",
+        "party": "Andorra",
+        "ratification": "2016-11-16",
+        "role": "party",
+        "signature": "2013-04-23"
+      },
+      {
+        "entry_into_force": "2007-02-01",
+        "party": "Armenia",
+        "ratification": "2006-10-12",
+        "role": "party",
+        "signature": "2003-01-28"
+      },
+      {
+        "party": "Austria",
+        "role": "signatory",
+        "signature": "2003-01-30"
+      },
+      {
+        "party": "Belgium",
+        "role": "signatory",
+        "signature": "2003-01-28"
+      },
+      {
+        "accession": "2024-06-20",
+        "entry_into_force": "2024-10-01",
+        "party": "Benin",
+        "role": "party"
+      },
+      {
+        "entry_into_force": "2006-09-01",
+        "party": "Bosnia and Herzegovina",
+        "ratification": "2006-05-19",
+        "role": "party",
+        "signature": "2005-02-09"
+      },
+      {
+        "party": "Canada",
+        "role": "signatory",
+        "signature": "2005-07-08"
+      },
+      {
+        "entry_into_force": "2008-11-01",
+        "party": "Croatia",
+        "ratification": "2008-07-04",
+        "role": "party",
+        "signature": "2003-03-26"
+      },
+      {
+        "entry_into_force": "2006-03-01",
+        "party": "Cyprus",
+        "ratification": "2005-06-23",
+        "role": "party",
+        "signature": "2005-01-19"
+      },
+      {
+        "entry_into_force": "2014-12-01",
+        "party": "Czech Republic",
+        "ratification": "2014-08-07",
+        "role": "party",
+        "signature": "2013-05-17"
+      },
+      {
+        "entry_into_force": "2006-03-01",
+        "party": "Denmark",
+        "ratification": "2005-06-21",
+        "role": "party",
+        "signature": "2004-02-11"
+      },
+      {
+        "party": "Estonia",
+        "role": "signatory",
+        "signature": "2003-01-28"
+      },
+      {
+        "entry_into_force": "2011-09-01",
+        "party": "Finland",
+        "ratification": "2011-05-20",
+        "role": "party",
+        "signature": "2003-01-28"
+      },
+      {
+        "entry_into_force": "2006-05-01",
+        "party": "France",
+        "ratification": "2006-01-10",
+        "role": "party",
+        "signature": "2003-01-28"
+      },
+      {
+        "entry_into_force": "2011-10-01",
+        "party": "Germany",
+        "ratification": "2011-06-10",
+        "role": "party",
+        "signature": "2003-01-28"
+      },
+      {
+        "entry_into_force": "2017-05-01",
+        "party": "Greece",
+        "ratification": "2017-01-25",
+        "role": "party",
+        "signature": "2003-01-28"
+      },
+      {
+        "entry_into_force": "2023-05-01",
+        "party": "Iceland",
+        "ratification": "2023-01-30",
+        "role": "party",
+        "signature": "2003-10-09"
+      },
+      {
+        "party": "Italy",
+        "role": "signatory",
+        "signature": "2011-11-09"
+      },
+      {
+        "entry_into_force": "2007-06-01",
+        "party": "Latvia",
+        "ratification": "2007-02-14",
+        "role": "party",
+        "signature": "2004-05-05"
+      },
+      {
+        "party": "Liechtenstein",
+        "role": "signatory",
+        "signature": "2008-11-17"
+      },
+      {
+        "entry_into_force": "2007-02-01",
+        "party": "Lithuania",
+        "ratification": "2006-10-12",
+        "role": "party",
+        "signature": "2005-04-07"
+      },
+      {
+        "entry_into_force": "2015-02-01",
+        "party": "Luxembourg",
+        "ratification": "2014-10-16",
+        "role": "party",
+        "signature": "2003-01-28"
+      },
+      {
+        "entry_into_force": "2025-10-01",
+        "party": "Malta",
+        "ratification": "2025-06-04",
+        "role": "party",
+        "signature": "2003-01-28"
+      },
+      {
+        "entry_into_force": "2017-07-01",
+        "party": "Monaco",
+        "ratification": "2017-03-17",
+        "role": "party",
+        "signature": "2017-03-17"
+      },
+      {
+        "entry_into_force": "2010-07-01",
+        "notes": [
+          "Treaty Office chart note: 55"
+        ],
+        "party": "Montenegro",
+        "ratification": "2010-03-03",
+        "role": "party",
+        "signature": "2005-04-07"
+      },
+      {
+        "accession": "2018-06-29",
+        "entry_into_force": "2018-10-01",
+        "party": "Morocco",
+        "role": "party"
+      },
+      {
+        "entry_into_force": "2010-11-01",
+        "party": "Netherlands",
+        "ratification": "2010-07-22",
+        "role": "party",
+        "signature": "2003-01-28"
+      },
+      {
+        "entry_into_force": "2006-03-01",
+        "party": "North Macedonia",
+        "ratification": "2005-11-14",
+        "role": "party",
+        "signature": "2005-11-14"
+      },
+      {
+        "entry_into_force": "2008-08-01",
+        "party": "Norway",
+        "ratification": "2008-04-29",
+        "role": "party",
+        "signature": "2008-04-29"
+      },
+      {
+        "accession": "2018-07-30",
+        "entry_into_force": "2018-11-01",
+        "party": "Paraguay",
+        "role": "party"
+      },
+      {
+        "entry_into_force": "2015-06-01",
+        "party": "Poland",
+        "ratification": "2015-02-20",
+        "role": "party",
+        "signature": "2003-07-21"
+      },
+      {
+        "entry_into_force": "2010-07-01",
+        "party": "Portugal",
+        "ratification": "2010-03-24",
+        "role": "party",
+        "signature": "2003-03-17"
+      },
+      {
+        "entry_into_force": "2017-06-01",
+        "party": "Republic of Moldova",
+        "ratification": "2017-02-15",
+        "role": "party",
+        "signature": "2003-04-25"
+      },
+      {
+        "entry_into_force": "2009-11-01",
+        "party": "Romania",
+        "ratification": "2009-07-16",
+        "role": "party",
+        "signature": "2003-10-09"
+      },
+      {
+        "accession": "2025-01-10",
+        "entry_into_force": "2025-05-01",
+        "party": "Rwanda",
+        "role": "party"
+      },
+      {
+        "entry_into_force": "2019-07-01",
+        "party": "San Marino",
+        "ratification": "2019-03-08",
+        "role": "party",
+        "signature": "2017-05-19"
+      },
+      {
+        "accession": "2016-12-16",
+        "entry_into_force": "2017-04-01",
+        "party": "Senegal",
+        "role": "party"
+      },
+      {
+        "entry_into_force": "2009-08-01",
+        "notes": [
+          "Treaty Office chart note: 55"
+        ],
+        "party": "Serbia",
+        "ratification": "2009-04-14",
+        "role": "party",
+        "signature": "2005-04-07"
+      },
+      {
+        "entry_into_force": "2023-10-01",
+        "party": "Slovak Republic",
+        "ratification": "2023-06-28",
+        "role": "party",
+        "signature": "2019-12-17"
+      },
+      {
+        "entry_into_force": "2006-03-01",
+        "party": "Slovenia",
+        "ratification": "2004-09-08",
+        "role": "party",
+        "signature": "2004-02-26"
+      },
+      {
+        "party": "South Africa",
+        "role": "signatory",
+        "signature": "2008-04-04"
+      },
+      {
+        "entry_into_force": "2015-04-01",
+        "party": "Spain",
+        "ratification": "2014-12-18",
+        "role": "party",
+        "signature": "2013-11-27"
+      },
+      {
+        "entry_into_force": "2021-08-01",
+        "party": "Sweden",
+        "ratification": "2021-04-28",
+        "role": "party",
+        "signature": "2003-01-28"
+      },
+      {
+        "party": "Switzerland",
+        "role": "signatory",
+        "signature": "2003-10-09"
+      },
+      {
+        "party": "Türkiye",
+        "role": "signatory",
+        "signature": "2016-04-19"
+      },
+      {
+        "entry_into_force": "2007-04-01",
+        "party": "Ukraine",
+        "ratification": "2006-12-21",
+        "role": "party",
+        "signature": "2005-04-08"
+      }
+    ],
+    "source_ids": [
+      "coe-status-chart"
+    ],
+    "summary": "38 Parties as of 24 November 2026: 33 ratifications and 5 accessions. Nine States signed but had not ratified and are listed as signatories, not Parties. Eight States on the chart have no recorded signature or ratification.",
+    "unknowns": [
+      "The official text and the reservations/declarations texts were not acquired in this pass.",
+      "No AI-specific provision is asserted."
+    ]
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-24",
+        "field": "title",
+        "locator": "Treaty Office detail page, title and reference",
+        "method": "official_page_read",
+        "source_ids": [
+          "coe-treaty-page"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "status",
+        "locator": "Treaty Office chart, entry into force row, status of 24 November 2026",
+        "method": "registry_read",
+        "source_ids": [
+          "coe-status-chart"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "parties",
+        "locator": "Treaty Office chart, full per-State table, status of 24 November 2026",
+        "method": "registry_read",
+        "source_ids": [
+          "coe-status-chart"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "field": "counts",
+        "locator": "Treaty Office chart totals: 38 ratifications/accessions, split into 33 ratifications and 5 accessions from the per-State table; nine signatures not followed by ratification",
+        "method": "registry_read",
+        "source_ids": [
+          "coe-status-chart"
+        ]
+      }
+    ],
+    "discovered_via": "Council of Europe Treaty Office, Budapest Convention family; status chart read on 24 November 2026.",
+    "search_dates": [
+      "2026-11-24"
+    ]
+  },
+  "related": [
+    {
+      "id": "budapest-convention-2001",
+      "note": "First Additional Protocol to the Budapest Convention; it is open for signature by States that signed ETS 185.",
+      "relation": "protocol_to"
+    }
+  ],
+  "relevance": {
+    "cyber_provisions": [
+      "Criminalisation of racist and xenophobic material disseminated through computer systems.",
+      "Protocol obligations and cooperation measures attached to the Budapest Convention framework."
+    ],
+    "reason": "The First Additional Protocol extends the Budapest Convention to racist and xenophobic acts committed through computer systems. It adds criminalisation and cooperation obligations for its Parties and is part of the binding cybercrime layer.",
+    "source_ids": [
+      "coe-treaty-page"
+    ]
+  },
+  "rights": {
+    "note": "Official Council of Europe text. Reuse remains subject to the Council of Europe terms; this corpus stores metadata and links, not the text.",
+    "status": "public_official_text",
+    "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=189"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "coe-treaty-page",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "Treaty Office detail page for ETS 189.",
+      "publisher": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=189"
+    },
+    {
+      "accessed": "2026-11-24",
+      "http_status": 200,
+      "id": "coe-status-chart",
+      "kind": "registry",
+      "language": "en",
+      "note": "Chart of signatures and ratifications for ETS 189, status as of 24/11/2026; full per-State table captured.",
+      "publisher": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=189"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force since 1 March 2006. As of the Treaty Office status of 24 November 2026: 38 Parties (33 ratifications and 5 accessions), nine signatories not followed by ratification, and eight listed States with no recorded signature or ratification.",
+  "title": {
+    "english": "Additional Protocol to the Convention on Cybercrime, concerning the criminalisation of acts of a racist and xenophobic nature committed through computer systems",
+    "official": "Additional Protocol to the Convention on Cybercrime, concerning the criminalisation of acts of a racist and xenophobic nature committed through computer systems (ETS No. 189)",
+    "short": "First Additional Protocol to the Budapest Convention (ETS No. 189)"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Treaty Office detail page read for the official title, reference, opening date and entry-into-force condition",
+        "date": "2026-11-24",
+        "result": "confirmed"
+      },
+      {
+        "check": "Treaty Office chart status of 24 November 2026 read for entry into force and the full per-State table",
+        "date": "2026-11-24",
+        "result": "confirmed: 38 Parties (33 ratifications, 5 accessions), nine signatories, eight listed States without a recorded act"
+      },
+      {
+        "check": "Official text and reservations/declarations texts not acquired",
+        "date": "2026-11-24",
+        "result": "not acquired"
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata-level record; party data are itemised, but the text and reservations are not stored."
+  }
+}
