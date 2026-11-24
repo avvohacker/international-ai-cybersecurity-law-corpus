@@ -36,45 +36,7 @@
     "translations": []
   },
   "provenance": {
-    "assertions": [
-      {
-        "date": "2026-11-23",
-        "field": "status",
-        "locator": "status, dates and status_note as recorded",
-        "method": "metadata_only",
-        "note": "Record-level status; the listed sources are the ones the record relies on.",
-        "source_ids": [
-          "ccw-gge-final-report",
-          "ccw-revcon-final-document",
-          "ccw-gge-page",
-          "ccw-revcon-page"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "languages",
-        "locator": "languages.authentic",
-        "method": "metadata_only",
-        "source_ids": [
-          "ccw-gge-final-report",
-          "ccw-revcon-final-document",
-          "ccw-gge-page",
-          "ccw-revcon-page"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "provisions",
-        "locator": "relevance.ai_provisions and relevance.reason",
-        "method": "metadata_only",
-        "source_ids": [
-          "ccw-gge-final-report",
-          "ccw-revcon-final-document",
-          "ccw-gge-page",
-          "ccw-revcon-page"
-        ]
-      }
-    ],
+    "assertions": [],
     "discovered_via": "UNODA CCW meeting pages and the UN Official Document System.",
     "notes": "Candidate `ccw-gge-laws` was upgraded to an included negotiation record after the 2026 final report and the Seventh Review Conference Decision 1 were read.",
     "search_dates": [

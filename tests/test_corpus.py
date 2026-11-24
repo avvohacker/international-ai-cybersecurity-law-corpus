@@ -414,19 +414,45 @@ class TestCatalogue(unittest.TestCase):
             all("signature" not in entry for entry in brics["parties"]["entries"])
         )
 
-    def test_provenance_covers_decisive_fields(self) -> None:
+    def test_provenance_assertions_name_specific_source_locations(self) -> None:
+        generic = {
+            "status, dates and status_note as recorded",
+            "languages.authentic",
+            "relevance.ai_provisions and relevance.reason",
+            "parties.entries, parties.counts and parties.as_of",
+            "Articles 1-18",
+            "Full text: no treaty clause",
+            "Media note and full text",
+            "Text released in English",
+            "Full text, paragraphs on sensitive technologies, critical infrastructure, working groups",
+            "Signing lists and MFA statement",
+        }
+        specific = re.compile(
+            r"(Article|Annex|paragraph|para\.|section|page|chart|press release|"
+            r"media note|statement|list|record|table|title|opening|final clauses)",
+            re.I,
+        )
+        curated = {
+            "afcfta-digital-trade-protocol-2024": {"status", "provisions", "languages", "counts"},
+            "brics-ai-statement-2025": {"status", "parties", "counts"},
+            "depa-2020": {"status", "parties", "counts"},
+            "san-francisco-declaration-2026": {"parties"},
+            "waico-establishment-agreement-2026": {"status", "parties"},
+        }
         for iid, inst in corpuslib.load_instruments().items():
-            assertions = (inst.get("provenance") or {}).get("assertions") or []
-            fields = {item.get("field") for item in assertions}
-            for field in ("status", "languages", "provisions"):
-                self.assertIn(field, fields, iid)
-            if inst.get("parties"):
-                self.assertIn("parties", fields, iid)
+            provenance = inst.get("provenance") or {}
+            self.assertTrue(provenance, iid)
+            assertions = provenance.get("assertions") or []
             for item in assertions:
+                locator = item.get("locator") or ""
+                self.assertNotIn(locator, generic, iid)
+                self.assertRegex(locator, specific, f"{iid}: {locator!r}")
                 self.assertTrue(item.get("source_ids"), iid)
-                self.assertTrue(item.get("locator"), iid)
-                self.assertTrue(item.get("date"), iid)
-                self.assertTrue(item.get("method"), iid)
+                self.assertEqual(item.get("date"), inst["dates"]["verified_on"], iid)
+                self.assertIn(item.get("method"), corpuslib.ASSERTION_METHODS, iid)
+            fields = {item.get("field") for item in assertions}
+            for field in curated.get(iid, set()):
+                self.assertIn(field, fields, iid)
 
     def test_hrc_resolution_record(self) -> None:
         inst = read_instrument("un-hrc-res-63-15")
@@ -673,6 +699,10 @@ class TestBuild(unittest.TestCase):
         self.assertIn('data-status="Endorsed"', page)
         self.assertIn('data-status="Member States (collective)"', page)
         self.assertIn("State: member of the group (collective statement)", page)
+        self.assertEqual(by_title["WAICO 2026"].count('fill="#c8102e"'), 37)
+        self.assertEqual(by_title["WAICO 2026"].count('fill="#5a7fbd"'), 0)
+        self.assertEqual(by_title["New Delhi 2026"].count('fill="#a67c52"'), 90)
+        self.assertEqual(by_title["New Delhi 2026"].count('fill="#5a7fbd"'), 0)
 
     def test_timeline_lists_every_record_and_sections_follow_the_new_order(self) -> None:
         import build_site
@@ -684,7 +714,7 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(page.count('data-instrument-id='), 46)
         for label in (
             "00 · Index",
-            "01 · Legal form",
+            "01 · What binds",
             "02 · Nine maps",
             "03 · Timeline",
             "04 · Off the record",

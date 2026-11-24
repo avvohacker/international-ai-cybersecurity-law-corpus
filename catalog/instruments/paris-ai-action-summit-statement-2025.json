@@ -352,55 +352,7 @@
     "withdrawals": []
   },
   "provenance": {
-    "assertions": [
-      {
-        "date": "2026-11-23",
-        "field": "status",
-        "locator": "status, dates and status_note as recorded",
-        "method": "official_text_read",
-        "note": "Record-level status; the listed sources are the ones the record relies on.",
-        "source_ids": [
-          "elysee-page",
-          "elysee-pdf",
-          "elysee-fr",
-          "canada-release"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "languages",
-        "locator": "languages.authentic",
-        "method": "official_text_read",
-        "source_ids": [
-          "elysee-page",
-          "elysee-pdf",
-          "elysee-fr",
-          "canada-release"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "provisions",
-        "locator": "relevance.ai_provisions and relevance.reason",
-        "method": "official_text_read",
-        "source_ids": [
-          "elysee-page",
-          "elysee-pdf",
-          "elysee-fr",
-          "canada-release"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "parties",
-        "locator": "parties.entries, parties.counts and parties.as_of",
-        "method": "official_text_read",
-        "source_ids": [
-          "elysee-page",
-          "elysee-pdf"
-        ]
-      }
-    ],
+    "assertions": [],
     "discovered_via": "Élysée official AI Action Summit page; candidate register entry opened after the primary text was located.",
     "search_dates": [
       "2026-11-23"

@@ -34,42 +34,7 @@
     ]
   },
   "provenance": {
-    "assertions": [
-      {
-        "date": "2026-11-23",
-        "field": "status",
-        "locator": "status, dates and status_note as recorded",
-        "method": "official_text_read",
-        "note": "Record-level status; the listed sources are the ones the record relies on.",
-        "source_ids": [
-          "mfa-en",
-          "cac-zh",
-          "mfa-action-plan-2025"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "languages",
-        "locator": "languages.authentic",
-        "method": "official_text_read",
-        "source_ids": [
-          "mfa-en",
-          "cac-zh",
-          "mfa-action-plan-2025"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "provisions",
-        "locator": "relevance.ai_provisions and relevance.reason",
-        "method": "official_text_read",
-        "source_ids": [
-          "mfa-en",
-          "cac-zh",
-          "mfa-action-plan-2025"
-        ]
-      }
-    ],
+    "assertions": [],
     "discovered_via": "Chinese Ministry of Foreign Affairs official text; cross-checked with the Cyberspace Administration of China original.",
     "search_dates": [
       "2026-11-23"

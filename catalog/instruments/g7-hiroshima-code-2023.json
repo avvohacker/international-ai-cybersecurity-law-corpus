@@ -31,39 +31,7 @@
     ]
   },
   "provenance": {
-    "assertions": [
-      {
-        "date": "2026-11-23",
-        "field": "status",
-        "locator": "status, dates and status_note as recorded",
-        "method": "official_text_read",
-        "note": "Record-level status; the listed sources are the ones the record relies on.",
-        "source_ids": [
-          "mic-code",
-          "mic-documents"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "languages",
-        "locator": "languages.authentic",
-        "method": "official_text_read",
-        "source_ids": [
-          "mic-code",
-          "mic-documents"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "provisions",
-        "locator": "relevance.ai_provisions and relevance.reason",
-        "method": "official_text_read",
-        "source_ids": [
-          "mic-code",
-          "mic-documents"
-        ]
-      }
-    ],
+    "assertions": [],
     "discovered_via": "Official Japanese MIC Hiroshima AI Process pages; cross-checked with the G7 Leaders' Statement.",
     "search_dates": [
       "2026-11-23"

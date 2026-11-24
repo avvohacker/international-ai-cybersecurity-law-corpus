@@ -133,7 +133,7 @@
       {
         "date": "2026-11-24",
         "field": "status",
-        "locator": "MFAT overview and joint press release of 17 September 2026",
+        "locator": "Joint press release of 17 September 2026, paragraphs 1-3 and 9; MFAT overview, Parties section",
         "method": "official_page_read",
         "source_ids": [
           "depa-mfat-overview",
@@ -168,30 +168,6 @@
         "method": "official_text_read",
         "source_ids": [
           "depa-text"
-        ]
-      },
-      {
-        "date": "2026-11-24",
-        "field": "languages",
-        "locator": "languages.authentic",
-        "method": "official_text_read",
-        "source_ids": [
-          "depa-text",
-          "depa-mfat-overview",
-          "depa-mfat-text",
-          "depa-costa-rica"
-        ]
-      },
-      {
-        "date": "2026-11-24",
-        "field": "provisions",
-        "locator": "relevance.ai_provisions and relevance.reason",
-        "method": "official_text_read",
-        "source_ids": [
-          "depa-text",
-          "depa-mfat-overview",
-          "depa-mfat-text",
-          "depa-costa-rica"
         ]
       }
     ],

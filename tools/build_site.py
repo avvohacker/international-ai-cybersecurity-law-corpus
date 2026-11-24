@@ -220,6 +220,8 @@ NAME_ALIASES = {
 
 TEAL = "#0e6b62"
 ACT_BLUE = "#5a7fbd"
+CHINA_RED = "#c8102e"
+INDIA_BROWN = "#a67c52"
 RATIFIED_BLUE = "#172e6e"
 ORG_MEMBER_BLUE = "#a9c0e0"
 ISSUED_GOLD = "#a67c52"
@@ -389,9 +391,11 @@ def render_map(
     state_status: dict[str, str],
     legend: list[dict] | None = None,
     legend_note: str = "",
+    fills: dict[str, str] | None = None,
 ) -> str:
     features, _, by_iso = load_geo()
     legend = legend or []
+    fills = fills or {}
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" '
         f'class="map-svg" role="img" aria-labelledby="map-{kind}-title map-{kind}-desc">',
@@ -412,7 +416,7 @@ def render_map(
             iso = props.get("ISO_A2")
         iso = iso if iso not in (None, "-99") else ""
         status = state_status.get(iso, "none")
-        fill = STATUS_FILL[status]
+        fill = fills.get(status, STATUS_FILL[status])
         path = feature_path(feature)
         if not path:
             continue
@@ -426,7 +430,7 @@ def render_map(
         if iso in by_iso:
             continue
         status = state_status[iso]
-        fill = STATUS_FILL[status]
+        fill = fills.get(status, STATUS_FILL[status])
         x, y = project(lon, lat)
         parts.append(
             f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.8" fill="{fill}" '
@@ -501,6 +505,20 @@ def year_chart(instruments: list[dict]) -> tuple[str, str]:
         )
     parts.append("</svg>")
     return "".join(parts), "Years present in the corpus; the scale is not continuous."
+
+
+def category_bars(category_counts: Counter) -> str:
+    maximum = max(category_counts.values()) if category_counts else 1
+    rows = []
+    for category, count in sorted(category_counts.items(), key=lambda item: (-item[1], item[0])):
+        width = count / maximum * 100
+        rows.append(
+            f'<div class="bar-row"><span class="bar-label">{esc(CATEGORY_LABELS[category])}</span>'
+            f'<span class="bar-track"><span class="bar-fill cat-{esc(category)}" '
+            f'style="width:{width:.1f}%"></span></span>'
+            f'<span class="bar-value">{count}</span></div>'
+        )
+    return "".join(rows)
 
 
 def binding_bar(instruments: list[dict]) -> str:
@@ -920,13 +938,17 @@ def main() -> int:
         {"color": ACT_BLUE, "label": "State: endorsed"},
         {"color": LAND, "label": "State: not endorsed"},
     ]
+    new_delhi_legend = [
+        {"color": INDIA_BROWN, "label": "State: endorsed"},
+        {"color": LAND, "label": "State: not endorsed"},
+    ]
     cets_legend = [
         {"color": RATIFIED_BLUE, "label": "State: ratified"},
         {"color": ACT_BLUE, "label": "State: signed only"},
         {"color": LAND, "label": "State: no signature"},
     ]
     waico_legend = [
-        {"color": ACT_BLUE, "label": "State: signed only"},
+        {"color": CHINA_RED, "label": "State: signed only"},
         {"color": LAND, "label": "State: no signature"},
     ]
     brics_legend = [
@@ -1050,6 +1072,7 @@ def main() -> int:
         legend: list[dict],
         note: str = "",
         legend_note: str = "",
+        fills: dict[str, str] | None = None,
     ) -> dict:
         if org_notes:
             legend = (
@@ -1082,7 +1105,7 @@ def main() -> int:
             f'</figcaption>'
             f'<p class="map-participation">{esc(sub)}</p>'
             f"{org_html}"
-            f"{render_map(kind, title, description, status, legend=legend, legend_note=legend_note)}"
+            f"{render_map(kind, title, description, status, legend=legend, legend_note=legend_note, fills=fills)}"
             f"{party_html}"
             f"{about_html}"
             f'<p class="note">{esc(note)}</p></figure>'
@@ -1142,10 +1165,10 @@ def main() -> int:
             "new-delhi",
             "New Delhi 2026",
             f"{len(new_delhi_states)} States + {org_short(new_delhi)}",
-            f"World map. Medium blue: {len(new_delhi_states)} States that endorsed the New Delhi Declaration. Sand: States with no recorded endorsement.",
+            f"World map. Brown: {len(new_delhi_states)} States that endorsed the New Delhi Declaration. Sand: States with no recorded endorsement.",
             new_delhi_status,
             new_delhi_org_notes,
-            endorsement_legend,
+            new_delhi_legend,
             note=(
                 f"Endorsement, not signature or ratification. The PIB list of 5 March 2026 "
                 f"names {reported_total(new_delhi)} endorsers: {len(new_delhi_states)} States, the EU "
@@ -1155,6 +1178,7 @@ def main() -> int:
             legend_note=(
                 f"{len(new_delhi_states)} endorsing States + EU + IFAD"
             ),
+            fills={"endorsed": INDIA_BROWN},
         ),
         map_figure(
             brics,
@@ -1243,10 +1267,11 @@ def main() -> int:
             "waico",
             "WAICO 2026",
             f"{len(waico_states)} confirmed of {reported_total(waico)} reported",
-            f"World map. Medium blue: {len(waico_states)} confirmed States that signed the WAICO Agreement. Sand: States with no recorded signature. China's MFA reports {reported_total(waico)} founding members; {len(waico_states)} are individually identified. China is the depositary.",
+            f"World map. Red: {len(waico_states)} confirmed States that signed the WAICO Agreement. Sand: States with no recorded signature. China's MFA reports {reported_total(waico)} founding members; {len(waico_states)} are individually identified. China is the depositary.",
             waico_status,
             [],
             waico_legend,
+            fills={"signed": CHINA_RED},
             note=(
                 f"Treaty signature, not ratification. {len(waico_states)} of the "
                 f"{reported_total(waico)} founding members reported by China's MFA are individually "
@@ -1373,7 +1398,7 @@ def main() -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI Law Atlas</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI law.">
-<link rel="stylesheet" href="assets/style.css?v=12">
+<link rel="stylesheet" href="assets/style.css?v=13">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -1384,7 +1409,7 @@ def main() -> int:
     <p class="byline">{total} instruments · {full_texts} full texts · {originals} originals with SHA-256 · {binding} binding</p>
     <nav class="toc" aria-label="Sections">
       <a href="#index">Index</a>
-      <a href="#form">01 Legal form</a>
+      <a href="#form">01 What binds</a>
       <a href="#maps">02 Instruments</a>
       <a href="#timeline">03 Timeline</a>
       <a href="#unseen">04 Off the record</a>
@@ -1401,7 +1426,7 @@ def main() -> int:
       <h2>What this atlas contains</h2>
       <div class="stats">{stats_html}</div>
       <div class="index-grid">
-        <a class="index-card" href="#form"><span class="index-number">01</span><strong>Legal form</strong><span>What a treaty, a declaration, an EU regulation and a technical standard can and cannot do — and why “binding” is not the same as enforceable.</span></a>
+        <a class="index-card" href="#form"><span class="index-number">01</span><strong>Binding or not</strong><span>What “binding” means here, and how the corpus splits between binding and non-binding instruments.</span></a>
         <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>Nine maps of the State-level acts recorded in the corpus: signatures, ratifications, endorsements and collective issuances.</span></a>
         <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>All {total} records in chronological order, each with a text slot on why it exists, what it changed and what it left out.</span></a>
         <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Off the record</strong><span>Bilaterals, hotlines, summits without texts and market events: the part of the story that leaves no legal instrument.</span></a>
@@ -1411,43 +1436,31 @@ def main() -> int:
     </div>
   </section>
 
-  <section id="form" class="section">
+    <section id="form" class="section">
     <div class="wrap">
-      <p class="eyebrow">01 · Legal form</p>
-      <h2>Binding, and what it does not settle</h2>
-      <p class="lede">“Binding” is a property of the instrument, not of every sentence in it, and not a ranking of importance. In this corpus {binding} instruments are binding and {non_binding} are not; the label says which legal technique was used, not whether the AI obligation is detailed or enforceable.</p>
+      <p class="eyebrow">01 · What binds</p>
+      <h2>Binding or not</h2>
+      <p class="lede">In the corpus, {binding} instruments are binding and {non_binding} are not.</p>
       {binding_bar(instruments)}
       <div class="legend">
-        <span><i class="swatch swatch-binding"></i>Binding instrument</span>
-        <span><i class="swatch swatch-nonbinding"></i>Non-binding instrument</span>
+        <span><i class="swatch swatch-binding"></i>Binding</span>
+        <span><i class="swatch swatch-nonbinding"></i>Non-binding</span>
       </div>
-      <div class="form-intro">
-        <p>A treaty in force, a trade agreement in force and an EU regulation are all binding, but they bind different actors in different ways. A treaty binds the States that become parties; an EU regulation applies directly inside the Union; a technical standard binds only through contract, procurement or regulation. A declaration binds no one, but it can still set the terms of the argument.</p>
-        <p>The AI-specific treaties sharpen the point. CETS 225 is a human-rights convention with a Conference of the Parties once it is in force; the WAICO Agreement would create an organisation, a Council and a Secretariat. Neither is confirmed in force. The AfCFTA Protocol's Annex on Emerging and Advanced Technologies contains real “shall” obligations on deployment and national treatment, but only for State Parties and only once the Protocol is in force for them.</p>
-        <p>Conversely, a political text can be signed. The San Francisco Declaration was signed by ten governments; the US–UK MOU was signed by two. Signature is a fact about the act, not proof that the text is a treaty. The vocabulary table below keeps the acts apart.</p>
-      </div>
-
-      <div class="table-wrap form-table">
-        <table class="catalogue">
-          <caption>Legal forms in the corpus, and what each can do. Counts are the records in each category.</caption>
-          <thead><tr><th scope="col">Form</th><th scope="col">Records</th><th scope="col">What it can do</th><th scope="col">What it cannot do</th></tr></thead>
-          <tbody>{legal_form_rows}</tbody>
-        </table>
-      </div>
-
-      <h3>The vocabulary of participation</h3>
-      <p>These words are not interchangeable, and the record keeps them apart. A count of one is not a count of another.</p>
-      <div class="table-wrap vocab-wrap">
-        <table class="catalogue vocab-table">
-          <caption>Acts recorded in the catalogue</caption>
-          <thead><tr><th scope="col">Term</th><th scope="col">Where it appears</th><th scope="col">What it means</th><th scope="col">What it does not mean</th></tr></thead>
-          <tbody>{vocab_rows}</tbody>
-        </table>
+      <div class="two-col">
+        <div>
+          <h3>What “binding” means here</h3>
+          <p>A treaty in force, a trade agreement in force, European Union law and {number_word(general_treaty_count)} general framework treaties. It does not mean the obligation is detailed: CETS 225 is not in force, WAICO's entry into force is unconfirmed, and the AfCFTA Protocol's status is unknown.</p>
+          <p>Declarations, UN resolutions, recommendations, codes of conduct and technical standards are non-binding. They are not irrelevant: they set direction, create expectations and prepare the ground for later rules.</p>
+        </div>
+        <div>
+          <h3>By category · {sum(category_counts.values())} instruments</h3>
+          <div class="bars">{category_bars(category_counts)}</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="maps" class="section section-dark">
+<section id="maps" class="section section-dark">
     <div class="wrap">
       <p class="eyebrow">02 · {number_word(len(map_entries)).capitalize()} maps</p>
       <h2>The treaties, declarations and statements</h2>

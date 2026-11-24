@@ -320,7 +320,7 @@
       {
         "date": "2026-11-24",
         "field": "status",
-        "locator": "Article 15; MFA press conference of 9 November 2026",
+        "locator": "Article 15 (three instruments of ratification, acceptance or approval); MFA press conference of 9 November 2026",
         "method": "official_page_read",
         "note": "No depositary notification located; entry into force not confirmed, so no definitive in-force or not-in-force status is asserted.",
         "source_ids": [
@@ -343,38 +343,8 @@
       },
       {
         "date": "2026-11-24",
-        "field": "counts",
-        "locator": "Signing lists and MFA statement",
-        "method": "official_page_read",
-        "note": "Deposits unknown: no depositary register or notification.",
-        "source_ids": [
-          "mfa-ratification",
-          "indonesia-founding-list",
-          "mfa-31-july"
-        ]
-      },
-      {
-        "date": "2026-11-24",
-        "field": "languages",
-        "locator": "Article 18",
-        "method": "official_text_read",
-        "source_ids": [
-          "npc-agreement-text"
-        ]
-      },
-      {
-        "date": "2026-11-24",
-        "field": "provisions",
-        "locator": "Articles 1-18",
-        "method": "official_text_read",
-        "source_ids": [
-          "npc-agreement-text"
-        ]
-      },
-      {
-        "date": "2026-11-24",
         "field": "legal_nature",
-        "locator": "Articles 1, 14, 15 and 18",
+        "locator": "Agreement Articles 1 (object), 14 (Council), 15 (entry into force) and 18 (depositary)",
         "method": "official_text_read",
         "source_ids": [
           "npc-agreement-text"

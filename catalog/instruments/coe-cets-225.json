@@ -260,63 +260,7 @@
     "withdrawals": []
   },
   "provenance": {
-    "assertions": [
-      {
-        "date": "2026-11-23",
-        "field": "status",
-        "locator": "status, dates and status_note as recorded",
-        "method": "official_text_read",
-        "note": "Record-level status; the listed sources are the ones the record relies on.",
-        "source_ids": [
-          "coe-text",
-          "coe-status",
-          "coe-ai-page",
-          "eu-oj-2026-1081",
-          "eu-decision-2026-1080",
-          "coe-declarations"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "languages",
-        "locator": "languages.authentic",
-        "method": "official_text_read",
-        "source_ids": [
-          "coe-text",
-          "coe-status",
-          "coe-ai-page",
-          "eu-oj-2026-1081",
-          "eu-decision-2026-1080",
-          "coe-declarations"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "provisions",
-        "locator": "relevance.ai_provisions and relevance.reason",
-        "method": "official_text_read",
-        "source_ids": [
-          "coe-text",
-          "coe-status",
-          "coe-ai-page",
-          "eu-oj-2026-1081",
-          "eu-decision-2026-1080",
-          "coe-declarations"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "parties",
-        "locator": "parties.entries, parties.counts and parties.as_of",
-        "method": "official_text_read",
-        "source_ids": [
-          "coe-status",
-          "coe-declarations",
-          "eu-oj-2026-1081",
-          "eu-decision-2026-1080"
-        ]
-      }
-    ],
+    "assertions": [],
     "discovered_via": "Official Council of Europe AI and Treaty Office pages; EUR-Lex publication following EU ratification.",
     "notes": "Candidate identified from primary sources (Council of Europe), not from secondary commentary.",
     "search_dates": [

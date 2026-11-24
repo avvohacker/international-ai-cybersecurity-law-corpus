@@ -37,45 +37,7 @@
     "translations": []
   },
   "provenance": {
-    "assertions": [
-      {
-        "date": "2026-11-23",
-        "field": "status",
-        "locator": "status, dates and status_note as recorded",
-        "method": "metadata_only",
-        "note": "Record-level status; the listed sources are the ones the record relies on.",
-        "source_ids": [
-          "ec-ttc-joint-statement",
-          "ustr-ttc-joint-statement",
-          "nist-technical-dialogue",
-          "eu-technical-dialogue"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "languages",
-        "locator": "languages.authentic",
-        "method": "metadata_only",
-        "source_ids": [
-          "ec-ttc-joint-statement",
-          "ustr-ttc-joint-statement",
-          "nist-technical-dialogue",
-          "eu-technical-dialogue"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "provisions",
-        "locator": "relevance.ai_provisions and relevance.reason",
-        "method": "metadata_only",
-        "source_ids": [
-          "ec-ttc-joint-statement",
-          "ustr-ttc-joint-statement",
-          "nist-technical-dialogue",
-          "eu-technical-dialogue"
-        ]
-      }
-    ],
+    "assertions": [],
     "discovered_via": "European Commission and USTR TTC pages; NIST and European Commission technical-dialogue pages.",
     "search_dates": [
       "2026-11-23"

@@ -81,49 +81,7 @@
     "withdrawals": []
   },
   "provenance": {
-    "assertions": [
-      {
-        "date": "2026-11-23",
-        "field": "status",
-        "locator": "status, dates and status_note as recorded",
-        "method": "metadata_only",
-        "note": "Record-level status; the listed sources are the ones the record relies on.",
-        "source_ids": [
-          "ksdpa-text",
-          "mti-page"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "languages",
-        "locator": "languages.authentic",
-        "method": "metadata_only",
-        "source_ids": [
-          "ksdpa-text",
-          "mti-page"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "provisions",
-        "locator": "relevance.ai_provisions and relevance.reason",
-        "method": "metadata_only",
-        "source_ids": [
-          "ksdpa-text",
-          "mti-page"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "parties",
-        "locator": "parties.entries, parties.counts and parties.as_of",
-        "method": "metadata_only",
-        "source_ids": [
-          "mti-page",
-          "ksdpa-text"
-        ]
-      }
-    ],
+    "assertions": [],
     "discovered_via": "Singapore METI and Korean MOTIE treaty pages; article number cross-checked in an ADB comparative study.",
     "search_dates": [
       "2026-11-23"

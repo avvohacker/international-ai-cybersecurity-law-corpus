@@ -87,7 +87,7 @@
       {
         "date": "2026-11-24",
         "field": "status",
-        "locator": "AU treaty page (no entry-into-force date or ratification table); Protocol Article 47",
+        "locator": "AU treaty page, status section: no entry-into-force date or ratification table; Protocol Article 47",
         "method": "official_page_read",
         "note": "No definitive status asserted from the absence of a date.",
         "source_ids": [
@@ -116,7 +116,7 @@
       {
         "date": "2026-11-24",
         "field": "counts",
-        "locator": "AU treaty page",
+        "locator": "AU treaty page, status section: no ratification table or entry-into-force date",
         "method": "official_page_read",
         "note": "Ratifications unknown.",
         "source_ids": [
@@ -131,16 +131,6 @@
         "source_ids": [
           "au-agreement",
           "au-page"
-        ]
-      },
-      {
-        "date": "2026-11-24",
-        "field": "parties",
-        "locator": "parties.entries, parties.counts and parties.as_of",
-        "method": "metadata_only",
-        "source_ids": [
-          "au-page",
-          "au-agreement"
         ]
       }
     ],

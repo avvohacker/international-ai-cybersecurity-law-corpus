@@ -184,6 +184,9 @@ p { margin: 0 0 14px; }
   font-family: var(--mono);
   font-size: 12px;
 }
+@media (max-width: 700px) {
+  .stack span { font-size: 0; }
+}
 .stack span {
   display: flex;
   align-items: center;
@@ -354,7 +357,7 @@ p { margin: 0 0 14px; }
 
 /* Maps */
 .maps { display: grid; grid-template-columns: 1fr; gap: 40px; margin-top: 34px; }
-.map-card { margin: 0; background: #fffdf8; border: 1px solid var(--line); padding: 22px 22px 18px; }
+.map-card { margin: 0; background: #fffdf8; border: 1px solid var(--line); padding: 22px 22px 18px; color: var(--ink); }
 .map-card figcaption { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 0 2px 14px; }
 .map-title { font-family: var(--serif); font-size: 26px; font-weight: 600; }
 .map-full-title {

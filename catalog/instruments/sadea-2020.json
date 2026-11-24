@@ -79,49 +79,7 @@
     "withdrawals": []
   },
   "provenance": {
-    "assertions": [
-      {
-        "date": "2026-11-23",
-        "field": "status",
-        "locator": "status, dates and status_note as recorded",
-        "method": "official_text_read",
-        "note": "Record-level status; the listed sources are the ones the record relies on.",
-        "source_ids": [
-          "sadea-text",
-          "dfat-page"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "languages",
-        "locator": "languages.authentic",
-        "method": "official_text_read",
-        "source_ids": [
-          "sadea-text",
-          "dfat-page"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "provisions",
-        "locator": "relevance.ai_provisions and relevance.reason",
-        "method": "official_text_read",
-        "source_ids": [
-          "sadea-text",
-          "dfat-page"
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "field": "parties",
-        "locator": "parties.entries, parties.counts and parties.as_of",
-        "method": "official_text_read",
-        "source_ids": [
-          "dfat-page",
-          "sadea-text"
-        ]
-      }
-    ],
+    "assertions": [],
     "discovered_via": "Official Singapore MTI/DFAT digital-economy agreement pages; comparative ADB study used only to locate the AI article number.",
     "search_dates": [
       "2026-11-23"

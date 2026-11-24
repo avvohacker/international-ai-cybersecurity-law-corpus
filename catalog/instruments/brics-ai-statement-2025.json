@@ -174,7 +174,7 @@
       {
         "date": "2026-11-24",
         "field": "status",
-        "locator": "Statement text and Brazilian MFA page",
+        "locator": "Statement text, title and opening paragraph; Brazilian MFA page, 6 July 2025",
         "method": "official_page_read",
         "source_ids": [
           "brics-presidency-pdf",
@@ -195,7 +195,7 @@
       {
         "date": "2026-11-24",
         "field": "counts",
-        "locator": "About the BRICS, member list",
+        "locator": "About the BRICS, member list: 11 States",
         "method": "official_page_read",
         "source_ids": [
           "brics-members"
@@ -204,36 +204,10 @@
       {
         "date": "2026-11-24",
         "field": "legal_nature",
-        "locator": "Full text: no signature, ratification or depositary clause",
+        "locator": "Statement text, final clauses: no signature, ratification or depositary clause",
         "method": "official_text_read",
         "source_ids": [
           "brics-presidency-pdf"
-        ]
-      },
-      {
-        "date": "2026-11-24",
-        "field": "languages",
-        "locator": "languages.authentic",
-        "method": "metadata_only",
-        "source_ids": [
-          "brics-presidency-pdf",
-          "brazil-mfa-page",
-          "brics-members",
-          "spa-saudi-summit",
-          "congresso-nacional-brics"
-        ]
-      },
-      {
-        "date": "2026-11-24",
-        "field": "provisions",
-        "locator": "relevance.ai_provisions and relevance.reason",
-        "method": "metadata_only",
-        "source_ids": [
-          "brics-presidency-pdf",
-          "brazil-mfa-page",
-          "brics-members",
-          "spa-saudi-summit",
-          "congresso-nacional-brics"
         ]
       }
     ],

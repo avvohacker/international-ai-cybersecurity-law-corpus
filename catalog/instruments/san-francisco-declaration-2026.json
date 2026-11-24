@@ -177,46 +177,9 @@
       },
       {
         "date": "2026-11-24",
-        "field": "status",
-        "locator": "Media note and full text",
-        "method": "official_text_read",
-        "note": "Signed political declaration; no entry-into-force clause.",
-        "source_ids": [
-          "state-san-francisco"
-        ]
-      },
-      {
-        "date": "2026-11-24",
         "field": "parties",
         "locator": "Media note: 'the United States and nine Pax Silica participants' and the list of ten governments",
         "method": "official_page_read",
-        "source_ids": [
-          "state-san-francisco"
-        ]
-      },
-      {
-        "date": "2026-11-24",
-        "field": "provisions",
-        "locator": "Full text, paragraphs on sensitive technologies, critical infrastructure, working groups",
-        "method": "official_text_read",
-        "source_ids": [
-          "state-san-francisco"
-        ]
-      },
-      {
-        "date": "2026-11-24",
-        "field": "languages",
-        "locator": "Text released in English",
-        "method": "official_page_read",
-        "source_ids": [
-          "state-san-francisco"
-        ]
-      },
-      {
-        "date": "2026-11-24",
-        "field": "legal_nature",
-        "locator": "Full text: no treaty clause",
-        "method": "official_text_read",
         "source_ids": [
           "state-san-francisco"
         ]

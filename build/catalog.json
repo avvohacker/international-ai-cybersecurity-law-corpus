@@ -130,7 +130,7 @@
           {
             "date": "2026-11-24",
             "field": "status",
-            "locator": "AU treaty page (no entry-into-force date or ratification table); Protocol Article 47",
+            "locator": "AU treaty page, status section: no entry-into-force date or ratification table; Protocol Article 47",
             "method": "official_page_read",
             "note": "No definitive status asserted from the absence of a date.",
             "source_ids": [
@@ -159,7 +159,7 @@
           {
             "date": "2026-11-24",
             "field": "counts",
-            "locator": "AU treaty page",
+            "locator": "AU treaty page, status section: no ratification table or entry-into-force date",
             "method": "official_page_read",
             "note": "Ratifications unknown.",
             "source_ids": [
@@ -174,16 +174,6 @@
             "source_ids": [
               "au-agreement",
               "au-page"
-            ]
-          },
-          {
-            "date": "2026-11-24",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "au-page",
-              "au-agreement"
             ]
           }
         ],
@@ -347,39 +337,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "asean-pdf",
-              "asean-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "asean-pdf",
-              "asean-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "asean-pdf",
-              "asean-page"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "ASEAN Secretariat publication page and PDF.",
         "search_dates": [
           "2026-11-23"
@@ -488,39 +446,7 @@
         ]
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "au-page",
-              "au-pdf"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "au-page",
-              "au-pdf"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "au-page",
-              "au-pdf"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "African Union documents portal.",
         "search_dates": [
           "2026-11-23"
@@ -791,49 +717,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "govuk-declaration",
-              "govuk-news"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-declaration",
-              "govuk-news"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-declaration",
-              "govuk-news"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-declaration",
-              "govuk-news"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "GOV.UK AI Safety Summit publications.",
         "search_dates": [
           "2026-11-23"
@@ -1087,7 +971,7 @@
           {
             "date": "2026-11-24",
             "field": "status",
-            "locator": "Statement text and Brazilian MFA page",
+            "locator": "Statement text, title and opening paragraph; Brazilian MFA page, 6 July 2025",
             "method": "official_page_read",
             "source_ids": [
               "brics-presidency-pdf",
@@ -1108,7 +992,7 @@
           {
             "date": "2026-11-24",
             "field": "counts",
-            "locator": "About the BRICS, member list",
+            "locator": "About the BRICS, member list: 11 States",
             "method": "official_page_read",
             "source_ids": [
               "brics-members"
@@ -1117,36 +1001,10 @@
           {
             "date": "2026-11-24",
             "field": "legal_nature",
-            "locator": "Full text: no signature, ratification or depositary clause",
+            "locator": "Statement text, final clauses: no signature, ratification or depositary clause",
             "method": "official_text_read",
             "source_ids": [
               "brics-presidency-pdf"
-            ]
-          },
-          {
-            "date": "2026-11-24",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "brics-presidency-pdf",
-              "brazil-mfa-page",
-              "brics-members",
-              "spa-saudi-summit",
-              "congresso-nacional-brics"
-            ]
-          },
-          {
-            "date": "2026-11-24",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "brics-presidency-pdf",
-              "brazil-mfa-page",
-              "brics-members",
-              "spa-saudi-summit",
-              "congresso-nacional-brics"
             ]
           }
         ],
@@ -1323,45 +1181,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "ccw-gge-final-report",
-              "ccw-revcon-final-document",
-              "ccw-gge-page",
-              "ccw-revcon-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "ccw-gge-final-report",
-              "ccw-revcon-final-document",
-              "ccw-gge-page",
-              "ccw-revcon-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "ccw-gge-final-report",
-              "ccw-revcon-final-document",
-              "ccw-gge-page",
-              "ccw-revcon-page"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UNODA CCW meeting pages and the UN Official Document System.",
         "notes": "Candidate `ccw-gge-laws` was upgraded to an included negotiation record after the 2026 final report and the Seventh Review Conference Decision 1 were read.",
         "search_dates": [
@@ -1520,42 +1340,7 @@
         ]
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "official_text_read",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "mfa-en",
-              "cac-zh",
-              "mfa-action-plan-2025"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "official_text_read",
-            "source_ids": [
-              "mfa-en",
-              "cac-zh",
-              "mfa-action-plan-2025"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "official_text_read",
-            "source_ids": [
-              "mfa-en",
-              "cac-zh",
-              "mfa-action-plan-2025"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "Chinese Ministry of Foreign Affairs official text; cross-checked with the Cyberspace Administration of China original.",
         "search_dates": [
           "2026-11-23"
@@ -1930,63 +1715,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "official_text_read",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "coe-text",
-              "coe-status",
-              "coe-ai-page",
-              "eu-oj-2026-1081",
-              "eu-decision-2026-1080",
-              "coe-declarations"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "official_text_read",
-            "source_ids": [
-              "coe-text",
-              "coe-status",
-              "coe-ai-page",
-              "eu-oj-2026-1081",
-              "eu-decision-2026-1080",
-              "coe-declarations"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "official_text_read",
-            "source_ids": [
-              "coe-text",
-              "coe-status",
-              "coe-ai-page",
-              "eu-oj-2026-1081",
-              "eu-decision-2026-1080",
-              "coe-declarations"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "official_text_read",
-            "source_ids": [
-              "coe-status",
-              "coe-declarations",
-              "eu-oj-2026-1081",
-              "eu-decision-2026-1080"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "Official Council of Europe AI and Treaty Office pages; EUR-Lex publication following EU ratification.",
         "notes": "Candidate identified from primary sources (Council of Europe), not from secondary commentary.",
         "search_dates": [
@@ -2163,39 +1892,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "coe-report",
-              "coe-ai-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "coe-report",
-              "coe-ai-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "coe-report",
-              "coe-ai-page"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "Council of Europe AI page and Treaty Office.",
         "search_dates": [
           "2026-11-23"
@@ -2398,7 +2095,7 @@
           {
             "date": "2026-11-24",
             "field": "status",
-            "locator": "MFAT overview and joint press release of 17 September 2026",
+            "locator": "Joint press release of 17 September 2026, paragraphs 1-3 and 9; MFAT overview, Parties section",
             "method": "official_page_read",
             "source_ids": [
               "depa-mfat-overview",
@@ -2433,30 +2130,6 @@
             "method": "official_text_read",
             "source_ids": [
               "depa-text"
-            ]
-          },
-          {
-            "date": "2026-11-24",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "official_text_read",
-            "source_ids": [
-              "depa-text",
-              "depa-mfat-overview",
-              "depa-mfat-text",
-              "depa-costa-rica"
-            ]
-          },
-          {
-            "date": "2026-11-24",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "official_text_read",
-            "source_ids": [
-              "depa-text",
-              "depa-mfat-overview",
-              "depa-mfat-text",
-              "depa-costa-rica"
             ]
           }
         ],
@@ -2638,42 +2311,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "eurlex-act",
-              "eurlex-consolidated",
-              "eurlex-summary"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "eurlex-act",
-              "eurlex-consolidated",
-              "eurlex-summary"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "eurlex-act",
-              "eurlex-consolidated",
-              "eurlex-summary"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "EUR-Lex; official EU AI policy pages.",
         "search_dates": [
           "2026-11-23"
@@ -2799,39 +2437,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "ec-page",
-              "ec-press"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "ec-page",
-              "ec-press"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "ec-page",
-              "ec-press"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "European Commission digital-strategy pages.",
         "search_dates": [
           "2026-11-23"
@@ -2937,39 +2543,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "govuk-commitments",
-              "govuk-news"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-commitments",
-              "govuk-news"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-commitments",
-              "govuk-news"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "GOV.UK AI Seoul Summit publications.",
         "search_dates": [
           "2026-11-23"
@@ -3075,39 +2649,7 @@
         ]
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "official_text_read",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "mic-code",
-              "mic-documents"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "official_text_read",
-            "source_ids": [
-              "mic-code",
-              "mic-documents"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "official_text_read",
-            "source_ids": [
-              "mic-code",
-              "mic-documents"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "Official Japanese MIC Hiroshima AI Process pages; cross-checked with the G7 Leaders' Statement.",
         "search_dates": [
           "2026-11-23"
@@ -3256,45 +2798,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "ohchr"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "ohchr"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "ohchr"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "ohchr"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "General international human rights law; invoked in the CETS 225 preamble.",
         "search_dates": [
           "2026-11-23"
@@ -3385,36 +2889,7 @@
         ]
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "ISO catalogue and JTC 1/SC 42 list.",
         "search_dates": [
           "2026-11-23"
@@ -3506,36 +2981,7 @@
         ]
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "ISO catalogue and JTC 1/SC 42 list.",
         "search_dates": [
           "2026-11-23"
@@ -3627,36 +3073,7 @@
         ]
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "ISO catalogue and JTC 1/SC 42 list.",
         "search_dates": [
           "2026-11-23"
@@ -3748,36 +3165,7 @@
         ]
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "ISO catalogue and ISO/IEC JTC 1/SC 42 standards list.",
         "search_dates": [
           "2026-11-23"
@@ -3872,36 +3260,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "iso-catalogue"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "ISO catalogue.",
         "search_dates": [
           "2026-11-23"
@@ -4044,49 +3403,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "ksdpa-text",
-              "mti-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "ksdpa-text",
-              "mti-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "ksdpa-text",
-              "mti-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "mti-page",
-              "ksdpa-text"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "Singapore METI and Korean MOTIE treaty pages; article number cross-checked in an ADB comparative study.",
         "search_dates": [
           "2026-11-23"
@@ -4199,39 +3516,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "nato-revised",
-              "nato-2021"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "nato-revised",
-              "nato-2021"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "nato-revised",
-              "nato-2021"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "NATO official texts portal.",
         "search_dates": [
           "2026-11-23"
@@ -4765,53 +4050,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "mea-declaration",
-              "pib-summit",
-              "india-outcomes"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "mea-declaration",
-              "pib-summit",
-              "india-outcomes"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "mea-declaration",
-              "pib-summit",
-              "india-outcomes"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "mea-declaration",
-              "pib-summit",
-              "india-outcomes"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "Search for the outcome of the 2026 AI Impact Summit while auditing the summit series against the corpus. The declaration was missing from the 42-record corpus; the official MEA text and the PIB release were then read. The PIB annex was subsequently found to contain the full 92-name list, correcting an earlier record that said no itemised list existed.",
         "search_dates": [
           "2026-11-23"
@@ -4966,42 +4205,7 @@
         ]
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "official_text_read",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "oecd-instrument",
-              "oecd-pdf",
-              "oecd-report-2024"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "official_text_read",
-            "source_ids": [
-              "oecd-instrument",
-              "oecd-pdf",
-              "oecd-report-2024"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "official_text_read",
-            "source_ids": [
-              "oecd-instrument",
-              "oecd-pdf",
-              "oecd-report-2024"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "OECD Legal Instruments Compendium; cited by the G7 Hiroshima Process and the G20 AI Principles.",
         "search_dates": [
           "2026-11-23"
@@ -5459,55 +4663,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "official_text_read",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "elysee-page",
-              "elysee-pdf",
-              "elysee-fr",
-              "canada-release"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "official_text_read",
-            "source_ids": [
-              "elysee-page",
-              "elysee-pdf",
-              "elysee-fr",
-              "canada-release"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "official_text_read",
-            "source_ids": [
-              "elysee-page",
-              "elysee-pdf",
-              "elysee-fr",
-              "canada-release"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "official_text_read",
-            "source_ids": [
-              "elysee-page",
-              "elysee-pdf"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "Élysée official AI Action Summit page; candidate register entry opened after the primary text was located.",
         "search_dates": [
           "2026-11-23"
@@ -5840,74 +4996,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "state-pax-silica",
-              "state-second-summit",
-              "state-paraguay",
-              "australia-declaration",
-              "australia-pdf",
-              "state-taiwan-joint-statement",
-              "state-ai-opportunity",
-              "state-san-francisco",
-              "australia-san-francisco"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "state-pax-silica",
-              "state-second-summit",
-              "state-paraguay",
-              "australia-declaration",
-              "australia-pdf",
-              "state-taiwan-joint-statement",
-              "state-ai-opportunity",
-              "state-san-francisco",
-              "australia-san-francisco"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "state-pax-silica",
-              "state-second-summit",
-              "state-paraguay",
-              "australia-declaration",
-              "australia-pdf",
-              "state-taiwan-joint-statement",
-              "state-ai-opportunity",
-              "state-san-francisco",
-              "australia-san-francisco"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "state-pax-silica",
-              "state-second-summit",
-              "state-paraguay",
-              "australia-declaration",
-              "state-taiwan-joint-statement",
-              "state-ai-opportunity"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "CSIS 2026 analysis of global AI governance cited Pax Silica; the record was opened after the State Department and Australian government primary sources were located.",
         "search_dates": [
           "2026-11-23"
@@ -6392,49 +5481,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "state-page",
-              "japan-mod"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "state-page",
-              "japan-mod"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "state-page",
-              "japan-mod"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "state-page",
-              "japan-mod"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "U.S. State Department official page; endorsement count from Japan's Ministry of Defense.",
         "search_dates": [
           "2026-11-23"
@@ -6599,49 +5646,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "official_text_read",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "sadea-text",
-              "dfat-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "official_text_read",
-            "source_ids": [
-              "sadea-text",
-              "dfat-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "official_text_read",
-            "source_ids": [
-              "sadea-text",
-              "dfat-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "official_text_read",
-            "source_ids": [
-              "dfat-page",
-              "sadea-text"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "Official Singapore MTI/DFAT digital-economy agreement pages; comparative ADB study used only to locate the AI article number.",
         "search_dates": [
           "2026-11-23"
@@ -6913,46 +5918,9 @@
           },
           {
             "date": "2026-11-24",
-            "field": "status",
-            "locator": "Media note and full text",
-            "method": "official_text_read",
-            "note": "Signed political declaration; no entry-into-force clause.",
-            "source_ids": [
-              "state-san-francisco"
-            ]
-          },
-          {
-            "date": "2026-11-24",
             "field": "parties",
             "locator": "Media note: 'the United States and nine Pax Silica participants' and the list of ten governments",
             "method": "official_page_read",
-            "source_ids": [
-              "state-san-francisco"
-            ]
-          },
-          {
-            "date": "2026-11-24",
-            "field": "provisions",
-            "locator": "Full text, paragraphs on sensitive technologies, critical infrastructure, working groups",
-            "method": "official_text_read",
-            "source_ids": [
-              "state-san-francisco"
-            ]
-          },
-          {
-            "date": "2026-11-24",
-            "field": "languages",
-            "locator": "Text released in English",
-            "method": "official_page_read",
-            "source_ids": [
-              "state-san-francisco"
-            ]
-          },
-          {
-            "date": "2026-11-24",
-            "field": "legal_nature",
-            "locator": "Full text: no treaty clause",
-            "method": "official_text_read",
             "source_ids": [
               "state-san-francisco"
             ]
@@ -7166,49 +6134,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "govuk-seoul",
-              "govuk-network"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-seoul",
-              "govuk-network"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-seoul",
-              "govuk-network"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-seoul",
-              "govuk-network"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "GOV.UK AI Seoul Summit publications.",
         "search_dates": [
           "2026-11-23"
@@ -7367,49 +6293,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "uk-treaty",
-              "mti-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "uk-treaty",
-              "mti-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "uk-treaty",
-              "mti-page"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "mti-page",
-              "uk-treaty"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UK treaty series and Singapore MTI digital-economy pages; article number cross-checked in an ADB comparative study used only as a finding aid.",
         "search_dates": [
           "2026-11-23"
@@ -7525,36 +6409,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "un-doc"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UN documents service; predecessor cited by A/RES/79/62.",
         "search_dates": [
           "2026-11-23"
@@ -7667,39 +6522,7 @@
         ]
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "official_text_read",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "official_text_read",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "official_text_read",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UN Digital Library and documents.un.org; cited in later UNGA resolution 79/325.",
         "search_dates": [
           "2026-11-23"
@@ -7825,36 +6648,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "un-doc"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UN documents service; recalled in A/RES/79/325.",
         "search_dates": [
           "2026-11-23"
@@ -7965,36 +6759,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "un-doc"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UN documents service; cross-referenced from A/RES/79/325.",
         "search_dates": [
           "2026-11-23"
@@ -8109,39 +6874,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UN documents service and UN Digital Library.",
         "search_dates": [
           "2026-11-23"
@@ -8260,39 +6993,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "official_text_read",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "official_text_read",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "official_text_read",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UN Digital Library; identified through the Global Digital Compact follow-up.",
         "search_dates": [
           "2026-11-23"
@@ -8418,39 +7119,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "official_text_read",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "official_text_read",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "official_text_read",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UN Digital Library; cross-referenced from A/RES/79/239 and A/RES/80/57.",
         "search_dates": [
           "2026-11-23"
@@ -8581,39 +7250,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UN Digital Library; successor to 79/62.",
         "search_dates": [
           "2026-11-23"
@@ -8737,39 +7374,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-doc",
-              "un-library"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UN Digital Library; successor to A/RES/79/239.",
         "search_dates": [
           "2026-11-23"
@@ -8923,53 +7528,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "hrc-resolution",
-              "hrc-record",
-              "hrc-meeting"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "hrc-resolution",
-              "hrc-record",
-              "hrc-meeting"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "hrc-resolution",
-              "hrc-record",
-              "hrc-meeting"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "hrc-resolution",
-              "hrc-record",
-              "hrc-meeting"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "Coverage-checklist review of UN human-rights bodies; A/HRC/RES/63/15 was identified on the UN Digital Library and its official English PDF was read.",
         "search_dates": [
           "2026-11-23"
@@ -9127,39 +7686,7 @@
         ]
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "unesco-page",
-              "unesdoc-record"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "unesco-page",
-              "unesdoc-record"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "unesco-page",
-              "unesdoc-record"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "UNESCO legal-affairs portal and UNESDOC.",
         "search_dates": [
           "2026-11-23"
@@ -9272,45 +7799,7 @@
         "translations": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "ec-ttc-joint-statement",
-              "ustr-ttc-joint-statement",
-              "nist-technical-dialogue",
-              "eu-technical-dialogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "ec-ttc-joint-statement",
-              "ustr-ttc-joint-statement",
-              "nist-technical-dialogue",
-              "eu-technical-dialogue"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "ec-ttc-joint-statement",
-              "ustr-ttc-joint-statement",
-              "nist-technical-dialogue",
-              "eu-technical-dialogue"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "European Commission and USTR TTC pages; NIST and European Commission technical-dialogue pages.",
         "search_dates": [
           "2026-11-23"
@@ -9522,49 +8011,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "govuk-mou-summary",
-              "govuk-press-release"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-mou-summary",
-              "govuk-press-release"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-mou-summary",
-              "govuk-press-release"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "govuk-mou-summary",
-              "govuk-press-release"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "GOV.UK publication search; the candidate register entry was opened after the primary source was located.",
         "search_dates": [
           "2026-11-23"
@@ -9729,45 +8176,7 @@
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [
-          {
-            "date": "2026-11-23",
-            "field": "status",
-            "locator": "status, dates and status_note as recorded",
-            "method": "metadata_only",
-            "note": "Record-level status; the listed sources are the ones the record relies on.",
-            "source_ids": [
-              "un-treaty-collection"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "languages",
-            "locator": "languages.authentic",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-treaty-collection"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "provisions",
-            "locator": "relevance.ai_provisions and relevance.reason",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-treaty-collection"
-            ]
-          },
-          {
-            "date": "2026-11-23",
-            "field": "parties",
-            "locator": "parties.entries, parties.counts and parties.as_of",
-            "method": "metadata_only",
-            "source_ids": [
-              "un-treaty-collection"
-            ]
-          }
-        ],
+        "assertions": [],
         "discovered_via": "General international law; framework for CETS 225 final clauses.",
         "search_dates": [
           "2026-11-23"
@@ -10148,7 +8557,7 @@
           {
             "date": "2026-11-24",
             "field": "status",
-            "locator": "Article 15; MFA press conference of 9 November 2026",
+            "locator": "Article 15 (three instruments of ratification, acceptance or approval); MFA press conference of 9 November 2026",
             "method": "official_page_read",
             "note": "No depositary notification located; entry into force not confirmed, so no definitive in-force or not-in-force status is asserted.",
             "source_ids": [
@@ -10171,38 +8580,8 @@
           },
           {
             "date": "2026-11-24",
-            "field": "counts",
-            "locator": "Signing lists and MFA statement",
-            "method": "official_page_read",
-            "note": "Deposits unknown: no depositary register or notification.",
-            "source_ids": [
-              "mfa-ratification",
-              "indonesia-founding-list",
-              "mfa-31-july"
-            ]
-          },
-          {
-            "date": "2026-11-24",
-            "field": "languages",
-            "locator": "Article 18",
-            "method": "official_text_read",
-            "source_ids": [
-              "npc-agreement-text"
-            ]
-          },
-          {
-            "date": "2026-11-24",
-            "field": "provisions",
-            "locator": "Articles 1-18",
-            "method": "official_text_read",
-            "source_ids": [
-              "npc-agreement-text"
-            ]
-          },
-          {
-            "date": "2026-11-24",
             "field": "legal_nature",
-            "locator": "Articles 1, 14, 15 and 18",
+            "locator": "Agreement Articles 1 (object), 14 (Council), 15 (entry into force) and 18 (depositary)",
             "method": "official_text_read",
             "source_ids": [
               "npc-agreement-text"
