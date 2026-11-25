@@ -696,122 +696,6 @@ def map_group(inst: dict) -> str:
     return f"{prefix}_{domain}"
 
 
-def sets_section(instruments: list[dict]) -> str:
-    """Show AI, cyber and international treaty-based membership across the corpus."""
-    ai = {inst["id"] for inst in instruments if "ai" in inst["domains"]}
-    cyber = {inst["id"] for inst in instruments if "cyber" in inst["domains"]}
-    binding = {inst["id"] for inst in instruments if is_international_binding(inst)}
-
-    def short_name(inst: dict) -> str:
-        title = inst.get("title") or {}
-        return title.get("short") or title.get("official") or inst["id"]
-
-    by_id = {inst["id"]: inst for inst in instruments}
-    binding_in_force = {iid for iid in binding if by_id[iid]["status"] == "in_force"}
-    binding_not_confirmed = binding - binding_in_force
-
-    def names(ids: set[str]) -> str:
-        selected = sorted(
-            (by_id[iid] for iid in ids),
-            key=lambda inst: (sort_date(inst), short_name(inst)),
-        )
-        return " · ".join(esc(short_name(inst)) for inst in selected) or "None."
-
-    regions = [
-        (
-            "ai_only",
-            "AI only",
-            "Not cyber, not treaty-based",
-            ai - cyber - binding,
-        ),
-        (
-            "cyber_only",
-            "Cyber only",
-            "Not AI, not treaty-based",
-            cyber - ai - binding,
-        ),
-        (
-            "ai_binding",
-            "AI + treaty-based",
-            "Not cyber",
-            (ai & binding) - cyber,
-        ),
-        (
-            "cyber_binding",
-            "Cyber + treaty-based",
-            "Not AI",
-            (cyber & binding) - ai,
-        ),
-        (
-            "ai_cyber",
-            "AI + cyber",
-            "Not treaty-based",
-            (ai & cyber) - binding,
-        ),
-        (
-            "all_three",
-            "AI + cyber + treaty-based",
-            "All three sets",
-            ai & cyber & binding,
-        ),
-        (
-            "binding_only",
-            "Treaty-based only",
-            "Neither AI nor cyber",
-            binding - ai - cyber,
-        ),
-    ]
-
-    rows = "".join(
-        f'<tr data-set-region="{slug}">'
-        f'<th scope="row">{esc(label)}<span class="set-region-note">{esc(note)}</span></th>'
-        f'<td data-label="Count">{len(ids)}</td>'
-        f'<td data-label="Instruments">{names(ids)}</td></tr>'
-        for slug, label, note, ids in regions
-    )
-
-    counts = {slug: len(ids) for slug, _, _, ids in regions}
-    return f'''<div class="sets-layout">
-      <figure class="sets-figure">
-        <div class="sets-legend">
-          <span><i class="sets-dot sets-dot-ai"></i>AI</span>
-          <span><i class="sets-dot sets-dot-treaty"></i>Cyber</span>
-          <span><i class="sets-dot sets-dot-force"></i>International treaty-based</span>
-        </div>
-        <svg viewBox="-8 -10 576 480" class="sets-svg" role="img" aria-labelledby="sets-title sets-desc">
-          <title id="sets-title">AI, cyber and international treaty-based</title>
-          <desc id="sets-desc">Three overlapping sets over all {len(instruments)} records. AI has {len(ai)}, cyber has {len(cyber)} and international treaty-based has {len(binding)} members, of which {len(binding_in_force)} are in force and {len(binding_not_confirmed)} are not confirmed in force. No record belongs to both AI and cyber; the internal-law acts are outside the treaty-based set.</desc>
-          <circle cx="205" cy="170" r="145" class="sets-circle sets-circle-ai"/>
-          <circle cx="355" cy="170" r="145" class="sets-circle sets-circle-treaty"/>
-          <circle cx="280" cy="285" r="145" class="sets-circle sets-circle-force"/>
-          <text x="125" y="32" text-anchor="middle" class="sets-set-label">AI · {len(ai)}</text>
-          <text x="435" y="32" text-anchor="middle" class="sets-set-label">Cyber · {len(cyber)}</text>
-          <text x="280" y="451" text-anchor="middle" class="sets-set-label">International treaty-based · {len(binding)}</text>
-          <text x="280" y="78" text-anchor="middle" class="sets-count">{counts["ai_cyber"]}</text>
-          <text x="145" y="140" text-anchor="middle" class="sets-count">{counts["ai_only"]}</text>
-          <text x="415" y="140" text-anchor="middle" class="sets-count">{counts["cyber_only"]}</text>
-          <text x="280" y="190" text-anchor="middle" class="sets-count">{counts["all_three"]}</text>
-          <text x="195" y="270" text-anchor="middle" class="sets-count">{counts["ai_binding"]}</text>
-          <text x="365" y="270" text-anchor="middle" class="sets-count">{counts["cyber_binding"]}</text>
-          <text x="280" y="360" text-anchor="middle" class="sets-count">{counts["binding_only"]}</text>
-        </svg>
-        <figcaption class="sets-caption">AI and cyber do not overlap: no record addresses both domains. The treaty-based set covers international instruments with binding form; {len(binding_in_force)} are in force and {len(binding_not_confirmed)} are not confirmed in force. The four internal-law acts — the EU AI Act, NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive — sit in the AI or cyber set but outside the international set.</figcaption>
-      </figure>
-      <div class="sets-membership-wrap">
-        <table class="membership-table">
-          <caption>Every record by exact set membership</caption>
-          <thead>
-            <tr><th scope="col">Region</th><th scope="col">Count</th><th scope="col">Instruments</th></tr>
-          </thead>
-          <tbody>
-            {rows}
-          </tbody>
-        </table>
-        <p class="sets-key"><strong>{len(ai)}</strong> AI · <strong>{len(cyber)}</strong> cyber · <strong>{len(binding)}</strong> international treaty-based (<strong>{len(binding_in_force)}</strong> in force, <strong>{len(binding_not_confirmed)}</strong> not confirmed). The sets overlap; the rows above are mutually exclusive and sum to {len(instruments)}. Internal law is not counted as international.</p>
-      </div>
-    </div>'''
-
-
 def combined_timeline(instruments: list[dict], events: list[dict]) -> str:
     """One chronology: mapped records as boxes, records without a map as plain rows."""
     kind_labels = {
@@ -1953,7 +1837,6 @@ def main() -> int:
     unseen_events = json.loads(UNSEEN.read_text(encoding="utf-8"))
     off_record = json.loads(OFF_RECORD.read_text(encoding="utf-8"))
     off_record_html = off_record_cards(off_record["entries"], by_id)
-    sets_html = sets_section(instruments)
 
     ai_treaties = [inst for inst in instruments if inst["category"] == "ai_treaty"]
     ai_count = len(ai_treaties)
@@ -2145,7 +2028,7 @@ def main() -> int:
       <div class="stats">{stats_html}</div>
       <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer includes nine treaties (the Budapest Convention, its two protocols, the AU Malabo Convention, the UN Cybercrime Convention, the Arab Convention on IT Offences, the CIS 2018 Agreement, the CIS Minsk Agreement 2001 and the SCO Information Security Agreement 2009), three cyber internal-law acts (NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) and three non-binding instruments (the Paris Call, the OECD Digital Security Recommendation and the Pall Mall Code). Cyber standards and cooperation channels remain pending. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
       <div class="index-grid">
-        <a class="index-card" href="#form"><span class="index-number">01</span><strong>The corpus in one view</strong><span>Situation at a glance: legal form, domain split, evidence and map coverage, before the maps and the timeline. The exact AI, cyber and treaty-based sets follow.</span></a>
+        <a class="index-card" href="#form"><span class="index-number">01</span><strong>The corpus in one view</strong><span>Situation at a glance: legal form, domain split, evidence and map coverage, before the maps and the timeline.</span></a>
         <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>{number_word(len(map_entries)).capitalize()} maps of the State-level acts recorded in the corpus: signatures, ratifications, accessions, endorsements and collective issuances.</span></a>
         <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: a box marks a record with a State-level map and opens it; records without a map and events are plain rows.</span></a>
         <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Reading room</strong><span>Off the record: legal doctrine, think-tank analysis and civil-society critique, the argument around the record, never used as evidence for it.</span></a>
@@ -2161,15 +2044,6 @@ def main() -> int:
       <h2>The corpus in one view</h2>
       <p class="lede">Before the maps and the timeline: what this corpus contains, how much of it has binding form and how much is in force, where the AI and cyber weight sits, and how much evidence has actually been read.</p>
       {situation_html}
-      <h3 class="sets-heading">Three sets: AI, cyber and treaty-based international law</h3>
-      <p class="lede sets-lede">Every record is tested against three properties: it addresses AI, it addresses cyber, and it is an international instrument with binding form. The sets overlap. The treaty-based set is international only: the EU AI Act, NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive are binding internal law, but they are not international instruments and sit outside it.</p>
-      {sets_html}
-      <div class="sets-reading">
-        <p><strong>{international_binding} international instruments have binding form.</strong> {international_in_force} are in force and {international_not_confirmed} are not confirmed in force. {number_word(ai_binding).capitalize()} address AI, {number_word(cyber_binding)} address cyber, and none addresses both. Their status is stated in section 03; {number_word(map_binding_count)} of them have a State-level map in section 02.</p>
-        <p><strong>{number_word(internal_law).capitalize()} acts are internal law, not international treaty-based instruments.</strong> The EU AI Act is in the AI set; NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive are in the cyber set. They are catalogued and shown as plain timeline rows without a State-level map because no State signs or ratifies them and they do not bind third States as treaties.</p>
-        <p><strong>No record is both AI and cyber.</strong> Outside the treaty-based set, the AI side holds {ai_nonbinding} records with non-binding status and the EU AI Act; the cyber side holds {cyber_nonbinding} non-binding records (Paris Call, OECD Digital Security and Pall Mall Code) and {cyber_internal} internal-law acts. The catalogue in section 05 lists every record and its metadata.</p>
-      </div>
-      <p class="source-note">Membership is derived from <code>domains</code>, <code>binding_status</code> and <code>category</code>. “International treaty-based” means an international instrument with binding form; it is not a statement that the instrument is in force. Of the {international_binding}, {international_in_force} are in force and {international_not_confirmed} are not confirmed in force. A treaty not in force does not bind as a treaty; signatories may still be bound by the interim obligation in Article 18 VCLT not to defeat its object and purpose. EU and ECOWAS internal legislation is excluded from the set but remains <code>binding</code> in its own legal order. The rows are mutually exclusive and sum to the {total} records. Internal law is not mapped.</p>
     </div>
   </section>
 

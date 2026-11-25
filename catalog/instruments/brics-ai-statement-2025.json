@@ -52,7 +52,7 @@
   },
   "parties": {
     "act": "collective_issue",
-    "as_of": "2026-07-06",
+    "as_of": "2025-07-06",
     "counts": {
       "members": {
         "basis": "declared_total",
@@ -113,7 +113,7 @@
       },
       {
         "notes": [
-          "Kingdom of Saudi Arabia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+          "Listed by the 2025 presidency as a BRICS member State. The Saudi Press Agency reported on 7 July 2025 that the Foreign Minister led the Kingdom's delegation 'as an invited country to join the BRICS group'. Membership at the time of the 17th Summit is contested in the official sources; the statement was issued collectively and no individual signature or co-issuance is attributed."
         ],
         "party": "Saudi Arabia",
         "role": "member_state"
@@ -162,9 +162,9 @@
       "brazil-mfa-page",
       "brics-members"
     ],
-    "summary": "The statement was issued collectively at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The 2025 presidency lists 11 member States: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The official text has no individual signature block, so the record lists the member States and does not attribute a separate signature or a separate act of co-issuance to any of them. Saudi participation is recorded inconsistently by official sources: the presidency lists the Kingdom as a member, while the Saudi Press Agency reported on 7 July 2025 that the Foreign Minister led the delegation 'as an invited country to join the BRICS group'. The record states the conflict and does not resolve it by counting ten.",
+    "summary": "The statement was issued collectively at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The 2025 presidency lists 11 member States: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The official text has no individual signature block, so the record lists the member States and does not attribute a separate signature or a separate act of co-issuance to any of them. The presidency's membership page was read on 23 November 2026; it is a later snapshot of the presidency's list, used only for the composition at the summit and not as evidence that every listed State issued the statement. Saudi participation is recorded inconsistently by official sources: the presidency lists the Kingdom as a member, while the Saudi Press Agency reported on 7 July 2025 that the Foreign Minister led the delegation 'as an invited country to join the BRICS group'. The record states the conflict and does not resolve it by counting ten.",
     "unknowns": [
-      "The official text is a collective leaders' statement and has no individual signature block. The 11 entries are the member States listed by the presidency, not individual signatories; individual co-issuance is not evidenced by the document.",
+      "The official text is a collective leaders' statement and has no individual signature block. The 11 entries are the member States listed by the presidency, not individual signatories; individual co-issuance is not evidenced by the document. The membership page is a later snapshot read on 23 November 2026; it does not establish individual co-issuance.",
       "Saudi Arabia is listed as a member by the 2025 presidency, but the Saudi Press Agency reported on 7 July 2025 that the Foreign Minister led the Kingdom's delegation 'as an invited country to join the BRICS group'. No document-specific attribution resolves the conflict; the record does not substitute ten for eleven.",
       "The statement creates no depositary, ratification, accession or withdrawal record.",
       "No follow-up mechanism, reporting cycle or review conference was verified.",
@@ -252,7 +252,7 @@
       "International cooperation — the statement warns that a proliferation of initiatives and diverging views may aggravate asymmetries and the legitimacy gap in global digital governance."
     ],
     "excluded_scope": "A political statement by BRICS leaders. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. It does not establish an institution or a follow-up mechanism. National implementation is not assessed.",
-    "reason": "The first stand-alone BRICS leaders' statement on the global governance of artificial intelligence, adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025 by the leaders of the 11 BRICS member States. It sets out a collective position centred on digital sovereignty, the right to development, the UN Charter, capacity building and the concerns of the Global South. It is a political statement, not a treaty: it creates no legal obligation, ratification, depositary or monitoring. It is included because it is a distinct coalition instrument that the three-pole reading would otherwise miss, and because it documents the China-Global South diffusion position before WAICO was established."
+    "reason": "The first stand-alone BRICS leaders' statement on the global governance of artificial intelligence, issued at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025; the presidency lists 11 member States, the official text has no individual signature block, and Saudi participation is contested. It sets out a collective position centred on digital sovereignty, the right to development, the UN Charter, capacity building and the concerns of the Global South. It is a political statement, not a treaty: it creates no legal obligation, ratification, depositary or monitoring. It is included because it is a distinct coalition instrument that the three-pole reading would otherwise miss, and because it documents the China-Global South diffusion position before WAICO was established."
   },
   "rights": {
     "licence": "BRICS 2025 Presidency / Government of Brazil official publication",
@@ -332,7 +332,7 @@
       {
         "check": "Party-level data checked against the official BRICS membership page.",
         "date": "2026-11-23",
-        "result": "The official BRICS page lists 11 member States; the statement is collective and has no individual signature block. The record counts the 11 listed member States at a collective issue, not individually evidenced issuers."
+        "result": "The official BRICS page lists 11 member States; the statement is collective and has no individual signature block. The record counts the 11 listed member States at a collective issue, not individually evidenced issuers. The membership page was read on 2026-11-23; it is a later snapshot, not a list of issuers."
       },
       {
         "check": "Legal nature checked against the text and official descriptions.",

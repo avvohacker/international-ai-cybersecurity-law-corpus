@@ -1,11 +1,66 @@
 {
+  "note": "12-page pagination derived from the Council of Europe Treaty Series PDF of CETS 225 reproduced in an OHCHR submission annex and acquired on 2026-11-25. char_end is inclusive; pages are contiguous. The stored text matches the PDF on a whitespace-insensitive comparison after removing running headers, page numbers and line wrapping.",
   "pages": [
     {
-      "page": 1,
+      "char_end": 2265,
       "char_start": 0,
-      "char_end": 31838
+      "page": 1
+    },
+    {
+      "char_end": 5518,
+      "char_start": 2266,
+      "page": 2
+    },
+    {
+      "char_end": 8511,
+      "char_start": 5519,
+      "page": 3
+    },
+    {
+      "char_end": 11449,
+      "char_start": 8512,
+      "page": 4
+    },
+    {
+      "char_end": 14165,
+      "char_start": 11450,
+      "page": 5
+    },
+    {
+      "char_end": 16620,
+      "char_start": 14166,
+      "page": 6
+    },
+    {
+      "char_end": 19229,
+      "char_start": 16621,
+      "page": 7
+    },
+    {
+      "char_end": 22240,
+      "char_start": 19230,
+      "page": 8
+    },
+    {
+      "char_end": 25093,
+      "char_start": 22241,
+      "page": 9
+    },
+    {
+      "char_end": 28231,
+      "char_start": 25094,
+      "page": 10
+    },
+    {
+      "char_end": 31114,
+      "char_start": 28232,
+      "page": 11
+    },
+    {
+      "char_end": 31840,
+      "char_start": 31115,
+      "page": 12
     }
   ],
-  "primary_text": "text/en.txt",
-  "note": "Single logical page: official PDF pagination was not acquired (HTTP 403). Char anchors remain exact against text/en.txt."
+  "primary_text": "text/en.txt"
 }

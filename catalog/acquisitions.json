@@ -10,6 +10,16 @@
     "url": "https://www.mfa.gov.cn/mfa_eng/zy/gb/202405/t20240531_11367503.html"
   },
   {
+    "accessed": "2026-11-25",
+    "bytes": 362548,
+    "dest": "source/cets-225-en-ohchr-2026-11-25.pdf",
+    "instrument_id": "coe-cets-225",
+    "media_type": "application/pdf",
+    "note": "12-page Council of Europe Treaty Series PDF of CETS 225, reproduced in an OHCHR submission annex. Official reproduction, not the certified corrected copy adopted on 30 April 2025.",
+    "sha256": "1ac6c8a85f55446cdb53697b57c6be3ce8757068043992955eda571e7fe52f23",
+    "url": "https://www.ohchr.org/sites/default/files/documents/cfi-subm/244-artificial-intelligence/subm-artificial-intelligence-igo-13-council-europe-publications-annex-2.pdf"
+  },
+  {
     "accessed": "2026-11-23",
     "bytes": 680817,
     "dest": "source/DEPA-signing-text-2020-06-11-en.pdf",

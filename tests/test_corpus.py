@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import re
@@ -21,6 +22,88 @@ import corpuslib  # noqa: E402
 
 def read_instrument(iid: str) -> dict:
     return json.loads((ROOT / "catalog" / "instruments" / f"{iid}.json").read_text(encoding="utf-8"))
+
+
+PAGE_FIXTURE_BODY = "AAAAAAAAAA\nBBBBBBBBBB\nCCCCCCCCCC\n"
+PAGE_FIXTURE_PAGES = [
+    {"page": 1, "char_start": 0, "char_end": 10},
+    {"page": 2, "char_start": 11, "char_end": 21},
+    {"page": 3, "char_start": 22, "char_end": 32},
+]
+
+
+def validate_page_fixture(
+    units: list[dict],
+    *,
+    pages: object = None,
+    pages_payload: str | None = None,
+    include_pages: bool = True,
+) -> list[str]:
+    """Validate a synthetic corpus and return the error codes it produced."""
+    iid = "page-fixture"
+    with tempfile.TemporaryDirectory() as tmp:
+        base = Path(tmp) / "corpus" / iid
+        (base / "text").mkdir(parents=True)
+        (base / "text" / "en.txt").write_text(PAGE_FIXTURE_BODY, encoding="utf-8")
+        if include_pages:
+            payload = pages_payload
+            if payload is None:
+                payload = json.dumps(
+                    {
+                        "pages": PAGE_FIXTURE_PAGES if pages is None else pages,
+                        "primary_text": "text/en.txt",
+                    }
+                )
+            (base / "pages.json").write_text(payload, encoding="utf-8")
+        rows = []
+        for index, unit in enumerate(units, 1):
+            row = dict(unit)
+            row.setdefault("unit_id", f"u{index:02d}")
+            row.setdefault("instrument_id", iid)
+            row.setdefault("text", PAGE_FIXTURE_BODY[row["char_start"]:row["char_end"]])
+            rows.append(row)
+        (base / "units.jsonl").write_text(
+            "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows),
+            encoding="utf-8",
+        )
+        stored = [("text/en.txt", "text", "text/plain; charset=utf-8")]
+        if include_pages:
+            stored.append(("pages.json", "metadata", "application/json"))
+        stored.append(("units.jsonl", "units", "application/x-ndjson"))
+        files = []
+        for rel, role, media in stored:
+            data = (base / rel).read_bytes()
+            files.append(
+                {
+                    "path": rel,
+                    "role": role,
+                    "sha256": hashlib.sha256(data).hexdigest(),
+                    "bytes": len(data),
+                    "media_type": media,
+                }
+            )
+        (base / "manifest.json").write_text(
+            json.dumps(
+                {
+                    "instrument_id": iid,
+                    "primary_text": "text/en.txt",
+                    "files": files,
+                }
+            ),
+            encoding="utf-8",
+        )
+        instrument = {
+            "id": iid,
+            "text": {"manifest": "manifest.json", "primary_text": "text/en.txt"},
+        }
+        original = corpuslib.CORPUS_DIR
+        corpuslib.CORPUS_DIR = Path(tmp) / "corpus"
+        try:
+            report = corpuslib.Report()
+            corpuslib.validate_corpus_text(instrument, report)
+        finally:
+            corpuslib.CORPUS_DIR = original
+    return [issue.code for issue in report.errors]
 
 
 class TestCatalogue(unittest.TestCase):
@@ -170,6 +253,33 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(len(articles), 36)
         self.assertEqual(articles[0]["label"], "Article 1 — Object and purpose")
         self.assertEqual(articles[-1]["label"], "Article 36 — Notification")
+
+    def test_cets_page_map_and_acquired_pdf(self) -> None:
+        pages = json.loads(
+            (ROOT / "corpus" / "coe-cets-225" / "pages.json").read_text(encoding="utf-8")
+        )["pages"]
+        body = (ROOT / "corpus" / "coe-cets-225" / "text" / "en.txt").read_text(
+            encoding="utf-8"
+        )
+        self.assertEqual(len(pages), 12)
+        self.assertEqual(pages[0]["char_start"], 0)
+        self.assertEqual(pages[-1]["char_end"], len(body) - 1)
+        for previous, current in zip(pages, pages[1:]):
+            self.assertEqual(current["char_start"], previous["char_end"] + 1)
+        units = corpuslib.load_units("coe-cets-225")
+        self.assertTrue(any(unit["page_start"] < unit["page_end"] for unit in units))
+        self.assertEqual(units[-1]["page_end"], 12)
+        acquisitions = json.loads(
+            (ROOT / "catalog" / "acquisitions.json").read_text(encoding="utf-8")
+        )
+        entry = next(
+            item for item in acquisitions if item["instrument_id"] == "coe-cets-225"
+        )
+        self.assertTrue(entry["dest"].endswith("cets-225-en-ohchr-2026-11-25.pdf"))
+        self.assertEqual(
+            entry["sha256"],
+            corpuslib.sha256_file(ROOT / "corpus" / entry["instrument_id"] / entry["dest"]),
+        )
 
     def test_cets_party_data_complete(self) -> None:
         inst = read_instrument("coe-cets-225")
@@ -356,6 +466,13 @@ class TestCatalogue(unittest.TestCase):
         source_ids = {source["id"] for source in inst["sources"]}
         self.assertIn("bss-bangladesh-observer", source_ids)
         self.assertIn("thestar-singapore-invite", source_ids)
+        self.assertIn("official Chinese text", inst["languages"]["note"])
+        self.assertNotIn("Only the English reproduction", inst["languages"]["note"])
+        gaps = " ".join(inst["gaps"])
+        self.assertIn("provide for a Council, a Secretariat and financing", gaps)
+        self.assertIn("not a finding that the organs do not exist", gaps)
+        self.assertIn("no deposited or certified copy", gaps.lower())
+        self.assertNotIn("do not yet exist or were not verified", gaps)
 
     def test_pax_silica_record(self) -> None:
         inst = read_instrument("pax-silica-declaration-2025")
@@ -441,6 +558,13 @@ class TestCatalogue(unittest.TestCase):
         self.assertIn("brics-presidency-pdf", source_ids)
         self.assertIn("brazil-mfa-page", source_ids)
         self.assertIn("brics-members", source_ids)
+        self.assertEqual(inst["parties"]["as_of"], "2025-07-06")
+        saudi = next(
+            entry for entry in inst["parties"]["entries"] if entry["party"] == "Saudi Arabia"
+        )
+        self.assertIn("Listed by the 2025 presidency", saudi["notes"][0])
+        self.assertIn("Saudi Press Agency", saudi["notes"][0])
+        self.assertIn("contested", saudi["notes"][0])
 
     def test_depa_costa_rica_is_the_fifth_party(self) -> None:
         inst = read_instrument("depa-2020")
@@ -687,6 +811,136 @@ class TestCatalogue(unittest.TestCase):
         self.assertIn("bad_unit_page", codes)
         self.assertIn("bad_unit_anchor", codes)
 
+    def test_valid_unit_page_anchors_are_accepted(self) -> None:
+        units = [
+            {"char_start": 2, "char_end": 8, "page_start": 1, "page_end": 1},
+            {"char_start": 8, "char_end": 24, "page_start": 1, "page_end": 3},
+            {"char_start": 4, "char_end": 11, "page_start": 1, "page_end": 1},
+            {"char_start": 11, "char_end": 15, "page_start": 2, "page_end": 2},
+        ]
+        self.assertEqual(validate_page_fixture(units), [])
+
+    def test_unit_page_anchor_errors_are_specific_and_do_not_raise(self) -> None:
+        cases = [
+            (
+                "wrong_final_page",
+                {"char_start": 2, "char_end": 8, "page_start": 1, "page_end": 2},
+                "unit_page_offset_mismatch",
+            ),
+            (
+                "wrong_final_page_multipage",
+                {"char_start": 2, "char_end": 24, "page_start": 1, "page_end": 2},
+                "unit_page_offset_mismatch",
+            ),
+            (
+                "wrong_initial_page",
+                {"char_start": 12, "char_end": 15, "page_start": 1, "page_end": 2},
+                "unit_page_offset_mismatch",
+            ),
+            (
+                "inverted_pages",
+                {"char_start": 12, "char_end": 15, "page_start": 2, "page_end": 1},
+                "bad_unit_page",
+            ),
+            (
+                "page_zero",
+                {"char_start": 2, "char_end": 8, "page_start": 0, "page_end": 1},
+                "bad_unit_page",
+            ),
+            (
+                "page_beyond",
+                {"char_start": 2, "char_end": 8, "page_start": 1, "page_end": 4},
+                "bad_unit_page",
+            ),
+            (
+                "string_page",
+                {"char_start": 2, "char_end": 8, "page_start": "1", "page_end": 1},
+                "bad_unit_page",
+            ),
+            (
+                "bool_page",
+                {"char_start": 2, "char_end": 8, "page_start": 1, "page_end": True},
+                "bad_unit_page",
+            ),
+            (
+                "missing_page",
+                {"char_start": 2, "char_end": 8, "page_start": 1},
+                "bad_unit_page",
+            ),
+        ]
+        for name, unit, expected in cases:
+            with self.subTest(name=name):
+                self.assertIn(expected, validate_page_fixture([unit]))
+
+    def test_missing_pages_file_is_reported_when_units_declare_pages(self) -> None:
+        unit = {"char_start": 2, "char_end": 8, "page_start": 1, "page_end": 1}
+        self.assertIn("missing_pages", validate_page_fixture([unit], include_pages=False))
+
+    def test_malformed_page_map_is_reported_not_raised(self) -> None:
+        unit = {"char_start": 2, "char_end": 8, "page_start": 1, "page_end": 1}
+        cases = [
+            ("empty", {"pages": []}, "bad_pages"),
+            ("missing_pages_key", {"primary_text": "text/en.txt"}, "bad_pages"),
+            ("top_level_list", [], "bad_pages"),
+            (
+                "gap",
+                {
+                    "pages": [
+                        {"page": 1, "char_start": 0, "char_end": 10},
+                        {"page": 2, "char_start": 12, "char_end": 32},
+                    ]
+                },
+                "bad_page_bounds",
+            ),
+            (
+                "overlap",
+                {
+                    "pages": [
+                        {"page": 1, "char_start": 0, "char_end": 10},
+                        {"page": 2, "char_start": 10, "char_end": 32},
+                    ]
+                },
+                "bad_page_bounds",
+            ),
+            ("not_object", {"pages": ["page"]}, "bad_pages"),
+            (
+                "wrong_number",
+                {"pages": [{"page": 2, "char_start": 0, "char_end": 32}]},
+                "bad_pages",
+            ),
+            (
+                "reversed_bounds",
+                {"pages": [{"page": 1, "char_start": 10, "char_end": 0}]},
+                "bad_page_bounds",
+            ),
+            (
+                "outside_text",
+                {"pages": [{"page": 1, "char_start": 0, "char_end": 99}]},
+                "bad_page_bounds",
+            ),
+            (
+                "last_page_short",
+                {"pages": [{"page": 1, "char_start": 0, "char_end": 30}]},
+                "bad_page_bounds",
+            ),
+            (
+                "first_page_offset",
+                {"pages": [{"page": 1, "char_start": 1, "char_end": 32}]},
+                "bad_page_bounds",
+            ),
+        ]
+        for name, payload, expected in cases:
+            with self.subTest(name=name):
+                codes = validate_page_fixture(
+                    [unit], pages_payload=json.dumps(payload)
+                )
+                self.assertIn(expected, codes)
+        with self.subTest(name="invalid_json"):
+            self.assertIn(
+                "bad_pages",
+                validate_page_fixture([unit], pages_payload="{not json"),
+            )
+
     def test_hash_mismatch_is_detected(self) -> None:
         inst = read_instrument("un-ga-res-79-62")
         with tempfile.TemporaryDirectory() as tmp:
@@ -892,15 +1146,13 @@ class TestBuild(unittest.TestCase):
         self.assertNotIn("International AI and Cybersecurity Law Atlas", page)
         index_block = page[page.find('id="index"'):page.find('id="form"')]
         self.assertNotIn("atlas", index_block.lower())
-        self.assertIn("Three sets: AI, cyber and treaty-based international law", page)
-        self.assertIn('class="membership-table"', page)
-        self.assertEqual(page.count("data-set-region="), 7)
-        self.assertIn('data-set-region="cyber_only"><th scope="row">Cyber only', page)
-        self.assertIn('data-set-region="cyber_only"', page)
+        self.assertNotIn("Three sets: AI, cyber and treaty-based international law", page)
+        self.assertNotIn('class="membership-table"', page)
+        self.assertNotIn("data-set-region=", page)
         self.assertIn("NIS2 Directive", page)
         self.assertIn("Cyber Resilience Act", page)
         self.assertIn("EU Artificial Intelligence Act", page)
-        self.assertIn("International treaty-based", page)
+        self.assertIn("treaty-based international instruments", page)
         self.assertIn("13 in force", page)
         self.assertIn("5 are not confirmed in force", page)
         self.assertIn("Article 18 VCLT", page)
@@ -935,7 +1187,7 @@ class TestBuild(unittest.TestCase):
         self.assertLess(page.find('id="unseen"'), page.find('id="catalogue"'))
         self.assertEqual(page.count('class="tl-item tl-event unseen-item"'), 11)
         self.assertEqual(page.count('class="tl-item tl-instrument"'), 63)
-        self.assertIn("Three sets: AI, cyber and treaty-based international law", page)
+        self.assertNotIn("Three sets: AI, cyber and treaty-based international law", page)
         self.assertIn("The story, with the instruments in it", page)
         self.assertIn("The argument around the record", page)
         self.assertNotIn("The shape of the corpus", page)
@@ -1354,7 +1606,7 @@ class TestBuild(unittest.TestCase):
             page,
         )
         self.assertIn("13 in force · 5 not confirmed", page)
-        self.assertIn("18 international instruments have binding form", page)
+        self.assertIn("Of the 18 international instruments with binding form", page)
         self.assertIn("13 are in force and 5 are not confirmed in force", page)
         self.assertNotIn("International binding ·", page)
         self.assertIn(f"{len(instruments)} instruments", page)
@@ -1483,7 +1735,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 165)
+        self.assertEqual(len(targets), 166)
         self.assertEqual(len({target.instrument_id for target in targets}), 63)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)

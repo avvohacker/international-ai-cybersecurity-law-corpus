@@ -1,7 +1,8 @@
 """Core library for the international AI and cybersecurity law corpus.
 
-Standard library only. The build is deterministic: no timestamps, sorted keys,
-stable ordering. Network access is confined to tools/acquire.py.
+The core uses the Python standard library plus jsonschema for the published
+schema (see requirements-tools.txt). The build is deterministic: no timestamps,
+sorted keys, stable ordering. Network access is confined to tools/acquire.py.
 """
 
 from __future__ import annotations
@@ -86,7 +87,6 @@ COUNT_EVIDENCE = {
     "issuing_states": "role:issuing_state",
     "accessions": "accession",
     "ratifications": "consent",
-    "accessions": "accession",
     "deposits": "deposit",
     "observers": "observer",
     "members": None,
@@ -638,6 +638,81 @@ def validate_parties(
                 )
 
 
+def _is_int(value: Any) -> bool:
+    return isinstance(value, int) and not isinstance(value, bool)
+
+
+def validate_page_map(
+    page_list: Any, body_len: int, report: Report, iid: str
+) -> list[dict[str, Any]] | None:
+    """Validate pages.json and return the pages, or None if unusable.
+
+    Stored page ranges are inclusive: page["char_start"] <= offset <=
+    page["char_end"]. Pages are contiguous, so page n+1 starts at page n's
+    char_end + 1. Unit ranges are half-open: unit text is
+    body[char_start:char_end], so a non-empty unit's last character is
+    char_end - 1. Keeping the two conventions explicit prevents the off-by-one
+    that previously let a unit end outside its declared final page.
+    """
+    if not isinstance(page_list, list) or not page_list:
+        report.error("bad_pages", iid, "pages.json must contain a non-empty 'pages' list")
+        return None
+    ok = True
+    previous_end: int | None = None
+    for idx, page in enumerate(page_list, 1):
+        where = f"pages.json page {idx}"
+        if not isinstance(page, dict):
+            report.error("bad_pages", iid, f"{where} is not an object")
+            ok = False
+            continue
+        number = page.get("page")
+        start = page.get("char_start")
+        end = page.get("char_end")
+        if not _is_int(number) or number != idx:
+            report.error(
+                "bad_pages", iid, f"{where}: page number must be {idx}, got {number!r}"
+            )
+            ok = False
+        if not _is_int(start) or not _is_int(end):
+            report.error(
+                "bad_page_bounds",
+                iid,
+                f"{where}: char_start and char_end must be integers",
+            )
+            ok = False
+            continue
+        if not (0 <= start <= end < body_len):
+            report.error(
+                "bad_page_bounds",
+                iid,
+                f"{where}: invalid inclusive range {start}:{end} for a text of length {body_len}",
+            )
+            ok = False
+            continue
+        if previous_end is not None and start != previous_end + 1:
+            report.error(
+                "bad_page_bounds",
+                iid,
+                f"{where}: char_start {start} does not follow the previous page end "
+                f"{previous_end}; pages must be contiguous",
+            )
+            ok = False
+        previous_end = end
+    if ok:
+        if page_list[0]["char_start"] != 0:
+            report.error("bad_page_bounds", iid, "the first page must start at char 0")
+            ok = False
+        if page_list[-1]["char_end"] != body_len - 1:
+            report.error(
+                "bad_page_bounds",
+                iid,
+                f"the last page must end at char {body_len - 1}, "
+                f"found {page_list[-1]['char_end']}",
+            )
+            ok = False
+    return page_list if ok else None
+
+
 def validate_corpus_text(inst: dict[str, Any], report: Report) -> None:
     """Verify stored files against the instrument's corpus manifest."""
     iid = inst["id"]
@@ -649,6 +724,9 @@ def validate_corpus_text(inst: dict[str, Any], report: Report) -> None:
         report.error("missing_manifest", iid, f"{manifest_path} not found")
         return
     manifest = load_json(manifest_path)
+    if not isinstance(manifest, dict):
+        report.error("bad_manifest", iid, "manifest must be a JSON object")
+        return
     if manifest.get("instrument_id") != iid:
         report.error("manifest_id_mismatch", iid, "manifest instrument_id mismatch")
     files = manifest.get("files", [])
@@ -682,7 +760,23 @@ def validate_corpus_text(inst: dict[str, Any], report: Report) -> None:
             report.error("bad_file_role", iid, f"unknown role {role!r} for {rel}")
 
     pages_path = CORPUS_DIR / iid / "pages.json"
-    pages = load_json(pages_path) if pages_path.exists() else None
+    pages_present = pages_path.exists()
+    pages_loaded = False
+    page_list: Any = None
+    if pages_present:
+        try:
+            pages = load_json(pages_path)
+        except (OSError, ValueError, UnicodeError) as exc:
+            report.error("bad_pages", iid, f"pages.json cannot be read: {exc}")
+        else:
+            if not isinstance(pages, dict):
+                report.error(
+                    "bad_pages", iid, "pages.json must be an object with a 'pages' list"
+                )
+            else:
+                page_list = pages.get("pages")
+                pages_loaded = True
+
     units_path = CORPUS_DIR / iid / "units.jsonl"
     if units_path.exists():
         text_path = CORPUS_DIR / iid / manifest.get("primary_text", "text/en.txt")
@@ -690,6 +784,9 @@ def validate_corpus_text(inst: dict[str, Any], report: Report) -> None:
             report.error("missing_primary_text", iid, f"{text_path} missing")
             return
         body = text_path.read_text(encoding="utf-8")
+        if pages_loaded:
+            page_list = validate_page_map(page_list, len(body), report, iid)
+        missing_pages_reported = False
         seen_units: set[str] = set()
         for lineno, line in enumerate(units_path.read_text(encoding="utf-8").splitlines(), 1):
             if not line.strip():
@@ -699,6 +796,13 @@ def validate_corpus_text(inst: dict[str, Any], report: Report) -> None:
             except json.JSONDecodeError:
                 report.error("bad_unit_json", iid, f"units.jsonl line {lineno} is not JSON")
                 continue
+            if not isinstance(unit, dict):
+                report.error(
+                    "bad_unit_json",
+                    iid,
+                    f"units.jsonl line {lineno} is not a JSON object",
+                )
+                continue
             uid = unit.get("unit_id")
             if not uid or uid in seen_units:
                 report.error("bad_unit_id", iid, f"missing/duplicate unit id at line {lineno}")
@@ -706,65 +810,58 @@ def validate_corpus_text(inst: dict[str, Any], report: Report) -> None:
             if unit.get("instrument_id") != iid:
                 report.error("unit_instrument_mismatch", iid, f"unit {uid} has wrong instrument_id")
             start, end = unit.get("char_start"), unit.get("char_end")
-            if not isinstance(start, int) or not isinstance(end, int) or not (0 <= start < end <= len(body)):
+            if not _is_int(start) or not _is_int(end) or not (0 <= start < end <= len(body)):
                 report.error("bad_unit_anchor", iid, f"unit {uid} has invalid char range")
                 continue
             if body[start:end] != unit.get("text"):
                 report.error("unit_text_mismatch", iid, f"unit {uid} text does not match stored anchor")
-            if pages:
-                page_list = pages.get("pages")
-                if not isinstance(page_list, list) or not page_list:
-                    report.error("bad_pages", iid, "pages.json has no page list")
+            if not pages_present and not missing_pages_reported and (
+                "page_start" in unit or "page_end" in unit
+            ):
+                report.error(
+                    "missing_pages",
+                    iid,
+                    "units.jsonl declares page anchors but pages.json is missing",
+                )
+                missing_pages_reported = True
+            if page_list is not None:
+                ps, pe = unit.get("page_start"), unit.get("page_end")
+                if (
+                    not _is_int(ps)
+                    or not _is_int(pe)
+                    or not (1 <= ps <= len(page_list))
+                    or not (1 <= pe <= len(page_list))
+                ):
+                    report.error(
+                        "bad_unit_page",
+                        iid,
+                        f"unit {uid} has invalid page_start/page_end {ps!r}/{pe!r}; "
+                        f"pages are 1..{len(page_list)}",
+                    )
+                elif ps > pe:
+                    report.error(
+                        "bad_unit_page",
+                        iid,
+                        f"unit {uid} page_start {ps} is after page_end {pe}",
+                    )
                 else:
-                    ps, pe = unit.get("page_start"), unit.get("page_end")
-                    valid_pages = True
-                    for key, value in (("page_start", ps), ("page_end", pe)):
-                        if not isinstance(value, int) or isinstance(value, bool) or not (
-                            1 <= value <= len(page_list)
-                        ):
-                            report.error(
-                                "bad_unit_page",
-                                iid,
-                                f"unit {uid} has invalid {key} {value!r}; pages 1..{len(page_list)}",
-                            )
-                            valid_pages = False
-                    if valid_pages and ps > pe:
+                    first, last = page_list[ps - 1], page_list[pe - 1]
+                    if not (first["char_start"] <= start <= first["char_end"]):
                         report.error(
-                            "bad_unit_page",
+                            "unit_page_offset_mismatch",
                             iid,
-                            f"unit {uid} page_start {ps} is after page_end {pe}",
+                            f"unit {uid} starts at char {start}, outside its declared "
+                            f"first page {ps} "
+                            f"({first['char_start']}:{first['char_end']} inclusive)",
                         )
-                        valid_pages = False
-                    if valid_pages:
-                        first, last = page_list[ps - 1], page_list[pe - 1]
-                        for label, page in (("page_start", first), ("page_end", last)):
-                            bounds = (page.get("char_start"), page.get("char_end"))
-                            if not all(
-                                isinstance(v, int) and not isinstance(v, bool)
-                                for v in bounds
-                            ) or not (0 <= bounds[0] < bounds[1]):
-                                report.error(
-                                    "bad_page_bounds",
-                                    iid,
-                                    f"pages.json entry for {label} of unit {uid} has invalid char bounds",
-                                )
-                                valid_pages = False
-                        if valid_pages:
-                            if not (first["char_start"] <= start < last["char_end"] + 1):
-                                report.error(
-                                    "unit_page_offset_mismatch",
-                                    iid,
-                                    f"unit {uid} char range {start}:{end} is not inside pages {ps}-{pe}",
-                                )
-                            if not (
-                                unit.get("page_start") == unit.get("page_end")
-                                or first["char_start"] <= start < first["char_end"] + 1
-                            ):
-                                report.error(
-                                    "unit_page_offset_mismatch",
-                                    iid,
-                                    f"unit {uid} start is not inside its first page {ps}",
-                                )
+                    if not (last["char_start"] <= end - 1 <= last["char_end"]):
+                        report.error(
+                            "unit_page_offset_mismatch",
+                            iid,
+                            f"unit {uid} ends at char {end - 1} (exclusive end {end}), "
+                            f"outside its declared final page {pe} "
+                            f"({last['char_start']}:{last['char_end']} inclusive)",
+                        )
 
 
 def validate_candidates(instruments: dict[str, dict[str, Any]], report: Report) -> None:

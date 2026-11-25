@@ -1,6 +1,16 @@
 {
   "files": [
     {
+      "accessed": "2026-11-25",
+      "bytes": 362548,
+      "media_type": "application/pdf",
+      "note": "12-page Council of Europe Treaty Series PDF of CETS 225, reproduced in an OHCHR submission annex. Official reproduction, not the certified corrected copy adopted on 30 April 2025.",
+      "path": "source/cets-225-en-ohchr-2026-11-25.pdf",
+      "role": "original",
+      "sha256": "1ac6c8a85f55446cdb53697b57c6be3ce8757068043992955eda571e7fe52f23",
+      "source_url": "https://www.ohchr.org/sites/default/files/documents/cfi-subm/244-artificial-intelligence/subm-artificial-intelligence-igo-13-council-europe-publications-annex-2.pdf"
+    },
+    {
       "bytes": 31935,
       "media_type": "text/plain; charset=utf-8",
       "path": "text/en.txt",
@@ -8,18 +18,18 @@
       "sha256": "36401fa62fbfb40c58d6b96f5b4205fca6413f5c471f0663f98bf1bd2d1bfac8"
     },
     {
-      "bytes": 264,
+      "bytes": 1363,
       "media_type": "application/json",
       "path": "pages.json",
       "role": "metadata",
-      "sha256": "c016e316a5d431cda21f8785ecbd1bc2ba0d40d09a3ef22456c43f5a4240fcdc"
+      "sha256": "d8cd3e82af3eac92bce74a5d5a93e67c3a32e8376405138ba1f625788cc43490"
     },
     {
-      "bytes": 35286,
+      "bytes": 35303,
       "media_type": "application/x-ndjson",
       "path": "units.jsonl",
       "role": "units",
-      "sha256": "e57ffb6fdc958ede7cdc53c1ed3130c0d7956423f756be3a2e13b13b5566296d"
+      "sha256": "c83972f4d7974cdc1772db63b40c26e925418b3c1cb8d9e4201812fd45f47a7f"
     },
     {
       "bytes": 7959,

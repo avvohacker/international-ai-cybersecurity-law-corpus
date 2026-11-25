@@ -13,9 +13,9 @@
     "ai"
   ],
   "gaps": [
-    "The Convention is not in force; its Conference of the Parties, rules of procedure and reporting format do not yet exist.",
+    "The Convention is not in force; the Conference of the Parties, its rules of procedure and the reporting format have therefore not been constituted.",
     "No reservation or objection is recorded on the Treaty Office chart as of 2026-11-23; Article 34 permits only the reservation provided for in Article 33(1) (federal clause).",
-    "The official PDF bytes were not acquired (HTTP 403); only the extracted English text is stored.",
+    "The direct CoE PDF endpoint (https://rm.coe.int/1680afae3c) returned HTTP 403 (Cloudflare) on 25 November 2026. A 12-page Council of Europe Treaty Series PDF of CETS 225, reproduced in an OHCHR submission annex, was acquired and stored (see catalog/acquisitions.json). It is an official reproduction, not the certified corrected copy adopted at the 1527th meeting of the Ministers' Deputies on 30 April 2025; the certified copy was not acquired, so corrections made after the PDF's creation on 17 December 2024 are not verified against the stored text.",
     "No implementing protocol or additional protocol has been adopted.",
     "The Convention excludes national defence and may exclude national-security activities; coverage of military AI is therefore not provided by this treaty.",
     "The Ukrainian declaration was issued in English and Ukrainian; only the English rendering is reproduced."
@@ -360,12 +360,22 @@
       "note": "Reservations and declarations for Treaty 225, status as of 23/11/2026. Five declaration texts (EU, Norway, Ukraine); no reservation or objection entries. Read through a rendered-text extraction because the site's client assets returned HTTP 403 in the cloud browser.",
       "publisher": "Council of Europe Treaty Office",
       "url": "https://www.coe.int/en/web/conventions/full-list2?codeNature=0&module=declarations-by-treaty&numSte=225"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "coe-text-ohchr",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "12-page Council of Europe Treaty Series PDF of CETS 225, reproduced in an OHCHR submission annex. Official reproduction, not the certified corrected copy adopted on 30 April 2025. The direct rm.coe.int endpoint returned HTTP 403 on 2026-11-25. Stored at corpus/coe-cets-225/source/cets-225-en-ohchr-2026-11-25.pdf; SHA-256 in catalog/acquisitions.json.",
+      "publisher": "Council of Europe, reproduced by OHCHR",
+      "url": "https://www.ohchr.org/sites/default/files/documents/cfi-subm/244-artificial-intelligence/subm-artificial-intelligence-igo-13-council-europe-publications-annex-2.pdf"
     }
   ],
   "status": "not_in_force",
   "status_note": "As of the Treaty Office chart status date 23 November 2026: 21 signatories in total (19 signatures not followed by ratification and 2 ratifications), and 19 signatures without ratification. The two ratifications are Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). Article 30(3) requires five ratifications including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. Not in force.",
   "text": {
-    "extraction_note": "Transcribed from the official English text retrieved through the extraction tool. Running headers ('CETS 225 – Artificial Intelligence, 5.IX.2024') and page numbers were removed. Article headings and paragraph breaks preserved. No wording changes were made; consult the official PDF for diplomatic formatting.",
+    "extraction_note": "The stored text is textually identical, on a whitespace-insensitive comparison, to the 12-page Council of Europe Treaty Series PDF of CETS 225 acquired on 25 November 2026. Running headers ('CETS 225 – Artificial Intelligence, 5.IX.2024'), underscore rules, page numbers and line wrapping were removed. The PDF's text layer inserts occasional intra-word spaces; whitespace normalisation removes them. Article headings and paragraph breaks are preserved. No wording changes were made. The page map uses the 12 pages of that PDF.",
     "full_text": true,
     "manifest": "manifest.json",
     "primary_language": "en",
@@ -403,9 +413,14 @@
         "check": "Authentic languages checked against the final clause.",
         "date": "2026-11-23",
         "result": "English and French equally authentic; other languages are translations."
+      },
+      {
+        "check": "Official reproduction acquired and compared page by page with the stored text.",
+        "date": "2026-11-25",
+        "result": "OHCHR-hosted 12-page CoE Treaty Series PDF (SHA-256 in catalog/acquisitions.json) read page by page. After removing running headers, underscore rules, page numbers and line wrapping, all 12 pages match the stored text; no wording differences. It is an official reproduction, not the certified corrected copy."
       }
     ],
     "level": "full_text_checked",
-    "notes": "Full text acquired, but the original PDF bytes were not acquired because of the 403 response. The stored text is therefore an extraction/transcription, not the official PDF. The official chart and declarations page were read through a rendered-text extraction of the official Treaty Office URLs because the site's React assets returned HTTP 403 in the cloud browser; the official URLs and status date are recorded. Hash integrity covers the stored text and units, not the unavailable official file."
+    "notes": "Full text stored as a transcription. A 12-page Council of Europe Treaty Series PDF reproduced in an OHCHR submission annex was acquired on 25 November 2026; after removing running headers, underscore rules, page numbers and line wrapping, all 12 pages match the stored text. It is an official reproduction, not the certified corrected copy. The direct CoE endpoint returned HTTP 403. The official chart and declarations page were read through a rendered-text extraction of the official Treaty Office URLs because the site's React assets returned HTTP 403 in the cloud browser; the official URLs and status date are recorded. Hash integrity covers the stored PDF, text, pages and units."
   }
 }

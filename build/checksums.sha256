@@ -11,6 +11,7 @@
 14cfe36633502daa48231b49ca7f186c53a72add181b328047665763ecb13ac4  corpus/g7-hiroshima-code-2023/source/HAIP-Code-of-Conduct-2023-10-30-en.pdf
 158b2d0e6936410fdaa28f5b9aaf22e2e48ebdbdf798b131bd8a4a5e462ef7b3  corpus/un-ga-res-78-241/manifest.json
 194b60eb4c37172c965dc63d7ff6877f9e70400c8e737ccc2d14ba3203551a80  corpus/sadea-2020/text/en.txt
+1ac6c8a85f55446cdb53697b57c6be3ce8757068043992955eda571e7fe52f23  corpus/coe-cets-225/source/cets-225-en-ohchr-2026-11-25.pdf
 1b151842db84367ef5004ff274eb8ce4b9e6e73fa568aaf9475791df08563cb9  corpus/un-ga-res-79-1/text/en.txt
 1bbb68e837c569f836cedbbf565beb5efd2d067193f4f1da3ef6a8ba8b5b9740  corpus/un-ga-res-78-241/pages.json
 1efd49d357d9d978512ab1ecf13a0661f8e04345c9ab5cdff99b5f2057eaef66  corpus/un-ga-res-78-265/manifest.json
@@ -37,7 +38,6 @@
 7dd0fb5ea3c4eb13f227d1ff9cd2082ad4d0fc24de38ca9e49bf80748fe9e3cf  corpus/china-global-ai-governance-initiative-2023/text/en.txt
 7fabd6bd6d1eb7a8a4c2b79172c1837aa60ed8483da13b0f70eab2f503048d9a  corpus/un-ga-res-80-58/text/en.txt
 8136f248040a35cc2c31c790aa37b2cc5939e2d1c9b2a355bef183afaa3b95b4  corpus/un-ga-res-78-265/text/en.txt
-8254d25ab5b082925bda8b45fb45d44f9415d3edae114f98a103e1d7f808bb4b  corpus/coe-cets-225/manifest.json
 83887bee43ad1d5065de9f48c8ad5b7e81807944a3d2ec89023e3da3f61159d9  corpus/un-ga-res-78-265/source/A_RES_78_265-en.pdf
 88227000e69be9aad5864155bd3e06ebead1e76c5b7cf662d63c1605408e5060  corpus/oecd-ai-recommendation-2019/source/OECD-LEGAL-0449-en.pdf
 98e919310b9972793f16a3ae65bfc1716e62c988a52cdfb8a71dc2cb4a6f13fa  corpus/un-ga-res-80-58/units.jsonl
@@ -45,6 +45,7 @@
 9a19a426c0d1ffdcd2dab40340074663ca4e8ff3eaeb1c3d1d2067e3fd9a2c64  corpus/paris-ai-action-summit-statement-2025/source/statement-2025-02-11-en.pdf
 9a32939da2ea2f31f5692d02b5e4f268d6ef7cdf49e69dabc2a105f193cc5bf8  corpus/un-ga-res-79-1/units.jsonl
 9af156ca949e3e616db513ccf8c6e3ae7c527794d2cd791a63985af62be3abe6  corpus/g7-hiroshima-code-2023/text/en.txt
+9c1df3b4c6b70e98b4441478145ac42c40ac800e3f12a344a40746437049cc17  corpus/coe-cets-225/manifest.json
 9c85533e3f116a87d0ea3e7659727043d665e6ab6b455329a26dd2b460ceeddb  corpus/sadea-2020/units.jsonl
 a02a56553d2035eeb8e54f554e9ef6563ecca2ca2de446d98201c7c6939adcb7  corpus/china-global-ai-governance-initiative-2023/units.jsonl
 a35861b04edbe2d0d30de13701d45186fbca9a9744ba3a3bb988877ae8d38363  corpus/paris-ai-action-summit-statement-2025/text/en.txt
@@ -55,17 +56,17 @@ af002a800de54312be6f2972b087c613caaee3a46e4ae7764549399a49cea651  corpus/paris-a
 b10104017e211f312b2c7134be048d4cdf991c7ead7237183837aa32a0701140  corpus/oecd-ai-recommendation-2019/units.jsonl
 b527c16c4767b33c0aed7735d3b9a867936b25f747f3acde4ccc973a0a9bb107  corpus/un-ga-res-80-57/units.jsonl
 b9d6003fa3d5d1fc67ac36ab6f896d932655a7a775763485d257dee45a91af72  corpus/paris-ai-action-summit-statement-2025/pages.json
-c016e316a5d431cda21f8785ecbd1bc2ba0d40d09a3ef22456c43f5a4240fcdc  corpus/coe-cets-225/pages.json
 c1ad24b270f4bc90c634de41346acb482be3173cb4f159e88831bc4c79a5f47a  corpus/un-ga-res-78-311/source/A_RES_78_311-en.pdf
+c83972f4d7974cdc1772db63b40c26e925418b3c1cb8d9e4201812fd45f47a7f  corpus/coe-cets-225/units.jsonl
 cf6a3d5c848a19756700f0e5ac3d1223b2dffb973136ba4c1658a6fa70ccd7cb  corpus/un-ga-res-79-325/units.jsonl
 d13d1485b4f82a86814e6946e07fee5d01382ca9f11d0a69b4777fb716679cb3  corpus/un-ga-res-80-57/pages.json
+d8cd3e82af3eac92bce74a5d5a93e67c3a32e8376405138ba1f625788cc43490  corpus/coe-cets-225/pages.json
 de7ee302f60e6263afb3e5f11587897eb1a0ef48d30209e944ea3648bc66ddb1  corpus/depa-2020/units.jsonl
 de84079f3d9ac1a2923fbd0ce0f59c0d657697bb4d01a3532f24210fdfb3c964  corpus/g7-hiroshima-code-2023/manifest.json
 dfca6db0705410562402916cc5f131879617d9c3151f3c87896d848f5f0e71db  corpus/un-ga-res-79-62/pages.json
 e0f23e37b61841d9031ec08bb3d34dbe358aea3f728c29f37511a1b0f7aaff26  corpus/china-global-ai-governance-initiative-2023/pages.json
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  corpus/g7-hiroshima-code-2023/units.jsonl
 e43584211f6f36f6836f08af2ca55a0721714a3bf94cec2bdf83d03bfc3deadb  corpus/un-ga-res-78-241/units.jsonl
-e57ffb6fdc958ede7cdc53c1ed3130c0d7956423f756be3a2e13b13b5566296d  corpus/coe-cets-225/units.jsonl
 e85729ecb9fb840b05e8c28e2610fd2e1e97105beb6d6624bab54fffa8ea402b  corpus/paris-ai-action-summit-statement-2025/manifest.json
 e9ae53a02f600f925f7fd3fa1459c60337a3d4f9e536035c6c75f8e93a02d0ce  corpus/depa-2020/text/en.txt
 eca2a621c2d4c7500ce84ab9f26c860aca7d3fc3b0eb6cc06e2718f71c32fb7d  corpus/un-ga-res-79-325/text/en.txt

@@ -119,12 +119,22 @@ SOURCES = [
         "application/pdf",
         "OECD/LEGAL/0449, official OECD Legal Instruments booklet (2024 revision).",
     ),
+    (
+        "coe-cets-225",
+        "source/cets-225-en-ohchr-2026-11-25.pdf",
+        "https://www.ohchr.org/sites/default/files/documents/cfi-subm/244-artificial-intelligence/subm-artificial-intelligence-igo-13-council-europe-publications-annex-2.pdf",
+        "application/pdf",
+        "12-page Council of Europe Treaty Series PDF of CETS 225, reproduced in an OHCHR submission annex. Official reproduction, not the certified corrected copy adopted on 30 April 2025.",
+        "2026-11-25",
+    ),
 ]
 
 
 def main() -> int:
     records = []
-    for iid, dest, url, media, note in SOURCES:
+    for source in SOURCES:
+        iid, dest, url, media, note = source[:5]
+        accessed = source[5] if len(source) > 5 else ACCESSED
         path = CORPUS / iid / dest
         if not path.exists():
             raise SystemExit(f"missing stored file: {path}")
@@ -135,7 +145,7 @@ def main() -> int:
                 "url": url,
                 "sha256": __import__("hashlib").sha256(path.read_bytes()).hexdigest(),
                 "bytes": path.stat().st_size,
-                "accessed": ACCESSED,
+                "accessed": accessed,
                 "media_type": media,
                 "note": note,
             }

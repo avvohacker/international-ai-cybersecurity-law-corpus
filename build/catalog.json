@@ -27,7 +27,7 @@
     },
     "full_texts": 16,
     "total": 63,
-    "with_local_original": 15
+    "with_local_original": 16
   },
   "full_text_ids": [
     "china-global-ai-governance-initiative-2023",
@@ -1450,7 +1450,7 @@
       },
       "parties": {
         "act": "collective_issue",
-        "as_of": "2026-07-06",
+        "as_of": "2025-07-06",
         "counts": {
           "members": {
             "basis": "declared_total",
@@ -1511,7 +1511,7 @@
           },
           {
             "notes": [
-              "Kingdom of Saudi Arabia — BRICS member State at the time of the 17th Summit; the statement was issued collectively, not signed individually."
+              "Listed by the 2025 presidency as a BRICS member State. The Saudi Press Agency reported on 7 July 2025 that the Foreign Minister led the Kingdom's delegation 'as an invited country to join the BRICS group'. Membership at the time of the 17th Summit is contested in the official sources; the statement was issued collectively and no individual signature or co-issuance is attributed."
             ],
             "party": "Saudi Arabia",
             "role": "member_state"
@@ -1560,9 +1560,9 @@
           "brazil-mfa-page",
           "brics-members"
         ],
-        "summary": "The statement was issued collectively at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The 2025 presidency lists 11 member States: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The official text has no individual signature block, so the record lists the member States and does not attribute a separate signature or a separate act of co-issuance to any of them. Saudi participation is recorded inconsistently by official sources: the presidency lists the Kingdom as a member, while the Saudi Press Agency reported on 7 July 2025 that the Foreign Minister led the delegation 'as an invited country to join the BRICS group'. The record states the conflict and does not resolve it by counting ten.",
+        "summary": "The statement was issued collectively at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The 2025 presidency lists 11 member States: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The official text has no individual signature block, so the record lists the member States and does not attribute a separate signature or a separate act of co-issuance to any of them. The presidency's membership page was read on 23 November 2026; it is a later snapshot of the presidency's list, used only for the composition at the summit and not as evidence that every listed State issued the statement. Saudi participation is recorded inconsistently by official sources: the presidency lists the Kingdom as a member, while the Saudi Press Agency reported on 7 July 2025 that the Foreign Minister led the delegation 'as an invited country to join the BRICS group'. The record states the conflict and does not resolve it by counting ten.",
         "unknowns": [
-          "The official text is a collective leaders' statement and has no individual signature block. The 11 entries are the member States listed by the presidency, not individual signatories; individual co-issuance is not evidenced by the document.",
+          "The official text is a collective leaders' statement and has no individual signature block. The 11 entries are the member States listed by the presidency, not individual signatories; individual co-issuance is not evidenced by the document. The membership page is a later snapshot read on 23 November 2026; it does not establish individual co-issuance.",
           "Saudi Arabia is listed as a member by the 2025 presidency, but the Saudi Press Agency reported on 7 July 2025 that the Foreign Minister led the Kingdom's delegation 'as an invited country to join the BRICS group'. No document-specific attribution resolves the conflict; the record does not substitute ten for eleven.",
           "The statement creates no depositary, ratification, accession or withdrawal record.",
           "No follow-up mechanism, reporting cycle or review conference was verified.",
@@ -1650,7 +1650,7 @@
           "International cooperation — the statement warns that a proliferation of initiatives and diverging views may aggravate asymmetries and the legitimacy gap in global digital governance."
         ],
         "excluded_scope": "A political statement by BRICS leaders. It creates no binding obligation, no signature or ratification, no depositary, no monitoring or reporting duty and no dispute-settlement mechanism. It does not establish an institution or a follow-up mechanism. National implementation is not assessed.",
-        "reason": "The first stand-alone BRICS leaders' statement on the global governance of artificial intelligence, adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025 by the leaders of the 11 BRICS member States. It sets out a collective position centred on digital sovereignty, the right to development, the UN Charter, capacity building and the concerns of the Global South. It is a political statement, not a treaty: it creates no legal obligation, ratification, depositary or monitoring. It is included because it is a distinct coalition instrument that the three-pole reading would otherwise miss, and because it documents the China-Global South diffusion position before WAICO was established."
+        "reason": "The first stand-alone BRICS leaders' statement on the global governance of artificial intelligence, issued at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025; the presidency lists 11 member States, the official text has no individual signature block, and Saudi participation is contested. It sets out a collective position centred on digital sovereignty, the right to development, the UN Charter, capacity building and the concerns of the Global South. It is a political statement, not a treaty: it creates no legal obligation, ratification, depositary or monitoring. It is included because it is a distinct coalition instrument that the three-pole reading would otherwise miss, and because it documents the China-Global South diffusion position before WAICO was established."
       },
       "rights": {
         "licence": "BRICS 2025 Presidency / Government of Brazil official publication",
@@ -1730,7 +1730,7 @@
           {
             "check": "Party-level data checked against the official BRICS membership page.",
             "date": "2026-11-23",
-            "result": "The official BRICS page lists 11 member States; the statement is collective and has no individual signature block. The record counts the 11 listed member States at a collective issue, not individually evidenced issuers."
+            "result": "The official BRICS page lists 11 member States; the statement is collective and has no individual signature block. The record counts the 11 listed member States at a collective issue, not individually evidenced issuers. The membership page was read on 2026-11-23; it is a later snapshot, not a list of issuers."
           },
           {
             "check": "Legal nature checked against the text and official descriptions.",
@@ -4209,9 +4209,9 @@
         "ai"
       ],
       "gaps": [
-        "The Convention is not in force; its Conference of the Parties, rules of procedure and reporting format do not yet exist.",
+        "The Convention is not in force; the Conference of the Parties, its rules of procedure and the reporting format have therefore not been constituted.",
         "No reservation or objection is recorded on the Treaty Office chart as of 2026-11-23; Article 34 permits only the reservation provided for in Article 33(1) (federal clause).",
-        "The official PDF bytes were not acquired (HTTP 403); only the extracted English text is stored.",
+        "The direct CoE PDF endpoint (https://rm.coe.int/1680afae3c) returned HTTP 403 (Cloudflare) on 25 November 2026. A 12-page Council of Europe Treaty Series PDF of CETS 225, reproduced in an OHCHR submission annex, was acquired and stored (see catalog/acquisitions.json). It is an official reproduction, not the certified corrected copy adopted at the 1527th meeting of the Ministers' Deputies on 30 April 2025; the certified copy was not acquired, so corrections made after the PDF's creation on 17 December 2024 are not verified against the stored text.",
         "No implementing protocol or additional protocol has been adopted.",
         "The Convention excludes national defence and may exclude national-security activities; coverage of military AI is therefore not provided by this treaty.",
         "The Ukrainian declaration was issued in English and Ukrainian; only the English rendering is reproduced."
@@ -4556,12 +4556,22 @@
           "note": "Reservations and declarations for Treaty 225, status as of 23/11/2026. Five declaration texts (EU, Norway, Ukraine); no reservation or objection entries. Read through a rendered-text extraction because the site's client assets returned HTTP 403 in the cloud browser.",
           "publisher": "Council of Europe Treaty Office",
           "url": "https://www.coe.int/en/web/conventions/full-list2?codeNature=0&module=declarations-by-treaty&numSte=225"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "coe-text-ohchr",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "12-page Council of Europe Treaty Series PDF of CETS 225, reproduced in an OHCHR submission annex. Official reproduction, not the certified corrected copy adopted on 30 April 2025. The direct rm.coe.int endpoint returned HTTP 403 on 2026-11-25. Stored at corpus/coe-cets-225/source/cets-225-en-ohchr-2026-11-25.pdf; SHA-256 in catalog/acquisitions.json.",
+          "publisher": "Council of Europe, reproduced by OHCHR",
+          "url": "https://www.ohchr.org/sites/default/files/documents/cfi-subm/244-artificial-intelligence/subm-artificial-intelligence-igo-13-council-europe-publications-annex-2.pdf"
         }
       ],
       "status": "not_in_force",
       "status_note": "As of the Treaty Office chart status date 23 November 2026: 21 signatories in total (19 signatures not followed by ratification and 2 ratifications), and 19 signatures without ratification. The two ratifications are Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). Article 30(3) requires five ratifications including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. Not in force.",
       "text": {
-        "extraction_note": "Transcribed from the official English text retrieved through the extraction tool. Running headers ('CETS 225 – Artificial Intelligence, 5.IX.2024') and page numbers were removed. Article headings and paragraph breaks preserved. No wording changes were made; consult the official PDF for diplomatic formatting.",
+        "extraction_note": "The stored text is textually identical, on a whitespace-insensitive comparison, to the 12-page Council of Europe Treaty Series PDF of CETS 225 acquired on 25 November 2026. Running headers ('CETS 225 – Artificial Intelligence, 5.IX.2024'), underscore rules, page numbers and line wrapping were removed. The PDF's text layer inserts occasional intra-word spaces; whitespace normalisation removes them. Article headings and paragraph breaks are preserved. No wording changes were made. The page map uses the 12 pages of that PDF.",
         "full_text": true,
         "manifest": "manifest.json",
         "primary_language": "en",
@@ -4599,10 +4609,15 @@
             "check": "Authentic languages checked against the final clause.",
             "date": "2026-11-23",
             "result": "English and French equally authentic; other languages are translations."
+          },
+          {
+            "check": "Official reproduction acquired and compared page by page with the stored text.",
+            "date": "2026-11-25",
+            "result": "OHCHR-hosted 12-page CoE Treaty Series PDF (SHA-256 in catalog/acquisitions.json) read page by page. After removing running headers, underscore rules, page numbers and line wrapping, all 12 pages match the stored text; no wording differences. It is an official reproduction, not the certified corrected copy."
           }
         ],
         "level": "full_text_checked",
-        "notes": "Full text acquired, but the original PDF bytes were not acquired because of the 403 response. The stored text is therefore an extraction/transcription, not the official PDF. The official chart and declarations page were read through a rendered-text extraction of the official Treaty Office URLs because the site's React assets returned HTTP 403 in the cloud browser; the official URLs and status date are recorded. Hash integrity covers the stored text and units, not the unavailable official file."
+        "notes": "Full text stored as a transcription. A 12-page Council of Europe Treaty Series PDF reproduced in an OHCHR submission annex was acquired on 25 November 2026; after removing running headers, underscore rules, page numbers and line wrapping, all 12 pages match the stored text. It is an official reproduction, not the certified corrected copy. The direct CoE endpoint returned HTTP 403. The official chart and declarations page were read through a rendered-text extraction of the official Treaty Office URLs because the site's React assets returned HTTP 403 in the cloud browser; the official URLs and status date are recorded. Hash integrity covers the stored PDF, text, pages and units."
       }
     },
     {
@@ -14638,9 +14653,9 @@
         "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located. Bangladesh is not the 38th member: it announced on 1 August 2026 that it would join 'initially as an observer'.",
         "Observer status is not a party status: Article 11 allows the Council to admit non-member States and intergovernmental organisations as observers. No Council admission of Bangladesh is recorded.",
         "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
-        "The full official text was read on the NPC page but no certified deposited copy was acquired, so the record is metadata-only and the Chinese text is not stored.",
+        "The official Chinese text published by the NPC was consulted online, and the English reproduction on Digital Watch was consulted before it; neither is stored. No deposited or certified copy was acquired, so the record remains metadata-only. The article citations rest on the NPC text. The English reproduction is a secondary source, not an authentic text or a deposited copy.",
         "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",
-        "The Council, Secretariat, rules of procedure, budget and implementing instruments do not yet exist or were not verified."
+        "Articles 5–8 provide for a Council, a Secretariat and financing. No evidence was located that the Council or Secretariat has been constituted, that rules of procedure or a budget have been adopted, or that implementing instruments exist. This is an unverified point, not a finding that the organs do not exist."
       ],
       "id": "waico-establishment-agreement-2026",
       "instrument_type": "treaty",
@@ -14665,7 +14680,7 @@
           "ru",
           "es"
         ],
-        "note": "Article 18: Arabic, Chinese, English, French, Russian and Spanish texts are equally authentic. Only the English reproduction of the Agreement was read; no official deposited text was acquired.",
+        "note": "Article 18: Arabic, Chinese, English, French, Russian and Spanish texts are equally authentic. The official Chinese text published by the National People's Congress was read for the article analysis; an English reproduction (Digital Watch) was also consulted. No deposited or certified copy was acquired and no text is stored in this corpus.",
         "translations": []
       },
       "legal_nature": {
@@ -14968,7 +14983,7 @@
           {
             "date": "2026-11-24",
             "field": "legal_nature",
-            "locator": "Agreement Articles 1 (object), 14 (Council), 15 (entry into force) and 18 (depositary)",
+            "locator": "Agreement Articles 1 (legal personality), 5–8 (Council, decision-making, Secretariat and financing), 14 (signature and accession), 15 (entry into force) and 18 (depositary)",
             "method": "official_text_read",
             "source_ids": [
               "npc-agreement-text"
@@ -15018,7 +15033,7 @@
       },
       "rights": {
         "licence": "Chinese Government official publications; Digital Watch reproduction CC BY-NC-ND 4.0",
-        "note": "Official government pages and the MFA progress report are public official materials. The Digital Watch reproduction is used for reading only. No full text is stored in this corpus.",
+        "note": "Official government pages and the MFA progress report are public official materials. The NPC official text was read online; the Digital Watch reproduction was used for reading only. No full text is stored in this corpus.",
         "status": "public_official_text"
       },
       "sources": [
@@ -15108,7 +15123,7 @@
           "id": "digwatch-text",
           "kind": "secondary",
           "language": "en",
-          "note": "Reproduction of the Agreement text consulted on 23 November 2026, before the official Chinese text was located. It is retained as a secondary copy only; the article references in this record are now checked against the NPC official text.",
+          "note": "Reproduction of the Agreement text consulted on 23 November 2026, before the official Chinese text was located. It is retained as a secondary reproduction only; the article references in this record are now checked against the NPC official text.",
           "publisher": "Digital Watch Observatory (Geneva Internet Platform)",
           "url": "https://dig.watch/resource/agreement-on-the-establishment-of-the-world-artificial-intelligence-cooperation-organization"
         },
@@ -15118,7 +15133,7 @@
           "id": "npc-agreement-text",
           "kind": "official_primary",
           "language": "zh",
-          "note": "Official Chinese text of the Agreement, published 18 November 2026. Articles 1-18 were read in full: legal personality and civilian-domain limitation (Articles 1 and 3), membership and observers (Articles 10-11), signature and accession (Article 14), entry into force (Article 15) and depositary and authentic texts (Article 18).",
+          "note": "Official Chinese text of the Agreement, published 18 November 2026. Articles 1-18 were read in full: legal personality and civilian-domain limitation (Articles 1 and 3), membership and observers (Articles 10-11), signature and accession (Article 14), entry into force (Article 15) and depositary and authentic texts (Article 18). The host did not complete a TLS handshake from this environment on 25 November 2026; the official page is served over HTTP.",
           "publisher": "National People's Congress of the People's Republic of China",
           "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html"
         }
@@ -15165,10 +15180,15 @@
             "check": "Article references checked against the official Chinese text published by the NPC.",
             "date": "2026-11-24",
             "result": "The official text confirms Articles 1 (legal personality), 3(2) (civilian domain only), 10 (founding membership), 11 (observers), 14 (signature and accession), 15 (entry into force on the third instrument) and 18 (China as depositary; six equally authentic texts)."
+          },
+          {
+            "check": "Reading and acquisition status reconciled.",
+            "date": "2026-11-25",
+            "result": "The official Chinese text on the NPC page was read; the English reproduction on Digital Watch was consulted; neither is stored, and no deposited or certified copy was acquired. The article citations rest on the NPC text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from official Chinese and Indonesian government sources; the article analysis is checked against the official NPC text. The record is metadata-only: no full text is stored. China is the depositary under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the number of deposited instruments remain unknown and are recorded as such rather than inferred. China's domestic approval is recorded separately from international consent."
+        "notes": "Metadata verified from official Chinese and Indonesian government sources. The official Chinese text published by the NPC was read for the article analysis; the English reproduction was used as a cross-check. No deposited or certified copy was acquired. China is the depositary under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the number of deposited instruments remain unknown and are recorded as such rather than inferred. China's domestic approval is recorded separately from international consent. The treaty provides for a Council, a Secretariat and financing in Articles 5–8, but no evidence was located that these organs have been constituted or are operating."
       }
     }
   ],
