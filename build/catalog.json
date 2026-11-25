@@ -11013,7 +11013,7 @@
         {
           "name": "United States of America (initiative); endorsing States",
           "role": "issuer",
-          "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
+          "url": "https://2021-2025.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
         }
       ],
       "languages": {
@@ -11300,7 +11300,8 @@
         "assertions": [],
         "discovered_via": "U.S. State Department official page; endorsement count from Japan's Ministry of Defense.",
         "search_dates": [
-          "2026-11-23"
+          "2026-11-23",
+          "2026-11-25"
         ]
       },
       "related": [
@@ -11330,13 +11331,22 @@
       },
       "sources": [
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-25",
           "http_status": 200,
           "id": "state-page",
           "kind": "official_primary",
-          "note": "Official page: launch at REAIM 2023, links to the declaration and translations, list of endorsing States as of 27 November 2024.",
+          "note": "Official page: launch at REAIM 2023, links to the declaration and translations, list of endorsing States as of 27 November 2024. The live path returned 404 on 25 November 2026; this is the State Department's official 2021–2025 archive of the page.",
           "publisher": "U.S. Department of State",
-          "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
+          "url": "https://2021-2025.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "state-text-pdf",
+          "kind": "official_primary",
+          "note": "Official PDF of the declaration text, two pages, published by the State Department; downloaded and checked on 25 November 2026.",
+          "publisher": "U.S. Department of State",
+          "url": "https://www.state.gov/wp-content/uploads/2023/10/Latest-Version-Political-Declaration-on-Responsible-Military-Use-of-AI-and-Autonomy.pdf"
         },
         {
           "accessed": "2026-11-23",

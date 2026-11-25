@@ -1143,19 +1143,19 @@ class TestBuild(unittest.TestCase):
             self.assertNotIn("map-org-leader", figure)
         self.assertEqual(page.count('class="map-org-note"'), 6)
         self.assertIn(
-            "European Union: ratified. 27 EU member States without an individual signature",
+            "European Union: ratified. 27 EU member States without an individual signature carry the hatched fill",
             by_title["CETS 225"],
         )
         self.assertIn(
-            "European Union: endorsed. 21 EU member States without an individual endorsement",
+            "European Union: endorsed. 21 EU member States without an individual endorsement carry the hatched fill",
             by_title["Bletchley 2023"],
         )
         self.assertIn(
-            "European Union: endorsed. 24 EU member States without an individual endorsement",
+            "European Union: endorsed. 24 EU member States without an individual endorsement carry the hatched fill",
             by_title["Seoul 2024"],
         )
         self.assertIn(
-            "European Union: endorsed. 21 EU member States without an individual endorsement",
+            "European Union: endorsed. 21 EU member States without an individual endorsement carry the hatched fill",
             by_title["Pax Silica 2025"],
         )
         self.assertIn(
@@ -1165,16 +1165,20 @@ class TestBuild(unittest.TestCase):
         # All 27 EU member States endorsed Paris individually, so the EU is not
         # indicated on that map at all.
         self.assertNotIn("European Union: endorsed", by_title["Paris 2025"])
-        self.assertEqual(by_title["CETS 225"].count('fill="#a9c8d2"'), 27)
-        self.assertEqual(by_title["Paris 2025"].count('fill="#9aa9c2"'), 46)
+        self.assertEqual(by_title["CETS 225"].count('fill="#a9c8d2" stroke='), 27)
+        self.assertEqual(by_title["Paris 2025"].count('fill="#9aa9c2" stroke='), 46)
         self.assertEqual(by_title["WAICO 2026"].count('fill="#d6a5a8"'), 0)
         self.assertNotIn("USA / UK: no", page)
         self.assertNotIn("Non-signatory", page)
         self.assertNotIn("International organisation", page)
         self.assertNotIn("Supranational:", page)
-        self.assertIn("State: member of a participating organisation", page)
-        self.assertIn("State: ratified", page)
+        self.assertIn(
+            "State: member State of a signatory organisation, no individual act", page
+        )
+        self.assertIn("State: party (ratification)", page)
+        self.assertIn("State: party (ratification or accession)", page)
         self.assertIn("State: signed only", page)
+        self.assertIn("State: supporter", page)
         self.assertIn("States only", page)
         self.assertIn("37 confirmed of 38 reported", page)
         self.assertEqual(page.count('class="map-parties"'), 17)
@@ -1234,8 +1238,12 @@ class TestBuild(unittest.TestCase):
         self.assertIn("<h2>Off the record</h2>", page)
         self.assertNotIn("<h2>Reading room</h2>", page)
         self.assertIn("What this corpus contains", page)
-        self.assertIn("<h1>International AI and Cybersecurity Law</h1>", page)
-        self.assertIn('class="atlas-subtitle">Atlas</p>', page)
+        header = page[page.find("<header"):page.find("</header>")]
+        footer = page[page.find("<footer"):page.find("</footer>")]
+        self.assertIn("<h1>International AI and Cybersecurity Law</h1>", header)
+        self.assertNotIn("Atlas", header)
+        self.assertNotIn("Atlas", footer)
+        self.assertIn("<strong>International AI and Cybersecurity Law</strong>", footer)
         self.assertNotIn("International AI and Cybersecurity Law Atlas", page)
         index_block = page[page.find('id="index"'):page.find('id="form"')]
         self.assertNotIn("atlas", index_block.lower())
@@ -1285,6 +1293,37 @@ class TestBuild(unittest.TestCase):
         self.assertIn("The argument around the record", page)
         self.assertNotIn("The shape of the corpus", page)
         self.assertNotIn("cat-ai_treaty bar-fill", page)
+
+    def test_section_seven_lists_every_source_including_non_official(self) -> None:
+        import build_site
+
+        build_site.main()
+        page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        links = page[page.find('id="links"'):page.find("</main>")]
+        self.assertIn('class="all-sources"', links)
+        self.assertIn("Every source cited in the records", links)
+        self.assertIn("source-nonofficial", links)
+        self.assertIn("asianlaws.org", links)
+        self.assertIn("senlii.org", links)
+        self.assertGreaterEqual(links.count('class="source-link'), 150)
+
+    def test_download_probe_classifies_without_network(self) -> None:
+        import audit_texts
+
+        self.assertEqual(
+            audit_texts.classify_download(200, "application/pdf", b"%PDF-1.7\n")[0],
+            "downloaded",
+        )
+        self.assertEqual(
+            audit_texts.classify_download(200, "text/html", b"<title>Just a moment...</title>")[0],
+            "blocked",
+        )
+        self.assertEqual(
+            audit_texts.classify_download(403, "text/html", b"forbidden")[0], "blocked"
+        )
+        self.assertEqual(
+            audit_texts.classify_download(404, "text/html", b"missing")[0], "broken"
+        )
 
     def test_map_order_follows_binding_then_adopters(self) -> None:
         import build_site
@@ -1398,7 +1437,7 @@ class TestBuild(unittest.TestCase):
             ("CETS 225", "coe-cets-225", "Ratified"),
             ("WAICO 2026", "waico-establishment-agreement-2026", "Signed"),
             ("Pax Silica 2025", "pax-silica-declaration-2025", "Endorsed"),
-            ("Paris Call 2018", "paris-call-cyberspace-2018", "Endorsed"),
+            ("Paris Call 2018", "paris-call-cyberspace-2018", "Supporters"),
             ("OECD Digital Security 2019", "oecd-digital-security-critical-activities-2019", "Adherents"),
             ("Pall Mall Code 2025", "pall-mall-code-of-practice-2025", "Supporting States"),
         ]
@@ -1635,10 +1674,10 @@ class TestBuild(unittest.TestCase):
             if "<span class=\"map-title\">UN Cybercrime Convention</span>" in block
         )
         self.assertIn(
-            "European Union: signed. 9 EU member States without an individual signature",
+            "European Union: signed. 9 EU member States without an individual signature carry the hatched fill",
             figure,
         )
-        self.assertEqual(figure.count('fill="#aec7de"'), 9)
+        self.assertEqual(figure.count('fill="#aec7de" stroke='), 9)
 
     def test_malabo_record_uses_au_status_list(self) -> None:
         record = read_instrument("au-malabo-convention-2014")
@@ -1829,7 +1868,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 183)
+        self.assertEqual(len(targets), 184)
         self.assertEqual(len({target.instrument_id for target in targets}), 63)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)

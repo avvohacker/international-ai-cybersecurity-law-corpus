@@ -14,6 +14,7 @@ import json
 import re
 import sys
 import unicodedata
+import urllib.parse
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -88,7 +89,7 @@ CATEGORY_LABELS = {
 }
 
 BINDING_LABELS = {
-    "binding": "Binding form",
+    "binding": "Binding legal form",
     "non_binding": "Non-binding",
     "mixed": "Mixed",
     "unknown": "Unknown",
@@ -102,11 +103,16 @@ SOURCE_LABELS = {
     "govuk-declaration": "GOV.UK declaration",
     "govuk-seoul": "GOV.UK Seoul declaration",
     "state-page": "State Department page",
-    "coe-text": "CETS 225 text",
-    "coe-status": "CETS 225 status chart",
+    "coe-text": "Council of Europe treaty text",
+    "coe-status": "Treaty Office status chart",
+    "coe-status-chart": "Treaty Office status chart",
+    "coe-declarations": "Council of Europe declarations",
+    "coe-declarations-189": "ETS 189 declarations",
+    "coe-declarations-224": "CETS 224 declarations",
+    "coe-budapest-page": "CoE Budapest Convention page",
+    "coe-treaty-page": "CoE treaty page",
     "eu-oj-2026-1081": "EU Official Journal",
     "eu-decision-2026-1080": "EU Council Decision",
-    "coe-declarations": "CETS 225 declarations",
     "untc-status": "UN Treaty Collection status",
     "untc-certified-copy": "Certified true copy",
     "mfa-signing": "MFA signing account",
@@ -127,6 +133,55 @@ SOURCE_LABELS = {
     "paris-call-page": "Official homepage counters",
     "paris-call-csv": "Official supporters CSV",
     "paris-call-source": "Official source repository (commit 916433b)",
+    "au-treaty-page": "AU treaty page",
+    "au-status-list": "AU status list",
+    "au-text": "AU official text",
+    "au-annexes": "AU compiled annexes",
+    "au-page": "AU treaty page",
+    "au-page-2024": "AU treaty page (2024)",
+    "au-progress": "AU progress report",
+    "au-agreement": "AfCFTA Agreement",
+    "cis-document": "CIS document",
+    "cis-registry": "CIS legal register",
+    "cis-russia-mfa": "Russian MFA treaty page",
+    "cis-russian-register": "Russian legal register",
+    "ecowas-directive": "ECOWAS directive",
+    "africanlii-directive": "AfricanLII directive page",
+    "ohchr": "OHCHR treaty page",
+    "untc-declarations": "UN Treaty Collection declarations",
+    "un-treaty-collection": "UN Treaty Collection",
+    "ksdpa-text": "KSDPA text",
+    "sco-agreement": "SCO agreement page",
+    "sco-text": "SCO agreement text",
+    "uk-treaty": "UK treaty series PDF",
+    "mti-page": "Singapore MTI page",
+    "npc-agreement-text": "NPC agreement text",
+    "stored-wayback-official": "Official PDF, archived copy",
+    "stored-official": "Stored official text",
+    "stored-official-scan": "Stored official scan",
+    "stored-official-russian": "Stored official Russian text",
+    "stored-official-reproduction": "Stored official copy",
+    "stored-protocol": "Stored protocol text",
+    "stored-annexes": "Stored annexes",
+    "stored-certified": "Stored certified copy",
+    "stored-arabic": "Archived Arabic text",
+    "stored-senlii-transcription": "SenLII English transcription",
+    "stored-english-reproduction": "AsianLaws English reproduction",
+}
+
+SOURCE_KIND_LABELS = {
+    "official_primary": "official",
+    "official_journal": "official journal",
+    "registry": "official registry",
+    "official_secondary": "official page",
+    "secondary": "non-official",
+}
+SOURCE_KIND_RANK = {
+    "official_primary": 0,
+    "official_journal": 1,
+    "registry": 2,
+    "official_secondary": 3,
+    "secondary": 4,
 }
 
 STATUS_LABELS = {
@@ -322,20 +377,33 @@ MAP_TONES_BY_KIND = {
 }
 
 
+def shade(hex_color: str, factor: float) -> str:
+    """Darken a hex colour by a fixed factor while keeping its hue."""
+    value = hex_color.lstrip("#")
+    channels = (int(value[index:index + 2], 16) for index in (0, 2, 4))
+    return "#" + "".join(
+        f"{max(0, min(255, round(channel * factor))):02x}" for channel in channels
+    )
+
+
 def map_fills(kind: str) -> dict[str, str]:
     """Return the status palette for one map.
 
-    The base tone follows the flag of the depositing or host government; the
-    lighter tone is reserved for organisation member States that did not act
-    individually. Brazil is the only non-member adherent of the OECD digital
-    security Recommendation, so it keeps a distinct ochre tone.
+    The hue follows the flag of the depositing or host government. Every map
+    uses the same three lightness steps: a mid tone for signature, endorsement
+    or adherence; a dark tone for ratification, accession or entry into force;
+    and a pale, hatched tone for member States of a participating organisation
+    that did not act individually. The fixed steps keep the levels
+    distinguishable in every palette and in grayscale. Brazil is the only
+    non-member adherent of the OECD digital security Recommendation, so it
+    keeps a distinct ochre tone.
     """
     tone = MAP_TONES[MAP_TONES_BY_KIND[kind]]
     fills = {
         "endorsed": tone["act"],
         "signed": tone["act"],
         "issued": tone["act"],
-        "ratified": tone["deep"],
+        "ratified": shade(tone["deep"], 0.62),
         "organisation": tone["light"],
         "nonmember_endorsed": tone["act"],
     }
@@ -362,7 +430,7 @@ STATUS_TITLE = {
     "signed": "signature only",
     "ratified": "ratified",
     "nonmember_endorsed": "non-member adherent",
-    "organisation": "member of a participating international organisation; no individual act",
+    "organisation": "member State of a signatory organisation; no individual act",
     "issued": "issuing government; collective statement, no individual signature",
     "none": "no recorded act",
 }
@@ -511,10 +579,12 @@ def render_map(
     legend: list[dict] | None = None,
     legend_note: str = "",
     fills: dict[str, str] | None = None,
+    status_titles: dict[str, str] | None = None,
 ) -> str:
     features, _, by_iso = load_geo()
     legend = legend or []
     fills = fills or {}
+    titles = {**STATUS_TITLE, **(status_titles or {})}
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" '
         f'class="map-svg" role="img" aria-labelledby="map-{kind}-title map-{kind}-desc">',
@@ -522,6 +592,18 @@ def render_map(
         f'<desc id="map-{kind}-desc">{esc(description)}</desc>',
         f'<rect width="1000" height="420" fill="{OCEAN}"/>',
     ]
+    hatched = "organisation" in set(state_status.values()) or any(
+        item.get("hatch") for item in legend
+    )
+    if hatched:
+        light = fills.get("organisation", ORG_MEMBER_BLUE)
+        parts.append(
+            f'<defs><pattern id="org-{esc(kind)}" width="7" height="7" '
+            'patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+            f'<rect width="7" height="7" fill="{light}"/>'
+            f'<line x1="0" y1="0" x2="0" y2="7" stroke="{PAPER}" '
+            'stroke-width="2.2" opacity="0.9"/></pattern></defs>'
+        )
     for lat in (60, 30, 0, -30):
         _, y = project(0, lat)
         parts.append(
@@ -541,8 +623,13 @@ def render_map(
             continue
         parts.append(
             f'<path d="{path}" fill="{fill}" stroke="{PAPER}" stroke-width="0.7" '
-            f'data-iso="{esc(iso)}"><title>{esc(props["ADMIN"])} — {esc(STATUS_TITLE[status])}</title></path>'
+            f'data-iso="{esc(iso)}"><title>{esc(props["ADMIN"])} — {esc(titles[status])}</title></path>'
         )
+        if status == "organisation" and hatched:
+            parts.append(
+                f'<path class="map-hatch" d="{path}" fill="url(#org-{esc(kind)})" '
+                'stroke="none" pointer-events="none"/>'
+            )
     for iso, (lon, lat) in sorted(MICRO.items()):
         if iso not in state_status:
             continue
@@ -553,14 +640,20 @@ def render_map(
         x, y = project(lon, lat)
         parts.append(
             f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.8" fill="{fill}" '
-            f'stroke="{PAPER}" stroke-width="1"><title>{esc(iso)} — {esc(STATUS_TITLE[status])}</title></circle>'
+            f'stroke="{PAPER}" stroke-width="1"><title>{esc(iso)} — {esc(titles[status])}</title></circle>'
         )
     parts.append("</svg>")
 
     key_rows = []
     for item in legend:
+        style = f"background:{item['color']}"
+        if item.get("hatch"):
+            style = (
+                "background:repeating-linear-gradient(45deg, "
+                f"{item['color']} 0 3px, {PAPER} 3px 5px)"
+            )
         key_rows.append(
-            f'<span class="key-row"><i class="swatch" style="background:{item["color"]}"></i>'
+            f'<span class="key-row"><i class="swatch" style="{style}"></i>'
             f'{esc(item["label"])}</span>'
         )
     note = f'<p class="key-note">{esc(legend_note)}</p>' if legend_note else ""
@@ -665,6 +758,84 @@ def table_rows(instruments: list[dict]) -> str:
             "</tr>"
         )
     return "".join(rows)
+
+
+def source_hint(url: str) -> str:
+    """A short readable hint for a source whose label repeats in one record."""
+    parts = urllib.parse.urlsplit(url)
+    if "web.archive.org" in parts.netloc:
+        return "archived copy"
+    segments = [segment for segment in parts.path.split("/") if segment]
+    if not segments:
+        return parts.netloc
+    tail = segments[-1]
+    if len(segments) >= 2 and (len(tail) <= 6 or tail.isdigit()):
+        tail = f"{segments[-2]}/{tail}"
+    return tail[:48]
+
+
+def render_all_sources(instruments: list[dict]) -> tuple[str, int, int]:
+    """List every source cited by every record, official and non-official.
+
+    A reader who wants to check a record from section 07 should not have to
+    infer that a non-official reproduction exists: it is listed here with a
+    visible label. Duplicate URLs inside one record are collapsed, keeping the
+    most official source id.
+    """
+    blocks: list[str] = []
+    total = 0
+    counted = 0
+    for inst in sorted(
+        instruments, key=lambda item: (sort_date(item), item["id"]), reverse=True
+    ):
+        chosen: dict[str, tuple[tuple[int, int], dict]] = {}
+        for source in inst.get("sources") or []:
+            url = source.get("url")
+            if not url:
+                continue
+            rank = (
+                SOURCE_KIND_RANK.get(source.get("kind"), 9),
+                1 if str(source.get("id") or "").startswith("stored-") else 0,
+            )
+            if url not in chosen or rank < chosen[url][0]:
+                chosen[url] = (rank, source)
+        if not chosen:
+            continue
+        counted += 1
+        entries = [
+            [
+                url,
+                source,
+                SOURCE_LABELS.get(source["id"])
+                or source.get("publisher")
+                or source["id"],
+            ]
+            for url, (_, source) in sorted(
+                chosen.items(), key=lambda item: (item[1][0], item[0])
+            )
+        ]
+        repeated = Counter(entry[2] for entry in entries)
+        links = []
+        for url, source, label in entries:
+            if repeated[label] > 1:
+                label = f"{label} — {source_hint(url)}"
+            kind_label = SOURCE_KIND_LABELS.get(source.get("kind"), "source")
+            css = (
+                "source-link source-nonofficial"
+                if source.get("kind") == "secondary"
+                else "source-link"
+            )
+            links.append(
+                f'<a class="{css}" href="{esc(url)}" target="_blank" rel="noopener">{esc(label)}</a>'
+                f'<span class="source-kind">{esc(kind_label)}</span>'
+            )
+            total += 1
+        title = (inst.get("title") or {}).get("short") or inst["id"]
+        blocks.append(
+            f'<li><a class="source-instrument" href="{esc(record_url(inst))}" target="_blank" rel="noopener">{esc(title)}</a>'
+            f'<span class="source-links">{" · ".join(links)}</span></li>'
+        )
+    return f'<ol class="all-sources">{"".join(blocks)}</ol>', total, counted
 
 
 def display_timeline_date(value: str) -> str:
@@ -1218,7 +1389,7 @@ def main() -> int:
                 action, noun = "signed", "signature"
             notes.append(
                 f"{name}: {action}. {covered} {org['member_label']} member States "
-                f"without an individual {noun} are shown in the lighter tone."
+                f"without an individual {noun} carry the hatched fill."
             )
         return notes
 
@@ -1235,6 +1406,10 @@ def main() -> int:
         {"color": "act", "label": "State: endorsed"},
         {"color": "none", "label": "State: not endorsed"},
     ]
+    paris_call_legend = [
+        {"color": "act", "label": "State: supporter"},
+        {"color": "none", "label": "State: not a supporter"},
+    ]
     oecd_cyber_legend = [
         {"color": "act", "label": "State: OECD member adherent"},
         {"color": "nonmember", "label": "Brazil: only non-member adherent"},
@@ -1249,9 +1424,9 @@ def main() -> int:
         {"color": "none", "label": "State: not endorsed"},
     ]
     cets_legend = [
-        {"color": "ratified", "label": "State: ratified"},
+        {"color": "ratified", "label": "State: party (ratification)"},
         {"color": "act", "label": "State: signed only"},
-        {"color": "none", "label": "State: no signature"},
+        {"color": "none", "label": "State: no recorded act"},
     ]
     cyber_party_legend = [
         {"color": "ratified", "label": "State: party (ratification or accession)"},
@@ -1259,13 +1434,13 @@ def main() -> int:
         {"color": "none", "label": "State: no recorded act"},
     ]
     cyber_signature_legend = [
-        {"color": "ratified", "label": "State: ratified"},
+        {"color": "ratified", "label": "State: party (ratification or accession)"},
         {"color": "act", "label": "State: signed only"},
         {"color": "none", "label": "State: no recorded act"},
     ]
     waico_legend = [
         {"color": "act", "label": "State: signed only"},
-        {"color": "none", "label": "State: no signature"},
+        {"color": "none", "label": "State: no recorded act"},
     ]
     political_signature_legend = [
         {"color": "act", "label": "State: political signatory"},
@@ -1452,6 +1627,7 @@ def main() -> int:
         legend_note: str = "",
         fills: dict[str, str] | None = None,
         party_label: str = "",
+        status_titles: dict[str, str] | None = None,
     ) -> dict:
         fills = fills or map_fills(kind)
         colours = {
@@ -1467,16 +1643,25 @@ def main() -> int:
                 + [
                     {
                         "color": "organisation",
-                        "label": "State: member of a participating organisation",
+                        "label": (
+                            "State: member State of a signatory organisation, "
+                            "no individual act"
+                        ),
+                        "hatch": True,
                     }
                 ]
                 + [legend[-1]]
             )
             description += (
-                " Lighter fill: member States of a participating organisation without an individual act."
+                " Hatched fill: member States of a signatory organisation that "
+                "did not act individually."
             )
         legend = [
-            {"color": colours.get(item["color"], item["color"]), "label": item["label"]}
+            {
+                "color": colours.get(item["color"], item["color"]),
+                "label": item["label"],
+                **({"hatch": True} if item.get("hatch") else {}),
+            }
             for item in legend
         ]
         org_html = "".join(
@@ -1498,7 +1683,7 @@ def main() -> int:
             f'</figcaption>'
             f'<p class="map-participation">{esc(sub)}</p>'
             f"{org_html}"
-            f"{render_map(kind, title, description, status, legend=legend, legend_note=legend_note, fills=fills)}"
+            f"{render_map(kind, title, description, status, legend=legend, legend_note=legend_note, fills=fills, status_titles=status_titles)}"
             f"{party_html}"
             f"{declarations_html}"
             f"{about_html}"
@@ -1663,9 +1848,11 @@ def main() -> int:
             f"World map. Filled: {len(paris_call_states)} States listed as supporters of the Paris Call. Sand: States not listed. The European Union is a separate supporter and is not shown on the State map.",
             paris_call_status,
             paris_call_org_notes,
-            endorsement_legend,
+            paris_call_legend,
+            status_titles={"endorsed": "supporter"},
+            party_label="Supporters",
             note=(
-                f"Political endorsement, not signature or ratification. The official supporters "
+                f"Political support, not signature or ratification. The official supporters "
                 f"list names {len(paris_call_states)} States and the European Union; the official "
                 "homepage also counts 81 States. The record is a dated snapshot of a dynamic list; "
                 "the official source repository at commit 916433b contains 81 State files. The "
@@ -1673,7 +1860,7 @@ def main() -> int:
                 "outside this map."
             ),
             legend_note=(
-                f"{len(paris_call_states)} endorsing States + EU · list current 24 November 2026"
+                f"{len(paris_call_states)} supporting States + EU · list current 24 November 2026"
             ),
         ),
         map_figure(
@@ -1907,6 +2094,9 @@ def main() -> int:
     unseen_events = json.loads(UNSEEN.read_text(encoding="utf-8"))
     off_record = json.loads(OFF_RECORD.read_text(encoding="utf-8"))
     off_record_html = off_record_cards(off_record["entries"], by_id)
+    all_sources_html, all_sources_count, all_sources_records = render_all_sources(
+        instruments
+    )
 
     ai_treaties = [inst for inst in instruments if inst["category"] == "ai_treaty"]
     ai_count = len(ai_treaties)
@@ -2066,9 +2256,9 @@ def main() -> int:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>International AI and Cybersecurity Law — Atlas</title>
+<title>International AI and Cybersecurity Law</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI and cybersecurity law. The AI and cybersecurity layers are catalogued and counted separately.">
-<link rel="stylesheet" href="assets/style.css?v=31">
+<link rel="stylesheet" href="assets/style.css?v=32">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -2076,7 +2266,6 @@ def main() -> int:
   <div class="wrap">
     <p class="kicker">Verified corpus · verification {esc(verified_on)}</p>
     <h1>International AI and Cybersecurity Law</h1>
-    <p class="atlas-subtitle">Atlas</p>
     <p class="byline">{total} records · {ai_domain_count} AI-domain · {cyber_layer_count} cyber · {full_texts} full texts · {international_binding} treaty-based ({international_in_force} in force) · {internal_law} internal · {non_binding} non-binding</p>
     <nav class="toc" aria-label="Sections">
       <a href="#index">Index</a>
@@ -2127,7 +2316,7 @@ def main() -> int:
       <div class="map-groups">
         {maps_html}
       </div>
-      <p class="source-note"><strong>Reading the colours.</strong> Each map takes its tone from the flag of the depositing or host government, muted for institutional use: the Council of Europe maps are azure, the UN map a deeper blue, the OECD map a lighter azure, France and the United States navy, the United Kingdom a deeper navy, China an institutional scarlet, India a dark saffron, Brazil a dark ochre and the African Union a dark green. A lighter tone marks member States of a participating international organisation that did not act in their own right. The palette describes the instrument's provenance; it is not a ranking or a statement of political alignment.</p>
+      <p class="source-note"><strong>Reading the colours.</strong> Each map keeps a hue taken from the flag of the depositing or host government, muted for institutional use: Council of Europe azure, a deeper blue for the UN and OECD, navy for France and the United States, deeper navy for the United Kingdom, institutional scarlet for China, dark saffron for India, dark ochre for Brazil and dark green for the African Union. Within that hue, every map uses the same three levels: a mid tone for signature, endorsement or adherence; a dark tone for ratification or accession; and a pale, hatched tone for member States of a signatory international organisation that did not act individually. The fixed steps keep the levels distinct in every palette and in grayscale. The palette describes the instrument's provenance; it is not a ranking or a statement of political alignment.</p>
       <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. “Endorsed” is used for political declarations, which create no treaty signature or ratification; “political signatory” is used for the San Francisco Declaration, which is not a treaty.</p>
       <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} non-binding instruments and {number_word(map_binding_count)} treaties. They include five of the nine cybersecurity treaties in the catalogue: the Budapest Convention, its two protocols, the AU Malabo Convention and the UN Cybercrime Convention. The Arab Convention, both CIS agreements and the SCO Agreement are catalogued but not mapped because their current depositary tables are not stable or publicly accessible. The San Francisco Declaration is mapped as ten political signatories. The BRICS statement is not mapped: it is a collective issue by a fixed 11-member group, and the record already lists those members; a map would only repeat the group's membership. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the UNESCO Recommendation, strategies, codes and company commitments, the BRICS statement, the bilateral UK–US MOU and US–EU TTC commitment, the separate June 2026 AI Opportunity Statement, and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment. The OECD digital-security map is retained because it shows Brazil as the only non-member adherent; it is otherwise an OECD membership map. The four internal-law acts (AI Act, NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) are catalogue-only because they are not international instruments; they are not mapped as if they were treaties.</p>
     </div>
@@ -2201,7 +2390,7 @@ def main() -> int:
             <li>CETS 225 is not in force: {len(cets_entries)} signatures and {len(cets_ratifications)} ratifications; five ratifications, including three member States, are required.</li>
             <li>WAICO: entry into force is not confirmed. {len(waico_states)} founding members are identified of 38 reported; China approved ratification domestically on 6 November 2026 but no deposit was verified, so the number of deposits is unknown.</li>
             <li>{number_word(ai_count).capitalize()} AI-specific treaties: CETS 225 and the WAICO Agreement. This does not mean no others exist, but that no other has been located and verified.</li>
-            <li>The Arab League cybercrime convention is identified but not catalogued: the <a href="http://www.leagueofarabstates.net/ar/legalnetwork/Pages/agreements_details.aspx?RID=73" target="_blank" rel="noopener">official LAS treaty page</a> links a ratification table created in 2018 and undated as a status instrument. It records 18 signatures and 11 ratifications, with the latest deposit in 2017; no current dated depositary table was verified, so no record or map is asserted.</li>
+            <li>The Arab League cybercrime convention is catalogued with its archived Arabic text and a declared English reproduction, but it is not mapped: the <a href="http://www.leagueofarabstates.net/ar/legalnetwork/Pages/agreements_details.aspx?RID=73" target="_blank" rel="noopener">official LAS treaty page</a> links a ratification table created in 2018 and undated as a status instrument. It records 18 signatures and 11 ratifications, with the latest deposit in 2017; no current dated depositary table was verified, so no party list or State map is asserted.</li>
             <li>The UN GGE and OEWG cyber reports are non-binding consensus reports, not texts opened for endorsement. The GGE publishes an official list of 25 appointed experts and the OEWG was open to all UN member States; neither list records supporters or adherents, so they are not catalogued or mapped as if they had a supporter list. The Paris Call supplies the non-binding cyber map instead.</li>
             <li>No international complaint, sanction or judicial review mechanism is established by these instruments.</li>
             <li>Latin America, the Middle East and Central Asia remain uncovered by verified regional instruments.</li>
@@ -2223,7 +2412,7 @@ def main() -> int:
     <div class="wrap">
       <p class="eyebrow">07 · Links and references</p>
       <h2>Where the record comes from</h2>
-      <p class="lede">The corpus is reproducible: every record, stored text and generated file is in the repository, and every official source cited in a record is linked from the catalogue. These are the entry points.</p>
+      <p class="lede">The corpus is reproducible: every record, stored text and generated file is in the repository. Every source cited by a record — official text, registry, official page or non-official reproduction — is listed on this page, so a reader can verify the record from here.</p>
       <div class="link-grid">
         <div class="link-block">
           <h3>Repository</h3>
@@ -2256,6 +2445,11 @@ def main() -> int:
             <li><a href="{REPO}/blob/main/tools/audit_sources.py" target="_blank" rel="noopener">tools/audit_sources.py</a> — reruns the link audit and classifies every official source as reachable, blocked, broken or transient.</li>
           </ul>
         </div>
+        <div class="link-block link-block-wide">
+          <h3>Every source cited in the records</h3>
+          <p class="link-intro">{all_sources_count} links across {all_sources_records} records. Entries marked <em>non-official</em> are transcriptions, reproductions or reports: they are listed so the record can be checked from here, never as a substitute for the official text. Analysis that is not a source for any record is in section 04.</p>
+          {all_sources_html}
+        </div>
       </div>
       <p class="source-note"><strong>Status of the links.</strong> The link audit runs separately from the offline build and is not part of <code>make test</code>. Where an official host no longer resolves, the record cites an Internet Archive snapshot and says so in the source note. A blocked response from an anti-bot host is not treated as a broken link.</p>
     </div>
@@ -2264,8 +2458,9 @@ def main() -> int:
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <p><strong>International AI and Cybersecurity Law</strong><br><span class="footer-atlas">Atlas</span><br>Generated by <code>tools/build_site.py</code> from the verified corpus.</p>
-    <p>Verification: {esc(verified_on)}<br>{total} instruments · {full_texts} full texts</p>
+    <p class="footer-name"><strong>International AI and Cybersecurity Law</strong></p>
+    <p>Generated by <code>tools/build_site.py</code> from the verified corpus.</p>
+    <p>Verification: {esc(verified_on)} · {total} instruments · {full_texts} full texts</p>
   </div>
 </footer>
 <script src="assets/app.js?v=2"></script>

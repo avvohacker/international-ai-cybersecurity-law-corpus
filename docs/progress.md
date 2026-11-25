@@ -48,20 +48,22 @@ Last updated: **2026-11-25**. This file records the current state, the open gaps
 
 ### Atlas and reading room
 
-The generated atlas has seven sections: 00 index, 01 Overlook, 02 seventeen maps, 03 timeline of 63 records and 11 events, 04 reading room, 05 catalogue, 06 method and 07 links. Section 01 gives the four indicators, the legal-form and domain bars, and the composition of the 48 AI-domain and 15 cyber-only records. The separate three-set diagram was removed because it duplicated the catalogue's category field and was not maintainable. Section 07 collects the repository, the official source portals and the archives.
+The generated atlas has seven sections: 00 index, 01 Overlook, 02 seventeen maps, 03 timeline of 63 records and 11 events, 04 reading room, 05 catalogue, 06 method and 07 links. Section 01 gives the four indicators, the legal-form and domain bars, and the composition of the 48 AI-domain and 15 cyber-only records. The separate three-set diagram was removed because it duplicated the catalogue's category field and was not maintainable. Section 07 collects the repository, the official source portals, the archives and every source cited by every record, including non-official reproductions, with the two kinds labelled separately.
 
 The reading-room content is repository data, not Pages-only editorial text: it lives in [`data/off-the-record.json`](../data/off-the-record.json) (16 attributed entries) and is rendered by `tools/build_site.py`. The generated `site/index.html` is gitignored and rebuilt from the records and data.
 
 ### Text acquisition audit (25 November 2026)
 
-`python3 tools/audit_texts.py` classifies every record by whether its full text is stored. The result is: **36 stored**, **17 with an official text located but not stored**, **3 internal-law acts** (official texts on EUR-Lex), **5 paywalled ISO/IEC standards** and **2 summary-only records** (the NATO AI strategy summary and the UK–US MOU summary). The 17 are the remaining metadata-only layer: the digital trade agreements, the political declarations and the two background treaties. Their ids and first official source are in `build/text-availability-audit.json`. The audit is offline and is covered by `make test`.
+`python3 tools/audit_texts.py` classifies every record by whether its full text is stored. The result is: **36 stored**, **17 with an official text located but not stored**, **3 internal-law acts** (official texts on EUR-Lex), **5 paywalled ISO/IEC standards** and **2 summary-only records** (the NATO AI strategy summary and the UK–US MOU summary). The 17 are the remaining metadata-only layer: the digital trade agreements, the political declarations and the two background treaties. Their ids and first official source are in `build/text-availability-audit.json`. The classification itself is offline and is covered by `make test`.
+
+`python3 tools/audit_texts.py --probe` performs a real, capped GET on the first official source of each of the 17 and records the result under `download` in the same JSON. On 25 November 2026: **14 downloaded** (a PDF or an HTML page with content), **2 blocked** by an anti-bot response (`rm.coe.int` for the Council of Europe recommendation on algorithmic systems, HTTP 403, and `commerce.gov` for the G20 objectives, HTTP 403), **1 transient** (the UN Digital Library for HRC resolution 63/15, HTTP 202 with no delivered file) and **0 broken** after repair. The military-AI declaration's former `state.gov` path returned 404; the record now cites the State Department's official 2021–2025 archive of the page and the official PDF text. A blocked or transient result describes the automated download; it is not evidence that the text does not exist.
 
 ### Verification infrastructure
 
 - `catalog/instruments/*.json` is the source of truth; `units.jsonl` is generated from `text/en.txt`; CETS 225 also has `units-fr.jsonl` generated from `text/fr.txt`; manifests record every stored file with a role, size and hash.
 - Page maps use inclusive `char_end`; unit anchors use half-open `char_end`. The validator checks that a unit starts inside its declared first page and that its last character (`end - 1`) is inside its declared final page. It also rejects malformed, non-contiguous or out-of-range page maps without raising.
 - Field-level provenance is retained only where a specific article, paragraph, page section, press release or named list was read; generic locators are rejected by the tests.
-- The 25 November 2026 catalog-wide link audit checked 168 official links in 63 records: 116 resolved, 46 anti-bot, 6 transient and 0 broken. It predates the 15 acquisitions below; the 15 new official sources have not been re-audited. `make test` never accesses the network. The WAICO NPC plain-HTTP warning remains.
+- The 25 November 2026 audit of the fifteen newly acquired instruments checked 68 source entries, including the non-official reproductions listed in section 07 (`build/acquisition-link-audit.json`): **47 resolved, 21 anti-bot, 0 broken and 0 transient**. The anti-bot group is the Council of Europe treaty pages, `rm.coe.int`, OHCHR, the Singapore MTI/METI pages, BSS and two JavaScript-protected pages; each is reachable in a browser. The earlier catalog-wide snapshot (168 official links in 63 records: 116 resolved, 46 anti-bot, 6 transient, 0 broken) predates the new records. `make test` never accesses the network. The WAICO NPC plain-HTTP warning remains.
 - `make validate` currently reports 0 errors and 1 warning: the WAICO NPC source is served over plain HTTP because the host does not complete a TLS handshake from this environment.
 
 ## 2. Gaps
@@ -93,7 +95,7 @@ The reading-room content is repository data, not Pages-only editorial text: it l
 - General international law beyond the VCLT and ICCPR (UN Charter, UDHR, ECHR, Convention 108+, IHL) is an explicit scope limit, not a claim of completeness.
 - Bilateral and national treaty registries have not been systematically searched for AI clauses.
 - Non-English authentic texts and official translations; CETS 225 is authentic in English and French, and both texts are stored and segmented (English in `units.jsonl`, French in `units-fr.jsonl`).
-- The catalog-wide link audit was rerun for the 63-record set on 25 November 2026: 168 official links, 116 resolved, 46 anti-bot, 6 transient, 0 broken. The ten links broken in the previous audit now point to archived official copies or a working official page. The WAICO NPC plain-HTTP warning remains.
+- The fifteen acquired instruments were re-audited on 25 November 2026, including their non-official sources: 68 entries, 47 resolved, 21 anti-bot, 0 broken. The one broken link found by the text probe (the old `state.gov` military-AI path) now points to the official archive and the official PDF. The catalog-wide 168-link snapshot predates these records. The WAICO NPC plain-HTTP warning remains.
 
 ## 3. Next precise searches
 

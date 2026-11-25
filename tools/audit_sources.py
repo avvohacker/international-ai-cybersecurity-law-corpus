@@ -10,6 +10,8 @@ Usage:
     python3 tools/audit_sources.py --json --output build/link-audit.json
     python3 tools/audit_sources.py --scope catalog --workers 8 \\
         --json --output build/catalog-link-audit.json
+    python3 tools/audit_sources.py --scope catalog --include-secondary \\
+        --only waico-establishment-agreement-2026
     python3 tools/audit_sources.py --only waico-establishment-agreement-2026
 
 Exit status:
@@ -130,19 +132,23 @@ def targets() -> list[Target]:
     return sorted(found, key=lambda target: (target.instrument_id, target.source_id))
 
 
-def catalog_targets() -> list[Target]:
-    """Return every official source link in the 45-record catalogue.
+def catalog_targets(include_secondary: bool = False) -> list[Target]:
+    """Return every official source link in the catalogue.
 
     ``official_secondary`` pages are included because they are official
-    government or institutional publications. The two clearly secondary
-    sources are excluded. Duplicate URLs are kept because each result is
-    attached to its record and source id.
+    government or institutional publications. The clearly non-official
+    reproductions and reports are excluded unless ``include_secondary`` is
+    set, which is what section 07 of the site lists. Duplicate URLs are kept
+    because each result is attached to its record and source id.
     """
+    kinds = set(CATALOG_SOURCE_KINDS)
+    if include_secondary:
+        kinds.add("secondary")
     instruments = corpuslib.load_instruments()
     found: list[Target] = []
     for instrument_id, inst in sorted(instruments.items()):
         for source in inst.get("sources") or []:
-            if source.get("kind") not in CATALOG_SOURCE_KINDS:
+            if source.get("kind") not in kinds:
                 continue
             if not source.get("url"):
                 continue
@@ -312,13 +318,22 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--output", type=Path, help="write the JSON report to this path")
     parser.add_argument("--only", help="audit only this instrument id")
     parser.add_argument(
+        "--include-secondary",
+        action="store_true",
+        help="catalog scope: also probe non-official reproductions and reports",
+    )
+    parser.add_argument(
         "--fail-on-blocked",
         action="store_true",
         help="exit 1 when an anti-bot block is found, not only a broken link",
     )
     args = parser.parse_args(argv)
 
-    selected = catalog_targets() if args.scope == "catalog" else targets()
+    selected = (
+        catalog_targets(include_secondary=args.include_secondary)
+        if args.scope == "catalog"
+        else targets()
+    )
     if args.only:
         selected = [target for target in selected if target.instrument_id == args.only]
         if not selected:
