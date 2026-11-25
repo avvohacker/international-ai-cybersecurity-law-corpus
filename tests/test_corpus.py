@@ -287,26 +287,71 @@ class TestCatalogue(unittest.TestCase):
     def test_offline_audit_preserves_recorded_downloads(self) -> None:
         import audit_texts
 
+        baseline = audit_texts.audit()
+        located = next(
+            row
+            for row in baseline["records"]
+            if row["availability"] == "official_text_located"
+            and row["official_source"]
+        )
         previous = {
             "records": [
                 {
-                    "id": "asean-ai-guide-2024",
+                    "id": located["id"],
                     "download": {
                         "outcome": "downloaded",
                         "checked_on": "2026-11-25",
                         "http_status": 200,
+                        "url": located["official_source"],
                     },
                 }
             ]
         }
         data = audit_texts.audit(previous=previous)
-        row = next(
-            row for row in data["records"] if row["id"] == "asean-ai-guide-2024"
-        )
+        row = next(row for row in data["records"] if row["id"] == located["id"])
         self.assertEqual(row["download"]["outcome"], "downloaded")
         self.assertEqual(row["download"]["checked_on"], "2026-11-25")
         self.assertEqual(data["summary"]["download_probe"]["checked"], 1)
         self.assertEqual(data["summary"]["download_probe"]["downloaded"], 1)
+
+    def test_offline_audit_drops_stale_or_acquired_downloads(self) -> None:
+        import audit_texts
+
+        baseline = audit_texts.audit()
+        located = next(
+            row
+            for row in baseline["records"]
+            if row["availability"] == "official_text_located"
+            and row["official_source"]
+        )
+        stored = next(
+            row for row in baseline["records"] if row["availability"] == "stored"
+        )
+        previous = {
+            "records": [
+                {
+                    "id": located["id"],
+                    "download": {
+                        "outcome": "downloaded",
+                        "checked_on": "2026-11-25",
+                        "url": "https://example.org/old-source.pdf",
+                    },
+                },
+                {
+                    "id": stored["id"],
+                    "download": {
+                        "outcome": "downloaded",
+                        "checked_on": "2026-11-25",
+                        "url": stored["official_source"],
+                    },
+                },
+            ]
+        }
+        data = audit_texts.audit(previous=previous)
+        rows = {row["id"]: row for row in data["records"]}
+        self.assertNotIn("download", rows[located["id"]])
+        self.assertNotIn("download", rows[stored["id"]])
+        self.assertNotIn("download_probe", data["summary"])
 
     def test_text_availability_audit_covers_every_record(self) -> None:
         import audit_texts
@@ -1856,6 +1901,10 @@ class TestLinkAudit(unittest.TestCase):
         classify = self.audit.classify
         self.assertEqual(classify(200, {"Server": "nginx"}, "<html>ok</html>"), ("ok", "http_2xx"))
         self.assertEqual(classify(301, {}, ""), ("transient", "http_301"))
+        self.assertEqual(
+            classify(307, {}, "<script>sucuri_cloudproxy_js</script>"),
+            ("anti_bot", "challenge_on_307"),
+        )
         self.assertEqual(classify(403, {}, ""), ("anti_bot", "http_403"))
         self.assertEqual(classify(405, {"Server": "nginx"}, ""), ("anti_bot", "http_405"))
         self.assertEqual(classify(429, {}, ""), ("anti_bot", "http_429"))

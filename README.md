@@ -133,10 +133,10 @@ The official links used by the seventeen instrument panels, and all official sou
 
 ```bash
 make audit-links          # seventeen map panels
-make audit-catalog-links  # every official source entry in all 63 records
+make audit-catalog-links  # every source entry in all 63 records, non-official included
 ```
 
-The catalog-wide run writes `build/catalog-link-audit.json`; `make audit-acquisitions` audits the fifteen acquired instruments, including the non-official reproductions listed in section 07, and writes `build/acquisition-link-audit.json` with the audit date in the report. Both audits are network-only and classify broken links separately from anti-bot blocks and transient errors; `make test` never touches the network. The 25 November 2026 acquisition run checked 68 source entries: 47 resolved, 21 anti-bot, 0 broken. The catalog-wide 168-link snapshot of the same day predates the new records.
+The catalog-wide run writes `build/catalog-link-audit.json`; `make audit-acquisitions` audits the fifteen acquired instruments, including the non-official reproductions listed in section 07, and writes `build/acquisition-link-audit.json` with the audit date in the report. Both audits are network-only and classify broken links separately from anti-bot blocks and transient errors; `make test` never touches the network. The 25 November 2026 catalog-wide run, non-official sources included, checked 190 entries in all 63 records (184 official and 6 non-official): 136 resolved, 51 anti-bot, 0 broken and 3 transient. The three transient results are two `industry.gov.au` pages and one `dfat.gov.au` page whose Akamai edge closes automated connections; both hosts load in a browser. That run supersedes the earlier 168-link official-only snapshot. The fifteen-instrument run checked 68 entries: 47 resolved, 21 anti-bot, 0 broken.
 
 The static output lives in `site/`; run `make site` to generate `site/index.html` locally, or publish it with the workflow in `.github/workflows/pages.yml`. The generated HTML is not tracked, so a fresh clone rebuilds it from the records. Pages is already enabled with **Settings → Pages → Source: GitHub Actions**; the workflow publishes on push to `main`. After the workflow runs, the page is served at `https://avvohacker.github.io/international-ai-cybersecurity-law-corpus/`. The workflow rebuilds the catalogue and the atlas before uploading, so the published page cannot silently drift from the records.
 

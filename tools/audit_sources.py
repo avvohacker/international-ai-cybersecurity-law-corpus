@@ -71,6 +71,7 @@ ANTI_BOT_MARKERS = (
     "request blocked",
     "enable javascript and cookies",
     "verify you are human",
+    "sucuri_cloudproxy",
 )
 BOT_SERVERS = ("cloudflare", "akamai", "datadome", "imperva", "sucuri")
 
@@ -281,6 +282,8 @@ def classify(
     if status in (404, 410):
         return "broken", f"http_{status}"
     if 300 <= status < 400:
+        if has_anti_bot_marker(status, headers, body):
+            return "anti_bot", f"challenge_on_{status}"
         return "transient", f"http_{status}"
     if 500 <= status < 600:
         return "transient", f"http_{status}"

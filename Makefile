@@ -19,9 +19,10 @@ site: build
 audit-links:
 	$(PY) tools/audit_sources.py
 
-# Network-only audit of every official source link in all catalogue records.
+# Network-only audit of every source link in all catalogue records, including
+# the non-official reproductions and reports listed in section 07.
 audit-catalog-links:
-	$(PY) tools/audit_sources.py --scope catalog --workers 8 --output build/catalog-link-audit.json
+	$(PY) tools/audit_sources.py --scope catalog --include-secondary --timeout 30 --workers 8 --output build/catalog-link-audit.json
 
 # Network-only audit of the fifteen instruments acquired together, including
 # their non-official sources, refreshed in build/acquisition-link-audit.json.

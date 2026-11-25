@@ -1,18 +1,19 @@
 {
-  "checked": 168,
+  "checked": 190,
+  "audited_on": "2026-11-25",
   "scope": "catalog",
   "instruments": 63,
   "summary": {
-    "ok": 116,
-    "anti_bot": 46,
+    "ok": 136,
+    "anti_bot": 51,
     "broken": 0,
-    "transient": 6
+    "transient": 3
   },
   "results": [
     {
       "instrument_id": "afcfta-digital-trade-protocol-2024",
       "source_id": "au-agreement",
-      "label": "African Union",
+      "label": "AfCFTA Agreement",
       "url": "https://au.int/sites/default/files/treaties/36437-treaty-consolidated_text_on_cfta_-_en.pdf",
       "status": 200,
       "outcome": "ok",
@@ -22,7 +23,7 @@
     {
       "instrument_id": "afcfta-digital-trade-protocol-2024",
       "source_id": "au-annexes",
-      "label": "African Union",
+      "label": "AU compiled annexes",
       "url": "https://au.int/sites/default/files/treaties/44963-ax-ENG_Circulation_Digital_Trade_Compiled_Certified_Legal_Instruments_38thAssembly_Feb_2025_27_May2025.pdf",
       "status": 200,
       "outcome": "ok",
@@ -32,7 +33,7 @@
     {
       "instrument_id": "afcfta-digital-trade-protocol-2024",
       "source_id": "au-page",
-      "label": "African Union",
+      "label": "AU treaty page",
       "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade",
       "status": 200,
       "outcome": "ok",
@@ -42,7 +43,7 @@
     {
       "instrument_id": "afcfta-digital-trade-protocol-2024",
       "source_id": "au-page-2024",
-      "label": "African Union",
+      "label": "AU treaty page (2024)",
       "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade-0",
       "status": 200,
       "outcome": "ok",
@@ -52,8 +53,28 @@
     {
       "instrument_id": "afcfta-digital-trade-protocol-2024",
       "source_id": "au-progress",
-      "label": "African Union",
+      "label": "AU progress report",
       "url": "https://archives.au.int/bitstream/handle/123456789/10707/Assembly%20AU%209%20(XXXVIII)%20_E.pdf?isAllowed=y&sequence=1",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "afcfta-digital-trade-protocol-2024",
+      "source_id": "stored-annexes",
+      "label": "Stored annexes",
+      "url": "https://au.int/sites/default/files/treaties/44963-ax-ENG_Circulation_Digital_Trade_Compiled_Certified_Legal_Instruments_38thAssembly_Feb_2025_27_May2025.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "afcfta-digital-trade-protocol-2024",
+      "source_id": "stored-protocol",
+      "label": "Stored protocol text",
+      "url": "https://au.int/sites/default/files/treaties/44963-treaty-EN_-_Protocol_to_AfCFTA_Agreement_on_Digital_Trade.pdf",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -81,6 +102,26 @@
     },
     {
       "instrument_id": "arab-convention-it-offences-2010",
+      "source_id": "stored-arabic",
+      "label": "Archived Arabic text",
+      "url": "https://web.archive.org/web/20240423123401/https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "arab-convention-it-offences-2010",
+      "source_id": "stored-english-reproduction",
+      "label": "AsianLaws English reproduction",
+      "url": "https://www.asianlaws.org/gcld/cyberlawdb/GCC/Arab%20Convention%20on%20Combating%20Information%20Technology%20Offences.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "arab-convention-it-offences-2010",
       "source_id": "unodc-compendium",
       "label": "UNODC",
       "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf",
@@ -95,8 +136,8 @@
       "label": "ASEAN Secretariat",
       "url": "https://asean.org/book/asean-guide-on-ai-governance-and-ethics",
       "status": 307,
-      "outcome": "transient",
-      "reason": "http_307",
+      "outcome": "anti_bot",
+      "reason": "challenge_on_307",
       "detail": ""
     },
     {
@@ -112,7 +153,7 @@
     {
       "instrument_id": "au-continental-ai-strategy-2024",
       "source_id": "au-page",
-      "label": "African Union",
+      "label": "AU treaty page",
       "url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy",
       "status": 200,
       "outcome": "ok",
@@ -132,7 +173,7 @@
     {
       "instrument_id": "au-malabo-convention-2014",
       "source_id": "au-status-list",
-      "label": "African Union",
+      "label": "AU status list",
       "url": "https://au.int/sites/default/files/AFRICAN%20UNION%20CONVENTION%20ON%20CYBER%20SECURITY%20AND%20PERSONAL%20DATA%20PROTECTION%20%281%29.pdf",
       "status": 200,
       "outcome": "ok",
@@ -142,7 +183,7 @@
     {
       "instrument_id": "au-malabo-convention-2014",
       "source_id": "au-text",
-      "label": "African Union",
+      "label": "AU official text",
       "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf",
       "status": 200,
       "outcome": "ok",
@@ -152,11 +193,31 @@
     {
       "instrument_id": "au-malabo-convention-2014",
       "source_id": "au-treaty-page",
-      "label": "African Union",
+      "label": "AU treaty page",
       "url": "https://au.int/en/treaties/african-union-convention-cyber-security-and-personal-data-protection",
       "status": 200,
       "outcome": "anti_bot",
       "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "au-malabo-convention-2014",
+      "source_id": "stored-official-scan",
+      "label": "Stored official scan",
+      "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "au-malabo-convention-2014",
+      "source_id": "stored-senlii-transcription",
+      "label": "SenLII English transcription",
+      "url": "https://senlii.org/en/akn/aa-au/act/convention/2014/cyber-security-and-personal-data-protection/eng@2014-06-27/source.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -232,7 +293,7 @@
     {
       "instrument_id": "budapest-convention-2001",
       "source_id": "coe-budapest-page",
-      "label": "Council of Europe Cybercrime",
+      "label": "CoE Budapest Convention page",
       "url": "https://www.coe.int/en/web/cybercrime/the-budapest-convention",
       "status": 403,
       "outcome": "anti_bot",
@@ -242,7 +303,7 @@
     {
       "instrument_id": "budapest-convention-2001",
       "source_id": "coe-declarations",
-      "label": "CETS 225 declarations",
+      "label": "Council of Europe declarations",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=185&codeNature=0",
       "status": 403,
       "outcome": "anti_bot",
@@ -252,7 +313,7 @@
     {
       "instrument_id": "budapest-convention-2001",
       "source_id": "coe-status-chart",
-      "label": "Council of Europe Treaty Office",
+      "label": "Treaty Office status chart",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=185",
       "status": 403,
       "outcome": "anti_bot",
@@ -262,7 +323,7 @@
     {
       "instrument_id": "budapest-convention-2001",
       "source_id": "coe-text",
-      "label": "CETS 225 text",
+      "label": "Council of Europe treaty text",
       "url": "https://rm.coe.int/1680081561",
       "status": 403,
       "outcome": "anti_bot",
@@ -272,8 +333,18 @@
     {
       "instrument_id": "budapest-convention-2001",
       "source_id": "coe-treaty-page",
-      "label": "Council of Europe Treaty Office",
+      "label": "CoE treaty page",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=185",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "stored-official",
+      "label": "Stored official text",
+      "url": "https://rm.coe.int/1680081561",
       "status": 403,
       "outcome": "anti_bot",
       "reason": "http_403",
@@ -352,7 +423,7 @@
     {
       "instrument_id": "cis-it-crimes-agreement-2018",
       "source_id": "cis-document",
-      "label": "CIS Executive Committee",
+      "label": "CIS document",
       "url": "https://eccis.org/document/5864",
       "status": 200,
       "outcome": "ok",
@@ -362,7 +433,7 @@
     {
       "instrument_id": "cis-it-crimes-agreement-2018",
       "source_id": "cis-registry",
-      "label": "CIS Executive Committee",
+      "label": "CIS legal register",
       "url": "https://eccis.org/reestrv2/doc/5864",
       "status": 200,
       "outcome": "ok",
@@ -372,8 +443,28 @@
     {
       "instrument_id": "cis-it-crimes-agreement-2018",
       "source_id": "cis-russia-mfa",
-      "label": "Ministry of Foreign Affairs of Russia",
+      "label": "Russian MFA treaty page",
       "url": "https://www.mid.ru/ru/foreign_policy/international_contracts/international_contracts/multilateral_contract/53417",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "cis-it-crimes-agreement-2018",
+      "source_id": "cis-russian-register",
+      "label": "Russian legal register",
+      "url": "https://meganorm.ru/mega_doc/dop1/10/postanovlenie_plenuma_verkhovnogo_suda_rf_ot_15_12_2022_N_37/0/soglashenie_o_sotrudnichestve_gosudarstv_-_uchastnikov.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "cis-it-crimes-agreement-2018",
+      "source_id": "stored-official-russian",
+      "label": "Stored official Russian text",
+      "url": "https://eccis.org/document/5864",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -412,7 +503,7 @@
     {
       "instrument_id": "coe-cets-224",
       "source_id": "coe-declarations-224",
-      "label": "Council of Europe Treaty Office",
+      "label": "CETS 224 declarations",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=224&codeNature=0",
       "status": 403,
       "outcome": "anti_bot",
@@ -422,7 +513,7 @@
     {
       "instrument_id": "coe-cets-224",
       "source_id": "coe-status-chart",
-      "label": "Council of Europe Treaty Office",
+      "label": "Treaty Office status chart",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=224",
       "status": 403,
       "outcome": "anti_bot",
@@ -432,11 +523,21 @@
     {
       "instrument_id": "coe-cets-224",
       "source_id": "coe-treaty-page",
-      "label": "Council of Europe Treaty Office",
+      "label": "CoE treaty page",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=224",
       "status": 403,
       "outcome": "anti_bot",
       "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-224",
+      "source_id": "stored-wayback-official",
+      "label": "Official PDF, archived copy",
+      "url": "https://web.archive.org/web/20220516075219/https://rm.coe.int/1680a49dab",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -452,7 +553,7 @@
     {
       "instrument_id": "coe-cets-225",
       "source_id": "coe-declarations",
-      "label": "CETS 225 declarations",
+      "label": "Council of Europe declarations",
       "url": "https://www.coe.int/en/web/conventions/full-list2?codeNature=0&module=declarations-by-treaty&numSte=225",
       "status": 403,
       "outcome": "anti_bot",
@@ -462,7 +563,7 @@
     {
       "instrument_id": "coe-cets-225",
       "source_id": "coe-status",
-      "label": "CETS 225 status chart",
+      "label": "Treaty Office status chart",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225",
       "status": 403,
       "outcome": "anti_bot",
@@ -472,7 +573,7 @@
     {
       "instrument_id": "coe-cets-225",
       "source_id": "coe-text",
-      "label": "CETS 225 text",
+      "label": "Council of Europe treaty text",
       "url": "https://rm.coe.int/1680afae3c",
       "status": 403,
       "outcome": "anti_bot",
@@ -542,7 +643,7 @@
     {
       "instrument_id": "coe-ets-189",
       "source_id": "coe-declarations-189",
-      "label": "Council of Europe Treaty Office",
+      "label": "ETS 189 declarations",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=189&codeNature=0",
       "status": 403,
       "outcome": "anti_bot",
@@ -552,7 +653,7 @@
     {
       "instrument_id": "coe-ets-189",
       "source_id": "coe-status-chart",
-      "label": "Council of Europe Treaty Office",
+      "label": "Treaty Office status chart",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=189",
       "status": 403,
       "outcome": "anti_bot",
@@ -562,11 +663,21 @@
     {
       "instrument_id": "coe-ets-189",
       "source_id": "coe-treaty-page",
-      "label": "Council of Europe Treaty Office",
+      "label": "CoE treaty page",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=189",
       "status": 403,
       "outcome": "anti_bot",
       "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-ets-189",
+      "source_id": "stored-wayback-official",
+      "label": "Official PDF, archived copy",
+      "url": "https://web.archive.org/web/2024/https://rm.coe.int/168008160f",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -604,10 +715,10 @@
       "source_id": "depa-mfat-overview",
       "label": "New Zealand Ministry of Foreign Affairs and Trade",
       "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/overview",
-      "status": null,
-      "outcome": "transient",
-      "reason": "timeout",
-      "detail": "TimeoutError"
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "depa-2020",
@@ -632,7 +743,7 @@
     {
       "instrument_id": "ecowas-cybercrime-directive-2011",
       "source_id": "africanlii-directive",
-      "label": "AfricanLII",
+      "label": "AfricanLII directive page",
       "url": "https://africanlii.org/en/akn/aa-ecowas/act/directive/2011/8-1/eng@2011-12-31",
       "status": 403,
       "outcome": "anti_bot",
@@ -642,7 +753,17 @@
     {
       "instrument_id": "ecowas-cybercrime-directive-2011",
       "source_id": "ecowas-directive",
-      "label": "ECOWAS",
+      "label": "ECOWAS directive",
+      "url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "ecowas-cybercrime-directive-2011",
+      "source_id": "stored-official-scan",
+      "label": "Stored official scan",
       "url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf",
       "status": 200,
       "outcome": "ok",
@@ -812,8 +933,18 @@
     {
       "instrument_id": "iccpr-1966",
       "source_id": "ohchr",
-      "label": "OHCHR",
+      "label": "OHCHR treaty page",
       "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "iccpr-1966",
+      "source_id": "stored-official",
+      "label": "Stored official text",
+      "url": "https://www.ohchr.org/sites/default/files/ccpr.pdf",
       "status": 403,
       "outcome": "anti_bot",
       "reason": "http_403",
@@ -872,7 +1003,7 @@
     {
       "instrument_id": "ksdpa-2022",
       "source_id": "ksdpa-text",
-      "label": "Ministry of Trade, Industry and Energy (Korea)",
+      "label": "KSDPA text",
       "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/ksdpa/1/KSDPA_eng.pdf",
       "status": 200,
       "outcome": "ok",
@@ -882,12 +1013,22 @@
     {
       "instrument_id": "ksdpa-2022",
       "source_id": "mti-page",
-      "label": "Ministry of Energy, Trade and Industry, Singapore",
+      "label": "Singapore MTI page",
       "url": "https://www.meti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/ksdpa",
       "status": 404,
       "outcome": "anti_bot",
       "reason": "known_browser_only",
       "detail": "Singapore METI serves 404 to automated clients; the page was read through the extraction tool"
+    },
+    {
+      "instrument_id": "ksdpa-2022",
+      "source_id": "stored-official-reproduction",
+      "label": "Stored official copy",
+      "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/ksdpa/1/KSDPA_eng.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "nato-ai-strategy-2024",
@@ -1183,11 +1324,21 @@
       "instrument_id": "political-declaration-military-ai-2023",
       "source_id": "state-page",
       "label": "State Department page",
-      "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/",
-      "status": 404,
-      "outcome": "anti_bot",
-      "reason": "known_browser_only",
-      "detail": "State Department serves 404/405 to automated clients"
+      "url": "https://2021-2025.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "political-declaration-military-ai-2023",
+      "source_id": "state-text-pdf",
+      "label": "U.S. Department of State",
+      "url": "https://www.state.gov/wp-content/uploads/2023/10/Latest-Version-Political-Declaration-on-Responsible-Military-Use-of-AI-and-Autonomy.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "sadea-2020",
@@ -1220,19 +1371,29 @@
       "detail": ""
     },
     {
+      "instrument_id": "san-francisco-declaration-2026",
+      "source_id": "wikipedia-sf",
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/San_Francisco_Declaration_on_the_Secure_Foundations_of_Enduring_Prosperity",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
       "instrument_id": "sco-information-security-agreement-2009",
       "source_id": "hklii-sco",
       "label": "Hong Kong Legal Information Institute",
       "url": "https://hklii.hk/en/legis/hkts/2011/2",
-      "status": null,
-      "outcome": "transient",
-      "reason": "timeout",
-      "detail": "URLError"
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "sco-information-security-agreement-2009",
       "source_id": "sco-agreement",
-      "label": "Shanghai Cooperation Organization",
+      "label": "SCO agreement page",
       "url": "https://eng.sectsco.org/20090616/207486.html",
       "status": 200,
       "outcome": "ok",
@@ -1242,7 +1403,17 @@
     {
       "instrument_id": "sco-information-security-agreement-2009",
       "source_id": "sco-text",
-      "label": "Shanghai Cooperation Organization",
+      "label": "SCO agreement text",
+      "url": "https://eng.sectsco.org/files/207508/207508",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "sco-information-security-agreement-2009",
+      "source_id": "stored-official",
+      "label": "Stored official text",
       "url": "https://eng.sectsco.org/files/207508/207508",
       "status": 200,
       "outcome": "ok",
@@ -1282,7 +1453,7 @@
     {
       "instrument_id": "uksdea-2022",
       "source_id": "mti-page",
-      "label": "Ministry of Trade and Industry, Singapore",
+      "label": "Singapore MTI page",
       "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea",
       "status": 404,
       "outcome": "anti_bot",
@@ -1291,9 +1462,29 @@
     },
     {
       "instrument_id": "uksdea-2022",
-      "source_id": "uk-treaty",
-      "label": "UK Foreign, Commonwealth and Development Office",
+      "source_id": "stored-official",
+      "label": "Stored official text",
       "url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "uksdea-2022",
+      "source_id": "uk-treaty",
+      "label": "UK treaty series PDF",
+      "url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "un-cybercrime-convention-2024",
+      "source_id": "stored-certified",
+      "label": "Stored certified copy",
+      "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -1312,7 +1503,7 @@
     {
       "instrument_id": "un-cybercrime-convention-2024",
       "source_id": "untc-declarations",
-      "label": "United Nations Treaty Collection",
+      "label": "UN Treaty Collection declarations",
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en",
       "status": 200,
       "outcome": "ok",
@@ -1601,8 +1792,18 @@
     },
     {
       "instrument_id": "vclt-1969",
+      "source_id": "stored-official",
+      "label": "Stored official text",
+      "url": "https://legal.un.org/ilc/texts/instruments/english/conventions/1_1_1969.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "vclt-1969",
       "source_id": "un-treaty-collection",
-      "label": "United Nations Treaty Collection",
+      "label": "UN Treaty Collection",
       "url": "https://treaties.un.org/Pages/ViewDetailsIII.aspx?src=TREATY&mtdsg_no=XXIII-1&chapter=23&Temp=mtdsg3&clang=_en",
       "status": 200,
       "outcome": "ok",
@@ -1617,6 +1818,16 @@
       "status": 403,
       "outcome": "anti_bot",
       "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "digwatch-text",
+      "label": "Digital Watch Observatory (Geneva Internet Platform)",
+      "url": "https://dig.watch/resource/agreement-on-the-establishment-of-the-world-artificial-intelligence-cooperation-organization",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
       "detail": ""
     },
     {
@@ -1672,11 +1883,21 @@
     {
       "instrument_id": "waico-establishment-agreement-2026",
       "source_id": "npc-agreement-text",
-      "label": "National People's Congress of the People's Republic of China",
+      "label": "NPC agreement text",
       "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "thestar-singapore-invite",
+      "label": "The Star (Malaysia), reporting The Straits Times",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/09/singapore-considering-invitation-to-join-china-led-ai-bloc",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
       "detail": ""
     },
     {

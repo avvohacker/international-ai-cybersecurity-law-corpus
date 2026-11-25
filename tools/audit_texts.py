@@ -249,9 +249,11 @@ def audit(
 ) -> dict[str, Any]:
     """Classify every record, optionally probing and merging earlier results.
 
-    Without ``probe`` the download results already stored in ``previous`` (the
-    existing JSON report) are copied onto the matching records, so an offline
-    rerun refreshes the classification without deleting the last probe.
+    Without ``probe`` a stored download result is copied onto a record only
+    when that record is still ``official_text_located`` and its first official
+    source is the same URL that was probed. A record that has since been
+    acquired, or whose source link has changed, must not inherit a stale
+    download block from the previous report.
     """
     records = []
     for path in sorted(CATALOG_DIR.glob("*.json")):
@@ -278,8 +280,14 @@ def audit(
             if old.get("download")
         }
         for row in records:
-            if row["id"] in stored_downloads:
-                row["download"] = stored_downloads[row["id"]]
+            download = stored_downloads.get(row["id"])
+            if not download:
+                continue
+            if row["availability"] != "official_text_located":
+                continue
+            if download.get("url") != row.get("official_source"):
+                continue
+            row["download"] = download
     counts = Counter(row["availability"] for row in records)
     summary: dict[str, Any] = {
         "stored": counts["stored"],
