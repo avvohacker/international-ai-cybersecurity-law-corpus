@@ -4,7 +4,7 @@
   "dates": {
     "adopted": "2024-05-17",
     "entered_into_force": null,
-    "notes": "Adopted by the Committee of Ministers on 17 May 2024 at its 133rd Session; opened for signature at Vilnius on 5 September 2024. Published in the EU Official Journal on 13 May 2026 (OJ L, 2026/1081). Not in force on the verification date; party data checked against the Treaty Office chart status of 23 November 2026.",
+    "notes": "Adopted by the Committee of Ministers on 17 May 2024 at its 133rd Session; opened for signature at Vilnius on 5 September 2024. Published in the EU Official Journal on 13 May 2026 (OJ L, 2026/1081). Not in force on the verification date; party data checked against the Treaty Office chart status of 25 November 2026.",
     "opened_for_signature": "2024-09-05",
     "published": "2026-05-13",
     "verified_on": "2026-11-25"
@@ -75,7 +75,7 @@
   },
   "parties": {
     "act": "treaty_signature",
-    "as_of": "2026-11-23",
+    "as_of": "2026-11-25",
     "counts": {
       "ratifications": {
         "basis": "verified_total",
@@ -385,7 +385,7 @@
     }
   ],
   "status": "not_in_force",
-  "status_note": "As of the Treaty Office chart status date 23 November 2026: 21 signatories in total (19 signatures not followed by ratification and 2 ratifications), and 19 signatures without ratification. The two ratifications are Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). Article 30(3) requires five ratifications including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. Not in force.",
+  "status_note": "As of the Treaty Office chart status date 25 November 2026: 21 signatories in total (19 signatures not followed by ratification and 2 ratifications), and 19 signatures without ratification. The two ratifications are Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). Article 30(3) requires five ratifications including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. Not in force.",
   "text": {
     "extraction_note": "The stored English text is textually identical, on a whitespace-insensitive comparison, to the 12-page Council of Europe Treaty Series PDF of CETS 225 acquired on 25 November 2026. Running headers, underscore rules, page numbers and line wrapping were removed. The certified bilingual copy acquired on 25 November 2026 includes the corrected French text; the authentic French pages (3, 5, ..., 27 of the 27-page PDF) were extracted to text/fr.txt with page offsets in pages-fr.json. The French text is segmented into 36 article units in units-fr.jsonl; pages-fr.json records both the 1-based French sequence and the corresponding PDF page. The English column of the certified copy has not been re-diffed page by page against the stored English transcription.",
     "files": [
@@ -423,9 +423,14 @@
         "result": "Five ratifications including at least three Council of Europe member States; three months after the fifth deposit, entering into force on the first day of the following month."
       },
       {
-        "check": "Per-party signature and ratification table checked against the official Treaty Office chart, status 23/11/2026.",
-        "date": "2026-11-23",
-        "result": "21 signatories; 19 signatures without ratification; 2 ratifications: Bosnia and Herzegovina 28/10/2026 and the European Union 15/05/2026; not in force."
+        "check": "Conference of the Parties status re-checked against the Convention text and the not-in-force status.",
+        "date": "2026-11-25",
+        "result": "Still not in force (2 of the 5 required ratifications); no Conference of the Parties, rules of procedure or reporting format constituted. Articles 23(4) and 24(2) assign the rules and the reporting format to the Conference itself."
+      },
+      {
+        "check": "Per-party signature and ratification table checked against the official Treaty Office chart, status 25/11/2026.",
+        "date": "2026-11-25",
+        "result": "21 signatories; 19 signatures without ratification; 2 ratifications: Bosnia and Herzegovina 28/10/2026 and the European Union 15/05/2026; no deposits after 28/10/2026; not in force; unchanged since the previous check."
       },
       {
         "check": "Reservations and declarations page checked for treaty 225, status 23/11/2026.",
