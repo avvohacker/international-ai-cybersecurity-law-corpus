@@ -1,15 +1,25 @@
 {
-  "checked": 71,
+  "checked": 73,
   "audited_on": "2026-11-25",
   "scope": "acquisition-batch",
   "instruments": 15,
   "summary": {
-    "ok": 50,
+    "ok": 52,
     "anti_bot": 21,
     "broken": 0,
     "transient": 0
   },
   "results": [
+    {
+      "instrument_id": "afcfta-digital-trade-protocol-2024",
+      "source_id": "assembly-dec-975",
+      "label": "African Union",
+      "url": "https://au.int/sites/default/files/decisions/46188-Assembly_Decisions_31_March_E.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
     {
       "instrument_id": "afcfta-digital-trade-protocol-2024",
       "source_id": "au-agreement",
@@ -55,6 +65,16 @@
       "source_id": "au-progress",
       "label": "AU progress report",
       "url": "https://archives.au.int/bitstream/handle/123456789/10707/Assembly%20AU%209%20(XXXVIII)%20_E.pdf?isAllowed=y&sequence=1",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "afcfta-digital-trade-protocol-2024",
+      "source_id": "au-treaty-index",
+      "label": "African Union",
+      "url": "https://au.int/en/treaties",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",

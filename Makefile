@@ -1,5 +1,10 @@
 PY ?= python3
 
+# Two workers for the audits that probe archived copies: web.archive.org
+# returns connection errors to eight concurrent probes, which the classifier
+# reports as broken links.
+ARCHIVE_AUDIT_WORKERS ?= 2
+
 .PHONY: validate build test extract segment checksums site audit-links audit-catalog-links audit-acquisitions audit-doc-links
 
 validate:
@@ -22,12 +27,12 @@ audit-links:
 # Network-only audit of every source link in all catalogue records, including
 # the non-official reproductions and reports listed in section 07.
 audit-catalog-links:
-	$(PY) tools/audit_sources.py --scope catalog --include-secondary --timeout 30 --workers 8 --output build/catalog-link-audit.json
+	$(PY) tools/audit_sources.py --scope catalog --include-secondary --timeout 30 --workers $(ARCHIVE_AUDIT_WORKERS) --output build/catalog-link-audit.json
 
 # Network-only audit of the fifteen instruments acquired together, including
 # their non-official sources, refreshed in build/acquisition-link-audit.json.
 audit-acquisitions:
-	$(PY) tools/audit_sources.py --scope acquisition-batch --include-secondary --workers 8 --output build/acquisition-link-audit.json
+	$(PY) tools/audit_sources.py --scope acquisition-batch --include-secondary --workers $(ARCHIVE_AUDIT_WORKERS) --output build/acquisition-link-audit.json
 
 # Network-only audit of the external citations in the long-form account;
 # writes build/doc-link-audit.json.

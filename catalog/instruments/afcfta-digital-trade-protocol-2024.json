@@ -4,20 +4,22 @@
   "dates": {
     "adopted": "2024-02-18",
     "entered_into_force": null,
-    "notes": "Adopted by the AU Assembly on 18 February 2024. Eight annexes, including the Annex on Emerging and Advanced Technologies, were adopted by the 38th Ordinary Session of the Assembly in February 2025. Entry into force is governed by Article 47 of the Protocol and Article 23(2) of the AfCFTA Agreement (22 ratifications). No entry-into-force date or ratification table was displayed on the AU treaty page consulted, and no depositary register was read.",
-    "verified_on": "2026-11-24"
+    "notes": "Adopted by the AU Assembly on 18 February 2024. Eight annexes, including the Annex on Emerging and Advanced Technologies, were adopted by the 38th Ordinary Session of the Assembly in February 2025 (Decision 911(XXXVIII), para. 12). Entry into force is governed by Article 47(2) of the Protocol, which applies Articles 23(2) and 23(4) of the AfCFTA Agreement (22 ratifications, then 30 days). The AU treaty page and the general treaties index consulted on 25 November 2026 display no entry-into-force date, no ratification table and no status list for this Protocol; no depositary notification was located. The 39th Assembly (Decision 975(XXXIX), para. 5, 14-15 February 2026) still urged Member States to ratify the Protocol by the end of 2026.",
+    "verified_on": "2026-11-25"
   },
   "domains": [
     "ai"
   ],
   "gaps": [
-    "Entry into force is not confirmed; the AU treaty page displays no entry-into-force date or ratification table.",
-    "No depositary register was read; the number of ratifications and deposits is unknown, not zero.",
+    "Entry into force is not confirmed: Article 47(2) applies Articles 23(2) and 23(4) of the AfCFTA Agreement, so the threshold is the 22nd instrument of ratification; the AU treaty page and index display no entry-into-force date and no depositary notification was located.",
+    "No depositary register or status list for this Protocol was published on the AU treaty portal as of 25 November 2026; the treaties index leaves the entry-into-force and status-list fields blank. The number of ratifications and deposits is unknown, not zero.",
     "The Annex on Emerging and Advanced Technologies was read for Articles 1, 4, 5 and 12, not end-to-end.",
     "The Annex's obligations are real ('shall') but apply only to State Parties and only once the Protocol is in force for them.",
     "Only the English texts were read; the five other authentic-language texts were not acquired.",
     "The English main Protocol and the English Annex on Emerging and Advanced Technologies are stored; the other five authentic-language versions are not.",
-    "The Annex is stored as a six-page extract of the official compiled annexes; the complete 52-page compilation is also stored, but only the emerging-technologies annex is segmented."
+    "The Annex is stored as a six-page extract of the official compiled annexes; the complete 52-page compilation is also stored, but only the emerging-technologies annex is segmented.",
+    "The Protocol contains no provision for national schedules of commitments and none is published on the AU portal, so no digital-trade schedule exists to acquire; the annexes are integral parts of the Protocol once adopted (Article 46(3)).",
+    "No new digital-trade annex was adopted by the 39th Assembly in February 2026: the annexes adopted then concern intellectual property."
   ],
   "id": "afcfta-digital-trade-protocol-2024",
   "instrument_type": "protocol",
@@ -59,7 +61,7 @@
   },
   "parties": {
     "act": "treaty_signature",
-    "as_of": "2026-11-23",
+    "as_of": "2026-11-25",
     "counts": {
       "ratifications": {
         "basis": "unknown",
@@ -80,27 +82,30 @@
       "au-page",
       "au-agreement"
     ],
-    "summary": "The AU treaty page displays no entry-into-force date and no ratification table for this Protocol; no depositary register was read. The number of ratifications is unknown, not zero, and no count is asserted.",
+    "summary": "The AU treaty page and index display no entry-into-force date, no ratification table and no status list for this Protocol. Article 47(2) applies the AfCFTA Agreement Article 23(2) threshold of 22 ratifications. Decision 975(XXXIX) of February 2026 still urged Member States to ratify by the end of 2026. The number of ratifications is unknown, not zero, and no count is asserted.",
     "unknowns": [
-      "Ratification status and deposits were not read from the AU depositary; the total is unknown and no count is asserted.",
-      "No notification of entry into force was located on the AU treaty page consulted; this is not proof that the Protocol is out of force."
+      "No ratification table or status list for this Protocol was published on the AU treaty portal as of 25 November 2026; the treaties index leaves the entry-into-force and status-list fields blank. The number of ratifications is unknown, not zero.",
+      "No notification of entry into force was located on the AU treaty page or index, and no depositary notification was published; this is not proof that the Protocol is out of force.",
+      "Decision 975(XXXIX), para. 5 (14-15 February 2026), still urged Member States to ratify the Protocol by the end of 2026 and to notify their ratifications, which is consistent with the Protocol not being in force."
     ],
     "withdrawals": []
   },
   "provenance": {
     "assertions": [
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "status",
-        "locator": "AU treaty page, status section: no entry-into-force date or ratification table; Protocol Article 47",
+        "locator": "AU treaty page and general treaties index: no entry-into-force date, ratification table or status list; Protocol Article 47(2); Assembly/AU/Dec.975(XXXIX) para. 5",
         "method": "official_page_read",
-        "note": "No definitive status asserted from the absence of a date.",
+        "note": "No definitive status asserted from the absence of a date; the February 2026 Assembly still urged ratification.",
         "source_ids": [
-          "au-page"
+          "au-page",
+          "au-treaty-index",
+          "assembly-dec-975"
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "provisions",
         "locator": "Protocol Article 2(2)(f); Annex Articles 1(b), 4, 5 and 12",
         "method": "official_text_read",
@@ -110,7 +115,7 @@
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "languages",
         "locator": "Article 52",
         "method": "official_text_read",
@@ -119,19 +124,20 @@
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "counts",
-        "locator": "AU treaty page, status section: no ratification table or entry-into-force date",
+        "locator": "AU treaty page and general treaties index: no ratification table, status list or entry-into-force date",
         "method": "official_page_read",
-        "note": "Ratifications unknown.",
+        "note": "Ratifications unknown, not zero.",
         "source_ids": [
-          "au-page"
+          "au-page",
+          "au-treaty-index"
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "legal_nature",
-        "locator": "Protocol Article 47; AfCFTA Agreement Article 23(2)",
+        "locator": "Protocol Article 47(2); AfCFTA Agreement Articles 23(2) and 23(4)",
         "method": "official_text_read",
         "source_ids": [
           "au-agreement",
@@ -226,6 +232,26 @@
     {
       "accessed": "2026-11-25",
       "http_status": 200,
+      "id": "au-treaty-index",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "General AU treaties index: the Digital Trade Protocol row shows only the adoption date (18 February 2024); the entry-into-force and status-list cells are blank, unlike treaties for which the AU publishes a status list.",
+      "publisher": "African Union",
+      "url": "https://au.int/en/treaties"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "assembly-dec-975",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Assembly/AU/Dec.975(XXXIX), 39th Ordinary Session, 14-15 February 2026, Decision on the Report of the First Meeting of the Assembly Committee on the Implementation of the AfCFTA, para. 5: strongly urges Member States to ratify the AfCFTA Protocols including Digital Trade by the end of 2026 and to notify the ratifications to ensure their expeditious entry into force.",
+      "publisher": "African Union",
+      "url": "https://au.int/sites/default/files/decisions/46188-Assembly_Decisions_31_March_E.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
       "id": "stored-protocol",
       "kind": "official_primary",
       "language": "en",
@@ -247,7 +273,7 @@
     }
   ],
   "status": "unknown",
-  "status_note": "Adopted, but entry into force is not confirmed. The AU treaty page consulted on 24 November 2026 lists the Protocol and the compiled annexes but displays no entry-into-force date and no ratification table. That absence is not treated as proof that the Protocol is out of force: the number of ratifications and deposits is recorded as unknown, not zero.",
+  "status_note": "Adopted, but entry into force is not confirmed. The AU treaty page and the general treaties index consulted on 25 November 2026 list the Protocol and the compiled annexes but display no entry-into-force date, no ratification table and no status list; the index row carries only the 18 February 2024 adoption date. Article 47(2) applies Articles 23(2) and 23(4) of the AfCFTA Agreement, setting the 22-ratification threshold. The 39th Assembly (Decision 975(XXXIX), 14-15 February 2026) still urged Member States to ratify by the end of 2026 and to notify their ratifications. That absence is not treated as proof that the Protocol is out of force: the number of ratifications and deposits is recorded as unknown, not zero.",
   "title": {
     "official": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Digital Trade",
     "short": "AfCFTA Digital Trade Protocol"
@@ -256,38 +282,43 @@
     "checks": [
       {
         "check": "Adoption date and text links checked on the official AU treaty pages.",
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "result": "Adopted 18 February 2024; text in six authentic languages and compiled annexes; no entry-into-force date or ratification table displayed."
       },
       {
         "check": "Objectives article checked in the Protocol text.",
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "result": "Article 2(2)(f) contains the emerging-and-advanced-technologies objective; Article 3 is the scope-of-application provision."
       },
       {
         "check": "Authentic languages checked in the Protocol text.",
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "result": "Article 52 lists six equally authentic texts: Arabic, English, French, Kiswahili, Portuguese and Spanish."
       },
       {
         "check": "Annex on Emerging and Advanced Technologies read.",
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "result": "Articles 1(b), 4, 5 and 12 define emerging and advanced technologies (including AI), impose deployment, market-access and national-treatment obligations, and require technical standards and harmonisation."
       },
       {
         "check": "Annex adoption checked in the compiled annexes and Assembly progress report.",
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "result": "Eight annexes, including the Annex on Emerging and Advanced Technologies, were adopted by the 38th Assembly in February 2025."
       },
       {
         "check": "Entry-into-force rule checked in the AfCFTA Agreement.",
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "result": "Article 47 of the Protocol refers to Article 23(2) of the AfCFTA Agreement, which sets the twenty-second ratification as the threshold. No ratification total was verified."
       },
       {
         "check": "Full text acquired and segmented.",
         "date": "2026-11-25",
         "result": "52 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
+      },
+      {
+        "check": "Depositary status, entry into force, annexes and schedules re-checked on the AU treaty portal and the 39th Assembly decisions.",
+        "date": "2026-11-25",
+        "result": "The treaty page and the general treaties index display no entry-into-force date, no ratification table and no status list for this Protocol; the index row carries only the 18 February 2024 adoption date. No depositary notification was located. Article 47(2) applies the AfCFTA Agreement Article 23(2) 22-ratification threshold. Decision 975(XXXIX), para. 5 (14-15 February 2026), still urged ratification by the end of 2026. The Protocol contains no provision for national schedules of commitments, so no digital-trade schedule exists to acquire; no new digital-trade annex was adopted in February 2026."
       }
     ],
     "level": "metadata_verified",
