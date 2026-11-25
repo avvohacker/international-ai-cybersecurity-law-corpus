@@ -8,3 +8,6 @@ site/index.html
 
 # Local archive of previous versions; excluded from catalogue, build and tests.
 archive/
+
+# Local review screenshots and scripts; not part of the corpus.
+artifacts/

@@ -1,12 +1,12 @@
 {
-  "checked": 112,
+  "checked": 167,
   "scope": "catalog",
-  "instruments": 45,
+  "instruments": 63,
   "summary": {
-    "ok": 78,
-    "anti_bot": 26,
-    "broken": 2,
-    "transient": 6
+    "ok": 106,
+    "anti_bot": 47,
+    "broken": 10,
+    "transient": 4
   },
   "results": [
     {
@@ -60,6 +60,36 @@
       "detail": ""
     },
     {
+      "instrument_id": "arab-convention-it-offences-2010",
+      "source_id": "las-convention-text",
+      "label": "League of Arab States",
+      "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf",
+      "status": null,
+      "outcome": "broken",
+      "reason": "connection",
+      "detail": "URLError"
+    },
+    {
+      "instrument_id": "arab-convention-it-offences-2010",
+      "source_id": "las-ratification-table",
+      "label": "League of Arab States",
+      "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%8A%D9%82%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D9%87%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf",
+      "status": null,
+      "outcome": "broken",
+      "reason": "connection",
+      "detail": "URLError"
+    },
+    {
+      "instrument_id": "arab-convention-it-offences-2010",
+      "source_id": "unodc-compendium",
+      "label": "UNODC",
+      "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "asean-ai-guide-2024",
       "source_id": "asean-page",
       "label": "ASEAN Secretariat",
@@ -97,6 +127,36 @@
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "au-malabo-convention-2014",
+      "source_id": "au-status-list",
+      "label": "African Union",
+      "url": "https://au.int/sites/default/files/AFRICAN%20UNION%20CONVENTION%20ON%20CYBER%20SECURITY%20AND%20PERSONAL%20DATA%20PROTECTION%20%281%29.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "au-malabo-convention-2014",
+      "source_id": "au-text",
+      "label": "African Union",
+      "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "au-malabo-convention-2014",
+      "source_id": "au-treaty-page",
+      "label": "African Union",
+      "url": "https://au.int/en/treaties/african-union-convention-cyber-security-and-personal-data-protection",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
       "detail": ""
     },
     {
@@ -148,6 +208,76 @@
       "outcome": "broken",
       "reason": "dns",
       "detail": "URLError"
+    },
+    {
+      "instrument_id": "brics-ai-statement-2025",
+      "source_id": "congresso-nacional-brics",
+      "label": "Congresso Nacional do Brasil",
+      "url": "https://www.congressonacional.leg.br/brics/en/",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "brics-ai-statement-2025",
+      "source_id": "spa-saudi-summit",
+      "label": "Saudi Press Agency",
+      "url": "https://www.spa.gov.sa/en/N2353352",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "coe-budapest-page",
+      "label": "Council of Europe Cybercrime",
+      "url": "https://www.coe.int/en/web/cybercrime/the-budapest-convention",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "coe-declarations",
+      "label": "CETS 225 declarations",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=185&codeNature=0",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "coe-status-chart",
+      "label": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=185",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "coe-text",
+      "label": "CETS 225 text",
+      "url": "https://rm.coe.int/1680081561",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "coe-treaty-page",
+      "label": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=185",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
     },
     {
       "instrument_id": "ccw-gge-laws-2026",
@@ -220,6 +350,96 @@
       "detail": ""
     },
     {
+      "instrument_id": "cis-it-crimes-agreement-2018",
+      "source_id": "cis-document",
+      "label": "CIS Executive Committee",
+      "url": "https://eccis.org/document/5864",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "cis-it-crimes-agreement-2018",
+      "source_id": "cis-registry",
+      "label": "CIS Executive Committee",
+      "url": "https://eccis.org/reestrv2/doc/5864",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "cis-it-crimes-agreement-2018",
+      "source_id": "cis-russia-mfa",
+      "label": "Ministry of Foreign Affairs of Russia",
+      "url": "https://www.mid.ru/ru/foreign_policy/international_contracts/international_contracts/multilateral_contract/53417",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "cis-minsk-agreement-2001",
+      "source_id": "cis-minsk-document",
+      "label": "CIS Executive Committee",
+      "url": "https://eccis.org/document/1180",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "cis-minsk-agreement-2001",
+      "source_id": "cis-minsk-english",
+      "label": "Prosecutor General's Office of Azerbaijan",
+      "url": "https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf",
+      "status": null,
+      "outcome": "broken",
+      "reason": "tls_certificate",
+      "detail": "URLError"
+    },
+    {
+      "instrument_id": "cis-minsk-agreement-2001",
+      "source_id": "unodc-compendium",
+      "label": "UNODC",
+      "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-224",
+      "source_id": "coe-declarations-224",
+      "label": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=224&codeNature=0",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-224",
+      "source_id": "coe-status-chart",
+      "label": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=224",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-224",
+      "source_id": "coe-treaty-page",
+      "label": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=224",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
       "instrument_id": "coe-cets-225",
       "source_id": "coe-ai-page",
       "label": "Council of Europe",
@@ -261,10 +481,30 @@
     },
     {
       "instrument_id": "coe-cets-225",
+      "source_id": "coe-text-certified-bilingual",
+      "label": "Council of Europe Treaty Office",
+      "url": "https://rm.coe.int/1680b680bc",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-225",
+      "source_id": "coe-text-ohchr",
+      "label": "Council of Europe, reproduced by OHCHR",
+      "url": "https://www.ohchr.org/sites/default/files/documents/cfi-subm/244-artificial-intelligence/subm-artificial-intelligence-igo-13-council-europe-publications-annex-2.pdf",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-225",
       "source_id": "eu-decision-2026-1080",
       "label": "EU Council Decision",
       "url": "https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -274,7 +514,7 @@
       "source_id": "eu-oj-2026-1081",
       "label": "EU Official Journal",
       "url": "https://eur-lex.europa.eu/eli/agree_internation/2026/1081/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -300,24 +540,84 @@
       "detail": ""
     },
     {
+      "instrument_id": "coe-ets-189",
+      "source_id": "coe-declarations-189",
+      "label": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=189&codeNature=0",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-ets-189",
+      "source_id": "coe-status-chart",
+      "label": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=189",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-ets-189",
+      "source_id": "coe-treaty-page",
+      "label": "Council of Europe Treaty Office",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=189",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-recommendation-algorithmic-systems-2020",
+      "source_id": "coe-news-2020",
+      "label": "Council of Europe",
+      "url": "https://www.coe.int/en/web/portal/-/algorithms-and-automation-new-guidelines-to-prevent-human-rights-breaches",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-recommendation-algorithmic-systems-2020",
+      "source_id": "coe-rec-2020",
+      "label": "Council of Europe",
+      "url": "https://rm.coe.int/09000016809e1154",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "depa-2020",
+      "source_id": "depa-costa-rica",
+      "label": "New Zealand Ministry of Foreign Affairs and Trade, jointly with Chile, Singapore, Korea and Costa Rica",
+      "url": "https://www.mfat.govt.nz/en/media-and-resources/joint-press-release-on-the-successful-accession-of-costa-rica-to-the-digital-economy-partnership-agreement",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "depa-2020",
       "source_id": "depa-mfat-overview",
       "label": "New Zealand Ministry of Foreign Affairs and Trade",
       "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/overview",
-      "status": null,
-      "outcome": "transient",
-      "reason": "timeout",
-      "detail": "TimeoutError"
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "depa-2020",
       "source_id": "depa-mfat-text",
       "label": "New Zealand Ministry of Foreign Affairs and Trade",
       "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources",
-      "status": null,
-      "outcome": "transient",
-      "reason": "timeout",
-      "detail": "TimeoutError"
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "depa-2020",
@@ -330,11 +630,31 @@
       "detail": ""
     },
     {
+      "instrument_id": "ecowas-cybercrime-directive-2011",
+      "source_id": "africanlii-directive",
+      "label": "AfricanLII",
+      "url": "https://africanlii.org/en/akn/aa-ecowas/act/directive/2011/8-1/eng@2011-12-31",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "ecowas-cybercrime-directive-2011",
+      "source_id": "ecowas-directive",
+      "label": "ECOWAS",
+      "url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "eu-ai-act",
       "source_id": "eurlex-act",
       "label": "Official Journal of the European Union",
       "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -344,7 +664,7 @@
       "source_id": "eurlex-consolidated",
       "label": "Official Journal of the European Union",
       "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -354,7 +674,27 @@
       "source_id": "eurlex-summary",
       "label": "EUR-Lex",
       "url": "https://eur-lex.europa.eu/EN/legal-content/summary/rules-for-trustworthy-artificial-intelligence-in-the-eu.html",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "eu-cyber-resilience-act-2024",
+      "source_id": "ec-cra",
+      "label": "European Commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act",
       "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "eu-cyber-resilience-act-2024",
+      "source_id": "eurlex-cra",
+      "label": "Official Journal of the European Union",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng",
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -380,6 +720,26 @@
       "detail": ""
     },
     {
+      "instrument_id": "eu-nis2-directive-2022",
+      "source_id": "ec-nis2",
+      "label": "European Commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "eu-nis2-directive-2022",
+      "source_id": "eurlex-nis2",
+      "label": "Official Journal of the European Union",
+      "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "frontier-ai-safety-commitments-2024",
       "source_id": "govuk-commitments",
       "label": "UK Government",
@@ -394,6 +754,36 @@
       "source_id": "govuk-news",
       "label": "UK Government",
       "url": "https://www.gov.uk/government/news/historic-first-as-companies-spanning-north-america-asia-europe-and-middle-east-agree-safety-commitments-on-development-of-ai",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "g20-ai-prosperity-objectives-2026",
+      "source_id": "g20-objectives-page",
+      "label": "US Department of Commerce",
+      "url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "g20-ai-prosperity-objectives-2026",
+      "source_id": "g20-objectives-pdf",
+      "label": "US Department of Commerce",
+      "url": "https://www.commerce.gov/sites/default/files/2026-09/THE-G20-AI-PROSPERITY-OBJECTIVES.pdf",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "g20-ai-prosperity-objectives-2026",
+      "source_id": "g20-whitehouse-release",
+      "label": "The White House",
+      "url": "https://www.whitehouse.gov/releases/2026/09/g20-innovation-ministerial-concludes-with-consensus-statement",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -580,6 +970,26 @@
       "detail": ""
     },
     {
+      "instrument_id": "oecd-digital-security-critical-activities-2019",
+      "source_id": "oecd-critical-security",
+      "label": "OECD",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0456",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "pall-mall-code-of-practice-2025",
+      "source_id": "pall-mall-code",
+      "label": "UK Government",
+      "url": "https://www.gov.uk/government/publications/the-pall-mall-process-code-of-practice-for-states/the-pall-mall-process-code-of-practice-for-states",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "paris-ai-action-summit-statement-2025",
       "source_id": "canada-release",
       "label": "Government of Canada",
@@ -618,6 +1028,56 @@
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
+    },
+    {
+      "instrument_id": "paris-call-cyberspace-2018",
+      "source_id": "paris-call-csv",
+      "label": "Official supporters CSV",
+      "url": "https://pariscall.international/supporters.csv",
+      "status": null,
+      "outcome": "broken",
+      "reason": "connection",
+      "detail": "URLError"
+    },
+    {
+      "instrument_id": "paris-call-cyberspace-2018",
+      "source_id": "paris-call-page",
+      "label": "Official homepage counters",
+      "url": "https://pariscall.international/en",
+      "status": null,
+      "outcome": "broken",
+      "reason": "connection",
+      "detail": "URLError"
+    },
+    {
+      "instrument_id": "paris-call-cyberspace-2018",
+      "source_id": "paris-call-source",
+      "label": "Official source repository (commit 916433b)",
+      "url": "https://github.com/ambanum/pariscall.international/tree/916433b20a70ce587db86de70b108ce21a25c551/_supporters",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "paris-call-cyberspace-2018",
+      "source_id": "paris-call-supporters",
+      "label": "Official supporters list",
+      "url": "https://pariscall.international/en/supporters",
+      "status": null,
+      "outcome": "broken",
+      "reason": "connection",
+      "detail": "URLError"
+    },
+    {
+      "instrument_id": "paris-call-cyberspace-2018",
+      "source_id": "paris-call-text",
+      "label": "Paris Call text",
+      "url": "https://pariscall.international/en/call",
+      "status": null,
+      "outcome": "broken",
+      "reason": "connection",
+      "detail": "URLError"
     },
     {
       "instrument_id": "pax-silica-declaration-2025",
@@ -750,6 +1210,56 @@
       "detail": ""
     },
     {
+      "instrument_id": "san-francisco-declaration-2026",
+      "source_id": "state-san-francisco",
+      "label": "United States Department of State, Office of the Spokesman",
+      "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "sco-information-security-agreement-2009",
+      "source_id": "hklii-sco",
+      "label": "Hong Kong Legal Information Institute",
+      "url": "https://hklii.hk/en/legis/hkts/2011/2",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "sco-information-security-agreement-2009",
+      "source_id": "sco-agreement",
+      "label": "Shanghai Cooperation Organization",
+      "url": "https://eng.sectsco.org/20090616/207486.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "sco-information-security-agreement-2009",
+      "source_id": "sco-text",
+      "label": "Shanghai Cooperation Organization",
+      "url": "https://eng.sectsco.org/files/207508/207508",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "sco-information-security-agreement-2009",
+      "source_id": "unodc-compendium",
+      "label": "UNODC",
+      "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "seoul-declaration-2024",
       "source_id": "govuk-network",
       "label": "UK Government",
@@ -784,6 +1294,36 @@
       "source_id": "uk-treaty",
       "label": "UK Foreign, Commonwealth and Development Office",
       "url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "un-cybercrime-convention-2024",
+      "source_id": "untc-certified-copy",
+      "label": "Certified true copy",
+      "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "un-cybercrime-convention-2024",
+      "source_id": "untc-declarations",
+      "label": "United Nations Treaty Collection",
+      "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "un-cybercrime-convention-2024",
+      "source_id": "untc-status",
+      "label": "UN Treaty Collection status",
+      "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -974,10 +1514,10 @@
       "source_id": "unesco-page",
       "label": "UNESCO",
       "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "broken",
+      "reason": "connection",
+      "detail": "RemoteDisconnected"
     },
     {
       "instrument_id": "unesco-ethics-ai-2021",
@@ -1114,6 +1654,16 @@
       "source_id": "mfa-signing",
       "label": "MFA signing account",
       "url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "npc-agreement-text",
+      "label": "National People's Congress of the People's Republic of China",
+      "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",

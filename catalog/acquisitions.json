@@ -20,6 +20,16 @@
     "url": "https://www.ohchr.org/sites/default/files/documents/cfi-subm/244-artificial-intelligence/subm-artificial-intelligence-igo-13-council-europe-publications-annex-2.pdf"
   },
   {
+    "accessed": "2026-11-25",
+    "bytes": 482783,
+    "dest": "source/cets-225-fr-en-certified-2025-05-20.pdf",
+    "instrument_id": "coe-cets-225",
+    "media_type": "application/pdf",
+    "note": "Certified bilingual copy of CETS 225 in its corrected French version, adopted under the Committee of Ministers decision of 30 April 2025 and dated Strasbourg, 20 May 2025. Includes the authentic French text; 27 PDF pages, two columns.",
+    "sha256": "591b9daf1ee6a2ad2fe84ef896e964f656c97fa1fff8332eb6ebc64cc82f865c",
+    "url": "https://rm.coe.int/1680b680bc"
+  },
+  {
     "accessed": "2026-11-23",
     "bytes": 680817,
     "dest": "source/DEPA-signing-text-2020-06-11-en.pdf",

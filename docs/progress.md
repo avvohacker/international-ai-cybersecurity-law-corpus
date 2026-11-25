@@ -12,7 +12,7 @@ Last updated: **2026-11-25**. This file records the current state, the open gaps
 | Binding form | 22 (18 international + 4 internal law) |
 | International in force / not confirmed | 13 / 5 |
 | Non-binding | 41 |
-| Full texts / acquired originals | 16 / 16 |
+| Full texts / records with originals | 16 / 16 (17 files) |
 | State-level maps | 17 (7 treaty-based, 10 non-binding) |
 | Candidate register | 37 (18 included, 9 pending, 10 excluded) |
 
@@ -21,7 +21,7 @@ Last updated: **2026-11-25**. This file records the current state, the open gaps
 - The **48 AI-domain** records are not 48 AI treaties. They are 2 AI-specific treaties, 5 trade agreements with AI provisions, 2 general background treaties, 5 technical standards, 2 implementation texts, 1 negotiation record, 1 EU internal-law act and 30 other non-binding texts. “AI-domain” is a domain tag, not a legal category; the catalogue's `category` field is the legal partition.
 - The **15 cyber-only** records are 9 cyber treaties, 3 internal-law acts (NIS2, the Cyber Resilience Act and the ECOWAS Directive) and 3 non-binding instruments (the Paris Call, OECD/LEGAL/0456 and the Pall Mall Code). No record carries both domains.
 - The **18 international instruments with binding form** split 9 AI and 9 cyber. The four internal-law acts are binding in their own legal orders, not in international law. Of the 18, 13 are in force and 5 are not confirmed in force: CETS 225, WAICO, the AfCFTA Protocol, CETS 224 and the UN Cybercrime Convention.
-- The **16 full texts** comprise 10 `full_text_checked` records and 6 `metadata_verified` texts; the other 47 records are metadata-only. The 16 acquired originals have a URL, access date, byte count and SHA-256 in `catalog/acquisitions.json`.
+- The **16 full texts** comprise 10 `full_text_checked` records and 6 `metadata_verified` texts; the other 47 records are metadata-only. The 16 records with an acquired original have 17 stored files; each file has a URL, access date, byte count and SHA-256 in `catalog/acquisitions.json`.
 
 ### Verified anchors
 

@@ -127,6 +127,14 @@ SOURCES = [
         "12-page Council of Europe Treaty Series PDF of CETS 225, reproduced in an OHCHR submission annex. Official reproduction, not the certified corrected copy adopted on 30 April 2025.",
         "2026-11-25",
     ),
+    (
+        "coe-cets-225",
+        "source/cets-225-fr-en-certified-2025-05-20.pdf",
+        "https://rm.coe.int/1680b680bc",
+        "application/pdf",
+        "Certified bilingual copy of CETS 225 in its corrected French version, adopted under the Committee of Ministers decision of 30 April 2025 and dated Strasbourg, 20 May 2025. Includes the authentic French text; 27 PDF pages, two columns.",
+        "2026-11-25",
+    ),
 ]
 
 

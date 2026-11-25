@@ -27,6 +27,7 @@
 4a09af48bf17c8870a769260cc9fcacffa361908f1a90e6e89d3c504c4f5a9d9  corpus/un-ga-res-80-58/manifest.json
 525992a332744a5e2519deac58c02586c8519075144f131222ed264cf8e0d216  corpus/un-ga-res-79-62/units.jsonl
 587f8d22b561aff72dc1b8d38bb66cccb6236eb451948ac41a4d2aed22d25253  corpus/depa-2020/source/DEPA-signing-text-2020-06-11-en.pdf
+591b9daf1ee6a2ad2fe84ef896e964f656c97fa1fff8332eb6ebc64cc82f865c  corpus/coe-cets-225/source/cets-225-fr-en-certified-2025-05-20.pdf
 59df5c4d2d806da5c7253af1754fded34f00955cad73b24d78899e2ffea9ad65  corpus/china-global-ai-governance-initiative-2023/manifest.json
 65edd5d41f159a1bc98fcaf31d0eb8b6d9868d706bf939a05e690ec98cd30261  corpus/un-ga-res-80-58/source/A_RES_80_58-en.pdf
 66e266d7714a574ce9d793311ac6b302c84a6c0443d4082a39d964546201374e  corpus/README.md
@@ -45,7 +46,6 @@
 9a19a426c0d1ffdcd2dab40340074663ca4e8ff3eaeb1c3d1d2067e3fd9a2c64  corpus/paris-ai-action-summit-statement-2025/source/statement-2025-02-11-en.pdf
 9a32939da2ea2f31f5692d02b5e4f268d6ef7cdf49e69dabc2a105f193cc5bf8  corpus/un-ga-res-79-1/units.jsonl
 9af156ca949e3e616db513ccf8c6e3ae7c527794d2cd791a63985af62be3abe6  corpus/g7-hiroshima-code-2023/text/en.txt
-9c1df3b4c6b70e98b4441478145ac42c40ac800e3f12a344a40746437049cc17  corpus/coe-cets-225/manifest.json
 9c85533e3f116a87d0ea3e7659727043d665e6ab6b455329a26dd2b460ceeddb  corpus/sadea-2020/units.jsonl
 a02a56553d2035eeb8e54f554e9ef6563ecca2ca2de446d98201c7c6939adcb7  corpus/china-global-ai-governance-initiative-2023/units.jsonl
 a35861b04edbe2d0d30de13701d45186fbca9a9744ba3a3bb988877ae8d38363  corpus/paris-ai-action-summit-statement-2025/text/en.txt
@@ -72,6 +72,7 @@ e9ae53a02f600f925f7fd3fa1459c60337a3d4f9e536035c6c75f8e93a02d0ce  corpus/depa-20
 eca2a621c2d4c7500ce84ab9f26c860aca7d3fc3b0eb6cc06e2718f71c32fb7d  corpus/un-ga-res-79-325/text/en.txt
 ee973daac741a0f3e4016d5d97883f539f937d41a646ef2301104521a5312183  corpus/sadea-2020/source/SADEA-2020-08-06-en.pdf
 efbb437aa78dcc19e26883de001fd49117a9ed352483f001d6b5ebe8af855544  corpus/un-ga-res-80-58/pages.json
+f01787f7a349b032027ef516384b7e5ae5401adfb3835ca3f8c6f82e2f198b49  corpus/coe-cets-225/manifest.json
 f50cfb8713604862c0d43e51131658e988806b81c0c6d72e07e453ed0a7b5383  corpus/sadea-2020/pages.json
 f89f11137bcb0a9d96bd07d5937806ba26ce9ae4ff41c05a147d03314c1949a1  corpus/oecd-ai-recommendation-2019/manifest.json
 f93e6ffaba3f35950dfec4fc04c29ba963ee0f71a6235a153a922e909c3a9b45  corpus/sadea-2020/manifest.json
