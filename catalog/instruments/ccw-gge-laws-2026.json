@@ -3,7 +3,7 @@
   "category": "draft_negotiation",
   "dates": {
     "adopted": "2026-11-20",
-    "notes": "The GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference adopted its final document on 20 November 2026 (to be issued as CCW/CONF.VII/11), endorsing the set of elements and continuing the GGE. The 2027 sessions are scheduled for 1–5 March and 30 August–3 September 2027.",
+    "notes": "The GGE adopted its final report by consensus on 4 September 2026. Before the Review Conference, the UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations on an instrument. The Seventh Review Conference adopted its final document on 20 November 2026 (to be issued as CCW/CONF.VII/11), endorsing the set of elements and continuing the GGE. The 2027 sessions are scheduled for 1–5 March and 30 August–3 September 2027.",
     "published": null,
     "verified_on": "2026-11-23"
   },
@@ -15,7 +15,8 @@
     "The final document was read as CCW/CONF.VII/CRP.1/Rev.3; the clean CCW/CONF.VII/11 symbol was not yet available at verification.",
     "Only the English texts were read; the other UN official language versions were not acquired.",
     "No PDF bytes or full-text units are stored for this record; it is metadata-level.",
-    "The positions of individual High Contracting Parties and the 2027 GGE Chair were not assessed."
+    "The positions of individual High Contracting Parties and the 2027 GGE Chair were not assessed.",
+    "The 81st-session General Assembly draft A/C.1/81/L.37 had been approved by the First Committee but not adopted by the plenary at verification; its plenary fate is not recorded here."
   ],
   "id": "ccw-gge-laws-2026",
   "instrument_type": "report",
@@ -126,10 +127,30 @@
       "note": "Official Seventh Review Conference page (16–20 November 2026); links the final document, draft final documents and the proposal on the GGE LAWS mandate.",
       "publisher": "United Nations Office for Disarmament Affairs",
       "url": "https://meetings.unoda.org/ccw-revcon/convention-on-certain-conventional-weapons-seventh-review-conference-2026"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "unga-81-l37-draft",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Draft resolution A/C.1/81/L.37, 13 October 2026: lethal autonomous weapons systems; calls upon CCW High Contracting Parties to advance to negotiations on an instrument on autonomous weapons systems.",
+      "publisher": "United Nations General Assembly, First Committee",
+      "url": "https://digitallibrary.un.org/record/4130858/files/A_C.1_81_L.37-EN.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "unga-81-laws-vote",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "UN Meetings Coverage GA/DIS/3781, 29 October 2026: the First Committee approved A/C.1/81/L.37 by 163 votes to 5 (Belarus, DPRK, Israel, Russian Federation, United States), with 9 abstentions.",
+      "publisher": "United Nations Department of Global Communications",
+      "url": "https://press.un.org/en/2026/gadis3781.doc.htm"
     }
   ],
   "status": "in_negotiation",
-  "status_note": "No instrument has been adopted. The 2024–2026 GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference (16–20 November 2026) endorsed the set of elements of an instrument and other possible measures and continued the open-ended GGE, mandating it to elaborate, by consensus, an instrument that specifies international humanitarian law applicable to LAWS and its implementation, without prejudging the instrument's nature, and to recommend its legal nature and specific form, including whether it should be a binding protocol. The Group is to report to the 2028 Meeting of High Contracting Parties.",
+  "status_note": "No instrument has been adopted. The UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations; it had not been adopted by the plenary at verification. The 2024–2026 GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference (16–20 November 2026) endorsed the set of elements of an instrument and other possible measures and continued the open-ended GGE, mandating it to elaborate, by consensus, an instrument that specifies international humanitarian law applicable to LAWS and its implementation, without prejudging the instrument's nature, and to recommend its legal nature and specific form, including whether it should be a binding protocol. The Group is to report to the 2028 Meeting of High Contracting Parties.",
   "title": {
     "english": "Report of the Group of Governmental Experts on Emerging Technologies in the Area of Lethal Autonomous Weapons Systems",
     "official": "Report of the Group of Governmental Experts on Emerging Technologies in the Area of Lethal Autonomous Weapons Systems (CCW/GGE.1/2026/3)",

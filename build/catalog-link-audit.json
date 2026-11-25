@@ -1,11 +1,11 @@
 {
-  "checked": 226,
+  "checked": 237,
   "audited_on": "2026-11-25",
   "scope": "catalog",
-  "instruments": 71,
+  "instruments": 72,
   "summary": {
-    "ok": 162,
-    "anti_bot": 59,
+    "ok": 171,
+    "anti_bot": 61,
     "broken": 0,
     "transient": 5,
     "live_but_unreachable": 3
@@ -522,6 +522,26 @@
       "detail": ""
     },
     {
+      "instrument_id": "ccw-gge-laws-2026",
+      "source_id": "unga-81-l37-draft",
+      "label": "United Nations General Assembly, First Committee",
+      "url": "https://digitallibrary.un.org/record/4130858/files/A_C.1_81_L.37-EN.pdf",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "ccw-gge-laws-2026",
+      "source_id": "unga-81-laws-vote",
+      "label": "United Nations Department of Global Communications",
+      "url": "https://press.un.org/en/2026/gadis3781.doc.htm",
+      "status": 406,
+      "outcome": "anti_bot",
+      "reason": "http_406",
+      "detail": ""
+    },
+    {
       "instrument_id": "china-global-ai-governance-initiative-2023",
       "source_id": "cac-zh",
       "label": "Cyberspace Administration of China",
@@ -766,7 +786,7 @@
       "source_id": "eu-decision-2026-1080",
       "label": "EU Council Decision",
       "url": "https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -776,7 +796,7 @@
       "source_id": "eu-oj-2026-1081",
       "label": "EU Official Journal",
       "url": "https://eur-lex.europa.eu/eli/agree_internation/2026/1081/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -1072,6 +1092,36 @@
       "detail": ""
     },
     {
+      "instrument_id": "g7-digital-technology-ministerial-declaration-2026",
+      "source_id": "fr-presidency-release-2026",
+      "label": "Ministère de l'Économie, France",
+      "url": "https://www.economie.gouv.fr/actualites/video-g7-numerique-conference-de-presse-danne-le-henanff-vendredi-29-mai-17h30",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "g7-digital-technology-ministerial-declaration-2026",
+      "source_id": "gov-uk-declaration-2026",
+      "label": "UK Department for Science, Innovation and Technology (GOV.UK)",
+      "url": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "g7-digital-technology-ministerial-declaration-2026",
+      "source_id": "mic-results-2026",
+      "label": "Ministry of Internal Affairs and Communications, Japan",
+      "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/eng/pressrelease/2026/6/1_1.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "g7-hiroshima-code-2023",
       "source_id": "mic-code",
       "label": "Ministry of Internal Affairs and Communications, Japan",
@@ -1356,9 +1406,9 @@
       "source_id": "paris-call-csv",
       "label": "Official supporters CSV",
       "url": "https://web.archive.org/web/20240927013736/https://pariscall.international/supporters.csv",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -1366,9 +1416,9 @@
       "source_id": "paris-call-page",
       "label": "Official homepage counters",
       "url": "https://web.archive.org/web/20251117075315/https://pariscall.international/en",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -1928,6 +1978,26 @@
       "detail": ""
     },
     {
+      "instrument_id": "un-ga-res-80-58",
+      "source_id": "unga-81-first-committee-vote",
+      "label": "United Nations Department of Global Communications",
+      "url": "https://press.un.org/en/2026/gadis3782.doc.htm",
+      "status": 406,
+      "outcome": "anti_bot",
+      "reason": "http_406",
+      "detail": ""
+    },
+    {
+      "instrument_id": "un-ga-res-80-58",
+      "source_id": "unga-81-l34-draft",
+      "label": "United Nations General Assembly, First Committee",
+      "url": "https://digitallibrary.un.org/record/4130554/files/A_C.1_81_L.34-EN.pdf",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "un-hrc-res-63-15",
       "source_id": "hrc-meeting",
       "label": "UN Digital Library",
@@ -1958,6 +2028,26 @@
       "detail": ""
     },
     {
+      "instrument_id": "un-hrc-res-63-15",
+      "source_id": "hrc-session-resolutions",
+      "label": "Office of the United Nations High Commissioner for Human Rights",
+      "url": "https://www.ohchr.org/en/hr-bodies/hrc/regular-sessions/session63/res-dec-stat",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "un-hrc-res-63-15",
+      "source_id": "ohchr-session63-summary",
+      "label": "Office of the United Nations High Commissioner for Human Rights",
+      "url": "https://www.ohchr.org/en/meeting-summaries/2026/10/human-rights-council-concludes-sixty-third-regular-session-after-adopting?sub-site=HRC",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
       "instrument_id": "unesco-ethics-ai-2021",
       "source_id": "unesco-page",
       "label": "UNESCO",
@@ -1972,9 +2062,9 @@
       "source_id": "unesdoc-pdf",
       "label": "UNESCO Digital Library",
       "url": "https://web.archive.org/web/20261029235825/https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_75c9fb6b-92a6-4982-b772-79f540c9fc39?_=381137eng.pdf",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -2039,6 +2129,16 @@
     },
     {
       "instrument_id": "us-eu-ttc-ai-safety-dialogue-2024",
+      "source_id": "ec-ttc-stocktaking-2024",
+      "label": "European Commission, Shaping Europe’s digital future",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/eu-and-us-high-level-officials-meet-take-stock-ongoing-cooperation-under-eu-us-trade-and-technology",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "us-eu-ttc-ai-safety-dialogue-2024",
       "source_id": "eu-technical-dialogue",
       "label": "European Commission, Shaping Europe’s digital future",
       "url": "https://digital-strategy.ec.europa.eu/en/news/us-ai-safety-institute-and-european-ai-office-technical-dialogue",
@@ -2055,6 +2155,16 @@
       "status": 200,
       "outcome": "anti_bot",
       "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "us-eu-ttc-ai-safety-dialogue-2024",
+      "source_id": "ustr-ttc-deputies-readout-2024",
+      "label": "Office of the United States Trade Representative",
+      "url": "https://www.ustr.gov/about-us/policy-offices/press-office/press-releases/2024/september/readout-us-eu-trade-and-technology-council-ttc-deputies-meeting",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {

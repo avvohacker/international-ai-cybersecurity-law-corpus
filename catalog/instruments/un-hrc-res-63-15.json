@@ -3,8 +3,8 @@
   "category": "non_binding_instrument",
   "dates": {
     "adopted": "2026-10-06",
-    "notes": "Adopted without a vote at the 41st meeting of the Human Rights Council's 63rd session, 6 October 2026. Official English document A/HRC/RES/63/15, 6 pages.",
-    "verified_on": "2026-11-23"
+    "notes": "Adopted without a vote at the 41st meeting of the Human Rights Council's 63rd session, 6 October 2026. Official English document A/HRC/RES/63/15, 6 pages. Operative paragraph 20 convenes a panel at the 65th session on 'Placing human rights at the centre of artificial intelligence: artificial intelligence capacity-building and bridging the artificial intelligence divide'; operative paragraphs 21–22 request an OHCHR report on that theme to the 66th session, informed by the panel and by consultations including at the margins of the Second Global Dialogue on Artificial Intelligence Governance in May 2027. Neither has yet taken place.",
+    "verified_on": "2026-11-25"
   },
   "domains": [
     "ai"
@@ -15,7 +15,7 @@
     "No military-AI prohibition; international humanitarian law is referenced only as applicable.",
     "Only the English text was read; the other five authentic UN language versions were not acquired.",
     "No full text is stored in the corpus; the record is metadata-only.",
-    "The requested panel discussion and OHCHR report are future follow-up, not implementation."
+    "The 65th-session panel discussion and the OHCHR report to the 66th session are future follow-up, not implementation; no date, agenda or terms of reference for either were located beyond the resolution's own terms."
   ],
   "id": "un-hrc-res-63-15",
   "instrument_type": "resolution",
@@ -115,7 +115,7 @@
       "Operative paragraphs 9–10 — human-rights due diligence and impact assessments; meaningful human oversight, information, human review and effective remedies where AI plays a material role in decisions affecting rights.",
       "Operative paragraphs 11–13 — freedom of opinion and expression, privacy, differentiated impacts on vulnerable groups, and the responsibility of business enterprises under the Guiding Principles on Business and Human Rights.",
       "Operative paragraphs 14–17 — AI literacy, international cooperation and capacity building, digital public goods and open models, and coherence among international initiatives.",
-      "Operative paragraphs 20–23 — a panel discussion at the 65th session on AI capacity building and the AI divide; an OHCHR report to the 66th session; the Council remains seized of the matter."
+      "Operative paragraphs 20–23 — a panel discussion at the 65th session on 'Placing human rights at the centre of artificial intelligence: artificial intelligence capacity-building and bridging the artificial intelligence divide', with States, the Office of the High Commissioner, UN entities and mechanisms, national human rights institutions, civil society, academia, the technical community and business enterprises; an OHCHR report on that theme to the 66th session, informed by the panel and by consultations including at the margins of the Second Global Dialogue on Artificial Intelligence Governance (May 2027); the Council remains seized of the matter."
     ],
     "excluded_scope": "A non-binding Human Rights Council resolution. It creates no signature, ratification, depositary, monitoring or enforcement mechanism, and it does not establish a military-AI prohibition. It applies existing human-rights obligations rather than creating new ones.",
     "reason": "A dedicated Human Rights Council resolution on the human-rights implications of artificial intelligence, adopted without a vote on 6 October 2026. It complements the General Assembly resolutions and CETS 225 by applying existing international human-rights law across the AI life cycle: discrimination, privacy, freedom of expression, human oversight, due diligence, remedies and capacity building. It is non-binding and creates no enforcement mechanism, but it is the Human Rights Council's principal AI-specific text and was missing from the corpus."
@@ -154,10 +154,30 @@
       "note": "Summary record A/HRC/63/SR.41 of the meeting at which the resolution was adopted.",
       "publisher": "UN Digital Library",
       "url": "https://digitallibrary.un.org/record/4132633"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "hrc-session-resolutions",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "OHCHR list of the 63rd session's resolutions, decisions and President's statements: 63/15, agenda item 3, draft A/HRC/63/L.25, adopted without a vote at the 41st meeting on 6 October 2026.",
+      "publisher": "Office of the United Nations High Commissioner for Human Rights",
+      "url": "https://www.ohchr.org/en/hr-bodies/hrc/regular-sessions/session63/res-dec-stat"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "ohchr-session63-summary",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "OHCHR summary of the 63rd session's closing, 7 October 2026: records the panel theme, the participating stakeholders, the OHCHR report to the 66th session, and the consultation at the margins of the Second Global Dialogue on Artificial Intelligence Governance in May 2027.",
+      "publisher": "Office of the United Nations High Commissioner for Human Rights",
+      "url": "https://www.ohchr.org/en/meeting-summaries/2026/10/human-rights-council-concludes-sixty-third-regular-session-after-adopting?sub-site=HRC"
     }
   ],
   "status": "adopted",
-  "status_note": "Adopted without a vote on 6 October 2026. The resolution is non-binding and creates no ratification, depositary, monitoring or enforcement mechanism. It applies international human-rights law to AI and requests follow-up through a panel discussion at the 65th session and an OHCHR report to the 66th session.",
+  "status_note": "Adopted without a vote on 6 October 2026. The resolution is non-binding and creates no ratification, depositary, monitoring or enforcement mechanism. It applies international human-rights law to AI and requests follow-up through a panel discussion at the 65th session on AI capacity-building and bridging the AI divide, and an OHCHR report on that theme to the 66th session, informed by consultations including at the margins of the Second Global Dialogue on AI Governance in May 2027. As of 25 November 2026 neither the panel nor the report had taken place.",
   "title": {
     "official": "Implications of artificial intelligence for the promotion and protection of human rights",
     "short": "HRC resolution 63/15 on AI and human rights"
@@ -178,6 +198,11 @@
         "check": "Party-level data checked.",
         "date": "2026-11-23",
         "result": "No individual vote or signatory list exists; the resolution was adopted by the 47-member Council without a vote."
+      },
+      {
+        "check": "Follow-up paragraphs checked against OHCHR's session records.",
+        "date": "2026-11-25",
+        "result": "The 65th-session panel theme, the participating stakeholders and the OHCHR report to the 66th session are confirmed by the OHCHR resolutions list and session summary; no panel date or agenda was published by 25 November 2026."
       },
       {
         "check": "Legal nature checked.",

@@ -328,14 +328,14 @@
     "id": "g7-digital-technology-ministerial-declaration-2026",
     "title": "G7 Digital and Technology Ministerial Declaration: 29 May 2026",
     "issuer": "G7 Digital and Technology Ministers (France presidency)",
-    "decision": "pending",
-    "instrument_id": null,
-    "reason": "Official GOV.UK text read. The declaration has substantial AI safety and AI adoption sections, but it is a broad digital-and-technology ministerial declaration, not an AI-specific instrument. Pending a decision whether to catalogue it as a non-binding declaration or as implementation material for the Hiroshima process.",
+    "decision": "included",
+    "instrument_id": "g7-digital-technology-ministerial-declaration-2026",
+    "reason": "Official GOV.UK text read in full and adoption confirmed by the Japanese MIC and the French presidency. The declaration has express, substantive AI provisions in two of its four priorities (secure AI and AI adoption) and therefore meets the inclusion rule; it is catalogued as a non-binding political declaration, not as an AI-specific treaty or as Hiroshima Process implementation material.",
     "candidate_type": "declaration",
     "official_url": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026",
-    "searched_on": "2026-11-23",
-    "evidence": "Official GOV.UK publication, agreed in Paris on 29 May 2026 and published 1 June 2026; sections on promoting secure AI, boosting AI adoption, digital resilience and minors online.",
-    "gaps": "Broad digital/tech scope; no decision on cataloguing; the separate G7 Evian leaders’ AI meeting and the Paris Call are not part of this text."
+    "searched_on": "2026-11-25",
+    "evidence": "Official GOV.UK publication of the English text, agreed in Paris on 29 May 2026 and published 1 June 2026; Japanese MIC results page of 1 June 2026 confirming adoption as the ministerial's outcome document; French presidency release of 29 May 2026.",
+    "gaps": "Broad digital/tech scope; only the AI-related sections are recorded; the referred G7 deliverables and the revised Reporting Framework are not analysed individually."
   },
   {
     "id": "un-ga-81-l34-military-ai",
@@ -343,12 +343,12 @@
     "issuer": "United Nations General Assembly, First Committee, 81st session",
     "decision": "pending",
     "instrument_id": null,
-    "reason": "Draft resolution, not yet an adopted A/RES. The First Committee adopted it in October 2026; the plenary is expected in December 2026. It is therefore pending rather than catalogued as an adopted instrument.",
+    "reason": "Draft resolution, not yet an adopted A/RES. The First Committee approved it on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded it to the plenary. It is therefore pending rather than catalogued as an adopted instrument; the outcome is recorded in the un-ga-res-80-58 record as a successor process.",
     "candidate_type": "draft_resolution",
     "official_url": "https://digitallibrary.un.org/record/4130554/files/A_C.1_81_L.34-EN.pdf",
-    "searched_on": "2026-11-23",
-    "evidence": "UN Digital Library record A/C.1/81/L.34, draft resolution dated 2026; First Committee adoption reported for 29 October 2026; no A/RES/81 symbol assigned as of 23 November 2026.",
-    "gaps": "Not yet adopted by the plenary; no final resolution number or text; vote details not verified."
+    "searched_on": "2026-11-25",
+    "evidence": "UN Digital Library record and English PDF of A/C.1/81/L.34 (13 October 2026, 46 sponsors); UN Meetings Coverage GA/DIS/3782 of 30 October 2026 recording approval by 171-4-6; no A/RES/81 symbol assigned as of 25 November 2026.",
+    "gaps": "Not yet adopted by the plenary; no final resolution number or text; the plenary vote is not recorded."
   },
   {
     "id": "un-ga-81-l37-laws",
@@ -356,12 +356,12 @@
     "issuer": "United Nations General Assembly, First Committee, 81st session",
     "decision": "pending",
     "instrument_id": null,
-    "reason": "Draft resolution, not yet an adopted A/RES. The First Committee adopted it in October 2026; the plenary is expected in December 2026. It is therefore pending rather than catalogued as an adopted instrument.",
+    "reason": "Draft resolution, not yet an adopted A/RES. The First Committee approved it on 29 October 2026 by 163 votes to 5, with 9 abstentions, and forwarded it to the plenary. It is therefore pending rather than catalogued as an adopted instrument; the outcome is recorded in the ccw-gge-laws-2026 record as a related General Assembly process.",
     "candidate_type": "draft_resolution",
     "official_url": "https://digitallibrary.un.org/record/4130858/files/A_C.1_81_L.37-EN.pdf",
-    "searched_on": "2026-11-23",
-    "evidence": "UN Digital Library record A/C.1/81/L.37, draft resolution dated 2026; First Committee adoption reported for 30 October 2026; no A/RES/81 symbol assigned as of 23 November 2026.",
-    "gaps": "Not yet adopted by the plenary; no final resolution number or text; vote details not verified."
+    "searched_on": "2026-11-25",
+    "evidence": "UN Digital Library record and English PDF of A/C.1/81/L.37 (13 October 2026); UN Meetings Coverage GA/DIS/3781 of 29 October 2026 recording approval by 163-5-9; no A/RES/81 symbol assigned as of 25 November 2026.",
+    "gaps": "Not yet adopted by the plenary; no final resolution number or text; the plenary vote is not recorded."
   },
   {
     "id": "g20-ai-prosperity-compact-2026",

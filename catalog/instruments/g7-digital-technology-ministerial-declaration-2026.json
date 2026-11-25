@@ -1,0 +1,162 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2026-05-29",
+    "notes": "Agreed by the G7 Digital and Technology Ministers meeting in Paris on 29 May 2026 under France's G7 presidency; the English text was published by the UK Department for Science, Innovation and Technology on 1 June 2026. The declaration has four priorities: promoting secure AI; boosting AI adoption for economic growth; ensuring resilience and resource efficiency of the digital sector; and fostering a safer digital space for minors online.",
+    "published": "2026-06-01",
+    "verified_on": "2026-11-25"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Non-binding: it creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+    "A broad digital-and-technology ministerial declaration, not an AI-specific instrument; only the AI-related sections are recorded, and the digital-infrastructure, energy and minors-online sections are outside the corpus's scope.",
+    "No itemised list of adopting States or ministers is published in the text; it is issued collectively by the G7 Digital and Technology Ministers.",
+    "The separately issued G7 deliverables it refers to (the Vision on AI openness, the G7 SME AI Readiness Tool, the Policy Paper on Agentic AI, the Common G7 Set of Principles for minors online, the International Overview on resilience and resource efficiency) are not catalogued individually.",
+    "The Hiroshima AI Process Reporting Framework itself, which the declaration commends in its revised form, is not analysed in this record.",
+    "Only the English text was read; the French version published by the French presidency was not acquired.",
+    "No full text, citable units or original file is stored; the record is metadata-only."
+  ],
+  "id": "g7-digital-technology-ministerial-declaration-2026",
+  "instrument_type": "declaration",
+  "issuer": [
+    {
+      "name": "G7 Digital and Technology Ministers (French Presidency, 2026)",
+      "role": "issuer",
+      "url": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026"
+    },
+    {
+      "name": "French G7 Presidency (2026)",
+      "role": "host",
+      "url": "https://www.economie.gouv.fr/actualites/video-g7-numerique-conference-de-presse-danne-le-henanff-vendredi-29-mai-17h30"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "The English text published by the UK Department for Science, Innovation and Technology was read in full. The French presidency publishes a French version; it was not acquired, and no authentic-language clause exists because the text is not a treaty.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A ministerial declaration adopted collectively by the G7 Digital and Technology Ministers. It records political priorities and welcomes or initiates voluntary work; it has no signature, ratification, depositary or entry-into-force clause and creates no legal obligation.",
+    "source_ids": [
+      "gov-uk-declaration-2026",
+      "mic-results-2026"
+    ]
+  },
+  "provenance": {
+    "assertions": [],
+    "discovered_via": "G7 2026 Digital and Technology Ministerial Declaration had been recorded as pending in the candidate register; the GOV.UK publication was read and cross-checked with the Japanese MIC results page and the French presidency's release.",
+    "search_dates": [
+      "2026-11-25"
+    ]
+  },
+  "related": [
+    {
+      "id": "g7-hiroshima-code-2023",
+      "note": "The declaration acknowledges the Hiroshima AI Process and commends its revised Reporting Framework, the reporting mechanism attached to the 2023 Code of Conduct.",
+      "relation": "related"
+    },
+    {
+      "id": "g20-ai-prosperity-objectives-2026",
+      "note": "A parallel non-binding ministerial AI deliverable adopted in September 2026; the G7 text is broader in digital scope and its AI sections concentrate on secure AI and AI adoption.",
+      "relation": "related"
+    },
+    {
+      "id": "oecd-ai-recommendation-2019",
+      "note": "The declaration records that the Hiroshima AI Process Reporting Framework is supported by the OECD through the Global Partnership on AI, and refers to OECD work on AI openness and SME readiness.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Priority 1, promoting secure AI — acknowledges the Hiroshima AI Process (HAIP) and the Reporting Framework advanced by Italy's 2024 and Canada's 2025 presidencies; commends the revised HAIP Reporting Framework, supported by the OECD through the Global Partnership on AI, as a multi-stakeholder platform for AI risk assessment, reporting and mitigation assessment.",
+      "Priority 1 — welcomes the Hiroshima AI Process Friends Group and Partners' Community, their expansion to developing countries and the related Action Plan announced in March 2026.",
+      "Priority 1 — announces discussions under France's presidency with stakeholders, including the International Network for Advanced AI Measurement, Evaluation and Science and the OECD, on improving mutual understanding and comparability of AI risk-assessment frameworks.",
+      "Priority 1 — recognises AI risks from design flaws and cybersecurity vulnerabilities and from misuse in malicious cyber activities and chemical, biological and radiological capabilities; plans continued expert discussions on synthetic-content detection.",
+      "Priority 2, boosting AI adoption — supports AI openness, publishes a Vision on AI openness opportunities and shared language, and, with the OECD, a G7 SME AI Readiness Tool; addresses AI literacy and skills for MSMEs.",
+      "Priority 3 — addresses the energy and resource requirements of AI models and hardware, and notes the French presidency's Policy Paper on Agentic AI (led by Inria) and the overview of voluntary measurement, monitoring and reporting initiatives.",
+      "Priority 4 — addresses generative AI, deepfakes and AI-generated child sexual abuse material in the digital space for minors; no AI-specific obligation is created."
+    ],
+    "excluded_scope": "A broad digital-and-technology ministerial declaration. It creates no binding obligations and no AI-specific institution, reporting duty or market-access rule; the digital-infrastructure, energy and minors-online sections are recorded only where they concern AI. The separate G7 deliverables it refers to are not catalogued individually.",
+    "reason": "The declaration contains express, substantive AI provisions in two of its four priorities: it commends the revised Hiroshima AI Process Reporting Framework, announces work on the comparability of AI risk-assessment frameworks, and sets out AI openness and AI adoption deliverables. It was recorded as pending in the candidate register and its adoption on 29 May 2026 resolves that pending item. It is catalogued as a non-binding political declaration, not as an AI-specific treaty or a G7 implementation mechanism.",
+    "source_ids": [
+      "gov-uk-declaration-2026",
+      "mic-results-2026"
+    ]
+  },
+  "rights": {
+    "licence": "Open Government Licence v3.0 (GOV.UK text); French and Japanese government terms for their pages",
+    "note": "Official government publications. No full text is stored in this corpus; metadata only.",
+    "status": "public_official_text",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "gov-uk-declaration-2026",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official English text of the declaration, published 1 June 2026 by the Department for Science, Innovation and Technology; read in full. Records the meeting in Paris on 29 May 2026 and the four priorities.",
+      "publisher": "UK Department for Science, Innovation and Technology (GOV.UK)",
+      "url": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "mic-results-2026",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "Japanese Ministry of Internal Affairs and Communications press release, 1 June 2026: the G7 Digital and Technology Ministerial Meeting was held in Paris on 29 May 2026 and the Ministerial Declaration was adopted as its outcome document.",
+      "publisher": "Ministry of Internal Affairs and Communications, Japan",
+      "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/eng/pressrelease/2026/6/1_1.html"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "fr-presidency-release-2026",
+      "kind": "official_secondary",
+      "language": "fr",
+      "note": "French Ministry of the Economy press page, 29 May 2026: after the meeting of the G7 digital ministers in Paris under the French presidency, the G7 members adopted a joint declaration; the page links the press release and the declaration in English. French-language source; the declaration itself was read in English.",
+      "publisher": "Ministère de l'Économie, France",
+      "url": "https://www.economie.gouv.fr/actualites/video-g7-numerique-conference-de-presse-danne-le-henanff-vendredi-29-mai-17h30"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Adopted by the G7 Digital and Technology Ministers in Paris on 29 May 2026 and published on 1 June 2026. It is a non-binding political declaration with no signature, ratification, depositary or entry-into-force procedure. Its AI provisions commend the revised Hiroshima AI Process Reporting Framework and set out AI risk-assessment, AI openness and AI adoption work; no implementation or monitoring duty is created.",
+  "title": {
+    "official": "G7 Digital and Technology Ministerial Declaration: 29 May 2026",
+    "short": "G7 Digital and Technology Ministerial Declaration (2026)"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Official English text opened and read in full.",
+        "date": "2026-11-25",
+        "result": "Title, Paris venue and 29 May 2026 date confirmed; four priorities, with AI in priorities 1 and 2; no binding language."
+      },
+      {
+        "check": "Adoption as the ministerial's outcome document checked against the Japanese MIC release.",
+        "date": "2026-11-25",
+        "result": "The G7 Digital and Technology Ministerial Meeting was held in Paris on 29 May 2026 and the Ministerial Declaration was adopted as the outcome document."
+      },
+      {
+        "check": "Issuing context checked against the French presidency's release.",
+        "date": "2026-11-25",
+        "result": "France held the G7 presidency in 2026 and announced the adoption of a joint declaration after the digital ministers' meeting of 29 May 2026."
+      },
+      {
+        "check": "Legal nature checked against the text.",
+        "date": "2026-11-25",
+        "result": "Political ministerial declaration; no signature, ratification, depositary, monitoring or enforcement mechanism."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "The English text was read in full and adoption was confirmed by two further official pages. No full text is stored, so the record is metadata-verified rather than full-text-checked."
+  }
+}

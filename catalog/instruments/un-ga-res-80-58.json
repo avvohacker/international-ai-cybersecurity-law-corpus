@@ -3,7 +3,7 @@
   "category": "non_binding_instrument",
   "dates": {
     "adopted": "2025-12-01",
-    "notes": "Adopted on the report of the First Committee (A/80/534, para. 7); document distributed 5 December 2025.",
+    "notes": "Adopted on the report of the First Committee (A/80/534, para. 7); document distributed 5 December 2025. The 81st-session successor, draft A/C.1/81/L.34, was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; no A/RES/81 symbol had been assigned by 25 November 2026.",
     "published": "2025-12-05",
     "verified_on": "2026-11-23"
   },
@@ -14,7 +14,9 @@
     "Non-binding.",
     "Only metadata-level verification.",
     "Only English acquired.",
-    "No operative prohibition or transparency mechanism."
+    "No operative prohibition or transparency mechanism.",
+    "The 81st-session successor (A/C.1/81/L.34) had been approved by the First Committee but not adopted by the plenary at verification; its final number, text and vote in plenary are not recorded here.",
+    "Only the English text of the 2025 resolution was acquired; the successor draft was read in its English PDF only."
   ],
   "id": "un-ga-res-80-58",
   "instrument_type": "resolution",
@@ -87,10 +89,30 @@
       "note": "Record for A/RES/80/58.",
       "publisher": "UN Digital Library",
       "url": "https://digitallibrary.un.org/record/4095956"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "unga-81-l34-draft",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Draft resolution A/C.1/81/L.34, 13 October 2026, sponsored by 46 States; text on artificial intelligence in the military domain and its implications for international peace and security.",
+      "publisher": "United Nations General Assembly, First Committee",
+      "url": "https://digitallibrary.un.org/record/4130554/files/A_C.1_81_L.34-EN.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "unga-81-first-committee-vote",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "UN Meetings Coverage GA/DIS/3782, 30 October 2026: the First Committee approved A/C.1/81/L.34 by 171 votes to 4 (DPRK, Israel, Russian Federation, United States), with 6 abstentions (Argentina, Belarus, Iran, Nicaragua, Saudi Arabia, South Sudan).",
+      "publisher": "United Nations Department of Global Communications",
+      "url": "https://press.un.org/en/2026/gadis3782.doc.htm"
     }
   ],
   "status": "adopted",
-  "status_note": "Adopted. Non-binding resolution.",
+  "status_note": "Adopted. Non-binding resolution. A successor draft for the 81st session (A/C.1/81/L.34) was approved by the First Committee on 30 October 2026 (171-4-6) and forwarded to the General Assembly; it was not an adopted resolution at verification.",
   "text": {
     "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
     "full_text": true,
@@ -114,6 +136,11 @@
         "check": "Prior resolution checked in the preamble.",
         "date": "2026-11-23",
         "result": "Recalls A/RES/79/239 of 24 December 2024."
+      },
+      {
+        "check": "81st-session successor checked on UN documents and coverage.",
+        "date": "2026-11-25",
+        "result": "A/C.1/81/L.34 was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; no A/RES/81 symbol existed on 25 November 2026, so it is not recorded as an adopted resolution."
       }
     ],
     "level": "metadata_verified",

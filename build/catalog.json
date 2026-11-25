@@ -2,7 +2,7 @@
   "counts": {
     "by_binding": {
       "binding": 22,
-      "non_binding": 49
+      "non_binding": 50
     },
     "by_category": {
       "agreement_ai_provisions": 5,
@@ -10,23 +10,23 @@
       "cyber_treaty": 9,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 41,
+      "non_binding_instrument": 42,
       "preparatory_interpretive": 2,
       "regional_law": 1,
       "supranational_law": 3,
       "technical_standard": 5
     },
     "by_domain": {
-      "ai": 56,
+      "ai": 57,
       "cyber": 15,
       "joint": 0
     },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 61
+      "metadata_verified": 62
     },
     "full_texts": 36,
-    "total": 71,
+    "total": 72,
     "with_local_original": 36
   },
   "full_text_ids": [
@@ -3656,7 +3656,7 @@
       "category": "draft_negotiation",
       "dates": {
         "adopted": "2026-11-20",
-        "notes": "The GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference adopted its final document on 20 November 2026 (to be issued as CCW/CONF.VII/11), endorsing the set of elements and continuing the GGE. The 2027 sessions are scheduled for 1–5 March and 30 August–3 September 2027.",
+        "notes": "The GGE adopted its final report by consensus on 4 September 2026. Before the Review Conference, the UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations on an instrument. The Seventh Review Conference adopted its final document on 20 November 2026 (to be issued as CCW/CONF.VII/11), endorsing the set of elements and continuing the GGE. The 2027 sessions are scheduled for 1–5 March and 30 August–3 September 2027.",
         "published": null,
         "verified_on": "2026-11-23"
       },
@@ -3668,7 +3668,8 @@
         "The final document was read as CCW/CONF.VII/CRP.1/Rev.3; the clean CCW/CONF.VII/11 symbol was not yet available at verification.",
         "Only the English texts were read; the other UN official language versions were not acquired.",
         "No PDF bytes or full-text units are stored for this record; it is metadata-level.",
-        "The positions of individual High Contracting Parties and the 2027 GGE Chair were not assessed."
+        "The positions of individual High Contracting Parties and the 2027 GGE Chair were not assessed.",
+        "The 81st-session General Assembly draft A/C.1/81/L.37 had been approved by the First Committee but not adopted by the plenary at verification; its plenary fate is not recorded here."
       ],
       "id": "ccw-gge-laws-2026",
       "instrument_type": "report",
@@ -3779,10 +3780,30 @@
           "note": "Official Seventh Review Conference page (16–20 November 2026); links the final document, draft final documents and the proposal on the GGE LAWS mandate.",
           "publisher": "United Nations Office for Disarmament Affairs",
           "url": "https://meetings.unoda.org/ccw-revcon/convention-on-certain-conventional-weapons-seventh-review-conference-2026"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "unga-81-l37-draft",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Draft resolution A/C.1/81/L.37, 13 October 2026: lethal autonomous weapons systems; calls upon CCW High Contracting Parties to advance to negotiations on an instrument on autonomous weapons systems.",
+          "publisher": "United Nations General Assembly, First Committee",
+          "url": "https://digitallibrary.un.org/record/4130858/files/A_C.1_81_L.37-EN.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "unga-81-laws-vote",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "UN Meetings Coverage GA/DIS/3781, 29 October 2026: the First Committee approved A/C.1/81/L.37 by 163 votes to 5 (Belarus, DPRK, Israel, Russian Federation, United States), with 9 abstentions.",
+          "publisher": "United Nations Department of Global Communications",
+          "url": "https://press.un.org/en/2026/gadis3781.doc.htm"
         }
       ],
       "status": "in_negotiation",
-      "status_note": "No instrument has been adopted. The 2024–2026 GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference (16–20 November 2026) endorsed the set of elements of an instrument and other possible measures and continued the open-ended GGE, mandating it to elaborate, by consensus, an instrument that specifies international humanitarian law applicable to LAWS and its implementation, without prejudging the instrument's nature, and to recommend its legal nature and specific form, including whether it should be a binding protocol. The Group is to report to the 2028 Meeting of High Contracting Parties.",
+      "status_note": "No instrument has been adopted. The UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations; it had not been adopted by the plenary at verification. The 2024–2026 GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference (16–20 November 2026) endorsed the set of elements of an instrument and other possible measures and continued the open-ended GGE, mandating it to elaborate, by consensus, an instrument that specifies international humanitarian law applicable to LAWS and its implementation, without prejudging the instrument's nature, and to recommend its legal nature and specific form, including whether it should be a binding protocol. The Group is to report to the 2028 Meeting of High Contracting Parties.",
       "title": {
         "english": "Report of the Group of Governmental Experts on Emerging Technologies in the Area of Lethal Autonomous Weapons Systems",
         "official": "Report of the Group of Governmental Experts on Emerging Technologies in the Area of Lethal Autonomous Weapons Systems (CCW/GGE.1/2026/3)",
@@ -7781,6 +7802,168 @@
         ],
         "level": "metadata_verified",
         "notes": "Metadata and legal nature verified. No full text is stored; the companion private-sector Compact is not counted as an intergovernmental instrument."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2026-05-29",
+        "notes": "Agreed by the G7 Digital and Technology Ministers meeting in Paris on 29 May 2026 under France's G7 presidency; the English text was published by the UK Department for Science, Innovation and Technology on 1 June 2026. The declaration has four priorities: promoting secure AI; boosting AI adoption for economic growth; ensuring resilience and resource efficiency of the digital sector; and fostering a safer digital space for minors online.",
+        "published": "2026-06-01",
+        "verified_on": "2026-11-25"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding: it creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+        "A broad digital-and-technology ministerial declaration, not an AI-specific instrument; only the AI-related sections are recorded, and the digital-infrastructure, energy and minors-online sections are outside the corpus's scope.",
+        "No itemised list of adopting States or ministers is published in the text; it is issued collectively by the G7 Digital and Technology Ministers.",
+        "The separately issued G7 deliverables it refers to (the Vision on AI openness, the G7 SME AI Readiness Tool, the Policy Paper on Agentic AI, the Common G7 Set of Principles for minors online, the International Overview on resilience and resource efficiency) are not catalogued individually.",
+        "The Hiroshima AI Process Reporting Framework itself, which the declaration commends in its revised form, is not analysed in this record.",
+        "Only the English text was read; the French version published by the French presidency was not acquired.",
+        "No full text, citable units or original file is stored; the record is metadata-only."
+      ],
+      "id": "g7-digital-technology-ministerial-declaration-2026",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "G7 Digital and Technology Ministers (French Presidency, 2026)",
+          "role": "issuer",
+          "url": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026"
+        },
+        {
+          "name": "French G7 Presidency (2026)",
+          "role": "host",
+          "url": "https://www.economie.gouv.fr/actualites/video-g7-numerique-conference-de-presse-danne-le-henanff-vendredi-29-mai-17h30"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "The English text published by the UK Department for Science, Innovation and Technology was read in full. The French presidency publishes a French version; it was not acquired, and no authentic-language clause exists because the text is not a treaty.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A ministerial declaration adopted collectively by the G7 Digital and Technology Ministers. It records political priorities and welcomes or initiates voluntary work; it has no signature, ratification, depositary or entry-into-force clause and creates no legal obligation.",
+        "source_ids": [
+          "gov-uk-declaration-2026",
+          "mic-results-2026"
+        ]
+      },
+      "provenance": {
+        "assertions": [],
+        "discovered_via": "G7 2026 Digital and Technology Ministerial Declaration had been recorded as pending in the candidate register; the GOV.UK publication was read and cross-checked with the Japanese MIC results page and the French presidency's release.",
+        "search_dates": [
+          "2026-11-25"
+        ]
+      },
+      "related": [
+        {
+          "id": "g7-hiroshima-code-2023",
+          "note": "The declaration acknowledges the Hiroshima AI Process and commends its revised Reporting Framework, the reporting mechanism attached to the 2023 Code of Conduct.",
+          "relation": "related"
+        },
+        {
+          "id": "g20-ai-prosperity-objectives-2026",
+          "note": "A parallel non-binding ministerial AI deliverable adopted in September 2026; the G7 text is broader in digital scope and its AI sections concentrate on secure AI and AI adoption.",
+          "relation": "related"
+        },
+        {
+          "id": "oecd-ai-recommendation-2019",
+          "note": "The declaration records that the Hiroshima AI Process Reporting Framework is supported by the OECD through the Global Partnership on AI, and refers to OECD work on AI openness and SME readiness.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Priority 1, promoting secure AI — acknowledges the Hiroshima AI Process (HAIP) and the Reporting Framework advanced by Italy's 2024 and Canada's 2025 presidencies; commends the revised HAIP Reporting Framework, supported by the OECD through the Global Partnership on AI, as a multi-stakeholder platform for AI risk assessment, reporting and mitigation assessment.",
+          "Priority 1 — welcomes the Hiroshima AI Process Friends Group and Partners' Community, their expansion to developing countries and the related Action Plan announced in March 2026.",
+          "Priority 1 — announces discussions under France's presidency with stakeholders, including the International Network for Advanced AI Measurement, Evaluation and Science and the OECD, on improving mutual understanding and comparability of AI risk-assessment frameworks.",
+          "Priority 1 — recognises AI risks from design flaws and cybersecurity vulnerabilities and from misuse in malicious cyber activities and chemical, biological and radiological capabilities; plans continued expert discussions on synthetic-content detection.",
+          "Priority 2, boosting AI adoption — supports AI openness, publishes a Vision on AI openness opportunities and shared language, and, with the OECD, a G7 SME AI Readiness Tool; addresses AI literacy and skills for MSMEs.",
+          "Priority 3 — addresses the energy and resource requirements of AI models and hardware, and notes the French presidency's Policy Paper on Agentic AI (led by Inria) and the overview of voluntary measurement, monitoring and reporting initiatives.",
+          "Priority 4 — addresses generative AI, deepfakes and AI-generated child sexual abuse material in the digital space for minors; no AI-specific obligation is created."
+        ],
+        "excluded_scope": "A broad digital-and-technology ministerial declaration. It creates no binding obligations and no AI-specific institution, reporting duty or market-access rule; the digital-infrastructure, energy and minors-online sections are recorded only where they concern AI. The separate G7 deliverables it refers to are not catalogued individually.",
+        "reason": "The declaration contains express, substantive AI provisions in two of its four priorities: it commends the revised Hiroshima AI Process Reporting Framework, announces work on the comparability of AI risk-assessment frameworks, and sets out AI openness and AI adoption deliverables. It was recorded as pending in the candidate register and its adoption on 29 May 2026 resolves that pending item. It is catalogued as a non-binding political declaration, not as an AI-specific treaty or a G7 implementation mechanism.",
+        "source_ids": [
+          "gov-uk-declaration-2026",
+          "mic-results-2026"
+        ]
+      },
+      "rights": {
+        "licence": "Open Government Licence v3.0 (GOV.UK text); French and Japanese government terms for their pages",
+        "note": "Official government publications. No full text is stored in this corpus; metadata only.",
+        "status": "public_official_text",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "gov-uk-declaration-2026",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official English text of the declaration, published 1 June 2026 by the Department for Science, Innovation and Technology; read in full. Records the meeting in Paris on 29 May 2026 and the four priorities.",
+          "publisher": "UK Department for Science, Innovation and Technology (GOV.UK)",
+          "url": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "mic-results-2026",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Japanese Ministry of Internal Affairs and Communications press release, 1 June 2026: the G7 Digital and Technology Ministerial Meeting was held in Paris on 29 May 2026 and the Ministerial Declaration was adopted as its outcome document.",
+          "publisher": "Ministry of Internal Affairs and Communications, Japan",
+          "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/eng/pressrelease/2026/6/1_1.html"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "fr-presidency-release-2026",
+          "kind": "official_secondary",
+          "language": "fr",
+          "note": "French Ministry of the Economy press page, 29 May 2026: after the meeting of the G7 digital ministers in Paris under the French presidency, the G7 members adopted a joint declaration; the page links the press release and the declaration in English. French-language source; the declaration itself was read in English.",
+          "publisher": "Ministère de l'Économie, France",
+          "url": "https://www.economie.gouv.fr/actualites/video-g7-numerique-conference-de-presse-danne-le-henanff-vendredi-29-mai-17h30"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Adopted by the G7 Digital and Technology Ministers in Paris on 29 May 2026 and published on 1 June 2026. It is a non-binding political declaration with no signature, ratification, depositary or entry-into-force procedure. Its AI provisions commend the revised Hiroshima AI Process Reporting Framework and set out AI risk-assessment, AI openness and AI adoption work; no implementation or monitoring duty is created.",
+      "title": {
+        "official": "G7 Digital and Technology Ministerial Declaration: 29 May 2026",
+        "short": "G7 Digital and Technology Ministerial Declaration (2026)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official English text opened and read in full.",
+            "date": "2026-11-25",
+            "result": "Title, Paris venue and 29 May 2026 date confirmed; four priorities, with AI in priorities 1 and 2; no binding language."
+          },
+          {
+            "check": "Adoption as the ministerial's outcome document checked against the Japanese MIC release.",
+            "date": "2026-11-25",
+            "result": "The G7 Digital and Technology Ministerial Meeting was held in Paris on 29 May 2026 and the Ministerial Declaration was adopted as the outcome document."
+          },
+          {
+            "check": "Issuing context checked against the French presidency's release.",
+            "date": "2026-11-25",
+            "result": "France held the G7 presidency in 2026 and announced the adoption of a joint declaration after the digital ministers' meeting of 29 May 2026."
+          },
+          {
+            "check": "Legal nature checked against the text.",
+            "date": "2026-11-25",
+            "result": "Political ministerial declaration; no signature, ratification, depositary, monitoring or enforcement mechanism."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "The English text was read in full and adoption was confirmed by two further official pages. No full text is stored, so the record is metadata-verified rather than full-text-checked."
       }
     },
     {
@@ -15858,7 +16041,7 @@
       "category": "non_binding_instrument",
       "dates": {
         "adopted": "2025-12-01",
-        "notes": "Adopted on the report of the First Committee (A/80/534, para. 7); document distributed 5 December 2025.",
+        "notes": "Adopted on the report of the First Committee (A/80/534, para. 7); document distributed 5 December 2025. The 81st-session successor, draft A/C.1/81/L.34, was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; no A/RES/81 symbol had been assigned by 25 November 2026.",
         "published": "2025-12-05",
         "verified_on": "2026-11-23"
       },
@@ -15869,7 +16052,9 @@
         "Non-binding.",
         "Only metadata-level verification.",
         "Only English acquired.",
-        "No operative prohibition or transparency mechanism."
+        "No operative prohibition or transparency mechanism.",
+        "The 81st-session successor (A/C.1/81/L.34) had been approved by the First Committee but not adopted by the plenary at verification; its final number, text and vote in plenary are not recorded here.",
+        "Only the English text of the 2025 resolution was acquired; the successor draft was read in its English PDF only."
       ],
       "id": "un-ga-res-80-58",
       "instrument_type": "resolution",
@@ -15942,10 +16127,30 @@
           "note": "Record for A/RES/80/58.",
           "publisher": "UN Digital Library",
           "url": "https://digitallibrary.un.org/record/4095956"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "unga-81-l34-draft",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Draft resolution A/C.1/81/L.34, 13 October 2026, sponsored by 46 States; text on artificial intelligence in the military domain and its implications for international peace and security.",
+          "publisher": "United Nations General Assembly, First Committee",
+          "url": "https://digitallibrary.un.org/record/4130554/files/A_C.1_81_L.34-EN.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "unga-81-first-committee-vote",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "UN Meetings Coverage GA/DIS/3782, 30 October 2026: the First Committee approved A/C.1/81/L.34 by 171 votes to 4 (DPRK, Israel, Russian Federation, United States), with 6 abstentions (Argentina, Belarus, Iran, Nicaragua, Saudi Arabia, South Sudan).",
+          "publisher": "United Nations Department of Global Communications",
+          "url": "https://press.un.org/en/2026/gadis3782.doc.htm"
         }
       ],
       "status": "adopted",
-      "status_note": "Adopted. Non-binding resolution.",
+      "status_note": "Adopted. Non-binding resolution. A successor draft for the 81st session (A/C.1/81/L.34) was approved by the First Committee on 30 October 2026 (171-4-6) and forwarded to the General Assembly; it was not an adopted resolution at verification.",
       "text": {
         "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
         "full_text": true,
@@ -15969,6 +16174,11 @@
             "check": "Prior resolution checked in the preamble.",
             "date": "2026-11-23",
             "result": "Recalls A/RES/79/239 of 24 December 2024."
+          },
+          {
+            "check": "81st-session successor checked on UN documents and coverage.",
+            "date": "2026-11-25",
+            "result": "A/C.1/81/L.34 was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; no A/RES/81 symbol existed on 25 November 2026, so it is not recorded as an adopted resolution."
           }
         ],
         "level": "metadata_verified",
@@ -15980,8 +16190,8 @@
       "category": "non_binding_instrument",
       "dates": {
         "adopted": "2026-10-06",
-        "notes": "Adopted without a vote at the 41st meeting of the Human Rights Council's 63rd session, 6 October 2026. Official English document A/HRC/RES/63/15, 6 pages.",
-        "verified_on": "2026-11-23"
+        "notes": "Adopted without a vote at the 41st meeting of the Human Rights Council's 63rd session, 6 October 2026. Official English document A/HRC/RES/63/15, 6 pages. Operative paragraph 20 convenes a panel at the 65th session on 'Placing human rights at the centre of artificial intelligence: artificial intelligence capacity-building and bridging the artificial intelligence divide'; operative paragraphs 21–22 request an OHCHR report on that theme to the 66th session, informed by the panel and by consultations including at the margins of the Second Global Dialogue on Artificial Intelligence Governance in May 2027. Neither has yet taken place.",
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "ai"
@@ -15992,7 +16202,7 @@
         "No military-AI prohibition; international humanitarian law is referenced only as applicable.",
         "Only the English text was read; the other five authentic UN language versions were not acquired.",
         "No full text is stored in the corpus; the record is metadata-only.",
-        "The requested panel discussion and OHCHR report are future follow-up, not implementation."
+        "The 65th-session panel discussion and the OHCHR report to the 66th session are future follow-up, not implementation; no date, agenda or terms of reference for either were located beyond the resolution's own terms."
       ],
       "id": "un-hrc-res-63-15",
       "instrument_type": "resolution",
@@ -16092,7 +16302,7 @@
           "Operative paragraphs 9–10 — human-rights due diligence and impact assessments; meaningful human oversight, information, human review and effective remedies where AI plays a material role in decisions affecting rights.",
           "Operative paragraphs 11–13 — freedom of opinion and expression, privacy, differentiated impacts on vulnerable groups, and the responsibility of business enterprises under the Guiding Principles on Business and Human Rights.",
           "Operative paragraphs 14–17 — AI literacy, international cooperation and capacity building, digital public goods and open models, and coherence among international initiatives.",
-          "Operative paragraphs 20–23 — a panel discussion at the 65th session on AI capacity building and the AI divide; an OHCHR report to the 66th session; the Council remains seized of the matter."
+          "Operative paragraphs 20–23 — a panel discussion at the 65th session on 'Placing human rights at the centre of artificial intelligence: artificial intelligence capacity-building and bridging the artificial intelligence divide', with States, the Office of the High Commissioner, UN entities and mechanisms, national human rights institutions, civil society, academia, the technical community and business enterprises; an OHCHR report on that theme to the 66th session, informed by the panel and by consultations including at the margins of the Second Global Dialogue on Artificial Intelligence Governance (May 2027); the Council remains seized of the matter."
         ],
         "excluded_scope": "A non-binding Human Rights Council resolution. It creates no signature, ratification, depositary, monitoring or enforcement mechanism, and it does not establish a military-AI prohibition. It applies existing human-rights obligations rather than creating new ones.",
         "reason": "A dedicated Human Rights Council resolution on the human-rights implications of artificial intelligence, adopted without a vote on 6 October 2026. It complements the General Assembly resolutions and CETS 225 by applying existing international human-rights law across the AI life cycle: discrimination, privacy, freedom of expression, human oversight, due diligence, remedies and capacity building. It is non-binding and creates no enforcement mechanism, but it is the Human Rights Council's principal AI-specific text and was missing from the corpus."
@@ -16131,10 +16341,30 @@
           "note": "Summary record A/HRC/63/SR.41 of the meeting at which the resolution was adopted.",
           "publisher": "UN Digital Library",
           "url": "https://digitallibrary.un.org/record/4132633"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "hrc-session-resolutions",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "OHCHR list of the 63rd session's resolutions, decisions and President's statements: 63/15, agenda item 3, draft A/HRC/63/L.25, adopted without a vote at the 41st meeting on 6 October 2026.",
+          "publisher": "Office of the United Nations High Commissioner for Human Rights",
+          "url": "https://www.ohchr.org/en/hr-bodies/hrc/regular-sessions/session63/res-dec-stat"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "ohchr-session63-summary",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "OHCHR summary of the 63rd session's closing, 7 October 2026: records the panel theme, the participating stakeholders, the OHCHR report to the 66th session, and the consultation at the margins of the Second Global Dialogue on Artificial Intelligence Governance in May 2027.",
+          "publisher": "Office of the United Nations High Commissioner for Human Rights",
+          "url": "https://www.ohchr.org/en/meeting-summaries/2026/10/human-rights-council-concludes-sixty-third-regular-session-after-adopting?sub-site=HRC"
         }
       ],
       "status": "adopted",
-      "status_note": "Adopted without a vote on 6 October 2026. The resolution is non-binding and creates no ratification, depositary, monitoring or enforcement mechanism. It applies international human-rights law to AI and requests follow-up through a panel discussion at the 65th session and an OHCHR report to the 66th session.",
+      "status_note": "Adopted without a vote on 6 October 2026. The resolution is non-binding and creates no ratification, depositary, monitoring or enforcement mechanism. It applies international human-rights law to AI and requests follow-up through a panel discussion at the 65th session on AI capacity-building and bridging the AI divide, and an OHCHR report on that theme to the 66th session, informed by consultations including at the margins of the Second Global Dialogue on AI Governance in May 2027. As of 25 November 2026 neither the panel nor the report had taken place.",
       "title": {
         "official": "Implications of artificial intelligence for the promotion and protection of human rights",
         "short": "HRC resolution 63/15 on AI and human rights"
@@ -16155,6 +16385,11 @@
             "check": "Party-level data checked.",
             "date": "2026-11-23",
             "result": "No individual vote or signatory list exists; the resolution was adopted by the 47-member Council without a vote."
+          },
+          {
+            "check": "Follow-up paragraphs checked against OHCHR's session records.",
+            "date": "2026-11-25",
+            "result": "The 65th-session panel theme, the participating stakeholders and the OHCHR report to the 66th session are confirmed by the OHCHR resolutions list and session summary; no panel date or agenda was published by 25 November 2026."
           },
           {
             "check": "Legal nature checked.",
@@ -16313,7 +16548,7 @@
       "category": "non_binding_instrument",
       "dates": {
         "adopted": "2024-04-05",
-        "notes": "Sixth ministerial meeting of the U.S.–EU Trade and Technology Council, Leuven, 4–5 April 2024; the joint statement was published on 5 April 2024. The first technical Dialogue under the commitment was held on 11 July 2024. No TTC ministerial or joint statement after the September 2024 stock-taking was located; the European Commission's fact page is titled '(2021-2024)' and its TTC topic page is marked archived. No later meeting of the AI-safety Dialogue was located.",
+        "notes": "Sixth ministerial meeting of the U.S.–EU Trade and Technology Council, Leuven, 4–5 April 2024; the joint statement was published on 5 April 2024. The first technical Dialogue under the commitment was held on 11 July 2024. A stock-taking meeting of high-level officials was held virtually on 16 September 2024; the European Commission and USTR readouts record continued collaboration on artificial intelligence but announce no further ministerial. No TTC ministerial or joint statement after that stock-taking was located; the European Commission's fact page is titled '(2021-2024)' and its TTC topic page is marked archived. No later meeting of the AI-safety Dialogue was located.",
         "published": "2024-04-05",
         "verified_on": "2026-11-25"
       },
@@ -16324,7 +16559,7 @@
         "No standalone US–EU AI-safety agreement, MOU, administrative arrangement or terms of reference was located.",
         "The AI-safety commitment is one section of a broad TTC joint statement covering many non-AI issues; only the AI section was analysed.",
         "The joint statement creates no binding obligations, ratification, depositary, monitoring, reporting or dispute settlement.",
-        "No TTC ministerial, joint statement or working-group output after the September 2024 stock-taking was located; the Commission presents the TTC as a 2021-2024 framework and archives its topic page, but no formal closure decision was located.",
+        "No TTC ministerial, joint statement or working-group output after the 16 September 2024 stock-taking was located; the Commission presents the TTC as a 2021-2024 framework and archives its topic page, but no formal closure decision was located.",
         "No meeting of the AI-safety Dialogue after 11 July 2024 was located on official EU or US pages.",
         "The August 2025 US-EU trade framework provides for 'setting up a Digital Dialogue'; the Commission described it on 29 June 2026 as a potential future dialogue, and no launch document was located.",
         "Only the English versions were read; other language versions were not checked.",
@@ -16471,10 +16706,30 @@
           "note": "European Commission midday press briefing of 29 June 2026: a services-level delegation was discussing a 'potential future dialogue' with the United States, including its scope, participants and frequency, and frontier AI models. No launch of the dialogue was announced.",
           "publisher": "European Commission, Audiovisual Service",
           "url": "https://audiovisual.ec.europa.eu/en/media/video/I-292051"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "ec-ttc-stocktaking-2024",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "European Commission news article, 16 September 2024 (last updated 17 September 2024): high-level officials met to review progress under the TTC since the April 2024 Leuven ministerial; the discussions 'highlighted the importance of the continued collaboration around artificial intelligence'. No further ministerial or AI-safety Dialogue meeting is announced.",
+          "publisher": "European Commission, Shaping Europe’s digital future",
+          "url": "https://digital-strategy.ec.europa.eu/en/news/eu-and-us-high-level-officials-meet-take-stock-ongoing-cooperation-under-eu-us-trade-and-technology"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "ustr-ttc-deputies-readout-2024",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "USTR readout, 16 September 2024: the TTC convened virtually at Deputy level; the deputies 'welcomed work on the Joint Roadmap for Trustworthy AI' and reiterated their intention to use the remainder of 2024 to consult stakeholders on the future of the TTC. The page sits in USTR's 2007-2024 press-release archive.",
+          "publisher": "Office of the United States Trade Representative",
+          "url": "https://www.ustr.gov/about-us/policy-offices/press-office/press-releases/2024/september/readout-us-eu-trade-and-technology-council-ttc-deputies-meeting"
         }
       ],
       "status": "adopted",
-      "status_note": "Political joint statement, not a treaty. The AI-safety commitment is the establishment of a Dialogue between the European AI Office and the U.S. AI Safety Institute. No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located. The separate U.S.–EU Administrative Arrangement on AI and computing is a research-cooperation instrument, not an AI-safety agreement. The joint statement creates no binding obligations, ratification, depositary or dispute settlement. No TTC ministerial or joint statement after the September 2024 stock-taking was located; the Commission presents the TTC as a 2021-2024 framework and archives its topic page, without a formal closure decision. No later meeting of the AI-safety Dialogue was located. The August 2025 US-EU trade framework provides for 'setting up a Digital Dialogue'; on 29 June 2026 the Commission described it as a potential future dialogue, and no launch document was located.",
+      "status_note": "Political joint statement, not a treaty. The AI-safety commitment is the establishment of a Dialogue between the European AI Office and the U.S. AI Safety Institute. No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located. The separate U.S.–EU Administrative Arrangement on AI and computing is a research-cooperation instrument, not an AI-safety agreement. The joint statement creates no binding obligations, ratification, depositary or dispute settlement. The stock-taking meeting of 16 September 2024 was held virtually at the level of senior officials; the Commission and USTR readouts record continued collaboration on artificial intelligence and do not announce a further ministerial. No TTC ministerial or joint statement after that stock-taking was located; the Commission presents the TTC as a 2021-2024 framework and archives its topic page, without a formal closure decision. No later meeting of the AI-safety Dialogue was located. The August 2025 US-EU trade framework provides for 'setting up a Digital Dialogue'; on 29 June 2026 the Commission described it as a potential future dialogue, and no launch document was located.",
       "title": {
         "official": "Joint Statement EU-US Trade and Technology Council of 4-5 April 2024 in Leuven, Belgium",
         "short": "U.S.–EU TTC AI Safety Dialogue"
@@ -16500,6 +16755,11 @@
             "check": "Search for a standalone US–EU AI-safety instrument.",
             "date": "2026-11-23",
             "result": "No standalone MOU, administrative arrangement or terms of reference was located on the European Commission, USTR, NIST or Commerce pages. The Administrative Arrangement on AI and computing is a separate research-cooperation instrument."
+          },
+          {
+            "check": "September 2024 stock-taking checked on European Commission and USTR pages.",
+            "date": "2026-11-25",
+            "result": "High-level officials met virtually on 16 September 2024 to review progress since the Leuven ministerial; both readouts record continued collaboration on AI and the Joint Roadmap for Trustworthy AI, and neither announces a further ministerial."
           },
           {
             "check": "Post-2024 TTC status and successor dialogue checked on European Commission pages.",

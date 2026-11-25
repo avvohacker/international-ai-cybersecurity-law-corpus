@@ -423,6 +423,16 @@
       "title": "G20 AI Prosperity Objectives (2026)"
     },
     {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "id": "g7-digital-technology-ministerial-declaration-2026",
+      "official_source": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "G7 Digital and Technology Ministerial Declaration (2026)"
+    },
+    {
       "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
@@ -997,10 +1007,10 @@
       "transient": 2
     },
     "internal_law": 3,
-    "official_text_located": 25,
+    "official_text_located": 26,
     "paywalled": 5,
     "stored": 36,
     "summary_only": 2
   },
-  "total": 71
+  "total": 72
 }
