@@ -1,10 +1,10 @@
 {
-  "checked": 68,
+  "checked": 71,
   "audited_on": "2026-11-25",
   "scope": "acquisition-batch",
   "instruments": 15,
   "summary": {
-    "ok": 47,
+    "ok": 50,
     "anti_bot": 21,
     "broken": 0,
     "transient": 0
@@ -622,6 +622,16 @@
     },
     {
       "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "mddi-singapore-response",
+      "label": "Ministry of Digital Development and Information, Singapore",
+      "url": "https://www.mddi.gov.sg/newsroom/mddi-response-to-pq-on-singapore-position-on-the-world-artificial-intelligence-cooperation-association/",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
       "source_id": "mfa-31-july",
       "label": "MFA 31 July account",
       "url": "https://www.fmprc.gov.cn/wjbxw_new/202607/t20260731_11996584.shtml",
@@ -662,9 +672,29 @@
     },
     {
       "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "ndrc-3-nov-2026",
+      "label": "National Development and Reform Commission of the People's Republic of China",
+      "url": "https://www.ndrc.gov.cn/xwdt/wszb/swwfbhpyzdxdn/wzsl/202611/t20261103_1408523.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
       "source_id": "npc-agreement-text",
       "label": "NPC agreement text",
       "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "russia-decree-1532",
+      "label": "Government of the Russian Federation, Official Internet Portal of Legal Information",
+      "url": "http://www.publication.pravo.gov.ru/document/0001202611180027",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",

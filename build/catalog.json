@@ -16791,22 +16791,22 @@
       "category": "ai_treaty",
       "dates": {
         "closed_for_signature": "2026-07-31",
-        "notes": "Signed at the Shanghai ceremony on 16 July 2026; open for signature from 1 May to 31 July 2026. The official Chinese text was published by the National People's Congress on 18 November 2026 and its articles were read for this record. China's NPC Standing Committee approved ratification on 6 November 2026; that is a domestic authorisation, not a deposit. No instrument of ratification, acceptance, approval or accession was verified with the depositary, and no depositary notification of entry into force was located.",
+        "notes": "Signed at the Shanghai ceremony on 16 July 2026; open for signature from 1 May to 31 July 2026. The official Chinese text was published by the National People's Congress on 18 November 2026 and its articles were read for this record. China's NPC Standing Committee approved ratification on 6 November 2026; that is a domestic authorisation, not a deposit. No instrument of ratification, acceptance, approval or accession was verified with the depositary, and no depositary notification of entry into force was located. Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026, published on the official legal-information portal on 18 November 2026; that is also a domestic act, and no Russian deposit was verified.",
         "opened_for_signature": "2026-05-01",
         "signed": "2026-07-16",
-        "verified_on": "2026-11-24"
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "ai"
       ],
       "gaps": [
-        "Entry into force is not confirmed: Article 15 requires three deposited ratifications, acceptances or approvals, and no deposit was verified. The number of deposits is unknown, not zero.",
+        "Entry into force is not confirmed: Article 15 requires three deposited ratifications, acceptances or approvals, and no deposit was verified. The number of deposits is unknown, not zero. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; both are domestic acts. No Chinese or Russian deposit, and no depositary notification, was verified.",
         "China's NPC approved ratification on 6 November 2026. That is a domestic authorisation; the deposit of the instrument and any depositary notification were not verified.",
-        "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located. Bangladesh is not the 38th member: it announced on 1 August 2026 that it would join 'initially as an observer'.",
+        "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located. The NDRC repeated the 38 figure on 3 November 2026 without naming the 38th. Bangladesh is not the 38th member: it announced on 1 August 2026 that it would join 'initially as an observer'.",
         "Observer status is not a party status: Article 11 allows the Council to admit non-member States and intergovernmental organisations as observers. No Council admission of Bangladesh is recorded.",
         "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
         "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",
-        "Articles 5–8 provide for a Council, a Secretariat and financing. No evidence was located that the Council or Secretariat has been constituted, that rules of procedure or a budget have been adopted, or that implementing instruments exist. This is an unverified point, not a finding that the organs do not exist.",
+        "Articles 5–8 provide for a Council, a Secretariat and financing. No evidence was located that the Council or Secretariat has been constituted, that rules of procedure or a budget have been adopted, or that implementing instruments exist. On 3 November 2026 the NDRC said China is advancing the organization's 'material operation' process ('正在推动世界人工智能合作组织的实体化运行进程'), wording that describes work in progress rather than constituted organs. This is an unverified point, not a finding that the organs do not exist.",
         "No deposited or certified copy was acquired; the stored text is the official NPC Chinese publication. The English reproduction on Digital Watch was consulted but is not stored."
       ],
       "id": "waico-establishment-agreement-2026",
@@ -16845,7 +16845,7 @@
       },
       "parties": {
         "act": "treaty_signature",
-        "as_of": "2026-11-23",
+        "as_of": "2026-11-25",
         "counts": {
           "ratifications": {
             "basis": "unknown",
@@ -17013,6 +17013,11 @@
             "signature": "2026-07-16"
           },
           {
+            "domestic_approval": "2026-11-17",
+            "notes": [
+              "Accepted by Government decree No. 1532 on 17 November 2026, published on the official legal-information portal on 18 November 2026: a domestic act of acceptance.",
+              "Deposit of the instrument with the depositary was not verified; no deposit is counted."
+            ],
             "party": "Russia",
             "role": "signatory",
             "signature": "2026-07-16"
@@ -17096,44 +17101,48 @@
           "mfa-31-july",
           "indonesia-founding-list"
         ],
-        "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member; no Council admission is recorded. Singapore has been reported as considering an invitation and is not a member. China's NPC approved ratification on 6 November 2026, but this is a domestic authorisation and no deposit was verified; the number of deposited instruments is unknown.",
+        "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member; no Council admission is recorded. Singapore's MDDI told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it; it is not a member and has not accepted. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026, but both are domestic acts and no deposit was verified; the number of deposited instruments is unknown.",
         "unknowns": [
-          "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The October 2026 progress report says nine States joined after the initial 29; eight are named in the 31 July account, so one of the nine - the 38th member - is not named. Bangladesh is not that member: it announced on 1 August 2026 that it would join 'initially as an observer'. Singapore has been reported as considering an invitation and is not a member.",
+          "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The October 2026 progress report says nine States joined after the initial 29; eight are named in the 31 July account, so one of the nine - the 38th member - is not named. Bangladesh is not that member: it announced on 1 August 2026 that it would join 'initially as an observer'. Singapore's MDDI told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it, without saying whether the invitation is to membership or observer status; Singapore is not a member and has not accepted.",
           "China is the depositary under Article 18. No public depositary register, status table or notification of signatures, ratifications, acceptances, approvals, accessions or entry into force was located. The number of deposited instruments is therefore unknown; zero deposits are individually verified, but that is not a verified total of zero.",
-          "China's NPC approval of 6 November 2026 is a domestic authorisation. The date of any deposit, and the treaty's entry into force, were not verified.",
+          "China's NPC approval of 6 November 2026 and Russia's Government acceptance of 17 November 2026 are domestic acts. The date of any deposit, and the treaty's entry into force, were not verified.",
           "The Agreement remains open to accession after 31 July 2026 (Article 14(3)); later accessions are not Founding Members and are not included in this list.",
-          "The exact date on which the MFA's 38-country count was reached is not stated; the October 2026 progress report already gives 38."
+          "The exact date on which the MFA's 38-country count was reached is not stated; the October 2026 progress report already gives 38.",
+          "No act constituting the Council or the Secretariat, appointing a Secretary-General, adopting rules of procedure or a budget, or opening a secretariat in Shanghai was located. The NDRC described 'material operation' as a process under way on 3 November 2026, not as completed."
         ],
         "withdrawals": []
       },
       "provenance": {
         "assertions": [
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "status",
-            "locator": "Article 15 (three instruments of ratification, acceptance or approval); MFA press conference of 9 November 2026",
+            "locator": "Article 15 (three instruments of ratification, acceptance or approval); MFA press conference of 9 November 2026; Russian Government decree No. 1532 of 17 November 2026",
             "method": "official_page_read",
             "note": "No depositary notification located; entry into force not confirmed, so no definitive in-force or not-in-force status is asserted.",
             "source_ids": [
               "npc-agreement-text",
-              "mfa-ratification"
+              "mfa-ratification",
+              "russia-decree-1532"
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "parties",
-            "locator": "MFA statements of 9 November 2026 and 31 July 2026; Indonesian government list of 17 July 2026; October 2026 progress report",
+            "locator": "MFA statements of 9 November 2026 and 31 July 2026; Indonesian government list of 17 July 2026; October 2026 progress report; NDRC press conference of 3 November 2026; MDDI parliamentary reply of 9 September 2026",
             "method": "official_page_read",
             "note": "38 declared, 37 individually identified.",
             "source_ids": [
               "mfa-ratification",
               "indonesia-founding-list",
               "mfa-31-july",
-              "mfa-progress-report"
+              "mfa-progress-report",
+              "ndrc-3-nov-2026",
+              "mddi-singapore-response"
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "legal_nature",
             "locator": "Agreement Articles 1 (legal personality), 5–8 (Council, decision-making, Secretariat and financing), 14 (signature and accession), 15 (entry into force) and 18 (depositary)",
             "method": "official_text_read",
@@ -17208,6 +17217,36 @@
           "note": "Spokesperson Guo Jiakun, 9 November 2026: 38 countries became founding members; China was the first to approve the Agreement. The statement does not list the 38.",
           "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
           "url": "https://www.mfa.gov.cn/eng/xw/fyrbt/202611/t20261109_12056171.html"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "ndrc-3-nov-2026",
+          "kind": "official_primary",
+          "language": "zh",
+          "note": "NDRC press conference of 3 November 2026 on the 15th Five-Year Plan. The transcript says China is advancing the process of material operation of the World AI Cooperation Organization ('正在推动世界人工智能合作组织的实体化运行进程') and that 38 countries have joined as founding members ('已有38国作为创始成员国加入'). The wording describes a process under way, not constituted organs.",
+          "publisher": "National Development and Reform Commission of the People's Republic of China",
+          "url": "https://www.ndrc.gov.cn/xwdt/wszb/swwfbhpyzdxdn/wzsl/202611/t20261103_1408523.html"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "russia-decree-1532",
+          "kind": "official_primary",
+          "language": "ru",
+          "note": "Government of the Russian Federation, decree No. 1532 of 17 November 2026, 'On the acceptance of the Agreement establishing the World Artificial Intelligence Cooperation Organization', published on the official legal-information portal on 18 November 2026. The publication establishes the domestic act of acceptance; its one-page PDF is an image without a text layer, so the operative provisions were not machine-read. No deposit with the depositary and no depositary notification were located. The host answers over plain HTTP from this environment; HTTPS times out.",
+          "publisher": "Government of the Russian Federation, Official Internet Portal of Legal Information",
+          "url": "http://www.publication.pravo.gov.ru/document/0001202611180027"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "mddi-singapore-response",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Parliamentary reply of 9 September 2026: Singapore 'has received an invitation to participate in the World AI Cooperation Organisation (WAICO)', there is 'no ASEAN position on either WAICO or Pax Silica', and Singapore 'will therefore consider the invitation'. The reply does not say whether the invitation is to membership or observer status and does not record an acceptance.",
+          "publisher": "Ministry of Digital Development and Information, Singapore",
+          "url": "https://www.mddi.gov.sg/newsroom/mddi-response-to-pq-on-singapore-position-on-the-world-artificial-intelligence-cooperation-association/"
         },
         {
           "accessed": "2026-11-23",
@@ -17293,7 +17332,7 @@
         }
       ],
       "status": "unknown",
-      "status_note": "Treaty, binding on States that become parties, but entry into force is not confirmed as of 24 November 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026; the approval is recorded separately from international consent and no deposited instrument was verified. The number of deposits is unknown, not zero: China is the depositary under Article 18 and no public depositary register or notification was located. China's MFA reports 38 founding members, but the signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer'; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore has been reported as considering an invitation and is not a member. The 37/38 discrepancy is recorded, not resolved.",
+      "status_note": "Treaty, binding on States that become parties, but entry into force is not confirmed as of 25 November 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; both are domestic acts, recorded separately from international consent, and no deposited instrument was verified. The number of deposits is unknown, not zero: China is the depositary under Article 18 and no public depositary register or notification was located. China's MFA reports 38 founding members, but the signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. On 3 November 2026 the NDRC said China is advancing WAICO's 'material operation' process, wording that describes work in progress rather than constituted organs. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer'; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore's Ministry of Digital Development and Information told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it; the reply does not say whether the invitation is to membership or observer status, and Singapore has not accepted. The 37/38 discrepancy is recorded, not resolved.",
       "text": {
         "extraction_note": "Official Chinese text extracted from the NPC page and segmented into 18 article units. The English Digital Watch reproduction was consulted but is not stored or used for the text.",
         "full_text": true,
@@ -17352,6 +17391,11 @@
             "check": "Full text acquired and segmented.",
             "date": "2026-11-25",
             "result": "18 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
+          },
+          {
+            "check": "Entry into force, deposits, organs, observer status and Singapore's invitation re-checked on official sources.",
+            "date": "2026-11-25",
+            "result": "No depositary register or notification was located. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; both are domestic acts with no verified deposit. The NDRC said on 3 November 2026 that China is advancing the organization's 'material operation' process, which describes work in progress; no act constituting the Council or Secretariat, appointing a Secretary-General, or adopting rules or a budget was located. Bangladesh's 1 August 2026 observer announcement has no recorded Council admission; Singapore's MDDI said on 9 September 2026 that it would consider an invitation, without stating whether it is to membership or observer status. The 38/37 count is unchanged and the 38th member is still unnamed."
           }
         ],
         "level": "metadata_verified",

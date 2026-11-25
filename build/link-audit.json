@@ -1,10 +1,10 @@
 {
-  "checked": 55,
+  "checked": 57,
   "audited_on": "2026-11-25",
   "scope": "panels",
   "instruments": 17,
   "summary": {
-    "ok": 39,
+    "ok": 41,
     "anti_bot": 14,
     "broken": 0,
     "transient": 2,
@@ -186,7 +186,7 @@
       "source_id": "eu-decision-2026-1080",
       "label": "EU Council Decision",
       "url": "https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng",
-      "status": 202,
+      "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -196,7 +196,7 @@
       "source_id": "eu-oj-2026-1081",
       "label": "EU Official Journal",
       "url": "https://eur-lex.europa.eu/eli/agree_internation/2026/1081/oj/eng",
-      "status": 202,
+      "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -557,9 +557,29 @@
     },
     {
       "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "ndrc-3-nov-2026",
+      "label": "National Development and Reform Commission of the People's Republic of China",
+      "url": "https://www.ndrc.gov.cn/xwdt/wszb/swwfbhpyzdxdn/wzsl/202611/t20261103_1408523.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
       "source_id": "npc-agreement-text",
       "label": "NPC agreement text",
       "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "russia-decree-1532",
+      "label": "Government of the Russian Federation, Official Internet Portal of Legal Information",
+      "url": "http://www.publication.pravo.gov.ru/document/0001202611180027",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",

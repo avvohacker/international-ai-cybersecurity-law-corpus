@@ -1,13 +1,13 @@
 {
-  "checked": 213,
+  "checked": 216,
   "audited_on": "2026-11-25",
   "scope": "catalog",
   "instruments": 71,
   "summary": {
-    "ok": 154,
+    "ok": 156,
     "anti_bot": 54,
     "broken": 0,
-    "transient": 5,
+    "transient": 6,
     "live_but_unreachable": 3
   },
   "results": [
@@ -866,10 +866,10 @@
       "source_id": "depa-mfat-text",
       "label": "New Zealand Ministry of Foreign Affairs and Trade",
       "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "TimeoutError"
     },
     {
       "instrument_id": "depa-2020",
@@ -2079,6 +2079,16 @@
     },
     {
       "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "mddi-singapore-response",
+      "label": "Ministry of Digital Development and Information, Singapore",
+      "url": "https://www.mddi.gov.sg/newsroom/mddi-response-to-pq-on-singapore-position-on-the-world-artificial-intelligence-cooperation-association/",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
       "source_id": "mfa-31-july",
       "label": "MFA 31 July account",
       "url": "https://www.fmprc.gov.cn/wjbxw_new/202607/t20260731_11996584.shtml",
@@ -2119,9 +2129,29 @@
     },
     {
       "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "ndrc-3-nov-2026",
+      "label": "National Development and Reform Commission of the People's Republic of China",
+      "url": "https://www.ndrc.gov.cn/xwdt/wszb/swwfbhpyzdxdn/wzsl/202611/t20261103_1408523.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
       "source_id": "npc-agreement-text",
       "label": "NPC agreement text",
       "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "russia-decree-1532",
+      "label": "Government of the Russian Federation, Official Internet Portal of Legal Information",
+      "url": "http://www.publication.pravo.gov.ru/document/0001202611180027",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
