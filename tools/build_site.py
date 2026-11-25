@@ -392,9 +392,9 @@ def map_fills(kind: str) -> dict[str, str]:
     The hue follows the flag of the depositing or host government. Every map
     uses the same three lightness steps: a mid tone for signature, endorsement
     or adherence; a dark tone for ratification, accession or entry into force;
-    and a pale, hatched tone for member States of a participating organisation
-    that did not act individually. The fixed steps keep the levels
-    distinguishable in every palette and in grayscale. Brazil is the only
+    and a pale tone for member States of a participating organisation that did
+    not act individually. The fixed steps keep the levels distinguishable in
+    every palette and in grayscale. Brazil is the only
     non-member adherent of the OECD digital security Recommendation, so it
     keeps a distinct ochre tone.
     """
@@ -592,18 +592,6 @@ def render_map(
         f'<desc id="map-{kind}-desc">{esc(description)}</desc>',
         f'<rect width="1000" height="420" fill="{OCEAN}"/>',
     ]
-    hatched = "organisation" in set(state_status.values()) or any(
-        item.get("hatch") for item in legend
-    )
-    if hatched:
-        light = fills.get("organisation", ORG_MEMBER_BLUE)
-        parts.append(
-            f'<defs><pattern id="org-{esc(kind)}" width="7" height="7" '
-            'patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-            f'<rect width="7" height="7" fill="{light}"/>'
-            f'<line x1="0" y1="0" x2="0" y2="7" stroke="{PAPER}" '
-            'stroke-width="2.2" opacity="0.9"/></pattern></defs>'
-        )
     for lat in (60, 30, 0, -30):
         _, y = project(0, lat)
         parts.append(
@@ -625,11 +613,7 @@ def render_map(
             f'<path d="{path}" fill="{fill}" stroke="{PAPER}" stroke-width="0.7" '
             f'data-iso="{esc(iso)}"><title>{esc(props["ADMIN"])} — {esc(titles[status])}</title></path>'
         )
-        if status == "organisation" and hatched:
-            parts.append(
-                f'<path class="map-hatch" d="{path}" fill="url(#org-{esc(kind)})" '
-                'stroke="none" pointer-events="none"/>'
-            )
+
     for iso, (lon, lat) in sorted(MICRO.items()):
         if iso not in state_status:
             continue
@@ -646,14 +630,8 @@ def render_map(
 
     key_rows = []
     for item in legend:
-        style = f"background:{item['color']}"
-        if item.get("hatch"):
-            style = (
-                "background:repeating-linear-gradient(45deg, "
-                f"{item['color']} 0 3px, {PAPER} 3px 5px)"
-            )
         key_rows.append(
-            f'<span class="key-row"><i class="swatch" style="{style}"></i>'
+            f'<span class="key-row"><i class="swatch" style="background:{item["color"]}"></i>'
             f'{esc(item["label"])}</span>'
         )
     note = f'<p class="key-note">{esc(legend_note)}</p>' if legend_note else ""
@@ -1389,7 +1367,7 @@ def main() -> int:
                 action, noun = "signed", "signature"
             notes.append(
                 f"{name}: {action}. {covered} {org['member_label']} member States "
-                f"without an individual {noun} carry the hatched fill."
+                f"without an individual {noun} are shown in the lighter tone."
             )
         return notes
 
@@ -1647,21 +1625,16 @@ def main() -> int:
                             "State: member State of a signatory organisation, "
                             "no individual act"
                         ),
-                        "hatch": True,
                     }
                 ]
                 + [legend[-1]]
             )
             description += (
-                " Hatched fill: member States of a signatory organisation that "
+                " Lighter fill: member States of a signatory organisation that "
                 "did not act individually."
             )
         legend = [
-            {
-                "color": colours.get(item["color"], item["color"]),
-                "label": item["label"],
-                **({"hatch": True} if item.get("hatch") else {}),
-            }
+            {"color": colours.get(item["color"], item["color"]), "label": item["label"]}
             for item in legend
         ]
         org_html = "".join(
@@ -2316,7 +2289,7 @@ def main() -> int:
       <div class="map-groups">
         {maps_html}
       </div>
-      <p class="source-note"><strong>Reading the colours.</strong> Each map keeps a hue taken from the flag of the depositing or host government, muted for institutional use: Council of Europe azure, a deeper blue for the UN and OECD, navy for France and the United States, deeper navy for the United Kingdom, institutional scarlet for China, dark saffron for India, dark ochre for Brazil and dark green for the African Union. Within that hue, every map uses the same three levels: a mid tone for signature, endorsement or adherence; a dark tone for ratification or accession; and a pale, hatched tone for member States of a signatory international organisation that did not act individually. The fixed steps keep the levels distinct in every palette and in grayscale. The palette describes the instrument's provenance; it is not a ranking or a statement of political alignment.</p>
+      <p class="source-note"><strong>Reading the colours.</strong> Each map keeps a hue taken from the flag of the depositing or host government, muted for institutional use: Council of Europe azure, a deeper blue for the UN and OECD, navy for France and the United States, deeper navy for the United Kingdom, institutional scarlet for China, dark saffron for India, dark ochre for Brazil and dark green for the African Union. Within that hue, every map uses the same three levels: a mid tone for signature, endorsement or adherence; a dark tone for ratification or accession; and a pale tone for member States of a signatory international organisation that did not act individually. The fixed steps keep the levels distinct in every palette and in grayscale. The palette describes the instrument's provenance; it is not a ranking or a statement of political alignment.</p>
       <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. “Endorsed” is used for political declarations, which create no treaty signature or ratification; “political signatory” is used for the San Francisco Declaration, which is not a treaty.</p>
       <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} non-binding instruments and {number_word(map_binding_count)} treaties. They include five of the nine cybersecurity treaties in the catalogue: the Budapest Convention, its two protocols, the AU Malabo Convention and the UN Cybercrime Convention. The Arab Convention, both CIS agreements and the SCO Agreement are catalogued but not mapped because their current depositary tables are not stable or publicly accessible. The San Francisco Declaration is mapped as ten political signatories. The BRICS statement is not mapped: it is a collective issue by a fixed 11-member group, and the record already lists those members; a map would only repeat the group's membership. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the UNESCO Recommendation, strategies, codes and company commitments, the BRICS statement, the bilateral UK–US MOU and US–EU TTC commitment, the separate June 2026 AI Opportunity Statement, and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment. The OECD digital-security map is retained because it shows Brazil as the only non-member adherent; it is otherwise an OECD membership map. The four internal-law acts (AI Act, NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) are catalogue-only because they are not international instruments; they are not mapped as if they were treaties.</p>
     </div>

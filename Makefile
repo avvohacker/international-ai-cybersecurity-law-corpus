@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: validate build test extract segment checksums site audit-links audit-catalog-links
+.PHONY: validate build test extract segment checksums site audit-links audit-catalog-links audit-acquisitions
 
 validate:
 	$(PY) tools/build.py --check
@@ -22,6 +22,11 @@ audit-links:
 # Network-only audit of every official source link in all catalogue records.
 audit-catalog-links:
 	$(PY) tools/audit_sources.py --scope catalog --workers 8 --output build/catalog-link-audit.json
+
+# Network-only audit of the fifteen instruments acquired together, including
+# their non-official sources, refreshed in build/acquisition-link-audit.json.
+audit-acquisitions:
+	$(PY) tools/audit_sources.py --scope acquisition-batch --include-secondary --workers 8 --output build/acquisition-link-audit.json
 
 # Example: make extract ID=un-ga-res-78-265 SRC=source/A_RES_78_265-en.pdf
 extract:

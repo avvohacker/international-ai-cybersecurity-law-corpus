@@ -284,6 +284,30 @@ class TestCatalogue(unittest.TestCase):
         annex = [json.loads(line) for line in annex_path.read_text(encoding="utf-8").splitlines() if line.strip()]
         self.assertEqual(len(annex), 19)
 
+    def test_offline_audit_preserves_recorded_downloads(self) -> None:
+        import audit_texts
+
+        previous = {
+            "records": [
+                {
+                    "id": "asean-ai-guide-2024",
+                    "download": {
+                        "outcome": "downloaded",
+                        "checked_on": "2026-11-25",
+                        "http_status": 200,
+                    },
+                }
+            ]
+        }
+        data = audit_texts.audit(previous=previous)
+        row = next(
+            row for row in data["records"] if row["id"] == "asean-ai-guide-2024"
+        )
+        self.assertEqual(row["download"]["outcome"], "downloaded")
+        self.assertEqual(row["download"]["checked_on"], "2026-11-25")
+        self.assertEqual(data["summary"]["download_probe"]["checked"], 1)
+        self.assertEqual(data["summary"]["download_probe"]["downloaded"], 1)
+
     def test_text_availability_audit_covers_every_record(self) -> None:
         import audit_texts
 
@@ -1143,19 +1167,19 @@ class TestBuild(unittest.TestCase):
             self.assertNotIn("map-org-leader", figure)
         self.assertEqual(page.count('class="map-org-note"'), 6)
         self.assertIn(
-            "European Union: ratified. 27 EU member States without an individual signature carry the hatched fill",
+            "European Union: ratified. 27 EU member States without an individual signature are shown in the lighter tone.",
             by_title["CETS 225"],
         )
         self.assertIn(
-            "European Union: endorsed. 21 EU member States without an individual endorsement carry the hatched fill",
+            "European Union: endorsed. 21 EU member States without an individual endorsement are shown in the lighter tone.",
             by_title["Bletchley 2023"],
         )
         self.assertIn(
-            "European Union: endorsed. 24 EU member States without an individual endorsement carry the hatched fill",
+            "European Union: endorsed. 24 EU member States without an individual endorsement are shown in the lighter tone.",
             by_title["Seoul 2024"],
         )
         self.assertIn(
-            "European Union: endorsed. 21 EU member States without an individual endorsement carry the hatched fill",
+            "European Union: endorsed. 21 EU member States without an individual endorsement are shown in the lighter tone.",
             by_title["Pax Silica 2025"],
         )
         self.assertIn(
@@ -1674,7 +1698,7 @@ class TestBuild(unittest.TestCase):
             if "<span class=\"map-title\">UN Cybercrime Convention</span>" in block
         )
         self.assertIn(
-            "European Union: signed. 9 EU member States without an individual signature carry the hatched fill",
+            "European Union: signed. 9 EU member States without an individual signature are shown in the lighter tone.",
             figure,
         )
         self.assertEqual(figure.count('fill="#aec7de" stroke='), 9)
@@ -1865,6 +1889,18 @@ class TestLinkAudit(unittest.TestCase):
             self.audit.override_browser_only("https://example.com/x", 404, "broken", "http_404"),
             ("broken", "http_404"),
         )
+
+    def test_acquisition_batch_scope_covers_fifteen_instruments(self) -> None:
+        ids = self.audit.ACQUISITION_BATCH_IDS
+        self.assertEqual(len(ids), 15)
+        self.assertEqual(len(set(ids)), 15)
+        official = self.audit.acquisition_targets()
+        with_secondary = self.audit.acquisition_targets(include_secondary=True)
+        self.assertEqual({target.instrument_id for target in official}, set(ids))
+        self.assertEqual({target.instrument_id for target in with_secondary}, set(ids))
+        self.assertFalse(any("asianlaws.org" in target.url for target in official))
+        self.assertTrue(any("asianlaws.org" in target.url for target in with_secondary))
+        self.assertGreater(len(with_secondary), len(official))
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()

@@ -28,6 +28,7 @@ import argparse
 import json
 import socket
 import ssl
+from datetime import date
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -54,7 +55,6 @@ INTERNAL_LAW = {
     "eu-nis2-directive-2022",
 }
 
-PROBE_DATE = "2026-11-25"
 PROBE_TIMEOUT = 40.0
 PROBE_MAX_BYTES = 8 * 1024 * 1024
 # A 202 response is reported as transient: the resource was accepted, not
@@ -165,7 +165,16 @@ def classify_download(
     return "broken", f"http_{status}"
 
 
-def probe_download(url: str, timeout: float = PROBE_TIMEOUT) -> dict[str, Any]:
+def probe_date() -> str:
+    """Return the date of the probe run, never a hard-coded date."""
+    return date.today().isoformat()
+
+
+def probe_download(
+    url: str,
+    timeout: float = PROBE_TIMEOUT,
+    checked_on: str | None = None,
+) -> dict[str, Any]:
     """Download one URL (capped) and report whether it really serves a text."""
     request = urllib.request.Request(
         url,
@@ -177,7 +186,7 @@ def probe_download(url: str, timeout: float = PROBE_TIMEOUT) -> dict[str, Any]:
     )
     context = ssl.create_default_context()
     result: dict[str, Any] = {
-        "checked_on": PROBE_DATE,
+        "checked_on": checked_on or probe_date(),
         "url": url,
     }
     try:
@@ -233,7 +242,17 @@ def probe_download(url: str, timeout: float = PROBE_TIMEOUT) -> dict[str, Any]:
     return result
 
 
-def audit(probe: bool = False, timeout: float = PROBE_TIMEOUT) -> dict[str, Any]:
+def audit(
+    probe: bool = False,
+    timeout: float = PROBE_TIMEOUT,
+    previous: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    """Classify every record, optionally probing and merging earlier results.
+
+    Without ``probe`` the download results already stored in ``previous`` (the
+    existing JSON report) are copied onto the matching records, so an offline
+    rerun refreshes the classification without deleting the last probe.
+    """
     records = []
     for path in sorted(CATALOG_DIR.glob("*.json")):
         inst = json.loads(path.read_text(encoding="utf-8"))
@@ -252,6 +271,15 @@ def audit(probe: bool = False, timeout: float = PROBE_TIMEOUT) -> dict[str, Any]
         if probe and availability == "official_text_located" and source:
             row["download"] = probe_download(source, timeout)
         records.append(row)
+    if not probe and previous:
+        stored_downloads = {
+            old["id"]: old["download"]
+            for old in previous.get("records", [])
+            if old.get("download")
+        }
+        for row in records:
+            if row["id"] in stored_downloads:
+                row["download"] = stored_downloads[row["id"]]
     counts = Counter(row["availability"] for row in records)
     summary: dict[str, Any] = {
         "stored": counts["stored"],
@@ -260,19 +288,19 @@ def audit(probe: bool = False, timeout: float = PROBE_TIMEOUT) -> dict[str, Any]
         "summary_only": counts["summary_only"],
         "internal_law": counts["internal_law"],
     }
-    if probe:
-        outcomes = Counter(
-            row["download"]["outcome"]
-            for row in records
-            if row.get("download")
-        )
+    downloads = [row["download"] for row in records if row.get("download")]
+    if downloads:
+        outcomes = Counter(download["outcome"] for download in downloads)
         summary["download_probe"] = {
-            "checked": sum(outcomes.values()),
+            "checked": len(downloads),
             "downloaded": outcomes["downloaded"],
             "blocked": outcomes["blocked"],
             "broken": outcomes["broken"],
             "transient": outcomes["transient"],
-            "checked_on": PROBE_DATE,
+            "checked_on": max(
+                (download.get("checked_on", "") for download in downloads),
+                default="",
+            ),
         }
     return {
         "total": len(records),
@@ -293,7 +321,10 @@ def main() -> int:
     parser.add_argument("--timeout", type=float, default=PROBE_TIMEOUT)
     args = parser.parse_args()
 
-    data = audit(probe=args.probe, timeout=args.timeout)
+    previous = None
+    if args.output and args.output.exists() and not args.probe:
+        previous = json.loads(args.output.read_text(encoding="utf-8"))
+    data = audit(probe=args.probe, timeout=args.timeout, previous=previous)
     if args.output:
         dump_json(args.output, data)
     if args.json:
