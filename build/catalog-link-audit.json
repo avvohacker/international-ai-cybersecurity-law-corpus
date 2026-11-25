@@ -1,12 +1,12 @@
 {
-  "checked": 214,
+  "checked": 213,
   "audited_on": "2026-11-25",
   "scope": "catalog",
   "instruments": 71,
   "summary": {
-    "ok": 153,
-    "anti_bot": 55,
-    "broken": 1,
+    "ok": 154,
+    "anti_bot": 54,
+    "broken": 0,
     "transient": 5,
     "live_but_unreachable": 3
   },
@@ -366,9 +366,9 @@
       "source_id": "brics-members",
       "label": "BRICS 2025 Presidency, Federative Republic of Brazil",
       "url": "https://web.archive.org/web/20260617005151/https://brics.br/en",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -1070,16 +1070,6 @@
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
-    },
-    {
-      "instrument_id": "ibero-ai-declaration-2024",
-      "source_id": "cancilleria-pt",
-      "label": "Ministerio de Relaciones Exteriores y Movilidad Humana, Ecuador",
-      "url": "https://www.cancilleria.gob.ec/wp-content/uploads/2024/12/8.-DE-INTELIGENCIA-ARTIFICIAL.PT_.pdf",
-      "status": null,
-      "outcome": "broken",
-      "reason": "tls_certificate",
-      "detail": "URLError"
     },
     {
       "instrument_id": "ibero-ai-declaration-2024",

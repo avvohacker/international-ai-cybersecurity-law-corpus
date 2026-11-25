@@ -932,6 +932,10 @@ class TestCatalogue(unittest.TestCase):
         ibero = read_instrument("ibero-ai-declaration-2024")
         self.assertEqual(len(ibero["parties"]["entries"]), 18)
         self.assertIn("Paraguay is not listed", " ".join(ibero["gaps"]))
+        self.assertEqual(ibero["languages"]["translations"], [])
+        self.assertNotIn(
+            "cancilleria-pt", {source["id"] for source in ibero["sources"]}
+        )
 
         alecso = read_instrument("alecso-charter-ai-ethics-2025")
         self.assertIn("alecso-adoption-page", {source["id"] for source in alecso["sources"]})
@@ -2018,7 +2022,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 209)
+        self.assertEqual(len(targets), 208)
         self.assertEqual(len({target.instrument_id for target in targets}), 71)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)

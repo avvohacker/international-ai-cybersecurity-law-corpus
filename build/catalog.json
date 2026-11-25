@@ -7882,7 +7882,7 @@
         "Non-binding political declaration: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
         "The declaration names 18 States; the summit's Cuenca Declaration was adopted by 19 countries, and the Ibero-American Community has 22 members. Paraguay is not listed in this special declaration; no official explanation was located.",
         "No full text is stored; the record is metadata-only.",
-        "Only the Spanish text was verified; a Portuguese version exists, but no official English text was located.",
+        "Only the Spanish text was verified; no official English text was located. A Portuguese translation published by Ecuador's Ministry of Foreign Affairs is excluded because its host fails TLS certificate validation and no archived copy was located.",
         "Implementation, follow-up and financing are not assessed.",
         "The relationship between this declaration and the CLAD Carta Iberoamericana de IA en la Administración Pública is political, not institutional."
       ],
@@ -7904,10 +7904,8 @@
         "authentic": [
           "es"
         ],
-        "note": "Spanish is the language of the official text verified. A Portuguese version was published by Ecuador's Ministry of Foreign Affairs; no official English text was located.",
-        "translations": [
-          "pt"
-        ]
+        "note": "Spanish is the language of the official text verified. No official English text was located. A Portuguese translation was published by Ecuador's Ministry of Foreign Affairs, but no working official or archived copy could be verified.",
+        "translations": []
       },
       "legal_nature": {
         "qualification": "political_act",
@@ -8093,16 +8091,6 @@
           "note": "SEGIB page for the XXIX Ibero-American Summit in Cuenca, 14–15 November 2024; records that 19 countries adopted the Cuenca Declaration and 24 special declarations.",
           "publisher": "Secretaría General Iberoamericana (SEGIB)",
           "url": "https://segib.org/es/cumbre/xxix-cumbre-iberoamericana/"
-        },
-        {
-          "accessed": "2026-11-25",
-          "http_status": 200,
-          "id": "cancilleria-pt",
-          "kind": "official_primary",
-          "language": "pt",
-          "note": "Portuguese version of the same special declaration, published by Ecuador's Ministry of Foreign Affairs; used only to corroborate the date and the list of 18 States.",
-          "publisher": "Ministerio de Relaciones Exteriores y Movilidad Humana, Ecuador",
-          "url": "https://www.cancilleria.gob.ec/wp-content/uploads/2024/12/8.-DE-INTELIGENCIA-ARTIFICIAL.PT_.pdf"
         }
       ],
       "status": "adopted",
