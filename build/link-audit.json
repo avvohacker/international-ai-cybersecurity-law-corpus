@@ -1,13 +1,56 @@
 {
-  "checked": 26,
-  "instruments": 8,
+  "checked": 55,
+  "audited_on": "2026-11-25",
+  "scope": "panels",
+  "instruments": 17,
   "summary": {
-    "ok": 20,
-    "anti_bot": 4,
+    "ok": 39,
+    "anti_bot": 14,
     "broken": 0,
-    "transient": 2
+    "transient": 2,
+    "live_but_unreachable": 2
   },
   "results": [
+    {
+      "instrument_id": "au-malabo-convention-2014",
+      "source_id": "au-status-list",
+      "label": "AU status list",
+      "url": "https://au.int/sites/default/files/AFRICAN%20UNION%20CONVENTION%20ON%20CYBER%20SECURITY%20AND%20PERSONAL%20DATA%20PROTECTION%20%281%29.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "au-malabo-convention-2014",
+      "source_id": "au-text",
+      "label": "AU official text",
+      "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "au-malabo-convention-2014",
+      "source_id": "au-treaty-page",
+      "label": "AU treaty page",
+      "url": "https://au.int/en/treaties/african-union-convention-cyber-security-and-personal-data-protection",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "au-malabo-convention-2014",
+      "source_id": "stored-official-scan",
+      "label": "Stored official scan",
+      "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
     {
       "instrument_id": "bletchley-declaration-2023",
       "source_id": "govuk-declaration",
@@ -19,9 +62,89 @@
       "detail": ""
     },
     {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "coe-declarations",
+      "label": "Council of Europe declarations",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=185&codeNature=0",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "coe-status-chart",
+      "label": "Treaty Office status chart",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=185",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "coe-text",
+      "label": "Council of Europe treaty text",
+      "url": "https://rm.coe.int/1680081561",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "coe-treaty-page",
+      "label": "CoE treaty page",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=185",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "budapest-convention-2001",
+      "source_id": "stored-official",
+      "label": "Stored official text",
+      "url": "https://rm.coe.int/1680081561",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-224",
+      "source_id": "coe-declarations-224",
+      "label": "CETS 224 declarations",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=224&codeNature=0",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-224",
+      "source_id": "coe-status-chart",
+      "label": "Treaty Office status chart",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=224",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-224",
+      "source_id": "stored-wayback-official",
+      "label": "Official PDF, archived copy",
+      "url": "https://web.archive.org/web/20220516075219/https://rm.coe.int/1680a49dab",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "coe-cets-225",
       "source_id": "coe-declarations",
-      "label": "CETS 225 declarations",
+      "label": "Council of Europe declarations",
       "url": "https://www.coe.int/en/web/conventions/full-list2?codeNature=0&module=declarations-by-treaty&numSte=225",
       "status": 403,
       "outcome": "anti_bot",
@@ -31,7 +154,7 @@
     {
       "instrument_id": "coe-cets-225",
       "source_id": "coe-status",
-      "label": "CETS 225 status chart",
+      "label": "Treaty Office status chart",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225",
       "status": 403,
       "outcome": "anti_bot",
@@ -41,8 +164,18 @@
     {
       "instrument_id": "coe-cets-225",
       "source_id": "coe-text",
-      "label": "CETS 225 text",
+      "label": "Council of Europe treaty text",
       "url": "https://rm.coe.int/1680afae3c",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-cets-225",
+      "source_id": "coe-text-certified-bilingual",
+      "label": "Council of Europe Treaty Office",
+      "url": "https://rm.coe.int/1680b680bc",
       "status": 403,
       "outcome": "anti_bot",
       "reason": "http_403",
@@ -53,7 +186,7 @@
       "source_id": "eu-decision-2026-1080",
       "label": "EU Council Decision",
       "url": "https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -63,6 +196,36 @@
       "source_id": "eu-oj-2026-1081",
       "label": "EU Official Journal",
       "url": "https://eur-lex.europa.eu/eli/agree_internation/2026/1081/oj/eng",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-ets-189",
+      "source_id": "coe-declarations-189",
+      "label": "ETS 189 declarations",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=189&codeNature=0",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-ets-189",
+      "source_id": "coe-status-chart",
+      "label": "Treaty Office status chart",
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=189",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "coe-ets-189",
+      "source_id": "stored-wayback-official",
+      "label": "Official PDF, archived copy",
+      "url": "https://web.archive.org/web/2024/https://rm.coe.int/168008160f",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -73,6 +236,26 @@
       "source_id": "mea-declaration",
       "label": "Ministry of External Affairs, Government of India",
       "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "oecd-digital-security-critical-activities-2019",
+      "source_id": "oecd-critical-security",
+      "label": "OECD",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0456",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "pall-mall-code-of-practice-2025",
+      "source_id": "pall-mall-code",
+      "label": "UK Government",
+      "url": "https://www.gov.uk/government/publications/the-pall-mall-process-code-of-practice-for-states/the-pall-mall-process-code-of-practice-for-states",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -109,6 +292,46 @@
       "detail": ""
     },
     {
+      "instrument_id": "paris-call-cyberspace-2018",
+      "source_id": "paris-call-csv",
+      "label": "Official supporters CSV",
+      "url": "https://web.archive.org/web/20240927013736/https://pariscall.international/supporters.csv",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "paris-call-cyberspace-2018",
+      "source_id": "paris-call-page",
+      "label": "Official homepage counters",
+      "url": "https://web.archive.org/web/20251117075315/https://pariscall.international/en",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "paris-call-cyberspace-2018",
+      "source_id": "paris-call-supporters",
+      "label": "Official supporters list",
+      "url": "https://web.archive.org/web/20251117070515/https://pariscall.international/en/supporters",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "paris-call-cyberspace-2018",
+      "source_id": "paris-call-text",
+      "label": "Paris Call text",
+      "url": "https://web.archive.org/web/20250829163844/https://pariscall.international/en/call",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "pax-silica-declaration-2025",
       "source_id": "australia-declaration",
       "label": "Australian Government declaration",
@@ -116,7 +339,9 @@
       "status": null,
       "outcome": "transient",
       "reason": "timeout",
-      "detail": "TimeoutError"
+      "detail": "TimeoutError",
+      "browser_verified": true,
+      "browser_note": "Pax Silica Declaration, 12 December 2025: opened in a browser on 2026-11-25 and returned HTTP 200 with matching title and heading; the audit client could not reach it."
     },
     {
       "instrument_id": "pax-silica-declaration-2025",
@@ -136,7 +361,9 @@
       "status": null,
       "outcome": "transient",
       "reason": "timeout",
-      "detail": "TimeoutError"
+      "detail": "TimeoutError",
+      "browser_verified": true,
+      "browser_note": "San Francisco Declaration, 15 November 2026: opened in a browser on 2026-11-25 and returned HTTP 200 with matching title and heading; the audit client could not reach it."
     },
     {
       "instrument_id": "pax-silica-declaration-2025",
@@ -202,17 +429,77 @@
       "instrument_id": "political-declaration-military-ai-2023",
       "source_id": "state-page",
       "label": "State Department page",
-      "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/",
-      "status": 404,
-      "outcome": "anti_bot",
-      "reason": "known_browser_only",
-      "detail": "State Department serves 404/405 to automated clients"
+      "url": "https://2021-2025.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "political-declaration-military-ai-2023",
+      "source_id": "state-text-pdf",
+      "label": "U.S. Department of State",
+      "url": "https://www.state.gov/wp-content/uploads/2023/10/Latest-Version-Political-Declaration-on-Responsible-Military-Use-of-AI-and-Autonomy.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "san-francisco-declaration-2026",
+      "source_id": "state-san-francisco",
+      "label": "United States Department of State, Office of the Spokesman",
+      "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "seoul-declaration-2024",
       "source_id": "govuk-seoul",
       "label": "GOV.UK Seoul declaration",
       "url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "un-cybercrime-convention-2024",
+      "source_id": "stored-certified",
+      "label": "Stored certified copy",
+      "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "un-cybercrime-convention-2024",
+      "source_id": "untc-certified-copy",
+      "label": "Certified true copy",
+      "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "un-cybercrime-convention-2024",
+      "source_id": "untc-declarations",
+      "label": "UN Treaty Collection declarations",
+      "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "un-cybercrime-convention-2024",
+      "source_id": "untc-status",
+      "label": "UN Treaty Collection status",
+      "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -263,6 +550,16 @@
       "source_id": "mfa-signing",
       "label": "MFA signing account",
       "url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "npc-agreement-text",
+      "label": "NPC agreement text",
+      "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",

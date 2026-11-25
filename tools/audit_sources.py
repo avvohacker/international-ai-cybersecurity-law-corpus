@@ -185,7 +185,7 @@ def _target(instrument_id: str, source: dict) -> Target:
 
 
 def targets() -> list[Target]:
-    """Return the official links used by the nine map panels."""
+    """Return the official links used by the seventeen map panels."""
     instruments = corpuslib.load_instruments()
     found: list[Target] = []
     for instrument_id in build_site.MAP_INSTRUMENT_IDS:

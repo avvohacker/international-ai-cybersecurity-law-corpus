@@ -2032,6 +2032,31 @@ class TestLinkAudit(unittest.TestCase):
             sorted(targets, key=lambda target: (target.instrument_id, target.source_id)),
         )
 
+    def test_doc_link_extraction_is_unique_and_clean(self) -> None:
+        import audit_doc_links
+
+        text = (
+            "[a](https://example.org/a).\n"
+            "https://example.org/b.\n"
+            "https://example.org/a\n"
+        )
+        self.assertEqual(
+            audit_doc_links.extract_urls(text),
+            ["https://example.org/a", "https://example.org/b"],
+        )
+
+    def test_doc_citations_resolve_to_the_list(self) -> None:
+        text = (ROOT / "docs" / "international-ai-law.md").read_text(encoding="utf-8")
+        body, citations = text.split("## 7. Citations", 1)
+        cited = {int(value) for value in re.findall(r"\[(\d+)\]", body)}
+        listed = {
+            int(match.group(1))
+            for line in citations.splitlines()
+            if (match := re.match(r"^(\d+)\. ", line))
+        }
+        self.assertEqual(cited, listed)
+        self.assertEqual(listed, set(range(1, 47)))
+
     def test_targets_cover_all_panels(self) -> None:
         import build_site
 

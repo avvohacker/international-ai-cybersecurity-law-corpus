@@ -11,6 +11,48 @@
       "title": "AfCFTA Digital Trade Protocol"
     },
     {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "download": {
+        "bytes_read": 933624,
+        "checked_on": "2026-11-25",
+        "content_length": 933624,
+        "content_type": "application/pdf",
+        "final_url": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf",
+        "http_status": 200,
+        "outcome": "downloaded",
+        "reason": "pdf",
+        "url": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf"
+      },
+      "id": "alecso-charter-ai-ethics-2025",
+      "official_source": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "ALECSO Charter on AI Ethics"
+    },
+    {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "download": {
+        "bytes_read": 1154648,
+        "checked_on": "2026-11-25",
+        "content_length": 1154648,
+        "content_type": "application/pdf",
+        "final_url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf",
+        "http_status": 200,
+        "outcome": "downloaded",
+        "reason": "pdf",
+        "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf"
+      },
+      "id": "arab-charter-ai-ethics-2025",
+      "official_source": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "Arab Charter on AI Ethics"
+    },
+    {
       "availability": "stored",
       "binding_status": "binding",
       "category": "cyber_treaty",
@@ -19,6 +61,27 @@
       "official_source_kind": "official_primary",
       "reason": "Full text stored and segmented.",
       "title": "Arab Convention on IT Offences"
+    },
+    {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "download": {
+        "bytes_read": 1168738,
+        "checked_on": "2026-11-25",
+        "content_length": 1168738,
+        "content_type": "application/pdf",
+        "final_url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf",
+        "http_status": 200,
+        "outcome": "downloaded",
+        "reason": "pdf",
+        "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf"
+      },
+      "id": "arab-unified-ai-strategy-2025",
+      "official_source": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "Unified Arab AI Strategy"
     },
     {
       "availability": "official_text_located",
@@ -77,9 +140,9 @@
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
       "download": {
-        "bytes_read": 86591,
+        "bytes_read": 86531,
         "checked_on": "2026-11-25",
-        "content_length": 86591,
+        "content_length": 86531,
         "content_type": "text/html",
         "final_url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023",
         "http_status": 200,
@@ -163,6 +226,27 @@
       "official_source_kind": "official_primary",
       "reason": "Full text stored and segmented.",
       "title": "CIS Minsk Agreement 2001"
+    },
+    {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "download": {
+        "bytes_read": 859906,
+        "checked_on": "2026-11-25",
+        "content_length": 859906,
+        "content_type": "application/pdf",
+        "final_url": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf",
+        "http_status": 200,
+        "outcome": "downloaded",
+        "reason": "pdf",
+        "url": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf"
+      },
+      "id": "clad-ibero-ai-charter-2023",
+      "official_source": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "CLAD Ibero-American AI Charter"
     },
     {
       "availability": "stored",
@@ -270,7 +354,7 @@
       "binding_status": "non_binding",
       "category": "preparatory_interpretive",
       "download": {
-        "bytes_read": 63404,
+        "bytes_read": 63422,
         "checked_on": "2026-11-25",
         "content_length": null,
         "content_type": "text/html",
@@ -347,6 +431,28 @@
       "official_source_kind": "official_primary",
       "reason": "Full text stored and segmented.",
       "title": "G7 Hiroshima AI Process Code of Conduct"
+    },
+    {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "download": {
+        "bytes_read": 0,
+        "checked_on": "2026-11-25",
+        "content_length": null,
+        "content_type": "",
+        "error": "URLError",
+        "final_url": "https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf",
+        "http_status": null,
+        "outcome": "transient",
+        "reason": "timeout",
+        "url": "https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf"
+      },
+      "id": "ibero-ai-declaration-2024",
+      "official_source": "https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "Ibero-American Declaration on Ethical and Trustworthy AI"
     },
     {
       "availability": "stored",
@@ -526,7 +632,7 @@
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
       "download": {
-        "bytes_read": 237795,
+        "bytes_read": 237595,
         "checked_on": "2026-11-25",
         "content_length": null,
         "content_type": "text/html",
@@ -564,6 +670,69 @@
       "title": "U.S.-led Political Declaration on military AI"
     },
     {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "download": {
+        "bytes_read": 48455,
+        "checked_on": "2026-11-25",
+        "content_length": 48455,
+        "content_type": "text/html",
+        "final_url": "https://www.mofa.go.kr/eng/brd/m_5676/view.do?page=1&seq=322676",
+        "http_status": 200,
+        "outcome": "downloaded",
+        "reason": "html",
+        "url": "https://www.mofa.go.kr/eng/brd/m_5676/view.do?page=1&seq=322676"
+      },
+      "id": "reaim-blueprint-for-action-2024",
+      "official_source": "https://www.mofa.go.kr/eng/brd/m_5676/view.do?page=1&seq=322676",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "REAIM Blueprint for Action 2024"
+    },
+    {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "download": {
+        "bytes_read": 217920,
+        "checked_on": "2026-11-25",
+        "content_length": null,
+        "content_type": "text/html",
+        "final_url": "https://www.government.nl/documents/2023/02/16/reaim-2023-call-to-action",
+        "http_status": 200,
+        "outcome": "downloaded",
+        "reason": "html",
+        "url": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action"
+      },
+      "id": "reaim-call-to-action-2023",
+      "official_source": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "REAIM 2023 Call to Action"
+    },
+    {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "download": {
+        "bytes_read": 38505,
+        "checked_on": "2026-11-25",
+        "content_length": null,
+        "content_type": "text/html",
+        "final_url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx",
+        "http_status": 200,
+        "outcome": "downloaded",
+        "reason": "html",
+        "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx"
+      },
+      "id": "reaim-pathways-to-action-2026",
+      "official_source": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "REAIM 2026 Pathways to Action"
+    },
+    {
       "availability": "stored",
       "binding_status": "binding",
       "category": "agreement_ai_provisions",
@@ -578,7 +747,7 @@
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
       "download": {
-        "bytes_read": 182143,
+        "bytes_read": 181943,
         "checked_on": "2026-11-25",
         "content_length": null,
         "content_type": "text/html",
@@ -822,16 +991,16 @@
     "download_probe": {
       "blocked": 2,
       "broken": 0,
-      "checked": 17,
+      "checked": 25,
       "checked_on": "2026-11-25",
-      "downloaded": 14,
-      "transient": 1
+      "downloaded": 21,
+      "transient": 2
     },
     "internal_law": 3,
-    "official_text_located": 17,
+    "official_text_located": 25,
     "paywalled": 5,
     "stored": 36,
     "summary_only": 2
   },
-  "total": 63
+  "total": 71
 }
