@@ -7,7 +7,8 @@
     "ok": 136,
     "anti_bot": 51,
     "broken": 0,
-    "transient": 3
+    "transient": 3,
+    "live_but_unreachable": 3
   },
   "results": [
     {
@@ -1228,7 +1229,9 @@
       "status": null,
       "outcome": "transient",
       "reason": "timeout",
-      "detail": "TimeoutError"
+      "detail": "TimeoutError",
+      "browser_verified": true,
+      "browser_note": "Pax Silica Declaration, 12 December 2025: opened in a browser on 2026-11-25 and returned HTTP 200 with matching title and heading; the audit client could not reach it."
     },
     {
       "instrument_id": "pax-silica-declaration-2025",
@@ -1248,7 +1251,9 @@
       "status": null,
       "outcome": "transient",
       "reason": "timeout",
-      "detail": "TimeoutError"
+      "detail": "TimeoutError",
+      "browser_verified": true,
+      "browser_note": "San Francisco Declaration, 15 November 2026: opened in a browser on 2026-11-25 and returned HTTP 200 with matching title and heading; the audit client could not reach it."
     },
     {
       "instrument_id": "pax-silica-declaration-2025",
@@ -1348,7 +1353,9 @@
       "status": null,
       "outcome": "transient",
       "reason": "timeout",
-      "detail": "TimeoutError"
+      "detail": "TimeoutError",
+      "browser_verified": true,
+      "browser_note": "Australia-Singapore Digital Economy Agreement: opened in a browser on 2026-11-25 and returned HTTP 200 with matching title and heading; the audit client could not reach it."
     },
     {
       "instrument_id": "sadea-2020",

@@ -85,6 +85,22 @@ BROWSER_ONLY_HOSTS = {
     "www.meti.gov.sg": "Singapore METI serves 404 to automated clients; the page was read through the extraction tool",
 }
 
+# Pages that the audit client could not fetch but that were opened in a browser
+# and served their text. They stay ``transient`` and are marked
+# ``browser_verified``; they are never counted as successful fetches.
+BROWSER_VERIFIED_ON = "2026-11-25"
+BROWSER_VERIFIED = {
+    "https://www.industry.gov.au/publications/pax-silica-declaration-countries-attending-pax-silica-summit-12-december-2025": (
+        "Pax Silica Declaration, 12 December 2025"
+    ),
+    "https://www.industry.gov.au/publications/san-francisco-declaration-secure-foundations-enduring-prosperity-signed-countries-attending-pax-silica-summit-15-november-2026": (
+        "San Francisco Declaration, 15 November 2026"
+    ),
+    "https://www.dfat.gov.au/trade/services-and-digital-trade/australia-and-singapore-digital-economy-agreement": (
+        "Australia-Singapore Digital Economy Agreement"
+    ),
+}
+
 
 @dataclass(frozen=True)
 class Target:
@@ -104,6 +120,32 @@ class Result:
     outcome: str
     reason: str
     detail: str = ""
+
+
+def browser_note(url: str) -> str | None:
+    """Return the browser-verification note for a URL, if it has one."""
+    label = BROWSER_VERIFIED.get(url)
+    if not label:
+        return None
+    return (
+        f"{label}: opened in a browser on {BROWSER_VERIFIED_ON} and returned "
+        "HTTP 200 with matching title and heading; the audit client could not "
+        "reach it."
+    )
+
+
+def annotate_result(result: Result) -> dict:
+    """Convert a result to a report entry, marking browser-verified pages.
+
+    The outcome is left as ``transient``: a page that is live but unreachable
+    by the client is not a successful fetch.
+    """
+    entry = asdict(result)
+    note = browser_note(result.url)
+    if note and result.outcome == "transient":
+        entry["browser_verified"] = True
+        entry["browser_note"] = note
+    return entry
 
 
 CATALOG_SOURCE_KINDS = build_site.OFFICIAL_SOURCE_KINDS | {"official_secondary"}
@@ -392,6 +434,8 @@ def main(argv: list[str] | None = None) -> int:
     else:
         results = [probe(target, args.timeout) for target in selected]
     summary = Counter(result.outcome for result in results)
+    entries = [annotate_result(result) for result in results]
+    live_but_unreachable = sum(1 for entry in entries if entry.get("browser_verified"))
     payload = {
         "checked": len(results),
         "audited_on": date.today().isoformat(),
@@ -401,8 +445,10 @@ def main(argv: list[str] | None = None) -> int:
             key: summary.get(key, 0)
             for key in ("ok", "anti_bot", "broken", "transient")
         },
-        "results": [asdict(result) for result in results],
+        "results": entries,
     }
+    if live_but_unreachable:
+        payload["summary"]["live_but_unreachable"] = live_but_unreachable
 
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -430,11 +476,15 @@ def main(argv: list[str] | None = None) -> int:
             if result.outcome != "ok":
                 detail = f" ({result.detail})" if result.detail else ""
                 print(f"            {result.reason}{detail}")
+                if result.outcome == "transient" and browser_note(result.url):
+                    print(
+                        f"            live in a browser on {BROWSER_VERIFIED_ON}; "
+                        "not reachable by the audit client"
+                    )
         print(
             "Summary: "
             + ", ".join(
-                f"{key}={payload['summary'][key]}"
-                for key in ("ok", "anti_bot", "broken", "transient")
+                f"{key}={value}" for key, value in payload["summary"].items()
             )
         )
         print(

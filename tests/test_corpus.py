@@ -1897,6 +1897,26 @@ class TestLinkAudit(unittest.TestCase):
 
         self.audit = audit_sources
 
+    def test_browser_verified_transient_is_not_a_success(self) -> None:
+        self.assertTrue(self.audit.BROWSER_VERIFIED)
+        url = next(iter(self.audit.BROWSER_VERIFIED))
+        entry = self.audit.annotate_result(
+            self.audit.Result("id", "src", "label", url, None, "transient", "timeout")
+        )
+        self.assertEqual(entry["outcome"], "transient")
+        self.assertTrue(entry["browser_verified"])
+        self.assertIn("browser_note", entry)
+        ok = self.audit.annotate_result(
+            self.audit.Result("id", "src", "label", url, 200, "ok", "http_2xx")
+        )
+        self.assertNotIn("browser_verified", ok)
+        other = self.audit.annotate_result(
+            self.audit.Result(
+                "id", "src", "label", "https://example.org/x", None, "transient", "timeout"
+            )
+        )
+        self.assertNotIn("browser_verified", other)
+
     def test_classification_without_network(self) -> None:
         classify = self.audit.classify
         self.assertEqual(classify(200, {"Server": "nginx"}, "<html>ok</html>"), ("ok", "http_2xx"))
