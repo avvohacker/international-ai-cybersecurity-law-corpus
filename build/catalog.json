@@ -16313,9 +16313,9 @@
       "category": "non_binding_instrument",
       "dates": {
         "adopted": "2024-04-05",
-        "notes": "Sixth ministerial meeting of the U.S.–EU Trade and Technology Council, Leuven, 4–5 April 2024; the joint statement was published on 5 April 2024. The first technical Dialogue under the commitment was held on 11 July 2024.",
+        "notes": "Sixth ministerial meeting of the U.S.–EU Trade and Technology Council, Leuven, 4–5 April 2024; the joint statement was published on 5 April 2024. The first technical Dialogue under the commitment was held on 11 July 2024. No TTC ministerial or joint statement after the September 2024 stock-taking was located; the European Commission's fact page is titled '(2021-2024)' and its TTC topic page is marked archived. No later meeting of the AI-safety Dialogue was located.",
         "published": "2024-04-05",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "ai"
@@ -16324,7 +16324,9 @@
         "No standalone US–EU AI-safety agreement, MOU, administrative arrangement or terms of reference was located.",
         "The AI-safety commitment is one section of a broad TTC joint statement covering many non-AI issues; only the AI section was analysed.",
         "The joint statement creates no binding obligations, ratification, depositary, monitoring, reporting or dispute settlement.",
-        "Current status after the 2025 changes in US AI institutions was not verified on a later official source.",
+        "No TTC ministerial, joint statement or working-group output after the September 2024 stock-taking was located; the Commission presents the TTC as a 2021-2024 framework and archives its topic page, but no formal closure decision was located.",
+        "No meeting of the AI-safety Dialogue after 11 July 2024 was located on official EU or US pages.",
+        "The August 2025 US-EU trade framework provides for 'setting up a Digital Dialogue'; the Commission described it on 29 June 2026 as a potential future dialogue, and no launch document was located.",
         "Only the English versions were read; other language versions were not checked.",
         "The separate U.S.–EU Administrative Arrangement on AI and computing is not catalogued as an AI-safety agreement."
       ],
@@ -16429,10 +16431,50 @@
           "note": "Official European Commission announcement of the 11 July 2024 technical dialogue and its initial topics.",
           "publisher": "European Commission, Shaping Europe’s digital future",
           "url": "https://digital-strategy.ec.europa.eu/en/news/us-ai-safety-institute-and-european-ai-office-technical-dialogue"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "ec-ttc-factpage-2021-2024",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "European Commission fact page titled 'EU-US Trade and Technology Council (2021-2024)', which presents the TTC as a framework that ran from 2021 to 2024.",
+          "publisher": "European Commission",
+          "url": "https://digital-strategy.ec.europa.eu/en/factpages/eu-us-trade-and-technology-council-2021-2024"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "ec-ttc-archived",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "European Commission topic page marked 'Archived content - This page is no longer being updated. The content may be out-of-date and should be consulted for past reference only.'",
+          "publisher": "European Commission",
+          "url": "https://commission.europa.eu/topics/international-partnerships/eu-us-trade-and-technology-council_en"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "ec-trade-deal-2026",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "European Commission page on the EU-US trade deal; among the framework's outcomes it lists 'setting up a Digital Dialogue to promote good cooperation in a sector that is central to growth, jobs, innovation and transatlantic trade'.",
+          "publisher": "European Commission",
+          "url": "https://commission.europa.eu/topics/trade/eu-us-trade-deal_en"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "ec-briefing-29-june-2026",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "European Commission midday press briefing of 29 June 2026: a services-level delegation was discussing a 'potential future dialogue' with the United States, including its scope, participants and frequency, and frontier AI models. No launch of the dialogue was announced.",
+          "publisher": "European Commission, Audiovisual Service",
+          "url": "https://audiovisual.ec.europa.eu/en/media/video/I-292051"
         }
       ],
       "status": "adopted",
-      "status_note": "Political joint statement, not a treaty. The AI-safety commitment is the establishment of a Dialogue between the European AI Office and the U.S. AI Safety Institute. No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located. The separate U.S.–EU Administrative Arrangement on AI and computing is a research-cooperation instrument, not an AI-safety agreement. The joint statement creates no binding obligations, ratification, depositary or dispute settlement.",
+      "status_note": "Political joint statement, not a treaty. The AI-safety commitment is the establishment of a Dialogue between the European AI Office and the U.S. AI Safety Institute. No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located. The separate U.S.–EU Administrative Arrangement on AI and computing is a research-cooperation instrument, not an AI-safety agreement. The joint statement creates no binding obligations, ratification, depositary or dispute settlement. No TTC ministerial or joint statement after the September 2024 stock-taking was located; the Commission presents the TTC as a 2021-2024 framework and archives its topic page, without a formal closure decision. No later meeting of the AI-safety Dialogue was located. The August 2025 US-EU trade framework provides for 'setting up a Digital Dialogue'; on 29 June 2026 the Commission described it as a potential future dialogue, and no launch document was located.",
       "title": {
         "official": "Joint Statement EU-US Trade and Technology Council of 4-5 April 2024 in Leuven, Belgium",
         "short": "U.S.–EU TTC AI Safety Dialogue"
@@ -16458,6 +16500,11 @@
             "check": "Search for a standalone US–EU AI-safety instrument.",
             "date": "2026-11-23",
             "result": "No standalone MOU, administrative arrangement or terms of reference was located on the European Commission, USTR, NIST or Commerce pages. The Administrative Arrangement on AI and computing is a separate research-cooperation instrument."
+          },
+          {
+            "check": "Post-2024 TTC status and successor dialogue checked on European Commission pages.",
+            "date": "2026-11-25",
+            "result": "The TTC fact page is titled 'EU-US Trade and Technology Council (2021-2024)' and the topic page is archived with a 'no longer being updated' notice; no TTC activity after the September 2024 stock-taking and no later AI-safety Dialogue meeting was located. The trade-deal page lists 'setting up a Digital Dialogue', and the 29 June 2026 midday briefing describes a 'potential future dialogue' still being scoped; no launch document was located."
           }
         ],
         "level": "metadata_verified",
@@ -16468,10 +16515,10 @@
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
       "dates": {
-        "notes": "Signed on 1 April 2024 by Michelle Donelan, UK Secretary of State for Science, Innovation and Technology, and Gina Raimondo, US Secretary of Commerce. The GOV.UK publication and press release are dated 2 April 2024.",
+        "notes": "Signed on 1 April 2024 by Michelle Donelan, UK Secretary of State for Science, Innovation and Technology, and Gina Raimondo, US Secretary of Commerce. The GOV.UK publication and press release are dated 2 April 2024. No renewal, modification, termination or replacement of the 2024 MOU was located. The institutions named at signature have been renamed: the UK AI Safety Institute is now the AI Security Institute, and NIST lists its centre as the Center for Advancing Innovation and Standards for Super Intelligence (CAISSI). A separate UK-US Technology Prosperity Deal MOU of 18 September 2025 provides for cooperation between the US Center for AI Standards and Innovation and the UK AI Security Institute and is expressly non-binding. Joint UK AISI/CAISI technical work continued, with a joint preliminary assessment published by NIST on 23 July 2026.",
         "published": "2024-04-02",
         "signed": "2024-04-01",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "ai"
@@ -16481,7 +16528,9 @@
         "The published summary does not state a legal-status clause, duration, termination, review or dispute-settlement procedure.",
         "No depositary, ratification or UN Charter Article 102 registration is stated; this is an MOU, not a treaty.",
         "No monitoring, reporting or evaluation mechanism is published.",
-        "Institutional names are those at signature; later renaming or institutional change is not assessed.",
+        "Institutional names changed after signature: the UK AI Safety Institute is now the AI Security Institute, and NIST lists its centre as the Center for Advancing Innovation and Standards for Super Intelligence (CAISSI); the 2024 MOU summary does not reflect either renaming.",
+        "No renewal, modification, termination or replacement of the 2024 MOU was located; the published summary contains no duration, review or termination clause.",
+        "The UK-US Technology Prosperity Deal MOU of 18 September 2025 is a separate non-binding instrument that provides for cooperation between CAISI and the AI Security Institute; it is not the text of this MOU.",
         "The U.S. Department of Commerce announcement returned HTTP 403 to automated retrieval; verification relies on the UK official publication."
       ],
       "id": "us-uk-ai-safety-mou-2024",
@@ -16514,7 +16563,7 @@
       },
       "parties": {
         "act": "political_signature",
-        "as_of": "2026-11-23",
+        "as_of": "2026-11-25",
         "counts": {
           "political_signatures": {
             "basis": "verified_total",
@@ -16621,10 +16670,50 @@
           "note": "Official press release, 2 April 2024. Confirms signature on 1 April 2024 by Michelle Donelan and Gina Raimondo and describes the AI Safety Institutes' cooperation.",
           "publisher": "Department for Science, Innovation and Technology (United Kingdom)",
           "url": "https://www.gov.uk/government/news/uk-united-states-announce-partnership-on-science-of-ai-safety"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "govuk-ai-security-institute",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Current GOV.UK organisation page for the AI Security Institute, part of the Cabinet Office. The former AI Safety Institute page states: 'AI Safety Institute is now called AI Security Institute'.",
+          "publisher": "Government of the United Kingdom",
+          "url": "https://www.gov.uk/government/organisations/ai-security-institute"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "nist-caissi",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "NIST page titled 'Center for Advancing Innovation and Standards for Super Intelligence (CAISSI)'; its contact address still uses the caisi@nist.gov name. The page documents the current name of the US centre, not the date of the change.",
+          "publisher": "National Institute of Standards and Technology (United States)",
+          "url": "https://www.nist.gov/caissi"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "tpd-mou-2025",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "UK-US Technology Prosperity Deal MOU, 18 September 2025. Provides for 'advancing the partnership between the U.S. Center for AI Standards and Innovation and the UK AI Security Institute'; states that it creates no legally binding obligations and may be discontinued 180 days after notice.",
+          "publisher": "The White House (United States)",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/09/memorandum-of-understanding-between-the-government-of-the-united-states-of-america-and-the-government-of-the-united-kingdom-of-great-britain-and-northern-ireland-regarding-the-technology-prosperity-deal"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "nist-uk-caisi-joint-assessment",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "NIST page 'UK AISI / CAISI Preliminary Assessment of Kimi K3's Cyber Capabilities', published 23 July 2026 and modified 28 August 2026; documents continuing joint UK AISI-CAISI technical work.",
+          "publisher": "National Institute of Standards and Technology (United States)",
+          "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities"
         }
       ],
       "status": "adopted",
-      "status_note": "Bilateral memorandum of understanding between the United Kingdom and the United States. It is a non-binding political and technical cooperation instrument, not a treaty. The classification follows the MOU form and the absence of binding language in the official summary; the full MOU text was not published. The summary states no ratification, depositary, duration, termination, review or dispute-settlement procedure.",
+      "status_note": "Bilateral memorandum of understanding between the United Kingdom and the United States. It is a non-binding political and technical cooperation instrument, not a treaty. The classification follows the MOU form and the absence of binding language in the official summary; the full MOU text was not published. The summary states no ratification, depositary, duration, termination, review or dispute-settlement procedure. No renewal, termination or replacement document was located. The institutions have since been renamed: the UK AI Safety Institute is now the AI Security Institute, and NIST lists its centre as the Center for Advancing Innovation and Standards for Super Intelligence (CAISSI). A separate UK-US Technology Prosperity Deal MOU of 18 September 2025 provides for cooperation between the US Center for AI Standards and Innovation and the UK AI Security Institute and is expressly non-binding; it may be discontinued 180 days after notice. Joint UK AISI/CAISI technical work continued, with a joint preliminary assessment published by NIST on 23 July 2026.",
       "title": {
         "official": "Collaboration on the safety of AI: UK-US memorandum of understanding",
         "short": "UK–US AI Safety MOU"
@@ -16650,6 +16739,16 @@
             "check": "US official announcement checked.",
             "date": "2026-11-23",
             "result": "The U.S. Department of Commerce announcement was identified but returned HTTP 403 to automated retrieval; the bilateral facts are verified from the UK official publication."
+          },
+          {
+            "check": "Institutional names and current status checked on official UK and US pages.",
+            "date": "2026-11-25",
+            "result": "The UK organisation is now the AI Security Institute, part of the Cabinet Office; the former page says it is 'now called AI Security Institute'. NIST lists the US centre as the Center for Advancing Innovation and Standards for Super Intelligence (CAISSI). No renewal, termination or replacement of the 2024 MOU was located."
+          },
+          {
+            "check": "Later UK-US instruments and joint technical work checked on official pages.",
+            "date": "2026-11-25",
+            "result": "The Technology Prosperity Deal MOU of 18 September 2025 provides for CAISI-AI Security Institute cooperation, states that it creates no legally binding obligations and may be discontinued 180 days after notice. A joint UK AISI/CAISI preliminary assessment was published by NIST on 23 July 2026."
           }
         ],
         "level": "metadata_verified",

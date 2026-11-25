@@ -2022,7 +2022,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 213)
+        self.assertEqual(len(targets), 221)
         self.assertEqual(len({target.instrument_id for target in targets}), 71)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)
