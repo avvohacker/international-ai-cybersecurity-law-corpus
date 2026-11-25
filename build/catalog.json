@@ -89,7 +89,7 @@
         "The English main Protocol and the English Annex on Emerging and Advanced Technologies are stored; the other five authentic-language versions are not.",
         "The Annex is stored as a six-page extract of the official compiled annexes; the complete 52-page compilation is also stored, but only the emerging-technologies annex is segmented.",
         "The Protocol contains no provision for national schedules of commitments and none is published on the AU portal, so no digital-trade schedule exists to acquire; the annexes are integral parts of the Protocol once adopted (Article 46(3)).",
-        "No new digital-trade annex was adopted by the 39th Assembly in February 2026: the annexes adopted then concern intellectual property."
+        "No digital-trade annex appears in the 39th Assembly's adoption decision (Dec.957(XXXIX)): the annexes it adopts are to the Intellectual Property Rights Protocol."
       ],
       "id": "afcfta-digital-trade-protocol-2024",
       "instrument_type": "protocol",
@@ -315,7 +315,7 @@
           "id": "assembly-dec-975",
           "kind": "official_primary",
           "language": "en",
-          "note": "Assembly/AU/Dec.975(XXXIX), 39th Ordinary Session, 14-15 February 2026, Decision on the Report of the First Meeting of the Assembly Committee on the Implementation of the AfCFTA, para. 5: strongly urges Member States to ratify the AfCFTA Protocols including Digital Trade by the end of 2026 and to notify the ratifications to ensure their expeditious entry into force.",
+          "note": "Assembly/AU/Dec.975(XXXIX), 39th Ordinary Session, 14-15 February 2026, Decision on the Report of the First Meeting of the Assembly Committee on the Implementation of the AfCFTA, para. 5: strongly urges Member States to ratify the AfCFTA Protocols including Digital Trade by the end of 2026 and to notify the ratifications to ensure their expeditious entry into force. The same decisions compilation contains Dec.957(XXXIX), which adopts draft legal instruments including annexes to the Intellectual Property Rights Protocol; it adopts no annex to the Digital Trade Protocol.",
           "publisher": "African Union",
           "url": "https://au.int/sites/default/files/decisions/46188-Assembly_Decisions_31_March_E.pdf"
         },
@@ -407,7 +407,7 @@
           {
             "check": "Depositary status, entry into force, annexes and schedules re-checked on the AU treaty portal and the 39th Assembly decisions.",
             "date": "2026-11-25",
-            "result": "The treaty page and the general treaties index display no entry-into-force date, no ratification table and no status list for this Protocol; the index row carries only the 18 February 2024 adoption date. No depositary notification was located. Article 47(2) applies the AfCFTA Agreement Article 23(2) 22-ratification threshold. Decision 975(XXXIX), para. 5 (14-15 February 2026), still urged ratification by the end of 2026. The Protocol contains no provision for national schedules of commitments, so no digital-trade schedule exists to acquire; no new digital-trade annex was adopted in February 2026."
+            "result": "The treaty page and the general treaties index display no entry-into-force date, no ratification table and no status list for this Protocol; the index row carries only the 18 February 2024 adoption date. No depositary notification was located. Article 47(2) applies the AfCFTA Agreement Article 23(2) 22-ratification threshold. Decision 975(XXXIX), para. 5 (14-15 February 2026), still urged ratification by the end of 2026. The Protocol contains no provision for national schedules of commitments, so no digital-trade schedule exists to acquire; no digital-trade annex appears in Dec.957(XXXIX), whose annexed instruments concern the Intellectual Property Rights Protocol."
           }
         ],
         "level": "metadata_verified",
