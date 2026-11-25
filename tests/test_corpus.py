@@ -933,6 +933,13 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(len(ibero["parties"]["entries"]), 18)
         self.assertIn("Paraguay is not listed", " ".join(ibero["gaps"]))
 
+        alecso = read_instrument("alecso-charter-ai-ethics-2025")
+        self.assertIn("alecso-adoption-page", {source["id"] for source in alecso["sources"]})
+        self.assertFalse(
+            any(source["kind"] == "secondary" for source in alecso["sources"]),
+            "ALECSO adoption must rest on official sources, not media reports",
+        )
+
     def test_pact_units_are_citable(self) -> None:
         units = corpuslib.load_units("un-ga-res-79-1")
         self.assertEqual(len(units), 248)
@@ -2011,7 +2018,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 208)
+        self.assertEqual(len(targets), 209)
         self.assertEqual(len({target.instrument_id for target in targets}), 71)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)

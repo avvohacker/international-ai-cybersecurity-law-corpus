@@ -2,7 +2,7 @@
   "binding_status": "non_binding",
   "category": "non_binding_instrument",
   "dates": {
-    "notes": "Signed on 15 November 2026 at the Pax Silica Founders Retreat in San Francisco. The State Department release states that the United States and nine Pax Silica participants signed and reproduces the text released by the ten governments. The release lists Germany, Sweden, the Netherlands and the European Commission as intending to sign later in November; they are not counted.",
+    "notes": "Signed on 15 November 2026 at the Pax Silica Founders Retreat in San Francisco. The State Department release states that the United States and nine Pax Silica participants signed and reproduces the text released by the ten governments. Only the ten signatories named in the release are counted.",
     "signed": "2026-11-15",
     "verified_on": "2026-11-24"
   },
@@ -11,7 +11,6 @@
   ],
   "gaps": [
     "Non-binding: no legal obligation, ratification, depositary, monitoring or enforcement.",
-    "Four participants reported as intending to sign later in November 2026 were not verified as signatories.",
     "The five working groups are announced, not established; no mandate, membership or output was verified.",
     "No full text is stored; the record is metadata-only."
   ],
@@ -158,10 +157,9 @@
     "source_ids": [
       "state-san-francisco"
     ],
-    "summary": "Ten signatory governments as of 15 November 2026, as listed in the State Department release. Signature is political, not treaty signature. Four further participants were reported as intending to sign later in November and are not counted.",
+    "summary": "Ten signatory governments as of 15 November 2026, as listed in the State Department release. Signature is political, not treaty signature. Only the ten signatories named in the release are counted.",
     "unknowns": [
       "The declaration has no treaty clause, so ratification and accession do not apply; their absence is not a zero.",
-      "Germany, Sweden, the Netherlands and the European Commission were reported as intending to sign later in November 2026; no later signature was verified.",
       "The five working groups are announced, not established; their membership, mandate and outputs were not verified.",
       "The full legal effect of the declaration under the domestic law of each signatory was not assessed."
     ],
@@ -239,20 +237,10 @@
       "note": "Media note of 15 November 2026 announcing the signature by the United States and nine Pax Silica participants and reproducing the full text released by the ten governments. It names the signatories and the five proposed working groups.",
       "publisher": "United States Department of State, Office of the Spokesman",
       "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"
-    },
-    {
-      "accessed": "2026-11-24",
-      "http_status": 200,
-      "id": "wikipedia-sf",
-      "kind": "secondary",
-      "language": "en",
-      "note": "Encyclopaedia entry used only to locate the official release and the reported intention of four further participants to sign. It is not the source of any legal qualification.",
-      "publisher": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/San_Francisco_Declaration_on_the_Secure_Foundations_of_Enduring_Prosperity"
     }
   ],
   "status": "adopted",
-  "status_note": "Signed political declaration, not a treaty. Ten governments signed on 15 November 2026: the United States, Australia, India, Israel, Japan, the Republic of Korea, Qatar, Singapore, the United Arab Emirates and the United Kingdom. Germany, Sweden, the Netherlands and the European Commission were reported as intending to sign later in November 2026; they are not counted as signatories. No ratification, depositary, entry into force, monitoring or enforcement is established.",
+  "status_note": "Signed political declaration, not a treaty. Ten governments signed on 15 November 2026: the United States, Australia, India, Israel, Japan, the Republic of Korea, Qatar, Singapore, the United Arab Emirates and the United Kingdom. No ratification, depositary, entry into force, monitoring or enforcement is established.",
   "title": {
     "official": "San Francisco Declaration on the Secure Foundations of Enduring Prosperity",
     "short": "San Francisco Declaration"
@@ -268,11 +256,6 @@
         "check": "Legal nature checked against the text.",
         "date": "2026-11-24",
         "result": "The text records a common understanding and resolves to establish working groups. It contains no ratification, depositary, entry-into-force or dispute-settlement clause."
-      },
-      {
-        "check": "Reported future signatories checked.",
-        "date": "2026-11-24",
-        "result": "The release itself does not list Germany, Sweden, the Netherlands or the European Commission; the secondary entry reports them as intending to sign later in November 2026. They are excluded from the count."
       }
     ],
     "level": "metadata_verified",

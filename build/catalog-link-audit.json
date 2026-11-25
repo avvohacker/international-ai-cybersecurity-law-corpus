@@ -1,13 +1,13 @@
 {
-  "checked": 190,
+  "checked": 214,
   "audited_on": "2026-11-25",
   "scope": "catalog",
-  "instruments": 63,
+  "instruments": 71,
   "summary": {
-    "ok": 136,
-    "anti_bot": 51,
-    "broken": 0,
-    "transient": 3,
+    "ok": 153,
+    "anti_bot": 55,
+    "broken": 1,
+    "transient": 5,
     "live_but_unreachable": 3
   },
   "results": [
@@ -82,6 +82,76 @@
       "detail": ""
     },
     {
+      "instrument_id": "alecso-charter-ai-ethics-2025",
+      "source_id": "alecso-adoption-page",
+      "label": "Arab League Educational, Cultural and Scientific Organization (ALECSO)",
+      "url": "https://n.alecso.org/en/n/180-at-a-high-level-arab-meeting-adoption-of-the-alecso-charter-on-ai-ethics",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "alecso-charter-ai-ethics-2025",
+      "source_id": "alecso-charter-pdf",
+      "label": "Arab League Educational, Cultural and Scientific Organization (ALECSO)",
+      "url": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "alecso-charter-ai-ethics-2025",
+      "source_id": "alecso-english-page",
+      "label": "Arab League Educational, Cultural and Scientific Organization (ALECSO)",
+      "url": "https://www.alecso.org/nsite/en/newscat/5244-%D8%A7%D9%84%D8%A3%D9%84%D9%83%D8%B3%D9%88-%D8%AA%D9%86%D8%B4%D8%B1-%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%85%D9%86-%D9%85%D9%8A%D8%AB%D8%A7%D9%82%D9%87%D8%A7-%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-2",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "arab-charter-ai-ethics-2025",
+      "source_id": "aicto-charter-pdf",
+      "label": "Arab Information and Communication Technologies Organization (AICTO)",
+      "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "arab-charter-ai-ethics-2025",
+      "source_id": "aicto-studies",
+      "label": "Arab Information and Communication Technologies Organization (AICTO)",
+      "url": "https://www.aicto.org/publications/studies",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "arab-charter-ai-ethics-2025",
+      "source_id": "mcit-egypt-2025",
+      "label": "Ministry of Communications and Information Technology, Egypt",
+      "url": "https://mcit.gov.eg/en/Media_Center/Press_Room/Press_Releases/68202",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "arab-charter-ai-ethics-2025",
+      "source_id": "unescwa-sdg-2026",
+      "label": "United Nations Economic and Social Commission for Western Asia (ESCWA)",
+      "url": "https://depar.unescwa.org/system/files/2026-05/annual-sdg-review-2026-english.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "arab-convention-it-offences-2010",
       "source_id": "las-convention-text",
       "label": "League of Arab States",
@@ -126,6 +196,46 @@
       "source_id": "unodc-compendium",
       "label": "UNODC",
       "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "arab-unified-ai-strategy-2025",
+      "source_id": "aicto-strategy-pdf",
+      "label": "Arab Information and Communication Technologies Organization (AICTO)",
+      "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "arab-unified-ai-strategy-2025",
+      "source_id": "aicto-studies",
+      "label": "Arab Information and Communication Technologies Organization (AICTO)",
+      "url": "https://www.aicto.org/publications/studies",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "arab-unified-ai-strategy-2025",
+      "source_id": "spa-launch",
+      "label": "Saudi Press Agency",
+      "url": "https://www.spa.gov.sa/N2249091",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "arab-unified-ai-strategy-2025",
+      "source_id": "unescwa-sdg-2026",
+      "label": "United Nations Economic and Social Commission for Western Asia (ESCWA)",
+      "url": "https://depar.unescwa.org/system/files/2026-05/annual-sdg-review-2026-english.pdf",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -256,9 +366,9 @@
       "source_id": "brics-members",
       "label": "BRICS 2025 Presidency, Federative Republic of Brazil",
       "url": "https://web.archive.org/web/20260617005151/https://brics.br/en",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -496,6 +606,36 @@
       "source_id": "unodc-compendium",
       "label": "UNODC",
       "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "clad-ibero-ai-charter-2023",
+      "source_id": "clad-charter-pdf",
+      "label": "Centro Latinoamericano de Administración para el Desarrollo (CLAD)",
+      "url": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "clad-ibero-ai-charter-2023",
+      "source_id": "clad-inap",
+      "label": "INAP, Spain",
+      "url": "https://laadministracionaldia.inap.es/noticia.asp?id=1514573",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "clad-ibero-ai-charter-2023",
+      "source_id": "clad-report-2025",
+      "label": "CLAD and SEGIB",
+      "url": "https://web-api-backend.clad.org/uploads/informefinal_clad_segib_interoperablidadaapp_iberoamerica_vf_20250603_final2025.pdf",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -932,6 +1072,36 @@
       "detail": ""
     },
     {
+      "instrument_id": "ibero-ai-declaration-2024",
+      "source_id": "cancilleria-pt",
+      "label": "Ministerio de Relaciones Exteriores y Movilidad Humana, Ecuador",
+      "url": "https://www.cancilleria.gob.ec/wp-content/uploads/2024/12/8.-DE-INTELIGENCIA-ARTIFICIAL.PT_.pdf",
+      "status": null,
+      "outcome": "broken",
+      "reason": "tls_certificate",
+      "detail": "URLError"
+    },
+    {
+      "instrument_id": "ibero-ai-declaration-2024",
+      "source_id": "mintel-declaration",
+      "label": "Ministerio de Telecomunicaciones y de la Sociedad de la Información, Ecuador",
+      "url": "https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf",
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "URLError"
+    },
+    {
+      "instrument_id": "ibero-ai-declaration-2024",
+      "source_id": "segib-summit",
+      "label": "Secretaría General Iberoamericana (SEGIB)",
+      "url": "https://segib.org/es/cumbre/xxix-cumbre-iberoamericana/",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
       "instrument_id": "iccpr-1966",
       "source_id": "ohchr",
       "label": "OHCHR treaty page",
@@ -1346,6 +1516,86 @@
       "detail": ""
     },
     {
+      "instrument_id": "reaim-blueprint-for-action-2024",
+      "source_id": "mofa-kr-page",
+      "label": "Ministry of Foreign Affairs, Republic of Korea",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/view.do?seq=375378",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "reaim-blueprint-for-action-2024",
+      "source_id": "mofa-page",
+      "label": "Ministry of Foreign Affairs, Republic of Korea",
+      "url": "https://www.mofa.go.kr/eng/brd/m_5676/view.do?page=1&seq=322676",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "reaim-blueprint-for-action-2024",
+      "source_id": "mofa-pdf",
+      "label": "Ministry of Foreign Affairs, Republic of Korea",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/down.do?brd_id=235&seq=375378&data_tp=A&file_seq=9",
+      "status": 307,
+      "outcome": "transient",
+      "reason": "http_307",
+      "detail": ""
+    },
+    {
+      "instrument_id": "reaim-call-to-action-2023",
+      "source_id": "govnl-news",
+      "label": "Government of the Netherlands",
+      "url": "https://www.government.nl/latest/news/2023/02/16/reaim-2023-call-to-action",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "reaim-call-to-action-2023",
+      "source_id": "govnl-page",
+      "label": "Government of the Netherlands, Ministry of Foreign Affairs and Ministry of Defence",
+      "url": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "reaim-call-to-action-2023",
+      "source_id": "govnl-pdf",
+      "label": "Government of the Netherlands",
+      "url": "https://www.government.nl/site/binaries/site-content/collections/documents/2023/02/16/reaim-2023-call-to-action/REAIM+2023+Call+to+Action.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "reaim-pathways-to-action-2026",
+      "source_id": "spain-page",
+      "label": "Ministry of Foreign Affairs, European Union and Cooperation, Spain",
+      "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "reaim-pathways-to-action-2026",
+      "source_id": "spain-pdf",
+      "label": "Ministry of Foreign Affairs, European Union and Cooperation, Spain",
+      "url": "https://exteriores.gob.es/en/REAIM2026/Documents/REAIM%202026%20Pathways%20to%20Action.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "sadea-2020",
       "source_id": "dfat-page",
       "label": "Australian Department of Foreign Affairs and Trade",
@@ -1375,16 +1625,6 @@
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
-      "detail": ""
-    },
-    {
-      "instrument_id": "san-francisco-declaration-2026",
-      "source_id": "wikipedia-sf",
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/San_Francisco_Declaration_on_the_Secure_Foundations_of_Enduring_Prosperity",
-      "status": 200,
-      "outcome": "anti_bot",
-      "reason": "challenge_on_200",
       "detail": ""
     },
     {

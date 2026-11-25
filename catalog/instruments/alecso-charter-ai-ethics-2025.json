@@ -3,7 +3,7 @@
   "category": "non_binding_instrument",
   "dates": {
     "adopted": "2025-06-17",
-    "notes": "The English edition is dated June 2025 and does not print the adoption day. ALECSO's statement, reported by University World News and Al-Fanar Media, says the Charter was adopted at a high-level virtual meeting on 17 June 2025. The date is recorded with that provenance and not treated as printed in the official PDF.",
+    "notes": "The English edition is dated June 2025 and does not print the adoption day. ALECSO's official news page of 2 July 2025 states that a high-level virtual meeting on 17 June 2025 considered and adopted the final text. The date is recorded with that official provenance and not treated as printed in the official PDF.",
     "verified_on": "2026-11-25"
   },
   "domains": [
@@ -15,7 +15,7 @@
     "No itemised list of approving States or vote was located.",
     "No full text is stored; the record is metadata-only.",
     "The official English edition is a translation from Arabic; no statement of equally authentic languages was located.",
-    "The exact adoption day is not printed in the official PDF; it is taken from ALECSO's statement as reported by two independent publications.",
+    "The exact adoption day is not printed in the official PDF; it is taken from ALECSO's official news page of 2 July 2025.",
     "The relationship between this Charter and the pan-Arab Arab Charter on AI Ethics is not institutionally defined."
   ],
   "id": "alecso-charter-ai-ethics-2025",
@@ -106,22 +106,12 @@
     {
       "accessed": "2026-11-25",
       "http_status": 200,
-      "id": "university-world-news",
-      "kind": "secondary",
+      "id": "alecso-adoption-page",
+      "kind": "official_secondary",
       "language": "en",
-      "note": "Reports that ALECSO adopted the Charter at a high-level virtual meeting on 17 June 2025, citing ALECSO's statement of 2 July 2025.",
-      "publisher": "University World News",
-      "url": "https://www.universityworldnews.com/post.php?story=20250722122435648"
-    },
-    {
-      "accessed": "2026-11-25",
-      "http_status": 200,
-      "id": "al-fanar",
-      "kind": "secondary",
-      "language": "en",
-      "note": "Corroborates the 17 June 2025 adoption meeting and the education, culture and science scope.",
-      "publisher": "Al-Fanar Media",
-      "url": "https://al-fanarmedia.org/2025/07/bulletin-alecso-adopts-ai-code-of-ethics-etonhouse-group-to-open-its-first-schools-in-saudi-arabia"
+      "note": "Official ALECSO news page of 2 July 2025: the high-level virtual meeting of 17 June 2025 considered and adopted the final version of the Charter, with the revised version approved unanimously.",
+      "publisher": "Arab League Educational, Cultural and Scientific Organization (ALECSO)",
+      "url": "https://n.alecso.org/en/n/180-at-a-high-level-arab-meeting-adoption-of-the-alecso-charter-on-ai-ethics"
     }
   ],
   "status": "adopted",
@@ -141,7 +131,7 @@
       {
         "check": "Adoption date checked.",
         "date": "2026-11-25",
-        "result": "The PDF does not print the adoption day. ALECSO's statement, reported by University World News and Al-Fanar Media, records adoption at a high-level virtual meeting on 17 June 2025."
+        "result": "The PDF does not print the adoption day. ALECSO's official news page of 2 July 2025 records adoption at a high-level virtual meeting on 17 June 2025."
       },
       {
         "check": "Issuer and legal nature checked.",
@@ -150,6 +140,6 @@
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from the official ALECSO English edition and two independent reports of ALECSO's adoption statement. The record is metadata-only: no full text is stored."
+    "notes": "Metadata verified from the official ALECSO English edition and ALECSO's official adoption notice. The record is metadata-only: no full text is stored."
   }
 }
