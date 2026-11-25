@@ -28,7 +28,7 @@ The legal nature is determined from the instrument and its issuer, not from its 
 | `metadata_verified` | Official page or official excerpt read in this session; key metadata checked. | 53 |
 | `source_located` | Official URL recorded; metadata from an established reference, not re-read. | 0 |
 
-Sixteen full texts are stored, and all 16 have an acquired file registered in `catalog/acquisitions.json` (15 PDFs and one HTML). For CETS 225 the acquired PDF is a 12-page official reproduction, not the certified corrected copy, and the stored text remains a transcription. Only the ten marked `full_text_checked` were read end-to-end and are covered by key-passage tests. Six further texts are stored and segmented but remain `metadata_verified` because they were not read end-to-end. The levels are deliberately coarse and honest. `metadata_verified` is not a guarantee that every field, party or declaration was checked. Each record lists its own `verification.checks`, and `gaps` records what remains unknown.
+Twenty-one full texts are stored across 21 records, and each record has at least one acquired file registered in `catalog/acquisitions.json` (22 files: 21 PDFs and one HTML). For CETS 225 the stored English text remains a transcription of the 12-page official reproduction; the certified bilingual copy is also stored, and the authentic French text is segmented separately. Only the ten marked `full_text_checked` were read end-to-end and are covered by key-passage tests. Eleven further texts are stored and segmented but remain `metadata_verified` because they were not read end-to-end. The levels are deliberately coarse and honest. `metadata_verified` is not a guarantee that every field, party or declaration was checked. Each record lists its own `verification.checks`, and `gaps` records what remains unknown.
 
 ## 3. Sources and discovery
 
@@ -47,7 +47,7 @@ For each acquired original:
 
 Texts are separated into original, extracted text, metadata and citable units. `text/en.txt` is an extraction, not a diplomatic facsimile. Running headers and page numbers may be removed; wording is not corrected silently. Extraction artefacts (for example spaces inserted by PDF text extraction) are noted in the record. No missing passage is reconstructed and no machine translation is presented as authentic.
 
-`units.jsonl` stores exact `char_start`/`char_end` offsets and file-page anchors. `page_start`/`page_end` refer to the PDF file page, not necessarily the printed page number. The distinction is recorded where it matters; CETS 225 uses the 12 pages of the acquired official reproduction.
+`units.jsonl` stores exact `char_start`/`char_end` offsets and file-page anchors. `page_start`/`page_end` refer to the PDF file page, not necessarily the printed page number. The distinction is recorded where it matters; CETS 225's English units use the 12 pages of the acquired official reproduction, and its French units (`units-fr.jsonl`) use a 13-page sequence whose `pages-fr.json` also records the corresponding PDF page (3, 5, ..., 27).
 
 ### Versions
 

@@ -1,70 +1,83 @@
 {
-  "note": "Authentic French text extracted from the certified bilingual PDF (Strasbourg, 20 May 2025). Page numbers refer to the source PDF pages, where French and English alternate; only the French pages (3, 5, ..., 27) are included. Running headers, page numbers and line breaks are not removed.",
+  "note": "Authentic French text extracted from the certified bilingual PDF (Strasbourg, 20 May 2025). Only the French pages of the bilingual PDF are included. 'page' is the 1-based position in this French sequence (1-13); 'pdf_page' is the corresponding page of the 27-page source PDF (3, 5, ..., 27). Running headers, page numbers and line breaks are not removed.",
   "pages": [
     {
-      "page": 3,
+      "page": 1,
       "char_start": 0,
-      "char_end": 3181
+      "char_end": 3181,
+      "pdf_page": 3
+    },
+    {
+      "page": 2,
+      "char_start": 3182,
+      "char_end": 6473,
+      "pdf_page": 5
+    },
+    {
+      "page": 3,
+      "char_start": 6474,
+      "char_end": 9820,
+      "pdf_page": 7
+    },
+    {
+      "page": 4,
+      "char_start": 9821,
+      "char_end": 12523,
+      "pdf_page": 9
     },
     {
       "page": 5,
-      "char_start": 3182,
-      "char_end": 6473
+      "char_start": 12524,
+      "char_end": 15072,
+      "pdf_page": 11
+    },
+    {
+      "page": 6,
+      "char_start": 15073,
+      "char_end": 17907,
+      "pdf_page": 13
     },
     {
       "page": 7,
-      "char_start": 6474,
-      "char_end": 9820
+      "char_start": 17908,
+      "char_end": 20844,
+      "pdf_page": 15
+    },
+    {
+      "page": 8,
+      "char_start": 20845,
+      "char_end": 23224,
+      "pdf_page": 17
     },
     {
       "page": 9,
-      "char_start": 9821,
-      "char_end": 12523
+      "char_start": 23225,
+      "char_end": 26438,
+      "pdf_page": 19
+    },
+    {
+      "page": 10,
+      "char_start": 26439,
+      "char_end": 29197,
+      "pdf_page": 21
     },
     {
       "page": 11,
-      "char_start": 12524,
-      "char_end": 15072
+      "char_start": 29198,
+      "char_end": 32192,
+      "pdf_page": 23
+    },
+    {
+      "page": 12,
+      "char_start": 32193,
+      "char_end": 34694,
+      "pdf_page": 25
     },
     {
       "page": 13,
-      "char_start": 15073,
-      "char_end": 17907
-    },
-    {
-      "page": 15,
-      "char_start": 17908,
-      "char_end": 20844
-    },
-    {
-      "page": 17,
-      "char_start": 20845,
-      "char_end": 23224
-    },
-    {
-      "page": 19,
-      "char_start": 23225,
-      "char_end": 26438
-    },
-    {
-      "page": 21,
-      "char_start": 26439,
-      "char_end": 29197
-    },
-    {
-      "page": 23,
-      "char_start": 29198,
-      "char_end": 32192
-    },
-    {
-      "page": 25,
-      "char_start": 32193,
-      "char_end": 34694
-    },
-    {
-      "page": 27,
       "char_start": 34695,
-      "char_end": 35875
+      "char_end": 35875,
+      "pdf_page": 27
     }
   ],
   "primary_text": "text/fr.txt"

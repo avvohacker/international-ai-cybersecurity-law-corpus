@@ -55,6 +55,7 @@ def main() -> int:
             ("pages.json", "metadata", "application/json"),
             ("pages-fr.json", "metadata", "application/json"),
             ("units.jsonl", "units", "application/x-ndjson"),
+            ("units-fr.jsonl", "units", "application/x-ndjson"),
         ]
         for rel, role, media in derived:
             path = base / rel

@@ -60,7 +60,7 @@ Two instruments were nearly missed in the first cycle: **A/HRC/RES/63/15** and t
 | Catalogued instruments | 63 (48 AI-domain + 15 cybersecurity-only) |
 | Instruments with binding form | 22 (18 international + 4 internal law; of the 18, 13 in force and 5 not confirmed) |
 | Non-binding instruments | 41 |
-| Stored full texts | 16 |
+| Stored full texts | 21 |
 | Candidate-register entries | 37 (18 included, 9 pending, 10 excluded) |
 | Maps | 17 |
 

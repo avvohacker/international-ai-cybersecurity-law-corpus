@@ -15,7 +15,7 @@ from pathlib import Path
 from corpuslib import CORPUS_DIR, dump_json
 
 ARTICLE_RE = re.compile(
-    r"(?m)^\s*(?:Article|ARTICLE)\s+(\d+(?:\.\d+)?)\s*(?:[–\-—:]\s*(.*?))?\s*$"
+    r"(?m)^\s*(?:Article|ARTICLE)\s+(\d+(?:\.\d+)?(?:er)?)\s*(?:[–\-—:]\s*(.*?))?\s*$"
 )
 SECTION_RE = re.compile(r"(?m)^\s*(\d{1,2})\.\s+([A-Z][^\n]{3,90})$")
 RES_PARA_RE = re.compile(r"(?m)^\s*(\d{1,3})\.\s+(?=\S)")
@@ -238,20 +238,22 @@ def main() -> int:
         choices=["treaty", "resolution", "sections", "numbered", "whole", "pact"],
     )
     parser.add_argument("--text", default="text/en.txt")
+    parser.add_argument("--pages", default="pages.json")
+    parser.add_argument("--output", default="units.jsonl")
     args = parser.parse_args()
 
     base = CORPUS_DIR / args.instrument_id
     body = (base / args.text).read_text(encoding="utf-8")
-    pages = json.loads((base / "pages.json").read_text(encoding="utf-8"))["pages"]
+    pages = json.loads((base / args.pages).read_text(encoding="utf-8"))["pages"]
     units = segment(body, args.mode)
-    with (base / "units.jsonl").open("w", encoding="utf-8") as fh:
+    with (base / args.output).open("w", encoding="utf-8") as fh:
         for idx, unit in enumerate(units, 1):
             unit["unit_id"] = f"{args.instrument_id}-u{idx:04d}"
             unit["instrument_id"] = args.instrument_id
             unit["page_start"] = page_for(pages, unit["char_start"])
             unit["page_end"] = page_for(pages, max(unit["char_start"], unit["char_end"] - 1))
             fh.write(json.dumps(unit, ensure_ascii=False, sort_keys=True) + "\n")
-    print(f"{len(units)} unit(s) written to corpus/{args.instrument_id}/units.jsonl")
+    print(f"{len(units)} unit(s) written to corpus/{args.instrument_id}/{args.output}")
     return 0
 
 

@@ -42,11 +42,11 @@
       "sha256": "d8cd3e82af3eac92bce74a5d5a93e67c3a32e8376405138ba1f625788cc43490"
     },
     {
-      "bytes": 1404,
+      "bytes": 1750,
       "media_type": "application/json",
       "path": "pages-fr.json",
       "role": "metadata",
-      "sha256": "b9470bf4cd2299d3b25bb847f971cb73bb648ea6821c640138a29955b6ff4a83"
+      "sha256": "e91d395990d7f308fba1a4aca0368dab380a681e2d2f12a1fa314924c8ec3ab3"
     },
     {
       "bytes": 35303,
@@ -54,6 +54,13 @@
       "path": "units.jsonl",
       "role": "units",
       "sha256": "c83972f4d7974cdc1772db63b40c26e925418b3c1cb8d9e4201812fd45f47a7f"
+    },
+    {
+      "bytes": 40151,
+      "media_type": "application/x-ndjson",
+      "path": "units-fr.jsonl",
+      "role": "units",
+      "sha256": "14a430206942d788ec2c303cd0919d7ef5fa1530aa030e94be3044b9e6426fcd"
     },
     {
       "bytes": 7959,

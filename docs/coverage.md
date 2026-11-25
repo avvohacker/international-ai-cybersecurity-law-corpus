@@ -66,7 +66,7 @@ Coverage achieved in the cycle ending **2026-11-25**. Counts are generated from 
 | `metadata_verified` | 53 |
 | `source_located` | 0 |
 
-Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records whose text is stored and segmented but was not read end-to-end).
+Stored full texts: 21 (10 `full_text_checked` plus 11 `metadata_verified` records whose text is stored and segmented but was not read end-to-end).
 
 ## Explicit gaps
 
@@ -74,7 +74,7 @@ Stored full texts: 16 (10 `full_text_checked` plus 6 `metadata_verified` records
 2. **Only one negotiation record.** The CCW GGE on LAWS is catalogued, but no draft protocol or adopted instrument exists; the CoE drafting history and any UN framework-convention proposal were not acquired. UNGA 81 drafts L.34 and L.37 are pending candidates, not adopted instruments.
 3. **Military AI** is covered by non-binding resolutions and a political declaration, not by a binding instrument. CETS 225 excludes national defence; the UN Panel/Dialogue exclude military AI.
 4. **CETS 225 party data are captured** at 23 November 2026: 21 signatories and 2 ratifications (Bosnia and Herzegovina, 28 October 2026; EU, 15 May 2026). Declarations by the EU, Norway and Ukraine are reproduced; no reservations or objections are recorded. The treaty is not in force.
-5. **Languages.** English is the working language of the stored texts. The authentic French text of CETS 225 is stored separately (`text/fr.txt`) but is not segmented; French, Spanish and other official versions of the other instruments are recorded but not acquired, and no translations were produced.
+5. **Languages.** English is the working language of the stored texts. The authentic French text of CETS 225 is stored separately (`text/fr.txt`) and segmented into 36 article units (`units-fr.jsonl`); French, Spanish and other official versions of the other instruments are recorded but not acquired, and no translations were produced.
 6. **Standards.** All five ISO/IEC records are metadata-only because the standards are paywalled. No ITU-T or IEEE standard was verified.
 7. **National bilateral registries.** No systematic search of national treaty registries (for example the U.S. TIAS, UK treaty series or national gazettes) was completed. A targeted search of official UK, EU and US pages located the UK–US MOU summary and the US–EU TTC commitment, but not a full UK–US MOU text or a standalone US–EU AI-safety agreement.
 8. **Latin America, the Middle East and Central Asia** have no verified regional AI instrument in this cycle.

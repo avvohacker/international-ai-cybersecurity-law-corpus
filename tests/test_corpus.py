@@ -254,6 +254,64 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(articles[0]["label"], "Article 1 — Object and purpose")
         self.assertEqual(articles[-1]["label"], "Article 36 — Notification")
 
+    def test_text_availability_audit_covers_every_record(self) -> None:
+        import audit_texts
+
+        data = audit_texts.audit()
+        self.assertEqual(data["total"], 63)
+        self.assertEqual(sum(data["summary"].values()), 63)
+        self.assertEqual(data["summary"]["stored"], 21)
+        self.assertEqual(data["summary"]["official_text_located"], 32)
+        self.assertEqual(data["summary"]["internal_law"], 3)
+        self.assertEqual(data["summary"]["paywalled"], 5)
+        self.assertEqual(data["summary"]["summary_only"], 2)
+        self.assertEqual(len({row["id"] for row in data["records"]}), 63)
+
+    def test_cets_french_units_are_exact_and_page_anchored(self) -> None:
+        base = ROOT / "corpus" / "coe-cets-225"
+        body = (base / "text" / "fr.txt").read_text(encoding="utf-8")
+        pages = json.loads((base / "pages-fr.json").read_text(encoding="utf-8"))["pages"]
+        self.assertEqual(len(pages), 13)
+        self.assertEqual(pages[0]["pdf_page"], 3)
+        self.assertEqual(pages[-1]["pdf_page"], 27)
+        units = [
+            json.loads(line)
+            for line in (base / "units-fr.jsonl").read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ]
+        self.assertEqual(len(units), 36)
+        self.assertEqual(units[0]["label"], "Article 1er — Objet et but")
+        self.assertEqual(units[-1]["label"], "Article 36 — Notification")
+        self.assertEqual(len({unit["label"] for unit in units}), 36)
+        for unit in units:
+            self.assertEqual(
+                body[unit["char_start"]:unit["char_end"]],
+                unit["text"],
+                unit["unit_id"],
+            )
+            start_page = pages[unit["page_start"] - 1]
+            end_page = pages[unit["page_end"] - 1]
+            self.assertLessEqual(start_page["char_start"], unit["char_start"])
+            self.assertLessEqual(unit["char_start"], start_page["char_end"])
+            self.assertLessEqual(end_page["char_start"], unit["char_end"] - 1)
+            self.assertLessEqual(unit["char_end"] - 1, end_page["char_end"])
+        inst = read_instrument("coe-cets-225")
+        entry = inst["text"]["files"][0]
+        self.assertEqual(entry["path"], "text/fr.txt")
+        self.assertTrue(entry["segmented"])
+        self.assertEqual(entry["units"], "units-fr.jsonl")
+        self.assertEqual(entry["units_count"], 36)
+        manifest = json.loads((base / "manifest.json").read_text(encoding="utf-8"))
+        fr_units = [
+            item for item in manifest["files"]
+            if item["path"] == "units-fr.jsonl"
+        ]
+        self.assertEqual(len(fr_units), 1)
+        self.assertEqual(fr_units[0]["role"], "units")
+        self.assertEqual(
+            fr_units[0]["sha256"], corpuslib.sha256_file(base / "units-fr.jsonl")
+        )
+
     def test_cets_page_map_and_acquired_pdf(self) -> None:
         pages = json.loads(
             (ROOT / "corpus" / "coe-cets-225" / "pages.json").read_text(encoding="utf-8")
