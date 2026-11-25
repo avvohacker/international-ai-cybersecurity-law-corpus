@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 253947,
+      "media_type": "application/pdf",
+      "note": "Official OHCHR English PDF of the International Covenant on Civil and Political Rights, 26 pages.",
+      "path": "source/iccpr-1966-en.pdf",
+      "role": "original",
+      "sha256": "c63fbe7781e8ecd7cdaf50344199995841037911f3cef8a0964c4b4c8909a6a2",
+      "source_url": "https://www.ohchr.org/sites/default/files/ccpr.pdf"
+    },
+    {
+      "bytes": 42704,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "7a72934d3de35794dcea3272571630436393de03bd598319b40c014449b76012"
+    },
+    {
+      "bytes": 2160,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "45af0d41ef340e3a76647e93dfebf4001c3e57820906c5a2a1009e7caf441985"
+    },
+    {
+      "bytes": 51922,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "779407ac78b5345af6ed51d8b67c2daf29f4bdb430a57136e44f60bedb01383b"
+    }
+  ],
+  "instrument_id": "iccpr-1966",
+  "primary_text": "text/en.txt"
+}

@@ -12,10 +12,11 @@
   ],
   "gaps": [
     "Binding ECOWAS community law, not an international treaty; it is excluded from the international-binding set and collected with internal law.",
-    "No full text, citable units or original file is stored in this record; it is metadata-only.",
     "National implementation and transposition in the Member States are not assessed.",
     "Current ECOWAS membership and the effect of suspensions or withdrawals are not assessed.",
-    "The Directive creates no AI-specific obligation."
+    "The Directive creates no AI-specific obligation.",
+    "The searchable text is OCR from the official scan, not a publisher transcription; OCR errors are possible. The French official version was not acquired.",
+    "National implementation and transposition in ECOWAS Member States are not assessed."
   ],
   "id": "ecowas-cybercrime-directive-2011",
   "instrument_type": "directive",
@@ -36,7 +37,7 @@
       "en",
       "fr"
     ],
-    "note": "ECOWAS published signed English and French versions of the Directive. Both are official language versions; only the English text was read for this record.",
+    "note": "The official English scanned PDF is stored. The searchable English text is OCR; the French official version was not acquired.",
     "translations": []
   },
   "legal_nature": {
@@ -87,7 +88,7 @@
   },
   "rights": {
     "licence": "ECOWAS official text terms",
-    "note": "Official ECOWAS text; reproduction is subject to ECOWAS terms. No full text is stored in this corpus.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text",
     "url": "https://www.ecowas.int/"
   },
@@ -111,6 +112,17 @@
       "note": "AfricanLII consolidation of Directive C/DIR.1/08/11, recording publication on 19 August 2011.",
       "publisher": "AfricanLII",
       "url": "https://africanlii.org/en/akn/aa-ecowas/act/directive/2011/8-1/eng@2011-12-31"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-official-scan",
+      "kind": "official_primary",
+      "language": "en",
+      "local_path": "source/ecowas-cybercrime-directive-2011-en.pdf",
+      "note": "Official image-only English PDF stored; text produced by OCR.",
+      "sha256": "8c789adfcddea821450c92ff850d185bb871e33abcb3d3f6e070e96024f4d3fa",
+      "url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf"
     }
   ],
   "status": "in_force",
@@ -135,9 +147,22 @@
         "check": "Publication date checked against the AfricanLII consolidation.",
         "date": "2026-11-24",
         "result": "Published 19 August 2011."
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "35 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata and legal form verified from the official text. No full text is stored; national implementation is not assessed."
+    "notes": "The official scanned English PDF was acquired and OCR'd; the text was segmented into 35 article units. The record remains metadata_verified because the text is OCR and has not been checked line by line against the scan."
+  },
+  "text": {
+    "extraction_note": "OCR text produced with RapidOCR at 180 dpi from the official scanned English PDF (11 pages) and segmented into 35 article units. OCR spacing and characters can contain errors; the scan is authoritative. The heading misread as 'Article 2o' was corrected to 'Article 20'.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty-inline"
   }
 }

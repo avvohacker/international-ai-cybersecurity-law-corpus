@@ -1,0 +1,11 @@
+{
+  "note": "Official Chinese text of the WAICO founding agreement, extracted from the National People's Congress page. The agreement is equally authentic in Arabic, Chinese, English, French, Russian and Spanish; this corpus stores the Chinese official version.",
+  "pages": [
+    {
+      "page": 1,
+      "char_start": 0,
+      "char_end": 3119
+    }
+  ],
+  "primary_text": "text/zh.txt"
+}

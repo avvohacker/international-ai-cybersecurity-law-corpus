@@ -14,9 +14,9 @@
   "gaps": [
     "The official LAS depositary page is no longer reachable; an archived copy of the treaty page (23 April 2024) links the ratification table, but the table PDF was not retrievable from the archive, so no current party-by-party count is asserted.",
     "The English text was read from a reproduction of the official translation; the Arabic original was not acquired.",
-    "No full text, citable units or original file is stored in this record; it is metadata-only.",
     "National implementation, reservations and the Convention's institutional practice are not assessed.",
-    "No AI-specific provision is asserted. The record is cyber-domain only."
+    "No AI-specific provision is asserted. The record is cyber-domain only.",
+    "The English text is an AsianLaws reproduction, not an official League of Arab States translation; the authentic Arabic PDF is stored but not segmented."
   ],
   "id": "arab-convention-it-offences-2010",
   "instrument_type": "treaty",
@@ -36,7 +36,7 @@
     "authentic": [
       "ar"
     ],
-    "note": "The Convention was concluded in Arabic in a single original deposited with the General Secretariat of the League of Arab States. The English text used for this record is an official translation reproduced by UNODC and other legal databases; it is not an authentic text.",
+    "note": "The authentic Arabic text is stored as the official archived PDF but is not segmented. The English working text is an AsianLaws reproduction, not an official LAS translation.",
     "translations": [
       "en"
     ]
@@ -131,7 +131,7 @@
   },
   "rights": {
     "licence": "League of Arab States terms",
-    "note": "Official treaty text; reproduction is subject to the League's terms. No full text is stored in this corpus.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text",
     "url": "https://www.leagueofarabstates.net/"
   },
@@ -163,6 +163,28 @@
       "note": "UNODC Convention against Cybercrime pre-ratification compendium: records adoption on 21 December 2010, entry into force on 7 February 2014, a seven-State threshold and LAS membership.",
       "publisher": "UNODC",
       "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-arabic",
+      "kind": "official_primary",
+      "language": "ar",
+      "local_path": "source/arab-convention-2010-ar-archive.pdf",
+      "note": "Archived official Arabic text stored; not segmented.",
+      "sha256": "77165b067ccdfd83563231bf43ab158d28f1db441387adbc708d48776eb9814f",
+      "url": "https://web.archive.org/web/20240423123401/https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-english-reproduction",
+      "kind": "secondary",
+      "language": "en",
+      "local_path": "source/arab-convention-2010-en-reproduction.pdf",
+      "note": "AsianLaws English reproduction stored and segmented; not an official LAS translation.",
+      "sha256": "5f973018298280fc9fee8a2f058cf78d18527518922628dfc25eaf1929b4e5ea",
+      "url": "https://www.asianlaws.org/gcld/cyberlawdb/GCC/Arab%20Convention%20on%20Combating%20Information%20Technology%20Offences.pdf"
     }
   ],
   "status": "in_force",
@@ -191,9 +213,22 @@
         "check": "Archived LAS treaty page checked.",
         "date": "2026-11-25",
         "result": "The Internet Archive snapshot of the LAS treaty page links the Convention text and the ratification table; the table PDF was not retrievable, so no current party count was taken from it."
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "43 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata and legal nature verified. No full text or party table is stored; the archived treaty page was checked but its table was not readable; the current party count and reservations remain unknown."
+    "notes": "The official Arabic PDF and an English reproduction are stored. The English text was segmented into 43 article units. The English reproduction is not an official League of Arab States translation, so the record remains metadata_verified."
+  },
+  "text": {
+    "extraction_note": "English text extracted from the 29-page AsianLaws reproduction and segmented into 43 articles. The PDF concatenates each page into long lines and places article headings inline; the treaty-inline mode splits on the headings. The official Arabic PDF is stored but not segmented, because the corpus working language is English.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty-inline"
   }
 }

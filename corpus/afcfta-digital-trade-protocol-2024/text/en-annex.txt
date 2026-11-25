@@ -1,0 +1,253 @@
+25
+
+
+ANNEX ON
+EMERGING AND ADVANCED TECHNOLOGIES
+
+
+For the purpose of this Annex:
+PART I
+GENERAL PROVISIONS
+Article 1
+Definitions
+a. “Annex” means the Annex on Emerging and Advanced Technologies to the Protocol;
+
+b. “Emerging and Advanced Technologies ” means developing, new , or developed
+technologies, including, but not limited to, the Internet of Things, Artificial Intelligence,
+Machine Learning, Robotics, 5G, 3D printing, Quantum Computing, Blockchain, Virtual
+Reality, and other existing and future technologies relevant to digital trade; and
+
+c. “Person of a State Party” means a person of a State Party as defined in Article 1(p)
+of the Protocol.
+
+
+The objectives of this Annex are to:
+Article 2
+Objectives
+a. give effect to Article 34(3) of the Protocol;
+b. promote research and development for building capacity and digital skills relating to
+the development and deployment of emerging and advanced technologies in digital
+trade;
+c. facilitate, promote , and foster the deployment and use of emerging and advanced
+technologies in digital trade;
+d. foster cooperation and collaboration among State Parties in the development and
+deployment of emerging and advanced technologies in digital trade;
+e. encourage the regulation of emerging and advanced technologies in a manner that
+does not create barriers to digital trade; and
+f. establish predictable and transparent harmonised rules, and common principles and
+standards for the adoption and regulation of emerging and advanced technologies in
+digital trade.
+Article 3
+Scope of Application
+This Annex shall apply to the emerging and advanced technologies deployed and used in
+digital trade by the persons of State Parties.
+
+26
+
+PART II
+FACILITATING THE DEPLOYMENT AND USE OF EMERGING AND ADVANCED
+TECHNOLOGIES IN DIGITAL TRADE
+
+Article 4
+Deployment and Use
+1. State Parties shall facilitate, promote, and foster the deployment and use of emerging and
+advanced technologies in digital trade by persons of State Parties, including African -
+owned enterprises and African digital platforms.
+
+2. State Parties shall adopt or maintain laws and regulations that facilitate, promote , and
+foster the development, access, deployment , and use of emerging and advanced
+technologies in digital trade by persons of State Parties, including African -owned
+enterprises and African digital platforms.
+
+3. A State Party shall not deny a person of another State Party from conducting digital trade
+in its territory solely on the basis that such person deploys or uses emerging and advanced
+technologies.
+Article 5
+Non-Discrimination
+1. A State Party shall accord no less favourable treatment to emerging and advanced
+technologies developed in the territory of other State Parties than it accords to like
+emerging and advanced technologies developed in its territory.
+
+2. A State Party shall accord no less favourable treatment to emerging and advanced
+technologies developed in the territory of another State Party than it accords to like
+emerging and advanced technologies developed in the territory of other State Parties or
+Third Parties.
+Article 6
+Intellectual Property Rights
+State Parties shall protect and enforce intellectual property rights related to emerging and
+advanced technologies deployed and used in digital trade in accordance with Article 17 of the
+Protocol on Intellectual Property Rights.
+Article 7
+Data Protection and Privacy
+The provisions of Articles 20 and 21 of the Protocol and the provisions of Articles 5, 6, 7, 8, 9,
+10, 11, 12, 13, 14, 15, 16, 17, 18, 19, and 21 of the Annex on Cross-Border Data Transfers to
+the Protocol shall apply mutatis mutandis to this Annex.
+Article 8
+Cybersecurity
+The provisions of Article 25 of the Protocol shall apply mutatis mutandis to this Annex.
+
+27
+
+Article 9
+Research and Development
+1. State Parties shall promote research and development in emerging and advanced
+technologies in digital trade through, among others:
+a. building and strengthening cooperation and collaboration between relevant
+stakeholders, including governments, relevant industry, consumers, and academia
+on research and development in emerging and advanced technologies;
+b. improving financial, technological, and human resource development capacity for
+research and development in emerging and advanced technologies;
+c. developing regulatory frameworks that promote research and development in
+emerging and advanced technologies;
+d. promoting and facilitating public and private investments in research and
+development with a focus on innovation and start -ups in emerging and advanced
+technologies; and
+e. establishing continental, regional, and national institutions for digital innovation and
+research and development to ensure effective deployment and use of emerging
+and advanced technologies in digital trade.
+
+2. State Parties agree to adopt measures that enhance the participation of African-owned
+enterprises, including micro, small and medium -sized enterprises, women, youth,
+persons with disabilities, indigenous peoples, rural and local communities , and other
+underrepresented groups in research, technology , and innovation activities related to
+emerging and advanced technologies.
+Article 10
+Regulatory Sandboxes
+1. State Parties shall endeavour to establish regulatory sandboxes at the national levels to
+facilitate the development and testing of emerging and advanced technologies under
+regulatory oversight.
+
+2. State Parties shall ensure that the regulatory sandboxes:
+a. provide a controlled environment that fosters innovation and facilitates the
+development, testing , and validation of use cases for emerging and advanced
+technologies for a limited period before their deployment and use in digital trade or
+entry into the AfCFTA digital market; and
+b. enable the testing of emerging and advanced technologies in real-world conditions
+for a limited period.
+
+3. State Parties shall, where necessary, collaborate to establish regulatory sandboxes at
+continental or regional levels to facilitate the development and testing of emerging and
+advanced technologies by persons of State Parties, including African-owned enterprises.
+
+Article 11
+Monitoring, Evaluation and Reporting Frameworks
+State Parties may develop monitoring, evaluation , and reporting frameworks with
+appropriate indicators and tools for tracking the performance of emerging and advanced
+technologies deployed and used in digital trade.
+
+28
+
+PART III
+TECHNICAL STANDARDS AND REGULATIONS
+Article 12
+Principles for Developing Technical Standards and Regulations
+1. State Parties shall adopt or maintain technical standards and regulations to ensure that
+the emerging and advanced technologies are deployed and used in digital trade in a safe,
+responsible, and ethical manner.
+
+2. State Parties shall ensure that regulations and standards referred to in this Article are not
+adopted or applied in a manner which would constitute a means of arbitrary or unjustifiable
+discrimination, or a disguised restriction on digital trade, and do not impose restrictions on
+the deployment and use of emerging and advanced technologies greater than are
+necessary to achieve the objective.
+3. State Parties shall:
+a. harmonise their technical standards and regulations on the deployment and use of
+emerging and advanced technologies in digital trade; and
+b. promote interoperability of technical standards and regulations for emerging and
+advanced technologies to facilitate digital trade.
+
+4. State Parties shall endeavour, when adopting or maintaining their technical standards and
+regulations for emerging and advanced technologies, to  consult relevant industry,
+technical and professional societies, standardisation bodies , and other relevant
+stakeholders.
+
+5. State Parties shall, when adopting or maintaining technical standards and regulations
+referred to in this Article:
+a. take into consideration regional, continental, and international standards, principles,
+and guidelines;
+b. adopt a risk-based approach or any other relevant approach, including transparent
+processes for assessing, managing, and mitigating risks associated with specific
+emerging and advanced technologies deployed and used in digital trade;
+c. assess whether potential risks can be mitigated or addressed using existing
+instruments and regulatory frameworks;
+d. consider whether any new or proposed regulation is proportionate in balancing
+potential harms with economic and social benefits;
+e. employ risk management best practices, including considering the risk-substitution
+impact of a specific emerging and advanced technology against a scenario where
+such technology has not been deployed but baseline risks remain in place; and
+f. promote the development of voluntary standards to manage risks associated with
+emerging and advanced technologies in a manner that is adaptable to the demands
+of dynamic and evolving technologies.
+
+6. State Parties shall regularly review and update their technical standards and regulations
+on the deployment and use of emerging and advanced technologies as required to keep
+pace with technological advancements.
+
+29
+
+
+PART IV
+GENERAL EXCEPTIONS, TRANSPARENCY AND NOTIFICATION, AND COOPERATION
+Article 13
+General Exceptions
+Nothing in this Annex shall be construed to prevent a State Party from adopting or maintaining
+measures inconsistent with provisions of th is Annex to achieve a legitimate public policy
+objective, including to protect public safety, health and welfare, protect essential security
+interests, prevent deceptive and fraudulent practices, and protect the environment, provided
+that the measures are not applied in a manner which would constitute a means of arbitrary or
+unjustifiable discrimination, or a disguised restriction on digital trade, and do not impose
+restrictions on the deployment and use of emerging and advanced technologies greater than
+are necessary to achieve the objective.
+Article 14
+Transparency and Notification
+1. Each State Party shall promptly:
+a. publish or make publicly available, including through electronic means, its laws,
+regulations, policies, procedures, and administrative rulings of general application
+affecting the deployment and use of emerging and advanced technologies in digital
+trade; and
+b. notify, through the Secretariat, the other State Parties of the introduction of any
+new laws and regulations,  amendments to existing laws and regulations, or any
+measures pertaining to or affecting the deployment and use of emerging and
+advanced technologies in digital trade.
+
+2. Nothing in this Article shall be construed to require any State Party to disclose or allow
+access to confidential information and data, the disclosure of which would impede law
+enforcement or prejudice legitimate commercial and strategic interests of particular
+enterprises or institutions, whether public or private, or would otherwise be contrary to its
+public or essential security interests.
+Article 15
+Cooperation
+1. State Parties shall cooperate through the exchange of information, knowledge and
+expertise, research and development, training activities, peer learning, technical
+assistance, public-private sector collaboration, capacity building, and sharing experiences
+and best practices relating to the adoption and regulation of emerging and advanced
+technologies in digital trade.
+
+2. State Parties shall, where necessary, collaborate with relevant regional, continental , and
+international bodies in the development, promotion, facilitation, deployment , and use of
+emerging and advanced technologies in digital trade, and the implementation of this
+Annex.
+
+30
+
+
+PART V
+FINAL PROVISIONS
+Article 16
+Regulations and Guidelines
+State Parties may develop regulations and guidelines on any of the aspects of this Annex in
+order to facilitate its effective implementation and enforcement.
+Article 17
+Dispute Settlement
+Any dispute between the State Parties arising out of or relating to the interpretation or
+application of any provision of this Annex shall be settled in accordance with the Protocol on
+Rules and Procedures on the Settlement of Disputes.
+Article 18
+Review and Amendment
+This Annex shall be subject to review and amendment in accordance with Articles 28 and 29
+of the AfCFTA Agreement, respectively.
+Article 19
+Authentic Texts
+This Annex is drawn up in six (6) original texts in the Arabic, English, French, Kiswahili,
+Portuguese, and Spanish languages, all of which are equally authentic.
+

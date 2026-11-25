@@ -1,0 +1,35 @@
+{
+  "pages": [
+    {
+      "char_end": 1685,
+      "char_start": 0,
+      "page": 1
+    },
+    {
+      "char_end": 3757,
+      "char_start": 1686,
+      "page": 2
+    },
+    {
+      "char_end": 6411,
+      "char_start": 3758,
+      "page": 3
+    },
+    {
+      "char_end": 9092,
+      "char_start": 6412,
+      "page": 4
+    },
+    {
+      "char_end": 11587,
+      "char_start": 9093,
+      "page": 5
+    },
+    {
+      "char_end": 12431,
+      "char_start": 11588,
+      "page": 6
+    }
+  ],
+  "primary_text": "text/en-annex.txt"
+}

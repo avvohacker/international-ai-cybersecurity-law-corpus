@@ -1,0 +1,61 @@
+{
+  "note": "OCR text produced from the official scanned ECOWAS PDF with RapidOCR (180 dpi). OCR can misread spacing and characters; the scanned PDF is the authoritative copy.",
+  "pages": [
+    {
+      "page": 1,
+      "char_start": 0,
+      "char_end": 1077
+    },
+    {
+      "page": 2,
+      "char_start": 1078,
+      "char_end": 2433
+    },
+    {
+      "page": 3,
+      "char_start": 2434,
+      "char_end": 4262
+    },
+    {
+      "page": 4,
+      "char_start": 4263,
+      "char_end": 5478
+    },
+    {
+      "page": 5,
+      "char_start": 5479,
+      "char_end": 6930
+    },
+    {
+      "page": 6,
+      "char_start": 6931,
+      "char_end": 8202
+    },
+    {
+      "page": 7,
+      "char_start": 8203,
+      "char_end": 9795
+    },
+    {
+      "page": 8,
+      "char_start": 9796,
+      "char_end": 11039
+    },
+    {
+      "page": 9,
+      "char_start": 11040,
+      "char_end": 12167
+    },
+    {
+      "page": 10,
+      "char_start": 12168,
+      "char_end": 13558
+    },
+    {
+      "page": 11,
+      "char_start": 13559,
+      "char_end": 14314
+    }
+  ],
+  "primary_text": "text/en.txt"
+}

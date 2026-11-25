@@ -1,0 +1,160 @@
+{
+  "pages": [
+    {
+      "char_end": 202,
+      "char_start": 0,
+      "page": 1
+    },
+    {
+      "char_end": 2208,
+      "char_start": 203,
+      "page": 2
+    },
+    {
+      "char_end": 4428,
+      "char_start": 2209,
+      "page": 3
+    },
+    {
+      "char_end": 6254,
+      "char_start": 4429,
+      "page": 4
+    },
+    {
+      "char_end": 8078,
+      "char_start": 6255,
+      "page": 5
+    },
+    {
+      "char_end": 9800,
+      "char_start": 8079,
+      "page": 6
+    },
+    {
+      "char_end": 11639,
+      "char_start": 9801,
+      "page": 7
+    },
+    {
+      "char_end": 13746,
+      "char_start": 11640,
+      "page": 8
+    },
+    {
+      "char_end": 16028,
+      "char_start": 13747,
+      "page": 9
+    },
+    {
+      "char_end": 18158,
+      "char_start": 16029,
+      "page": 10
+    },
+    {
+      "char_end": 19760,
+      "char_start": 18159,
+      "page": 11
+    },
+    {
+      "char_end": 22078,
+      "char_start": 19761,
+      "page": 12
+    },
+    {
+      "char_end": 24123,
+      "char_start": 22079,
+      "page": 13
+    },
+    {
+      "char_end": 26198,
+      "char_start": 24124,
+      "page": 14
+    },
+    {
+      "char_end": 28320,
+      "char_start": 26199,
+      "page": 15
+    },
+    {
+      "char_end": 30678,
+      "char_start": 28321,
+      "page": 16
+    },
+    {
+      "char_end": 32809,
+      "char_start": 30679,
+      "page": 17
+    },
+    {
+      "char_end": 34711,
+      "char_start": 32810,
+      "page": 18
+    },
+    {
+      "char_end": 36430,
+      "char_start": 34712,
+      "page": 19
+    },
+    {
+      "char_end": 38588,
+      "char_start": 36431,
+      "page": 20
+    },
+    {
+      "char_end": 41107,
+      "char_start": 38589,
+      "page": 21
+    },
+    {
+      "char_end": 43302,
+      "char_start": 41108,
+      "page": 22
+    },
+    {
+      "char_end": 45686,
+      "char_start": 43303,
+      "page": 23
+    },
+    {
+      "char_end": 47818,
+      "char_start": 45687,
+      "page": 24
+    },
+    {
+      "char_end": 49882,
+      "char_start": 47819,
+      "page": 25
+    },
+    {
+      "char_end": 52059,
+      "char_start": 49883,
+      "page": 26
+    },
+    {
+      "char_end": 54235,
+      "char_start": 52060,
+      "page": 27
+    },
+    {
+      "char_end": 56531,
+      "char_start": 54236,
+      "page": 28
+    },
+    {
+      "char_end": 58696,
+      "char_start": 56532,
+      "page": 29
+    },
+    {
+      "char_end": 61418,
+      "char_start": 58697,
+      "page": 30
+    },
+    {
+      "char_end": 61618,
+      "char_start": 61419,
+      "page": 31
+    }
+  ],
+  "primary_text": "text/en.txt"
+}

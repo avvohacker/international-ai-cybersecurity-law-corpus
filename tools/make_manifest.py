@@ -49,13 +49,18 @@ def main() -> int:
                     "note": entry.get("note", ""),
                 }
             )
-        derived = [
-            ("text/en.txt", "text", "text/plain; charset=utf-8"),
-            ("text/fr.txt", "text", "text/plain; charset=utf-8"),
-            ("pages.json", "metadata", "application/json"),
-            ("pages-fr.json", "metadata", "application/json"),
-            ("units.jsonl", "units", "application/x-ndjson"),
-            ("units-fr.jsonl", "units", "application/x-ndjson"),
+        derived = []
+        derived += [
+            (path.relative_to(base).as_posix(), "text", "text/plain; charset=utf-8")
+            for path in sorted((base / "text").glob("*.txt"))
+        ]
+        derived += [
+            (path.relative_to(base).as_posix(), "metadata", "application/json")
+            for path in sorted(base.glob("pages*.json"))
+        ]
+        derived += [
+            (path.relative_to(base).as_posix(), "units", "application/x-ndjson")
+            for path in sorted(base.glob("units*.jsonl"))
         ]
         for rel, role, media in derived:
             path = base / rel
@@ -89,9 +94,12 @@ def main() -> int:
             )
         if not files:
             continue
+        primary_text = (inst.get("text") or {}).get("primary_text")
+        if not primary_text or not (base / primary_text).exists():
+            primary_text = "text/en.txt" if (base / "text/en.txt").exists() else None
         manifest = {
             "instrument_id": iid,
-            "primary_text": "text/en.txt" if (base / "text/en.txt").exists() else None,
+            "primary_text": primary_text,
             "files": files,
         }
         dump_json(base / "manifest.json", manifest)

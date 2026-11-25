@@ -15,7 +15,9 @@
     "No depositary register was read; the number of ratifications and deposits is unknown, not zero.",
     "The Annex on Emerging and Advanced Technologies was read for Articles 1, 4, 5 and 12, not end-to-end.",
     "The Annex's obligations are real ('shall') but apply only to State Parties and only once the Protocol is in force for them.",
-    "Only the English texts were read; the five other authentic-language texts were not acquired."
+    "Only the English texts were read; the five other authentic-language texts were not acquired.",
+    "The English main Protocol and the English Annex on Emerging and Advanced Technologies are stored; the other five authentic-language versions are not.",
+    "The Annex is stored as a six-page extract of the official compiled annexes; the complete 52-page compilation is also stored, but only the emerging-technologies annex is segmented."
   ],
   "id": "afcfta-digital-trade-protocol-2024",
   "instrument_type": "protocol",
@@ -40,7 +42,7 @@
       "es"
     ],
     "locator": "Article 52",
-    "note": "Article 52: six original texts in Arabic, English, French, Kiswahili, Portuguese and Spanish, all equally authentic. Only the English texts were read.",
+    "note": "Article 52 lists six equally authentic texts. The English main Protocol and the English Annex on Emerging and Advanced Technologies are stored and segmented; the Arabic, French, Kiswahili, Portuguese and Spanish texts were not acquired.",
     "source_ids": [
       "au-page"
     ],
@@ -171,7 +173,7 @@
   },
   "rights": {
     "licence": "African Union terms",
-    "note": "Official AU treaty text; no open licence identified. Metadata only in this corpus.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text",
     "url": "https://au.int/en/copyright"
   },
@@ -220,6 +222,28 @@
       "note": "Agreement Establishing the AfCFTA, Article 23(2): the Protocol enters into force thirty days after deposit of the twenty-second instrument of ratification.",
       "publisher": "African Union",
       "url": "https://au.int/sites/default/files/treaties/36437-treaty-consolidated_text_on_cfta_-_en.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-protocol",
+      "kind": "official_primary",
+      "language": "en",
+      "local_path": "source/afcfta-digital-trade-protocol-2025-en.pdf",
+      "note": "Official English Protocol PDF stored for the text and 52 article units.",
+      "sha256": "56532469cbe6223415d1449e73a75064f160e79ea83ee030d95b1a5d3bd4eab4",
+      "url": "https://au.int/sites/default/files/treaties/44963-treaty-EN_-_Protocol_to_AfCFTA_Agreement_on_Digital_Trade.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-annexes",
+      "kind": "official_primary",
+      "language": "en",
+      "local_path": "source/afcfta-digital-trade-annexes-2025-en.pdf",
+      "note": "Official compiled annexes stored; the emerging-technologies annex was extracted from pages 25-30.",
+      "sha256": "f5cc8c9e1539cf17fc37e1d651085c88d7f839827852752c4253afd9b7bc064a",
+      "url": "https://au.int/sites/default/files/treaties/44963-ax-ENG_Circulation_Digital_Trade_Compiled_Certified_Legal_Instruments_38thAssembly_Feb_2025_27_May2025.pdf"
     }
   ],
   "status": "unknown",
@@ -259,9 +283,33 @@
         "check": "Entry-into-force rule checked in the AfCFTA Agreement.",
         "date": "2026-11-24",
         "result": "Article 47 of the Protocol refers to Article 23(2) of the AfCFTA Agreement, which sets the twenty-second ratification as the threshold. No ratification total was verified."
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "52 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "The Protocol and the Annex on Emerging and Advanced Technologies were read from the official AU PDFs. The record remains metadata-only because no full text is stored. Content of the provisions, entry into force and applicability are recorded separately: the Annex contains hard 'shall' obligations, but the Protocol's entry into force is not confirmed and the obligations bind only State Parties once it is in force for them."
+    "notes": "The main Protocol and the Annex on Emerging and Advanced Technologies were extracted from official AU PDFs and segmented (52 + 19 units). The record remains metadata_verified: the text is stored and searchable, but no article-by-article legal review was performed and entry into force is not confirmed."
+  },
+  "text": {
+    "extraction_note": "Main Protocol extracted from the official AU English PDF (24 pages) and segmented into 52 article units. The Annex on Emerging and Advanced Technologies is stored separately: pages 25-30 of the official compiled annexes were extracted to a six-page PDF, yielding text/en-annex.txt (pages-annex.json) and 19 units in units-annex.jsonl. Page anchors refer to the stored files, not printed page numbers.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty",
+    "files": [
+      {
+        "language": "en",
+        "role": "annex_text",
+        "path": "text/en-annex.txt",
+        "pages": "pages-annex.json",
+        "units": "units-annex.jsonl",
+        "units_count": 19,
+        "title": "Annex on Emerging and Advanced Technologies"
+      }
+    ]
   }
 }

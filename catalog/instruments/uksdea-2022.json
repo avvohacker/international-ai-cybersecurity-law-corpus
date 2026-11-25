@@ -11,10 +11,10 @@
     "ai"
   ],
   "gaps": [
-    "Full text not stored; only metadata verified.",
     "AI article is cooperative, not prescriptive.",
     "No depositary record consulted.",
-    "No assessment of the UK-Singapore AI cooperation beyond the treaty article."
+    "No assessment of the UK-Singapore AI cooperation beyond the treaty article.",
+    "Only the English text is stored. Article 7 does not appear in the agreement's numbering; the units follow the text."
   ],
   "id": "uksdea-2022",
   "instrument_type": "agreement",
@@ -28,7 +28,7 @@
     "authentic": [
       "en"
     ],
-    "note": "English text acquired; no multilingual authentic-text clause verified.",
+    "note": "The official English text is stored and segmented. Other language versions, if any, were not acquired.",
     "translations": []
   },
   "parties": {
@@ -114,7 +114,7 @@
   },
   "rights": {
     "licence": "Crown copyright / Government of Singapore terms",
-    "note": "Official treaty text. The UK treaty series is subject to Crown copyright; stored metadata only.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text",
     "url": "https://www.gov.uk/government/publications/uksingapore-digital-economy-agreement-ts-no222023"
   },
@@ -136,6 +136,17 @@
       "note": "Confirms signature and entry into force and identifies AI as a cooperative element.",
       "publisher": "Ministry of Trade and Industry, Singapore",
       "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-official",
+      "kind": "official_primary",
+      "language": "en",
+      "local_path": "source/uksdea-2022-en.pdf",
+      "note": "Official UK Treaty Series PDF stored and segmented.",
+      "sha256": "494bcacbdf8ecdddbe09c69edc9a86c6d31ae419f6920a86f56d2de63f99a6ea",
+      "url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf"
     }
   ],
   "status": "in_force",
@@ -155,9 +166,22 @@
         "check": "AI article number and content checked in secondary official-facing analysis and the ADB comparative table.",
         "date": "2026-11-23",
         "result": "Article 8.61-R; cooperative AI and emerging-technology provisions."
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "35 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified; the full treaty text is not stored. The precise wording of Article 8.61-R should be checked against the UK Treaty Series PDF before quotation."
+    "notes": "The official UK Treaty Series English PDF was acquired and segmented into 35 units. The record remains metadata_verified."
+  },
+  "text": {
+    "extraction_note": "Official UK Treaty Series No. 22 (2023) English PDF (49 pages) extracted with pypdf and segmented into 35 units: Articles 1-6, then Annex A Section F Articles 8.57-8.61-X. Article 7 does not appear in this agreement's numbering.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
   }
 }

@@ -25,22 +25,35 @@
       "full_text_checked": 10,
       "metadata_verified": 53
     },
-    "full_texts": 21,
+    "full_texts": 36,
     "total": 63,
-    "with_local_original": 21
+    "with_local_original": 36
   },
   "full_text_ids": [
+    "afcfta-digital-trade-protocol-2024",
+    "arab-convention-it-offences-2010",
+    "au-malabo-convention-2014",
     "brics-ai-statement-2025",
+    "budapest-convention-2001",
     "china-global-ai-governance-initiative-2023",
+    "cis-it-crimes-agreement-2018",
     "cis-minsk-agreement-2001",
+    "coe-cets-224",
     "coe-cets-225",
     "coe-cets-225-explanatory-report",
+    "coe-ets-189",
     "depa-2020",
+    "ecowas-cybercrime-directive-2011",
     "g7-hiroshima-code-2023",
+    "iccpr-1966",
+    "ksdpa-2022",
     "oecd-ai-recommendation-2019",
     "paris-ai-action-summit-statement-2025",
     "paris-call-cyberspace-2018",
     "sadea-2020",
+    "sco-information-security-agreement-2009",
+    "uksdea-2022",
+    "un-cybercrime-convention-2024",
     "un-ga-res-78-241",
     "un-ga-res-78-265",
     "un-ga-res-78-311",
@@ -50,7 +63,9 @@
     "un-ga-res-79-62",
     "un-ga-res-80-57",
     "un-ga-res-80-58",
-    "unesco-ethics-ai-2021"
+    "unesco-ethics-ai-2021",
+    "vclt-1969",
+    "waico-establishment-agreement-2026"
   ],
   "instruments": [
     {
@@ -70,7 +85,9 @@
         "No depositary register was read; the number of ratifications and deposits is unknown, not zero.",
         "The Annex on Emerging and Advanced Technologies was read for Articles 1, 4, 5 and 12, not end-to-end.",
         "The Annex's obligations are real ('shall') but apply only to State Parties and only once the Protocol is in force for them.",
-        "Only the English texts were read; the five other authentic-language texts were not acquired."
+        "Only the English texts were read; the five other authentic-language texts were not acquired.",
+        "The English main Protocol and the English Annex on Emerging and Advanced Technologies are stored; the other five authentic-language versions are not.",
+        "The Annex is stored as a six-page extract of the official compiled annexes; the complete 52-page compilation is also stored, but only the emerging-technologies annex is segmented."
       ],
       "id": "afcfta-digital-trade-protocol-2024",
       "instrument_type": "protocol",
@@ -95,7 +112,7 @@
           "es"
         ],
         "locator": "Article 52",
-        "note": "Article 52: six original texts in Arabic, English, French, Kiswahili, Portuguese and Spanish, all equally authentic. Only the English texts were read.",
+        "note": "Article 52 lists six equally authentic texts. The English main Protocol and the English Annex on Emerging and Advanced Technologies are stored and segmented; the Arabic, French, Kiswahili, Portuguese and Spanish texts were not acquired.",
         "source_ids": [
           "au-page"
         ],
@@ -226,7 +243,7 @@
       },
       "rights": {
         "licence": "African Union terms",
-        "note": "Official AU treaty text; no open licence identified. Metadata only in this corpus.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://au.int/en/copyright"
       },
@@ -275,10 +292,51 @@
           "note": "Agreement Establishing the AfCFTA, Article 23(2): the Protocol enters into force thirty days after deposit of the twenty-second instrument of ratification.",
           "publisher": "African Union",
           "url": "https://au.int/sites/default/files/treaties/36437-treaty-consolidated_text_on_cfta_-_en.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-protocol",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/afcfta-digital-trade-protocol-2025-en.pdf",
+          "note": "Official English Protocol PDF stored for the text and 52 article units.",
+          "sha256": "56532469cbe6223415d1449e73a75064f160e79ea83ee030d95b1a5d3bd4eab4",
+          "url": "https://au.int/sites/default/files/treaties/44963-treaty-EN_-_Protocol_to_AfCFTA_Agreement_on_Digital_Trade.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-annexes",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/afcfta-digital-trade-annexes-2025-en.pdf",
+          "note": "Official compiled annexes stored; the emerging-technologies annex was extracted from pages 25-30.",
+          "sha256": "f5cc8c9e1539cf17fc37e1d651085c88d7f839827852752c4253afd9b7bc064a",
+          "url": "https://au.int/sites/default/files/treaties/44963-ax-ENG_Circulation_Digital_Trade_Compiled_Certified_Legal_Instruments_38thAssembly_Feb_2025_27_May2025.pdf"
         }
       ],
       "status": "unknown",
       "status_note": "Adopted, but entry into force is not confirmed. The AU treaty page consulted on 24 November 2026 lists the Protocol and the compiled annexes but displays no entry-into-force date and no ratification table. That absence is not treated as proof that the Protocol is out of force: the number of ratifications and deposits is recorded as unknown, not zero.",
+      "text": {
+        "extraction_note": "Main Protocol extracted from the official AU English PDF (24 pages) and segmented into 52 article units. The Annex on Emerging and Advanced Technologies is stored separately: pages 25-30 of the official compiled annexes were extracted to a six-page PDF, yielding text/en-annex.txt (pages-annex.json) and 19 units in units-annex.jsonl. Page anchors refer to the stored files, not printed page numbers.",
+        "files": [
+          {
+            "language": "en",
+            "pages": "pages-annex.json",
+            "path": "text/en-annex.txt",
+            "role": "annex_text",
+            "title": "Annex on Emerging and Advanced Technologies",
+            "units": "units-annex.jsonl",
+            "units_count": 19
+          }
+        ],
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "official": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Digital Trade",
         "short": "AfCFTA Digital Trade Protocol"
@@ -314,10 +372,15 @@
             "check": "Entry-into-force rule checked in the AfCFTA Agreement.",
             "date": "2026-11-24",
             "result": "Article 47 of the Protocol refers to Article 23(2) of the AfCFTA Agreement, which sets the twenty-second ratification as the threshold. No ratification total was verified."
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "52 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "The Protocol and the Annex on Emerging and Advanced Technologies were read from the official AU PDFs. The record remains metadata-only because no full text is stored. Content of the provisions, entry into force and applicability are recorded separately: the Annex contains hard 'shall' obligations, but the Protocol's entry into force is not confirmed and the obligations bind only State Parties once it is in force for them."
+        "notes": "The main Protocol and the Annex on Emerging and Advanced Technologies were extracted from official AU PDFs and segmented (52 + 19 units). The record remains metadata_verified: the text is stored and searchable, but no article-by-article legal review was performed and entry into force is not confirmed."
       }
     },
     {
@@ -336,9 +399,9 @@
       "gaps": [
         "The official LAS depositary page is no longer reachable; an archived copy of the treaty page (23 April 2024) links the ratification table, but the table PDF was not retrievable from the archive, so no current party-by-party count is asserted.",
         "The English text was read from a reproduction of the official translation; the Arabic original was not acquired.",
-        "No full text, citable units or original file is stored in this record; it is metadata-only.",
         "National implementation, reservations and the Convention's institutional practice are not assessed.",
-        "No AI-specific provision is asserted. The record is cyber-domain only."
+        "No AI-specific provision is asserted. The record is cyber-domain only.",
+        "The English text is an AsianLaws reproduction, not an official League of Arab States translation; the authentic Arabic PDF is stored but not segmented."
       ],
       "id": "arab-convention-it-offences-2010",
       "instrument_type": "treaty",
@@ -358,7 +421,7 @@
         "authentic": [
           "ar"
         ],
-        "note": "The Convention was concluded in Arabic in a single original deposited with the General Secretariat of the League of Arab States. The English text used for this record is an official translation reproduced by UNODC and other legal databases; it is not an authentic text.",
+        "note": "The authentic Arabic text is stored as the official archived PDF but is not segmented. The English working text is an AsianLaws reproduction, not an official LAS translation.",
         "translations": [
           "en"
         ]
@@ -453,7 +516,7 @@
       },
       "rights": {
         "licence": "League of Arab States terms",
-        "note": "Official treaty text; reproduction is subject to the League's terms. No full text is stored in this corpus.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://www.leagueofarabstates.net/"
       },
@@ -485,10 +548,40 @@
           "note": "UNODC Convention against Cybercrime pre-ratification compendium: records adoption on 21 December 2010, entry into force on 7 February 2014, a seven-State threshold and LAS membership.",
           "publisher": "UNODC",
           "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-arabic",
+          "kind": "official_primary",
+          "language": "ar",
+          "local_path": "source/arab-convention-2010-ar-archive.pdf",
+          "note": "Archived official Arabic text stored; not segmented.",
+          "sha256": "77165b067ccdfd83563231bf43ab158d28f1db441387adbc708d48776eb9814f",
+          "url": "https://web.archive.org/web/20240423123401/https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-english-reproduction",
+          "kind": "secondary",
+          "language": "en",
+          "local_path": "source/arab-convention-2010-en-reproduction.pdf",
+          "note": "AsianLaws English reproduction stored and segmented; not an official LAS translation.",
+          "sha256": "5f973018298280fc9fee8a2f058cf78d18527518922628dfc25eaf1929b4e5ea",
+          "url": "https://www.asianlaws.org/gcld/cyberlawdb/GCC/Arab%20Convention%20on%20Combating%20Information%20Technology%20Offences.pdf"
         }
       ],
       "status": "in_force",
       "status_note": "In force since 7 February 2014, 30 days after the seventh instrument was deposited. The current number of Parties is unknown, not zero: the archived LAS treaty page links the table, but the table could not be retrieved.",
+      "text": {
+        "extraction_note": "English text extracted from the 29-page AsianLaws reproduction and segmented into 43 articles. The PDF concatenates each page into long lines and places article headings inline; the treaty-inline mode splits on the headings. The official Arabic PDF is stored but not segmented, because the corpus working language is English.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty-inline"
+      },
       "title": {
         "english": "Arab Convention on Combating Information Technology Offences",
         "official": "Arab Convention on Combating Information Technology Offences",
@@ -513,10 +606,15 @@
             "check": "Archived LAS treaty page checked.",
             "date": "2026-11-25",
             "result": "The Internet Archive snapshot of the LAS treaty page links the Convention text and the ratification table; the table PDF was not retrievable, so no current party count was taken from it."
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "43 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata and legal nature verified. No full text or party table is stored; the archived treaty page was checked but its table was not readable; the current party count and reservations remain unknown."
+        "notes": "The official Arabic PDF and an English reproduction are stored. The English text was segmented into 43 article units. The English reproduction is not an official League of Arab States translation, so the record remains metadata_verified."
       }
     },
     {
@@ -758,13 +856,13 @@
         "cyber"
       ],
       "gaps": [
-        "No full text, citable units or original file is stored in this record; it is metadata-only.",
         "The official AU status list is dated 2 February 2026; later deposits may exist and were not verified.",
         "The AU table gives one combined ratification/accession column and does not distinguish the two; all 20 deposit dates are recorded as ratifications.",
         "The status table does not list reservations or declarations; whether any were made is unknown, not zero.",
         "24 African Union member States have no recorded signature, ratification or accession in the 2 February 2026 list.",
         "The legal effect of the Convention and its national implementation are not assessed.",
-        "No AI-specific provision is asserted. The record is cyber-domain only."
+        "No AI-specific provision is asserted. The record is cyber-domain only.",
+        "The searchable English text is a SenLII/AfricanLII transcription, not an official AU translation; the official scanned PDF has no text layer."
       ],
       "id": "au-malabo-convention-2014",
       "instrument_type": "treaty",
@@ -782,7 +880,7 @@
           "ar",
           "pt"
         ],
-        "note": "The AU treaty page links English, French, Arabic and Portuguese versions. Only the English status list and the English page were read.",
+        "note": "The official English scanned PDF is stored but has no text layer. The searchable English text is a SenLII/AfricanLII legal-database transcription, not an official AU translation.",
         "source_ids": [
           "au-treaty-page"
         ]
@@ -1060,7 +1158,7 @@
       },
       "rights": {
         "licence": "African Union terms",
-        "note": "Official African Union text. The record stores metadata and links the official version; it does not relicense the text.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://au.int/en/copyright"
       },
@@ -1094,10 +1192,40 @@
           "note": "Official English text linked from the AU treaty page; not downloaded or read in this pass.",
           "publisher": "African Union",
           "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-official-scan",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/au-malabo-convention-2014-en-scanned.pdf",
+          "note": "Official image-only English PDF stored; authoritative scan.",
+          "sha256": "4564c7ee68658754590953f653b6aa43582d63fdd16f8614ecd0b4cf89c96485",
+          "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-senlii-transcription",
+          "kind": "secondary",
+          "language": "en",
+          "local_path": "source/au-malabo-convention-2014-en-senlii-transcription.pdf",
+          "note": "SenLII/AfricanLII English transcription stored and segmented.",
+          "sha256": "5ec5fbe9c40842231266b3d10065b5dd97910062f46f69d1efdb70ba15d2c07e",
+          "url": "https://senlii.org/en/akn/aa-au/act/convention/2014/cyber-security-and-personal-data-protection/eng@2014-06-27/source.pdf"
         }
       ],
       "status": "in_force",
       "status_note": "In force since 8 June 2023. The official AU status list dated 2 February 2026 records 55 member States, 21 signatures and 20 Parties (20 deposits). The list gives one combined ratification/accession column; the 20 dates are stored as ratifications without reclassification. 24 member States have no recorded act.",
+      "text": {
+        "extraction_note": "English text extracted from the 29-page SenLII/AfricanLII transcription and segmented into 38 articles. The official AU PDF is image-only (no text layer) and is stored as the authoritative scanned copy. The transcription's collection notice and page headers remain in the text.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "english": "African Union Convention on Cyber Security and Personal Data Protection",
         "official": "African Union Convention on Cyber Security and Personal Data Protection",
@@ -1119,10 +1247,15 @@
             "check": "Party entries counted against the AU status table",
             "date": "2026-11-24",
             "result": "confirmed: 31 States with an act (20 Parties and 11 signatories only)"
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "38 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata-level record. The status and party table come from the official AU status list; the treaty text, reservations and declarations, and the legal effect of the deposits are not assessed."
+        "notes": "The official scanned English PDF and a SenLII/AfricanLII English transcription are stored. The transcription was segmented into 38 article units. The official scan has no text layer; the record remains metadata_verified."
       }
     },
     {
@@ -1780,11 +1913,11 @@
         "cyber"
       ],
       "gaps": [
-        "No full text, citable units or original file is stored in this record; it is metadata-only.",
         "The 96 reservation entries and 280 declaration, communication or territorial entries are reproduced from the Treaty Office page as a status snapshot; their legal effect and any overlap between them are not assessed.",
         "Eleven States have no recorded signature or ratification and are not Parties; the Treaty Office chart does not label each of them individually as invited to accede.",
         "National implementation, the 24/7 network in practice and the Convention's supervisory practice are not assessed.",
-        "No AI-specific provision is asserted. The record is cyber-domain only."
+        "No AI-specific provision is asserted. The record is cyber-domain only.",
+        "Only the English text is stored; the other authentic-language versions were not acquired."
       ],
       "id": "budapest-convention-2001",
       "instrument_type": "treaty",
@@ -1805,7 +1938,7 @@
           "en",
           "fr"
         ],
-        "note": "The Treaty Office publishes the English and French official texts; both are authentic. Other language versions are translations or non-official renderings.",
+        "note": "The official English text is stored and segmented. The other authentic-language versions were not acquired.",
         "source_ids": [
           "coe-text"
         ]
@@ -2893,7 +3026,7 @@
         ]
       },
       "rights": {
-        "note": "Official Council of Europe text. Reuse remains subject to the Council of Europe's terms; the corpus stores metadata and links, not the text.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://rm.coe.int/1680081561"
       },
@@ -2944,10 +3077,29 @@
           "language": "en",
           "publisher": "Council of Europe",
           "url": "https://rm.coe.int/1680081561"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-official",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/budapest-convention-2001-en.pdf",
+          "note": "Official CoE English PDF stored and segmented.",
+          "sha256": "d5d38a49519121a3cc9a37a623f3047f4cefb25423494cee6780ad75eeeef0af",
+          "url": "https://rm.coe.int/1680081561"
         }
       ],
       "status": "in_force",
       "status_note": "In force since 1 July 2004. As of the Treaty Office status of 24 November 2026: 84 Parties (48 ratifications and 36 accessions), two signatories not followed by ratification (Ireland and South Africa), and eleven further States without a recorded act that are not Parties. The full per-Party list and 376 reservation/declaration items are stored; the declared total is now verified against the itemised table.",
+      "text": {
+        "extraction_note": "Official Council of Europe English PDF (22 pages) extracted with pypdf and segmented into 48 article units.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "english": "Convention on Cybercrime",
         "official": "Convention on Cybercrime (ETS No. 185)",
@@ -2974,10 +3126,15 @@
             "check": "Official text URL recorded; text not acquired or segmented in this pass",
             "date": "2026-11-24",
             "result": "not acquired"
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "48 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Party list, reservations and declarations are itemised from the official Treaty Office pages. The record remains metadata-level: the treaty text is not stored, and the legal effect of each reservation or declaration is not assessed."
+        "notes": "The official English PDF was acquired and segmented into 48 article units. The record remains metadata_verified; no article-by-article legal review was performed."
       }
     },
     {
@@ -3312,9 +3469,9 @@
       "gaps": [
         "The CIS Executive Committee page states that the Agreement is in force but does not display a current party-by-party depositary table. The seven-State list is taken from a Russian legal register, not from the depositary.",
         "Only the Russian authentic text was read; no English translation is stored.",
-        "No full text, citable units or original file is stored in this record; it is metadata-only.",
         "The three States that signed but did not complete domestic procedures are not treated as Parties.",
-        "National implementation, reservations and the 2001 predecessor's termination in detail are not assessed."
+        "National implementation, reservations and the 2001 predecessor's termination in detail are not assessed.",
+        "The searchable text is the official Russian text; no official English translation was acquired. The English machine translation on the CIS site is paywalled and not used."
       ],
       "id": "cis-it-crimes-agreement-2018",
       "instrument_type": "agreement",
@@ -3334,7 +3491,7 @@
         "authentic": [
           "ru"
         ],
-        "note": "The Agreement was concluded in a single authentic copy in Russian, deposited with the CIS Executive Committee. No official English text was located or acquired.",
+        "note": "The official Russian text is stored and segmented. The English machine translation on the CIS page is paywalled and is not used; no official English text was acquired.",
         "translations": []
       },
       "legal_nature": {
@@ -3424,7 +3581,7 @@
       },
       "rights": {
         "licence": "CIS official text terms",
-        "note": "Official CIS text; reproduction is subject to the Commonwealth's terms. No full text is stored in this corpus.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://eccis.org/"
       },
@@ -3468,10 +3625,29 @@
           "note": "Russian Foreign Ministry treaty entry: signed 28 September 2018; depositary CIS Executive Committee; in force for Russia 17 July 2022.",
           "publisher": "Ministry of Foreign Affairs of Russia",
           "url": "https://www.mid.ru/ru/foreign_policy/international_contracts/international_contracts/multilateral_contract/53417"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-official-russian",
+          "kind": "official_primary",
+          "language": "ru",
+          "local_path": "source/cis-2018-agreement-ru.html",
+          "note": "Official Russian HTML stored; text extracted and segmented.",
+          "sha256": "820190e7415c9370c7970c95c75d06b092360d9b043098fc3816cea471bb1818",
+          "url": "https://eccis.org/document/5864"
         }
       ],
       "status": "in_force",
       "status_note": "In force since 12 March 2020; for Russia since 17 July 2022. It replaces the 2001 CIS Agreement on computer information crimes in relations between its Parties. The depositary page does not publish a current party table.",
+      "text": {
+        "extraction_note": "Official Russian text extracted from the CIS Executive Committee page and trimmed to the agreement body, from the preamble to Article 18; site navigation and the signature block were removed. Segmented into 18 articles. The English translation on the same page is machine-generated and paywalled, so it was not used.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "ru",
+        "primary_text": "text/ru.txt",
+        "units_mode": "treaty-ru"
+      },
       "title": {
         "english": "Agreement on Cooperation among the Member States of the Commonwealth of Independent States in Combating Crimes in the Field of Information Technology",
         "official": "Соглашение о сотрудничестве государств – участников Содружества Независимых Государств в борьбе с преступлениями в сфере информационных технологий",
@@ -3493,10 +3669,15 @@
             "check": "Party list checked against a Russian legal register.",
             "date": "2026-11-24",
             "result": "Seven Parties listed; the CIS depositary page itself does not display a current party table."
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "18 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata, legal nature and entry into force verified. The party count is declared by a secondary legal register, not verified against an itemised depositary table; the record is metadata-only."
+        "notes": "The official Russian HTML was acquired and segmented into 18 article units. No official English translation was acquired; the record remains metadata_verified."
       }
     },
     {
@@ -3722,10 +3903,10 @@
         "cyber"
       ],
       "gaps": [
-        "No full text, citable units or original file is stored in this record; it is metadata-only.",
         "The Protocol is not in force; its cooperation machinery and review structures do not yet operate.",
         "Reservation, declaration and communication texts are reproduced from the official page; their legal effect and any overlap are not assessed.",
-        "No AI-specific provision is asserted. The record is cyber-domain only."
+        "No AI-specific provision is asserted. The record is cyber-domain only.",
+        "The stored copy is an Internet Archive snapshot of the official CoE PDF; the live rm.coe.int URL returned HTTP 403 to automated clients on 25 November 2026."
       ],
       "id": "coe-cets-224",
       "instrument_type": "protocol",
@@ -3746,7 +3927,7 @@
           "en",
           "fr"
         ],
-        "note": "The Treaty Office publishes the English and French official texts; both are authentic."
+        "note": "The official English text is stored from an Internet Archive snapshot of the official CoE PDF; the live URL returned 403. Other authentic-language versions were not acquired."
       },
       "legal_nature": {
         "qualification": "treaty",
@@ -4157,7 +4338,7 @@
         ]
       },
       "rights": {
-        "note": "Official Council of Europe text. Reuse remains subject to the Council of Europe terms; this corpus stores metadata and links, not the text.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=224"
       },
@@ -4191,10 +4372,29 @@
           "note": "Reservations and declarations for Treaty 224, status as of 24/11/2026. 4 States are listed: one reservation and 21 declarations. The full text of every item is reproduced in parties.reservations, parties.declarations and, where applicable, parties.notifications; country, article references and any period shown on the page are retained.",
           "publisher": "Council of Europe Treaty Office",
           "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=224&codeNature=0"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-wayback-official",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/cets-224-en-2022.pdf",
+          "note": "Archived official CETS 224 English PDF stored and segmented.",
+          "sha256": "73e4b4dd158bb393ecfb6aa0b265f3ada51ee8ab85969d56841314336095ebed",
+          "url": "https://web.archive.org/web/20220516075219/https://rm.coe.int/1680a49dab"
         }
       ],
       "status": "not_in_force",
       "status_note": "Not in force. As of the Treaty Office status of 24 November 2026: 52 signatories, four ratifications (Hungary, Serbia, Costa Rica and Japan), and 48 signatures not followed by ratification. Five ratifications are required; one more is needed. The declarations page lists 1 reservation and 21 declarations from 4 States; the texts are reproduced in the record.",
+      "text": {
+        "extraction_note": "Official Council of Europe English PDF retrieved from the Internet Archive snapshot of rm.coe.int/1680a49dab (21 pages) and segmented into 25 article units. The live rm.coe.int URL returned HTTP 403 to automated clients on 25 November 2026.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "english": "Second Additional Protocol to the Convention on Cybercrime on enhanced co-operation and disclosure of electronic evidence",
         "official": "Second Additional Protocol to the Convention on Cybercrime on enhanced co-operation and disclosure of electronic evidence (CETS No. 224)",
@@ -4221,10 +4421,15 @@
             "check": "Reservations and declarations page for Treaty 224, status 24 November 2026, read and transformed into record fields",
             "date": "2026-11-24",
             "result": "confirmed: 4 States, 1 reservation and 21 declarations; reservation and declaration texts kept in separate arrays"
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "25 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata-level record. Party data, reservations and declarations are itemised from the official Treaty Office pages; the treaty text is not stored, and the legal effect of each item is not assessed."
+        "notes": "The archived official CoE English PDF was acquired and segmented into 25 article units. The record remains metadata_verified."
       }
     },
     {
@@ -4819,10 +5024,10 @@
         "cyber"
       ],
       "gaps": [
-        "No full text, citable units or original file is stored in this record; it is metadata-only.",
         "Reservation, declaration and communication texts are reproduced from the official page; their legal effect and any overlap are not assessed.",
         "National implementation and the Protocol's supervisory practice are not assessed.",
-        "No AI-specific provision is asserted. The record is cyber-domain only."
+        "No AI-specific provision is asserted. The record is cyber-domain only.",
+        "The stored copy is an Internet Archive snapshot of the official CoE PDF; the live rm.coe.int URL returned HTTP 403 to automated clients on 25 November 2026."
       ],
       "id": "coe-ets-189",
       "instrument_type": "protocol",
@@ -4843,7 +5048,7 @@
           "en",
           "fr"
         ],
-        "note": "The Treaty Office publishes the English and French official texts; both are authentic."
+        "note": "The official English text is stored from an Internet Archive snapshot of the official CoE PDF; the live URL returned 403. Other authentic-language versions were not acquired."
       },
       "legal_nature": {
         "qualification": "treaty",
@@ -5311,7 +5516,7 @@
         ]
       },
       "rights": {
-        "note": "Official Council of Europe text. Reuse remains subject to the Council of Europe terms; this corpus stores metadata and links, not the text.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=189"
       },
@@ -5345,10 +5550,29 @@
           "note": "Reservations and declarations for Treaty 189, status as of 24/11/2026. 16 States are listed: 21 reservations, 11 declarations and one communication. The full text of every item is reproduced in parties.reservations, parties.declarations and, where applicable, parties.notifications; country, article references and any period shown on the page are retained.",
           "publisher": "Council of Europe Treaty Office",
           "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=189&codeNature=0"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-wayback-official",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/ets-189-en-2003.pdf",
+          "note": "Archived official ETS 189 English PDF stored and segmented.",
+          "sha256": "9e7ce3fc8aaf78ea94c30791d229cd92db411ec0fd144e3111b5ffd9cea031b3",
+          "url": "https://web.archive.org/web/2024/https://rm.coe.int/168008160f"
         }
       ],
       "status": "in_force",
       "status_note": "In force since 1 March 2006. As of the Treaty Office status of 24 November 2026: 38 Parties (33 ratifications and 5 accessions), nine signatories not followed by ratification, and eight listed States with no recorded signature or ratification. The declarations page lists 21 reservations, 11 declarations and 1 communication from 16 States; the texts are reproduced in the record.",
+      "text": {
+        "extraction_note": "Official Council of Europe English PDF retrieved from the Internet Archive snapshot of rm.coe.int/168008160f (6 pages) and segmented into 16 article units. The live rm.coe.int URL returned HTTP 403 to automated clients on 25 November 2026.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "english": "Additional Protocol to the Convention on Cybercrime, concerning the criminalisation of acts of a racist and xenophobic nature committed through computer systems",
         "official": "Additional Protocol to the Convention on Cybercrime, concerning the criminalisation of acts of a racist and xenophobic nature committed through computer systems (ETS No. 189)",
@@ -5375,10 +5599,15 @@
             "check": "Reservations and declarations page for Treaty 189, status 24 November 2026, read and transformed into record fields",
             "date": "2026-11-24",
             "result": "confirmed: 16 States, 21 reservations, 11 declarations and 1 communication; reservation and declaration texts kept in separate arrays"
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "16 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata-level record. Party data, reservations and declarations are itemised from the official Treaty Office pages; the treaty text is not stored, and the legal effect of each item is not assessed."
+        "notes": "The archived official CoE English PDF was acquired and segmented into 16 article units. The record remains metadata_verified."
       }
     },
     {
@@ -5829,10 +6058,11 @@
       ],
       "gaps": [
         "Binding ECOWAS community law, not an international treaty; it is excluded from the international-binding set and collected with internal law.",
-        "No full text, citable units or original file is stored in this record; it is metadata-only.",
         "National implementation and transposition in the Member States are not assessed.",
         "Current ECOWAS membership and the effect of suspensions or withdrawals are not assessed.",
-        "The Directive creates no AI-specific obligation."
+        "The Directive creates no AI-specific obligation.",
+        "The searchable text is OCR from the official scan, not a publisher transcription; OCR errors are possible. The French official version was not acquired.",
+        "National implementation and transposition in ECOWAS Member States are not assessed."
       ],
       "id": "ecowas-cybercrime-directive-2011",
       "instrument_type": "directive",
@@ -5853,7 +6083,7 @@
           "en",
           "fr"
         ],
-        "note": "ECOWAS published signed English and French versions of the Directive. Both are official language versions; only the English text was read for this record.",
+        "note": "The official English scanned PDF is stored. The searchable English text is OCR; the French official version was not acquired.",
         "translations": []
       },
       "legal_nature": {
@@ -5904,7 +6134,7 @@
       },
       "rights": {
         "licence": "ECOWAS official text terms",
-        "note": "Official ECOWAS text; reproduction is subject to ECOWAS terms. No full text is stored in this corpus.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://www.ecowas.int/"
       },
@@ -5928,10 +6158,29 @@
           "note": "AfricanLII consolidation of Directive C/DIR.1/08/11, recording publication on 19 August 2011.",
           "publisher": "AfricanLII",
           "url": "https://africanlii.org/en/akn/aa-ecowas/act/directive/2011/8-1/eng@2011-12-31"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-official-scan",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/ecowas-cybercrime-directive-2011-en.pdf",
+          "note": "Official image-only English PDF stored; text produced by OCR.",
+          "sha256": "8c789adfcddea821450c92ff850d185bb871e33abcb3d3f6e070e96024f4d3fa",
+          "url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf"
         }
       ],
       "status": "in_force",
       "status_note": "Adopted and published as binding ECOWAS community law. Member States were required to implement it by 1 January 2014. It has no separate entry-into-force clause; national implementation is not assessed.",
+      "text": {
+        "extraction_note": "OCR text produced with RapidOCR at 180 dpi from the official scanned English PDF (11 pages) and segmented into 35 article units. OCR spacing and characters can contain errors; the scan is authoritative. The heading misread as 'Article 2o' was corrected to 'Article 20'.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty-inline"
+      },
       "title": {
         "official": "Directive C/DIR.1/08/11 on Fighting Cyber Crime within ECOWAS",
         "short": "ECOWAS Cybercrime Directive 2011"
@@ -5952,10 +6201,15 @@
             "check": "Publication date checked against the AfricanLII consolidation.",
             "date": "2026-11-24",
             "result": "Published 19 August 2011."
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "35 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata and legal form verified from the official text. No full text is stored; national implementation is not assessed."
+        "notes": "The official scanned English PDF was acquired and OCR'd; the text was segmented into 35 article units. The record remains metadata_verified because the text is OCR and has not been checked line by line against the scan."
       }
     },
     {
@@ -6999,7 +7253,8 @@
         "Not AI-specific.",
         "Party list, reservations, derogations and jurisprudence are not captured.",
         "Reservations, derogations and jurisprudence are not analysed.",
-        "Only the treaty framework is recorded; interpretations by the Human Rights Committee are outside this record."
+        "Only the treaty framework is recorded; interpretations by the Human Rights Committee are outside this record.",
+        "Only the English text is stored; the other authentic-language versions were not acquired."
       ],
       "id": "iccpr-1966",
       "instrument_type": "treaty",
@@ -7018,7 +7273,7 @@
           "ru",
           "es"
         ],
-        "note": "Article 53: Chinese, English, French, Russian and Spanish texts equally authentic.",
+        "note": "The official English text is stored and segmented. The other authentic-language versions were not acquired.",
         "translations": []
       },
       "parties": {
@@ -7076,7 +7331,7 @@
       },
       "rights": {
         "licence": "United Nations terms",
-        "note": "Official UN treaty text; UN terms apply. Metadata only in this corpus.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://www.un.org/en/about-us/terms-of-use"
       },
@@ -7089,10 +7344,29 @@
           "note": "Official OHCHR page for the Covenant, text and status; read on 23 November 2026.",
           "publisher": "OHCHR",
           "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-official",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/iccpr-1966-en.pdf",
+          "note": "Official OHCHR English PDF stored and segmented.",
+          "sha256": "c63fbe7781e8ecd7cdaf50344199995841037911f3cef8a0964c4b4c8909a6a2",
+          "url": "https://www.ohchr.org/sites/default/files/ccpr.pdf"
         }
       ],
       "status": "in_force",
       "status_note": "In force. General treaty; not AI-specific.",
+      "text": {
+        "extraction_note": "Official OHCHR English PDF (26 pages) extracted with pypdf and segmented into 53 article units. The PDF splits the heading 'Article 12' across two lines; the segmenter rejoins it.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "official": "International Covenant on Civil and Political Rights",
         "short": "ICCPR"
@@ -7103,10 +7377,15 @@
             "check": "Official OHCHR page read for adoption, entry into force and authentic languages.",
             "date": "2026-11-23",
             "result": "Adopted 16 December 1966 by General Assembly resolution 2200A (XXI); entered into force 23 March 1976; Article 53 declares the Chinese, English, French, Russian and Spanish texts equally authentic."
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "53 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Included as a reasoned general-treaty selection, not as an AI-specific instrument. Party-level data and reservations remain uncaptured."
+        "notes": "The official OHCHR English PDF was acquired and segmented into 53 article units. The record remains metadata_verified."
       }
     },
     {
@@ -7600,10 +7879,11 @@
         "ai"
       ],
       "gaps": [
-        "Full text not stored; only metadata verified.",
         "AI article is cooperative, not prescriptive.",
         "Korean language version not acquired.",
-        "No depositary record consulted."
+        "No depositary record consulted.",
+        "The stored text is the English PDF reproduced by the Korean Ministry of Trade, Industry and Energy; the Korean text and other language versions were not acquired.",
+        "The agreement's numbering jumps from Article 7 to Article 14; the record follows the text's own numbering."
       ],
       "id": "ksdpa-2022",
       "instrument_type": "agreement",
@@ -7617,7 +7897,7 @@
         "authentic": [
           "en"
         ],
-        "note": "The signed English text is identified; a Korean version is likely but was not acquired. Authentic-language status was not verified.",
+        "note": "The English text reproduced by the Korean MOTIR is stored and segmented. The Korean text and other language versions were not acquired.",
         "translations": [
           "ko"
         ]
@@ -7705,7 +7985,7 @@
       },
       "rights": {
         "licence": "Government of Korea / Government of Singapore terms",
-        "note": "Official treaty text; no open licence identified. Metadata only in this corpus.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://www.meti.gov.sg/terms-of-use/"
       },
@@ -7728,10 +8008,29 @@
           "note": "Official KSDPA page, moved from MTI to METI on 1 October 2026. Confirms signature 21 November 2022 and entry into force 14 January 2023; returns 404 to some automated clients but was read through the extraction tool.",
           "publisher": "Ministry of Energy, Trade and Industry, Singapore",
           "url": "https://www.meti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/ksdpa"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-official-reproduction",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/ksdpa-2022-en.pdf",
+          "note": "English PDF reproduced by the Korean MOTIR; stored and segmented.",
+          "sha256": "c1183848e119b7ad2f0362879813090685a6076c045f00d3105ab20289dc0717",
+          "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/ksdpa/1/KSDPA_eng.pdf"
         }
       ],
       "status": "in_force",
       "status_note": "In force between Korea and Singapore.",
+      "text": {
+        "extraction_note": "English text extracted from the 42-page Korean MOTIR PDF and segmented into 41 units: Articles 1-7 and Articles 14.1-14.34. The agreement's numbering jumps from Article 7 to Article 14; no Article 8-13 headings appear in the text.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "official": "Korea-Singapore Digital Partnership Agreement",
         "short": "KSDPA"
@@ -7747,10 +8046,15 @@
             "check": "AI article number cross-checked in the ADB comparative table and in the treaty text's article sequence.",
             "date": "2026-11-23",
             "result": "Article 14.28; AI governance and ethics cooperation."
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "41 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified; full text not stored. Article 14.28 wording should be checked against the signed PDF before quotation."
+        "notes": "The English PDF reproduced by the Korean Ministry of Trade, Industry and Energy was acquired and segmented into 41 units. The record remains metadata_verified."
       }
     },
     {
@@ -11552,9 +11856,9 @@
         "The SCO Secretariat does not publish a current party-by-party table for the Agreement; the six original signatories are known, but accessions by later SCO member States are not verified.",
         "The UNODC factsheet gives 16 June 2009 as the entry-into-force date, while the treaty text requires four notifications and the treaty-series record gives 2 June 2011; the discrepancy is recorded rather than smoothed over.",
         "The official English text is a translation; the authentic text is in Russian and Chinese.",
-        "No full text, citable units or original file is stored in this record.",
         "National implementation, reservations and the Agreement's relationship with later SCO instruments are not assessed.",
-        "The Agreement creates no AI-specific obligation."
+        "The Agreement creates no AI-specific obligation.",
+        "Only the official English text is stored; the Russian and Chinese texts were not acquired."
       ],
       "id": "sco-information-security-agreement-2009",
       "instrument_type": "agreement",
@@ -11575,7 +11879,7 @@
           "ru",
           "zh"
         ],
-        "note": "Article 10 makes Russian and Chinese the working languages. The SCO publishes an English translation; it is not an authentic text.",
+        "note": "The official English text is stored and segmented. The Russian and Chinese texts were not acquired.",
         "translations": [
           "en"
         ]
@@ -11670,7 +11974,7 @@
       },
       "rights": {
         "licence": "SCO official text terms",
-        "note": "Official SCO publication of the Agreement; reproduction is subject to the Organization's terms. No full text is stored in this corpus.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://eng.sectsco.org/"
       },
@@ -11714,10 +12018,29 @@
           "note": "Hong Kong Treaty Series entry: adopted 16 June 2009, entry into force 2 June 2011, with the Agreement text.",
           "publisher": "Hong Kong Legal Information Institute",
           "url": "https://hklii.hk/en/legis/hkts/2011/2"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-official",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/sco-2009-en.pdf",
+          "note": "Official English PDF stored and segmented.",
+          "sha256": "523da084c32baf3d96e72447a6e923d1d33034d3e6d7bb164d6aedd3e2810536",
+          "url": "https://eng.sectsco.org/files/207508/207508"
         }
       ],
       "status": "in_force",
       "status_note": "In force since 2 June 2011 under Article 12, after the fourth notification. The UNODC factsheet's 16 June 2009 entry-into-force date conflicts with the treaty text and the treaty-series record; the discrepancy is recorded. The current party list is not published on the SCO document page.",
+      "text": {
+        "extraction_note": "Official English PDF (13 pages) extracted with pypdf and segmented into 12 article units.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "english": "Agreement on Cooperation in Ensuring International Information Security between the Member States of the Shanghai Cooperation Organization",
         "official": "Соглашение между правительствами государств-членов Шанхайской организации сотрудничества о сотрудничестве в области обеспечения международной информационной безопасности",
@@ -11739,10 +12062,15 @@
             "check": "Scope checked in the text and the UNODC factsheet.",
             "date": "2026-11-24",
             "result": "Information security cooperation, including cybercrime, cyber-terrorism, critical infrastructure and confidence-building; no AI-specific provision."
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "12 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is metadata-only and is not mapped."
+        "notes": "The official English PDF was acquired and segmented into 12 article units. The record remains metadata_verified."
       }
     },
     {
@@ -11956,10 +12284,10 @@
         "ai"
       ],
       "gaps": [
-        "Full text not stored; only metadata verified.",
         "AI article is cooperative, not prescriptive.",
         "No depositary record consulted.",
-        "No assessment of the UK-Singapore AI cooperation beyond the treaty article."
+        "No assessment of the UK-Singapore AI cooperation beyond the treaty article.",
+        "Only the English text is stored. Article 7 does not appear in the agreement's numbering; the units follow the text."
       ],
       "id": "uksdea-2022",
       "instrument_type": "agreement",
@@ -11973,7 +12301,7 @@
         "authentic": [
           "en"
         ],
-        "note": "English text acquired; no multilingual authentic-text clause verified.",
+        "note": "The official English text is stored and segmented. Other language versions, if any, were not acquired.",
         "translations": []
       },
       "parties": {
@@ -12059,7 +12387,7 @@
       },
       "rights": {
         "licence": "Crown copyright / Government of Singapore terms",
-        "note": "Official treaty text. The UK treaty series is subject to Crown copyright; stored metadata only.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://www.gov.uk/government/publications/uksingapore-digital-economy-agreement-ts-no222023"
       },
@@ -12081,10 +12409,29 @@
           "note": "Confirms signature and entry into force and identifies AI as a cooperative element.",
           "publisher": "Ministry of Trade and Industry, Singapore",
           "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-official",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/uksdea-2022-en.pdf",
+          "note": "Official UK Treaty Series PDF stored and segmented.",
+          "sha256": "494bcacbdf8ecdddbe09c69edc9a86c6d31ae419f6920a86f56d2de63f99a6ea",
+          "url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf"
         }
       ],
       "status": "in_force",
       "status_note": "In force between the United Kingdom and Singapore.",
+      "text": {
+        "extraction_note": "Official UK Treaty Series No. 22 (2023) English PDF (49 pages) extracted with pypdf and segmented into 35 units: Articles 1-6, then Annex A Section F Articles 8.57-8.61-X. Article 7 does not appear in this agreement's numbering.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "official": "Digital Economy Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Singapore",
         "short": "UK-Singapore Digital Economy Agreement (UKSDEA)"
@@ -12100,10 +12447,15 @@
             "check": "AI article number and content checked in secondary official-facing analysis and the ADB comparative table.",
             "date": "2026-11-23",
             "result": "Article 8.61-R; cooperative AI and emerging-technology provisions."
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "35 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified; the full treaty text is not stored. The precise wording of Article 8.61-R should be checked against the UK Treaty Series PDF before quotation."
+        "notes": "The official UK Treaty Series English PDF was acquired and segmented into 35 units. The record remains metadata_verified."
       }
     },
     {
@@ -12123,13 +12475,13 @@
         "cyber"
       ],
       "gaps": [
-        "No full text, citable units or original file is stored in this record; it is metadata-only.",
         "The Convention is not in force: Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession, and three Parties had deposited by 24 November 2026.",
         "The UNTC table lists 96 signatories including the European Union; the map shows the 95 States and names the European Union outside the map frame.",
         "The declarations and reservations panel is not a machine-readable table; the 15 entries were transcribed from the page's panel and split by the source's numbered paragraphs.",
         "The UNTC page displays declaration items only for Azerbaijan, Qatar and Viet Nam; whether other signatories have made declarations that are not shown there is unknown, not zero.",
         "No AI-specific provision is asserted. The record is cyber-domain only.",
-        "National implementation and the future Conference of the States Parties are not assessed."
+        "National implementation and the future Conference of the States Parties are not assessed.",
+        "The stored English text is an extract of the certified multilingual copy; the other five authentic-language versions are stored in the certified copy but not segmented."
       ],
       "id": "un-cybercrime-convention-2024",
       "instrument_type": "treaty",
@@ -12149,7 +12501,7 @@
         "authentic": [
           "en"
         ],
-        "note": "The English text and the English UNTC status page were consulted. The record does not assert the complete authentic-language set.",
+        "note": "The certified copy contains six authentic-language versions. The English extract is stored and segmented; the other five versions are in the certified copy but were not segmented.",
         "source_ids": [
           "untc-status"
         ]
@@ -12757,7 +13109,7 @@
         ]
       },
       "rights": {
-        "note": "The Convention is an official United Nations text. The record stores metadata and links the certified true copy; it does not relicense the text.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en"
       },
@@ -12791,10 +13143,29 @@
           "note": "Declarations and Reservations panel of the official UNTC status page, read on 24 November 2026. It lists items for Azerbaijan, Qatar and Viet Nam: 11 reservation paragraphs and four declaration paragraphs. The full wording is reproduced in parties.reservations and parties.declarations.",
           "publisher": "United Nations Treaty Collection",
           "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-certified",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/un-cybercrime-convention-2024-en-certified.pdf",
+          "note": "Certified multilingual copy stored; English pages 59-118 extracted for the text.",
+          "sha256": "4f12e3b5ac499a630932915cf5be2c748b70fd7f9335dfaf40ee488983f1e8c0",
+          "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf"
         }
       ],
       "status": "not_in_force",
       "status_note": "Not in force. Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession; three had been deposited by 24 November 2026, leaving 37. The UNTC depositary table lists 96 signatories (95 States and the European Union) and three Parties (Qatar, Azerbaijan and Viet Nam). Signature remains open until 31 December 2026. The UNTC declarations panel lists 11 reservation paragraphs and four declaration paragraphs for those three Parties.",
+      "text": {
+        "extraction_note": "English text extracted from pages 59-118 of the 388-page certified multilingual PDF and saved as a 60-page English extract; segmented into 68 article units. Page anchors refer to the extract, not the certified copy.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "english": "United Nations Convention against Cybercrime",
         "official": "United Nations Convention against Cybercrime; Strengthening International Cooperation for Combating Certain Crimes Committed by Means of Information and Communications Technology Systems and for the Sharing of Evidence in Electronic Form of Serious Crimes",
@@ -12821,10 +13192,15 @@
             "check": "UNTC declarations and reservations panel read and itemised",
             "date": "2026-11-24",
             "result": "confirmed: Azerbaijan, Qatar and Viet Nam; 11 reservation paragraphs and four declaration paragraphs transcribed"
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "68 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata-level record. The status, party table and declaration texts come from the official UNTC depositary page. The full treaty text is not stored, and the legal effect of the reservations and declarations is not assessed."
+        "notes": "The certified multilingual PDF and a 60-page English extract were acquired; the English text was segmented into 68 article units. The record remains metadata_verified."
       }
     },
     {
@@ -14636,7 +15012,8 @@
         "Not AI-specific.",
         "Party list, reservations and declarations are not captured in structured form.",
         "The Convention's application to treaties concluded by international organisations is governed by the 1986 Vienna Convention, not analysed here.",
-        "No analysis of specific interpretive disputes."
+        "No analysis of specific interpretive disputes.",
+        "Only the English text is stored; the other authentic-language versions were not acquired."
       ],
       "id": "vclt-1969",
       "instrument_type": "treaty",
@@ -14655,7 +15032,7 @@
           "ru",
           "es"
         ],
-        "note": "Article 85: Chinese, English, French, Russian and Spanish texts equally authentic.",
+        "note": "The official English text is stored and segmented. The other authentic-language versions were not acquired.",
         "translations": []
       },
       "parties": {
@@ -14722,7 +15099,7 @@
       },
       "rights": {
         "licence": "United Nations terms",
-        "note": "Official UN treaty text; UN terms apply. Metadata only in this corpus.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text",
         "url": "https://www.un.org/en/about-us/terms-of-use"
       },
@@ -14735,10 +15112,29 @@
           "note": "Official UN Treaty Collection record, status as at 2 November 2026; read on 23 November 2026.",
           "publisher": "United Nations Treaty Collection",
           "url": "https://treaties.un.org/Pages/ViewDetailsIII.aspx?src=TREATY&mtdsg_no=XXIII-1&chapter=23&Temp=mtdsg3&clang=_en"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "stored-official",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/vclt-1969-en.pdf",
+          "note": "Official UN English PDF stored and segmented.",
+          "sha256": "f01906ba0581d7329f685d49656e9a7cb3c5d0a8790219e1600c1edb30893d08",
+          "url": "https://legal.un.org/ilc/texts/instruments/english/conventions/1_1_1969.pdf"
         }
       ],
       "status": "in_force",
       "status_note": "In force. General treaty; not AI-specific.",
+      "text": {
+        "extraction_note": "Official United Nations English PDF (31 pages) extracted with pypdf and segmented into 85 article units.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "official": "Vienna Convention on the Law of Treaties",
         "short": "VCLT"
@@ -14749,10 +15145,15 @@
             "check": "Official UN Treaty Collection page read for adoption, opening for signature, entry into force and status.",
             "date": "2026-11-23",
             "result": "Adopted 22 May 1969; opened for signature 23 May 1969; entered into force 27 January 1980; status at 2 November 2026: 45 signatories and 119 parties."
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "85 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Included as a general-treaty selection because it supplies the interpretive framework for AI treaties. Not an AI-specific instrument. Party-by-party reservations remain uncaptured."
+        "notes": "The official UN English PDF was acquired and segmented into 85 article units. The record remains metadata_verified."
       }
     },
     {
@@ -14774,9 +15175,9 @@
         "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located. Bangladesh is not the 38th member: it announced on 1 August 2026 that it would join 'initially as an observer'.",
         "Observer status is not a party status: Article 11 allows the Council to admit non-member States and intergovernmental organisations as observers. No Council admission of Bangladesh is recorded.",
         "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
-        "The official Chinese text published by the NPC was consulted online, and the English reproduction on Digital Watch was consulted before it; neither is stored. No deposited or certified copy was acquired, so the record remains metadata-only. The article citations rest on the NPC text. The English reproduction is a secondary source, not an authentic text or a deposited copy.",
         "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",
-        "Articles 5–8 provide for a Council, a Secretariat and financing. No evidence was located that the Council or Secretariat has been constituted, that rules of procedure or a budget have been adopted, or that implementing instruments exist. This is an unverified point, not a finding that the organs do not exist."
+        "Articles 5–8 provide for a Council, a Secretariat and financing. No evidence was located that the Council or Secretariat has been constituted, that rules of procedure or a budget have been adopted, or that implementing instruments exist. This is an unverified point, not a finding that the organs do not exist.",
+        "No deposited or certified copy was acquired; the stored text is the official NPC Chinese publication. The English reproduction on Digital Watch was consulted but is not stored."
       ],
       "id": "waico-establishment-agreement-2026",
       "instrument_type": "treaty",
@@ -14801,7 +15202,7 @@
           "ru",
           "es"
         ],
-        "note": "Article 18: Arabic, Chinese, English, French, Russian and Spanish texts are equally authentic. The official Chinese text published by the National People's Congress was read for the article analysis; an English reproduction (Digital Watch) was also consulted. No deposited or certified copy was acquired and no text is stored in this corpus.",
+        "note": "The official Chinese text is stored and segmented. The Agreement is equally authentic in Arabic, Chinese, English, French, Russian and Spanish; the English reproduction on Digital Watch was consulted but is not stored.",
         "translations": []
       },
       "legal_nature": {
@@ -15154,7 +15555,7 @@
       },
       "rights": {
         "licence": "Chinese Government official publications; Digital Watch reproduction CC BY-NC-ND 4.0",
-        "note": "Official government pages and the MFA progress report are public official materials. The NPC official text was read online; the Digital Watch reproduction was used for reading only. No full text is stored in this corpus.",
+        "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
         "status": "public_official_text"
       },
       "sources": [
@@ -15249,18 +15650,28 @@
           "url": "https://dig.watch/resource/agreement-on-the-establishment-of-the-world-artificial-intelligence-cooperation-organization"
         },
         {
-          "accessed": "2026-11-24",
+          "accessed": "2026-11-25",
           "http_status": 200,
           "id": "npc-agreement-text",
           "kind": "official_primary",
           "language": "zh",
-          "note": "Official Chinese text of the Agreement, published 18 November 2026. Articles 1-18 were read in full: legal personality and civilian-domain limitation (Articles 1 and 3), membership and observers (Articles 10-11), signature and accession (Article 14), entry into force (Article 15) and depositary and authentic texts (Article 18). The host did not complete a TLS handshake from this environment on 25 November 2026; the official page is served over HTTP.",
+          "local_path": "source/waico-agreement-2026-zh.html",
+          "note": "Official Chinese text of the Agreement, published 18 November 2026. Articles 1-18 were read in full: legal personality and civilian-domain limitation (Articles 1 and 3), membership and observers (Articles 10-11), signature and accession (Article 14), entry into force (Article 15) and depositary and authentic texts (Article 18). The host did not complete a TLS handshake from this environment on 25 November 2026; the official page is served over HTTP. The HTML is stored and segmented into 18 article units.",
           "publisher": "National People's Congress of the People's Republic of China",
+          "sha256": "4494d808c722cf0fb698a000e5b0765a8ca7affea7c2988a9c0b03c68af64742",
           "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html"
         }
       ],
       "status": "unknown",
       "status_note": "Treaty, binding on States that become parties, but entry into force is not confirmed as of 24 November 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026; the approval is recorded separately from international consent and no deposited instrument was verified. The number of deposits is unknown, not zero: China is the depositary under Article 18 and no public depositary register or notification was located. China's MFA reports 38 founding members, but the signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer'; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore has been reported as considering an invitation and is not a member. The 37/38 discrepancy is recorded, not resolved.",
+      "text": {
+        "extraction_note": "Official Chinese text extracted from the NPC page and segmented into 18 article units. The English Digital Watch reproduction was consulted but is not stored or used for the text.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "zh",
+        "primary_text": "text/zh.txt",
+        "units_mode": "treaty-zh"
+      },
       "title": {
         "official": "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization",
         "short": "WAICO Establishment Agreement"
@@ -15306,10 +15717,15 @@
             "check": "Reading and acquisition status reconciled.",
             "date": "2026-11-25",
             "result": "The official Chinese text on the NPC page was read; the English reproduction on Digital Watch was consulted; neither is stored, and no deposited or certified copy was acquired. The article citations rest on the NPC text."
+          },
+          {
+            "check": "Full text acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "18 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from official Chinese and Indonesian government sources. The official Chinese text published by the NPC was read for the article analysis; the English reproduction was used as a cross-check. No deposited or certified copy was acquired. China is the depositary under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the number of deposited instruments remain unknown and are recorded as such rather than inferred. China's domestic approval is recorded separately from international consent. The treaty provides for a Council, a Secretariat and financing in Articles 5–8, but no evidence was located that these organs have been constituted or are operating."
+        "notes": "The official Chinese HTML was acquired and segmented into 18 article units. The record remains metadata_verified; no deposited or certified copy was acquired."
       }
     }
   ],

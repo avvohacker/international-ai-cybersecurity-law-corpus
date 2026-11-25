@@ -11,10 +11,10 @@
     "cyber"
   ],
   "gaps": [
-    "No full text, citable units or original file is stored in this record; it is metadata-only.",
     "Reservation, declaration and communication texts are reproduced from the official page; their legal effect and any overlap are not assessed.",
     "National implementation and the Protocol's supervisory practice are not assessed.",
-    "No AI-specific provision is asserted. The record is cyber-domain only."
+    "No AI-specific provision is asserted. The record is cyber-domain only.",
+    "The stored copy is an Internet Archive snapshot of the official CoE PDF; the live rm.coe.int URL returned HTTP 403 to automated clients on 25 November 2026."
   ],
   "id": "coe-ets-189",
   "instrument_type": "protocol",
@@ -35,7 +35,7 @@
       "en",
       "fr"
     ],
-    "note": "The Treaty Office publishes the English and French official texts; both are authentic."
+    "note": "The official English text is stored from an Internet Archive snapshot of the official CoE PDF; the live URL returned 403. Other authentic-language versions were not acquired."
   },
   "legal_nature": {
     "qualification": "treaty",
@@ -503,7 +503,7 @@
     ]
   },
   "rights": {
-    "note": "Official Council of Europe text. Reuse remains subject to the Council of Europe terms; this corpus stores metadata and links, not the text.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text",
     "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=189"
   },
@@ -537,6 +537,17 @@
       "note": "Reservations and declarations for Treaty 189, status as of 24/11/2026. 16 States are listed: 21 reservations, 11 declarations and one communication. The full text of every item is reproduced in parties.reservations, parties.declarations and, where applicable, parties.notifications; country, article references and any period shown on the page are retained.",
       "publisher": "Council of Europe Treaty Office",
       "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=189&codeNature=0"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-wayback-official",
+      "kind": "official_primary",
+      "language": "en",
+      "local_path": "source/ets-189-en-2003.pdf",
+      "note": "Archived official ETS 189 English PDF stored and segmented.",
+      "sha256": "9e7ce3fc8aaf78ea94c30791d229cd92db411ec0fd144e3111b5ffd9cea031b3",
+      "url": "https://web.archive.org/web/2024/https://rm.coe.int/168008160f"
     }
   ],
   "status": "in_force",
@@ -567,9 +578,22 @@
         "check": "Reservations and declarations page for Treaty 189, status 24 November 2026, read and transformed into record fields",
         "date": "2026-11-24",
         "result": "confirmed: 16 States, 21 reservations, 11 declarations and 1 communication; reservation and declaration texts kept in separate arrays"
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "16 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata-level record. Party data, reservations and declarations are itemised from the official Treaty Office pages; the treaty text is not stored, and the legal effect of each item is not assessed."
+    "notes": "The archived official CoE English PDF was acquired and segmented into 16 article units. The record remains metadata_verified."
+  },
+  "text": {
+    "extraction_note": "Official Council of Europe English PDF retrieved from the Internet Archive snapshot of rm.coe.int/168008160f (6 pages) and segmented into 16 article units. The live rm.coe.int URL returned HTTP 403 to automated clients on 25 November 2026.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
   }
 }

@@ -17,9 +17,9 @@
     "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located. Bangladesh is not the 38th member: it announced on 1 August 2026 that it would join 'initially as an observer'.",
     "Observer status is not a party status: Article 11 allows the Council to admit non-member States and intergovernmental organisations as observers. No Council admission of Bangladesh is recorded.",
     "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
-    "The official Chinese text published by the NPC was consulted online, and the English reproduction on Digital Watch was consulted before it; neither is stored. No deposited or certified copy was acquired, so the record remains metadata-only. The article citations rest on the NPC text. The English reproduction is a secondary source, not an authentic text or a deposited copy.",
     "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",
-    "Articles 5–8 provide for a Council, a Secretariat and financing. No evidence was located that the Council or Secretariat has been constituted, that rules of procedure or a budget have been adopted, or that implementing instruments exist. This is an unverified point, not a finding that the organs do not exist."
+    "Articles 5–8 provide for a Council, a Secretariat and financing. No evidence was located that the Council or Secretariat has been constituted, that rules of procedure or a budget have been adopted, or that implementing instruments exist. This is an unverified point, not a finding that the organs do not exist.",
+    "No deposited or certified copy was acquired; the stored text is the official NPC Chinese publication. The English reproduction on Digital Watch was consulted but is not stored."
   ],
   "id": "waico-establishment-agreement-2026",
   "instrument_type": "treaty",
@@ -44,7 +44,7 @@
       "ru",
       "es"
     ],
-    "note": "Article 18: Arabic, Chinese, English, French, Russian and Spanish texts are equally authentic. The official Chinese text published by the National People's Congress was read for the article analysis; an English reproduction (Digital Watch) was also consulted. No deposited or certified copy was acquired and no text is stored in this corpus.",
+    "note": "The official Chinese text is stored and segmented. The Agreement is equally authentic in Arabic, Chinese, English, French, Russian and Spanish; the English reproduction on Digital Watch was consulted but is not stored.",
     "translations": []
   },
   "legal_nature": {
@@ -397,7 +397,7 @@
   },
   "rights": {
     "licence": "Chinese Government official publications; Digital Watch reproduction CC BY-NC-ND 4.0",
-    "note": "Official government pages and the MFA progress report are public official materials. The NPC official text was read online; the Digital Watch reproduction was used for reading only. No full text is stored in this corpus.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text"
   },
   "sources": [
@@ -492,14 +492,16 @@
       "url": "https://dig.watch/resource/agreement-on-the-establishment-of-the-world-artificial-intelligence-cooperation-organization"
     },
     {
-      "accessed": "2026-11-24",
+      "accessed": "2026-11-25",
       "http_status": 200,
       "id": "npc-agreement-text",
       "kind": "official_primary",
       "language": "zh",
-      "note": "Official Chinese text of the Agreement, published 18 November 2026. Articles 1-18 were read in full: legal personality and civilian-domain limitation (Articles 1 and 3), membership and observers (Articles 10-11), signature and accession (Article 14), entry into force (Article 15) and depositary and authentic texts (Article 18). The host did not complete a TLS handshake from this environment on 25 November 2026; the official page is served over HTTP.",
+      "note": "Official Chinese text of the Agreement, published 18 November 2026. Articles 1-18 were read in full: legal personality and civilian-domain limitation (Articles 1 and 3), membership and observers (Articles 10-11), signature and accession (Article 14), entry into force (Article 15) and depositary and authentic texts (Article 18). The host did not complete a TLS handshake from this environment on 25 November 2026; the official page is served over HTTP. The HTML is stored and segmented into 18 article units.",
       "publisher": "National People's Congress of the People's Republic of China",
-      "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html"
+      "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html",
+      "local_path": "source/waico-agreement-2026-zh.html",
+      "sha256": "4494d808c722cf0fb698a000e5b0765a8ca7affea7c2988a9c0b03c68af64742"
     }
   ],
   "status": "unknown",
@@ -549,9 +551,22 @@
         "check": "Reading and acquisition status reconciled.",
         "date": "2026-11-25",
         "result": "The official Chinese text on the NPC page was read; the English reproduction on Digital Watch was consulted; neither is stored, and no deposited or certified copy was acquired. The article citations rest on the NPC text."
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "18 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from official Chinese and Indonesian government sources. The official Chinese text published by the NPC was read for the article analysis; the English reproduction was used as a cross-check. No deposited or certified copy was acquired. China is the depositary under Article 18; a recheck found no public depositary register or notification. The 38th founding member and the number of deposited instruments remain unknown and are recorded as such rather than inferred. China's domestic approval is recorded separately from international consent. The treaty provides for a Council, a Secretariat and financing in Articles 5–8, but no evidence was located that these organs have been constituted or are operating."
+    "notes": "The official Chinese HTML was acquired and segmented into 18 article units. The record remains metadata_verified; no deposited or certified copy was acquired."
+  },
+  "text": {
+    "extraction_note": "Official Chinese text extracted from the NPC page and segmented into 18 article units. The English Digital Watch reproduction was consulted but is not stored or used for the text.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "zh",
+    "primary_text": "text/zh.txt",
+    "units_mode": "treaty-zh"
   }
 }

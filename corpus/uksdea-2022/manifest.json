@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 3558517,
+      "media_type": "application/pdf",
+      "note": "Official UK Treaty Series No. 22 (2023) English text of the UK-Singapore Digital Economy Agreement, 49 pages.",
+      "path": "source/uksdea-2022-en.pdf",
+      "role": "original",
+      "sha256": "494bcacbdf8ecdddbe09c69edc9a86c6d31ae419f6920a86f56d2de63f99a6ea",
+      "source_url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf"
+    },
+    {
+      "bytes": 68399,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "87fb68e7e5f6f1f94a1739c9022a2d192a200b0e73a6e273462b9460ea2df265"
+    },
+    {
+      "bytes": 4042,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "9a5e8c503d173e5188215c20a09bc35d4e5110d4aa71b6d56064af4c86b497f0"
+    },
+    {
+      "bytes": 73440,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "ea4ee7ddd9823225385c15aba817b093ddf08778a6a3b47697842f622b70dc5b"
+    }
+  ],
+  "instrument_id": "uksdea-2022",
+  "primary_text": "text/en.txt"
+}

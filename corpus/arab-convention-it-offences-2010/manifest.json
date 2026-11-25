@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 764323,
+      "media_type": "application/pdf",
+      "note": "Archived official Arabic text of the Arab Convention on Combating Information Technology Offences, from the League of Arab States legal network (Internet Archive snapshot 23 April 2024).",
+      "path": "source/arab-convention-2010-ar-archive.pdf",
+      "role": "original",
+      "sha256": "77165b067ccdfd83563231bf43ab158d28f1db441387adbc708d48776eb9814f",
+      "source_url": "https://web.archive.org/web/20240423123401/https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "bytes": 230874,
+      "media_type": "application/pdf",
+      "note": "English reproduction of the Arab Convention published by AsianLaws. It is a working translation/reproduction, not an official League of Arab States English text; the official Arabic PDF is stored alongside it.",
+      "path": "source/arab-convention-2010-en-reproduction.pdf",
+      "role": "original",
+      "sha256": "5f973018298280fc9fee8a2f058cf78d18527518922628dfc25eaf1929b4e5ea",
+      "source_url": "https://www.asianlaws.org/gcld/cyberlawdb/GCC/Arab%20Convention%20on%20Combating%20Information%20Technology%20Offences.pdf"
+    },
+    {
+      "bytes": 44958,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "b7a94e53092209f631e273546e28d5cacb68b2d7e160ca5a1af060b7b9ac416c"
+    },
+    {
+      "bytes": 2402,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "a376d5d57f8d388850bc02cf43d0284d7fa1710b24d866470d57daff4946c947"
+    },
+    {
+      "bytes": 54026,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "06615acc2998ae7c25a57b877fb0a4c8d870daa809a30f58948adefbfab917b2"
+    }
+  ],
+  "instrument_id": "arab-convention-it-offences-2010",
+  "primary_text": "text/en.txt"
+}

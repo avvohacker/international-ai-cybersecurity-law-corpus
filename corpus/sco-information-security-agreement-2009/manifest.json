@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 336493,
+      "media_type": "application/pdf",
+      "note": "Official English PDF of the 2009 SCO Agreement on Cooperation in Ensuring International Information Security, 13 pages.",
+      "path": "source/sco-2009-en.pdf",
+      "role": "original",
+      "sha256": "523da084c32baf3d96e72447a6e923d1d33034d3e6d7bb164d6aedd3e2810536",
+      "source_url": "https://eng.sectsco.org/files/207508/207508"
+    },
+    {
+      "bytes": 21650,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "7e600c935b540f32b1d49f57c34545501abeb3991183a06ba3eb50a0f974b1d0"
+    },
+    {
+      "bytes": 1096,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "e3b81dc8038e05bb289478256b5227d0043bf155247bbd4145894285c19ef8a7"
+    },
+    {
+      "bytes": 23282,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "ff8f9ebeeaea48a27a916a180f4af43e0980a78d2b89d971560f05ad3b0e4b78"
+    }
+  ],
+  "instrument_id": "sco-information-security-agreement-2009",
+  "primary_text": "text/en.txt"
+}

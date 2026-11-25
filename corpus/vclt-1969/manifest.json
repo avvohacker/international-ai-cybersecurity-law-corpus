@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 160283,
+      "media_type": "application/pdf",
+      "note": "Official United Nations English PDF of the Vienna Convention on the Law of Treaties, 1969, 31 pages.",
+      "path": "source/vclt-1969-en.pdf",
+      "role": "original",
+      "sha256": "f01906ba0581d7329f685d49656e9a7cb3c5d0a8790219e1600c1edb30893d08",
+      "source_url": "https://legal.un.org/ilc/texts/instruments/english/conventions/1_1_1969.pdf"
+    },
+    {
+      "bytes": 61698,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "8bc1655c103905c45912345dcb8bfcdebb4fb385ea1b67a25c4eda4850b8478f"
+    },
+    {
+      "bytes": 2568,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "92a37191589871cc2c1919c9ff00fb94428b3f120d0e9cd642e6151a76934625"
+    },
+    {
+      "bytes": 76630,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "4c6e5de0bd444b7fd1f7ee5432a64bb482375c254a1940328d0987db4590c336"
+    }
+  ],
+  "instrument_id": "vclt-1969",
+  "primary_text": "text/en.txt"
+}

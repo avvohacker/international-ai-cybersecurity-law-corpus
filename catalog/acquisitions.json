@@ -1,6 +1,76 @@
 [
   {
     "accessed": "2026-11-25",
+    "bytes": 591463,
+    "dest": "source/afcfta-digital-trade-annexes-2025-en.pdf",
+    "instrument_id": "afcfta-digital-trade-protocol-2024",
+    "media_type": "application/pdf",
+    "note": "Official compiled annexes to the AfCFTA Digital Trade Protocol, adopted by the 38th Ordinary Session of the Assembly in February 2025, 52 pages. Includes the Annex on Emerging and Advanced Technologies.",
+    "sha256": "f5cc8c9e1539cf17fc37e1d651085c88d7f839827852752c4253afd9b7bc064a",
+    "url": "https://au.int/sites/default/files/treaties/44963-ax-ENG_Circulation_Digital_Trade_Compiled_Certified_Legal_Instruments_38thAssembly_Feb_2025_27_May2025.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 323795,
+    "dest": "source/afcfta-digital-trade-protocol-2025-en.pdf",
+    "instrument_id": "afcfta-digital-trade-protocol-2024",
+    "media_type": "application/pdf",
+    "note": "Official English text of the Protocol to the AfCFTA Agreement on Digital Trade, 24 pages. Main Protocol only; the separately adopted annexes are stored as a compiled PDF.",
+    "sha256": "56532469cbe6223415d1449e73a75064f160e79ea83ee030d95b1a5d3bd4eab4",
+    "url": "https://au.int/sites/default/files/treaties/44963-treaty-EN_-_Protocol_to_AfCFTA_Agreement_on_Digital_Trade.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 130738,
+    "dest": "source/afcfta-emerging-tech-annex-2025-en.pdf",
+    "instrument_id": "afcfta-digital-trade-protocol-2024",
+    "media_type": "application/pdf",
+    "note": "Pages 25-30 of the official compiled annexes: Annex on Emerging and Advanced Technologies. Extracted as a separate PDF for text and unit anchors; the complete compiled annexes are stored separately.",
+    "sha256": "1e969f2b09d43e8616cd901abe6075fe7cc3dc6c0038f658e08845225996b7dd",
+    "url": "https://au.int/sites/default/files/treaties/44963-ax-ENG_Circulation_Digital_Trade_Compiled_Certified_Legal_Instruments_38thAssembly_Feb_2025_27_May2025.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 764323,
+    "dest": "source/arab-convention-2010-ar-archive.pdf",
+    "instrument_id": "arab-convention-it-offences-2010",
+    "media_type": "application/pdf",
+    "note": "Archived official Arabic text of the Arab Convention on Combating Information Technology Offences, from the League of Arab States legal network (Internet Archive snapshot 23 April 2024).",
+    "sha256": "77165b067ccdfd83563231bf43ab158d28f1db441387adbc708d48776eb9814f",
+    "url": "https://web.archive.org/web/20240423123401/https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 230874,
+    "dest": "source/arab-convention-2010-en-reproduction.pdf",
+    "instrument_id": "arab-convention-it-offences-2010",
+    "media_type": "application/pdf",
+    "note": "English reproduction of the Arab Convention published by AsianLaws. It is a working translation/reproduction, not an official League of Arab States English text; the official Arabic PDF is stored alongside it.",
+    "sha256": "5f973018298280fc9fee8a2f058cf78d18527518922628dfc25eaf1929b4e5ea",
+    "url": "https://www.asianlaws.org/gcld/cyberlawdb/GCC/Arab%20Convention%20on%20Combating%20Information%20Technology%20Offences.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 13794400,
+    "dest": "source/au-malabo-convention-2014-en-scanned.pdf",
+    "instrument_id": "au-malabo-convention-2014",
+    "media_type": "application/pdf",
+    "note": "Official English PDF of the African Union Convention on Cyber Security and Personal Data Protection. The PDF is image-only (no text layer); the scanned official copy is authoritative.",
+    "sha256": "4564c7ee68658754590953f653b6aa43582d63fdd16f8614ecd0b4cf89c96485",
+    "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 324591,
+    "dest": "source/au-malabo-convention-2014-en-senlii-transcription.pdf",
+    "instrument_id": "au-malabo-convention-2014",
+    "media_type": "application/pdf",
+    "note": "English transcription of the Malabo Convention from the AfricanLII network (SenLII), generated 11 June 2026. Used for the searchable text because the official PDF has no text layer; it is a legal-database transcription, not an official translation.",
+    "sha256": "5ec5fbe9c40842231266b3d10065b5dd97910062f46f69d1efdb70ba15d2c07e",
+    "url": "https://senlii.org/en/akn/aa-au/act/convention/2014/cyber-security-and-personal-data-protection/eng@2014-06-27/source.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
     "bytes": 221350,
     "dest": "source/brics-ggai-declaration-2025-07-06-en.pdf",
     "instrument_id": "brics-ai-statement-2025",
@@ -8,6 +78,16 @@
     "note": "Archived copy (Internet Archive, snapshot 18 April 2026) of the official BRICS 2025 Presidency PDF of the Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The live brics.br host did not resolve by DNS from this environment.",
     "sha256": "dd1e37fd8300d86c68f06531121c1e9eaaf9784570b18eca38b087676b3dde40",
     "url": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 211660,
+    "dest": "source/budapest-convention-2001-en.pdf",
+    "instrument_id": "budapest-convention-2001",
+    "media_type": "application/pdf",
+    "note": "Official Council of Europe English text of the Budapest Convention (ETS 185), 22 pages.",
+    "sha256": "d5d38a49519121a3cc9a37a623f3047f4cefb25423494cee6780ad75eeeef0af",
+    "url": "https://rm.coe.int/1680081561"
   },
   {
     "accessed": "2026-11-23",
@@ -21,6 +101,16 @@
   },
   {
     "accessed": "2026-11-25",
+    "bytes": 108805,
+    "dest": "source/cis-2018-agreement-ru.html",
+    "instrument_id": "cis-it-crimes-agreement-2018",
+    "media_type": "text/html; charset=utf-8",
+    "note": "Official Russian text of the 2018 CIS Agreement on cooperation in combating information-technology crimes, from the CIS Executive Committee. The English translation on the same page is machine-generated and paywalled, so it is not used.",
+    "sha256": "820190e7415c9370c7970c95c75d06b092360d9b043098fc3816cea471bb1818",
+    "url": "https://eccis.org/document/5864"
+  },
+  {
+    "accessed": "2026-11-25",
     "bytes": 210874,
     "dest": "source/cis-minsk-agreement-2001-en-translation.pdf",
     "instrument_id": "cis-minsk-agreement-2001",
@@ -28,6 +118,16 @@
     "note": "Archived copy (Internet Archive, snapshot 20 March 2022) of the English translation of the 2001 CIS Minsk Agreement reproduced by the Prosecutor General's Office of Azerbaijan. The live host fails TLS certificate verification from this environment.",
     "sha256": "ed2c2e7254b2d1625be92d01896c375f85fc3890d7f9a510b4c932a6eba6193a",
     "url": "https://web.archive.org/web/20220320005205/https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 423734,
+    "dest": "source/cets-224-en-2022.pdf",
+    "instrument_id": "coe-cets-224",
+    "media_type": "application/pdf",
+    "note": "Archived official Council of Europe English PDF of the Second Additional Protocol to the Budapest Convention (CETS 224), 21 pages. The live rm.coe.int URL returned HTTP 403 to automated clients on 25 November 2026.",
+    "sha256": "73e4b4dd158bb393ecfb6aa0b265f3ada51ee8ab85969d56841314336095ebed",
+    "url": "https://web.archive.org/web/20220516075219/https://rm.coe.int/1680a49dab"
   },
   {
     "accessed": "2026-11-25",
@@ -60,6 +160,16 @@
     "url": "https://web.archive.org/web/20261117082757/https://rm.coe.int/1680afae67"
   },
   {
+    "accessed": "2026-11-25",
+    "bytes": 133533,
+    "dest": "source/ets-189-en-2003.pdf",
+    "instrument_id": "coe-ets-189",
+    "media_type": "application/pdf",
+    "note": "Archived official Council of Europe English PDF of the Additional Protocol to the Budapest Convention on racist and xenophobic acts (ETS 189), 6 pages. The live rm.coe.int URL returned HTTP 403 to automated clients on 25 November 2026.",
+    "sha256": "9e7ce3fc8aaf78ea94c30791d229cd92db411ec0fd144e3111b5ffd9cea031b3",
+    "url": "https://web.archive.org/web/2024/https://rm.coe.int/168008160f"
+  },
+  {
     "accessed": "2026-11-23",
     "bytes": 680817,
     "dest": "source/DEPA-signing-text-2020-06-11-en.pdf",
@@ -70,6 +180,16 @@
     "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/support/DEPA/depa_all_eng.pdf"
   },
   {
+    "accessed": "2026-11-25",
+    "bytes": 5349889,
+    "dest": "source/ecowas-cybercrime-directive-2011-en.pdf",
+    "instrument_id": "ecowas-cybercrime-directive-2011",
+    "media_type": "application/pdf",
+    "note": "Official signed English PDF of ECOWAS Directive C/DIR.1/08/11 on Fighting Cyber Crime. The PDF is image-only; the searchable text is OCR produced from this official scan.",
+    "sha256": "8c789adfcddea821450c92ff850d185bb871e33abcb3d3f6e070e96024f4d3fa",
+    "url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf"
+  },
+  {
     "accessed": "2026-11-23",
     "bytes": 281151,
     "dest": "source/HAIP-Code-of-Conduct-2023-10-30-en.pdf",
@@ -78,6 +198,26 @@
     "note": "Hiroshima Process International Code of Conduct, official Japanese MIC publication.",
     "sha256": "14cfe36633502daa48231b49ca7f186c53a72add181b328047665763ecb13ac4",
     "url": "https://www.soumu.go.jp/hiroshimaaiprocess/pdf/document05_en.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 253947,
+    "dest": "source/iccpr-1966-en.pdf",
+    "instrument_id": "iccpr-1966",
+    "media_type": "application/pdf",
+    "note": "Official OHCHR English PDF of the International Covenant on Civil and Political Rights, 26 pages.",
+    "sha256": "c63fbe7781e8ecd7cdaf50344199995841037911f3cef8a0964c4b4c8909a6a2",
+    "url": "https://www.ohchr.org/sites/default/files/ccpr.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 267482,
+    "dest": "source/ksdpa-2022-en.pdf",
+    "instrument_id": "ksdpa-2022",
+    "media_type": "application/pdf",
+    "note": "English text of the Korea-Singapore Digital Partnership Agreement, reproduced by the Republic of Korea Ministry of Trade, Industry and Energy.",
+    "sha256": "c1183848e119b7ad2f0362879813090685a6076c045f00d3105ab20289dc0717",
+    "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/ksdpa/1/KSDPA_eng.pdf"
   },
   {
     "accessed": "2026-11-23",
@@ -118,6 +258,46 @@
     "note": "Australia-Singapore Digital Economy Agreement, text reproduced on the Singapore Government Isomer platform.",
     "sha256": "ee973daac741a0f3e4016d5d97883f539f937d41a646ef2301104521a5312183",
     "url": "https://isomer-user-content.by.gov.sg/1004/769c26eb-17cf-4e2d-962b-1277a22df9db/australia-singapore-digital-economy-agreement%20-%20Jun%2023.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 336493,
+    "dest": "source/sco-2009-en.pdf",
+    "instrument_id": "sco-information-security-agreement-2009",
+    "media_type": "application/pdf",
+    "note": "Official English PDF of the 2009 SCO Agreement on Cooperation in Ensuring International Information Security, 13 pages.",
+    "sha256": "523da084c32baf3d96e72447a6e923d1d33034d3e6d7bb164d6aedd3e2810536",
+    "url": "https://eng.sectsco.org/files/207508/207508"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 3558517,
+    "dest": "source/uksdea-2022-en.pdf",
+    "instrument_id": "uksdea-2022",
+    "media_type": "application/pdf",
+    "note": "Official UK Treaty Series No. 22 (2023) English text of the UK-Singapore Digital Economy Agreement, 49 pages.",
+    "sha256": "494bcacbdf8ecdddbe09c69edc9a86c6d31ae419f6920a86f56d2de63f99a6ea",
+    "url": "https://assets.publishing.service.gov.uk/media/64c14f401e10bf000e17cfa9/TS_22.2023_UK_Singapore_Digital_Economy_Agreement.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 4062022,
+    "dest": "source/un-cybercrime-convention-2024-en-certified.pdf",
+    "instrument_id": "un-cybercrime-convention-2024",
+    "media_type": "application/pdf",
+    "note": "Certified true copy of the United Nations Convention against Cybercrime (XVIII-16), 388 pages, containing the six authentic language versions.",
+    "sha256": "4f12e3b5ac499a630932915cf5be2c748b70fd7f9335dfaf40ee488983f1e8c0",
+    "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 491355,
+    "dest": "source/un-cybercrime-convention-2024-en-extract.pdf",
+    "instrument_id": "un-cybercrime-convention-2024",
+    "media_type": "application/pdf",
+    "note": "English extract of the certified copy: pages 59-118 of the 388-page multilingual PDF, containing the complete English text (Articles 1-68). Extracted as a separate PDF for text and page anchors.",
+    "sha256": "9f2728e55cfe0f7b2bd6e823f72340c32213070e408c02445277c6299a9017b1",
+    "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf"
   },
   {
     "accessed": "2026-11-23",
@@ -218,5 +398,25 @@
     "note": "Archived copy (Internet Archive, snapshot 29 October 2026) of the English PDF of the UNESCO Recommendation on the Ethics of Artificial Intelligence, adopted on 23 November 2021 (SHS/BIO/PI/2021/1, 43 pages). The live UNESDOC PDF endpoint returned HTTP 403 to automated clients.",
     "sha256": "314c0e72f1dad6d8fb1702e7c89d8f722a9a5e6f99006491db70dcf102233688",
     "url": "https://web.archive.org/web/20261029235825/https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_75c9fb6b-92a6-4982-b772-79f540c9fc39?_=381137eng.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 160283,
+    "dest": "source/vclt-1969-en.pdf",
+    "instrument_id": "vclt-1969",
+    "media_type": "application/pdf",
+    "note": "Official United Nations English PDF of the Vienna Convention on the Law of Treaties, 1969, 31 pages.",
+    "sha256": "f01906ba0581d7329f685d49656e9a7cb3c5d0a8790219e1600c1edb30893d08",
+    "url": "https://legal.un.org/ilc/texts/instruments/english/conventions/1_1_1969.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 21089,
+    "dest": "source/waico-agreement-2026-zh.html",
+    "instrument_id": "waico-establishment-agreement-2026",
+    "media_type": "text/html; charset=utf-8",
+    "note": "Official Chinese text of the Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization, published by the National People's Congress on 18 November 2026. The page is served over HTTP; HTTPS did not complete a TLS handshake from this environment.",
+    "sha256": "4494d808c722cf0fb698a000e5b0765a8ca7affea7c2988a9c0b03c68af64742",
+    "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html"
   }
 ]

@@ -1,0 +1,125 @@
+{
+  "pages": [
+    {
+      "char_end": 96,
+      "char_start": 0,
+      "page": 1
+    },
+    {
+      "char_end": 2609,
+      "char_start": 97,
+      "page": 2
+    },
+    {
+      "char_end": 4693,
+      "char_start": 2610,
+      "page": 3
+    },
+    {
+      "char_end": 7109,
+      "char_start": 4694,
+      "page": 4
+    },
+    {
+      "char_end": 8966,
+      "char_start": 7110,
+      "page": 5
+    },
+    {
+      "char_end": 11275,
+      "char_start": 8967,
+      "page": 6
+    },
+    {
+      "char_end": 13322,
+      "char_start": 11276,
+      "page": 7
+    },
+    {
+      "char_end": 15614,
+      "char_start": 13323,
+      "page": 8
+    },
+    {
+      "char_end": 17953,
+      "char_start": 15615,
+      "page": 9
+    },
+    {
+      "char_end": 20132,
+      "char_start": 17954,
+      "page": 10
+    },
+    {
+      "char_end": 22515,
+      "char_start": 20133,
+      "page": 11
+    },
+    {
+      "char_end": 24897,
+      "char_start": 22516,
+      "page": 12
+    },
+    {
+      "char_end": 27399,
+      "char_start": 24898,
+      "page": 13
+    },
+    {
+      "char_end": 29761,
+      "char_start": 27400,
+      "page": 14
+    },
+    {
+      "char_end": 31611,
+      "char_start": 29762,
+      "page": 15
+    },
+    {
+      "char_end": 33381,
+      "char_start": 31612,
+      "page": 16
+    },
+    {
+      "char_end": 34992,
+      "char_start": 33382,
+      "page": 17
+    },
+    {
+      "char_end": 36517,
+      "char_start": 34993,
+      "page": 18
+    },
+    {
+      "char_end": 38458,
+      "char_start": 36518,
+      "page": 19
+    },
+    {
+      "char_end": 40639,
+      "char_start": 38459,
+      "page": 20
+    },
+    {
+      "char_end": 41750,
+      "char_start": 40640,
+      "page": 21
+    },
+    {
+      "char_end": 43260,
+      "char_start": 41751,
+      "page": 22
+    },
+    {
+      "char_end": 45071,
+      "char_start": 43261,
+      "page": 23
+    },
+    {
+      "char_end": 45399,
+      "char_start": 45072,
+      "page": 24
+    }
+  ],
+  "primary_text": "text/en.txt"
+}

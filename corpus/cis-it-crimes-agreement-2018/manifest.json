@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 108805,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official Russian text of the 2018 CIS Agreement on cooperation in combating information-technology crimes, from the CIS Executive Committee. The English translation on the same page is machine-generated and paywalled, so it is not used.",
+      "path": "source/cis-2018-agreement-ru.html",
+      "role": "original",
+      "sha256": "820190e7415c9370c7970c95c75d06b092360d9b043098fc3816cea471bb1818",
+      "source_url": "https://eccis.org/document/5864"
+    },
+    {
+      "bytes": 29402,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/ru.txt",
+      "role": "text",
+      "sha256": "dc04612f0b60c5e6e67291a0a0a11fb67396554ae453cede21bad59a9844b7de"
+    },
+    {
+      "bytes": 336,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "115a77fe43c0bacd6589c2286b2e7d8bbc4509d79a081ef58f89781057d0d284"
+    },
+    {
+      "bytes": 33123,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "32ade143a4d0d22ca5f5989d0cc830a9366672f806872c1a2f04c4a4ff5a7c32"
+    }
+  ],
+  "instrument_id": "cis-it-crimes-agreement-2018",
+  "primary_text": "text/ru.txt"
+}

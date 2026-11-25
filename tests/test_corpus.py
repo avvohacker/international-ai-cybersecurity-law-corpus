@@ -254,14 +254,44 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(articles[0]["label"], "Article 1 — Object and purpose")
         self.assertEqual(articles[-1]["label"], "Article 36 — Notification")
 
+    def test_fifteen_binding_instruments_have_text_and_units(self) -> None:
+        expected = {
+            "afcfta-digital-trade-protocol-2024": (52, "Article 52"),
+            "arab-convention-it-offences-2010": (43, "Article 43"),
+            "au-malabo-convention-2014": (38, "Article 38"),
+            "budapest-convention-2001": (48, "Article 48"),
+            "cis-it-crimes-agreement-2018": (18, "Статья 18"),
+            "coe-cets-224": (25, "Article 25"),
+            "coe-ets-189": (16, "Article 16"),
+            "ecowas-cybercrime-directive-2011": (35, "Article 35"),
+            "iccpr-1966": (53, "Article 53"),
+            "ksdpa-2022": (41, "Article 14.34"),
+            "sco-information-security-agreement-2009": (12, "Article 12"),
+            "uksdea-2022": (35, "Article 8.61-X"),
+            "un-cybercrime-convention-2024": (68, "Article 68"),
+            "vclt-1969": (85, "Article 85"),
+            "waico-establishment-agreement-2026": (18, "第十八条"),
+        }
+        for iid, (count, last_label) in expected.items():
+            inst = read_instrument(iid)
+            self.assertTrue(inst["text"]["full_text"], iid)
+            primary = ROOT / "corpus" / iid / inst["text"]["primary_text"]
+            self.assertTrue(primary.exists(), iid)
+            units = corpuslib.load_units(iid)
+            self.assertEqual(len(units), count, iid)
+            self.assertTrue(units[-1]["label"].startswith(last_label), iid)
+        annex_path = ROOT / "corpus" / "afcfta-digital-trade-protocol-2024" / "units-annex.jsonl"
+        annex = [json.loads(line) for line in annex_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+        self.assertEqual(len(annex), 19)
+
     def test_text_availability_audit_covers_every_record(self) -> None:
         import audit_texts
 
         data = audit_texts.audit()
         self.assertEqual(data["total"], 63)
         self.assertEqual(sum(data["summary"].values()), 63)
-        self.assertEqual(data["summary"]["stored"], 21)
-        self.assertEqual(data["summary"]["official_text_located"], 32)
+        self.assertEqual(data["summary"]["stored"], 36)
+        self.assertEqual(data["summary"]["official_text_located"], 17)
         self.assertEqual(data["summary"]["internal_law"], 3)
         self.assertEqual(data["summary"]["paywalled"], 5)
         self.assertEqual(data["summary"]["summary_only"], 2)
@@ -485,7 +515,10 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(inst["binding_status"], "binding")
         self.assertEqual(inst["status"], "unknown")
         self.assertEqual(inst["verification"]["level"], "metadata_verified")
-        self.assertNotIn("text", inst)
+        self.assertTrue(inst["text"]["full_text"])
+        self.assertEqual(inst["text"]["primary_language"], "zh")
+        self.assertEqual(inst["text"]["units_mode"], "treaty-zh")
+        self.assertEqual(len(corpuslib.load_units("waico-establishment-agreement-2026")), 18)
         parties = inst["parties"]
         self.assertEqual(parties["counts"]["signatures"]["total"], 38)
         self.assertEqual(parties["counts"]["signatures"]["verified"], 37)
@@ -1632,7 +1665,7 @@ class TestBuild(unittest.TestCase):
         source_ids = {source["id"] for source in record["sources"]}
         self.assertIn("au-status-list", source_ids)
         self.assertIn("2 February 2026", record["status_note"])
-        self.assertIn("24", record["gaps"][4])
+        self.assertIn("24", " ".join(record["gaps"]))
         self.assertIn("unknown", record["parties"]["unknowns"][2])
 
     def test_site_numeric_claims_match_records(self) -> None:
@@ -1796,7 +1829,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 168)
+        self.assertEqual(len(targets), 183)
         self.assertEqual(len({target.instrument_id for target in targets}), 63)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)

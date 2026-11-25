@@ -15,7 +15,8 @@
     "Not AI-specific.",
     "Party list, reservations and declarations are not captured in structured form.",
     "The Convention's application to treaties concluded by international organisations is governed by the 1986 Vienna Convention, not analysed here.",
-    "No analysis of specific interpretive disputes."
+    "No analysis of specific interpretive disputes.",
+    "Only the English text is stored; the other authentic-language versions were not acquired."
   ],
   "id": "vclt-1969",
   "instrument_type": "treaty",
@@ -34,7 +35,7 @@
       "ru",
       "es"
     ],
-    "note": "Article 85: Chinese, English, French, Russian and Spanish texts equally authentic.",
+    "note": "The official English text is stored and segmented. The other authentic-language versions were not acquired.",
     "translations": []
   },
   "parties": {
@@ -101,7 +102,7 @@
   },
   "rights": {
     "licence": "United Nations terms",
-    "note": "Official UN treaty text; UN terms apply. Metadata only in this corpus.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text",
     "url": "https://www.un.org/en/about-us/terms-of-use"
   },
@@ -114,6 +115,17 @@
       "note": "Official UN Treaty Collection record, status as at 2 November 2026; read on 23 November 2026.",
       "publisher": "United Nations Treaty Collection",
       "url": "https://treaties.un.org/Pages/ViewDetailsIII.aspx?src=TREATY&mtdsg_no=XXIII-1&chapter=23&Temp=mtdsg3&clang=_en"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-official",
+      "kind": "official_primary",
+      "language": "en",
+      "local_path": "source/vclt-1969-en.pdf",
+      "note": "Official UN English PDF stored and segmented.",
+      "sha256": "f01906ba0581d7329f685d49656e9a7cb3c5d0a8790219e1600c1edb30893d08",
+      "url": "https://legal.un.org/ilc/texts/instruments/english/conventions/1_1_1969.pdf"
     }
   ],
   "status": "in_force",
@@ -128,9 +140,22 @@
         "check": "Official UN Treaty Collection page read for adoption, opening for signature, entry into force and status.",
         "date": "2026-11-23",
         "result": "Adopted 22 May 1969; opened for signature 23 May 1969; entered into force 27 January 1980; status at 2 November 2026: 45 signatories and 119 parties."
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "85 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Included as a general-treaty selection because it supplies the interpretive framework for AI treaties. Not an AI-specific instrument. Party-by-party reservations remain uncaptured."
+    "notes": "The official UN English PDF was acquired and segmented into 85 article units. The record remains metadata_verified."
+  },
+  "text": {
+    "extraction_note": "Official United Nations English PDF (31 pages) extracted with pypdf and segmented into 85 article units.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
   }
 }

@@ -15,9 +15,9 @@
     "The SCO Secretariat does not publish a current party-by-party table for the Agreement; the six original signatories are known, but accessions by later SCO member States are not verified.",
     "The UNODC factsheet gives 16 June 2009 as the entry-into-force date, while the treaty text requires four notifications and the treaty-series record gives 2 June 2011; the discrepancy is recorded rather than smoothed over.",
     "The official English text is a translation; the authentic text is in Russian and Chinese.",
-    "No full text, citable units or original file is stored in this record.",
     "National implementation, reservations and the Agreement's relationship with later SCO instruments are not assessed.",
-    "The Agreement creates no AI-specific obligation."
+    "The Agreement creates no AI-specific obligation.",
+    "Only the official English text is stored; the Russian and Chinese texts were not acquired."
   ],
   "id": "sco-information-security-agreement-2009",
   "instrument_type": "agreement",
@@ -38,7 +38,7 @@
       "ru",
       "zh"
     ],
-    "note": "Article 10 makes Russian and Chinese the working languages. The SCO publishes an English translation; it is not an authentic text.",
+    "note": "The official English text is stored and segmented. The Russian and Chinese texts were not acquired.",
     "translations": [
       "en"
     ]
@@ -133,7 +133,7 @@
   },
   "rights": {
     "licence": "SCO official text terms",
-    "note": "Official SCO publication of the Agreement; reproduction is subject to the Organization's terms. No full text is stored in this corpus.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text",
     "url": "https://eng.sectsco.org/"
   },
@@ -177,6 +177,17 @@
       "note": "Hong Kong Treaty Series entry: adopted 16 June 2009, entry into force 2 June 2011, with the Agreement text.",
       "publisher": "Hong Kong Legal Information Institute",
       "url": "https://hklii.hk/en/legis/hkts/2011/2"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-official",
+      "kind": "official_primary",
+      "language": "en",
+      "local_path": "source/sco-2009-en.pdf",
+      "note": "Official English PDF stored and segmented.",
+      "sha256": "523da084c32baf3d96e72447a6e923d1d33034d3e6d7bb164d6aedd3e2810536",
+      "url": "https://eng.sectsco.org/files/207508/207508"
     }
   ],
   "status": "in_force",
@@ -202,9 +213,22 @@
         "check": "Scope checked in the text and the UNODC factsheet.",
         "date": "2026-11-24",
         "result": "Information security cooperation, including cybercrime, cyber-terrorism, critical infrastructure and confidence-building; no AI-specific provision."
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "12 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is metadata-only and is not mapped."
+    "notes": "The official English PDF was acquired and segmented into 12 article units. The record remains metadata_verified."
+  },
+  "text": {
+    "extraction_note": "Official English PDF (13 pages) extracted with pypdf and segmented into 12 article units.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
   }
 }

@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 423734,
+      "media_type": "application/pdf",
+      "note": "Archived official Council of Europe English PDF of the Second Additional Protocol to the Budapest Convention (CETS 224), 21 pages. The live rm.coe.int URL returned HTTP 403 to automated clients on 25 November 2026.",
+      "path": "source/cets-224-en-2022.pdf",
+      "role": "original",
+      "sha256": "73e4b4dd158bb393ecfb6aa0b265f3ada51ee8ab85969d56841314336095ebed",
+      "source_url": "https://web.archive.org/web/20220516075219/https://rm.coe.int/1680a49dab"
+    },
+    {
+      "bytes": 68123,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "399ca3b1e52d429148f558388e4bfbbf339cba74a473587f67fe9d7b6077a128"
+    },
+    {
+      "bytes": 1756,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "9605ff00ef0d34ff0b607befd17bc6d00c4369d9204a2c364bec387c2cab8583"
+    },
+    {
+      "bytes": 69234,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "68ee6961064b2c49d72236b53af31ef155a2fc18f500067adcc3c30b23b579a1"
+    }
+  ],
+  "instrument_id": "coe-cets-224",
+  "primary_text": "text/en.txt"
+}

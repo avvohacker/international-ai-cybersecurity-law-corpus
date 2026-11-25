@@ -15,13 +15,13 @@
     "cyber"
   ],
   "gaps": [
-    "No full text, citable units or original file is stored in this record; it is metadata-only.",
     "The Convention is not in force: Article 65(1) requires 40 instruments of ratification, acceptance, approval or accession, and three Parties had deposited by 24 November 2026.",
     "The UNTC table lists 96 signatories including the European Union; the map shows the 95 States and names the European Union outside the map frame.",
     "The declarations and reservations panel is not a machine-readable table; the 15 entries were transcribed from the page's panel and split by the source's numbered paragraphs.",
     "The UNTC page displays declaration items only for Azerbaijan, Qatar and Viet Nam; whether other signatories have made declarations that are not shown there is unknown, not zero.",
     "No AI-specific provision is asserted. The record is cyber-domain only.",
-    "National implementation and the future Conference of the States Parties are not assessed."
+    "National implementation and the future Conference of the States Parties are not assessed.",
+    "The stored English text is an extract of the certified multilingual copy; the other five authentic-language versions are stored in the certified copy but not segmented."
   ],
   "id": "un-cybercrime-convention-2024",
   "instrument_type": "treaty",
@@ -41,7 +41,7 @@
     "authentic": [
       "en"
     ],
-    "note": "The English text and the English UNTC status page were consulted. The record does not assert the complete authentic-language set.",
+    "note": "The certified copy contains six authentic-language versions. The English extract is stored and segmented; the other five versions are in the certified copy but were not segmented.",
     "source_ids": [
       "untc-status"
     ]
@@ -649,7 +649,7 @@
     ]
   },
   "rights": {
-    "note": "The Convention is an official United Nations text. The record stores metadata and links the certified true copy; it does not relicense the text.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text",
     "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en"
   },
@@ -683,6 +683,17 @@
       "note": "Declarations and Reservations panel of the official UNTC status page, read on 24 November 2026. It lists items for Azerbaijan, Qatar and Viet Nam: 11 reservation paragraphs and four declaration paragraphs. The full wording is reproduced in parties.reservations and parties.declarations.",
       "publisher": "United Nations Treaty Collection",
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XVIII-16&chapter=18&clang=_en"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-certified",
+      "kind": "official_primary",
+      "language": "en",
+      "local_path": "source/un-cybercrime-convention-2024-en-certified.pdf",
+      "note": "Certified multilingual copy stored; English pages 59-118 extracted for the text.",
+      "sha256": "4f12e3b5ac499a630932915cf5be2c748b70fd7f9335dfaf40ee488983f1e8c0",
+      "url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf"
     }
   ],
   "status": "not_in_force",
@@ -713,9 +724,22 @@
         "check": "UNTC declarations and reservations panel read and itemised",
         "date": "2026-11-24",
         "result": "confirmed: Azerbaijan, Qatar and Viet Nam; 11 reservation paragraphs and four declaration paragraphs transcribed"
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "68 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata-level record. The status, party table and declaration texts come from the official UNTC depositary page. The full treaty text is not stored, and the legal effect of the reservations and declarations is not assessed."
+    "notes": "The certified multilingual PDF and a 60-page English extract were acquired; the English text was segmented into 68 article units. The record remains metadata_verified."
+  },
+  "text": {
+    "extraction_note": "English text extracted from pages 59-118 of the 388-page certified multilingual PDF and saved as a 60-page English extract; segmented into 68 article units. Page anchors refer to the extract, not the certified copy.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
   }
 }

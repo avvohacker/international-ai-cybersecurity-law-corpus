@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 133533,
+      "media_type": "application/pdf",
+      "note": "Archived official Council of Europe English PDF of the Additional Protocol to the Budapest Convention on racist and xenophobic acts (ETS 189), 6 pages. The live rm.coe.int URL returned HTTP 403 to automated clients on 25 November 2026.",
+      "path": "source/ets-189-en-2003.pdf",
+      "role": "original",
+      "sha256": "9e7ce3fc8aaf78ea94c30791d229cd92db411ec0fd144e3111b5ffd9cea031b3",
+      "source_url": "https://web.archive.org/web/2024/https://rm.coe.int/168008160f"
+    },
+    {
+      "bytes": 16461,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "bc845c55dc11fa08694622c3e8f07792225d40dcf240e98e0e559a4c001b2fa0"
+    },
+    {
+      "bytes": 529,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "161422d204e4d4a7e1370c3d30700d437f467a3b7add4906cbe2c02e6401e683"
+    },
+    {
+      "bytes": 16668,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "a940058c669fd8a28db97203b0921e87744648dc5e5fbe5c465aa9e20f4fa085"
+    }
+  ],
+  "instrument_id": "coe-ets-189",
+  "primary_text": "text/en.txt"
+}

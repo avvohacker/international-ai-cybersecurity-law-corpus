@@ -53,14 +53,15 @@ The corpus scope is written instruments with an AI-specific object or express AI
 
 Two instruments were nearly missed in the first cycle: **A/HRC/RES/63/15** and the **2025 BRICS statement**. The first was outside the treaty/UNGA/summit discovery path then in use; the second was excluded because it has no individual signature block. Both are now in the corpus. The lesson is that **corpus scope** and **map scope** are different: the corpus asks whether there is an official AI instrument with an identifiable issuer, while a map asks whether there is a published State-level act that can be drawn. A collective statement can be in the corpus without being mapped: map scope requires a State-level act that adds information. The BRICS statement is the example: its 11-member group is already listed in the record, and a map would not add an individual act. The revised test, the source-family watchlist and the end-of-cycle omission test are in [`methodology.md`](methodology.md#10-scope-review-why-two-instruments-were-nearly-missed). The practical rule for the next cycle is: check every family, record negative results, and give every unmapped record a written reason.
 
-## 5. Counts on 24 November 2026
+## 5. Counts on 25 November 2026
 
 | Measure | Count |
 |---|---:|
 | Catalogued instruments | 63 (48 AI-domain + 15 cybersecurity-only) |
 | Instruments with binding form | 22 (18 international + 4 internal law; of the 18, 13 in force and 5 not confirmed) |
 | Non-binding instruments | 41 |
-| Stored full texts | 21 |
+| Stored full texts | 36 |
+| Stored originals | 36 records (42 files) |
 | Candidate-register entries | 37 (18 included, 9 pending, 10 excluded) |
 | Maps | 17 |
 

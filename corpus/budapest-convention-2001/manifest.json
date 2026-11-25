@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 211660,
+      "media_type": "application/pdf",
+      "note": "Official Council of Europe English text of the Budapest Convention (ETS 185), 22 pages.",
+      "path": "source/budapest-convention-2001-en.pdf",
+      "role": "original",
+      "sha256": "d5d38a49519121a3cc9a37a623f3047f4cefb25423494cee6780ad75eeeef0af",
+      "source_url": "https://rm.coe.int/1680081561"
+    },
+    {
+      "bytes": 66438,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "5951c72124fdf73c3752ebff11bff94c1b062ead65f9d1e3e821dabe90473742"
+    },
+    {
+      "bytes": 1838,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "1cc7cf27f676a51f4b94c980136785d05d3c4239e13d1f48f2a130a103d21f4b"
+    },
+    {
+      "bytes": 73376,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "bc92c5e04858b04d0d6a190cd5c4371000a72ae20cf413490dd82add52674d99"
+    }
+  ],
+  "instrument_id": "budapest-convention-2001",
+  "primary_text": "text/en.txt"
+}

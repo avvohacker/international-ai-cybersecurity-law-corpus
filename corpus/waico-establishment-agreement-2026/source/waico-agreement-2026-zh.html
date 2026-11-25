@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title> 关于成立世界人工智能合作组织的协定_中国人大网</title>
+<meta name="keywords" content=""/>
+<link type="text/css" href="../../../images/common_content.css" rel="stylesheet" />
+<link type="text/css" href="../../../images/secondlevel.css" rel="stylesheet" />
+<script src="../../../images/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- 引入video.js相关文件 -->
+        <link href="/npcVideo/video.js/video-js.min.css" rel="stylesheet">
+        <script src="/npcVideo/video.js/ie8/videojs-ie8.min.js" type="text/javascript"></script>
+        <script src="/npcVideo/video.js/video.min.js" type="text/javascript"></script>
+        <script src="/npcVideo/video.js/lang/zh-CN.js" type="text/javascript"></script>
+
+        <!-- 引入audio.js相关文件 -->
+        <script src="/npcVideo/audio.js/audio.min.js" type="text/javascript"></script>
+        <script src="/npcVideo/audio.js/audioplayer.min.js" type="text/javascript"></script>
+
+        <!-- 增加一个样式，用于初始隐藏WCM生成的播放代码，可加到网站主样式表 -->
+        <style type="text/css">
+            .video_hide {
+                display: none;
+            }
+            .audio_hide {
+                display: none;
+            }
+             .video-js {background:none!important;width: 100%!important;}
+        </style>
+
+        <script type="text/javascript">
+            //判断是否是移动设备
+            var isMobile = {
+                Android: function() {
+                    return navigator.userAgent.match(/Android/i) ? true : false;
+                },
+                BlackBerry: function() {
+                    return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+                },
+                iOS: function() {
+                    return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+                },
+                Windows: function() {
+                    return navigator.userAgent.match(/IEMobile/i) ? true : false;
+                },
+                any: function() {
+                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+                }
+            };
+
+            $(document).ready(function() {
+                //设置flash播放器的地址，如果浏览器不支持html5，会用这个flash播放器播放
+                videojs.options.flash.swf = "video.js/video-js.swf";
+
+                //遍历WCM生成的视频播放代码
+                $("embed[mediatype=video]").each(function(index, el) {
+                    //从原始标签中获取播放属性（高宽、自动播放、循环播放、显示控制条等）
+                    //loop属性通过HTML属性获取，用jquery获取有误
+                    var loop = $(this)[0].getAttribute('loop') == 1;
+                    var autoplay = $(this).attr('autostart') == 1;
+                    var controls = $(this).attr('menu') == 1;
+                    var options = {
+                        "controls": controls,
+                        "autoplay": autoplay,
+                        "loop": loop,
+                        "width": $(this).attr('width'),
+                        "height": $(this).attr('height'),
+                        "language": "zh-CN"
+                    };
+                    //生成video标签
+                    var video = $('<video>').addClass('video-js vjs-default-skin vjs-big-play-centered')
+                        .attr('id', 'videojs_' + index)
+                        .append($('<source>').attr({
+                            'type': 'video/mp4',
+                            'src': $(this).attr('src')
+                        }));
+                    //将原播放标签替换
+                    $(this).replaceWith(video);
+                    //初始化播放代码
+                    var myPlayer = videojs("videojs_" + index, options);
+                });
+
+                //遍历WCM生成的音频播放代码
+                $("embed[mediatype=audio]").each(function(index, el) {
+                    //从原始标签中获取播放属性（自动播放、循环播放）
+                    //loop属性通过HTML属性获取，用jquery获取有误
+                    var loop = $(this)[0].getAttribute('loop') == 1;
+                    var autoplay = $(this).attr('autostart') == 1;
+                    //生成audio标签
+                    var audio = $('<audio>')
+                        .attr('controls', 'controls')
+                        .attr('preload', 'auto')
+                        .attr('src', $(this).attr('src'));
+                    if (loop) audio.attr('loop', 'loop');
+                    if (autoplay) audio.attr('autoplay', 'autoplay');
+                    //将原播放标签替换
+                    $(this).replaceWith(audio);
+                    
+                });
+                //根据不同的设备（PC/移动）调用不同的显示方式
+                if (!isMobile.any()) {
+                    //$('<script>').attr('src', 'audio.js/audio.min.js').appendTo('body');
+                    var as = audiojs.createAll();
+                } else {
+                    //$('<script>').attr('src', 'audio.js/audioplayer.min.js').appendTo('body');
+                    $('<link>').attr('href', 'audio.js/audioplayer.css').attr('rel', 'stylesheet').appendTo('body');
+                    $('audio').audioPlayer();
+                }
+            });
+        </script>
+</head>
+<body>
+<a name="top1" id="top1"></a> 
+
+<div class="wrap01"><iframe id="headIfr" src="../../../c191/c12481/c12451/" width="100%" height="209" frameborder="0" scrolling="no" marginheight="0"></iframe></div>
+
+<div class="wrapper">
+<div class="content">
+<div class="article-crumbs">当前位置：<a href="../../../" title="首页" class="CurrChnlCls">首页</a></div>
+
+<div class="fl w680">
+<div class="tit"><h2></h2>
+<h1>关于成立世界人工智能合作组织的协定</h1>
+<h3></h3>
+<p></p>
+<p></p>
+</div>
+
+<div class="fontsize"> 来源： 中国人大网&nbsp;&nbsp;浏览字号： <a href="#" onclick="Zoom.style.fontSize='24px';">大</a> <a href="#" onclick="Zoom.style.fontSize='16px';">中</a> <a href="#" onclick="Zoom.style.fontSize='12px';">小</a>
+<span class="fr" id="zzrq"></span>  
+  </div>
+<script type="text/javascript">
+    $(function(){
+        var fbrq = "2026年11月18日 10:09"
+        if($('#zzrq').html() == ''){
+            $('#zzrq').html(fbrq);
+        }
+    })
+</script>
+<div id="Zoom">
+<div class=TRS_Editor><style type="text/css">
+
+.TRS_Editor P{}.TRS_Editor DIV{}.TRS_Editor TD{}.TRS_Editor TH{}.TRS_Editor SPAN{}.TRS_Editor FONT{}.TRS_Editor UL{}.TRS_Editor LI{}.TRS_Editor A{}</style>
+<div class="TRS_Editor"><style type="text/css">
+
+.TRS_Editor P{}.TRS_Editor DIV{}.TRS_Editor TD{}.TRS_Editor TH{}.TRS_Editor SPAN{}.TRS_Editor FONT{}.TRS_Editor UL{}.TRS_Editor LI{}.TRS_Editor A{}</style>
+<div>　　本协定缔约国，</div>
+<div>　　注意到人工智能技术是经济社会发展的变革性驱动力量，有利于加速落实联合国2030年可持续发展议程，攸关世界各国人民福祉；</div>
+<div>　　认识到需要提供更多国际公共产品，促进人工智能国际合作和全球治理，确保人工智能朝着有益、安全、公平方向健康有序发展，造福全人类；</div>
+<div>　　致力于落实《联合国宪章》的宗旨和原则；</div>
+<div>　　决定成立世界人工智能合作组织，并达成协议如下：</div>
+<div style="text-align: center;"><font face="黑体">第一条 建</font><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">立</span></div>
+<div>　　一、兹建立世界人工智能合作组织（以下简称“组织”）。组织为独立的政府间国际组织，被授予国际法律人格。组织具有完全法律能力，并应遵照本协定的规定运作。</div>
+<div>　　二、本协定所有缔约国为本组织的成员国。</div>
+<div style="text-align: center;"><font face="黑体">第二条 宗</font><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">旨</span></div>
+<div>　　组织的宗旨是：</div>
+<div>　　一、坚持以人为本原则，促进人工智能技术创新、发展、部署和应用，推动人工智能向善普惠发展。</div>
+<div>　　二、拓展人工智能国际合作，共同打造开放、公平、公正、非歧视的人工智能发展环境，以释放智能红利。</div>
+<div>　　三、弥合智能鸿沟，促进人工智能技术和服务的可及性。</div>
+<div>　　四、共同应对人工智能发展带来的风险、挑战及影响，发展安全、可靠、符合伦理、值得信赖的人工智能。</div>
+<div style="text-align: center;"><font face="黑体">第三条 职</font><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">能</span></div>
+<div>　　一、组织的职能是：</div>
+<div>　　（一）打造成员国间的供需对接平台；</div>
+<div>　　（二）加强人工智能能力建设国际合作；</div>
+<div>　　（三）加强人工智能发展战略、治理规则、技术标准的对接协调，开展沟通对话，建立政策共识，促进互操作性，分享最佳实践；</div>
+<div>　　（四）加强人工智能科技合作，鼓励共建开源生态；</div>
+<div>　　（五）加强人工智能全球治理，为联合国框架内的治理进程提供支持并与其加强协同；</div>
+<div>　　（六）同其他国际组织保持沟通，探讨适当的合作形式。</div>
+<div>　　二、组织职能仅限于人工智能民用领域。</div>
+<div style="text-align: center;"><font face="黑体">第四条 基本原则</font></div>
+<div>　　组织遵循《联合国宪章》宗旨和原则，尊重各国主权和文明多样性，坚持平等相待，践行多边主义，秉持共商共建共享理念，实现互利共赢。&nbsp; &nbsp; &nbsp;&nbsp;</div>
+<div style="text-align: center;"><font face="黑体">第五条 组织架构</font></div>
+<div>　　一、组织设立理事会和秘书处。</div>
+<div>　　二、组织总部设在中华人民共和国上海市。</div>
+<div>　　三、组织可根据需要设立附属机构和工作组，以履行其职能，实现其宗旨。</div>
+<div style="text-align: center;"><font face="黑体">第六条 理事会</font></div>
+<div>　　一、理事会是组织决策机构，负责制定组织总体战略和规章制度，审议批准预算决算报告、年度工作计划和年度工作报告，接纳新成员国和观察员，任命秘书长和副秘书长，设立附属机构和工作组，以及成员国提出审议的其他事项等。理事会还应行使成员国所确定的履行本协定所必需的其他权力和职能。</div>
+<div>　　二、每个成员国均为理事会成员。理事会每年召开一次全体会议。理事会主席由全体会议根据公平地域分配原则选任，任期一年。</div>
+<div>　　三、每个成员国可指定一名协调员，与其他成员国和秘书处保持必要联系，并向理事会提出建议。协调员会议根据理事会授权召开。</div>
+<div style="text-align: center;"><font face="黑体">第七条 决策程序</font></div>
+<div>　　一、理事会应通过议事规则。</div>
+<div>　　二、理事会决策应由全体会议作出，出席会议成员国数量须占成员国总数三分之二以上，尽最大可能以协商一致的方式作出决定。</div>
+<div>　　三、如竭尽一切努力仍无法达成协商一致，理事会可采取投票方式，由出席并投票的成员国三分之二多数赞成作出决定。</div>
+<div>　　四、每个成员国拥有一票。</div>
+<div>　　五、本条第三款不适用于对本协定的修正。</div>
+<div style="text-align: center;"><font face="黑体">第八条 秘书处</font></div>
+<div>　　一、秘书处是组织常设行政机构，负责执行理事会的决定，起草预算决算报告、年度工作计划和年度工作报告，并交由理事会审议批准，负责项目管理、国际协调以及理事会交办的其他事项等。秘书处的工作实行秘书长负责制。</div>
+<div>　　二、秘书处设秘书长一人，秘书长为组织行政首长，任期三年，可连任一届。秘书长须为成员国国民，经成员国提名，由理事会任命。</div>
+<div>　　三、秘书处设副秘书长两人，任期三年，可连任一届。副秘书长须为成员国国民，经秘书长推荐，由理事会任命。秘书处其他工作人员由秘书长根据组织有关规章制度任命。</div>
+<div>　　四、任命工作人员的首要考虑是确保效率、能力、操守的最高标准。任命工作人员时，应充分注意尽可能广泛的地域代表性。</div>
+<div style="text-align: center;"><font face="黑体">第九条 财</font><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">务</span></div>
+<div>　　一、与组织有关的一切财务事宜均应遵照本协定和理事会通过的财务条例或规则管理。</div>
+<div>　　二、组织通过成员国缴纳的年度会费，政府、国际组织、公司、个人和其他实体的自愿捐款，开展合作项目所获得的合法收入等方式获取经费。组织接受捐款须经理事会同意，且不得接受任何可能损害、限制、歪曲或改变其宗旨、目标或职能的捐款或援助。</div>
+<div>　　三、年度会费按照议定的分摊比额表确定。该比额表参考万国邮政联盟系统的缴款点数，并可考虑成员国的经济发展水平和支付能力。</div>
+<div style="text-align: center;"><font face="黑体">第十条 成员资格</font></div>
+<div>　　一、组织成员资格向所有国家开放。</div>
+<div>　　二、在本协定第十四条规定的开放签署期内签署本协定的缔约国为本组织创始成员国。</div>
+<div>　　三、其他国家如希加入组织，须向秘书处递交申请，并经理事会批准后，依本协定第十四条规定加入本协定。</div>
+<div style="text-align: center;"><font face="黑体">第十一条 观察员</font></div>
+<div>　　一、组织允许非成员国和政府间国际组织取得观察员地位。希成为观察员的国家或组织须向秘书处提交申请，经理事会批准同意。</div>
+<div>　　二、观察员可应理事会主席邀请参加理事会全体会议。所有费用须自理。</div>
+<div>　　三、观察员不具有投票权。</div>
+<div style="text-align: center;"><font face="黑体">第十二条 特权与豁免</font></div>
+<div>　　组织、其工作人员以及成员国代表在所有成员国境内享有为履行组织职能、实现组织宗旨所必需的特权和豁免。上述特权和豁免由另外协定加以规定。</div>
+<div style="text-align: center;"><font face="黑体">第十三条 争议解决</font></div>
+<div>　　如在解释或适用本协定时出现争议，成员国应通过协商解决。</div>
+<div style="text-align: center;"><font face="黑体">第十四条 签署和加入</font></div>
+<div>　　一、本协定于二〇二六年五月一日起开放签署至二〇二六年七月三十一日。</div>
+<div>　　二、本协定须经签署国批准、接受或核准。</div>
+<div>　　三、开放签署期满后，本协定继续开放加入。</div>
+<div style="text-align: center;"><font face="黑体">第十五条 生</font><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">效</span></div>
+<div>　　一、本协定应自第三份批准书、接受书或核准书交存之日起生效。</div>
+<div>　　二、对于在第三份批准书、接受书或核准书交存后批准、接受、核准或加入本协定的国家，本协定自该国交存有关文书之日起对其生效。</div>
+<div style="text-align: center;"><font face="黑体">第十六条 修</font><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">正</span></div>
+<div>　　一、任何成员国均可向秘书长提出对本协定的修正案，须在理事会全体会议前至少两个月提出，以便向成员国散发。秘书长应立即将所提修正案通知各成员国。</div>
+<div>　　二、对本协定提出的任何修正案应由理事会全体会议以协商一致方式审议并通过。</div>
+<div>　　三、根据第二款通过的修正案须经所有成员国批准、接受或核准，自最后一份批准书、接受书或核准书交存之日起生效。有关修正案生效后，将替代本协定原有条款。</div>
+<div style="text-align: center;"><font face="黑体">第十七条 退</font><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">出</span></div>
+<div>　　一、成员国可通过书面形式通知保存方退出本协定及组织。</div>
+<div>　　二、退出应自收到通知之日起一年后生效，除非通知指明退出生效于更晚的日期。</div>
+<div>　　三、退出不影响该成员国在退出生效前根据本协定所承担的义务。</div>
+<div style="text-align: center;"><font face="黑体">第十八条 保</font><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">&nbsp;</span><span style="font-family: 黑体;">存</span></div>
+<div>　　中华人民共和国政府为本协定的保存方，应将下列情况通知所有成员国和秘书长：协定生效日期；签署、批准、接受、核准和加入情况等。</div>
+<div>　　本协定文本以阿拉伯文、中文、英文、法文、俄文和西班牙文写成，六种文本同等作准。保存方应将经核证的副本分送其他成员国政府。</div>
+<div>&nbsp;</div>
+<div>　　下列签署人经各自政府正式授权在本协定上签字，以昭信守。</div>
+</div>
+<div id="pc-image-viewer-root" style="position: fixed; top: 0px; left: 0px; width: 0px; height: 0px; z-index: 2147483647; pointer-events: none;">&nbsp;</div></div>
+</div>
+
+<div class="editor">编       辑： 夏红真</div>
+<div class="editor">责       编： 于浩</div>
+
+<div class="share"><a class="fl back" href="../../../"><< 返回首页</a> 
+
+<div class="bdsharebuttonbox" style="width:280px;float:left;">
+<!--<a href="#" class="bds_more" data-cmd="more"></a>-->
+<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+
+
+<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+
+</div>
+
+<script type="text/javascript">
+<!--
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["qzone","tsina","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];
+-->
+</script>
+
+ <span style="display:none;"><a class="fr download" href="http://npc.unisk.cn/download.html" target="_blank"> </a></span></div>
+
+<div class="about-article">
+
+<h4>相关文章</h4>
+<ul>
+
+</ul>
+
+</div>
+<script>
+var aboutArticle=document.getElementsByClassName("about-article")[0]; 
+var aboutLi=aboutArticle.getElementsByTagName("li").length;
+if(aboutLi==''){
+	aboutArticle.getElementsByTagName("h4")[0].style.display='none'
+}
+</script>
+
+<div class="printbox"><a href="javascript:window.print()"><img src="../../../images/button_print1.gif" />  </a> <a href="javascript:window.close()"><img src="../../../images/button_close1.gif" />  </a> <a href="#top1"><img src="../../../images/button_back1.gif" border="0" /></a></div>
+</div>
+
+<div class="fr s_rw"><iframe id="rightty3" src="../../../c191/c12481/c22235/" width="272" height="900" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+</div>
+</div>
+
+<div class="wrap02"><iframe id="headIfr" src="/npc/c191/c12481/c12453/index.shtml" width="100%" height="110" frameborder="0" scrolling="no" marginheight="0"></iframe></div>
+<div style="width:-100px; height:-100px; display:none;"><a href="/ics/cpf/hlink123938"></a></div></body>
+</html>

@@ -12,7 +12,7 @@ Last updated: **2026-11-25**. This file records the current state, the open gaps
 | Binding form | 22 (18 international + 4 internal law) |
 | International in force / not confirmed | 13 / 5 |
 | Non-binding | 41 |
-| Full texts / records with originals | 21 / 21 (22 files) |
+| Full texts / records with originals | 36 / 36 (42 files) |
 | State-level maps | 17 (7 treaty-based, 10 non-binding) |
 | Candidate register | 37 (18 included, 9 pending, 10 excluded) |
 
@@ -21,7 +21,7 @@ Last updated: **2026-11-25**. This file records the current state, the open gaps
 - The **48 AI-domain** records are not 48 AI treaties. They are 2 AI-specific treaties, 5 trade agreements with AI provisions, 2 general background treaties, 5 technical standards, 2 implementation texts, 1 negotiation record, 1 EU internal-law act and 30 other non-binding texts. “AI-domain” is a domain tag, not a legal category; the catalogue's `category` field is the legal partition.
 - The **15 cyber-only** records are 9 cyber treaties, 3 internal-law acts (NIS2, the Cyber Resilience Act and the ECOWAS Directive) and 3 non-binding instruments (the Paris Call, OECD/LEGAL/0456 and the Pall Mall Code). No record carries both domains.
 - The **18 international instruments with binding form** split 9 AI and 9 cyber. The four internal-law acts are binding in their own legal orders, not in international law. Of the 18, 13 are in force and 5 are not confirmed in force: CETS 225, WAICO, the AfCFTA Protocol, CETS 224 and the UN Cybercrime Convention.
-- The **21 full texts** comprise 10 `full_text_checked` records and 11 `metadata_verified` texts; the other 42 records are metadata-only. The 21 records with an acquired original have 22 stored files; each file has a URL, access date, byte count and SHA-256 in `catalog/acquisitions.json`.
+- The **36 full texts** comprise 10 `full_text_checked` records and 26 `metadata_verified` texts; the other 27 records are metadata-only. The 36 records with an acquired original have 42 stored files; each file has a URL, access date, byte count and SHA-256 in `catalog/acquisitions.json`.
 
 ### Verified anchors
 
@@ -30,7 +30,7 @@ Last updated: **2026-11-25**. This file records the current state, the open gaps
 | CETS 225 | 21 signatures; 2 ratifications (Bosnia and Herzegovina 2026-10-28; European Union 2026-05-15); not in force. Five ratifications, including at least three Council of Europe member States, are required. 36 articles. A 12-page official reproduction and the certified bilingual copy in the corrected French version were acquired on 2026-11-25; the direct CoE endpoint still returns HTTP 403. The authentic French text is extracted and segmented into 36 article units. |
 | WAICO | 38 founding members reported by China's MFA, 37 individually identified. Deposits are unknown, not zero (0 individually verified); entry into force is unconfirmed. China's NPC approval of 2026-11-06 is a domestic authorisation, not a deposit. The official Chinese text was read; the English reproduction was consulted; no deposited or certified copy was acquired. |
 | Budapest family | Budapest Convention: 84 Parties (48 ratifications and 36 accessions), 2 signatories, 96 reservations and 280 declaration/communication/territorial entries. ETS 189: 38 Parties. CETS 224: 52 signatures and 4 ratifications, not in force. UN Cybercrime Convention: 96 signatories, 3 Parties, not in force. AU Malabo Convention: 21 signatures, 20 Parties, in force since 2023-06-08. |
-| Cyber records without current depositary tables | The Arab Convention on IT Offences, the CIS 2018 Dushanbe Agreement, the CIS 2001 Minsk Agreement and the SCO 2009 Information Security Agreement are catalogued as metadata-only. They are not mapped because a current, stable, public depositary table was not located. |
+| Cyber records without current depositary tables | The Arab Convention on IT Offences, the CIS 2018 Dushanbe Agreement, the CIS 2001 Minsk Agreement and the SCO 2009 Information Security Agreement now have stored full texts and citable units. They are not mapped because a current, stable, public depositary table was not located. |
 | Summit and political texts | Paris AI Action Summit: 65 endorsers on the page, 64 in the PDF and 60 in a contemporaneous release; the discrepancy is recorded. New Delhi: 92 endorsers (90 States, the EU and IFAD) on the PIB annex, 91 on the MEA page, which omits Colombia. BRICS: 11 member States listed by the presidency, no individual signatures, Saudi participation contested. Pax Silica: 26 signatories (25 States and the EU) as of 2026-10-23. |
 | Other non-binding lists | Paris Call for Trust and Security in Cyberspace: 82 supporters (81 States and the EU) at source-repository commit 916433b. OECD/LEGAL/0456: 39 adherents (38 OECD members and Brazil). Pall Mall Code: 27 supporting States. |
 | UN and HRC | Nine UNGA instruments, including the Pact for the Future (248 citable units across the Pact, the Global Digital Compact and the Declaration on Future Generations). A/HRC/RES/63/15 is catalogued with its follow-up panel and report still pending. The CCW GGE on LAWS is the category-6 negotiation record, with the 2026 report and the 2027–2028 mandate. |
@@ -54,14 +54,14 @@ The reading-room content is repository data, not Pages-only editorial text: it l
 
 ### Text acquisition audit (25 November 2026)
 
-`python3 tools/audit_texts.py` classifies every record by whether its full text is stored. The result is: **21 stored**, **32 with an official text located but not stored**, **3 internal-law acts** (official texts on EUR-Lex), **5 paywalled ISO/IEC standards** and **2 summary-only records** (the NATO AI strategy summary and the UK–US MOU summary). The 32 are the deliberate metadata-only layer, not an unprocessed extraction queue: they include the remaining cyber treaties, the trade agreements, the political declarations and the two background treaties. Their ids and first official source are in `build/text-availability-audit.json`. The audit is offline and is covered by `make test`.
+`python3 tools/audit_texts.py` classifies every record by whether its full text is stored. The result is: **36 stored**, **17 with an official text located but not stored**, **3 internal-law acts** (official texts on EUR-Lex), **5 paywalled ISO/IEC standards** and **2 summary-only records** (the NATO AI strategy summary and the UK–US MOU summary). The 17 are the remaining metadata-only layer: the digital trade agreements, the political declarations and the two background treaties. Their ids and first official source are in `build/text-availability-audit.json`. The audit is offline and is covered by `make test`.
 
 ### Verification infrastructure
 
 - `catalog/instruments/*.json` is the source of truth; `units.jsonl` is generated from `text/en.txt`; CETS 225 also has `units-fr.jsonl` generated from `text/fr.txt`; manifests record every stored file with a role, size and hash.
 - Page maps use inclusive `char_end`; unit anchors use half-open `char_end`. The validator checks that a unit starts inside its declared first page and that its last character (`end - 1`) is inside its declared final page. It also rejects malformed, non-contiguous or out-of-range page maps without raising.
 - Field-level provenance is retained only where a specific article, paragraph, page section, press release or named list was read; generic locators are rejected by the tests.
-- The 25 November 2026 catalog-wide link audit checked 168 official links in 63 records: 116 resolved, 46 anti-bot, 6 transient and 0 broken. `make test` never accesses the network. The WAICO NPC plain-HTTP warning remains.
+- The 25 November 2026 catalog-wide link audit checked 168 official links in 63 records: 116 resolved, 46 anti-bot, 6 transient and 0 broken. It predates the 15 acquisitions below; the 15 new official sources have not been re-audited. `make test` never accesses the network. The WAICO NPC plain-HTTP warning remains.
 - `make validate` currently reports 0 errors and 1 warning: the WAICO NPC source is served over plain HTTP because the host does not complete a TLS handshake from this environment.
 
 ## 2. Gaps
@@ -69,10 +69,10 @@ The reading-room content is repository data, not Pages-only editorial text: it l
 **Treaty status, deposits and texts**
 
 - CETS 225: three more ratifications, including at least two Council of Europe member States, are needed. The certified corrected copy adopted on 30 April 2025 is acquired; the French text is segmented into 36 article units, and the English column of the certified copy has not been re-diffed page by page. The Conference of the Parties and its rules and reporting format are not constituted.
-- WAICO: the 38th founding member is unnamed; no deposited instrument was verified; entry into force is unconfirmed. Articles 5–8 provide for a Council, a Secretariat and financing, but no evidence was located that these organs have been constituted or are operating. No deposited or certified text was acquired.
-- AfCFTA Digital Trade Protocol: the AU depositary ratification table, the entry-into-force notification and the Annex on Emerging and Advanced Technologies remain to be obtained.
+- WAICO: the 38th founding member is unnamed; no deposited instrument was verified; entry into force is unconfirmed. Articles 5–8 provide for a Council, a Secretariat and financing, but no evidence was located that these organs have been constituted or are operating. The official Chinese text is stored; no deposited or certified copy was acquired.
+- AfCFTA Digital Trade Protocol: the AU depositary ratification table and the entry-into-force notification remain unverified. The main Protocol and the Annex on Emerging and Advanced Technologies are stored and segmented; the annex schedule data are not.
 - DEPA, SADEA, UKSDEA and KSDPA: party-level ratification and accession data remain incomplete.
-- The Arab League cybercrime convention: no current dated depositary table or official update was verified. The CIS and SCO instruments remain metadata-only.
+- The Arab League cybercrime convention: no current dated depositary table or official update was verified. The CIS and SCO instruments have full texts stored but remain unmapped for the same reason.
 
 **Party lists and political texts**
 

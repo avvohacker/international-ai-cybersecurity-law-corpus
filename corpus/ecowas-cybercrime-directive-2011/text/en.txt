@@ -1,0 +1,356 @@
+ECONOMICCOMMUNITYOF
+COMMUNAUTEECONOMIQUE
+WESTAFRICANSTATES
+DESETATSDEL'AFRIQUE
+DEL'OUEST
+SIXTY-SIXTH ORDINARYSESSION
+OFTHECOUNCILOFMINISTERS
+Abuja, 17 - 19 August 2011
+DIRECTIVEC/DIR.1/08/11ONFIGHTINGCYBERCRIME
+WITHINECOWAS
+THECOUNCILOFMINISTERS,
+MINDFUL of Articles 10, 11 and 12 of the ECOWAS Treaty as
+amended, establishing the Council of Ministers and defining its
+composition and functions;
+MINDFUL of Articles 27, 32 and 33 of the said Treaty on Science and
+Technology，
+and
+on
+the
+areas
+of
+Communication
+and
+Telecommunications;
+MINDFULof Article 57of thesaid Treatyonjudicialandlegal
+cooperation,whichprovidesthatMemberStatesundertaketopromote
+judicialcooperationwithaviewtoharmonizingjudicialandlegal
+systems;
+MINDFULoftheECOWASSupplementaryActA/SA1/01/07of19
+January2007ontheharmonizationof thepoliciesandregulatory
+framework of the Information and Communication Technology sector
+(ICT);
+MINDFUL of theECOWAS Supplementary Act A/SA.1/01/10on
+PersonalDataProtectionwithinECOWAS;
+MINDFUL of the ECOWAS Supplementary Act A/SA.2/01/10 on
+ElectronicTransactionwithinECOWAS;
+
+MINDFUL of ConventionAP1/7/92of ECOWASrelating to the Mutual
+Assistance in Criminal Matters;
+MINDFUL of ConventionA/P1/94 relating to extradition;
+MINDFUL of the cooperation as regards matters of criminal policing
+between the member States of ECOWAS which provides the pooling
+of expertise and sharing of experiences by security services with a
+viewto establishing an efficient method ofpolice investigations;
+CONSIDERING that the use of information and communication
+technologies, among others, the internet or cybernetics, has
+generated an upsurge of reprehensible acts;
+NOTiNG that cyber crime is a new phenomenon that requires the
+definition of specific offences that must be substantially linked with
+conventional offences such as theft, swindling, the receipt of stolen
+goods, blackmail, and damages caused by the use of the internet;
+CONsclOus that criminal acts committed by means of internet
+require the identification of a legal regime and a suitable punishment
+because of the level of damage they generate;
+DESlROUS to adopt a framework for criminal liability in order to
+effectively fight against cyber crime and provide for efficient and
+reliable international cooperation.
+HAVINGOBTAINED THEOPINIONof theECOWAS Parliament
+dated 23 May 2009;
+PRESCRIBES:
+CHAPTER I
+GENERALPROVISIONS
+Article 1
+Definitions
+For the purposes of this Directive:
+2
+
+Electronic communicationmeans making communication available
+to the general public or a category of the public through a process of
+electronicor
+electromagnetic
+means，s
+signs, 
+signals,
+written
+documents, images, sounds or messages of any kind;
+Computer data: any representation of facts, information or concepts
+in a form suitable for processing in a computer system;
+Racism and xenophobia in relation to ICTs refer to any document,
+image or any other depiction of ideas or theories, which advocates or
+encourages hatred, discrimination or violence against a person or
+group of persons by reason of their race, colour, ancestry, affiliation or
+servesasapretextfor oneor theotherofsuchelementsorincites
+such acts;
+Minor: any person under the age of eighteen (18) as stipulated in the
+United Nations Convention on the Rights of the Child;
+Child pornography: any data of whatever nature or form, that visually
+depicts a minor engaged in a sexually explicit conduct or realistic
+images representing a minor engaged in a sexually explicit conduct;
+Computer system: any isolated or non-isolated device or group of
+interconnected devices that all or inpart carries out automatic
+processing of data pursuant to a programme.
+Information Technology and Communication (ITC): technologies
+used to gather, store, use and
+send information, including
+technologies that involve the use of computers or any communication
+system,including any telecommunication system.
+Article 2
+Objective
+The objective of this Directive is to adapt the substantive criminal law
+and thecriminalprocedureofECOWASMemberStatestoaddress
+the cybercrime phenomenon.
+Article 3
+Scope
+This Directive shall be applicable to all cyber crime-related offences
+within the ECOWAS sub-region as well as to all criminal offence
+whose detection shall require electronic evidence.
+
+CHAPTER II
+OFFENCES SPECIFICALLY RELATED TO INFORMATION AND
+COMMUNICATION TECHNOLOGIES
+For the purposes of this Directive, the following shall constitute
+offences:
+Article 4
+Fraudulent access to computer systems
+Fraudulent access to computer systems is the act by which a person
+fraudulently accesses or attempts to access the whole or part of a
+computer system.
+Article 5
+Fraudulently remaining in a computer system
+Fraudulently remaining in a computer system is the act by which a
+person fraudulently remains or attempts to remain within the whole or
+part of a computer system.
+Article 6
+Interfering with the operation of a computer system
+Interferingwiththeoperation of acomputer systemistheactbywhich
+a person impedes, alters or attempts to impede or alter the functioning
+of a computer system.
+Article 7
+Fraudulent input of data in a computer system
+Fraudulent input of data in a computer system is the act by which a
+person fraudulently inputs or attempts to input data into a computer
+system.
+Article 8
+Fraudulent interception of computer data
+fraudulently intercepts or attempts to intercept computer data during
+their non-public transmission to, from or within a computer system
+using technological means.
+
+Article 9
+Fraudulentmodificationofcomputer data
+Fraudulentmodificationofcomputerdataistheactbywhichaperson
+fraudulently damages or attempts to damage, delete or attempts to
+delete，worsenor attempting toworsen,alter or attempts toalter,
+modifyorattempttomodifycomputerdata.
+Article 10Computer data forgery
+Computerdataforgeryisthe act by whichapersonproducesor
+manufacturesasetofdigitaldatathroughfraudulentinput,deletionor
+suppression of computer data stored, processed or transmitted by a
+computer system, resulting in counterfeit data, with the intent that it be
+consideredorusedforlegitimatepurposesasifitweregenuine.
+Article 11ObtainingbenefitfromComputerrelatedfraud
+Obtaining benefit from Computer related fraud is the act of obtaining
+benefit through the input, alteration, deletion or suppression of
+functioning of a computer system.
+Article 12Fraudulentmanipulationofpersonal data
+Fraudulentmanipulationofpersonaldataistheactbywhicha
+personal data to be processed without having complied with the
+prerequisite conditions stipulated by the relevant law on personal data
+provided for in each Member State.
+Article 13Useofforgeddata
+Use of forged data is the act by which a person knowingly uses forged
+data.
+Article 14Obtaining equipment to commit anoffence
+Obtaining equipment to commit an offence is the act by which a
+person knowingly without any legitimate reason produces, sells,
+equipment, computer programmes, or any device or data, any
+
+commit any offence as stipulated in this Directive.
+Article 15Participationinan association oragreement to
+commit computeroffences
+Participation in an association or agreement to commit computer
+offences is the act by which a personparticipates in an association
+that is formed or an agreement that is established for the purpose of
+preparing or committing one or several of the offences described in
+this Directive.
+Article 16 Production of child pornography or pornographic
+representation
+distributes
+or
+transmits
+child
+pornography
+orpornographic
+representationthroughacomputersystem.
+Article 17 Import or export of child pornography or
+pornographic representation
+Import or export of child pornography or pornographic representation
+person, imports or causes to be imported, exports or
+causes to be exported, child pornography through a computer system.
+Article 18 Possession of child pornography or pornographic
+representation
+representation through a computer system or through any other
+computerdatastoragemedium.
+Article 19 Facilitation of access of minors to pornography,
+documents, sound or pornographic representation
+Facilitation
+of
+access
+of
+minors
+to
+pornography,
+documents, sound or pornographic representation is the act by which
+sounds or representation.
+
+Article 20 Possession of racist or xenophobic written documents
+or pictures through a computer system
+Possession of racist or xenophobicwrittendocuments or pictures
+through a computer system is the act by which a person creates,
+downloads, disseminates, or makes available in whatever form,
+written documents, messages, photographs, drawings or any other
+depictionsofracist andxenophobicideasand theoriesbymeansof a
+computer system.
+Article 21 Threat through a computer system
+Threat through a computer system is any threat through a computer
+system to commit a criminal offence against a person by reason of his
+affiliation to a group that is characterised by race, colour, ancestry,
+ascendants, religion, national or ethnic origin , to the extent that this
+affiliation serves as a pretext for such a threat to that person or a
+group of persons that is distinguished by one of the foregoing
+characteristics.
+Article 22 Abuse through a computer system
+Abuse through a computer system is any abuse to a person through a
+characterised by race, colour, ancestry, ascendants, religion, national
+or ethnic origin, to the extent that this affiliation serves as a pretext for
+such an abuse to the person or a group of persons that is
+distinguished by the foregoing characteristics.
+Article 23 Denying or justifying acts or crimes against
+humanity by means of a computer system
+Denying or justifying acts or crimes against humanity by means of a
+computer system is any intentional act to deny, approve or justify
+established acts of genocide or crimes against humanity by means of
+a computer system.
+
+CHAPTER III
+INCORPORATINGTRADITIONAL OFFENCES INTO
+INFORMATIONAND COMMUNICATIONTECHNOLOGY
+OFFENCES
+Article 24 Aggravating Circumstances of Common Law
+Offences
+Under thisDirective,the useof ICTs to commit common law offences
+such as theft, fraud, possession of stolen goods, breach of trust,
+extortion, terrorism, and money laundering or organised crimes shall
+Article 25 Violations of computer data, software and
+programme
+of trust, extortion, acts of terrorism, and counterfeiting
+relating to computer data, software and programme shall constitute an
+offence.
+Article 26 Media offence committed through electronic means
+of communication
+Media
+offences
+committed 
+through
+electronic
+means
+of
+communication under  this  Directive  shall be  subjected   to  the
+provisions relating to media offences which are applicable in Member
+States.
+Article 27 Liability of Corporate Bodies other than Public
+Entities
+Any corporate body, excluding the State, local authorities and public
+establishments, shall be held liable for any of the offences described
+inthisDirectivethat are committedfortheir benefit bytheir
+representatives. Such liability shall not exclude the liability of
+individuals who commit such acts or abet the commission of such
+acts.
+8
+
+CHAPTER IV
+SANCTIONS
+Article 28 Major penalties
+1) The offences stipulated under this Directive shall be punishable
+under the criminal Court of Member States.Sanctions shall be
+proportionate and dissuasive.
+2) Any corporate body found liable under this Directive shall be
+punishable by proportionate and dissuasive sentences, including
+criminal and civil penalties.
+Article 29SupplementaryPenalties
+1.
+In the event of conviction for an offence committed through an
+electronic communication medium, the relevant jurisdiction may
+decreesupplementarysanctions.
+2.
+In the event of conviction, the court may decide that materials,
+equipment, instruments, computer programmes or data, as well
+as proceeds from an offence and belonging to the convicted
+person be confiscated.
+3.
+Convictiondecisionsshall bepublished in theNational Gazette
+of MemberStatesand in anelectronicmedium at the expense of
+the convict.
+CHAPTER V:
+RULESOFPROCEDURE
+Article 30 Search or access to a computer system
+The national competent authority may carry out searches or
+effect seizures or have access to any computer system in order
+to establish the truth.
+
+2.
+However,whereseizureoftheelectronicmediumisundesirable
+thedatarequired tounderstand itshallbecopiedonacomputer
+data storage medium and sealed.
+Article 31Expedited preservation of data
+Where the exigencies of information so require, and where there is
+reason to believe that computerized data recorded in a computer
+system can be lost, the national competent authority shall order any
+individualtokeepandprotect insecret theintegrityof datainhis
+possession or under his control within a time line set by a Member
+State.
+Article 32
+Method of Proof
+Electronic evidence shall be accepted as proof to establish an offence
+providedthepersonfromwhom they emanatecanbeidentifiedand
+that they are kept in such conditions as to guarantee their integrity.
+Article 33 Judicial Cooperation
+WhereMemberStatesareinformedby anotherMemberStateof
+theallegedcommissionofanoffence
+asdefinedinthis
+Directive, such Member States shall cooperate in the search for
+and establishmentof that offence, as well as in the collection of
+evidence pertaining to theoffence.
+2.
+Suchcooperation shall be carried out inline withrelevant
+internationalinstruments andmechanisms oninternational
+cooperation in criminal matters.
+CHAPTER VIl:
+FINALPROVISIONS
+Article 34 Publication
+This Directive shall be published by the Commission in the Community
+Official Journal within thirty (30) days of the date of signature by the
+10
+
+Chairman of the Council of Ministers.It shall equallybe published by
+each Member State inits national Gazette thirty(30)days after
+notificationbytheCommission.
+Article 35Implementation
+Member States shall adopt the necessary legislative,regulatory
+and administrativemeasures in order to comply with this
+Directive not later than 1st January 2014.
+2.
+ThemeasuresreferredtoinParagraph1ofthisArticleshould
+make reference to this Directive or shall be accompanied by
+suchreferenceupontheirofficialpublication.
+3.
+ECOIAIAC
+Leuimicuiti
+PresidentoftheCommissionshallreportsuchdifficultiesatthe
+next session of the Council of Ministers which shall,in turn,take
+of this Directive.
+DONE AT ABUJA, THIS 19TH DAY OF AUGUST 2011
+H.E.OLUGBENGAASHIRU
+CHAIRMAN
+FOR COUNCIL

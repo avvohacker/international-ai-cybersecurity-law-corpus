@@ -1,0 +1,1124 @@
+PROTOCOL TO THE AGREEMENT ESTABLISHING THE
+AFRICAN CONTINENTAL FREE TRADE AREA ON
+DIGITAL TRADE
+
+1
+
+
+Preamble
+
+We, Member States of the African Union,
+
+RECALLING Decision Ext/Assembly/AU/Dec.1(X) of the Assembly of Heads of
+State and Government of the African Union (Assembly) adopted during its 10th
+Extraordinary Session held in Kigali, Rwanda, in March 2018 adopting the
+Agreement Establishing the African Continental Free Trade Area (AfCFTA
+Agreement);
+
+PURSUANT to the principles and objectives of the African Continental Free Trade
+Area (AfCFTA), and Article 8(3) of the AfCFTA Agreement, which provides for the
+conclusion of any additional instruments, deemed necessary, in furtherance of the
+objectives of the AfCFTA;
+
+RECALLING Decision Assembly/AU/4(XXXII) of the Assembly adopted during its
+33rd Ordinary Session held in Addis Ababa, Ethiopia, in February 2020 calling for
+the negotiations of e-commerce in the AfCFTA;
+
+HAVING REGARD to the aspirations of the African Union (AU) Agenda 2063 and
+the Digital Transformation Strategy for Africa (2020-2030), and digital trade related
+matters incorporated in the relevant instruments of the AU, Regional Economic
+Communities, as well as international instruments and agreements;
+
+ACKNOWLEDGING the increasing role of emerging and advanced technologies in
+fostering innovation and trade, and the need to encourage the ethical, trusted, safe,
+and responsible adoption and use of such technologies;
+
+DESIRING to harness digital technologies and innovation to boost intra-African
+trade and investment, deepen the economic integration of Africa, transform African
+societies and economies, generate sustainable and inclusive economic growth,
+stimulate job creation, reduce inequality, and eradicate poverty for the attainment
+of the continent’s socio-economic development in line with the objectives of the
+AfCFTA;
+
+DETERMINED to ensure the inclusion of all peoples and businesses, including
+micro, small and medium-sized enterprises, rural and local communities,
+indigenous peoples, women, youth, persons with disabilities and other
+underrepresented groups in digital trade;
+
+RESOLVED to establish predictable, transparent and harmonised rules as well as
+common principles and standards that enable and support digital trade;
+
+FURTHER RESOLVED to create a transparent, predictable, secure, and
+trustworthy digital trade ecosystem for businesses and consumers;
+
+RECOGNISING the different levels of development among State Parties and the
+need to provide technical assistance and capacity building to State Parties in the
+implementation of this Protocol; and
+
+2
+
+
+AFFIRMING the inherent right of State Parties to regulate within their territories and
+to safeguard public welfare, promote sustainable development, protect essential
+security interests, and pursue legitimate public policy objectives.
+
+HAVE AGREED AS FOLLOWS:
+
+
+PART I
+GENERAL PROVISIONS
+
+Article 1
+Definitions
+
+For the purpose of this Protocol:
+
+(a) “AfCFTA” means the African Continental Free Trade Area;
+
+(b) “AfCFTA Agreement” means the Agreement Establishing the AfCFTA;
+
+(c) “Computing Facilities” means computer servers and storage devices for
+processing or storing information;
+
+(d) “Digital Certificates” means electronic documents or files that are issued or
+otherwise linked to a person who is a party to an electronic communication or
+transaction for the purpose of establishing the identity of the person;
+
+(e) “Digital Identity” means a set of unique and validated digital attributes or
+credentials for identifying a natural or juridical person;
+
+(f) “Digital Payment” means a transfer by a payer of a monetary value
+acceptable to a payee made through electronic means;
+
+(g) “Digital Trade” means digitally enabled transactions of trade in goods and
+services that can either be digitally or physically delivered, and that involve
+natural and juridical persons;
+
+(h) “Digital Product” means an electronic programme, text, video, image, sound
+recording, or any other product that is digitally encoded, that is produced for
+commercial sale or distribution, and that can be transmitted electronically
+except for a digitised representation of a financial instrument, including
+money1 ;
+
+(i) “Electronic Authentication” means the process or act of verifying the identity
+of a party to an electronic communication or transaction that ensures the
+integrity of an electronic communication;
+
+(j) “Electronic Invoice” means an invoice issued, transmitted and received in a
+structured data format which allows for its automatic and electronic
+processing;
+
+
+1 This definition should not be understood to reflect a State Party’s view that digital products are a
+good or service.
+
+3
+
+
+(k) “Electronic Invoicing” means the automated creation, exchange and
+processing of requests for payments between suppliers and buyers using a
+structured digital format;
+
+(l) “Electronic Signature” means a digitally encrypted stamp of authentication
+on digital information such as an electronic message or document that
+confirms that the information originated from the signer and has not been
+altered;
+
+(m) “Electronic Trust Services” means an electronic service consisting of the
+creation, verification and validation of electronic invoices, electronic
+signatures, time stamps, certified electronic delivery, and website
+authentication certificates;
+
+(n) “Measure” means any action by a State Party, whether in the form of a law,
+regulation, rule, procedure, decision, administrative action, or practice;
+
+(o) “Open Government Information” means non-proprietary information and
+data held by or on behalf of central, regional, or local government;
+
+(p) “Person of a State Party” means a natural or juridical person of a State Party
+conducting business in the territory of another State Party that maintains
+substantial business operations in the territory of a State Party;
+
+(q) “Personal Data” means any information and data, about an identified or
+identifiable natural person by which such person can be identified, directly or
+indirectly;
+
+(r)  “Protocol” means the Protocol to the AfCFTA Agreement on Digital Trade;
+
+(s) “Secretariat” means the Secretariat of the AfCFTA, established pursuant to
+Article 13 of the AfCFTA Agreement;
+
+(t) “State Party” means a Member State that has ratified or acceded to the
+Protocol and for which the Protocol is in force;
+
+(u) “Third Party” means a State that is not a party to this Protocol;
+
+(v) “Trade Administration Documents” means forms issued or controlled by a
+State Party that must be completed by or for an importer or exporter in
+connection with the import or export of goods;
+
+(w) “Transmitted Electronically” means the transfer of digital products using
+authorised digital networks and interchange systems consisting of, but not
+limited to, mobile and computer networks; and
+
+(x) “Unsolicited Commercial Electronic Communications” means any
+electronic communication whose primary purpose is the commercial
+advertisement or promotion of a commercial good or service, sent without the
+consent of the recipient or despite the explicit refusal of the recipient.
+
+4
+
+
+Article 2
+Objectives
+
+1. The general objective of this Protocol is to support the attainment of the
+objectives of the AfCFTA, stipulated in Article 3 of the AfCFTA Agreement, by
+establishing harmonised rules and common principles and standards that
+enable and support digital trade for sustainable and inclusive socio-economic
+development and the digital transformation of the continent.
+
+2. The specific objectives of this Protocol are to:
+
+a. promote and facilitate intra-African digital trade by eliminating barriers to
+digital trade among State Parties;
+b. establish predictable and transparent harmonised rules, and common
+principles and standards for digital trade;
+c. create a transparent, predictable, secure, and trustworthy digital trade
+ecosystem for businesses and consumers;
+d. enhance cooperation among State Parties on matters related to digital
+trade;
+e. promote common and open standards to enable the interoperability of
+frameworks and systems to facilitate cross-border digital trade;
+f. encourage trusted, safe, ethical, and responsible adoption and regulation
+of the use of emerging and advanced technologies to support and
+promote digital trade;
+g. promote digital skills development, digital innovation and
+entrepreneurship, digital industrialisation, and digital infrastructure
+development to facilitate the digital transformation of State Parties; and
+h. provide a common legal framework for digital trade among State Parties.
+
+Article 3
+Scope of Application
+
+1. This Protocol shall apply to measures adopted or maintained by a State Party
+affecting digital trade.
+
+2. This Protocol does not apply to:
+
+a. government procurement; or
+b. information held or processed by or on behalf of a State Party, or
+measures related to that information, including measures related to its
+collection, except for Article 39 of this Protocol.
+
+5
+
+
+Article 4
+Right to Regulate
+
+Each State Party has the right to regulate within its territory to safeguard public
+welfare, promote sustainable development, protect essential security interests and
+pursue legitimate public policy objectives.
+
+
+PART II
+MARKET ACCESS AND TREATMENT OF DIGITAL PRODUCTS
+
+Article 5
+Annex on Rules of Origin
+
+State Parties shall adopt an Annex that sets out Rules of Origin for the
+determination of the origin for African-owned enterprises, African digital platforms
+and African content. Further, the Annex shall define the scope of digital products
+covered by the Protocol, taking into account the objective to develop an AfCFTA
+Digital Market, trade in African products, promotion of African firms and use of
+African digital platforms.
+
+Article 6
+Customs Duties
+
+1. A State Party shall not impose customs duties on digital products transmitted
+electronically originating from other State Parties, subject to the scope and
+origin criteria that shall be set out in the Annex of Rules of Origin, in
+accordance with Article 5 of this Protocol.
+
+2. For greater certainty, paragraph 1 of this Article does not preclude a State
+Party from imposing internal taxes, fees or other charges on digital products
+transmitted electronically originating from other State Parties, provided that
+such taxes, fees or charges are imposed in a manner consistent with the
+AfCFTA Agreement.
+
+Article 7
+Non-Discrimination of Digital Products
+
+1. A State Party shall accord no less favourable treatment to digital products
+created, produced, published, transmitted, contracted for, commissioned, or
+first made available on commercial terms in the territory of another State Party
+than it accords to like digital products created, produced, published,
+transmitted, contracted for, commissioned, or first made available on
+commercial terms in its territory or that of any other State Party.
+
+2. A State Party shall accord no less favourable treatment to digital products from
+another State Party than it accords to like digital products from its territory, or
+that of any other State Party on the basis that the author, performer, producer,
+developer, distributor or owner of such products is a person of another State
+Party. This does not apply to subsidies, loans or grants provided by a State
+Party.
+
+6
+
+
+3. Nothing in this Protocol shall prevent a State Party from concluding or
+maintaining preferential trade arrangements with Third Parties, provided that
+such trade arrangements do not impede or frustrate the objectives of this
+Protocol, and that any advantage, concession or privilege granted to a Third
+Party under such arrangements is extended to other State Parties on a
+reciprocal basis.
+
+
+PART III
+FACILITATING DIGITAL TRADE
+
+Article 8
+Electronic Trust Services
+
+A State Party shall not deny the legal validity, effect, or admissibility of electronic
+documents, or electronic trust services such as electronic signatures, electronic
+seals, electronic time stamps, or other electronic processes or means of validating,
+facilitating or enabling electronic transactions such as electronic registered delivery
+services or other forms of electronic trust services solely on the basis that they are
+in electronic form.
+
+Article 9
+Electronic Authentication
+Each State Party shall adopt or maintain laws and regulations for electronic
+authentication that:
+
+a. permit parties to an electronic transaction to mutually determine the
+appropriate authentication methods for that transaction;
+b. permit parties to an electronic transaction to have an opportunity to prove
+before judicial or administrative authorities that their transactions comply
+with that State Party’s laws and regulations with respect to
+authentication; and
+c. do not limit the recognition of authentication technology, methods, and
+implementation models.
+
+Article 10
+Paperless Trading
+
+Each State Party shall accept electronic versions of trade administration documents
+as the legal equivalent of the paper version of such documents.
+
+Article 11
+Logistics and Last-Mile Delivery
+
+1. State Parties shall endeavour to enhance the regulatory environment for
+logistics services and related freight logistics services both for market access
+and non-discrimination and ensure that relevant domestic regulations are
+applied in a reasonable, transparent, and non-discriminatory manner.
+
+7
+
+
+2. State Parties shall endeavour to streamline licensing procedures related to
+logistics services and process all licence applications in a prompt and non-
+discriminatory manner.
+
+3. State Parties agree, pursuant to their respective domestic laws and
+regulations, to promote the establishment of transport coordination
+mechanisms among themselves to improve infrastructure, promote
+international multimodal transport and interconnectivity between different
+modes of transport, and formulate standard and compatible transport rules in
+order to facilitate transport and logistics services and last-mile delivery.
+4. State Parties shall endeavour to ensure that decisions made, and procedures
+applied by their regulatory authorities to all logistics services suppliers within
+their territories, are impartial, transparent, and non-discriminatory, and that
+their relevant authorities do not adopt or maintain policies and measures that
+will restrain competition.
+
+5. State Parties are encouraged to adopt, maintain or upgrade national
+addressing systems, postal systems, and relevant infrastructure to facilitate
+last-mile delivery.
+
+Article 12
+Electronic Contracts
+
+Each State Party shall adopt or maintain laws and regulations that:
+
+a. allow for contracts to be concluded by electronic means; and
+b. do not deny the legal effect, enforceability, or validity of an electronic
+contract solely on the grounds that the contract has been concluded by
+electronic means.
+
+Article 13
+Electronic Invoicing
+
+1. Each State Party shall adopt or maintain laws and regulations that accept
+electronic invoices as the legal equivalent of paper versions of such invoices.
+
+2. Each State Party shall ensure that the implementation of measures related to
+electronic invoicing in its territory supports or provides for cross-border
+interoperability with the electronic invoicing systems of other State Parties.
+
+Article 14
+Digital Identities
+
+1. State Parties shall, in accordance with their laws and regulations, adopt or
+maintain digital identity systems for both natural and juridical persons.
+
+2. State Parties shall develop an Annex on Digital Identities to foster
+interoperability between their respective digital identity systems. In developing
+this Annex, State Parties shall consider, among others:
+
+8
+
+
+a. promoting technical interoperability by adopting principles or common
+standards for implementing digital identity policies and regulations
+adopted by relevant regional, continental or international organisations;
+b. developing comparable protection of digital identities afforded by each
+State Party’s respective legal frameworks, or the recognition of their legal
+and regulatory effects, whether accorded unilaterally or by mutual
+agreement;
+c. adopting mutual recognition of digital identity systems; and
+d. exchanging knowledge and expertise on best practices relating to digital
+identity policies and regulations, technical implementation and security
+standards, and user adoption.
+
+Article 15
+Digital Payments
+
+1. State Parties shall enhance access to and participation in digital trade by
+promoting interoperability between their respective digital payment and
+settlement systems.
+
+2. State Parties shall support the development of affordable, real-time, safe,
+secure, inclusive, responsible and universally accessible cross-border digital
+payment and settlement systems, and agree to:
+
+a. make publicly available their respective digital payment regulations,
+including those pertaining to regulatory approval, licensing requirements,
+procedures and technical standards;
+b. adopt international and regional standards for digital payments;
+c. enable, develop and promote cross-border authentication and electronic
+know-your-customer verifications of individuals and businesses;
+d. promote the use of open application programming interfaces to facilitate
+greater interoperability and innovation in the digital payments ecosystem;
+e. not arbitrarily or unjustifiably discriminate between financial institutions
+and non-financial institutions in relation to access to services and
+infrastructure necessary for the operation of digital payment systems;
+and
+f. promote innovation, fair competition, and the introduction of new financial
+and digital payment products and services.
+
+3. State Parties shall develop an Annex on Cross-Border Digital Payments.
+
+Article 16
+Domestic Electronic Transactions Framework
+
+Each State Party shall adopt or maintain a legal framework governing electronic
+transactions taking into account relevant standards, guidelines or model laws
+adopted by relevant regional and international organisations.
+
+9
+
+
+Article 17
+Electronic Transferable Records
+
+Each State Party shall adopt or maintain mechanisms to facilitate the use of
+electronic transferable records taking into account relevant standards, guidelines
+or model laws adopted by relevant regional and international organisations.
+
+Article 18
+Digital Infrastructure
+
+State Parties shall endeavour to, among others:
+
+a. promote the continuous development of digital infrastructure;
+b. provide an enabling regulatory environment to enhance universal access
+to support participation in digital trade;
+c. promote investment in digital infrastructure through partnerships
+between governments, investors, financial institutions, and development
+partners;
+d. promote interoperability and interconnectivity between different digital
+infrastructures among State Parties;
+e. promote measures that increase the affordability of broadband and
+technology devices and services; and
+f. promote the sharing of digital infrastructure through, among others, the
+development of regional data centres, regional cloud systems, and
+network infrastructure to address infrastructure constraints among State
+Parties and to achieve optimal utilisation of the available capacity.
+
+Article 19
+Interoperability and Mutual Recognition
+
+1. State Parties shall adopt certification mechanisms and disciplines for the
+mutual recognition of electronic authentication, digital certificates, digital
+identities, electronic time stamps, electronic invoices, and electronic
+signatures, among others.
+
+2. For greater certainty, this Protocol shall not prevent a State Party from
+requiring, for a particular category of transactions, the method of
+authentication or certification mechanism to meet certain performance
+standards or is certified by an authority accredited in accordance with its laws
+and regulations.
+
+3. State Parties shall promote interoperability in technologies and applications
+required to facilitate digital trade, including, but not limited to, trade
+administration documents, electronic authentication, electronic signatures,
+digital payments, digital certificates, digital identities, cross-border data
+transfers, and digital infrastructure.
+
+10
+
+
+PART IV
+DATA GOVERNANCE
+
+Article 20
+Cross-Border Data Transfers
+
+1. State Parties shall, subject to an Annex on Cross-Border Data Transfers, allow
+the cross-border transfer of data, including personal data, by electronic
+means, provided the activity is for the conduct of digital trade by a person of a
+State Party.
+
+2. For greater certainty, a State Party may adopt or maintain measures
+inconsistent with paragraph 1 of this Article to achieve a legitimate public
+policy objective or protect essential security interests, provided that the
+measures are not applied in a manner which would constitute a means of
+arbitrary or unjustifiable discrimination, or a disguised restriction on digital
+trade, and do not impose restrictions on transfers of data greater than are
+necessary to achieve the objective.
+
+3. In accordance with paragraph 1 of this Article, the Annex on Cross-Border
+Data Transfers shall, among others, set out legitimate public policy objectives,
+how data may be used, restrictions on sharing of data to third parties, including
+data protection regulations and restrictions that may be applied by regulators.
+
+Article 21
+Protection of Personal Data
+
+1. Each State Party shall adopt or maintain a legal framework that provides for
+the protection of the personal data of natural persons engaged in digital trade.
+
+2. Each State Party shall, in developing its legal framework referred to in
+paragraph 1 of this Article, take into account the relevant principles and
+guidelines adopted by regional, continental and international organisations.
+
+3. Each State Party shall publish information or laws and regulations on the
+personal data protection it provides to natural persons engaged in digital trade,
+including how a natural person can pursue a remedy, and how an enterprise
+can comply with any legal requirement.
+
+4. Each State Party shall require enterprises in its territory to adopt, maintain,
+and publish their policies and procedures related to the protection of personal
+data.
+
+5. State Parties shall develop mechanisms to assist natural persons engaged in
+digital trade to exercise their rights and submit cross-border complaints
+regarding the protection of personal data.
+
+6. State Parties shall endeavour to:
+
+a. establish national data protection authorities or other relevant bodies
+responsible for the enforcement of personal data protection laws;
+
+11
+
+
+b. build capacities of their national data protection authorities or other
+relevant bodies responsible for the enforcement of personal data
+protection laws;
+c. develop collaboration mechanisms and frameworks for technical
+assistance, enforcement, and awareness creation on personal data
+protection with other State Parties; and
+d. maintain dialogue on personal data protection and sharing of knowledge,
+research and best practices with other State Parties.
+
+Article 22
+Location of Computing Facilities
+
+1. State Parties shall not require a person of another State Party to use or locate
+computing facilities in their territories as a condition for conducting digital trade
+in that territory.
+
+2. For greater certainty, a State Party may adopt or maintain measures
+inconsistent with paragraph 1 of this Article to achieve a legitimate public
+policy objective or protect essential security interests provided that the
+measures are not applied in a manner which would constitute a means of
+arbitrary or unjustifiable discrimination or a disguised restriction on digital
+trade, and do not impose restrictions on the use or location of computing
+facilities greater than are necessary to achieve the objective.
+
+3. State Parties shall encourage and support the establishment and use of
+computing facilities within State Parties to promote the development of local
+digital infrastructure and access in line with the objectives of this Protocol.
+
+Article 23
+Data Innovation
+
+State Parties shall endeavour to promote and support data innovation by:
+
+a. collaborating on data-sharing projects, including those involving
+researchers, academics, industry, and other stakeholders, using
+regulatory sandboxes, where relevant, to demonstrate the benefits of the
+cross-border transfer of data by electronic means;
+b. cooperating on the development of policies and standards for data
+mobility, including consumer data portability;
+c. facilitating the exchange of knowledge and best practices;
+d. developing data-sharing frameworks that protect personal data taking
+into account best practices;
+e. cooperating to create the necessary capabilities to take advantage of
+data-reliant technologies and services, including the capacity to govern
+data that supports development and benefits State Parties and their
+citizens; and
+f. sharing research and industry practices related to data innovation.
+
+12
+
+
+PART V
+BUSINESS AND CONSUMER TRUST
+
+Article 24
+Source Code
+
+1. State Parties shall not require the transfer of, or access to, a source code of
+software owned by a person of another State Party, or an algorithm expressed
+in that source code, as a condition for the import, distribution, sale or use of
+that software, or of products containing that software in its territory.
+
+2. This Article does not preclude a regulatory body or judicial authority of a State
+Party from requiring a person of another State Party to preserve and make
+available the source code of software or an algorithm expressed in that source
+code, to the regulatory body for a specific investigation, inspection,
+examination, audit, enforcement action, or judicial proceeding or when
+required for legitimate and legal public interest reasons to be stipulated in an
+Annex to be developed by State Parties, subject to safeguards against
+unauthorised disclosure under the law or practice of a State Party.
+
+3. For greater certainty, paragraph 1 of this Article does not apply to the voluntary
+transfer of or granting of access to a source code owned by a person of
+another State Party under open-source licenses, such as in the context of
+open-source coding, or on a commercial basis such as in the context of a
+freely negotiated contract.
+
+Article 25
+Cybersecurity
+
+1. Each State Party shall adopt or maintain measures to ensure cybersecurity
+and combat cybercrime within its jurisdiction. In adopting and maintaining such
+measures, State Parties shall take into account standards and guidelines
+contained in relevant regional, continental, and international instruments.
+
+2. State Parties shall endeavour to:
+
+a. build the capabilities of their national authorities or bodies responsible for
+the management of cybersecurity incidents;
+b. develop collaboration mechanisms for technical assistance and capacity
+building in cybersecurity with other State Parties;
+c. strengthen existing collaboration mechanisms for anticipating,
+identifying, and mitigating malicious intrusions or the dissemination of
+malicious intrusions or dissemination of malicious code that affects
+electronic networks of the State Parties, and use those mechanisms to
+swiftly address cybersecurity incidents;
+d. engage industry, civil society, academia, and other stakeholders in the
+promotion and enhancement of a culture of cybersecurity; and
+e. maintain dialogue on cybersecurity matters, and share best practices and
+information to enhance awareness.
+
+13
+
+
+3. Each State Party shall require enterprises within its jurisdiction to use best
+practices to identify and protect against cybersecurity risks and to detect,
+respond to, and recover from cybersecurity incidents.
+
+Article 26
+Internet Access
+
+State Parties shall endeavour to ensure that consumers in their territories have the
+ability to:
+
+a. access applications and to use services on the internet of their choice,
+subject to reasonable, transparent, and non-discriminatory network
+management;
+b. connect devices of their choice to the internet, provided that such devices
+do not harm the network; and
+c. access information on the network management practices provided by
+internet service providers in the State Parties.
+
+Article 27
+Online Consumer Protection
+
+1. Each State Party shall adopt or maintain consumer protection laws or other
+laws and regulations that prohibit misleading, fraudulent, and deceptive
+commercial activities or practices that cause harm or have the potential to
+cause harm to consumers engaged in digital trade. For greater certainty,
+misleading, fraudulent, and deceptive commercial activities or practices
+include, among others:
+
+a. making misrepresentations or false claims as to the material qualities,
+prices, suitability for purpose, quantity, or origin of goods or services;
+b. advertising goods or services for supply without intention to supply;
+c. failing to deliver products or provide services to consumers after the
+consumers have been charged; or
+d. charging or debiting consumers’ financial or other accounts without
+authorisation.
+
+2. Each State Party shall, to the extent possible, provide protection for
+consumers engaged in digital trade that is at least equivalent to that provided
+for consumers of other forms of commerce under its laws and regulations.
+
+3. State Parties shall ensure that consumers have the right to return and refund,
+including the right to return goods that are unsafe, defective or unfit for
+purpose and request a full refund or replacement for such goods within a
+reasonable period.
+
+4. State Parties shall cooperate on matters related to consumer protection in
+digital trade, including in the enforcement of their consumer protection laws
+and regulations through national consumer protection agencies, authorities,
+or other relevant bodies as designated by each State Party or through
+
+14
+
+
+activities such as the exchange of consumer complaints and other
+enforcement information.
+
+5. State Parties shall cooperate on developing appropriate cross-border redress
+mechanisms for consumers engaged in digital trade.
+
+Article 28
+Unsolicited Commercial Electronic Communications
+
+1. Each State Party shall adopt or maintain measures regarding unsolicited
+commercial electronic communications that:
+
+a. require the consent of recipients to receive commercial electronic
+communications;
+b. require suppliers of unsolicited commercial electronic communications to
+provide recipients with the ability to periodically review their permissions
+and to opt out of the ongoing reception of those messages; or
+c. otherwise provide for the minimisation of unsolicited commercial
+electronic communications.
+
+2. Each State Party shall provide recourse in its law against suppliers of
+unsolicited commercial electronic communications that do not comply with the
+measures adopted or maintained pursuant to paragraph 1 of this Article.
+
+3. State Parties shall cooperate in the regulation of unsolicited commercial
+electronic communications.
+
+Article 29
+Online Safety and Security
+
+1. State Parties agree to promote a safe and secure online environment that
+supports digital trade.
+
+2. State Parties shall develop an Annex on Online Safety and Security.
+
+
+PART VI
+DIGITAL TRADE INCLUSION
+
+Article 30
+Digital Inclusion
+
+State Parties shall promote and facilitate the inclusion and participation of women,
+youth, indigenous peoples, rural and local communities, persons with disabilities,
+and other underrepresented groups in digital trade through, among others:
+
+a. promoting access to information and communications technologies;
+b. improving cross-border connectivity and interoperability;
+c. providing accessible, affordable, safe, and reliable internet;
+
+15
+
+
+d. sharing experiences and best practices, including the exchange of
+experts, with respect to digital inclusion;
+e. identifying and addressing barriers to accessing digital trade
+opportunities;
+f. sharing methods and procedures for developing datasets and conducting
+analysis in relation to their participation in digital trade;
+g. participating in regional and multilateral fora to promote digital inclusion;
+and
+h. improving digital skills, digital literacy, and access to online business
+tools.
+
+Article 31
+Micro, Small and Medium-Sized Enterprises
+
+State Parties shall promote and facilitate the meaningful participation of Micro,
+Small and Medium-Sized Enterprises (MSMEs) in digital trade through, among
+others:
+
+a. sharing information and best practices to improve the participation and
+capabilities of MSMEs in digital trade;
+b. promoting the participation of MSMEs in online platforms and other
+mechanisms that could support them to connect with regional and
+international suppliers, buyers, and other potential business partners;
+c. fostering close cooperation and collaboration between their MSMEs;
+d. providing incentives to MSMEs in digital trade;
+e. supporting the development of start-ups;
+f. facilitating collaboration between foreign and domestic firms with a view
+to strengthening local capabilities;
+g. promoting research and development and the transfer of technology,
+skills, know-how, and innovation for the development of African MSMEs;
+h. encouraging the granting of credit, loans, or grants on preferential terms
+for financing MSMEs in digital trade;
+i. assisting MSMEs in the adoption, adaptation and use of technologies;
+and
+j. facilitating access to logistics and supply chain facilities for purposes of
+participating in digital trade.
+
+16
+
+
+Article 32
+Digital Innovation and Entrepreneurship
+
+State Parties shall promote:
+
+a. policy, legal and institutional frameworks that support digital innovation
+and entrepreneurship;
+b. the establishment of national and regional digital innovation and
+entrepreneurship hubs;
+c. access to finance and funding mechanisms for digital innovators and
+enterprises; and
+d. partnerships and collaboration between public and private sectors and
+other relevant stakeholders for supporting digital innovation and
+entrepreneurship.
+
+Article 33
+Digital Skills Development
+
+State Parties shall:
+
+a. promote the development and mainstreaming of digital skills policies in
+their national development policy framework;
+b. support the development of national and regional centres for
+programmes on digital skills development;
+c. encourage diversity and inclusivity in digital skills development
+programmes and policies, including through programmes targeted at
+micro, small and medium-sized enterprises and start-ups; and
+d. promote multi-stakeholder partnerships in digital skills development.
+
+
+PART VII
+EMERGING TECHNOLOGIES AND INNOVATION
+
+Article 34
+Emerging and Advanced Technologies
+
+1. State Parties agree to facilitate the adoption and regulation of emerging and
+advanced technologies, subject to their legitimate public policy objectives and
+essential security interests.
+
+2. State Parties shall, as appropriate, develop governance frameworks for the
+ethical, trusted, safe, and responsible use of emerging and advanced
+technologies.
+
+3. State Parties shall develop an Annex on Emerging and Advanced
+Technologies.
+
+17
+
+
+Article 35
+Financial Technology
+
+1. State Parties shall:
+
+a. promote close collaboration between their Financial Technology
+enterprises and industry bodies, consistent with their respective laws and
+regulations;
+b. encourage their respective Financial Technology enterprises to use
+facilities and assistance, where available, in other State Parties’
+territories to explore new business opportunities;
+c. cooperate to improve opportunities for African Financial Technology
+enterprises;
+d. promote the development of Financial Technology solutions for business
+and financial sectors; and
+e. adopt relevant regional, continental, and international standards for
+Financial Technology.
+
+2. State Parties shall develop an Annex on Financial Technology.
+
+Article 36
+Information and Communication Technology
+
+State Parties shall:
+
+a. eliminate tariffs and non-tariff barriers to trade in Information and
+Communication Technology (ICT) goods in accordance with the Protocol
+on Trade in Goods;
+b. liberalise trade in ICT services in accordance with the Protocol on Trade
+in Services;
+c. promote and facilitate investments in the ICT sector and promote the
+cross-border transfer of such technology, skills, and know-how in
+accordance with the Protocol on Investment;
+d. encourage the development of a relevant framework to regulate
+competition in the ICT sector in accordance with the Protocol on
+Competition Policy; and
+e. encourage innovation in the ICT industry in accordance with the Protocol
+on Intellectual Property Rights.
+
+18
+
+
+PART VIII
+INSTITUTIONAL ARRANGEMENTS
+
+Article 37
+Committee on Digital Trade
+
+1. The Committee on Digital Trade, established in accordance with Article 11 of
+the AfCFTA Agreement, shall carry out such functions as assigned to it by the
+Council of Ministers to facilitate the implementation of this Protocol and to
+further its objectives.
+
+2. The Committee on Digital Trade may, with the approval of the Council of
+Ministers, establish such sub-committees and working groups as it considers
+necessary for the effective discharge of its functions.
+
+3. The Committee on Digital Trade shall be composed of duly designated
+representatives from State Parties.
+
+
+PART IX
+TRANSPARENCY
+
+Article 38
+Publication of Information
+
+1. Each State Party shall promptly publish or make publicly available, including
+through electronic means, its laws, regulations, measures, policies,
+procedures, trade administration documents, internal fees, charges or sales
+taxes, and administrative rulings of general application relating to any digital
+trade or related matter covered by this Protocol.
+
+2. Each State Party shall promptly publish or make publicly available, including
+through electronic means, international, regional, or bilateral agreements to
+which it is a signatory relating to any digital trade or related matter covered by
+this Protocol.
+
+Article 39
+Open Government Information
+
+Each State Party shall, to the extent possible, ensure that open government
+information is published or made available in a machine-readable format, and can
+be searched, retrieved, used, reused and redistributed, and is regularly updated.
+
+Article 40
+Notification
+
+1. Each State Party shall promptly notify, through the Secretariat, the other State
+Parties of any international, regional and bilateral agreements pertaining to or
+affecting digital trade with other State Parties to which it is a signatory prior to
+or after the entry into force of this Protocol.
+
+19
+
+
+2. Each State Party shall promptly notify, through the Secretariat, the other State
+Parties of the introduction of any new or amendments to existing laws and
+regulations or any measure pertaining to or affecting the operation of this
+Protocol.
+
+3. Each State Party shall promptly respond, through the Secretariat, to any
+requests by another State Party for specific information pertaining to any new
+laws and regulations or amendments thereof or any measure pertaining to or
+affecting the operation of this Protocol.
+
+4. The Secretariat shall promptly circulate to the State Parties concerned any
+notification, request, or information provided pursuant to this Article.
+
+5. For greater certainty, any notification or information provided pursuant to this
+Article shall be without prejudice as to whether the law or regulation,
+amendment or measure of a State Party is consistent with this Protocol.
+
+6. Each State Party shall notify the Secretariat of its national focal point on Digital
+Trade.
+
+7. The Committee on Digital Trade shall, with the assistance of the Secretariat,
+develop procedures for notification.
+
+Article 41
+Non-Disclosure of Confidential Information
+
+Nothing in this Protocol shall be construed to require any State Party to disclose or
+allow access to confidential information and data, the disclosure of which would
+impede law enforcement or prejudice legitimate commercial and strategic interests
+of particular enterprises or institutions, whether public or private, or would otherwise
+be contrary to its public or essential security interests.
+
+
+PART X
+TECHNICAL ASSISTANCE, CAPACITY BUILDING AND COOPERATION
+
+Article 42
+Technical Assistance and Capacity Building
+
+1. State Parties agree to support and strengthen the capacity of State Parties in
+enabling and promoting digital trade, and to facilitate the implementation and
+attainment of the objectives of this Protocol.
+
+2. The Secretariat shall, working with State Parties, Regional Economic
+Communities, development partners and other relevant stakeholders,
+coordinate the provision of technical assistance and capacity building to State
+Parties to facilitate the implementation of this Protocol.
+
+20
+
+
+Article 43
+Areas of Cooperation
+
+State Parties shall cooperate, through exchanging of information, research and
+development, training activities, peer learning, and sharing experiences and best
+practices, on matters relating to digital trade, including:
+
+a. protection of personal data;
+b. cross-border data transfers;
+c. online consumer protection;
+d. cybersecurity;
+e. unsolicited commercial electronic communications;
+f. electronic authentication;
+g. electronic signatures;
+h. digital payments;
+i. electronic invoicing;
+j. logistics;
+k. digital identities;
+l. electronic transferable records;
+m. digital inclusion;
+n. micro, small and medium-sized enterprises;
+o. digital skills development;
+p. digital innovation and entrepreneurship;
+q. emerging and advanced technologies;
+r. financial technology;
+s. data innovation;
+t. interoperability and mutual recognition;
+u. online safety and security;
+v. open government information;
+w. anti-money laundering and combatting the financing of terrorism
+x. digital infrastructure; and
+y. any other areas relevant to boost, facilitate and regulate digital trade.
+
+21
+
+
+PART XI
+FINAL PROVISIONS
+
+Article 44
+Relationship between this Protocol and other Protocols of the AfCFTA
+
+1. This Protocol, as an integral part of the AfCFTA Agreement, shall not derogate
+from or modify the rights and obligations of the State Parties under the other
+protocols to the AfCFTA Agreement.
+
+2. In the event of any conflict or inconsistency between this Protocol and any
+other Protocol to the AfCFTA Agreement in relation to matters specifically
+governed by the other Protocol, the provisions of the other Protocol shall
+prevail to the extent of the conflict or inconsistency.
+
+Article 45
+Dispute Settlement
+
+Disputes between State Parties arising out of or relating to the interpretation and
+application of this Protocol shall be resolved in accordance with the Protocol on
+Rules and Procedures on the Settlement of Disputes.
+
+Article 46
+Annexes
+
+1. State Parties shall, after the adoption of this Protocol, develop annexes on:
+
+a. Rules of Origin;
+b. Digital Identities;
+c. Cross-Border Digital Payments;
+d. Cross-Border Data Transfers;
+e. Criteria for Determining the Legitimate and Legal Public Interest
+Reasons for Disclosure of Source Code;
+f. Online Safety and Security;
+g. Emerging and Advanced Technologies; and
+h. Financial Technology.
+
+2. State Parties may develop any additional annexes as deemed necessary for
+the effective implementation of this Protocol.
+
+3. The annexes referred to in this Article shall, upon adoption by the Assembly,
+form an integral part of this Protocol.
+
+22
+
+
+Article 47
+Entry into Force
+
+1. This Protocol shall be open for signature and ratification or accession by the
+State Parties to the AfCFTA Agreement, in accordance with their respective
+constitutional procedures.
+
+2. This Protocol shall enter into force in accordance with the provisions of Articles
+23(2) and 23(4) of the AfCFTA Agreement.
+
+Article 48
+Application
+
+1. State Parties shall apply appropriate measures to bring into effect the rules
+and procedures set out in the provisions of this Protocol.
+
+2. State Parties shall cooperate with each other in ensuring compliance with the
+provisions of this Protocol.
+
+3. State Parties shall not take any measures inconsistent with the provisions and
+objectives of this Protocol.
+
+4. State Parties shall align their national laws, rules and regulations with this
+Protocol within a period of five (5) years from its entry into force.
+
+Article 49
+Implementation, Monitoring and Evaluation
+
+1. The Committee on Digital Trade shall be responsible for the monitoring and
+evaluation of the implementation of this Protocol and shall report to the Council
+of Ministers, through the Committee of Senior Trade Officials.
+
+2. The Secretariat shall assist and support the Committee on Digital Trade in the
+monitoring and evaluation of the implementation of this Protocol.
+
+3. The Secretariat shall, in consultation with State Parties, prepare annual
+reports to facilitate the process of implementation, monitoring and evaluation
+of this Protocol.
+
+4. The reports referred to in paragraph 3 of this Article shall be submitted to the
+Council of Ministers, through the Committee of Senior Trade Officials, for
+consideration and adoption.
+
+Article 50
+Review
+
+This Protocol shall be subject to review by State Parties in accordance with Article
+28 of the AfCFTA Agreement.
+
+23
+
+
+Article 51
+Amendment
+
+Any amendment to this Protocol shall be undertaken in accordance with Article 29
+of the AfCFTA Agreement.
+
+Article 52
+Authentic Texts
+
+This Protocol is drawn up in six (6) original texts in the Arabic, English, French,
+Kiswahili, Portuguese and Spanish languages, all of which are equally authentic.
+

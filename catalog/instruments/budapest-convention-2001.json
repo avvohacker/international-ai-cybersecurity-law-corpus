@@ -11,11 +11,11 @@
     "cyber"
   ],
   "gaps": [
-    "No full text, citable units or original file is stored in this record; it is metadata-only.",
     "The 96 reservation entries and 280 declaration, communication or territorial entries are reproduced from the Treaty Office page as a status snapshot; their legal effect and any overlap between them are not assessed.",
     "Eleven States have no recorded signature or ratification and are not Parties; the Treaty Office chart does not label each of them individually as invited to accede.",
     "National implementation, the 24/7 network in practice and the Convention's supervisory practice are not assessed.",
-    "No AI-specific provision is asserted. The record is cyber-domain only."
+    "No AI-specific provision is asserted. The record is cyber-domain only.",
+    "Only the English text is stored; the other authentic-language versions were not acquired."
   ],
   "id": "budapest-convention-2001",
   "instrument_type": "treaty",
@@ -36,7 +36,7 @@
       "en",
       "fr"
     ],
-    "note": "The Treaty Office publishes the English and French official texts; both are authentic. Other language versions are translations or non-official renderings.",
+    "note": "The official English text is stored and segmented. The other authentic-language versions were not acquired.",
     "source_ids": [
       "coe-text"
     ]
@@ -1124,7 +1124,7 @@
     ]
   },
   "rights": {
-    "note": "Official Council of Europe text. Reuse remains subject to the Council of Europe's terms; the corpus stores metadata and links, not the text.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text",
     "url": "https://rm.coe.int/1680081561"
   },
@@ -1175,6 +1175,17 @@
       "language": "en",
       "publisher": "Council of Europe",
       "url": "https://rm.coe.int/1680081561"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-official",
+      "kind": "official_primary",
+      "language": "en",
+      "local_path": "source/budapest-convention-2001-en.pdf",
+      "note": "Official CoE English PDF stored and segmented.",
+      "sha256": "d5d38a49519121a3cc9a37a623f3047f4cefb25423494cee6780ad75eeeef0af",
+      "url": "https://rm.coe.int/1680081561"
     }
   ],
   "status": "in_force",
@@ -1205,9 +1216,22 @@
         "check": "Official text URL recorded; text not acquired or segmented in this pass",
         "date": "2026-11-24",
         "result": "not acquired"
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "48 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Party list, reservations and declarations are itemised from the official Treaty Office pages. The record remains metadata-level: the treaty text is not stored, and the legal effect of each reservation or declaration is not assessed."
+    "notes": "The official English PDF was acquired and segmented into 48 article units. The record remains metadata_verified; no article-by-article legal review was performed."
+  },
+  "text": {
+    "extraction_note": "Official Council of Europe English PDF (22 pages) extracted with pypdf and segmented into 48 article units.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
   }
 }

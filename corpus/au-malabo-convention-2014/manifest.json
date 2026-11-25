@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 13794400,
+      "media_type": "application/pdf",
+      "note": "Official English PDF of the African Union Convention on Cyber Security and Personal Data Protection. The PDF is image-only (no text layer); the scanned official copy is authoritative.",
+      "path": "source/au-malabo-convention-2014-en-scanned.pdf",
+      "role": "original",
+      "sha256": "4564c7ee68658754590953f653b6aa43582d63fdd16f8614ecd0b4cf89c96485",
+      "source_url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "bytes": 324591,
+      "media_type": "application/pdf",
+      "note": "English transcription of the Malabo Convention from the AfricanLII network (SenLII), generated 11 June 2026. Used for the searchable text because the official PDF has no text layer; it is a legal-database transcription, not an official translation.",
+      "path": "source/au-malabo-convention-2014-en-senlii-transcription.pdf",
+      "role": "original",
+      "sha256": "5ec5fbe9c40842231266b3d10065b5dd97910062f46f69d1efdb70ba15d2c07e",
+      "source_url": "https://senlii.org/en/akn/aa-au/act/convention/2014/cyber-security-and-personal-data-protection/eng@2014-06-27/source.pdf"
+    },
+    {
+      "bytes": 88801,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "93ebc8c425007b96fa3809c0483aeb24766559597f8f6d7e9940d879c4ec22a7"
+    },
+    {
+      "bytes": 2410,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "04f25b307229a8042e2c3850acf4fae2835e5ca6c1691cd57a6966401a8c74d8"
+    },
+    {
+      "bytes": 82897,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "89b3e0e364c871e239ae13fc8b0cb76059d8b89ba37f73979974379dac1d11c0"
+    }
+  ],
+  "instrument_id": "au-malabo-convention-2014",
+  "primary_text": "text/en.txt"
+}

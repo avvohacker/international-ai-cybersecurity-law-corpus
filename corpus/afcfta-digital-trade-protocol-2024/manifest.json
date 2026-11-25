@@ -1,0 +1,78 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 591463,
+      "media_type": "application/pdf",
+      "note": "Official compiled annexes to the AfCFTA Digital Trade Protocol, adopted by the 38th Ordinary Session of the Assembly in February 2025, 52 pages. Includes the Annex on Emerging and Advanced Technologies.",
+      "path": "source/afcfta-digital-trade-annexes-2025-en.pdf",
+      "role": "original",
+      "sha256": "f5cc8c9e1539cf17fc37e1d651085c88d7f839827852752c4253afd9b7bc064a",
+      "source_url": "https://au.int/sites/default/files/treaties/44963-ax-ENG_Circulation_Digital_Trade_Compiled_Certified_Legal_Instruments_38thAssembly_Feb_2025_27_May2025.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "bytes": 323795,
+      "media_type": "application/pdf",
+      "note": "Official English text of the Protocol to the AfCFTA Agreement on Digital Trade, 24 pages. Main Protocol only; the separately adopted annexes are stored as a compiled PDF.",
+      "path": "source/afcfta-digital-trade-protocol-2025-en.pdf",
+      "role": "original",
+      "sha256": "56532469cbe6223415d1449e73a75064f160e79ea83ee030d95b1a5d3bd4eab4",
+      "source_url": "https://au.int/sites/default/files/treaties/44963-treaty-EN_-_Protocol_to_AfCFTA_Agreement_on_Digital_Trade.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "bytes": 130738,
+      "media_type": "application/pdf",
+      "note": "Pages 25-30 of the official compiled annexes: Annex on Emerging and Advanced Technologies. Extracted as a separate PDF for text and unit anchors; the complete compiled annexes are stored separately.",
+      "path": "source/afcfta-emerging-tech-annex-2025-en.pdf",
+      "role": "original",
+      "sha256": "1e969f2b09d43e8616cd901abe6075fe7cc3dc6c0038f658e08845225996b7dd",
+      "source_url": "https://au.int/sites/default/files/treaties/44963-ax-ENG_Circulation_Digital_Trade_Compiled_Certified_Legal_Instruments_38thAssembly_Feb_2025_27_May2025.pdf"
+    },
+    {
+      "bytes": 12444,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en-annex.txt",
+      "role": "text",
+      "sha256": "b571ba0d51d7b59103a66445d190ebd353fd02a4d046467b419f2718353f3348"
+    },
+    {
+      "bytes": 45508,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "0e23cfedd96178498eca1a79307d10fae569d19f568da7dc2f12c3d92bec8162"
+    },
+    {
+      "bytes": 533,
+      "media_type": "application/json",
+      "path": "pages-annex.json",
+      "role": "metadata",
+      "sha256": "c20a59a5f260d40726092ecbf024f3d98ff71c408fe627dc4eaf8df2dec0db63"
+    },
+    {
+      "bytes": 1994,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "82d8e7e220f428c5e0a36157ff05735df82098a9612152b5994cfb33d3ee6c70"
+    },
+    {
+      "bytes": 16997,
+      "media_type": "application/x-ndjson",
+      "path": "units-annex.jsonl",
+      "role": "units",
+      "sha256": "ecf38bea0009b16ef55c49cccab880da6aa041ba984a897e0100e29862477ada"
+    },
+    {
+      "bytes": 55810,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "eea3ad5258521c2c664875d3f73731b9ebf42d8ad065081510993371be449dba"
+    }
+  ],
+  "instrument_id": "afcfta-digital-trade-protocol-2024",
+  "primary_text": "text/en.txt"
+}

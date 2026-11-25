@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 4062022,
+      "media_type": "application/pdf",
+      "note": "Certified true copy of the United Nations Convention against Cybercrime (XVIII-16), 388 pages, containing the six authentic language versions.",
+      "path": "source/un-cybercrime-convention-2024-en-certified.pdf",
+      "role": "original",
+      "sha256": "4f12e3b5ac499a630932915cf5be2c748b70fd7f9335dfaf40ee488983f1e8c0",
+      "source_url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "bytes": 491355,
+      "media_type": "application/pdf",
+      "note": "English extract of the certified copy: pages 59-118 of the 388-page multilingual PDF, containing the complete English text (Articles 1-68). Extracted as a separate PDF for text and page anchors.",
+      "path": "source/un-cybercrime-convention-2024-en-extract.pdf",
+      "role": "original",
+      "sha256": "9f2728e55cfe0f7b2bd6e823f72340c32213070e408c02445277c6299a9017b1",
+      "source_url": "https://treaties.un.org/doc/Treaties/2024/12/20241224%2001-27%20PM/Ch_XVIII_16.pdf"
+    },
+    {
+      "bytes": 144706,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "86ca13cf464e7a7fc8ca16fea4e6dfc080b151c5a498c2c075d5908ca76d22e0"
+    },
+    {
+      "bytes": 4991,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "8d1a9d2b47a37c5b868085e50cd966426166e5cc86b910edf463f331681945e8"
+    },
+    {
+      "bytes": 157583,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "0148d9e46c860bd488e8f4095800904ebad94e44bef00d103730744595710171"
+    }
+  ],
+  "instrument_id": "un-cybercrime-convention-2024",
+  "primary_text": "text/en.txt"
+}

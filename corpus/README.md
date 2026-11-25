@@ -7,15 +7,18 @@ corpus/<id>/
   source/<file>.*       acquired original (PDF, HTML); role "original" in the manifest
   text/en.txt           extracted or transcribed text; role "text"
   text/fr.txt           additional authentic text, where stored; role "text"
+  text/ru.txt           Russian working text (CIS 2018 Agreement); role "text"
+  text/zh.txt           Chinese working text (WAICO); role "text"
   pages.json            page-to-character map; role "metadata"
   pages-fr.json         page map for an additional text; role "metadata"
-  units.jsonl           citable English units; role "units"
+  units.jsonl           citable units for the primary text; role "units"
   units-fr.jsonl        citable units for an additional text; role "units"
+  units-annex.jsonl     citable units for a separately stored annex; role "units"
   status/*.json         status snapshot; role "status_snapshot"
   manifest.json         hashes, sizes, roles, source URLs
 ```
 
-`manifest.json` is the integrity contract checked by `make validate`. Every file listed there must exist, match its SHA-256 and size, and be unique by content. Files under `status/` are local snapshots of dynamic official pages, not official exports; the snapshot itself records its source URL and capture method. The build checks that each English unit's `text` equals the exact slice of `text/en.txt` at `char_start:char_end`, and that the unit start lies on the declared page. Additional texts, such as the French CETS 225 units, are checked by the corresponding test against their own text and page map.
+`manifest.json` is the integrity contract checked by `make validate`. Every file listed there must exist, match its SHA-256 and size, and be unique by content. Files under `status/` are local snapshots of dynamic official pages, not official exports; the snapshot itself records its source URL and capture method. The build checks that each primary unit's `text` equals the exact slice of its `primary_text` at `char_start:char_end`, and that the unit start lies on the declared page. Additional texts, such as the French CETS 225 units, the Russian CIS 2018 text and the Chinese WAICO text, are checked by the corresponding test against their own text and page map.
 
 ## Anchors
 
@@ -32,7 +35,7 @@ python3 -m venv .venv
 .venv/bin/python tools/extract_text.py <id> source/<file>.pdf
 .venv/bin/python tools/extract_text.py <id> source/<file>.html --mode html \
   --html-start '<div class="content_text">' --html-end '<!-- Footer  -->'
-.venv/bin/python tools/segment.py <id> --mode treaty|resolution|numbered|whole|pact
+.venv/bin/python tools/segment.py <id> --mode treaty|treaty-inline|treaty-ru|treaty-zh|resolution|numbered|whole|pact
 # additional text: pass --text, --pages and --output explicitly
 .venv/bin/python tools/segment.py <id> --mode treaty --text text/fr.txt \
   --pages pages-fr.json --output units-fr.jsonl

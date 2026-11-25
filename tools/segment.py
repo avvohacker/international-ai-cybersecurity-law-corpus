@@ -14,8 +14,21 @@ from pathlib import Path
 
 from corpuslib import CORPUS_DIR, dump_json
 
+ARTICLE_NUMBER = r"\d+(?:\.\d+)?(?:er)?(?:[-–][A-Z])?"
 ARTICLE_RE = re.compile(
-    r"(?m)^\s*(?:Article|ARTICLE)\s+(\d+(?:\.\d+)?(?:er)?)\s*(?:[–\-—:]\s*(.*?))?\s*$"
+    rf"(?m)^\s*(?:Article|ARTICLE)\s+({ARTICLE_NUMBER})\s*(?:[–\-—:]\s*(.*?))?\s*$"
+)
+INLINE_ARTICLE_RE = re.compile(
+    rf"(?<!\w)(?:Article|ARTICLE)\s+({ARTICLE_NUMBER})\s*(?:[:–\-—]\s*|(?=[A-Z])|(?=\s*\n\s*(?:\d+\.|\([a-z]\))))"
+)
+INLINE_TREATY_RE = re.compile(
+    rf"(?<!\w)(?:Article|ARTICLE)\s+({ARTICLE_NUMBER})\s*(?=[:–\-—]|[A-Z])"
+)
+RU_ARTICLE_RE = re.compile(
+    r"(?m)^\s*Статья\s+(\d+)\s*(?:[–\-—:]\s*(.*?))?\s*$"
+)
+ZH_ARTICLE_RE = re.compile(
+    r"(?m)^\s*(第[一二三四五六七八九十百零〇\d]+条)\s*(.*?)\s*$"
 )
 SECTION_RE = re.compile(r"(?m)^\s*(\d{1,2})\.\s+([A-Z][^\n]{3,90})$")
 RES_PARA_RE = re.compile(r"(?m)^\s*(\d{1,3})\.\s+(?=\S)")
@@ -156,6 +169,48 @@ def segment_pact(body: str) -> list[dict]:
     return units
 
 
+def _article_matches(body: str) -> list[re.Match]:
+    """Find article headings, including inline headings in PDF text.
+
+    A table of contents and cross-references can repeat an article number. The
+    body occurrence is the one whose unit is longest; short TOC lines and
+    cross-reference sentences are discarded. Inline headings are also added
+    for PDFs that concatenate a page into one line and for headings split
+    across lines, but only after a sentence boundary or at the start of a
+    chapter.
+    """
+    line_matches = list(ARTICLE_RE.finditer(body))
+    inline = []
+    for match in INLINE_ARTICLE_RE.finditer(body):
+        prefix = body[: match.start()].rstrip()
+        if prefix and prefix[-1] not in ".;:":
+            continue
+        inline.append(match)
+    starts = {m.start() for m in line_matches}
+    matches = line_matches + [m for m in inline if m.start() not in starts]
+    filtered = []
+    for match in matches:
+        line_start = body.rfind("\n", 0, match.start()) + 1
+        line_end = body.find("\n", match.end())
+        line = body[line_start : line_end if line_end >= 0 else len(body)]
+        if re.search(r"\.{4,}", line):
+            continue
+        filtered.append(match)
+    filtered.sort(key=lambda m: m.start())
+    if not filtered:
+        return []
+    with_end = []
+    for idx, match in enumerate(filtered):
+        end = filtered[idx + 1].start() if idx + 1 < len(filtered) else len(body)
+        with_end.append((match, end - match.start()))
+    best: dict[str, tuple[re.Match, int]] = {}
+    for match, length in with_end:
+        number = match.group(1)
+        if number not in best or length > best[number][1]:
+            best[number] = (match, length)
+    return sorted((item[0] for item in best.values()), key=lambda m: m.start())
+
+
 def segment(body: str, mode: str) -> list[dict]:
     if mode == "whole":
         return [
@@ -169,15 +224,43 @@ def segment(body: str, mode: str) -> list[dict]:
                 "char_end": body.index(body.strip("\n")) + len(body.strip("\n")),
             }
         ]
-    if mode == "treaty":
-        matches = list(ARTICLE_RE.finditer(body))
+    if mode in ("treaty", "treaty-inline"):
+        matches = (
+            list(INLINE_TREATY_RE.finditer(body))
+            if mode == "treaty-inline"
+            else _article_matches(body)
+        )
         return units_from_matches(
             body,
             matches,
             lambda m: (
-                f"Article {m.group(1)} — {m.group(2)}"
-                if m.group(2)
+                f"Article {m.group(1)} — {m.group(2)[:90].strip()}"
+                if len(m.groups()) > 1 and m.group(2) and len(m.group(2).strip()) <= 90
                 else f"Article {m.group(1)}"
+            ),
+            "article",
+        )
+    if mode == "treaty-ru":
+        matches = list(RU_ARTICLE_RE.finditer(body))
+        return units_from_matches(
+            body,
+            matches,
+            lambda m: (
+                f"Статья {m.group(1)} — {m.group(2)[:90].strip()}"
+                if m.group(2) and len(m.group(2).strip()) <= 90
+                else f"Статья {m.group(1)}"
+            ),
+            "article",
+        )
+    if mode == "treaty-zh":
+        matches = list(ZH_ARTICLE_RE.finditer(body))
+        return units_from_matches(
+            body,
+            matches,
+            lambda m: (
+                f"{m.group(1)} — {' '.join(m.group(2).split())}"
+                if m.group(2).strip()
+                else m.group(1)
             ),
             "article",
         )
@@ -235,7 +318,17 @@ def main() -> int:
     parser.add_argument(
         "--mode",
         required=True,
-        choices=["treaty", "resolution", "sections", "numbered", "whole", "pact"],
+        choices=[
+            "treaty",
+            "treaty-inline",
+            "treaty-ru",
+            "treaty-zh",
+            "resolution",
+            "sections",
+            "numbered",
+            "whole",
+            "pact",
+        ],
     )
     parser.add_argument("--text", default="text/en.txt")
     parser.add_argument("--pages", default="pages.json")

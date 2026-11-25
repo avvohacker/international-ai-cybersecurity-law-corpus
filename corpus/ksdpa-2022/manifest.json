@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 267482,
+      "media_type": "application/pdf",
+      "note": "English text of the Korea-Singapore Digital Partnership Agreement, reproduced by the Republic of Korea Ministry of Trade, Industry and Energy.",
+      "path": "source/ksdpa-2022-en.pdf",
+      "role": "original",
+      "sha256": "c1183848e119b7ad2f0362879813090685a6076c045f00d3105ab20289dc0717",
+      "source_url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/ksdpa/1/KSDPA_eng.pdf"
+    },
+    {
+      "bytes": 60822,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "faf4571a1586532f0420f0c2c53131f04adb076c8400c456f67400a10ffd31cd"
+    },
+    {
+      "bytes": 3464,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "7a42e40b38c99833e754fe17017bb45deacae1868c2bff7b7878e17ad13f95e0"
+    },
+    {
+      "bytes": 67392,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "a53a0b155f177b7ad8d311630b117f04b85c4cac0c995ce653bf0cb8a78cdae2"
+    }
+  ],
+  "instrument_id": "ksdpa-2022",
+  "primary_text": "text/en.txt"
+}

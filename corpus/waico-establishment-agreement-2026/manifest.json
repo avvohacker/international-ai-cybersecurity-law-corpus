@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 21089,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official Chinese text of the Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization, published by the National People's Congress on 18 November 2026. The page is served over HTTP; HTTPS did not complete a TLS handshake from this environment.",
+      "path": "source/waico-agreement-2026-zh.html",
+      "role": "original",
+      "sha256": "4494d808c722cf0fb698a000e5b0765a8ca7affea7c2988a9c0b03c68af64742",
+      "source_url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html"
+    },
+    {
+      "bytes": 8859,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/zh.txt",
+      "role": "text",
+      "sha256": "cc64e3acd95c4f61292f1057117d73fbc66817c5ebddd5573aba0952c370db41"
+    },
+    {
+      "bytes": 390,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "40dea8a81f81eabbc041aa4e38625dc27f5a7cc7f912c6ef9133b91e551aae8c"
+    },
+    {
+      "bytes": 12691,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "c76a6c993f18106821061ea1a0d97ed1021249662cd84c238c0252783ba1fca1"
+    }
+  ],
+  "instrument_id": "waico-establishment-agreement-2026",
+  "primary_text": "text/zh.txt"
+}

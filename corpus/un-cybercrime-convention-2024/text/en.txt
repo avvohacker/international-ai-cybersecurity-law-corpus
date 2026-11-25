@@ -1,0 +1,2147 @@
+United Nations Convention against Cybercrime;
+Strengthening International Cooperation for Combating Certain
+Crimes Committed by Means of Information and Communications
+Technology Systems and for the Sharing of Evidence
+in Electronic Form of Serious Crimes
+Preamble
+ The States Parties to the present Convention ,
+ Bearing in mind  t h e  p u r p o s e s  a n d  principles of th e Charter of the
+United Nations,
+ Noting that information and communicati ons technologies, while having
+enormous potential for the development of societies, create new opportunities for
+perpetrators, may contribute to the increase in the rate and diversity of criminal
+activities, and may have an ad verse impact on States, ente rprises and the well-being
+of individuals and society as a whole,
+ Concerned t h a t  t h e  u s e  o f  information and communi cations technology
+systems can have a considerable impact on the scale, speed a nd scope of criminal
+offences, including offences related to te rrorism and transnational organized crime,
+such as trafficking in persons, the smuggling of migrants, the illicit manufacturing of
+and trafficking in firearms, their parts, components and ammunition, drug trafficking
+and trafficking in cultural property,
+ Convinced o f  t h e  n e e d  t o  p u r s u e ,  a s  a  m a t t er of priority, a global criminal
+justice policy aimed at the protection of society against cybercrime by, inter alia,
+adopting appropriate legisl ation, establishing comm on offences and procedural
+powers and fostering internation al cooperation to prevent a nd combat such activities
+more effectively at the national, regional and international levels,
+ Determined t o  d e n y  s a f e  h a v e n s  t o  t h o se who engage in cybercrime by
+prosecuting these crimes wherever they occur,
+ Stressing the need to enhance coordination  and cooperation among States by,
+inter alia, providing technical assistance and capacity-building, including the transfer
+of technology on mutu ally agreed terms, to countri es, in particular developing
+countries, upon their request, to improve national legislation and frameworks and
+enhance the capacity of nation al authorities to deal with cybercrime in all its forms,
+including its prevention, dete ction, investigation and pr osecution, and emphasizing
+in this context the role th at the United Nations plays,
+
+- 2 -
+
+ Recognizing the increasing number of victims of cybercrime, the importance
+of obtaining justice for those victims and the necessity to address the needs of persons
+in vulnerable situations in measures taken to prevent and combat the offences covered
+by this Convention,
+ Determined t o  p r e v e n t ,  d e t e c t  a n d  s u p p r e s s  m o r e  e f f e c t i v e l y  i n t e r n a t i o n a l
+transfers of property obtained as a result of cybercrime and to strengthen international
+cooperation in the re covery and return of proceeds of  t h e  c r i m e s  e s t a b l i s h e d  i n
+accordance with this Convention,
+ Bearing in mind that preventing and combating cybercrime is a responsibility
+of all States and that they must cooperat e with one another, with the support and
+involvement of relevant international an d regional organizations, as well as
+non-governmental organizations , civil society organizations , academic institutions
+and private sector entities, if their effo rts in this area are to be effective,
+ Recognizing t h e  i m p o r t a n c e  o f  m a i n s t r e a m ing a gender perspective in all
+relevant efforts to prevent and combat the offences co vered by this Convention, in
+accordance with domestic law,
+ Mindful o f  t h e  n e e d  t o  a c h i e v e  l a w  e n f orcement objectives and to ensure
+respect for human rights a nd fundamental freedoms as enshrined in applicable
+international and regional instruments,
+ Acknowledging t h e  r i g h t  t o  p r o t e c t i o n  a g a i n s t  a r b i t r a r y  o r  u n l a w f u l
+interference with one’s privacy, and the importance of protecting personal data,
+ Commending the work of the United Nations Office on Drugs and Crime and
+other international and regional organi zations in preventing and combating
+cybercrime,
+ R e c a l l i n g G e n e r a l  A s s e m b l y  r e s o l u t i o n s  74/247 of 27 December 2019 and
+75/282 of 26 May 2021,
+ Taking into account  the existing international and regional c onventions and
+treaties on cooperation in criminal matters,  a s  w e l l  a s  s i m i l a r  t r e a t i e s  t h a t  e x i s t
+between Member States of the United Nations,
+ Have agreed as follows:
+
+- 3 -
+
+Chapter I
+General provisions
+Article 1
+Statement of purpose
+ T h e  p u r p o s e s  o f  t h i s Convention are to:
+ ( a )  P r o m o t e  a n d  s t r e n g t h e n  m e a s u r e s  t o  p r e v e n t  a n d  c o m b a t  c y b e r c r i m e
+more efficiently and effectively;
+ ( b )  P r o m o t e ,  f a c i l i t a t e  a n d  s t r e n gthen internationa l cooperation in
+preventing and combating cybercrime; and
+ ( c )  P r o m o t e ,  f a c i l i t a t e  a n d  s u p p o r t t e c h n i c a l  a s s i s t a n c e  a n d  c a p a c i t y -
+building to prevent and combat cybercrime, in particular for the benefit of developing
+countries.
+Article 2
+Use of terms
+ F o r  t h e  p u r p o s e s  o f this Convention:
+ ( a )  “ I n f o r m a t i o n  a n d  c o m m u n i c a t i o n s technology system” shall mean any
+device or group of interconnected or related devices, one or more of which, pursuant
+to a program, gathers, stores and perform s automatic processing of electronic data;
+ ( b )  “ E l e c t r o n i c  d a t a ”  s h a ll mean any representation of facts, information or
+concepts in a form suitable  for process ing in an inf ormation and communications
+technology system, includin g a program suitable to cause an information and
+communications technology syst em to perform a function;
+ ( c )  “ T r a f f i c  d a t a ”  s h a l l  m e a n  a ny electronic data relating to a
+communication by means of an information and communications technology system,
+generated by an information and communications technology  system that formed a
+part in the chain of communication, indicating the commun ication’s origin,
+destination, route, time, date, size, dura tion or type of underlying service;
+ ( d )  “ C o n t e n t  d a t a ”  s h a l l  m e a n  a n y  e lectronic data, other than subscriber
+information or traffic data, relating to the substance of the data transferred by an
+information and communicati ons technology syst em, including, but not limited to,
+images, text messages, voice messages, au dio recordings and video recordings;
+
+- 4 -
+
+ ( e )  “ S e r v i c e  p r o v i d e r ” shall mean any public or private entity that:
+ ( i )  P r o v i d e s  t o  u s e r s  o f  i t s  s e r v i c e  the ability to communicate by means of
+an information and communications technology system; or
+ ( i i )  P r o c e s s e s  o r  s t o r e s  e l e c t r o n i c  d ata on behalf of such a communications
+service or users of such a service;
+ ( f )  “ S u b s c r i b e r  i n f o r m a t i o n ”  s h a l l  m e a n any information th at is held by a
+service provider, relating to subscribers of its services other than traffic or content
+data and by which can be established:
+ ( i )  T h e  t y p e  o f  c o m m u n i c a t i o n s  s ervice used, the technical provisions
+related thereto and the period of service;
+ ( i i )  T h e  s u b s c r i b e r ’ s  i d e n t i t y ,  p o s t a l  or geographical addr ess, telephone or
+other access number, billing or payment information, available on the basis of
+the service agreement or arrangement;
+ ( i i i )  A n y  o t h e r  i n f o r m a t i on on the site of the inst allation of communications
+equipment, available on the basis of the service agreement or arrangement;
+ ( g )  “ P e r s o n a l  d a t a ”  s h a l l  m e a n  a n y  i n f ormation relating to an identified or
+identifiable natural person;
+ ( h )  “ S e r i o u s  c r i m e ”  s h a l l  m e a n  c o n duct constituting an offence punishable
+by a maximum deprivation of liberty of at least four years or a more serious penalty;
+ ( i )  “ P r o p e r t y ”  s h a l l  m e a n  a s s e t s  o f  e v e r y  k i n d ,  w h e t h e r  c o r p o r e a l  o r
+incorporeal, movable or immovable, tangible  or intangible, including virtual assets,
+and legal documents or instruments evidencing  title to, or interest in, such assets;
+ ( j )  “ P r o c e e d s  o f  c r i m e ”  s h a l l  m e a n  a n y  p r o p e r t y  d e r i v e d  f r o m  o r  o b t a i n e d ,
+directly or indirectly, through the commission of an offence;
+ ( k )  “ F r e e z i n g ”  o r  “ s e i z u r e ”  s h a l l  m e a n temporarily prohibiting the transfer,
+conversion, disposition or movement of property or temporarily assuming custody or
+control of property on the basis of an order issued by a court or other competent
+authority;
+ ( l )  “ C o n f i s c a t i o n ” ,  w h i c h  includes forfeiture wher e applicable, shall mean
+the permanent depriv ation of property by order of a court or other competent
+authority;
+
+- 5 -
+
+ ( m )  “ P r e d i c a t e  o f f e n c e ”  s h a l l  m e a n  any offence as a result of which proceeds
+have been generated that may become the subject of an offence as defined in article 17
+of this Convention;
+ ( n )  “ R e g i o n a l  e c o n o m i c  i n t e g r a t i o n  o r g a n i z a t i o n ”  s h a l l  m e a n  a n
+organization constituted by so vereign States of a given re gion to which its member
+States have transferred competence in respect of matters governed by this Convention
+and which has been duly authorized, in acco rdance with its inte rnal procedures, to
+sign, ratify, accept, approve or accede to it; references to “States Parties” under this
+Convention shall apply to su ch organizations within the limits of their competence;
+ ( o )  “ E m e r g e n c y ”  s h a l l  m e a n  a  s i t u a t i on in which there is a significant and
+imminent risk to the life or safety of any natural person.
+Article 3
+Scope of application
+ T h i s  C o n v e n t i o n  s h a l l  a p p l y ,  e x c e p t as otherwise stated herein, to:
+ ( a )  T h e  p r e v e n t i o n ,  i n v e s t i g a t i o n  a n d  prosecution of the criminal offences
+established in accordance with this Conv ention, including the freezing, seizure,
+confiscation and return of the proceeds from such offences;
+ ( b )  T h e  c o l l e c t i n g ,  o b t aining, preserving and sh aring of evidence in
+electronic form for the purpose of criminal investigations or proceedings, as provided
+for in articles 23 and 35 of this Convention.
+Article 4
+Offences established in accordance with other
+United Nations conventions and protocols
+1. In giving effect to ot her applicable United Nati ons conventions and protocols
+to which they are Parties, States Parties shall ensure that criminal offences established
+in accordance with such c onventions and protocols are also considered criminal
+offences under domestic law when comm itted through the use of information and
+communications technology systems.
+2. Nothing in this article shall be interpre ted as establishing criminal offences in
+accordance with this Convention.
+
+- 6 -
+
+Article 5
+Protection of sovereignty
+1. States Parties shall carry out their obligations under this  C o n v e n t i o n  i n  a
+manner consistent with the pr inciples of sovereign equali ty and territorial integrity
+of States and that of non -intervention in the domestic affairs of other States.
+2. Nothing in this Convention shall enti tle a State Party to undertake in the
+territory of another St ate the exercise of jurisdicti on and performance of functions
+that are reserved exclusively for the authorities of that other State by its domestic
+law.
+Article 6
+Respect for human rights
+1. States Parties shall ensure that the implementation of their obligations under
+this Convention is consistent with their obligations under international human rights
+law.
+2. Nothing in this Convent ion shall be interpreted as  permitting suppression of
+human rights or fundamental freedoms, including the rights related to the freedoms
+of expression, conscience, opinion, reli gion or belief, peaceful assembly and
+association, in accordance and in a manner  consistent with applicable international
+human rights law.
+Chapter II
+Criminalization
+Article 7
+Illegal access
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to establish as a criminal offen ce under its domestic law, when committed
+intentionally, the access to the whole or any part of an information and
+communications technology system without right.
+2. A State Party may require that the offe nce be committed by infringing security
+measures, with the intent of obtaining electr onic data or other di shonest or criminal
+intent or in relation to an information and communications technology system that is
+connected to another information and communications technology system.
+
+- 7 -
+
+Article 8
+Illegal interception
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to establish as criminal offenc es under its domestic law, when committed
+intentionally and without right, the inte rception, made by technical means, of
+non-public transmissions of el ectronic data to, from or within an information and
+communications technology system, incl uding electromagnetic  e m i s s i o n s  f r o m  a n
+information and communications technology system carry ing such electronic data.
+2. A State Party may require that the of fence be committed with dishonest or
+criminal intent, or in relation to an information and communications technology
+system that is connected to another in formation and communications technology
+system.
+Article 9
+Interference with electronic data
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to establish as criminal offences  under its domestic law, when committed
+intentionally and without right, the damagi ng, deletion, deterioration, alteration or
+suppression of electronic data.
+2. A State Party may require that the conduct described in paragraph 1 of this
+article result in serious harm.
+Article 10
+Interference with an information and communications technology system
+ E a c h  S t a t e  P a r t y  s h a l l  a d o p t  s u c h  l e g i s l a t i v e  a n d  o t h e r  m e a s u r e s  a s  m a y  b e
+necessary to establish as criminal offences  under its domestic law, when committed
+intentionally and without right, the serious hinderi ng of the functioning of an
+information and communicati ons technology system by i nputting, transmitting,
+damaging, deleting, deteri orating, altering or s uppressing electronic data.
+Article 11
+Misuse of devices
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to establish as criminal offences  under its domestic law, when committed
+intentionally and without right:
+
+- 8 -
+
+ ( a )  T h e  o b t a i n i n g ,  p roduction, sale, procureme nt for use, import,
+distribution or otherwis e making available of:
+ ( i )  A  d e v i c e ,  i n c l u d i n g  a  p r o g r a m ,  d esigned or adapted primarily for the
+purpose of committing any of the offences established in accordance with
+articles 7 to 10 of this Convention; or
+ ( i i )  A  p a s s w o r d ,  a c c e s s  c r e d e n t i a l s ,  e l e c t r o n i c  s i g n a t u r e  o r  s i m i l a r  d a t a  b y
+which the whole or any part of an information and communications technology
+system is capable of being accessed;
+with the intent that the device, including a program, or the password, access
+credentials, electronic signature or similar data be used for the purpose of committing
+any of the offences established in accordance with articles 7 to 10 of this Convention;
+and
+ ( b )  T h e  p o s s e s s i o n  o f  a n  i t e m  r e f e r r e d  t o in paragraph 1 (a) (i) or (ii) of this
+article, with intent that it be used for the purpose of committing any of the offences
+established in accordance with arti cles 7 to 10 of this Convention.
+2. This article shall not be interpreted as imposing criminal liability where the
+obtaining, production, sale , procurement for us e, import, distribution or otherwise
+making available, or the possession referred to in paragraph 1 of this article is not for
+the purpose of committing an offence establ ished in accordance with articles 7 to 10
+of this Convention, such as for the authorized testing or protection of an information
+and communications technology system.
+3. Each State Party may rese rve the right not to apply paragraph 1 of this article,
+provided that the reservation does not co ncern the sale, distribution or otherwise
+making available of the items referred to in  paragraph 1 (a) (ii) of this article.
+Article 12
+Information and communications technology system-related forgery
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to establish as criminal offences  under its domestic law, when committed
+intentionally and without right, the input, alteration, deletion or suppression of
+electronic data resulting in inauthentic data with the intent that they be considered or
+acted upon for legal purpos es as if they were  authentic, regardle ss of whether or not
+the data are directly readable and intelligible.
+2. A State Party may require an intent to defraud, or a similar dishonest or
+criminal intent, before cr iminal liability attaches.
+
+- 9 -
+
+Article 13
+Information and communications technology system-related theft or fraud
+ E a c h  S t a t e  P a r t y  s h a l l  a d o p t  s u c h  l e g i s l a t i v e  a n d  o t h e r  m e a s u r e s  a s  m a y  b e
+necessary to establish as a criminal offen ce under its domestic law, when committed
+intentionally and without right, the causing of a loss of property to another person by
+means of:
+ ( a )  A n y  i n p u t ,  a l t e r ation, deletion or suppressi on of electronic data;
+ ( b )  A n y  i n t e r f e r e n c e  with the functioning of  a n  i n f o r m a t i o n  a n d
+communications technology system;
+ ( c )  A n y  d e c e p t i o n  a s  t o  f a c t u a l  c ircumstances made through an information
+and communications technolo gy system that causes a pe rson to do or omit to do
+anything which that person would no t otherwise do or omit to do;
+with the fraudulent or dishonest intent of procuring for oneself or for another person,
+without right, a gain in  money or other property.
+Article 14
+Offences related to online child sexual abuse or
+child sexual exploitation material
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to establish as criminal offences  under its domestic law, when committed
+intentionally and without ri ght, the following conduct:
+ ( a )  P r o d u c i n g ,  o f f e r i n g ,  s e l l i n g ,  d istributing, transmit ting, broadcasting,
+displaying, publishing or otherwise making available child sexual abuse or child
+sexual exploitation material through an information and communications technology
+system;
+ ( b )  S o l i c i t i n g ,  p r o c u r i n g  or accessing child sexual abuse or child sexual
+exploitation material thro ugh an information and co mmunications technology
+system;
+ ( c )  P o s s e s s i n g  o r  c o n t r o l l i n g  c h i l d  s e x u a l abuse or child sexual exploitation
+material stored in an info rmation and communications te chnology system or another
+storage medium;
+ ( d )  F i n a n c i n g  t h e  o f f e n c e s  e s t a b l i s h ed in accordance with subparagraphs (a)
+to (c) of this paragraph, which States Pa rties may establish as a separate offence.
+
+- 10 -
+
+2. For the purposes of this article, the term “child sexual abuse or child sexual
+exploitation material” shall include visual material, and may include written or audio
+content, that depicts, describes or re presents any person under 18 years of age:
+ ( a )  E n g a g i n g  i n  r e a l  o r  simulated sexual activity;
+ ( b )  I n  t h e  p r e s e n c e  o f  a  p e r s o n  engaging in any sexual activity;
+ ( c )  W h o s e  s e x u a l  p a r t s  a r e  d i s p l a y e d  f o r  p r i m a r i l y  s e x u a l  p u r p o s e s ;  o r
+ ( d )  S u b j e c t e d  t o  t o r t u r e  o r  c r u e l , i n h u m a n e  o r  d e g r a d i n g  t r e a t m e n t  o r
+punishment and such material is sexual in nature.
+3. A State Party may require that the material identified in paragraph 2 of this
+article be limited to material that:
+ ( a )  D e p i c t s ,  d e s c r i b e s  o r  r e p r e s e n t s  a n  e x i s t i n g  p e r s o n ;  o r
+ ( b )  V i s u a l l y  d e p i c t s  c h i l d  s e x u a l  abuse or child sexual exploitation.
+4. In accordance with their domestic law and consistent with applicable
+international obligations, States Parties may take steps to exclude the criminalization
+of:
+ ( a )  C o n d u c t  b y  c h i l d r e n  for self-generated materi al depicting them; or
+ ( b )  T h e  c o n s e n s u a l  p r o d u c t i o n ,  t r a nsmission, or possession of material
+described in paragraph 2 (a ) to (c) of this article, wh ere the underlying conduct
+depicted is legal as determined by domestic law, and where such material is
+maintained exclusively for the private an d consensual use of the persons involved.
+5. Nothing in this Convention shall affect  any international obligations which are
+more conducive to the realizati on of the rights of the child.
+Article 15
+Solicitation or grooming for the purpose of committing
+a sexual offence against a child
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to establish as criminal offences under its domestic law the act of
+intentionally communicati ng, soliciting, g rooming, or making any arrangement
+through an information and communications technology sy stem for the purpose of
+committing a sexual offence against a child, as defined in domestic law, including for
+the commission of any of the offences esta blished in accordance with article 14 of
+this Convention.
+
+- 11 -
+
+2. A State Party may require an act in furtherance of the conduct described in
+paragraph 1 of this article.
+3. A State Party may consider extendin g criminalization in accordance with
+paragraph 1 of this article in relation  to a person believed to be a child.
+4. States Parties may take steps to ex clude the criminalization of conduct as
+described in paragraph 1 of this article when committed by children.
+Article 16
+Non-consensual dissemination of intimate images
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to establish as criminal offences  under its domestic law, when committed
+intentionally and without right, the selling, distributing, transmitting, publishing or
+otherwise making available of an in timate image of a pe rson by means of an
+information and communicati ons technology system, with out the consent of the
+person depicted in the image.
+2. For the purpose of paragraph 1 of this  article, “intimate image” shall mean a
+visual recording of a person over the ag e of 18 years made by any means, including
+a photograph or video recording, that is sexual in nature, in which the person’s sexual
+parts are exposed or the person is engaged in sexual activity, which was private at the
+time of the recording, and in  r e s p e c t  o f  w h i c h  t h e  p erson or persons depicted
+maintained a reasonable expectation of privacy at the time of the offence.
+3. A State Party may extend the definition  of intimate images, as appropriate, to
+depictions of persons who are under the ag e of 18 years if they are of legal age to
+engage in sexual activity un der domestic law and the im age does not depict child
+abuse or exploitation.
+4. For the purposes of  this article, a person who is  under the age of 18 years and
+depicted in an intimate image cannot cons ent to the disseminati on of an intimate
+image that constitutes child sexual abuse or  child sexual exploita tion material under
+article 14 of this Convention.
+5. A State Party may require the intent to cause harm before criminal liability
+attaches.
+6. States Parties may take other measur es concerning matters related to this
+article, in accordance with their domestic law and consistent with applicable
+international obligations.
+
+- 12 -
+
+Article 17
+Laundering of proceeds of crime
+1. Each State Party shall adopt, in accordance with fundamental principles of its
+domestic law, such legislative and other m easures as may be necessary to establish
+as criminal offences, when committed intentionally:
+ ( a )  ( i )  T h e  c o n v e r s i o n  o r  t r a n s f e r  o f  property, knowing that such property is
+the proceeds of crime, for the purpose of concealing or disguising the illicit
+origin of the property or of helping any person who is involved in the
+commission of the predicate offence to evade the lega l consequences of that
+person’s actions;
+ ( i i )  T h e  c o n c e a l m e n t  o r  d i s g u i s e  o f t h e  t r u e  n a t u r e ,  s o u r c e ,  l o c a t i o n ,
+disposition, movement or ownership of or  r i g h t s  w i t h  r e s pect to property,
+knowing that such property is the proceeds of crime;
+ ( b )  S u b j e c t  t o  t h e  b a s i c  c o n c e p t s  o f  i t s  l e g a l  s y s t e m :
+ ( i )  T h e  a c q u i s i t i o n ,  p o s s e s s i o n  o r  u se of property, knowing,  at the time of
+receipt, that such property is the proceeds of crime;
+ ( i i )  P a r t i c i p a t i o n  i n ,  a s s o c i a t i o n  w i t h  or conspiracy to commit, attempts to
+commit and aiding, abetti ng, facilitating and couns elling the commission of
+any of the offences established in accordance with this article.
+2. For purposes of implement ing or applying paragra ph 1 of this article:
+ ( a )  E a c h  S t a t e  P a r t y  s h a l l  e s t a b l i s h  a s  p r e d i c a t e  o f f e n c e s  r e l e v a n t  o f f e n c e s
+established in accordance with articles 7 to 16 of this Convention;
+ ( b )  I n  t h e  c a s e  o f  S t a t e s  P a r t i e s  w h o s e  legislation sets out a list of specific
+predicate offences, they shall, at a minimu m, include in that list a comprehensive
+range of offences established in accordance with articles 7 to 16 of this Convention;
+ ( c )  F o r  t h e  p u r p o s e s  o f  s u b p a r a g r aph (b) of this para graph, predicate
+offences shall include offences committed both within and outside the jurisdiction of
+the State Party in question. However, offenc es committed outside the jurisdiction of
+a State Party shall constitute predicate offe nces only when the re levant conduct is a
+criminal offence under the domestic law of the State where it is committed and would
+be a criminal offence under the domestic law of the State Party implementing or
+applying this article, had it  been committed there;
+ ( d )  E a c h  S t a t e  P a r t y  s h a l l  f u r n i s h  c o p i e s  of its laws that give effect to this
+article and of any subsequent changes to such laws or a description thereof to the
+Secretary-General of the United Nations;
+
+- 13 -
+
+ ( e )  I f  r e q u i r e d  b y  f u n d a mental principles  o f  t h e  d o m e s t i c  l a w  o f  a  S t a t e
+Party, it may be provided that the offences set forth in paragraph 1 of this article do
+not apply to the persons who committed the predicate offence;
+ ( f )  K n o w l e d g e ,  i n t e n t  o r  p u r p o s e  r e q u i red as an element of an offence set
+forth in paragraph 1 of this article ma y be inferred from objective factual
+circumstances.
+Article 18
+Liability of legal persons
+1. Each State Party shall adopt such meas ures as may be necessary, consistent
+with its legal principles, to establish the liability of legal persons for participation in
+the offences established in accor dance with this Convention.
+2. Subject to the legal principles of the State Party, the liability of legal persons
+may be criminal, civil or administrative.
+3. Such liability shall be without prejudic e to the criminal liability of the natural
+persons who have committed the offences.
+4. Each State Party shall, in particular, ensure that legal persons held liable in
+accordance with this article are subject to  e f f e c t i v e ,  p r o p o r t i onate and dissuasive
+criminal or non-criminal sanctions, including monetary sanctions.
+Article 19
+Participation and attempt
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to establish as a criminal offen ce, in accordance with its domestic law,
+when committed intentionally, the participation in any capacity, such as that of an
+accomplice, assistant or instigator, in an of fence established in accordance with this
+Convention.
+2. Each State Party may adopt the necessa ry legislative and other measures to
+establish as a criminal offence, in accordance with its domestic law, when committed
+intentionally, any attempt to commit an of fence established in accordance with this
+Convention.
+3. Each State Party may adopt the necessa ry legislative and other measures to
+establish as a criminal offence, in accordance with its domestic law, when committed
+intentionally, the preparation for an offe nce established in accordance with this
+Convention.
+
+- 14 -
+
+Article 20
+Statute of limitations
+ E a c h  S t a t e  P a r t y  s h a l l ,  w h e r e  a p p r o p r i a te, considering the gravity of the crime,
+establish under its dom estic law a long statute of lim itations period in which to
+commence proceedings for any offence established in accordance with this
+Convention and establish a l onger statute of limitati ons period or provide for the
+suspension of the statute of limitations where the alleged offender has evaded the
+administration of justice.
+Article 21
+Prosecution, adjudication and sanctions
+1. Each State Party shall make the comm ission of an offence established in
+accordance with this Convention liable to  e f f e c t i v e ,  p r o p o r t i o n a t e  a n d  d i s s u a s i v e
+sanctions that take into accoun t the gravity of the offence.
+2. Each State Party may adopt, in ac cordance with its domestic law, such
+legislative and other measures as may be necessary to establish aggravating
+circumstances in relation to the offences  e s t a b l i s h e d  i n  a c c o r d a n c e  w i t h  t h i s
+Convention, including circumstan ces that affect critical in formation infrastructures.
+3. Each State Party shall endeavour to ensu re that any discretionary legal powers
+under its domestic law relating to the prosecut ion of persons for offences established
+in accordance with this Convention are exercised in order to maximize the
+effectiveness of law enforcement measures in  respect of those offences and with due
+regard to the need to deter th e commission of such offences.
+4. Each State Party shall ensure th at any person prosec uted for offences
+established in accordance with this Conventi on enjoys all rights and guarantees in
+conformity with domestic law and consis tent with the applicable international
+obligations of the State Party, including the right to a fair trial and the rights of the
+defence.
+5. In the case of offences established in accordance with th is Convention, each
+State Party shall take appropr iate measures, in accordance  with its domestic law and
+with due regard to the rights of the defence, to seek to ensure that conditions imposed
+in connection with decisions on release pending trial or appeal take into consideration
+the need to ensure the presence of the defe ndant at subsequent criminal proceedings.
+6. Each State Party shall take into acco unt the gravity of th e offences concerned
+when considering the eventual ity of early release or parole  of persons convicted of
+such offences.
+
+- 15 -
+
+7. States Parties shall ensure that appropriate measures are in place under
+domestic law to protect children who ar e accused of offences established in
+accordance with this Convention, consis tent with the obligations under the
+Convention on the Rights of the Child and the applicable Protocols thereto, as well
+as other applicable internatio nal or regional instruments.
+8. Nothing contained in this Convention  s h a l l  a f f e c t  t h e  p r i n c i p l e  t h a t  t h e
+description of the offences established in accordance with this Convention and of the
+applicable legal defences or other legal principles controlling the lawfulness of
+conduct is reserved to the domestic law of a State Party and that such offences shall
+be prosecuted and punished in  accordance with that law.
+Chapter III
+Jurisdiction
+Article 22
+Jurisdiction
+1. Each State Party shall adopt such meas ures as may be necessary to establish
+its jurisdiction over the offe nces established in accord ance with this Convention
+when:
+ ( a )  T h e  o f f e n c e  i s  c o m m i t t e d  i n  t h e  territory of that State Party; or
+ ( b )  T h e  o f f e n c e  i s  c o m m i t t e d  o n  b o a r d  a  v e s s e l  t h a t  i s  f l y i n g  t h e  f l a g  o f  t h a t
+State Party or an aircra ft that is registered under the laws of that State Party at the
+time when the offence is committed.
+2. Subject to article 5  of this Convention, a State Party may also establish its
+jurisdiction over any such offence when:
+ ( a )  T h e  o f f e n c e  i s  c o m m i t t e d  a g a i n s t  a national of that State Party; or
+ ( b )  T h e  o f f e n c e  i s  c o m m i t t e d  b y  a  n a t i o nal of that State Party or a stateless
+person with habitual reside nce in its territory; or
+ ( c )  T h e  o f f e n c e  i s  o n e  o f  t h o s e  e s t a b lished in accordance with article 17,
+paragraph 1 (b) (ii), of this  Convention and is committed outside its territory with a
+view to the commission of an offence es tablished in accordance with article 17,
+paragraph 1 (a) (i) or (ii) or (b) (i), of this Convention within its territory; or
+ ( d )  T h e  o f f e n c e  i s  c o m m i t t e d  a g a i n s t  t h e  S t a t e  P a r t y .
+
+- 16 -
+
+3. For the purposes of ar ticle 37, paragraph 11,  of this Convention, each State
+Party shall take such measures as may be n ecessary to establish its jurisdiction over
+the offences established in accordance wi th this Convention when the alleged
+offender is present in its territory and it does not extradite such  person solely on the
+ground that the person is one of its nationals.
+4. Each State Party may also adopt su ch measures as may be necessary to
+establish its jurisdiction over the offences  e s t a b l i s h e d  i n  a c c o r d a n c e  w i t h  t h i s
+Convention when the alleged offender is present in its territory and it does not
+extradite the person.
+5. If a State Party exercising its jurisdic tion under paragraph 1 or 2 of this article
+has been notified, or has otherwise lear ned, that any other States Parties are
+conducting an investigation, prosecution or judicial proceeding in respect of the same
+conduct, the competent author ities of those States Partie s shall, as appropriate,
+consult one another with a view  to coordinating their actions.
+6. Without prejudice to no rms of general international law, this Convention shall
+not exclude the exercise of any criminal ju risdiction established by a State Party in
+accordance with its domestic law.
+Chapter IV
+Procedural measures and law enforcement
+Article 23
+Scope of procedural measures
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to establish the powers and proce dures provided for in this chapter for the
+purpose of specific criminal i nvestigations or proceedings.
+2. Except as provided otherwise in this Convention, each State Party shall apply
+the powers and procedures referred to in paragra ph 1 of this article to:
+ ( a )  T h e  c r i m i n a l  o f f e n c e s  e s t a b l i s h e d  in accordance with this Convention;
+ ( b )  O t h e r  c r i m i n a l  o f f e n c e s  c o mmitted by means of an information and
+communications technology system; and
+ ( c )  T h e  c o l l e c t i o n  o f  e v i d e n c e  i n  e l e c t r o n i c  f o r m  o f  a n y  c r i m i n a l  o f f e n c e .
+
+- 17 -
+
+3. (a) Each State Party may reserve the ri ght to apply the measures referred to
+in article 29 of this Conventi on only to offences or catego ries of offences specified
+in the reservation, provided that the range of  such offences or categories of offences
+is not more restricted than the range of offences to which it applies the measures
+referred to in article 30 of this Convention. Each State Party shall consider restricting
+such a reservation to enable the broadest ap plication of the measur es referred to in
+article 29;
+ ( b )  W h e r e  a  S t a t e  P a r t y ,  o w i n g  t o  l i m i t a tions in its legislation in force at the
+time of the adoption of this Conv ention, is not able to apply the measures referred to
+in articles 29 and 30 of this Convention to  communications being transmitted within
+an information and communications technology system of a service provider which:
+ ( i )  I s  b e i n g  o p e r a t e d  f o r  t h e  b e n efit of a closed group of users; and
+ ( i i )  D o e s  n o t  e m p l o y  p u b l i c  c o m m u n i c ations networks and is not connected
+with another inform ation and communications te chnology system, whether
+public or private;
+that State Party may reserve the right not to apply these measures to such
+communications. Each State Pa rty shall consider restric ting such a reservation to
+enable the broadest applicati on of the measures referred to in articles 29 and 30 of
+this Convention.
+Article 24
+Conditions and safeguards
+1. Each State Party shall ensure that the establishment, implementation and
+application of the powers and procedures provided for in th is chapter are subject to
+conditions and safeguards provided for under its domestic  law, which shall provide
+for the protection of human rights, in accordance with  i t s  o b l i g a t i o n s  u n d e r
+international human rights law, and which shall inc orporate the principle of
+proportionality.
+2. In accordance with and pursuant to the domestic law of each State Party, such
+conditions and safeguards shall, as appropriate in view of the nature of the procedure
+or power concerned, include, inter alia, judicial or other independent review, the right
+to an effective remedy, grounds justifying application, and limitation of the scope and
+the duration of such power or procedure.
+3. To the extent that it is  c o n s i s t e n t  w i t h  t h e  p u b l i c  interest, in particular the
+proper administration of ju stice, each State Party shall consider the impact of the
+powers and procedures in this chapter upon the rights, responsibilities and legitimate
+interests of third parties.
+
+- 18 -
+
+4. The conditions and safeguards established in accordance with this article shall
+apply at the domestic level to  the powers and procedures set forth in this chapter,
+both for the purpose of domesti c criminal investigations and proceedings and for the
+purpose of rendering intern ational cooperation by th e requested State Party.
+5. References to judicial or  other independent review in paragraph 2 of this article
+are references to such review at the domestic level.
+Article 25
+Expedited preservation of stored electronic data
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to enable its competent author ities to order or similarly obtain the
+expeditious preservation of specified electronic data, in cluding traffic data, content
+data and subscriber informati on, that have been  stored by means of an information
+and communications technology system, in particular where there are grounds to
+believe that the electronic data are particul arly vulnerable to loss or modification.
+2. Where a State Party gives effect to paragraph 1 of this article by means of an
+order to a person to preserve specified stored electronic da ta in the person’s
+possession or control, the State Party shall adopt such legislative and other measures
+as may be necessary to oblige that person to preserve and maintain the integrity of
+those electronic data f or a period of time as  long as necessary,  up to a maximum of
+90 days, to enable the competent authoritie s to seek their disc losure. A State Party
+may provide for such an order to be subsequently renewed.
+3. Each State Party shall adopt such le gislative and other measures as may be
+necessary to oblige the cust odian or other person who is to preserve the electronic
+data to keep confidential the undertaking of such  procedures for the period of time
+provided for in its do mestic legislation.
+Article 26
+Expedited preservation and partial disclosure of traffic data
+ E a c h  S t a t e  P a r t y  s h a l l  a d o p t ,  i n  r e s p e c t  of traffic data that are to be preserved
+under the provisions of arti cle 25 of this Convention, such legislative and other
+measures as may be necessary to:
+ ( a )  E n s u r e  t h a t  s u c h  e x p e d i t i o u s  p r eservation of traffic data is available
+regardless of whether one or more service providers were involved in the
+transmission of a communication; and
+ ( b )  E n s u r e  t h e  e x p e d i t i o u s  d i s c l o s u r e  t o  t h e  S t a t e  P a r t y ’ s  c o m p e t e n t
+authority, or a person designated by that au thority, of a sufficient amount of traffic
+
+- 19 -
+
+data to enable the State Party to identify  the service providers and the path through
+which the communication or indicated information was transmitted.
+Article 27
+Production order
+ E a c h  S t a t e  P a r t y  s h a l l  a d o p t  s u c h  l e g i s l a t i v e  a n d  o t h e r  m e a s u r e s  a s  m a y  b e
+necessary to empower its competent authorities to order:
+ ( a )  A  p e r s o n  i n  i t s  t e r r i t o r y  t o  s u b m i t s p e c i f i e d  e l e c t r o n i c  d a t a  i n  t h a t
+person’s possession or control that are stored in an information and communications
+technology system or an electron ic data storage medium; and
+ ( b )  A  s e r v i c e  p r o v i d e r  o f f ering its services in the territory of the State Party
+to submit subscriber informat ion relating to such services in that service provider’s
+possession or control.
+Article 28
+Search and seizure of stored electronic data
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to empower its competent author ities to search or similarly access:
+ ( a )  A n  i n f o r m a t i o n  a n d  c o m m u n i c a t i o n s  technology system, part of it, and
+electronic data stored therein; and
+ ( b )  A n  e l e c t r o n i c  d a t a  storage medium in which th e electronic data sought
+may be stored;
+in the territory of that State Party.
+2. Each State Party shall adopt such le gislative and other measures as may be
+necessary to ensure that, where its author ities search or similarly access a specific
+information and communicati ons technology system or pa rt of it, pursuant to
+paragraph 1 (a) of this articl e, and have grounds to believ e that the electronic data
+sought are stored in anot her information and communic ations technology system or
+part of it in its territory, and such data are lawfully accessible from or available to the
+initial system, such authorities shall be ab le to expeditiously co nduct the search to
+obtain access to that other informatio n and communications technology system.
+3. Each State Party shall adopt such le gislative and other measures as may be
+necessary to empower its competent authorities to seize or similarly secure electronic
+data in its territory accessed in accordance with paragraph 1 or 2 of this article. These
+measures shall include the power to:
+
+- 20 -
+
+ ( a )  S e i z e  o r  s i m i l a r l y  s e c u r e  a n i n f o r m a t i o n  a n d  c o m m u n i c a t i o n s
+technology system or part of it, or an  electronic data storage medium;
+ ( b )  M a k e  a n d  r e t a i n  c o p i e s  o f  t h o s e  electronic data in electronic form;
+ ( c )  M a i n t a i n  t h e  i n t e g r i t y  o f  t h e  relevant stored electronic data;
+ ( d )  R e n d e r  i n a c c e s s i b l e  o r  r e m o v e  t hose electronic data in the accessed
+information and communications technology system.
+4. Each State Party shall adopt such le gislative and other measures as may be
+necessary to empower its competent authorities to order any person who has
+knowledge about the functioning of the information and communications technology
+system in question, the information and telecommunic ations network, or their
+component parts, or measures applied to protect the electronic data therein, to
+provide, as is reasonable, the necessary in formation to enable the undertaking of the
+measures referred to in para graphs 1 to 3 of this article.
+Article 29
+Real-time collection of traffic data
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary to empower its competent authorities to:
+ ( a )  C o l l e c t  o r  r e c o r d ,  through the application of technical means in the
+territory of that State Party; and
+ ( b )  C o m p e l  a  s e r v i c e  p r o v i d e r ,  w i t hin its existing technical capability:
+ ( i )  T o  c o l l e c t  o r  r e c o r d ,  t h r o u g h  t h e  application of technical means in the
+territory of that State Party; or
+ ( i i )  T o  c o o p e r a t e  a n d  a s s i s t  t h e  c o m p e t e n t  a u t h o r i t i e s  i n  t h e  c o l l e c t i o n  o r
+recording of;
+traffic data, in real time, associated with specified communications in its territory
+transmitted by means of an information and communications technology system.
+2. Where a State Party, owing to the pr inciples of its domestic legal system,
+cannot adopt the measures referred to in paragraph 1 (a) of this article, it may instead
+adopt such legislative and other measures as may be necessary to ensure the real-time
+collection or recording of traffic data associated with specified communications
+transmitted in its territory, through the application of technical means in that territory.
+
+- 21 -
+
+3. Each State Party shall adopt such le gislative and other measures as may be
+necessary to oblige a service provider to keep confidential the fact of the execution
+of any power provided for in  this article and any in formation relating to it.
+Article 30
+Interception of content data
+1. Each State Party shall adopt such le gislative and other measures as may be
+necessary, in relation to a range of seriou s criminal offences to be determined by
+domestic law, to empower its competent authorities to:
+ ( a )  C o l l e c t  o r  r e c o r d ,  through the application of technical means in the
+territory of that State Party; and
+ ( b )  C o m p e l  a  s e r v i c e  p r o v i d e r ,  w i t hin its existing technical capability:
+ ( i )  T o  c o l l e c t  o r  r e c o r d ,  t h r o u g h  t h e  application of technical means in the
+territory of that State Party; or
+ ( i i )  T o  c o o p e r a t e  a n d  a s s i s t  t h e  c o m petent authorities in the collection or
+recording of;
+content data, in real time, of specified comm unications in its territory transmitted by
+means of an information and co mmunications technology system.
+2. Where a State Party, owing to the pr inciples of its domestic legal system,
+cannot adopt the measures referred to in paragraph 1 (a) of this article, it may instead
+adopt such legislative and other measures as may be necessary to ensure the real-time
+collection or recording of content data on specified communications in its territory,
+through the application of techni cal means in that territory.
+3. Each State Party shall adopt such le gislative and other measures as may be
+necessary to oblige a service provider to keep confidential the fact of the execution
+of any power provided for in  this article and any in formation relating to it.
+Article 31
+Freezing, seizure and confiscation of the proceeds of crime
+1. Each State Party shall adop t, to the greatest extent possible within its domestic
+legal system, such measures as may be ne cessary to enable the confiscation of:
+ ( a )  P r o c e e d s  o f  c r i m e  d e r i v e d  f r o m  o f f e n c e s  e s t a b l i s h e d  i n  a c c o r d a n c e  w i t h
+this Convention or property the value of which corresponds to that of such proceeds;
+
+- 22 -
+
+ ( b )  P r o p e r t y ,  e q u i p m e n t  o r  o t h e r  i n s t r umentalities used in or destined for
+use in offences established in accordance with  this Convention.
+2. Each State Party shall adopt such meas ures as may be necessary to enable the
+identification, tracing, freezi ng or seizure of any item refe rred to in paragraph 1 of
+this article for the purpose of eventual confiscation.
+3. Each State Party shall adopt, in accordance with its domestic law, such
+legislative and other measures as may be necessary to regulate the administration by
+the competent authorities of frozen, seiz ed or confiscated property covered in
+paragraphs 1 and 2 of this article.
+4. If proceeds of crime have been transfor med or converted, in part or in full, into
+other property, such property shall be liable to the measures referred to in this article
+instead of the proceeds.
+5. If proceeds of crime have been inte rmingled with property acquired from
+legitimate sources, such property shall, w ithout prejudice to a ny powers relating to
+freezing or seizure, be liable to conf iscation up to the assessed value of the
+intermingled proceeds.
+6. Income or other benefits derived from  proceeds of crime, from property into
+which proceeds of crime have  been transformed or conver ted or from property with
+which proceeds of crime have been intermingled, shall also be liable to the measures
+referred to in this article, in the same manner and to the same extent as proceeds of
+crime.
+7. For the purposes of this  article and article 50 of this Convention, each State
+Party shall empower its courts or other co mpetent authorities to  o r d e r  t h a t  b a n k ,
+financial or commercial records be made available or be seized. A State Party shall
+not decline to act under the provisions of this pa ragraph on the ground of bank
+secrecy.
+8. Each State Party may consider the pos sibility of requiring that an offender
+demonstrate the lawful origin of alleged proceeds of crime or other property liable to
+confiscation, to the extent that such a requir ement is consistent with the principles of
+their domestic law and with  the nature of the judici al and other proceedings.
+9. The provisions of this ar ticle shall not be construe d as prejudicing the rights
+of bona fide third parties.
+10. Nothing contained in this article shall affect the principle that the measures to
+which it refers shall be defined and impleme nted in accordance with the provisions
+of the domestic law of a State Party.
+
+- 23 -
+
+Article 32
+Establishment of criminal record
+ E a c h  S t a t e  P a r t y  m a y  a d o p t  s u c h  l e g i s l a t i v e  o r  o t h e r  m e a s u r e s  a s  m a y  b e
+necessary to take into consideration, under such terms as, and for the purpose that, it
+deems appropriate, any previous  conviction in another Stat e of an alleged offender
+for the purpose of using such  i n f o r m a t i o n  i n  c riminal proceedings relating to an
+offence established in accord ance with this Convention.
+Article 33
+Protection of witnesses
+1. Each State Party shall take appropriate measures, in accordance with its
+domestic law and within its means, to pr ovide effective protection from potential
+retaliation or intimidation for witnesses who give testimony or, in good faith and on
+reasonable grounds, provide information concerning of fences established in
+accordance with this Convention or otherwise cooperate with investigative or judicial
+authorities and, as appropria te, for their relati ves and other persons close to them.
+2. The measures envisaged in paragraph 1 of this article may include, inter alia,
+without prejudice to the rights of the defe ndant, including the right to due process:
+ ( a )  E s t a b l i s h i n g  p r o c e d ures for the physical protec tion of such persons,
+such as, to the extent necessary and feasib le, relocating them and permitting, where
+appropriate, non-discl osure or limitations on th e disclosure of information
+concerning the identity and whereabouts of such persons;
+ ( b )  P r o v i d i n g  e v i d e n t i a r y  r u l e s  t o  p e r mit witness testimony to be given in a
+manner that ensures the safety of the witness, such as permitting testimony to be
+given through the use of communi cations technology such as  video links or other
+adequate means.
+3. States Parties shall consider entering into agreements or arrangements with
+other States for the relocati on of persons referred to in pa ragraph 1 of this article.
+4. The provisions of this article shall also apply to victims insofar as they are
+witnesses.
+
+- 24 -
+
+Article 34
+Assistance to and protection of victims
+1. Each State Party shall take appropriat e measures within its means to provide
+assistance and protection to victims of offences established in accordance with this
+Convention, in particular in cases of threat of reta liation or intimidation.
+2. Each State Party shall, subject to its domestic law, establish appropriate
+procedures to provide access to compensa tion and restitution fo r victims of offences
+established in accordance with this Convention.
+3. Each State Party shall, subject to it s domestic law, enable views and concerns
+of victims to be presented and consider ed at appropriate stages of criminal
+proceedings against offenders in a manner not prejudicial to the rights of the defence.
+4. With respect to the offences established in accordance with articles 14 to 16 of
+this Convention, each State Party shall, subj ect to its domestic la w, take measures to
+provide assistance to  v i c t i m s  o f  s u c h  o f f e n c e s ,  i ncluding for their physical and
+psychological recovery, in co operation with rele vant international organizations,
+non-governmental organizations, and ot her elements of civil society.
+5. In applying the provisions of paragraphs  2 to 4 of this article, each State Party
+shall take into account the age, gender a nd the particular circumstances and needs of
+victims, including the particular ci rcumstances and needs of children.
+6. Each State Party shall, to the exte nt consistent with its domestic legal
+framework, take effective steps to ensure compliance with requests to remove or
+render inaccessible the content described in  articles 14 and 16 of this Convention.
+Chapter V
+International cooperation
+Article 35
+General principles of international cooperation
+1. States Parties shall coop erate with each other in accordance with the provisions
+of this Convention, as well as other ap plicable international instruments on
+international cooperati on in criminal matters, and dom estic laws, for the purpose of:
+ ( a )  T h e  i n v e s t i g a t i o n  a n d  p r o s e c u t ion of, and judicial  p r o c e e d i n g s  i n
+relation to, the criminal offences establis hed in accordance with this Convention,
+including the freezing, seiz ure, confiscation a nd return of the pro ceeds from such
+offences;
+
+- 25 -
+
+ ( b )  T h e  c o l l e c t i n g ,  o b t aining, preserving and sh aring of evidence in
+electronic form of criminal offences establ ished in accordance with this Convention;
+ ( c )  T h e  c o l l e c t i n g ,  o b t aining, preserving and sh aring of evidence in
+electronic form of any seri ous crime, including serious  c r i m e s  e s t a b l i s h e d  i n
+accordance with other applicable United Na tions conventions and protocols in force
+at the time of the adoption of this Convention.
+2. For the purpose of th e collecting, obtaining, preserving and sharing of evidence
+in electronic form of offences as provided for in paragraph 1 (b) and (c) of this article,
+the relevant paragr aphs of article 40, and articles 41 to 46 of th is Convention shall
+apply.
+3. In matters of international cooper ation, whenever dual criminality is
+considered a requirement, it shall be deemed fulfilled irrespective of whether the laws
+of the requested State Party place the offe nce within the same category of offence or
+denominate the offence by the same terminol ogy as the requesting State Party, if the
+conduct underlying the offence for which as sistance is sought is a criminal offence
+under the laws of both States Parties.
+Article 36
+Protection of personal data
+1. (a) A State Party transferring person al data pursuant to this Convention
+shall do so in accordance with  its domestic law and any ob ligations the transferring
+Party may have under applicable international law. States Parties shall not be required
+to transfer personal data in accordance with  this Convention if the data cannot be
+provided in compliance with their applicable laws concerning the protection of
+personal data;
+ ( b )  W h e r e  t h e  t r a n s f e r  o f  p e r s o n a l  d a t a  w o u l d  n o t  b e  c o m p l i a n t  w i t h
+paragraph 1 (a) of this article, States Parties may seek to impose appropriate
+conditions, in accordance with such applic able laws, to achieve compliance in order
+to respond to a request for personal data;
+ ( c )  S t a t e s  P a r t i e s  a r e  e n c o u r a g e d  t o e s t a b l i s h  b i l a t e r a l  o r  m u l t i l a t e r a l
+arrangements to facilitate the transfer of personal data.
+2. For personal data transferred in acc ordance with this Convention, States
+Parties shall ensure that the personal da ta received are subject to effective and
+appropriate safeguards in th e respective legal frameworks  of the States Parties.
+3. In order to transfer pe rsonal data obtained in accordance with this Convention
+to a third country or an international or ganization, a State Party shall notify the
+original transferring State Party of its intention and request its authorization.
+
+- 26 -
+
+The State Party shall transfer such persona l data only with th e authorization of the
+original transferring State Party, which may require that the authorization be provided
+in written form.
+Article 37
+Extradition
+1. This article shall apply to the crimina l offences established in accordance with
+this Convention where the pers on who is the subject of th e request for extradition is
+present in the territory of th e requested State Party, prov ided that the offence for
+which extradition is sought is punishable  u n d e r  t h e  d o m e s t i c  l a w  o f  b o t h  t h e
+requesting State Party and the requested State Party. When the extradition is sought
+for the purpose of serving a final sentence of imprison ment or another form of
+detention imposed in respect of an extraditable offence, the requested State Party may
+grant the extradition in accordance with domestic law.
+2. N o t w i t h s t a n d i n g  p a r a g r a p h  1  o f  t h i s  a r t i c l e ,  a  S t a t e  P a r t y  w h o s e  l a w  s o  p e r m i t s
+may grant the extradition of a person for any of the criminal offences established in
+accordance with this Convention that are not punishable under its own domestic law.
+3. If the request for extradition includes  s e v e r a l  s e p a r a t e  c r i m i n a l  o f f e n c e s ,  a t
+least one of which is extraditable under this article and some  o f  w h i c h  a r e  n o t
+extraditable by reason of thei r period of imprisonment but are related to offences
+established in accordance with this Conven tion, the requested State Party may apply
+this article also in respect of those offences.
+4. Each of the offences to which this article applies shall be deemed to be
+included as an extraditable offence in any extradition treaty existing between States
+Parties. States Parties underta ke to include such offences as extraditable offences in
+every extradition treaty to be concluded between them.
+5. If a State Party that makes extradition conditional on the existence of a treaty
+receives a request for extr adition from another State Pa rty with which it has no
+extradition treaty, it may cons ider this Convention the legal basis for extradition in
+respect of any offence to wh ich this article applies.
+6. States Parties that make extradition conditional on the existence of a treaty
+shall:
+ ( a )  A t  t h e  t i m e  o f  d e p o s i t  o f  t h e i r  i nstruments of ratification, acceptance or
+approval of or accession to th is Convention, info rm the Secretary- General of the
+United Nations whether they  w i l l  t a k e  t h i s  C o n v e n t ion as the legal basis for
+cooperation in extradition with other St ates Parties to this Convention; and
+
+- 27 -
+
+ ( b )  I f  t h e y  d o  n o t  t a k e  t h i s  C o n v e n t i o n  as the legal basis for cooperation in
+extradition, seek, where appropriate, to co nclude treaties on extr adition with other
+States Parties to this Convention in  order to implement this article.
+7. States Parties that do not make extradition conditional on the existence of a
+treaty shall recognize offences to which th is article applies as extraditable offences
+between themselves.
+8. Extradition shall be subj ect to the conditions provided for by the domestic law
+of the requested State Party or by applicable extradition treaties, including, inter alia,
+conditions in relation to the minimum penalty requirement for extradition and the
+grounds upon which the requested Stat e Party may refuse extradition.
+9. States Parties shall, subject to thei r domestic law, endeavour to expedite
+extradition procedures and to simplify evid entiary requirements relating thereto in
+respect of any offence to which this article applies.
+10. Subject to the provisi ons of its domestic law and it s extradition treaties, the
+requested State Party may, upon being satisfied that the circumstances so warrant and
+are urgent, and at the request of the requesting State Party, including when the request
+is transmitted through existing channels of the Internationa l Criminal Police
+Organization, take a person whose extradi tion is sought and who is present in its
+territory into custody or take  o t h e r  a p p r o p r i a t e  m e a s u r e s  to ensure the person’s
+presence at extradition proceedings.
+11. A State Party in whose territory an alle ged offender is found,  if it does not
+extradite such person in respect of an offe nce to which this article applies solely on
+the ground that the person is one of its nationals, shall,  at the request of the State
+Party seeking extraditi on, be obliged to submit the ca se without undue delay to its
+competent authorities for th e purpose of prosecution. Thos e authorities shall take
+their decisions and conduct th eir proceedings in the same manner as in the case of
+any other offence of a comparable nature un der the domestic law of that State Party.
+The States Parties concerned shall cooperate with each other, in particular on
+procedural and evidentiary as pects, to ensure the efficiency of such prosecution.
+12. Whenever a State Party is permitted under its domestic law to extradite or
+otherwise surrender one of its nationals only  upon the condition th at the person will
+be returned to that State Party to serve the sentence imposed as a result of the trial or
+proceedings for which the extradition or surr ender of the person was sought and that
+State Party and the State Party seeking the ex tradition of the person agree with this
+option and other term s that they may deem appropriate, such conditional extradition
+or surrender shall be sufficient to discharg e the obligation set forth in paragraph 11
+of this article.
+13. If extradition, sought f or purposes of enforcing a sent ence, is refused because
+the person sought is a nation al of the requested State Party, the requested State Party
+
+- 28 -
+
+shall, if its domestic law so permits and in  conformity with the requirements of such
+law, upon application of the re questing State Party, consid er the enforc ement of the
+sentence imposed under the domestic la w of the requesting State Party or the
+remainder thereof.
+14. Any person regarding wh om proceedings are being carried out in connection
+with any of the offences to which this article applies shall be guaranteed fair treatment
+at all stages of the proceedi ngs, including enjoyment of al l the rights and guarantees
+provided by the domestic  law of the State Party in the territory of which that person
+is present.
+15. Nothing in this Conventio n shall be interpreted as imposing an obligation to
+extradite if the requested State Party has substantial grounds for believing that the
+request has been made for the purpose of  p r o s e c u t i n g  o r  p u n i s h i n g  a  p e r s o n  o n
+account of that person’s sex,  r ac e,  la n g u ag e,  r el ig io n ,  n a tio n a li t y ,  eth n i c o r ig in o r
+political opinions, or that compliance with the request would cause prejudice to that
+person’s position for any one of these reasons.
+16. States Parties may not refuse a requ est for extradition on the sole ground that
+the offence is also considered to involve fiscal matters.
+17. Before refusing extraditio n, the requested State Party shall, where appropriate,
+consult with the requesting State Party to provide it with ample opportunity to present
+its opinions and to prov ide information relevant to its allegation.
+18. The requested State Party shall inform the requesting State Party of its decision
+with regard to the extraditi on. The requested St ate Party shall inf orm the requesting
+State Party of any reason for refusal of extradition unless the requested State Party is
+prevented from doing so by it s domestic law or its inte rnational legal obligations.
+19. Each State Party shall, at the tim e of signature or when depositing its
+instrument of ratification , acceptance, approv al or accession, communicate to the
+Secretary-General of the Un ited Nations the name an d address of an authority
+responsible for making or receiving requests for extradition or provisional arrest. The
+Secretary-General shall set up and keep updated a register of authorities so designated
+by the States Parties. Each State Party shall ensure that the details held in the register
+are correct at all times.
+20. States Parties shall seek  to conclude bilateral and multilateral agreements or
+arrangements to carry out or to enha nce the effectiveness of extradition.
+
+- 29 -
+
+Article 38
+Transfer of sentenced persons
+ S t a t e s  P a r t i e s  m a y ,  t a k i n g  i n t o  c o n s i deration the rights of  sentenced persons,
+consider entering into bilateral or multilat eral agreements or arrangements on the
+transfer to their te rritory of persons sentenced to  i m p r i s o n m e n t  o r o t h e r  f o r m s  o f
+deprivation of liberty for offences established in accordance with this Convention, in
+order that they may complete their sentences there. States Parties may also take into
+account issues relating to consent, rehabilitation and reintegration.
+Article 39
+Transfer of criminal proceedings
+1. States Parties shall consider the pos sibility of transferring to one another
+proceedings for the criminal prosecution of an offence established in accordance with
+this Convention where such a transfer is deem ed to be in the interests of the proper
+administration of justice, particularly in cases where several jurisdictions are
+involved, with a view to concentrating the prosecution.
+2. If a State Party that makes the transfer of criminal proceedings conditional on
+the existence of a treaty rece ives a request for transfer from another State Party with
+which it has no treaty in this matter, it may consider this Convention as the legal basis
+for the transfer of criminal proceedings in respect of any offence to which this article
+applies.
+Article 40
+General principles and procedures relating to mutual legal assistance
+1. States Parties shall afford one anot her the widest measure of mutual legal
+assistance in investigations , prosecutions and judicial pro ceedings in relation to the
+offences established in accordance with this Convention, and for the purposes of the
+collection of evidence in elec tronic form of offences esta blished in accordance with
+this Convention, as well as of serious crimes.
+2. Mutual legal assistance shall be afford ed to the fullest extent possible under
+relevant laws, treaties, agreements and arrangements of the requested State Party with
+respect to investigations, pr osecutions and judicial proceedings in relation to the
+offences for which a legal person may be held  liable in accordance with article 18 of
+this Convention in the requesting State Party.
+3. Mutual legal assistance to be afforded  in accordance with this article may be
+requested for any of the following purposes:
+ ( a )  T a k i n g  e v i d e n c e  o r  s t a t e m e n t s  f r o m  p e r s o n s ;
+
+- 30 -
+
+ ( b )  E f f e c t i n g  s e r v i c e  o f judicial documents;
+ ( c )  E x e c u t i n g  s e a r c h e s  a n d  s e i z u r e s ,  a n d  f r e e z i n g ;
+ ( d )  S e a r c h i n g  o r  s i m i l arly accessing, seizing or similarly securing, and
+disclosing electronic data stored by mean s of an information and communications
+technology system pursuant to article 44 of this Convention;
+ ( e )  C o l l e c t i n g  t r a f f i c  d a t a  i n  r e a l  time pursuant to article 45 of this
+Convention;
+ ( f )  I n t e r c e p t i n g  c o n t e n t  data pursuant to articl e 46 of this Convention;
+ ( g )  E x a m i n i n g  o b j e c t s  a n d  s i t e s ;
+ ( h )  P r o v i d i n g  i n f o r mation, evidence and expert evaluations;
+ ( i )  P r o v i d i n g  o r i g i n a l s  o r  c e r t i f i ed copies of relevant documents and
+records, including governmen t, bank, financial, corpo rate or business records;
+ ( j )  I d e n t i f y i n g  o r  t r a c ing proceeds of crime, prop erty, instrumentalities or
+other things for evidentiary purposes;
+ ( k )  F a c i l i t a t i n g  t h e  v o l u n t a r y  a p p e a r a n c e  o f  p e r s o n s  i n  t h e  r e q u e s t i n g  S t a t e
+Party;
+ ( l )  R e c o v e r i n g  p r o ceeds of crime;
+ ( m )  A n y  o t h e r  t y p e  o f  a s s i s t a n c e  t h a t  is not contrary to the domestic law of
+the requested State Party.
+4. Without prejudice to domestic law, th e competent authorities of a State Party
+may, without prior request, transmit inform ation relating to criminal matters to a
+competent authority in anothe r State Party where they beli eve that such information
+could assist the authority in undertaking or successfully concluding inquiries and
+criminal proceedings or could result in a re quest formulated by th e latter State Party
+pursuant to this Convention.
+5. The transmission of inform ation pursuant to paragraph 4 of this article shall be
+without prejudice to inquiries and criminal proceedings in the State of the competent
+authorities providi ng the information. The compet ent authorities receiving the
+information shall comply with  a request that said information remain confidential,
+even temporarily, or with rest rictions on its use. However,  this shall not prevent the
+receiving State Party from disclosing in  i t s  p r o c e e d i n g s  i n f o r m a t i o n  t h a t  i s
+exculpatory to an accused person. In such a case, the receiving State Party shall notify
+the transmitting State Party prio r to the disclosure and, if so requested, consult with
+
+- 31 -
+
+the transmitting State Party. If, in an exceptional case, advance notice is not possible,
+the receiving State Party shall inform the transmitting State Party of the disclosure
+without delay.
+6. The provisions of this ar ticle shall not affect obligations under any other treaty,
+bilateral or multilateral, that governs or will govern, in whole or in part, mutual legal
+assistance.
+7. Paragraphs 8 to 31 of this article shal l apply to requests made pursuant to this
+article if the States Parties in question are not bound by a tr eaty on mutual legal
+assistance. If those States Parties are bound by such a treaty,  t h e  c o r r e s p o n d i n g
+provisions of that treaty shall apply unless the States Parties agree to apply
+paragraphs 8 to 31 of this article in lieu thereof. States  P a r t i e s  a r e  s t r o n g l y
+encouraged to apply the provisions of those paragraphs if they facilitate cooperation.
+8. States Parties may decline to render assistance pursua nt to this article on the
+ground of absence of dual criminality. However, the requested State Party may, when
+it deems appropriate, provide assistance, to the extent it decides at its discretion,
+irrespective of whether the conduct would constitute an offence under the domestic
+law of the requested State Party. Assistance may be refused when requests involve
+matters of a de minimis  nature or matters for which the cooperation or assistance
+sought is available under other provisions of this Convention.
+9. A person who is being detained or is serving a sentence in  the territory of one
+State Party and whose presence in another State Party is request ed for purposes of
+identification, testimony or otherwise provid ing assistance in obtaining evidence for
+investigations, prosecutions or judicial proceedings in relation to offences established
+in accordance with this Convention may be transferre d if the following conditions
+are met:
+ ( a )  T h e  p e r s o n  f r e e l y  gives informed consent;
+ ( b )  T h e  c o m p e t e n t  a u t h o r i t i e s  o f  b o t h  S t a t e s  P a r t i e s  a g r e e ,  s u b j e c t  t o  s u c h
+conditions as those States Parties may deem appropriate.
+10. For the purposes of para graph 9 of this article:
+ ( a )  T h e  S t a t e  P a r t y  t o  w h i c h  t h e  p erson is transferred shall have the
+authority and obligation to ke ep the person transferred in  custody, unless otherwise
+requested or authorized by the State Part y from which the person was transferred;
+ ( b )  T h e  S t a t e  P a r t y  t o  w hich the person is transferre d shall, without delay,
+implement its obligation to re turn the person to the cu stody of the State Party from
+which the person was transferred as agreed  beforehand, or as otherwise agreed, by
+the competent authorities of both States Parties;
+
+- 32 -
+
+ ( c )  T h e  S t a t e  P a r t y  t o  w h i c h  t h e  p e r son is transferred sh all not require the
+State Party from which the person was transf erred to initiate extradition proceedings
+for the return of the person;
+ ( d )  T h e  p e r s o n  t r a n s f e r r ed shall receive credit for  service of the sentence
+being served in the State from which the pe rson was transferred for time spent in the
+custody of the State Party to whic h the person was transferred.
+11. Unless the State Party from  which a person is to be  transferred in accordance
+with paragraphs 9 and 10 of this article so agrees, that person, regardless of the
+person’s nationality, shall not be prosecuted , detained, punished or subjected to any
+other restriction of liberty in the territ ory of the State to which that person is
+transferred in respect of acts, omissions or convictions prior to the person’s departure
+from the territory of the State from which the person was transferred.
+12. (a) Each State Party shall designate a central authority or  authorities that
+shall have the responsibility and power to receive requests for mutual legal assistance
+and either to execute them or to transm it them to the competent authorities for
+execution. Where a State Party has a special region or territory with a separate system
+of mutual legal assistance, it may designate a distinct central authority that shall have
+the same function for that  region or territory;
+ ( b )  C e n t r a l  a u t h o r i t i es shall ensure the spee dy and proper execution or
+transmission of the requests received. Where the central authority transmits the
+request to a competent authority for exec ution, it shall encourage the speedy and
+proper execution of the request by the competent authority;
+ ( c )  T h e  S e c r e t a r y - G e n e r a l  o f  t h e  U n i t ed Nations shall be notified of the
+central authority designated fo r this purpose at the time ea ch State Party deposits its
+instrument of ratification, ac ceptance or approval of or accession to this Convention,
+and shall set up and keep upda ted a register of central au thorities designated by the
+States Parties. Each State Party shall ensure  that the details held in the register are
+correct at all times;
+ ( d )  R e q u e s t s  f o r  m u t u a l  l e g a l  a s s istance and any communication related
+thereto shall be transmitted to the central authorities designated by the States Parties.
+This requirement shall be without prejudice to the right of a State Party to require
+that such requests and communications  b e  a d d r e s s e d  t o  i t  t h r o u g h  d i p l o m a t i c
+channels and, in urgent ci rcumstances, where the States Parties agree, through the
+International Criminal Police Organization, if possible.
+13. Requests shall be made in writing or, where possible, by any means capable of
+producing a written record, in  a lan guage accep table to th e r equ es ted  State P ar ty ,
+under conditions allowing that Stat e Party to establish authenticity.
+The Secretary-General of the United Nations shall be notified of the language or
+languages acceptable to each State Party at the time it deposits its instrument of
+
+- 33 -
+
+ratification, acceptance or approval of or accession to th is Convention. In urgent
+circumstances and where agreed by the States  Parties, requests may be made orally,
+but shall be confirmed in writing forthwith.
+14. Where not prohibited by their respective laws, central authorities of States
+Parties are encouraged to transmit and rece ive requests for mutual legal assistance,
+and communications related thereto, as well  as evidence, in el ectronic form under
+conditions allowing the requ ested State Party to establis h authenticity and ensuring
+the security of communications.
+15. A request for mutual legal assistance shall contain:
+ ( a )  T h e  i d e n t i t y  o f  t h e  a u t h o r i t y  m a k i n g  t h e  r e q u e s t ;
+ ( b )  T h e  s u b j e c t  m a t t e r  a n d  n a t u r e  of the investigati on, prosecution or
+judicial proceeding to which the request relates and the name and functions of the
+authority conducting the in vestigation, prosecution or judicial proceeding;
+ ( c )  A  s u m m a r y  o f  t h e  r e l evant facts, except in relation to requests for the
+purpose of service of ju dicial documents;
+ ( d )  A  d e s c r i p t i o n  o f  t h e  a s s i s t a n c e  s ought and details of any particular
+procedure that the requesting State Party wishes to be followed;
+ ( e )  W h e r e  p o s s i b l e  a n d  a p p r o p r i a t e ,  t he identity, location and nationality of
+any person concerned, as well as the count ry of origin, description and location of
+any item or accounts concerned;
+ ( f )  W h e r e  a p p l i c a b l e ,  t h e  t i m e  p e r i o d  f o r  w h i c h  t h e  e v i d e n c e ,  i n f o r m a t i o n
+or other assistance is sought; and
+ ( g )  T h e  p u r p o s e  f o r  w h i c h  t h e  e v i d e n c e ,  i n f o r m a t i o n  o r  o t h e r  a s s i s t a n c e  i s
+sought.
+16. The requested State Party may request additional information when it appears
+necessary for the execution of the request in accordance with its domestic law or
+when it can facilitate  such execution.
+17. A request shall be executed in acco rdance with the domestic law of the
+requested State Party and, to the extent not contrary to the domestic law of the
+requested State Party and where possible, in accordance with the procedures specified
+in the request.
+18. Wherever possible and consistent with fundamental principles of domestic law,
+when an individual is in the territory of a State Party and has to be heard as a witness,
+victim or expert by the judicial authorities of another State Party, the first State Party
+
+- 34 -
+
+may, at the request of the other, permit th e hearing to take plac e by videoconference
+if it is not possible or desirable for the in dividual in question to appear in person in
+the territory of the requesting State Party. States Parties may agree that the hearing
+shall be conducted by a judi cial authority of the reques ting State Party and attended
+by a judicial authority of the requested Stat e Party. If the requested State Party does
+not have access to the technical means necessary for holding a videoconference, such
+means may be provided by the requesting State Party, upon mutual agreement.
+19. The requesting State Part y shall not transmit or us e information or evidence
+furnished by the requested State Party for investigations, prosecutions or judicial
+proceedings other than those stated in th e request without the prior consent of the
+requested State Party. Nothing in this paragraph shall prevent the requesting State
+Party from disclosing in its proceedings inf ormation or evidence th at is exculpatory
+to an accused person. In the latter case, the requesting State Pa rty shall notify the
+requested State Party prior to the disclosure and, if so requested, consult with the
+requested State Party. If, in  an exceptional case, advance notice is not possible, the
+requesting State Party shall inform the requested State Party of the disclosure without
+delay.
+20. The requesting State Party may require that the requested State Party keep
+confidential the fact and substance of the re quest, except to the extent necessary to
+execute the request. If the requested State Party cannot comply with the requirement
+of confidentiality, it shall promptly inform the requesting State Party.
+21. Mutual legal assist ance may be refused:
+ ( a )  I f  t h e  r e q u e s t  i s  n o t  m a d e  i n  c onformity with the provisions of this
+article;
+ ( b )  I f  t h e  r e q u e s t e d  S t a te Party considers that exec ution of the request is
+likely to prejudice its sovereignty, security, ordre public or other essential interests;
+ ( c )  I f  t h e  a u t h o r i t i e s  o f  t h e  r e q u e s t e d  S t a t e  P a r t y  w o u l d  b e  p r o h i b i t e d  b y  i t s
+domestic law from carrying out the action  r e q u e s t e d  w i t h  r e g a r d  t o  a n y  s i m i l a r
+offence, had it been subjec t to investigation, prosecut ion or judicial proceedings
+under their own jurisdiction;
+ ( d )  I f  i t  w o u l d  b e  c o n t r a r y  t o  t h e  l egal system of the requested State Party
+relating to mutual legal assistan ce for the request to be granted.
+22. Nothing in this Conventio n shall be interpreted as imposing an obligation to
+afford mutual legal assistance if the requested State Party has substantial grounds for
+believing that the request ha s been made for the purpose of prosecuting or punishing
+a person on account of that pe rson’s sex, race, language, re ligion, nationality, ethnic
+origin or political opinions, or that compliance with the request would cause prejudice
+to that person’s position for any one of these reasons.
+
+- 35 -
+
+23. States Parties may not re fuse a request for mutual legal assistance on the sole
+ground that the offence is also cons idered to involve fiscal matters.
+24. States Parties shall not decline to render mutual le gal assistance pursuant to
+this article on the ground of bank secrecy.
+25. Reasons shall be given for any re fusal of mutual legal assistance.
+26. The requested State Party shall execute the request for mutual legal assistance
+as soon as possible and shall take as full  a c c o u n t  a s  p o s s i b l e  o f  a n y  d e a d l i n e s
+suggested by the re questing State Party and for which reasons are give n, preferably
+in the request. The requested State Party sh all respond to reasonable requests by the
+requesting State Party on the status, and progress in its ha ndling, of the request. The
+requesting State Party shall promptly inform th e requested State Party when the
+assistance sought is no longer required.
+27. Mutual legal assistance may be post poned by the requeste d State Party on the
+ground that it interferes  w i t h  a n  o n g o i n g  i n v e s t i g a t ion, prosecution or judicial
+proceeding.
+28. Before refusing a request pursuant to paragraph 21 of this article or postponing
+its execution pursuant to para graph 27 of this article, the requested State Party shall
+consult with the requesting State Party to consider whether assistance may be granted
+subject to such terms and conditions as it  deems necessary . If the requesting State
+Party accepts assistance su bject to those conditions, it shall comply with the
+conditions.
+29. Without prejudice to the application of paragraph 11 of  this article, a witness,
+expert or other person who, at  the request of the requesti ng State Party, consents to
+give evidence in a proceeding or to assist in  an investigation, prosecution or judicial
+proceeding in the territory of the requesting State Part y shall not be prosecuted,
+detained, punished or subjected to any other re striction of the person’s liberty in that
+territory in respect of acts, omissions or c onvictions prior to th e person’s departure
+from the territory of the requested State Party. Such safe conduct shall cease when
+the witness, expert or other person having had, for a period of 15 consecutive days or
+for any period agreed upon by the States Parties from th e date on which the person
+has been officially informed that the presence  of the person is no  longer required by
+the judicial authorities, an opportunity of leaving,  h a s  n e v e r t h e l e s s  r e m a i n e d
+voluntarily in the territory of the requesting State Party or, having left it, has returned
+of the person’s own free will.
+30. The ordinary costs of executing a requ est shall be borne by the requested State
+Party, unless otherwise agreed by the Stat es Parties concerned. If expenses of a
+substantial or extraordinary nature are or w ill be required to fulfil the request, the
+States Parties shall consult to determine the terms and conditi ons under which the
+request will be executed, as well as the ma nner in which the costs shall be borne.
+
+- 36 -
+
+31. The requested State Party:
+ ( a )  S h a l l  p r o v i d e  t o  t h e  r e q u e s t ing State Party copies of government
+records, documents or informat ion in its possession that under its domestic law are
+available to the general public;
+ ( b )  M a y ,  a t  i t s  d i s c r e t i o n ,  p r o v i d e  t o  the requesting State Party, in whole, in
+part or subject to such cond itions as it deems appropriat e, copies of any government
+records, documents or informat ion in its possession that under its domestic law are
+not available to the general public.
+32. States Parties shall consider, as may be  necessary, the possibility of concluding
+bilateral or multilateral agreements or arrangements that would serve the purposes
+of, give practical effect to or enhance the provisions of this article.
+Article 41
+24/7 network
+1. Each State Party shall designate a poin t of contact available 24 hours a day,
+7 days a week, in order to ensure the pr ovision of immediate assistance for the
+purpose of specific criminal investigations, prosecutions  o r  j u d i c i a l  p r o c e e d i n g s
+concerning offences established in acco rdance with this Conv ention, or for the
+collection, obtaining and preservation of evidence in electronic form for the purposes
+of paragraph 3 of this article and in relation to the offences established in accordance
+with this Convention, as we ll as to serious crime.
+2. The Secretary-General of the United Na tions shall be notified of such point of
+contact and keep an updated register of points of contact designated for the purposes
+of this article and shall annually circulate to the States Parties the updated list of
+contact points.
+3. Such assistance shall include facilita ting or, if permitted by the domestic law
+and practice of the requested State Party,  d i r e c t l y  c a r r y i n g  o u t  t h e  f o l l o w i n g
+measures:
+ ( a )  T h e  p r o v i s i o n  of technical advice;
+ ( b )  T h e  p r e s e r v a t i o n  o f  s tored electronic data pursuant to articles 42 and 43
+of this Convention, in cluding, as appropriate,  information about th e location of the
+service provider, if known to the requested State Party, to assist the requesting State
+Party in making a request;
+ ( c )  T h e  c o l l e c t i o n  o f  e vidence and the provision of  legal information;
+
+- 37 -
+
+ ( d )  T h e  l o c a t i n g  o f  s u s p e c t s ;  o r
+ ( e )  T h e  p r o v i s i o n  o f  e l e c t r o n i c  data to avert an emergency.
+4. A State Party’s point of contact sh all have the capacity to carry out
+communications with the point of contac t of another State Pa rty on an expedited
+basis. If the point of contact designated by a State Party is not part of that State Party’s
+authority or authorities re sponsible for mutual legal assistance or extradition, the
+point of contact shall ensure that it is able  to coordinate with that authority or those
+authorities on an expedited basis.
+5. Each State Party shall ensure that tr ained and equipped personnel are available
+to ensure the operation of the 24/7 network.
+6. States Parties may also use and st rengthen existing auth orized networks of
+points of contact, where applicable, and wi thin the limits of their domestic laws,
+including the 24/7 networks for computer-related crime of the International Criminal
+Police Organization for pro mpt police-to-police cooper ation and other methods of
+information exchange cooperation.
+Article 42
+International cooperation for the purpose of expedited
+preservation of stored electronic data
+1. A State Party may request another State Party to order or otherwise obtain, in
+accordance with article 25 of this Convention,  t h e  e x p e d i t i o u s  preservation of
+electronic data stored by means of an information and comm unications technology
+system located within the territory of that other State Party, and in respect of which
+the requesting State Party intends to submit  a request for mutual legal assistance in
+the search or similar access, seizure or similar securing, or disclosure of the electronic
+data.
+2. The requesting State Part y may use the 24/7 network provided for in article 41
+of this Convention to seek information concerning the locat ion of the electronic data
+stored by means of an informat ion and communications te chnology system and, as
+appropriate, information about the location of the service provider.
+3. A request for preservation  made under paragraph 1 of this article shall specify:
+ ( a )  T h e  a u t h o r i t y  s e e k i n g  t h e  p r e s e r v a t i o n ;
+ ( b )  T h e  o f f e n c e  t h a t  i s  t h e  s u b j e c t  o f a criminal investigation, prosecution
+or judicial proceeding and a brie f summary of the related facts;
+
+- 38 -
+
+ ( c )  T h e  s t o r e d  e l e c t r o n i c  d a t a  t o  b e  p r e s e r v e d  a n d  t h e i r  r e l a t i o n s h i p  t o  t h e
+offence;
+ ( d )  A n y  a v a i l a b l e  i n f ormation identifying the cu stodian of the stored
+electronic data or the lo cation of the information and communications technology
+system;
+ ( e )  T h e  n e c e s s i t y  o f  t h e  p r e s e r v a t i o n ;
+ ( f )  T h a t  t h e  r e q u e s t i n g  S tate Party intends to submit a request for mutual
+legal assistance in the search or simila r access, seizure or similar securing, or
+disclosure of the stored electronic data;
+ ( g )  A s  a p p r o p r i a t e ,  the need to keep the request for preservation
+confidential and not to  notify the user.
+4. Upon receiving the reques t from another State Party, the requested State Party
+shall take all appropriate measures to pres erve expeditiously the specified electronic
+data in accordance with its domestic law. For the purposes of responding to a request,
+dual criminality shall not be required as a condition for providing such preservation.
+5. A State Party that requires dual crimin ality as a condition for responding to a
+request for mutual legal assistance in the se arch or similar access , seizure or similar
+securing, or disclosure of stored electronic data may, in respect of offences other than
+those established in accordance with this Convention, reserve the right to refuse the
+request for preservation under this article in cases where it has reasons to believe that,
+at the time of disclosure, th e condition of dual criminalit y could not be fulfilled.
+6. In addition, a request for preservation may be refus ed only on the basis of the
+grounds contained in article 40, paragra ph 21 (b) and (c) and paragraph 22, of this
+Convention.
+7. Where the requested State Party believes that preservation will not ensure the
+future availability of the data or will threaten the confidentiality of or otherwise
+prejudice the requesting State Party’s investigation, it shall promptly so inform the
+requesting State Party, which shall then determine whether the request should
+nevertheless be executed.
+8. Any preservation effected in response to a request made pursuant to paragraph
+1 of this article shall be fo r a period of not less than 60 da ys, in order to enable the
+requesting State Party to submit  a request for the search or  similar access, seizure or
+similar securing, or disclosure  of the data. Following the receipt of such a request,
+the data shall continue to be preserved pending a decision on that request.
+9. Before the expiry of the preservation period in paragraph 8 of this article, the
+requesting State Party may request an ex tension of the period of preservation.
+
+- 39 -
+
+Article 43
+International cooperation for the purpose of expedited
+disclosure of preserved traffic data
+1. Where, in the course of the execution of a request made pursuant to article 42
+of this Convention to preserve traffic data  concerning a specific  communication, the
+requested State Party discovers that a service provider in another State Party was
+involved in the transmission of the communication, the requested State Party shall
+expeditiously disclose to the requesting State Party a sufficient amount of traffic data
+to identify that service provider and the pa th through which the communication was
+transmitted.
+2. Disclosure of traffic data  under paragraph 1 of this article may be refused only
+on the basis of the gr ounds contained in article 40, paragraph 21 (b) and (c) and
+paragraph 22, of this Convention.
+Article 44
+Mutual legal assistance in accessing stored electronic data
+1. A State Party may request another Stat e Party to search or similarly access,
+seize or similarly secure, and disclose el ectronic data stored  b y  m e a n s  o f  a n
+information and communications technology system located within the territory of
+the requested State Party, including electronic data that have been preserved pursuant
+to article 42 of this Convention.
+2. The requested State Party shall res pond to the request t hrough the application
+of relevant international instruments and laws referred to in article 35 of this
+Convention, and in accordance with other relevant provisions of this chapter.
+3. The request shall be responded to on an expedited basis where:
+ ( a )  T h e r e  a r e  g r o u n d s  t o  b e l i e v e  t h a t  t h e  r e l e v a n t  d a t a  a r e  p a r t i c u l a r l y
+vulnerable to loss or modification; or
+ ( b )  T h e  i n s t r u m e n t s  a n d  l aws referred to in para graph 2 of this article
+otherwise provide for expedited cooperation.
+Article 45
+Mutual legal assistance in the real-time collection of traffic data
+1. States Parties shall endeavour to provid e mutual legal assistance to each other
+in the real-time collection of traffic data associated with specified communications
+in their territory transmitted by mean s of an information and communications
+technology system. Subject to the provis ions of paragraph 2 of this article,
+
+- 40 -
+
+such assistance shall be governed by th e conditions and proce dures provided for
+under domestic law.
+2. Each State Party shall endeavour to provide such assistance at least with
+respect to criminal offences for which the real-time collection of traffic data would
+be available in a simil ar domestic case.
+3. A request made in accordance with paragraph 1 of this article shall specify:
+ ( a )  T h e  n a m e  o f  t h e  r e q u e s t i n g  a u t h o r i t y ;
+ ( b )  A  s u m m a r y  o f  t h e  m a i n  f a c t s  and the nature of the investigation,
+prosecution or judicial proceeding  to which the request relates;
+ ( c )  T h e  e l e c t r o n i c  d a t a  i n relation to which the collection of the traffic data
+is required and their rela tionship to the offence;
+ ( d )  A n y  a v a i l a b l e  d a t a  t h a t  i d e n t i f y  t he owner or user of the data or the
+location of the information and comm unications technology system;
+ ( e )  J u s t i f i c a t i o n  f o r  t h e  n e e d  to collect the traffic data;
+ ( f )  T h e  p e r i o d  f o r  w h i c h  t r a f f i c  d a t a  are to be collected and a corresponding
+justification of its duration.
+Article 46
+Mutual legal assistance in the interception of content data
+ S t a t e s  P a r t i e s  s h a l l  e n d e a v o u r  t o  p r o v i d e  m u t u a l  l e g a l  a s s i s t a n c e  t o  e a c h  o t h e r
+in the real-time collection or recording of  content data of specified communications
+transmitted by means of an  information and communicat ions technology system, to
+the extent permitted under tr eaties applicable to them or  under their domestic laws.
+Article 47
+Law enforcement cooperation
+1. States Parties shall cooperate closely with one another, consistent with their
+respective domestic legal and administrative systems, to enhance the effectiveness of
+law enforcement action to combat the offenc es established in ac cordance with this
+Convention. States Parties shall, in particular, take effective measures:
+ ( a )  T o  e n h a n c e  a n d ,  w h e r e  n e c e s sary, to establish channels of
+communication between their competent auth orities, agencies and services, taking
+into account existing channels, including those of the International Criminal Police
+Organization, in order to faci litate the secure and rapi d exchange of information
+
+- 41 -
+
+concerning all aspects of the offences established in accordance with this Convention,
+including, if the States Pa rties concerned deem it ap propriate, links with other
+criminal activities;
+ ( b )  T o  c o o p e r a t e  w i t h  other States Parties in conducting inquiries with
+respect to offences established in accord ance with this Convention concerning:
+ ( i )  T h e  i d e n t i t y ,  w h e r e a b o u t s  a n d  activities of persons suspected of
+involvement in such offences or the location of ot her persons concerned;
+ ( i i )  T h e  m o v e m e n t  o f  p r o c e e d s  o f  crime or property derived from the
+commission of such offences;
+ ( i i i )  T h e  m o v e m e n t  o f  property, equipment or other instrumentalities used or
+intended for use in the commission of such offences;
+ ( c )  T o  p r o v i d e ,  w h e r e  a ppropriate, necessary items or data for analytical or
+investigative purposes;
+ ( d )  T o  e x c h a n g e ,  w h e r e  a p p r o p r i a t e ,  i n f o r m a t i o n  w i t h  o t h e r  S t a t e s  P a r t i e s
+concerning specific means and methods used to commit th e offences established in
+accordance with this Convention, including the use of false identities, forged, altered
+or false documents and other means of concealing  activities, as well as cybercrime
+tactics, techniques and procedures;
+ ( e )  T o  f a c i l i t a t e  e f f e c t i v e  c o o r d i n a t i on between their competent authorities,
+agencies and services and to promote the exchange of personnel and other experts,
+including, subject to bilateral agreements or arrangements between the States Parties
+concerned, the posting of liaison officers;
+ ( f )  T o  e x c h a n g e  i n f o r m a t i o n  a n d  c oordinate administ rative and other
+measures taken, as appropriate, for the purpose of early identification of the offences
+established in accordance with this Convention.
+2. With a view to giving effect to this Convention, States Parties shall consider
+entering into bilateral or multilateral agreements or arrangements on direct
+cooperation between their law enforcement ag encies and, where such agreements or
+arrangements already exist, amending them . In the absence of such agreements or
+arrangements between the States Parties concerned, the States Parties may consider
+this Convention to be the basis for mutual  law enforcement cooperation in respect of
+the offences established in accordance with  this Convention. Whenever appropriate,
+States Parties shall make full use of agreements or arra ngements, including
+international or regional organizations, to enhance the cooperation between their law
+enforcement agencies.
+
+- 42 -
+
+Article 48
+Joint investigations
+ S t a t e s  P a r t i e s  s h a l l  c o n s i d e r  c o n c l u d i n g  bilateral or multilateral agreements or
+arrangements whereby, in relation to offenc es established in accordance with this
+Convention that are the subject of criminal investigati ons, prosecutions or judicial
+proceedings in one or more States, the competent authorities concerned may establish
+joint investigative bodies. In the absence of  such agreements or arrangements, joint
+investigations may be unde rtaken by agreement on a case -by-case basis. The States
+Parties involved shall ensure that the sovereignty of the State Party in whose territory
+such investigations are to ta ke place is fully respected.
+Article 49
+Mechanisms for the recovery of property
+through international cooperation in confiscation
+1. Each State Party, in order to prov ide mutual legal assistance pursuant to
+article 50 of this Conventi on with respect to property acquired through or involved
+in the commission of an offence establis hed in accordance with this Convention,
+shall, in accordance with its domestic law:
+ ( a )  T a k e  s u c h  m e a s u r e s  a s  m a y  b e  n e c e s s a r y  t o  p e r m i t  i t s  c o m p e t e n t
+authorities to give effect to an order of confiscation issued by a court of another State
+Party;
+ ( b )  T a k e  s u c h  m e a s u r e s  a s  m a y  b e n e c e s s a r y  t o  p e r m i t  i t s  c o m p e t e n t
+authorities, where they have  jurisdiction, to order the confiscation of such property
+of foreign origin by adjudication of an offence of money-laund ering or such other
+offence as may be within its  jurisdiction or by other proc edures authorized under its
+domestic law; and
+ ( c )  C o n s i d e r  t a k i n g  s u c h  m e a s u r e s  a s  m a y  b e  n e c e s s a r y  t o  a l l o w
+confiscation of such property without a cr iminal conviction in cases in which the
+offender cannot be prosecuted  b y  r e a s o n  o f  d e a t h ,  f l i g h t o r  a b s e n c e  o r  i n  o t h e r
+appropriate cases.
+2. Each State Party, in order to prov ide mutual legal assistance upon a request
+made pursuant to article 50, paragraph 2,  of this Convention, shall, in accordance
+with its domestic law:
+ ( a )  T a k e  s u c h  m e a s u r e s  a s  m a y  b e n e c e s s a r y  t o  p e r m i t  i t s  c o m p e t e n t
+authorities to freeze or se ize property u pon a freezing or seizure  order issued by a
+court or competent authority of a requestin g State Party that provides a reasonable
+basis for the requested State Party to believe that there are sufficient  g r o u n d s  f o r
+
+- 43 -
+
+taking such actions and that the property would ev entually be subject to an order of
+confiscation for the purposes of paragraph 1 (a) of this article;
+ ( b )  T a k e  s u c h  m e a s u r e s  a s  m a y  b e n e c e s s a r y  t o  p e r m i t  i t s  c o m p e t e n t
+authorities to freeze or seize property upon a request that provides a reasonable basis
+for the requested State Party to believe that th ere are sufficient  grounds for taking
+such actions and that the p roperty would eventually be  s u b j e c t  t o  a n  o r d e r  o f
+confiscation for the purpos es of paragraph 1 (a) of this article; and
+ ( c )  C o n s i d e r  t a k i n g  a d d i t i o n a l  m e a s u r e s to permit its competent authorities
+to preserve property  f o r  c o n f i s c a t i o n ,  s u c h  a s  o n  t he basis of a foreign arrest or
+criminal charge related to the acquisition of such property.
+Article 50
+International cooperation for the purposes of confiscation
+1. A State Party that has received a request from anothe r State Party having
+jurisdiction over an offence established in accordance with this Convention for the
+confiscation of proceeds of cr ime, property, equipment or other instrumentalities
+referred to in article 31, paragraph 1, of this Convention situated in its territory shall,
+to the greatest extent possible within its domestic legal system:
+ ( a )  S u b m i t  t h e  r e q u e s t  t o  i t s  c o m petent authorities for the purpose of
+obtaining an order of confiscati on and, if such an order is granted, give effect to it;
+or
+ ( b )  S u b m i t  t o  i t s  c o m p e t e n t  authorities, with a view to  giving effect to it to
+the extent requested, an or der of confiscation is sued by a court in the territory of the
+requesting State Party in accordance with ar ticle 31, paragraph 1, of this Convention
+insofar as it relates to proceeds of crime, prop erty, equipment or other
+instrumentalities situated in the terr itory of the requested State Party.
+2. Following a request made by another State Party having jurisdiction over an
+offence established in accordance with th is Convention, the requested State Party
+shall take measures to identify, trace and fr eeze or seize proceeds of crime, property,
+equipment or other instrumentalities referred to in article 31, paragraph 1, of this
+Convention for the purpose of eventual conf iscation to be ordered either by the
+requesting State Party or, pu rsuant to a request under pa ragraph 1 of this article, by
+the requested State Party.
+3. The provisions of article 40 of this  C o n v e n t i o n  a r e  a p p l i c a b l e ,  m u t a t i s
+mutandis, to this article. In addition to  t h e  i n f o r m a t i o n  s p e c i f i e d  i n  a r t i c l e  4 0 ,
+paragraph 15, of this Convention, requests made pursuant to this article shall contain:
+
+- 44 -
+
+ ( a )  I n  t h e  c a s e  o f  a  r e q u e s t  p e r t a i n i n g  t o  p a r a g r a p h  1  ( a )  o f  t h i s  a r t i c l e ,  a
+description of the property to be confiscate d, including, to the extent possible, the
+location, and where relevant, the estimated value of the property and a statement of
+the facts relied upon by the re questing State Party sufficie nt to enable the requested
+State Party to seek the orde r under its domestic law;
+ ( b )  I n  t h e  c a s e  o f  a  r e q u e s t  p e r t a i n i n g  t o  p a r a g r a p h  1  ( b )  o f  t h i s  a r t i c l e ,  a
+legally admissible copy of an order of co nfiscation upon which the request is based
+issued by the requesting State Party, a statement of the facts and information as to the
+extent to which execution of the order is requested, a stat ement specifying the
+measures taken by the requesting State Party to provide adequate notification to bona
+fide third parties and to en sure due process, and a statement that the confiscation
+order is final;
+ ( c )  I n  t h e  c a s e  o f  a  r e q u e s t  p e r t a i n ing to paragraph 2 of  t h i s  a r t i c l e ,  a
+statement of the facts relied upon by the re questing State Party and a description of
+the actions requested and, wh ere available, a legally admi ssible copy of an order on
+which the request is based.
+4. The decisions or actions provided for in  paragraphs 1 and 2 of this article shall
+be taken by the requested State Party in accordance with and subject to the provisions
+of its domestic law and its procedural rule s or any bilateral or multilateral treaty,
+agreement or arrangement to which it may be bound in relation to the requesting State
+Party.
+5. Each State Party shall furnish copies of its laws and regulations that give effect
+to this article and of any subsequent changes to such  l a w s  a n d  r e g u l a t i o n s  o r  a
+description thereof to the Secret ary-General of the United Nations.
+6. If a State Party elects to make the taking of the measures referred to in
+paragraphs 1 and 2 of this article conditional on the existence of a relevant treaty, that
+State Party shall consider this Convention the necessary and sufficient treaty basis.
+7. Cooperation under this article may al so be refused or provisional measures
+may be lifted if the requested State Party does not receive sufficient and timely
+evidence or if the property is of a de minimis value.
+8. Before lifting an y provisional measure taken pursuant to this article, the
+requested State Party shall, wherever possible, give the requesting State Party an
+opportunity to present its reasons in favour of continuing the measure.
+9. The provisions of this ar ticle shall not be construe d as prejudicing the rights
+of bona fide third parties.
+
+- 45 -
+
+10. States Parties shall co nsider concluding bilatera l or multilateral treaties,
+agreements or arrangements to enhance the effectiveness of international cooperation
+undertaken pursuant to this article.
+Article 51
+Special cooperation
+ W i t h o u t  p r e j u d i c e  t o  i t s  d o m e s t i c  l a w ,  each State Party shall endeavour to take
+measures to permit it to forward, without prejudice to its own criminal investigations,
+prosecutions or judicial proceedings, information on proceeds of offences established
+in accordance with this Convention to another State Party without prior request, when
+it considers that the disclosu re of such information might assist the receiving State
+Party in initiating or carrying out criminal invest igations, prosecutions or judicial
+proceedings or might lead to  a request by that State Part y under article 50 of this
+Convention.
+Article 52
+Return and disposal of confiscated proceeds of crime or property
+1. Proceeds of crime or property confiscated by a State Party pursuant to
+article 31 or 50 of this Conv ention shall be disposed of by that State Party in
+accordance with its domestic law and administrative procedures.
+2. When acting on a request made by another State Party in accordance with
+article 50 of this Convention, States Parties shall, to the extent permitted by domestic
+law and if so requested, give priority consideration to returning the confiscated
+proceeds of crime or property to the requ esting State Party so that it can give
+compensation to the victims of the crime or return such proceeds of crime or property
+to their prior legitimate owners.
+3. When acting on a request made by another State Party in accordance with
+articles 31 and 50 of this Convention, a Stat e Party may, after due consideration has
+been given to compensation of victims, give special consideration to concluding
+agreements or arrangements on:
+ ( a )  C o n t r i b u t i n g  t h e  v a l u e  o f  s u c h  p r oceeds of crime or property or funds
+derived from the sale of such  proceeds of crime or property or a part  thereof to the
+account designated in accordance with article 56, paragraph 2 (c), of this Convention,
+and to intergovernmental bodies specializ ing in the fight against cybercrime;
+ ( b )  S h a r i n g  w i t h  o t h e r  S t a t e s  P a r t i es, on a regular or ca se-by-case basis,
+such proceeds of crime or propert y, or funds derived from the sale of such proceeds
+of crime or property, in accordance wi th its domestic law or administrative
+procedures.
+
+- 46 -
+
+4. Where appropriate, unless States Part ies decide otherwise, the requested State
+Party may deduct reasonable expenses incu rred in investigations, prosecutions or
+judicial proceedings leadi ng to the return or disposit ion of confiscated property
+pursuant to this article.
+Chapter VI
+Preventive measures
+Article 53
+Preventive measures
+1. Each State Party shall endeavour, in  accordance with fundamental principles
+of its legal system, to develop and implem ent or maintain effective and coordinated
+policies and best practices to reduce ex isting or future opport unities for cybercrime
+through appropriate legislative, ad ministrative or other measures.
+2. Each State Party shall take appropria te measures, within its means and in
+accordance with fundamental principles of its domestic law, to promote the active
+participation of relevant individuals and entities outside the public sector, such as
+non-governmental organizations,  c i v i l  s o c i e t y  o r g a n i z a t ions, academic institutions
+and private sector entities, as well as the general public, in the relevant aspects of
+prevention of the offences established in accordance with this Convention.
+3. Preventive measures may include:
+ ( a )  S t r e n g t h e n i n g  c o o peration between law e nforcement ag encies or
+prosecutors and relevant individuals and entities outside the public sector, such as
+non-governmental organizations , civil society organizations , academic institutions
+and private sector entities for the purpose of addressing relevant aspects of preventing
+and combating the offences established in  accordance with this Convention;
+ ( b )  P r o m o t i n g  p u b l i c  a w a r e n e s s  r e g a r d i n g  t h e  e x i s t e n c e ,  c a u s e s  a n d  g r a v i t y
+of the threat posed by the offences establ ished in accordance with this Convention
+through public information ac tivities, public education,  m e d i a  a n d  i n f o r m a t i o n
+literacy programmes and curricul a that promote public par ticipation in preventing
+and combating such offences;
+ ( c )  B u i l d i n g  a n d  m a k i n g  e f f o r t s  t o  i n c r e a s e  t h e  c a p a c i t y  o f  d o m e s t i c
+criminal justice systems, including training and developing expertise among criminal
+justice practitioners, as part of national prevention strategies against the offences
+established in accordance with this Convention;
+ ( d )  E n c o u r a g i n g  s e r v i c e  p r o v i d e r s  t o  t a k e  e f f e c t i v e  m e a s u r e s ,  w h e r e
+feasible in the light of national circumstances and to the extent permitted by domestic
+law, to strengthen the security of the service providers’ products, services and
+customers;
+
+- 47 -
+
+ ( e )  R e c o g n i z i n g  t h e  c o n t r ibutions of the legitimate activities of security
+researchers when intended solely, and to the extent permitted and subject to the
+conditions prescribed  b y  d o m e s t i c  l a w ,  t o  s t r e n g t h e n a n d  i m p r o v e  t h e  security of
+service providers’ products, services and customers located within the territory of the
+State Party;
+ ( f )  D e v e l o p i n g ,  f a c i l i t a t i n g  a n d  p r o moting programmes and activities in
+order to discourage those at risk of engaging in cybercrime from becoming offenders
+and to develop their skills  in a lawful manner;
+ ( g )  E n d e a v o u r i n g  t o  p r o mote the reintegration in to society of persons
+convicted of offences established in accordance with this Convention;
+ ( h )  D e v e l o p i n g  s t r a t e g i e s  a n d  p o l i c i e s ,  in accordance with domestic law, to
+prevent and erad icate gender-based violence th at occurs through the use of an
+information and communicati ons technology system, as  w e l l  a s  t a k i n g  i n t o
+consideration the special circumstances and needs of persons in vulnerable situations
+in developing preventive measures;
+ ( i )  U n d e r t a k i n g  s p e c i f i c  a n d  t a i l o r e d  e f f o r t s  t o  k e e p  c h i l d r e n  s a f e  o n l i n e ,
+including through education a nd training on and raising pu blic awareness of child
+sexual abuse or child sexual exploitation online an d through revising domestic legal
+frameworks and enhancing international cooperation aimed at  its prevention, as well
+as making efforts to ensure the swift remo val of child sexual ab use and child sexual
+exploitation material;
+ ( j )  E n h a n c i n g  t h e  t r a n s parency of and promoting the contribution of the
+public to decision-making processes and ensuring that the public has adequate access
+to information;
+ ( k )  R e s p e c t i n g ,  p r o m o t i n g  a n d  p r o t e c t i ng the freedom to seek, receive and
+impart public information concerning cybercrime;
+ ( l )  D e v e l o p i n g  o r  s t r e n g t h e n i n g  support programmes fo r victims of the
+offences established in accord ance with this Convention;
+ ( m )  P r e v e n t i n g  a n d  d e t e c t i n g  t r a n s f e rs of proceeds of cr ime and property
+related to the offences established in  accordance with this Convention.
+4. Each State Party shall take appropriat e measures to ensure that the relevant
+competent authority or authorities responsible for preventing and combating
+cybercrime are known and accessible to the public, where appropriate, for the
+reporting, including anonymously, of any inci dent that may be considered a criminal
+offence established in accordan ce with this Convention.
+
+- 48 -
+
+5. States Parties shall endeavour to pe riodically evaluate existing relevant
+national legal frameworks and administrative practices with a view to identifying
+gaps and vulnerabilities and ensuring their relevance in the face of changing threats
+posed by the offences established in accordance with this Convention.
+6. States Parties may collaborate with ea ch other and with re levant international
+and regional organizations in promoting and developing the measures referred to in
+this article. This includes participatio n in international projects aimed at the
+prevention of cybercrime.
+7. Each State Party shall inform the Secretary-General of the United Nations of
+the name and address of the authority or authorities that may assist other States
+Parties in developing and implementing spec ific measures to prevent cybercrime.
+Chapter VII
+Technical assistance and information exchange
+Article 54
+Technical assistance and capacity-building
+1. States Parties shall, ac cording to their capacity, consider affording one another
+the widest measure of technical assistance  and capacity-building,  including training
+and other forms of assistance, the mutual  e x c h a n g e  o f  r e l e v a n t  e x p e r i e n c e  a n d
+specialized knowledge and the transfer of technology  o n  m u t u a l l y  a g r e e d  t e r m s ,
+taking into particular cons ideration the interests and needs of developing States
+Parties, with a view to facilitating the prevention, detection,  i n v e s t i g a t i o n  a n d
+prosecution of the offences covered by this Convention.
+2. States Parties shall, to the extent necessary, initiate, develop, implement or
+improve specific training programmes f or their personnel re sponsible for the
+prevention, detection, investigation and pr osecution of the offenc es covered by this
+Convention.
+3. Activities referred to in paragraphs 1 and 2 of this article may deal, to the
+extent permitted by domestic law, with the following:
+ ( a )  M e t h o d s  a n d  t e c h n i q u e s  u s e d  i n  t he prevention, detection, investigation
+and prosecution of the offences covered by this Convention;
+ ( b )  B u i l d i n g  c a p a c i t y  i n  t h e  d e v e l o p ment and planning of strategic policies
+and legislation to prevent and combat cybercrime;
+ ( c )  B u i l d i n g  c a p a c i t y  i n  t h e  c ollection, preserva tion and sharing of
+evidence, in particular in electronic form, including the maintenance of the chain of
+custody and forensic analysis;
+
+- 49 -
+
+ ( d )  M o d e r n  l a w  e n f o r c e m e n t  e q u i p m e n t  a n d  t h e  u s e  t h e r e o f ;
+ ( e )  T r a i n i n g  o f  c o m p e t e n t  a u t h o r i t i e s  i n  t h e  p r e p a r a t i o n  o f  r e q u e s t s  f o r
+mutual legal assistance and other means of cooperation that meet the requirements of
+this Convention, especially for the collection, preserva tion and sharin g of evidence
+in electronic form;
+ ( f )  P r e v e n t i o n ,  d e t e c t i o n  a n d  m o n itoring of the movements of proceeds
+deriving from the commission of the offe nces covered by this Convention, property,
+equipment or other instrumentalities and me thods used for the tr ansfer, concealment
+or disguise of such proceeds, property, equipment or other instrumentalities;
+ ( g )  A p p r o p r i a t e  a n d  e f f i c i e n t  l e g a l  a n d  a d m i n i s t r a t i v e  m e c h a n i s m s  a n d
+methods for facilitating the se izure, confiscation and ret urn of proceeds of offences
+covered by this Convention;
+ ( h )  M e t h o d s  u s e d  i n  t h e  p r o t e c t i o n  o f victims and witnesses who cooperate
+with judicial authorities;
+ ( i )  T r a i n i n g  i n  r e l e v a n t  s u b s t antive and procedural law, and law
+enforcement investigation powers, as well as in national and international regulations
+and in languages.
+4. States Parties shall, subject to their domestic law, endeavour to leverage the
+expertise of and cooperate closely with other States Parties and relevant international
+and regional organizations, non-governm ental organizations, civil society
+organizations, academic instit utions and private sector entities, with a view to
+enhancing the effective implem entation of this Convention.
+5. States Parties shall assist one another in planning and implementing research
+and training programmes desi gned to share expertise in the areas referred to in
+paragraph 3 of this article, and to that end shall also, when approp riate, use regional
+and international conferences and seminars to promote c ooperation and to stimulate
+discussion on problems of  mutual concern.
+6. States Parties shall consider assisting one another, upon request, in conducting
+evaluations, studies and research relating to the types, causes and effects of offences
+covered by this Convention committed in thei r respective territories, with a view to
+developing, with the participation of the competent authorities and relevant
+non-governmental organizations, civil societ y organizations, acad emic institutions
+and private sector entities, strategies and action plans to prevent and combat
+cybercrime.
+7. States Parties shall prom ote training and technical as sistance that facilitates
+timely extradition and mutual legal assistance. Such training and technical assistance
+may include language traini ng, assistance with the dr afting and handling of mutual
+
+- 50 -
+
+legal assistance requests, and secondme nts and exchanges between personnel in
+central authorities or agencies with relevant responsibilities.
+8. States Parties shall strengthen, to the extent necessary, efforts to maximize the
+effectiveness of technical assistance and capacity-building in international and
+regional organizations and in  t h e  f r a m e w o r k  o f  r e l e v a n t  b i l a t e r a l  a n d  m u l t i l a t e r a l
+agreements or arrangements.
+9. States Parties shall consider establishi ng voluntary mechanisms with a view to
+contributing financially to the efforts of  d e v e l o p i n g  c o u n t r i e s  t o  i m p l e m e n t  t h i s
+Convention through technical assistance programmes and capacity-building projects.
+10. Each State Party shall endeavour to  m a k e  v o l u n t a r y  c ontributions to the
+United Nations Office on Drugs and Cr ime for the purpose of fostering, through the
+Office, programmes and projects with a vi ew to implementing this Convention
+through technical assistan ce and capacity-building.
+Article 55
+Exchange of information
+1. Each State Party shall c onsider analysing, as appropri ate, in consultation with
+relevant experts, includin g from non-governmental organizations, civil society
+organizations, academic institut ions and private sector entiti es, trends in its territory
+with respect to offences cove red by this Convention, as well as the circumstances in
+which such offences are committed.
+2. States Parties shall consider deve loping and sharing wi th each other and
+through international and regi onal organizations statistics, analytical expertise and
+information concerning cyberc rime, with a view to develo ping, insofar as possible,
+common definitions, standards and methodolog ies, as well as best practices, to
+prevent and combat such crime.
+3. Each State Party shall consider monito ring its policies an d practical measures
+to prevent and combat offences covered by this Convention and making assessments
+of their effectiveness and efficiency.
+4. States Parties shall consider exchanging inform ation on legal, policy and
+technological developments related to cybe rcrime and the collection of evidence in
+electronic form.
+
+- 51 -
+
+Article 56
+Implementation of the Convention through economic
+development and technical assistance
+1. States Parties shall take measures co nducive to the optimal implementation of
+this Convention to the extent possible, t hrough international cooperation, taking into
+account the negative effects of the offences covered by this Convention on society in
+general and, in particular, on sustainable development.
+2. States Parties are strongly encouraged to make concrete efforts, to the extent
+possible and in coordination with each other, as well as wi th international and
+regional organizations:
+ ( a )  T o  e n h a n c e  t h e i r  c o o p e r a t i o n  a t  v a r i o u s  l e v e l s  w i t h  o t h e r  S t a t e s  P a r t i e s ,
+in particular developing countries, with a view to strengtheni ng their capacity to
+prevent and combat the offences covered by this Convention;
+ ( b )  T o  e n h a n c e  f i n a n c i a l  a n d  m a t e r i a l  assistance to support the efforts of
+other States Parties, in par ticular developing countries, in  effectively preventing and
+combating the offences covered by this Convention and to help them to implement
+this Convention;
+ ( c )  T o  p r o v i d e  t e c h n i c a l  a s s i s t a n c e  t o  other States Parties, in particular
+developing countries, in support of meeting their needs regarding the implementation
+of this Convention. To that end, States Parties shall endeavour to make adequate and
+regular voluntary contributions to an account specifically designated for that purpose
+in a United Nations funding mechanism;
+ ( d )  T o  e n c o u r a g e ,  a s  a ppropriate, non-governmental  o r g a n i z a t i o n s ,  c i v i l
+society organizations, academic institutions and private sector entities, as well as
+financial institutions, to contribute to th e efforts of States Parties, including in
+accordance with this article, in particular by providing more training programmes and
+modern equipment to developing countries in order to assi st them in achieving the
+objectives of this Convention;
+ ( e )  T o  e x c h a n g e  b e s t  p r a c t i c e s  a n d  information with re gard to activities
+undertaken, with a view to  improving transparency , avoiding duplication of effort
+and making best use of any lessons learned.
+3. States Parties shall al so consider using existing subregional, regional and
+international programmes, including conferences an d seminars, to promote
+cooperation and technical assistance and to  s t i m u l a t e  d i s c u s s i o n  o n  p r o b l e m s  o f
+mutual concern, including the special problems and needs of developing countries.
+4. To the extent possible, States Parties shall ensure that resources and efforts are
+distributed and directed to support the ha rmonization of standards, skills, capacity,
+
+- 52 -
+
+expertise and technical capabilities with the aim of establishing common minimum
+standards among States Parties to eradicate safe havens for the offences covered by
+this Convention and strengthen  the fight against cybercrime.
+5. To the extent possible, the measures taken under this article shall be without
+prejudice to existing foreign assistan ce commitments or to other financial
+cooperation arrangements at the bilatera l, regional or international levels.
+6. States Parties may conclude bilateral,  regional or multilateral agreements or
+arrangements on material and logistical assistance, taking into  c o n s i d e r a t i o n  t h e
+financial arrangements necessary for the means of international cooperation provided
+for by this Convention to be effective and for the prevention, detection, investigation
+and prosecution of the offences  covered by this Convention.
+Chapter VIII
+Mechanism of implementation
+Article 57
+Conference of the States Parties to the Convention
+1. A Conference of the States Parties to the Convention is hereby established to
+improve the capacity of an d cooperation between States  P a r t i e s  t o  a c h i e v e  t h e
+objectives set forth in this Convention and to promote and review its implementation.
+2. The Secretary-General of the Unite d Nations shall convene the Conference of
+the States Parties not later than one year  f o l l o w i n g  t h e  e n t r y  i n t o  f o r c e  o f  t h i s
+Convention. Thereafter, regu lar meetings of the Conferen ce shall be held in
+accordance with the rules of proc edure adopted by the Conference.
+3. The Conference of the States Parties shall adopt rules of procedure and rules
+governing the activities set fo rth in this article, incl uding rules concerning the
+admission and participation of observers, a nd the payment of expenses incurred in
+carrying out those activities. Su ch rules and related activiti es shall take into account
+principles such as effectiveness, inclusivity, transparency, efficiency and national
+ownership.
+4. In establishing its regular meetings, th e Conference of the States Parties shall
+take into account the time and location of the meetings of other relevant international
+and regional organizations and mechanisms  i n  s i m i l a r  m a t t e r s ,  i n c l u d i n g  t h e i r
+subsidiary treaty bodies, consistent with the principles identified in paragraph 3 of
+this article.
+
+- 53 -
+
+5. The Conference of the States Parties shall agree upon activities, procedures
+and methods of work to achieve the objectives set forth in paragraph 1 of this article,
+including:
+ ( a )  F a c i l i t a t i n g  t h e  e f f e c t i v e  u s e  a nd implementation of this Convention, the
+identification of any problems thereof, as well as the activities  carried out by States
+Parties under this Convention,  including encourag ing the mobilization of voluntary
+contributions;
+ ( b )  F a c i l i t a t i n g  t h e  e x c h a n g e  o f  information on legal, policy and
+technological developments pertaining to the offences established in accordance with
+this Convention and th e collection of evid ence in electronic  f o r m  a m o n g  S t a t e s
+Parties and relevant international and regional organizations , as well as non-
+governmental organizations, civil society organizations, academic institutions and
+private sector entities, in accordance with do mestic law, as well as on patterns and
+trends in cybercrime  and on successful practices for  preventing and combating such
+offences;
+ ( c )  C o o p e r a t i n g  w i t h  r e l e v a n t  i n t e r national and regional organizations, as
+well as non-governmental organizations, civil society organi zations, academic
+institutions and private sector entities;
+ ( d )  M a k i n g  a p p r o p r i a t e  u s e  o f  r e l evant information produced by other
+international and regional organizations  a n d  m e c h a n i s m s  f or preventing and
+combating the offences established in accord ance with this Convention, in order to
+avoid unnecessary duplication of work;
+ ( e )  R e v i e w i n g  p e r i o d i c a l l y  t h e  i mplementation of this  C o n v e n t i o n  b y  i t s
+States Parties;
+ ( f )  M a k i n g  r e c o m m e n d a t i o n s  t o i m p r o v e  t h i s  C o n vention and its
+implementation as well as considering possible supplementation or amendment of the
+Convention;
+ ( g )  E l a b o r a t i n g  a n d  adopting supplementary protoc ols to this Convention
+on the basis of articles 61 a nd 62 of this Convention;
+ ( h )  T a k i n g  n o t e  o f  t h e  t e c h n i c al assistance and capacity-building
+requirements of States Part ies regarding the implemen tation of this Convention and
+recommending any action it may deem  necessary in that respect.
+6. Each State Party shall provide the Co nference of the States Parties with
+information on legislative, administrative and other me asures, as well as on its
+programmes, plans and practic es, to implement this Convention, as required by the
+Conference. The Conference shall examine the most effective way of receiving and
+acting upon information, including, inter alia, information received from
+
+- 54 -
+
+States Parties and from competent inte rnational and region al organizations.
+Inputs received from representatives of relevant non-governm ental organizations,
+civil society organizations, academic inst itutions and private se ctor entities, duly
+accredited in accordance with procedures to be decided upon by the Conference, may
+also be considered.
+7. For the purpose of paragr aph 5 of this article, the Conference of the States
+Parties may establish and administer such  r e v i e w  m e c h a n i s m s  a s  i t  c o n s i d e r s
+necessary.
+8. Pursuant to paragraphs 5 to 7 of this article, the Conference of the States Parties
+shall establish, if it deem s necessary, any appropriate mechanisms or subsidiary
+bodies to assist in the effective implementation of the Convention.
+Article 58
+Secretariat
+1. The Secretary-General of the United Nations shall provide the necessary
+secretariat services to the Conference of  the States Parties to the Convention.
+2. The secretariat shall:
+ ( a )  A s s i s t  t h e  C o n f e r e n c e  o f  t h e  S t a t e s Parties in carrying  out the activities
+set forth in this Convention and make arrangements and provide the necessary
+services for the sessions of the Conference as they pertain to this Convention;
+ ( b )  U p o n  r e q u e s t ,  a s s i s t  S t a t e s  P a r ties in providing i nformation to the
+Conference of the States Parties, as envisaged in this Convention; and
+ ( c )  E n s u r e  t h e  n e c e s s a r y  c o o r d i n a t i o n  w i t h  t h e  s e c r e t a r i a t s  o f  r e l e v a n t
+international and regional organizations.
+Chapter IX
+Final provisions
+Article 59
+Implementation of the Convention
+1. Each State Party shall take the nece ssary measures, including legislative and
+administrative measures, in accordance with fundamental principles of its domestic
+law, to ensure the implementation of its obligations under this Convention.
+
+- 55 -
+
+2. Each State Party may adopt more strict or severe measures than those provided
+for by this Convention for preventing and co mbating the offences  e s t a b l i s h e d  i n
+accordance with this Convention.
+Article 60
+Effects of the Convention
+1. If two or more States Parties have already concluded an agreement or treaty
+on the matters dealt with in this Convent ion or have otherwise established their
+relations on such matters, or should they in future do so, they shall also be entitled to
+apply that agreement or treaty or to regulate th ose relations accordingly.
+2. Nothing in this Conventi on shall affect other rights , restrictions, obligations
+and responsibilities of a State Pa rty under international law.
+Article 61
+Relation with protocols
+1. This Convention may be supplemented by one or more protocols.
+2. In order to become a Party to a pr otocol, a State or a regional economic
+integration organization must also be a Party to this Convention.
+3. A State Party to this  Convention is not bound by a protocol unless it becomes
+a Party to the protocol in accordan ce with the provisions thereof.
+4. Any protocol to this Convention shal l be interpreted toge ther with this
+Convention, taking into account the purpose of that protocol.
+Article 62
+Adoption of supplementary protocols
+1. At least 60 States Parties shall be re quired before any supplementary protocol
+is considered for adoption by the Conference of the Stat es Parties. The Conference
+shall make every effort to  achieve consensus on any su pplementary protocol. If all
+efforts at consensus have been exhausted and no agreem ent has been reached, the
+supplementary protocol shall, as a last resort, require for its  a d o p t i o n  a t  l e a s t  a
+two-thirds majority vote of the States Parties present and voting at the meeting of the
+Conference.
+2. Regional economic inte gration organizations, in matters within their
+competence, shall exercise their right to vote under this article with a number of votes
+equal to the number of their member Stat es that are Parties to this Convention.
+
+- 56 -
+
+Such organizations shall not exercise thei r right to vote if their member States
+exercise theirs and vice versa.
+Article 63
+Settlement of disputes
+1. States Parties shall endeavour to settle disputes concerning the interpretation
+or application of this Convention through negotiation or any other peaceful means of
+their own choice.
+2. Any dispute between two or more Stat es Parties concerning the interpretation
+or application of this Conv ention that cannot be settle d through negotiation or other
+peaceful means within a reasonable time shall,  at the request of one of those States
+Parties, be submitted to arbi tration. If, six months afte r the date of the request for
+arbitration, those States Parties are unab le to agree on the organization of the
+arbitration, any one of those States Partie s may refer the dispute to the International
+Court of Justice by reques t in accordance with the Statute of the Court.
+3. Each State Party may, at the time of  s i g n a t u r e ,  r a t i f i c a t i o n ,  a c c e p t a n c e  o r
+approval of or accession to this Convention,  declare that it does not consider itself
+bound by paragraph 2 of this ar ticle. The other States Pa rties shall not be bound by
+paragraph 2 of this article with respect to any State Party that has made such a
+reservation.
+4. Any State Party that has made a reservation in accordance with paragraph 3 of
+this article may at any time withdraw th at reservation by notification to the
+Secretary-General of the United Nations.
+Article 64
+Signature, ratification, acceptance, approval and accession
+1. This Convention shall be open to all St ates for signature in Hanoi in 2025 and
+thereafter at United Nations Headquarter s in New York until 31 December 2026.
+2. This Convention shall also be open for signature by regional economic
+integration organizations, provided that at least one member State of such an
+organization has signed th is Convention in ac cordance with para graph 1 of this
+article.
+3. This Convention is subject to ratifi cation, acceptance or approval. Instruments
+of ratification, acceptance or approval sh all be deposited with the Secretary-General
+of the United Nations. A regional economic  integration organization may deposit its
+instrument of ratification, acceptance or approval if at least one of its member States
+has done likewise. In that instrument of ratification, acceptanc e or approval, such
+organization shall declare the extent of its competence with respect to the matters
+
+- 57 -
+
+governed by this Conven tion. Such organization shall also inform the depositary of
+any relevant modification in the extent of its competence.
+4. This Convention is open for accessi on by any State or any regional economic
+integration organization of which at leas t one member State is a Party to this
+Convention. Instruments of accession shall be deposited with the Secretary-General
+of the United Nations. At the time of its accession, a regional economic integration
+organization shall declare the extent of its competence with respect to matters
+governed by this Conven tion. Such organization shall also inform the depositary of
+any relevant modification in the extent of its competence.
+Article 65
+Entry into force
+1. This Convention shall en ter into force on the nineti eth day after the date of
+deposit of the fortieth instrum ent of ratification, acceptan ce, approval or accession.
+For the purpose of this paragraph, any in strument deposited by a regional economic
+integration organization shal l not be counted as additio nal to those deposited by
+member States of that organization.
+2. For each State or regional economi c integration organization ratifying,
+accepting, approving or acceding to this Convention after the deposit of the fortieth
+instrument of such action, th is Convention shall enter into  force on the th irtieth day
+after the date of deposit by such State or organization of the re levant instrument or
+on the date on which this Convention enters into force pursuant to paragraph 1 of this
+article, whichever is later.
+Article 66
+Amendment
+1. After the expiry of five years from th e entry into force of this Convention, a
+State Party may propose an amendment and tr ansmit it to the Se cretary-General of
+the United Nations, who sh all thereupon communicate the proposed amendment to
+the States Parties and to the Conference of  the States Parties to the Convention for
+the purpose of considering and deciding on the proposal. The Conference shall make
+every effort to achieve consensus on each amendment. If all efforts at consensus have
+been exhausted and no agreemen t has been reached, the amendment shall, as a last
+resort, require for its adoption a two-thirds majority vote of the States Parties present
+and voting at the meeting of the Conference.
+2. Regional economic inte gration organizations, in matters within their
+competence, shall exercise their right to vote under this article with a number of votes
+equal to the number of their member Stat es that are Parties to this Convention.
+
+- 58 -
+
+Such organizations shall not exercise thei r right to vote if their member States
+exercise theirs and vice versa.
+3. An amendment adopted in accordance with  paragraph 1 of this article is subject
+to ratification, acceptance or approval by States Parties.
+4. An amendment a dopted in accordance with para graph 1 of this article shall
+enter into force in respect of a State Party 90 days after the date of the deposit with
+the Secretary-General of the United Na tions of an instrument of ratification,
+acceptance or approval of such amendment.
+5. When an amendment enters into forc e, it shall be binding on those States
+Parties that have expressed th eir consent to be bound by it . Other States Parties shall
+still be bound by the provisi ons of this Conventi on and any earlier amendments that
+they have ratified, accepted or approved.
+Article 67
+Denunciation
+1. A State Party may denounce this Conve ntion by written notification to the
+Secretary-General of the United Nations. Such denunciation shall become effective
+one year after the date of receipt of the notification by the Secretary-General.
+2. A regional economic integr ation organization shall ceas e to be a Party to this
+Convention when all of its me mber States have denounced it.
+3. Denunciation of this Conv ention in accordance with paragraph 1 of this article
+shall entail the denunciatio n of any protocols thereto.
+Article 68
+Depositary and languages
+1. The Secretary-General of the United Nations is designated depositary of this
+Convention.
+2. The original of this Convention, of which the Arabic, Chinese, English,
+French, Russian and Spanish texts are equally authentic, shall be deposited with the
+Secretary-General of the United Nations.
+IN WITNESS WHEREOF, the undersigned plenipotentiaries, being duly authorized
+thereto by their respective Governme nts, have signed this Convention.
+
+Convention des Nations Unies contre la cybercriminalité ;
+Renforcement de la coopération internationale pour la lutte contre
+certaines infractions commises au moyen de systèmes d’information
+et de communication et pour la communication de preuves
+sous forme électronique d’infractions graves
+NATIONS UNIES
+2024
+
+
+

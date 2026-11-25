@@ -15,13 +15,13 @@
     "cyber"
   ],
   "gaps": [
-    "No full text, citable units or original file is stored in this record; it is metadata-only.",
     "The official AU status list is dated 2 February 2026; later deposits may exist and were not verified.",
     "The AU table gives one combined ratification/accession column and does not distinguish the two; all 20 deposit dates are recorded as ratifications.",
     "The status table does not list reservations or declarations; whether any were made is unknown, not zero.",
     "24 African Union member States have no recorded signature, ratification or accession in the 2 February 2026 list.",
     "The legal effect of the Convention and its national implementation are not assessed.",
-    "No AI-specific provision is asserted. The record is cyber-domain only."
+    "No AI-specific provision is asserted. The record is cyber-domain only.",
+    "The searchable English text is a SenLII/AfricanLII transcription, not an official AU translation; the official scanned PDF has no text layer."
   ],
   "id": "au-malabo-convention-2014",
   "instrument_type": "treaty",
@@ -39,7 +39,7 @@
       "ar",
       "pt"
     ],
-    "note": "The AU treaty page links English, French, Arabic and Portuguese versions. Only the English status list and the English page were read.",
+    "note": "The official English scanned PDF is stored but has no text layer. The searchable English text is a SenLII/AfricanLII legal-database transcription, not an official AU translation.",
     "source_ids": [
       "au-treaty-page"
     ]
@@ -317,7 +317,7 @@
   },
   "rights": {
     "licence": "African Union terms",
-    "note": "Official African Union text. The record stores metadata and links the official version; it does not relicense the text.",
+    "note": "Full text and source copy stored for research use; the manifest records the source URL, retrieval date and SHA-256. Reuse remains subject to the publisher's terms.",
     "status": "public_official_text",
     "url": "https://au.int/en/copyright"
   },
@@ -351,6 +351,28 @@
       "note": "Official English text linked from the AU treaty page; not downloaded or read in this pass.",
       "publisher": "African Union",
       "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-official-scan",
+      "kind": "official_primary",
+      "language": "en",
+      "local_path": "source/au-malabo-convention-2014-en-scanned.pdf",
+      "note": "Official image-only English PDF stored; authoritative scan.",
+      "sha256": "4564c7ee68658754590953f653b6aa43582d63fdd16f8614ecd0b4cf89c96485",
+      "url": "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "stored-senlii-transcription",
+      "kind": "secondary",
+      "language": "en",
+      "local_path": "source/au-malabo-convention-2014-en-senlii-transcription.pdf",
+      "note": "SenLII/AfricanLII English transcription stored and segmented.",
+      "sha256": "5ec5fbe9c40842231266b3d10065b5dd97910062f46f69d1efdb70ba15d2c07e",
+      "url": "https://senlii.org/en/akn/aa-au/act/convention/2014/cyber-security-and-personal-data-protection/eng@2014-06-27/source.pdf"
     }
   ],
   "status": "in_force",
@@ -376,9 +398,22 @@
         "check": "Party entries counted against the AU status table",
         "date": "2026-11-24",
         "result": "confirmed: 31 States with an act (20 Parties and 11 signatories only)"
+      },
+      {
+        "check": "Full text acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "38 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata-level record. The status and party table come from the official AU status list; the treaty text, reservations and declarations, and the legal effect of the deposits are not assessed."
+    "notes": "The official scanned English PDF and a SenLII/AfricanLII English transcription are stored. The transcription was segmented into 38 article units. The official scan has no text layer; the record remains metadata_verified."
+  },
+  "text": {
+    "extraction_note": "English text extracted from the 29-page SenLII/AfricanLII transcription and segmented into 38 articles. The official AU PDF is image-only (no text layer) and is stored as the authoritative scanned copy. The transcription's collection notice and page headers remain in the text.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
   }
 }

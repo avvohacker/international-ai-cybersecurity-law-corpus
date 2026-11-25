@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 5349889,
+      "media_type": "application/pdf",
+      "note": "Official signed English PDF of ECOWAS Directive C/DIR.1/08/11 on Fighting Cyber Crime. The PDF is image-only; the searchable text is OCR produced from this official scan.",
+      "path": "source/ecowas-cybercrime-directive-2011-en.pdf",
+      "role": "original",
+      "sha256": "8c789adfcddea821450c92ff850d185bb871e33abcb3d3f6e070e96024f4d3fa",
+      "source_url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf"
+    },
+    {
+      "bytes": 14321,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "20b34469487b74d645beb2de919286691841715b72b95a9b433d9bd8bf9a538b"
+    },
+    {
+      "bytes": 1103,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "736b5ca14dd8a3fb6e07fe59bbf2666b6642ca2914160fe9d63e8c21611eb1bf"
+    },
+    {
+      "bytes": 20277,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "b70f51be673a5d796de2740dcbfa12ea4f3ca2f2ddffbabfa32549a55ac276b8"
+    }
+  ],
+  "instrument_id": "ecowas-cybercrime-directive-2011",
+  "primary_text": "text/en.txt"
+}
