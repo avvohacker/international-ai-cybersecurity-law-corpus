@@ -2,7 +2,7 @@
   "counts": {
     "by_binding": {
       "binding": 22,
-      "non_binding": 41
+      "non_binding": 49
     },
     "by_category": {
       "agreement_ai_provisions": 5,
@@ -10,23 +10,23 @@
       "cyber_treaty": 9,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 33,
+      "non_binding_instrument": 41,
       "preparatory_interpretive": 2,
       "regional_law": 1,
       "supranational_law": 3,
       "technical_standard": 5
     },
     "by_domain": {
-      "ai": 48,
+      "ai": 56,
       "cyber": 15,
       "joint": 0
     },
     "by_verification": {
       "full_text_checked": 10,
-      "metadata_verified": 53
+      "metadata_verified": 61
     },
     "full_texts": 36,
-    "total": 63,
+    "total": 71,
     "with_local_original": 36
   },
   "full_text_ids": [
@@ -384,6 +384,326 @@
       }
     },
     {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2025-06-17",
+        "notes": "The English edition is dated June 2025 and does not print the adoption day. ALECSO's statement, reported by University World News and Al-Fanar Media, says the Charter was adopted at a high-level virtual meeting on 17 June 2025. The date is recorded with that provenance and not treated as printed in the official PDF.",
+        "verified_on": "2026-11-25"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding sectoral guidance: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "Scope is limited to education, culture and scientific research; it is not a general AI governance code.",
+        "No itemised list of approving States or vote was located.",
+        "No full text is stored; the record is metadata-only.",
+        "The official English edition is a translation from Arabic; no statement of equally authentic languages was located.",
+        "The exact adoption day is not printed in the official PDF; it is taken from ALECSO's statement as reported by two independent publications.",
+        "The relationship between this Charter and the pan-Arab Arab Charter on AI Ethics is not institutionally defined."
+      ],
+      "id": "alecso-charter-ai-ethics-2025",
+      "instrument_type": "guidance",
+      "issuer": [
+        {
+          "name": "Arab League Educational, Cultural and Scientific Organization (ALECSO), Information and Communication Technology Department",
+          "role": "issuer",
+          "url": "https://www.alecso.org/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar"
+        ],
+        "note": "The Charter was prepared in Arabic; the official English edition states that it was translated from Arabic by the Arab Center for Arabization, Translation, Authorship and Publication. No statement of equally authentic language versions was located.",
+        "translations": [
+          "en"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A sectoral charter adopted by an Arab League specialised organisation; it provides ethical guidance and recommendations, with no treaty, signature, ratification, depositary or entry-into-force clause.",
+        "source_ids": [
+          "alecso-charter-pdf"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "ALECSO publications page and UN ESCWA regional AI policy review.",
+        "search_dates": [
+          "2026-11-25"
+        ]
+      },
+      "related": [
+        {
+          "id": "arab-charter-ai-ethics-2025",
+          "note": "A separate pan-Arab AI-ethics charter with a general scope.",
+          "relation": "related"
+        },
+        {
+          "id": "arab-unified-ai-strategy-2025",
+          "note": "The Arab AI strategy's ethical framework is a related regional policy line.",
+          "relation": "related"
+        },
+        {
+          "id": "unesco-ethics-ai-2021",
+          "note": "The Charter is aligned with the UNESCO recommendation and other international charters.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole Charter: ethical principles and guidelines for AI in education, culture and scientific research",
+          "Human dignity, justice, inclusiveness, environmental sustainability and protection of cultural heritage",
+          "Transparency, accountability and technological sovereignty",
+          "Guidance for governments, educational institutions, researchers, developers and other AI actors"
+        ],
+        "excluded_scope": "Non-binding sectoral guidance; national implementation and enforcement in education, culture and science are outside this record.",
+        "reason": "ALECSO's regional charter on AI ethics for the education, culture and scientific-research sectors. It is an advisory framework adopted by an Arab League specialised organisation; it is not a treaty and creates no legal obligation."
+      },
+      "rights": {
+        "licence": "ALECSO terms",
+        "note": "Official ALECSO publication; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.alecso.org/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "alecso-charter-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official 49-page English edition, Tunis, June 2025, ISBN 978-9973-15-464-4. It states that the text was translated from Arabic and sets out principles for AI in education, culture and scientific research.",
+          "publisher": "Arab League Educational, Cultural and Scientific Organization (ALECSO)",
+          "url": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "alecso-english-page",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "ALECSO page announcing the English version and stating that the Charter was adopted earlier in 2025.",
+          "publisher": "Arab League Educational, Cultural and Scientific Organization (ALECSO)",
+          "url": "https://www.alecso.org/nsite/en/newscat/5244-%D8%A7%D9%84%D8%A3%D9%84%D9%83%D8%B3%D9%88-%D8%AA%D9%86%D8%B4%D8%B1-%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%85%D9%86-%D9%85%D9%8A%D8%AB%D8%A7%D9%82%D9%87%D8%A7-%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-2"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "university-world-news",
+          "kind": "secondary",
+          "language": "en",
+          "note": "Reports that ALECSO adopted the Charter at a high-level virtual meeting on 17 June 2025, citing ALECSO's statement of 2 July 2025.",
+          "publisher": "University World News",
+          "url": "https://www.universityworldnews.com/post.php?story=20250722122435648"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "al-fanar",
+          "kind": "secondary",
+          "language": "en",
+          "note": "Corroborates the 17 June 2025 adoption meeting and the education, culture and science scope.",
+          "publisher": "Al-Fanar Media",
+          "url": "https://al-fanarmedia.org/2025/07/bulletin-alecso-adopts-ai-code-of-ethics-etonhouse-group-to-open-its-first-schools-in-saudi-arabia"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding sectoral charter, not a treaty. It was adopted by ALECSO in June 2025 and published in an official English edition. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+      "title": {
+        "english": "ALECSO Charter on Artificial Intelligence Ethics",
+        "official": "ميثاق الألكسو لأخلاقيات الذكاء الاصطناعي",
+        "short": "ALECSO Charter on AI Ethics"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official English edition read.",
+            "date": "2026-11-25",
+            "result": "The 49-page ALECSO publication is dated June 2025 and sets out ethical principles and guidance for AI in education, culture and scientific research. It contains no treaty, signature, ratification, depositary or entry-into-force clause."
+          },
+          {
+            "check": "Adoption date checked.",
+            "date": "2026-11-25",
+            "result": "The PDF does not print the adoption day. ALECSO's statement, reported by University World News and Al-Fanar Media, records adoption at a high-level virtual meeting on 17 June 2025."
+          },
+          {
+            "check": "Issuer and legal nature checked.",
+            "date": "2026-11-25",
+            "result": "ALECSO is an Arab League specialised organisation. The text is an advisory sectoral charter, not a treaty or a binding regulation."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from the official ALECSO English edition and two independent reports of ALECSO's adoption statement. The record is metadata-only: no full text is stored."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": null,
+        "notes": "AICTO publishes the Arabic text as the Arab Charter on AI Ethics 2025; the document itself is dated July 2025 and describes its character as technical advisory guidance. A 2026 UN ESCWA review dates ministerial approval to January 2026. No single official instrument fixes the exact adoption day, so the field is left null rather than inferred.",
+        "verified_on": "2026-11-25"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding advisory text: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "The exact adoption date is not settled: AICTO publishes the 2025 text and UN ESCWA dates ATICM approval to January 2026; no official instrument fixes the day.",
+        "No itemised list of approving States or vote was located.",
+        "No full text is stored; the record is metadata-only.",
+        "Only the Arabic text was verified; no official English translation was located.",
+        "The relationship between this Charter and the separate ALECSO Charter on AI Ethics is not institutionally defined in either text.",
+        "Implementation, monitoring and the proposed Arab AI Ethics Label are not assessed."
+      ],
+      "id": "arab-charter-ai-ethics-2025",
+      "instrument_type": "guidance",
+      "issuer": [
+        {
+          "name": "League of Arab States, Arab Working Group on Artificial Intelligence",
+          "role": "issuer",
+          "url": "https://www.aicto.org/"
+        },
+        {
+          "name": "Arab Information and Communication Technologies Organization (AICTO)",
+          "role": "secretariat",
+          "url": "https://www.aicto.org/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar"
+        ],
+        "note": "Arabic is the language of the official 60-page AICTO publication. No official English translation was located; English titles in AICTO and UN ESCWA materials are working translations.",
+        "translations": [
+          "en"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "The text describes itself as a technical advisory document of a guiding nature, not a substitute for national law; it has no treaty, signature, ratification, depositary or entry-into-force clause.",
+        "source_ids": [
+          "aicto-charter-pdf"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "AICTO publications page and UN ESCWA regional AI policy review.",
+        "search_dates": [
+          "2026-11-25"
+        ]
+      },
+      "related": [
+        {
+          "id": "arab-unified-ai-strategy-2025",
+          "note": "The strategy called for common Arab AI ethical principles; this Charter is the ethics instrument prepared in that framework.",
+          "relation": "related"
+        },
+        {
+          "id": "alecso-charter-ai-ethics-2025",
+          "note": "A separate Arab AI-ethics charter with an education, culture and science scope.",
+          "relation": "related"
+        },
+        {
+          "id": "unesco-ethics-ai-2021",
+          "note": "The Charter largely aligns with the UNESCO recommendation.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole Charter: ethical principles for AI development, deployment and governance in the Arab region",
+          "Protection of Arabic language, cultural identity and digital sovereignty",
+          "Human dignity, justice, transparency, accountability, privacy and non-discrimination",
+          "Guidance for governments, developers, researchers and other AI actors"
+        ],
+        "excluded_scope": "Non-binding regional guidance; national implementation and enforcement are outside this record.",
+        "reason": "A pan-Arab AI-ethics charter published by AICTO under the League of Arab States framework. It sets out advisory principles for responsible AI, with emphasis on linguistic and cultural identity and digital sovereignty; it is not a treaty and creates no legal obligation."
+      },
+      "rights": {
+        "licence": "AICTO terms",
+        "note": "Official AICTO publication; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.aicto.org/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "aicto-charter-pdf",
+          "kind": "official_primary",
+          "language": "ar",
+          "note": "Official 60-page Arabic text published by AICTO. The cover names the Arab Working Group on Artificial Intelligence, League of Arab States, and dates the document July 2025; the text describes itself as technical advisory guidance.",
+          "publisher": "Arab Information and Communication Technologies Organization (AICTO)",
+          "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "aicto-studies",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "AICTO publications page listing the Arab Charter on AI Ethics and the Arab AI Strategy.",
+          "publisher": "Arab Information and Communication Technologies Organization (AICTO)",
+          "url": "https://www.aicto.org/publications/studies"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "mcit-egypt-2025",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Egyptian Ministry of Communications and Information Technology press release of 2 February 2025: the Arab ICT Ministers Council adopted the common Arab AI strategy in January and the Arab Charter for AI Ethics was still being finalised.",
+          "publisher": "Ministry of Communications and Information Technology, Egypt",
+          "url": "https://mcit.gov.eg/en/Media_Center/Press_Room/Press_Releases/68202"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "unescwa-sdg-2026",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "UN ESCWA Annual SDG Review 2026 states that the Arab Charter on AI Ethics was approved by the Arab Telecommunications and Information Council of Ministers in January 2026.",
+          "publisher": "United Nations Economic and Social Commission for Western Asia (ESCWA)",
+          "url": "https://depar.unescwa.org/system/files/2026-05/annual-sdg-review-2026-english.pdf"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding advisory charter, not a treaty. AICTO publishes the text as the 2025 Arab Charter on AI Ethics; the document is dated July 2025 and states that it is technical advisory guidance, not a substitute for national law. UN ESCWA dates ATICM approval to January 2026, while no official instrument fixes the day. The record does not select a date. No signature, ratification, depositary or entry-into-force mechanism exists.",
+      "title": {
+        "english": "Arab Charter on Artificial Intelligence Ethics",
+        "official": "الميثاق العربي لأخلاقيات الذكاء الاصطناعي",
+        "short": "Arab Charter on AI Ethics"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official Arabic text read.",
+            "date": "2026-11-25",
+            "result": "The 60-page AICTO PDF sets out advisory ethical principles for AI in the Arab region, with emphasis on cultural and linguistic identity and digital sovereignty. It describes itself as technical advisory guidance, not a binding instrument or a substitute for national law."
+          },
+          {
+            "check": "Issuer and publication checked.",
+            "date": "2026-11-25",
+            "result": "The cover identifies the Arab Working Group on Artificial Intelligence, League of Arab States; AICTO publishes the text. The document is dated July 2025."
+          },
+          {
+            "check": "Adoption date checked against official and official-secondary statements.",
+            "date": "2026-11-25",
+            "result": "The AICTO text is dated July 2025; Egyptian MCIT's February 2025 release describes the Charter as still being finalised; UN ESCWA dates ATICM approval to January 2026. No single official instrument fixes the day, so the record leaves the adoption date null."
+          },
+          {
+            "check": "Legal nature checked.",
+            "date": "2026-11-25",
+            "result": "The text is advisory and non-binding; it has no signature, ratification, depositary, entry-into-force or enforcement clause."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from the official AICTO publication, Egyptian MCIT and UN ESCWA. The record is metadata-only: no full text is stored. The adoption date is deliberately not asserted because no single official instrument fixes the day."
+      }
+    },
+    {
       "binding_status": "binding",
       "category": "cyber_treaty",
       "dates": {
@@ -615,6 +935,179 @@
         ],
         "level": "metadata_verified",
         "notes": "The official Arabic PDF and an English reproduction are stored. The English text was segmented into 43 article units. The English reproduction is not an official League of Arab States translation, so the record remains metadata_verified."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2025-01-23",
+        "notes": "The Arab Telecommunications and Information Council of Ministers (ATICM) decided to launch the unified Arab AI strategy at its 28th session in January 2025; the Saudi Press Agency reported the decision on 23 January 2025. The official Arabic text is published by AICTO and describes the text as a proposed unified strategic vision. No signature, ratification or entry-into-force clause exists.",
+        "verified_on": "2026-11-25"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding regional strategy: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "No itemised adoption vote or list of the States that approved the strategy was located; the ATICM is a ministerial council, not a treaty conference.",
+        "No full text is stored; the record is metadata-only.",
+        "The English title is a working translation. The Arabic text is the only official text verified; no official English translation was located.",
+        "National implementation, budgeting and follow-up are not assessed.",
+        "The Arab Model Law on AI (2022) and the GCC Guiding Manual on the Ethics of AI were not added in this pass; no official status or text for them was verified."
+      ],
+      "id": "arab-unified-ai-strategy-2025",
+      "instrument_type": "strategy",
+      "issuer": [
+        {
+          "name": "Arab Telecommunications and Information Council of Ministers (ATICM), League of Arab States",
+          "role": "issuer",
+          "url": "https://www.aicto.org/"
+        },
+        {
+          "name": "General Secretariat of the League of Arab States, Economic Sector, ICT Development Department",
+          "role": "secretariat",
+          "url": "https://www.aicto.org/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar"
+        ],
+        "note": "Arabic is the language of the official AICTO publication. The English title used by AICTO and UN ESCWA is a working translation; no official English text was verified.",
+        "translations": [
+          "en"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A ministerial strategy adopted by the Arab ICT ministers, with no treaty language, signature, ratification, depositary or entry-into-force clause.",
+        "source_ids": [
+          "aicto-strategy-pdf",
+          "spa-launch"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "AICTO publications page and UN ESCWA regional AI policy review.",
+        "search_dates": [
+          "2026-11-25"
+        ]
+      },
+      "related": [
+        {
+          "id": "arab-charter-ai-ethics-2025",
+          "note": "The ethics charter prepared in implementation of the strategy's governance axis.",
+          "relation": "related"
+        },
+        {
+          "id": "alecso-charter-ai-ethics-2025",
+          "note": "A separate Arab AI-ethics instrument with an education, culture and science scope.",
+          "relation": "related"
+        },
+        {
+          "id": "unesco-ethics-ai-2021",
+          "note": "The strategy's ethical framework draws on the UNESCO recommendation.",
+          "relation": "related"
+        },
+        {
+          "id": "au-continental-ai-strategy-2024",
+          "note": "Another continental non-binding AI strategy.",
+          "relation": "related"
+        },
+        {
+          "id": "asean-ai-guide-2024",
+          "note": "Another regional non-binding AI governance instrument.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole strategy: governance, legislative and regulatory environment, infrastructure, data, investment, SMEs, innovation and entrepreneurship",
+          "Arab cooperation axes: a common Arab AI governance framework, AI use in priority sectors, human-capacity building and public awareness",
+          "Calls for common Arab ethical principles and a unified Arab framework for AI governance",
+          "Priority sectors include health, agriculture, education, energy and government services"
+        ],
+        "excluded_scope": "Non-binding regional strategy; national implementation and budget commitments are outside this record.",
+        "reason": "The pan-Arab strategic framework for AI adopted by the Arab ICT ministers in January 2025. It sets a common vision and cooperation axes for AI development and governance across the Arab region; it is a strategy, not a treaty."
+      },
+      "rights": {
+        "licence": "AICTO terms",
+        "note": "Official AICTO publication; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.aicto.org/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "aicto-strategy-pdf",
+          "kind": "official_primary",
+          "language": "ar",
+          "note": "Official 39-page Arabic text, published by AICTO. The cover names the General Secretariat of the League of Arab States, Economic Sector, ICT Development Department, and the technical secretariat of the Arab ICT Ministers Council.",
+          "publisher": "Arab Information and Communication Technologies Organization (AICTO)",
+          "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "aicto-studies",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "AICTO publications page listing the Arab AI Strategy and the Arab Charter on AI Ethics.",
+          "publisher": "Arab Information and Communication Technologies Organization (AICTO)",
+          "url": "https://www.aicto.org/publications/studies"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "spa-launch",
+          "kind": "official_secondary",
+          "language": "ar",
+          "note": "Saudi Press Agency report of 23 January 2025: the Arab ICT Ministers Council decided to launch the unified Arab AI strategy.",
+          "publisher": "Saudi Press Agency",
+          "url": "https://www.spa.gov.sa/N2249091"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "unescwa-sdg-2026",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "UN ESCWA Annual SDG Review 2026 describes the Unified Arab Strategic Vision on AI as adopted in 2025 and summarises its priority areas.",
+          "publisher": "United Nations Economic and Social Commission for Western Asia (ESCWA)",
+          "url": "https://depar.unescwa.org/system/files/2026-05/annual-sdg-review-2026-english.pdf"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding ministerial strategy, not a treaty. ATICM decided to launch it in January 2025; the Saudi Press Agency reported the decision on 23 January 2025. The Arabic text published by AICTO is dated 2025. It creates no legal obligation, ratification, depositary, monitoring or dispute-settlement mechanism.",
+      "title": {
+        "english": "Unified Arab Strategic Vision on Artificial Intelligence",
+        "official": "الرؤية الاستراتيجية العربية الموحدة للذكاء الاصطناعي",
+        "other": [
+          "Arab AI Strategy"
+        ],
+        "short": "Unified Arab AI Strategy"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official Arabic text read.",
+            "date": "2026-11-25",
+            "result": "The 39-page AICTO PDF sets out a unified Arab strategic vision for AI, with governance, legislative environment, infrastructure, data, investment, SME and innovation axes and common Arab cooperation areas. It contains no treaty, signature, ratification or entry-into-force clause."
+          },
+          {
+            "check": "Adoption and launch date checked.",
+            "date": "2026-11-25",
+            "result": "The Saudi Press Agency report of 23 January 2025 states that the Arab ICT Ministers Council decided to launch the unified Arab AI strategy. UN ESCWA's 2026 review also describes the strategy as adopted in 2025."
+          },
+          {
+            "check": "Issuer and status checked.",
+            "date": "2026-11-25",
+            "result": "The text is a ministerial strategy prepared within the League of Arab States and published by AICTO. It is non-binding and creates no legal obligation or depositary."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from the official AICTO publication, the Saudi Press Agency report and the UN ESCWA review. The record is metadata-only: no full text is stored. The exact adoption date is the date of the public launch report, not a signature date."
       }
     },
     {
@@ -3888,6 +4381,154 @@
         ],
         "level": "metadata_verified",
         "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is not mapped. The English translation is stored and segmented, but it is not an authentic text; the Russian original is the authentic version."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2023-11-20",
+        "notes": "Approved by the CLAD Directing Council at its meeting in Varadero, Cuba, on 20 November 2023. The official text's preamble is drafted as a proposal for adoption by the Conference of Ministers; the adopted CIIAAP is the November 2023 version. A CLAD–SEGIB report of 2025 states that the Carta was approved by the Directing Council in November 2023.",
+        "verified_on": "2026-11-25"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding recommendation: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "The official text is in Spanish only; no official English translation was verified.",
+        "No itemised vote list was located; the Carta was approved unanimously by the 23 member States of the CLAD Directing Council, not by all Ibero-American States.",
+        "The CLAD is a public-administration network, not the Ibero-American summit; its scope is public administration, not AI in society as a whole.",
+        "No full text is stored; the record is metadata-only.",
+        "Implementation, indicators and follow-up are not assessed."
+      ],
+      "id": "clad-ibero-ai-charter-2023",
+      "instrument_type": "recommendation",
+      "issuer": [
+        {
+          "name": "Centro Latinoamericano de Administración para el Desarrollo (CLAD), Directing Council",
+          "role": "issuer",
+          "url": "https://www.clad.org/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "es"
+        ],
+        "note": "Spanish is the language of the official CLAD text. No official English or Portuguese version was verified.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A charter approved by the CLAD Directing Council as a common framework and recommendation to its member States; it has no treaty, signature, ratification, depositary or entry-into-force clause.",
+        "source_ids": [
+          "clad-charter-pdf",
+          "clad-report-2025"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "CLAD publications and a CLAD–SEGIB interoperability report.",
+        "search_dates": [
+          "2026-11-25"
+        ]
+      },
+      "related": [
+        {
+          "id": "ibero-ai-declaration-2024",
+          "note": "The Ibero-American summit declaration on ethical and trustworthy AI adopted a year later.",
+          "relation": "related"
+        },
+        {
+          "id": "unesco-ethics-ai-2021",
+          "note": "The Carta draws on the UNESCO recommendation and other international AI principles.",
+          "relation": "related"
+        },
+        {
+          "id": "oecd-ai-recommendation-2019",
+          "note": "The Carta refers to the OECD AI principles and recommendation.",
+          "relation": "related"
+        },
+        {
+          "id": "coe-recommendation-algorithmic-systems-2020",
+          "note": "Another regional recommendation on algorithmic systems and public-sector AI.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole Charter: a common Ibero-American framework for AI in public administration",
+          "Principles for ethical, trustworthy and human-centred AI in public services",
+          "Governance, data, transparency, explainability, accountability, non-discrimination and human oversight",
+          "Guidance on algorithmic impact assessment, procurement, interoperability and public-sector capacity"
+        ],
+        "excluded_scope": "Non-binding public-administration guidance; private-sector AI and national implementation are outside this record.",
+        "reason": "The first common Ibero-American framework on AI in public administration, approved by the CLAD Directing Council in November 2023. It provides principles and governance guidance to CLAD member States; it is a recommendation, not a treaty."
+      },
+      "rights": {
+        "licence": "CLAD terms",
+        "note": "Official CLAD publication; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.clad.org/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "clad-charter-pdf",
+          "kind": "official_primary",
+          "language": "es",
+          "note": "Official 32-page Spanish text of the Carta Iberoamericana de Inteligencia Artificial en la Administración Pública. The preamble refers to adoption at the next meeting of the Conference of Ministers; the document is the November 2023 CIIAAP.",
+          "publisher": "Centro Latinoamericano de Administración para el Desarrollo (CLAD)",
+          "url": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "clad-report-2025",
+          "kind": "official_secondary",
+          "language": "es",
+          "note": "CLAD–SEGIB 2025 report on interoperability in Ibero-American public administrations states that the CIIAAP was approved by the CLAD Directing Council in November 2023.",
+          "publisher": "CLAD and SEGIB",
+          "url": "https://web-api-backend.clad.org/uploads/informefinal_clad_segib_interoperablidadaapp_iberoamerica_vf_20250603_final2025.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "clad-inap",
+          "kind": "official_secondary",
+          "language": "es",
+          "note": "Spanish public-administration portal reports the CLAD Directing Council's unanimous approval of the Carta in November 2023.",
+          "publisher": "INAP, Spain",
+          "url": "https://laadministracionaldia.inap.es/noticia.asp?id=1514573"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding recommendation, not a treaty. The CLAD Directing Council approved the Carta in Varadero, Cuba, on 20 November 2023; the vote was unanimous among the 23 member States of the Council. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+      "title": {
+        "english": "Ibero-American Charter on Artificial Intelligence in Public Administration",
+        "official": "Carta Iberoamericana de Inteligencia Artificial en la Administración Pública",
+        "short": "CLAD Ibero-American AI Charter"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official Spanish text read.",
+            "date": "2026-11-25",
+            "result": "The 32-page CLAD text sets out a common framework and principles for AI in public administration, including governance, data, transparency, explainability, accountability, non-discrimination and human oversight. It contains no treaty, signature, ratification or entry-into-force clause."
+          },
+          {
+            "check": "Adoption date and issuer checked.",
+            "date": "2026-11-25",
+            "result": "The CLAD–SEGIB 2025 report states that the CIIAAP was approved by the CLAD Directing Council in November 2023; the INAP report records unanimous approval at the Varadero meeting. The Carta is a recommendation to CLAD member States, not a treaty."
+          },
+          {
+            "check": "Scope checked.",
+            "date": "2026-11-25",
+            "result": "The text is addressed to public administrations and CLAD member States. It is not a general AI code and does not bind private actors."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from the official CLAD text and two official-secondary reports. The record is metadata-only: no full text is stored."
       }
     },
     {
@@ -7234,6 +7875,273 @@
         ],
         "level": "full_text_checked",
         "notes": "Full text preserved. The PDF is owner-password protected; extraction succeeded, and the extracted text is stored. No monitoring data is included in this record."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-11-15",
+        "notes": "Adopted by the Heads of State and Government of the Ibero-American Community at the XXIX Ibero-American Summit in Cuenca, Ecuador, on 15 November 2024. The declaration names 18 States. It contains no signature, ratification, depositary or entry-into-force clause.",
+        "verified_on": "2026-11-25"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding political declaration: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "The declaration names 18 States; the summit's Cuenca Declaration was adopted by 19 countries, and the Ibero-American Community has 22 members. Paraguay is not listed in this special declaration; no official explanation was located.",
+        "No full text is stored; the record is metadata-only.",
+        "Only the Spanish text was verified; a Portuguese version exists, but no official English text was located.",
+        "Implementation, follow-up and financing are not assessed.",
+        "The relationship between this declaration and the CLAD Carta Iberoamericana de IA en la Administración Pública is political, not institutional."
+      ],
+      "id": "ibero-ai-declaration-2024",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "Heads of State and Government of the Ibero-American Community, XXIX Ibero-American Summit",
+          "role": "issuer",
+          "url": "https://segib.org/es/cumbre/xxix-cumbre-iberoamericana/"
+        },
+        {
+          "name": "Secretaría General Iberoamericana (SEGIB)",
+          "role": "secretariat",
+          "url": "https://segib.org/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "es"
+        ],
+        "note": "Spanish is the language of the official text verified. A Portuguese version was published by Ecuador's Ministry of Foreign Affairs; no official English text was located.",
+        "translations": [
+          "pt"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A summit declaration adopted by Heads of State and Government; it contains no treaty, signature, ratification, depositary or entry-into-force clause.",
+        "source_ids": [
+          "mintel-declaration"
+        ]
+      },
+      "parties": {
+        "act": "endorsement",
+        "as_of": "2024-11-15",
+        "counts": {
+          "endorsements": {
+            "basis": "verified_total",
+            "source_ids": [
+              "mintel-declaration"
+            ],
+            "total": 18,
+            "verified": 18
+          },
+          "ratifications": {
+            "basis": "not_applicable",
+            "total": null,
+            "verified": 0
+          }
+        },
+        "declarations": [],
+        "entries": [
+          {
+            "endorsement": "2024-11-15",
+            "party": "Andorra",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Bolivia",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Brasil",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Chile",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Colombia",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Costa Rica",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Cuba",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Ecuador",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "El Salvador",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "España",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Guatemala",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Honduras",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Panamá",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Perú",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Portugal",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "República Dominicana",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Uruguay",
+            "role": "endorser"
+          },
+          {
+            "endorsement": "2024-11-15",
+            "party": "Venezuela",
+            "role": "endorser"
+          }
+        ],
+        "reservations": [],
+        "source_ids": [
+          "mintel-declaration"
+        ],
+        "summary": "The declaration names 18 States: Andorra, Bolivia, Brasil, Chile, Colombia, Costa Rica, Cuba, Ecuador, El Salvador, España, Guatemala, Honduras, Panamá, Perú, Portugal, República Dominicana, Uruguay and Venezuela. The list is reproduced from the official text; it is not a claim that the other Ibero-American States oppose the declaration.",
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "SEGIB XXIX Summit page and Ecuador's official summit documents.",
+        "search_dates": [
+          "2026-11-25"
+        ]
+      },
+      "related": [
+        {
+          "id": "clad-ibero-ai-charter-2023",
+          "note": "The CLAD public-administration AI charter adopted the previous year.",
+          "relation": "related"
+        },
+        {
+          "id": "unesco-ethics-ai-2021",
+          "note": "The declaration builds on the Ibero-American digital-rights charter and international AI-ethics principles, including UNESCO's recommendation.",
+          "relation": "related"
+        },
+        {
+          "id": "paris-ai-action-summit-statement-2025",
+          "note": "Another non-binding summit declaration on inclusive and sustainable AI.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Whole declaration: ethical, trustworthy and sustainable AI for Ibero-America",
+          "Human rights, inclusion, non-discrimination and protection of vulnerable groups",
+          "Transparency, accountability, explainability and human oversight",
+          "Cooperation on AI governance, capacity building and the use of Spanish and Portuguese in AI"
+        ],
+        "excluded_scope": "Non-binding summit declaration; national implementation and financing are outside this record.",
+        "reason": "A special declaration of the Ibero-American Heads of State and Government on ethical, trustworthy AI that promotes sustainable development. It is a political declaration, not a treaty, and names 18 endorsing States."
+      },
+      "rights": {
+        "licence": "Government of Ecuador and SEGIB terms",
+        "note": "Official summit publication; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.gob.ec/"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-25",
+          "http_status": null,
+          "id": "mintel-declaration",
+          "kind": "official_primary",
+          "language": "es",
+          "note": "Official Spanish text of the Declaración Especial de Países Integrantes de la Comunidad Iberoamericana en el marco de la XXIX Cumbre Iberoamericana, Cuenca, 15 November 2024. The first paragraphs and the list of 18 States were read from the official PDF; a direct automated fetch timed out from this VM.",
+          "publisher": "Ministerio de Telecomunicaciones y de la Sociedad de la Información, Ecuador",
+          "url": "https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "segib-summit",
+          "kind": "official_secondary",
+          "language": "es",
+          "note": "SEGIB page for the XXIX Ibero-American Summit in Cuenca, 14–15 November 2024; records that 19 countries adopted the Cuenca Declaration and 24 special declarations.",
+          "publisher": "Secretaría General Iberoamericana (SEGIB)",
+          "url": "https://segib.org/es/cumbre/xxix-cumbre-iberoamericana/"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "cancilleria-pt",
+          "kind": "official_primary",
+          "language": "pt",
+          "note": "Portuguese version of the same special declaration, published by Ecuador's Ministry of Foreign Affairs; used only to corroborate the date and the list of 18 States.",
+          "publisher": "Ministerio de Relaciones Exteriores y Movilidad Humana, Ecuador",
+          "url": "https://www.cancilleria.gob.ec/wp-content/uploads/2024/12/8.-DE-INTELIGENCIA-ARTIFICIAL.PT_.pdf"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding political declaration, not a treaty. It was adopted at the XXIX Ibero-American Summit in Cuenca on 15 November 2024 and names 18 endorsing States. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+      "title": {
+        "english": "Special Declaration of the Ibero-American Community on Ethical and Trustworthy Artificial Intelligence that Promotes Sustainable Development in Ibero-America",
+        "official": "Declaración Especial de Países Integrantes de la Comunidad Iberoamericana en el marco de la XXIX Cumbre Iberoamericana, sobre una Inteligencia Artificial Ética Confiable que Promueva el Desarrollo Sostenible en Iberoamérica",
+        "short": "Ibero-American Declaration on Ethical and Trustworthy AI"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official Spanish text read.",
+            "date": "2026-11-25",
+            "result": "The declaration is dated Cuenca, 15 November 2024, and names the Heads of State and Government of 18 Ibero-American States. It sets out ethical, trustworthy and sustainable AI commitments and contains no treaty, signature, ratification or entry-into-force clause."
+          },
+          {
+            "check": "Party list checked.",
+            "date": "2026-11-25",
+            "result": "The official text lists 18 States: Andorra, Bolivia, Brasil, Chile, Colombia, Costa Rica, Cuba, Ecuador, El Salvador, España, Guatemala, Honduras, Panamá, Perú, Portugal, República Dominicana, Uruguay and Venezuela. The list is reproduced exactly; Paraguay is absent."
+          },
+          {
+            "check": "Summit setting checked.",
+            "date": "2026-11-25",
+            "result": "SEGIB records the XXIX Ibero-American Summit in Cuenca on 14–15 November 2024 and 19 countries adopting the Cuenca Declaration and 24 special declarations."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from the official Ecuadorian text and SEGIB. The record is metadata-only: no full text is stored. The Spanish PDF could not be fetched automatically from this VM; the list and date were read from the official PDF as indexed and corroborated by the Portuguese official version."
       }
     },
     {
@@ -11389,6 +12297,752 @@
         ],
         "level": "metadata_verified",
         "notes": "Metadata verified; the full declaration text is not stored. The endorsing-State list is reproduced party by party from the State Department page, with the list date recorded."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2024-09-10",
+        "notes": "Endorsed at the closing session of the second REAIM Summit in Seoul on 10 September 2024. The Korean Ministry of Foreign Affairs states that 61 States supported the Blueprint; no itemised list is published in the record.",
+        "verified_on": "2026-11-25"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding political declaration: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "The Korean Ministry of Foreign Affairs states that 61 States supported the Blueprint, but no itemised official list is included in this record.",
+        "No full text is stored; the record is metadata-only. The official Korean PDF is image-only and was not OCRed.",
+        "The Blueprint is a declarative outcome document, not a negotiated treaty; it does not create a secretariat, review cycle or implementation mechanism.",
+        "The relationship between the Blueprint and the 2023 Call to Action and the 2026 Pathways to Action is a summit sequence, not an institutional hierarchy.",
+        "National implementation and weapons reviews are not assessed."
+      ],
+      "id": "reaim-blueprint-for-action-2024",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "Republic of Korea, Ministry of Foreign Affairs and Ministry of National Defense",
+          "role": "issuer",
+          "url": "https://www.mofa.go.kr/eng/brd/m_5676/view.do?page=1&seq=322676"
+        },
+        {
+          "name": "Kingdom of the Netherlands",
+          "role": "co_issuer",
+          "url": "https://www.government.nl/"
+        },
+        {
+          "name": "Republic of Singapore",
+          "role": "co_issuer",
+          "url": "https://www.mindef.gov.sg/"
+        },
+        {
+          "name": "Republic of Kenya",
+          "role": "co_issuer",
+          "url": "https://www.mfa.go.ke/"
+        },
+        {
+          "name": "United Kingdom of Great Britain and Northern Ireland",
+          "role": "co_issuer",
+          "url": "https://www.gov.uk/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English is the language of the official outcome text published by the Korean Ministry of Foreign Affairs. A Korean unofficial translation is also posted on the ministry page.",
+        "translations": [
+          "ko"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A summit outcome document endorsed by participating States; it is declarative and contains no treaty, signature, ratification, depositary or entry-into-force clause.",
+        "source_ids": [
+          "mofa-page"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "Republic of Korea Ministry of Foreign Affairs press release and the REAIM summit series.",
+        "search_dates": [
+          "2026-11-25"
+        ]
+      },
+      "related": [
+        {
+          "id": "reaim-call-to-action-2023",
+          "note": "The first REAIM outcome document, which the Blueprint builds on.",
+          "relation": "predecessor"
+        },
+        {
+          "id": "reaim-pathways-to-action-2026",
+          "note": "The third REAIM outcome document, which refers back to the Blueprint.",
+          "relation": "successor"
+        },
+        {
+          "id": "political-declaration-military-ai-2023",
+          "note": "The US-led political declaration on responsible military AI.",
+          "relation": "related"
+        },
+        {
+          "id": "ccw-gge-laws-2026",
+          "note": "The CCW GGE on lethal autonomous weapons systems is a separate negotiating track.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-79-239",
+          "note": "The UN General Assembly resolution on AI in the military domain.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Responsible development, deployment and use of AI in the military domain across the life cycle",
+          "Compliance with international law, including international humanitarian law",
+          "Human involvement, responsibility and accountability; reliability and trustworthiness; explainability",
+          "Risk assessment, confidence-building, knowledge exchange and capacity building",
+          "Attention to AI-enabled weapons, decision-support systems, cyber operations, electronic warfare, information operations and the nuclear domain"
+        ],
+        "excluded_scope": "Non-binding military-AI political text; national defence policy, procurement and weapons reviews are outside this record.",
+        "reason": "The second REAIM summit outcome document, endorsed in Seoul in September 2024. It translates the 2023 Call to Action into a declarative roadmap for responsible military AI; it is a political text, not a treaty."
+      },
+      "rights": {
+        "licence": "Government of the Republic of Korea terms",
+        "note": "Official government publication; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.mofa.go.kr/eng/index.do"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "mofa-page",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official English press release of 10 September 2024: the Blueprint for Action was endorsed as the outcome of the 2024 REAIM Summit and was supported by 61 States.",
+          "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+          "url": "https://www.mofa.go.kr/eng/brd/m_5676/view.do?page=1&seq=322676"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "mofa-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official PDF of the REAIM Blueprint for Action posted on the Korean Ministry of Foreign Affairs page. The PDF is image-only; no searchable text layer was available.",
+          "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+          "url": "https://www.mofa.go.kr/www/brd/m_4080/down.do?brd_id=235&seq=375378&data_tp=A&file_seq=9"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "mofa-kr-page",
+          "kind": "official_secondary",
+          "language": "ko",
+          "note": "Korean press release of 10 September 2024 confirming the 61-State support and the declarative character of the Blueprint.",
+          "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+          "url": "https://www.mofa.go.kr/www/brd/m_4080/view.do?seq=375378"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding summit declaration, not a treaty. It was endorsed at the second REAIM Summit in Seoul on 10 September 2024 and supported by 61 States according to the Korean Ministry of Foreign Affairs. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+      "title": {
+        "official": "REAIM Blueprint for Action",
+        "short": "REAIM Blueprint for Action 2024"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official outcome page read.",
+            "date": "2026-11-25",
+            "result": "The Korean Ministry of Foreign Affairs states that the Blueprint for Action was officially endorsed as the outcome document of the 2024 REAIM Summit, supported by 61 States. It is described as a declarative document setting out principles and governance directions for responsible military AI."
+          },
+          {
+            "check": "Official PDF checked.",
+            "date": "2026-11-25",
+            "result": "The official PDF was downloaded from the ministry page. It is an image-only three-page document; the text layer is empty, so the content was verified from the official press release and the published summary, not from OCR."
+          },
+          {
+            "check": "Legal nature checked.",
+            "date": "2026-11-25",
+            "result": "The Blueprint is a political outcome document. It has no treaty, signature, ratification, depositary or entry-into-force clause."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from the official Korean Ministry of Foreign Affairs page and PDF. The record is metadata-only: no full text is stored. The 61-State figure is reproduced from the official press release; no itemised list is asserted."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2023-02-16",
+        "notes": "Adopted at the first REAIM Summit in The Hague on 16 February 2023. The Dutch government published the Call to Action and a news item the same day; the closing speech states that more than 60 countries had endorsed it.",
+        "verified_on": "2026-11-25"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding political call to action: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "No itemised list of endorsing States is included in this record. The Dutch government's news item says more than 60 countries had endorsed the Call by 16 February 2023; UNIDIR's December 2025 chronology records 58. The discrepancy is not resolved.",
+        "No full text is stored; the record is metadata-only.",
+        "The Call is a short political text, not a negotiated treaty; it does not define binding rules, review cycles or a secretariat.",
+        "The relationship between the Call, the 2024 Blueprint and the 2026 Pathways to Action is a summit sequence, not an institutional hierarchy.",
+        "Military AI applications and national implementation are not assessed."
+      ],
+      "id": "reaim-call-to-action-2023",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "Government of the Netherlands, Ministry of Foreign Affairs and Ministry of Defence",
+          "role": "issuer",
+          "url": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action"
+        },
+        {
+          "name": "Republic of Korea",
+          "role": "co_issuer",
+          "url": "https://www.mofa.go.kr/eng/index.do"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English is the language of the official text. The Dutch government also publishes Dutch, Papiamento and Papiamentu versions; no statement of equally authentic languages was located.",
+        "translations": [
+          "nl",
+          "pap"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A summit call to action supported by governments and other stakeholders; it contains no treaty, signature, ratification, depositary or entry-into-force clause.",
+        "source_ids": [
+          "govnl-page"
+        ]
+      },
+      "provenance": {
+        "discovered_via": "Government of the Netherlands publications and the REAIM summit series.",
+        "search_dates": [
+          "2026-11-25"
+        ]
+      },
+      "related": [
+        {
+          "id": "political-declaration-military-ai-2023",
+          "note": "The US-led political declaration on responsible military AI issued the same day.",
+          "relation": "related"
+        },
+        {
+          "id": "reaim-blueprint-for-action-2024",
+          "note": "The second REAIM outcome document, which builds on the 2023 Call.",
+          "relation": "related"
+        },
+        {
+          "id": "reaim-pathways-to-action-2026",
+          "note": "The third REAIM outcome document, which refers back to the 2023 Call.",
+          "relation": "related"
+        },
+        {
+          "id": "ccw-gge-laws-2026",
+          "note": "The CCW GGE on lethal autonomous weapons systems is a separate negotiating track.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-79-239",
+          "note": "The UN General Assembly resolution on AI in the military domain.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Responsible development, deployment and use of AI in the military domain",
+          "Compliance with international legal obligations and avoidance of undermining international security, stability and accountability",
+          "Human involvement, reliability, liability and unintended escalation",
+          "Confidence-building, knowledge exchange and capacity building"
+        ],
+        "excluded_scope": "Non-binding military-AI political text; national defence policy and weapons reviews are outside this record.",
+        "reason": "The first REAIM summit outcome document. It is a joint call to action on responsible AI in the military domain, adopted in The Hague in February 2023; it is a political text, not a treaty."
+      },
+      "rights": {
+        "licence": "Government of the Netherlands terms",
+        "note": "Official government publication; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.government.nl/copyright"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "govnl-page",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official publication page for the REAIM 2023 Call to Action, dated 16 February 2023; links the four-page PDF.",
+          "publisher": "Government of the Netherlands, Ministry of Foreign Affairs and Ministry of Defence",
+          "url": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "govnl-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official four-page PDF text of the REAIM 2023 Call to Action.",
+          "publisher": "Government of the Netherlands",
+          "url": "https://www.government.nl/site/binaries/site-content/collections/documents/2023/02/16/reaim-2023-call-to-action/REAIM+2023+Call+to+Action.pdf"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "govnl-news",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Government news item of 16 February 2023: the summit agreed the joint call to action; the closing speech states that more than 60 countries had endorsed it.",
+          "publisher": "Government of the Netherlands",
+          "url": "https://www.government.nl/latest/news/2023/02/16/reaim-2023-call-to-action"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding summit call to action, not a treaty. It was adopted at the first REAIM Summit in The Hague on 16 February 2023. The Dutch government reports more than 60 endorsing countries at the summit; UNIDIR records 58 in its December 2025 chronology. No itemised list is included in this record, and no legal obligation, ratification, depositary, monitoring or enforcement mechanism exists.",
+      "title": {
+        "official": "REAIM 2023 Call to Action",
+        "short": "REAIM 2023 Call to Action"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official text read.",
+            "date": "2026-11-25",
+            "result": "The four-page PDF sets out a joint call to action on the responsible development, deployment and use of AI in the military domain. It invites governments, industry, knowledge institutions, international organisations and others to support its propositions; it contains no treaty, signature, ratification or entry-into-force clause."
+          },
+          {
+            "check": "Adoption date and issuer checked.",
+            "date": "2026-11-25",
+            "result": "The Dutch government publication page and news item are dated 16 February 2023 and identify the Ministry of Foreign Affairs and Ministry of Defence as responsible, with the Republic of Korea as co-host."
+          },
+          {
+            "check": "Endorsement count checked.",
+            "date": "2026-11-25",
+            "result": "The Dutch closing speech says more than 60 countries had endorsed the Call by 16 February 2023; the news item refers to a country list. No itemised official list was located, and UNIDIR's December 2025 chronology records 58. The record does not assert a precise total."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from the official Dutch publication and news item. The record is metadata-only: no full text is stored. The endorsement total is left unstated because the official and secondary counts differ."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2026-02-05",
+        "notes": "Adopted at the third REAIM Summit in A Coruña, Spain, on 5 February 2026; the summit ran from 4 to 5 February 2026. The Spanish government's official page lists the endorsing States and states that the declaration remains open to further approval.",
+        "verified_on": "2026-11-25"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding political declaration: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "The official Spanish page listed 45 endorsing States when accessed on 25 November 2026; a 26 February 2026 RSIS commentary recorded 40 at the time of writing. The record uses the current official list and does not infer when the additional States endorsed.",
+        "No individual endorsement dates are published; all entries are recorded as listed endorsers without a date.",
+        "The official list does not include China or the United States; no official explanation was located.",
+        "No full text is stored; the record is metadata-only.",
+        "The declaration is not mapped in this pass; the 17 existing State-level maps are unchanged.",
+        "National implementation and the proposed industry framework are not assessed."
+      ],
+      "id": "reaim-pathways-to-action-2026",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "Kingdom of Spain, Ministry of Foreign Affairs, European Union and Cooperation",
+          "role": "issuer",
+          "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx"
+        },
+        {
+          "name": "Republic of Korea",
+          "role": "co_issuer",
+          "url": "https://www.mofa.go.kr/eng/index.do"
+        },
+        {
+          "name": "Kingdom of the Netherlands",
+          "role": "co_issuer",
+          "url": "https://www.government.nl/"
+        },
+        {
+          "name": "A Coruña City Council",
+          "role": "host",
+          "url": "https://www.coruna.gal/"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "English is the language of the official PDF published by the Spanish Ministry of Foreign Affairs. The Spanish government page provides a Spanish rendering of the title and list; no statement of equally authentic languages was located.",
+        "translations": [
+          "es"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A summit declaration endorsed by States and open to further approval; it contains no treaty, signature, ratification, depositary or entry-into-force clause.",
+        "source_ids": [
+          "spain-page"
+        ]
+      },
+      "parties": {
+        "act": "endorsement",
+        "as_of": "2026-11-25",
+        "counts": {
+          "endorsements": {
+            "basis": "verified_total",
+            "source_ids": [
+              "spain-page"
+            ],
+            "total": 45,
+            "verified": 45
+          },
+          "ratifications": {
+            "basis": "not_applicable",
+            "total": null,
+            "verified": 0
+          }
+        },
+        "declarations": [],
+        "entries": [
+          {
+            "endorsement": null,
+            "party": "Albania",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Armenia",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Australia",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Austria",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Belgium",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Bulgaria",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Canada",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Chile",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Croatia",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Cyprus",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Czech Republic",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Denmark",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Ecuador",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Finland",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "France",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Georgia",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Germany",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Ghana",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Greece",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Hungary",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Iceland",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Ireland",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Italy",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Japan",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Kenya",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Luxembourg",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Malta",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Morocco",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Netherlands",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Norway",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Pakistan",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Panama",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Philippines",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Portugal",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Republic of Korea",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Romania",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Senegal",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Singapore",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Slovenia",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Spain",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Sweden",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Switzerland",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Turkiye",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "Ukraine",
+            "role": "endorser"
+          },
+          {
+            "endorsement": null,
+            "party": "United Kingdom",
+            "role": "endorser"
+          }
+        ],
+        "reservations": [],
+        "source_ids": [
+          "spain-page"
+        ],
+        "summary": "The official Spanish government page lists 45 endorsing States as of 25 November 2026: Albania, Armenia, Australia, Austria, Belgium, Bulgaria, Canada, Chile, Croatia, Cyprus, Czech Republic, Denmark, Ecuador, Finland, France, Georgia, Germany, Ghana, Greece, Hungary, Iceland, Ireland, Italy, Japan, Kenya, Luxembourg, Malta, Morocco, Netherlands, Norway, Pakistan, Panama, Philippines, Portugal, Republic of Korea, Romania, Senegal, Singapore, Slovenia, Spain, Sweden, Switzerland, Turkiye, Ukraine and the United Kingdom. The page states the declaration remains open to further approvals.",
+        "withdrawals": []
+      },
+      "provenance": {
+        "discovered_via": "Spanish Ministry of Foreign Affairs REAIM 2026 pages and the REAIM summit series.",
+        "search_dates": [
+          "2026-11-25"
+        ]
+      },
+      "related": [
+        {
+          "id": "reaim-call-to-action-2023",
+          "note": "The first REAIM outcome document.",
+          "relation": "predecessor"
+        },
+        {
+          "id": "reaim-blueprint-for-action-2024",
+          "note": "The second REAIM outcome document.",
+          "relation": "predecessor"
+        },
+        {
+          "id": "political-declaration-military-ai-2023",
+          "note": "The US-led political declaration on responsible military AI.",
+          "relation": "related"
+        },
+        {
+          "id": "ccw-gge-laws-2026",
+          "note": "The CCW GGE on lethal autonomous weapons systems is a separate negotiating track.",
+          "relation": "related"
+        },
+        {
+          "id": "un-ga-res-80-58",
+          "note": "The 2025 UN General Assembly resolution on AI in the military domain.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Responsible use and development of AI in the military domain across the life cycle",
+          "Compliance with international law, including international humanitarian law, and protection of civilians",
+          "Risk reduction, human oversight, accountability and explainability",
+          "Practical implementation, industry engagement and complementarity with the CCW and UNGA tracks",
+          "References to the 2023 Call to Action and the 2024 Blueprint for Action"
+        ],
+        "excluded_scope": "Non-binding military-AI political text; national defence policy, procurement and weapons reviews are outside this record.",
+        "reason": "The third REAIM summit outcome document, adopted in A Coruña in February 2026. It translates the earlier REAIM principles into practical pathways and industry engagement; it is a political declaration, not a treaty."
+      },
+      "rights": {
+        "licence": "Government of Spain terms",
+        "note": "Official government publication; no open licence identified. Metadata only in this corpus.",
+        "status": "public_official_text",
+        "url": "https://www.exteriores.gob.es/en/Paginas/index.aspx"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "spain-page",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official REAIM 2026 page: 'A Coruña Declaration: REAIM 2026 Pathways to Action'. It lists the 45 endorsing States and states that the declaration remains open to approval by other countries.",
+          "publisher": "Ministry of Foreign Affairs, European Union and Cooperation, Spain",
+          "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "spain-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official eight-page PDF of the REAIM 2026 Pathways to Action.",
+          "publisher": "Ministry of Foreign Affairs, European Union and Cooperation, Spain",
+          "url": "https://exteriores.gob.es/en/REAIM2026/Documents/REAIM%202026%20Pathways%20to%20Action.pdf"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding political declaration, not a treaty. It was adopted at the third REAIM Summit in A Coruña on 5 February 2026. The official Spanish page lists 45 endorsing States as of 25 November 2026 and states that the declaration remains open; a 26 February 2026 RSIS commentary recorded 40 at the time of writing. The record uses the current official list. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+      "title": {
+        "official": "A Coruña Declaration: REAIM 2026 Pathways to Action",
+        "short": "REAIM 2026 Pathways to Action"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official declaration text read.",
+            "date": "2026-11-25",
+            "result": "The eight-page PDF sets out 28 numbered commitments on responsible military AI, including international law and international humanitarian law, human oversight, risk reduction, industry engagement and complementarity with the CCW and UNGA tracks. It contains no treaty, signature, ratification or entry-into-force clause."
+          },
+          {
+            "check": "Adoption date and issuer checked.",
+            "date": "2026-11-25",
+            "result": "The Spanish government page and PDF identify the A Coruña Summit of 4–5 February 2026 and the Spanish Ministry of Foreign Affairs, European Union and Cooperation as issuer, with Korea and the Netherlands as co-hosts."
+          },
+          {
+            "check": "Endorser list checked.",
+            "date": "2026-11-25",
+            "result": "The official page lists 45 States and states that the declaration remains open to further approval. The list was transcribed exactly; individual endorsement dates are not published."
+          }
+        ],
+        "level": "metadata_verified",
+        "notes": "Metadata verified from the official Spanish government page and PDF. The record is metadata-only: no full text is stored. The 45-State list is a dated snapshot; the declaration remains open."
       }
     },
     {

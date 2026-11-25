@@ -1,0 +1,165 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": null,
+    "notes": "AICTO publishes the Arabic text as the Arab Charter on AI Ethics 2025; the document itself is dated July 2025 and describes its character as technical advisory guidance. A 2026 UN ESCWA review dates ministerial approval to January 2026. No single official instrument fixes the exact adoption day, so the field is left null rather than inferred.",
+    "verified_on": "2026-11-25"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Non-binding advisory text: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "The exact adoption date is not settled: AICTO publishes the 2025 text and UN ESCWA dates ATICM approval to January 2026; no official instrument fixes the day.",
+    "No itemised list of approving States or vote was located.",
+    "No full text is stored; the record is metadata-only.",
+    "Only the Arabic text was verified; no official English translation was located.",
+    "The relationship between this Charter and the separate ALECSO Charter on AI Ethics is not institutionally defined in either text.",
+    "Implementation, monitoring and the proposed Arab AI Ethics Label are not assessed."
+  ],
+  "id": "arab-charter-ai-ethics-2025",
+  "instrument_type": "guidance",
+  "issuer": [
+    {
+      "name": "League of Arab States, Arab Working Group on Artificial Intelligence",
+      "role": "issuer",
+      "url": "https://www.aicto.org/"
+    },
+    {
+      "name": "Arab Information and Communication Technologies Organization (AICTO)",
+      "role": "secretariat",
+      "url": "https://www.aicto.org/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "ar"
+    ],
+    "note": "Arabic is the language of the official 60-page AICTO publication. No official English translation was located; English titles in AICTO and UN ESCWA materials are working translations.",
+    "translations": [
+      "en"
+    ]
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "The text describes itself as a technical advisory document of a guiding nature, not a substitute for national law; it has no treaty, signature, ratification, depositary or entry-into-force clause.",
+    "source_ids": [
+      "aicto-charter-pdf"
+    ]
+  },
+  "provenance": {
+    "discovered_via": "AICTO publications page and UN ESCWA regional AI policy review.",
+    "search_dates": [
+      "2026-11-25"
+    ]
+  },
+  "related": [
+    {
+      "id": "arab-unified-ai-strategy-2025",
+      "note": "The strategy called for common Arab AI ethical principles; this Charter is the ethics instrument prepared in that framework.",
+      "relation": "related"
+    },
+    {
+      "id": "alecso-charter-ai-ethics-2025",
+      "note": "A separate Arab AI-ethics charter with an education, culture and science scope.",
+      "relation": "related"
+    },
+    {
+      "id": "unesco-ethics-ai-2021",
+      "note": "The Charter largely aligns with the UNESCO recommendation.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Whole Charter: ethical principles for AI development, deployment and governance in the Arab region",
+      "Protection of Arabic language, cultural identity and digital sovereignty",
+      "Human dignity, justice, transparency, accountability, privacy and non-discrimination",
+      "Guidance for governments, developers, researchers and other AI actors"
+    ],
+    "excluded_scope": "Non-binding regional guidance; national implementation and enforcement are outside this record.",
+    "reason": "A pan-Arab AI-ethics charter published by AICTO under the League of Arab States framework. It sets out advisory principles for responsible AI, with emphasis on linguistic and cultural identity and digital sovereignty; it is not a treaty and creates no legal obligation."
+  },
+  "rights": {
+    "licence": "AICTO terms",
+    "note": "Official AICTO publication; no open licence identified. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.aicto.org/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "aicto-charter-pdf",
+      "kind": "official_primary",
+      "language": "ar",
+      "note": "Official 60-page Arabic text published by AICTO. The cover names the Arab Working Group on Artificial Intelligence, League of Arab States, and dates the document July 2025; the text describes itself as technical advisory guidance.",
+      "publisher": "Arab Information and Communication Technologies Organization (AICTO)",
+      "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "aicto-studies",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "AICTO publications page listing the Arab Charter on AI Ethics and the Arab AI Strategy.",
+      "publisher": "Arab Information and Communication Technologies Organization (AICTO)",
+      "url": "https://www.aicto.org/publications/studies"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "mcit-egypt-2025",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "Egyptian Ministry of Communications and Information Technology press release of 2 February 2025: the Arab ICT Ministers Council adopted the common Arab AI strategy in January and the Arab Charter for AI Ethics was still being finalised.",
+      "publisher": "Ministry of Communications and Information Technology, Egypt",
+      "url": "https://mcit.gov.eg/en/Media_Center/Press_Room/Press_Releases/68202"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "unescwa-sdg-2026",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "UN ESCWA Annual SDG Review 2026 states that the Arab Charter on AI Ethics was approved by the Arab Telecommunications and Information Council of Ministers in January 2026.",
+      "publisher": "United Nations Economic and Social Commission for Western Asia (ESCWA)",
+      "url": "https://depar.unescwa.org/system/files/2026-05/annual-sdg-review-2026-english.pdf"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Non-binding advisory charter, not a treaty. AICTO publishes the text as the 2025 Arab Charter on AI Ethics; the document is dated July 2025 and states that it is technical advisory guidance, not a substitute for national law. UN ESCWA dates ATICM approval to January 2026, while no official instrument fixes the day. The record does not select a date. No signature, ratification, depositary or entry-into-force mechanism exists.",
+  "title": {
+    "english": "Arab Charter on Artificial Intelligence Ethics",
+    "official": "الميثاق العربي لأخلاقيات الذكاء الاصطناعي",
+    "short": "Arab Charter on AI Ethics"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Official Arabic text read.",
+        "date": "2026-11-25",
+        "result": "The 60-page AICTO PDF sets out advisory ethical principles for AI in the Arab region, with emphasis on cultural and linguistic identity and digital sovereignty. It describes itself as technical advisory guidance, not a binding instrument or a substitute for national law."
+      },
+      {
+        "check": "Issuer and publication checked.",
+        "date": "2026-11-25",
+        "result": "The cover identifies the Arab Working Group on Artificial Intelligence, League of Arab States; AICTO publishes the text. The document is dated July 2025."
+      },
+      {
+        "check": "Adoption date checked against official and official-secondary statements.",
+        "date": "2026-11-25",
+        "result": "The AICTO text is dated July 2025; Egyptian MCIT's February 2025 release describes the Charter as still being finalised; UN ESCWA dates ATICM approval to January 2026. No single official instrument fixes the day, so the record leaves the adoption date null."
+      },
+      {
+        "check": "Legal nature checked.",
+        "date": "2026-11-25",
+        "result": "The text is advisory and non-binding; it has no signature, ratification, depositary, entry-into-force or enforcement clause."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified from the official AICTO publication, Egyptian MCIT and UN ESCWA. The record is metadata-only: no full text is stored. The adoption date is deliberately not asserted because no single official instrument fixes the day."
+  }
+}

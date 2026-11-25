@@ -1,0 +1,173 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2025-01-23",
+    "notes": "The Arab Telecommunications and Information Council of Ministers (ATICM) decided to launch the unified Arab AI strategy at its 28th session in January 2025; the Saudi Press Agency reported the decision on 23 January 2025. The official Arabic text is published by AICTO and describes the text as a proposed unified strategic vision. No signature, ratification or entry-into-force clause exists.",
+    "verified_on": "2026-11-25"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Non-binding regional strategy: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "No itemised adoption vote or list of the States that approved the strategy was located; the ATICM is a ministerial council, not a treaty conference.",
+    "No full text is stored; the record is metadata-only.",
+    "The English title is a working translation. The Arabic text is the only official text verified; no official English translation was located.",
+    "National implementation, budgeting and follow-up are not assessed.",
+    "The Arab Model Law on AI (2022) and the GCC Guiding Manual on the Ethics of AI were not added in this pass; no official status or text for them was verified."
+  ],
+  "id": "arab-unified-ai-strategy-2025",
+  "instrument_type": "strategy",
+  "issuer": [
+    {
+      "name": "Arab Telecommunications and Information Council of Ministers (ATICM), League of Arab States",
+      "role": "issuer",
+      "url": "https://www.aicto.org/"
+    },
+    {
+      "name": "General Secretariat of the League of Arab States, Economic Sector, ICT Development Department",
+      "role": "secretariat",
+      "url": "https://www.aicto.org/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "ar"
+    ],
+    "note": "Arabic is the language of the official AICTO publication. The English title used by AICTO and UN ESCWA is a working translation; no official English text was verified.",
+    "translations": [
+      "en"
+    ]
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A ministerial strategy adopted by the Arab ICT ministers, with no treaty language, signature, ratification, depositary or entry-into-force clause.",
+    "source_ids": [
+      "aicto-strategy-pdf",
+      "spa-launch"
+    ]
+  },
+  "provenance": {
+    "discovered_via": "AICTO publications page and UN ESCWA regional AI policy review.",
+    "search_dates": [
+      "2026-11-25"
+    ]
+  },
+  "related": [
+    {
+      "id": "arab-charter-ai-ethics-2025",
+      "note": "The ethics charter prepared in implementation of the strategy's governance axis.",
+      "relation": "related"
+    },
+    {
+      "id": "alecso-charter-ai-ethics-2025",
+      "note": "A separate Arab AI-ethics instrument with an education, culture and science scope.",
+      "relation": "related"
+    },
+    {
+      "id": "unesco-ethics-ai-2021",
+      "note": "The strategy's ethical framework draws on the UNESCO recommendation.",
+      "relation": "related"
+    },
+    {
+      "id": "au-continental-ai-strategy-2024",
+      "note": "Another continental non-binding AI strategy.",
+      "relation": "related"
+    },
+    {
+      "id": "asean-ai-guide-2024",
+      "note": "Another regional non-binding AI governance instrument.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Whole strategy: governance, legislative and regulatory environment, infrastructure, data, investment, SMEs, innovation and entrepreneurship",
+      "Arab cooperation axes: a common Arab AI governance framework, AI use in priority sectors, human-capacity building and public awareness",
+      "Calls for common Arab ethical principles and a unified Arab framework for AI governance",
+      "Priority sectors include health, agriculture, education, energy and government services"
+    ],
+    "excluded_scope": "Non-binding regional strategy; national implementation and budget commitments are outside this record.",
+    "reason": "The pan-Arab strategic framework for AI adopted by the Arab ICT ministers in January 2025. It sets a common vision and cooperation axes for AI development and governance across the Arab region; it is a strategy, not a treaty."
+  },
+  "rights": {
+    "licence": "AICTO terms",
+    "note": "Official AICTO publication; no open licence identified. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.aicto.org/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "aicto-strategy-pdf",
+      "kind": "official_primary",
+      "language": "ar",
+      "note": "Official 39-page Arabic text, published by AICTO. The cover names the General Secretariat of the League of Arab States, Economic Sector, ICT Development Department, and the technical secretariat of the Arab ICT Ministers Council.",
+      "publisher": "Arab Information and Communication Technologies Organization (AICTO)",
+      "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "aicto-studies",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "AICTO publications page listing the Arab AI Strategy and the Arab Charter on AI Ethics.",
+      "publisher": "Arab Information and Communication Technologies Organization (AICTO)",
+      "url": "https://www.aicto.org/publications/studies"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "spa-launch",
+      "kind": "official_secondary",
+      "language": "ar",
+      "note": "Saudi Press Agency report of 23 January 2025: the Arab ICT Ministers Council decided to launch the unified Arab AI strategy.",
+      "publisher": "Saudi Press Agency",
+      "url": "https://www.spa.gov.sa/N2249091"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "unescwa-sdg-2026",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "UN ESCWA Annual SDG Review 2026 describes the Unified Arab Strategic Vision on AI as adopted in 2025 and summarises its priority areas.",
+      "publisher": "United Nations Economic and Social Commission for Western Asia (ESCWA)",
+      "url": "https://depar.unescwa.org/system/files/2026-05/annual-sdg-review-2026-english.pdf"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Non-binding ministerial strategy, not a treaty. ATICM decided to launch it in January 2025; the Saudi Press Agency reported the decision on 23 January 2025. The Arabic text published by AICTO is dated 2025. It creates no legal obligation, ratification, depositary, monitoring or dispute-settlement mechanism.",
+  "title": {
+    "english": "Unified Arab Strategic Vision on Artificial Intelligence",
+    "official": "الرؤية الاستراتيجية العربية الموحدة للذكاء الاصطناعي",
+    "other": [
+      "Arab AI Strategy"
+    ],
+    "short": "Unified Arab AI Strategy"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Official Arabic text read.",
+        "date": "2026-11-25",
+        "result": "The 39-page AICTO PDF sets out a unified Arab strategic vision for AI, with governance, legislative environment, infrastructure, data, investment, SME and innovation axes and common Arab cooperation areas. It contains no treaty, signature, ratification or entry-into-force clause."
+      },
+      {
+        "check": "Adoption and launch date checked.",
+        "date": "2026-11-25",
+        "result": "The Saudi Press Agency report of 23 January 2025 states that the Arab ICT Ministers Council decided to launch the unified Arab AI strategy. UN ESCWA's 2026 review also describes the strategy as adopted in 2025."
+      },
+      {
+        "check": "Issuer and status checked.",
+        "date": "2026-11-25",
+        "result": "The text is a ministerial strategy prepared within the League of Arab States and published by AICTO. It is non-binding and creates no legal obligation or depositary."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified from the official AICTO publication, the Saudi Press Agency report and the UN ESCWA review. The record is metadata-only: no full text is stored. The exact adoption date is the date of the public launch report, not a signature date."
+  }
+}

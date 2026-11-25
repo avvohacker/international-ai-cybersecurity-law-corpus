@@ -1,0 +1,174 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2024-09-10",
+    "notes": "Endorsed at the closing session of the second REAIM Summit in Seoul on 10 September 2024. The Korean Ministry of Foreign Affairs states that 61 States supported the Blueprint; no itemised list is published in the record.",
+    "verified_on": "2026-11-25"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Non-binding political declaration: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "The Korean Ministry of Foreign Affairs states that 61 States supported the Blueprint, but no itemised official list is included in this record.",
+    "No full text is stored; the record is metadata-only. The official Korean PDF is image-only and was not OCRed.",
+    "The Blueprint is a declarative outcome document, not a negotiated treaty; it does not create a secretariat, review cycle or implementation mechanism.",
+    "The relationship between the Blueprint and the 2023 Call to Action and the 2026 Pathways to Action is a summit sequence, not an institutional hierarchy.",
+    "National implementation and weapons reviews are not assessed."
+  ],
+  "id": "reaim-blueprint-for-action-2024",
+  "instrument_type": "declaration",
+  "issuer": [
+    {
+      "name": "Republic of Korea, Ministry of Foreign Affairs and Ministry of National Defense",
+      "role": "issuer",
+      "url": "https://www.mofa.go.kr/eng/brd/m_5676/view.do?page=1&seq=322676"
+    },
+    {
+      "name": "Kingdom of the Netherlands",
+      "role": "co_issuer",
+      "url": "https://www.government.nl/"
+    },
+    {
+      "name": "Republic of Singapore",
+      "role": "co_issuer",
+      "url": "https://www.mindef.gov.sg/"
+    },
+    {
+      "name": "Republic of Kenya",
+      "role": "co_issuer",
+      "url": "https://www.mfa.go.ke/"
+    },
+    {
+      "name": "United Kingdom of Great Britain and Northern Ireland",
+      "role": "co_issuer",
+      "url": "https://www.gov.uk/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "English is the language of the official outcome text published by the Korean Ministry of Foreign Affairs. A Korean unofficial translation is also posted on the ministry page.",
+    "translations": [
+      "ko"
+    ]
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A summit outcome document endorsed by participating States; it is declarative and contains no treaty, signature, ratification, depositary or entry-into-force clause.",
+    "source_ids": [
+      "mofa-page"
+    ]
+  },
+  "provenance": {
+    "discovered_via": "Republic of Korea Ministry of Foreign Affairs press release and the REAIM summit series.",
+    "search_dates": [
+      "2026-11-25"
+    ]
+  },
+  "related": [
+    {
+      "id": "reaim-call-to-action-2023",
+      "note": "The first REAIM outcome document, which the Blueprint builds on.",
+      "relation": "predecessor"
+    },
+    {
+      "id": "reaim-pathways-to-action-2026",
+      "note": "The third REAIM outcome document, which refers back to the Blueprint.",
+      "relation": "successor"
+    },
+    {
+      "id": "political-declaration-military-ai-2023",
+      "note": "The US-led political declaration on responsible military AI.",
+      "relation": "related"
+    },
+    {
+      "id": "ccw-gge-laws-2026",
+      "note": "The CCW GGE on lethal autonomous weapons systems is a separate negotiating track.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-79-239",
+      "note": "The UN General Assembly resolution on AI in the military domain.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Responsible development, deployment and use of AI in the military domain across the life cycle",
+      "Compliance with international law, including international humanitarian law",
+      "Human involvement, responsibility and accountability; reliability and trustworthiness; explainability",
+      "Risk assessment, confidence-building, knowledge exchange and capacity building",
+      "Attention to AI-enabled weapons, decision-support systems, cyber operations, electronic warfare, information operations and the nuclear domain"
+    ],
+    "excluded_scope": "Non-binding military-AI political text; national defence policy, procurement and weapons reviews are outside this record.",
+    "reason": "The second REAIM summit outcome document, endorsed in Seoul in September 2024. It translates the 2023 Call to Action into a declarative roadmap for responsible military AI; it is a political text, not a treaty."
+  },
+  "rights": {
+    "licence": "Government of the Republic of Korea terms",
+    "note": "Official government publication; no open licence identified. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.mofa.go.kr/eng/index.do"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "mofa-page",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official English press release of 10 September 2024: the Blueprint for Action was endorsed as the outcome of the 2024 REAIM Summit and was supported by 61 States.",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "url": "https://www.mofa.go.kr/eng/brd/m_5676/view.do?page=1&seq=322676"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "mofa-pdf",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official PDF of the REAIM Blueprint for Action posted on the Korean Ministry of Foreign Affairs page. The PDF is image-only; no searchable text layer was available.",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/down.do?brd_id=235&seq=375378&data_tp=A&file_seq=9"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "mofa-kr-page",
+      "kind": "official_secondary",
+      "language": "ko",
+      "note": "Korean press release of 10 September 2024 confirming the 61-State support and the declarative character of the Blueprint.",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/view.do?seq=375378"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Non-binding summit declaration, not a treaty. It was endorsed at the second REAIM Summit in Seoul on 10 September 2024 and supported by 61 States according to the Korean Ministry of Foreign Affairs. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+  "title": {
+    "official": "REAIM Blueprint for Action",
+    "short": "REAIM Blueprint for Action 2024"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Official outcome page read.",
+        "date": "2026-11-25",
+        "result": "The Korean Ministry of Foreign Affairs states that the Blueprint for Action was officially endorsed as the outcome document of the 2024 REAIM Summit, supported by 61 States. It is described as a declarative document setting out principles and governance directions for responsible military AI."
+      },
+      {
+        "check": "Official PDF checked.",
+        "date": "2026-11-25",
+        "result": "The official PDF was downloaded from the ministry page. It is an image-only three-page document; the text layer is empty, so the content was verified from the official press release and the published summary, not from OCR."
+      },
+      {
+        "check": "Legal nature checked.",
+        "date": "2026-11-25",
+        "result": "The Blueprint is a political outcome document. It has no treaty, signature, ratification, depositary or entry-into-force clause."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified from the official Korean Ministry of Foreign Affairs page and PDF. The record is metadata-only: no full text is stored. The 61-State figure is reproduced from the official press release; no itemised list is asserted."
+  }
+}

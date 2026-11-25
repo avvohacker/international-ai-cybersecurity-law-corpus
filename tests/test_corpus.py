@@ -125,7 +125,7 @@ class TestCatalogue(unittest.TestCase):
             self.assertTrue(domains, iid)
             self.assertLessEqual(set(domains), {"ai", "cyber"}, iid)
             self.assertEqual(len(domains), len(set(domains)), iid)
-        self.assertEqual(sum(1 for inst in instruments.values() if "ai" in inst["domains"]), 48)
+        self.assertEqual(sum(1 for inst in instruments.values() if "ai" in inst["domains"]), 56)
         self.assertEqual(sum(1 for inst in instruments.values() if "cyber" in inst["domains"]), 15)
 
     def test_budapest_record_is_cyber_domain(self) -> None:
@@ -357,14 +357,14 @@ class TestCatalogue(unittest.TestCase):
         import audit_texts
 
         data = audit_texts.audit()
-        self.assertEqual(data["total"], 63)
-        self.assertEqual(sum(data["summary"].values()), 63)
+        self.assertEqual(data["total"], 71)
+        self.assertEqual(sum(data["summary"].values()), 71)
         self.assertEqual(data["summary"]["stored"], 36)
-        self.assertEqual(data["summary"]["official_text_located"], 17)
+        self.assertEqual(data["summary"]["official_text_located"], 25)
         self.assertEqual(data["summary"]["internal_law"], 3)
         self.assertEqual(data["summary"]["paywalled"], 5)
         self.assertEqual(data["summary"]["summary_only"], 2)
-        self.assertEqual(len({row["id"] for row in data["records"]}), 63)
+        self.assertEqual(len({row["id"] for row in data["records"]}), 71)
 
     def test_cets_french_units_are_exact_and_page_anchored(self) -> None:
         base = ROOT / "corpus" / "coe-cets-225"
@@ -884,7 +884,7 @@ class TestCatalogue(unittest.TestCase):
 
     def test_candidate_register_counts(self) -> None:
         entries = json.loads((ROOT / "catalog" / "candidates.json").read_text(encoding="utf-8"))
-        self.assertEqual(len(entries), 37)
+        self.assertEqual(len(entries), 45)
         decisions = {"included": 0, "pending": 0, "excluded": 0}
         instruments = corpuslib.load_instruments()
         for entry in entries:
@@ -893,7 +893,45 @@ class TestCatalogue(unittest.TestCase):
                 self.assertIn(entry["instrument_id"], instruments)
             else:
                 self.assertIsNone(entry["instrument_id"])
-        self.assertEqual(decisions, {"included": 18, "pending": 9, "excluded": 10})
+        self.assertEqual(decisions, {"included": 26, "pending": 9, "excluded": 10})
+
+    def test_regional_and_reaim_records(self) -> None:
+        regional = (
+            "arab-unified-ai-strategy-2025",
+            "arab-charter-ai-ethics-2025",
+            "alecso-charter-ai-ethics-2025",
+            "clad-ibero-ai-charter-2023",
+            "ibero-ai-declaration-2024",
+            "reaim-call-to-action-2023",
+            "reaim-blueprint-for-action-2024",
+            "reaim-pathways-to-action-2026",
+        )
+        for iid in regional:
+            inst = read_instrument(iid)
+            self.assertEqual(inst["category"], "non_binding_instrument", iid)
+            self.assertEqual(inst["binding_status"], "non_binding", iid)
+            self.assertEqual(inst["domains"], ["ai"], iid)
+            self.assertNotIn("text", inst, iid)
+            self.assertTrue(inst["gaps"], iid)
+            self.assertTrue(inst["verification"]["checks"], iid)
+            self.assertIn("ai_provisions", inst["relevance"], iid)
+            self.assertTrue(
+                any(source["kind"].startswith("official_") for source in inst["sources"]),
+                iid,
+            )
+
+        reaim_2026 = read_instrument("reaim-pathways-to-action-2026")
+        self.assertEqual(len(reaim_2026["parties"]["entries"]), 45)
+        self.assertEqual(reaim_2026["parties"]["counts"]["endorsements"]["verified"], 45)
+        self.assertIsNone(reaim_2026["parties"]["entries"][0]["endorsement"])
+
+        arab_charter = read_instrument("arab-charter-ai-ethics-2025")
+        self.assertIsNone(arab_charter["dates"]["adopted"])
+        self.assertIn("January 2026", arab_charter["dates"]["notes"])
+
+        ibero = read_instrument("ibero-ai-declaration-2024")
+        self.assertEqual(len(ibero["parties"]["entries"]), 18)
+        self.assertIn("Paraguay is not listed", " ".join(ibero["gaps"]))
 
     def test_pact_units_are_citable(self) -> None:
         units = corpuslib.load_units("un-ga-res-79-1")
@@ -1163,9 +1201,9 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(summary["counts"]["by_category"]["supranational_law"], 3)
         self.assertEqual(summary["counts"]["by_category"]["regional_law"], 1)
         self.assertEqual(summary["counts"]["by_category"]["cyber_treaty"], 9)
-        self.assertEqual(summary["counts"]["total"], 63)
-        self.assertEqual(summary["counts"]["by_domain"], {"ai": 48, "cyber": 15, "joint": 0})
-        self.assertEqual(summary["counts"]["by_binding"], {"binding": 22, "non_binding": 41})
+        self.assertEqual(summary["counts"]["total"], 71)
+        self.assertEqual(summary["counts"]["by_domain"], {"ai": 56, "cyber": 15, "joint": 0})
+        self.assertEqual(summary["counts"]["by_binding"], {"binding": 22, "non_binding": 49})
 
     def test_site_maps_are_complete_and_neutral(self) -> None:
         import build_site
@@ -1281,7 +1319,7 @@ class TestBuild(unittest.TestCase):
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
         ids = set(re.findall(r'<li[^>]*data-instrument-id="([^"]+)"', page))
         self.assertEqual(ids, set(corpuslib.load_instruments()))
-        self.assertEqual(page.count('data-instrument-id='), 63)
+        self.assertEqual(page.count('data-instrument-id='), 71)
         for label in (
             "00 · Index",
             "01 · Overlook",
@@ -1329,7 +1367,7 @@ class TestBuild(unittest.TestCase):
         self.assertNotIn("18 instruments are binding international law", page)
         self.assertNotIn('class="cyber-status"', page)
         self.assertEqual(page.count('data-weight="highlight"'), 17)
-        self.assertEqual(page.count('data-weight="record"'), 46)
+        self.assertEqual(page.count('data-weight="record"'), 54)
         instruments = corpuslib.load_instruments()
         highlighted = re.findall(
             r'data-weight="highlight" data-instrument-id="([^"]+)"', page
@@ -1356,7 +1394,7 @@ class TestBuild(unittest.TestCase):
         self.assertLess(page.find('id="timeline"'), page.find('id="unseen"'))
         self.assertLess(page.find('id="unseen"'), page.find('id="catalogue"'))
         self.assertEqual(page.count('class="tl-item tl-event unseen-item"'), 11)
-        self.assertEqual(page.count('class="tl-item tl-instrument"'), 63)
+        self.assertEqual(page.count('class="tl-item tl-instrument"'), 71)
         self.assertNotIn("Three sets: AI, cyber and treaty-based international law", page)
         self.assertIn("The story, with the instruments in it", page)
         self.assertIn("The argument around the record", page)
@@ -1848,8 +1886,8 @@ class TestBuild(unittest.TestCase):
         self.assertIn(
             f"The corpus contains {build_site.number_word(ai_count)} AI-specific treaties", page
         )
-        self.assertIn("It is not 48 AI treaties.", page)
-        self.assertIn("48 AI-domain records and 15 cybersecurity-only records", page)
+        self.assertIn("It is not 56 AI treaties.", page)
+        self.assertIn("56 AI-domain records and 15 cybersecurity-only records", page)
         self.assertNotIn("193 States", page)
         self.assertNotIn("28 States and the EU", page)
 
@@ -1973,8 +2011,8 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 184)
-        self.assertEqual(len({target.instrument_id for target in targets}), 63)
+        self.assertEqual(len(targets), 208)
+        self.assertEqual(len({target.instrument_id for target in targets}), 71)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)
         )

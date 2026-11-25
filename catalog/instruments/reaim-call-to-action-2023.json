@@ -1,0 +1,159 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2023-02-16",
+    "notes": "Adopted at the first REAIM Summit in The Hague on 16 February 2023. The Dutch government published the Call to Action and a news item the same day; the closing speech states that more than 60 countries had endorsed it.",
+    "verified_on": "2026-11-25"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Non-binding political call to action: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "No itemised list of endorsing States is included in this record. The Dutch government's news item says more than 60 countries had endorsed the Call by 16 February 2023; UNIDIR's December 2025 chronology records 58. The discrepancy is not resolved.",
+    "No full text is stored; the record is metadata-only.",
+    "The Call is a short political text, not a negotiated treaty; it does not define binding rules, review cycles or a secretariat.",
+    "The relationship between the Call, the 2024 Blueprint and the 2026 Pathways to Action is a summit sequence, not an institutional hierarchy.",
+    "Military AI applications and national implementation are not assessed."
+  ],
+  "id": "reaim-call-to-action-2023",
+  "instrument_type": "declaration",
+  "issuer": [
+    {
+      "name": "Government of the Netherlands, Ministry of Foreign Affairs and Ministry of Defence",
+      "role": "issuer",
+      "url": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action"
+    },
+    {
+      "name": "Republic of Korea",
+      "role": "co_issuer",
+      "url": "https://www.mofa.go.kr/eng/index.do"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "English is the language of the official text. The Dutch government also publishes Dutch, Papiamento and Papiamentu versions; no statement of equally authentic languages was located.",
+    "translations": [
+      "nl",
+      "pap"
+    ]
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A summit call to action supported by governments and other stakeholders; it contains no treaty, signature, ratification, depositary or entry-into-force clause.",
+    "source_ids": [
+      "govnl-page"
+    ]
+  },
+  "provenance": {
+    "discovered_via": "Government of the Netherlands publications and the REAIM summit series.",
+    "search_dates": [
+      "2026-11-25"
+    ]
+  },
+  "related": [
+    {
+      "id": "political-declaration-military-ai-2023",
+      "note": "The US-led political declaration on responsible military AI issued the same day.",
+      "relation": "related"
+    },
+    {
+      "id": "reaim-blueprint-for-action-2024",
+      "note": "The second REAIM outcome document, which builds on the 2023 Call.",
+      "relation": "related"
+    },
+    {
+      "id": "reaim-pathways-to-action-2026",
+      "note": "The third REAIM outcome document, which refers back to the 2023 Call.",
+      "relation": "related"
+    },
+    {
+      "id": "ccw-gge-laws-2026",
+      "note": "The CCW GGE on lethal autonomous weapons systems is a separate negotiating track.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-79-239",
+      "note": "The UN General Assembly resolution on AI in the military domain.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Responsible development, deployment and use of AI in the military domain",
+      "Compliance with international legal obligations and avoidance of undermining international security, stability and accountability",
+      "Human involvement, reliability, liability and unintended escalation",
+      "Confidence-building, knowledge exchange and capacity building"
+    ],
+    "excluded_scope": "Non-binding military-AI political text; national defence policy and weapons reviews are outside this record.",
+    "reason": "The first REAIM summit outcome document. It is a joint call to action on responsible AI in the military domain, adopted in The Hague in February 2023; it is a political text, not a treaty."
+  },
+  "rights": {
+    "licence": "Government of the Netherlands terms",
+    "note": "Official government publication; no open licence identified. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.government.nl/copyright"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "govnl-page",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official publication page for the REAIM 2023 Call to Action, dated 16 February 2023; links the four-page PDF.",
+      "publisher": "Government of the Netherlands, Ministry of Foreign Affairs and Ministry of Defence",
+      "url": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "govnl-pdf",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official four-page PDF text of the REAIM 2023 Call to Action.",
+      "publisher": "Government of the Netherlands",
+      "url": "https://www.government.nl/site/binaries/site-content/collections/documents/2023/02/16/reaim-2023-call-to-action/REAIM+2023+Call+to+Action.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "govnl-news",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "Government news item of 16 February 2023: the summit agreed the joint call to action; the closing speech states that more than 60 countries had endorsed it.",
+      "publisher": "Government of the Netherlands",
+      "url": "https://www.government.nl/latest/news/2023/02/16/reaim-2023-call-to-action"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Non-binding summit call to action, not a treaty. It was adopted at the first REAIM Summit in The Hague on 16 February 2023. The Dutch government reports more than 60 endorsing countries at the summit; UNIDIR records 58 in its December 2025 chronology. No itemised list is included in this record, and no legal obligation, ratification, depositary, monitoring or enforcement mechanism exists.",
+  "title": {
+    "official": "REAIM 2023 Call to Action",
+    "short": "REAIM 2023 Call to Action"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Official text read.",
+        "date": "2026-11-25",
+        "result": "The four-page PDF sets out a joint call to action on the responsible development, deployment and use of AI in the military domain. It invites governments, industry, knowledge institutions, international organisations and others to support its propositions; it contains no treaty, signature, ratification or entry-into-force clause."
+      },
+      {
+        "check": "Adoption date and issuer checked.",
+        "date": "2026-11-25",
+        "result": "The Dutch government publication page and news item are dated 16 February 2023 and identify the Ministry of Foreign Affairs and Ministry of Defence as responsible, with the Republic of Korea as co-host."
+      },
+      {
+        "check": "Endorsement count checked.",
+        "date": "2026-11-25",
+        "result": "The Dutch closing speech says more than 60 countries had endorsed the Call by 16 February 2023; the news item refers to a country list. No itemised official list was located, and UNIDIR's December 2025 chronology records 58. The record does not assert a precise total."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified from the official Dutch publication and news item. The record is metadata-only: no full text is stored. The endorsement total is left unstated because the official and secondary counts differ."
+  }
+}

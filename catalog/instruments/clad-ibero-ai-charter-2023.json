@@ -1,0 +1,148 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2023-11-20",
+    "notes": "Approved by the CLAD Directing Council at its meeting in Varadero, Cuba, on 20 November 2023. The official text's preamble is drafted as a proposal for adoption by the Conference of Ministers; the adopted CIIAAP is the November 2023 version. A CLAD–SEGIB report of 2025 states that the Carta was approved by the Directing Council in November 2023.",
+    "verified_on": "2026-11-25"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Non-binding recommendation: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "The official text is in Spanish only; no official English translation was verified.",
+    "No itemised vote list was located; the Carta was approved unanimously by the 23 member States of the CLAD Directing Council, not by all Ibero-American States.",
+    "The CLAD is a public-administration network, not the Ibero-American summit; its scope is public administration, not AI in society as a whole.",
+    "No full text is stored; the record is metadata-only.",
+    "Implementation, indicators and follow-up are not assessed."
+  ],
+  "id": "clad-ibero-ai-charter-2023",
+  "instrument_type": "recommendation",
+  "issuer": [
+    {
+      "name": "Centro Latinoamericano de Administración para el Desarrollo (CLAD), Directing Council",
+      "role": "issuer",
+      "url": "https://www.clad.org/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "es"
+    ],
+    "note": "Spanish is the language of the official CLAD text. No official English or Portuguese version was verified.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A charter approved by the CLAD Directing Council as a common framework and recommendation to its member States; it has no treaty, signature, ratification, depositary or entry-into-force clause.",
+    "source_ids": [
+      "clad-charter-pdf",
+      "clad-report-2025"
+    ]
+  },
+  "provenance": {
+    "discovered_via": "CLAD publications and a CLAD–SEGIB interoperability report.",
+    "search_dates": [
+      "2026-11-25"
+    ]
+  },
+  "related": [
+    {
+      "id": "ibero-ai-declaration-2024",
+      "note": "The Ibero-American summit declaration on ethical and trustworthy AI adopted a year later.",
+      "relation": "related"
+    },
+    {
+      "id": "unesco-ethics-ai-2021",
+      "note": "The Carta draws on the UNESCO recommendation and other international AI principles.",
+      "relation": "related"
+    },
+    {
+      "id": "oecd-ai-recommendation-2019",
+      "note": "The Carta refers to the OECD AI principles and recommendation.",
+      "relation": "related"
+    },
+    {
+      "id": "coe-recommendation-algorithmic-systems-2020",
+      "note": "Another regional recommendation on algorithmic systems and public-sector AI.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Whole Charter: a common Ibero-American framework for AI in public administration",
+      "Principles for ethical, trustworthy and human-centred AI in public services",
+      "Governance, data, transparency, explainability, accountability, non-discrimination and human oversight",
+      "Guidance on algorithmic impact assessment, procurement, interoperability and public-sector capacity"
+    ],
+    "excluded_scope": "Non-binding public-administration guidance; private-sector AI and national implementation are outside this record.",
+    "reason": "The first common Ibero-American framework on AI in public administration, approved by the CLAD Directing Council in November 2023. It provides principles and governance guidance to CLAD member States; it is a recommendation, not a treaty."
+  },
+  "rights": {
+    "licence": "CLAD terms",
+    "note": "Official CLAD publication; no open licence identified. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.clad.org/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "clad-charter-pdf",
+      "kind": "official_primary",
+      "language": "es",
+      "note": "Official 32-page Spanish text of the Carta Iberoamericana de Inteligencia Artificial en la Administración Pública. The preamble refers to adoption at the next meeting of the Conference of Ministers; the document is the November 2023 CIIAAP.",
+      "publisher": "Centro Latinoamericano de Administración para el Desarrollo (CLAD)",
+      "url": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "clad-report-2025",
+      "kind": "official_secondary",
+      "language": "es",
+      "note": "CLAD–SEGIB 2025 report on interoperability in Ibero-American public administrations states that the CIIAAP was approved by the CLAD Directing Council in November 2023.",
+      "publisher": "CLAD and SEGIB",
+      "url": "https://web-api-backend.clad.org/uploads/informefinal_clad_segib_interoperablidadaapp_iberoamerica_vf_20250603_final2025.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "clad-inap",
+      "kind": "official_secondary",
+      "language": "es",
+      "note": "Spanish public-administration portal reports the CLAD Directing Council's unanimous approval of the Carta in November 2023.",
+      "publisher": "INAP, Spain",
+      "url": "https://laadministracionaldia.inap.es/noticia.asp?id=1514573"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Non-binding recommendation, not a treaty. The CLAD Directing Council approved the Carta in Varadero, Cuba, on 20 November 2023; the vote was unanimous among the 23 member States of the Council. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+  "title": {
+    "english": "Ibero-American Charter on Artificial Intelligence in Public Administration",
+    "official": "Carta Iberoamericana de Inteligencia Artificial en la Administración Pública",
+    "short": "CLAD Ibero-American AI Charter"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Official Spanish text read.",
+        "date": "2026-11-25",
+        "result": "The 32-page CLAD text sets out a common framework and principles for AI in public administration, including governance, data, transparency, explainability, accountability, non-discrimination and human oversight. It contains no treaty, signature, ratification or entry-into-force clause."
+      },
+      {
+        "check": "Adoption date and issuer checked.",
+        "date": "2026-11-25",
+        "result": "The CLAD–SEGIB 2025 report states that the CIIAAP was approved by the CLAD Directing Council in November 2023; the INAP report records unanimous approval at the Varadero meeting. The Carta is a recommendation to CLAD member States, not a treaty."
+      },
+      {
+        "check": "Scope checked.",
+        "date": "2026-11-25",
+        "result": "The text is addressed to public administrations and CLAD member States. It is not a general AI code and does not bind private actors."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified from the official CLAD text and two official-secondary reports. The record is metadata-only: no full text is stored."
+  }
+}

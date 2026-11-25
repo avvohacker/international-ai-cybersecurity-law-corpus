@@ -1,0 +1,413 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2026-02-05",
+    "notes": "Adopted at the third REAIM Summit in A Coruña, Spain, on 5 February 2026; the summit ran from 4 to 5 February 2026. The Spanish government's official page lists the endorsing States and states that the declaration remains open to further approval.",
+    "verified_on": "2026-11-25"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Non-binding political declaration: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "The official Spanish page listed 45 endorsing States when accessed on 25 November 2026; a 26 February 2026 RSIS commentary recorded 40 at the time of writing. The record uses the current official list and does not infer when the additional States endorsed.",
+    "No individual endorsement dates are published; all entries are recorded as listed endorsers without a date.",
+    "The official list does not include China or the United States; no official explanation was located.",
+    "No full text is stored; the record is metadata-only.",
+    "The declaration is not mapped in this pass; the 17 existing State-level maps are unchanged.",
+    "National implementation and the proposed industry framework are not assessed."
+  ],
+  "id": "reaim-pathways-to-action-2026",
+  "instrument_type": "declaration",
+  "issuer": [
+    {
+      "name": "Kingdom of Spain, Ministry of Foreign Affairs, European Union and Cooperation",
+      "role": "issuer",
+      "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx"
+    },
+    {
+      "name": "Republic of Korea",
+      "role": "co_issuer",
+      "url": "https://www.mofa.go.kr/eng/index.do"
+    },
+    {
+      "name": "Kingdom of the Netherlands",
+      "role": "co_issuer",
+      "url": "https://www.government.nl/"
+    },
+    {
+      "name": "A Coruña City Council",
+      "role": "host",
+      "url": "https://www.coruna.gal/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "English is the language of the official PDF published by the Spanish Ministry of Foreign Affairs. The Spanish government page provides a Spanish rendering of the title and list; no statement of equally authentic languages was located.",
+    "translations": [
+      "es"
+    ]
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A summit declaration endorsed by States and open to further approval; it contains no treaty, signature, ratification, depositary or entry-into-force clause.",
+    "source_ids": [
+      "spain-page"
+    ]
+  },
+  "parties": {
+    "act": "endorsement",
+    "as_of": "2026-11-25",
+    "counts": {
+      "endorsements": {
+        "basis": "verified_total",
+        "source_ids": [
+          "spain-page"
+        ],
+        "total": 45,
+        "verified": 45
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "endorsement": null,
+        "party": "Albania",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Armenia",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Australia",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Austria",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Belgium",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Bulgaria",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Canada",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Chile",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Croatia",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Cyprus",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Czech Republic",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Denmark",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Ecuador",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Finland",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "France",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Georgia",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Germany",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Ghana",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Greece",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Hungary",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Iceland",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Ireland",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Italy",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Japan",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Kenya",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Luxembourg",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Malta",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Morocco",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Netherlands",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Norway",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Pakistan",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Panama",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Philippines",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Portugal",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Republic of Korea",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Romania",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Senegal",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Singapore",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Slovenia",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Spain",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Sweden",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Switzerland",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Turkiye",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "Ukraine",
+        "role": "endorser"
+      },
+      {
+        "endorsement": null,
+        "party": "United Kingdom",
+        "role": "endorser"
+      }
+    ],
+    "reservations": [],
+    "source_ids": [
+      "spain-page"
+    ],
+    "summary": "The official Spanish government page lists 45 endorsing States as of 25 November 2026: Albania, Armenia, Australia, Austria, Belgium, Bulgaria, Canada, Chile, Croatia, Cyprus, Czech Republic, Denmark, Ecuador, Finland, France, Georgia, Germany, Ghana, Greece, Hungary, Iceland, Ireland, Italy, Japan, Kenya, Luxembourg, Malta, Morocco, Netherlands, Norway, Pakistan, Panama, Philippines, Portugal, Republic of Korea, Romania, Senegal, Singapore, Slovenia, Spain, Sweden, Switzerland, Turkiye, Ukraine and the United Kingdom. The page states the declaration remains open to further approvals.",
+    "withdrawals": []
+  },
+  "provenance": {
+    "discovered_via": "Spanish Ministry of Foreign Affairs REAIM 2026 pages and the REAIM summit series.",
+    "search_dates": [
+      "2026-11-25"
+    ]
+  },
+  "related": [
+    {
+      "id": "reaim-call-to-action-2023",
+      "note": "The first REAIM outcome document.",
+      "relation": "predecessor"
+    },
+    {
+      "id": "reaim-blueprint-for-action-2024",
+      "note": "The second REAIM outcome document.",
+      "relation": "predecessor"
+    },
+    {
+      "id": "political-declaration-military-ai-2023",
+      "note": "The US-led political declaration on responsible military AI.",
+      "relation": "related"
+    },
+    {
+      "id": "ccw-gge-laws-2026",
+      "note": "The CCW GGE on lethal autonomous weapons systems is a separate negotiating track.",
+      "relation": "related"
+    },
+    {
+      "id": "un-ga-res-80-58",
+      "note": "The 2025 UN General Assembly resolution on AI in the military domain.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Responsible use and development of AI in the military domain across the life cycle",
+      "Compliance with international law, including international humanitarian law, and protection of civilians",
+      "Risk reduction, human oversight, accountability and explainability",
+      "Practical implementation, industry engagement and complementarity with the CCW and UNGA tracks",
+      "References to the 2023 Call to Action and the 2024 Blueprint for Action"
+    ],
+    "excluded_scope": "Non-binding military-AI political text; national defence policy, procurement and weapons reviews are outside this record.",
+    "reason": "The third REAIM summit outcome document, adopted in A Coruña in February 2026. It translates the earlier REAIM principles into practical pathways and industry engagement; it is a political declaration, not a treaty."
+  },
+  "rights": {
+    "licence": "Government of Spain terms",
+    "note": "Official government publication; no open licence identified. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.exteriores.gob.es/en/Paginas/index.aspx"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "spain-page",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official REAIM 2026 page: 'A Coruña Declaration: REAIM 2026 Pathways to Action'. It lists the 45 endorsing States and states that the declaration remains open to approval by other countries.",
+      "publisher": "Ministry of Foreign Affairs, European Union and Cooperation, Spain",
+      "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "spain-pdf",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official eight-page PDF of the REAIM 2026 Pathways to Action.",
+      "publisher": "Ministry of Foreign Affairs, European Union and Cooperation, Spain",
+      "url": "https://exteriores.gob.es/en/REAIM2026/Documents/REAIM%202026%20Pathways%20to%20Action.pdf"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Non-binding political declaration, not a treaty. It was adopted at the third REAIM Summit in A Coruña on 5 February 2026. The official Spanish page lists 45 endorsing States as of 25 November 2026 and states that the declaration remains open; a 26 February 2026 RSIS commentary recorded 40 at the time of writing. The record uses the current official list. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+  "title": {
+    "official": "A Coruña Declaration: REAIM 2026 Pathways to Action",
+    "short": "REAIM 2026 Pathways to Action"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Official declaration text read.",
+        "date": "2026-11-25",
+        "result": "The eight-page PDF sets out 28 numbered commitments on responsible military AI, including international law and international humanitarian law, human oversight, risk reduction, industry engagement and complementarity with the CCW and UNGA tracks. It contains no treaty, signature, ratification or entry-into-force clause."
+      },
+      {
+        "check": "Adoption date and issuer checked.",
+        "date": "2026-11-25",
+        "result": "The Spanish government page and PDF identify the A Coruña Summit of 4–5 February 2026 and the Spanish Ministry of Foreign Affairs, European Union and Cooperation as issuer, with Korea and the Netherlands as co-hosts."
+      },
+      {
+        "check": "Endorser list checked.",
+        "date": "2026-11-25",
+        "result": "The official page lists 45 States and states that the declaration remains open to further approval. The list was transcribed exactly; individual endorsement dates are not published."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified from the official Spanish government page and PDF. The record is metadata-only: no full text is stored. The 45-State list is a dated snapshot; the declaration remains open."
+  }
+}

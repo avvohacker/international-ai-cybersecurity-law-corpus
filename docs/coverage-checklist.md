@@ -1,6 +1,6 @@
 # Coverage checklist: international AI instruments by source family
 
-**Last full check: 24 November 2026.** This checklist records, for each family of international AI sources, the canonical register used, the date it was checked, what was found and what was decided. It is a working instrument for the corpus, not a claim that every source has been found. A "negative" result means that no qualifying instrument was located in the named register on the date shown; it is not a statement of global non-existence.
+**Last full check: 25 November 2026.** This checklist records, for each family of international AI sources, the canonical register used, the date it was checked, what was found and what was decided. It is a working instrument for the corpus, not a claim that every source has been found. A "negative" result means that no qualifying instrument was located in the named register on the date shown; it is not a statement of global non-existence.
 
 The corpus scope is written instruments with an AI-specific object or express AI provisions. National legislation (except the EU AI Act as supranational law), academic literature, news commentary and company policies are outside it.
 
@@ -24,20 +24,21 @@ The corpus scope is written instruments with an AI-specific object or express AI
 | Trade agreements with AI provisions | Official treaty registries and government texts | 2026-11-23 | DEPA, SADEA, UKSDEA, KSDPA, AfCFTA Digital Trade Protocol; WTO JSI, CPTPP, USMCA, RCEP | Five agreements catalogued. DEPA, SADEA, UKSDEA and KSDPA are in force; the AfCFTA Protocol is not. WTO JSI, CPTPP, USMCA and RCEP remain excluded provisionally because no express AI-specific provision was located. No AI-specific bilateral treaty located. |
 | General international law | UN Treaty Collection; OHCHR | 2026-11-23 | ICCPR, VCLT; UN Charter, UDHR, ECHR, Convention 108+, IHL | ICCPR and VCLT catalogued as background. The UN Charter, UDHR, ECHR, Convention 108+ and IHL are not systematically covered; customary law, general principles, *jus cogens* and Security Council resolutions are outside the register. Scope limit, not a negative finding. |
 | Technical standards | ISO/IEC; ITU; IEEE; CEN-CENELEC | 2026-11-23 | ISO/IEC AI standards; ITU-T Y.3172; IEEE 7000; CEN-CENELEC JTC 21 | Five ISO/IEC standards catalogued as metadata. ITU-T Y.3172, IEEE 7000 and CEN-CENELEC JTC 21 remain pending. Standards are not treaties and are not treated as binding international law. |
-| Regional instruments | EU; African Union; ASEAN; NATO | 2026-11-23 | EU AI Act; AU Continental AI Strategy and AfCFTA Protocol; ASEAN Guide; NATO strategy | EU AI Act, AU strategy, AfCFTA Protocol, ASEAN Guide and NATO strategy summary catalogued. No binding regional AI treaty outside the EU AI Act (which is supranational law). |
+| Regional instruments | EU; African Union; ASEAN; NATO; League of Arab States/AICTO/ALECSO; CLAD/SEGIB | 2026-11-25 | EU AI Act; AU Continental AI Strategy and AfCFTA Protocol; ASEAN Guide; NATO strategy; Unified Arab AI Strategy; Arab Charter on AI Ethics; ALECSO Charter; CLAD Ibero-American AI Charter; Ibero-American AI Declaration | EU AI Act, AU strategy, AfCFTA Protocol, ASEAN Guide and NATO strategy summary catalogued. The three pan-Arab AI instruments (Unified Arab AI Strategy 2025, Arab Charter on AI Ethics 2025, ALECSO Charter 2025) and the two Ibero-American instruments (CLAD Charter 2023, Ibero-American Declaration 2024) are catalogued as non-binding. No binding regional AI treaty outside the EU AI Act (which is supranational law). |
 | Multistakeholder and political calls | Élysée; official campaign pages | 2026-11-23 | Paris Call for AI Safety and Security (9 November 2026); Call for Control of Frontier AI Models (September 2026) | **Paris Call for AI Safety and Security**: 19 governments, 11 companies and 11 civil-society organisations on the Élysée page; open to new endorsements. It is a multi-stakeholder declaration, not an intergovernmental instrument; excluded from the register and recorded as a candidate. The Call for Control is an advocacy statement, not an instrument; not catalogued. |
 | Non-binding cyber calls | Paris Call official site/repository; OECD Compendium; GOV.UK; CRI, OSCE, GCLI and Accra Call pages | 2026-11-24 | Paris Call for Trust and Security in Cyberspace (2018); OECD/LEGAL/0456; Pall Mall Code (2025); CRI, OSCE, GCLI and Accra Call | **Paris Call**: official supporters page and 81 State files at commit 916433b; 81 States and the EU, mapped as a dated snapshot. **OECD/LEGAL/0456**: 39 adherents (38 OECD members and Brazil) on the OECD Compendium; in force, non-binding, mapped. **Pall Mall Code**: 27 supporting States on the GOV.UK version updated 23 October 2025; voluntary, mapped. **Not added**: CRI (74 members reported; public roster dated 8 May 2024, no current consolidated list), OSCE (57 participating States are membership, not endorsers), GCLI (agency network), Accra Call (mixed State and non-State endorsers without a single official register). |
-| Scientific and advisory materials | International AI Safety Report; expert panels | 2026-11-23 | International AI Safety Report and successor editions | The International AI Safety Report remains a pending candidate for an authoritative-materials layer; it is not an instrument and is not counted in the 48 AI-domain records. |
+| Scientific and advisory materials | International AI Safety Report; expert panels | 2026-11-23 | International AI Safety Report and successor editions | The International AI Safety Report remains a pending candidate for an authoritative-materials layer; it is not an instrument and is not counted in the 56 AI-domain records. |
 
 ## 2. What this checklist changed
 
 1. **New Delhi now has a party list.** The earlier record said no itemised list existed. The PIB annex lists 92 endorsers as of 5 March 2026: 90 States, the EU and IFAD. The MEA page lists 91 and omits Colombia. The record now has 92 entries, distinguishes the two official lists and does not infer the reason for the difference. New Delhi is mapped.
 2. **BRICS now lists its member States but is not mapped.** The statement is still collective and has no individual signature block, but the presidency officially lists 11 member States. The record counts those listed members, not individual signatories, and documents the Saudi conflict. A map of the fixed 11-member group would only repeat its composition, so the statement is catalogue-only.
 3. **The Human Rights Council layer was missing.** A/HRC/RES/63/15 (6 October 2026) is a dedicated AI and human-rights resolution adopted without a vote. It is now a metadata-verified record. It is non-binding and has no party list.
-4. **Two UNGA drafts are pending, not adopted.** `A/C.1/81/L.34` and `A/C.1/81/L.37` are First Committee drafts, not yet `A/RES/81/...`. The G20 AI Prosperity Objectives are catalogued as a non-binding ministerial deliverable; the companion Compact is excluded as a private-sector pledge. The drafts are in the candidate register as pending, not in the 48 AI-domain records.
+4. **Two UNGA drafts are pending, not adopted.** `A/C.1/81/L.34` and `A/C.1/81/L.37` are First Committee drafts, not yet `A/RES/81/...`. The G20 AI Prosperity Objectives are catalogued as a non-binding ministerial deliverable; the companion Compact is excluded as a private-sector pledge. The drafts are in the candidate register as pending, not in the 56 AI-domain records.
 5. **Two texts were considered and excluded, with reasons.** The Paris Call for AI Safety and Security is multi-stakeholder and open-ended; the G20 Innovation Ministerial Statement is broad rather than AI-specific. Both are in the candidate register with their official URLs and reasons.
 6. **No new AI-specific treaty was found.** CETS 225 and WAICO remain the only two; neither is in force. The checklist does not convert a diplomatic meeting, a chair's summary or a voluntary call into an instrument.
 7. **Three non-binding cyber maps now meet the same evidential bar.** The Paris Call, OECD/LEGAL/0456 and the Pall Mall Code each publish an official, itemised State-level list. The CRI, OSCE, GCLI and Accra Call were checked and left out because they publish a membership, an agency network or a mixed endorser group rather than a stable list of State supporters.
+8. **The regional AI layer was incomplete.** The Unified Arab AI Strategy (2025), the Arab Charter on AI Ethics (2025), the ALECSO Charter (2025), the CLAD Charter (2023) and the 2024 Ibero-American Declaration were added as non-binding regional instruments. The earlier statement that Latin America and the Middle East had no verified regional AI instrument was corrected. No binding regional AI treaty outside the EU AI Act was located.
 
 ## 3. What remains open
 
@@ -46,6 +47,8 @@ The corpus scope is written instruments with an AI-specific object or express AI
 - New Delhi: the reason for the 91/92 difference is not published; the MEA page may lag the PIB annex.
 - BRICS: no individual signature record exists; the 11 entries are member States, not signatories.
 - HRC 63/15: the 65th-session panel and the 66th-session OHCHR report have not yet occurred.
+- Arab Charter on AI Ethics: no single official instrument fixes the adoption day; AICTO publishes the 2025 text and UN ESCWA dates ATICM approval to January 2026. The GCC Guiding Manual on AI Ethics and the Arab Model Law on AI were not catalogued because no official status or text was verified.
+- Ibero-American instruments: the CLAD Charter is limited to public administration and the 2024 declaration names 18 of the 22 Ibero-American States; neither is binding.
 - G7 2026 and UNGA 81 drafts: decisions and final texts are pending. The G20 AI Prosperity Objectives are catalogued; the companion Compact is excluded.
 - The candidate register is not exhaustive: it records the searches and decisions made in this cycle, not every document that mentions AI.
 
@@ -57,12 +60,12 @@ Two instruments were nearly missed in the first cycle: **A/HRC/RES/63/15** and t
 
 | Measure | Count |
 |---|---:|
-| Catalogued instruments | 63 (48 AI-domain + 15 cybersecurity-only) |
+| Catalogued instruments | 71 (56 AI-domain + 15 cybersecurity-only) |
 | Instruments with binding form | 22 (18 international + 4 internal law; of the 18, 13 in force and 5 not confirmed) |
-| Non-binding instruments | 41 |
+| Non-binding instruments | 49 |
 | Stored full texts | 36 |
 | Stored originals | 36 records (42 files) |
-| Candidate-register entries | 37 (18 included, 9 pending, 10 excluded) |
+| Candidate-register entries | 45 (26 included, 9 pending, 10 excluded) |
 | Maps | 17 |
 
 This checklist is linked from [`docs/coverage.md`](coverage.md), [`docs/progress.md`](progress.md) and the [README](../README.md).

@@ -1,0 +1,155 @@
+{
+  "binding_status": "non_binding",
+  "category": "non_binding_instrument",
+  "dates": {
+    "adopted": "2025-06-17",
+    "notes": "The English edition is dated June 2025 and does not print the adoption day. ALECSO's statement, reported by University World News and Al-Fanar Media, says the Charter was adopted at a high-level virtual meeting on 17 June 2025. The date is recorded with that provenance and not treated as printed in the official PDF.",
+    "verified_on": "2026-11-25"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Non-binding sectoral guidance: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "Scope is limited to education, culture and scientific research; it is not a general AI governance code.",
+    "No itemised list of approving States or vote was located.",
+    "No full text is stored; the record is metadata-only.",
+    "The official English edition is a translation from Arabic; no statement of equally authentic languages was located.",
+    "The exact adoption day is not printed in the official PDF; it is taken from ALECSO's statement as reported by two independent publications.",
+    "The relationship between this Charter and the pan-Arab Arab Charter on AI Ethics is not institutionally defined."
+  ],
+  "id": "alecso-charter-ai-ethics-2025",
+  "instrument_type": "guidance",
+  "issuer": [
+    {
+      "name": "Arab League Educational, Cultural and Scientific Organization (ALECSO), Information and Communication Technology Department",
+      "role": "issuer",
+      "url": "https://www.alecso.org/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "ar"
+    ],
+    "note": "The Charter was prepared in Arabic; the official English edition states that it was translated from Arabic by the Arab Center for Arabization, Translation, Authorship and Publication. No statement of equally authentic language versions was located.",
+    "translations": [
+      "en"
+    ]
+  },
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "A sectoral charter adopted by an Arab League specialised organisation; it provides ethical guidance and recommendations, with no treaty, signature, ratification, depositary or entry-into-force clause.",
+    "source_ids": [
+      "alecso-charter-pdf"
+    ]
+  },
+  "provenance": {
+    "discovered_via": "ALECSO publications page and UN ESCWA regional AI policy review.",
+    "search_dates": [
+      "2026-11-25"
+    ]
+  },
+  "related": [
+    {
+      "id": "arab-charter-ai-ethics-2025",
+      "note": "A separate pan-Arab AI-ethics charter with a general scope.",
+      "relation": "related"
+    },
+    {
+      "id": "arab-unified-ai-strategy-2025",
+      "note": "The Arab AI strategy's ethical framework is a related regional policy line.",
+      "relation": "related"
+    },
+    {
+      "id": "unesco-ethics-ai-2021",
+      "note": "The Charter is aligned with the UNESCO recommendation and other international charters.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Whole Charter: ethical principles and guidelines for AI in education, culture and scientific research",
+      "Human dignity, justice, inclusiveness, environmental sustainability and protection of cultural heritage",
+      "Transparency, accountability and technological sovereignty",
+      "Guidance for governments, educational institutions, researchers, developers and other AI actors"
+    ],
+    "excluded_scope": "Non-binding sectoral guidance; national implementation and enforcement in education, culture and science are outside this record.",
+    "reason": "ALECSO's regional charter on AI ethics for the education, culture and scientific-research sectors. It is an advisory framework adopted by an Arab League specialised organisation; it is not a treaty and creates no legal obligation."
+  },
+  "rights": {
+    "licence": "ALECSO terms",
+    "note": "Official ALECSO publication; no open licence identified. Metadata only in this corpus.",
+    "status": "public_official_text",
+    "url": "https://www.alecso.org/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "alecso-charter-pdf",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official 49-page English edition, Tunis, June 2025, ISBN 978-9973-15-464-4. It states that the text was translated from Arabic and sets out principles for AI in education, culture and scientific research.",
+      "publisher": "Arab League Educational, Cultural and Scientific Organization (ALECSO)",
+      "url": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "alecso-english-page",
+      "kind": "official_secondary",
+      "language": "en",
+      "note": "ALECSO page announcing the English version and stating that the Charter was adopted earlier in 2025.",
+      "publisher": "Arab League Educational, Cultural and Scientific Organization (ALECSO)",
+      "url": "https://www.alecso.org/nsite/en/newscat/5244-%D8%A7%D9%84%D8%A3%D9%84%D9%83%D8%B3%D9%88-%D8%AA%D9%86%D8%B4%D8%B1-%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D9%85%D9%86-%D9%85%D9%8A%D8%AB%D8%A7%D9%82%D9%87%D8%A7-%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-2"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "university-world-news",
+      "kind": "secondary",
+      "language": "en",
+      "note": "Reports that ALECSO adopted the Charter at a high-level virtual meeting on 17 June 2025, citing ALECSO's statement of 2 July 2025.",
+      "publisher": "University World News",
+      "url": "https://www.universityworldnews.com/post.php?story=20250722122435648"
+    },
+    {
+      "accessed": "2026-11-25",
+      "http_status": 200,
+      "id": "al-fanar",
+      "kind": "secondary",
+      "language": "en",
+      "note": "Corroborates the 17 June 2025 adoption meeting and the education, culture and science scope.",
+      "publisher": "Al-Fanar Media",
+      "url": "https://al-fanarmedia.org/2025/07/bulletin-alecso-adopts-ai-code-of-ethics-etonhouse-group-to-open-its-first-schools-in-saudi-arabia"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Non-binding sectoral charter, not a treaty. It was adopted by ALECSO in June 2025 and published in an official English edition. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+  "title": {
+    "english": "ALECSO Charter on Artificial Intelligence Ethics",
+    "official": "ميثاق الألكسو لأخلاقيات الذكاء الاصطناعي",
+    "short": "ALECSO Charter on AI Ethics"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Official English edition read.",
+        "date": "2026-11-25",
+        "result": "The 49-page ALECSO publication is dated June 2025 and sets out ethical principles and guidance for AI in education, culture and scientific research. It contains no treaty, signature, ratification, depositary or entry-into-force clause."
+      },
+      {
+        "check": "Adoption date checked.",
+        "date": "2026-11-25",
+        "result": "The PDF does not print the adoption day. ALECSO's statement, reported by University World News and Al-Fanar Media, records adoption at a high-level virtual meeting on 17 June 2025."
+      },
+      {
+        "check": "Issuer and legal nature checked.",
+        "date": "2026-11-25",
+        "result": "ALECSO is an Arab League specialised organisation. The text is an advisory sectoral charter, not a treaty or a binding regulation."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata verified from the official ALECSO English edition and two independent reports of ALECSO's adoption statement. The record is metadata-only: no full text is stored."
+  }
+}
