@@ -217,8 +217,6 @@ p { margin: 0 0 14px; }
 .situation-facts dt { font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 .situation-facts dd { margin: 2px 0 0; font-family: var(--serif); font-size: 23px; line-height: 1; }
 .situation-facts dd span { display: block; margin-top: 4px; font-family: var(--sans); font-size: 11.5px; line-height: 1.4; color: #3d382e; }
-.sets-heading { margin-top: 0; }
-.sets-lede { font-size: 16px; margin-bottom: 20px; }
 .map-about-map { font-size: 12px; line-height: 1.5; color: var(--muted); }
 
 .intro-grid { display: grid; grid-template-columns: 1.45fr 0.85fr; gap: 56px; align-items: start; }
@@ -736,127 +734,6 @@ p { margin: 0 0 14px; }
 .unseen-item .tl-meta { color: #b9ae9a; }
 
 
-/* Sets: three overlapping circles, membership table */
-.sets-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 32px;
-  align-items: start;
-  margin-top: 30px;
-  padding: 22px;
-  background: #fffdf8;
-  border: 1px solid var(--line);
-}
-.sets-figure { margin: 0; min-width: 0; }
-.sets-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 18px;
-  margin-bottom: 6px;
-  font-family: var(--mono);
-  font-size: 9.5px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.sets-legend span { display: inline-flex; align-items: center; gap: 6px; }
-.sets-dot { width: 11px; height: 11px; flex: none; border: 2px solid; border-radius: 50%; }
-.sets-dot-ai { border-color: var(--teal); }
-.sets-dot-treaty { border-color: var(--blue); }
-.sets-dot-force { border-color: var(--gold); }
-.sets-svg { display: block; width: 100%; height: auto; max-height: 390px; }
-.sets-circle { fill-opacity: 0.07; stroke-width: 1.8; }
-.sets-circle-ai { fill: var(--teal); stroke: var(--teal); }
-.sets-circle-treaty { fill: var(--blue); stroke: var(--blue); }
-.sets-circle-force { fill: var(--gold); stroke: var(--gold); }
-.sets-caption { margin: 8px 0 0; font-size: 11px; line-height: 1.45; color: var(--muted); }
-.sets-set-label {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  fill: var(--muted);
-}
-.sets-count {
-  font-family: var(--serif);
-  font-size: 19px;
-  font-weight: 600;
-  fill: var(--ink);
-}
-.sets-membership-wrap { min-width: 0; }
-.membership-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-.membership-table caption {
-  caption-side: top;
-  margin-bottom: 9px;
-  text-align: left;
-  font-family: var(--mono);
-  font-size: 9.5px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.membership-table thead th {
-  padding: 0 6px 9px;
-  border-bottom: 1px solid var(--ink);
-  font-family: var(--mono);
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-align: left;
-}
-.membership-table thead th:nth-child(1) { width: 34%; }
-.membership-table thead th:nth-child(2) { width: 54px; text-align: right; }
-.membership-table tbody th,
-.membership-table tbody td {
-  padding: 9px 6px;
-  border-top: 1px solid var(--line);
-  vertical-align: top;
-  text-align: left;
-  overflow-wrap: anywhere;
-}
-.membership-table tbody th { font-weight: 400; font-size: 13px; line-height: 1.35; }
-.membership-table tbody td { font-size: 11.5px; line-height: 1.45; color: #3d382e; }
-.membership-table tbody td:nth-child(2) {
-  text-align: right;
-  font-family: var(--mono);
-  font-size: 14px;
-  color: var(--ink);
-}
-.set-region-note {
-  display: block;
-  margin-top: 2px;
-  font-family: var(--mono);
-  font-size: 8px;
-  line-height: 1.4;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.sets-key {
-  margin: 12px 0 0;
-  font-family: var(--mono);
-  font-size: 9.5px;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
-  color: var(--muted);
-}
-.sets-reading {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 28px;
-  margin-top: 26px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-}
-.sets-reading p { margin: 0; font-size: 14px; line-height: 1.6; color: #3d382e; }
-
 /* Timeline: instrument boxes inside the event stream */
 .timeline-key {
   display: flex;
@@ -1027,9 +904,6 @@ code { font-family: var(--mono); font-size: 0.88em; background: rgba(0,0,0,0.06)
   .intro-grid, .two-col, .maps, .method-grid { grid-template-columns: 1fr; gap: 34px; }
   .situation { grid-template-columns: 1fr; gap: 20px; }
   .situation-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
-  .sets-layout { grid-template-columns: 1fr; gap: 24px; }
-  .sets-figure { max-width: 560px; }
-  .sets-reading { grid-template-columns: 1fr; gap: 16px; }
   .otr-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .index-grid { grid-template-columns: 1fr; }
   .tl-item { grid-template-columns: 132px minmax(0, 1fr); gap: 24px; }
@@ -1060,43 +934,7 @@ code { font-family: var(--mono); font-size: 0.88em; background: rgba(0,0,0,0.06)
   .map-key { margin-top: 10px; }
   .otr-grid { grid-template-columns: 1fr; gap: 16px; }
   .tl-instrument .tl-card { padding: 14px 14px 12px; }
-  .sets-layout { padding: 14px; }
-  .sets-svg { max-height: none; }
-  .sets-set-label { font-size: 14px; letter-spacing: 0.04em; }
-  .sets-count { font-size: 22px; }
-  .membership-table caption { display: block; width: 100%; margin-bottom: 12px; }
-  .membership-table thead { display: none; }
-  .membership-table,
-  .membership-table tbody,
-  .membership-table tr,
-  .membership-table th,
-  .membership-table td {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-  .membership-table tr {
-    border-top: 1px solid var(--line);
-    padding: 10px 0;
-  }
-  .membership-table tbody th { padding: 0 0 4px; }
-  .membership-table tbody td { padding: 1px 0; }
-  .membership-table tbody td:nth-child(2) { text-align: left; }
-  .membership-table tbody td::before {
-    content: attr(data-label) ": ";
-    font-family: var(--mono);
-    font-size: 8.5px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
   .map-group-heading { font-size: 19px; }
-}
-
-@media (max-width: 480px) {
-  .sets-set-label { font-size: 20px; }
-  .sets-count { font-size: 26px; }
 }
 
 @media print {

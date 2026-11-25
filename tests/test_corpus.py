@@ -1036,8 +1036,8 @@ class TestBuild(unittest.TestCase):
                 "Military AI 2023",
                 "Bletchley 2023",
                 "Pax Silica 2025",
-                "BRICS 2025",
                 "Seoul 2024",
+                "San Francisco 2026",
                 "Paris Call 2018",
                 "OECD Digital Security 2019",
                 "Pall Mall Code 2025",
@@ -1099,14 +1099,14 @@ class TestBuild(unittest.TestCase):
         self.assertIn('data-status="Ratified"', page)
         self.assertIn('data-status="Signed only"', page)
         self.assertIn('data-status="Endorsed"', page)
-        self.assertIn('data-status="Member States (collective)"', page)
-        self.assertIn("State: member of the group (collective statement)", page)
+        self.assertIn('data-status="Political signatories"', page)
+        self.assertIn("State: political signatory", page)
         self.assertEqual(by_title["WAICO 2026"].count('fill="#c8102e"'), 37)
         self.assertEqual(by_title["WAICO 2026"].count('fill="#5a7fbd"'), 0)
         self.assertEqual(by_title["New Delhi 2026"].count('fill="#a67c52"'), 90)
         self.assertEqual(by_title["New Delhi 2026"].count('fill="#5a7fbd"'), 0)
-        self.assertEqual(by_title["BRICS 2025"].count('fill="#d97706"'), 11)
-        self.assertEqual(by_title["BRICS 2025"].count('fill="#a67c52"'), 0)
+        self.assertEqual(by_title["San Francisco 2026"].count('fill="#5a7fbd"'), 10)
+        self.assertEqual(by_title["San Francisco 2026"].count('fill="#a67c52"'), 0)
 
     def test_timeline_lists_every_record_and_sections_follow_the_new_order(self) -> None:
         import build_site
@@ -1214,8 +1214,8 @@ class TestBuild(unittest.TestCase):
                 "Military AI 2023",
                 "Bletchley 2023",
                 "Pax Silica 2025",
-                "BRICS 2025",
                 "Seoul 2024",
+                "San Francisco 2026",
                 "Paris Call 2018",
                 "OECD Digital Security 2019",
                 "Pall Mall Code 2025",
@@ -1246,7 +1246,7 @@ class TestBuild(unittest.TestCase):
             ("CETS 225", "coe-cets-225"),
             ("WAICO 2026", "waico-establishment-agreement-2026"),
             ("Pax Silica 2025", "pax-silica-declaration-2025"),
-            ("BRICS 2025", "brics-ai-statement-2025"),
+            ("San Francisco 2026", "san-francisco-declaration-2026"),
             ("Paris Call 2018", "paris-call-cyberspace-2018"),
         ):
             official = html.escape(instruments[iid]["title"]["official"])
@@ -1300,6 +1300,7 @@ class TestBuild(unittest.TestCase):
             ("Paris 2025", "paris-ai-action-summit-statement-2025", "Endorsed"),
             ("Bletchley 2023", "bletchley-declaration-2023", "Endorsed"),
             ("Seoul 2024", "seoul-declaration-2024", "Endorsed"),
+            ("San Francisco 2026", "san-francisco-declaration-2026", "Political signatories"),
             ("Military AI 2023", "political-declaration-military-ai-2023", "Endorsed"),
             ("CETS 225", "coe-cets-225", "Ratified"),
             ("WAICO 2026", "waico-establishment-agreement-2026", "Signed"),
@@ -1384,7 +1385,7 @@ class TestBuild(unittest.TestCase):
             ("CETS 225", "coe-cets-225"),
             ("WAICO 2026", "waico-establishment-agreement-2026"),
             ("Pax Silica 2025", "pax-silica-declaration-2025"),
-            ("BRICS 2025", "brics-ai-statement-2025"),
+            ("San Francisco 2026", "san-francisco-declaration-2026"),
             ("Paris Call 2018", "paris-call-cyberspace-2018"),
             ("OECD Digital Security 2019", "oecd-digital-security-critical-activities-2019"),
             ("Pall Mall Code 2025", "pall-mall-code-of-practice-2025"),
@@ -1647,7 +1648,7 @@ class TestBuild(unittest.TestCase):
             f"The corpus contains {build_site.number_word(ai_count)} AI-specific treaties", page
         )
         self.assertIn("It is not 48 AI treaties.", page)
-        self.assertIn("48 AI-layer records and 15 cybersecurity-only records", page)
+        self.assertIn("48 AI-domain records and 15 cybersecurity-only records", page)
         self.assertNotIn("193 States", page)
         self.assertNotIn("28 States and the EU", page)
 

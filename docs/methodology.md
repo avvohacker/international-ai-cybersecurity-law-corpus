@@ -122,7 +122,7 @@ The legal family, the forum and the presence of an individual signature block ar
 
 ### 10.3 Maps are a view, not a gate
 
-A record may be in the corpus without being mapped. A map requires a published State-level act: an individual signature, ratification, endorsement or a collective issue attributable to named States. When a record cannot be mapped, the reason is written in the page and in this methodology, not left implicit. The BRICS map is therefore a map of **listed member States** at a collective issue, with a distinct status and legend; it is not presented as eleven individual signatures. The New Delhi map is a map of **endorsers**; the CETS 225 map is a map of **signatures and ratifications**; the WAICO map is a map of **signatures**, not approvals. The map key and the record use the same verb.
+A record may be in the corpus without being mapped. A map requires a published State-level act: an individual signature, ratification, endorsement or political signature. When a record cannot be mapped, the reason is written in the page and in this methodology, not left implicit. The BRICS statement is in the corpus but is not mapped: it is a collective issue by a fixed 11-member group and the record already lists those members, so a map would only repeat the group's membership. The New Delhi map is a map of **endorsers**; the CETS 225 map is a map of **signatures and ratifications**; the WAICO map is a map of **signatures**, not approvals; the San Francisco Declaration is a map of **political signatories**. The map key and the record use the same verb.
 
 ### 10.4 Source-family watchlist and omission test
 

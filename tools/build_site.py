@@ -46,7 +46,7 @@ MILITARY_ID = "political-declaration-military-ai-2023"
 WAICO_ID = "waico-establishment-agreement-2026"
 PAX_ID = "pax-silica-declaration-2025"
 NEW_DELHI_ID = "new-delhi-declaration-2026"
-BRICS_ID = "brics-ai-statement-2025"
+SAN_FRANCISCO_ID = "san-francisco-declaration-2026"
 MAP_INSTRUMENT_IDS = (
     PARIS_ID,
     PARIS_CALL_ID,
@@ -64,7 +64,7 @@ MAP_INSTRUMENT_IDS = (
     WAICO_ID,
     PAX_ID,
     NEW_DELHI_ID,
-    BRICS_ID,
+    SAN_FRANCISCO_ID,
 )
 
 
@@ -273,7 +273,6 @@ TEAL = "#0e6b62"
 ACT_BLUE = "#5a7fbd"
 CHINA_RED = "#c8102e"
 INDIA_BROWN = "#a67c52"
-BRICS_ORANGE = "#d97706"
 RATIFIED_BLUE = "#172e6e"
 ORG_MEMBER_BLUE = "#a9c0e0"
 ISSUED_GOLD = "#a67c52"
@@ -840,7 +839,7 @@ def main() -> int:
     instruments = list(corpuslib.load_instruments().values())
     by_id = {inst["id"]: inst for inst in instruments}
     total = len(instruments)
-    ai_layer_count = sum(1 for inst in instruments if "ai" in inst["domains"])
+    ai_domain_count = sum(1 for inst in instruments if "ai" in inst["domains"])
     cyber_layer_count = sum(1 for inst in instruments if "cyber" in inst["domains"])
     joint_count = sum(
         1 for inst in instruments if {"ai", "cyber"} <= set(inst["domains"])
@@ -891,7 +890,7 @@ def main() -> int:
     waico = by_id[WAICO_ID]
     pax = by_id[PAX_ID]
     new_delhi = by_id[NEW_DELHI_ID]
-    brics = by_id[BRICS_ID]
+    san_francisco = by_id[SAN_FRANCISCO_ID]
 
     organisations = load_organisations()
     org_names = set(organisations) | set(EXTRA_PARTICIPATING_ORGS)
@@ -914,7 +913,7 @@ def main() -> int:
     waico_states = state_names(waico)
     pax_states = state_names(pax)
     new_delhi_states = state_names(new_delhi)
-    brics_states = state_names(brics)
+    san_francisco_states = state_names(san_francisco)
     cets_entries = cets["parties"]["entries"]
     budapest_entries = budapest["parties"]["entries"]
     budapest_party_states = [
@@ -1038,7 +1037,7 @@ def main() -> int:
     waico_iso = iso_set(waico_states, "WAICO 2026")
     pax_iso = iso_set(pax_states, "Pax Silica 2025")
     new_delhi_iso = iso_set(new_delhi_states, "New Delhi 2026")
-    brics_iso = iso_set(brics_states, "BRICS 2025")
+    san_francisco_iso = iso_set(san_francisco_states, "San Francisco Declaration")
     budapest_iso = iso_set(
         budapest_party_states + budapest_signatories, "Budapest Convention"
     )
@@ -1066,7 +1065,7 @@ def main() -> int:
         ("WAICO 2026", waico_iso),
         ("Pax Silica 2025", pax_iso),
         ("New Delhi 2026", new_delhi_iso),
-        ("BRICS 2025", brics_iso),
+        ("San Francisco Declaration", san_francisco_iso),
     ):
         absent = sorted(iso for iso in values if iso not in by_iso and iso not in MICRO)
         if absent:
@@ -1087,7 +1086,7 @@ def main() -> int:
     waico_status = {iso: "signed" for iso in waico_iso}
     pax_status = {iso: "endorsed" for iso in pax_iso}
     new_delhi_status = {iso: "endorsed" for iso in new_delhi_iso}
-    brics_status = {iso: "issued" for iso in brics_iso}
+    san_francisco_status = {iso: "endorsed" for iso in san_francisco_iso}
     cets_status = {iso: "signed" for iso in cets_iso}
     for entry in cets_entries:
         if entry.get("ratification") and entry["party"] not in org_names:
@@ -1165,7 +1164,6 @@ def main() -> int:
     cets_org_notes = add_org_members(cets_status, cets, "signed")
     pax_org_notes = add_org_members(pax_status, pax, "endorsed")
     new_delhi_org_notes = add_org_members(new_delhi_status, new_delhi, "endorsed")
-    brics_org_notes = []
 
     endorsement_legend = [
         {"color": ACT_BLUE, "label": "State: endorsed"},
@@ -1203,9 +1201,9 @@ def main() -> int:
         {"color": CHINA_RED, "label": "State: signed only"},
         {"color": LAND, "label": "State: no signature"},
     ]
-    brics_legend = [
-        {"color": BRICS_ORANGE, "label": "State: member of the group (collective statement)"},
-        {"color": LAND, "label": "State: no recorded act"},
+    political_signature_legend = [
+        {"color": ACT_BLUE, "label": "State: political signatory"},
+        {"color": LAND, "label": "State: not a signatory"},
     ]
 
     def render_party_list(inst: dict, default: str, party_label: str = "") -> str:
@@ -1682,27 +1680,23 @@ def main() -> int:
             fills={"endorsed": INDIA_BROWN},
         ),
         map_figure(
-            brics,
-            "brics",
-            "BRICS 2025",
-            f"{len(brics_states)} listed member States",
-            f"World map. Orange: {len(brics_states)} States listed as BRICS members when the statement was issued collectively. Sand: States outside the group. The statement has no individual signature block.",
-            brics_status,
-            brics_org_notes,
-            brics_legend,
-            fills={"issued": BRICS_ORANGE},
+            san_francisco,
+            "san-francisco",
+            "San Francisco 2026",
+            f"{len(san_francisco_states)} political signatories · 15 November 2026",
+            f"World map. Medium blue: {len(san_francisco_states)} governments that signed the San Francisco Declaration. Sand: States with no recorded signature. The declaration is political, not a treaty.",
+            san_francisco_status,
+            [],
+            political_signature_legend,
             note=(
-                "Collective statement, not a treaty and not an individual signature. "
-                f"The 2025 presidency lists {len(brics_states)} BRICS member States; the "
-                "statement was issued collectively at the Rio de Janeiro summit and has no "
-                "signature block. The record counts the listed member States, not individually "
-                "evidenced issuers. Saudi Arabia is on the presidency's list, but the Saudi Press "
-                "Agency described the Kingdom on 7 July 2025 as an invited country; the conflict "
-                "is recorded in the record and is not resolved by counting ten."
+                "Political declaration, not a treaty. The State Department release of "
+                "15 November 2026 names ten signatory governments. The record stores "
+                "the ten named governments; it does not infer adherence by other States."
             ),
             legend_note=(
-                f"{len(brics_states)} listed member States · collective statement, no individual signature"
+                f"{len(san_francisco_states)} political signatories · 15 November 2026"
             ),
+            party_label="Political signatories",
         ),
         map_figure(
             bletchley,
@@ -1916,7 +1910,7 @@ def main() -> int:
     cyber_internal = sum(
         1 for inst in instruments if "cyber" in inst["domains"] and is_internal_law(inst)
     )
-    ai_nonbinding = ai_layer_count - ai_binding - ai_internal
+    ai_nonbinding = ai_domain_count - ai_binding - ai_internal
     cyber_nonbinding = cyber_only_count - cyber_binding - cyber_internal
     ai_soft = sum(
         1
@@ -1944,7 +1938,7 @@ def main() -> int:
         (
             str(total),
             "catalogued instruments",
-            f"{ai_layer_count} AI-layer · {cyber_only_count} cyber-only · {joint_count} joint.",
+            f"{ai_domain_count} AI-domain · {cyber_only_count} cyber-only · {joint_count} joint.",
         ),
         (
             str(international_binding),
@@ -1973,13 +1967,13 @@ def main() -> int:
       <div class="situation-main">
         <p class="situation-eyebrow">Situation at a glance</p>
         <h3>Most of the record is non-binding or not confirmed in force.</h3>
-        <p class="situation-lede">The corpus is broad but uneven: AI dominates by record count, treaty-based international instruments are a minority and only {international_in_force} of them are in force; only {map_count} records have a State-level map. The corpus contains {number_word(ai_count)} AI-specific treaties, CETS 225 and WAICO; the AI layer is mostly non-binding, while the cyber layer is smaller and more treaty-heavy. Read this page first; the maps and the timeline are the evidence behind these totals.</p>
-        <p class="situation-breakdown"><strong>What “AI-layer” means.</strong> It is not {ai_layer_count} AI treaties. The AI layer is {ai_breakdown}. The cyber layer is {cyber_breakdown}. The two domains are counted separately; no record is in both.</p>
+        <p class="situation-lede">The corpus is broad but uneven: AI dominates by record count, treaty-based international instruments are a minority and only {international_in_force} of them are in force; only {map_count} records have a State-level map. The corpus contains {number_word(ai_count)} AI-specific treaties, CETS 225 and WAICO; the AI domain is mostly non-binding, while the cyber layer is smaller and more treaty-heavy. Read this page first; the maps and the timeline are the evidence behind these totals.</p>
+        <p class="situation-breakdown"><strong>What “AI-domain” means.</strong> It is not {ai_domain_count} AI treaties. The AI domain is {ai_breakdown}. The cyber layer is {cyber_breakdown}. The two domains are counted separately; no record is in both.</p>
         <div class="situation-bars">
           <div class="situation-row"><span class="situation-label">Legal form</span><span class="situation-track" role="img" aria-label="{international_in_force} international in force, {international_not_confirmed} international not confirmed in force, {internal_law} internal community law, {non_binding} non-binding"><i class="situation-fill sit-international" style="width:{international_in_force / total * 100:.2f}%"></i><i class="situation-fill sit-pending" style="width:{international_not_confirmed / total * 100:.2f}%"></i><i class="situation-fill sit-eu" style="width:{internal_law / total * 100:.2f}%"></i><i class="situation-fill sit-nonbinding" style="width:{non_binding / total * 100:.2f}%"></i></span><span class="situation-value">{binding} binding form</span></div>
           <div class="situation-key"><span><i class="sit-swatch sit-international"></i>{international_in_force} international in force</span><span><i class="sit-swatch sit-pending"></i>{international_not_confirmed} not confirmed in force</span><span><i class="sit-swatch sit-eu"></i>{internal_law} internal law</span><span><i class="sit-swatch sit-nonbinding"></i>{non_binding} non-binding</span></div>
-          <div class="situation-row"><span class="situation-label">Domain</span><span class="situation-track" role="img" aria-label="{ai_layer_count} AI, {cyber_only_count} cyber, {joint_count} joint"><i class="situation-fill sit-ai" style="width:{ai_layer_count / total * 100:.2f}%"></i><i class="situation-fill sit-cyber" style="width:{cyber_only_count / total * 100:.2f}%"></i></span><span class="situation-value">{joint_count} joint</span></div>
-          <div class="situation-key"><span><i class="sit-swatch sit-ai"></i>{ai_layer_count} AI-layer</span><span><i class="sit-swatch sit-cyber"></i>{cyber_only_count} cyber-only</span></div>
+          <div class="situation-row"><span class="situation-label">Domain</span><span class="situation-track" role="img" aria-label="{ai_domain_count} AI, {cyber_only_count} cyber, {joint_count} joint"><i class="situation-fill sit-ai" style="width:{ai_domain_count / total * 100:.2f}%"></i><i class="situation-fill sit-cyber" style="width:{cyber_only_count / total * 100:.2f}%"></i></span><span class="situation-value">{joint_count} joint</span></div>
+          <div class="situation-key"><span><i class="sit-swatch sit-ai"></i>{ai_domain_count} AI-domain</span><span><i class="sit-swatch sit-cyber"></i>{cyber_only_count} cyber-only</span></div>
         </div>
         <p class="situation-note"><strong>Binding form is not the same as being in force.</strong> Of the {international_binding} international instruments with binding form, {international_in_force} are in force and {international_not_confirmed} are not confirmed in force (CETS 225, WAICO, AfCFTA, CETS 224 and the UN Cybercrime Convention). A treaty that is not in force does not bind as a treaty; signatories may still be bound by the interim obligation in Article 18 VCLT not to defeat its object and purpose. The {number_word(internal_law)} internal-law acts are binding in their own legal order, not in international law; with them, {binding} records have binding form.</p>
       </div>
@@ -2007,7 +2001,7 @@ def main() -> int:
     <p class="kicker">Verified corpus · verification {esc(verified_on)}</p>
     <h1>International AI and Cybersecurity Law</h1>
     <p class="atlas-subtitle">Atlas</p>
-    <p class="byline">{total} records · {ai_layer_count} AI-layer · {cyber_layer_count} cyber · {full_texts} full texts · {international_binding} treaty-based ({international_in_force} in force) · {internal_law} internal · {non_binding} non-binding</p>
+    <p class="byline">{total} records · {ai_domain_count} AI-domain · {cyber_layer_count} cyber · {full_texts} full texts · {international_binding} treaty-based ({international_in_force} in force) · {internal_law} internal · {non_binding} non-binding</p>
     <nav class="toc" aria-label="Sections">
       <a href="#index">Index</a>
       <a href="#form">01 Situation</a>
@@ -2026,10 +2020,10 @@ def main() -> int:
       <p class="eyebrow">00 · Index</p>
       <h2>What this corpus contains</h2>
       <div class="stats">{stats_html}</div>
-      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_layer_count} AI-layer records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer includes nine treaties (the Budapest Convention, its two protocols, the AU Malabo Convention, the UN Cybercrime Convention, the Arab Convention on IT Offences, the CIS 2018 Agreement, the CIS Minsk Agreement 2001 and the SCO Information Security Agreement 2009), three cyber internal-law acts (NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) and three non-binding instruments (the Paris Call, the OECD Digital Security Recommendation and the Pall Mall Code). Cyber standards and cooperation channels remain pending. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
+      <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_domain_count} AI-domain records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer includes nine treaties (the Budapest Convention, its two protocols, the AU Malabo Convention, the UN Cybercrime Convention, the Arab Convention on IT Offences, the CIS 2018 Agreement, the CIS Minsk Agreement 2001 and the SCO Information Security Agreement 2009), three cyber internal-law acts (NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) and three non-binding instruments (the Paris Call, the OECD Digital Security Recommendation and the Pall Mall Code). Cyber standards and cooperation channels remain pending. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
       <div class="index-grid">
         <a class="index-card" href="#form"><span class="index-number">01</span><strong>The corpus in one view</strong><span>Situation at a glance: legal form, domain split, evidence and map coverage, before the maps and the timeline.</span></a>
-        <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>{number_word(len(map_entries)).capitalize()} maps of the State-level acts recorded in the corpus: signatures, ratifications, accessions, endorsements and collective issuances.</span></a>
+        <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>{number_word(len(map_entries)).capitalize()} maps of the State-level acts recorded in the corpus: signatures, ratifications, accessions, endorsements and political signatures.</span></a>
         <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: a box marks a record with a State-level map and opens it; records without a map and events are plain rows.</span></a>
         <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Reading room</strong><span>Off the record: legal doctrine, think-tank analysis and civil-society critique, the argument around the record, never used as evidence for it.</span></a>
         <a class="index-card" href="#catalogue"><span class="index-number">05</span><strong>Catalogue</strong><span>The filterable table of every record, with legal force, status, verification level and a link to the JSON.</span></a>
@@ -2055,8 +2049,8 @@ def main() -> int:
       <div class="map-groups">
         {maps_html}
       </div>
-      <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. “Endorsed” is used for political declarations, which create no treaty signature or ratification; “member State” is used for the BRICS collective statement, which has no individual signature block.</p>
-      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} non-binding instruments and {number_word(map_binding_count)} treaties. They include five of the nine cybersecurity treaties in the catalogue: the Budapest Convention, its two protocols, the AU Malabo Convention and the UN Cybercrime Convention. The Arab Convention, both CIS agreements and the SCO Agreement are catalogued but not mapped because their current depositary tables are not stable or publicly accessible. The {len(brics_states)}-member BRICS statement is mapped as a collective issue by its member States, not as {len(brics_states)} individual signatures. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the UNESCO recommendation and the other OECD digital-security recommendations, strategies, codes and company commitments, the bilateral UK–US MOU and US–EU TTC commitment, the separate June 2026 AI Opportunity Statement and the November 2026 San Francisco Declaration (catalogued, not mapped), and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment. The four internal-law acts (AI Act, NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) are catalogue-only because they are not international instruments; they are not mapped as if they were treaties.</p>
+      <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. “Endorsed” is used for political declarations, which create no treaty signature or ratification; “political signatory” is used for the San Francisco Declaration, which is not a treaty.</p>
+      <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} non-binding instruments and {number_word(map_binding_count)} treaties. They include five of the nine cybersecurity treaties in the catalogue: the Budapest Convention, its two protocols, the AU Malabo Convention and the UN Cybercrime Convention. The Arab Convention, both CIS agreements and the SCO Agreement are catalogued but not mapped because their current depositary tables are not stable or publicly accessible. The San Francisco Declaration is mapped as ten political signatories. The BRICS statement is not mapped: it is a collective issue by a fixed 11-member group, and the record already lists those members; a map would only repeat the group's membership. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the UNESCO Recommendation, strategies, codes and company commitments, the BRICS statement, the bilateral UK–US MOU and US–EU TTC commitment, the separate June 2026 AI Opportunity Statement, and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment. The OECD digital-security map is retained because it shows Brazil as the only non-member adherent; it is otherwise an OECD membership map. The four internal-law acts (AI Act, NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) are catalogue-only because they are not international instruments; they are not mapped as if they were treaties.</p>
     </div>
   </section>
 
