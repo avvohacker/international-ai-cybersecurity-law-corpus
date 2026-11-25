@@ -19,7 +19,8 @@ ARTICLE_RE = re.compile(
 )
 SECTION_RE = re.compile(r"(?m)^\s*(\d{1,2})\.\s+([A-Z][^\n]{3,90})$")
 RES_PARA_RE = re.compile(r"(?m)^\s*(\d{1,3})\.\s+(?=\S)")
-NUMBERED_RE = re.compile(r"(?m)^\s*(\d{1,2}(?:\.\d{1,2})?)\.\s+(?=\S)")
+NUMBERED_RE = re.compile(r"(?m)^(\d{1,2}(?:\.\d{1,2})?)\.\s+(?=\S)")
+ROMAN_SECTION_RE = re.compile(r"(?m)^(?:I|II|III|IV|V|VI|VII|VIII)\.\s*$")
 PACT_TITLE_RE = re.compile(r"(?m)^  The Pact for the Future$")
 PACT_SECTION_RE = re.compile(r"(?m)^  (I|II|III|IV|V)\. (.+)$")
 PACT_PARA_RE = re.compile(r"(?m)^(\d{1,3})\.\s+(?=\S)")
@@ -182,8 +183,17 @@ def segment(body: str, mode: str) -> list[dict]:
         )
     if mode == "numbered":
         matches = list(NUMBERED_RE.finditer(body))
+        first_section = ROMAN_SECTION_RE.search(body)
+
+        def numbered_label(match: re.Match) -> str:
+            # Numbered clauses before the first Roman-numbered section are the
+            # adopting act's operative clauses, not the instrument's paragraphs.
+            if first_section is not None and match.start() < first_section.start():
+                return f"Adoption clause {match.group(1)}"
+            return f"Paragraph {match.group(1)}"
+
         return units_from_matches(
-            body, matches, lambda m: f"Paragraph {m.group(1)}", "numbered_paragraph"
+            body, matches, numbered_label, "numbered_paragraph"
         )
     if mode == "resolution":
         matches = list(RES_PARA_RE.finditer(body))

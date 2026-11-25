@@ -1,5 +1,15 @@
 [
   {
+    "accessed": "2026-11-25",
+    "bytes": 221350,
+    "dest": "source/brics-ggai-declaration-2025-07-06-en.pdf",
+    "instrument_id": "brics-ai-statement-2025",
+    "media_type": "application/pdf",
+    "note": "Archived copy (Internet Archive, snapshot 18 April 2026) of the official BRICS 2025 Presidency PDF of the Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The live brics.br host did not resolve by DNS from this environment.",
+    "sha256": "dd1e37fd8300d86c68f06531121c1e9eaaf9784570b18eca38b087676b3dde40",
+    "url": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
+  },
+  {
     "accessed": "2026-11-23",
     "bytes": 25152,
     "dest": "source/global-ai-governance-initiative-en.html",
@@ -8,6 +18,16 @@
     "note": "Official English text of China's Global AI Governance Initiative, Ministry of Foreign Affairs.",
     "sha256": "073933c76fa44d0cf1f30d1cbe95b17ad6a625f29abd12024e3550f2adde5b59",
     "url": "https://www.mfa.gov.cn/mfa_eng/zy/gb/202405/t20240531_11367503.html"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 210874,
+    "dest": "source/cis-minsk-agreement-2001-en-translation.pdf",
+    "instrument_id": "cis-minsk-agreement-2001",
+    "media_type": "application/pdf",
+    "note": "Archived copy (Internet Archive, snapshot 20 March 2022) of the English translation of the 2001 CIS Minsk Agreement reproduced by the Prosecutor General's Office of Azerbaijan. The live host fails TLS certificate verification from this environment.",
+    "sha256": "ed2c2e7254b2d1625be92d01896c375f85fc3890d7f9a510b4c932a6eba6193a",
+    "url": "https://web.archive.org/web/20220320005205/https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf"
   },
   {
     "accessed": "2026-11-25",
@@ -28,6 +48,16 @@
     "note": "Certified bilingual copy of CETS 225 in its corrected French version, adopted under the Committee of Ministers decision of 30 April 2025 and dated Strasbourg, 20 May 2025. Includes the authentic French text; 27 PDF pages, two columns.",
     "sha256": "591b9daf1ee6a2ad2fe84ef896e964f656c97fa1fff8332eb6ebc64cc82f865c",
     "url": "https://rm.coe.int/1680b680bc"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 526521,
+    "dest": "source/cets-225-explanatory-report-2024-09-05-en.pdf",
+    "instrument_id": "coe-cets-225-explanatory-report",
+    "media_type": "application/pdf",
+    "note": "Archived copy (Internet Archive, snapshot 17 November 2026) of the official English Explanatory Report to CETS 225, dated Vilnius, 5 September 2024. The live rm.coe.int endpoint returned HTTP 403 to automated clients.",
+    "sha256": "6494c90612172f6b6c84620ebdd7256606f58c8ab3ec4b9d29890f6305814169",
+    "url": "https://web.archive.org/web/20261117082757/https://rm.coe.int/1680afae67"
   },
   {
     "accessed": "2026-11-23",
@@ -68,6 +98,16 @@
     "note": "Official Élysée PDF of the Paris AI Action Summit statement, published 19 February 2025.",
     "sha256": "9a19a426c0d1ffdcd2dab40340074663ca4e8ff3eaeb1c3d1d2067e3fd9a2c64",
     "url": "https://www.elysee.fr/admin/upload/default/0001/17/0efc53b2025d5bc1f0fc68556c41370cee166e7f.pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 245394,
+    "dest": "source/paris-call-2018-11-12-en.pdf",
+    "instrument_id": "paris-call-cyberspace-2018",
+    "media_type": "application/pdf",
+    "note": "Archived copy (Internet Archive, snapshot 27 September 2024) of the official four-page English PDF of the Paris Call for Trust and Security in Cyberspace, dated 12 November 2018. The live pariscall.international host no longer resolves from this environment.",
+    "sha256": "80ab847bf9f2500e718210feae544c941bb0d634a8d30722759a364a9c125a6d",
+    "url": "https://web.archive.org/web/20240927054607/https://pariscall.international/assets/files/paris-call.pdf"
   },
   {
     "accessed": "2026-11-23",
@@ -168,5 +208,15 @@
     "note": "Official UN document A/RES/80/58 (English).",
     "sha256": "65edd5d41f159a1bc98fcaf31d0eb8b6d9868d706bf939a05e690ec98cd30261",
     "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F58&t=pdf"
+  },
+  {
+    "accessed": "2026-11-25",
+    "bytes": 1002898,
+    "dest": "source/unesco-ai-ethics-recommendation-2022-en.pdf",
+    "instrument_id": "unesco-ethics-ai-2021",
+    "media_type": "application/pdf",
+    "note": "Archived copy (Internet Archive, snapshot 29 October 2026) of the English PDF of the UNESCO Recommendation on the Ethics of Artificial Intelligence, adopted on 23 November 2021 (SHS/BIO/PI/2021/1, 43 pages). The live UNESDOC PDF endpoint returned HTTP 403 to automated clients.",
+    "sha256": "314c0e72f1dad6d8fb1702e7c89d8f722a9a5e6f99006491db70dcf102233688",
+    "url": "https://web.archive.org/web/20261029235825/https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_75c9fb6b-92a6-4982-b772-79f540c9fc39?_=381137eng.pdf"
   }
 ]

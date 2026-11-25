@@ -542,7 +542,9 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(inst["status"], "adopted")
         self.assertEqual(inst["dates"]["adopted"], "2025-07-06")
         self.assertEqual(inst["verification"]["level"], "metadata_verified")
-        self.assertNotIn("text", inst)
+        self.assertTrue(inst["text"]["full_text"])
+        self.assertEqual(inst["text"]["units_mode"], "whole")
+        self.assertEqual(inst["text"]["primary_text"], "text/en.txt")
         self.assertEqual(inst["parties"]["act"], "collective_issue")
         self.assertEqual(inst["parties"]["counts"]["members"]["total"], 11)
         self.assertEqual(inst["parties"]["counts"]["members"]["verified"], 11)
@@ -1072,9 +1074,9 @@ class TestBuild(unittest.TestCase):
         # All 27 EU member States endorsed Paris individually, so the EU is not
         # indicated on that map at all.
         self.assertNotIn("European Union: endorsed", by_title["Paris 2025"])
-        self.assertEqual(by_title["CETS 225"].count('fill="#a9c0e0"'), 27)
-        self.assertEqual(by_title["Paris 2025"].count('fill="#a9c0e0"'), 46)
-        self.assertEqual(by_title["WAICO 2026"].count('fill="#a9c0e0"'), 0)
+        self.assertEqual(by_title["CETS 225"].count('fill="#a9c8d2"'), 27)
+        self.assertEqual(by_title["Paris 2025"].count('fill="#9aa9c2"'), 46)
+        self.assertEqual(by_title["WAICO 2026"].count('fill="#d6a5a8"'), 0)
         self.assertNotIn("USA / UK: no", page)
         self.assertNotIn("Non-signatory", page)
         self.assertNotIn("International organisation", page)
@@ -1085,7 +1087,7 @@ class TestBuild(unittest.TestCase):
         self.assertIn("States only", page)
         self.assertIn("37 confirmed of 38 reported", page)
         self.assertEqual(page.count('class="map-parties"'), 17)
-        self.assertEqual(by_title["Paris Call 2018"].count('fill="#5a7fbd"'), 81)
+        self.assertEqual(by_title["Paris Call 2018"].count('fill="#2f4a72"'), 81)
         self.assertEqual(by_title["Paris Call 2018"].count('<li data-party='), 82)
         self.assertIn("81 States + EU", by_title["Paris Call 2018"])
         self.assertIn("95 States + EU · 3 Parties", by_title["UN Cybercrime Convention"])
@@ -1095,18 +1097,18 @@ class TestBuild(unittest.TestCase):
         self.assertIn("20 Parties + 11 signatories", by_title["Malabo Convention"])
         self.assertIn('data-status="Party (ratified or acceded)"', by_title["Budapest Convention"])
         self.assertIn("eleven non-party States with no recorded act not mapped", by_title["Budapest Convention"])
-        self.assertEqual(by_title["New Delhi 2026"].count('fill="#a9c0e0"'), 0)
+        self.assertEqual(by_title["New Delhi 2026"].count('fill="#a9c8d2"'), 0)
         self.assertIn('data-status="Ratified"', page)
         self.assertIn('data-status="Signed only"', page)
         self.assertIn('data-status="Endorsed"', page)
         self.assertIn('data-status="Political signatories"', page)
         self.assertIn("State: political signatory", page)
-        self.assertEqual(by_title["WAICO 2026"].count('fill="#c8102e"'), 37)
-        self.assertEqual(by_title["WAICO 2026"].count('fill="#5a7fbd"'), 0)
-        self.assertEqual(by_title["New Delhi 2026"].count('fill="#a67c52"'), 90)
-        self.assertEqual(by_title["New Delhi 2026"].count('fill="#5a7fbd"'), 0)
-        self.assertEqual(by_title["San Francisco 2026"].count('fill="#5a7fbd"'), 10)
-        self.assertEqual(by_title["San Francisco 2026"].count('fill="#a67c52"'), 0)
+        self.assertEqual(by_title["WAICO 2026"].count('fill="#a3282f"'), 37)
+        self.assertEqual(by_title["WAICO 2026"].count('fill="#d6a5a8"'), 0)
+        self.assertEqual(by_title["New Delhi 2026"].count('fill="#a85f1f"'), 90)
+        self.assertEqual(by_title["New Delhi 2026"].count('fill="#d9b892"'), 0)
+        self.assertEqual(by_title["San Francisco 2026"].count('fill="#39536f"'), 10)
+        self.assertEqual(by_title["San Francisco 2026"].count('fill="#a3b1c2"'), 0)
 
     def test_timeline_lists_every_record_and_sections_follow_the_new_order(self) -> None:
         import build_site
@@ -1118,8 +1120,8 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(page.count('data-instrument-id='), 63)
         for label in (
             "00 · Index",
-            "01 · Situation",
-            "02 · 17 maps",
+            "01 · Overlook",
+            "02 · Seventeen maps",
             "03 · Timeline",
             "04 · Reading room",
             "05 · The catalogue",
@@ -1128,7 +1130,7 @@ class TestBuild(unittest.TestCase):
             self.assertIn(label, page)
         self.assertIn("The instruments, on the map", page)
         self.assertIn("The argument around the record", page)
-        self.assertIn("Situation at a glance", page)
+        self.assertIn("Overlook at a glance", page)
         self.assertEqual(page.count('<p class="stat-number">'), 4)
         for label in (
             "catalogued instruments",
@@ -1545,7 +1547,7 @@ class TestBuild(unittest.TestCase):
             "European Union: signed. 9 EU member States without an individual signature",
             figure,
         )
-        self.assertEqual(figure.count('fill="#a9c0e0"'), 9)
+        self.assertEqual(figure.count('fill="#aec7de"'), 9)
 
     def test_malabo_record_uses_au_status_list(self) -> None:
         record = read_instrument("au-malabo-convention-2014")
@@ -1736,7 +1738,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 167)
+        self.assertEqual(len(targets), 168)
         self.assertEqual(len({target.instrument_id for target in targets}), 63)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)

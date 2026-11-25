@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 210874,
+      "media_type": "application/pdf",
+      "note": "Archived copy (Internet Archive, snapshot 20 March 2022) of the English translation of the 2001 CIS Minsk Agreement reproduced by the Prosecutor General's Office of Azerbaijan. The live host fails TLS certificate verification from this environment.",
+      "path": "source/cis-minsk-agreement-2001-en-translation.pdf",
+      "role": "original",
+      "sha256": "ed2c2e7254b2d1625be92d01896c375f85fc3890d7f9a510b4c932a6eba6193a",
+      "source_url": "https://web.archive.org/web/20220320005205/https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf"
+    },
+    {
+      "bytes": 16202,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "f4c0beace3c0562a8616b71cf47e7a80c1a0b2b48efd8b34ecc5dbaf97f9c653"
+    },
+    {
+      "bytes": 691,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "7880cee7a6d1f9ee137f0f7a9a5c46d90298d8f0b4aef0c57c07ed3ccb6353cc"
+    },
+    {
+      "bytes": 19752,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "f389d2d76120b649643aa9fb4a7b0f359964d5f9e98771da64610eadf5ec522d"
+    }
+  ],
+  "instrument_id": "cis-minsk-agreement-2001",
+  "primary_text": "text/en.txt"
+}

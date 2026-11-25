@@ -3,20 +3,20 @@
   "category": "non_binding_instrument",
   "dates": {
     "adopted": "2018-11-12",
-    "notes": "Launched by the President of the French Republic at the Internet Governance Forum at UNESCO and the Paris Peace Forum. The European Union and the United States joined on 11 November 2021. The supporters list is a current online list, not a dated depositary table; this record is a snapshot at 24 November 2026.",
+    "notes": "Launched by the President of the French Republic at the Internet Governance Forum at UNESCO and the Paris Peace Forum. The European Union and the United States joined on 11 November 2021. The supporters list is a current online list, not a dated depositary table. The State count of 81 was last checked on 24 November 2026 against the official list and its fixed source-repository commit; the archived page used as the stable link is the 17 November 2025 snapshot.",
     "published": "2018-11-12",
-    "verified_on": "2026-11-24"
+    "verified_on": "2026-11-25"
   },
   "domains": [
     "cyber"
   ],
   "gaps": [
-    "Non-binding: the Call creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+    "The official supporters page is a dynamic list with no formal update log or depositary; the live host no longer resolves, so the record relies on the archived 17 November 2025 snapshot and the source repository at commit 916433b. Later additions are not reflected.",
     "The official supporters page is a dynamic list with no formal update log or depositary; the record is a snapshot at 24 November 2026 and later additions are not reflected.",
     "Only the 81 State supporters and the European Union are recorded and mapped; the 36 public authorities, 390 civil-society organisations and 706 private-sector supporters reported by the official homepage are outside this State-level map.",
     "The homepage counters and the official site's source data do not fully agree for non-State categories (public authorities, organisations and companies differ by one or two); the State count is 81 in both.",
     "The European Union is a supporter but is not a State and is not shown on the State map.",
-    "No full text is stored; the official English and French texts are linked but not acquired."
+    "The full English text is stored and segmented; the French version is not acquired."
   ],
   "id": "paris-call-cyberspace-2018",
   "instrument_type": "declaration",
@@ -24,12 +24,12 @@
     {
       "name": "President of the French Republic",
       "role": "issuer",
-      "url": "https://pariscall.international/en/call"
+      "url": "https://web.archive.org/web/20250829163844/https://pariscall.international/en/call"
     },
     {
       "name": "Paris Peace Forum",
       "role": "host",
-      "url": "https://pariscall.international/en"
+      "url": "https://web.archive.org/web/20251117075315/https://pariscall.international/en"
     }
   ],
   "languages": {
@@ -418,7 +418,7 @@
   "provenance": {
     "assertions": [
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "title",
         "locator": "Official text page, title and opening paragraph.",
         "method": "official_page_read",
@@ -427,7 +427,7 @@
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "dates",
         "locator": "Official text page, closing line: Paris, 12th of November, 2018.",
         "method": "official_page_read",
@@ -436,7 +436,7 @@
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "parties",
         "locator": "Official supporters page, State category (81 entries) and the European Union entry under public authorities.",
         "method": "official_page_read",
@@ -446,7 +446,7 @@
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "counts",
         "locator": "Official homepage supporter counters and the official source repository's 81 state files at commit 916433b.",
         "method": "official_page_read",
@@ -456,7 +456,7 @@
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "legal_nature",
         "locator": "Official text page, closing paragraph and list of cooperative measures; no treaty or enforcement clause.",
         "method": "official_text_read",
@@ -467,7 +467,8 @@
     ],
     "discovered_via": "Official Paris Call site; its linked public source repository.",
     "search_dates": [
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ]
   },
   "related": [
@@ -498,50 +499,50 @@
   },
   "rights": {
     "licence": "No separate licence statement located for the Call text",
-    "note": "The official text and supporter list are public. The website source code is published under the EUPL-1.2 licence; that licence is not asserted for the political text.",
+    "note": "The official text and supporter list are public. A 4-page archived copy of the official PDF is stored in this corpus; the website source code is published under the EUPL-1.2 licence, which is not asserted for the political text.",
     "status": "public_official_text",
     "url": "https://pariscall.international/en/legal-notice"
   },
   "sources": [
     {
-      "accessed": "2026-11-24",
+      "accessed": "2026-11-25",
       "http_status": 200,
       "id": "paris-call-text",
       "kind": "official_primary",
       "language": "en",
-      "note": "Official English text of the Paris Call of 12 November 2018, with the nine cooperative measures.",
+      "note": "Archived copy (Internet Archive, snapshot 29 August 2025) of the official English text of the Paris Call of 12 November 2018, with the nine cooperative measures. The live pariscall.international host no longer resolves from this environment.",
       "publisher": "Paris Call",
-      "url": "https://pariscall.international/en/call"
+      "url": "https://web.archive.org/web/20250829163844/https://pariscall.international/en/call"
     },
     {
-      "accessed": "2026-11-24",
+      "accessed": "2026-11-25",
       "http_status": 200,
       "id": "paris-call-supporters",
       "kind": "official_primary",
       "language": "en",
-      "note": "Official supporters list; the State category contains 81 entries and the European Union appears separately. The page links a downloadable CSV.",
+      "note": "Archived copy (Internet Archive, snapshot 17 November 2025) of the official supporters list; the State category contains 81 entries and the European Union appears separately.",
       "publisher": "Paris Call",
-      "url": "https://pariscall.international/en/supporters"
+      "url": "https://web.archive.org/web/20251117070515/https://pariscall.international/en/supporters"
     },
     {
-      "accessed": "2026-11-24",
+      "accessed": "2026-11-25",
       "http_status": 200,
       "id": "paris-call-page",
       "kind": "official_primary",
       "language": "en",
-      "note": "Official homepage; supporter counters at access: 81 States, 36 public authorities, 390 organisations and 706 companies.",
+      "note": "Archived copy (Internet Archive, snapshot 17 November 2025) of the official homepage; supporter counters at capture: 81 States, 36 public authorities, 390 organisations and 706 companies.",
       "publisher": "Paris Call",
-      "url": "https://pariscall.international/en"
+      "url": "https://web.archive.org/web/20251117075315/https://pariscall.international/en"
     },
     {
-      "accessed": "2026-11-24",
-      "http_status": null,
+      "accessed": "2026-11-25",
+      "http_status": 200,
       "id": "paris-call-csv",
       "kind": "official_primary",
       "language": "en",
-      "note": "Official downloadable CSV generated from the supporter data. Direct retrieval from this environment failed; the State entries were checked against the official source repository instead.",
+      "note": "Archived copy (Internet Archive, snapshot 27 September 2024) of the official downloadable CSV generated from the supporter data.",
       "publisher": "Paris Call",
-      "url": "https://pariscall.international/supporters.csv"
+      "url": "https://web.archive.org/web/20240927013736/https://pariscall.international/supporters.csv"
     },
     {
       "accessed": "2026-11-24",
@@ -556,6 +557,14 @@
   ],
   "status": "adopted",
   "status_note": "Political call, not a treaty. Launched on 12 November 2018; no signature, ratification, depositary or entry-into-force clause. The official supporters page lists 81 States and the European Union as of 24 November 2026. Support is political endorsement, not legal obligation.",
+  "text": {
+    "extraction_note": "Full English text extracted from the archived 4-page official PDF dated 12 November 2018. Running headers and page numbers remain; segmentation is at document level because the Call is a continuous declaration with nine cooperative measures, not numbered articles.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
   "title": {
     "official": "Paris Call for Trust and Security in Cyberspace",
     "short": "Paris Call 2018"
@@ -581,9 +590,14 @@
         "check": "Legal nature checked.",
         "date": "2026-11-24",
         "result": "Political call with no treaty, signature, ratification, depositary or enforcement clause."
+      },
+      {
+        "check": "Full text acquired from the archived official PDF and segmented.",
+        "date": "2026-11-25",
+        "result": "4-page PDF dated 12 November 2018 acquired and stored; 1 document-level unit generated from the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata and supporter list verified from the official page and its official source repository. No full text is stored. The list is a dated snapshot, not a depositary register."
+    "notes": "Metadata and supporter list verified from the archived official page and the official source repository. The full text is stored and segmented. The list is a dated snapshot, not a depositary register."
   }
 }

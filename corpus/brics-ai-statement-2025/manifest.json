@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 221350,
+      "media_type": "application/pdf",
+      "note": "Archived copy (Internet Archive, snapshot 18 April 2026) of the official BRICS 2025 Presidency PDF of the Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The live brics.br host did not resolve by DNS from this environment.",
+      "path": "source/brics-ggai-declaration-2025-07-06-en.pdf",
+      "role": "original",
+      "sha256": "dd1e37fd8300d86c68f06531121c1e9eaaf9784570b18eca38b087676b3dde40",
+      "source_url": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
+    },
+    {
+      "bytes": 16304,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "9e2b2223290e4f950f7082c6cac290273ba6683f08aa5b6e0d2fd903306dc447"
+    },
+    {
+      "bytes": 610,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "6e2cc20800e6824118cf711a80e3a6b471f0e96654fc89474f07de7971e186cc"
+    },
+    {
+      "bytes": 16742,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "46145b0871863fcc92bd093df9318a51a56510a90867d092494ca3458060a977"
+    }
+  ],
+  "instrument_id": "brics-ai-statement-2025",
+  "primary_text": "text/en.txt"
+}

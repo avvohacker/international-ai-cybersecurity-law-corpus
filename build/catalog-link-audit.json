@@ -1,12 +1,12 @@
 {
-  "checked": 167,
+  "checked": 168,
   "scope": "catalog",
   "instruments": 63,
   "summary": {
-    "ok": 106,
-    "anti_bot": 47,
-    "broken": 10,
-    "transient": 4
+    "ok": 116,
+    "anti_bot": 46,
+    "broken": 0,
+    "transient": 6
   },
   "results": [
     {
@@ -63,21 +63,21 @@
       "instrument_id": "arab-convention-it-offences-2010",
       "source_id": "las-convention-text",
       "label": "League of Arab States",
-      "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf",
-      "status": null,
-      "outcome": "broken",
-      "reason": "connection",
-      "detail": "URLError"
+      "url": "https://web.archive.org/web/20240423123401/https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "arab-convention-it-offences-2010",
       "source_id": "las-ratification-table",
       "label": "League of Arab States",
-      "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%8A%D9%82%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D9%87%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf",
-      "status": null,
-      "outcome": "broken",
-      "reason": "connection",
-      "detail": "URLError"
+      "url": "https://web.archive.org/web/20240423123313/http://www.leagueofarabstates.net/ar/legalnetwork/Pages/agreements_details.aspx?RID=73",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "arab-convention-it-offences-2010",
@@ -193,21 +193,21 @@
       "instrument_id": "brics-ai-statement-2025",
       "source_id": "brics-members",
       "label": "BRICS 2025 Presidency, Federative Republic of Brazil",
-      "url": "https://brics.br/en/about-the-brics",
-      "status": null,
-      "outcome": "broken",
-      "reason": "dns",
-      "detail": "URLError"
+      "url": "https://web.archive.org/web/20260617005151/https://brics.br/en",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "brics-ai-statement-2025",
       "source_id": "brics-presidency-pdf",
       "label": "BRICS 2025 Presidency, Federative Republic of Brazil",
-      "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
-      "status": null,
-      "outcome": "broken",
-      "reason": "dns",
-      "detail": "URLError"
+      "url": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "brics-ai-statement-2025",
@@ -393,11 +393,11 @@
       "instrument_id": "cis-minsk-agreement-2001",
       "source_id": "cis-minsk-english",
       "label": "Prosecutor General's Office of Azerbaijan",
-      "url": "https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf",
-      "status": null,
-      "outcome": "broken",
-      "reason": "tls_certificate",
-      "detail": "URLError"
+      "url": "https://web.archive.org/web/20220320005205/https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "cis-minsk-agreement-2001",
@@ -533,10 +533,10 @@
       "instrument_id": "coe-cets-225-explanatory-report",
       "source_id": "coe-report",
       "label": "Council of Europe Treaty Office",
-      "url": "https://rm.coe.int/1680afae67",
-      "status": 403,
-      "outcome": "anti_bot",
-      "reason": "http_403",
+      "url": "https://web.archive.org/web/20261117082757/https://rm.coe.int/1680afae67",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -604,10 +604,10 @@
       "source_id": "depa-mfat-overview",
       "label": "New Zealand Ministry of Foreign Affairs and Trade",
       "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/overview",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "TimeoutError"
     },
     {
       "instrument_id": "depa-2020",
@@ -1033,21 +1033,21 @@
       "instrument_id": "paris-call-cyberspace-2018",
       "source_id": "paris-call-csv",
       "label": "Official supporters CSV",
-      "url": "https://pariscall.international/supporters.csv",
-      "status": null,
-      "outcome": "broken",
-      "reason": "connection",
-      "detail": "URLError"
+      "url": "https://web.archive.org/web/20240927013736/https://pariscall.international/supporters.csv",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "paris-call-cyberspace-2018",
       "source_id": "paris-call-page",
       "label": "Official homepage counters",
-      "url": "https://pariscall.international/en",
-      "status": null,
-      "outcome": "broken",
-      "reason": "connection",
-      "detail": "URLError"
+      "url": "https://web.archive.org/web/20251117075315/https://pariscall.international/en",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "paris-call-cyberspace-2018",
@@ -1063,21 +1063,21 @@
       "instrument_id": "paris-call-cyberspace-2018",
       "source_id": "paris-call-supporters",
       "label": "Official supporters list",
-      "url": "https://pariscall.international/en/supporters",
-      "status": null,
-      "outcome": "broken",
-      "reason": "connection",
-      "detail": "URLError"
+      "url": "https://web.archive.org/web/20251117070515/https://pariscall.international/en/supporters",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "paris-call-cyberspace-2018",
       "source_id": "paris-call-text",
       "label": "Paris Call text",
-      "url": "https://pariscall.international/en/call",
-      "status": null,
-      "outcome": "broken",
-      "reason": "connection",
-      "detail": "URLError"
+      "url": "https://web.archive.org/web/20250829163844/https://pariscall.international/en/call",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "pax-silica-declaration-2025",
@@ -1224,10 +1224,10 @@
       "source_id": "hklii-sco",
       "label": "Hong Kong Legal Information Institute",
       "url": "https://hklii.hk/en/legis/hkts/2011/2",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "URLError"
     },
     {
       "instrument_id": "sco-information-security-agreement-2009",
@@ -1513,11 +1513,21 @@
       "instrument_id": "unesco-ethics-ai-2021",
       "source_id": "unesco-page",
       "label": "UNESCO",
-      "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
-      "status": null,
-      "outcome": "broken",
-      "reason": "connection",
-      "detail": "RemoteDisconnected"
+      "url": "https://web.archive.org/web/20261115100428/https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "unesco-ethics-ai-2021",
+      "source_id": "unesdoc-pdf",
+      "label": "UNESCO Digital Library",
+      "url": "https://web.archive.org/web/20261029235825/https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_75c9fb6b-92a6-4982-b772-79f540c9fc39?_=381137eng.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
     },
     {
       "instrument_id": "unesco-ethics-ai-2021",

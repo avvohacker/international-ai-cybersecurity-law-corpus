@@ -4,15 +4,15 @@
   "dates": {
     "adopted": "2010-12-21",
     "entered_into_force": "2014-02-07",
-    "notes": "Adopted at Cairo on 21 December 2010 by the Arab Ministers of Interior and Justice. Article 19(3) provides that the Convention enters into force 30 days after the deposit of the seventh instrument of ratification, acceptance or approval. UNODC records entry into force on 7 February 2014. The official LAS ratification table could not be retrieved from this environment, so the current number of Parties is not asserted.",
+    "notes": "Adopted at Cairo on 21 December 2010 by the Arab Ministers of Interior and Justice. Article 19(3) provides that the Convention enters into force 30 days after the deposit of the seventh instrument of ratification, acceptance or approval. UNODC records entry into force on 7 February 2014. The archived LAS treaty page links a ratification table, but the table PDF was not retrievable from the archive in this environment, so the current number of Parties is not asserted.",
     "opened_for_signature": "2010-12-21",
-    "verified_on": "2026-11-24"
+    "verified_on": "2026-11-25"
   },
   "domains": [
     "cyber"
   ],
   "gaps": [
-    "The official LAS depositary page and its ratification table were unreachable from this environment on 24 November 2026; no current party-by-party count is asserted.",
+    "The official LAS depositary page is no longer reachable; an archived copy of the treaty page (23 April 2024) links the ratification table, but the table PDF was not retrievable from the archive, so no current party-by-party count is asserted.",
     "The English text was read from a reproduction of the official translation; the Arabic original was not acquired.",
     "No full text, citable units or original file is stored in this record; it is metadata-only.",
     "National implementation, reservations and the Convention's institutional practice are not assessed.",
@@ -55,7 +55,7 @@
     "counts": {
       "parties": {
         "basis": "unknown",
-        "note": "Entry into force in 2014 establishes that at least seven ratifications were deposited. The current LAS table could not be read; no party total is asserted.",
+        "note": "Entry into force in 2014 establishes that at least seven ratifications were deposited. The archived LAS page links the table, but the table itself was not readable; no party total is asserted.",
         "source_ids": [
           "unodc-compendium",
           "las-ratification-table"
@@ -65,7 +65,7 @@
       },
       "ratifications": {
         "basis": "unknown",
-        "note": "No current ratification total is asserted; the LAS depositary table was inaccessible.",
+        "note": "No current ratification total is asserted; the archived LAS treaty page links the table, but the table was not retrievable.",
         "source_ids": [
           "las-ratification-table"
         ],
@@ -82,7 +82,7 @@
       "unodc-compendium",
       "las-ratification-table"
     ],
-    "summary": "The Convention is in force, but the current number of Parties is not verified. A 2015 national reproduction lists 22 Arab States in its signature/ratification table, with the United Arab Emirates recorded as having ratified on 21 September 2011; that table is incomplete and is not used to assert a current party count.",
+    "summary": "The Convention is in force, but the current number of Parties is not verified. The archived LAS treaty page was checked, but its ratification table was not retrievable. A 2015 national reproduction lists 22 Arab States in its signature/ratification table, with the United Arab Emirates recorded as having ratified on 21 September 2011; that table is incomplete and is not used to assert a current party count.",
     "unknowns": [
       "Current Parties and the date of each deposit.",
       "Reservations, declarations and objections.",
@@ -94,7 +94,8 @@
     "assertions": [],
     "discovered_via": "UNODC pre-ratification compendium and the League of Arab States legal-network pages; cross-checked against the English text reproduction.",
     "search_dates": [
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ]
   },
   "related": [
@@ -136,22 +137,22 @@
   },
   "sources": [
     {
-      "accessed": "2026-11-24",
-      "http_status": null,
+      "accessed": "2026-11-25",
+      "http_status": 200,
       "id": "las-convention-text",
       "kind": "official_primary",
-      "note": "Official LAS legal-network copy of the Convention (Arabic and English). The endpoint was unreachable from this environment; the English reproduction was used for the text read.",
+      "note": "Archived copy (Internet Archive, snapshot 23 April 2024) of the official LAS legal-network PDF of the Convention, in Arabic with an English translation. The live leagueofarabstates.net host no longer responds; the archived copy is used and the original is not stored in this corpus.",
       "publisher": "League of Arab States",
-      "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+      "url": "https://web.archive.org/web/20240423123401/https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
     },
     {
-      "accessed": "2026-11-24",
-      "http_status": null,
+      "accessed": "2026-11-25",
+      "http_status": 200,
       "id": "las-ratification-table",
       "kind": "official_primary",
-      "note": "Official LAS document 'Ratification of the Arab Convention on Combating Information Technology Offences'; the endpoint was unreachable, so the current table was not read.",
+      "note": "Archived copy (Internet Archive, snapshot 23 April 2024) of the LAS legal-network treaty page for RID 73, which links the Convention text and the ratification table. The linked ratification PDF was not retrievable from the archive in this environment, so no current party table was read.",
       "publisher": "League of Arab States",
-      "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%8A%D9%82%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D9%87%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+      "url": "https://web.archive.org/web/20240423123313/http://www.leagueofarabstates.net/ar/legalnetwork/Pages/agreements_details.aspx?RID=73"
     },
     {
       "accessed": "2026-11-24",
@@ -165,7 +166,7 @@
     }
   ],
   "status": "in_force",
-  "status_note": "In force since 7 February 2014, 30 days after the seventh instrument was deposited. The current number of Parties is unknown, not zero: the LAS depositary table could not be retrieved.",
+  "status_note": "In force since 7 February 2014, 30 days after the seventh instrument was deposited. The current number of Parties is unknown, not zero: the archived LAS treaty page links the table, but the table could not be retrieved.",
   "title": {
     "english": "Arab Convention on Combating Information Technology Offences",
     "official": "Arab Convention on Combating Information Technology Offences",
@@ -187,12 +188,12 @@
         "result": "Article 19 requires ratification, acceptance, approval or accession; the General Secretariat is depositary; the Convention is open to LAS members."
       },
       {
-        "check": "Official LAS depositary page attempted.",
-        "date": "2026-11-24",
-        "result": "The LAS endpoint was unreachable from this environment; no current party count was taken from it."
+        "check": "Archived LAS treaty page checked.",
+        "date": "2026-11-25",
+        "result": "The Internet Archive snapshot of the LAS treaty page links the Convention text and the ratification table; the table PDF was not retrievable, so no current party count was taken from it."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata and legal nature verified. No full text or party table is stored; the current party count and reservations remain unknown."
+    "notes": "Metadata and legal nature verified. No full text or party table is stored; the archived treaty page was checked but its table was not readable; the current party count and reservations remain unknown."
   }
 }

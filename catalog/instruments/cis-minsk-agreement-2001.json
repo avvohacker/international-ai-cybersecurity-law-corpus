@@ -6,7 +6,7 @@
     "entered_into_force": "2002-03-14",
     "notes": "Signed at Minsk on 1 June 2001 by the CIS Heads of State. UNODC records entry into force on 14 March 2002 after three instruments. The 2018 Dushanbe Agreement replaces this Agreement between the States that become parties to it; for States that have not ratified the Dushanbe Agreement, the Minsk Agreement remains in force. The CIS depositary does not publish a current party table on the document page, so no current party count is asserted.",
     "signed": "2001-06-01",
-    "verified_on": "2026-11-24"
+    "verified_on": "2026-11-25"
   },
   "domains": [
     "cyber"
@@ -14,7 +14,7 @@
   "gaps": [
     "The CIS Executive Committee confirms that the Agreement is in force but does not display a current party-by-party table; no current party count is asserted.",
     "The 2018 Dushanbe Agreement replaces this Agreement between its Parties, but the exact set of States for which the Minsk Agreement remains in force is not verified.",
-    "Only the Russian authentic text and an English translation were read; no full text, citable units or original file is stored in this record.",
+    "The English translation is stored and segmented; the Russian authentic text is linked through the CIS Executive Committee page but is not stored or segmented.",
     "National implementation and reservations are not assessed.",
     "The Agreement creates no AI-specific obligation."
   ],
@@ -130,7 +130,7 @@
   },
   "rights": {
     "licence": "CIS official text terms",
-    "note": "Official CIS text; reproduction is subject to the Commonwealth's terms. No full text is stored in this corpus.",
+    "note": "Official CIS text; reproduction is subject to the Commonwealth's terms. The English translation is an official secondary reproduction; it is stored for verification, not as an authentic text.",
     "status": "public_official_text",
     "url": "https://eccis.org/"
   },
@@ -156,18 +156,26 @@
       "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf"
     },
     {
-      "accessed": "2026-11-24",
+      "accessed": "2026-11-25",
       "http_status": 200,
       "id": "cis-minsk-english",
       "kind": "official_secondary",
       "language": "en",
-      "note": "English translation of the Agreement reproduced by the Azerbaijani prosecutor training centre; used to check the substantive provisions.",
+      "note": "Archived copy (Internet Archive, snapshot 20 March 2022) of the English translation reproduced by the Prosecutor General's Office of Azerbaijan. The live copat.gov.az host fails TLS certificate verification from this environment.",
       "publisher": "Prosecutor General's Office of Azerbaijan",
-      "url": "https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf"
+      "url": "https://web.archive.org/web/20220320005205/https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf"
     }
   ],
   "status": "in_force",
   "status_note": "In force since 14 March 2002. The 2018 Dushanbe Agreement replaces it between the States that become parties to that Agreement; for other CIS States it may remain in force. The current party list is not published on the CIS document page.",
+  "text": {
+    "extraction_note": "Full English translation extracted from the archived 8-page PDF reproduced by the Prosecutor General's Office of Azerbaijan. The translation is not an authentic text; the Russian original remains the authentic version. Segmentation follows the 17 articles of the Agreement.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
+  },
   "title": {
     "english": "Agreement on Cooperation among the Member States of the Commonwealth of Independent States in Combating Offences relating to Computer Information",
     "official": "Соглашение о сотрудничестве государств – участников Содружества Независимых Государств в борьбе с преступлениями в сфере компьютерной информации",
@@ -189,9 +197,14 @@
         "check": "Substantive provisions checked in an English translation.",
         "date": "2026-11-24",
         "result": "Criminalisation, harmonisation and law-enforcement cooperation duties are present; no AI-specific provision."
+      },
+      {
+        "check": "English translation acquired and segmented.",
+        "date": "2026-11-25",
+        "result": "8-page PDF acquired from the Internet Archive; 17 article-level units generated from the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is metadata-only and is not mapped."
+    "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is not mapped. The English translation is stored and segmented, but it is not an authentic text; the Russian original is the authentic version."
   }
 }

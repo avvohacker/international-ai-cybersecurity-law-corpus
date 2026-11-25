@@ -51,7 +51,9 @@ def main() -> int:
             )
         derived = [
             ("text/en.txt", "text", "text/plain; charset=utf-8"),
+            ("text/fr.txt", "text", "text/plain; charset=utf-8"),
             ("pages.json", "metadata", "application/json"),
+            ("pages-fr.json", "metadata", "application/json"),
             ("units.jsonl", "units", "application/x-ndjson"),
         ]
         for rel, role, media in derived:

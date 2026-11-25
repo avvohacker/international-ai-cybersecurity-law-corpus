@@ -4,14 +4,14 @@
   "dates": {
     "adopted": "2024-09-05",
     "notes": "Dated Vilnius, 5 September 2024; the Convention was adopted by the Committee of Ministers on 17 May 2024.",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-25"
   },
   "domains": [
     "ai"
   ],
   "gaps": [
     "Not an authoritative interpretation.",
-    "Full text not acquired (HTTP 403).",
+    "Article-by-article commentary is stored and segmented, but its legal persuasiveness is not assessed.",
     "Article-by-article commentary not verified in detail."
   ],
   "id": "coe-cets-225-explanatory-report",
@@ -54,19 +54,19 @@
   },
   "rights": {
     "licence": "Council of Europe copyright",
-    "note": "Official Council of Europe document; no open licence identified. Metadata only in this corpus.",
+    "note": "Official Council of Europe document; no open licence identified. A 33-page archived copy is stored in this corpus for verification and citation.",
     "status": "public_official_text",
     "url": "https://www.coe.int/en/web/portal/disclaimer"
   },
   "sources": [
     {
-      "accessed": "2026-11-23",
-      "http_status": null,
+      "accessed": "2026-11-25",
+      "http_status": 200,
       "id": "coe-report",
       "kind": "official_primary",
-      "note": "Official Explanatory Report; direct download returned HTTP 403 to automated clients, but the opening and structure were read through the extraction tool.",
+      "note": "Archived copy (Internet Archive, snapshot 17 November 2026) of the official English Explanatory Report. The live rm.coe.int endpoint returned HTTP 403 to automated clients.",
       "publisher": "Council of Europe Treaty Office",
-      "url": "https://rm.coe.int/1680afae67"
+      "url": "https://web.archive.org/web/20261117082757/https://rm.coe.int/1680afae67"
     },
     {
       "accessed": "2026-11-23",
@@ -79,6 +79,14 @@
   ],
   "status": "adopted",
   "status_note": "Published with the Convention. Non-binding interpretive material.",
+  "text": {
+    "extraction_note": "Full English text extracted from the archived 33-page PDF dated Vilnius, 5 September 2024. Running headers, underscore rules and page numbers remain. Segmentation follows the numbered paragraphs; the indented list of human rights instruments inside paragraph 39 is kept within that paragraph.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "numbered"
+  },
   "title": {
     "official": "Explanatory Report to the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
     "short": "CETS 225 Explanatory Report"
@@ -94,9 +102,14 @@
         "check": "Relationship to the Convention checked on the official CoE page.",
         "date": "2026-11-23",
         "result": "Linked as the Explanatory Report to CETS 225."
+      },
+      {
+        "check": "Full text acquired from the archived official PDF and segmented.",
+        "date": "2026-11-25",
+        "result": "33-page PDF acquired and stored; 99 numbered-paragraph units generated."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Only the opening and structure were read; the full report was not acquired or segmented."
+    "notes": "The full report is stored and segmented. It expressly does not constitute an authoritative interpretation of CETS 225."
   }
 }

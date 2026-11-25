@@ -7,7 +7,7 @@
     "notes": "Adopted by the Committee of Ministers on 17 May 2024 at its 133rd Session; opened for signature at Vilnius on 5 September 2024. Published in the EU Official Journal on 13 May 2026 (OJ L, 2026/1081). Not in force on the verification date; party data checked against the Treaty Office chart status of 23 November 2026.",
     "opened_for_signature": "2024-09-05",
     "published": "2026-05-13",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-25"
   },
   "domains": [
     "ai"
@@ -15,7 +15,7 @@
   "gaps": [
     "The Convention is not in force; the Conference of the Parties, its rules of procedure and the reporting format have therefore not been constituted.",
     "No reservation or objection is recorded on the Treaty Office chart as of 2026-11-23; Article 34 permits only the reservation provided for in Article 33(1) (federal clause).",
-    "The direct CoE PDF endpoint (https://rm.coe.int/1680afae3c) returned HTTP 403 (Cloudflare) on 25 November 2026. A 12-page Council of Europe Treaty Series PDF of CETS 225, reproduced in an OHCHR submission annex, was acquired and stored (see catalog/acquisitions.json). The certified bilingual copy in the corrected French version adopted at the 1527th meeting of the Ministers' Deputies on 30 April 2025 was also acquired and stored; it is dated Strasbourg, 20 May 2025 and includes the authentic French text. The French text is not separately segmented, and the English column of the certified copy has not been re-diffed page by page against the stored English transcription.",
+    "The direct CoE PDF endpoint (https://rm.coe.int/1680afae3c) returned HTTP 403 (Cloudflare) on 25 November 2026. A 12-page Council of Europe Treaty Series PDF reproduced in an OHCHR submission annex, and the certified bilingual copy in the corrected French version dated Strasbourg, 20 May 2025, were acquired and stored (see catalog/acquisitions.json). The authentic French text is extracted to text/fr.txt but is not segmented into units; the English column of the certified copy has not been re-diffed page by page against the stored English transcription.",
     "No implementing protocol or additional protocol has been adopted.",
     "The Convention excludes national defence and may exclude national-security activities; coverage of military AI is therefore not provided by this treaty.",
     "The Ukrainian declaration was issued in English and Ukrainian; only the English rendering is reproduced."
@@ -39,7 +39,7 @@
       "en",
       "fr"
     ],
-    "note": "Article 36 final clause: done in English and French, both texts equally authentic. The Council of Europe Treaty Office also lists German, Italian and Russian texts; the EU Official Journal publishes translations in all EU official languages. Only English and French are authentic for the treaty. The certified bilingual copy in the corrected French version is stored; the English text is segmented, the French text is not separately extracted.",
+    "note": "Article 36 final clause: done in English and French, both texts equally authentic. The Council of Europe Treaty Office also lists German, Italian and Russian texts; the EU Official Journal publishes translations in all EU official languages. The English text is segmented; the authentic French text is stored as text/fr.txt with page offsets but is not segmented into units.",
     "translations": [
       "de",
       "it",
@@ -387,7 +387,16 @@
   "status": "not_in_force",
   "status_note": "As of the Treaty Office chart status date 23 November 2026: 21 signatories in total (19 signatures not followed by ratification and 2 ratifications), and 19 signatures without ratification. The two ratifications are Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). Article 30(3) requires five ratifications including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. Not in force.",
   "text": {
-    "extraction_note": "The stored text is textually identical, on a whitespace-insensitive comparison, to the 12-page Council of Europe Treaty Series PDF of CETS 225 acquired on 25 November 2026. Running headers ('CETS 225 – Artificial Intelligence, 5.IX.2024'), underscore rules, page numbers and line wrapping were removed. The PDF's text layer inserts occasional intra-word spaces; whitespace normalisation removes them. Article headings and paragraph breaks are preserved. No wording changes were made. The page map uses the 12 pages of that PDF. The certified bilingual copy acquired on 25 November 2026 includes the corrected French text; its English column was not separately diffed page by page, and its French text is not segmented.",
+    "extraction_note": "The stored English text is textually identical, on a whitespace-insensitive comparison, to the 12-page Council of Europe Treaty Series PDF of CETS 225 acquired on 25 November 2026. Running headers, underscore rules, page numbers and line wrapping were removed. The certified bilingual copy acquired on 25 November 2026 includes the corrected French text; the authentic French pages (3, 5, ..., 27 of the 27-page PDF) were extracted to text/fr.txt with page offsets in pages-fr.json. The French text is not segmented into units, and the English column of the certified copy has not been re-diffed page by page against the stored English transcription.",
+    "files": [
+      {
+        "language": "fr",
+        "pages": "pages-fr.json",
+        "path": "text/fr.txt",
+        "role": "authentic_text",
+        "segmented": false
+      }
+    ],
     "full_text": true,
     "manifest": "manifest.json",
     "primary_language": "en",
@@ -434,10 +443,15 @@
       {
         "check": "Certified bilingual copy acquired and inspected.",
         "date": "2026-11-25",
-        "result": "The 27-page bilingual PDF at rm.coe.int/1680b680bc states on page 1 that the French text is corrected under the Committee of Ministers decision of 30 April 2025; the final page is the certified copy dated Strasbourg, 20 May 2025. SHA-256 591b9daf1ee6a2ad2fe84ef896e964f656c97fa1fff8332eb6ebc64cc82f865c; stored in the manifest. The French text is not separately segmented."
+        "result": "The 27-page bilingual PDF at rm.coe.int/1680b680bc states on page 1 that the French text is corrected under the Committee of Ministers decision of 30 April 2025; the final page is the certified copy dated Strasbourg, 20 May 2025. SHA-256 591b9daf1ee6a2ad2fe84ef896e964f656c97fa1fff8332eb6ebc64cc82f865c; stored in the manifest. The authentic French pages were extracted to text/fr.txt with page offsets; the French text is not segmented."
+      },
+      {
+        "check": "Authentic French text extracted from the certified copy.",
+        "date": "2026-11-25",
+        "result": "Pages 3, 5, ..., 27 of the bilingual PDF extracted to text/fr.txt (35,876 characters) with page offsets in pages-fr.json; no translation or wording change introduced."
       }
     ],
     "level": "full_text_checked",
-    "notes": "Full text stored as a transcription. A 12-page Council of Europe Treaty Series PDF reproduced in an OHCHR submission annex was acquired on 25 November 2026; after removing running headers, underscore rules, page numbers and line wrapping, all 12 pages match the stored text. The certified bilingual copy in the corrected French version was acquired on 25 November 2026 and is stored; the French text is not separately segmented. The direct CoE endpoint returned HTTP 403. The official chart and declarations page were read through a rendered-text extraction of the official Treaty Office URLs because the site's React assets returned HTTP 403 in the cloud browser; the official URLs and status date are recorded. Hash integrity covers the stored PDFs, text, pages and units."
+    "notes": "Full English text stored as a transcription, matched page by page against a 12-page Council of Europe Treaty Series PDF. The certified bilingual copy in the corrected French version is stored; its authentic French pages are extracted to text/fr.txt but not segmented. The direct CoE endpoint returned HTTP 403. Hash integrity covers the stored PDFs, English and French texts, page maps and English units."
   }
 }

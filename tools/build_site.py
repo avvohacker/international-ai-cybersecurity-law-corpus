@@ -174,6 +174,14 @@ NUMBER_WORDS = {
     10: "ten",
     11: "eleven",
     12: "twelve",
+    13: "thirteen",
+    14: "fourteen",
+    15: "fifteen",
+    16: "sixteen",
+    17: "seventeen",
+    18: "eighteen",
+    19: "nineteen",
+    20: "twenty",
 }
 
 
@@ -271,11 +279,69 @@ NAME_ALIASES = {
 
 TEAL = "#0e6b62"
 ACT_BLUE = "#5a7fbd"
-CHINA_RED = "#c8102e"
-INDIA_BROWN = "#a67c52"
+CHINA_RED = "#a3282f"
+INDIA_BROWN = "#a85f1f"
 RATIFIED_BLUE = "#172e6e"
 ORG_MEMBER_BLUE = "#a9c0e0"
 ISSUED_GOLD = "#a67c52"
+
+# Map fills are flag-derived but muted for institutional use: a dark act tone,
+# a deeper ratified tone and a soft tone for member States of a participating
+# international organisation that did not act in their own right.
+MAP_TONES = {
+    "france": {"act": "#2f4a72", "deep": "#1f3350", "light": "#9aa9c2"},
+    "usa": {"act": "#39536f", "deep": "#263a4f", "light": "#a3b1c2"},
+    "uk": {"act": "#2c3f63", "deep": "#1c2a45", "light": "#98a4bd"},
+    "china": {"act": "#a3282f", "deep": "#7d1d23", "light": "#d6a5a8"},
+    "india": {"act": "#a85f1f", "deep": "#7f4514", "light": "#d9b892"},
+    "brazil": {"act": "#8a6a1c", "deep": "#684f12", "light": "#cdbb85"},
+    "au": {"act": "#2f6b4b", "deep": "#204c34", "light": "#a2c3ad"},
+    "coe": {"act": "#3f7f96", "deep": "#2b5d6f", "light": "#a9c8d2"},
+    "oecd": {"act": "#6f97ba", "deep": "#4e7193", "light": "#bdd0e1"},
+    "un": {"act": "#4f83b2", "deep": "#35608a", "light": "#aec7de"},
+    "korea": {"act": "#3a6584", "deep": "#274a63", "light": "#a6bccd"},
+}
+MAP_TONES_BY_KIND = {
+    "budapest": "coe",
+    "un-cyber": "un",
+    "malabo": "au",
+    "ets189": "coe",
+    "cets224": "coe",
+    "paris-call": "france",
+    "oecd-cyber": "oecd",
+    "pall-mall": "uk",
+    "paris": "france",
+    "new-delhi": "india",
+    "san-francisco": "usa",
+    "bletchley": "uk",
+    "seoul": "korea",
+    "military": "usa",
+    "cets": "coe",
+    "waico": "china",
+    "pax": "usa",
+}
+
+
+def map_fills(kind: str) -> dict[str, str]:
+    """Return the status palette for one map.
+
+    The base tone follows the flag of the depositing or host government; the
+    lighter tone is reserved for organisation member States that did not act
+    individually. Brazil is the only non-member adherent of the OECD digital
+    security Recommendation, so it keeps a distinct ochre tone.
+    """
+    tone = MAP_TONES[MAP_TONES_BY_KIND[kind]]
+    fills = {
+        "endorsed": tone["act"],
+        "signed": tone["act"],
+        "issued": tone["act"],
+        "ratified": tone["deep"],
+        "organisation": tone["light"],
+        "nonmember_endorsed": tone["act"],
+    }
+    if kind == "oecd-cyber":
+        fills["nonmember_endorsed"] = MAP_TONES["brazil"]["act"]
+    return fills
 LAND = "#e3ddd0"
 OCEAN = "#eaf0ef"
 INK = "#17150f"
@@ -1166,44 +1232,44 @@ def main() -> int:
     new_delhi_org_notes = add_org_members(new_delhi_status, new_delhi, "endorsed")
 
     endorsement_legend = [
-        {"color": ACT_BLUE, "label": "State: endorsed"},
-        {"color": LAND, "label": "State: not endorsed"},
+        {"color": "act", "label": "State: endorsed"},
+        {"color": "none", "label": "State: not endorsed"},
     ]
     oecd_cyber_legend = [
-        {"color": ACT_BLUE, "label": "State: OECD member adherent"},
-        {"color": INDIA_BROWN, "label": "Brazil: only non-member adherent"},
-        {"color": LAND, "label": "State: not an adherent"},
+        {"color": "act", "label": "State: OECD member adherent"},
+        {"color": "nonmember", "label": "Brazil: only non-member adherent"},
+        {"color": "none", "label": "State: not an adherent"},
     ]
     pall_mall_legend = [
-        {"color": ACT_BLUE, "label": "State: supporting State"},
-        {"color": LAND, "label": "State: not a supporting State"},
+        {"color": "act", "label": "State: supporting State"},
+        {"color": "none", "label": "State: not a supporting State"},
     ]
     new_delhi_legend = [
-        {"color": INDIA_BROWN, "label": "State: endorsed"},
-        {"color": LAND, "label": "State: not endorsed"},
+        {"color": "act", "label": "State: endorsed"},
+        {"color": "none", "label": "State: not endorsed"},
     ]
     cets_legend = [
-        {"color": RATIFIED_BLUE, "label": "State: ratified"},
-        {"color": ACT_BLUE, "label": "State: signed only"},
-        {"color": LAND, "label": "State: no signature"},
+        {"color": "ratified", "label": "State: ratified"},
+        {"color": "act", "label": "State: signed only"},
+        {"color": "none", "label": "State: no signature"},
     ]
     cyber_party_legend = [
-        {"color": RATIFIED_BLUE, "label": "State: party (ratification or accession)"},
-        {"color": ACT_BLUE, "label": "State: signed only"},
-        {"color": LAND, "label": "State: no recorded act"},
+        {"color": "ratified", "label": "State: party (ratification or accession)"},
+        {"color": "act", "label": "State: signed only"},
+        {"color": "none", "label": "State: no recorded act"},
     ]
     cyber_signature_legend = [
-        {"color": RATIFIED_BLUE, "label": "State: ratified"},
-        {"color": ACT_BLUE, "label": "State: signed only"},
-        {"color": LAND, "label": "State: no recorded act"},
+        {"color": "ratified", "label": "State: ratified"},
+        {"color": "act", "label": "State: signed only"},
+        {"color": "none", "label": "State: no recorded act"},
     ]
     waico_legend = [
-        {"color": CHINA_RED, "label": "State: signed only"},
-        {"color": LAND, "label": "State: no signature"},
+        {"color": "act", "label": "State: signed only"},
+        {"color": "none", "label": "State: no signature"},
     ]
     political_signature_legend = [
-        {"color": ACT_BLUE, "label": "State: political signatory"},
-        {"color": LAND, "label": "State: not a signatory"},
+        {"color": "act", "label": "State: political signatory"},
+        {"color": "none", "label": "State: not a signatory"},
     ]
 
     def render_party_list(inst: dict, default: str, party_label: str = "") -> str:
@@ -1387,20 +1453,32 @@ def main() -> int:
         fills: dict[str, str] | None = None,
         party_label: str = "",
     ) -> dict:
+        fills = fills or map_fills(kind)
+        colours = {
+            "act": fills["signed"],
+            "ratified": fills["ratified"],
+            "organisation": fills["organisation"],
+            "nonmember": fills["nonmember_endorsed"],
+            "none": LAND,
+        }
         if org_notes:
             legend = (
                 legend[:-1]
                 + [
                     {
-                        "color": ORG_MEMBER_BLUE,
+                        "color": "organisation",
                         "label": "State: member of a participating organisation",
                     }
                 ]
                 + [legend[-1]]
             )
             description += (
-                " Pale blue: member States of a participating organisation without an individual act."
+                " Lighter fill: member States of a participating organisation without an individual act."
             )
+        legend = [
+            {"color": colours.get(item["color"], item["color"]), "label": item["label"]}
+            for item in legend
+        ]
         org_html = "".join(
             f'<p class="map-org-note">{esc(text)}</p>' for text in org_notes
         )
@@ -1474,7 +1552,7 @@ def main() -> int:
             "budapest",
             "Budapest Convention",
             f"{budapest_party_count} Parties + {len(budapest_signatories)} signatories",
-            f"World map. Dark blue: {budapest_party_count} States Parties by ratification or accession. Medium blue: {len(budapest_signatories)} States that signed only. Sand: States with no recorded act.",
+            f"World map. Darker fill: {budapest_party_count} States Parties by ratification or accession. Filled: {len(budapest_signatories)} States that signed only. Sand: States with no recorded act.",
             budapest_status,
             [],
             cyber_party_legend,
@@ -1495,7 +1573,7 @@ def main() -> int:
             "un-cyber",
             "UN Cybercrime Convention",
             f"{len(un_cyber_states)} States + EU · {un_cyber_party_count} Parties",
-            f"World map. Dark blue: {un_cyber_party_count} States Parties. Medium blue: {un_cyber_signed_states} States that signed only. Sand: States with no recorded act. Pale blue: EU member States covered by the European Union's signature without an individual signature. The European Union is not shown on the State map.",
+            f"World map. Darker fill: {un_cyber_party_count} States Parties. Filled: {un_cyber_signed_states} States that signed only. Sand: States with no recorded act. Lighter fill: EU member States covered by the European Union's signature without an individual signature. The European Union is not shown on the State map.",
             un_cyber_status,
             un_cyber_org_notes,
             cyber_signature_legend,
@@ -1517,7 +1595,7 @@ def main() -> int:
             "malabo",
             "Malabo Convention",
             f"{malabo_party_count} Parties + {len(malabo_signatories)} signatories",
-            f"World map. Dark blue: {malabo_party_count} States Parties. Medium blue: {len(malabo_signatories)} States that signed only. Sand: States with no recorded act; the AU list covers 55 member States.",
+            f"World map. Darker fill: {malabo_party_count} States Parties. Filled: {len(malabo_signatories)} States that signed only. Sand: States with no recorded act; the AU list covers 55 member States.",
             malabo_status,
             [],
             cyber_party_legend,
@@ -1539,7 +1617,7 @@ def main() -> int:
             "ets189",
             "ETS 189",
             f"{ets189_party_count} Parties + {len(ets189_signatories)} signatories",
-            f"World map. Dark blue: {ets189_party_count} States Parties by ratification or accession. Medium blue: {len(ets189_signatories)} States that signed only. Sand: States with no recorded act.",
+            f"World map. Darker fill: {ets189_party_count} States Parties by ratification or accession. Filled: {len(ets189_signatories)} States that signed only. Sand: States with no recorded act.",
             ets189_status,
             [],
             cyber_party_legend,
@@ -1560,7 +1638,7 @@ def main() -> int:
             "cets224",
             "CETS 224",
             f"{len(cets224_states)} signatories · {cets224_ratification_count} ratifications",
-            f"World map. Dark blue: {cets224_ratification_count} States that ratified. Medium blue: {len(cets224_states) - cets224_ratification_count} States that signed only. Sand: States with no recorded act.",
+            f"World map. Darker fill: {cets224_ratification_count} States that ratified. Filled: {len(cets224_states) - cets224_ratification_count} States that signed only. Sand: States with no recorded act.",
             cets224_status,
             [],
             cyber_signature_legend,
@@ -1582,7 +1660,7 @@ def main() -> int:
             "paris-call",
             "Paris Call 2018",
             f"{len(paris_call_states)} States + {org_short(paris_call)} · current 24 November 2026",
-            f"World map. Medium blue: {len(paris_call_states)} States listed as supporters of the Paris Call. Sand: States not listed. The European Union is a separate supporter and is not shown on the State map.",
+            f"World map. Filled: {len(paris_call_states)} States listed as supporters of the Paris Call. Sand: States not listed. The European Union is a separate supporter and is not shown on the State map.",
             paris_call_status,
             paris_call_org_notes,
             endorsement_legend,
@@ -1603,7 +1681,7 @@ def main() -> int:
             "oecd-cyber",
             "OECD Digital Security 2019",
             f"{len(oecd_cyber_states)} States · 38 OECD members + Brazil",
-            f"World map. Medium blue: the 38 OECD member States listed as adherents of the Recommendation. Brown: Brazil, the only non-member adherent. Sand: States not listed. The list is maintained in the OECD Compendium, not a treaty depositary.",
+            f"World map. Filled: the 38 OECD member States listed as adherents of the Recommendation. Ochre: Brazil, the only non-member adherent. Sand: States not listed. The list is maintained in the OECD Compendium, not a treaty depositary.",
             oecd_cyber_status,
             [],
             oecd_cyber_legend,
@@ -1627,7 +1705,7 @@ def main() -> int:
             "pall-mall",
             "Pall Mall Code 2025",
             f"{len(pall_mall_states)} supporting States · 23 October 2025",
-            f"World map. Medium blue: {len(pall_mall_states)} States listed as supporting States of the Code of Practice. Sand: States not listed. The Code is voluntary and non-binding.",
+            f"World map. Filled: {len(pall_mall_states)} States listed as supporting States of the Code of Practice. Sand: States not listed. The Code is voluntary and non-binding.",
             pall_mall_status,
             [],
             pall_mall_legend,
@@ -1649,7 +1727,7 @@ def main() -> int:
             "paris",
             "Paris 2025",
             f"{len(paris_states)} States + {org_short(paris)}",
-            f"World map. Medium blue: {len(paris_states)} States that endorsed the Paris Statement. Sand: States with no recorded endorsement.",
+            f"World map. Filled: {len(paris_states)} States that endorsed the Paris Statement. Sand: States with no recorded endorsement.",
             paris_status,
             paris_org_notes,
             endorsement_legend,
@@ -1664,7 +1742,7 @@ def main() -> int:
             "new-delhi",
             "New Delhi 2026",
             f"{len(new_delhi_states)} States + {org_short(new_delhi)}",
-            f"World map. Brown: {len(new_delhi_states)} States that endorsed the New Delhi Declaration. Sand: States with no recorded endorsement.",
+            f"World map. Orange: {len(new_delhi_states)} States that endorsed the New Delhi Declaration. Sand: States with no recorded endorsement.",
             new_delhi_status,
             new_delhi_org_notes,
             new_delhi_legend,
@@ -1677,14 +1755,13 @@ def main() -> int:
             legend_note=(
                 f"{len(new_delhi_states)} endorsing States + EU + IFAD"
             ),
-            fills={"endorsed": INDIA_BROWN},
         ),
         map_figure(
             san_francisco,
             "san-francisco",
             "San Francisco 2026",
             f"{len(san_francisco_states)} political signatories · 15 November 2026",
-            f"World map. Medium blue: {len(san_francisco_states)} governments that signed the San Francisco Declaration. Sand: States with no recorded signature. The declaration is political, not a treaty.",
+            f"World map. Filled: {len(san_francisco_states)} governments that signed the San Francisco Declaration. Sand: States with no recorded signature. The declaration is political, not a treaty.",
             san_francisco_status,
             [],
             political_signature_legend,
@@ -1703,7 +1780,7 @@ def main() -> int:
             "bletchley",
             "Bletchley 2023",
             f"{len(bletchley_states)} States + {org_short(bletchley)}",
-            f"World map. Medium blue: {len(bletchley_states)} States that endorsed the Bletchley Declaration. Sand: States with no recorded endorsement.",
+            f"World map. Filled: {len(bletchley_states)} States that endorsed the Bletchley Declaration. Sand: States with no recorded endorsement.",
             bletchley_status,
             bletchley_org_notes,
             endorsement_legend,
@@ -1717,7 +1794,7 @@ def main() -> int:
             "seoul",
             "Seoul 2024",
             f"{len(seoul_states)} States + {org_short(seoul)}",
-            f"World map. Medium blue: {len(seoul_states)} States that adopted the Seoul Declaration. Sand: States with no recorded endorsement.",
+            f"World map. Filled: {len(seoul_states)} States that adopted the Seoul Declaration. Sand: States with no recorded endorsement.",
             seoul_status,
             seoul_org_notes,
             endorsement_legend,
@@ -1731,7 +1808,7 @@ def main() -> int:
             "military",
             "Military AI 2023",
             f"{len(military_states)} States",
-            f"World map. Medium blue: {len(military_states)} States that endorsed the Political Declaration on military AI. Sand: States with no recorded endorsement.",
+            f"World map. Filled: {len(military_states)} States that endorsed the Political Declaration on military AI. Sand: States with no recorded endorsement.",
             military_status,
             [],
             endorsement_legend,
@@ -1746,7 +1823,7 @@ def main() -> int:
             "cets",
             "CETS 225",
             f"{len(cets_states)} States + {org_short(cets)} · {len(cets_ratifications)} ratifications",
-            "World map. Dark blue: States that ratified CETS 225. Medium blue: States that signed only. Sand: States with no recorded signature.",
+            "World map. Darker fill: States that ratified CETS 225. Filled: States that signed only. Sand: States with no recorded signature.",
             cets_status,
             cets_org_notes,
             cets_legend,
@@ -1767,7 +1844,6 @@ def main() -> int:
             waico_status,
             [],
             waico_legend,
-            fills={"signed": CHINA_RED},
             note=(
                 f"Treaty signature, not ratification. {len(waico_states)} of the "
                 f"{reported_total(waico)} founding members reported by China's MFA are individually "
@@ -1789,7 +1865,7 @@ def main() -> int:
             "pax",
             "Pax Silica 2025",
             f"{len(pax_states)} States + {org_short(pax)}",
-            f"World map. Medium blue: {len(pax_states)} States that endorsed the Pax Silica Declaration. Sand: States with no recorded endorsement.",
+            f"World map. Filled: {len(pax_states)} States that endorsed the Pax Silica Declaration. Sand: States with no recorded endorsement.",
             pax_status,
             pax_org_notes,
             endorsement_legend,
@@ -1965,7 +2041,7 @@ def main() -> int:
 
     situation_html = f'''<div class="situation">
       <div class="situation-main">
-        <p class="situation-eyebrow">Situation at a glance</p>
+        <p class="situation-eyebrow">Overlook at a glance</p>
         <h3>Most of the record is non-binding or not confirmed in force.</h3>
         <p class="situation-lede">The corpus is broad but uneven: AI dominates by record count, treaty-based international instruments are a minority and only {international_in_force} of them are in force; only {map_count} records have a State-level map. The corpus contains {number_word(ai_count)} AI-specific treaties, CETS 225 and WAICO; the AI domain is mostly non-binding, while the cyber layer is smaller and more treaty-heavy. Read this page first; the maps and the timeline are the evidence behind these totals.</p>
         <p class="situation-breakdown"><strong>What “AI-domain” means.</strong> It is not {ai_domain_count} AI treaties. The AI domain is {ai_breakdown}. The cyber layer is {cyber_breakdown}. The two domains are counted separately; no record is in both.</p>
@@ -1992,7 +2068,7 @@ def main() -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>International AI and Cybersecurity Law — Atlas</title>
 <meta name="description" content="Verified instruments, maps, timeline and catalogue of international AI and cybersecurity law. The AI and cybersecurity layers are catalogued and counted separately.">
-<link rel="stylesheet" href="assets/style.css?v=30">
+<link rel="stylesheet" href="assets/style.css?v=31">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -2004,12 +2080,13 @@ def main() -> int:
     <p class="byline">{total} records · {ai_domain_count} AI-domain · {cyber_layer_count} cyber · {full_texts} full texts · {international_binding} treaty-based ({international_in_force} in force) · {internal_law} internal · {non_binding} non-binding</p>
     <nav class="toc" aria-label="Sections">
       <a href="#index">Index</a>
-      <a href="#form">01 Situation</a>
+      <a href="#form">01 Overlook</a>
       <a href="#maps">02 Instruments</a>
       <a href="#timeline">03 Timeline</a>
       <a href="#unseen">04 Reading room</a>
       <a href="#catalogue">05 Catalogue</a>
       <a href="#method">06 Method</a>
+      <a href="#links">07 Links</a>
     </nav>
   </div>
 </header>
@@ -2022,19 +2099,20 @@ def main() -> int:
       <div class="stats">{stats_html}</div>
       <p class="source-note"><strong>Coverage status.</strong> The catalogue has {ai_domain_count} AI-domain records and {cyber_only_count} cybersecurity-only record{'' if cyber_only_count == 1 else 's'}, with {joint_count} joint records. The cyber layer includes nine treaties (the Budapest Convention, its two protocols, the AU Malabo Convention, the UN Cybercrime Convention, the Arab Convention on IT Offences, the CIS 2018 Agreement, the CIS Minsk Agreement 2001 and the SCO Information Security Agreement 2009), three cyber internal-law acts (NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) and three non-binding instruments (the Paris Call, the OECD Digital Security Recommendation and the Pall Mall Code). Cyber standards and cooperation channels remain pending. See the <a href="{REPO}/blob/main/docs/cybersecurity-integration-plan.md" target="_blank" rel="noopener">integration plan</a>.</p>
       <div class="index-grid">
-        <a class="index-card" href="#form"><span class="index-number">01</span><strong>The corpus in one view</strong><span>Situation at a glance: legal form, domain split, evidence and map coverage, before the maps and the timeline.</span></a>
+        <a class="index-card" href="#form"><span class="index-number">01</span><strong>Overlook</strong><span>The corpus in one view: legal form, domain split, evidence and map coverage, before the maps and the timeline.</span></a>
         <a class="index-card" href="#maps"><span class="index-number">02</span><strong>The instruments</strong><span>{number_word(len(map_entries)).capitalize()} maps of the State-level acts recorded in the corpus: signatures, ratifications, accessions, endorsements and political signatures.</span></a>
         <a class="index-card" href="#timeline"><span class="index-number">03</span><strong>Timeline</strong><span>{total} instruments and {len(unseen_events)} events in one chronology: a box marks a record with a State-level map and opens it; records without a map and events are plain rows.</span></a>
         <a class="index-card" href="#unseen"><span class="index-number">04</span><strong>Reading room</strong><span>Off the record: legal doctrine, think-tank analysis and civil-society critique, the argument around the record, never used as evidence for it.</span></a>
         <a class="index-card" href="#catalogue"><span class="index-number">05</span><strong>Catalogue</strong><span>The filterable table of every record, with legal force, status, verification level and a link to the JSON.</span></a>
         <a class="index-card" href="#method"><span class="index-number">06</span><strong>Method</strong><span>Sources, hashes, validation, the difference between a declared and a verified count, and the limits of the corpus.</span></a>
+        <a class="index-card" href="#links"><span class="index-number">07</span><strong>Links</strong><span>The repository, the official source portals and the archives behind the records, in one place.</span></a>
       </div>
     </div>
   </section>
 
     <section id="form" class="section">
     <div class="wrap">
-      <p class="eyebrow">01 · Situation</p>
+      <p class="eyebrow">01 · Overlook</p>
       <h2>The corpus in one view</h2>
       <p class="lede">Before the maps and the timeline: what this corpus contains, how much of it has binding form and how much is in force, where the AI and cyber weight sits, and how much evidence has actually been read.</p>
       {situation_html}
@@ -2049,6 +2127,7 @@ def main() -> int:
       <div class="map-groups">
         {maps_html}
       </div>
+      <p class="source-note"><strong>Reading the colours.</strong> Each map takes its tone from the flag of the depositing or host government, muted for institutional use: the Council of Europe maps are azure, the UN map a deeper blue, the OECD map a lighter azure, France and the United States navy, the United Kingdom a deeper navy, China an institutional scarlet, India a dark saffron, Brazil a dark ochre and the African Union a dark green. A lighter tone marks member States of a participating international organisation that did not act in their own right. The palette describes the instrument's provenance; it is not a ranking or a statement of political alignment.</p>
       <p class="source-note">Boundaries: Natural Earth 1:110m Admin 0 Countries, public domain. The maps do not imply recognition of boundaries or sovereignty. “Endorsed” is used for political declarations, which create no treaty signature or ratification; “political signatory” is used for the San Francisco Declaration, which is not a treaty.</p>
       <p class="source-note"><strong>Selection.</strong> The {number_word(len(map_entries))} maps cover the instruments in the corpus with a published State-level list and a distinct legal act: {number_word(map_nonbinding_count)} non-binding instruments and {number_word(map_binding_count)} treaties. They include five of the nine cybersecurity treaties in the catalogue: the Budapest Convention, its two protocols, the AU Malabo Convention and the UN Cybercrime Convention. The Arab Convention, both CIS agreements and the SCO Agreement are catalogued but not mapped because their current depositary tables are not stable or publicly accessible. The San Francisco Declaration is mapped as ten political signatories. The BRICS statement is not mapped: it is a collective issue by a fixed 11-member group, and the record already lists those members; a map would only repeat the group's membership. Not mapped: instruments without a published State-level list, or where the act is not a signature, or where a map would add no information — the UNESCO Recommendation, strategies, codes and company commitments, the BRICS statement, the bilateral UK–US MOU and US–EU TTC commitment, the separate June 2026 AI Opportunity Statement, and the digital trade agreements, whose membership follows trade-partner logic rather than AI-governance alignment. The OECD digital-security map is retained because it shows Brazil as the only non-member adherent; it is otherwise an OECD membership map. The four internal-law acts (AI Act, NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive) are catalogue-only because they are not international instruments; they are not mapped as if they were treaties.</p>
     </div>
@@ -2137,6 +2216,48 @@ def main() -> int:
         <p><strong>Not legal advice.</strong> Before citing or relying on an instrument, check the official source and its current status.</p>
         <p><a href="{REPO}" target="_blank" rel="noopener">Repository and reproduction instructions</a> · <a href="{REPO}/blob/main/docs/methodology.md" target="_blank" rel="noopener">Methodology</a> · <a href="{REPO}/blob/main/docs/progress.md" target="_blank" rel="noopener">Remaining work</a></p>
       </div>
+    </div>
+  </section>
+
+  <section id="links" class="section">
+    <div class="wrap">
+      <p class="eyebrow">07 · Links and references</p>
+      <h2>Where the record comes from</h2>
+      <p class="lede">The corpus is reproducible: every record, stored text and generated file is in the repository, and every official source cited in a record is linked from the catalogue. These are the entry points.</p>
+      <div class="link-grid">
+        <div class="link-block">
+          <h3>Repository</h3>
+          <ul class="link-list">
+            <li><a href="{REPO}" target="_blank" rel="noopener">international-ai-cybersecurity-law-corpus</a> — source code, records, stored texts and build scripts.</li>
+            <li><a href="{REPO}/tree/main/catalog/instruments" target="_blank" rel="noopener">catalog/instruments/</a> — one JSON record per instrument, the source of truth for the atlas.</li>
+            <li><a href="{REPO}/tree/main/corpus" target="_blank" rel="noopener">corpus/</a> — stored originals, extracted texts and citable units.</li>
+            <li><a href="{REPO}/blob/main/docs/methodology.md" target="_blank" rel="noopener">Methodology</a> · <a href="{REPO}/blob/main/docs/coverage.md" target="_blank" rel="noopener">Coverage</a> · <a href="{REPO}/blob/main/docs/progress.md" target="_blank" rel="noopener">Remaining work</a> · <a href="{REPO}/blob/main/docs/research-log.md" target="_blank" rel="noopener">Research log</a>.</li>
+            <li><a href="{REPO}/blob/main/LICENSE" target="_blank" rel="noopener">Licence</a> — code and metadata; official texts remain the property of their owners.</li>
+          </ul>
+        </div>
+        <div class="link-block">
+          <h3>Official source portals</h3>
+          <ul class="link-list">
+            <li><a href="https://www.coe.int/en/web/conventions/" target="_blank" rel="noopener">Council of Europe Treaty Office</a> — CETS 224, CETS 225, ETS 189 and the Budapest Convention.</li>
+            <li><a href="https://treaties.un.org/" target="_blank" rel="noopener">United Nations Treaty Collection</a> — the UN Cybercrime Convention, the ICCPR and the VCLT.</li>
+            <li><a href="https://www.unodc.org/unodc/en/cybercrime/" target="_blank" rel="noopener">UNODC cybercrime programme</a> — the pre-ratification compendium and regional treaty factsheets.</li>
+            <li><a href="https://legalinstruments.oecd.org/" target="_blank" rel="noopener">OECD Legal Instruments</a> — the AI Recommendation and the digital security Recommendation.</li>
+            <li><a href="https://au.int/en/treaties" target="_blank" rel="noopener">African Union treaties</a> — the Malabo Convention and the AfCFTA Digital Trade Protocol.</li>
+            <li><a href="https://www.unesco.org/en/legal-affairs" target="_blank" rel="noopener">UNESCO Legal Affairs</a> — the 2021 AI Ethics Recommendation.</li>
+            <li><a href="https://www.leagueofarabstates.net/" target="_blank" rel="noopener">League of Arab States</a> — archived copies are used where the live host is unreachable.</li>
+          </ul>
+        </div>
+        <div class="link-block">
+          <h3>Data and archives</h3>
+          <ul class="link-list">
+            <li><a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a> — public-domain boundaries used by the maps.</li>
+            <li><a href="https://web.archive.org/" target="_blank" rel="noopener">Internet Archive</a> — archived copies of official pages and PDFs are labelled as such in each record.</li>
+            <li><a href="{REPO}/blob/main/catalog/acquisitions.json" target="_blank" rel="noopener">catalog/acquisitions.json</a> — URL, access date, byte count and SHA-256 for every stored original.</li>
+            <li><a href="{REPO}/blob/main/tools/audit_sources.py" target="_blank" rel="noopener">tools/audit_sources.py</a> — reruns the link audit and classifies every official source as reachable, blocked, broken or transient.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="source-note"><strong>Status of the links.</strong> The link audit runs separately from the offline build and is not part of <code>make test</code>. Where an official host no longer resolves, the record cites an Internet Archive snapshot and says so in the source note. A blocked response from an anti-bot host is not treated as a broken link.</p>
     </div>
   </section>
 </main>

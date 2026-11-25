@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 245394,
+      "media_type": "application/pdf",
+      "note": "Archived copy (Internet Archive, snapshot 27 September 2024) of the official four-page English PDF of the Paris Call for Trust and Security in Cyberspace, dated 12 November 2018. The live pariscall.international host no longer resolves from this environment.",
+      "path": "source/paris-call-2018-11-12-en.pdf",
+      "role": "original",
+      "sha256": "80ab847bf9f2500e718210feae544c941bb0d634a8d30722759a364a9c125a6d",
+      "source_url": "https://web.archive.org/web/20240927054607/https://pariscall.international/assets/files/paris-call.pdf"
+    },
+    {
+      "bytes": 5772,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "0c427ecdab99d2d5e2c83c314734f3493bb889b982900009a0ac628cc58c9022"
+    },
+    {
+      "bytes": 366,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "35dd663c20b4ff603fb3c8f934858e7fe7092c828388a4589de24dd13202cd0b"
+    },
+    {
+      "bytes": 6094,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "f71ae1955cfb2f6a288bb94d38475a01456e22595f7722be0a89772877a1a340"
+    }
+  ],
+  "instrument_id": "paris-call-cyberspace-2018",
+  "primary_text": "text/en.txt"
+}

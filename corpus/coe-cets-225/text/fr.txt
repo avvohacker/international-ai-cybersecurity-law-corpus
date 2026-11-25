@@ -1,0 +1,523 @@
+Préambule
+Les États membres du Conseil de l’Europe et les autres signataires de la présente Convention,
+Considérant que le but du Conseil de l’Europe est de réaliser une union plus étroite entre ses
+membres, fondée en particulier sur le respect des droits de l’homme, de la démocratie et de
+l'État de droit;
+Reconnaissant l'intérêt de favoriser la coopération entre les Parties à la présente Convention
+et d’étendre cette coopération à d’autres États qui partagent les mêmes valeurs;
+Conscients des développements rapides de la science et de la technologie, et des profonds
+changements induits par les activités mené es dans le cadre du cycle de vie des systèmes
+d'intelligence artificielle qui ont le potentiel de promouvoir la prospérité humaine et le bien -être
+des individus et de la société, le développement durable, l'égalité de genre et l'autonomisation
+de toutes les femmes et filles, ainsi que d'autres objectifs et intérêts importants, en renforçant
+le progrès et l'innovation;
+Reconnaissant que les activités menées dans le cadre du cycle de vie des systèmes
+d’intelligence artificielle peuvent offrir des opportunités sans précédents pour la protection et la
+promotion des droits de l’homme, de la démocratie et de l'État de droit;
+Préoccupés par le fait que certaines activités menées dans le cadre du cycle de vie des
+systèmes d'intelligence artificielle peuvent porter atteinte à la dignité humaine et à l'autonomie
+personnelle, aux droits de l'homme, à la démocratie et à l'État de droit;
+Préoccupés par les risques de discrimination dans les cadres numériques, en particulier ceux
+impliquant des systèmes d'intelligence artificielle, et par le fait que ceux-ci sont susceptibles de
+créer des inégalités ou de les aggraver, y compris les inégalités  vécues par les femmes et les
+personnes en situation de vulnérabilité, en ce qui concerne la jouissance de leurs droits
+humains et l eur participation pleine, égale et effective aux affaires économiques, sociales,
+culturelles et politiques;
+Préoccupés par l'utilisation abusive de s systèmes d'intelligence artificielle et opposés à
+l’utilisation de ces systèmes à des fins répressives, en violation du droit international des droits
+de l'homme, notamment par des pratiques de surveillance et de censure arbitraires ou illégales
+qui portent atteinte à la vie privée et à l'autonomie personnelle;
+Conscients du fait que les droits de l’homme, la démocratie et l'État de droit sont
+intrinsèquement liés entre eux;
+Convaincus de la nécessité d'établir, en priorité, un cadre juridique applicable à l'échelle
+mondiale énonçant des règles et des principes g énéraux communs régissant les activités
+menées dans le cadre du cycle de vie des systèmes d'intelligence artificielle, qui préserve de
+manière efficace les valeurs communes et exploite les avantages de l'intelligence artificielle
+pour la promotion de ces valeurs d'une manière propice à l'innovation responsable;
+Reconnaissant la nécessité de promouvoir la maîtrise du numérique, ainsi que la connaissance
+de la conception, du développement, de l’utilisation et de la mise hors service des systèmes
+d’intelligence artificielle, et la confiance dans ceux-ci;
+
+
+2
+
+Reconnaissant que la présente Convention a valeur de cadre et qu'elle peut être complétée
+par d'autres instruments destinés à traiter des questions spécifiques liées aux activités menées
+dans le cadre du cycle de vie des systèmes d'intelligence artificielle;
+Soulignant que la présente Convention vise à répondre aux défis particuliers survenant tout au
+long du cycle de vie des systèmes d'intelligence artificielle et à encourager la prise en compte
+des risques et des impacts plus larges liés à ces technologies, notamment, sans s'y limiter, sur
+la santé humaine et l'environnement, et sur les aspects socio-économiques tels que l’emploi et
+le travail;
+Constatant les efforts déployés dans ce domaine par d'autres organisations et instances
+internationales et supranationales pour faire progresser la compréhension et la coopération
+internationales en matière d'intelligence artificielle;
+Gardant à l’esprit les instruments internationaux applicables en matière de droits de l'homme,
+tels que la Déclaration universelle des droits de l’homme de 1948, la Convention de sauvegarde
+des droits de l'homme et des libertés fondamentales de 1950 (STE n° 5), le Pacte international
+relatif aux droits civils et politiques de 1966, le Pacte international relatif aux droits
+économiques, sociaux et culturels de 1966, la Charte sociale européenne de 1961 (STE n° 35)
+ainsi que leurs protocoles respectifs, et la Charte sociale européenne (révisée) de 1996 (STE
+n° 163);
+Gardant également à l’esprit la Convention des Nations Unies relative aux droits de l'enfant de
+1989 et la Convention des Nations Unies relative aux droits des personnes handica pées de
+2006;
+Gardant également à l’esprit les droits applicables relatifs au respect de la vie privée des
+personnes et à la protection des données à caractère personnel, tels que conférés, par
+exemple, par la Convention pour la protection des personnes à l'égard du traitement automatisé
+des données à caractère personnel de 1981 (STE n° 108) et ses protocoles;
+Affirmant l'engagement des Parties à protéger les droits de l'homme, la démocratie et l'État de
+droit, et à favoriser la fiabilité des systèmes d’int elligence artificielle par le biais de la présente
+Convention,
+Sont convenus de ce qui suit:
+Chapitre I – Dispositions générales
+Article 1er – Objet et but
+1 Les dispositions de la présente Convention visent à garantir que les activités menées dans le
+cadre du cycle de vie des systèmes d'intelligence artificielle sont pleinement compatibles avec
+les droits de l'homme, la démocratie et l'État de droit.
+2 Chaque Partie adopte ou maintient les mesures législatives, administratives ou autres
+appropriées pour donner effet aux dispositions de la présente Convention. Ces mesures sont
+graduées et différenciées, si nécessaire, en fonction de la gravité et de la probabilité de
+l'apparition d’impacts négatifs sur les droits de l'homme, la démocratie et l'État de droi t tout au
+long du cycle de vie des systèmes d'intelligence artificielle. Il peut s'agir de mesures
+particulières ou horizontales qui s'appliquent quel que soit le type de technologie utilisé.
+3 Afin d'assurer la mise en œuvre effective de ses dispositions par les Parties, la présente
+Convention établit un mécanisme de suivi et prévoit une coopération internationale.
+3
+
+Article 2 – Définition des systèmes d’intelligence artificielle
+Aux fins de la présente Convention, on entend par « système d'intelligence artificielle » un
+système automatisé qui, pour des objectifs explicites ou implicites, déduit, à partir d’entrées
+reçues, comment générer des résultats en sortie tels que des prévisions, des contenus, des
+recommandations ou des décisions qui peuvent influer sur des environnements physiques ou
+virtuels. Différents systèmes d’intelligence artificielle p résentent des degrés variables
+d’autonomie et d’adaptabilité après déploiement.
+Article 3 – Champ d’application
+1 Le champ d’application de la présente Convention couvre de la manière suivante les activités
+menées dans le cadre du cycle de vie des systèmes d'intelligence artificielle qui sont
+susceptibles de porter atteinte aux droits de l'homme, à la démocratie et à l'État de droit:
+ a Chaque Partie applique la présente Convention aux activités menées dans le cadre du
+cycle de vie des systèmes d'intelligence artificielle entreprises par les pouvoirs publics ou
+des acteurs privés qui agissent pour leur compte.
+ b Chaque Partie répond aux risques et aux impacts découlant des activités menées dans le
+cadre du cycle de vie des systèmes d'intelligenc e artificielle par des acteurs privés dans
+la mesure où ils ne sont pas couverts par l’alinéa a, d’une manière conforme à l’objet et
+au but de la présente Convention.
+  Chaque Partie spécifie dans une déclaration soumise au Secrétaire Général du Conseil
+de l'Europe, au moment de la signature ou lors du dépôt de son instrument de ratification,
+d'acceptation, d'approbation ou d'adhésion, la manière dont elle entend mettre en œuvre
+cette obligation, soit en appliquant les principes et obligations énoncés aux c hapitres II à
+VI de la présente Convention aux activités des acteurs privés, soit en prenant d’autres
+mesures appropriées pour satisfaire à l'obligation prévue au présent alinéa. Les Parties
+peuvent, à tout moment et de la même manière, modifier leur déclaration.
+  Lorsqu’elle s’acquitte de l’obligation au titre du présent alinéa, une Partie ne peut déroger
+aux obligations internationales qui lui incombent en matière de protection des droits de
+l’homme, de la démocratie et de l’État de droit ni limiter leur application.
+2 Une Partie n'est pas tenue d'appliquer la présente Convention aux activités menées dans le
+cadre du cycle de vie des systèmes d'intelligence artificielle et liées à la protection de ses
+intérêts de sécurité nationale, étant entendu que ces activités sont menées de manière
+compatible avec le droit international applicable, y compris les obligations nées du droit
+international des droits de l’homme, et dans le respect de ses institutions et processus
+démocratiques.
+3 Sans préjudice de l’articl e 13 et de l’article 25, paragraphe 2, la présente Convention ne
+s'applique pas aux activités de recherche et de développement relatives aux systèmes
+d'intelligence artificielle qui n’ont pas encore été rendus disponibles à l’utilisation, à moins que
+des e ssais ou des activités similaires ne soient entrepris d'une manière telle qu’ils sont
+susceptibles de porter atteinte aux droits de l'homme, à la démocratie et à l'État de droit.
+4 Les questions relatives à la défense nationale n'entrent pas dans le champ d'application de la
+présente Convention.
+
+
+4
+
+Chapitre II – Obligations générales
+Article 4 – Protection des droits de l'homme
+Chaque Partie adopte ou maintient  des mesures pour veiller à ce que les activités menées
+dans le cadre du cycle de vie des systèmes d'intelligence artificielle soient cohérentes avec les
+obligations de protection des droits de l'homme, telles qu'elles sont définies par le droit
+international applicable et par son droit interne.
+Article 5 – Intégrité des processus démocratiques et respect de l'État de droit
+1 Chaque Partie adopte ou maintient des mesures visant à garantir que les systèmes
+d'intelligence artificielle ne sont pas utilisés po ur porter atteinte à l'intégrité, à l'indépendance
+et à l'efficacité des institutions et processus démocratiques, y compris au principe de la
+séparation des pouvoirs, au respect de l'indépendance de la justice et à l'accès à la justice.
+2 Chaque Partie adopte ou maintient des mesures qui visent à protéger ses processus
+démocratiques au cours des activités menées dans le cadre du cycle de vie des systèmes
+d'intelligence artificielle, y compris l'accès équitable et la participation des person nes au débat
+public, ainsi que leur capacité à se forger librement une opinion.
+Chapitre III – Principes relatifs aux activités menées dans le cadre du cycle de vie des
+systèmes d'intelligence artificielle
+Article 6 – Approche générale
+Le présent chapitre énonce les principes généraux communs que chaque Partie met en œuvre
+à l'égard des systèmes d'intelligence artificielle, de manière adaptée à son ordre juridique
+interne et aux autres obligations nées de la présente Convention.
+Article 7 – Dignité humaine et autonomie personnelle
+Chaque Partie adopte ou maintient des mesures en faveur du respect de la dignité humaine et
+de l'autonomie personnelle en ce qui concerne les activités menées dans le cadre du cycle de
+vie des systèmes d'intelligence artificielle.
+Article 8 – Transparence et contrôle
+Chaque Partie adopte ou maintient des mesures pour veiller à ce que les exigences de
+transparence et de contrôle adaptées aux contextes et aux risques spécifiques soient en place
+pour les activités menées dans le cadre du cycle de vie des systèmes d'intelligence artificielle,
+y compris en ce qui concerne l’identification de contenu généré par des systèmes d’intelligence
+artificielle.
+Article 9 – Obligation de rendre des comptes et responsabilité
+Chaque Partie adopte o u maintient des mesures pour garantir l'obligation de rendre des
+comptes et d'assumer la responsabilité pour les impacts négatifs sur les droits de l'homme, la
+démocratie et l'État de droit qui résultent des activités menées dans le cadre du cycle de vie
+des systèmes d'intelligence artificielle.
+
+
+5
+
+Article 10 – Égalité et non-discrimination
+1 Chaque Partie adopte ou maintient  des mesures visant à garantir le respect de l'égalité, y
+compris l'égalité de genre, et l'interdiction de la discrimination dans les activités menées dans
+le cadre du cycle de vie des systèmes d'intelligence artificielle, comme le prévoit le droit
+international et interne applicable.
+2 Chaque Partie s'engage à adopter ou à maintenir des mesures visant à supprimer les inégalités
+dans les activités menées dans le cadre du cycle de vie des systèmes d'intelligence artificielle,
+afin d'obtenir des résultats imp artiaux, justes et équitables, dans le cadre des obligations
+nationales et internationales qui lui incombent en matière de droits de l'homme.
+Article 11 – Respect de la vie privée et protection des données à caractère personnel
+Chaque Partie adopte ou maintient des mesures pour garantir que, en ce qui concerne les
+activités menées dans le cadre du cycle de vie des systèmes d'intelligence artificielle:
+ a les droits à la vie privée des personnes et leurs données à caractère personnel sont
+protégés, notam ment par les lois, normes et cadres nationaux et internationaux
+applicables; et
+ b des garanties et des protections effectives ont été mises en place pour les personnes,
+conformément aux obligations juridiques nationales et internationales applicables.
+Article 12 – Fiabilité
+Chaque Partie prend, le cas échéant, des mesures pour promouvoir la fiabilité des systèmes
+d'intelligence artificielle et la confiance en leurs résultats, ce qui pourrait inclure des exigences
+en matière de qualité et de sécurité adéqua tes tout au long du cycle de vie des systèmes
+d’intelligence artificielle.
+Article 13 – Innovation sûre
+En vue de favoriser l'innovation tout en évitant les impacts négatifs sur les droits de l'homme,
+la démocratie et l'État de droit, chaque Partie est a ppelée à permettre, le cas échéant, la mise
+en place d'environnements contrôlés pour le développement, l'expérimentation et l'essai de
+systèmes d'intelligence artificielle sous la surveillance de ses autorités compétentes.
+Chapitre IV – Recours
+Article 14 – Recours
+1 Chaque Partie adopte ou maintient, dans la mesure où des voies de recours sont requises par
+ses obligations internationales et conformément à son ordre juridique interne, des mesures
+garantissant la disponibilité de voies de recours accessib les et effectives contre les violations
+des droits de l'homme résultant des activités menées dans le cadre du cycle de vie des
+systèmes d'intelligence artificielle.
+
+
+6
+
+2 Afin de renforcer la portée du paragraphe 1 ci -dessus, chaque Partie adopte ou maintient des
+mesures, y compris:
+ a des mesures garantissant que des informations pertinentes concernant les systèmes
+d'intelligence artificielle susceptibles d'avoir une incidence significative sur les droits de
+l'homme et leur utilisation pertinente sont documentées, fournies aux organismes
+autorisés à avoir accès à ces informations et, si nécessaire et applica ble, mises à la
+disposition des personnes concernées ou communiquées à ces dernières;
+ b des mesures garantissant que les informations visées à l’alinéa a sont suffisantes pour
+permettre aux personnes concernées de contester la ou les décisions prises par le biais
+de l'utilisation du système ou fondées en grande partie sur celle -ci, et si nécessaire et
+approprié, de contester l'utilisation du système; et
+ c une possibilité effective donnée aux personnes concernées de former un recours auprès
+des autorités compétentes.
+Article 15 – Garanties procédurales
+1 Chaque Partie veille à ce que, lorsqu'un système d'intelligence artificielle a un impact significatif
+sur la jouissance des droits de l'homme, les personnes affectées par celui -ci disposent de
+garanties, de protections et de droits procéduraux effectifs, conformément au droit international
+et au droit interne applicables.
+2 Chaque Partie cherche à veiller à ce que, en fonction du contexte, les personnes qui
+interagissent avec des systèmes d'intelligence ar tificielle soient informées du fait qu'elles
+interagissent avec de tels systèmes et non avec un humain.
+Chapitre V – Évaluation et atténuation des risques et des impacts négatifs
+Article 16 – Cadre de gestion des risques et des impacts
+1 Chaque Partie, com pte tenu des principes énoncés au chapitre III, adopte ou maintient des
+mesures afin d’identifier, d’évaluer, de prévenir et d’atténuer les risques posés par les systèmes
+d’intelligence artificielle en tenant compte des impacts réels et potentiels sur les droits de
+l'homme, la démocratie et l'État de droit.
+2 Ces mesures sont graduées et différenciées, le cas échéant, et:
+ a tiennent dûment compte du contexte et de l'utilisation prévue des systèmes d'intelligence
+artificielle, et notamment des risques que ces derniers posent pour les droits de l'homme,
+la démocratie et l'État de droit;
+ b tiennent dûment compte de la gravité et de la probabilité des impacts potentiels;
+ c prennent en compte, le cas échéant, le point de vue des parties prenantes pertinentes, en
+particulier les personnes dont les droits pourraient être affectés;
+ d s’appliquent de manière itérative tout au long des activités menées dans le cadre du cycle
+de vie du système d'intelligence artificielle;
+ e comprennent un suivi des risques et des impacts négatifs sur les droits de l'homme, la
+démocratie et l'État de droit;
+7
+
+f comprennent la documentation des risques, des impacts réels et potentiels, et de
+l’approche de la gestion des risques; et
+ g exigent, le cas échéant, l'essai préalable des systèmes d’intelligence artificielle avant leur
+mise à disposition pour première utilisation et lorsqu’ils subissent des modifications
+significatives.
+3 Chaque Partie adopte ou maintient des mesures qui visent à garantir que les impacts négatifs
+des systèmes d’intelligence artificielle sur les droits de l'homme, la démocratie et l'État de droit
+sont traités de manière adéquate. Ces impacts négatifs et les mesures prises pour y remédier
+devraient être documentés et pris en compte pour l’élaboration des mesures de gestion des
+risques pertinentes décrites au paragraphe 2.
+4 Chaque Partie évalue la nécessité d'un moratoire, d'une interdiction ou d'autres mesures
+appropriées concernant certaines utilisations des systèmes d'intelligence artificielle lorsqu'elle
+considère que ces utilisations sont incompatibles avec le respect des droi ts de l'homme, le
+fonctionnement de la démocratie ou l'État de droit.
+Chapitre VI – Mise en œuvre de la Convention
+Article 17 – Non-discrimination
+La mise en œuvre des dispositions de la présente Convention par les Parties est assurée sans
+discrimination fondée sur quelque motif que ce soit, conformément à leurs obligations
+internationales en matière de droits de l'homme.
+Article 18 – Droits des personnes handicapées et des enfants
+Chaque Partie tient dûment compte des besoins et des vulnérabilités spécif iques en rapport
+avec le respect des droits des personnes handicapées et des enfants, conformément à son
+droit interne et aux obligations internationales applicables.
+Article 19 – Consultation publique
+Chaque Partie cherche à veiller à ce que les questions importantes soulevées par les systèmes
+d'intelligence artificielle so ient, le cas échéant, dûment examinées dans le cadre d e débats
+publics et de consultations multipartites, en tenant compte  des incidences sociales,
+économiques, juridiques, éthiques, environnementales et des autres implications pertinentes.
+Article 20 – Maîtrise du numérique et compétences numériques
+Chaque Partie encourage et promeut la maîtrise du numérique et les compétences numériques
+adéquates pour toutes les catég ories de la population, notamment les compétences
+spécifiques de pointe pour les personnes chargées de l'identification, de l'évaluation, de la
+prévention et de l'atténuation des risques posés par les systèmes d'intelligence artificielle.
+Article 21 – Sauvegarde des droits de l’homme reconnus
+Aucune disposition de la présente Convention ne saurait être interprétée comme limitant, ou
+affectant d’une quelconque manière ou dérogeant aux droits de l'homme ou à d'autres droits et
+obligations juridiques connexes  qui peuvent être garantis par le droit interne pertinent d'une
+Partie ou de tout autre accord international pertinent auquel elle est partie.
+8
+
+Article 22 – Protection plus étendue
+Aucune des dispositions de la présente Convention ne saurait être interprétée comme limitant
+ou affectant d’une quelconque manière la possibilité pour une Partie d’accorder une protection
+plus étendue que celle que prévoit la présente Convention.
+Chapitre VII – Mécanisme de suivi et coopération
+Article 23 – Conférence des Parties
+1 La Conférence des Parties est composée des représentants des Parties à la présente
+Convention.
+2 Les Parties se concertent périodiquement, afin:
+ a de faciliter l'application et la mise en œuvre effectives de la présente Convention,
+notamment l'identification de tout problème et des effets de toute réserve formulée au titre
+de l’article 34, paragraphe 1, ou de toute déclaration fa ite au titre de la présente
+Convention;
+ b d'examiner la possibilité de compléter ou de modifier la présente Convention;
+ c d'examiner des questions et de formuler des recommandations particulières relatives à
+l'interprétation et à l'application de la présente Convention;
+ d de faciliter l'échange d'informations sur les évolutions juridiques, politiques ou
+technologiques significatives qui présentent un intérêt, notamment en vue de la réalisation
+des objectifs définis à l'article 25, pour la mise en œuvre de la présente Convention;
+ e de faciliter, si nécessaire, le règlement amiable des différends liés à l'application de la
+présente Convention; et
+ f de faciliter la coopération avec les parties prenantes pertinentes sur les aspects pertinents
+de la mise en œuvre de la présente Convention, notamment par le biais d’auditions
+publiques, le cas échéant.
+3 La Conférence des Parties est convoquée par le Secrétaire Général du Conseil de l'Europe à
+chaque fois que cela est nécessaire et, dans tous les cas, lorsque la majorité des Parties ou le
+Comité des Ministres en demande la convocation.
+4 La Conférence des Parties adopte son propre règlement intérieur par consensus dans un délai
+de douze mois à compter de l’entrée en vigueur de la présente Convention.
+5 Les Parties sont assistées par le Secrétariat du Conseil de l'Europe dans l'exercice des
+fonctions qui leur incombent en vertu du présent article.
+6 La Conférence des Parties peut proposer au Comité des Ministres des moyens appropriés pour
+mobiliser les savoir-faire pertinents afin de soutenir la mise en œuvre effective de la présente
+Convention.
+
+
+9
+
+7 Toute Partie qui n'est pas membre du Conseil de l'Europe  contribue au financement des
+activités de la Conférence des Parties. La contribution d’un non-membre du Conseil de l’Europe
+est établie de manière conjointe par le Comité des Ministres et ce non membre du Conseil de
+l’Europe.
+8 La Conférence des Parties p eut décider de restreindre la participation à ses travaux d'une
+Partie qui a cessé d'être membre du Conseil de l'Europe en vertu de l'article 8 du Statut du
+Conseil de l'Europe (STE n° 1), en raison d'une violation grave de l'article 3 du Statut. De même,
+des mesures peuvent être prises à l'égard de toute Partie qui n'est pas un État membre du
+Conseil de l'Europe et qui est visée par une décision du Comité des Ministres mettant fin à ses
+relations avec elle pour des motifs analogues à ceux mentionnés à l'article 3 du Statut.
+Article 24 – Obligation de rapport
+1 Chaque Partie fournit à la Conférence des Parties, dans un délai de deux ans à compter de la
+date à laquelle elle devient Partie, puis de manière périodique par la suite, un rapport contenant
+les détails des activités qu’elle a entreprises pour donner effet à l’article 3, paragraphe 1,
+alinéas a et b.
+2 La Conférence des Parties détermine le format et le processus à suivre pour l’établissement de
+rapports en accord avec son règlement intérieur.
+Article 25 – Coopération internationale
+1 Les Parties coopèrent à la réalisation de l'objectif de la présente Convention. Les Parties sont
+en outre encouragées à aider, le cas échéant, les États qui ne sont pas parties à la présente
+Convention à agir conform ément aux dispositions de la présente Convention et à devenir
+parties à celle-ci.
+2 Les Parties échangent entre elles, le cas échéant, des informations pertinentes et utiles sur les
+aspects liés à l'intelligence artificielle qui peuvent avoir un effet positif ou négatif significatif sur
+la jouissance des droits de l'homme, le fonctionnement de la démocratie et le respect de l'État
+de droit, notamment sur les risques et les effets apparus dans le cadre de la recherche et en
+relation avec le secteur privé. Le s Parties sont encouragées à associer, le cas échéant, les
+parties prenantes pertinentes et les États qui ne sont pas Parties à la présente Convention à
+cet échange d'informations.
+3  Les Parties sont encouragées à renforcer la coopération, y compris, le c as échéant, avec les
+parties prenantes pertinentes, afin de prévenir et d'atténuer les risques et les impacts négatifs
+sur les droits de l'homme, la démocratie et l'État de droit au cours des activités menées dans
+le cadre du cycle de vie des systèmes d'intelligence artificielle.
+Article 26 – Mécanismes de contrôle effectifs
+1 Chaque Partie met en place ou désigne un ou plusieurs mécanismes effectifs de contrôle du
+respect des obligations nées de la présente Convention.
+2 Chaque Partie veille à ce que ces  mécanismes exercent leurs fonctions de manière
+indépendante et impartiale, et à ce qu’ils disposent des compétences, de l'expertise et des
+ressources nécessaires pour s'acquitter efficacement de leur mission de contrôle du respect
+des obligations nées de la présente Convention, telles qu'elles ont été mises en œuvre par les
+Parties.
+
+10
+
+3 Lorsqu'une Partie a prévu plus d'un mécanisme de ce type, elle prend des mesures, autant que
+faire se peut, pour faciliter une coopération efficace entre eux.
+4 Lorsqu'une Partie a prévu des mécanismes différents des structures existantes en matière de
+droits de l'homme, elle prend des mesures, autant que faire se peut, pour promouvoir une
+coopération efficace entre les mécanismes visés au paragraphe 1 et les structures nationales
+existantes en matière de droits de l'homme.
+Chapitre VIII – Clauses finales
+Article 27 – Effets de la Convention
+1 Si deux Parties ou davantage ont déjà conclu un accord ou un traité sur les questions visées
+par la présente Convention, ou ont établi d'une autre manière leurs relations sur ces questions,
+elles ont également le droit d'appliquer cet accord ou ce traité, ou de régler ces relations en
+conséquence, tant qu'elle s le font d'une manière qui n’est pas incompatible avec l'objet et le
+but de la présente Convention.
+2 Les Parties qui sont membres de l'Union européenne appliquent, dans le cadre de leurs
+relations mutuelles, les règles de l'Union européenne qui régissent  les questions relevant du
+champ d'application de la présente Convention, sans préjudice de l'objet et du but de la
+présente Convention et sans préjudice de son entière application à l’égard des autres Parties.
+Il en va de même pour les autres Parties dans la mesure où elles sont liées par de telles règles.
+Article 28 – Amendements
+1 Des amendements à la présente Convention peuvent être proposés par une Partie, par le
+Comité des Ministres du Conseil de l'Europe ou par la Conférence des Parties.
+2 Toute proposition d'amendement est communiquée par le Secrétaire Général du Conseil de
+l'Europe aux Parties.
+3 Tout amendement proposé par une Partie ou par le Comité des Ministres est communiqué à la
+Conférence des Parties, qui soumet au Comité des Ministres son a vis sur l'amendement
+proposé.
+4 Le Comité des Ministres examine l'amendement proposé ainsi que l’avis soumis par la
+Conférence des Parties et peut approuver l'amendement.
+5 Le texte de tout amendement approuvé par le Comité des Ministres conformément au
+paragraphe 4 est transmis aux Parties pour acceptation.
+6 Tout amendement approuvé conformément au paragraphe 4 entre en vigueur le trentième jour
+après que toutes les Parties ont informé le Secrétaire Général qu'elles l'ont accepté.
+Article 29 – Règlement des différends
+En cas de différend entre elles sur l’interprétation ou l’application de la présente Convention,
+les Parties s’efforcent de parvenir à un règlement du différend par la négociation ou par tout
+autre moyen pacifique de leur choix, y compris p ar le biais de la Conférence des Parties,
+comme le prévoit l'article 23, paragraphe 2, alinéa e.
+
+
+11
+
+Article 30 – Signature et entrée en vigueur
+1 La présente Convention est ouverte à la signature des États membres du Conseil de l'Europe,
+des États non membres qui ont participé à son élaboration et de l'Union européenne.
+2 La présente Convention est soumise à ratification, acceptation ou approbation. Les instruments
+de ratification, d'acceptation ou d'approbation sont d éposés près le Secrétaire Général du
+Conseil de l'Europe.
+3 La présente Convention entrera en vigueur le premier jour du mois qui suit l'expiration d'une
+période de trois mois après la date à laquelle cinq signataires, dont au moins trois États
+membres du Conseil de l'Europe, auront manifesté leur consentement à être liés par la présente
+Convention conformément au paragraphe 2.
+4 Pour tout signataire qui exprimera ultérieurement son consentement à être lié par la présente
+Convention, celle-ci entrera en vigueur le premier jour du mois qui suit l'expiration d'une période
+de trois mois après la date du dépôt de son instrument de ratification, d'acceptation ou
+d'approbation.
+Article 31 – Adhésion
+1 Après l'entrée en vigueur de la présente Convention, le Comi té des Ministres du Conseil de
+l'Europe pourra, après avoir consulté les Parties à la présente Convention et obtenu leur
+consentement unanime, inviter tout État non membre du Conseil de l'Europe qui n'a pas
+participé à l'élaboration de la présente Convention à y adhérer par une décision prise à la
+majorité, telle qu’elle est  prévue à l'article 20 , paragraphe d, du Statut du Conseil de l'Europe
+et à l'unanimité des représentants des Parties ayant le droit de siéger au Comité des Ministres.
+2 Pour tout État adhérent, la présente Convention entrera en vigueur le premier jour du mois qui
+suit l'expiration d'une période de trois mois après la date du dépôt de son instrument d'adhésion
+près le Secrétaire Général du Conseil de l'Europe.
+Article 32 – Application territoriale
+1 Tout État ou l'Union européenne peut, au moment de la signature ou lors du dépôt de son
+instrument de ratification, d'acceptation, d'approbation ou d'adhésion, désigner le ou les
+territoires auxquels s'appliquera la présente Convention.
+2 Toute Partie peut, à une date ultérieure, par une déclaration adressée au Secrétaire Général
+du Conseil de l'Europe, étendre l'application de la présente Convention à tout autre territoire
+désigné dans cette déclaration. La présente Convention entrera en vigueu r à l'égard de ce
+territoire le premier jour du mois qui suit l'expiration d'une période de trois mois après la date
+de réception de la déclaration par le Secrétaire Général.
+3 Toute déclaration faite en vertu des deux paragraphes précédents pourra être retirée à l'égard
+de tout territoire désigné dans cette déclaration par notification adressée au Secrétaire Général
+du Conseil de l'Europe. Ce retrait prendra effet le premier jour du mois qui suit l'expiration d'une
+période de trois mois après la date de réception de la notification par le Secrétaire Général.
+
+
+12
+
+Article 33 – Clause fédérale
+1 Un État fédéral peut se réserver le droit d'assumer des obligations en vertu de la présente
+Convention conformément aux principes fondamentaux régissant les relations entre son
+gouvernement central et les États constitutifs ou autres entités territoriales similaires, à
+condition que la présente Convention s’applique au gouvernement central de l’État fédéral.
+2 En ce qui concerne les dispositions de la présente Convention dont l'application relève de la
+compétence des États constitutifs ou d'autres entités t erritoriales similaires, qui ne sont pas
+tenus par le système constitutionnel de la fédération de prendre des mesures législatives, le
+gouvernement fédéral informe les autorités compétentes de ces États desdites dispositions
+avec son avis favorable et les encourage à prendre les mesures appropriées pour leur donner
+effet.
+Article 34 – Réserves
+1 Par une notification écrite adressée au Secrétaire Général du Conseil de l'Europe, tout État
+peut, au moment de la signature ou lors du dépôt de son instrument de r atification,
+d'acceptation, d'approbation ou d'adhésion, déclarer qu'il se prévaut de la réserve prévue à
+l'article 33, paragraphe 1.
+2 Aucune autre réserve ne peut être formulée à l'égard de la présente Convention.
+Article 35 – Dénonciation
+1 Toute Partie  peut, à tout moment, dénoncer la présente Convention en adressant une
+notification au Secrétaire Général du Conseil de l'Europe.
+2 La dénonciation prendra effet le premier jour du mois qui suit l'expiration d'une période de trois
+mois après la date de réception de la notification par le Secrétaire Général.
+Article 36 – Notification
+Le Secrétaire Général du Conseil de l'Europe notifiera aux États membres du Conseil de
+l'Europe, aux États non membres qui ont participé à l’élaboration de la présente Convention, à
+l'Union européenne, à tout signataire, à tout État contractant, à toute Partie et à tout autre État
+invité à adhérer à la présente Convention:
+ a toute signature;
+ b le dépôt de tout instrument de ratification, d'acceptation, d'approbation ou d'adhési on;
+ c toute date d'entrée en vigueur de la présente Convention conformément à l'article 30,
+paragraphes 3 et 4, et à l'article 31, paragraphe 2;
+ d tout amendement adopté conformément à l'article 28 et la date à laquelle cet amendement
+entre en vigueur;
+ e toute déclaration formulée en vertu de l’article 3, paragraphe 1, alinéa b;
+ f toute réserve et tout retrait de réserve formulés en vertu de l'article 34;
+
+
+13
+
+g toute dénonciation effectuée conformément aux dispositions de l'article 35;
+ h tout autre acte, déclaration, notification ou communication ayant trait à la présente
+Convention.
+
+En foi de quoi, les soussignés, dûment autorisés à cet effet, ont signé la présente Convention.
+Fait à Vilnius, le 5 septembre 2024, en français et en anglais, les deux textes faisant également
+foi, en un seul exemplaire qui sera déposé dans les archives du Conseil de l'Europe. Le
+Secrétaire Général du Conseil de l'Europe en communiquera copie certifiée conforme à chacun
+des États membres du Conseil de l'Europ e, aux États non membres qui ont participé à
+l'élaboration de la présente Convention, à l'Union européenne et à tout État invité à adhérer à
+la présente Convention.
+
+
+Certified copy of the text of the Convention in its
+corrected French version in accordance with the
+Committee of Ministers' decision
+(1527th meeting of the Ministers' Deputies,
+30 April 2025).
+
+Copie certifiée conforme du texte de la
+Convention dans sa version française corrigée
+conformément à la décision du Comité d es
+Ministres (1527e réunion des Délégués des
+Ministres, 30 avril 2025).
+
+Strasbourg, 20.V.2025
+
+
+14
+

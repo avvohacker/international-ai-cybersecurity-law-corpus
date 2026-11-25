@@ -135,6 +135,46 @@ SOURCES = [
         "Certified bilingual copy of CETS 225 in its corrected French version, adopted under the Committee of Ministers decision of 30 April 2025 and dated Strasbourg, 20 May 2025. Includes the authentic French text; 27 PDF pages, two columns.",
         "2026-11-25",
     ),
+    (
+        "brics-ai-statement-2025",
+        "source/brics-ggai-declaration-2025-07-06-en.pdf",
+        "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
+        "application/pdf",
+        "Archived copy (Internet Archive, snapshot 18 April 2026) of the official BRICS 2025 Presidency PDF of the Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The live brics.br host did not resolve by DNS from this environment.",
+        "2026-11-25",
+    ),
+    (
+        "cis-minsk-agreement-2001",
+        "source/cis-minsk-agreement-2001-en-translation.pdf",
+        "https://web.archive.org/web/20220320005205/https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf",
+        "application/pdf",
+        "Archived copy (Internet Archive, snapshot 20 March 2022) of the English translation of the 2001 CIS Minsk Agreement reproduced by the Prosecutor General's Office of Azerbaijan. The live host fails TLS certificate verification from this environment.",
+        "2026-11-25",
+    ),
+    (
+        "paris-call-cyberspace-2018",
+        "source/paris-call-2018-11-12-en.pdf",
+        "https://web.archive.org/web/20240927054607/https://pariscall.international/assets/files/paris-call.pdf",
+        "application/pdf",
+        "Archived copy (Internet Archive, snapshot 27 September 2024) of the official four-page English PDF of the Paris Call for Trust and Security in Cyberspace, dated 12 November 2018. The live pariscall.international host no longer resolves from this environment.",
+        "2026-11-25",
+    ),
+    (
+        "unesco-ethics-ai-2021",
+        "source/unesco-ai-ethics-recommendation-2022-en.pdf",
+        "https://web.archive.org/web/20261029235825/https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_75c9fb6b-92a6-4982-b772-79f540c9fc39?_=381137eng.pdf",
+        "application/pdf",
+        "Archived copy (Internet Archive, snapshot 29 October 2026) of the English PDF of the UNESCO Recommendation on the Ethics of Artificial Intelligence, adopted on 23 November 2021 (SHS/BIO/PI/2021/1, 43 pages). The live UNESDOC PDF endpoint returned HTTP 403 to automated clients.",
+        "2026-11-25",
+    ),
+    (
+        "coe-cets-225-explanatory-report",
+        "source/cets-225-explanatory-report-2024-09-05-en.pdf",
+        "https://web.archive.org/web/20261117082757/https://rm.coe.int/1680afae67",
+        "application/pdf",
+        "Archived copy (Internet Archive, snapshot 17 November 2026) of the official English Explanatory Report to CETS 225, dated Vilnius, 5 September 2024. The live rm.coe.int endpoint returned HTTP 403 to automated clients.",
+        "2026-11-25",
+    ),
 ]
 
 

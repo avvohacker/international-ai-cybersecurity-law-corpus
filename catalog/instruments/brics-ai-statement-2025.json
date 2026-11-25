@@ -4,7 +4,7 @@
   "dates": {
     "adopted": "2025-07-06",
     "notes": "Adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The official text is a leaders' statement; it has no signature, ratification, depositary or entry-into-force clause.",
-    "verified_on": "2026-11-24"
+    "verified_on": "2026-11-25"
   },
   "domains": [
     "ai"
@@ -14,7 +14,7 @@
     "No individual signature block; the 11 entries are the BRICS member States, not individual signatories.",
     "No follow-up mechanism, review cycle or implementation reporting was verified.",
     "The relationship between this statement and the later WAICO Agreement is political, not institutional; no formal linkage was verified.",
-    "No full text is stored; the record is metadata-only."
+    "The statement is stored as a full text and segmented at document level (one unit); it has no articles or numbered paragraphs to segment further."
   ],
   "id": "brics-ai-statement-2025",
   "instrument_type": "declaration",
@@ -22,7 +22,7 @@
     {
       "name": "BRICS Leaders, 17th BRICS Summit, Rio de Janeiro",
       "role": "issuer",
-      "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
+      "url": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
     },
     {
       "name": "Federative Republic of Brazil, 2025 BRICS Presidency",
@@ -32,7 +32,7 @@
     {
       "name": "BRICS member States",
       "role": "issuer",
-      "url": "https://brics.br/en/about-the-brics"
+      "url": "https://web.archive.org/web/20260617005151/https://brics.br/en"
     }
   ],
   "languages": {
@@ -175,7 +175,7 @@
   "provenance": {
     "assertions": [
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "status",
         "locator": "Statement text, title and opening paragraph; Brazilian MFA page, 6 July 2025",
         "method": "official_page_read",
@@ -185,7 +185,7 @@
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "parties",
         "locator": "Presidency membership list; SPA report of 7 July 2025",
         "method": "official_page_read",
@@ -196,7 +196,7 @@
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "counts",
         "locator": "About the BRICS, member list: 11 States",
         "method": "official_page_read",
@@ -205,7 +205,7 @@
         ]
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "field": "legal_nature",
         "locator": "Statement text, final clauses: no signature, ratification or depositary clause",
         "method": "official_text_read",
@@ -216,7 +216,8 @@
     ],
     "discovered_via": "Audit of other international AI instruments after the summit-series and WAICO reviews; the official BRICS Presidency PDF and the Brazilian MFA page were read.",
     "search_dates": [
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-25"
     ]
   },
   "related": [
@@ -256,19 +257,19 @@
   },
   "rights": {
     "licence": "BRICS 2025 Presidency / Government of Brazil official publication",
-    "note": "Official government publication. No full text is stored in this corpus; the statement is read from the official PDF and MFA page.",
+    "note": "Official government publication. A 7-page archived copy of the official PDF is stored in this corpus; reproduction remains subject to the BRICS 2025 Presidency terms.",
     "status": "public_official_text"
   },
   "sources": [
     {
-      "accessed": "2026-11-23",
-      "http_status": null,
+      "accessed": "2026-11-25",
+      "http_status": 200,
       "id": "brics-presidency-pdf",
       "kind": "official_primary",
       "language": "en",
-      "note": "Official PDF of the BRICS Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The host did not resolve by DNS from this environment during the 23 and 24 November 2026 audits; the search index returned the document, so the site exists, but the URL could not be fetched directly from this VM.",
+      "note": "Archived copy (Internet Archive, snapshot 18 April 2026) of the official PDF of the BRICS Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The live brics.br host did not resolve by DNS from this environment during the 23, 24 and 25 November 2026 audits.",
       "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
-      "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
+      "url": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
     },
     {
       "accessed": "2026-11-23",
@@ -281,14 +282,14 @@
       "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial"
     },
     {
-      "accessed": "2026-11-23",
-      "http_status": null,
+      "accessed": "2026-11-25",
+      "http_status": 200,
       "id": "brics-members",
       "kind": "official_primary",
       "language": "en",
-      "note": "Official page listing the 11 BRICS member States: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The host did not resolve by DNS from this environment during the 23 and 24 November 2026 audits; the search index returned the page content, so the site exists, but the URL could not be fetched directly from this VM.",
+      "note": "Archived copy (Internet Archive, snapshot 17 June 2026) of the BRICS 2025 Presidency homepage. It states that BRICS is a group of eleven countries and names Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The live brics.br host did not resolve by DNS from this environment.",
       "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
-      "url": "https://brics.br/en/about-the-brics"
+      "url": "https://web.archive.org/web/20260617005151/https://brics.br/en"
     },
     {
       "accessed": "2026-11-24",
@@ -313,6 +314,14 @@
   ],
   "status": "adopted",
   "status_note": "Non-binding political statement, not a treaty. It was issued collectively by the leaders of the BRICS member States at the Rio de Janeiro summit; the official text has no individual signature block. The record therefore counts 11 listed member States, not 11 signatories and not 11 individually evidenced co-issuers. The 2025 presidency lists Saudi Arabia as a member; the Saudi Press Agency described the Kingdom on 7 July 2025 as an invited country and said the Foreign Minister led its delegation. No document-specific list of issuing governments was located. No ratification, depositary, monitoring or enforcement is established.",
+  "text": {
+    "extraction_note": "Full English text extracted from the archived official PDF (7 pages). The PDF text layer preserves line breaks and occasional intra-word spaces; page running headers and page numbers remain. Segmentation is at document level because the statement has no articles, numbered paragraphs or signature block.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
   "title": {
     "official": "BRICS Leaders' Statement on the Global Governance of Artificial Intelligence",
     "short": "BRICS AI Statement"
@@ -343,9 +352,14 @@
         "check": "Saudi participation checked against the Saudi Press Agency and the presidency's membership list.",
         "date": "2026-11-24",
         "result": "The presidency lists Saudi Arabia among 11 member States; SPA reported on 7 July 2025 that the Foreign Minister led the delegation as an invited country to join the group. No document-specific list of issuers was located. The conflict is recorded; the count remains 11 listed member States, not 11 individually evidenced issuers."
+      },
+      {
+        "check": "Full text acquired from the archived official PDF and segmented.",
+        "date": "2026-11-25",
+        "result": "7-page PDF matching the official statement acquired and stored; 1 document-level unit generated from the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from the official BRICS Presidency PDF, the Brazilian MFA page and the official BRICS membership page. The record is metadata-only: no full text is stored. The statement has no individual signature block; the 11 entries are the member States listed by the presidency. Saudi participation is recorded inconsistently by official sources and the conflict is documented rather than resolved by inference."
+    "notes": "Metadata and full text verified from the archived official BRICS Presidency PDF, the archived Presidency homepage and the Brazilian MFA page. The statement has no individual signature block; the 11 entries are the member States listed by the presidency. Saudi participation is recorded inconsistently by official sources and the conflict is documented rather than resolved by inference."
   }
 }

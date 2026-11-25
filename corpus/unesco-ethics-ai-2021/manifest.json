@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-25",
+      "bytes": 1002898,
+      "media_type": "application/pdf",
+      "note": "Archived copy (Internet Archive, snapshot 29 October 2026) of the English PDF of the UNESCO Recommendation on the Ethics of Artificial Intelligence, adopted on 23 November 2021 (SHS/BIO/PI/2021/1, 43 pages). The live UNESDOC PDF endpoint returned HTTP 403 to automated clients.",
+      "path": "source/unesco-ai-ethics-recommendation-2022-en.pdf",
+      "role": "original",
+      "sha256": "314c0e72f1dad6d8fb1702e7c89d8f722a9a5e6f99006491db70dcf102233688",
+      "source_url": "https://web.archive.org/web/20261029235825/https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_75c9fb6b-92a6-4982-b772-79f540c9fc39?_=381137eng.pdf"
+    },
+    {
+      "bytes": 101075,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "88c81842480d2225c82c0cc0c383289c9ec891950598048f1665a375842a8989"
+    },
+    {
+      "bytes": 3639,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "a1f639c06ed763d092a29332932f1bfe0870348df5375e0e60f06efc33761eef"
+    },
+    {
+      "bytes": 113131,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "91235215e890baaef8720dc32218e104754cfd29afb2d9c4104a3dd5486eaaec"
+    }
+  ],
+  "instrument_id": "unesco-ethics-ai-2021",
+  "primary_text": "text/en.txt"
+}

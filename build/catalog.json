@@ -25,17 +25,21 @@
       "full_text_checked": 10,
       "metadata_verified": 53
     },
-    "full_texts": 16,
+    "full_texts": 21,
     "total": 63,
-    "with_local_original": 16
+    "with_local_original": 21
   },
   "full_text_ids": [
+    "brics-ai-statement-2025",
     "china-global-ai-governance-initiative-2023",
+    "cis-minsk-agreement-2001",
     "coe-cets-225",
+    "coe-cets-225-explanatory-report",
     "depa-2020",
     "g7-hiroshima-code-2023",
     "oecd-ai-recommendation-2019",
     "paris-ai-action-summit-statement-2025",
+    "paris-call-cyberspace-2018",
     "sadea-2020",
     "un-ga-res-78-241",
     "un-ga-res-78-265",
@@ -45,7 +49,8 @@
     "un-ga-res-79-325",
     "un-ga-res-79-62",
     "un-ga-res-80-57",
-    "un-ga-res-80-58"
+    "un-ga-res-80-58",
+    "unesco-ethics-ai-2021"
   ],
   "instruments": [
     {
@@ -321,15 +326,15 @@
       "dates": {
         "adopted": "2010-12-21",
         "entered_into_force": "2014-02-07",
-        "notes": "Adopted at Cairo on 21 December 2010 by the Arab Ministers of Interior and Justice. Article 19(3) provides that the Convention enters into force 30 days after the deposit of the seventh instrument of ratification, acceptance or approval. UNODC records entry into force on 7 February 2014. The official LAS ratification table could not be retrieved from this environment, so the current number of Parties is not asserted.",
+        "notes": "Adopted at Cairo on 21 December 2010 by the Arab Ministers of Interior and Justice. Article 19(3) provides that the Convention enters into force 30 days after the deposit of the seventh instrument of ratification, acceptance or approval. UNODC records entry into force on 7 February 2014. The archived LAS treaty page links a ratification table, but the table PDF was not retrievable from the archive in this environment, so the current number of Parties is not asserted.",
         "opened_for_signature": "2010-12-21",
-        "verified_on": "2026-11-24"
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "cyber"
       ],
       "gaps": [
-        "The official LAS depositary page and its ratification table were unreachable from this environment on 24 November 2026; no current party-by-party count is asserted.",
+        "The official LAS depositary page is no longer reachable; an archived copy of the treaty page (23 April 2024) links the ratification table, but the table PDF was not retrievable from the archive, so no current party-by-party count is asserted.",
         "The English text was read from a reproduction of the official translation; the Arabic original was not acquired.",
         "No full text, citable units or original file is stored in this record; it is metadata-only.",
         "National implementation, reservations and the Convention's institutional practice are not assessed.",
@@ -372,7 +377,7 @@
         "counts": {
           "parties": {
             "basis": "unknown",
-            "note": "Entry into force in 2014 establishes that at least seven ratifications were deposited. The current LAS table could not be read; no party total is asserted.",
+            "note": "Entry into force in 2014 establishes that at least seven ratifications were deposited. The archived LAS page links the table, but the table itself was not readable; no party total is asserted.",
             "source_ids": [
               "unodc-compendium",
               "las-ratification-table"
@@ -382,7 +387,7 @@
           },
           "ratifications": {
             "basis": "unknown",
-            "note": "No current ratification total is asserted; the LAS depositary table was inaccessible.",
+            "note": "No current ratification total is asserted; the archived LAS treaty page links the table, but the table was not retrievable.",
             "source_ids": [
               "las-ratification-table"
             ],
@@ -399,7 +404,7 @@
           "unodc-compendium",
           "las-ratification-table"
         ],
-        "summary": "The Convention is in force, but the current number of Parties is not verified. A 2015 national reproduction lists 22 Arab States in its signature/ratification table, with the United Arab Emirates recorded as having ratified on 21 September 2011; that table is incomplete and is not used to assert a current party count.",
+        "summary": "The Convention is in force, but the current number of Parties is not verified. The archived LAS treaty page was checked, but its ratification table was not retrievable. A 2015 national reproduction lists 22 Arab States in its signature/ratification table, with the United Arab Emirates recorded as having ratified on 21 September 2011; that table is incomplete and is not used to assert a current party count.",
         "unknowns": [
           "Current Parties and the date of each deposit.",
           "Reservations, declarations and objections.",
@@ -411,7 +416,8 @@
         "assertions": [],
         "discovered_via": "UNODC pre-ratification compendium and the League of Arab States legal-network pages; cross-checked against the English text reproduction.",
         "search_dates": [
-          "2026-11-24"
+          "2026-11-24",
+          "2026-11-25"
         ]
       },
       "related": [
@@ -453,22 +459,22 @@
       },
       "sources": [
         {
-          "accessed": "2026-11-24",
-          "http_status": null,
+          "accessed": "2026-11-25",
+          "http_status": 200,
           "id": "las-convention-text",
           "kind": "official_primary",
-          "note": "Official LAS legal-network copy of the Convention (Arabic and English). The endpoint was unreachable from this environment; the English reproduction was used for the text read.",
+          "note": "Archived copy (Internet Archive, snapshot 23 April 2024) of the official LAS legal-network PDF of the Convention, in Arabic with an English translation. The live leagueofarabstates.net host no longer responds; the archived copy is used and the original is not stored in this corpus.",
           "publisher": "League of Arab States",
-          "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+          "url": "https://web.archive.org/web/20240423123401/https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
         },
         {
-          "accessed": "2026-11-24",
-          "http_status": null,
+          "accessed": "2026-11-25",
+          "http_status": 200,
           "id": "las-ratification-table",
           "kind": "official_primary",
-          "note": "Official LAS document 'Ratification of the Arab Convention on Combating Information Technology Offences'; the endpoint was unreachable, so the current table was not read.",
+          "note": "Archived copy (Internet Archive, snapshot 23 April 2024) of the LAS legal-network treaty page for RID 73, which links the Convention text and the ratification table. The linked ratification PDF was not retrievable from the archive in this environment, so no current party table was read.",
           "publisher": "League of Arab States",
-          "url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%8A%D9%82%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D9%87%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf"
+          "url": "https://web.archive.org/web/20240423123313/http://www.leagueofarabstates.net/ar/legalnetwork/Pages/agreements_details.aspx?RID=73"
         },
         {
           "accessed": "2026-11-24",
@@ -482,7 +488,7 @@
         }
       ],
       "status": "in_force",
-      "status_note": "In force since 7 February 2014, 30 days after the seventh instrument was deposited. The current number of Parties is unknown, not zero: the LAS depositary table could not be retrieved.",
+      "status_note": "In force since 7 February 2014, 30 days after the seventh instrument was deposited. The current number of Parties is unknown, not zero: the archived LAS treaty page links the table, but the table could not be retrieved.",
       "title": {
         "english": "Arab Convention on Combating Information Technology Offences",
         "official": "Arab Convention on Combating Information Technology Offences",
@@ -504,13 +510,13 @@
             "result": "Article 19 requires ratification, acceptance, approval or accession; the General Secretariat is depositary; the Convention is open to LAS members."
           },
           {
-            "check": "Official LAS depositary page attempted.",
-            "date": "2026-11-24",
-            "result": "The LAS endpoint was unreachable from this environment; no current party count was taken from it."
+            "check": "Archived LAS treaty page checked.",
+            "date": "2026-11-25",
+            "result": "The Internet Archive snapshot of the LAS treaty page links the Convention text and the ratification table; the table PDF was not retrievable, so no current party count was taken from it."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata and legal nature verified. No full text or party table is stored; the current party count and reservations remain unknown."
+        "notes": "Metadata and legal nature verified. No full text or party table is stored; the archived treaty page was checked but its table was not readable; the current party count and reservations remain unknown."
       }
     },
     {
@@ -1402,7 +1408,7 @@
       "dates": {
         "adopted": "2025-07-06",
         "notes": "Adopted at the 17th BRICS Summit in Rio de Janeiro on 6 July 2025. The official text is a leaders' statement; it has no signature, ratification, depositary or entry-into-force clause.",
-        "verified_on": "2026-11-24"
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "ai"
@@ -1412,7 +1418,7 @@
         "No individual signature block; the 11 entries are the BRICS member States, not individual signatories.",
         "No follow-up mechanism, review cycle or implementation reporting was verified.",
         "The relationship between this statement and the later WAICO Agreement is political, not institutional; no formal linkage was verified.",
-        "No full text is stored; the record is metadata-only."
+        "The statement is stored as a full text and segmented at document level (one unit); it has no articles or numbered paragraphs to segment further."
       ],
       "id": "brics-ai-statement-2025",
       "instrument_type": "declaration",
@@ -1420,7 +1426,7 @@
         {
           "name": "BRICS Leaders, 17th BRICS Summit, Rio de Janeiro",
           "role": "issuer",
-          "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
+          "url": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
         },
         {
           "name": "Federative Republic of Brazil, 2025 BRICS Presidency",
@@ -1430,7 +1436,7 @@
         {
           "name": "BRICS member States",
           "role": "issuer",
-          "url": "https://brics.br/en/about-the-brics"
+          "url": "https://web.archive.org/web/20260617005151/https://brics.br/en"
         }
       ],
       "languages": {
@@ -1573,7 +1579,7 @@
       "provenance": {
         "assertions": [
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "status",
             "locator": "Statement text, title and opening paragraph; Brazilian MFA page, 6 July 2025",
             "method": "official_page_read",
@@ -1583,7 +1589,7 @@
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "parties",
             "locator": "Presidency membership list; SPA report of 7 July 2025",
             "method": "official_page_read",
@@ -1594,7 +1600,7 @@
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "counts",
             "locator": "About the BRICS, member list: 11 States",
             "method": "official_page_read",
@@ -1603,7 +1609,7 @@
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "legal_nature",
             "locator": "Statement text, final clauses: no signature, ratification or depositary clause",
             "method": "official_text_read",
@@ -1614,7 +1620,8 @@
         ],
         "discovered_via": "Audit of other international AI instruments after the summit-series and WAICO reviews; the official BRICS Presidency PDF and the Brazilian MFA page were read.",
         "search_dates": [
-          "2026-11-23"
+          "2026-11-23",
+          "2026-11-25"
         ]
       },
       "related": [
@@ -1654,19 +1661,19 @@
       },
       "rights": {
         "licence": "BRICS 2025 Presidency / Government of Brazil official publication",
-        "note": "Official government publication. No full text is stored in this corpus; the statement is read from the official PDF and MFA page.",
+        "note": "Official government publication. A 7-page archived copy of the official PDF is stored in this corpus; reproduction remains subject to the BRICS 2025 Presidency terms.",
         "status": "public_official_text"
       },
       "sources": [
         {
-          "accessed": "2026-11-23",
-          "http_status": null,
+          "accessed": "2026-11-25",
+          "http_status": 200,
           "id": "brics-presidency-pdf",
           "kind": "official_primary",
           "language": "en",
-          "note": "Official PDF of the BRICS Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The host did not resolve by DNS from this environment during the 23 and 24 November 2026 audits; the search index returned the document, so the site exists, but the URL could not be fetched directly from this VM.",
+          "note": "Archived copy (Internet Archive, snapshot 18 April 2026) of the official PDF of the BRICS Leaders' Statement on the Global Governance of Artificial Intelligence, adopted in Rio de Janeiro on 6 July 2025. The live brics.br host did not resolve by DNS from this environment during the 23, 24 and 25 November 2026 audits.",
           "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
-          "url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
+          "url": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file"
         },
         {
           "accessed": "2026-11-23",
@@ -1679,14 +1686,14 @@
           "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial"
         },
         {
-          "accessed": "2026-11-23",
-          "http_status": null,
+          "accessed": "2026-11-25",
+          "http_status": 200,
           "id": "brics-members",
           "kind": "official_primary",
           "language": "en",
-          "note": "Official page listing the 11 BRICS member States: Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The host did not resolve by DNS from this environment during the 23 and 24 November 2026 audits; the search index returned the page content, so the site exists, but the URL could not be fetched directly from this VM.",
+          "note": "Archived copy (Internet Archive, snapshot 17 June 2026) of the BRICS 2025 Presidency homepage. It states that BRICS is a group of eleven countries and names Brazil, Russia, India, China, South Africa, Saudi Arabia, Egypt, the United Arab Emirates, Ethiopia, Indonesia and Iran. The live brics.br host did not resolve by DNS from this environment.",
           "publisher": "BRICS 2025 Presidency, Federative Republic of Brazil",
-          "url": "https://brics.br/en/about-the-brics"
+          "url": "https://web.archive.org/web/20260617005151/https://brics.br/en"
         },
         {
           "accessed": "2026-11-24",
@@ -1711,6 +1718,14 @@
       ],
       "status": "adopted",
       "status_note": "Non-binding political statement, not a treaty. It was issued collectively by the leaders of the BRICS member States at the Rio de Janeiro summit; the official text has no individual signature block. The record therefore counts 11 listed member States, not 11 signatories and not 11 individually evidenced co-issuers. The 2025 presidency lists Saudi Arabia as a member; the Saudi Press Agency described the Kingdom on 7 July 2025 as an invited country and said the Foreign Minister led its delegation. No document-specific list of issuing governments was located. No ratification, depositary, monitoring or enforcement is established.",
+      "text": {
+        "extraction_note": "Full English text extracted from the archived official PDF (7 pages). The PDF text layer preserves line breaks and occasional intra-word spaces; page running headers and page numbers remain. Segmentation is at document level because the statement has no articles, numbered paragraphs or signature block.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "BRICS Leaders' Statement on the Global Governance of Artificial Intelligence",
         "short": "BRICS AI Statement"
@@ -1741,10 +1756,15 @@
             "check": "Saudi participation checked against the Saudi Press Agency and the presidency's membership list.",
             "date": "2026-11-24",
             "result": "The presidency lists Saudi Arabia among 11 member States; SPA reported on 7 July 2025 that the Foreign Minister led the delegation as an invited country to join the group. No document-specific list of issuers was located. The conflict is recorded; the count remains 11 listed member States, not 11 individually evidenced issuers."
+          },
+          {
+            "check": "Full text acquired from the archived official PDF and segmented.",
+            "date": "2026-11-25",
+            "result": "7-page PDF matching the official statement acquired and stored; 1 document-level unit generated from the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official BRICS Presidency PDF, the Brazilian MFA page and the official BRICS membership page. The record is metadata-only: no full text is stored. The statement has no individual signature block; the 11 entries are the member States listed by the presidency. Saudi participation is recorded inconsistently by official sources and the conflict is documented rather than resolved by inference."
+        "notes": "Metadata and full text verified from the archived official BRICS Presidency PDF, the archived Presidency homepage and the Brazilian MFA page. The statement has no individual signature block; the 11 entries are the member States listed by the presidency. Saudi participation is recorded inconsistently by official sources and the conflict is documented rather than resolved by inference."
       }
     },
     {
@@ -3487,7 +3507,7 @@
         "entered_into_force": "2002-03-14",
         "notes": "Signed at Minsk on 1 June 2001 by the CIS Heads of State. UNODC records entry into force on 14 March 2002 after three instruments. The 2018 Dushanbe Agreement replaces this Agreement between the States that become parties to it; for States that have not ratified the Dushanbe Agreement, the Minsk Agreement remains in force. The CIS depositary does not publish a current party table on the document page, so no current party count is asserted.",
         "signed": "2001-06-01",
-        "verified_on": "2026-11-24"
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "cyber"
@@ -3495,7 +3515,7 @@
       "gaps": [
         "The CIS Executive Committee confirms that the Agreement is in force but does not display a current party-by-party table; no current party count is asserted.",
         "The 2018 Dushanbe Agreement replaces this Agreement between its Parties, but the exact set of States for which the Minsk Agreement remains in force is not verified.",
-        "Only the Russian authentic text and an English translation were read; no full text, citable units or original file is stored in this record.",
+        "The English translation is stored and segmented; the Russian authentic text is linked through the CIS Executive Committee page but is not stored or segmented.",
         "National implementation and reservations are not assessed.",
         "The Agreement creates no AI-specific obligation."
       ],
@@ -3611,7 +3631,7 @@
       },
       "rights": {
         "licence": "CIS official text terms",
-        "note": "Official CIS text; reproduction is subject to the Commonwealth's terms. No full text is stored in this corpus.",
+        "note": "Official CIS text; reproduction is subject to the Commonwealth's terms. The English translation is an official secondary reproduction; it is stored for verification, not as an authentic text.",
         "status": "public_official_text",
         "url": "https://eccis.org/"
       },
@@ -3637,18 +3657,26 @@
           "url": "https://www.unodc.org/documents/Cybercrime/Convention/Pre-ratification/PRE-RATIFICATION_COMPENDIUM.pdf"
         },
         {
-          "accessed": "2026-11-24",
+          "accessed": "2026-11-25",
           "http_status": 200,
           "id": "cis-minsk-english",
           "kind": "official_secondary",
           "language": "en",
-          "note": "English translation of the Agreement reproduced by the Azerbaijani prosecutor training centre; used to check the substantive provisions.",
+          "note": "Archived copy (Internet Archive, snapshot 20 March 2022) of the English translation reproduced by the Prosecutor General's Office of Azerbaijan. The live copat.gov.az host fails TLS certificate verification from this environment.",
           "publisher": "Prosecutor General's Office of Azerbaijan",
-          "url": "https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf"
+          "url": "https://web.archive.org/web/20220320005205/https://copat.gov.az/docs/Qanunvericilik/Agreement%20on%20Cooperation%20in%20Combating%20Offences%20related%20to%20Computer%20Information%20-%20Commonwealth%20of%20Independent%20States.pdf"
         }
       ],
       "status": "in_force",
       "status_note": "In force since 14 March 2002. The 2018 Dushanbe Agreement replaces it between the States that become parties to that Agreement; for other CIS States it may remain in force. The current party list is not published on the CIS document page.",
+      "text": {
+        "extraction_note": "Full English translation extracted from the archived 8-page PDF reproduced by the Prosecutor General's Office of Azerbaijan. The translation is not an authentic text; the Russian original remains the authentic version. Segmentation follows the 17 articles of the Agreement.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "treaty"
+      },
       "title": {
         "english": "Agreement on Cooperation among the Member States of the Commonwealth of Independent States in Combating Offences relating to Computer Information",
         "official": "Соглашение о сотрудничестве государств – участников Содружества Независимых Государств в борьбе с преступлениями в сфере компьютерной информации",
@@ -3670,10 +3698,15 @@
             "check": "Substantive provisions checked in an English translation.",
             "date": "2026-11-24",
             "result": "Criminalisation, harmonisation and law-enforcement cooperation duties are present; no AI-specific provision."
+          },
+          {
+            "check": "English translation acquired and segmented.",
+            "date": "2026-11-25",
+            "result": "8-page PDF acquired from the Internet Archive; 17 article-level units generated from the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is metadata-only and is not mapped."
+        "notes": "Metadata, legal nature and entry into force verified. The current party count is unknown, not zero; the record is not mapped. The English translation is stored and segmented, but it is not an authentic text; the Russian original is the authentic version."
       }
     },
     {
@@ -4203,7 +4236,7 @@
         "notes": "Adopted by the Committee of Ministers on 17 May 2024 at its 133rd Session; opened for signature at Vilnius on 5 September 2024. Published in the EU Official Journal on 13 May 2026 (OJ L, 2026/1081). Not in force on the verification date; party data checked against the Treaty Office chart status of 23 November 2026.",
         "opened_for_signature": "2024-09-05",
         "published": "2026-05-13",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "ai"
@@ -4211,7 +4244,7 @@
       "gaps": [
         "The Convention is not in force; the Conference of the Parties, its rules of procedure and the reporting format have therefore not been constituted.",
         "No reservation or objection is recorded on the Treaty Office chart as of 2026-11-23; Article 34 permits only the reservation provided for in Article 33(1) (federal clause).",
-        "The direct CoE PDF endpoint (https://rm.coe.int/1680afae3c) returned HTTP 403 (Cloudflare) on 25 November 2026. A 12-page Council of Europe Treaty Series PDF of CETS 225, reproduced in an OHCHR submission annex, was acquired and stored (see catalog/acquisitions.json). The certified bilingual copy in the corrected French version adopted at the 1527th meeting of the Ministers' Deputies on 30 April 2025 was also acquired and stored; it is dated Strasbourg, 20 May 2025 and includes the authentic French text. The French text is not separately segmented, and the English column of the certified copy has not been re-diffed page by page against the stored English transcription.",
+        "The direct CoE PDF endpoint (https://rm.coe.int/1680afae3c) returned HTTP 403 (Cloudflare) on 25 November 2026. A 12-page Council of Europe Treaty Series PDF reproduced in an OHCHR submission annex, and the certified bilingual copy in the corrected French version dated Strasbourg, 20 May 2025, were acquired and stored (see catalog/acquisitions.json). The authentic French text is extracted to text/fr.txt but is not segmented into units; the English column of the certified copy has not been re-diffed page by page against the stored English transcription.",
         "No implementing protocol or additional protocol has been adopted.",
         "The Convention excludes national defence and may exclude national-security activities; coverage of military AI is therefore not provided by this treaty.",
         "The Ukrainian declaration was issued in English and Ukrainian; only the English rendering is reproduced."
@@ -4235,7 +4268,7 @@
           "en",
           "fr"
         ],
-        "note": "Article 36 final clause: done in English and French, both texts equally authentic. The Council of Europe Treaty Office also lists German, Italian and Russian texts; the EU Official Journal publishes translations in all EU official languages. Only English and French are authentic for the treaty. The certified bilingual copy in the corrected French version is stored; the English text is segmented, the French text is not separately extracted.",
+        "note": "Article 36 final clause: done in English and French, both texts equally authentic. The Council of Europe Treaty Office also lists German, Italian and Russian texts; the EU Official Journal publishes translations in all EU official languages. The English text is segmented; the authentic French text is stored as text/fr.txt with page offsets but is not segmented into units.",
         "translations": [
           "de",
           "it",
@@ -4583,7 +4616,16 @@
       "status": "not_in_force",
       "status_note": "As of the Treaty Office chart status date 23 November 2026: 21 signatories in total (19 signatures not followed by ratification and 2 ratifications), and 19 signatures without ratification. The two ratifications are Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). Article 30(3) requires five ratifications including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. Not in force.",
       "text": {
-        "extraction_note": "The stored text is textually identical, on a whitespace-insensitive comparison, to the 12-page Council of Europe Treaty Series PDF of CETS 225 acquired on 25 November 2026. Running headers ('CETS 225 – Artificial Intelligence, 5.IX.2024'), underscore rules, page numbers and line wrapping were removed. The PDF's text layer inserts occasional intra-word spaces; whitespace normalisation removes them. Article headings and paragraph breaks are preserved. No wording changes were made. The page map uses the 12 pages of that PDF. The certified bilingual copy acquired on 25 November 2026 includes the corrected French text; its English column was not separately diffed page by page, and its French text is not segmented.",
+        "extraction_note": "The stored English text is textually identical, on a whitespace-insensitive comparison, to the 12-page Council of Europe Treaty Series PDF of CETS 225 acquired on 25 November 2026. Running headers, underscore rules, page numbers and line wrapping were removed. The certified bilingual copy acquired on 25 November 2026 includes the corrected French text; the authentic French pages (3, 5, ..., 27 of the 27-page PDF) were extracted to text/fr.txt with page offsets in pages-fr.json. The French text is not segmented into units, and the English column of the certified copy has not been re-diffed page by page against the stored English transcription.",
+        "files": [
+          {
+            "language": "fr",
+            "pages": "pages-fr.json",
+            "path": "text/fr.txt",
+            "role": "authentic_text",
+            "segmented": false
+          }
+        ],
         "full_text": true,
         "manifest": "manifest.json",
         "primary_language": "en",
@@ -4630,11 +4672,16 @@
           {
             "check": "Certified bilingual copy acquired and inspected.",
             "date": "2026-11-25",
-            "result": "The 27-page bilingual PDF at rm.coe.int/1680b680bc states on page 1 that the French text is corrected under the Committee of Ministers decision of 30 April 2025; the final page is the certified copy dated Strasbourg, 20 May 2025. SHA-256 591b9daf1ee6a2ad2fe84ef896e964f656c97fa1fff8332eb6ebc64cc82f865c; stored in the manifest. The French text is not separately segmented."
+            "result": "The 27-page bilingual PDF at rm.coe.int/1680b680bc states on page 1 that the French text is corrected under the Committee of Ministers decision of 30 April 2025; the final page is the certified copy dated Strasbourg, 20 May 2025. SHA-256 591b9daf1ee6a2ad2fe84ef896e964f656c97fa1fff8332eb6ebc64cc82f865c; stored in the manifest. The authentic French pages were extracted to text/fr.txt with page offsets; the French text is not segmented."
+          },
+          {
+            "check": "Authentic French text extracted from the certified copy.",
+            "date": "2026-11-25",
+            "result": "Pages 3, 5, ..., 27 of the bilingual PDF extracted to text/fr.txt (35,876 characters) with page offsets in pages-fr.json; no translation or wording change introduced."
           }
         ],
         "level": "full_text_checked",
-        "notes": "Full text stored as a transcription. A 12-page Council of Europe Treaty Series PDF reproduced in an OHCHR submission annex was acquired on 25 November 2026; after removing running headers, underscore rules, page numbers and line wrapping, all 12 pages match the stored text. The certified bilingual copy in the corrected French version was acquired on 25 November 2026 and is stored; the French text is not separately segmented. The direct CoE endpoint returned HTTP 403. The official chart and declarations page were read through a rendered-text extraction of the official Treaty Office URLs because the site's React assets returned HTTP 403 in the cloud browser; the official URLs and status date are recorded. Hash integrity covers the stored PDFs, text, pages and units."
+        "notes": "Full English text stored as a transcription, matched page by page against a 12-page Council of Europe Treaty Series PDF. The certified bilingual copy in the corrected French version is stored; its authentic French pages are extracted to text/fr.txt but not segmented. The direct CoE endpoint returned HTTP 403. Hash integrity covers the stored PDFs, English and French texts, page maps and English units."
       }
     },
     {
@@ -4643,14 +4690,14 @@
       "dates": {
         "adopted": "2024-09-05",
         "notes": "Dated Vilnius, 5 September 2024; the Convention was adopted by the Committee of Ministers on 17 May 2024.",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "ai"
       ],
       "gaps": [
         "Not an authoritative interpretation.",
-        "Full text not acquired (HTTP 403).",
+        "Article-by-article commentary is stored and segmented, but its legal persuasiveness is not assessed.",
         "Article-by-article commentary not verified in detail."
       ],
       "id": "coe-cets-225-explanatory-report",
@@ -4693,19 +4740,19 @@
       },
       "rights": {
         "licence": "Council of Europe copyright",
-        "note": "Official Council of Europe document; no open licence identified. Metadata only in this corpus.",
+        "note": "Official Council of Europe document; no open licence identified. A 33-page archived copy is stored in this corpus for verification and citation.",
         "status": "public_official_text",
         "url": "https://www.coe.int/en/web/portal/disclaimer"
       },
       "sources": [
         {
-          "accessed": "2026-11-23",
-          "http_status": null,
+          "accessed": "2026-11-25",
+          "http_status": 200,
           "id": "coe-report",
           "kind": "official_primary",
-          "note": "Official Explanatory Report; direct download returned HTTP 403 to automated clients, but the opening and structure were read through the extraction tool.",
+          "note": "Archived copy (Internet Archive, snapshot 17 November 2026) of the official English Explanatory Report. The live rm.coe.int endpoint returned HTTP 403 to automated clients.",
           "publisher": "Council of Europe Treaty Office",
-          "url": "https://rm.coe.int/1680afae67"
+          "url": "https://web.archive.org/web/20261117082757/https://rm.coe.int/1680afae67"
         },
         {
           "accessed": "2026-11-23",
@@ -4718,6 +4765,14 @@
       ],
       "status": "adopted",
       "status_note": "Published with the Convention. Non-binding interpretive material.",
+      "text": {
+        "extraction_note": "Full English text extracted from the archived 33-page PDF dated Vilnius, 5 September 2024. Running headers, underscore rules and page numbers remain. Segmentation follows the numbered paragraphs; the indented list of human rights instruments inside paragraph 39 is kept within that paragraph.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "numbered"
+      },
       "title": {
         "official": "Explanatory Report to the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
         "short": "CETS 225 Explanatory Report"
@@ -4733,10 +4788,15 @@
             "check": "Relationship to the Convention checked on the official CoE page.",
             "date": "2026-11-23",
             "result": "Linked as the Explanatory Report to CETS 225."
+          },
+          {
+            "check": "Full text acquired from the archived official PDF and segmented.",
+            "date": "2026-11-25",
+            "result": "33-page PDF acquired and stored; 99 numbered-paragraph units generated."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Only the opening and structure were read; the full report was not acquired or segmented."
+        "notes": "The full report is stored and segmented. It expressly does not constitute an authoritative interpretation of CETS 225."
       }
     },
     {
@@ -9632,20 +9692,20 @@
       "category": "non_binding_instrument",
       "dates": {
         "adopted": "2018-11-12",
-        "notes": "Launched by the President of the French Republic at the Internet Governance Forum at UNESCO and the Paris Peace Forum. The European Union and the United States joined on 11 November 2021. The supporters list is a current online list, not a dated depositary table; this record is a snapshot at 24 November 2026.",
+        "notes": "Launched by the President of the French Republic at the Internet Governance Forum at UNESCO and the Paris Peace Forum. The European Union and the United States joined on 11 November 2021. The supporters list is a current online list, not a dated depositary table. The State count of 81 was last checked on 24 November 2026 against the official list and its fixed source-repository commit; the archived page used as the stable link is the 17 November 2025 snapshot.",
         "published": "2018-11-12",
-        "verified_on": "2026-11-24"
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "cyber"
       ],
       "gaps": [
-        "Non-binding: the Call creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
+        "The official supporters page is a dynamic list with no formal update log or depositary; the live host no longer resolves, so the record relies on the archived 17 November 2025 snapshot and the source repository at commit 916433b. Later additions are not reflected.",
         "The official supporters page is a dynamic list with no formal update log or depositary; the record is a snapshot at 24 November 2026 and later additions are not reflected.",
         "Only the 81 State supporters and the European Union are recorded and mapped; the 36 public authorities, 390 civil-society organisations and 706 private-sector supporters reported by the official homepage are outside this State-level map.",
         "The homepage counters and the official site's source data do not fully agree for non-State categories (public authorities, organisations and companies differ by one or two); the State count is 81 in both.",
         "The European Union is a supporter but is not a State and is not shown on the State map.",
-        "No full text is stored; the official English and French texts are linked but not acquired."
+        "The full English text is stored and segmented; the French version is not acquired."
       ],
       "id": "paris-call-cyberspace-2018",
       "instrument_type": "declaration",
@@ -9653,12 +9713,12 @@
         {
           "name": "President of the French Republic",
           "role": "issuer",
-          "url": "https://pariscall.international/en/call"
+          "url": "https://web.archive.org/web/20250829163844/https://pariscall.international/en/call"
         },
         {
           "name": "Paris Peace Forum",
           "role": "host",
-          "url": "https://pariscall.international/en"
+          "url": "https://web.archive.org/web/20251117075315/https://pariscall.international/en"
         }
       ],
       "languages": {
@@ -10047,7 +10107,7 @@
       "provenance": {
         "assertions": [
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "title",
             "locator": "Official text page, title and opening paragraph.",
             "method": "official_page_read",
@@ -10056,7 +10116,7 @@
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "dates",
             "locator": "Official text page, closing line: Paris, 12th of November, 2018.",
             "method": "official_page_read",
@@ -10065,7 +10125,7 @@
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "parties",
             "locator": "Official supporters page, State category (81 entries) and the European Union entry under public authorities.",
             "method": "official_page_read",
@@ -10075,7 +10135,7 @@
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "counts",
             "locator": "Official homepage supporter counters and the official source repository's 81 state files at commit 916433b.",
             "method": "official_page_read",
@@ -10085,7 +10145,7 @@
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "field": "legal_nature",
             "locator": "Official text page, closing paragraph and list of cooperative measures; no treaty or enforcement clause.",
             "method": "official_text_read",
@@ -10096,7 +10156,8 @@
         ],
         "discovered_via": "Official Paris Call site; its linked public source repository.",
         "search_dates": [
-          "2026-11-24"
+          "2026-11-24",
+          "2026-11-25"
         ]
       },
       "related": [
@@ -10127,50 +10188,50 @@
       },
       "rights": {
         "licence": "No separate licence statement located for the Call text",
-        "note": "The official text and supporter list are public. The website source code is published under the EUPL-1.2 licence; that licence is not asserted for the political text.",
+        "note": "The official text and supporter list are public. A 4-page archived copy of the official PDF is stored in this corpus; the website source code is published under the EUPL-1.2 licence, which is not asserted for the political text.",
         "status": "public_official_text",
         "url": "https://pariscall.international/en/legal-notice"
       },
       "sources": [
         {
-          "accessed": "2026-11-24",
+          "accessed": "2026-11-25",
           "http_status": 200,
           "id": "paris-call-text",
           "kind": "official_primary",
           "language": "en",
-          "note": "Official English text of the Paris Call of 12 November 2018, with the nine cooperative measures.",
+          "note": "Archived copy (Internet Archive, snapshot 29 August 2025) of the official English text of the Paris Call of 12 November 2018, with the nine cooperative measures. The live pariscall.international host no longer resolves from this environment.",
           "publisher": "Paris Call",
-          "url": "https://pariscall.international/en/call"
+          "url": "https://web.archive.org/web/20250829163844/https://pariscall.international/en/call"
         },
         {
-          "accessed": "2026-11-24",
+          "accessed": "2026-11-25",
           "http_status": 200,
           "id": "paris-call-supporters",
           "kind": "official_primary",
           "language": "en",
-          "note": "Official supporters list; the State category contains 81 entries and the European Union appears separately. The page links a downloadable CSV.",
+          "note": "Archived copy (Internet Archive, snapshot 17 November 2025) of the official supporters list; the State category contains 81 entries and the European Union appears separately.",
           "publisher": "Paris Call",
-          "url": "https://pariscall.international/en/supporters"
+          "url": "https://web.archive.org/web/20251117070515/https://pariscall.international/en/supporters"
         },
         {
-          "accessed": "2026-11-24",
+          "accessed": "2026-11-25",
           "http_status": 200,
           "id": "paris-call-page",
           "kind": "official_primary",
           "language": "en",
-          "note": "Official homepage; supporter counters at access: 81 States, 36 public authorities, 390 organisations and 706 companies.",
+          "note": "Archived copy (Internet Archive, snapshot 17 November 2025) of the official homepage; supporter counters at capture: 81 States, 36 public authorities, 390 organisations and 706 companies.",
           "publisher": "Paris Call",
-          "url": "https://pariscall.international/en"
+          "url": "https://web.archive.org/web/20251117075315/https://pariscall.international/en"
         },
         {
-          "accessed": "2026-11-24",
-          "http_status": null,
+          "accessed": "2026-11-25",
+          "http_status": 200,
           "id": "paris-call-csv",
           "kind": "official_primary",
           "language": "en",
-          "note": "Official downloadable CSV generated from the supporter data. Direct retrieval from this environment failed; the State entries were checked against the official source repository instead.",
+          "note": "Archived copy (Internet Archive, snapshot 27 September 2024) of the official downloadable CSV generated from the supporter data.",
           "publisher": "Paris Call",
-          "url": "https://pariscall.international/supporters.csv"
+          "url": "https://web.archive.org/web/20240927013736/https://pariscall.international/supporters.csv"
         },
         {
           "accessed": "2026-11-24",
@@ -10185,6 +10246,14 @@
       ],
       "status": "adopted",
       "status_note": "Political call, not a treaty. Launched on 12 November 2018; no signature, ratification, depositary or entry-into-force clause. The official supporters page lists 81 States and the European Union as of 24 November 2026. Support is political endorsement, not legal obligation.",
+      "text": {
+        "extraction_note": "Full English text extracted from the archived 4-page official PDF dated 12 November 2018. Running headers and page numbers remain; segmentation is at document level because the Call is a continuous declaration with nine cooperative measures, not numbered articles.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "Paris Call for Trust and Security in Cyberspace",
         "short": "Paris Call 2018"
@@ -10210,10 +10279,15 @@
             "check": "Legal nature checked.",
             "date": "2026-11-24",
             "result": "Political call with no treaty, signature, ratification, depositary or enforcement clause."
+          },
+          {
+            "check": "Full text acquired from the archived official PDF and segmented.",
+            "date": "2026-11-25",
+            "result": "4-page PDF dated 12 November 2018 acquired and stored; 1 document-level unit generated from the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata and supporter list verified from the official page and its official source repository. No full text is stored. The list is a dated snapshot, not a depositary register."
+        "notes": "Metadata and supporter list verified from the archived official page and the official source repository. The full text is stored and segmented. The list is a dated snapshot, not a depositary register."
       }
     },
     {
@@ -14055,14 +14129,14 @@
         "adopted": "2021-11-23",
         "notes": "Adopted at the 41st session of the UNESCO General Conference in Paris on 23 November 2021.",
         "published": "2021-11-23",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-25"
       },
       "domains": [
         "ai"
       ],
       "gaps": [
         "Voluntary and non-binding.",
-        "Full text not acquired (HTTP 403); only metadata verified.",
+        "Implementation reports and national responses are not analysed; the Recommendation has no State-level depositary or supporter list to map.",
         "Implementation reports and national responses are not analysed.",
         "No military-AI-specific provisions."
       ],
@@ -14072,7 +14146,7 @@
         {
           "name": "UNESCO General Conference (41st session)",
           "role": "issuer",
-          "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence"
+          "url": "https://web.archive.org/web/20261115100428/https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence"
         }
       ],
       "languages": {
@@ -14120,19 +14194,19 @@
       },
       "rights": {
         "licence": "CC BY-NC-SA 3.0 IGO",
-        "note": "UNESDOC records the publication under CC BY-NC-SA 3.0 IGO. The Recommendation text itself is an official UNESCO standard-setting instrument; the licence permits non-commercial sharing with attribution and share-alike.",
+        "note": "UNESDOC records the publication under CC BY-NC-SA 3.0 IGO. A 44-page archived copy is stored in this corpus; the official text remains UNESCO's instrument.",
         "status": "open_licence",
         "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/igo/"
       },
       "sources": [
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-25",
           "http_status": 200,
           "id": "unesco-page",
           "kind": "official_primary",
-          "note": "Official legal-affairs page: adoption date and place, text, and the recommendation that Member States apply it on a voluntary basis.",
+          "note": "Archived copy (Internet Archive, snapshot 15 November 2026) of the official legal-affairs page: adoption date and place, the text, and the recommendation that Member States apply it on a voluntary basis. The live www.unesco.org page reset the connection from this environment.",
           "publisher": "UNESCO",
-          "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence"
+          "url": "https://web.archive.org/web/20261115100428/https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence"
         },
         {
           "accessed": "2026-11-23",
@@ -14142,10 +14216,28 @@
           "note": "UNESDOC record SHS/BIO/PI/2021/1, 43 pages, CC BY-NC-SA licence, language versions.",
           "publisher": "UNESCO Digital Library",
           "url": "https://unesdoc.unesco.org/ark:/48223/pf0000381137"
+        },
+        {
+          "accessed": "2026-11-25",
+          "http_status": 200,
+          "id": "unesdoc-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Archived copy (Internet Archive, snapshot 29 October 2026) of the English PDF of the Recommendation, SHS/BIO/PI/2021/1, 43 pages, published in 2022. The live UNESDOC PDF endpoint returned HTTP 403 to automated clients.",
+          "publisher": "UNESCO Digital Library",
+          "url": "https://web.archive.org/web/20261029235825/https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_75c9fb6b-92a6-4982-b772-79f540c9fc39?_=381137eng.pdf"
         }
       ],
       "status": "adopted",
       "status_note": "Adopted. Voluntary implementation by Member States; UNESCO monitors and reports on implementation.",
+      "text": {
+        "extraction_note": "Full English text extracted from the archived 44-page PDF of the 2022 UNESCO publication (SHS/BIO/PI/2021/1). Cover, copyright page and table of contents are included. Segmentation follows the numbered paragraphs; the three adopting clauses before Section I are labelled separately.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "numbered"
+      },
       "title": {
         "official": "Recommendation on the Ethics of Artificial Intelligence",
         "short": "UNESCO AI Ethics Recommendation (2021)"
@@ -14161,10 +14253,15 @@
             "check": "Document code and licence checked on the UNESDOC record.",
             "date": "2026-11-23",
             "result": "SHS/BIO/PI/2021/1; CC BY-NC-SA 3.0 IGO."
+          },
+          {
+            "check": "Full text acquired from the archived official PDF and segmented.",
+            "date": "2026-11-25",
+            "result": "44-page PDF (SHS/BIO/PI/2021/1) acquired and stored; 102 units generated, including 3 adoption clauses and numbered paragraphs."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified; the full text was not acquired or segmented because the UNESDOC PDF endpoint returned HTTP 403 in this session. The official HTML page hosts the text."
+        "notes": "Metadata and full text verified. The 44-page English PDF is stored and segmented; the French, Spanish, Arabic, Chinese and Russian versions are recorded but not acquired in this corpus."
       }
     },
     {
