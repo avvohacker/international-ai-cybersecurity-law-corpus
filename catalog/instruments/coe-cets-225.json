@@ -15,7 +15,7 @@
   "gaps": [
     "The Convention is not in force; the Conference of the Parties, its rules of procedure and the reporting format have therefore not been constituted.",
     "No reservation or objection is recorded on the Treaty Office chart as of 2026-11-23; Article 34 permits only the reservation provided for in Article 33(1) (federal clause).",
-    "The direct CoE PDF endpoint (https://rm.coe.int/1680afae3c) returned HTTP 403 (Cloudflare) on 25 November 2026. A 12-page Council of Europe Treaty Series PDF reproduced in an OHCHR submission annex, and the certified bilingual copy in the corrected French version dated Strasbourg, 20 May 2025, were acquired and stored (see catalog/acquisitions.json). The authentic French text is stored and segmented into 36 article units (units-fr.jsonl); the English column of the certified copy has not been re-diffed page by page against the stored English transcription.",
+    "The direct CoE PDF endpoint (https://rm.coe.int/1680afae3c) returned HTTP 403 (Cloudflare) on 25 November 2026. A 12-page Council of Europe Treaty Series PDF reproduced in an OHCHR submission annex, and the certified bilingual copy in the corrected French version dated Strasbourg, 20 May 2025, were acquired and stored (see catalog/acquisitions.json). The authentic French text is stored and segmented into 36 article units (units-fr.jsonl); the English column was compared page by page with the stored English transcription on 26 November 2026 and matches it after whitespace normalisation, with only the page breaks differing.",
     "No implementing protocol or additional protocol has been adopted.",
     "The Convention excludes national defence and may exclude national-security activities; coverage of military AI is therefore not provided by this treaty.",
     "The Ukrainian declaration was issued in English and Ukrainian; only the English rendering is reproduced."
@@ -387,7 +387,7 @@
   "status": "not_in_force",
   "status_note": "As of the Treaty Office chart status date 17 November 2026: 21 signatories in total (19 signatures not followed by ratification and 2 ratifications), and 19 signatures without ratification. The two ratifications are Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). Article 30(3) requires five ratifications including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. Not in force.",
   "text": {
-    "extraction_note": "The stored English text is textually identical, on a whitespace-insensitive comparison, to the 12-page Council of Europe Treaty Series PDF of CETS 225 acquired on 25 November 2026. Running headers, underscore rules, page numbers and line wrapping were removed. The certified bilingual copy acquired on 25 November 2026 includes the corrected French text; the authentic French pages (3, 5, ..., 27 of the 27-page PDF) were extracted to text/fr.txt with page offsets in pages-fr.json. The French text is segmented into 36 article units in units-fr.jsonl; pages-fr.json records both the 1-based French sequence and the corresponding PDF page. The English column of the certified copy has not been re-diffed page by page against the stored English transcription.",
+    "extraction_note": "The stored English text is textually identical, on a whitespace-insensitive comparison, to the 12-page Council of Europe Treaty Series PDF of CETS 225 acquired on 25 November 2026. Running headers, underscore rules, page numbers and line wrapping were removed. The certified bilingual copy acquired on 25 November 2026 includes the corrected French text; the authentic French pages (3, 5, ..., 27 of the 27-page PDF) were extracted to text/fr.txt with page offsets in pages-fr.json. The French text is segmented into 36 article units in units-fr.jsonl; pages-fr.json records both the 1-based French sequence and the corresponding PDF page. On 26 November 2026 the 13 English pages of the certified copy were extracted in layout mode and compared page by page with the stored transcription after normalising whitespace and layout: they map to contiguous stored spans with no gaps or overlaps, the concatenated text is identical from the Preamble to the end (31,492 characters after normalisation), and no wording or punctuation difference was found. The 13-page certified pagination differs from the stored 12-page OHCHR pagination only in page breaks.",
     "files": [
       {
         "language": "fr",
@@ -461,9 +461,14 @@
         "check": "French article segmentation checked.",
         "date": "2026-11-25",
         "result": "36 article headings (Article 1er through Article 36) segmented; every unit is an exact slice of text/fr.txt and every page anchor falls inside pages-fr.json. Labels are unique and the units are stored separately from the English units."
+      },
+      {
+        "check": "English column of the certified bilingual copy compared page by page with the stored English transcription.",
+        "date": "2026-11-26",
+        "result": "All 13 English pages (PDF pages 2, 4, ..., 26) were extracted in layout mode and mapped to contiguous stored spans from the Preamble to the end; there are no gaps or overlaps, and the normalised texts are identical (31,492 characters), so no wording or punctuation difference was found. Only the page breaks differ from the stored 12-page pagination."
       }
     ],
     "level": "full_text_checked",
-    "notes": "Full English text stored as a transcription, matched page by page against a 12-page Council of Europe Treaty Series PDF. The certified bilingual copy in the corrected French version is stored; its authentic French pages are extracted to text/fr.txt and segmented into 36 article units in units-fr.jsonl. The direct CoE endpoint returned HTTP 403. Hash integrity covers the stored PDFs, English and French texts, both page maps and both unit files."
+    "notes": "Full English text stored as a transcription, matched page by page against a 12-page Council of Europe Treaty Series PDF. The certified bilingual copy in the corrected French version is stored; its authentic French pages are extracted to text/fr.txt and segmented into 36 article units in units-fr.jsonl. The direct CoE endpoint returned HTTP 403. Hash integrity covers the stored PDFs, English and French texts, both page maps and both unit files. The English column of the certified copy was also compared page by page with the stored transcription on 26 November 2026: the 13 pages tile the stored text from the Preamble to the end with no gaps and no wording differences."
   }
 }
