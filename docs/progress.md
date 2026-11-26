@@ -14,7 +14,7 @@ Last updated: **2026-11-26**. This file records the current state, the open gaps
 | Non-binding | 54 |
 | Full texts / records with originals | 61 / 60 (68 files) |
 | State-level maps | 17 (7 treaty-based, 10 non-binding) |
-| Candidate register | 45 (29 included, 5 pending, 11 excluded) |
+| Candidate register | 47 (29 included, 7 pending, 11 excluded) |
 
 **What the numbers mean.**
 
@@ -92,7 +92,8 @@ The reading-room content is repository data, not Pages-only editorial text: it l
 **Pending processes**
 
 - G7 2026: the Digital and Technology Ministerial Declaration was adopted in Paris on 29 May 2026 and is catalogued as a non-binding declaration. Its separate deliverables were checked on 26 November 2026 against the official declaration, the Japanese MIC results page and the Hiroshima AI Process Reporting Framework page. The Vision on AI openness is a political framing text; the G7 SME AI Readiness Tool is an OECD-hosted self-assessment tool; the International Overview on resilience and resource efficiency is a compilation of practices; the Policy Paper on Agentic AI is an Inria-led analysis; the Common G7 Set of Principles for minors online is a broader digital-safety text; and the revised Hiroshima AI Process Reporting Framework 2.0 is a voluntary company-reporting framework, with 31 submissions published on 2 October 2026. None is a new AI-specific treaty or binding instrument, and none is added to the register. The declaration remains the only catalogued G7 2026 output; the Vision remains a possible future non-binding record if the corpus decides to cover framing documents.
-- UNGA 81: `A/C.1/81/L.34` (military AI) was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and `A/C.1/81/L.37` (lethal autonomous weapons systems) on 29 October 2026 by 163 to 5, with 9 abstentions; both were forwarded to the plenary. No `A/RES/81` symbol existed at verification, so the plenary votes remain pending and neither draft is catalogued as an adopted resolution.
+- UNGA 81: rechecked on 26 November 2026. `A/C.1/81/L.34` (military AI) was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and `A/C.1/81/L.37` (lethal autonomous weapons systems) on 29 October 2026 by 163 to 5, with 9 abstentions; both were forwarded to the plenary. The Second Committee approved the separate AI Panel/Dialogue draft `A/C.2/81/L.2/Rev.1` on 24 November 2026 by 79 votes to 57, with 47 abstentions. The UN Digital Library records still described all three as drafts on 26 November 2026, with `A/RES/81` placeholders; no plenary adoption was recorded, so none is catalogued as an adopted resolution.
+- GPAI: the Global Partnership on Artificial Intelligence is a multistakeholder initiative, not an instrument; its Terms of Reference state that membership and participation create no legally binding rights or obligations. Its 2023 Ministerial Declaration (GPAI(2023)2, approved in New Delhi on 13 December 2023) is a non-binding AI-specific text, read in full on 26 November 2026, and is recorded as a pending candidate; it is not included in the instrument counts.
 - HRC 63/15 follow-up: operative paragraph 20 convenes a panel at the 65th session on 'Placing human rights at the centre of artificial intelligence: artificial intelligence capacity-building and bridging the artificial intelligence divide'; the OHCHR report on that theme is due to the 66th session, informed by consultations including at the margins of the Second Global Dialogue on AI Governance in May 2027. Neither had taken place at verification, and no date or agenda for the panel was published.
 - CCW GGE: the 2027–2028 negotiating text and the recommendation on legal form.
 
@@ -117,6 +118,7 @@ The reading-room content is repository data, not Pages-only editorial text: it l
 7. **Standards.** ITU-T Y.3172 (approved 2019-06-22, in force), IEEE 7000-2021 (active, published 2021-09-15) and EN 18286:2026 (published, cited in OJ L 2026/2274) are catalogued at metadata level; the JTC 21 committee is excluded as a body, not an instrument. Track the remaining JTC 21 draft work items (prEN 18228, prEN 18283 and prEN 18285) and any national adoption or further harmonised-standard citation.
 8. **CCW follow-up.** Track the 2027 sessions (1–5 March and 30 August–3 September 2027) and any rolling text; record the GGE's recommendation on the legal nature and specific form of the instrument, including a possible binding protocol.
 9. **Latin American bilateral AI MOUs.** The Brazil–China MOU of 13 May 2025 is catalogued as a non-binding interinstitutional act. Other bilateral AI MOUs identified in the region were not read; they are not catalogued or listed here, and should be added only after their official texts are acquired and read. Keep them outside the binding-instrument count.
+10. **GPAI 2023 declaration.** Decide whether to catalogue the non-binding GPAI 2023 Ministerial Declaration as a record; the text was read in full on 26 November 2026, but its adopting membership is not listed in the declaration. Track any later GPAI ministerial declaration and the 2024 OECD-integrated partnership.
 
 ## 4. How to continue without starting over
 

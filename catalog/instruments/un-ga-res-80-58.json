@@ -3,9 +3,9 @@
   "category": "non_binding_instrument",
   "dates": {
     "adopted": "2025-12-01",
-    "notes": "Adopted on the report of the First Committee (A/80/534, para. 7); document distributed 5 December 2025. The 81st-session successor, draft A/C.1/81/L.34, was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; no A/RES/81 symbol had been assigned by 25 November 2026.",
+    "notes": "Adopted on the report of the First Committee (A/80/534, para. 7); document distributed 5 December 2025. The 81st-session successor, draft A/C.1/81/L.34, was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; the text was still a draft, with no A/RES/81 symbol, on 26 November 2026.",
     "published": "2025-12-05",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
@@ -15,7 +15,7 @@
     "Only metadata-level verification.",
     "Only English acquired.",
     "No operative prohibition or transparency mechanism.",
-    "The 81st-session successor (A/C.1/81/L.34) had been approved by the First Committee but not adopted by the plenary at verification; its final number, text and vote in plenary are not recorded here.",
+    "The 81st-session successor (A/C.1/81/L.34) had been approved by the First Committee but remained a draft on 26 November 2026; its final number, text and vote in plenary are not recorded here.",
     "Only the English text of the 2025 resolution was acquired; the successor draft was read in its English PDF only."
   ],
   "id": "un-ga-res-80-58",
@@ -112,7 +112,7 @@
     }
   ],
   "status": "adopted",
-  "status_note": "Adopted. Non-binding resolution. A successor draft for the 81st session (A/C.1/81/L.34) was approved by the First Committee on 30 October 2026 (171-4-6) and forwarded to the General Assembly; it was not an adopted resolution at verification.",
+  "status_note": "Adopted. Non-binding resolution. A successor draft for the 81st session (A/C.1/81/L.34) was approved by the First Committee on 30 October 2026 (171-4-6) and forwarded to the General Assembly; it remained a draft, with no A/RES/81 symbol, on 26 November 2026.",
   "text": {
     "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
     "full_text": true,
@@ -137,11 +137,7 @@
         "date": "2026-11-23",
         "result": "Recalls A/RES/79/239 of 24 December 2024."
       },
-      {
-        "check": "81st-session successor checked on UN documents and coverage.",
-        "date": "2026-11-25",
-        "result": "A/C.1/81/L.34 was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; no A/RES/81 symbol existed on 25 November 2026, so it is not recorded as an adopted resolution."
-      }
+      {"check": "81st-session successor rechecked on UN documents and coverage.", "date": "2026-11-26", "result": "A/C.1/81/L.34 was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; the UN Digital Library record still described it as a draft on 26 November 2026, with A/RES/81/xxx as a placeholder, so it is not recorded as an adopted resolution."}
     ],
     "level": "metadata_verified",
     "notes": "Original preserved and hashed; full text not segmented. Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified."

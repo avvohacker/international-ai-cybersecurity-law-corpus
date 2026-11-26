@@ -4057,7 +4057,7 @@
         "adopted": "2026-11-20",
         "notes": "The GGE adopted its final report by consensus on 4 September 2026. Before the Review Conference, the UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations on an instrument. The Seventh Review Conference adopted its final document on 20 November 2026 (to be issued as CCW/CONF.VII/11), endorsing the set of elements and continuing the GGE. The 2027 sessions are scheduled for 1–5 March and 30 August–3 September 2027.",
         "published": null,
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -4067,7 +4067,7 @@
         "The final document was read as CCW/CONF.VII/CRP.1/Rev.3; the clean CCW/CONF.VII/11 symbol was not yet available at verification.",
         "Only the English texts were read; the other UN official language versions were not acquired.",
         "The positions of individual High Contracting Parties and the 2027 GGE Chair were not assessed.",
-        "The 81st-session General Assembly draft A/C.1/81/L.37 had been approved by the First Committee but not adopted by the plenary at verification; its plenary fate is not recorded here.",
+        "The 81st-session General Assembly draft A/C.1/81/L.37 had been approved by the First Committee but remained a draft on 26 November 2026; its plenary fate is not recorded here.",
         "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "ccw-gge-laws-2026",
@@ -4212,7 +4212,7 @@
         }
       ],
       "status": "in_negotiation",
-      "status_note": "No instrument has been adopted. The UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations; it had not been adopted by the plenary at verification. The 2024–2026 GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference (16–20 November 2026) endorsed the set of elements of an instrument and other possible measures and continued the open-ended GGE, mandating it to elaborate, by consensus, an instrument that specifies international humanitarian law applicable to LAWS and its implementation, without prejudging the instrument's nature, and to recommend its legal nature and specific form, including whether it should be a binding protocol. The Group is to report to the 2028 Meeting of High Contracting Parties.",
+      "status_note": "No instrument has been adopted. The UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations; it remained a draft, with no A/RES/81 symbol, on 26 November 2026. The 2024–2026 GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference (16–20 November 2026) endorsed the set of elements of an instrument and other possible measures and continued the open-ended GGE, mandating it to elaborate, by consensus, an instrument that specifies international humanitarian law applicable to LAWS and its implementation, without prejudging the instrument's nature, and to recommend its legal nature and specific form, including whether it should be a binding protocol. The Group is to report to the 2028 Meeting of High Contracting Parties.",
       "text": {
         "extraction_note": "Official 10-page English PDF of CCW/GGE.1/2026/3 extracted with pypdf. Page units follow the document sequence.",
         "full_text": true,
@@ -4252,6 +4252,11 @@
             "check": "Format, hash and unit anchors verified.",
             "date": "2026-11-26",
             "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
+          },
+          {
+            "check": "UNGA successor status rechecked.",
+            "date": "2026-11-26",
+            "result": "The UN Digital Library record for A/C.1/81/L.37 still described it as a draft, with A/RES/81/x as a placeholder; no plenary adoption was recorded."
           }
         ],
         "level": "metadata_verified",
@@ -17022,7 +17027,7 @@
         "adopted": "2025-08-26",
         "notes": "Adopted without reference to a Main Committee (A/79/L.118); document distributed 27 August 2025.",
         "published": "2025-08-27",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -17031,7 +17036,8 @@
         "Non-binding: the Panel and Dialogue produce scientific and deliberative outputs, not legal obligations.",
         "The mandate expressly excludes military AI, so it does not fill the military-AI governance gap.",
         "Appointment of Panel members, rules of procedure and work programme are not covered by the resolution and were not verified.",
-        "Only the English version is stored."
+        "Only the English version is stored.",
+        "A 2026 successor draft, A/C.2/81/L.2/Rev.1, was approved by the Second Committee on 24 November 2026 (79-57-47) and forwarded to the plenary; it remained a draft with no A/RES/81 symbol on 26 November 2026."
       ],
       "id": "un-ga-res-79-325",
       "instrument_type": "resolution",
@@ -17138,6 +17144,11 @@
             "check": "Non-military limitation checked in the preamble.",
             "date": "2026-11-23",
             "result": "The resolution and the activities of the Panel and Dialogue are limited to the non-military domain and do not refer to AI for military purposes."
+          },
+          {
+            "check": "2026 successor draft checked.",
+            "date": "2026-11-26",
+            "result": "A/C.2/81/L.2/Rev.1 (17 November 2026), read in full, supports the Panel and Dialogue and was approved by the Second Committee on 24 November 2026 by 79 votes to 57, with 47 abstentions; it remained a draft with no A/RES/81 symbol on 26 November 2026."
           }
         ],
         "level": "full_text_checked",
@@ -17410,9 +17421,9 @@
       "category": "non_binding_instrument",
       "dates": {
         "adopted": "2025-12-01",
-        "notes": "Adopted on the report of the First Committee (A/80/534, para. 7); document distributed 5 December 2025. The 81st-session successor, draft A/C.1/81/L.34, was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; no A/RES/81 symbol had been assigned by 25 November 2026.",
+        "notes": "Adopted on the report of the First Committee (A/80/534, para. 7); document distributed 5 December 2025. The 81st-session successor, draft A/C.1/81/L.34, was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; the text was still a draft, with no A/RES/81 symbol, on 26 November 2026.",
         "published": "2025-12-05",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -17422,7 +17433,7 @@
         "Only metadata-level verification.",
         "Only English acquired.",
         "No operative prohibition or transparency mechanism.",
-        "The 81st-session successor (A/C.1/81/L.34) had been approved by the First Committee but not adopted by the plenary at verification; its final number, text and vote in plenary are not recorded here.",
+        "The 81st-session successor (A/C.1/81/L.34) had been approved by the First Committee but remained a draft on 26 November 2026; its final number, text and vote in plenary are not recorded here.",
         "Only the English text of the 2025 resolution was acquired; the successor draft was read in its English PDF only."
       ],
       "id": "un-ga-res-80-58",
@@ -17519,7 +17530,7 @@
         }
       ],
       "status": "adopted",
-      "status_note": "Adopted. Non-binding resolution. A successor draft for the 81st session (A/C.1/81/L.34) was approved by the First Committee on 30 October 2026 (171-4-6) and forwarded to the General Assembly; it was not an adopted resolution at verification.",
+      "status_note": "Adopted. Non-binding resolution. A successor draft for the 81st session (A/C.1/81/L.34) was approved by the First Committee on 30 October 2026 (171-4-6) and forwarded to the General Assembly; it remained a draft, with no A/RES/81 symbol, on 26 November 2026.",
       "text": {
         "extraction_note": "Text extracted from the official English PDF with pypdf and segmented into citable units. The full text is stored and hashed; it was not read end-to-end in this cycle, so the verification level remains metadata_verified.",
         "full_text": true,
@@ -17545,9 +17556,9 @@
             "result": "Recalls A/RES/79/239 of 24 December 2024."
           },
           {
-            "check": "81st-session successor checked on UN documents and coverage.",
-            "date": "2026-11-25",
-            "result": "A/C.1/81/L.34 was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; no A/RES/81 symbol existed on 25 November 2026, so it is not recorded as an adopted resolution."
+            "check": "81st-session successor rechecked on UN documents and coverage.",
+            "date": "2026-11-26",
+            "result": "A/C.1/81/L.34 was approved by the First Committee on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded to the plenary; the UN Digital Library record still described it as a draft on 26 November 2026, with A/RES/81/xxx as a placeholder, so it is not recorded as an adopted resolution."
           }
         ],
         "level": "metadata_verified",

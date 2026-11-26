@@ -5,7 +5,7 @@
     "adopted": "2025-08-26",
     "notes": "Adopted without reference to a Main Committee (A/79/L.118); document distributed 27 August 2025.",
     "published": "2025-08-27",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
@@ -14,7 +14,8 @@
     "Non-binding: the Panel and Dialogue produce scientific and deliberative outputs, not legal obligations.",
     "The mandate expressly excludes military AI, so it does not fill the military-AI governance gap.",
     "Appointment of Panel members, rules of procedure and work programme are not covered by the resolution and were not verified.",
-    "Only the English version is stored."
+    "Only the English version is stored.",
+  "A 2026 successor draft, A/C.2/81/L.2/Rev.1, was approved by the Second Committee on 24 November 2026 (79-57-47) and forwarded to the plenary; it remained a draft with no A/RES/81 symbol on 26 November 2026."
   ],
   "id": "un-ga-res-79-325",
   "instrument_type": "resolution",
@@ -117,11 +118,8 @@
         "date": "2026-11-23",
         "result": "A/RES/79/325; adopted 26 August 2025; title as recorded."
       },
-      {
-        "check": "Non-military limitation checked in the preamble.",
-        "date": "2026-11-23",
-        "result": "The resolution and the activities of the Panel and Dialogue are limited to the non-military domain and do not refer to AI for military purposes."
-      }
+      {"check": "Non-military limitation checked in the preamble.", "date": "2026-11-23", "result": "The resolution and the activities of the Panel and Dialogue are limited to the non-military domain and do not refer to AI for military purposes."},
+    {"check": "2026 successor draft checked.", "date": "2026-11-26", "result": "A/C.2/81/L.2/Rev.1 (17 November 2026), read in full, supports the Panel and Dialogue and was approved by the Second Committee on 24 November 2026 by 79 votes to 57, with 47 abstentions; it remained a draft with no A/RES/81 symbol on 26 November 2026."}
     ],
     "level": "full_text_checked",
     "notes": "Full text preserved. The Panel and Dialogue are institutional mechanisms, not a treaty or a standard-setting body with binding outputs."

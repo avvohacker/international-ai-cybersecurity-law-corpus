@@ -5,7 +5,7 @@
     "adopted": "2026-11-20",
     "notes": "The GGE adopted its final report by consensus on 4 September 2026. Before the Review Conference, the UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations on an instrument. The Seventh Review Conference adopted its final document on 20 November 2026 (to be issued as CCW/CONF.VII/11), endorsing the set of elements and continuing the GGE. The 2027 sessions are scheduled for 1–5 March and 30 August–3 September 2027.",
     "published": null,
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
@@ -15,7 +15,7 @@
     "The final document was read as CCW/CONF.VII/CRP.1/Rev.3; the clean CCW/CONF.VII/11 symbol was not yet available at verification.",
     "Only the English texts were read; the other UN official language versions were not acquired.",
     "The positions of individual High Contracting Parties and the 2027 GGE Chair were not assessed.",
-    "The 81st-session General Assembly draft A/C.1/81/L.37 had been approved by the First Committee but not adopted by the plenary at verification; its plenary fate is not recorded here.",
+    "The 81st-session General Assembly draft A/C.1/81/L.37 had been approved by the First Committee but remained a draft on 26 November 2026; its plenary fate is not recorded here.",
     "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "ccw-gge-laws-2026",
@@ -160,7 +160,7 @@
     }
   ],
   "status": "in_negotiation",
-  "status_note": "No instrument has been adopted. The UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations; it had not been adopted by the plenary at verification. The 2024–2026 GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference (16–20 November 2026) endorsed the set of elements of an instrument and other possible measures and continued the open-ended GGE, mandating it to elaborate, by consensus, an instrument that specifies international humanitarian law applicable to LAWS and its implementation, without prejudging the instrument's nature, and to recommend its legal nature and specific form, including whether it should be a binding protocol. The Group is to report to the 2028 Meeting of High Contracting Parties.",
+  "status_note": "No instrument has been adopted. The UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations; it remained a draft, with no A/RES/81 symbol, on 26 November 2026. The 2024–2026 GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference (16–20 November 2026) endorsed the set of elements of an instrument and other possible measures and continued the open-ended GGE, mandating it to elaborate, by consensus, an instrument that specifies international humanitarian law applicable to LAWS and its implementation, without prejudging the instrument's nature, and to recommend its legal nature and specific form, including whether it should be a binding protocol. The Group is to report to the 2028 Meeting of High Contracting Parties.",
   "text": {
     "extraction_note": "Official 10-page English PDF of CCW/GGE.1/2026/3 extracted with pypdf. Page units follow the document sequence.",
     "full_text": true,
@@ -196,11 +196,8 @@
         "date": "2026-11-23",
         "result": "UN official languages are authentic for UN documents; only the English texts were read."
       },
-      {
-        "check": "Format, hash and unit anchors verified.",
-        "date": "2026-11-26",
-        "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
-      }
+      {"check": "Format, hash and unit anchors verified.", "date": "2026-11-26", "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."},
+      {"check": "UNGA successor status rechecked.", "date": "2026-11-26", "result": "The UN Digital Library record for A/C.1/81/L.37 still described it as a draft, with A/RES/81/x as a placeholder; no plenary adoption was recorded."}
     ],
     "level": "metadata_verified",
     "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."

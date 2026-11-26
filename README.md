@@ -12,7 +12,7 @@ Source-verified corpus of international artificial intelligence and cybersecurit
 | — AI domain / cybersecurity-only / joint | 61 / 15 / 0 |
 | Instruments with a stored full text and citable units | 61 |
 | Instruments with a stored, SHA-256-hashed original | 60 (68 files) |
-| Candidate-register entries | 45 (29 included, 5 pending, 11 excluded) |
+| Candidate-register entries | 47 (29 included, 7 pending, 11 excluded) |
 | Treaties specifically dedicated to AI | 2 (CETS No. 225; WAICO Establishment Agreement; CETS not in force, WAICO entry into force unconfirmed) |
 | Instruments with binding form | 22 (18 international + 4 internal law) |
 | International treaty-based instruments in force | 13 |

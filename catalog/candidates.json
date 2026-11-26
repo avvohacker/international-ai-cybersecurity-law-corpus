@@ -338,6 +338,19 @@
     "gaps": "Broad digital/tech scope; only the AI-related sections are recorded; the referred G7 deliverables and the revised Reporting Framework are not analysed individually."
   },
   {
+    "id": "gpai-2023-ministerial-declaration",
+    "title": "GPAI 2023 Ministerial Declaration",
+    "issuer": "Global Partnership on Artificial Intelligence (GPAI) Ministerial Council, New Delhi",
+    "decision": "pending",
+    "instrument_id": null,
+    "reason": "Official OECD text read in full. The declaration was approved by the GPAI Ministerial Council on 13 December 2023 and contains substantive AI commitments, including work within members' jurisdictions on safe, secure and trustworthy AI and the adoption of GPAI projects. It is a non-binding ministerial declaration, distinct from the GPAI Terms of Reference, which state that membership creates no legally binding rights or obligations. It appears to meet the inclusion rule but has not yet been catalogued.",
+    "candidate_type": "ministerial_declaration",
+    "official_url": "https://one.oecd.org/document/GPAI%282023%292/en/pdf",
+    "searched_on": "2026-11-26",
+    "evidence": "Official OECD document GPAI(2023)2, 14 December 2023, approved by the GPAI Ministerial Council at its fifth meeting in New Delhi on 13 December 2023; GPAI Terms of Reference GPAI(2022)3/FINAL, paragraph 2, stating that membership and participation do not entail legally binding rights or obligations.",
+    "gaps": "The declaration does not list its adopting members; current GPAI membership is not fixed in the text; it has not been catalogued or segmented; its relationship to the 2024 OECD-integrated partnership is institutional, not a treaty succession."
+  },
+  {
     "id": "un-ga-81-l34-military-ai",
     "title": "Artificial intelligence in the military domain and its implications for international peace and security (A/C.1/81/L.34)",
     "issuer": "United Nations General Assembly, First Committee, 81st session",
@@ -346,9 +359,9 @@
     "reason": "Draft resolution, not yet an adopted A/RES. The First Committee approved it on 30 October 2026 by 171 votes to 4, with 6 abstentions, and forwarded it to the plenary. It is therefore pending rather than catalogued as an adopted instrument; the outcome is recorded in the un-ga-res-80-58 record as a successor process.",
     "candidate_type": "draft_resolution",
     "official_url": "https://digitallibrary.un.org/record/4130554/files/A_C.1_81_L.34-EN.pdf",
-    "searched_on": "2026-11-25",
-    "evidence": "UN Digital Library record and English PDF of A/C.1/81/L.34 (13 October 2026, 46 sponsors); UN Meetings Coverage GA/DIS/3782 of 30 October 2026 recording approval by 171-4-6; no A/RES/81 symbol assigned as of 25 November 2026.",
-    "gaps": "Not yet adopted by the plenary; no final resolution number or text; the plenary vote is not recorded."
+    "searched_on": "2026-11-26",
+    "evidence": "UN Digital Library record and English PDF of A/C.1/81/L.34 (13 October 2026, 46 sponsors); UN Meetings Coverage GA/DIS/3782 of 30 October 2026 recording approval by 171-4-6; the Digital Library record still describes the text as a draft on 26 November 2026, with A/RES/81/xxx as a placeholder.",
+    "gaps": "Not yet adopted by the plenary; no final resolution number or text; the plenary vote is not recorded as of 26 November 2026."
   },
   {
     "id": "un-ga-81-l37-laws",
@@ -359,9 +372,22 @@
     "reason": "Draft resolution, not yet an adopted A/RES. The First Committee approved it on 29 October 2026 by 163 votes to 5, with 9 abstentions, and forwarded it to the plenary. It is therefore pending rather than catalogued as an adopted instrument; the outcome is recorded in the ccw-gge-laws-2026 record as a related General Assembly process.",
     "candidate_type": "draft_resolution",
     "official_url": "https://digitallibrary.un.org/record/4130858/files/A_C.1_81_L.37-EN.pdf",
-    "searched_on": "2026-11-25",
-    "evidence": "UN Digital Library record and English PDF of A/C.1/81/L.37 (13 October 2026); UN Meetings Coverage GA/DIS/3781 of 29 October 2026 recording approval by 163-5-9; no A/RES/81 symbol assigned as of 25 November 2026.",
-    "gaps": "Not yet adopted by the plenary; no final resolution number or text; the plenary vote is not recorded."
+    "searched_on": "2026-11-26",
+    "evidence": "UN Digital Library record and English PDF of A/C.1/81/L.37 (13 October 2026); UN Meetings Coverage GA/DIS/3781 of 29 October 2026 recording approval by 163-5-9; the Digital Library record still describes the text as a draft on 26 November 2026, with A/RES/81/x as a placeholder.",
+    "gaps": "Not yet adopted by the plenary; no final resolution number or text; the plenary vote is not recorded as of 26 November 2026."
+  },
+  {
+    "id": "un-ga-81-l2-rev1-ai-panel-dialogue",
+    "title": "Supporting the functioning of the Independent International Scientific Panel on Artificial Intelligence and the Global Dialogue on Artificial Intelligence Governance (A/C.2/81/L.2/Rev.1)",
+    "issuer": "United Nations General Assembly, Second Committee, 81st session",
+    "decision": "pending",
+    "instrument_id": null,
+    "reason": "Revised draft resolution read in full. The Second Committee approved it on 24 November 2026 by 79 votes to 57, with 47 abstentions, and forwarded it to the plenary. It supports the Panel and the Global Dialogue established by A/RES/79/325 and would have the Assembly affirm the UN's convening role on non-military AI and call for capacity-building and measures to bridge the AI divide. It is a draft, not an adopted A/RES, so it is pending rather than catalogued.",
+    "candidate_type": "draft_resolution",
+    "official_url": "https://digitallibrary.un.org/record/4133658/files/A_C.2_81_L.2_Rev.1-EN.pdf",
+    "searched_on": "2026-11-26",
+    "evidence": "Official English PDF A/C.2/81/L.2/Rev.1 (17 November 2026, 3 pages, read in full); UN Digital Library record 4133658, which still describes it as a revised draft with A/RES/81/xxx as a placeholder; UN Meetings Coverage GA/EF/3632 of 24 November 2026 recording approval by 79-57-47 and its transmission to the plenary.",
+    "gaps": "Not yet adopted by the plenary; no A/RES/81 number or final text; the plenary vote is not recorded; the draft expressly excludes military AI."
   },
   {
     "id": "g20-ai-prosperity-compact-2026",

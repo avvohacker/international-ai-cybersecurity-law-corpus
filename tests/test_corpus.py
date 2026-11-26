@@ -915,7 +915,7 @@ class TestCatalogue(unittest.TestCase):
 
     def test_candidate_register_counts(self) -> None:
         entries = json.loads((ROOT / "catalog" / "candidates.json").read_text(encoding="utf-8"))
-        self.assertEqual(len(entries), 45)
+        self.assertEqual(len(entries), 47)
         decisions = {"included": 0, "pending": 0, "excluded": 0}
         instruments = corpuslib.load_instruments()
         for entry in entries:
@@ -924,7 +924,7 @@ class TestCatalogue(unittest.TestCase):
                 self.assertIn(entry["instrument_id"], instruments)
             else:
                 self.assertIsNone(entry["instrument_id"])
-        self.assertEqual(decisions, {"included": 29, "pending": 5, "excluded": 11})
+        self.assertEqual(decisions, {"included": 29, "pending": 7, "excluded": 11})
 
     def test_regional_and_reaim_records(self) -> None:
         regional = (
