@@ -359,8 +359,8 @@ class TestCatalogue(unittest.TestCase):
         data = audit_texts.audit()
         self.assertEqual(data["total"], 75)
         self.assertEqual(sum(data["summary"].values()), 75)
-        self.assertEqual(data["summary"]["stored"], 45)
-        self.assertEqual(data["summary"]["official_text_located"], 19)
+        self.assertEqual(data["summary"]["stored"], 60)
+        self.assertEqual(data["summary"]["official_text_located"], 4)
         self.assertEqual(data["summary"]["internal_law"], 3)
         self.assertEqual(data["summary"]["paywalled"], 6)
         self.assertEqual(data["summary"]["summary_only"], 2)
@@ -568,7 +568,9 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(inst["binding_status"], "non_binding")
         self.assertEqual(inst["dates"]["adopted"], "2024-04-05")
         self.assertEqual(inst["verification"]["level"], "metadata_verified")
-        self.assertNotIn("text", inst)
+        self.assertTrue(inst["text"]["full_text"])
+        self.assertEqual(inst["text"]["primary_text"], "text/en.txt")
+        self.assertEqual(len(corpuslib.load_units("us-eu-ttc-ai-safety-dialogue-2024")), 1)
         self.assertIn("not a treaty", inst["status_note"])
         self.assertIn("No standalone", inst["status_note"])
         provisions = " ".join(inst["relevance"]["ai_provisions"])
@@ -641,7 +643,8 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(inst["binding_status"], "non_binding")
         self.assertEqual(inst["status"], "adopted")
         self.assertEqual(inst["verification"]["level"], "metadata_verified")
-        self.assertNotIn("text", inst)
+        self.assertTrue(inst["text"]["full_text"])
+        self.assertEqual(len(corpuslib.load_units("pax-silica-declaration-2025")), 1)
         parties = inst["parties"]
         self.assertEqual(parties["act"], "endorsement")
         self.assertEqual(parties["counts"]["endorsements"]["total"], 26)
@@ -674,7 +677,8 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(inst["binding_status"], "non_binding")
         self.assertEqual(inst["status"], "adopted")
         self.assertEqual(inst["verification"]["level"], "metadata_verified")
-        self.assertNotIn("text", inst)
+        self.assertTrue(inst["text"]["full_text"])
+        self.assertEqual(len(corpuslib.load_units("new-delhi-declaration-2026")), 1)
         self.assertEqual(inst["dates"]["adopted"], "2026-02-19")
         parties = inst["parties"]
         self.assertEqual(parties["act"], "endorsement")
@@ -910,6 +914,10 @@ class TestCatalogue(unittest.TestCase):
             "reaim-pathways-to-action-2026",
         )
         stored_text = {
+            "arab-unified-ai-strategy-2025": 39,
+            "alecso-charter-ai-ethics-2025": 49,
+            "clad-ibero-ai-charter-2023": 32,
+            "ibero-ai-declaration-2024": 4,
             "reaim-call-to-action-2023": 25,
             "reaim-pathways-to-action-2026": 28,
         }
@@ -954,6 +962,36 @@ class TestCatalogue(unittest.TestCase):
             any(source["kind"] == "secondary" for source in alecso["sources"]),
             "ALECSO adoption must rest on official sources, not media reports",
         )
+
+    def test_second_acquisition_pass_units_and_content(self) -> None:
+        expected = {
+            "alecso-charter-ai-ethics-2025": (49, "ALECSO Charter on Artificial Intelligence Ethics"),
+            "arab-unified-ai-strategy-2025": (39, "الرؤية الاستراتيجية العربية الموحدة"),
+            "clad-ibero-ai-charter-2023": (32, "Carta Iberoamericana de"),
+            "eu-gpai-code-of-practice-2025": (55, "Safety and Security Chapter"),
+            "oecd-digital-security-critical-activities-2019": (18, "Recommendation of the Council on"),
+            "pall-mall-code-of-practice-2025": (1, "The Pall Mall Process Code of Practice for States"),
+            "us-eu-ttc-ai-safety-dialogue-2024": (1, "Trade and Technology Council"),
+            "ccw-gge-laws-2026": (10, "Group of Governmental Experts"),
+            "coe-recommendation-algorithmic-systems-2020": (15, "algorithmic systems"),
+            "ibero-ai-declaration-2024": (4, "INTELIGENCIA ARTIFICIAL"),
+            "new-delhi-declaration-2026": (1, "AI Impact Summit Declaration"),
+            "g20-ai-prosperity-objectives-2026": (2, "THE G20 AI PROSPERITY OBJECTIVES"),
+            "political-declaration-military-ai-2023": (1, "Political Declaration on Responsible Military Use"),
+            "pax-silica-declaration-2025": (1, "Pax Silica Declaration"),
+            "san-francisco-declaration-2026": (1, "San Francisco Declaration"),
+        }
+        for iid, (count, needle) in expected.items():
+            inst = read_instrument(iid)
+            self.assertTrue(inst["text"]["full_text"], iid)
+            units = corpuslib.load_units(iid)
+            self.assertEqual(len(units), count, iid)
+            body = (ROOT / "corpus" / iid / inst["text"]["primary_text"]).read_text(
+                encoding="utf-8"
+            )
+            self.assertIn(needle, body, iid)
+            for unit in units:
+                self.assertEqual(body[unit["char_start"]:unit["char_end"]], unit["text"], iid)
 
     def test_pact_units_are_citable(self) -> None:
         units = corpuslib.load_units("un-ga-res-79-1")
@@ -2116,7 +2154,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 241)
+        self.assertEqual(len(targets), 253)
         self.assertEqual(len({target.instrument_id for target in targets}), 75)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)

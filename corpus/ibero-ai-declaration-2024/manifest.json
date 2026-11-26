@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 323099,
+      "media_type": "application/pdf",
+      "note": "Archived copy (Internet Archive, snapshot 12 October 2025) of the official four-page Spanish text of the Ibero-American AI Declaration, Cuenca, 15 November 2024. The live mintel host timed out from this environment.",
+      "path": "source/ibero-ai-declaration-2024-es.pdf",
+      "role": "original",
+      "sha256": "edad7bbb06bead6a308bbf9ddbc886a60731b71cedc8c4c85d67950368915375",
+      "source_url": "https://web.archive.org/web/20251012173343/https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf"
+    },
+    {
+      "bytes": 14107,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/es.txt",
+      "role": "text",
+      "sha256": "931f7f47f29d742963087ab29a3079a7bcc6aa9f8869201422bf43a80ac6302b"
+    },
+    {
+      "bytes": 369,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "e5277411db6047b369ed4d2e75917dcf76ca4ee44d23c255ee910c28adb0d9f4"
+    },
+    {
+      "bytes": 15125,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "0b502f530da1f7bb02608ae790c9ee84cb3d15fdabcf092571e4423bd4158a97"
+    }
+  ],
+  "instrument_id": "ibero-ai-declaration-2024",
+  "primary_text": "text/es.txt"
+}

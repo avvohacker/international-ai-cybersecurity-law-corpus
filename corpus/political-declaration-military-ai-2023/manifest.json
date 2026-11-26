@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 92074,
+      "media_type": "application/pdf",
+      "note": "Archived copy (Internet Archive, snapshot 21 February 2024) of the official two-page revised Political Declaration on Responsible Military Use of AI and Autonomy, published by the US Department of State. The live state.gov PDF returned HTTP 407 to automated clients.",
+      "path": "source/political-declaration-military-ai-2023-en.pdf",
+      "role": "original",
+      "sha256": "fe68d7ac6fcb40d77e2283e3417535ea89ec8f2cdcc2e5b60993527753cfc4db",
+      "source_url": "https://web.archive.org/web/20240221131548/https://www.state.gov/wp-content/uploads/2023/10/Latest-Version-Political-Declaration-on-Responsible-Military-Use-of-AI-and-Autonomy.pdf"
+    },
+    {
+      "bytes": 5749,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "bc9850166a9da196b0c0aecbf3d4b2cc435a6f47116e7062fa1abfd1ed342b82"
+    },
+    {
+      "bytes": 208,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "ccb27947171ef563034c5f568994749ce20a9d09397a1aeb27f56b5e6e5d76ec"
+    },
+    {
+      "bytes": 6062,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "1b83f5142aed15136af6dbf000f5459581987646290c994982705b56ce73ea9f"
+    }
+  ],
+  "instrument_id": "political-declaration-military-ai-2023",
+  "primary_text": "text/en.txt"
+}

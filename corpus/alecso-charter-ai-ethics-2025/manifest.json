@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 933624,
+      "media_type": "application/pdf",
+      "note": "Official 49-page English edition of the ALECSO Charter on Artificial Intelligence Ethics, dated June 2025; the edition states that it is translated from the Arabic original.",
+      "path": "source/alecso-charter-ai-ethics-2025-en.pdf",
+      "role": "original",
+      "sha256": "02736344d0aa65309c0fe411ebbb07a7c560997ab866894b2c9fbacd095125a4",
+      "source_url": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf"
+    },
+    {
+      "bytes": 95898,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "9a77c6ac2ee6ebbbe8afb270a415ec3b643eb5781761dba4f28c1d5f1d27fa72"
+    },
+    {
+      "bytes": 4040,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "59280e349708f716f3892828c608459fa0a4555da12c1eba3d8e5a434e9db92d"
+    },
+    {
+      "bytes": 108285,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "71f5d8bf3047154a299ba99cfbf0a185722fef738d667f4ce8250ed8d7a4d773"
+    }
+  ],
+  "instrument_id": "alecso-charter-ai-ethics-2025",
+  "primary_text": "text/en.txt"
+}

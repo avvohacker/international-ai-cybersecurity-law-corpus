@@ -11,24 +11,13 @@
       "title": "AfCFTA Digital Trade Protocol"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 933624,
-        "checked_on": "2026-11-25",
-        "content_length": 933624,
-        "content_type": "application/pdf",
-        "final_url": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "pdf",
-        "url": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf"
-      },
       "id": "alecso-charter-ai-ethics-2025",
       "official_source": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "ALECSO Charter on AI Ethics"
     },
     {
@@ -63,24 +52,13 @@
       "title": "Arab Convention on IT Offences"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 1168738,
-        "checked_on": "2026-11-25",
-        "content_length": 1168738,
-        "content_type": "application/pdf",
-        "final_url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "pdf",
-        "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf"
-      },
       "id": "arab-unified-ai-strategy-2025",
       "official_source": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "Unified Arab AI Strategy"
     },
     {
@@ -144,24 +122,13 @@
       "title": "Budapest Convention"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "draft_negotiation",
-      "download": {
-        "bytes_read": 4211,
-        "checked_on": "2026-11-25",
-        "content_length": 4211,
-        "content_type": "text/html",
-        "final_url": "https://docs.un.org/en/CCW/GGE.1/2026/3",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://docs.un.org/en/CCW/GGE.1/2026/3"
-      },
       "id": "ccw-gge-laws-2026",
       "official_source": "https://docs.un.org/en/CCW/GGE.1/2026/3",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "CCW GGE on LAWS — 2026 report and negotiating mandate"
     },
     {
@@ -205,24 +172,13 @@
       "title": "CIS Minsk Agreement 2001"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 859906,
-        "checked_on": "2026-11-25",
-        "content_length": 859906,
-        "content_type": "application/pdf",
-        "final_url": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "pdf",
-        "url": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf"
-      },
       "id": "clad-ibero-ai-charter-2023",
       "official_source": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "CLAD Ibero-American AI Charter"
     },
     {
@@ -266,24 +222,13 @@
       "title": "First Additional Protocol to the Budapest Convention (ETS No. 189)"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 5207,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "",
-        "final_url": "https://rm.coe.int/09000016809e1154",
-        "http_status": 403,
-        "outcome": "blocked",
-        "reason": "http_403",
-        "url": "https://rm.coe.int/09000016809e1154"
-      },
       "id": "coe-recommendation-algorithmic-systems-2020",
       "official_source": "https://rm.coe.int/09000016809e1154",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "CoE Recommendation on algorithmic systems (2020)"
     },
     {
@@ -327,24 +272,13 @@
       "title": "Cyber Resilience Act"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "preparatory_interpretive",
-      "download": {
-        "bytes_read": 63422,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "text/html",
-        "final_url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice"
-      },
       "id": "eu-gpai-code-of-practice-2025",
       "official_source": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "EU GPAI Code of Practice"
     },
     {
@@ -368,24 +302,13 @@
       "title": "Frontier AI Safety Commitments"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 6030,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "",
-        "final_url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives",
-        "http_status": 403,
-        "outcome": "blocked",
-        "reason": "http_403",
-        "url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives"
-      },
       "id": "g20-ai-prosperity-objectives-2026",
       "official_source": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "G20 AI Prosperity Objectives (2026)"
     },
     {
@@ -409,25 +332,13 @@
       "title": "G7 Hiroshima AI Process Code of Conduct"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 0,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "",
-        "error": "URLError",
-        "final_url": "https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf",
-        "http_status": null,
-        "outcome": "transient",
-        "reason": "timeout",
-        "url": "https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf"
-      },
       "id": "ibero-ai-declaration-2024",
       "official_source": "https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "Ibero-American Declaration on Ethical and Trustworthy AI"
     },
     {
@@ -531,24 +442,13 @@
       "title": "NATO AI Strategy (revised 2024)"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 82125,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "text/html",
-        "final_url": "https://www.mea.gov.in:443/bilateral-documents?dtl/40809",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809"
-      },
       "id": "new-delhi-declaration-2026",
       "official_source": "https://mea.gov.in/bilateral-documents.htm?dtl/40809",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "New Delhi Declaration on AI Impact"
     },
     {
@@ -562,45 +462,23 @@
       "title": "OECD AI Recommendation (OECD/LEGAL/0449)"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 4035,
-        "checked_on": "2026-11-25",
-        "content_length": 4035,
-        "content_type": "text/html",
-        "final_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0456",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0456"
-      },
       "id": "oecd-digital-security-critical-activities-2019",
       "official_source": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0456",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "OECD Digital Security Recommendation (OECD/LEGAL/0456)"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 123647,
-        "checked_on": "2026-11-25",
-        "content_length": 123647,
-        "content_type": "text/html",
-        "final_url": "https://www.gov.uk/government/publications/the-pall-mall-process-code-of-practice-for-states/the-pall-mall-process-code-of-practice-for-states",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://www.gov.uk/government/publications/the-pall-mall-process-code-of-practice-for-states/the-pall-mall-process-code-of-practice-for-states"
-      },
       "id": "pall-mall-code-of-practice-2025",
       "official_source": "https://www.gov.uk/government/publications/the-pall-mall-process-code-of-practice-for-states/the-pall-mall-process-code-of-practice-for-states",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "Pall Mall Code 2025"
     },
     {
@@ -624,45 +502,23 @@
       "title": "Paris Call 2018"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 237595,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "text/html",
-        "final_url": "https://www.state.gov/pax-silica",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://www.state.gov/pax-silica"
-      },
       "id": "pax-silica-declaration-2025",
       "official_source": "https://www.state.gov/pax-silica",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "Pax Silica Declaration"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 140995,
-        "checked_on": "2026-11-25",
-        "content_length": 140995,
-        "content_type": "text/html",
-        "final_url": "https://2021-2025.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://2021-2025.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
-      },
       "id": "political-declaration-military-ai-2023",
       "official_source": "https://2021-2025.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "U.S.-led Political Declaration on military AI"
     },
     {
@@ -717,24 +573,13 @@
       "title": "SADEA"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 181943,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "text/html",
-        "final_url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"
-      },
       "id": "san-francisco-declaration-2026",
       "official_source": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "San Francisco Declaration"
     },
     {
@@ -888,24 +733,13 @@
       "title": "UNESCO AI Ethics Recommendation (2021)"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 53026,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "text/html",
-        "final_url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_24_1828",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_24_1828"
-      },
       "id": "us-eu-ttc-ai-safety-dialogue-2024",
       "official_source": "https://ec.europa.eu/commission/presscorner/detail/en/statement_24_1828",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "U.S.–EU TTC AI Safety Dialogue"
     },
     {
@@ -941,17 +775,17 @@
   ],
   "summary": {
     "download_probe": {
-      "blocked": 2,
+      "blocked": 0,
       "broken": 0,
-      "checked": 17,
+      "checked": 2,
       "checked_on": "2026-11-25",
-      "downloaded": 14,
-      "transient": 1
+      "downloaded": 2,
+      "transient": 0
     },
     "internal_law": 3,
-    "official_text_located": 19,
+    "official_text_located": 4,
     "paywalled": 6,
-    "stored": 45,
+    "stored": 60,
     "summary_only": 2
   },
   "total": 75

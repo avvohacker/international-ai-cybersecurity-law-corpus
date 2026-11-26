@@ -2,7 +2,7 @@
 """Segment an extracted text into citable units with page and character anchors.
 
 Usage:
-  python tools/segment.py <instrument-id> --mode treaty|resolution|sections|whole
+  python tools/segment.py <instrument-id> --mode treaty|resolution|sections|numbered|pages|whole
 """
 
 from __future__ import annotations
@@ -169,17 +169,12 @@ def segment_pact(body: str) -> list[dict]:
     return units
 
 
-def page_units(
-    body: str, pages: list[dict], start: int = 0, end: int | None = None
-) -> list[dict]:
-    """Create one exact unit per PDF page, clipped to an optional range."""
-    limit = len(body) if end is None else min(end, len(body))
+def page_units(body: str, pages: list[dict]) -> list[dict]:
+    """Create one exact unit per PDF page."""
     units: list[dict] = []
     for page in pages:
-        unit_start = max(page["char_start"], start)
-        unit_end = min(page["char_end"] + 1, limit)
-        if unit_start >= unit_end:
-            continue
+        unit_start = page["char_start"]
+        unit_end = page["char_end"] + 1
         text = body[unit_start:unit_end].strip("\n")
         if not text:
             continue
@@ -363,30 +358,15 @@ def main() -> int:
     parser.add_argument("--text", default="text/en.txt")
     parser.add_argument("--pages", default="pages.json")
     parser.add_argument("--output", default="units.jsonl")
-    parser.add_argument(
-        "--start",
-        type=int,
-        default=0,
-        help="optional character offset at which segmentation starts",
-    )
-    parser.add_argument(
-        "--end",
-        type=int,
-        help="optional character offset at which segmentation ends",
-    )
     args = parser.parse_args()
 
     base = CORPUS_DIR / args.instrument_id
-    full_body = (base / args.text).read_text(encoding="utf-8")
-    body = full_body[args.start : args.end]
+    body = (base / args.text).read_text(encoding="utf-8")
     pages = json.loads((base / args.pages).read_text(encoding="utf-8"))["pages"]
     if args.mode == "pages":
-        units = page_units(full_body, pages, args.start, args.end)
+        units = page_units(body, pages)
     else:
         units = segment(body, args.mode)
-        for unit in units:
-            unit["char_start"] += args.start
-            unit["char_end"] += args.start
     with (base / args.output).open("w", encoding="utf-8") as fh:
         for idx, unit in enumerate(units, 1):
             unit["unit_id"] = f"{args.instrument_id}-u{idx:04d}"

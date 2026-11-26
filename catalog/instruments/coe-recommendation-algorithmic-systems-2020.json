@@ -14,8 +14,8 @@
     "Non-binding: it creates no legal obligation, ratification, depositary, monitoring or enforcement.",
     "There is no itemised list of States that have endorsed or implemented the Recommendation; it is addressed to all 47 member States.",
     "National implementation and the Recommendation's effect in domestic law are not assessed.",
-    "No full text, citable units or original file is stored in this record; it is metadata-only.",
-    "The Recommendation addresses algorithmic systems broadly, not only systems that meet a particular definition of AI."
+    "The Recommendation addresses algorithmic systems broadly, not only systems that meet a particular definition of AI.",
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "coe-recommendation-algorithmic-systems-2020",
   "instrument_type": "recommendation",
@@ -81,7 +81,7 @@
   },
   "rights": {
     "licence": "Council of Europe terms",
-    "note": "Official Council of Europe text; reproduction is subject to the Council's terms. No full text is stored in this corpus.",
+    "note": "Council of Europe terms apply. The archived official PDF is stored unaltered for research and is not relicensed.",
     "status": "public_official_text",
     "url": "https://www.coe.int/en/web/portal"
   },
@@ -105,10 +105,28 @@
       "note": "Council of Europe news release of 8 April 2020 describing the Recommendation and its call on the 47 member States.",
       "publisher": "Council of Europe",
       "url": "https://www.coe.int/en/web/portal/-/algorithms-and-automation-new-guidelines-to-prevent-human-rights-breaches"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "coe-rec-2020-archived",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Archived copy of the official 15-page English PDF; the live rm.coe.int endpoint returned HTTP 403.",
+      "publisher": "Council of Europe",
+      "url": "https://web.archive.org/web/20261101010802/https://rm.coe.int/09000016809e1154"
     }
   ],
   "status": "adopted",
   "status_note": "Adopted and published as a non-binding Recommendation. It is addressed to the 47 Council of Europe member States; there is no signature, ratification, depositary or entry-into-force procedure.",
+  "text": {
+    "extraction_note": "Archived official 15-page English PDF of Recommendation CM/Rec(2020)1 extracted with pypdf. Page units follow the document sequence.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "pages"
+  },
   "title": {
     "official": "Recommendation CM/Rec(2020)1 of the Committee of Ministers to member States on the human rights impacts of algorithmic systems",
     "short": "CoE Recommendation on algorithmic systems (2020)"
@@ -129,9 +147,14 @@
         "check": "Scope checked in the guidelines.",
         "date": "2026-11-24",
         "result": "Covers human rights impacts across the design, development and deployment of algorithmic systems, including public-sector use and private-sector responsibilities."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata and legal nature verified. No full text is stored; implementation is not assessed."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

@@ -1,0 +1,80 @@
+{
+  "pages": [
+    {
+      "char_end": 3084,
+      "char_start": 0,
+      "page": 1
+    },
+    {
+      "char_end": 7315,
+      "char_start": 3085,
+      "page": 2
+    },
+    {
+      "char_end": 10053,
+      "char_start": 7316,
+      "page": 3
+    },
+    {
+      "char_end": 14245,
+      "char_start": 10054,
+      "page": 4
+    },
+    {
+      "char_end": 18773,
+      "char_start": 14246,
+      "page": 5
+    },
+    {
+      "char_end": 23098,
+      "char_start": 18774,
+      "page": 6
+    },
+    {
+      "char_end": 27592,
+      "char_start": 23099,
+      "page": 7
+    },
+    {
+      "char_end": 32094,
+      "char_start": 27593,
+      "page": 8
+    },
+    {
+      "char_end": 36237,
+      "char_start": 32095,
+      "page": 9
+    },
+    {
+      "char_end": 40955,
+      "char_start": 36238,
+      "page": 10
+    },
+    {
+      "char_end": 45146,
+      "char_start": 40956,
+      "page": 11
+    },
+    {
+      "char_end": 49387,
+      "char_start": 45147,
+      "page": 12
+    },
+    {
+      "char_end": 53839,
+      "char_start": 49388,
+      "page": 13
+    },
+    {
+      "char_end": 58137,
+      "char_start": 53840,
+      "page": 14
+    },
+    {
+      "char_end": 58756,
+      "char_start": 58138,
+      "page": 15
+    }
+  ],
+  "primary_text": "text/en.txt"
+}

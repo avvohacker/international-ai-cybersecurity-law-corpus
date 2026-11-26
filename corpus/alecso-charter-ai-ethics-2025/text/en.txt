@@ -1,0 +1,1703 @@
+1 |
+
+
+Arab League Educational, Cultural and Scientific Organization
+
+
+ALECSO Charter on Artificial Intelligence
+Ethics
+
+
+June 2025
+
+2 |
+
+
+Arab League Educational, Cultural and Scientific Organization
+Information and Communication Technology Department
+
+ALECSO Charter on Artificial Intelligence Ethics
+
+
+ALECSO Charter on Artificial Intelligence Ethics / Arab League Educational, Cultural
+and Scientific Organization – Tunis, June 2025
+ISBN: 978 - 9973 - 15 - 464 - 4
+
+
+ALECSO Press
+All rights reserved to the Organization
+
+
+Translated from Arabic by the Arab Center for Arabization, Translation, Authorship and
+Publication (Damascus)
+
+3 |
+
+
+Contents
+Introduction ................................ ................................ ................................ ................................ ................ 8
+The Global Context of Artificial Intelligence Ethics and International Organization Charters ..........................  9
+Risks and challenges facing the Arab world in using artificial intelligence applications in education, science,
+and culture. ................................ ................................ ................................ ................................ .............. 11
+Principles and Ethical Considerations of the ALECSO Organization on Artificial Intelligence .........................  13
+The Importance of Preparing the ALECSO Charter on  Artificial Intelligence Ethics ................................ ....... 16
+General Objectives of the ALECSO Charter on Artificial Intelligence Ethics ................................ .................. 18
+Methodology for Developing the Charter ................................ ................................ ................................ ... 19
+Definitions and Concepts ................................ ................................ ................................ ...........................  20
+Principles and Ethical Considerations of the ALECSO Charter on Artificial Intelligence ................................ . 24
+Scope of Application ................................ ................................ ................................ ................................ . 47
+Expected Outcomes and Results ................................ ................................ ................................ ................ 47
+Monitoring, Evaluation, and Continuity ................................ ................................ ................................ ..... 48
+Sources and References................................ ................................ ................................ .............................  49
+
+4 |
+
+Speech of His Excellency, the Director General of the Arab League Educational,
+Cultural and Scientific Organization (ALECSO)
+In light of the rapid digital transformations the world is witnessing, artificial intelligence
+has become a fundamental pillar in the development of various sectors, especially in the
+fields of education, culture, and science. In accordance with ALECSO’s mission and goals,
+and recognizing the importance and profound impact of these technologies on the future
+of upcoming generations, the preparation of the “Charter for the Use of Artificial
+Intelligence Technologies in Education, Culture, and Science” aims t o serve as a
+reference framework to guide the ethical and practical policies for these technologies in
+the Arab world.
+This charter is based on three main pillars: education, culture, and science. In the field
+of education, the charter aims to harness artificial intelligence to improve the quality of
+education, provide equal learning opportunities, and support teachers and  students
+through innovative educational tools. In the field of culture, it aims to protect and
+promote Arab cultural identity, support digital creativity, and ensure the use of AI
+technologies in documenting and globally disseminating cultural heritage. Finally, in the
+field of science, the charter seeks to encourage responsible scientific research, enhance
+collaboration among researchers, and ensure the development of AI technologies that
+contribute to solving scientific, environmental, climatic, and economic challenges.
+This charter aims to establish clear principles that ensure the responsible and fair use of
+AI, within the framework of the values and principles adopted by ALECSO, which
+emphasize promoting human values, respecting cultural diversity, and achieving
+sustainable development. It also addresses critical issues such as data and privacy
+protection, environmental sustainability, support for scientific research, and ensuring
+equal access to ethical and responsible AI technologies.
+At ALECSO, we believe that AI should be a tool to empower societies, not just a neutral
+technology. From this standpoint, we call on all concerned parties —educational and
+research institutions, technology developers, and policymakers —to adopt and
+implement this charter to ensure a sustainable and fair future built on responsible
+innovation and open knowledge.
+We hope this charter will be a step toward enhancing the Arab world’s position in the
+digital transformation journey and contribute to building an advanced educational,
+cultural, and scientific environment that supports current and future generations in
+leveraging the potential of AI for the benefit of all humanity.
+Prof. Dr. Mohamed Ould Amar
+Director General of ALECSO – Tunisia
+
+5 |
+
+Speech of Prof. Dr. Mohamed Jemni – Director of the Information and
+Communication Technology Department
+In an era witnessing unprecedented advancements in AI technologies, it has become
+imperative to direct this digital revolution toward serving humanity and promoting
+sustainable development. From this perspective, ALECSO’s “Charter on AI Ethics”
+represents a strategic step aimed at establishing an ethical and regulatory framework for
+the use of these technologies, ensuring their maximum benefit while respecting human
+values and the cultural privacy of our communities.
+The Information and Communication Technology Department of the Arab League
+Educational, Cultural and Scientific Organization (ALECSO) has prepared this charter in
+collaboration with a group of experts and specialists from the Arab world. This charter
+aims to establish clear principles governing the use of artificial intelligence in education,
+culture, and scientific research. In education, AI can help develop smart learning
+environments that enhance personalized learning and support both teachers and
+students in innovative ways. In culture, these technologies contribute to preserving
+heritage, enabling digital creativity, and ensuring broader access to Arab culture. As for
+scientific research, AI opens new horizons for innovation and helps solve scientific a nd
+technical challenges with greater efficiency and precision.
+Today, we face a collective responsibility to ensure that artificial intelligence is a driving
+force for progress and prosperity, not a tool that deepens digital divides or threatens
+human values. We therefore call on all educational, cultural, and researc h institutions,
+as well as decision -makers and developers, to adopt this charter and implement it to
+ensure the sustainable and responsible use of these technologies.
+In conclusion, we reaffirm our commitment at ALECSO’s ICT Department to continue
+promoting responsible digital transformation in the Arab world. We hope this charter
+will serve as a step toward a brighter future based on innovation, cooperation, and
+sustainable progress.
+
+Prof. Dr. Mohamed Jemni
+Director of the Information and Communication Technology Department –ALECSO
+
+6 |
+
+Members of the Charter Drafting Committee
+Prof. Dr. Mohamed Jemni
+Director of the Information and Communication
+Technology Department –ALECSO
+Chairman of the Committee
+
+
+Dr. Maledh Marrakchi
+University of Manouba, Tunisia - Committee Member
+
+
+Professor Dr. Ashraf Darwish
+Helwan University, Cairo, Egypt - Committee Member
+
+7 |
+
+List of Expert Representatives from Arab Member States
+
+Country  Expert Name  Institution
+Jordan  Eng. Luma Arabiyat  Director of AI and Advanced Technologies Directorate,
+Ministry of Digital Economy and Entrepreneurship
+United Arab
+Emirates
+Mr. Marwan Al Sarkal Office of the Minister of State for AI, Digital Economy, and
+Remote Work Applications
+Bahrain Dr. Fatma Mahdi Hassani Hamad Ali Director of Education Policies and Development, Ministry of
+Education
+Tunisia  Dr. Youssef Ben Halima Chargé de Mission, Higher Education Minister Office
+Saudi Arabia Dr. Abdulrahman bin Tariq Habib Director General of Talent Development, Saudi Data and AI
+Authority (SDAIA)
+Sudan  Dr. Yahya Abdullah Mohamed Hamad Former Minister of Communications and Information
+Technology
+Syria
+
+Dr. Anas Dahbiya  Director of Technical Development, Ministry of
+Communications and Technology
+Syria
+
+Eng. Najib Salq  Director of Informatics, Ministry of Education
+Syria
+
+Dr. Abbi Sandouq Vice Dean, Faculty of IT Engineering, Damascus University –
+Ministry of Higher Education and Scientific Research
+Iraq Dr. Mohamed Emad Abdul Khaliq Head of AI Division, Education Development Department
+Oman  Dr. Abdulrahman bin Khalifa Al
+Abdulsalam
+Assistant Professor, College of Science, Sultan Qaboos
+University
+Palestine Eng. Nour Nassar Director General of Informatics, Ministry of Communications
+and Digital Economy
+Qatar  Ms. Khulood Abdulaziz Al-Manaei Director of E-Learning and Digital Solutions
+Libya  Dr. Ahmed Abdullah Al-Mahdi Amjabr IT Advisor to the Minister of Education
+Egypt  Ms. Awatif Mohamed Eid Al-Haggan Director of Media Information and Documentation Center,
+National Committee
+Morocco Mr. Khaled Barrada Director of Higher Education and Pedagogical Development
+Mauritania Dr. Fatma Abdou Fazil Ministry of Digital Transformation and Administration
+Modernization
+Yemen  Ms. Nahid Omar Salem Mandouq Director General of E-Learning, Ministry of Education
+
+8 |
+
+Introduction
+The world today is witnessing unprecedented developments in technology, especially in
+the field of Artificial Intelligence (AI), which has had a profound and thorough impact on
+all aspects of human life—from economy and education to health and media. In light of
+this rapid progress, there is an urgent need to establish a clear ethical framework to
+regulate the use of AI, ensuring it contributes to sustainable developmen t and the
+respect for human rights in the Arab world, in line with well-established cultural and
+human values.
+AI systems require ethical principles, laws, and regulations to assess their ethical
+implications. These systems raise new kinds of ethical issues, including their impact on
+decision-making, employment, social interaction, healthcare, education, access to
+information, the digital divide, consumer protection and data protection, the
+environment, rule of law, security, dual -use concerns, and human rights including
+freedom of expression, privacy, and non -discrimination. Moreover, AI algorithms can
+reproduce an d reinforce existing biases, exacerbating discrimination, prejudice, and
+stereotypes.
+Many countries around the world started developing national AI strategies to capitalize
+on its advantages, anticipate developments, and support decision -making, while also
+minimizing potential negative consequences by governing these systems and setting
+ethical, legal, and operational guidelines for their use.
+Within this context, ALECSO – as the regional body responsible for advancing cultural,
+scientific, and educational efforts in Arab countries – launched the initiative to develop
+the «  ALECSO charter on AI Ethics  ». The charter aims to provide comprehensive
+guidelines and standards that ensure the responsible use of AI, aligned with principles
+that promote justice, transparency, and mutual respect.
+Since its establishment on July 25, 1970, as one of the organizations of the Arab League,
+ALECSO has pursued a vision of promoting Arab integration in education, culture, and
+science, in line with the aspirations of Arab people for comprehensive developmen t.
+ALECSO’s values are based on several core principles that guide its efforts in drafting this
+charter:
+1. Respect for Human Dignity: ALECSO believes in the necessity of preserving human
+dignity and protecting it from any potential violations.
+2. Promotion of Social Justice: The organization seeks to reduce social and economic
+disparities within Arab societies by encouraging the fair distribution of
+technology’s benefits.
+
+9 |
+
+3. Sustainable Development : ALECSO is committed to achieving sustainable
+development that contributes to the well-being of current and future generations,
+making responsible AI deployment an effective tool toward this goal.
+4. Responsible Innovation: The organization promotes innovation that aligns with
+ethical values, ensuring that AI technologies are designed and applied for the
+public good.
+Accordingly, ALECSO has developed this AI Ethics Charter in the fields of education,
+culture, and science in harmony with its principles and values, aligned with international
+conventions and standards, and consistent with the initiatives of its member sta tes in
+the Arab World.
+This charter falls within ALECSO’s mandate concerning the ethical aspects of AI use and
+addresses the issues and challenges within a holistic framework that considers the
+specificities of Arab -Islamic culture and conforms to international principles, such as
+those adopted by UNESCO, as well as member states’ national initiatives.
+The ALECSO Charter on AI Ethics reflects the urgent need for an ethical framework that
+maximizes the benefits of technology while mitigating its negative effects and preserving
+Arab identity. The Arab world is characterized by great cultural and social diversity, which
+requires the formulation of policies that take into account its specificities and needs.
+The preparation of this charter represents a pioneering step in promoting the positive
+and responsible use of technology in the Arab world, based on ALECSO’s values and
+principles. Through this charter, the organization aims to achieve a shared vision that
+strengthens the Arab world’s role as a responsible and active player in the global AI
+landscape, while safeguarding its identity, culture, and authentic values.
+
+The Global Context of A rtificial Intelligence Ethics and International
+Organization Charters
+In recent decades, the world has witnessed a radical transformation in technology, with
+artificial intelligence (AI) becoming one of the most advanced and influential fields across
+various sectors. With this rapid progress, concerns have grown about the et hical and
+legal challenges associated with data -driven AI applications, prompting international
+organizations to develop charters and standards aimed at ensuring the responsible use
+of this technology.
+The importance of establishing an ethical framework for artificial intelligence stems from
+the profound impact this technology has on society and the economy. AI holds
+tremendous potential to improve quality of life, but it poses various challenges that
+
+10 |
+
+could have dire consequences for individuals and society. Accordingly, several
+international organizations have developed charters in this regard, including:
+1. UNESCO
+In November 2021, UNESCO adopted the “Recommendation on the Ethics of Artificial
+Intelligence”, the first global framework aiming to harness AI systems for the benefit of
+humanity, individuals, communities, the environment, and ecosystems, while also
+mitigating harm. The recommendation includes four core values: human rights and
+fundamental freedoms, environmental prosperity, diversity and inclusion, and peaceful,
+just, and interconnected societies. It also sets out ten guiding principles such as
+proportionality, non-maleficence, fairness, safety, privacy, and sustainability.
+2.  United Nations (UN)
+The United Nations, through its various institutions, such as the United Nations Group
+on Artificial Intelligence, has worked to develop strategies aimed at using artificial
+intelligence to achieve the Sustainable Development Goals. It has also focused on
+ensuring that this technology is not used in ways that reinforce discrimination or
+exacerbate inequality.
+3. Organization for Economic Co-operation and Development (OECD):
+   In May 2019, the OECD issued the “AI Principles”, the first intergovernmental standards
+guiding AI development. Updated in May 2024, they include five key principles: inclusive
+growth and well -being, rule of law and human rights, transparency and explainability,
+robustness and safety, and accountability.
+4. European Union (EU)
+In September 2019, the European Union adopted a document on EU Guidelines on Ethics
+in Artificial Intelligence: Context and Implementation. This approach is distinguished by
+its focus on placing humans at the center of AI engagement. The document includes
+seven core ethical requirements: human agency and oversight; technical robustness and
+safety; privacy and data protection; transparency; diversity, non -discrimination, and
+fairness; societal and environmental well-being; and accountability.
+The European Union has also taken a strict approach to regulating artificial intelligence,
+adopting the "Artificial Intelligence Act" in December 2023. This law aims to classify AI
+applications based on their level of risk and ensure that high -risk applications comply
+with ethical and legal standards.
+
+11 |
+
+5. G20
+In its recent meetings, the G20 devoted significant attention to artificial intelligence (AI),
+emphasizing the importance of developing a common international framework that
+promotes responsible innovation and ensures the safe and ethical use of technology .
+Despite the efforts made by international organizations, common challenges remain
+facing the world in this context, most notably: disparities in technical capabilities, global
+consensus, and the rapid evolution of technology.
+The global framework for AI ethics represents a collective effort to ensure the
+responsible use of this technology for the benefit of humanity. Cooperation between
+countries and international organizations is essential to ensure that ethical values
+remain at the core of technological innovation, promoting justice, sustainability, and
+global peace.
+Concern about the ethics of artificial intelligence is global, but it may not take into
+account the specificities of certain cultures and civilizations. Therefore, Arab countries
+and many other countries around the world are attempting to address the ethic al and
+societal implications of AI technologies according to their specificities.
+In this context, a number of risks and challenges emerge that could impact the fields of
+education, science, and culture in the Arab world.
+
+Risks and challenges facing the Arab world in using artificial intelligence
+applications in education, science, and culture.
+In light of the rapid global development in the field of artificial intelligence, Arab
+countries face numerous challenges that hinder the optimal use of this advanced
+technology. These challenges range from technical to economic and cultural, making it
+imperative to address them to achieve sustainable and comprehensive development.
+With the continued use of AI applications within the Arab world, particularly high-risk AI
+systems, their ethical implications have become increasingly important, such as data
+privacy, algorithmic bias, and the impact on jobs.
+Arab countries, like many countries around the world, face the challenge of striking a
+balance between promoting innovation and adhering to the ethical principles of AI.
+Encouraging research and development in AI is essential for economic growth and
+technological advancement. However, this should not come at the expense of human
+rights or the cultural identity of Arab countries. Therefore, there must be a balance
+between the increased use of AI applications and the ethical standards and governance
+of AI.
+
+12 |
+
+1. Technology and Knowledge Gap
+Many Arab countries suffer from a technology gap due to a lack of digital infrastructure
+and technical resources. This gap includes weak internet networks, limited cloud
+computing, and limited access to advanced devices and equipment. The region also faces
+significant challenges in developing human resources specialized in artificial intelligence,
+hindering its ability to keep pace with global technological innovations.
+2. Lack of policies and legislation
+Despite the efforts made, many Arab countries lack a clear legal and regulatory
+framework for the use of artificial intelligence applications. The absence of legislation
+leads to issues related to privacy, data protection, and accountability when using sma rt
+systems. Furthermore, weak national strategic directions in this field limit investment
+and innovation.
+3. Economic challenges
+Some Arab countries suffer from economic challenges that hinder their investments in
+technological research and development. This includes a lack of funding allocated to
+artificial intelligence innovations and weak public-private partnerships, which negatively
+impact the development of new applications that meet the region's needs.
+4. Social and cultural concerns
+There is social and cultural concern regarding the use of artificial intelligence in Arab
+societies. Some fear the impact of this technology on values and customs, especially with
+the spread of generative AI applications produced using data that is not n ecessarily
+aligned with Arab cultural characteristics and values. This is in addition to the potential
+changes they may produce in the labor market and increase unemployment rates.
+Furthermore, public awareness of AI and its uses remains limited, creating challenges in
+accepting the technology.
+5. Cybersecurity
+With the increasing use of AI, cybersecurity risks emerge. Smart systems may be
+exploited, even by novices, to carry out cyberattacks that exploit vulnerabilities in
+information systems and threaten individuals and institutions. The absence of a robust
+security infrastructure poses a significant risk to the region's digital space.
+
+13 |
+
+6. Unequal Distribution of Technology
+Arab countries face challenges related to the disparity between countries with advanced
+technological resources and those with less developed ones. This disparity leads to
+significant differences in the ability to adopt AI applications and use them to impr ove
+public services such as health and education.
+These challenges represent real obstacles for the Arab world in making the most of AI
+applications. However, confronting them requires a comprehensive approach that
+includes strengthening regional cooperation, establishing clear policies and legislation,
+investing in education and scientific research, and raising community awareness about
+this technology. By overcoming these obstacles, Arab countries can effectively
+contribute to the global AI landscape and harness it to serve their development
+aspirations.
+7. Weak Investment in Scientific Research and Development
+Arab research in artificial intelligence remains limited compared to that of developed
+countries, making the Arab world a consumer of technology rather than a contributor to
+its development. Therefore, there is an urgent need to enhance Arab cooperation in
+developing unified strategies for the use of artificial intelligence, which will contribute to
+the exchange of expertise and reduce reliance on external solutions.
+
+Principles and Ethical Considerations of the ALECSO Organization on
+Artificial Intelligence
+The primary objective of establishing the organization is to achieve intellectual unity and
+raise the level of culture across the Arab world through cultural and scientific education,
+thereby fulfilling its mission and achieving its goals. Within the frame work of these
+general objectives, the Arab Educational, Scientific, and Cultural Organization works to
+develop culture and science, and one of its most prominent tasks is to improve the level
+of human resources. Arab countries work to promote the development of environmental
+sciences, cultural education, and communication, as well as the development of the
+Arabic language and culture. They also work to spread Islam within the Arab world and
+beyond, and to build bridges of dialogue and cooperation between th ese cultures and
+other cultures around the world.
+In light of the values and principles espoused by ALECSO, the governing values of artificial
+intelligence can be outlined in the proposed ethical charter as follows:
+1. Human dignity and respect for human rights: ALECSO emphasizes that the outputs of
+artificial intelligence systems must respect human dignity and protect human rights.
+
+14 |
+
+Technologies must be applied in a manner that promotes fundamental freedoms,
+protects privacy, and ensures that the dignity of individuals is not violated in any context.
+Human dignity and human rights must be respected, protected, and promoted in
+accordance with international law, including international human rights law and the
+rights of children and adolescents, throughout the life cycle of AI systems. Human dignity
+is linked to the recognition of the inherent worth of every human being, with all people
+being equal regardless of race, color, descent, sex, age, language, religion, political
+opinions, national, ethnic, or social origin, economic or social status related to birth,
+disability, or any other form of discrimination.
+No human being or group of people, including children and adolescents, should be
+subjected to any form of harm, damage, or humiliation, whether physical, economic,
+social, political, cultural, educational, academic, or psychological, at any stage of the life
+cycle of AI systems.
+ Interaction with an AI system should never lead to the objectification of persons, to any
+other violation of their dignity, or to the commission of a violation or assault of human
+rights, children's rights, and fundamental freedoms.
+2. Justice, Inclusiveness, Equity, and Non -Discrimination: ALECSO is committed to
+promoting justice and equality through AI, ensuring equal access to technologies and
+opportunities for all members of society, regardless of gender, religion, or
+socioeconomic background. Technological systems should not reinforce social or
+economic inequalities.
+AI stakeholders should strive to promote social justice and make AI technologies
+available to all on an equal footing, in a manner consistent with ethical principles, and in
+a simple and affordable manner, including for marginalized and disadvantaged group s
+and persons with disabilities, ensuring equal access to the benefits and fruits of AI
+technologies.
+Efforts should also be made to ensure fairness among all members of society, regardless
+of their differences and special needs, and to prevent any form of discrimination or bias,
+in favor of or against the interests of an individual or group of individuals, especially in a
+manner deemed unfair.
+AI stakeholders should also make all reasonable efforts to minimize, and avoid
+reinforcing or perpetuating, discriminatory or biased applications and outcomes
+throughout the lifecycle of any AI system, in order to ensure fairness and equity in these
+systems. There should be an effective means of seeking redress for discrimination and
+biased algorithmic decisions.
+
+15 |
+
+Cultural diversity and social inclusion in the use of AI should also be supported,
+emphasizing that technologies should take into account the cultural and social diversity
+of the Arab world, promote cultural dialogue and mutual respect between cultures, and
+ensure inclusiveness in the opportunities offered by these technologies.
+3. Sustainable Development and Environmental Protection: The development and use
+of artificial intelligence must be consistent with environmental and sustainable
+development goals. ALECSO focuses on supporting technological solutions that protect
+ecosystems and promote environmental sustainability to ensure a secure future for
+future generations.
+4. Cultural Diversity and Inclusion : ALECSO supports cultural diversity and social
+inclusion in the use of artificial intelligence, emphasizing that technologies must take into
+account the cultural and social diversity of the Arab world. Artificial intelligence must
+promote cultural dialogue and mutual respect between cultures, ensuring inclusiveness
+of technological opportunities for all.
+5. Responsible Scientific and Technological Innovation : ALECSO emphasizes the
+importance of responsible scientific and technological innovation in the development of
+artificial intelligence. Technological innovations must contribute to enhancing the well -
+being of societies and achieving economic and social de velopment, while adhering to
+high ethical standards.
+6. Respect for Arab cultural heritage and Islamic beliefs and values: When developing,
+distributing, or using an AI system, care must be taken to respect Arab cultural heritage
+and Islamic beliefs and values, and not to violate, distort, or abuse them, particularly by
+violating Islamic sanctities. This must be observed throughout the lifecycle of AI systems,
+including generative AI systems.
+Care must also be taken to prevent young students and pupils from being exposed to
+any form of cultural, civilizational, religious, or value -based orientation that conflicts
+with Arab cultural heritage and Islamic beliefs and values.
+7. Arab and International Cooperation : ALECSO emphasizes the importance of
+cooperation among Member States in developing AI in the fields of education, culture,
+and science in a manner that enhances regional and international partnerships. ALECSO
+also encourages the exchange of knowledge and expertise to support comprehensive
+and sustainable technological development.
+
+16 |
+
+The Importance of Preparing the ALECSO Charter on  Artificial Intelligence
+Ethics
+Artificial intelligence is one of the most prominent technologies witnessing tremendous
+development in the modern era, having a direct impact on various sectors, such as
+education, culture, health, economy, and security. Artificial intelligence systems rai se
+new types of ethical challenges that have been addressed by many international bodies
+and institutions, such as the consequences of decision-making by these systems, as well
+as the consequences related to employment, work, social interaction, access to
+information, the digital divide, ensuring security and maintaining order.
+These systems also raise other challenges related to the privacy of Arab citizens, such as
+preserving cultural and ethical values and Arab cultural, scientific, and civilizational
+heritage, in addition to maintaining data privacy, preventing existing bia ses from being
+reproduced and reinforced by the algorithms used, and preventing the exacerbation of
+discrimination, prejudices, and stereotypes.
+We must also prepare for the new scientific capabilities and research methods that
+artificial intelligence provides, which will impact our perceptions of all sciences, whether
+natural, medical, social, or human. The challenge for Arab countries, like all c ountries
+worldwide, is to strike a balance between enhancing the foundations and climate for
+innovation and adhering to the ethical principles of AI. Encouraging AI research and
+development is essential for economic growth and technological progress.
+Arab culture and identity, along with cultural diversity within Arab countries, are areas
+that may be affected by AI in a dual way. On the one hand, it can contribute to developing
+the methods and content of cultural and creative industries, enhancing the spread of
+Arab culture. On the other hand, it may pose a challenge if the ability to keep pace with
+these transformations and participate effectively is not available, which could affect the
+presence and balance of Arab culture on the global scene.
+From this perspective, it has become imperative to pay special attention to education,
+culture, and learning, with the aim of empowering young people with the basic
+competencies and skills that enable them to keep pace with these transformations. This
+includes promoting ethical and critical thinking, encouraging responsible practices in the
+design and use of AI, and the ability to adapt to the changing demands of the labor
+market as these technologies develop and spread. With the increasing reliance on
+artificial intelligence, there is a need to establish an ethical framework that takes into
+account the cultural and social specificities of Arab countries and provides clear
+guidelines to ensure the responsible and effective use of this technology, such as:
+
+17 |
+
+First: Promoting Identity, Cultural and Religious Values
+Arab countries represent a rich and diverse cultural environment. Ethical, humanitarian,
+and religious values are an essential part of their identity. By developing the Arab Charter
+for the Ethics of Artificial Intelligence, the development and application of this
+technology can be guided in a manner that respects local  traditions and values, while
+maintaining a balance between modernity and cultural identity.
+Second: Ensuring Justice and Equality
+The Charter aims to address the ethical challenges that may arise from the use of AI, such
+as discrimination or inequality. By establishing clear principles, the benefits of
+technology can be ensured fairly among all members of society, with a focus on reducing
+social and economic gaps within Arab countries.
+Third: Promoting Responsible Innovation
+The Charter encourages the adoption of innovative practices that consider ethical and
+legal dimensions, enhancing communities' confidence in AI. It also provides a framework
+that supports research and development in this field, while adhering to rules that protect
+human rights and privacy.
+Fourth: Regional and International Cooperation
+The Arab Charter can serve as a starting point for enhancing cooperation between Arab
+countries in the field of AI, enabling the exchange of expertise and knowledge , and
+enhancing technical capabilities in the region. It also contributes to promoting dialogue
+with the international community on technology ethics, positioning Arab countries at the
+forefront of the global arena.
+Fifth: Protecting Future Generations
+Artificial intelligence represents a powerful tool that can be used to achieve sustainable
+development. By developing an ethical charter, we can ensure that this technology will
+be a means of improving the quality of life and protecting the rights of future
+generations, rather than a source of harm or challenges.
+The development of the ALECSO Charter on Ethics for Artificial Intelligence is an
+important strategic step to guide the path of technology in Arab countries, enhancing its
+benefits and reducing its risks. This charter reflects a unified vision for sustainable
+development and responsible innovation, and constitutes a solid foundation for building
+a technological future that enhances the well-being of Arab societies and preserves their
+values and cultural and historical identity.
+
+18 |
+
+
+General Objectives of the ALECSO Charter on Artificial Intelligence Ethics
+The general objectives of the charter include the following:
+1. Ensuring the ethical use of artificial intelligence technologies : Establishing ethical
+frameworks and standards for the use of artificial intelligence in Arab countries, in line
+with ALECSO's values of promoting education, culture, and science, while protecting
+human rights and fundamental freedoms.
+2. Protecting Privacy and Human Dignity : Emphasizing respect for privacy and the
+protection of individuals' personal data, and ensuring that artificial intelligence is not
+used in a manner that conflicts with human dignity, in line with ALECSO's objectives of
+promoting human rights.
+3. Encouraging Responsible Innovation and Scientific Research: Supporting innovation
+in the field of artificial intelligence to contribute to the development of science,
+technology, and disaster management in relevant sectors, while emphasizing the need
+for technological research and applications in this field to be  consistent with ethical
+principles.
+4. Promoting Justice and Social Equality: Contributing to achieving justice and equality
+among all economic and social groups and ensuring equal opportunities in science.
+Emphasizing that artificial intelligence should benefit all members of society by reducing
+gaps in access to technology, education, and research.
+5. Promoting Sustainable Development and Environmental Protection : Directing
+artificial intelligence toward promoting sustainable development and protecting the
+environment and ecosystems, in line with ALECSO's efforts to support comprehensive
+and sustainable development in Arab countries.
+6. Promoting Diversity and Inclusion : Encouraging the use of artificial intelligence in a
+manner that ensures respect for cultural and social diversity in the Arab world, with a
+focus on inclusive access to technology and innovation for all segments of the
+population, thus enhancing integration and cooperation among Member States.
+7. Preserving the Arab Cultural Identity and Promoting Arab Heritage: Encouraging the
+use of AI technologies to document, protect, and disseminate Arab cultural heritage in a
+manner consistent with Arab values and traditions, while avoiding any violations or
+distortions of this heritage.
+
+19 |
+
+8. Positive Interaction with Other Cultures : Encouraging the use of AI to promote
+positive cultural interaction with the world by developing technologies that contribute
+to cultural dialogue and knowledge exchange, while preserving Arab cultural identity.
+9. Ensuring Transparency and Accountability : Emphasizing the need for full
+transparency in the use and development of AI technologies, while establishing
+accountability mechanisms that ensure the ethical and responsible use of these
+technologies.
+10. Commitment to International Human Rights Standards : Ensuring that all AI
+applications in Arab countries are consistent with international human rights standards,
+thus enhancing global cooperation and ensuring the ethical use of technology.
+
+Methodology for Developing the Charter
+1. Defining Objectives and Areas of Application: The objectives and goals of the AI Ethics
+Charter were defined, taking into account the overall objectives of ALECSO and the
+principles for the responsible use of AI adopted by international organizations. The types
+of AI applications covered by this Charter were also identified.
+2. Identifying stakeholders, beneficiaries, and partners: Key stakeholders were
+identified and engaged, including AI developers, ethicists, experts in various fields, legal
+professionals, government representatives, industry leaders, and civil society
+representatives in Arab countries.
+3. Holding roundtables for the Charter's founding committee at the Arab level: Regular
+meetings were held at ALECSO headquarters, as well as virtual meetings, to conduct a
+comprehensive review of current AI ethics rules, guidelines, and principles in light of
+ALECSO's principles and recommendations. All laws and   Regulations issued by
+government agencies in Arab countries, in addition to reviewing international standards
+and discussing their compatibility with Arab customs, traditions, culture, and identity.
+4. Holding meetings and consultations with experts from Arab countries: Meetings and
+consultations were held at ALECSO headquarters and online with experts from various
+fields relevant to this charter.
+5. Analytical study of Arab and international charters : The committee reviewed,
+studied, and analyzed existing Arab and international charters related to artificial
+intelligence, with the aim of ensuring that the ALECSO charter is consistent with the
+
+20 |
+
+ethics proposed by Arab countries, particularly in the fields of education, culture, and
+science.
+6. Drafting the charter : The charter's founding committee and experts from Arab
+countries prepared a draft, which was presented to a wide range of stakeholders at a
+general conference.
+7. Reviewing the charter : The charter was reviewed by ethics experts from Arab
+countries to ensure the accuracy of the wording and its compatibility with the values and
+cultural norms of Arab countries. This is critical for widespread acceptance and adoption.
+
+Definitions and Concepts
+
+The definitions and concepts provided in this document are used to define the
+framework and basic concepts within which the topic of artificial intelligence and
+its ethics will be addressed. These definitions aim to ensure clarity of meaning
+and a unified common understanding among all stakeholders, thus contributing
+to the accurate and effective achievement of the document's objectives.
+Term/Concept  Definition and Interpretation
+Artificial Intelligence Artificial Intelligence has several definitions. For the
+purposes of this charter, AI is defined as any system
+based on digital technologies and algorithms
+capable of processing data and information in a
+manner similar to intelligent human behavior. It
+typically involves features such as reasoning,
+learning, perception, prediction, pla nning, control,
+and command.
+Generative Artificial
+Intelligence
+An AI system based on algorithms and models that
+automatically generate content in response to
+requests written in conversational interfaces in
+natural language. Instead of simply formatting
+existing web pages, generative AI generates new
+content by relying on existing content. Content can
+appear in forms that include all symbolic
+representations of human thought: text written in
+natural language, images (including photographs,
+
+21 |
+
+digital paintings, and animations), videos, music, and
+software code.
+Artificial Intelligence Ethics A framework of principles ensur ing fairness,
+transparency, respect, accountability, and non -
+discrimination in AI development and deployment.
+ALECSO Charter of Ethics A guiding framework developed by the Arab League
+Educational, Cultural, and Scientific Organization
+(ALECSO) to regulate and guide the ethical and
+responsible use of AI technologies in Arab countries.
+The charter focuses on achieving a balance between
+technological innovation and the preservation of
+human and cultural values in the Arab region.
+Artificial Intelligence
+Governance
+Artificial Intelligence governance refers to the set of
+policies, regulations, and procedures aimed at
+regulating the development, deployment, and use of
+AI technologies in a responsible and transparent
+manner, taking into account ethical, social, and legal
+considerations.
+Ethical Governance in
+Artificial Intelligence
+Refers to a set of policies and procedures designed
+to ensure that AI is used in a responsible, sustainable
+manner that is consistent with human values.
+Transparency in AI
+Systems
+The ability of AI systems to provide clear and
+understandable information about how decisions
+are made, ensuring accountability of the systems
+used.
+Accountability in Artificial
+Intelligence Systems
+It means holding individuals or institutions
+accountable for the decisions of AI systems and their
+social, economic, or ethical consequences.
+Privacy  It is the right of individuals to protect their personal
+data and to ensure that it is not used or shared in
+ways that violate their rights, without their consent,
+or that impact their personal lives.
+Biased Refers to systematic errors or unfair prejudices in AI
+systems that lead to discriminatory or inaccurate
+outcomes for certain groups of people. Bias can arise
+
+22 |
+
+in various ways and can have serious ethical, social,
+and legal consequences.
+Discrimination Refers to the unfair or biased treatment of
+individuals or groups based on characteristics such
+as race, gender, age, disability, or social or economic
+status.
+Fairness in Artificial
+Intelligence Systems
+AI systems must make fair and unbiased decisions,
+ensuring that no individual or group is subjected to
+systematic abuse.
+Sustainable Development The use of artificial intelligence in a way that
+contributes to meeting the needs of current
+generations without compromising the ability of
+future generations to meet their needs.
+Algorithmic Bias Refers to errors or biases resulting from designing or
+training AI systems with biased algorithms, leading
+to unfair or discriminatory outcomes.
+Responsible Innovation The development of AI technologies and products
+with ethical, social, and environmental
+considerations in mind.
+Data Governance A set of policies and rules that regulate how data is
+collected, processed, and used in AI systems in a
+responsible and safe manner.
+Cultural Diversity Respecting different cultural and social identities
+and ensuring that AI technologies are inclusive of all
+without marginalizing any culture or group.
+High-Risk Artificial
+Intelligence Systems
+The application of AI that may directly impact
+people's lives, such as healthcare, education, and
+the judiciary, and requires strict standards of ethical
+governance.
+Human Rights & Artificial
+Intelligence
+The fundamental principles that AI systems must
+adhere to in order to ensure the protection of
+human dignity, equality, and justice.
+Cybersecurity The protection of AI systems from cyber threats and
+attacks that could lead to privacy breaches, service
+
+23 |
+
+disruptions, or alter the way the systems operate by
+changing outputs.
+Explainable Artificial
+Intelligence
+The design of AI systems whose operation can be
+understood and whose results can be clearly
+explained to users.
+Environmental
+Sustainability
+The use of artificial intelligence to support global
+efforts to combat climate change and conserve
+natural resources.
+Laws in the Context of
+Artificial Intelligence
+A set of legal rules established by legislative bodies
+to regulate the development and use of artificial
+intelligence technologies. These laws aim to ensure
+the safe and responsible use of these technologies,
+while protecting the rights of individuals and
+communities, including data privacy, combating
+algorithmic bias, and ensuring transparency.
+Accountability in AI systems.
+Legislations in the Context
+of Artificial Intelligence
+Refers to the legal framework that is formulated and
+adopted to define the principles and standards
+governing the development and application of AI
+systems. These legislations include rules related to
+data governance, algorithmic transparency, privacy
+protection, cybersecurity, and regulating the use of
+AI in high-risk sectors such as health, education, and
+the judiciary.
+National Artificial
+Intelligence Strategies
+In the context of AI, national strategies refer to the
+comprehensive plans and policies developed by
+governments to regulate and guide the
+development and use of AI technologies to serve
+national priorities. These strategies aim to promote
+innovation, supp ort the economy, and achieve
+sustainable development while ensuring the ethical
+and responsible use of technology.
+Developers of Artificial
+Intelligence Systems
+A person who determines the purpose, designs,
+builds, performs technical maintenance, adjusts, or
+modifies an AI system.
+
+24 |
+
+Providers of Artificial
+Intelligence Systems
+A natural or legal person who makes an AI system
+available to a user, either directly or through digital
+networks or digital platforms, free of charge or for a
+fee.
+Users of Artificial
+Intelligence Systems
+A natural or legal person who benefits directly or
+indirectly from the outputs of an AI system.
+Artificial Intelligence
+System Lifecycle
+The cyclical process adopted in the stages of
+designing, building, producing, operating, and
+evaluating an AI system, leading up to its final
+disposal.
+Data A collection of facts in their raw or unorganized
+form, such as numbers, letters, pictures, video,
+audio recordings, or emojis.
+Personal Data Any data, regardless of its source or form, that could
+lead to the specific identification of an individual, or
+make it possible to identify him/her directly or
+indirectly.
+Sensitive Data Any personal data that includes a reference to an
+individual's racial, ethnic, religious, innate, or
+political origin, as well as security and criminal data,
+biometric data that identifies an individual, genetic
+and hereditary data, health data, and data indicating
+that one or both parents are unknown.
+
+
+Principles and Ethical Considerations of the ALECSO Charter on Artificial
+Intelligence
+The primary objective of establishing the organization is to achieve intellectual unity and
+raise the level of culture among the Arab world regions through cultural and scientific
+education, to carry out its mission and achieve its goals. Within the framework of these
+general objectives, the Arab Educational, Cultural, and Scientific Organization works to
+develop culture and science, and one of its most prominent tasks is to improve the level
+of human resources. Arab countries work to promote the development of environmental
+sciences, cultural education, and communication, as well as the development of the
+Arabic language and culture. They also work to spread Islam in the Arab world and
+
+25 |
+
+beyond, and to build bridges of dialogue and cooperation between these cultures. and
+other cultures around the world.
+In light of  the values and principles adopted by ALECSO, the recommendations and
+implementation methods for AI in the proposed ethical charter can be reviewed as
+follows:
+
+1. Human dignity and respect for human rights
+
+The use of AI technologies in education, culture, and scientific research must respect
+human dignity and protect human rights. Technologies must be applied in a manner that
+promotes fundamental freedoms, protects privacy, and ensures that the dignity of
+individuals is not violated in any context. Human dignity and rights must be respected,
+protected, and promoted in accordance with international law, including international
+human rights law, throughout the life cycle of AI systems. Human dignity is linked to the
+recognition of human values.
+The inherent intrinsic value of every human being, in which all people are equal
+regardless of race, color, descent, sex, age, language, religion, political opinion, national,
+ethnic, or social origin, economic or social status related to birth, disability, or any other
+form of discrimination.
+No human being or group of people, including children and adolescents, should be
+subjected to any form of harm, damage, or humiliation, whether physical, economic,
+social, political, cultural, educational, academic, or psychological, during any stage of the
+life cycle of an AI system.
+Interaction with an AI system should never lead to the objectification of persons, to their
+dignity being otherwise compromised, or to a violation or assault of human and
+children's rights and fundamental freedoms.
+
+26 |
+
+Scope Implementation Guidelines
+Education  Education in the Arab world that relies on AI technologies
+must respect human dignity and human rights. This is
+achieved by providing a fair, inclusive, and non -
+discriminatory learning environment that ensures equal
+educational opportunities for all indivi duals and promotes
+the principles of intellectual freedom, equality, and respect
+for cultural and social diversity. Educational institutions
+must also adhere to policies that prohibit all forms of
+violence, bullying, and exclusion, while providing
+mechanisms to protect the rights of students and teachers
+and ensure their safety within the educational environment.
+Culture Arab culture based on AI technologies must adhere to the
+principles of human dignity and respect for human rights, by
+promoting cultural production that reflects the values of
+justice, tolerance, and freedom of expression, while
+preserving Arab cultural id entity, respecting cultural and
+social diversity, and ensuring everyone's access to
+knowledge and cultural resources without discrimination.
+Scientific Research Scientific research in the Arab world should contribute to
+promoting human dignity and respect of human rights
+through the ethical use of artificial intelligence (AI). This
+should ensure that research technologies are fair,
+transparent, and free from bias,  while protecting data,
+ensuring access to knowledge for all, and promoting
+freedom of scientific research that contributes to serving
+society.
+
+2. Justice, Equity, and Non-Discrimination
+ALECSO is committed to promoting justice and equality through AI, ensuring equal access
+to technologies and opportunities for all members of society, regardless of gender,
+religion, or socioeconomic background. AI should not reinforce social or economic
+inequalities. It should also work to ensure fairness among all members of society,
+regardless of their differences and special needs, and to prevent any form of
+discrimination or bias, whether for or against the interests of an individual or group of
+people, especially in a manner deemed unfair.
+
+27 |
+
+
+Scope Implementation Guidelines
+Education  AI systems in education should promote justice, equity, and
+non-discrimination, ensuring equal learning opportunities
+and fair treatment for all students, without bias against
+marginalized groups, including those with special needs.
+Therefore, algorithms m ust be designed to be non -
+discriminatory, trained on diverse and representative data.
+Educational tools must also be flexible to meet the needs of
+all students.
+Culture AI applications in cultural fields must adhere to the
+principles of justice and equity, ensuring equal access to
+cultural resources without discrimination based on race,
+gender, religion, social, or economic status.
+Scientific Research AI-powered scientific research must adhere to the principles
+of justice and equity, providing equal opportunities for all
+researchers and communities, without bias or
+discrimination based on race, gender, religion, social, or
+economic background. AI -based scientific research must
+also take into account equity among members of society.
+
+ 3. Inclusivity and Impartiality
+AI actors should strive to promote social justice and make AI technologies available to
+everyone on an equal footing, in a manner consistent with ethical principles, and in a
+simple and affordable manner, including the guarantee that  marginalized and
+disadvantaged groups and people with disabilities will have equal access to the benefits
+and outcomes of AI technologies. AI actors should also make all reasonable efforts to
+minimize, and avoid reinforcing or perpetuating, discriminatory or biased applications
+and outcomes throughout the lifecycle of any AI system, in order to ensure fairness and
+equity in these systems. There should be an effective way to seek redress when faced
+with discrimination and biased algorithmic decisions.
+
+28 |
+
+Scope Implementation Guidelines
+Education  AI systems in education should be designed to be free of
+bias, ensuring fair decisions for all students regardless of
+race, gender, socioeconomic status, or learning ability.
+Therefore, models should be trained on diverse and
+balanced data, with rigorous t esting to detect and correct
+any biases. Educators and institutions should also have an
+oversight role in reviewing AI decisions, emphasizing that AI
+is an aid to human decision -making, not a replacement, to
+ensure equitable education for all.
+Culture AI systems must be designed to be free of biases that could
+reflect an inaccurate or biased image of different cultures.
+This requires training models on diverse and balanced data
+that fairly represents all cultures, with algorithms
+periodically reviewed to detect and correct any bias. Experts
+in cultural studies should also be involved to ensure
+accurate representation and promote inclusivity,
+contributing to the development of AI systems that fairly
+and objectively reflect cultural diversity.
+Scientific Research Scientific research, especially when using artificial
+intelligence, must be supported by principles of impartiality,
+ensuring that its outcomes are accurate, fair, and
+representative of all groups without exclusion or leading to
+subjective or discriminatory results.
+
+4. Sustainability and Environmental and Climate Protection
+The development and use of artificial intelligence must be consistent with environmental
+and sustainable development goals to ensure a secure future for future generations. AI
+systems in education must also be subject to continuous assessment of their
+humanitarian, social, cultural, economic, and environmental consequences to ensure
+their contribution to sustainability in accordance with international and national
+sustainable development goals. This requires full awareness of the impact of AI on
+resource co nsumption, carbon emissions, and social impact, while developing
+sustainable solutions in education, culture, and scientific research that reduce
+environmental impact and promote the responsible use of technology, in line with
+national policies and the global sustainable development goals.
+
+29 |
+
+
+Scope Implementation Guidelines
+Education  Education should be a leading field in achieving
+sustainability and environmental protection by ensuring the
+use of environmentally friendly AI systems and by
+incorporating educational content that teaches students
+how to conserve the environment through A I-based
+technical solutions. AI systems should be developed and
+deployed with a commitment to sustainability,
+environmental responsibility, and climate protection. This
+includes prioritizing energy -efficient AI models, reducing
+carbon footprints, and suppo rting applications that
+promote environmental conservation. Furthermore, AI
+ethics should emphasize the role of education in
+sustainability by raising awareness among developers,
+companies, and users about the responsible use of AI and its
+impact on the environment and climate.
+Culture Environmental and sustainability aspects should be
+considered when producing cultural content and using AI
+systems. AI should also promote cultural sustainability by
+respecting environmental traditions and local knowledge
+related to ecosystems. Traditional  cultures and indigenous
+communities play a crucial role in environmental
+conservation and managing natural resources in sustainable
+ways, and it is essential that AI technologies support these
+practices rather than undermine them. Artificial intelligence
+should be employed to protect biodiversity, promote
+environmental solutions that are consistent with cultural
+values, and encourage sustainable development that
+balances technological progress with ecosystem
+conservation.
+
+30 |
+
+Scientific Research Encourage scientific research in the field of environmentally
+friendly artificial intelligence by developing or focusing on
+algorithms that consume less energy or to better control
+their impact on the environment and climate. Scientific
+research in the field of artificial intelligence must adhere to
+the highest ethical standards to ensure transparency,
+integrity, and accountability at all stages of research and
+development. Research should be directed toward
+responsible innovation, with a focus on societal benefits and
+environmental sustainability, while avoiding any uses that
+may harm humans or ecosystems as a result of the use of
+artificial intelligence technologies.
+
+5. Respect for Arab cultural heritage and Islamic beliefs and values
+When developing, distributing, or using an artificial intelligence system,  special care
+must be taken to respect Arab cultural heritage and Islamic beliefs and values, and not
+to violate, distort, or offend them, particularly by violating Islamic sanctities. This must
+also be ensured throughout the lifecycle of AI systems, including generative AI systems.
+
+Scope Implementation Guidelines
+Education  Care must be taken to prevent young students and pupils
+from being exposed to any aspect of cultural, civilizational,
+religious, or ethical values that conflict with the Arab
+cultural heritage and Islamic beliefs and values through AI
+systems.
+
+31 |
+
+Culture AI technologies used to document heritage must ensure
+that they preserve its authenticity and Arab identity,
+accurately reflecting it without distortion or alteration. This
+requires developing models based on reliable sources that
+accurately represent cult ure, while avoiding bias or
+manipulation of information. Researchers and institutions
+must also ensure that AI enhances understanding of
+heritage and preserves its identity, without compromising
+or distorting cultural values, thus contributing to the
+preservation of cultural heritage for future generations.
+They must also ensure that Arab cultural heritage resources
+are made available to all in a fair manner, by presenting
+these resources in multiple languages and providing
+accessibility tools that enable various groups to benefit from
+them. AI systems in the Arab world must also commit to
+supporting and promoting the Arabic language by
+developing AI models that accurately process the language,
+preserve its authenticity, and ensure its use in ethical and
+responsible ways. This requires providing Arabic natural
+language processing techniques that respect linguistic rules
+and cultural heritage, while avoiding linguistic biases and
+distortions in translation or analysis.
+Scientific Research Scientific research must be designed to align with the
+ethical, social, and cultural values of Arab societies, without
+negatively impacting the scientific and cultural heritage or
+cultural identity. Researchers must also adhere to ethical
+standards that respect religious beliefs and societal values,
+while ensuring that studies and research are free of any
+content that offends or distorts Arab culture. Universities
+and research institutions must also play an active role in
+publishing research that respects  Arab culture and
+encourages Arab dialogue between modern science and
+cultural heritage.
+
+6. Safety and Reliability
+Unintended harm to human safety, society, the environment, and ecosystems must be
+prevented and avoided throughout the lifecycle of AI systems.
+
+32 |
+
+It is also necessary to ensure the reliability of AI systems by measuring the operational
+reliability and dependability of the system, its specific functions, and the outcomes it
+seeks to achieve. It is also necessary to ensure comprehensive documentation of the
+various development stages and an internal automated system for monitoring and
+alerting in the event of a defect in the efficiency and output of AI systems.
+Scope Implementation Guidelines
+Education  Content must be accurately and scientifically verified.
+Information generated using artificial intelligence
+technologies must be accurate, non -misleading, and
+consistent with approved educational curricula.
+Culture Applications of artificial intelligence in cultural fields must
+ensure safety and reliability. These technologies must be
+used in a manner that preserves the accuracy and
+authenticity of cultural content and prevents the spread of
+misleading information or  information that could harm
+cultural and societal heritage. Cultural information
+produced or processed using artificial intelligence must also
+be subject to strict scientific standards, ensuring the
+authenticity of sources and avoiding errors or biases th at
+could distort historical or cultural facts.
+Scientific Research AI systems used in scientific research must adhere to strict
+security and safety standards to ensure data protection,
+prevent misuse of results, and maintain the credibility of
+scientific research. This requires developing protocols that
+include data encryption, access control, and secure storage
+of sensitive information. The reliability and accuracy of AI
+models must also be tested to prevent the spread of
+misleading results. Furthermore, ethical guidelines should
+be developed to prevent the harmful use of  AI, while
+researchers should receive training on cybersecurity
+practices and the responsible use of these technologies.
+
+7. Privacy and Personal Data
+Privacy is a n essential right to preserv e human dignity, defend autonomy, and protect
+human rights. Privacy must be respected, preserved, and promoted throughout the life
+cycle of AI systems. The collection, use, sharing, storage, correction, deletion, processing,
+
+33 |
+
+management, and any other handling of data related to AI systems must be consistent
+with the values and principles outlined herein and with national legal frameworks related
+to personal data. AI outputs must not be exploited to defame, blackmail, or harm
+individuals in any way, other than as authorized by the data subjects through their prior,
+explicit, and informed consent. Data governance principles must be followed to ensu re
+the protection and security of personal data, as well as the ability to correct and erase it
+in accordance with applicable national laws.
+
+Scope Implementation Guidelines
+Education  AI systems in education must protect the privacy of students
+and teachers by securely collecting data, adhering to
+transparent policies, and preventing unauthorized access or
+misuse of personal information. This requires the
+application of encryption and a nonymization techniques,
+and the establishment of clear policies regarding data
+storage and sharing. Users must also be given control over
+their information, including the right to delete or revoke
+their data when needed, to ensure a safe learning
+environment that respects privacy.
+Culture AI applications in the cultural field must respect individual
+privacy, while ensuring the protection of personal data in
+accordance with Arab societal values and principles, so that
+it is used in responsible ways that preserve cultural identity
+and protect personal rights. Cultural institutions and digital
+platforms using AI must also adhere to strict policies to
+protect individuals' personal data, preventing any
+unauthorized use of this information.
+
+34 |
+
+Scientific Research Prior consent must be obtained for the use of individual
+data, and research findings or applications must not be
+misused in a way that violates individuals' privacy or
+deprives them of their fundamental rights. This requires
+adherence to ethical and legal standards that protect
+personal data, while imposing restrictions on its collection
+and use. Researchers and institutions must also ensure that
+AI applications respect human rights and prevent any
+practices that could lead to discrimination or infringe upo n
+individual freedoms, thus promoting the fair and
+responsible use of technology.
+
+8. Cybersecurity and Data Protection
+Cybersecurity and data protection are essential pillars of the ethical development and
+deployment of AI. As AI systems increasingly rely on vast amounts of sensitive and
+personal data, ensuring robust security measures is essential to prevent breaches,
+unauthorized access, and misuse of data. Lack of cybersecurity can lead to identity theft,
+financial fraud, and the erosion of public trust in AI technologies. Ethical AI must include
+strong encryption, access controls, and continuous monitoring to protect user data while
+complying with privacy regulations such as the General Data Protection Regulation
+(GDPR) and other global frameworks. Furthermore, AI systems must be designed to
+minimize data collection, promote transparency in data handling, and empower users to
+control their personal information. Prioritizing cybersecurity not only protects
+individuals but also supports the integrity and accountability of AI -driven decision -
+making.
+
+35 |
+
+
+Scope Implementation Guidelines
+Education  Educational institutions and AI developers must adopt
+robust measures to protect the data of students, teachers,
+parents, and stakeholders from cyber breaches and threats,
+while ensuring the confidentiality and integrity of data. This
+requires the use of e ncryption technologies, multi -factor
+authentication, and regular security audits to detect and
+address vulnerabilities. Compliance must also be adhered
+to. Local, Arab, and international data protection
+regulations should be implemented, while reducing the
+retention period for sensitive information. Additionally,
+teachers and students should be trained in digital security
+to protect them from cyber threats, ensuring a safe and
+reliable learning environment.
+Culture Cultural institutions in the Arab world must adhere to
+cybersecurity and data protection principles to ensure the
+preservation of cultural heritage and digital content, protect
+the privacy of users and creators, and prevent the illegal
+exploitation of cult ural and heritage information. Cultural
+institutions must also implement advanced technologies to
+protect digital archives, manuscripts, artwork, and heritage
+information from hacking, alteration, or unauthorized use.
+Scientific Research Scientific research in the Arab world must adhere to the
+highest standards of cybersecurity and data protection to
+ensure the confidentiality and security of research
+information, protect the rights of researchers, and prevent
+unauthorized access to sensit ive scientific data, thus
+enhancing confidence in research and ensuring its integrity.
+Arab countries should also cooperate in developing unified
+cybersecurity policies for scientific research and exchange
+expertise and technologies to ensure the protectio n of
+scientific data at the regional level.
+
+36 |
+
+9. Transparency, Explainability, and Auditability
+The principles of transparency, explainability, and auditability are essential for building
+trust in AI systems and technologies throughout their lifecycle. Therefore, it is essential
+to have the ability to track the stages of automated decision -making, particularly those
+that may lead to harm or adverse effects. AI systems must also be traceable, auditable,
+contextually relevant, and impactful. Furthermore, the overall and actual accuracy, error
+rates, and other metrics that demonstrate the accuracy and co mprehensiveness of AI
+technology outputs must be disclosed, taking into account the limitations resulting from
+data protection laws. It may be necessary to strike a balance between the principles of
+transparency and explainability and other principles, such as the right to privacy and the
+principles of safety and security.
+People should also be fully informed of any decision made based on information derived
+from AI systems or AI algorithms, including any decision that affects their safety or
+human rights and children's rights. In such cases, they should be able to request
+clarification from the relevant AI actors. Individuals should also be able to understand
+the reasons for any decision that affects their rights and freedoms, as well as submit
+requests for review and correction of the decision.
+
+Scope Implementation Guidelines
+Education  AI systems used in education should be transparent,
+allowing students, teachers, and stakeholders to
+understand how decisions are made, the use of data, and
+any potential limitations or biases. Transparency is essential
+to building trust, accountability, a nd fairness, especially
+when AI is used for grading, personalized learning, or
+education management. This includes providing clear
+explanations of the decisions made by these systems to
+ensure their fair and reliable use.
+
+37 |
+
+Culture Cultural activities, especially those powered by AI
+technologies, must adhere to the principles of transparency,
+interpretability, and scrutiny to ensure the clarity of
+knowledge sources, the authenticity of cultural content, and
+the ability to review and analyze cultural production and
+dissemination processes in a manner that preserves
+authenticity and credibility. Support research and
+technologies that enhance the understanding and
+interpretation of Arab cultural content in a scientifically
+accurate manne r, such as explainable AI and big data
+analysis to more accurately understand cultural patterns.
+Scientific Research Clear details should be published on how AI systems are
+trained, the databases and algorithms used, and the carbon
+footprint calculations used to train these models. This
+requires accurate documentation of development
+processes, including disclosure of dat a sources, testing
+criteria, and potential model limitations. Researchers and
+the scientific community should also be able to review and
+analyze these models to ensure integrity, reduce bias, and
+enhance transparency in AI-powered scientific research.
+
+10. Responsibility and Accountability
+Authorities involved in AI systems should bear the moral and legal responsibility they
+owe under national and international law, particularly those relating to state duties, for
+AI actors physically present within their territory and under their effective control,
+throughout the lifecycle of an AI system. Ethical responsibility for decisions and actions
+based in any form on an AI system should always be ultimately attributed to AI actors,
+based on their respective roles in the AI system's lifecycle. Appro priate oversight,
+consequences assessment, and review mechanisms, including whistleblower protection,
+should be in place to ensure accountability for AI systems and their consequences
+throughout their lifecycle.
+
+38 |
+
+Scope Implementation Guidelines
+Education  Institutions and developers must bear full responsibility for
+the ethical design and implementation of AI systems, while
+ensuring human oversight and preventing harmful biases.
+Responsibility also includes protecting privacy, collecting
+data responsibly, a nd addressing any negative impacts to
+ensure equitable and safe education.
+Culture Institutions and individuals working in the Arab cultural field
+must adhere to the principles of responsibility and
+accountability to ensure the preservation of cultural
+identity, the protection of heritage, and the promotion of
+societal values. They must also bear the consequences of
+publishing or producing any cultural content that may
+impact society. Clear oversight and accountability systems
+must be developed for media and cultural institutions to
+assess their adherence to ethical and professional
+principles, with corrective measures implemented in the
+event of violations. Cultural entities must also be
+responsible for verifying information sources before
+publishing them.
+Scientific Research Artificial intelligence research should focus on developing
+technologies that benefit society, while avoiding
+applications that may cause environmental, social,
+economic, health, or engineering harm. This requires
+directing innovation toward sustainable so lutions that
+enhance individual well -being and respect ethical values,
+taking into account the potential impacts of AI on societies
+and the environment. Researchers and institutions must
+also adhere to responsible research practices and ensure
+the safe and  equitable use of smart technologies,
+contributing to sustainable development without harming
+resources or social balance.
+
+11. Integrity and Non-Falsification
+The vulnerability of individuals, groups, or countries, whether this vulnerability is
+material, cognitive, political, or psychological , should not be exploited to gain
+
+39 |
+
+competitive advantages at the expense of these parties or exploit their resources during
+the design, distribution, or use of AI systems. AI systems must not be used in any way
+that exploits ambiguity or imposes ambiguity on their outputs, nor must they be used to
+indirectly influence people's cognitive or psychological states, to make decisions or adopt
+approaches that serve the developer or operator of the AI system or its beneficiaries,
+particularly to increase profits or garner support. Furthermore, al l stakeholders
+throughout the life of an AI system must refrain from distorting, falsifying, or
+exaggerating the capabilities or benefits of the system, or claiming them for the purpose
+of profit or reputation.
+Scope Implementation Guidelines
+Education  Education in the Arab world must adhere to the principles
+of academic integrity, transparency, and combating
+counterfeiting to ensure the quality of education and
+protect students from unethical practices that harm the
+credibility of educational institutio ns. Curricula must also
+include specialized courses in the ethics of academic
+integrity, while educating students about the importance of
+adhering to sound research practices and avoiding
+plagiarism.
+Culture Cultural institutions and creators in the Arab world must
+adhere to the principles of scientific research, integrity, and
+transparency, avoiding any form of falsification or distortion
+of cultural content. This is to ensure the preservation of
+cultural heritage and the accuracy of circulated information,
+and to enhance trust in Arab cultural production. Media
+outlets and cultural platforms must commit to transmitting
+historical, literary, and artistic information from reliable
+sources, while providing scien tific evidence to support its
+authenticity, to prevent the dissemination of false or
+fabricated information.
+
+40 |
+
+Scientific Research Artificial intelligence systems in scientific research must
+maintain academic integrity by ensuring transparency in
+data processing, preventing plagiarism, and promoting
+ethical research practices to ensure the credibility of
+scientific knowledge. This requires the responsible use of AI,
+citing sources, verifying the authenticity of content, and
+disclosing its role in the research. Furthermore, the use of
+generative AI in writing refereed scientific research,
+university dissertations, research projects, and  other
+publications must be avoided, to ensure academic integrity,
+scientific accuracy, and adherence to established research
+standards.
+
+12. Awareness and Knowledge
+Efforts should be made to enhance public awareness and knowledge of AI technology,
+as well as the value of data, through open and accessible education and training, civic
+engagement, digital skills, and AI ethics training, so that all members of society can make
+informed decisions about their use of AI systems and enjoy protection from undue
+influence. Educational efforts aimed at raising awareness of the consequences of AI
+systems should be based on the implications of these systems for human rights and the
+enjoyment of human rights, the rights of the child, Arab culture and civilization, Islamic
+values, the environment, and ecosystems.
+Scope Implementation Guidelines
+Education  Awareness and knowledge of AI technology and the value of
+data should be enhanced through open education, digital
+skills training, and AI ethics, to ensure informed decision -
+making and protect individuals from undue influence. This
+requires making training  programs available to all,
+promoting civic engagement, and developing educational
+curricula that demonstrate how to use AI safely and
+ethically, contributing to building a society capable of
+benefiting from technology while fully aware of its
+challenges and ethics.
+
+41 |
+
+Culture Educational and awareness -raising programs should be
+launched to educate Arab communities on how to use
+artificial intelligence to preserve heritage, analyze cultural
+data, and produce artistic and literary content in a manner
+that respects cultural values.
+Scientific Research Graduate programs and scientific research at Arab
+universities should include specialized courses in artificial
+intelligence, with a focus on how it can be used in data
+analysis, modeling, and scientific predictions. Research and
+development in natural lan guage processing for Arabic
+should also be supported to ensure that AI applications are
+capable of understanding nuanced dialects and cultural
+expressions without distortion or marginalization.
+
+13. Humans are responsible for supervision and decision-making.
+The sovereignty of the human mind, cognitive power, and human autonomy must
+remain in all applications that rely on artificial intelligence. Artificial intelligence systems
+may not be used to negatively influence or manipulate cognitive biases, nor to influence,
+imitate, falsify, or inaccurately convey feelings, emotions, beliefs, and minds. Care should
+be taken to ensure that moral and legal responsibility for any stage of the lifecycle of an
+AI system can always be attributed to natural persons or legal e ntities, particularly in
+cases of redress related to AI systems. While humans may sometimes choose to rely on
+AI systems for reasons of effectiveness, the power to relinquish control in limited
+contexts remains with humans. Humans can use AI systems to mak e decisions and
+perform actions, but no AI system can ever replace humans with regard to ultimate
+responsibility and accountability. In general, decisions regarding individuals' educational,
+academic, or professional paths should not be left solely to AI systems.
+
+42 |
+
+Scope Implementation Guidelines
+Education  AI systems in education must operate under human
+oversight to ensure ethical decision-making, prevent errors,
+and maintain accountability, with teachers and
+administrators remaining in ultimate control. Therefore, AI
+should not operate autonomously, as it may make mistakes
+or misinterpret student needs. Teachers and administrators
+should be involved in monitoring recommendations and
+intervening when needed. Personalized learning should not
+be solely AI-based; teachers should be an integral part of the
+guidance process to ensure balanced educational outcomes.
+Culture Human oversight must remain a fundamental element of
+the use of AI in Arab cultural fields, to ensure that decisions
+related to cultural production, heritage preservation, and
+knowledge dissemination are consistent with cultural
+values, societal traditions , and ethical and religious
+standards. Decisions related to the preservation and
+documentation of cultural heritage, the development of
+digital content, and the production of arts and literature
+must also be supervised by experts and intellectuals to
+ensure the authenticity and accuracy of the content.
+Scientific Research Scientific Research: Human oversight and decision -making
+must remain a fundamental element of scientific research in
+the Arab world, to ensure the responsible use of AI and
+modern technologies, such that their role complements,
+rather than replaces, the cr itical thinking and scientific
+expertise of researchers. Scientific decision -making
+processes, such as study design, data analysis, and
+interpretation of results, should remain under the
+supervision of qualified researchers to ensure the accuracy
+and integrity of scientific research. All results obtained using
+AI must be verified by human experts to ensure their
+reliability and avoid complete reliance on algorithms in
+scientific decision-making.
+
+43 |
+
+14. Technological Sovereignty and Open Source
+Technological sovereignty in the field of artificial intelligence (AI) represents the ability
+of countries to develop, control, and deploy AI technologies independently of foreign
+countries, free from external dependencies or influences. Achieving AI sovereignty is not
+limited to technological skills alone; it also relates to protecting Arab interests,
+preserving civilizational, cultural, and social values, and ensuring ethical management in
+the deployment of AI. In the context of the global competition to harness the potential
+of AI technologies, not only to achieve developmental and economic gains, but also to
+achieve strategic and geopolitical gains, it has become imperative to establish Arab
+countries' technological sovereignty in AI when designing, dist ributing, and using AI
+systems, as well as through increased attention to Arab scientific research in the field.
+The move toward using open -source AI models is one of the most important trends
+available to shorten the process of mastering AI technology, enhance capabilities in the
+continuous development and improvement of these tools, and ensure greater
+transparency and reliability of these systems. AI researchers should also be encouraged
+to evaluate and study the positive outcomes of their research on Arab life and its support
+for Arab civilization, culture, and Islamic values, and to provide a future vision to limit
+the misuse of their research in the long term before publishing and expanding its
+development.
+
+Scope Implementation Guidelines
+Education  The education sector in the Arab world must work to
+achieve technological sovereignty by adopting local
+technologies and promoting reliance on open sources to
+ensure the independence of the education system, reduce
+technological dependency, and promote equitable access to
+knowledge and innovation. Arab universities and
+educational institutions should also cooperate in developing
+joint projects based on open sources, contributing to
+building a unified and independent Arab educational
+technology system.
+
+44 |
+
+Culture Any Arab cooperation in the field of AI must respect the
+national sovereignty of member states, while unifying
+efforts to achieve common interests without compromising
+cultural sovereignty. This requires establishing clear legal
+and regulatory frameworks t hat guarantee the
+independence of each country in making its decisions
+regarding AI technologies, while enhancing cooperation in
+developing joint solutions that serve all. Emphasis should
+also be placed on building technical partnerships that
+respect national specificities and contribute to the exchange
+of knowledge and expertise while preserving each country's
+identity and sovereignty.
+Scientific Research Scientific research in the Arab world must work to achieve
+technological sovereignty by developing and adopting
+independent technologies and promoting the use of open
+sources. This ensures the independence of scientific
+research, fosters innovation, and re duces dependence on
+external parties, contributing to sustainable development
+based on local knowledge. Universities and research centers
+should also rely on open source software for data analysis,
+simulation, and modeling, reducing reliance on expensive
+commercial software and enhancing freedom of research
+and development.
+
+
+15. Intellectual Property Rights Protection
+An optimal legal framework must be provided and updated in line with technological
+developments in the field of artificial intelligence, particularly those related to
+generative artificial intelligence, to protect the intellectual property rights of data u sed
+to train these systems. Legal protection is also required for innovations resulting from
+scientific research in artificial intelligence, with an emphasis on ensuring that these
+innovations are consistent with ethical values and do not cause social or environmental
+harm. Best principles and practices must also be followed in data handling, management,
+encryption mechanisms, and the testing, evaluation, and training of artificial intelligence
+technologies, ensuring privacy and confidentiality are maintained while respecting data
+ownership and intellectual property rights.
+
+45 |
+
+
+Scope Implementation Guidelines
+Education  AI systems in education must respect intellectual property
+rights by ensuring that educational content and the work of
+students and researchers are properly attributed and
+protected from unauthorized use or exploitation. Therefore,
+educational institution administrators must develop clear
+guidelines that protect authors' rights and prevent
+plagiarism or unauthorized reuse of materials. AI must also
+be trained on legal and ethical data to ensure compliance
+with intellectual property laws and foster an educat ional
+environment that respects creativity and intellectual
+property rights.
+Culture The rights of Arab communities regarding their cultural
+heritage must be preserved, while preventing its
+exploitation for commercial purposes without their consent.
+This requires establishing clear policies that protect cultural
+property and ensuring that the use of AI in heritage
+documentation is done with the consent of the communities
+concerned. Cooperation with these communities must also
+be strengthened to ensure that their heritage is accurately
+and respectfully represented, while avoiding any practic es
+that lead to its exploitation or distortion. Mechanisms must
+also be put in place to respect the rights of creators when
+using AI to develop artistic and literary content, ensuring
+that ideas are not stolen or cultural creativity is distorted.
+Scientific Research AI systems in scientific research must ensure respect for
+intellectual property rights by correctly attributing ideas,
+protecting original research, and preventing the
+unauthorized use of data, methodologies, and results. To
+achieve this, clear policies mu st be established that define
+the role of AI in research, enforce the correct attribution of
+AI-generated content, and ensure the legal and ethical use
+of data. Research institutions and researchers must also
+adhere to academic standards to protect scienti fic
+authenticity and prevent academic plagiarism or misuse.
+
+46 |
+
+16. Cooperation and Fair Competition
+Artificial intelligence technology can bring significant benefits to Arab citizens and can
+be utilized by all Arab countries. However, it requires advanced capabilities,
+technologies, and competencies, as well as large amounts of high -quality data. It also
+raises fundamental ethical concerns. This highlights the importance and inevitability of
+cooperation between Arab countries in the development, distribution, and use of
+artificial intelligence in a way that enhances regional partnerships, alongside
+partnerships with international parties. This also requires ensuring the exchange of
+knowledge and expertise among all stakeholders in the field in Arab countries to support
+an active Arab presence and achieve comprehensive and sustainable technological
+development.
+
+Scope Implementation Guidelines
+Education  Education in the Arab world must be based on the principles
+of academic cooperation and fair competition when using
+artificial intelligence systems. This fosters an educational
+environment that encourages innovation and active
+participation between student s and institutions, while
+ensuring fair educational opportunities, fostering a culture
+of teamwork, and avoiding unethical practices such as
+cheating or cognitive monopoly. Arab universities and
+schools should also cooperate in exchanging knowledge,
+curricula, and educational programs through electronic
+platforms and joint academic initiatives. This will contribute
+to raising the quality of education and unifying efforts to
+achieve educational goals.
+Culture Arab culture must leverage artificial intelligence to enhance
+cooperation between institutions and creators, ensuring fair
+competition in cultural production, while preserving Arab
+cultural identity, supporting creativity, and protecting
+intellectual prope rty rights in the digital environment.
+Machine learning technologies can also be leveraged to
+objectively evaluate literary and artistic works, ensuring
+neutrality in cultural competitions and promoting the
+principle of fair competition in artistic and lit erary
+production.
+
+47 |
+
+Scientific Research Arab universities and research centers should support joint
+research projects between Arab countries, providing grants
+and funding to encourage researchers to collaborate in
+finding innovative scientific solutions that benefit Arab
+societies. Artificial intelligence tools must also be developed
+to detect plagiarism, academic fraud, and manipulation of
+research data, ensuring a research environment based on
+academic ethics and fair competition. Efforts must also be
+made to de -monopolize artificial intelligen ce technologies,
+avoid data dominance, and enable and encourage creativity,
+competition, and innovation.
+
+Scope of Application
+This Charter aims to present a number of values, principles, and recommendations that
+can guide Arab institutions in the fields of education, culture, and science on how to
+address the known and emerging consequences of artificial intelligence systems on
+individuals and society in Arab countries. This Charter is based on the need to protect
+the dignity of Arab people, ensure their physical, moral, psychological, and ethical safety,
+achieve their well -being, and prevent harm, as well as preserve the environm ent and
+ensure ecological sustainability.
+The application of the principles contained in this Charter is directed to all ALECSO
+Member States, including governments responsible for establishing legal and regulatory
+frameworks for AI systems throughout their lifecycle, and active institutions in the field,
+whether they are developers, distributors, or users of these technologies. It covers all
+uses of AI in the Organization's main areas of competence, namely education, culture,
+science, and scientific research.
+
+Expected Outcomes and Results
+1. Develop an ALECSO Charter of Ethics for Artificial Intelligence ( Charter of Ethics)
+to provide ethical guidance to stakeholders, policymakers, and decision-makers in
+Arab countries to ensure the safe and fair use of AI, while ensuring the protection
+of human rights.
+2. Engage public opinion and raise awareness of the importance of the ethical risks
+and issues associated with the use of AI technologies, and how they can be
+addressed and avoided.
+
+48 |
+
+3. Contributing to ALECSO's efforts to encourage dialogue to discuss the ethical
+challenges associated with artificial intelligence technology at the Arab, regional,
+and international levels.
+
+Monitoring, Evaluation, and Continuity
+1. Establish ongoing monitoring mechanisms within Arab countries to assess
+progress in implementing the Charter.
+2. Develop indicators to measure compliance with ethical frameworks through
+independent studies and research.
+3. Encourage governments to adopt the policies outlined in the Charter and amend
+local laws to ensure their implementation, while emphasizing the adoption of legal
+measures to address any violations or infringements of the values and boundaries
+addressed by the Charter.
+4. Providing technical and advisory support to member states to facilitate the
+implementation of the Charter and assisting in developing an implementation
+action plan tailored to the specific needs and requirements of each country.
+5. Establishing a mechanism to monitor changes in the field of artificial intelligence
+that may require updating this Charter and ensuring its alignment with these
+developments.
+
+49 |
+
+Sources and References
+1. Universal Declaration of Human Rights, 1948.
+2. International Covenant on Civil and Political Rights, 1966.
+3. International Covenant on Economic, Social and Cultural Rights, 1966.
+4. African Charter on Human and Peoples' Rights, 1980.
+5. Arab National Strategies for Artificial Intelligence.
+6. Arab Charter on Human Rights, 2004.
+7. National Human Rights Strategy, 2021.
+8. Charter of Professional Ethics in Arab Countries.
+9. UNESCO Recommendation on the Ethics of Artificial Intelligence
+10. EU Guidelines on Ethics in Artificial Intelligence: Context and Implementation,
+2019
+11. Ethical Charter for Artificial Intelligence in Light of International Standards and
+Sustainable Development Goals
+12. National Charter for Artificial Intelligence Ethics, Jordan
+13. Principles of Artificial Intelligence Ethics, Saudi Data and Artificial Intelligence
+Authority (SDAIA)
+14. Egyptian Charter for Responsible Artificial Intelligence
+15. Charter for the Development and Use of Artificial Intelligence, United Arab
+Emirates
+16. Charter for the Ethical Use of Artificial Intelligence, Egypt, National Commission
+for Education, Science and Culture.
+17. Draft Arab Charter of Ethics for Artificial Intelligence, proposed by the Ministry of
+Telecommunications and Information Technology of the State of Palestine, 2023
+18. Arab Scientific Research and Artificial Intelligence Ethics Guide (Principles,
+Foundations, and Controls), August 2024
+19. National Charter of Ethics for Artificial Intelligence (First Edition), General
+Authority for Telecommunications and Informatics, State of Libya, June 2025
+20. Curriculum Digitization Standards, Ministry of Education, Republic of Iraq, 2024
+

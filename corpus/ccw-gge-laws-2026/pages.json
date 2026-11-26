@@ -1,0 +1,55 @@
+{
+  "pages": [
+    {
+      "char_end": 2821,
+      "char_start": 0,
+      "page": 1
+    },
+    {
+      "char_end": 6612,
+      "char_start": 2822,
+      "page": 2
+    },
+    {
+      "char_end": 11170,
+      "char_start": 6613,
+      "page": 3
+    },
+    {
+      "char_end": 15369,
+      "char_start": 11171,
+      "page": 4
+    },
+    {
+      "char_end": 19082,
+      "char_start": 15370,
+      "page": 5
+    },
+    {
+      "char_end": 22422,
+      "char_start": 19083,
+      "page": 6
+    },
+    {
+      "char_end": 23056,
+      "char_start": 22423,
+      "page": 7
+    },
+    {
+      "char_end": 24598,
+      "char_start": 23057,
+      "page": 8
+    },
+    {
+      "char_end": 26382,
+      "char_start": 24599,
+      "page": 9
+    },
+    {
+      "char_end": 26636,
+      "char_start": 26383,
+      "page": 10
+    }
+  ],
+  "primary_text": "text/en.txt"
+}

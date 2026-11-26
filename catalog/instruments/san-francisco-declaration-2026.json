@@ -12,7 +12,7 @@
   "gaps": [
     "Non-binding: no legal obligation, ratification, depositary, monitoring or enforcement.",
     "The five working groups are announced, not established; no mandate, membership or output was verified.",
-    "No full text is stored; the record is metadata-only."
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "san-francisco-declaration-2026",
   "instrument_type": "declaration",
@@ -224,7 +224,7 @@
   },
   "rights": {
     "licence": "United States Government official publication",
-    "note": "Official US government text. No full text is stored in this corpus; the declaration is read from the State Department release.",
+    "note": "Official US Government publication; no open licence identified. The declaration text is stored unaltered for research and is not relicensed.",
     "status": "public_official_text"
   },
   "sources": [
@@ -237,10 +237,28 @@
       "note": "Media note of 15 November 2026 announcing the signature by the United States and nine Pax Silica participants and reproducing the full text released by the ten governments. It names the signatories and the five proposed working groups.",
       "publisher": "United States Department of State, Office of the Spokesman",
       "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "state-san-francisco-archived",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Archived copy of the official release reproducing the full declaration; the live page returned HTTP 407.",
+      "publisher": "U.S. Department of State",
+      "url": "https://web.archive.org/web/20261117015744/https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"
     }
   ],
   "status": "adopted",
   "status_note": "Signed political declaration, not a treaty. Ten governments signed on 15 November 2026: the United States, Australia, India, Israel, Japan, the Republic of Korea, Qatar, Singapore, the United Arab Emirates and the United Kingdom. No ratification, depositary, entry into force, monitoring or enforcement is established.",
+  "text": {
+    "extraction_note": "Archived official State Department release. The text between Begin Text and End Text, including the footnote, was extracted to one document-level unit.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
   "title": {
     "official": "San Francisco Declaration on the Secure Foundations of Enduring Prosperity",
     "short": "San Francisco Declaration"
@@ -256,9 +274,14 @@
         "check": "Legal nature checked against the text.",
         "date": "2026-11-24",
         "result": "The text records a common understanding and resolves to establish working groups. It contains no ratification, depositary, entry-into-force or dispute-settlement clause."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "HTML downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from the official State Department release. The record is metadata-only: no full text is stored. Signature is political; the declaration creates no legal obligation."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

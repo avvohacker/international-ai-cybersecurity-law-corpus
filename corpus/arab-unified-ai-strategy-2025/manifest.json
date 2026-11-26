@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 1168738,
+      "media_type": "application/pdf",
+      "note": "Official 39-page Arabic text of the Unified Arab Strategic Vision on Artificial Intelligence, published by AICTO.",
+      "path": "source/arab-unified-ai-strategy-2025-ar.pdf",
+      "role": "original",
+      "sha256": "26d752f5d4d8c09fdbf39dc000d6ccc79a4ba1381da2bd382155865655653b11",
+      "source_url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf"
+    },
+    {
+      "bytes": 178298,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/ar.txt",
+      "role": "text",
+      "sha256": "980167593e59a50fea9d041979eea519df2c01267f8f92c52c9a8b2577ad449f"
+    },
+    {
+      "bytes": 3225,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "78b131c6e2416db82b5bb79b7dc5f097892f09182fb08948aba3eb3d62b8bcc5"
+    },
+    {
+      "bytes": 188643,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "f818f221d245c36b1f4925c61e542ff15451d477d20e0e5da7ef9fbab97d5e5d"
+    }
+  ],
+  "instrument_id": "arab-unified-ai-strategy-2025",
+  "primary_text": "text/ar.txt"
+}

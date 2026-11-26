@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 237047,
+      "media_type": "application/pdf",
+      "note": "Official two-page English reproduction of The G20 AI Prosperity Objectives, Chapel Hill, 2 September 2026, published by the Japanese Ministry of Internal Affairs and Communications. The commerce.gov PDF returned HTTP 403 to automated clients.",
+      "path": "source/g20-ai-prosperity-objectives-2026-en.pdf",
+      "role": "original",
+      "sha256": "4cd17c031cad1b181c2df1816c6652b65e5874916834636b972251dedff23a18",
+      "source_url": "https://www.soumu.go.jp/main_content/001091853.pdf"
+    },
+    {
+      "bytes": 5932,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "e8154611a8f4d71d0caeb5edaf47a81d27ff25b212298e3a9b15fa169ac7122a"
+    },
+    {
+      "bytes": 208,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "1cd5d3488079eb468bb711db5dba4fd6133681d81ff9621ac96477e813017d18"
+    },
+    {
+      "bytes": 6379,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "a3dd501b421a559307d5a94de102dabcf52f5b777af3322dc5c7375a26f6aa8d"
+    }
+  ],
+  "instrument_id": "g20-ai-prosperity-objectives-2026",
+  "primary_text": "text/en.txt"
+}

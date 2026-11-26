@@ -12,10 +12,10 @@
   "gaps": [
     "Non-binding regional strategy: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
     "No itemised adoption vote or list of the States that approved the strategy was located; the ATICM is a ministerial council, not a treaty conference.",
-    "No full text is stored; the record is metadata-only.",
     "The English title is a working translation. The Arabic text is the only official text verified; no official English translation was located.",
     "National implementation, budgeting and follow-up are not assessed.",
-    "The Arab Model Law on AI (2022) and the GCC Guiding Manual on the Ethics of AI were not added in this pass; no official status or text for them was verified."
+    "The Arab Model Law on AI (2022) and the GCC Guiding Manual on the Ethics of AI were not added in this pass; no official status or text for them was verified.",
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "arab-unified-ai-strategy-2025",
   "instrument_type": "strategy",
@@ -93,7 +93,7 @@
   },
   "rights": {
     "licence": "AICTO terms",
-    "note": "Official AICTO publication; no open licence identified. Metadata only in this corpus.",
+    "note": "Official AICTO publication; no open licence identified. The full Arabic text is stored unaltered for research and is not relicensed.",
     "status": "public_official_text",
     "url": "https://www.aicto.org/"
   },
@@ -141,6 +141,14 @@
   ],
   "status": "adopted",
   "status_note": "Non-binding ministerial strategy, not a treaty. ATICM decided to launch it in January 2025; the Saudi Press Agency reported the decision on 23 January 2025. The Arabic text published by AICTO is dated 2025. It creates no legal obligation, ratification, depositary, monitoring or dispute-settlement mechanism.",
+  "text": {
+    "extraction_note": "Official 39-page Arabic PDF extracted with pypdf. The Arabic text layer is readable; page units follow the printed sequence.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "ar",
+    "primary_text": "text/ar.txt",
+    "units_mode": "pages"
+  },
   "title": {
     "english": "Unified Arab Strategic Vision on Artificial Intelligence",
     "official": "الرؤية الاستراتيجية العربية الموحدة للذكاء الاصطناعي",
@@ -165,9 +173,14 @@
         "check": "Issuer and status checked.",
         "date": "2026-11-25",
         "result": "The text is a ministerial strategy prepared within the League of Arab States and published by AICTO. It is non-binding and creates no legal obligation or depositary."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from the official AICTO publication, the Saudi Press Agency report and the UN ESCWA review. The record is metadata-only: no full text is stored. The exact adoption date is the date of the public launch report, not a signature date."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

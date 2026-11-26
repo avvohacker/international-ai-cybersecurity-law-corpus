@@ -13,10 +13,10 @@
     "Non-binding sectoral guidance: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
     "Scope is limited to education, culture and scientific research; it is not a general AI governance code.",
     "No itemised list of approving States or vote was located.",
-    "No full text is stored; the record is metadata-only.",
     "The official English edition is a translation from Arabic; no statement of equally authentic languages was located.",
     "The exact adoption day is not printed in the official PDF; it is taken from ALECSO's official news page of 2 July 2025.",
-    "The relationship between this Charter and the pan-Arab Arab Charter on AI Ethics is not institutionally defined."
+    "The relationship between this Charter and the pan-Arab Arab Charter on AI Ethics is not institutionally defined.",
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "alecso-charter-ai-ethics-2025",
   "instrument_type": "guidance",
@@ -78,7 +78,7 @@
   },
   "rights": {
     "licence": "ALECSO terms",
-    "note": "Official ALECSO publication; no open licence identified. Metadata only in this corpus.",
+    "note": "Official ALECSO publication; no open licence identified. The full English edition is stored unaltered for research and is not relicensed.",
     "status": "public_official_text",
     "url": "https://www.alecso.org/"
   },
@@ -116,6 +116,14 @@
   ],
   "status": "adopted",
   "status_note": "Non-binding sectoral charter, not a treaty. It was adopted by ALECSO in June 2025 and published in an official English edition. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+  "text": {
+    "extraction_note": "Official 49-page English edition extracted with pypdf. The edition is an English translation from Arabic; page units follow the printed 49-page sequence.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "pages"
+  },
   "title": {
     "english": "ALECSO Charter on Artificial Intelligence Ethics",
     "official": "ميثاق الألكسو لأخلاقيات الذكاء الاصطناعي",
@@ -137,9 +145,14 @@
         "check": "Issuer and legal nature checked.",
         "date": "2026-11-25",
         "result": "ALECSO is an Arab League specialised organisation. The text is an advisory sectoral charter, not a treaty or a binding regulation."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from the official ALECSO English edition and ALECSO's official adoption notice. The record is metadata-only: no full text is stored."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

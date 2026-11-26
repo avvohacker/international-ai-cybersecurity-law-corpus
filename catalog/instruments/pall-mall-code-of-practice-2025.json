@@ -15,7 +15,8 @@
     "The supporting-States list is maintained on a GOV.UK page with update dates, not a treaty depositary; the record is a snapshot of the 23 October 2025 version.",
     "Only supporting States are recorded. International organisations, industry, academia and civil society participate in the wider Pall Mall Process but are not counted as State supporters.",
     "Kosovo is listed as a supporting State by the UK source. The corpus reproduces the source list and does not thereby imply a position on recognition.",
-    "The Code addresses commercial cyber intrusion capabilities; it is not a general cyber-security or cybercrime instrument."
+    "The Code addresses commercial cyber intrusion capabilities; it is not a general cyber-security or cybercrime instrument.",
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "pall-mall-code-of-practice-2025",
   "instrument_type": "code_of_conduct",
@@ -236,7 +237,7 @@
   },
   "rights": {
     "licence": "Open Government Licence v3.0",
-    "note": "GOV.UK content is licensed under OGL v3.0 except where otherwise stated. Reuse with attribution.",
+    "note": "GOV.UK content is licensed under the Open Government Licence v3.0 except where otherwise stated. Reuse with attribution.",
     "status": "open_licence",
     "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
   },
@@ -254,6 +255,14 @@
   ],
   "status": "adopted",
   "status_note": "Launched 4 April 2025; updated 23 October 2025. 27 supporting States in that version. Voluntary and non-binding; not a treaty and not in force.",
+  "text": {
+    "extraction_note": "Official GOV.UK HTML publication. The main content was extracted to one document-level unit, including the supporting-States list.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
   "title": {
     "official": "The Pall Mall Process Code of Practice for States",
     "short": "Pall Mall Code 2025"
@@ -274,9 +283,14 @@
         "check": "Scope checked.",
         "date": "2026-11-24",
         "result": "Commercial cyber intrusion capabilities; four pillars of accountability, precision, oversight and transparency."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "HTML downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata and supporting-States list verified from the official GOV.UK publication. The list is a dated snapshot of an actively updated page."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

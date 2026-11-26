@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 349319,
+      "media_type": "application/pdf",
+      "note": "Archived copy (Internet Archive, snapshot 1 November 2026) of the official 15-page English PDF of Recommendation CM/Rec(2020)1 on the human rights impacts of algorithmic systems. The live rm.coe.int endpoint returned HTTP 403 to automated clients.",
+      "path": "source/coe-cm-rec-2020-1-en.pdf",
+      "role": "original",
+      "sha256": "878683571edfd37621d729de9faa8935138f211242201c5eef57450a51b9da6c",
+      "source_url": "https://web.archive.org/web/20261101010802/https://rm.coe.int/09000016809e1154"
+    },
+    {
+      "bytes": 58797,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "b960fe3ab8491c1fb1d137876d8285fc7cfeefb1b3d38304a319d7655a1b67dd"
+    },
+    {
+      "bytes": 1266,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "e0ff3ada7d36d98a73844ad32028e9a9712e38eef35a8cc4f3dadb9ff14c0754"
+    },
+    {
+      "bytes": 63221,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "8553e1b2725b353580a5499242c9e5fff29101ecb6c95067bb07843ce0a6dd76"
+    }
+  ],
+  "instrument_id": "coe-recommendation-algorithmic-systems-2020",
+  "primary_text": "text/en.txt"
+}

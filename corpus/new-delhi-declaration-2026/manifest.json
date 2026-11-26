@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 342555,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official Press Information Bureau release of 21 February 2026 with the full Annexure text of the AI Impact Summit Declaration, New Delhi, 18-19 February 2026, and the 92-endorser list.",
+      "path": "source/new-delhi-declaration-2026-en.html",
+      "role": "original",
+      "sha256": "a80518926d328d3819f6ca32ae62f9635f56f42b38f3984f904ce4befbc30db2",
+      "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&lang=2&reg=3"
+    },
+    {
+      "bytes": 8765,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "7c59b81f68a7ec19ea51bc4af7197a197e6d1b948b06e9f3b58a7bbb0cf4dfbc"
+    },
+    {
+      "bytes": 129,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "90d145b828ff0cfd990834df7b225dccd03add45c292632be60baceb94f1ef7e"
+    },
+    {
+      "bytes": 9769,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "ada2097ffc84e5bc9fd5c6e7e115af6b4b499120c7755ec00c79544a2a50b7b9"
+    }
+  ],
+  "instrument_id": "new-delhi-declaration-2026",
+  "primary_text": "text/en.txt"
+}

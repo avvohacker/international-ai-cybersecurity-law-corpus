@@ -1,0 +1,95 @@
+{
+  "pages": [
+    {
+      "char_end": 102,
+      "char_start": 0,
+      "page": 1
+    },
+    {
+      "char_end": 1778,
+      "char_start": 103,
+      "page": 2
+    },
+    {
+      "char_end": 5886,
+      "char_start": 1779,
+      "page": 3
+    },
+    {
+      "char_end": 7847,
+      "char_start": 5887,
+      "page": 4
+    },
+    {
+      "char_end": 11624,
+      "char_start": 7848,
+      "page": 5
+    },
+    {
+      "char_end": 14874,
+      "char_start": 11625,
+      "page": 6
+    },
+    {
+      "char_end": 18030,
+      "char_start": 14875,
+      "page": 7
+    },
+    {
+      "char_end": 21087,
+      "char_start": 18031,
+      "page": 8
+    },
+    {
+      "char_end": 24365,
+      "char_start": 21088,
+      "page": 9
+    },
+    {
+      "char_end": 27581,
+      "char_start": 24366,
+      "page": 10
+    },
+    {
+      "char_end": 29129,
+      "char_start": 27582,
+      "page": 11
+    },
+    {
+      "char_end": 33226,
+      "char_start": 29130,
+      "page": 12
+    },
+    {
+      "char_end": 37762,
+      "char_start": 33227,
+      "page": 13
+    },
+    {
+      "char_end": 42373,
+      "char_start": 37763,
+      "page": 14
+    },
+    {
+      "char_end": 44575,
+      "char_start": 42374,
+      "page": 15
+    },
+    {
+      "char_end": 47616,
+      "char_start": 44576,
+      "page": 16
+    },
+    {
+      "char_end": 50040,
+      "char_start": 47617,
+      "page": 17
+    },
+    {
+      "char_end": 52888,
+      "char_start": 50041,
+      "page": 18
+    }
+  ],
+  "primary_text": "text/en.txt"
+}

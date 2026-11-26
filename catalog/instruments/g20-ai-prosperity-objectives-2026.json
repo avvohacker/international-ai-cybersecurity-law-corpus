@@ -15,7 +15,7 @@
     "No itemised list of endorsing States is published; the text is a ministerial deliverable of the G20 presidency.",
     "The companion AI Prosperity Compact is a voluntary private-sector partnership pledge, not an intergovernmental instrument, and is not counted as a separate record here.",
     "The objectives focus on AI skills and workforce development, not on AI safety, liability or market access.",
-    "No full text, citable units or original file is stored in this record; it is metadata-only."
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "g20-ai-prosperity-objectives-2026",
   "instrument_type": "principles",
@@ -86,7 +86,7 @@
   },
   "rights": {
     "licence": "US Government work / official text",
-    "note": "Official US Department of Commerce publication of a G20 ministerial text. No full text is stored in this corpus.",
+    "note": "Official US Government publication of a G20 ministerial text. The two-page text is stored unaltered for research and is not relicensed.",
     "status": "public_official_text",
     "url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives"
   },
@@ -120,10 +120,28 @@
       "note": "White House release of 2 September 2026 recording the Innovation Ministerial and the AI Prosperity Objectives and Compact as deliverables.",
       "publisher": "The White House",
       "url": "https://www.whitehouse.gov/releases/2026/09/g20-innovation-ministerial-concludes-with-consensus-statement"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "g20-japan-mic-pdf",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official two-page English reproduction of the G20 AI Prosperity Objectives; the commerce.gov PDF returned HTTP 403.",
+      "publisher": "Ministry of Internal Affairs and Communications, Japan",
+      "url": "https://www.soumu.go.jp/main_content/001091853.pdf"
     }
   ],
   "status": "adopted",
   "status_note": "Adopted as a G20 ministerial deliverable on 2 September 2026. It is non-binding and has no signature, ratification, depositary or entry-into-force procedure.",
+  "text": {
+    "extraction_note": "Official two-page English reproduction published by the Japanese Ministry of Internal Affairs and Communications, extracted with pypdf. Page units follow the document sequence.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "pages"
+  },
   "title": {
     "official": "The G20 AI Prosperity Objectives",
     "short": "G20 AI Prosperity Objectives (2026)"
@@ -144,9 +162,14 @@
         "check": "Legal nature checked against the text.",
         "date": "2026-11-24",
         "result": "Voluntary ministerial objectives; no signature, ratification or depositary."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata and legal nature verified. No full text is stored; the companion private-sector Compact is not counted as an intergovernmental instrument."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

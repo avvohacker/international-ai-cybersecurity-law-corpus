@@ -12,10 +12,10 @@
   "gaps": [
     "Non-binding political declaration: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
     "The declaration names 18 States; the summit's Cuenca Declaration was adopted by 19 countries, and the Ibero-American Community has 22 members. Paraguay is not listed in this special declaration; no official explanation was located.",
-    "No full text is stored; the record is metadata-only.",
     "Only the Spanish text was verified; no official English text was located. A Portuguese translation published by Ecuador's Ministry of Foreign Affairs is excluded because its host fails TLS certificate validation and no archived copy was located.",
     "Implementation, follow-up and financing are not assessed.",
-    "The relationship between this declaration and the CLAD Carta Iberoamericana de IA en la Administración Pública is political, not institutional."
+    "The relationship between this declaration and the CLAD Carta Iberoamericana de IA en la Administración Pública is political, not institutional.",
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "ibero-ai-declaration-2024",
   "instrument_type": "declaration",
@@ -198,7 +198,7 @@
   },
   "rights": {
     "licence": "Government of Ecuador and SEGIB terms",
-    "note": "Official summit publication; no open licence identified. Metadata only in this corpus.",
+    "note": "Official summit publication; no open licence identified. The full Spanish text is stored unaltered for research and is not relicensed.",
     "status": "public_official_text",
     "url": "https://www.gob.ec/"
   },
@@ -222,10 +222,28 @@
       "note": "SEGIB page for the XXIX Ibero-American Summit in Cuenca, 14–15 November 2024; records that 19 countries adopted the Cuenca Declaration and 24 special declarations.",
       "publisher": "Secretaría General Iberoamericana (SEGIB)",
       "url": "https://segib.org/es/cumbre/xxix-cumbre-iberoamericana/"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "mintel-declaration-archived",
+      "kind": "official_primary",
+      "language": "es",
+      "note": "Archived copy of the official four-page Spanish PDF; the live host timed out.",
+      "publisher": "Ministerio de Telecomunicaciones y de la Sociedad de la Información, Ecuador",
+      "url": "https://web.archive.org/web/20251012173343/https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf"
     }
   ],
   "status": "adopted",
   "status_note": "Non-binding political declaration, not a treaty. It was adopted at the XXIX Ibero-American Summit in Cuenca on 15 November 2024 and names 18 endorsing States. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+  "text": {
+    "extraction_note": "Archived official four-page Spanish PDF extracted with pypdf. Page units follow the document sequence.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "es",
+    "primary_text": "text/es.txt",
+    "units_mode": "pages"
+  },
   "title": {
     "english": "Special Declaration of the Ibero-American Community on Ethical and Trustworthy Artificial Intelligence that Promotes Sustainable Development in Ibero-America",
     "official": "Declaración Especial de Países Integrantes de la Comunidad Iberoamericana en el marco de la XXIX Cumbre Iberoamericana, sobre una Inteligencia Artificial Ética Confiable que Promueva el Desarrollo Sostenible en Iberoamérica",
@@ -247,9 +265,14 @@
         "check": "Summit setting checked.",
         "date": "2026-11-25",
         "result": "SEGIB records the XXIX Ibero-American Summit in Cuenca on 14–15 November 2024 and 19 countries adopting the Cuenca Declaration and 24 special declarations."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from the official Ecuadorian text and SEGIB. The record is metadata-only: no full text is stored. The Spanish PDF could not be fetched automatically from this VM; the list and date were read from the official PDF as indexed and corroborated by the Portuguese official version."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

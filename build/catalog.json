@@ -25,39 +25,53 @@
       "full_text_checked": 10,
       "metadata_verified": 65
     },
-    "full_texts": 45,
+    "full_texts": 60,
     "total": 75,
-    "with_local_original": 45
+    "with_local_original": 60
   },
   "full_text_ids": [
     "afcfta-digital-trade-protocol-2024",
+    "alecso-charter-ai-ethics-2025",
     "arab-convention-it-offences-2010",
+    "arab-unified-ai-strategy-2025",
     "asean-ai-guide-2024",
     "au-continental-ai-strategy-2024",
     "au-malabo-convention-2014",
     "bletchley-declaration-2023",
     "brics-ai-statement-2025",
     "budapest-convention-2001",
+    "ccw-gge-laws-2026",
     "china-global-ai-governance-initiative-2023",
     "cis-it-crimes-agreement-2018",
     "cis-minsk-agreement-2001",
+    "clad-ibero-ai-charter-2023",
     "coe-cets-224",
     "coe-cets-225",
     "coe-cets-225-explanatory-report",
     "coe-ets-189",
+    "coe-recommendation-algorithmic-systems-2020",
     "depa-2020",
     "ecowas-cybercrime-directive-2011",
+    "eu-gpai-code-of-practice-2025",
     "frontier-ai-safety-commitments-2024",
+    "g20-ai-prosperity-objectives-2026",
     "g7-digital-technology-ministerial-declaration-2026",
     "g7-hiroshima-code-2023",
+    "ibero-ai-declaration-2024",
     "iccpr-1966",
     "ksdpa-2022",
+    "new-delhi-declaration-2026",
     "oecd-ai-recommendation-2019",
+    "oecd-digital-security-critical-activities-2019",
+    "pall-mall-code-of-practice-2025",
     "paris-ai-action-summit-statement-2025",
     "paris-call-cyberspace-2018",
+    "pax-silica-declaration-2025",
+    "political-declaration-military-ai-2023",
     "reaim-call-to-action-2023",
     "reaim-pathways-to-action-2026",
     "sadea-2020",
+    "san-francisco-declaration-2026",
     "sco-information-security-agreement-2009",
     "seoul-declaration-2024",
     "uksdea-2022",
@@ -73,6 +87,7 @@
     "un-ga-res-80-58",
     "un-hrc-res-63-15",
     "unesco-ethics-ai-2021",
+    "us-eu-ttc-ai-safety-dialogue-2024",
     "vclt-1969",
     "waico-establishment-agreement-2026"
   ],
@@ -443,10 +458,10 @@
         "Non-binding sectoral guidance: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
         "Scope is limited to education, culture and scientific research; it is not a general AI governance code.",
         "No itemised list of approving States or vote was located.",
-        "No full text is stored; the record is metadata-only.",
         "The official English edition is a translation from Arabic; no statement of equally authentic languages was located.",
         "The exact adoption day is not printed in the official PDF; it is taken from ALECSO's official news page of 2 July 2025.",
-        "The relationship between this Charter and the pan-Arab Arab Charter on AI Ethics is not institutionally defined."
+        "The relationship between this Charter and the pan-Arab Arab Charter on AI Ethics is not institutionally defined.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "alecso-charter-ai-ethics-2025",
       "instrument_type": "guidance",
@@ -508,7 +523,7 @@
       },
       "rights": {
         "licence": "ALECSO terms",
-        "note": "Official ALECSO publication; no open licence identified. Metadata only in this corpus.",
+        "note": "Official ALECSO publication; no open licence identified. The full English edition is stored unaltered for research and is not relicensed.",
         "status": "public_official_text",
         "url": "https://www.alecso.org/"
       },
@@ -546,6 +561,14 @@
       ],
       "status": "adopted",
       "status_note": "Non-binding sectoral charter, not a treaty. It was adopted by ALECSO in June 2025 and published in an official English edition. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+      "text": {
+        "extraction_note": "Official 49-page English edition extracted with pypdf. The edition is an English translation from Arabic; page units follow the printed 49-page sequence.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "english": "ALECSO Charter on Artificial Intelligence Ethics",
         "official": "ميثاق الألكسو لأخلاقيات الذكاء الاصطناعي",
@@ -567,10 +590,15 @@
             "check": "Issuer and legal nature checked.",
             "date": "2026-11-25",
             "result": "ALECSO is an Arab League specialised organisation. The text is an advisory sectoral charter, not a treaty or a binding regulation."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official ALECSO English edition and ALECSO's official adoption notice. The record is metadata-only: no full text is stored."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -986,10 +1014,10 @@
       "gaps": [
         "Non-binding regional strategy: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
         "No itemised adoption vote or list of the States that approved the strategy was located; the ATICM is a ministerial council, not a treaty conference.",
-        "No full text is stored; the record is metadata-only.",
         "The English title is a working translation. The Arabic text is the only official text verified; no official English translation was located.",
         "National implementation, budgeting and follow-up are not assessed.",
-        "The Arab Model Law on AI (2022) and the GCC Guiding Manual on the Ethics of AI were not added in this pass; no official status or text for them was verified."
+        "The Arab Model Law on AI (2022) and the GCC Guiding Manual on the Ethics of AI were not added in this pass; no official status or text for them was verified.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "arab-unified-ai-strategy-2025",
       "instrument_type": "strategy",
@@ -1067,7 +1095,7 @@
       },
       "rights": {
         "licence": "AICTO terms",
-        "note": "Official AICTO publication; no open licence identified. Metadata only in this corpus.",
+        "note": "Official AICTO publication; no open licence identified. The full Arabic text is stored unaltered for research and is not relicensed.",
         "status": "public_official_text",
         "url": "https://www.aicto.org/"
       },
@@ -1115,6 +1143,14 @@
       ],
       "status": "adopted",
       "status_note": "Non-binding ministerial strategy, not a treaty. ATICM decided to launch it in January 2025; the Saudi Press Agency reported the decision on 23 January 2025. The Arabic text published by AICTO is dated 2025. It creates no legal obligation, ratification, depositary, monitoring or dispute-settlement mechanism.",
+      "text": {
+        "extraction_note": "Official 39-page Arabic PDF extracted with pypdf. The Arabic text layer is readable; page units follow the printed sequence.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "ar",
+        "primary_text": "text/ar.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "english": "Unified Arab Strategic Vision on Artificial Intelligence",
         "official": "الرؤية الاستراتيجية العربية الموحدة للذكاء الاصطناعي",
@@ -1139,10 +1175,15 @@
             "check": "Issuer and status checked.",
             "date": "2026-11-25",
             "result": "The text is a ministerial strategy prepared within the League of Arab States and published by AICTO. It is non-binding and creates no legal obligation or depositary."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official AICTO publication, the Saudi Press Agency report and the UN ESCWA review. The record is metadata-only: no full text is stored. The exact adoption date is the date of the public launch report, not a signature date."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -3723,9 +3764,9 @@
         "No adopted instrument or draft protocol; the 2026 report contains elements of an instrument, not treaty articles.",
         "The final document was read as CCW/CONF.VII/CRP.1/Rev.3; the clean CCW/CONF.VII/11 symbol was not yet available at verification.",
         "Only the English texts were read; the other UN official language versions were not acquired.",
-        "No PDF bytes or full-text units are stored for this record; it is metadata-level.",
         "The positions of individual High Contracting Parties and the 2027 GGE Chair were not assessed.",
-        "The 81st-session General Assembly draft A/C.1/81/L.37 had been approved by the First Committee but not adopted by the plenary at verification; its plenary fate is not recorded here."
+        "The 81st-session General Assembly draft A/C.1/81/L.37 had been approved by the First Committee but not adopted by the plenary at verification; its plenary fate is not recorded here.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "ccw-gge-laws-2026",
       "instrument_type": "report",
@@ -3792,7 +3833,7 @@
       },
       "rights": {
         "licence": "United Nations terms of use",
-        "note": "Official UN documents. UN copyright and terms of use apply; the record stores metadata and links, not the PDFs.",
+        "note": "United Nations terms of use apply. The official PDF is stored unaltered for research and is not relicensed.",
         "status": "public_official_text",
         "url": "https://www.un.org/en/about-us/terms-of-use"
       },
@@ -3856,10 +3897,28 @@
           "note": "UN Meetings Coverage GA/DIS/3781, 29 October 2026: the First Committee approved A/C.1/81/L.37 by 163 votes to 5 (Belarus, DPRK, Israel, Russian Federation, United States), with 9 abstentions.",
           "publisher": "United Nations Department of Global Communications",
           "url": "https://press.un.org/en/2026/gadis3781.doc.htm"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "ccw-gge-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official ten-page English PDF of CCW/GGE.1/2026/3.",
+          "publisher": "United Nations",
+          "url": "https://documents.un.org/api/symbol/access?s=CCW%2FGGE.1%2F2026%2F3&l=en&t=pdf"
         }
       ],
       "status": "in_negotiation",
       "status_note": "No instrument has been adopted. The UN General Assembly's First Committee approved draft resolution A/C.1/81/L.37 on lethal autonomous weapons systems on 29 October 2026 (163-5-9), calling upon High Contracting Parties to advance to negotiations; it had not been adopted by the plenary at verification. The 2024–2026 GGE adopted its final report by consensus on 4 September 2026. The Seventh Review Conference (16–20 November 2026) endorsed the set of elements of an instrument and other possible measures and continued the open-ended GGE, mandating it to elaborate, by consensus, an instrument that specifies international humanitarian law applicable to LAWS and its implementation, without prejudging the instrument's nature, and to recommend its legal nature and specific form, including whether it should be a binding protocol. The Group is to report to the 2028 Meeting of High Contracting Parties.",
+      "text": {
+        "extraction_note": "Official 10-page English PDF of CCW/GGE.1/2026/3 extracted with pypdf. Page units follow the document sequence.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "english": "Report of the Group of Governmental Experts on Emerging Technologies in the Area of Lethal Autonomous Weapons Systems",
         "official": "Report of the Group of Governmental Experts on Emerging Technologies in the Area of Lethal Autonomous Weapons Systems (CCW/GGE.1/2026/3)",
@@ -3886,10 +3945,15 @@
             "check": "Language status checked.",
             "date": "2026-11-23",
             "result": "UN official languages are authentic for UN documents; only the English texts were read."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Official final report and Review Conference final document were read through rendered text; no PDF bytes or full-text units are stored. This is a negotiation record, not a draft treaty, and the verification level is metadata_verified."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -4639,8 +4703,8 @@
         "The official text is in Spanish only; no official English translation was verified.",
         "No itemised vote list was located; the Carta was approved unanimously by the 23 member States of the CLAD Directing Council, not by all Ibero-American States.",
         "The CLAD is a public-administration network, not the Ibero-American summit; its scope is public administration, not AI in society as a whole.",
-        "No full text is stored; the record is metadata-only.",
-        "Implementation, indicators and follow-up are not assessed."
+        "Implementation, indicators and follow-up are not assessed.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "clad-ibero-ai-charter-2023",
       "instrument_type": "recommendation",
@@ -4706,7 +4770,7 @@
       },
       "rights": {
         "licence": "CLAD terms",
-        "note": "Official CLAD publication; no open licence identified. Metadata only in this corpus.",
+        "note": "Official CLAD publication; no open licence identified. The full Spanish text is stored unaltered for research and is not relicensed.",
         "status": "public_official_text",
         "url": "https://www.clad.org/"
       },
@@ -4744,6 +4808,14 @@
       ],
       "status": "adopted",
       "status_note": "Non-binding recommendation, not a treaty. The CLAD Directing Council approved the Carta in Varadero, Cuba, on 20 November 2023; the vote was unanimous among the 23 member States of the Council. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+      "text": {
+        "extraction_note": "Official 32-page Spanish PDF extracted with pypdf. Page units follow the printed sequence.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "es",
+        "primary_text": "text/es.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "english": "Ibero-American Charter on Artificial Intelligence in Public Administration",
         "official": "Carta Iberoamericana de Inteligencia Artificial en la Administración Pública",
@@ -4765,10 +4837,15 @@
             "check": "Scope checked.",
             "date": "2026-11-25",
             "result": "The text is addressed to public administrations and CLAD member States. It is not a general AI code and does not bind private actors."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official CLAD text and two official-secondary reports. The record is metadata-only: no full text is stored."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -6517,8 +6594,8 @@
         "Non-binding: it creates no legal obligation, ratification, depositary, monitoring or enforcement.",
         "There is no itemised list of States that have endorsed or implemented the Recommendation; it is addressed to all 47 member States.",
         "National implementation and the Recommendation's effect in domestic law are not assessed.",
-        "No full text, citable units or original file is stored in this record; it is metadata-only.",
-        "The Recommendation addresses algorithmic systems broadly, not only systems that meet a particular definition of AI."
+        "The Recommendation addresses algorithmic systems broadly, not only systems that meet a particular definition of AI.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "coe-recommendation-algorithmic-systems-2020",
       "instrument_type": "recommendation",
@@ -6584,7 +6661,7 @@
       },
       "rights": {
         "licence": "Council of Europe terms",
-        "note": "Official Council of Europe text; reproduction is subject to the Council's terms. No full text is stored in this corpus.",
+        "note": "Council of Europe terms apply. The archived official PDF is stored unaltered for research and is not relicensed.",
         "status": "public_official_text",
         "url": "https://www.coe.int/en/web/portal"
       },
@@ -6608,10 +6685,28 @@
           "note": "Council of Europe news release of 8 April 2020 describing the Recommendation and its call on the 47 member States.",
           "publisher": "Council of Europe",
           "url": "https://www.coe.int/en/web/portal/-/algorithms-and-automation-new-guidelines-to-prevent-human-rights-breaches"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "coe-rec-2020-archived",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Archived copy of the official 15-page English PDF; the live rm.coe.int endpoint returned HTTP 403.",
+          "publisher": "Council of Europe",
+          "url": "https://web.archive.org/web/20261101010802/https://rm.coe.int/09000016809e1154"
         }
       ],
       "status": "adopted",
       "status_note": "Adopted and published as a non-binding Recommendation. It is addressed to the 47 Council of Europe member States; there is no signature, ratification, depositary or entry-into-force procedure.",
+      "text": {
+        "extraction_note": "Archived official 15-page English PDF of Recommendation CM/Rec(2020)1 extracted with pypdf. Page units follow the document sequence.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "official": "Recommendation CM/Rec(2020)1 of the Committee of Ministers to member States on the human rights impacts of algorithmic systems",
         "short": "CoE Recommendation on algorithmic systems (2020)"
@@ -6632,10 +6727,15 @@
             "check": "Scope checked in the guidelines.",
             "date": "2026-11-24",
             "result": "Covers human rights impacts across the design, development and deployment of algorithmic systems, including public-sector use and private-sector responsibilities."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata and legal nature verified. No full text is stored; implementation is not assessed."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -7504,9 +7604,9 @@
       ],
       "gaps": [
         "Voluntary and EU-specific; not an international treaty.",
-        "Full text not stored.",
         "Signatory list and adequacy assessment details are not analysed.",
-        "Does not bind non-EU providers except through the AI Act's market rules."
+        "Does not bind non-EU providers except through the AI Act's market rules.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "eu-gpai-code-of-practice-2025",
       "instrument_type": "code_of_conduct",
@@ -7554,7 +7654,7 @@
       },
       "rights": {
         "licence": "Commission Decision 2011/833/EU",
-        "note": "European Commission publication; reuse under the EU reuse decision with attribution. Metadata only in this corpus.",
+        "note": "European Commission publication; reuse under Commission Decision 2011/833/EU with attribution. The three official chapters are stored unaltered and are not relicensed.",
         "status": "reuse_permitted",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice"
       },
@@ -7575,10 +7675,48 @@
           "note": "Press release: final version received 10 July 2025; three chapters; relation to AI Act rules applicable from 2 August 2025.",
           "publisher": "European Commission",
           "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1787"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "ec-gpai-transparency",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official six-page Transparency chapter PDF, published 10 July 2025.",
+          "publisher": "European Commission",
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118120"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "ec-gpai-copyright",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official six-page Copyright chapter PDF, published 10 July 2025.",
+          "publisher": "European Commission",
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118115"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "ec-gpai-safety",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official 43-page Safety and Security chapter PDF, published 10 July 2025.",
+          "publisher": "European Commission",
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
         }
       ],
       "status": "adopted",
       "status_note": "Voluntary code; providers may sign it to demonstrate compliance with Articles 53 and 55 of the AI Act.",
+      "text": {
+        "extraction_note": "Three official chapter PDFs (Transparency 6 pages, Copyright 6 pages, Safety and Security 43 pages) extracted separately and concatenated in the published order. pages.json numbers the 55 logical pages sequentially: 1-6 Transparency, 7-12 Copyright, 13-55 Safety and Security, not the printed page numbers of each chapter. No wording was changed.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "official": "General-Purpose AI Code of Practice",
         "short": "EU GPAI Code of Practice"
@@ -7594,10 +7732,15 @@
             "check": "Relationship to the AI Act checked in the Commission press release and FAQ.",
             "date": "2026-11-23",
             "result": "Helps demonstrate compliance with Articles 53 and 55; approved as adequate on 1 August 2025."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified; the code's full text was not acquired or segmented. It is not an international instrument."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -7929,7 +8072,7 @@
         "No itemised list of endorsing States is published; the text is a ministerial deliverable of the G20 presidency.",
         "The companion AI Prosperity Compact is a voluntary private-sector partnership pledge, not an intergovernmental instrument, and is not counted as a separate record here.",
         "The objectives focus on AI skills and workforce development, not on AI safety, liability or market access.",
-        "No full text, citable units or original file is stored in this record; it is metadata-only."
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "g20-ai-prosperity-objectives-2026",
       "instrument_type": "principles",
@@ -8000,7 +8143,7 @@
       },
       "rights": {
         "licence": "US Government work / official text",
-        "note": "Official US Department of Commerce publication of a G20 ministerial text. No full text is stored in this corpus.",
+        "note": "Official US Government publication of a G20 ministerial text. The two-page text is stored unaltered for research and is not relicensed.",
         "status": "public_official_text",
         "url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives"
       },
@@ -8034,10 +8177,28 @@
           "note": "White House release of 2 September 2026 recording the Innovation Ministerial and the AI Prosperity Objectives and Compact as deliverables.",
           "publisher": "The White House",
           "url": "https://www.whitehouse.gov/releases/2026/09/g20-innovation-ministerial-concludes-with-consensus-statement"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "g20-japan-mic-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official two-page English reproduction of the G20 AI Prosperity Objectives; the commerce.gov PDF returned HTTP 403.",
+          "publisher": "Ministry of Internal Affairs and Communications, Japan",
+          "url": "https://www.soumu.go.jp/main_content/001091853.pdf"
         }
       ],
       "status": "adopted",
       "status_note": "Adopted as a G20 ministerial deliverable on 2 September 2026. It is non-binding and has no signature, ratification, depositary or entry-into-force procedure.",
+      "text": {
+        "extraction_note": "Official two-page English reproduction published by the Japanese Ministry of Internal Affairs and Communications, extracted with pypdf. Page units follow the document sequence.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "official": "The G20 AI Prosperity Objectives",
         "short": "G20 AI Prosperity Objectives (2026)"
@@ -8058,10 +8219,15 @@
             "check": "Legal nature checked against the text.",
             "date": "2026-11-24",
             "result": "Voluntary ministerial objectives; no signature, ratification or depositary."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata and legal nature verified. No full text is stored; the companion private-sector Compact is not counted as an intergovernmental instrument."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -8374,10 +8540,10 @@
       "gaps": [
         "Non-binding political declaration: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
         "The declaration names 18 States; the summit's Cuenca Declaration was adopted by 19 countries, and the Ibero-American Community has 22 members. Paraguay is not listed in this special declaration; no official explanation was located.",
-        "No full text is stored; the record is metadata-only.",
         "Only the Spanish text was verified; no official English text was located. A Portuguese translation published by Ecuador's Ministry of Foreign Affairs is excluded because its host fails TLS certificate validation and no archived copy was located.",
         "Implementation, follow-up and financing are not assessed.",
-        "The relationship between this declaration and the CLAD Carta Iberoamericana de IA en la Administración Pública is political, not institutional."
+        "The relationship between this declaration and the CLAD Carta Iberoamericana de IA en la Administración Pública is political, not institutional.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "ibero-ai-declaration-2024",
       "instrument_type": "declaration",
@@ -8560,7 +8726,7 @@
       },
       "rights": {
         "licence": "Government of Ecuador and SEGIB terms",
-        "note": "Official summit publication; no open licence identified. Metadata only in this corpus.",
+        "note": "Official summit publication; no open licence identified. The full Spanish text is stored unaltered for research and is not relicensed.",
         "status": "public_official_text",
         "url": "https://www.gob.ec/"
       },
@@ -8584,10 +8750,28 @@
           "note": "SEGIB page for the XXIX Ibero-American Summit in Cuenca, 14–15 November 2024; records that 19 countries adopted the Cuenca Declaration and 24 special declarations.",
           "publisher": "Secretaría General Iberoamericana (SEGIB)",
           "url": "https://segib.org/es/cumbre/xxix-cumbre-iberoamericana/"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "mintel-declaration-archived",
+          "kind": "official_primary",
+          "language": "es",
+          "note": "Archived copy of the official four-page Spanish PDF; the live host timed out.",
+          "publisher": "Ministerio de Telecomunicaciones y de la Sociedad de la Información, Ecuador",
+          "url": "https://web.archive.org/web/20251012173343/https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf"
         }
       ],
       "status": "adopted",
       "status_note": "Non-binding political declaration, not a treaty. It was adopted at the XXIX Ibero-American Summit in Cuenca on 15 November 2024 and names 18 endorsing States. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+      "text": {
+        "extraction_note": "Archived official four-page Spanish PDF extracted with pypdf. Page units follow the document sequence.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "es",
+        "primary_text": "text/es.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "english": "Special Declaration of the Ibero-American Community on Ethical and Trustworthy Artificial Intelligence that Promotes Sustainable Development in Ibero-America",
         "official": "Declaración Especial de Países Integrantes de la Comunidad Iberoamericana en el marco de la XXIX Cumbre Iberoamericana, sobre una Inteligencia Artificial Ética Confiable que Promueva el Desarrollo Sostenible en Iberoamérica",
@@ -8609,10 +8793,15 @@
             "check": "Summit setting checked.",
             "date": "2026-11-25",
             "result": "SEGIB records the XXIX Ibero-American Summit in Cuenca on 14–15 November 2024 and 19 countries adopting the Cuenca Declaration and 24 special declarations."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official Ecuadorian text and SEGIB. The record is metadata-only: no full text is stored. The Spanish PDF could not be fetched automatically from this VM; the list and date were read from the official PDF as indexed and corroborated by the Portuguese official version."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -9871,7 +10060,7 @@
         "No follow-up mechanism, review cycle or implementation reporting was verified.",
         "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate instrument and are not catalogued here.",
         "The declaration's relationship to the UN Global Dialogue on AI Governance and to the Paris and Seoul texts is political, not institutional; no formal linkage was verified.",
-        "No full text is stored; the record is metadata-only."
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "new-delhi-declaration-2026",
       "instrument_type": "declaration",
@@ -10365,7 +10554,7 @@
       },
       "rights": {
         "licence": "Government of India official publication",
-        "note": "Official government publication. No full text is stored in this corpus; the declaration is read from the official MEA page.",
+        "note": "Official Government of India publication; no open licence identified. The full Annexure text is stored unaltered for research and is not relicensed.",
         "status": "public_official_text"
       },
       "sources": [
@@ -10398,10 +10587,28 @@
           "note": "Official outcome-resources page listing the declaration and the separate summit deliverables, including the New Delhi Frontier AI Impact Commitments.",
           "publisher": "AI Impact Summit 2026, Government of India",
           "url": "https://impact.indiaai.gov.in/outcome-resources"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "pib-declaration-text",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official PIB page containing the full Annexure declaration text and the 92-endorser list.",
+          "publisher": "Press Information Bureau, Government of India",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&lang=2&reg=3"
         }
       ],
       "status": "adopted",
       "status_note": "Non-binding political declaration, not a treaty. The Press Information Bureau's annex lists 92 endorsers as of 5 March 2026: 90 States, the European Union and IFAD. The Ministry of External Affairs page updated 21 February 2026 lists 91 and omits Colombia. The record uses the later PIB list and records the discrepancy; it does not infer any other missing endorsement. The declaration creates no legal obligation, ratification, depositary, monitoring or dispute settlement. The separate New Delhi Frontier AI Impact Commitments were announced by 13 model providers and are not part of this declaration.",
+      "text": {
+        "extraction_note": "Official PIB HTML release. The Annexure text, from the Annexure heading through the end of the declaration, was extracted to one document-level unit.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "AI Impact Summit Declaration, New Delhi",
         "short": "New Delhi Declaration on AI Impact"
@@ -10427,10 +10634,15 @@
             "check": "Legal nature checked against the text and official descriptions.",
             "date": "2026-11-23",
             "result": "The instrument is a political declaration, not a treaty; it creates no binding obligation, depositary, ratification or dispute settlement."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "HTML downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from official Indian government sources. The record is metadata-only: no full text is stored. The 92-endorser count is reproduced from the PIB annex and itemised; the MEA page lists 91 and omits Colombia. The difference is recorded as an unknown rather than filled by inference."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -10597,8 +10809,8 @@
         "The adherent list is maintained live in the OECD Compendium; the record is a snapshot at 24 November 2026, without a separate dated depositary table.",
         "The list is essentially the OECD membership: 38 OECD members plus Brazil. It should not be read as an independent measure of global support for the Recommendation.",
         "Only State adherents are recorded. The Recommendation is addressed to governments; implementation by private operators is a matter for adherents' domestic law.",
-        "The full text is not stored as a local text; the official Compendium page is the source.",
-        "The 2022 OECD digital-security package (OECD/LEGAL/0479-0482) is related but not merged into this record, because each recommendation has its own scope."
+        "The 2022 OECD digital-security package (OECD/LEGAL/0479-0482) is related but not merged into this record, because each recommendation has its own scope.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "oecd-digital-security-critical-activities-2019",
       "instrument_type": "recommendation",
@@ -10874,7 +11086,7 @@
       },
       "rights": {
         "licence": "OECD reuse terms",
-        "note": "The OECD Compendium page is the official source. OECD content is subject to OECD terms and conditions; the record does not relicense the text.",
+        "note": "OECD legal instruments may be reproduced and distributed free of charge without alteration and may not be sold. The official 2025 booklet is stored unaltered for research.",
         "status": "public_official_text",
         "url": "https://www.oecd.org/termsandconditions"
       },
@@ -10888,10 +11100,28 @@
           "note": "Official OECD Compendium record: adopted 11 December 2019, in force, full Recommendation and the 39 named adherents.",
           "publisher": "OECD",
           "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0456"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "oecd-legal-0456-print",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official 18-page English booklet generated by the OECD Legal Instruments print API on 26 November 2026.",
+          "publisher": "OECD",
+          "url": "https://legalinstruments.oecd.org/api/print?Lang=en&ids=659"
         }
       ],
       "status": "in_force",
       "status_note": "In force as an OECD legal instrument. Adopted 11 December 2019; 39 named adherents at access on 24 November 2026 (38 OECD members and Brazil). Non-binding; no ratification or enforcement.",
+      "text": {
+        "extraction_note": "Official 18-page OECD/LEGAL/0456 print booklet extracted with pypdf. Page units follow the booklet sequence.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "official": "Recommendation of the Council on Digital Security of Critical Activities",
         "short": "OECD Digital Security Recommendation (OECD/LEGAL/0456)"
@@ -10912,10 +11142,15 @@
             "check": "Legal nature checked.",
             "date": "2026-11-24",
             "result": "OECD Recommendation, non-binding, with implementation reporting rather than sanctions."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata and adherents verified from the official OECD Compendium. The full text is not stored locally; the official page is cited."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -10935,7 +11170,8 @@
         "The supporting-States list is maintained on a GOV.UK page with update dates, not a treaty depositary; the record is a snapshot of the 23 October 2025 version.",
         "Only supporting States are recorded. International organisations, industry, academia and civil society participate in the wider Pall Mall Process but are not counted as State supporters.",
         "Kosovo is listed as a supporting State by the UK source. The corpus reproduces the source list and does not thereby imply a position on recognition.",
-        "The Code addresses commercial cyber intrusion capabilities; it is not a general cyber-security or cybercrime instrument."
+        "The Code addresses commercial cyber intrusion capabilities; it is not a general cyber-security or cybercrime instrument.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "pall-mall-code-of-practice-2025",
       "instrument_type": "code_of_conduct",
@@ -11156,7 +11392,7 @@
       },
       "rights": {
         "licence": "Open Government Licence v3.0",
-        "note": "GOV.UK content is licensed under OGL v3.0 except where otherwise stated. Reuse with attribution.",
+        "note": "GOV.UK content is licensed under the Open Government Licence v3.0 except where otherwise stated. Reuse with attribution.",
         "status": "open_licence",
         "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
       },
@@ -11174,6 +11410,14 @@
       ],
       "status": "adopted",
       "status_note": "Launched 4 April 2025; updated 23 October 2025. 27 supporting States in that version. Voluntary and non-binding; not a treaty and not in force.",
+      "text": {
+        "extraction_note": "Official GOV.UK HTML publication. The main content was extracted to one document-level unit, including the supporting-States list.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "The Pall Mall Process Code of Practice for States",
         "short": "Pall Mall Code 2025"
@@ -11194,10 +11438,15 @@
             "check": "Scope checked.",
             "date": "2026-11-24",
             "result": "Commercial cyber intrusion capabilities; four pillars of accountability, precision, oversight and transparency."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "HTML downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata and supporting-States list verified from the official GOV.UK publication. The list is a dated snapshot of an actively updated page."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -12308,7 +12557,7 @@
         "The separate Joint Statement on AI Opportunity Partnership (54 endorsers as of September 2026) is a different instrument and is not catalogued here.",
         "The San Francisco Declaration on the Secure Foundations of Enduring Prosperity, signed on 15 November 2026 by the United States and nine other Pax Silica participants, is a separate follow-on declaration; its ten signatories are not counted in this record's 26.",
         "The declaration is a supply-chain and economic-security text, not a comprehensive AI regulation; it does not create AI safety, testing or liability rules.",
-        "No full text is stored; the record is metadata-only."
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "pax-silica-declaration-2025",
       "instrument_type": "declaration",
@@ -12537,7 +12786,7 @@
       },
       "rights": {
         "licence": "US Government work; Australian Government publication",
-        "note": "Official government publications. No full text is stored in this corpus; the declaration text is available on the official pages.",
+        "note": "Official US and partner government publications; no open licence identified. The declaration and list are stored unaltered for research and are not relicensed.",
         "status": "public_official_text"
       },
       "sources": [
@@ -12630,10 +12879,28 @@
           "note": "Australian government publication listing the ten governments that signed the San Francisco Declaration on 15 November 2026: the United States, Australia, India, Israel, Japan, the Republic of Korea, Qatar, Singapore, the United Arab Emirates and the United Kingdom.",
           "publisher": "Australian Government, Department of Industry, Science and Resources",
           "url": "https://www.industry.gov.au/publications/san-francisco-declaration-secure-foundations-enduring-prosperity-signed-countries-attending-pax-silica-summit-15-november-2026"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "state-pax-silica-archived",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Archived copy of the official page with the full declaration and participant lists; the live page returned HTTP 407.",
+          "publisher": "U.S. Department of State",
+          "url": "https://web.archive.org/web/20261117055013/https://www.state.gov/pax-silica"
         }
       ],
       "status": "adopted",
       "status_note": "Political declaration, not a treaty. The official US and Australian publications call the participants 'signatories'; the act is an endorsement of shared principles, not a treaty signature, and the word 'signatory' therefore implies no ratification, depositary or legal obligation. The atlas maps the act as endorsement. As of 23 October 2026 the list contains 26 signatories: 25 States and the European Union. The United States is a signatory but is omitted from the State Department's partner list because it is the host. No ratification, depositary, monitoring or enforcement is established. Taiwan is listed as a non-signatory participant that endorsed the declaration principles through a separate joint statement.",
+      "text": {
+        "extraction_note": "Archived official State Department HTML page. The declaration text and the signatory and non-signatory participant lists were extracted to one document-level unit.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "Pax Silica Declaration",
         "short": "Pax Silica Declaration"
@@ -12669,10 +12936,15 @@
             "check": "San Francisco follow-on declaration checked.",
             "date": "2026-11-23",
             "result": "The San Francisco Declaration on the Secure Foundations of Enduring Prosperity was signed on 15 November 2026 by the United States and nine other participants. It is a separate instrument and its ten signatories are not counted in the 26 signatories of the 2025 Pax Silica Declaration."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "HTML downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from official US and Australian sources. The record is metadata-only; the declaration text is not stored. The US omission from the State Department partner list and the Taiwan non-signatory status are recorded explicitly rather than inferred."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -12690,9 +12962,9 @@
       "gaps": [
         "Non-binding; no verification or enforcement.",
         "The endorsement list is dated 27 November 2024; later accessions are not reflected.",
-        "Full text not stored.",
         "The declaration does not create a definition or prohibition.",
-        "It is a U.S.-led initiative and is not endorsed by all States, including several major military powers."
+        "It is a U.S.-led initiative and is not endorsed by all States, including several major military powers.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "political-declaration-military-ai-2023",
       "instrument_type": "declaration",
@@ -13012,7 +13284,7 @@
       },
       "rights": {
         "licence": "U.S. Government work",
-        "note": "U.S. Government publication; generally not subject to U.S. copyright, but third-party content may be. Metadata only in this corpus.",
+        "note": "US Government publication; generally not subject to US copyright, but third-party content may be. The full text is stored unaltered for research.",
         "status": "public_official_text",
         "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
       },
@@ -13043,10 +13315,28 @@
           "note": "States that 58 States had endorsed the declaration as of December 2024 and that it is not legally binding.",
           "publisher": "Ministry of Defense, Japan",
           "url": "https://www.mod.go.jp/atla/soubiseisaku/ai_guideline/ai_guideline_ver.01_eng_202506.pdf"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "state-text-pdf-archived",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Archived copy of the official two-page revised PDF; the live state.gov PDF returned HTTP 407.",
+          "publisher": "U.S. Department of State",
+          "url": "https://web.archive.org/web/20240221131548/https://www.state.gov/wp-content/uploads/2023/10/Latest-Version-Political-Declaration-on-Responsible-Military-Use-of-AI-and-Autonomy.pdf"
         }
       ],
       "status": "adopted",
       "status_note": "Open for endorsement by States; 58 endorsing States as of 27 November 2024 on the U.S. Department of State list. Endorsement is political, not a signature or ratification.",
+      "text": {
+        "extraction_note": "Archived official two-page revised PDF extracted with pypdf. The document-level unit contains the full declaration.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy",
         "short": "U.S.-led Political Declaration on military AI"
@@ -13072,10 +13362,15 @@
             "check": "Legal nature checked: political declaration, not a treaty.",
             "date": "2026-11-23",
             "result": "No signature/ratification; endorsement only."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified; the full declaration text is not stored. The endorsing-State list is reproduced party by party from the State Department page, with the list date recorded."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -14103,7 +14398,7 @@
       "gaps": [
         "Non-binding: no legal obligation, ratification, depositary, monitoring or enforcement.",
         "The five working groups are announced, not established; no mandate, membership or output was verified.",
-        "No full text is stored; the record is metadata-only."
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "san-francisco-declaration-2026",
       "instrument_type": "declaration",
@@ -14315,7 +14610,7 @@
       },
       "rights": {
         "licence": "United States Government official publication",
-        "note": "Official US government text. No full text is stored in this corpus; the declaration is read from the State Department release.",
+        "note": "Official US Government publication; no open licence identified. The declaration text is stored unaltered for research and is not relicensed.",
         "status": "public_official_text"
       },
       "sources": [
@@ -14328,10 +14623,28 @@
           "note": "Media note of 15 November 2026 announcing the signature by the United States and nine Pax Silica participants and reproducing the full text released by the ten governments. It names the signatories and the five proposed working groups.",
           "publisher": "United States Department of State, Office of the Spokesman",
           "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "state-san-francisco-archived",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Archived copy of the official release reproducing the full declaration; the live page returned HTTP 407.",
+          "publisher": "U.S. Department of State",
+          "url": "https://web.archive.org/web/20261117015744/https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"
         }
       ],
       "status": "adopted",
       "status_note": "Signed political declaration, not a treaty. Ten governments signed on 15 November 2026: the United States, Australia, India, Israel, Japan, the Republic of Korea, Qatar, Singapore, the United Arab Emirates and the United Kingdom. No ratification, depositary, entry into force, monitoring or enforcement is established.",
+      "text": {
+        "extraction_note": "Archived official State Department release. The text between Begin Text and End Text, including the footnote, was extracted to one document-level unit.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "San Francisco Declaration on the Secure Foundations of Enduring Prosperity",
         "short": "San Francisco Declaration"
@@ -14347,10 +14660,15 @@
             "check": "Legal nature checked against the text.",
             "date": "2026-11-24",
             "result": "The text records a common understanding and resolves to establish working groups. It contains no ratification, depositary, entry-into-force or dispute-settlement clause."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "HTML downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official State Department release. The record is metadata-only: no full text is stored. Signature is political; the declaration creates no legal obligation."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {
@@ -17320,7 +17638,8 @@
         "No meeting of the AI-safety Dialogue after 11 July 2024 was located on official EU or US pages.",
         "The August 2025 US-EU trade framework provides for 'setting up a Digital Dialogue'; the Commission described it on 29 June 2026 as a potential future dialogue, and no launch document was located.",
         "Only the English versions were read; other language versions were not checked.",
-        "The separate U.S.–EU Administrative Arrangement on AI and computing is not catalogued as an AI-safety agreement."
+        "The separate U.S.–EU Administrative Arrangement on AI and computing is not catalogued as an AI-safety agreement.",
+        "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
       ],
       "id": "us-eu-ttc-ai-safety-dialogue-2024",
       "instrument_type": "joint_statement",
@@ -17380,7 +17699,7 @@
       },
       "rights": {
         "licence": "European Commission reuse policy; U.S. Government work",
-        "note": "Official publications; metadata only in this corpus. Reusers should consult the European Commission and USTR terms. No full text is stored.",
+        "note": "Official publications; the full joint statement is stored unaltered for research. Reusers should consult the European Commission and USTR terms; no relicense is asserted.",
         "status": "public_official_text"
       },
       "sources": [
@@ -17487,6 +17806,14 @@
       ],
       "status": "adopted",
       "status_note": "Political joint statement, not a treaty. The AI-safety commitment is the establishment of a Dialogue between the European AI Office and the U.S. AI Safety Institute. No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located. The separate U.S.–EU Administrative Arrangement on AI and computing is a research-cooperation instrument, not an AI-safety agreement. The joint statement creates no binding obligations, ratification, depositary or dispute settlement. The stock-taking meeting of 16 September 2024 was held virtually at the level of senior officials; the Commission and USTR readouts record continued collaboration on artificial intelligence and do not announce a further ministerial. No TTC ministerial or joint statement after that stock-taking was located; the Commission presents the TTC as a 2021-2024 framework and archives its topic page, without a formal closure decision. No later meeting of the AI-safety Dialogue was located. The August 2025 US-EU trade framework provides for 'setting up a Digital Dialogue'; on 29 June 2026 the Commission described it as a potential future dialogue, and no launch document was located.",
+      "text": {
+        "extraction_note": "Official USTR HTML publication. The article body of the full joint statement was extracted to one document-level unit; this is not limited to the AI-safety section.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "Joint Statement EU-US Trade and Technology Council of 4-5 April 2024 in Leuven, Belgium",
         "short": "U.S.–EU TTC AI Safety Dialogue"
@@ -17522,10 +17849,15 @@
             "check": "Post-2024 TTC status and successor dialogue checked on European Commission pages.",
             "date": "2026-11-25",
             "result": "The TTC fact page is titled 'EU-US Trade and Technology Council (2021-2024)' and the topic page is archived with a 'no longer being updated' notice; no TTC activity after the September 2024 stock-taking and no later AI-safety Dialogue meeting was located. The trade-deal page lists 'setting up a Digital Dialogue', and the 29 June 2026 midday briefing describes a 'potential future dialogue' still being scoped; no launch document was located."
+          },
+          {
+            "check": "Format, hash and unit anchors verified.",
+            "date": "2026-11-26",
+            "result": "HTML downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted and units checked as exact slices of the stored text."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official joint statement and official technical-dialogue pages. The record deliberately does not call the commitment an MOU or an administrative arrangement."
+        "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
       }
     },
     {

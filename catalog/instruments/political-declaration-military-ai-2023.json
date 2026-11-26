@@ -13,9 +13,9 @@
   "gaps": [
     "Non-binding; no verification or enforcement.",
     "The endorsement list is dated 27 November 2024; later accessions are not reflected.",
-    "Full text not stored.",
     "The declaration does not create a definition or prohibition.",
-    "It is a U.S.-led initiative and is not endorsed by all States, including several major military powers."
+    "It is a U.S.-led initiative and is not endorsed by all States, including several major military powers.",
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "political-declaration-military-ai-2023",
   "instrument_type": "declaration",
@@ -335,7 +335,7 @@
   },
   "rights": {
     "licence": "U.S. Government work",
-    "note": "U.S. Government publication; generally not subject to U.S. copyright, but third-party content may be. Metadata only in this corpus.",
+    "note": "US Government publication; generally not subject to US copyright, but third-party content may be. The full text is stored unaltered for research.",
     "status": "public_official_text",
     "url": "https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/"
   },
@@ -366,10 +366,28 @@
       "note": "States that 58 States had endorsed the declaration as of December 2024 and that it is not legally binding.",
       "publisher": "Ministry of Defense, Japan",
       "url": "https://www.mod.go.jp/atla/soubiseisaku/ai_guideline/ai_guideline_ver.01_eng_202506.pdf"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "state-text-pdf-archived",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Archived copy of the official two-page revised PDF; the live state.gov PDF returned HTTP 407.",
+      "publisher": "U.S. Department of State",
+      "url": "https://web.archive.org/web/20240221131548/https://www.state.gov/wp-content/uploads/2023/10/Latest-Version-Political-Declaration-on-Responsible-Military-Use-of-AI-and-Autonomy.pdf"
     }
   ],
   "status": "adopted",
   "status_note": "Open for endorsement by States; 58 endorsing States as of 27 November 2024 on the U.S. Department of State list. Endorsement is political, not a signature or ratification.",
+  "text": {
+    "extraction_note": "Archived official two-page revised PDF extracted with pypdf. The document-level unit contains the full declaration.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
   "title": {
     "official": "Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy",
     "short": "U.S.-led Political Declaration on military AI"
@@ -395,9 +413,14 @@
         "check": "Legal nature checked: political declaration, not a treaty.",
         "date": "2026-11-23",
         "result": "No signature/ratification; endorsement only."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified; the full declaration text is not stored. The endorsing-State list is reproduced party by party from the State Department page, with the list date recorded."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

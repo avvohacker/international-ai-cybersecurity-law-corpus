@@ -12,9 +12,9 @@
   ],
   "gaps": [
     "Voluntary and EU-specific; not an international treaty.",
-    "Full text not stored.",
     "Signatory list and adequacy assessment details are not analysed.",
-    "Does not bind non-EU providers except through the AI Act's market rules."
+    "Does not bind non-EU providers except through the AI Act's market rules.",
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "eu-gpai-code-of-practice-2025",
   "instrument_type": "code_of_conduct",
@@ -62,7 +62,7 @@
   },
   "rights": {
     "licence": "Commission Decision 2011/833/EU",
-    "note": "European Commission publication; reuse under the EU reuse decision with attribution. Metadata only in this corpus.",
+    "note": "European Commission publication; reuse under Commission Decision 2011/833/EU with attribution. The three official chapters are stored unaltered and are not relicensed.",
     "status": "reuse_permitted",
     "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice"
   },
@@ -83,10 +83,48 @@
       "note": "Press release: final version received 10 July 2025; three chapters; relation to AI Act rules applicable from 2 August 2025.",
       "publisher": "European Commission",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1787"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "ec-gpai-transparency",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official six-page Transparency chapter PDF, published 10 July 2025.",
+      "publisher": "European Commission",
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118120"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "ec-gpai-copyright",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official six-page Copyright chapter PDF, published 10 July 2025.",
+      "publisher": "European Commission",
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118115"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "ec-gpai-safety",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official 43-page Safety and Security chapter PDF, published 10 July 2025.",
+      "publisher": "European Commission",
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "status": "adopted",
   "status_note": "Voluntary code; providers may sign it to demonstrate compliance with Articles 53 and 55 of the AI Act.",
+  "text": {
+    "extraction_note": "Three official chapter PDFs (Transparency 6 pages, Copyright 6 pages, Safety and Security 43 pages) extracted separately and concatenated in the published order. pages.json numbers the 55 logical pages sequentially: 1-6 Transparency, 7-12 Copyright, 13-55 Safety and Security, not the printed page numbers of each chapter. No wording was changed.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "pages"
+  },
   "title": {
     "official": "General-Purpose AI Code of Practice",
     "short": "EU GPAI Code of Practice"
@@ -102,9 +140,14 @@
         "check": "Relationship to the AI Act checked in the Commission press release and FAQ.",
         "date": "2026-11-23",
         "result": "Helps demonstrate compliance with Articles 53 and 55; approved as adequate on 1 August 2025."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified; the code's full text was not acquired or segmented. It is not an international instrument."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

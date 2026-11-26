@@ -15,7 +15,7 @@
     "No follow-up mechanism, review cycle or implementation reporting was verified.",
     "The New Delhi Frontier AI Impact Commitments (13 model providers) are a separate instrument and are not catalogued here.",
     "The declaration's relationship to the UN Global Dialogue on AI Governance and to the Paris and Seoul texts is political, not institutional; no formal linkage was verified.",
-    "No full text is stored; the record is metadata-only."
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "new-delhi-declaration-2026",
   "instrument_type": "declaration",
@@ -509,7 +509,7 @@
   },
   "rights": {
     "licence": "Government of India official publication",
-    "note": "Official government publication. No full text is stored in this corpus; the declaration is read from the official MEA page.",
+    "note": "Official Government of India publication; no open licence identified. The full Annexure text is stored unaltered for research and is not relicensed.",
     "status": "public_official_text"
   },
   "sources": [
@@ -542,10 +542,28 @@
       "note": "Official outcome-resources page listing the declaration and the separate summit deliverables, including the New Delhi Frontier AI Impact Commitments.",
       "publisher": "AI Impact Summit 2026, Government of India",
       "url": "https://impact.indiaai.gov.in/outcome-resources"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "pib-declaration-text",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official PIB page containing the full Annexure declaration text and the 92-endorser list.",
+      "publisher": "Press Information Bureau, Government of India",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&lang=2&reg=3"
     }
   ],
   "status": "adopted",
   "status_note": "Non-binding political declaration, not a treaty. The Press Information Bureau's annex lists 92 endorsers as of 5 March 2026: 90 States, the European Union and IFAD. The Ministry of External Affairs page updated 21 February 2026 lists 91 and omits Colombia. The record uses the later PIB list and records the discrepancy; it does not infer any other missing endorsement. The declaration creates no legal obligation, ratification, depositary, monitoring or dispute settlement. The separate New Delhi Frontier AI Impact Commitments were announced by 13 model providers and are not part of this declaration.",
+  "text": {
+    "extraction_note": "Official PIB HTML release. The Annexure text, from the Annexure heading through the end of the declaration, was extracted to one document-level unit.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
   "title": {
     "official": "AI Impact Summit Declaration, New Delhi",
     "short": "New Delhi Declaration on AI Impact"
@@ -571,9 +589,14 @@
         "check": "Legal nature checked against the text and official descriptions.",
         "date": "2026-11-23",
         "result": "The instrument is a political declaration, not a treaty; it creates no binding obligation, depositary, ratification or dispute settlement."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "HTML downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from official Indian government sources. The record is metadata-only: no full text is stored. The 92-endorser count is reproduced from the PIB annex and itemised; the MEA page lists 91 and omits Colombia. The difference is recorded as an unknown rather than filled by inference."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

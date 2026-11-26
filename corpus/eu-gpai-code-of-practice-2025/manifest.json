@@ -1,0 +1,57 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 446847,
+      "media_type": "application/pdf",
+      "note": "Official six-page Copyright chapter of the General-Purpose AI Code of Practice, published by the European Commission on 10 July 2025.",
+      "path": "source/gpai-code-copyright-2025-en.pdf",
+      "role": "original",
+      "sha256": "cdb3c117e8e51282ab61fad8af9d5cd1acaf1773a5eadce178c3d10498ca864a",
+      "source_url": "https://ec.europa.eu/newsroom/dae/redirection/document/118115"
+    },
+    {
+      "accessed": "2026-11-26",
+      "bytes": 1050925,
+      "media_type": "application/pdf",
+      "note": "Official 43-page Safety and Security chapter of the General-Purpose AI Code of Practice, published by the European Commission on 10 July 2025.",
+      "path": "source/gpai-code-safety-security-2025-en.pdf",
+      "role": "original",
+      "sha256": "d879f9b54c6068aae57ebaead9d90ddaa46f2503312b9185367a724fa8da2f4a",
+      "source_url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "accessed": "2026-11-26",
+      "bytes": 441142,
+      "media_type": "application/pdf",
+      "note": "Official six-page Transparency chapter of the General-Purpose AI Code of Practice, published by the European Commission on 10 July 2025.",
+      "path": "source/gpai-code-transparency-2025-en.pdf",
+      "role": "original",
+      "sha256": "407e3a0a66327847a4bddb811fe619c8a588892ec451d23435d06485c20a4cf8",
+      "source_url": "https://ec.europa.eu/newsroom/dae/redirection/document/118120"
+    },
+    {
+      "bytes": 130460,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "21332fd7d36fe39031ef8aa47e103268eb6c4fe5af0b2fc7641a80b0f95b5077"
+    },
+    {
+      "bytes": 4563,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "9c00b046b87b349c1f0bf6998abeafdb598b366919e6986a4099434cb46dfa3a"
+    },
+    {
+      "bytes": 144445,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "ef107839aca13d3b1077f80f3a188637b46f9356c034b1eaa036f8904dc16ad1"
+    }
+  ],
+  "instrument_id": "eu-gpai-code-of-practice-2025",
+  "primary_text": "text/en.txt"
+}

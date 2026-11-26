@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 182233,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Archived copy (Internet Archive, snapshot 17 November 2026) of the official State Department release reproducing the full text of the San Francisco Declaration on the Secure Foundations of Enduring Prosperity, signed 15 November 2026. The live state.gov page returned HTTP 407.",
+      "path": "source/san-francisco-declaration-2026-en.html",
+      "role": "original",
+      "sha256": "8c874cfe14435023965a7b2f5d39ad905e72603d7b344dc6280bbd5a903c9dcf",
+      "source_url": "https://web.archive.org/web/20261117015744/https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity"
+    },
+    {
+      "bytes": 3860,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "9c4516e5ac42b7e4211597a151a5c5705426239702fed8ea4f9b5bb3ebe8cf38"
+    },
+    {
+      "bytes": 129,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "42c3095301238dd8fdd778bfe0c5d950fab014f54b80e07c51ae89399c3676d1"
+    },
+    {
+      "bytes": 4118,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "a2320013354fc759950a3688fade8ed63b618630084b77ba8b56b64aceba220c"
+    }
+  ],
+  "instrument_id": "san-francisco-declaration-2026",
+  "primary_text": "text/en.txt"
+}

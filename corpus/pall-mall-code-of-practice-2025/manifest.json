@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 123647,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official GOV.UK HTML publication of the Pall Mall Process Code of Practice for States, updated 23 October 2025, including the supporting-States list.",
+      "path": "source/pall-mall-code-2025-en.html",
+      "role": "original",
+      "sha256": "96dc25e7785665a716632e00765f962f0a11b11516855167afb9bb42c75095cd",
+      "source_url": "https://www.gov.uk/government/publications/the-pall-mall-process-code-of-practice-for-states/the-pall-mall-process-code-of-practice-for-states"
+    },
+    {
+      "bytes": 26380,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "63ce86f69ea59fc17c1e4c88a31f0632d84e0e88f6d6902a47761a558781dd44"
+    },
+    {
+      "bytes": 130,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "70672ac2ee4d6118c5e89521813803b250b059470bab2c974dd103d3fd2d5eba"
+    },
+    {
+      "bytes": 26972,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "97f4bc0f71b5b6cc1fde55e43fa25fed045756de87c7a673610f9dea9d861646"
+    }
+  ],
+  "instrument_id": "pall-mall-code-of-practice-2025",
+  "primary_text": "text/en.txt"
+}

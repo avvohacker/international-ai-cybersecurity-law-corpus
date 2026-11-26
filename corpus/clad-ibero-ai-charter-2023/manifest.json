@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 859906,
+      "media_type": "application/pdf",
+      "note": "Official 32-page Spanish text of the Carta Iberoamericana de Inteligencia Artificial en la Administración Pública, approved by the CLAD Directing Council in November 2023.",
+      "path": "source/clad-carta-ia-2023-es.pdf",
+      "role": "original",
+      "sha256": "096e2368f82197b69317f9b1cf1b875f16da2a5d9540384bd74df3f14b52d057",
+      "source_url": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf"
+    },
+    {
+      "bytes": 73997,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/es.txt",
+      "role": "text",
+      "sha256": "ce137a93c42e4c60255add6d9041449e69755c2a011c39131d25a41f1aeda30a"
+    },
+    {
+      "bytes": 2648,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "6c20e6d74e823efa5fecbbd325522361825825f0bc1a9e0de19293a038cd8c30"
+    },
+    {
+      "bytes": 81927,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "904996ff33d1c5820def880f1af748b05d312f59c8f9f9afe2dd885ab2ce9349"
+    }
+  ],
+  "instrument_id": "clad-ibero-ai-charter-2023",
+  "primary_text": "text/es.txt"
+}

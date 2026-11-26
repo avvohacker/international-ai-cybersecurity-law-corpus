@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 236090,
+      "media_type": "application/pdf",
+      "note": "Official ten-page English PDF of CCW/GGE.1/2026/3, the report of the 2024-2025-2026 sessions of the Group of Governmental Experts on lethal autonomous weapons systems.",
+      "path": "source/ccw-gge-2026-3-en.pdf",
+      "role": "original",
+      "sha256": "b7020c0e735a0985aad87c5b7ac20d5cdb87370bc31328590b736834fe22651d",
+      "source_url": "https://documents.un.org/api/symbol/access?s=CCW%2FGGE.1%2F2026%2F3&l=en&t=pdf"
+    },
+    {
+      "bytes": 26689,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "6f98b69cb3c148d9e6790fb37e0097b72a9086c39d3d01db7632d01e1312758b"
+    },
+    {
+      "bytes": 856,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "193df140007140796e6cdc39ab44c2a3533739298184583f1afaf9674e3e304a"
+    },
+    {
+      "bytes": 29089,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "1426cf22c877a6c18b8ce826e50cf4634c51c48f25791a7a8cc01a2fb7b36911"
+    }
+  ],
+  "instrument_id": "ccw-gge-laws-2026",
+  "primary_text": "text/en.txt"
+}

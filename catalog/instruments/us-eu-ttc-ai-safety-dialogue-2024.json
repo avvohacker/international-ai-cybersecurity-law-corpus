@@ -18,7 +18,8 @@
     "No meeting of the AI-safety Dialogue after 11 July 2024 was located on official EU or US pages.",
     "The August 2025 US-EU trade framework provides for 'setting up a Digital Dialogue'; the Commission described it on 29 June 2026 as a potential future dialogue, and no launch document was located.",
     "Only the English versions were read; other language versions were not checked.",
-    "The separate U.S.–EU Administrative Arrangement on AI and computing is not catalogued as an AI-safety agreement."
+    "The separate U.S.–EU Administrative Arrangement on AI and computing is not catalogued as an AI-safety agreement.",
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "us-eu-ttc-ai-safety-dialogue-2024",
   "instrument_type": "joint_statement",
@@ -78,7 +79,7 @@
   },
   "rights": {
     "licence": "European Commission reuse policy; U.S. Government work",
-    "note": "Official publications; metadata only in this corpus. Reusers should consult the European Commission and USTR terms. No full text is stored.",
+    "note": "Official publications; the full joint statement is stored unaltered for research. Reusers should consult the European Commission and USTR terms; no relicense is asserted.",
     "status": "public_official_text"
   },
   "sources": [
@@ -185,6 +186,14 @@
   ],
   "status": "adopted",
   "status_note": "Political joint statement, not a treaty. The AI-safety commitment is the establishment of a Dialogue between the European AI Office and the U.S. AI Safety Institute. No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located. The separate U.S.–EU Administrative Arrangement on AI and computing is a research-cooperation instrument, not an AI-safety agreement. The joint statement creates no binding obligations, ratification, depositary or dispute settlement. The stock-taking meeting of 16 September 2024 was held virtually at the level of senior officials; the Commission and USTR readouts record continued collaboration on artificial intelligence and do not announce a further ministerial. No TTC ministerial or joint statement after that stock-taking was located; the Commission presents the TTC as a 2021-2024 framework and archives its topic page, without a formal closure decision. No later meeting of the AI-safety Dialogue was located. The August 2025 US-EU trade framework provides for 'setting up a Digital Dialogue'; on 29 June 2026 the Commission described it as a potential future dialogue, and no launch document was located.",
+  "text": {
+    "extraction_note": "Official USTR HTML publication. The article body of the full joint statement was extracted to one document-level unit; this is not limited to the AI-safety section.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
   "title": {
     "official": "Joint Statement EU-US Trade and Technology Council of 4-5 April 2024 in Leuven, Belgium",
     "short": "U.S.–EU TTC AI Safety Dialogue"
@@ -220,9 +229,14 @@
         "check": "Post-2024 TTC status and successor dialogue checked on European Commission pages.",
         "date": "2026-11-25",
         "result": "The TTC fact page is titled 'EU-US Trade and Technology Council (2021-2024)' and the topic page is archived with a 'no longer being updated' notice; no TTC activity after the September 2024 stock-taking and no later AI-safety Dialogue meeting was located. The trade-deal page lists 'setting up a Digital Dialogue', and the 29 June 2026 midday briefing describes a 'potential future dialogue' still being scoped; no launch document was located."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "HTML downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from the official joint statement and official technical-dialogue pages. The record deliberately does not call the commitment an MOU or an administrative arrangement."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

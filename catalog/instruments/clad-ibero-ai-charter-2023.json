@@ -14,8 +14,8 @@
     "The official text is in Spanish only; no official English translation was verified.",
     "No itemised vote list was located; the Carta was approved unanimously by the 23 member States of the CLAD Directing Council, not by all Ibero-American States.",
     "The CLAD is a public-administration network, not the Ibero-American summit; its scope is public administration, not AI in society as a whole.",
-    "No full text is stored; the record is metadata-only.",
-    "Implementation, indicators and follow-up are not assessed."
+    "Implementation, indicators and follow-up are not assessed.",
+    "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
   ],
   "id": "clad-ibero-ai-charter-2023",
   "instrument_type": "recommendation",
@@ -81,7 +81,7 @@
   },
   "rights": {
     "licence": "CLAD terms",
-    "note": "Official CLAD publication; no open licence identified. Metadata only in this corpus.",
+    "note": "Official CLAD publication; no open licence identified. The full Spanish text is stored unaltered for research and is not relicensed.",
     "status": "public_official_text",
     "url": "https://www.clad.org/"
   },
@@ -119,6 +119,14 @@
   ],
   "status": "adopted",
   "status_note": "Non-binding recommendation, not a treaty. The CLAD Directing Council approved the Carta in Varadero, Cuba, on 20 November 2023; the vote was unanimous among the 23 member States of the Council. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+  "text": {
+    "extraction_note": "Official 32-page Spanish PDF extracted with pypdf. Page units follow the printed sequence.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "es",
+    "primary_text": "text/es.txt",
+    "units_mode": "pages"
+  },
   "title": {
     "english": "Ibero-American Charter on Artificial Intelligence in Public Administration",
     "official": "Carta Iberoamericana de Inteligencia Artificial en la Administración Pública",
@@ -140,9 +148,14 @@
         "check": "Scope checked.",
         "date": "2026-11-25",
         "result": "The text is addressed to public administrations and CLAD member States. It is not a general AI code and does not bind private actors."
+      },
+      {
+        "check": "Format, hash and unit anchors verified.",
+        "date": "2026-11-26",
+        "result": "PDF downloaded with HTTP 200 (archive copy where noted); MIME type, byte count and SHA-256 recorded; text extracted with pypdf and units checked as exact slices of the stored text."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from the official CLAD text and two official-secondary reports. The record is metadata-only: no full text is stored."
+    "notes": "Metadata verified from the official source; the full text was acquired on 26 November 2026, hashed and segmented, but was not read end-to-end for legal analysis."
   }
 }

@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 138626,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official USTR HTML publication of the Joint Statement of the EU-US Trade and Technology Council of 4-5 April 2024, including the AI-safety section.",
+      "path": "source/us-eu-ttc-joint-statement-2024-en.html",
+      "role": "original",
+      "sha256": "1f0468832db9ff1d5d60d561eae7c000f964f9d62315cafa021977fa67b6eaff",
+      "source_url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases/2024/april/us-eu-joint-statement-trade-and-technology-council"
+    },
+    {
+      "bytes": 53975,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "7b1f43c61788e17247ea4cf05ff2823e83eb3f67db284f54cc25f238c898a18b"
+    },
+    {
+      "bytes": 130,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "dc92308662985f6b9d23ae5406cb826062d4b446f051c0a591afebd73bdef971"
+    },
+    {
+      "bytes": 54548,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "f0dc13647ce947d06ef86deaa1e88cc9f93b2d1999282681088428497c0bab3c"
+    }
+  ],
+  "instrument_id": "us-eu-ttc-ai-safety-dialogue-2024",
+  "primary_text": "text/en.txt"
+}

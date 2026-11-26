@@ -1,0 +1,442 @@
+Annexure
+
+
+AI Impact Summit Declaration
+
+
+New Delhi 18-19 February 2026
+
+
+ 
+
+
+Preamble
+
+
+Inspired by the principle of “सर्वजन हिताय, सर्वजन सुखाय” (Welfare for all, Happiness of all), we believe that AI’s promise is best realized only when its benefits are shared by humanity.
+
+
+We, the participants from countries and international organizations, gathered in New Delhi on 19 February 2026 to hold the AI Impact Summit. The advent of AI marks an inflection point in the trajectory of technological evolution. The choices that we make today will shape the AI-enabled world that future generations will inherit.
+
+
+This calls for further international cooperation and multistakeholder engagement across our countries along the seven Chakras (pillars) of the AI Impact Summit centred around the principles of development of human capital; broadening access for social empowerment; trustworthiness of AI systems; energy efficiency of AI systems; use of AI in science; democratizing AI resources; and use of AI for economic growth and social good. In complementarity with existing international and other initiatives, we will work to foster shared understanding, while respecting national sovereignty, on how AI could be made to serve humanity, noting the initiatives across the seven Chakras (pillars) of the Summit.
+
+
+ 
+
+
+Democratizing AI Resources
+
+
+Robust digital infrastructure and meaningful and affordable connectivity are prerequisites for deploying AI and unlocking its full potential. Inspired by the principle of “Vasudhaiva Kutumbakam” (the world is one family), we recognize the importance of enhancing the affordability of and access to AI resources that would be critical to enabling all countries to develop, adopt and deploy AI for the benefit of their citizens.
+
+
+To this effect, we take note of the Charter for the Democratic Diffusion of AI as a voluntary and non-binding framework to promote access to foundational AI resources, support locally relevant innovation, and strengthen resilient AI ecosystems while respecting national laws.
+
+
+ 
+
+
+Economic Growth and Social Good
+
+
+Wide-scale adoption of AI and AI-based applications hold unprecedented potential to drive economic and social development. Open-source AI applications and other accessible AI approaches, where appropriate, and wide-scale diffusion of AI use cases can contribute to scalability, replicability, and adaptability of AI systems across sectors.
+
+
+We take note of the Global AI Impact Commons as a voluntary initiative that provides a practical platform to encourage and enable the adoption, replication, and scale-up of successful AI use cases across regions.
+
+
+ 
+
+
+Secure and Trusted AI
+
+
+Advancing secure, trustworthy and robust AI is foundational to building trust and maximizing societal and economic benefits. Noting that deepening our understanding of the potential security aspects remains important, we recognize the importance of security in AI systems, industry-led voluntary measures, and the adoption of technical solutions, and appropriate policy frameworks that enable innovation while promoting the public interest throughout the AI’s lifecycle.
+
+
+We recognize the development of the voluntary and non-binding Trusted AI Commons, a collaborative platform consolidating technical resources, tools, benchmarks and best practices that all can access and adapt to their contexts; as well as its voluntary guidance note.
+
+
+ 
+
+
+Science
+
+
+We recognize that removing structural barriers to and increasing availability of AI research infrastructure can promote the use of AI in scientific research and development across countries. International scientific collaborations can unlock the potential of AI in research and development by bringing unique expertise, perspectives, and resources.
+
+
+We take note of the voluntary and collaborative International Network of AI for Science Institutions as a platform to connect scientific communities and pool AI research capabilities across regions among participating institutions, in order to accelerate the impactful adoption of AI.
+
+
+ 
+
+
+Access for Social Empowerment
+
+
+AI holds the potential to uplift all sections of society by enabling individuals to access knowledge, cross-border AI solutions, information, services, opportunities and enhancing participation in social and economic activities. We recognize the importance of collaborations that would facilitate AI adoption for social empowerment.
+
+
+We take note of the development of a voluntary and collaborative platform to facilitate exchange of learning, knowledge, and scalable practices to advance AI adoption for social empowerment.
+
+
+ 
+
+
+Human Capital
+
+
+Realizing the full promise of AI requires equipping individuals with relevant skills by expanding AI human resource development, specific initiatives on education, AI workforce development, training of public officials, enhancing public awareness of AI capabilities, increasing AI literacy as well as upgrading vocational and training ecosystems.
+
+
+While encouraging international collaboration on meaningful skilling and reskilling AI initiatives, we take note of the voluntary guiding principles for reskilling in the age of AI and the playbook on AI workforce development, which would support participants in preparation for a future AI driven economy.
+
+
+ 
+
+
+Resilience, Innovation, and Efficiency
+
+
+Recognizing the growing demands of AI on energy, infrastructure, and natural resources, we underscore the importance of developing energy efficient AI systems. Affordable AI systems may expand access to AI and accelerate local innovation that would advance shared developmental aspirations.
+
+
+We recognize that the Voluntary Guiding Principles on Resilient, Innovative, and Efficient Artificial Intelligence would guide us towards development of resilient and efficient AI systems. We also take note of the Playbook on Advancing Resilient AI Infrastructure as a knowledge output, which is a reference resource to support resilient AI development.
+
+
+ 
+
+
+Conclusion                                                                                                       
+
+
+We acknowledge that the AI Impact Summit will contribute to strengthening international cooperation and multistakeholder approach to advance shared priorities as well as voluntary and non-binding guidelines and principles, which can promote AI for ensuring a prosperous future for humanity.
+
+
+We remain committed to advancing our shared aspirations for realizing the benefits of AI and look forward to continued cooperation for translating these aspirations into concrete actions for the three Sutras of the India AI Impact Summit 2026.
+
+
+Endorsing countries/international organizations (as of 5th March 2026):
+
+
+				Albania
+
+
+			⁠28. France
+
+
+			⁠55. Mozambique
+
+
+			⁠82. Switzerland
+
+
+				⁠Armenia
+
+
+			⁠29. Gambia
+
+
+			⁠56. Myanmar
+
+
+			⁠83. Tajikistan
+
+
+				⁠Australia
+
+
+			⁠30. Germany
+
+
+			⁠57. Nepal
+
+
+			84. Tanzania
+
+
+				⁠Austria
+
+
+			⁠31. Greece
+
+
+			⁠58. Netherlands
+
+
+			⁠85. Trinidad and Tobago
+
+
+				Bangladesh
+
+
+			32. Guatemala
+
+
+			⁠59. New Zealand
+
+
+			⁠86. UAE
+
+
+				⁠Belgium
+
+
+			⁠33. Guyana
+
+
+			⁠60. Norway
+
+
+			⁠87. Ukraine
+
+
+				⁠Bhutan
+
+
+			34. Hungary
+
+
+			⁠61. Oman
+
+
+			⁠88. UK
+
+
+				Bolivia
+
+
+			⁠35. Iceland
+
+
+			⁠62. Paraguay
+
+
+			⁠89. USA
+
+
+				⁠Botswana
+
+
+			⁠36. India
+
+
+			⁠63. Peru
+
+
+			⁠90. Uzbekistan
+
+
+				Brazil
+
+
+			⁠37. Indonesia
+
+
+			⁠64. Philippines
+
+
+			91. EU
+
+
+				⁠Bulgaria
+
+
+			⁠38. Iran
+
+
+			⁠65. Poland
+
+
+			92. IFAD
+
+
+				⁠Cambodia
+
+
+			⁠39. Ireland
+
+
+			⁠66. Portugal
+
+
+			 
+
+
+				⁠Canada
+
+
+			⁠40. Israel
+
+
+			⁠67. Romania
+
+
+			 
+
+
+				⁠Chile
+
+
+			⁠41. Italy
+
+
+			⁠68. Russia
+
+
+			 
+
+
+				⁠China
+
+
+			⁠42. Japan
+
+
+			⁠69. Rwanda
+
+
+			 
+
+
+				⁠Croatia
+
+
+			⁠43. Kazakhstan
+
+
+			70. Saudi Arabia
+
+
+			 
+
+
+				Colombia
+
+
+			⁠44. Kenya
+
+
+			⁠71. Senegal
+
+
+			 
+
+
+				Costa Rica
+
+
+			⁠45. Kyrgyzstan
+
+
+			⁠72. Serbia
+
+
+			 
+
+
+				⁠Cuba
+
+
+			⁠46. Latvia
+
+
+			⁠73. Seychelles
+
+
+			 
+
+
+				⁠Cyprus
+
+
+			⁠47. Liechtenstein
+
+
+			74. Singapore
+
+
+			⁠
+
+
+				⁠Czech Republic
+
+
+			⁠48. Lithuania
+
+
+			⁠75. Slovakia
+
+
+			 
+
+
+				⁠Denmark
+
+
+			⁠49. Luxembourg
+
+
+			⁠76. Slovenia
+
+
+			 
+
+
+				⁠Egypt
+
+
+			⁠50. Maldives
+
+
+			⁠77. South Korea
+
+
+			 
+
+
+				⁠Estonia
+
+
+			51. Malta
+
+
+			⁠78. Spain
+
+
+			⁠
+
+
+				⁠Ethiopia
+
+
+			⁠52. Mauritius
+
+
+			79. Sri Lanka
+
+
+			⁠
+
+
+				⁠Fiji
+
+
+			⁠53. Mexico
+
+
+			80. Suriname
+
+
+			 
+
+
+				Finland
+
+
+			54. Morocco
+
+
+			⁠81. Sweden

@@ -114,7 +114,7 @@
     "official_url": "https://rm.coe.int/09000016809e1154",
     "searched_on": "2026-11-24",
     "evidence": "Official PDF of CM/Rec(2020)1 with the guidelines; Council of Europe news release of 8 April 2020; adoption at the 1373rd meeting of the Ministers’ Deputies.",
-    "gaps": "Non-binding. No itemised endorsement list exists because it is addressed to all 47 member States. No full text is stored; national implementation is not assessed."
+    "gaps": "Non-binding. No itemised endorsement list exists because it is addressed to all 47 member States. Full text stored and segmented; national implementation is not assessed."
   },
   {
     "id": "itu-t-y3172",
@@ -322,7 +322,7 @@
     "official_url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf",
     "searched_on": "2026-11-23",
     "evidence": "Official English PDF A/HRC/RES/63/15 (6 pages, read in full); UN Digital Library record; summary record A/HRC/63/SR.41. Adopted without a vote, 41st meeting, 6 October 2026.",
-    "gaps": "Non-binding; no vote or signatory list; no enforcement; only English read; PDF linked but not stored."
+    "gaps": "Non-binding; no vote or signatory list; no enforcement; only English read; full text stored and segmented into 24 units."
   },
   {
     "id": "g7-digital-technology-ministerial-declaration-2026",
@@ -408,7 +408,7 @@
     "issuer": "League of Arab States",
     "decision": "included",
     "instrument_id": "arab-convention-it-offences-2010",
-    "reason": "UNODC records adoption on 21 December 2010 and entry into force on 7 February 2014 after seven instruments; the English text reproduction confirms the treaty structure, criminal-law provisions and LAS depositary. It is included as a binding regional cybercrime treaty. The current party table could not be read, so the record is metadata-only and no current party count is asserted.",
+    "reason": "UNODC records adoption on 21 December 2010 and entry into force on 7 February 2014 after seven instruments; the English text reproduction confirms the treaty structure, criminal-law provisions and LAS depositary. It is included as a binding regional cybercrime treaty. The current party table could not be read, so no current party count is asserted.",
     "candidate_type": "treaty",
     "official_url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf",
     "searched_on": "2026-11-24",
@@ -452,7 +452,7 @@
     "official_url": "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives",
     "searched_on": "2026-11-24",
     "evidence": "US Department of Commerce page and official PDF of the G20 AI Prosperity Objectives; White House release of 2 September 2026.",
-    "gaps": "Non-binding. No itemised endorsement list is published. The objectives cover AI workforce development, not safety, liability or market access. Metadata-only; no map."
+    "gaps": "Non-binding. No itemised endorsement list is published. The objectives cover AI workforce development, not safety, liability or market access. Full text stored and segmented; no map."
   },
   {
     "id": "cis-minsk-agreement-2001",
@@ -460,7 +460,7 @@
     "issuer": "Council of Heads of State of the Commonwealth of Independent States",
     "decision": "included",
     "instrument_id": "cis-minsk-agreement-2001",
-    "reason": "The CIS Executive Committee confirms signature at Minsk on 1 June 2001 and status “in force”; the UNODC compendium factsheet records entry into force on 14 March 2002, three instruments required, and explains that the 2018 Dushanbe Agreement replaces it only between its Parties. It is the first regional cybercrime treaty and remains the applicable CIS instrument for States that have not joined the 2018 Agreement. Included as a binding cyber treaty; metadata-only because the depositary does not publish a current party table.",
+    "reason": "The CIS Executive Committee confirms signature at Minsk on 1 June 2001 and status “in force”; the UNODC compendium factsheet records entry into force on 14 March 2002, three instruments required, and explains that the 2018 Dushanbe Agreement replaces it only between its Parties. It is the first regional cybercrime treaty and remains the applicable CIS instrument for States that have not joined the 2018 Agreement. Included as a binding cyber treaty; the depositary does not publish a current party table.",
     "candidate_type": "treaty",
     "official_url": "https://eccis.org/document/1180",
     "searched_on": "2026-11-24",
@@ -473,7 +473,7 @@
     "issuer": "Governments of the Member States of the Shanghai Cooperation Organization",
     "decision": "included",
     "instrument_id": "sco-information-security-agreement-2009",
-    "reason": "The SCO official document page and text, the UNODC compendium factsheet and the Hong Kong Treaty Series confirm the 2009 Agreement, its four-notification entry-into-force clause and its coverage of cybercrime as one of the information-security threats. It is a binding regional treaty missing from the corpus and is included as metadata-only. The UNODC factsheet gives 16 June 2009 as the entry-into-force date, but Article 12 and the treaty-series record give 2 June 2011; the record notes the conflict.",
+    "reason": "The SCO official document page and text, the UNODC compendium factsheet and the Hong Kong Treaty Series confirm the 2009 Agreement, its four-notification entry-into-force clause and its coverage of cybercrime as one of the information-security threats. It is a binding regional treaty missing from the corpus and is included. The UNODC factsheet gives 16 June 2009 as the entry-into-force date, but Article 12 and the treaty-series record give 2 June 2011; the record notes the conflict.",
     "candidate_type": "treaty",
     "official_url": "https://eng.sectsco.org/20090616/207486.html",
     "searched_on": "2026-11-24",
@@ -491,7 +491,7 @@
     "official_url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_AI_Strategy.pdf",
     "searched_on": "2026-11-25",
     "evidence": "Official 39-page Arabic AICTO text; AICTO publications page; Saudi Press Agency report of 23 January 2025; UN ESCWA Annual SDG Review 2026.",
-    "gaps": "No itemised adoption vote or member-State list; Arabic only; no official English translation; metadata-only."
+    "gaps": "No itemised adoption vote or member-State list; Arabic only; no official English translation; full text stored and segmented."
   },
   {
     "id": "arab-charter-ai-ethics-2025",
@@ -517,7 +517,7 @@
     "official_url": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf",
     "searched_on": "2026-11-25",
     "evidence": "Official 49-page English ALECSO edition; ALECSO page announcing the English version; ALECSO official adoption notice of 2 July 2025.",
-    "gaps": "Sectoral scope; no itemised approving-State list; adoption day not printed in the PDF; metadata-only."
+    "gaps": "Sectoral scope; no itemised approving-State list; adoption day not printed in the PDF; full text stored and segmented."
   },
   {
     "id": "clad-ibero-ai-charter-2023",
@@ -530,7 +530,7 @@
     "official_url": "https://web-api-backend.clad.org/uploads/ciia-es-11-2023.pdf",
     "searched_on": "2026-11-25",
     "evidence": "Official 32-page Spanish CLAD text; CLAD–SEGIB 2025 interoperability report; INAP report of the unanimous approval.",
-    "gaps": "Public-administration scope; 23 CLAD member States, not all Ibero-America; Spanish only; metadata-only."
+    "gaps": "Public-administration scope; 23 CLAD member States, not all Ibero-America; Spanish only; full text stored and segmented."
   },
   {
     "id": "ibero-ai-declaration-2024",
@@ -543,7 +543,7 @@
     "official_url": "https://observatorioecuadordigital.mintel.gob.ec/wp-content/uploads/2024/12/8.-DE-Inteligencia-Artificial.pdf",
     "searched_on": "2026-11-25",
     "evidence": "Official Spanish text from Ecuador's MINTEL observatory; SEGIB XXIX Summit page; Portuguese official version from Ecuador's Foreign Ministry.",
-    "gaps": "18 of the 19 summit countries; no implementation mechanism; Spanish/Portuguese only; metadata-only."
+    "gaps": "18 of the 19 summit countries; no implementation mechanism; Spanish/Portuguese only; full text stored and segmented."
   },
   {
     "id": "reaim-call-to-action-2023",
@@ -556,7 +556,7 @@
     "official_url": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action",
     "searched_on": "2026-11-25",
     "evidence": "Official Dutch publication page and four-page PDF; Dutch news item and closing speech.",
-    "gaps": "No itemised official endorsement list; more than 60 at the summit vs 58 in UNIDIR's 2025 chronology; metadata-only."
+    "gaps": "No itemised official endorsement list; more than 60 at the summit vs 58 in UNIDIR's 2025 chronology; full text stored and segmented."
   },
   {
     "id": "reaim-blueprint-for-action-2024",
@@ -582,6 +582,6 @@
     "official_url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx",
     "searched_on": "2026-11-25",
     "evidence": "Official Spanish REAIM 2026 page listing 45 States; official eight-page PDF; RSIS commentary recording 40 at the time of writing.",
-    "gaps": "Open to further endorsements; no individual dates; China and the United States not listed; metadata-only and not mapped."
+    "gaps": "Open to further endorsements; no individual dates; China and the United States not listed; full text stored and segmented; not mapped."
   }
 ]
