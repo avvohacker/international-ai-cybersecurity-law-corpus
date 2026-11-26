@@ -808,12 +808,13 @@ class TestCatalogue(unittest.TestCase):
 
     def test_domestic_approval_is_not_an_international_deposit(self) -> None:
         inst = read_instrument("waico-establishment-agreement-2026")
-        china = next(
-            entry for entry in inst["parties"]["entries"] if entry["party"] == "China"
-        )
-        self.assertIn("domestic_approval", china)
-        self.assertNotIn("ratification", china)
-        self.assertNotIn("deposit", china)
+        for party in ("China", "Nicaragua", "Russia"):
+            entry = next(
+                item for item in inst["parties"]["entries"] if item["party"] == party
+            )
+            self.assertIn("domestic_approval", entry)
+            self.assertNotIn("ratification", entry)
+            self.assertNotIn("deposit", entry)
         self.assertEqual(inst["parties"]["counts"]["ratifications"]["verified"], 0)
 
     def test_participation_acts_remain_distinguishable(self) -> None:
@@ -2178,7 +2179,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 267)
+        self.assertEqual(len(targets), 268)
         self.assertEqual(len({target.instrument_id for target in targets}), 77)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)

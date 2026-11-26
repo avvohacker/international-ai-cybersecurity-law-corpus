@@ -1,11 +1,11 @@
 {
-  "checked": 272,
+  "checked": 273,
   "audited_on": "2026-11-26",
   "scope": "catalog",
   "instruments": 77,
   "summary": {
     "ok": 181,
-    "anti_bot": 81,
+    "anti_bot": 82,
     "broken": 0,
     "transient": 10,
     "live_but_unreachable": 3
@@ -446,9 +446,9 @@
       "source_id": "brics-presidency-pdf",
       "label": "BRICS 2025 Presidency, Federative Republic of Brazil",
       "url": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -2692,6 +2692,16 @@
       "source_id": "ndrc-waico-promotion-2026-07-20",
       "label": "National Development and Reform Commission of the People's Republic of China",
       "url": "https://www.ndrc.gov.cn/fggz/202607/t20260720_1406588.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "nicaragua-gaceta-194",
+      "label": "La Gaceta, Diario Oficial de la República de Nicaragua",
+      "url": "https://digesto.asamblea.gob.ni/consultas/util/pdf.php?rdd=T0OUxmN%2Bby4%3D&type=rdd",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",

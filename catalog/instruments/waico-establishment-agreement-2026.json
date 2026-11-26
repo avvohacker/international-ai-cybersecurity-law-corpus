@@ -3,7 +3,7 @@
   "category": "ai_treaty",
   "dates": {
     "closed_for_signature": "2026-07-31",
-    "notes": "Signed at the Shanghai ceremony on 16 July 2026; open for signature from 1 May to 31 July 2026. The official Chinese text was published by the National People's Congress on 18 November 2026 and its articles were read for this record. China's NPC Standing Committee approved ratification on 6 November 2026; that is a domestic authorisation, not a deposit. No instrument of ratification, acceptance, approval or accession was verified with the depositary, and no depositary notification of entry into force was located. Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026, published on the official legal-information portal on 18 November 2026; that is also a domestic act, and no Russian deposit was verified. The NDRC and MFA convened a WAICO promotion meeting on 17 July 2026 with representatives of signatory States; the official account describes discussions on the organization's construction and operation, not a Council plenary or a constitutive act.",
+    "notes": "Signed at the Shanghai ceremony on 16 July 2026; open for signature from 1 May to 31 July 2026. The official Chinese text was published by the National People's Congress on 18 November 2026 and its articles were read for this record. China's NPC Standing Committee approved ratification on 6 November 2026; that is a domestic authorisation, not a deposit. Nicaragua's National Assembly approved the Agreement by Decree A.N. No. 8933 of 29 September 2026, and the Presidency ratified it by Presidential Decree No. 11-2026 of 16 October 2026, published in La Gaceta No. 194 on 22 October 2026; the decree orders the instrument of ratification to be issued for deposit with China, but no deposit was verified. Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026, published on the official legal-information portal on 18 November 2026; that is also a domestic act, and no Russian deposit was verified. No instrument of ratification, acceptance, approval or accession was verified with the depositary, and no depositary notification of entry into force was located. The NDRC and MFA convened a WAICO promotion meeting on 17 July 2026 with representatives of signatory States; the official account describes discussions on the organization's construction and operation, not a Council plenary or a constitutive act.",
     "opened_for_signature": "2026-05-01",
     "signed": "2026-07-16",
     "verified_on": "2026-11-26"
@@ -12,8 +12,8 @@
     "ai"
   ],
   "gaps": [
-    "Entry into force is not confirmed: Article 15 requires three deposited ratifications, acceptances or approvals, and no deposit was verified. The number of deposits is unknown, not zero. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; both are domestic acts. No Chinese or Russian deposit, and no depositary notification, was verified.",
-    "China's NPC approved ratification on 6 November 2026. That is a domestic authorisation; the deposit of the instrument and any depositary notification were not verified.",
+    "Entry into force is not confirmed: Article 15 requires three deposited ratifications, acceptances or approvals, and no deposit was verified. The number of deposits is unknown, not zero. China's NPC approved ratification on 6 November 2026, Nicaragua's Presidency ratified by decree No. 11-2026 of 16 October 2026, and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; all three are domestic acts. No Chinese, Nicaraguan or Russian deposit, and no depositary notification, was verified.",
+    "Domestic approvals are not deposits: China's NPC approved ratification on 6 November 2026 and Nicaragua's Presidency ratified by decree No. 11-2026 of 16 October 2026. The deposit of either instrument and any depositary notification were not verified.",
     "The MFA reports 38 founding members while the signing records individually identify 37; the 38th member is not named in the official sources located. The NDRC repeated the 38 figure on 3 November 2026 without naming the 38th. Bangladesh is not the 38th member: it announced on 1 August 2026 that it would join 'initially as an observer'.",
     "Observer status is not a party status: Article 11 allows the Council to admit non-member States and intergovernmental organisations as observers. No Council admission of Bangladesh is recorded.",
     "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
@@ -61,9 +61,11 @@
     "counts": {
       "ratifications": {
         "basis": "unknown",
-        "note": "China is the depositary and no public depositary register or notification was located. No deposited instrument was verified, but the total is unknown rather than zero.",
+        "note": "China is the depositary and no public depositary register or notification was located. No deposited instrument was verified, but domestic acts are recorded for China (NPC approval of ratification, 6 November 2026), Nicaragua (ratification decree No. 11-2026, 16 October 2026) and Russia (acceptance decree No. 1532, 17 November 2026). The total is unknown rather than zero.",
         "source_ids": [
-          "mfa-ratification"
+          "mfa-ratification",
+          "nicaragua-gaceta-194",
+          "russia-decree-1532"
         ],
         "total": null,
         "verified": 0
@@ -205,6 +207,12 @@
         "signature": "2026-07-16"
       },
       {
+        "domestic_approval": "2026-10-16",
+        "notes": [
+          "Approved by the National Assembly by Decree A.N. No. 8933 of 29 September 2026, published in La Gaceta No. 179 on 1 October 2026.",
+          "Ratified by Presidential Decree No. 11-2026 of 16 October 2026, published in La Gaceta No. 194 on 22 October 2026; Article 2 orders the instrument of ratification to be issued for deposit with the Government of the People's Republic of China.",
+          "Deposit of the instrument was not verified; no ratification or deposit is counted."
+        ],
         "party": "Nicaragua",
         "role": "signatory",
         "signature": "2026-07-16"
@@ -311,13 +319,14 @@
       "xinhua-npc-decision",
       "mfa-progress-report",
       "mfa-31-july",
-      "indonesia-founding-list"
+      "indonesia-founding-list",
+      "nicaragua-gaceta-194"
     ],
-    "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member; no Council admission is recorded. Singapore's MDDI told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it; it is not a member and has not accepted. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026, but both are domestic acts and no deposit was verified; the number of deposited instruments is unknown.",
+    "summary": "38 founding members reported by China's Ministry of Foreign Affairs; 37 individually identified in the signing records: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29, so one of the nine remains unnamed. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer', not as a founding member; no Council admission is recorded. Singapore's MDDI told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it; it is not a member and has not accepted. China's NPC approved ratification on 6 November 2026, Nicaragua's Presidency ratified by decree No. 11-2026 of 16 October 2026, and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; all are domestic acts and no deposit was verified. The number of deposited instruments is unknown.",
     "unknowns": [
       "The MFA reports 38 founding members as of 9 November 2026, but the signing records individually identify 37. The October 2026 progress report says nine States joined after the initial 29; eight are named in the 31 July account, so one of the nine - the 38th member - is not named. Bangladesh is not that member: it announced on 1 August 2026 that it would join 'initially as an observer'. Singapore's MDDI told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it, without saying whether the invitation is to membership or observer status; Singapore is not a member and has not accepted.",
       "China is the depositary under Article 18. No public depositary register, status table or notification of signatures, ratifications, acceptances, approvals, accessions or entry into force was located. The number of deposited instruments is therefore unknown; zero deposits are individually verified, but that is not a verified total of zero.",
-      "China's NPC approval of 6 November 2026 and Russia's Government acceptance of 17 November 2026 are domestic acts. The date of any deposit, and the treaty's entry into force, were not verified.",
+      "China's NPC approval of 6 November 2026, Nicaragua's ratification decree of 16 October 2026 and Russia's Government acceptance of 17 November 2026 are domestic acts. The dates of any deposits, and the treaty's entry into force, were not verified.",
       "The Agreement remains open to accession after 31 July 2026 (Article 14(3)); later accessions are not Founding Members and are not included in this list.",
       "The exact date on which the MFA's 38-country count was reached is not stated; the October 2026 progress report already gives 38.",
       "No act constituting the Council or the Secretariat, appointing a Secretary-General, adopting rules of procedure or a budget, or opening a secretariat in Shanghai was located. The NDRC described 'material operation' as a process under way on 3 November 2026, not as completed."
@@ -329,20 +338,21 @@
       {
         "date": "2026-11-26",
         "field": "status",
-        "locator": "Article 15 (three instruments of ratification, acceptance or approval); MFA press conference of 9 November 2026; Russian Government decree No. 1532 of 17 November 2026; NDRC account of the WAICO promotion meeting of 17 July 2026",
+        "locator": "Article 15 (three instruments of ratification, acceptance or approval); MFA press conference of 9 November 2026; Nicaraguan Presidential Decree No. 11-2026 of 16 October 2026 (La Gaceta No. 194 of 22 October 2026); Russian Government decree No. 1532 of 17 November 2026; NDRC account of the WAICO promotion meeting of 17 July 2026",
         "method": "official_page_read",
         "note": "No depositary notification located; entry into force not confirmed, so no definitive in-force or not-in-force status is asserted.",
         "source_ids": [
           "npc-agreement-text",
           "mfa-ratification",
           "russia-decree-1532",
-          "ndrc-waico-promotion-2026-07-20"
+          "ndrc-waico-promotion-2026-07-20",
+          "nicaragua-gaceta-194"
         ]
       },
       {
         "date": "2026-11-26",
         "field": "parties",
-        "locator": "MFA statements of 9 November 2026 and 31 July 2026; Indonesian government list of 17 July 2026; October 2026 progress report; NDRC press conference of 3 November 2026; MDDI parliamentary reply of 9 September 2026",
+        "locator": "MFA statements of 9 November 2026 and 31 July 2026; Indonesian government list of 17 July 2026; October 2026 progress report; NDRC press conference of 3 November 2026; Nicaraguan La Gaceta No. 194 of 22 October 2026; Russian decree No. 1532 of 17 November 2026; MDDI parliamentary reply of 9 September 2026",
         "method": "official_page_read",
         "note": "38 declared, 37 individually identified.",
         "source_ids": [
@@ -351,7 +361,9 @@
           "mfa-31-july",
           "mfa-progress-report",
           "ndrc-3-nov-2026",
-          "mddi-singapore-response"
+          "mddi-singapore-response",
+          "nicaragua-gaceta-194",
+          "russia-decree-1532"
         ]
       },
       {
@@ -463,6 +475,16 @@
       "url": "http://www.publication.pravo.gov.ru/document/0001202611180027"
     },
     {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "nicaragua-gaceta-194",
+      "kind": "official_primary",
+      "language": "es",
+      "note": "La Gaceta, Diario Oficial No. 194 of 22 October 2026, pp. 10281-10282: Presidential Decree No. 11-2026 of 16 October 2026 ratifies the Agreement, after National Assembly Decree A.N. No. 8933 of 29 September 2026 (La Gaceta No. 179 of 1 October 2026). Article 2 orders the instrument of ratification to be issued for deposit with the Government of the People's Republic of China. The decree is a domestic ratification and an instruction to deposit; it is not evidence that the deposit occurred.",
+      "publisher": "La Gaceta, Diario Oficial de la República de Nicaragua",
+      "url": "https://digesto.asamblea.gob.ni/consultas/util/pdf.php?rdd=T0OUxmN%2Bby4%3D&type=rdd"
+    },
+    {
       "accessed": "2026-11-25",
       "http_status": 200,
       "id": "mddi-singapore-response",
@@ -548,15 +570,23 @@
       "id": "npc-agreement-text",
       "kind": "official_primary",
       "language": "zh",
+      "local_path": "source/waico-agreement-2026-zh.html",
       "note": "Official Chinese text of the Agreement, published 18 November 2026. Articles 1-18 were read in full: legal personality and civilian-domain limitation (Articles 1 and 3), membership and observers (Articles 10-11), signature and accession (Article 14), entry into force (Article 15) and depositary and authentic texts (Article 18). The host did not complete a TLS handshake from this environment on 25 November 2026; the official page is served over HTTP. The HTML is stored and segmented into 18 article units.",
       "publisher": "National People's Congress of the People's Republic of China",
-      "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html",
-      "local_path": "source/waico-agreement-2026-zh.html",
-      "sha256": "4494d808c722cf0fb698a000e5b0765a8ca7affea7c2988a9c0b03c68af64742"
+      "sha256": "4494d808c722cf0fb698a000e5b0765a8ca7affea7c2988a9c0b03c68af64742",
+      "url": "http://www.npc.gov.cn/npc/c2/c30834/202611/t20261118_458879.html"
     }
   ],
   "status": "unknown",
-  "status_note": "Treaty, binding on States that become parties, but entry into force is not confirmed as of 26 November 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; both are domestic acts, recorded separately from international consent, and no deposited instrument was verified. The number of deposits is unknown, not zero: China is the depositary under Article 18 and no public depositary register or notification was located. China's MFA reports 38 founding members, but the signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. On 3 November 2026 the NDRC said China is advancing WAICO's 'material operation' process, wording that describes work in progress rather than constituted organs. A WAICO promotion meeting convened by the NDRC and MFA on 17 July 2026 discussed the organization's construction and operation with signatory representatives but was not a Council plenary. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer'; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore's Ministry of Digital Development and Information told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it; the reply does not say whether the invitation is to membership or observer status, and Singapore has not accepted. The 37/38 discrepancy is recorded, not resolved.",
+  "status_note": "Treaty, binding on States that become parties, but entry into force is not confirmed as of 26 November 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026, Nicaragua's Presidency ratified the Agreement by decree No. 11-2026 of 16 October 2026, and Russia's Government accepted it by decree No. 1532 of 17 November 2026; all three are domestic acts, recorded separately from international consent, and no deposited instrument was verified. The number of deposits is unknown, not zero: China is the depositary under Article 18 and no public depositary register or notification was located. China's MFA reports 38 founding members, but the signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. On 3 November 2026 the NDRC said China is advancing WAICO's 'material operation' process, wording that describes work in progress rather than constituted organs. A WAICO promotion meeting convened by the NDRC and MFA on 17 July 2026 discussed the organization's construction and operation with signatory representatives but was not a Council plenary. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer'; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore's Ministry of Digital Development and Information told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it; the reply does not say whether the invitation is to membership or observer status, and Singapore has not accepted. The 37/38 discrepancy is recorded, not resolved.",
+  "text": {
+    "extraction_note": "Official Chinese text extracted from the NPC page and segmented into 18 article units. The English Digital Watch reproduction was consulted but is not stored or used for the text.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "zh",
+    "primary_text": "text/zh.txt",
+    "units_mode": "treaty-zh"
+  },
   "title": {
     "official": "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization",
     "short": "WAICO Establishment Agreement"
@@ -617,17 +647,14 @@
         "check": "Deposits, organs, the 38th founding member and the Global AI Governance Action Plan rechecked after the 25 November review.",
         "date": "2026-11-26",
         "result": "No change in the count: the MFA statement of 9 November 2026 and Wang Yi's article of 12 August 2026 report 38 founding members without naming the 38th. The October 2026 progress report says 29 States signed at the ceremony and nine later, naming Brunei, Vietnam, Georgia and Tanzania and saying five other countries also signed; the 31 July 2026 MFA account names eight of the nine, so one remains unnamed. No depositary register or notification, and no deposited instrument, was located. The NDRC and MFA convened a WAICO promotion meeting on 17 July 2026 with representatives of signatory States to discuss the organization's construction and operation; the account describes a working meeting, not a Council plenary, and no act constituting the Council or Secretariat, appointing a Secretary-General or adopting rules or a budget was located. China's NPC approval of 6 November 2026 and Russia's acceptance of 17 November 2026 remain domestic acts with no verified deposit. The Global AI Governance Action Plan, published at the 2025 World AI Conference on 26 July 2025, is a Chinese-proposed conference action plan with no State adherent list, so it is not catalogued as a separate instrument."
+      },
+      {
+        "check": "Nicaragua's ratification and deposit status checked against the official gazette.",
+        "date": "2026-11-26",
+        "result": "La Gaceta No. 194 of 22 October 2026 publishes Presidential Decree No. 11-2026 of 16 October 2026, which ratifies the Agreement and orders the instrument of ratification to be issued for deposit with China. No deposit or depositary notification was located; the decree is a domestic act, not a deposit."
       }
     ],
     "level": "metadata_verified",
     "notes": "The official Chinese HTML was acquired and segmented into 18 article units. The record remains metadata_verified; no deposited or certified copy was acquired."
-  },
-  "text": {
-    "extraction_note": "Official Chinese text extracted from the NPC page and segmented into 18 article units. The English Digital Watch reproduction was consulted but is not stored or used for the text.",
-    "full_text": true,
-    "manifest": "manifest.json",
-    "primary_language": "zh",
-    "primary_text": "text/zh.txt",
-    "units_mode": "treaty-zh"
   }
 }

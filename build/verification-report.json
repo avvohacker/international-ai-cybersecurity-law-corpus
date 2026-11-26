@@ -9,7 +9,7 @@
     {
       "code": "plain_http_source",
       "level": "warning",
-      "message": "sources[13] uses plain HTTP; the host must not support TLS for this to be acceptable",
+      "message": "sources[14] uses plain HTTP; the host must not support TLS for this to be acceptable",
       "where": "waico-establishment-agreement-2026.json"
     }
   ]
