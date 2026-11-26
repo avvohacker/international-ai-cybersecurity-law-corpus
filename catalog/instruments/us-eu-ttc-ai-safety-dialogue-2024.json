@@ -3,7 +3,7 @@
   "category": "non_binding_instrument",
   "dates": {
     "adopted": "2024-04-05",
-    "notes": "Sixth ministerial meeting of the U.S.–EU Trade and Technology Council, Leuven, 4–5 April 2024; the joint statement was published on 5 April 2024. The first technical Dialogue under the commitment was held on 11 July 2024. A stock-taking meeting of high-level officials was held virtually on 16 September 2024; the European Commission and USTR readouts record continued collaboration on artificial intelligence but announce no further ministerial. No TTC ministerial or joint statement after that stock-taking was located; the European Commission's fact page is titled '(2021-2024)' and its older TTC topic page is marked archived. The separate 'Digital in the EU-US Trade and Technology Council' policy page, last updated on 9 October 2026, still describes the TTC and its ten working groups, but its timeline ends in September 2024. No later meeting of the AI-safety Dialogue was located.",
+    "notes": "Sixth ministerial meeting of the U.S.–EU Trade and Technology Council, Leuven, 4–5 April 2024; the joint statement was published on 5 April 2024. The first technical Dialogue under the commitment was held on 11 July 2024. A stock-taking meeting of high-level officials was held virtually on 16 September 2024; the European Commission and USTR readouts record continued collaboration on artificial intelligence but announce no further ministerial. No TTC ministerial or joint statement after that stock-taking was located; the European Commission's fact page is titled '(2021-2024)' and its older TTC topic page is marked archived. The separate 'Digital in the EU-US Trade and Technology Council' policy page, last updated on 9 October 2026, still describes the TTC and its ten working groups, but its timeline ends in September 2024. The Commission's broader 'International digital cooperation' page, last updated on 20 November 2026, describes the Digital Dialogue framework but records no United States dialogue. No later meeting of the AI-safety Dialogue was located.",
     "published": "2024-04-05",
     "verified_on": "2026-11-26"
   },
@@ -16,7 +16,7 @@
     "The joint statement creates no binding obligations, ratification, depositary, monitoring, reporting or dispute settlement.",
     "No TTC ministerial, joint statement or working-group output after the 16 September 2024 stock-taking was located. The Commission's digital-policy TTC page (last updated 9 October 2026) still describes the TTC and its ten working groups, but its timeline ends in September 2024; the older topic page is archived, and no formal closure decision was located.",
     "No meeting of the AI-safety Dialogue after 11 July 2024 was located on official EU or US pages.",
-    "The August 2025 US-EU trade framework, in force since 1 July 2026, provides for 'setting up a Digital Dialogue'; the Commission's trade-deal page (updated 27 July 2026) lists it as an outcome, but the 1 July 2026 briefing described only explanatory talks ahead of a 'potential future' dialogue, with scope, frequency and level still to be defined. The Commission's 'Digital Dialogues' page (updated 9 October 2026) has no United States section, and no launch document was located.",
+    "The August 2025 US-EU trade framework, in force since 1 July 2026, provides for 'setting up a Digital Dialogue'; the Commission's trade-deal page (updated 27 July 2026) lists it as an outcome, but the 1 July 2026 briefing described only explanatory talks ahead of a 'potential future' dialogue, with scope, frequency and level still to be defined. The Commission's 'Digital Dialogues' page (updated 9 October 2026) has no United States section, and the broader 'International digital cooperation' page (updated 20 November 2026) records no United States dialogue; no launch document was located.",
     "Only the English versions were read; other language versions were not checked.",
     "The separate U.S.–EU Administrative Arrangement on AI and computing is not catalogued as an AI-safety agreement.",
     "The full text is stored and segmented, but it was not read end-to-end for legal analysis in this acquisition pass."
@@ -46,7 +46,8 @@
     "assertions": [],
     "discovered_via": "European Commission and USTR TTC pages; NIST and European Commission technical-dialogue pages.",
     "search_dates": [
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-26"
     ]
   },
   "related": [
@@ -206,6 +207,16 @@
     {
       "accessed": "2026-11-26",
       "http_status": 200,
+      "id": "ec-international-digital-cooperation",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "European Commission policy page 'International digital cooperation', last updated 20 November 2026. It describes the EU's Digital Dialogue framework but records no United States dialogue; the dedicated Digital Dialogues page (9 October 2026) also has no United States section. It separately announces an intention to launch a UK–EU Digital Partnership in early 2027.",
+      "publisher": "European Commission, Shaping Europe’s digital future",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/international-digital-cooperation"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
       "id": "ec-briefing-01-july-2026",
       "kind": "official_secondary",
       "language": "en",
@@ -215,7 +226,7 @@
     }
   ],
   "status": "adopted",
-  "status_note": "Political joint statement, not a treaty. The AI-safety commitment is the establishment of a Dialogue between the European AI Office and the U.S. AI Safety Institute. No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located. The separate U.S.–EU Administrative Arrangement on AI and computing is a research-cooperation instrument, not an AI-safety agreement. The joint statement creates no binding obligations, ratification, depositary or dispute settlement. The stock-taking meeting of 16 September 2024 was held virtually at the level of senior officials; the Commission and USTR readouts record continued collaboration on artificial intelligence and do not announce a further ministerial. No TTC ministerial or joint statement after that stock-taking was located. The Commission's digital-policy TTC page (last updated 9 October 2026) still describes the TTC and its ten working groups, but its timeline ends in September 2024; the older topic page is archived, and no formal closure decision was located. No later meeting of the AI-safety Dialogue was located. The August 2025 US-EU trade framework entered into force on 1 July 2026; the Commission's trade-deal page lists 'setting up a Digital Dialogue', but the 1 July 2026 briefing described only explanatory talks ahead of a 'potential future' dialogue, with scope, frequency and level still to be defined. The Commission's 'Digital Dialogues' page (updated 9 October 2026) has no United States section, and no launch document was located.",
+  "status_note": "Political joint statement, not a treaty. The AI-safety commitment is the establishment of a Dialogue between the European AI Office and the U.S. AI Safety Institute. No standalone US–EU AI-safety MOU, administrative arrangement or terms of reference was located. The separate U.S.–EU Administrative Arrangement on AI and computing is a research-cooperation instrument, not an AI-safety agreement. The joint statement creates no binding obligations, ratification, depositary or dispute settlement. The stock-taking meeting of 16 September 2024 was held virtually at the level of senior officials; the Commission and USTR readouts record continued collaboration on artificial intelligence and do not announce a further ministerial. No TTC ministerial or joint statement after that stock-taking was located. The Commission's digital-policy TTC page (last updated 9 October 2026) still describes the TTC and its ten working groups, but its timeline ends in September 2024; the older topic page is archived, and no formal closure decision was located. No later meeting of the AI-safety Dialogue was located. The August 2025 US-EU trade framework entered into force on 1 July 2026; the Commission's trade-deal page lists 'setting up a Digital Dialogue', but the 1 July 2026 briefing described only explanatory talks ahead of a 'potential future' dialogue, with scope, frequency and level still to be defined. The Commission's 'Digital Dialogues' page (updated 9 October 2026) has no United States section, and the broader 'International digital cooperation' page (updated 20 November 2026) records no United States dialogue; no launch document was located.",
   "text": {
     "extraction_note": "Official USTR HTML publication. The article body of the full joint statement was extracted to one document-level unit; this is not limited to the AI-safety section.",
     "full_text": true,
@@ -263,7 +274,7 @@
       {
         "check": "Post-2024 TTC and Digital Dialogue status rechecked on official Commission pages.",
         "date": "2026-11-26",
-        "result": "The digital-policy TTC page (updated 9 October 2026) still describes the ten working groups but its timeline ends in September 2024, and no later ministerial or formal closure was located. The trade framework entered into force on 1 July 2026 and the trade-deal page lists 'setting up a Digital Dialogue'; the 1 July 2026 briefing describes explanatory talks ahead of a potential future dialogue, with scope, frequency and level to be defined. The Digital Dialogues page (9 October 2026) has no United States section; no launch document was located."
+        "result": "The digital-policy TTC page (updated 9 October 2026) still describes the ten working groups but its timeline ends in September 2024, and no later ministerial or formal closure was located. The trade framework entered into force on 1 July 2026 and the trade-deal page lists 'setting up a Digital Dialogue'; the 1 July 2026 briefing describes explanatory talks ahead of a potential future dialogue, with scope, frequency and level to be defined. The Digital Dialogues page (9 October 2026) and the broader International digital cooperation page (20 November 2026) contain no United States Digital Dialogue entry; no launch document was located."
       },
       {
         "check": "Format, hash and unit anchors verified.",

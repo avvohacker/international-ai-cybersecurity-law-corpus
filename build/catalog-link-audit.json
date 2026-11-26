@@ -1,10 +1,10 @@
 {
-  "checked": 271,
+  "checked": 272,
   "audited_on": "2026-11-26",
   "scope": "catalog",
   "instruments": 77,
   "summary": {
-    "ok": 180,
+    "ok": 181,
     "anti_bot": 81,
     "broken": 0,
     "transient": 10,
@@ -2392,6 +2392,16 @@
       "source_id": "ec-digital-dialogues-page",
       "label": "European Commission, Shaping Europe’s digital future",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/digital-dialogues",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "us-eu-ttc-ai-safety-dialogue-2024",
+      "source_id": "ec-international-digital-cooperation",
+      "label": "European Commission, Shaping Europe’s digital future",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/international-digital-cooperation",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
