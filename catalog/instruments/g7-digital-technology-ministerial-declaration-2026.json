@@ -14,8 +14,8 @@
     "Non-binding: it creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
     "A broad digital-and-technology ministerial declaration, not an AI-specific instrument; only the AI-related sections are recorded, and the digital-infrastructure, energy and minors-online sections are outside the corpus's scope.",
     "No itemised list of adopting States or ministers is published in the text; it is issued collectively by the G7 Digital and Technology Ministers.",
-    "The separately issued G7 deliverables it refers to (the Vision on AI openness, the G7 SME AI Readiness Tool, the Policy Paper on Agentic AI, the Common G7 Set of Principles for minors online, the International Overview on resilience and resource efficiency) are not catalogued individually.",
-    "The Hiroshima AI Process Reporting Framework itself, which the declaration commends in its revised form, is not analysed in this record.",
+    "The separately issued G7 deliverables were checked on 26 November 2026: the Vision on AI openness is a political framing text; the G7 SME AI Readiness Tool is an OECD-hosted self-assessment tool; the International Overview on resilience and resource efficiency is a compilation of practices; the Policy Paper on Agentic AI is an Inria-led analysis; and the Common G7 Set of Principles for minors online is a broader digital-safety text. None is a new AI-specific treaty or binding instrument, so none is catalogued separately. The Vision remains a possible future non-binding record if the corpus decides to cover framing documents.",
+    "The revised Hiroshima AI Process Reporting Framework 2.0, which the declaration commends, is a voluntary company-reporting framework; 31 submissions were published on 2 October 2026. It is not a new intergovernmental instrument and is not catalogued separately.",
     "Only the English text was read; the French version published by the French presidency was not acquired.",
     "The stored text is document-level; the AI-related provisions are mapped in relevance.ai_provisions, but no section-level units are created."
   ],
@@ -168,6 +168,11 @@
         "check": "Official HTML page downloaded; the extracted text was checked for the Paris meeting, the four priority headings and the closing passage.",
         "date": "2026-11-26",
         "result": "18,471 characters; 1 unit; four priorities and closing passage present."
+      },
+      {
+        "check": "Separate G7 2026 deliverables checked against the official declaration, the Japanese MIC results page and the Hiroshima AI Process Reporting Framework page.",
+        "date": "2026-11-26",
+        "result": "The Vision on AI openness, SME AI Readiness Tool, resilience overview, agentic-AI policy paper, minors-online principles and HAIP Reporting Framework 2.0 are separate deliverables; none is a new AI-specific treaty or binding instrument. HAIP 2.0 responses from 31 companies were published on 2 October 2026."
       }
     ],
     "level": "metadata_verified",
