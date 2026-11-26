@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 158914,
+      "media_type": "application/pdf",
+      "note": "Official OECD.AI PDF reprint of GPAI(2023)2, the 2023 Ministerial Declaration approved by the GPAI Ministerial Council in New Delhi on 13 December 2023. Three pages; page 1 is an image cover. The one.oecd.org endpoint returned HTTP 403 to the automated client on 26 November 2026.",
+      "path": "source/gpai-2023-ministerial-declaration-en.pdf",
+      "role": "original",
+      "sha256": "f23c0ce391981242b608f14972db5c3b5adfcce86aa900fc194a8f879530ee62",
+      "source_url": "https://wp.oecd.ai/app/uploads/2025/01/2023-GPAI-Ministerial-Declaration.pdf"
+    },
+    {
+      "bytes": 6586,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "19c17575e3aab6254171ff248d7e709a12d8f794e2c3eaf85216a5334f60e675"
+    },
+    {
+      "bytes": 281,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "d239806492957a6cbb6e4685f05aaad342de7fbdac23bcb0727af36568a95636"
+    },
+    {
+      "bytes": 10301,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "4472210ca7b784b89dda9a7846b5fbee1c4126a4bfb1a3f4b679bd67a14f2079"
+    }
+  ],
+  "instrument_id": "gpai-2023-ministerial-declaration",
+  "primary_text": "text/en.txt"
+}

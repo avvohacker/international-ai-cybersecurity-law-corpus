@@ -321,6 +321,16 @@
   },
   {
     "accessed": "2026-11-26",
+    "bytes": 158914,
+    "dest": "source/gpai-2023-ministerial-declaration-en.pdf",
+    "instrument_id": "gpai-2023-ministerial-declaration",
+    "media_type": "application/pdf",
+    "note": "Official OECD.AI PDF reprint of GPAI(2023)2, the 2023 Ministerial Declaration approved by the GPAI Ministerial Council in New Delhi on 13 December 2023. Three pages; page 1 is an image cover. The one.oecd.org endpoint returned HTTP 403 to the automated client on 26 November 2026.",
+    "sha256": "f23c0ce391981242b608f14972db5c3b5adfcce86aa900fc194a8f879530ee62",
+    "url": "https://wp.oecd.ai/app/uploads/2025/01/2023-GPAI-Ministerial-Declaration.pdf"
+  },
+  {
+    "accessed": "2026-11-26",
     "bytes": 108084,
     "dest": "source/g7-digital-technology-ministerial-declaration-2026-en.html",
     "instrument_id": "g7-digital-technology-ministerial-declaration-2026",

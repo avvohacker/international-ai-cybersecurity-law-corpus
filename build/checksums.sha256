@@ -38,6 +38,7 @@
 1764f0993b91f4a9fc0bf4fcbabbc52242b478035df78b3f50e9d361a9641ebc  corpus/g7-digital-technology-ministerial-declaration-2026/manifest.json
 193df140007140796e6cdc39ab44c2a3533739298184583f1afaf9674e3e304a  corpus/ccw-gge-laws-2026/pages.json
 194b60eb4c37172c965dc63d7ff6877f9e70400c8e737ccc2d14ba3203551a80  corpus/sadea-2020/text/en.txt
+19c17575e3aab6254171ff248d7e709a12d8f794e2c3eaf85216a5334f60e675  corpus/gpai-2023-ministerial-declaration/text/en.txt
 1ac6c8a85f55446cdb53697b57c6be3ce8757068043992955eda571e7fe52f23  corpus/coe-cets-225/source/cets-225-en-ohchr-2026-11-25.pdf
 1b151842db84367ef5004ff274eb8ce4b9e6e73fa568aaf9475791df08563cb9  corpus/un-ga-res-79-1/text/en.txt
 1b239147f630899ee66e7dd5b0d278ad408db2b139236aa25dc46c981dc90c75  corpus/pax-silica-declaration-2025/units.jsonl
@@ -89,6 +90,7 @@
 42c3095301238dd8fdd778bfe0c5d950fab014f54b80e07c51ae89399c3676d1  corpus/san-francisco-declaration-2026/pages.json
 43177445d3a134afe1dc40d7bd48442d4289aa4f838095706e8e1406a4f3377d  corpus/un-cybercrime-convention-2024/manifest.json
 444793f116b262934990ba1ba7959dce102665ada2ae36272785bb919201f015  corpus/un-ga-res-78-241/text/en.txt
+4472210ca7b784b89dda9a7846b5fbee1c4126a4bfb1a3f4b679bd67a14f2079  corpus/gpai-2023-ministerial-declaration/units.jsonl
 4494d808c722cf0fb698a000e5b0765a8ca7affea7c2988a9c0b03c68af64742  corpus/waico-establishment-agreement-2026/source/waico-agreement-2026-zh.html
 4564c7ee68658754590953f653b6aa43582d63fdd16f8614ecd0b4cf89c96485  corpus/au-malabo-convention-2014/source/au-malabo-convention-2014-en-scanned.pdf
 45af0d41ef340e3a76647e93dfebf4001c3e57820906c5a2a1009e7caf441985  corpus/iccpr-1966/pages.json
@@ -187,6 +189,7 @@
 9605ff00ef0d34ff0b607befd17bc6d00c4369d9204a2c364bec387c2cab8583  corpus/coe-cets-224/pages.json
 96dc25e7785665a716632e00765f962f0a11b11516855167afb9bb42c75095cd  corpus/pall-mall-code-of-practice-2025/source/pall-mall-code-2025-en.html
 97122b6fd60c9f0b10d8a8e086734497a65922c0fdafcea83393f785248636d7  corpus/sco-information-security-agreement-2009/manifest.json
+9722401e9314e7ca5cc03d4d58db7a7e298d8a4c3063089727b28abadc724da8  corpus/gpai-2023-ministerial-declaration/manifest.json
 97f4bc0f71b5b6cc1fde55e43fa25fed045756de87c7a673610f9dea9d861646  corpus/pall-mall-code-of-practice-2025/units.jsonl
 980167593e59a50fea9d041979eea519df2c01267f8f92c52c9a8b2577ad449f  corpus/arab-unified-ai-strategy-2025/text/ar.txt
 9880bfe1a287b5673be3d0d5e7a603bc95639c83ff03701c07d3f161256107df  corpus/reaim-call-to-action-2023/units.jsonl
@@ -259,6 +262,7 @@ ce137a93c42e4c60255add6d9041449e69755c2a011c39131d25a41f1aeda30a  corpus/clad-ib
 ceed2fa8182257ecfe2ca5ad1d23d257fcb393ad97ddac708d1f3f573f65e57b  corpus/bletchley-declaration-2023/pages.json
 cf6a3d5c848a19756700f0e5ac3d1223b2dffb973136ba4c1658a6fa70ccd7cb  corpus/un-ga-res-79-325/units.jsonl
 d13d1485b4f82a86814e6946e07fee5d01382ca9f11d0a69b4777fb716679cb3  corpus/un-ga-res-80-57/pages.json
+d239806492957a6cbb6e4685f05aaad342de7fbdac23bcb0727af36568a95636  corpus/gpai-2023-ministerial-declaration/pages.json
 d5a1ac20b31add9c757ba6536e7c80c0cb8f28a547be9f89bd660687205c23ff  corpus/pax-silica-declaration-2025/source/pax-silica-declaration-2025-en.html
 d5d38a49519121a3cc9a37a623f3047f4cefb25423494cee6780ad75eeeef0af  corpus/budapest-convention-2001/source/budapest-convention-2001-en.pdf
 d879f9b54c6068aae57ebaead9d90ddaa46f2503312b9185367a724fa8da2f4a  corpus/eu-gpai-code-of-practice-2025/source/gpai-code-safety-security-2025-en.pdf
@@ -296,6 +300,7 @@ f01906ba0581d7329f685d49656e9a7cb3c5d0a8790219e1600c1edb30893d08  corpus/vclt-19
 f02eb64d7170cbe0d36579b49b1310709c56ce985c2f1f5c1b77dbd32abe146a  corpus/brazil-china-ai-mou-2025/manifest.json
 f0dc13647ce947d06ef86deaa1e88cc9f93b2d1999282681088428497c0bab3c  corpus/us-eu-ttc-ai-safety-dialogue-2024/units.jsonl
 f1527d45875dd6db9c0db39dfc4a7bc3962008c169c6ba6c261eac889426c2fc  corpus/ksdpa-2022/manifest.json
+f23c0ce391981242b608f14972db5c3b5adfcce86aa900fc194a8f879530ee62  corpus/gpai-2023-ministerial-declaration/source/gpai-2023-ministerial-declaration-en.pdf
 f27378b88ae79766a451a78e349646868a47294495564427f4bc3f7cda2dc64a  corpus/un-hrc-res-63-15/manifest.json
 f31b5107d7936af5e7648274c1ad3795287445e8db6214110ad87994ddb8ef2a  corpus/pax-silica-declaration-2025/pages.json
 f33a1369c7e0091e6bafd5c6919bf0a194c93c6992cbefbf3f978a2625a2062c  corpus/frontier-ai-safety-commitments-2024/manifest.json

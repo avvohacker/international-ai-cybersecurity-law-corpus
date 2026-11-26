@@ -2,7 +2,7 @@
   "counts": {
     "by_binding": {
       "binding": 22,
-      "non_binding": 54
+      "non_binding": 55
     },
     "by_category": {
       "agreement_ai_provisions": 5,
@@ -10,24 +10,24 @@
       "cyber_treaty": 9,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 43,
+      "non_binding_instrument": 44,
       "preparatory_interpretive": 2,
       "regional_law": 1,
       "supranational_law": 3,
       "technical_standard": 8
     },
     "by_domain": {
-      "ai": 61,
+      "ai": 62,
       "cyber": 15,
       "joint": 0
     },
     "by_verification": {
-      "full_text_checked": 11,
+      "full_text_checked": 12,
       "metadata_verified": 65
     },
-    "full_texts": 61,
-    "total": 76,
-    "with_local_original": 60
+    "full_texts": 62,
+    "total": 77,
+    "with_local_original": 61
   },
   "full_text_ids": [
     "afcfta-digital-trade-protocol-2024",
@@ -58,6 +58,7 @@
     "g20-ai-prosperity-objectives-2026",
     "g7-digital-technology-ministerial-declaration-2026",
     "g7-hiroshima-code-2023",
+    "gpai-2023-ministerial-declaration",
     "ibero-ai-declaration-2024",
     "iccpr-1966",
     "ksdpa-2022",
@@ -8837,6 +8838,195 @@
         ],
         "level": "full_text_checked",
         "notes": "Full text preserved. The PDF is owner-password protected; extraction succeeded, and the extracted text is stored. No monitoring data is included in this record."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "adopted": "2023-12-13",
+        "notes": "Approved by the GPAI Ministerial Council at its fifth meeting in New Delhi on 13 December 2023, in the context of the GPAI Summit. The OECD document is dated 14 December 2023. The declaration records political commitments; it is not a treaty and has no signature, ratification, depositary or entry-into-force procedure.",
+        "published": "2023-12-14",
+        "verified_on": "2026-11-26"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "Non-binding: it creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+        "The declaration refers collectively to the Ministers of GPAI but does not list the adopting members; no itemised adoption or endorsement list is published in the document.",
+        "It is not the instrument that establishes GPAI. The GPAI Terms of Reference are a separate 2022 document and state that membership and participation create no legally binding rights or obligations.",
+        "Only the English OECD text was stored; no authentic-language clause exists because the text is not a treaty.",
+        "Page 1 of the stored PDF is an image cover. Extraction starts on page 2 with the document header, which is preserved in the front-matter unit rather than treated as a substantive preamble.",
+        "Current GPAI membership was not fixed from the official pages, which describe different totals; the declaration itself supplies no membership list."
+      ],
+      "id": "gpai-2023-ministerial-declaration",
+      "instrument_type": "declaration",
+      "issuer": [
+        {
+          "name": "Global Partnership on Artificial Intelligence (GPAI) Ministerial Council",
+          "role": "issuer",
+          "url": "https://oecd.ai/en/gpai-declarations"
+        },
+        {
+          "name": "GPAI Secretariat (hosted by the OECD)",
+          "role": "secretariat",
+          "url": "https://oecd.ai/en/about/about-gpai"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "en"
+        ],
+        "note": "The official OECD document is in English. No authentic-language clause exists because the declaration is not a treaty.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "A ministerial declaration approved by the GPAI Ministerial Council. It records political commitments to trustworthy AI, GPAI projects and international cooperation, but creates no legal obligation and has no signature, ratification, depositary, entry-into-force, monitoring or enforcement mechanism. The separate GPAI Terms of Reference state that membership and participation do not entail legally binding rights or obligations.",
+        "source_ids": [
+          "oecd-gpai-declaration-pdf",
+          "oecd-gpai-tor"
+        ]
+      },
+      "provenance": {
+        "assertions": [
+          {
+            "date": "2026-11-26",
+            "field": "dates",
+            "locator": "GPAI(2023)2, cover and paragraph 1",
+            "method": "official_text_read",
+            "note": "The document is dated 14 December 2023 and records approval by the GPAI Ministerial Council at its fifth meeting in New Delhi on 13 December 2023.",
+            "source_ids": [
+              "oecd-gpai-declaration-pdf"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "legal_nature",
+            "locator": "GPAI Terms of Reference, paragraph 2",
+            "method": "official_text_read",
+            "note": "The Terms of Reference state that membership and participation do not entail any legally binding rights or obligations under domestic or international law.",
+            "source_ids": [
+              "oecd-gpai-tor"
+            ]
+          }
+        ],
+        "discovered_via": "The official OECD.AI GPAI Council documents page lists the December 2023 New Delhi declaration and links its PDF. The declaration and the separate GPAI Terms of Reference were then read directly.",
+        "search_dates": [
+          "2026-11-26"
+        ]
+      },
+      "related": [
+        {
+          "id": "oecd-ai-recommendation-2019",
+          "note": "The declaration reaffirms the GPAI commitment to the principles for responsible stewardship of trustworthy AI and the values reflected in the OECD Recommendation on AI.",
+          "relation": "related"
+        },
+        {
+          "id": "g7-digital-technology-ministerial-declaration-2026",
+          "note": "The G7 2026 declaration records that the Hiroshima AI Process Reporting Framework is supported by the OECD through the Global Partnership on AI.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Paragraph 2 — commitment to the principles for responsible stewardship of trustworthy AI and the values reflected in the OECD Recommendation on AI.",
+          "Paragraph 3 — commitment to work within members' jurisdictions to advance safe, secure and trustworthy AI through regulations, policies, standards and other initiatives.",
+          "Paragraph 5 — commitment to support the sustainability of GPAI projects by adopting relevant projects in line with national contexts and shared priorities.",
+          "Paragraphs 6–9 — recognition of advanced-AI opportunities and risks, equitable access to computing, data and other resources, capacity-building, and sustainable agriculture as a GPAI thematic priority.",
+          "Paragraph 12 — acknowledgement of GPAI's contribution to the Hiroshima AI Process, the Bletchley Declaration and the G20 New Delhi Leaders' Declaration.",
+          "Paragraphs 13–14 — commitment to strengthen GPAI as a multilateral initiative and to pursue a diverse membership, including low- and middle-income countries."
+        ],
+        "excluded_scope": "A non-binding ministerial declaration. It does not establish GPAI, create legal obligations, adopt an implementation or monitoring mechanism, or bind any State or organisation. The GPAI Terms of Reference are a separate institutional document and are not merged into this record.",
+        "reason": "The declaration is an AI-specific ministerial text with substantive commitments on trustworthy AI, GPAI projects, capacity-building and international cooperation. It is catalogued as a non-binding political act, not as a treaty or as the instrument establishing GPAI.",
+        "source_ids": [
+          "oecd-gpai-declaration-pdf",
+          "oecd-gpai-tor"
+        ]
+      },
+      "rights": {
+        "licence": "OECD terms of use for official documents; the text is reproduced unaltered",
+        "note": "Official OECD/GPAI publication. The publisher's terms continue to apply; the repository does not relicense the text.",
+        "status": "public_official_text"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "oecd-gpai-declaration-pdf",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "Official OECD.AI PDF reprint of GPAI(2023)2, 3 pages, 158,914 bytes; downloaded and stored. The one.oecd.org endpoint returned HTTP 403 to the automated client on 26 November 2026.",
+          "publisher": "OECD / Global Partnership on Artificial Intelligence",
+          "sha256": "f23c0ce391981242b608f14972db5c3b5adfcce86aa900fc194a8f879530ee62",
+          "url": "https://wp.oecd.ai/app/uploads/2025/01/2023-GPAI-Ministerial-Declaration.pdf"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "oecd-gpai-declarations",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "OECD.AI page of GPAI Council documents; lists the December 2023 New Delhi declaration and links the official PDF.",
+          "publisher": "OECD.AI",
+          "url": "https://oecd.ai/en/gpai-declarations"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": null,
+          "id": "oecd-gpai-tor",
+          "kind": "official_primary",
+          "language": "en",
+          "note": "GPAI Terms of Reference GPAI(2022)3/FINAL, approved by the GPAI Council in Tokyo on 22 November 2022. Paragraph 2 states that membership and participation do not entail legally binding rights or obligations. The document was read through the extraction tool; the direct automated endpoint returned HTTP 403 on 26 November 2026.",
+          "publisher": "OECD / Global Partnership on Artificial Intelligence",
+          "url": "https://one.oecd.org/document/GPAI%282022%293/FINAL/en/pdf"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Approved by the GPAI Ministerial Council at its fifth meeting in New Delhi on 13 December 2023. It is a non-binding political declaration with no signature, ratification, depositary or entry-into-force procedure. Its 14 numbered paragraphs set out commitments on trustworthy AI, GPAI projects, capacity-building, sustainable agriculture and the initiative's multilateral role; no implementation or monitoring duty is created.",
+      "text": {
+        "extraction_note": "Official English PDF extracted with pypdf: 3 pages, 6,562 characters. Page 1 is an image cover; extraction begins on page 2 with the document header. Segmented with the resolution mode into a front-matter unit and 14 numbered paragraphs (15 units); every unit is an exact slice of text/en.txt.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "resolution"
+      },
+      "title": {
+        "official": "GPAI 2023 Ministerial Declaration",
+        "short": "GPAI 2023 Ministerial Declaration (New Delhi)"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official declaration identified on the OECD.AI GPAI Council documents page.",
+            "date": "2026-11-26",
+            "result": "The page lists the December 2023 New Delhi GPAI Council declaration and links the official PDF."
+          },
+          {
+            "check": "Declaration title, document symbol, date and adoption context checked on the PDF.",
+            "date": "2026-11-26",
+            "result": "GPAI(2023)2, dated 14 December 2023; approved by the GPAI Ministerial Council at its fifth meeting in New Delhi on 13 December 2023."
+          },
+          {
+            "check": "Text read in full and segmented.",
+            "date": "2026-11-26",
+            "result": "6,562 characters; 14 numbered paragraphs; 15 units including front matter; each unit checked as an exact slice of the stored text."
+          },
+          {
+            "check": "Legal nature checked against the GPAI Terms of Reference.",
+            "date": "2026-11-26",
+            "result": "Terms of Reference paragraph 2 states that membership and participation do not entail legally binding rights or obligations; the declaration itself has no signature, ratification or entry-into-force clause."
+          },
+          {
+            "check": "Original file hash and size checked.",
+            "date": "2026-11-26",
+            "result": "HTTP 200; 158,914 bytes; SHA-256 f23c0ce391981242b608f14972db5c3b5adfcce86aa900fc194a8f879530ee62."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "The official English text is stored, read in full and segmented. The record remains limited by the declaration's non-binding character, the absence of an itemised member list and the unresolved current membership total."
       }
     },
     {

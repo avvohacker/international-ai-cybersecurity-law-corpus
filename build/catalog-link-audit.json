@@ -1,11 +1,11 @@
 {
-  "checked": 268,
+  "checked": 271,
   "audited_on": "2026-11-26",
   "scope": "catalog",
-  "instruments": 76,
+  "instruments": 77,
   "summary": {
-    "ok": 178,
-    "anti_bot": 80,
+    "ok": 180,
+    "anti_bot": 81,
     "broken": 0,
     "transient": 10,
     "live_but_unreachable": 3
@@ -1299,6 +1299,36 @@
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "gpai-2023-ministerial-declaration",
+      "source_id": "oecd-gpai-declaration-pdf",
+      "label": "OECD / Global Partnership on Artificial Intelligence",
+      "url": "https://wp.oecd.ai/app/uploads/2025/01/2023-GPAI-Ministerial-Declaration.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "gpai-2023-ministerial-declaration",
+      "source_id": "oecd-gpai-declarations",
+      "label": "OECD.AI",
+      "url": "https://oecd.ai/en/gpai-declarations",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "gpai-2023-ministerial-declaration",
+      "source_id": "oecd-gpai-tor",
+      "label": "OECD / Global Partnership on Artificial Intelligence",
+      "url": "https://one.oecd.org/document/GPAI%282022%293/FINAL/en/pdf",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
       "detail": ""
     },
     {

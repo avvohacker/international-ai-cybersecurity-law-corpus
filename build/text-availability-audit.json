@@ -105,6 +105,16 @@
       "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
+      "id": "brazil-china-ai-mou-2025",
+      "official_source": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/atos-adotados-por-ocasiao-da-visita-de-estado-do-presidente-luiz-inacio-lula-da-silva-a-pequim-china-12-e-13-de-maio-de-2025/mou-mdic-ndrc-ai-portuguese.pdf",
+      "official_source_kind": "official_primary",
+      "reason": "Full text stored and segmented.",
+      "title": "Brazil–China AI MOU"
+    },
+    {
+      "availability": "stored",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
       "id": "brics-ai-statement-2025",
       "official_source": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
       "official_source_kind": "official_primary",
@@ -330,6 +340,16 @@
       "official_source_kind": "official_primary",
       "reason": "Full text stored and segmented.",
       "title": "G7 Hiroshima AI Process Code of Conduct"
+    },
+    {
+      "availability": "stored",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "id": "gpai-2023-ministerial-declaration",
+      "official_source": "https://wp.oecd.ai/app/uploads/2025/01/2023-GPAI-Ministerial-Declaration.pdf",
+      "official_source_kind": "official_primary",
+      "reason": "Full text stored and segmented.",
+      "title": "GPAI 2023 Ministerial Declaration (New Delhi)"
     },
     {
       "availability": "stored",
@@ -785,8 +805,8 @@
     "internal_law": 3,
     "official_text_located": 4,
     "paywalled": 6,
-    "stored": 60,
+    "stored": 62,
     "summary_only": 2
   },
-  "total": 75
+  "total": 77
 }

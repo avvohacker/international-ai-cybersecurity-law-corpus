@@ -341,14 +341,14 @@
     "id": "gpai-2023-ministerial-declaration",
     "title": "GPAI 2023 Ministerial Declaration",
     "issuer": "Global Partnership on Artificial Intelligence (GPAI) Ministerial Council, New Delhi",
-    "decision": "pending",
-    "instrument_id": null,
-    "reason": "Official OECD text read in full. The declaration was approved by the GPAI Ministerial Council on 13 December 2023 and contains substantive AI commitments, including work within members' jurisdictions on safe, secure and trustworthy AI and the adoption of GPAI projects. It is a non-binding ministerial declaration, distinct from the GPAI Terms of Reference, which state that membership creates no legally binding rights or obligations. It appears to meet the inclusion rule but has not yet been catalogued.",
+    "decision": "included",
+    "instrument_id": "gpai-2023-ministerial-declaration",
+    "reason": "Official OECD text read in full. The declaration was approved by the GPAI Ministerial Council on 13 December 2023 and contains substantive AI commitments, including work within members' jurisdictions on safe, secure and trustworthy AI and the adoption of GPAI projects. It is a non-binding ministerial declaration, distinct from the GPAI Terms of Reference, which state that membership creates no legally binding rights or obligations. It is now catalogued with the English full text, hash and 15 units.",
     "candidate_type": "ministerial_declaration",
     "official_url": "https://one.oecd.org/document/GPAI%282023%292/en/pdf",
     "searched_on": "2026-11-26",
     "evidence": "Official OECD document GPAI(2023)2, 14 December 2023, approved by the GPAI Ministerial Council at its fifth meeting in New Delhi on 13 December 2023; GPAI Terms of Reference GPAI(2022)3/FINAL, paragraph 2, stating that membership and participation do not entail legally binding rights or obligations.",
-    "gaps": "The declaration does not list its adopting members; current GPAI membership is not fixed in the text; it has not been catalogued or segmented; its relationship to the 2024 OECD-integrated partnership is institutional, not a treaty succession."
+    "gaps": "The declaration does not list its adopting members; current GPAI membership is not fixed in the text; its relationship to the 2024 OECD-integrated partnership is institutional, not a treaty succession; only the English text is stored."
   },
   {
     "id": "un-ga-81-l34-military-ai",
