@@ -5,7 +5,7 @@
     "entered_into_force": "2020-12-08",
     "notes": "Signed at Adelaide and Singapore on 6 August 2020; entered into force on 8 December 2020.",
     "signed": "2020-08-06",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
@@ -28,27 +28,42 @@
     "authentic": [
       "en"
     ],
-    "note": "The acquired text is in English. A separate authentic-language clause was not located in the extracted text; this is recorded as a gap rather than inferred.",
+    "note": "English is the language of the acquired text. No authentic-language clause was located in the extracted text, so this entry records the acquired language, not a verified authentic-language designation.",
     "translations": []
   },
   "parties": {
     "act": "treaty_signature",
-    "as_of": "2026-11-23",
+    "as_of": "2026-11-26",
     "counts": {
       "parties": {
         "basis": "verified_total",
         "total": 2,
-        "verified": 2
+        "verified": 2,
+        "source_ids": [
+          "dfat-page",
+          "sadea-text"
+        ]
       },
       "ratifications": {
         "basis": "not_applicable",
         "total": null,
-        "verified": 0
+        "verified": 0,
+        "note": "Bilateral agreement; entry into force follows the exchange of notes, and no separate ratification tally is maintained."
       },
       "signatures": {
         "basis": "verified_total",
         "total": 2,
-        "verified": 2
+        "verified": 2,
+        "source_ids": [
+          "dfat-page",
+          "sadea-text"
+        ]
+      },
+      "accessions": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0,
+        "note": "Bilateral agreement; no accession procedure or third-party accession is recorded."
       }
     },
     "declarations": [],
@@ -75,14 +90,54 @@
       "dfat-page",
       "sadea-text"
     ],
-    "summary": "Two Parties: Australia and Singapore.",
+    "summary": "Two Parties: Australia and Singapore; no accessions.",
     "unknowns": [
-      "No depositary register was consulted; the record relies on the official DFAT page and the text."
+      "No separate depositary register or accession table is maintained in the text; the agreement is bilateral and no third party is recorded."
     ],
     "withdrawals": []
   },
   "provenance": {
-    "assertions": [],
+    "assertions": [
+      {
+        "date": "2026-11-26",
+        "field": "status",
+        "locator": "DFAT page: entering into force on 8 December 2020; Article 5",
+        "method": "official_page_read",
+        "source_ids": [
+          "dfat-page",
+          "sadea-text"
+        ]
+      },
+      {
+        "date": "2026-11-26",
+        "field": "parties",
+        "locator": "DFAT page and SADEA text: Australia and Singapore",
+        "method": "official_page_read",
+        "source_ids": [
+          "dfat-page",
+          "sadea-text"
+        ]
+      },
+      {
+        "date": "2026-11-26",
+        "field": "counts",
+        "locator": "DFAT page and Article 5: two Parties; no accession clause",
+        "method": "official_page_read",
+        "source_ids": [
+          "dfat-page",
+          "sadea-text"
+        ]
+      },
+      {
+        "date": "2026-11-26",
+        "field": "legal_nature",
+        "locator": "Article 5 (entry into force) and preamble",
+        "method": "official_text_read",
+        "source_ids": [
+          "sadea-text"
+        ]
+      }
+    ],
     "discovered_via": "Official Singapore MTI/DFAT digital-economy agreement pages; comparative ADB study used only to locate the AI article number.",
     "search_dates": [
       "2026-11-23"
@@ -130,17 +185,17 @@
       "url": "https://isomer-user-content.by.gov.sg/1004/769c26eb-17cf-4e2d-962b-1277a22df9db/australia-singapore-digital-economy-agreement%20-%20Jun%2023.pdf"
     },
     {
-      "accessed": "2026-11-23",
+      "accessed": "2026-11-26",
       "http_status": 200,
       "id": "dfat-page",
       "kind": "official_secondary",
-      "note": "States entry into force on 8 December 2020 and identifies the agreement as replacing the SAFTA electronic-commerce chapter.",
+      "note": "States entry into force on 8 December 2020, identifies the two Parties, and identifies the agreement as replacing the SAFTA electronic-commerce chapter.",
       "publisher": "Australian Department of Foreign Affairs and Trade",
       "url": "https://www.dfat.gov.au/trade/services-and-digital-trade/australia-and-singapore-digital-economy-agreement"
     }
   ],
   "status": "in_force",
-  "status_note": "In force between Australia and Singapore.",
+  "status_note": "In force between Australia and Singapore; two Parties and no accessions.",
   "text": {
     "extraction_note": "Text extracted from the stored PDF with pypdf. Article headings in the consolidated text use upper-case 'ARTICLE'; page anchors are file pages.",
     "full_text": true,
@@ -169,6 +224,11 @@
         "check": "Signature and entry-into-force dates checked against the DFAT page.",
         "date": "2026-11-23",
         "result": "Signed 6 August 2020; in force 8 December 2020."
+      },
+      {
+        "check": "Entry into force and party status rechecked on the Australian DFAT page and the SADEA text.",
+        "date": "2026-11-26",
+        "result": "Signed 6 August 2020; in force 8 December 2020 between Australia and Singapore. The text provides for entry into force by exchange of notes and records no accession procedure or third party."
       }
     ],
     "level": "full_text_checked",

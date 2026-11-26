@@ -6592,9 +6592,9 @@
       "category": "agreement_ai_provisions",
       "dates": {
         "entered_into_force": "2021-01-07",
-        "notes": "Signed by New Zealand, Chile and Singapore on 11 June 2020 GMT (12 June 2020 New Zealand time). Entered into force for New Zealand and Singapore on 7 January 2021 and for Chile on 23 November 2021. Korea's accession took effect on 3 May 2024. Costa Rica presented its Instrument of Accession on 17 September 2026; the joint press release does not state the date on which the Agreement enters into force for Costa Rica. A Protocol to the DEPA was signed on 15 July 2023; sources differ between 19 and 20 March 2024 for its entry into force.",
+        "notes": "Signed by New Zealand, Chile and Singapore on 11 June 2020 GMT (12 June 2020 New Zealand time). Entered into force for New Zealand and Singapore on 7 January 2021 and for Chile on 23 November 2021. Korea's accession took effect on 3 May 2024. Costa Rica presented its Instrument of Accession in New Zealand on 17 July 2026; Chile's SUBREI page records its accession as effective on 14 September 2026, and the joint release dated 17 September 2026 welcomes it as the fifth Party without stating a date. The New Zealand MFAT overview still says four Parties and lists Costa Rica as invited; it is older than the September 2026 release. A Protocol to the DEPA was signed on 15 July 2023; sources differ between 19 and 20 March 2024 for its entry into force.",
         "signed": "2020-06-11",
-        "verified_on": "2026-11-24"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -6604,7 +6604,7 @@
         "The Protocol to the DEPA and its legal effect on the AI article were not analysed.",
         "Only English acquired; the Spanish version referenced by Chile was not acquired.",
         "The AI article contains no enforceable substantive standard and no monitoring mechanism.",
-        "Costa Rica's accession is verified from the Parties' joint press release; the entry-into-force date for Costa Rica and the depositary notification were not read."
+        "Costa Rica's accession is documented by the COMEX release of 17 July 2026, Chile's SUBREI page (effective 14 September 2026) and the joint release dated 17 September 2026; no separate depositary notification was read, and the MFAT overview remains stale at four Parties."
       ],
       "id": "depa-2020",
       "instrument_type": "agreement",
@@ -6635,13 +6635,15 @@
       },
       "parties": {
         "act": "treaty_signature",
-        "as_of": "2026-11-23",
+        "as_of": "2026-11-26",
         "counts": {
           "accessions": {
             "basis": "verified_total",
             "source_ids": [
               "depa-mfat-overview",
-              "depa-costa-rica"
+              "depa-costa-rica",
+              "depa-comex",
+              "depa-subrei"
             ],
             "total": 2,
             "verified": 2
@@ -6650,7 +6652,9 @@
             "basis": "verified_total",
             "source_ids": [
               "depa-mfat-overview",
-              "depa-costa-rica"
+              "depa-costa-rica",
+              "depa-comex",
+              "depa-subrei"
             ],
             "total": 5,
             "verified": 5
@@ -6660,6 +6664,15 @@
             "note": "The DEPA counts Parties; it does not maintain a separate ratification tally in the sources read.",
             "total": null,
             "verified": 0
+          },
+          "signatures": {
+            "basis": "verified_total",
+            "source_ids": [
+              "depa-text",
+              "depa-mfat-overview"
+            ],
+            "total": 3,
+            "verified": 3
           }
         },
         "declarations": [],
@@ -6695,10 +6708,13 @@
             "role": "party"
           },
           {
-            "accession": "2026-09-17",
+            "accession": "2026-07-17",
+            "entry_into_force": "2026-09-14",
             "notes": [
-              "Instrument of Accession presented in Auckland on 17 September 2026, making Costa Rica the fifth Party and the second acceding State.",
-              "The joint press release does not state the date on which the Agreement enters into force for Costa Rica; no depositary notification was read."
+              "Instrument of Accession presented in New Zealand, the depositary, on 17 July 2026 (Costa Rica COMEX).",
+              "Chile's SUBREI page records the accession as effective on 14 September 2026; the joint release dated 17 September 2026 welcomes Costa Rica as the fifth Party but does not state the presentation or entry-into-force date.",
+              "No separate depositary notification or status table was read; the 14 September date rests on the Chilean government page.",
+              "The New Zealand MFAT overview still says four Parties and lists Costa Rica as invited; it is older than the September 2026 release."
             ],
             "party": "Costa Rica",
             "role": "party"
@@ -6710,12 +6726,15 @@
         "source_ids": [
           "depa-mfat-overview",
           "depa-text",
-          "depa-costa-rica"
+          "depa-costa-rica",
+          "depa-comex",
+          "depa-subrei"
         ],
-        "summary": "Five Parties as of 24 November 2026: New Zealand, Singapore, Chile, Korea and Costa Rica. The depositary is New Zealand. Costa Rica presented its Instrument of Accession on 17 September 2026; the date of entry into force for Costa Rica is not stated in the joint press release.",
+        "summary": "Five Parties as of 26 November 2026: New Zealand, Singapore, Chile, Korea and Costa Rica. Costa Rica presented its Instrument of Accession on 17 July 2026; Chile's SUBREI page records the accession as effective on 14 September 2026, while the joint release is dated 17 September 2026 and does not state a date. The MFAT overview remains stale at four Parties. The depositary is New Zealand.",
         "unknowns": [
           "The full depositary notification record and any reservations or declarations were not read.",
-          "The date of entry into force of the Agreement for Costa Rica is not stated in the joint press release of 17 September 2026 and was not verified against the depositary.",
+          "The 14 September 2026 effective date rests on Chile's SUBREI page and the joint release's fifth-Party statement; no separate depositary notification was read.",
+          "The New Zealand MFAT overview still says four Parties and lists Costa Rica as invited; it is older than the September 2026 release and is not used for the count.",
           "The Protocol to the DEPA is not analysed in this record."
         ],
         "withdrawals": []
@@ -6723,38 +6742,44 @@
       "provenance": {
         "assertions": [
           {
-            "date": "2026-11-24",
+            "date": "2026-11-26",
             "field": "status",
             "locator": "Joint press release of 17 September 2026, paragraphs 1-3 and 9; MFAT overview, Parties section",
             "method": "official_page_read",
             "source_ids": [
               "depa-mfat-overview",
-              "depa-costa-rica"
+              "depa-costa-rica",
+              "depa-comex",
+              "depa-subrei"
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-26",
             "field": "parties",
             "locator": "MFAT overview; joint press release, paragraphs 1 and 9",
             "method": "official_page_read",
-            "note": "Entry into force for Costa Rica not stated.",
+            "note": "The joint release does not state an entry-into-force date; Chile's SUBREI page records it as 14 September 2026.",
             "source_ids": [
               "depa-mfat-overview",
-              "depa-costa-rica"
+              "depa-costa-rica",
+              "depa-comex",
+              "depa-subrei"
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-26",
             "field": "counts",
             "locator": "Joint press release: 'fifth Party' and 'second member to accede'",
             "method": "official_page_read",
             "source_ids": [
               "depa-mfat-overview",
-              "depa-costa-rica"
+              "depa-costa-rica",
+              "depa-comex",
+              "depa-subrei"
             ]
           },
           {
-            "date": "2026-11-24",
+            "date": "2026-11-26",
             "field": "legal_nature",
             "locator": "Article 16",
             "method": "official_text_read",
@@ -6815,11 +6840,11 @@
           "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/support/DEPA/depa_all_eng.pdf"
         },
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "depa-mfat-overview",
           "kind": "official_secondary",
-          "note": "Confirms signature, entry-into-force dates for New Zealand, Singapore and Chile, the 2023 Protocol, and Korean accession in May 2024.",
+          "note": "Confirms signature and entry-into-force dates for New Zealand, Singapore and Chile, and Korean accession. Its 'Who is involved' section still says four Parties and lists Costa Rica as formally invited; that is older than the September 2026 joint release.",
           "publisher": "New Zealand Ministry of Foreign Affairs and Trade",
           "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/overview"
         },
@@ -6833,18 +6858,36 @@
           "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources"
         },
         {
-          "accessed": "2026-11-24",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "depa-costa-rica",
           "kind": "official_primary",
           "language": "en",
-          "note": "Joint press release of 17 September 2026: Costa Rica presented its Instrument of Accession in Auckland and became the fifth Party, the second member to accede after Korea. No entry-into-force date for Costa Rica is stated.",
+          "note": "Joint press release dated 17 September 2026: welcomes Costa Rica as the fifth Party and the second member to accede; records the presentation in Auckland but gives no presentation or entry-into-force date.",
           "publisher": "New Zealand Ministry of Foreign Affairs and Trade, jointly with Chile, Singapore, Korea and Costa Rica",
           "url": "https://www.mfat.govt.nz/en/media-and-resources/joint-press-release-on-the-successful-accession-of-costa-rica-to-the-digital-economy-partnership-agreement"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "depa-comex",
+          "kind": "official_secondary",
+          "note": "Costa Rican COMEX release of 17 July 2026: the Minister of Foreign Trade presented Costa Rica's Instrument of Accession in New Zealand, the depositary; entry into force would be completed when the other Parties confirmed their internal procedures.",
+          "publisher": "Ministry of Foreign Trade (COMEX), Costa Rica",
+          "url": "https://www.comex.go.cr/sala-de-prensa/comunicados/2026/julio/cp-3247-costa-rica-presenta-su-instrumento-de-adhesi%C3%B3n-al-depa-y-avanza-hacia-su-incorporaci%C3%B3n-como-miembro-del-acuerdo"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "depa-subrei",
+          "kind": "official_secondary",
+          "note": "Chile's SUBREI DEPA page records the five-member composition and states that Costa Rica's accession took effect on 14 September 2026.",
+          "publisher": "Undersecretariat of International Economic Relations (SUBREI), Chile",
+          "url": "https://www.subrei.gob.cl/acuerdos-comerciales/acuerdos-comerciales-vigentes/depa"
         }
       ],
       "status": "in_force",
-      "status_note": "In force for New Zealand, Singapore, Chile and Korea. Costa Rica became the fifth Party on presenting its Instrument of Accession in Auckland on 17 September 2026, the second State to accede after Korea. The joint press release announces the accession but does not state an entry-into-force date for Costa Rica; the depositary notification was not read, so that date is recorded as unknown.",
+      "status_note": "In force for New Zealand, Singapore, Chile and Korea; Costa Rica's accession took effect on 14 September 2026 according to Chile's SUBREI page, after presenting its Instrument of Accession in New Zealand on 17 July 2026. The joint release dated 17 September 2026 welcomes Costa Rica as the fifth Party but does not state a date. The New Zealand MFAT overview still says four Parties and lists Costa Rica as invited; the record follows the later joint release and the Chilean statement. No separate depositary notification was read. The number of Parties is five; no separate ratification tally is maintained.",
       "text": {
         "extraction_note": "Text extracted from the stored PDF with pypdf. Article-level units follow the treaty's Article headings. Page anchors are file pages, not printed page numbers.",
         "full_text": true,
@@ -6875,13 +6918,13 @@
             "result": "Signed 11/12 June 2020; in force 7 January 2021 for NZ and Singapore, 23 November 2021 for Chile, 3 May 2024 for Korea."
           },
           {
-            "check": "Costa Rica's accession checked against the joint press release of the Parties.",
-            "date": "2026-11-24",
-            "result": "Costa Rica presented its Instrument of Accession on 17 September 2026 and became the fifth Party. The release states the act of accession, not the date of entry into force for Costa Rica."
+            "check": "Costa Rica's accession date and entry into force checked against Costa Rican and Chilean government sources.",
+            "date": "2026-11-26",
+            "result": "COMEX records the Instrument's presentation in New Zealand on 17 July 2026; Chile's SUBREI page records accession effective 14 September 2026 and a five-member composition. The joint release dated 17 September 2026 welcomes Costa Rica as fifth Party but gives no date. The MFAT overview still says four Parties."
           }
         ],
         "level": "full_text_checked",
-        "notes": "Full text preserved. The AI clause is treaty language but its normative force is hortatory; classification as binding refers to the agreement, not to a hard AI obligation. The Costa Rica accession is verified at the level of the Parties' joint announcement; its entry-into-force date is not stated there."
+        "notes": "Full text preserved. The AI clause is treaty language but its normative force is hortatory; classification as binding refers to the agreement, not to a hard AI obligation. Costa Rica's accession is documented by the COMEX release, the Chilean SUBREI page and the joint release; no separate depositary notification was read. The MFAT overview is stale at four Parties."
       }
     },
     {
@@ -9370,7 +9413,7 @@
         "entered_into_force": "2023-01-14",
         "notes": "Signed in Singapore on 21 November 2022; entered into force on 14 January 2023.",
         "signed": "2022-11-21",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -9378,7 +9421,7 @@
       "gaps": [
         "AI article is cooperative, not prescriptive.",
         "Korean language version not acquired.",
-        "No depositary record consulted.",
+        "No separate depositary register or accession table is maintained; the agreement is bilateral and no third party is recorded.",
         "The stored text is the English PDF reproduced by the Korean Ministry of Trade, Industry and Energy; the Korean text and other language versions were not acquired.",
         "The agreement's numbering jumps from Article 7 to Article 14; the record follows the text's own numbering."
       ],
@@ -9392,29 +9435,43 @@
       ],
       "languages": {
         "authentic": [
-          "en"
-        ],
-        "note": "The English text reproduced by the Korean MOTIR is stored and segmented. The Korean text and other language versions were not acquired.",
-        "translations": [
+          "en",
           "ko"
-        ]
+        ],
+        "note": "The signed text states that it is done in duplicate in the Korean and English languages, both texts being equally authentic. The English text is stored; the Korean text was not acquired.",
+        "translations": []
       },
       "parties": {
         "act": "treaty_signature",
-        "as_of": "2026-11-23",
+        "as_of": "2026-11-26",
         "counts": {
+          "accessions": {
+            "basis": "not_applicable",
+            "note": "Bilateral agreement; no accession procedure or third-party accession is recorded.",
+            "total": null,
+            "verified": 0
+          },
           "parties": {
             "basis": "verified_total",
+            "source_ids": [
+              "mti-page",
+              "ksdpa-text"
+            ],
             "total": 2,
             "verified": 2
           },
           "ratifications": {
             "basis": "not_applicable",
+            "note": "Bilateral agreement; entry into force follows the exchange of written notifications, and no separate ratification tally is maintained.",
             "total": null,
             "verified": 0
           },
           "signatures": {
             "basis": "verified_total",
+            "source_ids": [
+              "mti-page",
+              "ksdpa-text"
+            ],
             "total": 2,
             "verified": 2
           }
@@ -9443,14 +9500,63 @@
           "mti-page",
           "ksdpa-text"
         ],
-        "summary": "Two Parties: the Republic of Korea and Singapore.",
+        "summary": "Two Parties: the Republic of Korea and Singapore; no accessions.",
         "unknowns": [
-          "No depositary register was consulted; dates rely on the Singapore METI page and the signed text."
+          "No separate depositary register or accession table is maintained; the agreement is bilateral and no third party is recorded."
         ],
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [],
+        "assertions": [
+          {
+            "date": "2026-11-26",
+            "field": "status",
+            "locator": "Singapore METI page: signed 21 November 2022, in force 14 January 2023; Article 5",
+            "method": "official_page_read",
+            "source_ids": [
+              "mti-page",
+              "ksdpa-text"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "parties",
+            "locator": "METI page and signed text: Korea and Singapore",
+            "method": "official_page_read",
+            "source_ids": [
+              "mti-page",
+              "ksdpa-text"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "counts",
+            "locator": "METI page and Article 5: two Parties; no accession clause",
+            "method": "official_page_read",
+            "source_ids": [
+              "mti-page",
+              "ksdpa-text"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "languages",
+            "locator": "Article 5 (entry into force) and signature block: Korean and English equally authentic",
+            "method": "official_text_read",
+            "source_ids": [
+              "ksdpa-text"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "legal_nature",
+            "locator": "Article 5 (entry into force) and signature block",
+            "method": "official_text_read",
+            "source_ids": [
+              "ksdpa-text"
+            ]
+          }
+        ],
         "discovered_via": "Singapore METI and Korean MOTIE treaty pages; article number cross-checked in an ADB comparative study.",
         "search_dates": [
           "2026-11-23"
@@ -9498,7 +9604,7 @@
           "url": "https://fta.motir.go.kr/webmodule/_PSD_FTA/ksdpa/1/KSDPA_eng.pdf"
         },
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-26",
           "http_status": null,
           "id": "mti-page",
           "kind": "official_secondary",
@@ -9519,7 +9625,7 @@
         }
       ],
       "status": "in_force",
-      "status_note": "In force between Korea and Singapore.",
+      "status_note": "In force between the Republic of Korea and Singapore; two Parties and no accessions.",
       "text": {
         "extraction_note": "English text extracted from the 42-page Korean MOTIR PDF and segmented into 41 units: Articles 1-7 and Articles 14.1-14.34. The agreement's numbering jumps from Article 7 to Article 14; no Article 8-13 headings appear in the text.",
         "full_text": true,
@@ -9548,6 +9654,11 @@
             "check": "Full text acquired and segmented.",
             "date": "2026-11-25",
             "result": "41 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
+          },
+          {
+            "check": "Signature, entry into force, parties and authentic languages rechecked on the Singapore METI page and the signed text.",
+            "date": "2026-11-26",
+            "result": "Signed 21 November 2022; in force 14 January 2023 between Korea and Singapore. The signature block makes the Korean and English texts equally authentic; no accession procedure or third party is recorded."
           }
         ],
         "level": "metadata_verified",
@@ -13641,7 +13752,7 @@
         "entered_into_force": "2020-12-08",
         "notes": "Signed at Adelaide and Singapore on 6 August 2020; entered into force on 8 December 2020.",
         "signed": "2020-08-06",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -13664,25 +13775,40 @@
         "authentic": [
           "en"
         ],
-        "note": "The acquired text is in English. A separate authentic-language clause was not located in the extracted text; this is recorded as a gap rather than inferred.",
+        "note": "English is the language of the acquired text. No authentic-language clause was located in the extracted text, so this entry records the acquired language, not a verified authentic-language designation.",
         "translations": []
       },
       "parties": {
         "act": "treaty_signature",
-        "as_of": "2026-11-23",
+        "as_of": "2026-11-26",
         "counts": {
+          "accessions": {
+            "basis": "not_applicable",
+            "note": "Bilateral agreement; no accession procedure or third-party accession is recorded.",
+            "total": null,
+            "verified": 0
+          },
           "parties": {
             "basis": "verified_total",
+            "source_ids": [
+              "dfat-page",
+              "sadea-text"
+            ],
             "total": 2,
             "verified": 2
           },
           "ratifications": {
             "basis": "not_applicable",
+            "note": "Bilateral agreement; entry into force follows the exchange of notes, and no separate ratification tally is maintained.",
             "total": null,
             "verified": 0
           },
           "signatures": {
             "basis": "verified_total",
+            "source_ids": [
+              "dfat-page",
+              "sadea-text"
+            ],
             "total": 2,
             "verified": 2
           }
@@ -13711,14 +13837,54 @@
           "dfat-page",
           "sadea-text"
         ],
-        "summary": "Two Parties: Australia and Singapore.",
+        "summary": "Two Parties: Australia and Singapore; no accessions.",
         "unknowns": [
-          "No depositary register was consulted; the record relies on the official DFAT page and the text."
+          "No separate depositary register or accession table is maintained in the text; the agreement is bilateral and no third party is recorded."
         ],
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [],
+        "assertions": [
+          {
+            "date": "2026-11-26",
+            "field": "status",
+            "locator": "DFAT page: entering into force on 8 December 2020; Article 5",
+            "method": "official_page_read",
+            "source_ids": [
+              "dfat-page",
+              "sadea-text"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "parties",
+            "locator": "DFAT page and SADEA text: Australia and Singapore",
+            "method": "official_page_read",
+            "source_ids": [
+              "dfat-page",
+              "sadea-text"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "counts",
+            "locator": "DFAT page and Article 5: two Parties; no accession clause",
+            "method": "official_page_read",
+            "source_ids": [
+              "dfat-page",
+              "sadea-text"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "legal_nature",
+            "locator": "Article 5 (entry into force) and preamble",
+            "method": "official_text_read",
+            "source_ids": [
+              "sadea-text"
+            ]
+          }
+        ],
         "discovered_via": "Official Singapore MTI/DFAT digital-economy agreement pages; comparative ADB study used only to locate the AI article number.",
         "search_dates": [
           "2026-11-23"
@@ -13766,17 +13932,17 @@
           "url": "https://isomer-user-content.by.gov.sg/1004/769c26eb-17cf-4e2d-962b-1277a22df9db/australia-singapore-digital-economy-agreement%20-%20Jun%2023.pdf"
         },
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "dfat-page",
           "kind": "official_secondary",
-          "note": "States entry into force on 8 December 2020 and identifies the agreement as replacing the SAFTA electronic-commerce chapter.",
+          "note": "States entry into force on 8 December 2020, identifies the two Parties, and identifies the agreement as replacing the SAFTA electronic-commerce chapter.",
           "publisher": "Australian Department of Foreign Affairs and Trade",
           "url": "https://www.dfat.gov.au/trade/services-and-digital-trade/australia-and-singapore-digital-economy-agreement"
         }
       ],
       "status": "in_force",
-      "status_note": "In force between Australia and Singapore.",
+      "status_note": "In force between Australia and Singapore; two Parties and no accessions.",
       "text": {
         "extraction_note": "Text extracted from the stored PDF with pypdf. Article headings in the consolidated text use upper-case 'ARTICLE'; page anchors are file pages.",
         "full_text": true,
@@ -13805,6 +13971,11 @@
             "check": "Signature and entry-into-force dates checked against the DFAT page.",
             "date": "2026-11-23",
             "result": "Signed 6 August 2020; in force 8 December 2020."
+          },
+          {
+            "check": "Entry into force and party status rechecked on the Australian DFAT page and the SADEA text.",
+            "date": "2026-11-26",
+            "result": "Signed 6 August 2020; in force 8 December 2020 between Australia and Singapore. The text provides for entry into force by exchange of notes and records no accession procedure or third party."
           }
         ],
         "level": "full_text_checked",
@@ -14514,14 +14685,14 @@
         "entered_into_force": "2022-06-14",
         "notes": "Signed in Singapore on 25 February 2022; entered into force on 14 June 2022.",
         "signed": "2022-02-25",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
       ],
       "gaps": [
         "AI article is cooperative, not prescriptive.",
-        "No depositary record consulted.",
+        "No separate depositary register or accession table is maintained; the agreement is bilateral and no third party is recorded.",
         "No assessment of the UK-Singapore AI cooperation beyond the treaty article.",
         "Only the English text is stored. Article 7 does not appear in the agreement's numbering; the units follow the text."
       ],
@@ -14537,25 +14708,40 @@
         "authentic": [
           "en"
         ],
-        "note": "The official English text is stored and segmented. Other language versions, if any, were not acquired.",
+        "note": "The UK Treaty Series text states that the Agreement is done in duplicate at Singapore on 25 February 2022 in English; English is recorded as the authentic language.",
         "translations": []
       },
       "parties": {
         "act": "treaty_signature",
-        "as_of": "2026-11-23",
+        "as_of": "2026-11-26",
         "counts": {
+          "accessions": {
+            "basis": "not_applicable",
+            "note": "Bilateral agreement; no accession procedure or third-party accession is recorded.",
+            "total": null,
+            "verified": 0
+          },
           "parties": {
             "basis": "verified_total",
+            "source_ids": [
+              "uk-treaty",
+              "mti-page"
+            ],
             "total": 2,
             "verified": 2
           },
           "ratifications": {
             "basis": "not_applicable",
+            "note": "Bilateral agreement; entry into force follows the exchange of written notifications, and no separate ratification tally is maintained.",
             "total": null,
             "verified": 0
           },
           "signatures": {
             "basis": "verified_total",
+            "source_ids": [
+              "uk-treaty",
+              "mti-page"
+            ],
             "total": 2,
             "verified": 2
           }
@@ -14584,14 +14770,53 @@
           "mti-page",
           "uk-treaty"
         ],
-        "summary": "Two Parties: the United Kingdom and Singapore.",
+        "summary": "Two Parties: the United Kingdom and Singapore; no accessions.",
         "unknowns": [
-          "No depositary register was consulted; dates rely on the UK treaty series and Singapore MTI page."
+          "No separate depositary register or accession table is maintained; the agreement is bilateral and no third party is recorded."
         ],
         "withdrawals": []
       },
       "provenance": {
-        "assertions": [],
+        "assertions": [
+          {
+            "date": "2026-11-26",
+            "field": "status",
+            "locator": "UK Treaty Series No. 22 (2023): signed 25 February 2022, entered into force 14 June 2022; Article 6",
+            "method": "official_text_read",
+            "source_ids": [
+              "uk-treaty"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "parties",
+            "locator": "UK Treaty Series and Singapore METI page: United Kingdom and Singapore",
+            "method": "official_page_read",
+            "source_ids": [
+              "uk-treaty",
+              "mti-page"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "counts",
+            "locator": "UK Treaty Series and Article 6: two Parties; no accession clause",
+            "method": "official_text_read",
+            "source_ids": [
+              "uk-treaty",
+              "mti-page"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "legal_nature",
+            "locator": "Article 6 (final provisions) and preamble",
+            "method": "official_text_read",
+            "source_ids": [
+              "uk-treaty"
+            ]
+          }
+        ],
         "discovered_via": "UK treaty series and Singapore MTI digital-economy pages; article number cross-checked in an ADB comparative study used only as a finding aid.",
         "search_dates": [
           "2026-11-23"
@@ -14629,7 +14854,7 @@
       },
       "sources": [
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "uk-treaty",
           "kind": "official_primary",
@@ -14643,8 +14868,8 @@
           "id": "mti-page",
           "kind": "official_secondary",
           "note": "Confirms signature and entry into force and identifies AI as a cooperative element.",
-          "publisher": "Ministry of Trade and Industry, Singapore",
-          "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea"
+          "publisher": "Ministry of Energy, Trade and Industry, Singapore",
+          "url": "https://www.meti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea"
         },
         {
           "accessed": "2026-11-25",
@@ -14659,7 +14884,7 @@
         }
       ],
       "status": "in_force",
-      "status_note": "In force between the United Kingdom and Singapore.",
+      "status_note": "In force between the United Kingdom and Singapore; two Parties and no accessions.",
       "text": {
         "extraction_note": "Official UK Treaty Series No. 22 (2023) English PDF (49 pages) extracted with pypdf and segmented into 35 units: Articles 1-6, then Annex A Section F Articles 8.57-8.61-X. Article 7 does not appear in this agreement's numbering.",
         "full_text": true,
@@ -14675,7 +14900,7 @@
       "verification": {
         "checks": [
           {
-            "check": "Signature and entry-into-force dates checked on the UK Treaty Series PDF and Singapore MTI page.",
+            "check": "Signature and entry-into-force dates checked on the UK Treaty Series PDF and Singapore METI page.",
             "date": "2026-11-23",
             "result": "Signed 25 February 2022; in force 14 June 2022."
           },
@@ -14688,6 +14913,11 @@
             "check": "Full text acquired and segmented.",
             "date": "2026-11-25",
             "result": "35 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
+          },
+          {
+            "check": "Signature, entry into force and party status rechecked in the UK Treaty Series and on the Singapore METI page.",
+            "date": "2026-11-26",
+            "result": "Signed 25 February 2022; entered into force 14 June 2022 between the United Kingdom and Singapore. The text records no accession procedure or third party."
           }
         ],
         "level": "metadata_verified",

@@ -36,7 +36,7 @@
     "official_url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/declaracao-dos-lideres-do-brics-sobre-governanca-global-da-inteligencia-artificial",
     "searched_on": "2026-11-23",
     "evidence": "Official BRICS Presidency PDF of the statement; Brazilian MFA page confirming the date and the 17th BRICS Summit setting.",
-    "gaps": "No individual signature block; 11 member States are listed, not individually evidenced issuers; Saudi status contested; no follow-up mechanism; relationship to WAICO not formal; no full text stored."
+    "gaps": "No individual signature block; 11 member States are listed, not individually evidenced issuers; Saudi status contested; no follow-up mechanism; relationship to WAICO not formal. The full English text is stored and segmented."
   },
   {
     "id": "china-global-ai-governance-initiative-2023",
@@ -296,7 +296,7 @@
     "official_url": "https://www.mfa.gov.cn/eng/wjbzhd/202607/t20260717_11984747.html",
     "searched_on": "2026-11-23",
     "evidence": "MFA English signing article; MFA spokesperson statement of 9 November 2026; Xinhua report of the NPC Standing Committee decision of 6 November 2026; MFA progress report of October 2026 (29 plus 9 equals 38, but only four of the nine are named there); MFA account of 31 July 2026 naming eight additional signatories; Indonesian government list of the 29 initial signatories; Digital Watch reproduction of the Agreement text.",
-    "gaps": "The MFA reports 38 founding members, while the October progress report says nine States joined after the initial 29 and the 31 July account names eight of them; the ninth is unnamed. China's NPC approved ratification but no deposit was verified; the Agreement is not in force. No depositary register or full official text was acquired."
+    "gaps": "The MFA reports 38 founding members, while the October progress report says nine States joined after the initial 29 and the 31 July account names eight of them; the ninth is unnamed. China's NPC approved ratification but no deposit was verified; the Agreement is not in force. The official Chinese text is stored and segmented; no depositary register or notification was located."
   },
   {
     "id": "pax-silica-declaration-2025",
@@ -413,7 +413,7 @@
     "official_url": "https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf",
     "searched_on": "2026-11-24",
     "evidence": "UNODC pre-ratification compendium (adoption, entry into force, seven-State threshold, LAS membership); English text reproduction (final clauses and substantive provisions); attempted LAS depositary page.",
-    "gaps": "The LAS depositary table was unreachable, so current Parties, reservations and declarations are not verified. The English text is an official translation; the Arabic original was not acquired. Metadata-only; no map."
+    "gaps": "The LAS depositary table was unreachable, so current Parties, reservations and declarations are not verified. The English working text is an AsianLaws reproduction, not an official LAS translation; the official Arabic PDF is stored but not segmented. No map."
   },
   {
     "id": "cis-it-crimes-agreement-2018",
@@ -426,7 +426,7 @@
     "official_url": "https://eccis.org/document/5864",
     "searched_on": "2026-11-24",
     "evidence": "CIS Executive Committee document page and register; Russian Foreign Ministry treaty entry; Russian legal register listing seven Parties and Russia’s reservation.",
-    "gaps": "The depositary does not publish a current party table; the seven-State list is declared by a secondary register. Only the Russian text was read. Metadata-only; no map."
+    "gaps": "The depositary does not publish a current party table; the seven-State list is declared by a secondary register. The official Russian text is stored and segmented; no English text was acquired. No map."
   },
   {
     "id": "ecowas-cybercrime-directive-2011",
@@ -439,7 +439,7 @@
     "official_url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf",
     "searched_on": "2026-11-24",
     "evidence": "Official signed English text (Articles 34–35 on publication and implementation); AfricanLII consolidation recording publication on 19 August 2011.",
-    "gaps": "Binding internal community law, not an international instrument; excluded from the international-binding set. No full text stored; national implementation is not assessed. No map."
+    "gaps": "Binding internal community law, not an international instrument; excluded from the international-binding set. The official English scanned text is stored and OCR-segmented; national implementation is not assessed. No map."
   },
   {
     "id": "g20-ai-prosperity-objectives-2026",
@@ -465,7 +465,7 @@
     "official_url": "https://eccis.org/document/1180",
     "searched_on": "2026-11-24",
     "evidence": "CIS Executive Committee document page; UNODC pre-ratification compendium factsheet; English translation of the Agreement.",
-    "gaps": "Current party count and the States for which the Minsk Agreement remains in force are not verified. No map; metadata-only."
+    "gaps": "Current party count and the States for which the Minsk Agreement remains in force are not verified. The stored English translation is segmented; the authentic Russian text was not acquired. No map."
   },
   {
     "id": "sco-information-security-agreement-2009",
@@ -478,7 +478,7 @@
     "official_url": "https://eng.sectsco.org/20090616/207486.html",
     "searched_on": "2026-11-24",
     "evidence": "SCO official document page and English text; UNODC compendium factsheet; Hong Kong Treaty Series entry; national ratification records.",
-    "gaps": "Current party list, including accessions by later SCO members, is not published. English text is a translation; authentic languages are Russian and Chinese. No map; metadata-only."
+    "gaps": "Current party list, including accessions by later SCO members, is not published. The official English text is stored and segmented; the authentic Russian and Chinese texts were not acquired. No map."
   },
   {
     "id": "arab-unified-ai-strategy-2025",

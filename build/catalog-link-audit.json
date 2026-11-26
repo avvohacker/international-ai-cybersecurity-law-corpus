@@ -1,13 +1,13 @@
 {
-  "checked": 244,
+  "checked": 246,
   "audited_on": "2026-11-26",
   "scope": "catalog",
   "instruments": 75,
   "summary": {
-    "ok": 157,
+    "ok": 158,
     "anti_bot": 77,
     "broken": 0,
-    "transient": 10,
+    "transient": 11,
     "live_but_unreachable": 3
   },
   "results": [
@@ -913,6 +913,16 @@
     },
     {
       "instrument_id": "depa-2020",
+      "source_id": "depa-comex",
+      "label": "Ministry of Foreign Trade (COMEX), Costa Rica",
+      "url": "https://www.comex.go.cr/sala-de-prensa/comunicados/2026/julio/cp-3247-costa-rica-presenta-su-instrumento-de-adhesi%C3%B3n-al-depa-y-avanza-hacia-su-incorporaci%C3%B3n-como-miembro-del-acuerdo",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "depa-2020",
       "source_id": "depa-costa-rica",
       "label": "New Zealand Ministry of Foreign Affairs and Trade, jointly with Chile, Singapore, Korea and Costa Rica",
       "url": "https://www.mfat.govt.nz/en/media-and-resources/joint-press-release-on-the-successful-accession-of-costa-rica-to-the-digital-economy-partnership-agreement",
@@ -936,6 +946,16 @@
       "source_id": "depa-mfat-text",
       "label": "New Zealand Ministry of Foreign Affairs and Trade",
       "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "depa-2020",
+      "source_id": "depa-subrei",
+      "label": "Undersecretariat of International Economic Relations (SUBREI), Chile",
+      "url": "https://www.subrei.gob.cl/acuerdos-comerciales/acuerdos-comerciales-vigentes/depa",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -1710,9 +1730,9 @@
       "source_id": "spain-page",
       "label": "Ministry of Foreign Affairs, European Union and Cooperation, Spain",
       "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 503,
+      "outcome": "transient",
+      "reason": "http_503",
       "detail": ""
     },
     {
@@ -1831,11 +1851,11 @@
       "instrument_id": "uksdea-2022",
       "source_id": "mti-page",
       "label": "Singapore MTI page",
-      "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea",
+      "url": "https://www.meti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea",
       "status": 404,
       "outcome": "anti_bot",
       "reason": "known_browser_only",
-      "detail": "Singapore MTI serves 404 to automated clients; the page was read through the extraction tool"
+      "detail": "Singapore METI serves 404 to automated clients; the page was read through the extraction tool"
     },
     {
       "instrument_id": "uksdea-2022",
@@ -2132,9 +2152,9 @@
       "source_id": "unesdoc-pdf",
       "label": "UNESCO Digital Library",
       "url": "https://web.archive.org/web/20261029235825/https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_75c9fb6b-92a6-4982-b772-79f540c9fc39?_=381137eng.pdf",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {

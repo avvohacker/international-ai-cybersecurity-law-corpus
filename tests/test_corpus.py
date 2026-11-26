@@ -739,11 +739,12 @@ class TestCatalogue(unittest.TestCase):
             {"New Zealand", "Singapore", "Chile", "Korea", "Costa Rica"},
         )
         costa = next(entry for entry in parties["entries"] if entry["party"] == "Costa Rica")
-        self.assertEqual(costa["accession"], "2026-09-17")
-        # The joint release announces the accession, not entry into force.
-        self.assertNotIn("entry_into_force", costa)
+        self.assertEqual(costa["accession"], "2026-07-17")
+        self.assertEqual(costa["entry_into_force"], "2026-09-14")
+        self.assertIn("17 July 2026", " ".join(costa["notes"]))
         self.assertIn("fifth Party", inst["status_note"])
-        self.assertIn("does not state an entry-into-force date", inst["status_note"])
+        self.assertIn("14 September 2026", inst["status_note"])
+        self.assertEqual(parties["counts"]["signatures"]["total"], 3)
 
     def test_afcfta_protocol_reads_article_2_languages_and_annex(self) -> None:
         inst = read_instrument("afcfta-digital-trade-protocol-2024")
@@ -2105,7 +2106,7 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 239)
+        self.assertEqual(len(targets), 241)
         self.assertEqual(len({target.instrument_id for target in targets}), 75)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)

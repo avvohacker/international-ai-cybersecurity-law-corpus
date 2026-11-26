@@ -5,14 +5,14 @@
     "entered_into_force": "2022-06-14",
     "notes": "Signed in Singapore on 25 February 2022; entered into force on 14 June 2022.",
     "signed": "2022-02-25",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
   ],
   "gaps": [
     "AI article is cooperative, not prescriptive.",
-    "No depositary record consulted.",
+    "No separate depositary register or accession table is maintained; the agreement is bilateral and no third party is recorded.",
     "No assessment of the UK-Singapore AI cooperation beyond the treaty article.",
     "Only the English text is stored. Article 7 does not appear in the agreement's numbering; the units follow the text."
   ],
@@ -28,27 +28,42 @@
     "authentic": [
       "en"
     ],
-    "note": "The official English text is stored and segmented. Other language versions, if any, were not acquired.",
+    "note": "The UK Treaty Series text states that the Agreement is done in duplicate at Singapore on 25 February 2022 in English; English is recorded as the authentic language.",
     "translations": []
   },
   "parties": {
     "act": "treaty_signature",
-    "as_of": "2026-11-23",
+    "as_of": "2026-11-26",
     "counts": {
       "parties": {
         "basis": "verified_total",
         "total": 2,
-        "verified": 2
+        "verified": 2,
+        "source_ids": [
+          "uk-treaty",
+          "mti-page"
+        ]
       },
       "ratifications": {
         "basis": "not_applicable",
         "total": null,
-        "verified": 0
+        "verified": 0,
+        "note": "Bilateral agreement; entry into force follows the exchange of written notifications, and no separate ratification tally is maintained."
       },
       "signatures": {
         "basis": "verified_total",
         "total": 2,
-        "verified": 2
+        "verified": 2,
+        "source_ids": [
+          "uk-treaty",
+          "mti-page"
+        ]
+      },
+      "accessions": {
+        "basis": "not_applicable",
+        "total": null,
+        "verified": 0,
+        "note": "Bilateral agreement; no accession procedure or third-party accession is recorded."
       }
     },
     "declarations": [],
@@ -75,14 +90,53 @@
       "mti-page",
       "uk-treaty"
     ],
-    "summary": "Two Parties: the United Kingdom and Singapore.",
+    "summary": "Two Parties: the United Kingdom and Singapore; no accessions.",
     "unknowns": [
-      "No depositary register was consulted; dates rely on the UK treaty series and Singapore MTI page."
+      "No separate depositary register or accession table is maintained; the agreement is bilateral and no third party is recorded."
     ],
     "withdrawals": []
   },
   "provenance": {
-    "assertions": [],
+    "assertions": [
+      {
+        "date": "2026-11-26",
+        "field": "status",
+        "locator": "UK Treaty Series No. 22 (2023): signed 25 February 2022, entered into force 14 June 2022; Article 6",
+        "method": "official_text_read",
+        "source_ids": [
+          "uk-treaty"
+        ]
+      },
+      {
+        "date": "2026-11-26",
+        "field": "parties",
+        "locator": "UK Treaty Series and Singapore METI page: United Kingdom and Singapore",
+        "method": "official_page_read",
+        "source_ids": [
+          "uk-treaty",
+          "mti-page"
+        ]
+      },
+      {
+        "date": "2026-11-26",
+        "field": "counts",
+        "locator": "UK Treaty Series and Article 6: two Parties; no accession clause",
+        "method": "official_text_read",
+        "source_ids": [
+          "uk-treaty",
+          "mti-page"
+        ]
+      },
+      {
+        "date": "2026-11-26",
+        "field": "legal_nature",
+        "locator": "Article 6 (final provisions) and preamble",
+        "method": "official_text_read",
+        "source_ids": [
+          "uk-treaty"
+        ]
+      }
+    ],
     "discovered_via": "UK treaty series and Singapore MTI digital-economy pages; article number cross-checked in an ADB comparative study used only as a finding aid.",
     "search_dates": [
       "2026-11-23"
@@ -120,7 +174,7 @@
   },
   "sources": [
     {
-      "accessed": "2026-11-23",
+      "accessed": "2026-11-26",
       "http_status": 200,
       "id": "uk-treaty",
       "kind": "official_primary",
@@ -134,8 +188,8 @@
       "id": "mti-page",
       "kind": "official_secondary",
       "note": "Confirms signature and entry into force and identifies AI as a cooperative element.",
-      "publisher": "Ministry of Trade and Industry, Singapore",
-      "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea"
+      "publisher": "Ministry of Energy, Trade and Industry, Singapore",
+      "url": "https://www.meti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea"
     },
     {
       "accessed": "2026-11-25",
@@ -150,7 +204,7 @@
     }
   ],
   "status": "in_force",
-  "status_note": "In force between the United Kingdom and Singapore.",
+  "status_note": "In force between the United Kingdom and Singapore; two Parties and no accessions.",
   "title": {
     "official": "Digital Economy Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Singapore",
     "short": "UK-Singapore Digital Economy Agreement (UKSDEA)"
@@ -158,7 +212,7 @@
   "verification": {
     "checks": [
       {
-        "check": "Signature and entry-into-force dates checked on the UK Treaty Series PDF and Singapore MTI page.",
+        "check": "Signature and entry-into-force dates checked on the UK Treaty Series PDF and Singapore METI page.",
         "date": "2026-11-23",
         "result": "Signed 25 February 2022; in force 14 June 2022."
       },
@@ -171,6 +225,11 @@
         "check": "Full text acquired and segmented.",
         "date": "2026-11-25",
         "result": "35 article unit(s) generated from the stored text; source URL, retrieval date and SHA-256 are recorded in the manifest and catalog/acquisitions.json."
+      },
+      {
+        "check": "Signature, entry into force and party status rechecked in the UK Treaty Series and on the Singapore METI page.",
+        "date": "2026-11-26",
+        "result": "Signed 25 February 2022; entered into force 14 June 2022 between the United Kingdom and Singapore. The text records no accession procedure or third party."
       }
     ],
     "level": "metadata_verified",

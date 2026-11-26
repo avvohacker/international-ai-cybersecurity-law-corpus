@@ -1,13 +1,13 @@
 {
   "checked": 73,
-  "audited_on": "2026-11-25",
+  "audited_on": "2026-11-26",
   "scope": "acquisition-batch",
   "instruments": 15,
   "summary": {
-    "ok": 52,
+    "ok": 49,
     "anti_bot": 21,
     "broken": 0,
-    "transient": 0
+    "transient": 3
   },
   "results": [
     {
@@ -265,20 +265,20 @@
       "source_id": "cis-document",
       "label": "CIS document",
       "url": "https://eccis.org/document/5864",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "URLError"
     },
     {
       "instrument_id": "cis-it-crimes-agreement-2018",
       "source_id": "cis-registry",
       "label": "CIS legal register",
       "url": "https://eccis.org/reestrv2/doc/5864",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "URLError"
     },
     {
       "instrument_id": "cis-it-crimes-agreement-2018",
@@ -305,10 +305,10 @@
       "source_id": "stored-official-russian",
       "label": "Stored official Russian text",
       "url": "https://eccis.org/document/5864",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "URLError"
     },
     {
       "instrument_id": "coe-cets-224",
@@ -524,11 +524,11 @@
       "instrument_id": "uksdea-2022",
       "source_id": "mti-page",
       "label": "Singapore MTI page",
-      "url": "https://www.mti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea",
+      "url": "https://www.meti.gov.sg/trade-international-economic-relations/agreements/digital-economy-agreements-dea/uksdea",
       "status": 404,
       "outcome": "anti_bot",
       "reason": "known_browser_only",
-      "detail": "Singapore MTI serves 404 to automated clients; the page was read through the extraction tool"
+      "detail": "Singapore METI serves 404 to automated clients; the page was read through the extraction tool"
     },
     {
       "instrument_id": "uksdea-2022",
@@ -625,9 +625,9 @@
       "source_id": "digwatch-text",
       "label": "Digital Watch Observatory (Geneva Internet Platform)",
       "url": "https://dig.watch/resource/agreement-on-the-establishment-of-the-world-artificial-intelligence-cooperation-organization",
-      "status": 200,
+      "status": 403,
       "outcome": "anti_bot",
-      "reason": "challenge_on_200",
+      "reason": "http_403",
       "detail": ""
     },
     {
