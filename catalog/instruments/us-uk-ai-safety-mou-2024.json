@@ -2,10 +2,10 @@
   "binding_status": "non_binding",
   "category": "non_binding_instrument",
   "dates": {
-    "notes": "Signed on 1 April 2024 by Michelle Donelan, UK Secretary of State for Science, Innovation and Technology, and Gina Raimondo, US Secretary of Commerce. The GOV.UK publication and press release are dated 2 April 2024. No renewal, modification, termination or replacement of the 2024 MOU was located. The institutions named at signature have been renamed: the UK AI Safety Institute is now the AI Security Institute, and NIST lists its centre as the Center for Advancing Innovation and Standards for Super Intelligence (CAISSI). A separate UK-US Technology Prosperity Deal MOU of 18 September 2025 provides for cooperation between the US Center for AI Standards and Innovation and the UK AI Security Institute and is expressly non-binding. Joint UK AISI/CAISI technical work continued, with a joint preliminary assessment published by NIST on 23 July 2026.",
+    "notes": "Signed on 1 April 2024 by Michelle Donelan, UK Secretary of State for Science, Innovation and Technology, and Gina Raimondo, US Secretary of Commerce. The GOV.UK publication and press release are dated 2 April 2024. No renewal, modification, termination or replacement of the 2024 MOU was located. The institutions named at signature have been renamed: the UK AI Safety Institute is now the AI Security Institute, and NIST lists its centre as the Center for Advancing Innovation and Standards for Super Intelligence (CAISSI). A separate UK-US Technology Prosperity Deal MOU of 18 September 2025 provides for cooperation between the US Center for AI Standards and Innovation and the UK AI Security Institute and is expressly non-binding. Joint UK AISI/CAISI technical work continued, with a joint preliminary assessment published by NIST and the UK AI Security Institute on 23 July 2026. The GOV.UK publication page still carries only the original 2 April 2024 notice, and no renewal, modification, termination or replacement document was located on 26 November 2026.",
     "published": "2024-04-02",
     "signed": "2024-04-01",
-    "verified_on": "2026-11-25"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
@@ -16,7 +16,7 @@
     "No depositary, ratification or UN Charter Article 102 registration is stated; this is an MOU, not a treaty.",
     "No monitoring, reporting or evaluation mechanism is published.",
     "Institutional names changed after signature: the UK AI Safety Institute is now the AI Security Institute, and NIST lists its centre as the Center for Advancing Innovation and Standards for Super Intelligence (CAISSI); the 2024 MOU summary does not reflect either renaming.",
-    "No renewal, modification, termination or replacement of the 2024 MOU was located; the published summary contains no duration, review or termination clause.",
+    "No renewal, modification, termination or replacement of the 2024 MOU was located on 26 November 2026; the published summary contains no duration, review or termination clause.",
     "The UK-US Technology Prosperity Deal MOU of 18 September 2025 is a separate non-binding instrument that provides for cooperation between CAISI and the AI Security Institute; it is not the text of this MOU.",
     "The U.S. Department of Commerce announcement returned HTTP 403 to automated retrieval; verification relies on the UK official publication."
   ],
@@ -197,10 +197,20 @@
       "note": "NIST page 'UK AISI / CAISI Preliminary Assessment of Kimi K3's Cyber Capabilities', published 23 July 2026 and modified 28 August 2026; documents continuing joint UK AISI-CAISI technical work.",
       "publisher": "National Institute of Standards and Technology (United States)",
       "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "aisi-joint-assessment",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "UK AI Security Institute blog, 23 July 2026: the joint UK AISI/CAISI preliminary assessment of Kimi K3's cyber capabilities, published by both institutes.",
+      "publisher": "AI Security Institute (United Kingdom)",
+      "url": "https://www.aisi.gov.uk/blog/preliminary-assessment-of-kimi-k3s-cyber-capabilities"
     }
   ],
   "status": "adopted",
-  "status_note": "Bilateral memorandum of understanding between the United Kingdom and the United States. It is a non-binding political and technical cooperation instrument, not a treaty. The classification follows the MOU form and the absence of binding language in the official summary; the full MOU text was not published. The summary states no ratification, depositary, duration, termination, review or dispute-settlement procedure. No renewal, termination or replacement document was located. The institutions have since been renamed: the UK AI Safety Institute is now the AI Security Institute, and NIST lists its centre as the Center for Advancing Innovation and Standards for Super Intelligence (CAISSI). A separate UK-US Technology Prosperity Deal MOU of 18 September 2025 provides for cooperation between the US Center for AI Standards and Innovation and the UK AI Security Institute and is expressly non-binding; it may be discontinued 180 days after notice. Joint UK AISI/CAISI technical work continued, with a joint preliminary assessment published by NIST on 23 July 2026.",
+  "status_note": "Bilateral memorandum of understanding between the United Kingdom and the United States. It is a non-binding political and technical cooperation instrument, not a treaty. The classification follows the MOU form and the absence of binding language in the official summary; the full MOU text was not published. The summary states no ratification, depositary, duration, termination, review or dispute-settlement procedure. No renewal, termination or replacement document was located. The institutions have since been renamed: the UK AI Safety Institute is now the AI Security Institute, and NIST lists its centre as the Center for Advancing Innovation and Standards for Super Intelligence (CAISSI). A separate UK-US Technology Prosperity Deal MOU of 18 September 2025 provides for cooperation between the US Center for AI Standards and Innovation and the UK AI Security Institute and is expressly non-binding; it may be discontinued 180 days after notice. Joint UK AISI/CAISI technical work continued, with a joint preliminary assessment published by NIST and the UK AI Security Institute on 23 July 2026.",
   "title": {
     "official": "Collaboration on the safety of AI: UK-US memorandum of understanding",
     "short": "UK–US AI Safety MOU"
@@ -235,7 +245,12 @@
       {
         "check": "Later UK-US instruments and joint technical work checked on official pages.",
         "date": "2026-11-25",
-        "result": "The Technology Prosperity Deal MOU of 18 September 2025 provides for CAISI-AI Security Institute cooperation, states that it creates no legally binding obligations and may be discontinued 180 days after notice. A joint UK AISI/CAISI preliminary assessment was published by NIST on 23 July 2026."
+        "result": "The Technology Prosperity Deal MOU of 18 September 2025 provides for cooperation between the U.S. Center for AI Standards and Innovation and the UK AI Security Institute, states that it creates no legally binding obligations and may be discontinued 180 days after notice. A joint UK AISI/CAISI preliminary assessment was published by NIST on 23 July 2026."
+      },
+      {
+        "check": "Transatlantic follow-up rechecked on official UK and US pages.",
+        "date": "2026-11-26",
+        "result": "The GOV.UK MOU publication remains the original 2 April 2024 summary and carries no renewal, modification, termination or replacement notice. The UK AI Security Institute's own blog confirms the 23 July 2026 joint evaluation with CAISI. The Technology Prosperity Deal MOU text provides for cooperation between the U.S. Center for AI Standards and Innovation and the UK AI Security Institute, expressly creates no legally binding obligations and permits discontinuation 180 days after written notice."
       }
     ],
     "level": "metadata_verified",
