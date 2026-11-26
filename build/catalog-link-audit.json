@@ -1,13 +1,13 @@
 {
-  "checked": 237,
-  "audited_on": "2026-11-25",
+  "checked": 244,
+  "audited_on": "2026-11-26",
   "scope": "catalog",
-  "instruments": 72,
+  "instruments": 75,
   "summary": {
-    "ok": 171,
-    "anti_bot": 61,
+    "ok": 157,
+    "anti_bot": 77,
     "broken": 0,
-    "transient": 5,
+    "transient": 10,
     "live_but_unreachable": 3
   },
   "results": [
@@ -542,6 +542,36 @@
       "detail": ""
     },
     {
+      "instrument_id": "cen-en-18286-2026",
+      "source_id": "cen-ai-page",
+      "label": "CEN-CENELEC",
+      "url": "https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "cen-en-18286-2026",
+      "source_id": "cen-news",
+      "label": "CEN-CENELEC",
+      "url": "https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-07-30-ai-quality-management",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "cen-en-18286-2026",
+      "source_id": "eurlex-decision",
+      "label": "Official Journal of the European Union",
+      "url": "https://data.europa.eu/eli/dec_impl/2026/2274/oj",
+      "status": 202,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "china-global-ai-governance-initiative-2023",
       "source_id": "cac-zh",
       "label": "Cyberspace Administration of China",
@@ -576,20 +606,20 @@
       "source_id": "cis-document",
       "label": "CIS document",
       "url": "https://eccis.org/document/5864",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "URLError"
     },
     {
       "instrument_id": "cis-it-crimes-agreement-2018",
       "source_id": "cis-registry",
       "label": "CIS legal register",
       "url": "https://eccis.org/reestrv2/doc/5864",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "URLError"
     },
     {
       "instrument_id": "cis-it-crimes-agreement-2018",
@@ -616,20 +646,20 @@
       "source_id": "stored-official-russian",
       "label": "Stored official Russian text",
       "url": "https://eccis.org/document/5864",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "URLError"
     },
     {
       "instrument_id": "cis-minsk-agreement-2001",
       "source_id": "cis-minsk-document",
       "label": "CIS Executive Committee",
       "url": "https://eccis.org/document/1180",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "URLError"
     },
     {
       "instrument_id": "cis-minsk-agreement-2001",
@@ -1182,6 +1212,26 @@
       "detail": ""
     },
     {
+      "instrument_id": "ieee-7000-2021",
+      "source_id": "ieee-news",
+      "label": "IEEE Standards Association",
+      "url": "https://standards.ieee.org/news/ieee-7000",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "ieee-7000-2021",
+      "source_id": "ieee-standard",
+      "label": "IEEE Standards Association",
+      "url": "https://standards.ieee.org/ieee/7000/6781/",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
+      "detail": ""
+    },
+    {
       "instrument_id": "iso-iec-22989-2022",
       "source_id": "iso-catalogue",
       "label": "ISO",
@@ -1229,6 +1279,26 @@
       "status": 403,
       "outcome": "anti_bot",
       "reason": "http_403",
+      "detail": ""
+    },
+    {
+      "instrument_id": "itu-t-y3172-2019",
+      "source_id": "itu-rec",
+      "label": "International Telecommunication Union",
+      "url": "https://www.itu.int/rec/T-REC-Y.3172-201906-I/en",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "itu-t-y3172-2019",
+      "source_id": "itu-rec-db",
+      "label": "International Telecommunication Union",
+      "url": "https://www.itu.int/itu-t/recommendations/rec.aspx?rec=13894",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -1286,9 +1356,9 @@
       "source_id": "india-outcomes",
       "label": "AI Impact Summit 2026, Government of India",
       "url": "https://impact.indiaai.gov.in/outcome-resources",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
       "detail": ""
     },
     {
@@ -1296,9 +1366,9 @@
       "source_id": "mea-declaration",
       "label": "Ministry of External Affairs, Government of India",
       "url": "https://mea.gov.in/bilateral-documents.htm?dtl/40809",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
       "detail": ""
     },
     {
@@ -1468,10 +1538,10 @@
       "source_id": "australia-pdf",
       "label": "Australian Government signed PDF",
       "url": "https://www.industry.gov.au/sites/default/files/2025-12/pax-silica-declaration-signed.pdf",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "TimeoutError"
     },
     {
       "instrument_id": "pax-silica-declaration-2025",
@@ -1490,9 +1560,9 @@
       "source_id": "state-ai-opportunity",
       "label": "State Department AI Opportunity page",
       "url": "https://www.state.gov/ai-opportunity-statement",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 407,
+      "outcome": "anti_bot",
+      "reason": "http_407",
       "detail": ""
     },
     {
@@ -1500,9 +1570,9 @@
       "source_id": "state-paraguay",
       "label": "State Department Paraguay release",
       "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/10/united-states-welcomes-paraguay-as-newest-pax-silica-signatory",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 407,
+      "outcome": "anti_bot",
+      "reason": "http_407",
       "detail": ""
     },
     {
@@ -1510,9 +1580,9 @@
       "source_id": "state-pax-silica",
       "label": "State Department Pax Silica page",
       "url": "https://www.state.gov/pax-silica",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 407,
+      "outcome": "anti_bot",
+      "reason": "http_407",
       "detail": ""
     },
     {
@@ -1520,9 +1590,9 @@
       "source_id": "state-san-francisco",
       "label": "United States Department of State",
       "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 407,
+      "outcome": "anti_bot",
+      "reason": "http_407",
       "detail": ""
     },
     {
@@ -1530,9 +1600,9 @@
       "source_id": "state-second-summit",
       "label": "State Department second-summit fact sheet",
       "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/outcomes-of-the-second-pax-silica-summit",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 407,
+      "outcome": "anti_bot",
+      "reason": "http_407",
       "detail": ""
     },
     {
@@ -1540,9 +1610,9 @@
       "source_id": "state-taiwan-joint-statement",
       "label": "State Department Taiwan statement",
       "url": "https://www.state.gov/releases/under-secretary-for-economic-affairs/2026/01/joint-statement-on-the-pax-silica-declaration-and-u-s-taiwan-economic-security-cooperation",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 407,
+      "outcome": "anti_bot",
+      "reason": "http_407",
       "detail": ""
     },
     {
@@ -1560,9 +1630,9 @@
       "source_id": "state-page",
       "label": "State Department page",
       "url": "https://2021-2025.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 407,
+      "outcome": "anti_bot",
+      "reason": "http_407",
       "detail": ""
     },
     {
@@ -1570,9 +1640,9 @@
       "source_id": "state-text-pdf",
       "label": "U.S. Department of State",
       "url": "https://www.state.gov/wp-content/uploads/2023/10/Latest-Version-Political-Declaration-on-Responsible-Military-Use-of-AI-and-Autonomy.pdf",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 407,
+      "outcome": "anti_bot",
+      "reason": "http_407",
       "detail": ""
     },
     {
@@ -1682,9 +1752,9 @@
       "source_id": "state-san-francisco",
       "label": "United States Department of State, Office of the Spokesman",
       "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 407,
+      "outcome": "anti_bot",
+      "reason": "http_407",
       "detail": ""
     },
     {
@@ -2062,9 +2132,9 @@
       "source_id": "unesdoc-pdf",
       "label": "UNESCO Digital Library",
       "url": "https://web.archive.org/web/20261029235825/https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_75c9fb6b-92a6-4982-b772-79f540c9fc39?_=381137eng.pdf",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -2272,9 +2342,9 @@
       "source_id": "digwatch-text",
       "label": "Digital Watch Observatory (Geneva Internet Platform)",
       "url": "https://dig.watch/resource/agreement-on-the-establishment-of-the-world-artificial-intelligence-cooperation-organization",
-      "status": 200,
+      "status": 403,
       "outcome": "anti_bot",
-      "reason": "challenge_on_200",
+      "reason": "http_403",
       "detail": ""
     },
     {

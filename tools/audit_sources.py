@@ -290,9 +290,10 @@ def classify(
 
     Returns ``(outcome, reason)`` where outcome is one of ``ok``, ``anti_bot``,
     ``broken`` or ``transient``. A 403/405/429 is a block, not a broken URL; a
-    404/410, a DNS failure, a refused connection or a TLS failure is broken.
-    A 404/410 from a host listed in ``BROWSER_ONLY_HOSTS`` is the known
-    exception: ``probe`` reclassifies it as an anti-bot block.
+    404/410, a refused connection or a TLS failure is broken. A DNS failure is
+    a network error, not evidence that the page was withdrawn, so it is
+    ``transient``. A 404/410 from a host listed in ``BROWSER_ONLY_HOSTS`` is
+    the known exception: ``probe`` reclassifies it as an anti-bot block.
     """
     if error is not None:
         if isinstance(error, urllib.error.HTTPError):
@@ -304,7 +305,7 @@ def classify(
         if isinstance(error, ssl.SSLError):
             return "broken", "tls_handshake"
         if isinstance(error, socket.gaierror):
-            return "broken", "dns"
+            return "transient", "dns"
         if isinstance(error, (TimeoutError, socket.timeout)):
             return "transient", "timeout"
         if isinstance(

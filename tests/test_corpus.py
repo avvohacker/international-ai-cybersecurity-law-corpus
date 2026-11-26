@@ -1938,6 +1938,75 @@ class TestBuild(unittest.TestCase):
         self.assertIn("54 endorsers as of September 2026", pax["parties"]["unknowns"][-1])
 
 
+class TestStandardRecords(unittest.TestCase):
+    """Focused checks for the ITU, IEEE and CEN standards added on 26 November 2026."""
+
+    def test_standard_records_are_metadata_only_and_distinct(self) -> None:
+        instruments = corpuslib.load_instruments()
+        standards = {
+            iid: inst
+            for iid, inst in instruments.items()
+            if inst.get("category") == "technical_standard"
+        }
+        self.assertEqual(len(standards), 8)
+        for iid in ("itu-t-y3172-2019", "ieee-7000-2021", "cen-en-18286-2026"):
+            inst = standards[iid]
+            self.assertEqual(inst["instrument_type"], "standard")
+            self.assertEqual(inst["binding_status"], "non_binding")
+            self.assertEqual(inst["domains"], ["ai"])
+            self.assertEqual(inst["verification"]["level"], "metadata_verified")
+            self.assertTrue(inst["sources"])
+
+    def test_itu_t_y3172_record(self) -> None:
+        inst = read_instrument("itu-t-y3172-2019")
+        self.assertEqual(inst["dates"]["adopted"], "2019-06-22")
+        self.assertEqual(inst["status"], "adopted")
+        self.assertIn("Y.3172 (06/2019)", inst["title"]["official"])
+        sources = {source["id"]: source for source in inst["sources"]}
+        self.assertEqual(set(sources), {"itu-rec", "itu-rec-db"})
+        self.assertEqual(
+            sources["itu-rec"]["url"],
+            "https://www.itu.int/rec/T-REC-Y.3172-201906-I/en",
+        )
+        self.assertEqual(sources["itu-rec-db"]["url"], "https://www.itu.int/itu-t/recommendations/rec.aspx?rec=13894")
+
+    def test_ieee_7000_record(self) -> None:
+        inst = read_instrument("ieee-7000-2021")
+        self.assertEqual(inst["dates"]["published"], "2021-09-15")
+        self.assertEqual(inst["status"], "adopted")
+        self.assertIn("IEEE 7000-2021", inst["title"]["official"])
+        sources = {source["id"]: source for source in inst["sources"]}
+        self.assertEqual(set(sources), {"ieee-standard", "ieee-news"})
+        self.assertEqual(
+            sources["ieee-standard"]["url"],
+            "https://standards.ieee.org/ieee/7000/6781/",
+        )
+
+    def test_cen_en_18286_uses_stable_official_urls(self) -> None:
+        inst = read_instrument("cen-en-18286-2026")
+        self.assertEqual(inst["dates"]["published"], "2026-07-22")
+        self.assertEqual(inst["status"], "adopted")
+        self.assertIn("EN 18286:2026", inst["title"]["official"])
+        sources = {source["id"]: source for source in inst["sources"]}
+        self.assertEqual(set(sources), {"eurlex-decision", "cen-news", "cen-ai-page"})
+        self.assertEqual(
+            sources["eurlex-decision"]["url"],
+            "https://data.europa.eu/eli/dec_impl/2026/2274/oj",
+        )
+        self.assertEqual(
+            sources["cen-news"]["url"],
+            "https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-07-30-ai-quality-management",
+        )
+        urls = [source["url"] for source in inst["sources"]] + [inst["rights"]["url"]]
+        for url in urls:
+            self.assertTrue(url.startswith("https://"), url)
+            self.assertNotIn("cs=", url)
+            self.assertNotIn("/ords/f", url)
+        self.assertEqual(inst["rights"]["url"], sources["cen-news"]["url"])
+        self.assertIn("checksum", inst["dates"]["notes"])
+        self.assertIn("checksum", inst["verification"]["notes"])
+
+
 class TestLinkAudit(unittest.TestCase):
     """Offline tests for the link classifier; probe() is never called here."""
 
@@ -1985,12 +2054,25 @@ class TestLinkAudit(unittest.TestCase):
         self.assertEqual(classify(200, {"Server": "cloudflare"}, "Just a moment..."), ("anti_bot", "challenge_on_200"))
         self.assertEqual(classify(200, {"cf-mitigated": "challenge"}, ""), ("anti_bot", "challenge_on_200"))
         self.assertEqual(classify(None, error=TimeoutError("timeout")), ("transient", "timeout"))
-        self.assertEqual(classify(None, error=socket.gaierror("dns")), ("broken", "dns"))
+        self.assertEqual(classify(None, error=socket.gaierror("dns")), ("transient", "dns"))
         self.assertEqual(classify(None, error=ConnectionRefusedError()), ("broken", "connection"))
         self.assertEqual(classify(None, error=ssl.SSLCertVerificationError("cert")), ("broken", "tls_certificate"))
         self.assertEqual(classify(None, error=ssl.SSLError("handshake")), ("broken", "tls_handshake"))
         wrapped = __import__("urllib.error", fromlist=["URLError"]).URLError(socket.gaierror("dns"))
-        self.assertEqual(classify(None, error=wrapped), ("broken", "dns"))
+        self.assertEqual(classify(None, error=wrapped), ("transient", "dns"))
+
+    def test_dns_failure_is_transient_not_broken(self) -> None:
+        """A DNS failure must not be reported as a withdrawn page."""
+        classify = self.audit.classify
+        self.assertEqual(classify(None, error=socket.gaierror("Name or service not known")), ("transient", "dns"))
+        wrapped = __import__("urllib.error", fromlist=["URLError"]).URLError(
+            socket.gaierror("Name or service not known")
+        )
+        self.assertEqual(classify(None, error=wrapped), ("transient", "dns"))
+        result = self.audit.Result("id", "src", "label", "https://eccis.org/x", None, *classify(None, error=wrapped))
+        entry = self.audit.annotate_result(result)
+        self.assertEqual(entry["outcome"], "transient")
+        self.assertEqual(entry["reason"], "dns")
 
     def test_known_browser_only_host(self) -> None:
         self.assertIn(
