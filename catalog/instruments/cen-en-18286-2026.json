@@ -3,7 +3,7 @@
   "category": "technical_standard",
   "dates": {
     "adopted": null,
-    "notes": "Date of ratification (DOR) 2026-07-12; date of availability (DAV) 2026-07-22; date of announcement (DOA) 2026-10-31; date of publication (DOP) and date of withdrawal (DOW) 2027-01-31. Cited in the Official Journal as OJ L, 2026/2274 (2026-10-14) for Directive 2024/1689.",
+    "notes": "Date of ratification (DOR) 2026-07-12; date of availability (DAV) 2026-07-22; date of announcement (DOA) 2026-10-31; date of publication (DOP) and date of withdrawal (DOW) 2027-01-31. Cited in the Official Journal as OJ L, 2026/2274 (2026-10-14) for Directive 2024/1689. The implementation dates and work item JT021039 were recorded from CEN's project data, whose page is served only with a session checksum; the stable citations in this record are the CEN-CENELEC article and the OJEU decision.",
     "published": "2026-07-22",
     "verified_on": "2026-11-26"
   },
@@ -39,18 +39,18 @@
         "date": "2026-11-26",
         "method": "official_page_read",
         "source_ids": [
-          "cen-project"
+          "cen-news"
         ],
-        "locator": "CEN/CLC/JTC 21 project JT021039, EN 18286:2026: title, scope, status Published, DOR/DAV/DOA/DOP/DOW, M/613, OJ L 2026/2274."
+        "locator": "CEN-CENELEC article of 31 July 2026: title and scope of EN 18286:2026."
       },
       {
         "field": "status",
         "date": "2026-11-26",
         "method": "official_page_read",
         "source_ids": [
-          "cen-ai-page"
+          "eurlex-decision"
         ],
-        "locator": "Artificial Intelligence topic page: JTC 21 established 1 June 2021, five working groups, harmonised standards in support of the EU AI Act, eNorm mandate 593."
+        "locator": "Annex to Implementing Decision (EU) 2026/2274: reference to EN 18286:2026 and Regulation (EU) 2024/1689."
       }
     ],
     "discovered_via": "CEN-CENELEC standards database and AI topic page, following the standards-layer candidate register.",
@@ -76,17 +76,26 @@
     "licence": "CEN-CENELEC copyright",
     "note": "European standards are sold through the national standards bodies. This corpus stores metadata and links only and does not reproduce the standard.",
     "status": "restricted",
-    "url": "https://standards.cencenelec.eu/ords/f?p=CEN:110:::::FSP_PROJECT,FSP_ORG_ID:80556,2916257&cs=12A382BDB5385F509EBAA7CD4808AFBF3"
+    "url": "https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-07-30-ai-quality-management"
   },
   "sources": [
     {
       "accessed": "2026-11-26",
+      "http_status": 202,
+      "id": "eurlex-decision",
+      "kind": "official_journal",
+      "note": "Commission Implementing Decision (EU) 2026/2274 of 12 October 2026 on the harmonised standards for high-risk AI systems drafted in support of Regulation (EU) 2024/1689; OJ L, 2026/2274, 14.10.2026; the Annex lists EN 18286:2026.",
+      "publisher": "Official Journal of the European Union",
+      "url": "https://data.europa.eu/eli/dec_impl/2026/2274/oj"
+    },
+    {
+      "accessed": "2026-11-26",
       "http_status": 200,
-      "id": "cen-project",
-      "kind": "official_primary",
-      "note": "CEN project page: EN 18286:2026, Quality management system for EU AI Act regulatory purposes, work item JT021039, status Published, DAV 2026-07-22, mandate M/613, OJ L 2026/2274 (2026-10-14).",
+      "id": "cen-news",
+      "kind": "official_secondary",
+      "note": "CEN-CENELEC article of 31 July 2026: EN 18286:2026 has been published; title and scope; first harmonised European standard for the AI Act.",
       "publisher": "CEN-CENELEC",
-      "url": "https://standards.cencenelec.eu/ords/f?p=CEN:110:::::FSP_PROJECT,FSP_ORG_ID:80556,2916257&cs=12A382BDB5385F509EBAA7CD4808AFBF3"
+      "url": "https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-07-30-ai-quality-management"
     },
     {
       "accessed": "2026-11-26",
@@ -107,14 +116,14 @@
   "verification": {
     "checks": [
       {
-        "check": "Reference, title, work item, scope and publication status checked on the CEN-CENELEC project page.",
+        "check": "Reference, title, scope and publication status checked in the CEN-CENELEC article of 31 July 2026.",
         "date": "2026-11-26",
-        "result": "EN 18286:2026, work item JT021039, status Published, DAV 2026-07-22."
+        "result": "EN 18286:2026 published; title and scope confirmed."
       },
       {
-        "check": "Mandate and Official Journal citation checked on the CEN-CENELEC project page.",
+        "check": "Official Journal citation and harmonised-standard status checked in Commission Implementing Decision (EU) 2026/2274.",
         "date": "2026-11-26",
-        "result": "Mandate M/613; cited in OJ L, 2026/2274 (2026-10-14) for Directive 2024/1689 (Regulation (EU) 2024/1689 in the OJEU)."
+        "result": "Decision of 12 October 2026; OJ L, 2026/2274, 14.10.2026; Annex lists EN 18286:2026 under Regulation (EU) 2024/1689."
       },
       {
         "check": "Committee context checked on the CEN-CENELEC AI topic page.",
@@ -128,6 +137,6 @@
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata only. The standard is sold through the national standards bodies and was not acquired or analysed."
+    "notes": "Metadata only. The standard is sold through the national standards bodies and was not acquired or analysed. The CEN project page is served only with a session checksum, so the record cites the stable CEN-CENELEC article and the OJEU decision instead."
   }
 }
