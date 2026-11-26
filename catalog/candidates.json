@@ -213,12 +213,12 @@
     "issuer": "CPTPP Parties",
     "decision": "excluded",
     "instrument_id": null,
-    "reason": "A major digital-trade treaty, but no express AI-specific provision was located in the materials consulted. It is not included in the AI-provisions category; it remains relevant as general digital-trade background.",
+    "reason": "A major digital-trade treaty, but no express AI-specific provision was located in its full English text. It is not included in the AI-provisions category; it remains relevant as general digital-trade background.",
     "candidate_type": "trade_agreement",
     "official_url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/cptpp/",
-    "searched_on": "2026-11-23",
-    "evidence": "Official NZ MFAT CPTPP page located; full text not AI-keyword-checked.",
-    "gaps": "A full-text AI keyword check was not performed; exclusion is provisional."
+    "searched_on": "2026-11-26",
+    "evidence": "Full-text keyword search of the official English CPTPP text (preamble, 30 chapters and the suspension annex; 32 PDFs, 1,315,169 extracted characters) found no occurrence of 'artificial intelligence'. The English text prevails over the Spanish and French texts on divergence.",
+    "gaps": "The Spanish and French authentic texts were not keyword-searched; no AI-specific provision was found in the English text."
   },
   {
     "id": "usmca",
