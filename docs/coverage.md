@@ -70,7 +70,7 @@ Coverage achieved in the cycle ending **2026-11-26**. Counts are generated from 
 | `metadata_verified` | 65 |
 | `source_located` | 0 |
 
-Stored full texts: 36 (10 `full_text_checked` plus 26 `metadata_verified` records whose text is stored and segmented but was not read end-to-end).
+Stored full texts: 45 (10 `full_text_checked` plus 35 `metadata_verified` records whose text is stored and segmented but was not read end-to-end).
 
 ## Explicit gaps
 
@@ -104,4 +104,4 @@ Stored full texts: 36 (10 `full_text_checked` plus 26 `metadata_verified` record
 
 ## What “coverage” means here
 
-It means: 75 records (60 AI-domain and 15 cybersecurity-only records: nine cyber treaties, three internal-law acts — NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive — and three non-binding instruments — the Paris Call, the OECD Digital Security Recommendation and the Pall Mall Code), each with at least one official source and a declared verification level; 22 instruments with binding form (18 international — 13 in force and 5 not confirmed in force — and four internal law) and 53 non-binding; 36 stored full texts with hashed originals or transcribed text; 36 records with an acquired original (42 files); 17 maps; one category-6 negotiation record; and a candidate register of 45 entries (29 included, 5 pending, 11 excluded) that records both inclusions and exclusions. Cyber standards and cooperation channels remain pending. It does not mean that every international AI instrument has been found.
+It means: 75 records (60 AI-domain and 15 cybersecurity-only records: nine cyber treaties, three internal-law acts — NIS2, the Cyber Resilience Act and the ECOWAS Cybercrime Directive — and three non-binding instruments — the Paris Call, the OECD Digital Security Recommendation and the Pall Mall Code), each with at least one official source and a declared verification level; 22 instruments with binding form (18 international — 13 in force and 5 not confirmed in force — and four internal law) and 53 non-binding; 45 stored full texts with hashed originals or transcribed text; 45 records with an acquired original (51 files); 17 maps; one category-6 negotiation record; and a candidate register of 45 entries (29 included, 5 pending, 11 excluded) that records both inclusions and exclusions. Cyber standards and cooperation channels remain pending. It does not mean that every international AI instrument has been found.

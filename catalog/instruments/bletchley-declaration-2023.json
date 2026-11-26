@@ -4,16 +4,16 @@
   "dates": {
     "adopted": "2023-11-01",
     "notes": "Agreed at the AI Safety Summit, Bletchley Park, 1–2 November 2023. New Zealand joined the declaration on 23 October 2024.",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
   ],
   "gaps": [
     "Non-binding.",
-    "Full text not stored.",
     "Endorsement list is date-sensitive; the record reflects the GOV.UK page as of 23 November 2026.",
-    "No implementation or monitoring mechanism."
+    "No implementation or monitoring mechanism.",
+    "The stored text is the GOV.UK English publication, including the endorser list and the update note recording New Zealand's accession; the separate Spanish translation was not acquired."
   ],
   "id": "bletchley-declaration-2023",
   "instrument_type": "declaration",
@@ -200,7 +200,8 @@
     "assertions": [],
     "discovered_via": "GOV.UK AI Safety Summit publications.",
     "search_dates": [
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-26"
     ]
   },
   "related": [
@@ -230,7 +231,7 @@
   },
   "sources": [
     {
-      "accessed": "2026-11-23",
+      "accessed": "2026-11-26",
       "http_status": 200,
       "id": "govuk-declaration",
       "kind": "official_primary",
@@ -249,6 +250,14 @@
   ],
   "status": "adopted",
   "status_note": "Adopted by 28 States and the European Union on 1 November 2023; New Zealand joined on 23 October 2024. The record lists 29 States and the EU as of 23 November 2026. Political endorsement, not a treaty signature or ratification.",
+  "text": {
+    "extraction_note": "Official English text extracted from the GOV.UK HTML publication. The extraction starts at the declaration and ends before the page's navigation footer; it includes the country list and the New Zealand update note. The document is segmented as a single unit because it has no articles or numbered paragraphs.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
   "title": {
     "official": "The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 November 2023",
     "short": "Bletchley Declaration"
@@ -269,9 +278,14 @@
         "check": "Endorser list checked against the GOV.UK publication and its update note.",
         "date": "2026-11-23",
         "result": "28 States and the EU at adoption; New Zealand joined on 23 October 2024; 29 States and the EU in total. The list is reproduced party by party in parties.entries."
+      },
+      {
+        "check": "Official HTML page downloaded; the extracted text was checked for the declaration opening, the country list and the closing update note.",
+        "date": "2026-11-26",
+        "result": "8,440 characters; 1 unit; title, endorsers and New Zealand note present."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified; full text not stored. The declaration is political and does not create legal obligations. The endorser list is reproduced party by party from the GOV.UK page as of 23 November 2026."
+    "notes": "The official English text is stored and hashed. Extraction and unit integrity were checked, but the declaration was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
   }
 }

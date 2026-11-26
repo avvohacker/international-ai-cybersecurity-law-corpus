@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 81551,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official GOV.UK HTML publication of the Frontier AI Safety Commitments, including the initial and later endorsing organisations and the footnotes.",
+      "path": "source/frontier-ai-safety-commitments-2024-en.html",
+      "role": "original",
+      "sha256": "ff181edcf8d5ca97617574690da4e55dcdacc444abe63ed0d6fb66325d8a62c7",
+      "source_url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024"
+    },
+    {
+      "bytes": 6606,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "924e3c1d7227acced3012967bc6e647246dd303d476dc71fc3d240174fdce07d"
+    },
+    {
+      "bytes": 129,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "2c1a7f7c12f0f3fc27b281c7c3ff1c7438475b93400a623c81b40023d2fc74b6"
+    },
+    {
+      "bytes": 6937,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "310a68de3841c8e6600cf65a54afd052cf4db1836797eefd9f1762cc496684e7"
+    }
+  ],
+  "instrument_id": "frontier-ai-safety-commitments-2024",
+  "primary_text": "text/en.txt"
+}

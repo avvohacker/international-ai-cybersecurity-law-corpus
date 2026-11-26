@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 4233765,
+      "media_type": "application/pdf",
+      "note": "Official 87-page English PDF of the ASEAN Guide on AI Governance and Ethics, published by the ASEAN Secretariat.",
+      "path": "source/asean-ai-guide-2024-en.pdf",
+      "role": "original",
+      "sha256": "6464a6d912a918a1b49c36b7dbd7f66b4756352e49164c5020f28b0b190bfe4e",
+      "source_url": "https://asean.org/wp-content/uploads/2024/02/ASEAN-Guide-on-AI-Governance-and-Ethics_beautified_201223_v2.pdf"
+    },
+    {
+      "bytes": 191908,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "efd1ff1bfe5708423d2ebb3e4882fb673f827a0b5eb3d8411573894f5064a830"
+    },
+    {
+      "bytes": 7247,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "153d4fffcff92ab6e1884465c9f5172462c95d784db6752aa7416cafc8b16fa1"
+    },
+    {
+      "bytes": 212202,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "9f267f466acd2590db0190c8c385ae4d95ba920c1e908ac46b580a0702abf3ce"
+    }
+  ],
+  "instrument_id": "asean-ai-guide-2024",
+  "primary_text": "text/en.txt"
+}

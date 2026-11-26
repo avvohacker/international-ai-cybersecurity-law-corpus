@@ -1,0 +1,302 @@
+GE.26-14836  (E)
+Human Rights Council
+Sixty-third session
+7 September–7 October 2026
+Agenda item 3
+Promotion and protection of all human rights, civil,
+political, economic, social and cultural rights,
+including the right to development
+  Resolution adopted by the Human Rights Council
+on 6 October 2026
+63/15. Implications of artificial intelligence for the promotion and protection
+of human rights
+ The Human Rights Council,
+ Guided by the purposes and principles of the Charter of the United Nations,
+ Reaffirming the Universal Declaration of Human Rights and the Vienna Declaration
+and Programme of Action, the International Covenant on Civil and Political Rights, the
+International Covenant on Economic, Social and Cultural Rights and other relevant
+international human rights instruments,
+ Welcoming the adoption by the General Assembly of the Pact for the Future1 and the
+Global Digital Compact annexed thereto, including commitments to foster an inclusive, open,
+sustainable, fair, safe and secure digital future for all and to uphold international law,
+including international human rights law, throughout the life cy cle of digital and emerging
+technologies,
+ Recalling all relevant General Assembly and Human Rights Council resolutions ,
+including Council resolutions 53/29 of 14 July 2023 and  59/11 of 7 July 2025,  and
+emphasizing the importance of coherence and complementarity among relevant United
+Nations processes,
+ Welcoming the convening of the first Global Dialogue on Artificial Intelligence
+Governance in Geneva in July 2026, and taking note of the preliminary report of the
+Independent International Scientific Panel on Artificial Intelligence pursuant to General
+Assembly resolution 79/325 of 26 August 2025,
+ Recalling the Recommendation on the Ethics of Artificial Intelligence adopted by the
+General Conference of the United Nations Educational, Scientific and Cultural Organization
+on 23 November 2021, and taking note with appreciation of the work of the Office of the
+United Nations High Commissioner for Human Rights, the Human Rights Council Advisory
+Committee, the special procedures and other mechanisms of the Council concerning the
+human rights implications of artificial intelligence,
+
+ 1 General Assembly resolution 79/1.
+ United Nations A/HRC/RES/63/15
+
+General Assembly Distr.: General
+6 October 2026
+
+Original: English
+
+A/HRC/RES/63/15
+2
+ Reaffirming the Guiding Principles on Business and Human Rights, which set out the
+State duty to protect human rights and the responsibility of business enterprises, including
+technology companies to respect human rights, in particular by addressing adverse human
+rights impacts and tak ing measures to mitigate and prevent abuses related to business
+activities, and the need to ensure access to effective remedy for those affected by business -
+related human rights abuses,
+ Recognizing that artificial intelligence, when adequate human rights safeguards are in
+place, has significant potential to contribute to the promotion and protection of human rights
+and fundamental freedoms, including the right to development, inter alia , by facilitating
+access to information, education, healthcare and public services, enhancing accessibility and
+inclusion, advancing scientific research and innovation and supporting efforts to address
+societal and global challenges,
+ Recognizing with concern that artificial intelligence systems may undermine the full
+enjoyment of human rights and fundamental freedoms, including through reproducing and
+exacerbating patterns of discrimination, structural inequalities, marginalization, stereotypes,
+biases and exc lusion, infringements of the right to privacy, arbitrary and unlawful
+surveillance, undermining information integrity and access to information, intensifying
+threats arising from information manipulation , as well as large -scale persuasion, distorting
+public debate, eroding trust, affecting free formation of opinion and participation in public
+affairs and electoral processes, amplifying different forms of violences and harm and through
+the loss of human control over highly autonomous systems,
+ Stressing that the use of artificial intelligence systems can, without proper technical,
+regulatory, legal and ethical safeguards, affect the enjoyment of human rights, including
+economic, social and cultural rights, and pose the risk of reinforcing discrimination, including
+structural inequalities, and  recognizing that discriminatory outcomes must be prevented
+throughout the life cycle of artificial intelligence, particularly in the administration of justice,
+migration governance, the health sector, education, social protection, workplaces and labour
+markets through the displacement and disruption of jobs, including in developing countries,
+and emphasizing the importance of ensuring that artificial intelligence-enabled economic
+transformation contributes to decent work and respects applicable human rights and labour
+standards,
+ Recognizing that the development, deployment and use of artificial intelligence
+systems can have adverse impacts on the enjoyment of a clean, healthy and sustainable
+environment throughout their life  cycle, including in relation to energy and water
+consumption, greenhouse  gas emissions, the extraction of critical minerals, land use and
+electronic waste, and noting with concern that such impacts may be experienced
+disproportionately by communities and countries already facing resource scarcity,
+environmental degradation and heightened vulnerability to climate change,
+ Acknowledging that the adoption of artificial intelligence technology has accelerated
+broadly, and unevenly, within and among countries and across sectors, that access to
+technologies, as well as risks , are unevenly distributed within and among populations and
+countries, while artificial intelligence development and the wealth it creates are highly
+concentrated, which could undermine accountability for possible human rights violations and
+abuses facilitated by such systems,
+ Expressing concern  that developing countries, including least developed countries
+and small island developing States, face particular challenges arising from limited access to
+digital infrastructure and that digital and artificial intelligence divides and development gaps
+within and among countries may exacerbate economic, technological, social, developmental
+and environmental inequalities, and recognizing the need to ensure that disparities, within
+and among countries, in access to connectivity, computing resources, data, skills, financing
+and artificial intelligence capabilities do not prevent individuals, communities and countries
+from participating meaningfully in and benefiting from the digital transformation,
+ Emphasizing the importance of developing capacities and promoting affordable
+access to artificial intelligence technologies, including open-source models, and in this regard
+highlighting the potential of artificial intelligence in delivering services at scale and
+
+A/HRC/RES/63/15
+ 3
+increasing social and economic opportunities for all through resilient, safe, inclusive and
+interoperable digital public infrastructure,
+ Recognizing that the implications of artificial intelligence may be experienced
+differently by women and girls, children, youth, older persons, persons with disabilities,
+persons belonging to national or ethnic, religious and linguistic minorities, migrants, refugees
+and asylum-seekers, persons living in poverty and in vulnerable or marginalized situations ,
+as well as people living under foreign occupation,
+ Expressing concern that the potential risks posed by artificial intelligence systems
+may entail different forms of violence and harm against children, including sexual
+exploitation, synthetic child abuse material, harmful content, cyberbullying and harassment,
+and emphasizing the need to respect, promote and protect the rights of the child and to ensure
+that the best interests of the child are a primary consideration throughout the life  cycle of
+artificial intelligence,
+ Expressing concern also that artificial intelligence systems, including those relying
+on automated profiling, biometric technologies, predictive analytics and algorithmic
+decision-making, may reproduce, reinforce or amplify existing patterns of racism, racial
+discrimination, xeno phobia and other related intolerance, including intolerance and
+discrimination based on religion or belief, as well as advocacy of national, racial or religious
+hatred that constitutes incitement to discrimination, hostility or violence, particularly where
+they are developed or deployed on the basis of biased, incomplete or unrepresentative data
+or without adequate human rights safeguards, and emphasizing the importance of preventing
+discriminatory outcomes, ensuring appropriate transparency and accountabil ity, and
+promoting representative data sets and inclusive design throughout the life cycle of artificial
+intelligence systems,
+ Recognizing that linguistic and cultural diversity constitute an essential dimension of
+inclusive and human -centred artificial intelligence, and noting with concern  that the
+underrepresentation of low-resource languages, local knowledge systems and diverse cultural
+contexts in data  sets and artificial intelligence models may reinforce existing inequalities,
+exclusion and bias,
+ Recognizing also that the collection, processing and use of data, often relating to
+personal data, including biometric data and data on an individual’s behaviour, social
+relationships, race or ethnicity, religion or belief, in the development and operation of
+artificial in telligence systems, including for the development of large -scale generative
+artificial intelligence systems, without adequate human rights safeguards, can pose serious
+risks to the enjoyment of data protection, access to information, the right to privacy, equality
+and non-discrimination and other human rights,
+ Emphasizing that human dignity and human agency should remain central to the
+design, development, deployment, use and governance of artificial intelligence and stressing
+the importance of protecting the right to privacy and promoting equality and non -
+discrimination, transparency and explainability, accountability, accessibility, appropriate
+safeguards, meaningful human oversight and access to effective remedies in addressi ng its
+human rights implications, in accordance with States’ obligations under international human
+rights law,
+ Recognizing the importance of human rights due diligence and appropriate impact
+assessments to assist States and business enterprises, including technology companies, in
+accordance with the ir respective roles and responsibilities, in identifying, preventing,
+mitigating and addressing actual and potential adverse human rights impacts associated with
+artificial intelligence systems,
+ Emphasizing the important contribution of meaningful participation and dialogue
+involving States, regional organizations, national human rights institutions, civil society,
+academia, the technical community, business enterprises, affected individuals and
+communities and other relevant stakeholders in considering the human rights implications of
+artificial intelligence in accordance with their respective roles and responsibilities,
+ Emphasizing also the importance of international cooperation, capacity -building,
+technical assistance, knowledge-sharing, the transfer of technology on mutually agreed terms
+
+A/HRC/RES/63/15
+4
+and financing, access to open artificial intelligence models and systems particularly for
+developing countries and in accordance with their national needs, policies and priorities, and
+their full, equal and meaningful participation in relevant discussions and processes
+concerning artificial intelligence,
+ 1. Recognizes the potential of artificial intelligence to contribute significantly to
+the promotion and protection of human rights and sustainable development, while
+acknowledging that its development and use can also present risks and challenges to the
+enjoyment of human rights;
+ 2. Affirms that the design, development, deployment and use of artificial
+intelligence must be consistent with international law, including the purposes and principles
+of the Charter of the United Nations, international human rights law and international
+humanitarian law, as applicable, and reaffirms in this regard, that States must protect against
+human rights abuses, while business enterprises , including technology companies, have the
+responsibility to respect human rights;
+ 3. Underscores that artificial intelligence governance should be in accordance
+with international human rights law, as well as international humanitarian law as applicable,
+and guided by the principles enshrined in the Charter of the United Nations , including
+international cooperation, legality, sovereign equality and non-discrimination;
+ 4. Calls upon States to consider the implications of artificial intelligence for the
+enjoyment of all human rights when developing and implementing relevant legislative,
+regulatory, administrative and policy frameworks , and to take appropriate measures to
+prevent, mitigate and address actual or potential discrimination and other adverse human
+rights impacts that may arise throughout the life cycle of artificial intelligence systems;
+ 5. Also c alls upon  States to take into account different national contexts,
+capacities and levels of development when discussing artificial intelligence governance and
+to expand the participation of all countries, in particular developing countries, in order to
+harness the benefits and effectively participate in the design, development, deployment and
+use of safe, secure, trustworthy and human -centred artificial intelligence systems that
+contribute to the full enjoyment of human rights and sustainable development;
+ 6. Encourages States to ensure access to information throughout the life cycle of
+artificial intelligence, particularly concerning artificial intelligence in public functions, and
+recognizes that effective partnerships and cooperation between Governments and other
+stakeholders is necessary in developing governance approaches and frameworks;
+ 7. Also e ncourages States to adopt and promote approaches to artificial
+intelligence that respect human dignity and human agency and to uphold the principles of
+equality and non -discrimination, privacy, accessibility, transparency and explainability,
+accountability, sustainability, safety, human oversight and access to effective remedies in
+accordance with their obligations under international human rights law and , where
+applicable, under international humanitarian law;
+ 8. Recognizes the necessity to prevent harm to individuals caused by artificial
+intelligence systems and to refrain from or cease the use of artificial intelligence applications
+that are impossible to operate in compliance with international human rights law or that pose
+undue risks to the enjoyment of human rights, especially of those in vulnerable situations,
+including by systems whose capabilities could reasonably be expected to cause the loss of
+human control;
+ 9. Encourages States, as appropriate and commensurate with the nature, context
+and level of risk, to carry out human rights due diligence and appropriate impact assessments
+in relation to artificial intelligence systems that may affect the enjoyment of human rights;
+ 10. Calls upon  States, where artificial intelligence plays a material role in
+decisions having implications for the enjoyment of human rights, and as appropriate to the
+nature and level of risk, to put in place mechanisms that ensure meaningful human oversight
+and accou ntability and allow affected persons to receive information concerning such
+decisions, obtain human review and have access to effective remedies;
+
+A/HRC/RES/63/15
+ 5
+ 11. Also calls upon States to respect, protect and promote the rights to freedom of
+opinion and expression , including the  right of freedom to seek, receive and impart
+information, and the right to privacy in the context of artificial intelligence and to ensure that
+measures aimed at addressing harmful effects of artificial intelligence are consistent with
+international human rights law, including articles 19 and 20 of the International Covenant on
+Civil and Political Rights;
+ 12. Encourages States to pay particular attention to possible differentiated or
+disproportionate impacts of artificial intelligence systems on women and girls, children,
+youth, older persons, persons with disabilities, persons belonging to national or ethnic,
+religious and linguistic minorities, migrants, refugees, asylum -seekers, persons living in
+poverty or in vulnerable or marginalized situations and people living under foreign
+occupation and to facilitate their meaningful participation in relevant policymaking
+processes;
+ 13. Reminds business enterprises involved in the pre-design, design, development,
+provision, procurement, deployment, use and decommissioning of artificial intelligence
+systems to respect human rights in accordance with the Guiding Principles on Business and
+Human Rights, including through appropriate human rights due diligence , and to identify,
+prevent and mitigate actual and potential adverse human rights impacts associated with their
+artificial intelligence-related activities and to provide for or cooperate in remediation where
+they have caused or contributed to such impacts;
+ 14. Recognizes the importance of promoting digital and artificial intelligence
+literacy and awareness of the opportunities, limitations and potential human rights
+implications associated with artificial intelligence;
+ 15. Calls for strengthened international cooperation and capacity -building,
+particularly for developing countries and in accordance with their national needs and
+priorities, including through policy exchanges, knowledge-sharing activities and the transfer
+of technology on mutually agreed terms, technical assistance, lifelong learning, personnel
+training, skilling of workforce, international research cooperation , including cooperation to
+develop resources, data  sets and tools for underrepresented languages and knowledge
+systems, voluntary joint international research laboratories and artificial intelligence
+capacity-building centres, to enable them to harness the benefits of artificial intelligence
+while preventing and addressing its potential adverse implications for human rights, and to
+support developing countries’ effective, equitable and meaningful participation and
+representation in international processes and forums on the governance of artificial
+intelligence systems and its implications for human rights;
+ 16. Encourages States, relevant United Nations entities and other stakeholders, as
+appropriate, to promote digital public goods, digital public infrastructure and open artificial
+intelligence models, data sets and tools, accompanied by adequate human rights safeguards,
+as a means of enabling countries with limited resources, to benefit from these technologies;
+ 17. Encourages greater coherence and complementarity among relevant
+international, regional, national and local initiatives on artificial intelligence, while
+recognizing the important role of the United Nations in promoting inclusive international
+dialogue and cooperation in this field;
+ 18. Requests the Office of the United Nations High Commissioner for Human
+Rights to continue to contribute, within its mandate, human rights expertise to relevant United
+Nations discussions and processes concerning artificial intelligence, while promoting
+coherence, coordination and complementarity and avoiding unnecessary duplication with a
+view to promoting artificial intelligence governance consistent with international human
+rights law;
+ 19. Encourages the Office of the High Commissioner and relevant United Nations
+entities, within their respective mandates and upon the request of States, to support capacity-
+building and technical assistance, particularly for developing countries, aimed at
+strengthening their capacity to assess and address the human rights implications of artificial
+intelligence systems, including through the sharing of kn owledge, experiences and good
+
+A/HRC/RES/63/15
+6
+practices and by building on existing assessment methodologies and tools within the United
+Nations system;
+ 20. Decides to convene, at its sixty-fifth session, a panel discussion on the theme
+“Placing human rights at the centre of artificial intelligence: artificial intelligence capacity-
+building and bridging the artificial intelligence divide”, with the participation of States, the
+Office of the High Commissioner, relevant United Nations entities and mechanisms, national
+human rights institutions, civil society, academia, the technical community, business
+enterprises and other relevant stakehold ers, ensuring, to the extent possible, balanced
+geographical and gender representation, including meaningful participation of
+representatives and experts from developing countries;
+ 21. Requests the Office of the High Commissioner to organize the panel discussion
+in consultation with States and other relevant stakeholders and to make the discussion fully
+accessible to persons with disabilities;
+ 22. Also requests the Office of the High Commissioner to prepare a report on the
+theme of the panel discussion , informed by the outcome of the panel discussion and by
+meaningful consultations with States, relevant United Nations entities and mechanisms,
+national human rights institutions, civil society, academia, the technical community, business
+enterprises, including at the margins of the Second Global Dialogue on Artificial Intelligence
+Governance, to be held in May 2027, and to submit the report to the Human Rights Council
+at its sixty-sixth session;
+ 23. Decides to remain seized of the matter.
+41st meeting
+6 October 2026
+[Adopted without a vote.]
+

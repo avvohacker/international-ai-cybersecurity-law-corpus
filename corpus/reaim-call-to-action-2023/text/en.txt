@@ -1,0 +1,144 @@
+1
+
+REAIM Call to Action
+
+Artificial intelligence (AI) is influencing and changing our world fundamentally.
+We are aware that AI will drastically impact the future of military operations, just as it impacts the way
+we work and live. Militaries are increasing their use of AI across a range of applications and contexts.
+AI offers great opportunities and has extraordinary potential as an enabling technology, enabling us
+among other benefits to make powerful use of previously unimaginable quantities of data and
+improving decision-making. However, we recognise that there are also risks involved, many of which we
+cannot foresee to date.
+
+There are concerns worldwide around the use of AI in the military domain and about the potential
+unreliability of AI systems, the issue of human involvement, the lack of clarity with regards to liability
+and potential unintended consequences, and the risk of unintended escalation within the spectrum of
+armed force, amongst other potential impacts.
+
+We stress the paramount importance of the responsible use of AI in the military domain, employed in
+full accordance with international legal obligations and in a way that does not undermine international
+security, stability and accountability.
+With this Call to Action we invite governments, industry, knowledge institutions, international
+organisations and others to support the following:
+1. We acknowledge the potential impact, including opportunities and challenges, as a result of the
+rapid adoption of AI systems in the military domain on international security and stability.
+
+2. We recognise the potential of AI applications in the military domain for a wide variety of
+purposes, at the service of humanity, including AI applications to reduce the risk of harm to
+civilians and civilian objects in armed conflicts.
+
+3. We recognise that we do not and cannot fully comprehend and anticipate the implications and
+challenges resulting from the introduction of AI across a wide range of applications in the
+military domain.
+
+4. We see a need to increasing our comprehension of the impact of AI in the military domain. That
+includes myth busting as well as improving knowledge and literacy regarding the benefits, risks
+and limitations of AI in the military domain.
+
+2
+
+5. We recognise the work done by many actors on responsible development, deployment and use
+of military AI, including relevant national strategies, AI principles and international initiatives,
+and the expertise build-up by different stakeholder groups to effectively respond to the
+challenges posed by embedding AI in the military domain.
+
+6. We note that AI can be used to shape and impact decision making, and we will work to ensure
+that humans remain responsible and accountable for decisions when using AI in the military
+domain.
+
+7. We recognise the need to assess the risks involved in the various types of current and future
+application of various AI techniques in the military domain and the different military contexts in
+which AI is applied.
+
+8. We recognise that failure to adopt AI in a timely manner may result in a military disadvantage,
+while premature adoption without sufficient research, testing and assurance may result in
+inadvertent harm. We see the need to increase the exchange of lessons learnt regarding risk
+mitigation practices and procedures.
+
+9. We stress the importance of a holistic, inclusive and comprehensive approach in addressing the
+possible impacts, opportunities and challenges of the use of AI in the military domain and the
+need for all stakeholders, including states, private sector, civil society and academia, to
+collaborate and exchange information on responsible AI in the military domain.
+
+10. We affirm that data for AI systems should be collected, used, shared, archived and deleted, as
+applicable, in ways that are consistent with international law, as well as relevant national,
+regional and international legal frameworks and data standards. Adequate data protection and
+data quality governance mechanisms should be established and ensured from the early design
+phase onwards, including in obtaining and using AI training data.
+
+11. We realise that due to the distributed nature of military decision making and the complexities of
+AI systems require us to pay close attention to all stages of development, deployment and use
+of AI in the military domain. We encourage collaboration between the public and private sector
+and strive to continue to engage with multiple stakeholders involved in the development,
+deployment and use of AI in the military domain.
+
+12. We reiterate the importance of ensuring appropriate safeguards and human oversight of the
+use of AI systems, bearing in mind human limitations due to constraints in time and capacities.
+
+3
+
+13. We recognise that military personnel who utilise AI should sufficiently understand the
+characteristics of AI systems, the potential consequences of the use of these systems, including
+consequences resulting from any limitations, such as potential biases in data, thus requiring
+research, education and training on the manner of user interaction and reliance on the AI
+systems to avoid an undesirable effect.
+
+14. We promote the exchange of good practices and lessons learnt among states to increase the
+mutual comprehension of states’ national frameworks and policies with regard to the use of AI
+in the military domain. We also affirm the importance of sharing good practices and lessons
+learnt by the private sector on norms, policies, principles and technological expertise.
+
+15. We recognise that the implementation of AI in the military domain differs per state. The
+responsible use of AI in the military domain requires international and multi-stakeholder
+exchange in order for all states, especially developing countries, to benefit from the
+opportunities and to address the challenges and risks.
+
+16. We see a need for a continuation of a balanced international and multi-stakeholder discussion
+on the benefits, dilemmas, risks and challenges arising from the use of AI in the military domain.
+We invite the international private sector, academia, civil society and other relevant
+stakeholders to actively contribute to the discussions at the multilateral level and promote
+responsible AI in the military domain.
+
+Our call to action:
+17. The technological developments in the area of AI take place primarily in the civil domain. We
+therefore acknowledge that the introduction of AI in the military domain is a multi-stakeholder
+challenge. We are committed to continuing the global dialogue on responsible AI in the military
+domain in a multi-stakeholder and inclusive manner and call on all stakeholders to take their
+responsibility in contributing to international security and stability in accordance with
+international law.
+
+18. We invite states to increase general comprehension of military AI by knowledge-building
+through research, training courses and capacity-building activities. We encourage states to work
+together, share knowledge by exchanging good practices and lessons learnt, building their
+capacity and involve the private sector, civil society and academia to promote responsible AI in
+the military domain.
+
+4
+
+19. We invite states to develop national frameworks, strategies and principles on responsible AI in
+the military domain.
+
+20. We welcome initiatives by states, academia, civil society, industry and other stakeholders that
+promote responsible AI in the military domain.
+
+21. We support academia, knowledge institutes and think tanks globally to conduct additional
+research in order to better comprehend the impact, opportunities and challenges of rapidly
+adopting AI in the military domain, especially in the field of human machine teaming, cognisant
+of the multifaceted use cases of different AI systems in different military contexts.
+
+22. We invite academia, knowledge institutes and think tanks to propose methods and contribute to
+practical solutions to the challenges that the use of AI in the military domain poses, in order to
+contribute to international security and stability.
+
+23. We call on the private sector to support and promote the responsible use of AI in the military
+domain. We encourage the sharing of good practices and policies on responsible use of AI by
+companies with other stakeholders, especially those good practices and policies that may be
+relevant to the use of AI in the military domain, bearing in mind national security considerations
+and restrictions on commercial proprietary information.
+
+24. We encourage multi-stakeholder dialogue on best practices to guide the development,
+deployment and use of AI in the military domain to ensure an interdisciplinary discussion
+throughout of good practices and policies on responsible use of AI in the military domain.
+
+25. We invite all stakeholders worldwide to join this Call to Action.
+

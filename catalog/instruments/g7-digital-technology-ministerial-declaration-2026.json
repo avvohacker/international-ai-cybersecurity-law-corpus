@@ -5,7 +5,7 @@
     "adopted": "2026-05-29",
     "notes": "Agreed by the G7 Digital and Technology Ministers meeting in Paris on 29 May 2026 under France's G7 presidency; the English text was published by the UK Department for Science, Innovation and Technology on 1 June 2026. The declaration has four priorities: promoting secure AI; boosting AI adoption for economic growth; ensuring resilience and resource efficiency of the digital sector; and fostering a safer digital space for minors online.",
     "published": "2026-06-01",
-    "verified_on": "2026-11-25"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
@@ -17,7 +17,7 @@
     "The separately issued G7 deliverables it refers to (the Vision on AI openness, the G7 SME AI Readiness Tool, the Policy Paper on Agentic AI, the Common G7 Set of Principles for minors online, the International Overview on resilience and resource efficiency) are not catalogued individually.",
     "The Hiroshima AI Process Reporting Framework itself, which the declaration commends in its revised form, is not analysed in this record.",
     "Only the English text was read; the French version published by the French presidency was not acquired.",
-    "No full text, citable units or original file is stored; the record is metadata-only."
+    "The stored text is document-level; the AI-related provisions are mapped in relevance.ai_provisions, but no section-level units are created."
   ],
   "id": "g7-digital-technology-ministerial-declaration-2026",
   "instrument_type": "declaration",
@@ -52,7 +52,8 @@
     "assertions": [],
     "discovered_via": "G7 2026 Digital and Technology Ministerial Declaration had been recorded as pending in the candidate register; the GOV.UK publication was read and cross-checked with the Japanese MIC results page and the French presidency's release.",
     "search_dates": [
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ]
   },
   "related": [
@@ -91,13 +92,13 @@
   },
   "rights": {
     "licence": "Open Government Licence v3.0 (GOV.UK text); French and Japanese government terms for their pages",
-    "note": "Official government publications. No full text is stored in this corpus; metadata only.",
+    "note": "Official government publications. The official text is stored in the corpus; the publisher's terms continue to apply.",
     "status": "public_official_text",
     "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
   },
   "sources": [
     {
-      "accessed": "2026-11-25",
+      "accessed": "2026-11-26",
       "http_status": 200,
       "id": "gov-uk-declaration-2026",
       "kind": "official_primary",
@@ -129,6 +130,14 @@
   ],
   "status": "adopted",
   "status_note": "Adopted by the G7 Digital and Technology Ministers in Paris on 29 May 2026 and published on 1 June 2026. It is a non-binding political declaration with no signature, ratification, depositary or entry-into-force procedure. Its AI provisions commend the revised Hiroshima AI Process Reporting Framework and set out AI risk-assessment, AI openness and AI adoption work; no implementation or monitoring duty is created.",
+  "text": {
+    "extraction_note": "Official English text extracted from the GOV.UK HTML publication, starting at the ministerial declaration and ending before the page footer. The text is stored as one document-level unit; the four priority headings remain visible in the extracted text.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
   "title": {
     "official": "G7 Digital and Technology Ministerial Declaration: 29 May 2026",
     "short": "G7 Digital and Technology Ministerial Declaration (2026)"
@@ -154,9 +163,14 @@
         "check": "Legal nature checked against the text.",
         "date": "2026-11-25",
         "result": "Political ministerial declaration; no signature, ratification, depositary, monitoring or enforcement mechanism."
+      },
+      {
+        "check": "Official HTML page downloaded; the extracted text was checked for the Paris meeting, the four priority headings and the closing passage.",
+        "date": "2026-11-26",
+        "result": "18,471 characters; 1 unit; four priorities and closing passage present."
       }
     ],
     "level": "metadata_verified",
-    "notes": "The English text was read in full and adoption was confirmed by two further official pages. No full text is stored, so the record is metadata-verified rather than full-text-checked."
+    "notes": "The official English text is now stored and hashed. Acquisition and extraction were verified; the text had been read in full earlier, but no new end-to-end legal read was performed in this cycle, so the record remains metadata-verified."
   }
 }

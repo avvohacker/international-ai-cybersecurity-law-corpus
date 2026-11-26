@@ -4,16 +4,16 @@
   "dates": {
     "adopted": "2024-05-21",
     "notes": "Launched on 21 May 2024 with 16 companies; the UK page records later additions (Magic, Minimax, 01.ai and NVIDIA), bringing the list to 20.",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
   ],
   "gaps": [
     "Voluntary and corporate; not binding international law.",
-    "Full text not stored.",
     "Compliance and safety frameworks are not assessed.",
-    "Endorsement list is date-sensitive."
+    "Endorsement list is date-sensitive.",
+    "The stored text includes the list of endorsing organisations and the footnotes, but the companies' published safety frameworks are not stored or assessed."
   ],
   "id": "frontier-ai-safety-commitments-2024",
   "instrument_type": "commitment",
@@ -35,7 +35,8 @@
     "assertions": [],
     "discovered_via": "GOV.UK AI Seoul Summit publications.",
     "search_dates": [
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-26"
     ]
   },
   "related": [
@@ -65,7 +66,7 @@
   },
   "sources": [
     {
-      "accessed": "2026-11-23",
+      "accessed": "2026-11-26",
       "http_status": 200,
       "id": "govuk-commitments",
       "kind": "official_primary",
@@ -84,6 +85,14 @@
   ],
   "status": "adopted",
   "status_note": "Voluntary commitments; companies endorse and publish safety frameworks. Not a treaty and not a State-level instrument.",
+  "text": {
+    "extraction_note": "Official English text extracted from the GOV.UK HTML publication. The extraction includes the initial and later endorsing organisations, the commitments and the footnotes, and stops before the page footer. The document is segmented as a single unit because it has no articles or numbered paragraphs.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "whole"
+  },
   "title": {
     "official": "Frontier AI Safety Commitments, AI Seoul Summit 2024",
     "short": "Frontier AI Safety Commitments"
@@ -99,9 +108,14 @@
         "check": "Nature checked: voluntary corporate commitments.",
         "date": "2026-11-23",
         "result": "No State parties, no legal obligation."
+      },
+      {
+        "check": "Official HTML page downloaded; the extracted text was checked for the list of endorsers, the commitments and the footnotes.",
+        "date": "2026-11-26",
+        "result": "6,580 characters; 1 unit; 20 organisations and three footnotes present."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified; full text not stored. The commitments are not an instrument of international law."
+    "notes": "The official English text is stored and hashed. Extraction and unit integrity were checked, but the commitments were not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
   }
 }

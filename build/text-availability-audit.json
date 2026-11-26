@@ -84,45 +84,23 @@
       "title": "Unified Arab AI Strategy"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 4233765,
-        "checked_on": "2026-11-25",
-        "content_length": 4233765,
-        "content_type": "application/pdf",
-        "final_url": "https://asean.org/wp-content/uploads/2024/02/ASEAN-Guide-on-AI-Governance-and-Ethics_beautified_201223_v2.pdf",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "pdf",
-        "url": "https://asean.org/wp-content/uploads/2024/02/ASEAN-Guide-on-AI-Governance-and-Ethics_beautified_201223_v2.pdf"
-      },
       "id": "asean-ai-guide-2024",
       "official_source": "https://asean.org/wp-content/uploads/2024/02/ASEAN-Guide-on-AI-Governance-and-Ethics_beautified_201223_v2.pdf",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "ASEAN AI Guide"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 118777,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "text/html",
-        "final_url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy"
-      },
       "id": "au-continental-ai-strategy-2024",
       "official_source": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "AU Continental AI Strategy"
     },
     {
@@ -136,24 +114,13 @@
       "title": "Malabo Convention"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 86531,
-        "checked_on": "2026-11-25",
-        "content_length": 86531,
-        "content_type": "text/html",
-        "final_url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023"
-      },
       "id": "bletchley-declaration-2023",
       "official_source": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "Bletchley Declaration"
     },
     {
@@ -391,24 +358,13 @@
       "title": "NIS2 Directive"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 81551,
-        "checked_on": "2026-11-25",
-        "content_length": 81551,
-        "content_type": "text/html",
-        "final_url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024"
-      },
       "id": "frontier-ai-safety-commitments-2024",
       "official_source": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "Frontier AI Safety Commitments"
     },
     {
@@ -433,13 +389,13 @@
       "title": "G20 AI Prosperity Objectives (2026)"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
       "id": "g7-digital-technology-ministerial-declaration-2026",
       "official_source": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "G7 Digital and Technology Ministerial Declaration (2026)"
     },
     {
@@ -731,45 +687,23 @@
       "title": "REAIM Blueprint for Action 2024"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 217920,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "text/html",
-        "final_url": "https://www.government.nl/documents/2023/02/16/reaim-2023-call-to-action",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action"
-      },
       "id": "reaim-call-to-action-2023",
       "official_source": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "REAIM 2023 Call to Action"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 38505,
-        "checked_on": "2026-11-25",
-        "content_length": null,
-        "content_type": "text/html",
-        "final_url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx"
-      },
       "id": "reaim-pathways-to-action-2026",
       "official_source": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "REAIM 2026 Pathways to Action"
     },
     {
@@ -814,24 +748,13 @@
       "title": "SCO Information Security Agreement 2009"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 78224,
-        "checked_on": "2026-11-25",
-        "content_length": 78224,
-        "content_type": "text/html",
-        "final_url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024",
-        "http_status": 200,
-        "outcome": "downloaded",
-        "reason": "html",
-        "url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024"
-      },
       "id": "seoul-declaration-2024",
       "official_source": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "Seoul Declaration"
     },
     {
@@ -945,24 +868,13 @@
       "title": "UNGA resolution 80/58 on military AI"
     },
     {
-      "availability": "official_text_located",
+      "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
-      "download": {
-        "bytes_read": 2023,
-        "checked_on": "2026-11-25",
-        "content_length": 2023,
-        "content_type": "text/html",
-        "final_url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf",
-        "http_status": 202,
-        "outcome": "transient",
-        "reason": "http_202",
-        "url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf"
-      },
       "id": "un-hrc-res-63-15",
       "official_source": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Full text stored and segmented.",
       "title": "HRC resolution 63/15 on AI and human rights"
     },
     {
@@ -1031,15 +943,15 @@
     "download_probe": {
       "blocked": 2,
       "broken": 0,
-      "checked": 25,
+      "checked": 17,
       "checked_on": "2026-11-25",
-      "downloaded": 21,
-      "transient": 2
+      "downloaded": 14,
+      "transient": 1
     },
     "internal_law": 3,
-    "official_text_located": 28,
+    "official_text_located": 19,
     "paywalled": 6,
-    "stored": 36,
+    "stored": 45,
     "summary_only": 2
   },
   "total": 75

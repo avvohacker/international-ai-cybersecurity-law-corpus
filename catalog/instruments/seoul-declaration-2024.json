@@ -4,18 +4,18 @@
   "dates": {
     "adopted": "2024-05-21",
     "notes": "Adopted at the Leaders' Session of the AI Seoul Summit on 21 May 2024.",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
   ],
   "gaps": [
     "Non-binding.",
-    "Full text not stored.",
     "No monitoring mechanism.",
     "Participation is limited to 10 States and the EU; it is not a universal instrument.",
     "The separate Seoul Ministerial Statement of 22 May 2024 (27 States and the EU) is not catalogued or mapped.",
-    "The declaration is a leaders' text; it creates no treaty signature or ratification."
+    "The declaration is a leaders' text; it creates no treaty signature or ratification.",
+    "The stored text is the GOV.UK English publication; the separate Seoul Ministerial Statement of 22 May 2024 remains outside the corpus."
   ],
   "id": "seoul-declaration-2024",
   "instrument_type": "declaration",
@@ -121,7 +121,8 @@
     "assertions": [],
     "discovered_via": "GOV.UK AI Seoul Summit publications.",
     "search_dates": [
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-26"
     ]
   },
   "related": [
@@ -151,7 +152,7 @@
   },
   "sources": [
     {
-      "accessed": "2026-11-23",
+      "accessed": "2026-11-26",
       "http_status": 200,
       "id": "govuk-seoul",
       "kind": "official_primary",
@@ -170,6 +171,14 @@
   ],
   "status": "adopted",
   "status_note": "Adopted by 10 States and the European Union at the Leaders' Session on 21 May 2024. Political declaration, not a treaty signature or ratification. The separate Seoul Ministerial Statement of 22 May 2024 (27 States and the EU) is not this instrument.",
+  "text": {
+    "extraction_note": "Official English text extracted from the GOV.UK HTML publication. The extraction starts at paragraph 1 and ends before the page footer. It is segmented at the declaration's nine numbered paragraphs.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "numbered"
+  },
   "title": {
     "official": "Seoul Declaration for safe, innovative and inclusive AI",
     "short": "Seoul Declaration"
@@ -190,9 +199,14 @@
         "check": "Scope of the declaration checked against the official text and the Australian government's publication note.",
         "date": "2026-11-23",
         "result": "The Leaders' Declaration was adopted by 10 States and the EU; the Seoul Ministerial Statement of 22 May 2024 is a separate document adopted by 27 States and the EU."
+      },
+      {
+        "check": "Official HTML page downloaded; the extracted text was checked for the opening paragraph, the numbered structure and the closing paragraph.",
+        "date": "2026-11-26",
+        "result": "4,708 characters; 9 numbered units; opening and closing paragraphs present."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified; full text not stored. The participant list is reproduced party by party from the GOV.UK text; the separate ministerial statement is noted but not catalogued or mapped."
+    "notes": "The official English text is stored and hashed. Extraction and unit anchors were checked, but the declaration was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
   }
 }

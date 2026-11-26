@@ -5,16 +5,16 @@
     "adopted": "2024-07-19",
     "notes": "Endorsed by the AU Executive Council at its 45th Ordinary Session in Accra, Ghana, on 18–19 July 2024; document page dated 9 August 2024.",
     "published": "2024-08-09",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
   ],
   "gaps": [
     "Non-binding strategy.",
-    "Full text not stored.",
     "National and regional implementation measures are not assessed.",
-    "Only English consulted; other language versions not acquired."
+    "Only English consulted; other language versions not acquired.",
+    "The Strategy is stored at page level; tables and multi-column layout survive only as extracted text, so visual relationships are not preserved."
   ],
   "id": "au-continental-ai-strategy-2024",
   "instrument_type": "strategy",
@@ -40,7 +40,8 @@
     "assertions": [],
     "discovered_via": "African Union documents portal.",
     "search_dates": [
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-26"
     ]
   },
   "related": [
@@ -65,7 +66,7 @@
   },
   "rights": {
     "licence": "African Union terms",
-    "note": "Official AU publication; no open licence identified. Metadata only in this corpus.",
+    "note": "Official AU publication; no open licence identified. The official text is stored in the corpus; the publisher's terms continue to apply.",
     "status": "public_official_text",
     "url": "https://au.int/en/copyright"
   },
@@ -80,7 +81,7 @@
       "url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy"
     },
     {
-      "accessed": "2026-11-23",
+      "accessed": "2026-11-26",
       "http_status": 200,
       "id": "au-pdf",
       "kind": "official_primary",
@@ -91,6 +92,14 @@
   ],
   "status": "adopted",
   "status_note": "Endorsed by the Executive Council. Non-binding; implementation phase proposed for 2025–2030.",
+  "text": {
+    "extraction_note": "Official English text extracted from the 66-page African Union PDF. Because the Strategy combines multi-column prose, tables and graphics, the text is segmented one unit per PDF page; each unit is an exact slice of text/en.txt with a page anchor.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "pages"
+  },
   "title": {
     "official": "Continental Artificial Intelligence Strategy",
     "short": "AU Continental AI Strategy"
@@ -106,9 +115,14 @@
         "check": "Implementation timeframe checked in the PDF.",
         "date": "2026-11-23",
         "result": "Five-year timeframe 2025–2030, in two phases."
+      },
+      {
+        "check": "Official PDF downloaded; all 66 pages produced text, and the cover, foreword, strategy chapters and end matter were checked.",
+        "date": "2026-11-26",
+        "result": "161,284 characters; 66 page units; no empty page among numbered pages."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified; full text not stored. The strategy is non-binding and implementation-dependent."
+    "notes": "The official English text is stored and hashed. Page extraction and unit anchors were checked, but the Strategy was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
   }
 }

@@ -25,14 +25,17 @@
       "full_text_checked": 10,
       "metadata_verified": 65
     },
-    "full_texts": 36,
+    "full_texts": 45,
     "total": 75,
-    "with_local_original": 36
+    "with_local_original": 45
   },
   "full_text_ids": [
     "afcfta-digital-trade-protocol-2024",
     "arab-convention-it-offences-2010",
+    "asean-ai-guide-2024",
+    "au-continental-ai-strategy-2024",
     "au-malabo-convention-2014",
+    "bletchley-declaration-2023",
     "brics-ai-statement-2025",
     "budapest-convention-2001",
     "china-global-ai-governance-initiative-2023",
@@ -44,14 +47,19 @@
     "coe-ets-189",
     "depa-2020",
     "ecowas-cybercrime-directive-2011",
+    "frontier-ai-safety-commitments-2024",
+    "g7-digital-technology-ministerial-declaration-2026",
     "g7-hiroshima-code-2023",
     "iccpr-1966",
     "ksdpa-2022",
     "oecd-ai-recommendation-2019",
     "paris-ai-action-summit-statement-2025",
     "paris-call-cyberspace-2018",
+    "reaim-call-to-action-2023",
+    "reaim-pathways-to-action-2026",
     "sadea-2020",
     "sco-information-security-agreement-2009",
+    "seoul-declaration-2024",
     "uksdea-2022",
     "un-cybercrime-convention-2024",
     "un-ga-res-78-241",
@@ -63,6 +71,7 @@
     "un-ga-res-79-62",
     "un-ga-res-80-57",
     "un-ga-res-80-58",
+    "un-hrc-res-63-15",
     "unesco-ethics-ai-2021",
     "vclt-1969",
     "waico-establishment-agreement-2026"
@@ -1143,16 +1152,16 @@
         "adopted": "2024-02-02",
         "notes": "Launched at the 4th ASEAN Digital Ministers' Meeting on 2 February 2024; the PDF itself carries a December 2023 version date.",
         "published": "2024-02-02",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
       ],
       "gaps": [
         "Non-binding and voluntary.",
-        "Full text not stored.",
         "Implementation by ASEAN Member States is not assessed.",
-        "Covers commercial and non-military/dual-use applications; military AI is outside its scope."
+        "Covers commercial and non-military/dual-use applications; military AI is outside its scope.",
+        "The Guide is stored at page level; its tables, diagrams and multi-column layout survive only as extracted text, so visual relationships are not preserved."
       ],
       "id": "asean-ai-guide-2024",
       "instrument_type": "guidance",
@@ -1174,7 +1183,8 @@
         "assertions": [],
         "discovered_via": "ASEAN Secretariat publication page and PDF.",
         "search_dates": [
-          "2026-11-23"
+          "2026-11-23",
+          "2026-11-26"
         ]
       },
       "related": [
@@ -1198,13 +1208,13 @@
       },
       "rights": {
         "licence": "ASEAN Secretariat terms",
-        "note": "Official ASEAN publication; no open licence identified. Metadata only in this corpus.",
+        "note": "Official ASEAN publication; no open licence identified. The official text is stored in the corpus; the publisher's terms continue to apply.",
         "status": "public_official_text",
         "url": "https://asean.org/terms-of-use/"
       },
       "sources": [
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "asean-pdf",
           "kind": "official_primary",
@@ -1223,6 +1233,14 @@
       ],
       "status": "adopted",
       "status_note": "Adopted/launched as a voluntary guide. Non-binding.",
+      "text": {
+        "extraction_note": "Official English text extracted from the 87-page ASEAN PDF. Because the Guide combines multi-column prose, tables and questionnaires, the text is segmented one unit per PDF page; each unit is an exact slice of text/en.txt with a page anchor.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "official": "ASEAN Guide on AI Governance and Ethics",
         "short": "ASEAN AI Guide"
@@ -1238,10 +1256,15 @@
             "check": "Publisher, year and scope checked on the ASEAN publication page and PDF.",
             "date": "2026-11-23",
             "result": "ASEAN Secretariat, 2024; commercial and non-military/dual-use AI applications."
+          },
+          {
+            "check": "Official PDF downloaded; all 87 pages produced text, and the cover, contents, substantive sections and copyright page were checked.",
+            "date": "2026-11-26",
+            "result": "191,055 characters; 87 page units; no empty page among numbered pages."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified; full text not stored."
+        "notes": "The official English text is stored and hashed. Page extraction and unit anchors were checked, but the Guide was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
       }
     },
     {
@@ -1251,16 +1274,16 @@
         "adopted": "2024-07-19",
         "notes": "Endorsed by the AU Executive Council at its 45th Ordinary Session in Accra, Ghana, on 18–19 July 2024; document page dated 9 August 2024.",
         "published": "2024-08-09",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
       ],
       "gaps": [
         "Non-binding strategy.",
-        "Full text not stored.",
         "National and regional implementation measures are not assessed.",
-        "Only English consulted; other language versions not acquired."
+        "Only English consulted; other language versions not acquired.",
+        "The Strategy is stored at page level; tables and multi-column layout survive only as extracted text, so visual relationships are not preserved."
       ],
       "id": "au-continental-ai-strategy-2024",
       "instrument_type": "strategy",
@@ -1286,7 +1309,8 @@
         "assertions": [],
         "discovered_via": "African Union documents portal.",
         "search_dates": [
-          "2026-11-23"
+          "2026-11-23",
+          "2026-11-26"
         ]
       },
       "related": [
@@ -1311,7 +1335,7 @@
       },
       "rights": {
         "licence": "African Union terms",
-        "note": "Official AU publication; no open licence identified. Metadata only in this corpus.",
+        "note": "Official AU publication; no open licence identified. The official text is stored in the corpus; the publisher's terms continue to apply.",
         "status": "public_official_text",
         "url": "https://au.int/en/copyright"
       },
@@ -1326,7 +1350,7 @@
           "url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy"
         },
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "au-pdf",
           "kind": "official_primary",
@@ -1337,6 +1361,14 @@
       ],
       "status": "adopted",
       "status_note": "Endorsed by the Executive Council. Non-binding; implementation phase proposed for 2025–2030.",
+      "text": {
+        "extraction_note": "Official English text extracted from the 66-page African Union PDF. Because the Strategy combines multi-column prose, tables and graphics, the text is segmented one unit per PDF page; each unit is an exact slice of text/en.txt with a page anchor.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "pages"
+      },
       "title": {
         "official": "Continental Artificial Intelligence Strategy",
         "short": "AU Continental AI Strategy"
@@ -1352,10 +1384,15 @@
             "check": "Implementation timeframe checked in the PDF.",
             "date": "2026-11-23",
             "result": "Five-year timeframe 2025–2030, in two phases."
+          },
+          {
+            "check": "Official PDF downloaded; all 66 pages produced text, and the cover, foreword, strategy chapters and end matter were checked.",
+            "date": "2026-11-26",
+            "result": "161,284 characters; 66 page units; no empty page among numbered pages."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified; full text not stored. The strategy is non-binding and implementation-dependent."
+        "notes": "The official English text is stored and hashed. Page extraction and unit anchors were checked, but the Strategy was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
       }
     },
     {
@@ -1783,16 +1820,16 @@
       "dates": {
         "adopted": "2023-11-01",
         "notes": "Agreed at the AI Safety Summit, Bletchley Park, 1–2 November 2023. New Zealand joined the declaration on 23 October 2024.",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
       ],
       "gaps": [
         "Non-binding.",
-        "Full text not stored.",
         "Endorsement list is date-sensitive; the record reflects the GOV.UK page as of 23 November 2026.",
-        "No implementation or monitoring mechanism."
+        "No implementation or monitoring mechanism.",
+        "The stored text is the GOV.UK English publication, including the endorser list and the update note recording New Zealand's accession; the separate Spanish translation was not acquired."
       ],
       "id": "bletchley-declaration-2023",
       "instrument_type": "declaration",
@@ -1979,7 +2016,8 @@
         "assertions": [],
         "discovered_via": "GOV.UK AI Safety Summit publications.",
         "search_dates": [
-          "2026-11-23"
+          "2026-11-23",
+          "2026-11-26"
         ]
       },
       "related": [
@@ -2009,7 +2047,7 @@
       },
       "sources": [
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "govuk-declaration",
           "kind": "official_primary",
@@ -2028,6 +2066,14 @@
       ],
       "status": "adopted",
       "status_note": "Adopted by 28 States and the European Union on 1 November 2023; New Zealand joined on 23 October 2024. The record lists 29 States and the EU as of 23 November 2026. Political endorsement, not a treaty signature or ratification.",
+      "text": {
+        "extraction_note": "Official English text extracted from the GOV.UK HTML publication. The extraction starts at the declaration and ends before the page's navigation footer; it includes the country list and the New Zealand update note. The document is segmented as a single unit because it has no articles or numbered paragraphs.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 November 2023",
         "short": "Bletchley Declaration"
@@ -2048,10 +2094,15 @@
             "check": "Endorser list checked against the GOV.UK publication and its update note.",
             "date": "2026-11-23",
             "result": "28 States and the EU at adoption; New Zealand joined on 23 October 2024; 29 States and the EU in total. The list is reproduced party by party in parties.entries."
+          },
+          {
+            "check": "Official HTML page downloaded; the extracted text was checked for the declaration opening, the country list and the closing update note.",
+            "date": "2026-11-26",
+            "result": "8,440 characters; 1 unit; title, endorsers and New Zealand note present."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified; full text not stored. The declaration is political and does not create legal obligations. The endorser list is reproduced party by party from the GOV.UK page as of 23 November 2026."
+        "notes": "The official English text is stored and hashed. Extraction and unit integrity were checked, but the declaration was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
       }
     },
     {
@@ -7746,16 +7797,16 @@
       "dates": {
         "adopted": "2024-05-21",
         "notes": "Launched on 21 May 2024 with 16 companies; the UK page records later additions (Magic, Minimax, 01.ai and NVIDIA), bringing the list to 20.",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
       ],
       "gaps": [
         "Voluntary and corporate; not binding international law.",
-        "Full text not stored.",
         "Compliance and safety frameworks are not assessed.",
-        "Endorsement list is date-sensitive."
+        "Endorsement list is date-sensitive.",
+        "The stored text includes the list of endorsing organisations and the footnotes, but the companies' published safety frameworks are not stored or assessed."
       ],
       "id": "frontier-ai-safety-commitments-2024",
       "instrument_type": "commitment",
@@ -7777,7 +7828,8 @@
         "assertions": [],
         "discovered_via": "GOV.UK AI Seoul Summit publications.",
         "search_dates": [
-          "2026-11-23"
+          "2026-11-23",
+          "2026-11-26"
         ]
       },
       "related": [
@@ -7807,7 +7859,7 @@
       },
       "sources": [
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "govuk-commitments",
           "kind": "official_primary",
@@ -7826,6 +7878,14 @@
       ],
       "status": "adopted",
       "status_note": "Voluntary commitments; companies endorse and publish safety frameworks. Not a treaty and not a State-level instrument.",
+      "text": {
+        "extraction_note": "Official English text extracted from the GOV.UK HTML publication. The extraction includes the initial and later endorsing organisations, the commitments and the footnotes, and stops before the page footer. The document is segmented as a single unit because it has no articles or numbered paragraphs.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "Frontier AI Safety Commitments, AI Seoul Summit 2024",
         "short": "Frontier AI Safety Commitments"
@@ -7841,10 +7901,15 @@
             "check": "Nature checked: voluntary corporate commitments.",
             "date": "2026-11-23",
             "result": "No State parties, no legal obligation."
+          },
+          {
+            "check": "Official HTML page downloaded; the extracted text was checked for the list of endorsers, the commitments and the footnotes.",
+            "date": "2026-11-26",
+            "result": "6,580 characters; 1 unit; 20 organisations and three footnotes present."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified; full text not stored. The commitments are not an instrument of international law."
+        "notes": "The official English text is stored and hashed. Extraction and unit integrity were checked, but the commitments were not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
       }
     },
     {
@@ -8006,7 +8071,7 @@
         "adopted": "2026-05-29",
         "notes": "Agreed by the G7 Digital and Technology Ministers meeting in Paris on 29 May 2026 under France's G7 presidency; the English text was published by the UK Department for Science, Innovation and Technology on 1 June 2026. The declaration has four priorities: promoting secure AI; boosting AI adoption for economic growth; ensuring resilience and resource efficiency of the digital sector; and fostering a safer digital space for minors online.",
         "published": "2026-06-01",
-        "verified_on": "2026-11-25"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -8018,7 +8083,7 @@
         "The separately issued G7 deliverables it refers to (the Vision on AI openness, the G7 SME AI Readiness Tool, the Policy Paper on Agentic AI, the Common G7 Set of Principles for minors online, the International Overview on resilience and resource efficiency) are not catalogued individually.",
         "The Hiroshima AI Process Reporting Framework itself, which the declaration commends in its revised form, is not analysed in this record.",
         "Only the English text was read; the French version published by the French presidency was not acquired.",
-        "No full text, citable units or original file is stored; the record is metadata-only."
+        "The stored text is document-level; the AI-related provisions are mapped in relevance.ai_provisions, but no section-level units are created."
       ],
       "id": "g7-digital-technology-ministerial-declaration-2026",
       "instrument_type": "declaration",
@@ -8053,7 +8118,8 @@
         "assertions": [],
         "discovered_via": "G7 2026 Digital and Technology Ministerial Declaration had been recorded as pending in the candidate register; the GOV.UK publication was read and cross-checked with the Japanese MIC results page and the French presidency's release.",
         "search_dates": [
-          "2026-11-25"
+          "2026-11-25",
+          "2026-11-26"
         ]
       },
       "related": [
@@ -8092,13 +8158,13 @@
       },
       "rights": {
         "licence": "Open Government Licence v3.0 (GOV.UK text); French and Japanese government terms for their pages",
-        "note": "Official government publications. No full text is stored in this corpus; metadata only.",
+        "note": "Official government publications. The official text is stored in the corpus; the publisher's terms continue to apply.",
         "status": "public_official_text",
         "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
       },
       "sources": [
         {
-          "accessed": "2026-11-25",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "gov-uk-declaration-2026",
           "kind": "official_primary",
@@ -8130,6 +8196,14 @@
       ],
       "status": "adopted",
       "status_note": "Adopted by the G7 Digital and Technology Ministers in Paris on 29 May 2026 and published on 1 June 2026. It is a non-binding political declaration with no signature, ratification, depositary or entry-into-force procedure. Its AI provisions commend the revised Hiroshima AI Process Reporting Framework and set out AI risk-assessment, AI openness and AI adoption work; no implementation or monitoring duty is created.",
+      "text": {
+        "extraction_note": "Official English text extracted from the GOV.UK HTML publication, starting at the ministerial declaration and ending before the page footer. The text is stored as one document-level unit; the four priority headings remain visible in the extracted text.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "whole"
+      },
       "title": {
         "official": "G7 Digital and Technology Ministerial Declaration: 29 May 2026",
         "short": "G7 Digital and Technology Ministerial Declaration (2026)"
@@ -8155,10 +8229,15 @@
             "check": "Legal nature checked against the text.",
             "date": "2026-11-25",
             "result": "Political ministerial declaration; no signature, ratification, depositary, monitoring or enforcement mechanism."
+          },
+          {
+            "check": "Official HTML page downloaded; the extracted text was checked for the Paris meeting, the four priority headings and the closing passage.",
+            "date": "2026-11-26",
+            "result": "18,471 characters; 1 unit; four priorities and closing passage present."
           }
         ],
         "level": "metadata_verified",
-        "notes": "The English text was read in full and adoption was confirmed by two further official pages. No full text is stored, so the record is metadata-verified rather than full-text-checked."
+        "notes": "The official English text is now stored and hashed. Acquisition and extraction were verified; the text had been read in full earlier, but no new end-to-end legal read was performed in this cycle, so the record remains metadata-verified."
       }
     },
     {
@@ -13179,7 +13258,7 @@
       "dates": {
         "adopted": "2023-02-16",
         "notes": "Adopted at the first REAIM Summit in The Hague on 16 February 2023. The Dutch government published the Call to Action and a news item the same day; the closing speech states that more than 60 countries had endorsed it.",
-        "verified_on": "2026-11-25"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -13187,10 +13266,10 @@
       "gaps": [
         "Non-binding political call to action: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
         "No itemised list of endorsing States is included in this record. The Dutch government's news item says more than 60 countries had endorsed the Call by 16 February 2023; UNIDIR's December 2025 chronology records 58. The discrepancy is not resolved.",
-        "No full text is stored; the record is metadata-only.",
         "The Call is a short political text, not a negotiated treaty; it does not define binding rules, review cycles or a secretariat.",
         "The relationship between the Call, the 2024 Blueprint and the 2026 Pathways to Action is a summit sequence, not an institutional hierarchy.",
-        "Military AI applications and national implementation are not assessed."
+        "Military AI applications and national implementation are not assessed.",
+        "The stored PDF is the four-page English text; page headers and line-layout artefacts remain in the extraction."
       ],
       "id": "reaim-call-to-action-2023",
       "instrument_type": "declaration",
@@ -13226,7 +13305,8 @@
       "provenance": {
         "discovered_via": "Government of the Netherlands publications and the REAIM summit series.",
         "search_dates": [
-          "2026-11-25"
+          "2026-11-25",
+          "2026-11-26"
         ]
       },
       "related": [
@@ -13268,7 +13348,7 @@
       },
       "rights": {
         "licence": "Government of the Netherlands terms",
-        "note": "Official government publication; no open licence identified. Metadata only in this corpus.",
+        "note": "Official government publication; no open licence identified. The official text is stored in the corpus; the publisher's terms continue to apply.",
         "status": "public_official_text",
         "url": "https://www.government.nl/copyright"
       },
@@ -13284,7 +13364,7 @@
           "url": "https://www.government.nl/topics/international-peace-and-security/documents/publications/2023/02/16/reaim-2023-call-to-action"
         },
         {
-          "accessed": "2026-11-25",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "govnl-pdf",
           "kind": "official_primary",
@@ -13306,6 +13386,14 @@
       ],
       "status": "adopted",
       "status_note": "Non-binding summit call to action, not a treaty. It was adopted at the first REAIM Summit in The Hague on 16 February 2023. The Dutch government reports more than 60 endorsing countries at the summit; UNIDIR records 58 in its December 2025 chronology. No itemised list is included in this record, and no legal obligation, ratification, depositary, monitoring or enforcement mechanism exists.",
+      "text": {
+        "extraction_note": "Official English text extracted from the four-page Dutch government PDF and segmented at its 25 numbered paragraphs. Page anchors follow the PDF page order.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "numbered"
+      },
       "title": {
         "official": "REAIM 2023 Call to Action",
         "short": "REAIM 2023 Call to Action"
@@ -13326,10 +13414,15 @@
             "check": "Endorsement count checked.",
             "date": "2026-11-25",
             "result": "The Dutch closing speech says more than 60 countries had endorsed the Call by 16 February 2023; the news item refers to a country list. No itemised official list was located, and UNIDIR's December 2025 chronology records 58. The record does not assert a precise total."
+          },
+          {
+            "check": "Official PDF downloaded; the extracted text was checked for the opening propositions, the 25 numbered paragraphs and the closing invitation.",
+            "date": "2026-11-26",
+            "result": "8,876 characters; 25 units across 4 pages; paragraph 25 present."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official Dutch publication and news item. The record is metadata-only: no full text is stored. The endorsement total is left unstated because the official and secondary counts differ."
+        "notes": "The official English text is stored and hashed. Extraction and unit anchors were checked, but the Call was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
       }
     },
     {
@@ -13338,7 +13431,7 @@
       "dates": {
         "adopted": "2026-02-05",
         "notes": "Adopted at the third REAIM Summit in A Coruña, Spain, on 5 February 2026; the summit ran from 4 to 5 February 2026. The Spanish government's official page lists the endorsing States and states that the declaration remains open to further approval.",
-        "verified_on": "2026-11-25"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -13348,9 +13441,9 @@
         "The official Spanish page listed 45 endorsing States when accessed on 25 November 2026; a 26 February 2026 RSIS commentary recorded 40 at the time of writing. The record uses the current official list and does not infer when the additional States endorsed.",
         "No individual endorsement dates are published; all entries are recorded as listed endorsers without a date.",
         "The official list does not include China or the United States; no official explanation was located.",
-        "No full text is stored; the record is metadata-only.",
         "The declaration is not mapped in this pass; the 17 existing State-level maps are unchanged.",
-        "National implementation and the proposed industry framework are not assessed."
+        "National implementation and the proposed industry framework are not assessed.",
+        "The stored PDF is the eight-page English declaration; the 45-State endorsement list is published on the Spanish government page, not in this PDF."
       ],
       "id": "reaim-pathways-to-action-2026",
       "instrument_type": "declaration",
@@ -13648,7 +13741,8 @@
       "provenance": {
         "discovered_via": "Spanish Ministry of Foreign Affairs REAIM 2026 pages and the REAIM summit series.",
         "search_dates": [
-          "2026-11-25"
+          "2026-11-25",
+          "2026-11-26"
         ]
       },
       "related": [
@@ -13691,7 +13785,7 @@
       },
       "rights": {
         "licence": "Government of Spain terms",
-        "note": "Official government publication; no open licence identified. Metadata only in this corpus.",
+        "note": "Official government publication; no open licence identified. The official text is stored in the corpus; the publisher's terms continue to apply.",
         "status": "public_official_text",
         "url": "https://www.exteriores.gob.es/en/Paginas/index.aspx"
       },
@@ -13707,7 +13801,7 @@
           "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx"
         },
         {
-          "accessed": "2026-11-25",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "spain-pdf",
           "kind": "official_primary",
@@ -13719,6 +13813,14 @@
       ],
       "status": "adopted",
       "status_note": "Non-binding political declaration, not a treaty. It was adopted at the third REAIM Summit in A Coruña on 5 February 2026. The official Spanish page lists 45 endorsing States as of 25 November 2026 and states that the declaration remains open; a 26 February 2026 RSIS commentary recorded 40 at the time of writing. The record uses the current official list. It creates no legal obligation, ratification, depositary, monitoring or enforcement mechanism.",
+      "text": {
+        "extraction_note": "Official English text extracted from the eight-page Spanish government PDF and segmented at its 28 numbered paragraphs. Page anchors follow the PDF page order.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "numbered"
+      },
       "title": {
         "official": "A Coruña Declaration: REAIM 2026 Pathways to Action",
         "short": "REAIM 2026 Pathways to Action"
@@ -13739,10 +13841,15 @@
             "check": "Endorser list checked.",
             "date": "2026-11-25",
             "result": "The official page lists 45 States and states that the declaration remains open to further approval. The list was transcribed exactly; individual endorsement dates are not published."
+          },
+          {
+            "check": "Official PDF downloaded; the extracted text was checked for the opening paragraph, the 28 numbered paragraphs and the closing passage.",
+            "date": "2026-11-26",
+            "result": "11,125 characters; 28 units across 8 pages; paragraph 28 present."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official Spanish government page and PDF. The record is metadata-only: no full text is stored. The 45-State list is a dated snapshot; the declaration remains open."
+        "notes": "The official English text is stored and hashed. Extraction and unit anchors were checked, but the declaration was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
       }
     },
     {
@@ -14486,18 +14593,18 @@
       "dates": {
         "adopted": "2024-05-21",
         "notes": "Adopted at the Leaders' Session of the AI Seoul Summit on 21 May 2024.",
-        "verified_on": "2026-11-23"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
       ],
       "gaps": [
         "Non-binding.",
-        "Full text not stored.",
         "No monitoring mechanism.",
         "Participation is limited to 10 States and the EU; it is not a universal instrument.",
         "The separate Seoul Ministerial Statement of 22 May 2024 (27 States and the EU) is not catalogued or mapped.",
-        "The declaration is a leaders' text; it creates no treaty signature or ratification."
+        "The declaration is a leaders' text; it creates no treaty signature or ratification.",
+        "The stored text is the GOV.UK English publication; the separate Seoul Ministerial Statement of 22 May 2024 remains outside the corpus."
       ],
       "id": "seoul-declaration-2024",
       "instrument_type": "declaration",
@@ -14603,7 +14710,8 @@
         "assertions": [],
         "discovered_via": "GOV.UK AI Seoul Summit publications.",
         "search_dates": [
-          "2026-11-23"
+          "2026-11-23",
+          "2026-11-26"
         ]
       },
       "related": [
@@ -14633,7 +14741,7 @@
       },
       "sources": [
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "govuk-seoul",
           "kind": "official_primary",
@@ -14652,6 +14760,14 @@
       ],
       "status": "adopted",
       "status_note": "Adopted by 10 States and the European Union at the Leaders' Session on 21 May 2024. Political declaration, not a treaty signature or ratification. The separate Seoul Ministerial Statement of 22 May 2024 (27 States and the EU) is not this instrument.",
+      "text": {
+        "extraction_note": "Official English text extracted from the GOV.UK HTML publication. The extraction starts at paragraph 1 and ends before the page footer. It is segmented at the declaration's nine numbered paragraphs.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "numbered"
+      },
       "title": {
         "official": "Seoul Declaration for safe, innovative and inclusive AI",
         "short": "Seoul Declaration"
@@ -14672,10 +14788,15 @@
             "check": "Scope of the declaration checked against the official text and the Australian government's publication note.",
             "date": "2026-11-23",
             "result": "The Leaders' Declaration was adopted by 10 States and the EU; the Seoul Ministerial Statement of 22 May 2024 is a separate document adopted by 27 States and the EU."
+          },
+          {
+            "check": "Official HTML page downloaded; the extracted text was checked for the opening paragraph, the numbered structure and the closing paragraph.",
+            "date": "2026-11-26",
+            "result": "4,708 characters; 9 numbered units; opening and closing paragraphs present."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified; full text not stored. The participant list is reproduced party by party from the GOV.UK text; the separate ministerial statement is noted but not catalogued or mapped."
+        "notes": "The official English text is stored and hashed. Extraction and unit anchors were checked, but the declaration was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
       }
     },
     {
@@ -16813,7 +16934,7 @@
       "dates": {
         "adopted": "2026-10-06",
         "notes": "Adopted without a vote at the 41st meeting of the Human Rights Council's 63rd session, 6 October 2026. Official English document A/HRC/RES/63/15, 6 pages. Operative paragraph 20 convenes a panel at the 65th session on 'Placing human rights at the centre of artificial intelligence: artificial intelligence capacity-building and bridging the artificial intelligence divide'; operative paragraphs 21–22 request an OHCHR report on that theme to the 66th session, informed by the panel and by consultations including at the margins of the Second Global Dialogue on Artificial Intelligence Governance in May 2027. Neither has yet taken place.",
-        "verified_on": "2026-11-25"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -16823,8 +16944,8 @@
         "Adopted without a vote, so there is no State-by-State voting record.",
         "No military-AI prohibition; international humanitarian law is referenced only as applicable.",
         "Only the English text was read; the other five authentic UN language versions were not acquired.",
-        "No full text is stored in the corpus; the record is metadata-only.",
-        "The 65th-session panel discussion and the OHCHR report to the 66th session are future follow-up, not implementation; no date, agenda or terms of reference for either were located beyond the resolution's own terms."
+        "The 65th-session panel discussion and the OHCHR report to the 66th session are future follow-up, not implementation; no date, agenda or terms of reference for either were located beyond the resolution's own terms.",
+        "The stored PDF is the English version; the other five authentic UN language versions were not acquired. The preamble is a single large unit; operative paragraphs 1-23 are separate units."
       ],
       "id": "un-hrc-res-63-15",
       "instrument_type": "resolution",
@@ -16885,7 +17006,8 @@
         "assertions": [],
         "discovered_via": "Coverage-checklist review of UN human-rights bodies; A/HRC/RES/63/15 was identified on the UN Digital Library and its official English PDF was read.",
         "search_dates": [
-          "2026-11-23"
+          "2026-11-23",
+          "2026-11-26"
         ]
       },
       "related": [
@@ -16931,18 +17053,18 @@
       },
       "rights": {
         "licence": "United Nations terms of use",
-        "note": "Official UN document; UN copyright and terms of use apply. The PDF is linked, not stored.",
+        "note": "Official UN document; UN copyright and terms of use apply. The official PDF is stored in the corpus; UN terms of use continue to apply.",
         "status": "public_official_text",
         "url": "https://www.un.org/en/about-us/terms-of-use"
       },
       "sources": [
         {
-          "accessed": "2026-11-23",
+          "accessed": "2026-11-26",
           "http_status": 200,
           "id": "hrc-resolution",
           "kind": "official_primary",
           "language": "en",
-          "note": "Official English PDF of A/HRC/RES/63/15, 6 pages; read in full. The PDF is not stored in the corpus.",
+          "note": "Official English PDF of A/HRC/RES/63/15, 6 pages; read in full and stored in the corpus.",
           "publisher": "United Nations Human Rights Council",
           "url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf"
         },
@@ -16987,6 +17109,14 @@
       ],
       "status": "adopted",
       "status_note": "Adopted without a vote on 6 October 2026. The resolution is non-binding and creates no ratification, depositary, monitoring or enforcement mechanism. It applies international human-rights law to AI and requests follow-up through a panel discussion at the 65th session on AI capacity-building and bridging the AI divide, and an OHCHR report on that theme to the 66th session, informed by consultations including at the margins of the Second Global Dialogue on AI Governance in May 2027. As of 25 November 2026 neither the panel nor the report had taken place.",
+      "text": {
+        "extraction_note": "Official English text extracted from the six-page UN Digital Library PDF. Segmentation isolates the preamble and each of the 23 operative paragraphs; page anchors follow the PDF page order.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "resolution"
+      },
       "title": {
         "official": "Implications of artificial intelligence for the promotion and protection of human rights",
         "short": "HRC resolution 63/15 on AI and human rights"
@@ -17017,10 +17147,15 @@
             "check": "Legal nature checked.",
             "date": "2026-11-23",
             "result": "A non-binding resolution; no ratification, depositary, monitoring or enforcement mechanism."
+          },
+          {
+            "check": "Official PDF downloaded; the extracted text was checked for the resolution number, the preamble, operative paragraphs 1-23 and the adoption line.",
+            "date": "2026-11-26",
+            "result": "21,974 characters; 24 units across 6 pages; paragraph 23 and the adoption note present."
           }
         ],
         "level": "metadata_verified",
-        "notes": "The official PDF was read in full but is not stored, so the record is metadata-verified rather than full-text-checked. The resolution's follow-up (65th-session panel and 66th-session report) has not yet occurred."
+        "notes": "The official English text is now stored and hashed. Acquisition and extraction were verified; the resolution had been read in full earlier, but no new end-to-end legal read was performed in this cycle, so the record remains metadata-verified."
       }
     },
     {

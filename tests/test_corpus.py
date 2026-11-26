@@ -359,8 +359,8 @@ class TestCatalogue(unittest.TestCase):
         data = audit_texts.audit()
         self.assertEqual(data["total"], 75)
         self.assertEqual(sum(data["summary"].values()), 75)
-        self.assertEqual(data["summary"]["stored"], 36)
-        self.assertEqual(data["summary"]["official_text_located"], 28)
+        self.assertEqual(data["summary"]["stored"], 45)
+        self.assertEqual(data["summary"]["official_text_located"], 19)
         self.assertEqual(data["summary"]["internal_law"], 3)
         self.assertEqual(data["summary"]["paywalled"], 6)
         self.assertEqual(data["summary"]["summary_only"], 2)
@@ -873,7 +873,9 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(inst["status"], "adopted")
         self.assertEqual(inst["dates"]["adopted"], "2026-10-06")
         self.assertEqual(inst["verification"]["level"], "metadata_verified")
-        self.assertNotIn("text", inst)
+        self.assertTrue(inst["text"]["full_text"])
+        self.assertEqual(inst["text"]["units_mode"], "resolution")
+        self.assertEqual(len(corpuslib.load_units("un-hrc-res-63-15")), 24)
         self.assertEqual(inst["parties"]["act"], "resolution")
         self.assertEqual(inst["parties"]["counts"]["ratifications"]["basis"], "not_applicable")
         self.assertIsNone(inst["parties"]["counts"]["ratifications"]["total"])
@@ -907,12 +909,20 @@ class TestCatalogue(unittest.TestCase):
             "reaim-blueprint-for-action-2024",
             "reaim-pathways-to-action-2026",
         )
+        stored_text = {
+            "reaim-call-to-action-2023": 25,
+            "reaim-pathways-to-action-2026": 28,
+        }
         for iid in regional:
             inst = read_instrument(iid)
             self.assertEqual(inst["category"], "non_binding_instrument", iid)
             self.assertEqual(inst["binding_status"], "non_binding", iid)
             self.assertEqual(inst["domains"], ["ai"], iid)
-            self.assertNotIn("text", inst, iid)
+            if iid in stored_text:
+                self.assertTrue(inst["text"]["full_text"], iid)
+                self.assertEqual(len(corpuslib.load_units(iid)), stored_text[iid], iid)
+            else:
+                self.assertNotIn("text", inst, iid)
             self.assertTrue(inst["gaps"], iid)
             self.assertTrue(inst["verification"]["checks"], iid)
             self.assertIn("ai_provisions", inst["relevance"], iid)

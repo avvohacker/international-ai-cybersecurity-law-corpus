@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 2572777,
+      "media_type": "application/pdf",
+      "note": "Official 66-page English PDF of the African Union Continental Artificial Intelligence Strategy, published by the African Union Commission.",
+      "path": "source/au-continental-ai-strategy-2024-en.pdf",
+      "role": "original",
+      "sha256": "c5429f73786c0a0c170a78278016339ab86f914b239290ba1d6623cc07734e3f",
+      "source_url": "https://au.int/sites/default/files/documents/44004-doc-EN-_Continental_AI_Strategy_July_2024.pdf"
+    },
+    {
+      "bytes": 161978,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "b7cbedfadb4a0b3da4ec848429744fb996002d21e01dcee74d1066aa83afc884"
+    },
+    {
+      "bytes": 5476,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "010d6342f4d1168c241a6ad54a307444fdfef3b1f21d36076bc396df8f1ea286"
+    },
+    {
+      "bytes": 179199,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "59687cd71fb2cc357b32dd8b0a01ac4ed057ff504a3c5451ac5adfef879ca1c7"
+    }
+  ],
+  "instrument_id": "au-continental-ai-strategy-2024",
+  "primary_text": "text/en.txt"
+}

@@ -5,16 +5,16 @@
     "adopted": "2024-02-02",
     "notes": "Launched at the 4th ASEAN Digital Ministers' Meeting on 2 February 2024; the PDF itself carries a December 2023 version date.",
     "published": "2024-02-02",
-    "verified_on": "2026-11-23"
+    "verified_on": "2026-11-26"
   },
   "domains": [
     "ai"
   ],
   "gaps": [
     "Non-binding and voluntary.",
-    "Full text not stored.",
     "Implementation by ASEAN Member States is not assessed.",
-    "Covers commercial and non-military/dual-use applications; military AI is outside its scope."
+    "Covers commercial and non-military/dual-use applications; military AI is outside its scope.",
+    "The Guide is stored at page level; its tables, diagrams and multi-column layout survive only as extracted text, so visual relationships are not preserved."
   ],
   "id": "asean-ai-guide-2024",
   "instrument_type": "guidance",
@@ -36,7 +36,8 @@
     "assertions": [],
     "discovered_via": "ASEAN Secretariat publication page and PDF.",
     "search_dates": [
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-26"
     ]
   },
   "related": [
@@ -60,13 +61,13 @@
   },
   "rights": {
     "licence": "ASEAN Secretariat terms",
-    "note": "Official ASEAN publication; no open licence identified. Metadata only in this corpus.",
+    "note": "Official ASEAN publication; no open licence identified. The official text is stored in the corpus; the publisher's terms continue to apply.",
     "status": "public_official_text",
     "url": "https://asean.org/terms-of-use/"
   },
   "sources": [
     {
-      "accessed": "2026-11-23",
+      "accessed": "2026-11-26",
       "http_status": 200,
       "id": "asean-pdf",
       "kind": "official_primary",
@@ -85,6 +86,14 @@
   ],
   "status": "adopted",
   "status_note": "Adopted/launched as a voluntary guide. Non-binding.",
+  "text": {
+    "extraction_note": "Official English text extracted from the 87-page ASEAN PDF. Because the Guide combines multi-column prose, tables and questionnaires, the text is segmented one unit per PDF page; each unit is an exact slice of text/en.txt with a page anchor.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "pages"
+  },
   "title": {
     "official": "ASEAN Guide on AI Governance and Ethics",
     "short": "ASEAN AI Guide"
@@ -100,9 +109,14 @@
         "check": "Publisher, year and scope checked on the ASEAN publication page and PDF.",
         "date": "2026-11-23",
         "result": "ASEAN Secretariat, 2024; commercial and non-military/dual-use AI applications."
+      },
+      {
+        "check": "Official PDF downloaded; all 87 pages produced text, and the cover, contents, substantive sections and copyright page were checked.",
+        "date": "2026-11-26",
+        "result": "191,055 characters; 87 page units; no empty page among numbered pages."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified; full text not stored."
+    "notes": "The official English text is stored and hashed. Page extraction and unit anchors were checked, but the Guide was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
   }
 }

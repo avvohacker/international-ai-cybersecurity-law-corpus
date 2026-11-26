@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 262210,
+      "media_type": "application/pdf",
+      "note": "Official eight-page English PDF of the REAIM 2026 Pathways to Action, published by the Spanish Ministry of Foreign Affairs, European Union and Cooperation.",
+      "path": "source/reaim-2026-pathways-to-action-en.pdf",
+      "role": "original",
+      "sha256": "1c7d431a7e88c234f1a2cfdc0a6bc5682ed29871fcf0043b71de9009b4113dc0",
+      "source_url": "https://exteriores.gob.es/en/REAIM2026/Documents/REAIM%202026%20Pathways%20to%20Action.pdf"
+    },
+    {
+      "bytes": 11149,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "65d40b04aa338db0bfd0caf4b3b5e141537caa2ff3ef7dd92d775d6ccd5e8493"
+    },
+    {
+      "bytes": 685,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "4edfb1e88b7bb76875efa674df573587b1f17d22ac1cc126abb56a8732a41f52"
+    },
+    {
+      "bytes": 17873,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "37dc5413891987a6fcda70b014836079601aaf50a9c0b71fcc6bfec7921b8234"
+    }
+  ],
+  "instrument_id": "reaim-pathways-to-action-2026",
+  "primary_text": "text/en.txt"
+}

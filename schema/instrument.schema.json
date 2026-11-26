@@ -271,7 +271,7 @@
         "full_text": {"type": "boolean"},
         "primary_language": {"type": "string"},
         "primary_text": {"type": "string"},
-        "units_mode": {"enum": ["treaty", "treaty-inline", "treaty-ru", "treaty-zh", "resolution", "sections", "numbered", "whole", "pact"]},
+        "units_mode": {"enum": ["treaty", "treaty-inline", "treaty-ru", "treaty-zh", "resolution", "sections", "numbered", "whole", "pact", "pages"]},
         "extraction_note": {"type": "string"},
         "files": {"type": "array", "items": {"type": "object"}}
       }

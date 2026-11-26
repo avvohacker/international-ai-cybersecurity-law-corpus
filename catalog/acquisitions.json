@@ -50,6 +50,26 @@
     "url": "https://www.asianlaws.org/gcld/cyberlawdb/GCC/Arab%20Convention%20on%20Combating%20Information%20Technology%20Offences.pdf"
   },
   {
+    "accessed": "2026-11-26",
+    "bytes": 4233765,
+    "dest": "source/asean-ai-guide-2024-en.pdf",
+    "instrument_id": "asean-ai-guide-2024",
+    "media_type": "application/pdf",
+    "note": "Official 87-page English PDF of the ASEAN Guide on AI Governance and Ethics, published by the ASEAN Secretariat.",
+    "sha256": "6464a6d912a918a1b49c36b7dbd7f66b4756352e49164c5020f28b0b190bfe4e",
+    "url": "https://asean.org/wp-content/uploads/2024/02/ASEAN-Guide-on-AI-Governance-and-Ethics_beautified_201223_v2.pdf"
+  },
+  {
+    "accessed": "2026-11-26",
+    "bytes": 2572777,
+    "dest": "source/au-continental-ai-strategy-2024-en.pdf",
+    "instrument_id": "au-continental-ai-strategy-2024",
+    "media_type": "application/pdf",
+    "note": "Official 66-page English PDF of the African Union Continental Artificial Intelligence Strategy, published by the African Union Commission.",
+    "sha256": "c5429f73786c0a0c170a78278016339ab86f914b239290ba1d6623cc07734e3f",
+    "url": "https://au.int/sites/default/files/documents/44004-doc-EN-_Continental_AI_Strategy_July_2024.pdf"
+  },
+  {
     "accessed": "2026-11-25",
     "bytes": 13794400,
     "dest": "source/au-malabo-convention-2014-en-scanned.pdf",
@@ -68,6 +88,16 @@
     "note": "English transcription of the Malabo Convention from the AfricanLII network (SenLII), generated 11 June 2026. Used for the searchable text because the official PDF has no text layer; it is a legal-database transcription, not an official translation.",
     "sha256": "5ec5fbe9c40842231266b3d10065b5dd97910062f46f69d1efdb70ba15d2c07e",
     "url": "https://senlii.org/en/akn/aa-au/act/convention/2014/cyber-security-and-personal-data-protection/eng@2014-06-27/source.pdf"
+  },
+  {
+    "accessed": "2026-11-26",
+    "bytes": 86531,
+    "dest": "source/bletchley-declaration-2023-en.html",
+    "instrument_id": "bletchley-declaration-2023",
+    "media_type": "text/html; charset=utf-8",
+    "note": "Official GOV.UK HTML publication of the Bletchley Declaration, including the list of participating countries and the note recording New Zealand's accession on 23 October 2024.",
+    "sha256": "3508fb432ce64b227e822e5a492cfe93d27fdb48349b0b59a14522a69667657f",
+    "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023"
   },
   {
     "accessed": "2026-11-25",
@@ -190,6 +220,26 @@
     "url": "https://www.ecowas.int/wp-content/uploads/2025/05/SIGNED-Cyber-Crime.pdf"
   },
   {
+    "accessed": "2026-11-26",
+    "bytes": 81551,
+    "dest": "source/frontier-ai-safety-commitments-2024-en.html",
+    "instrument_id": "frontier-ai-safety-commitments-2024",
+    "media_type": "text/html; charset=utf-8",
+    "note": "Official GOV.UK HTML publication of the Frontier AI Safety Commitments, including the initial and later endorsing organisations and the footnotes.",
+    "sha256": "ff181edcf8d5ca97617574690da4e55dcdacc444abe63ed0d6fb66325d8a62c7",
+    "url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024"
+  },
+  {
+    "accessed": "2026-11-26",
+    "bytes": 108084,
+    "dest": "source/g7-digital-technology-ministerial-declaration-2026-en.html",
+    "instrument_id": "g7-digital-technology-ministerial-declaration-2026",
+    "media_type": "text/html; charset=utf-8",
+    "note": "Official English text of the G7 Digital and Technology Ministerial Declaration, published by the UK Department for Science, Innovation and Technology on 1 June 2026.",
+    "sha256": "5acea3d5af5c60787214c3b05fbae9fee3e123a8cc139f64fe3b2596903b80d8",
+    "url": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026"
+  },
+  {
     "accessed": "2026-11-23",
     "bytes": 281151,
     "dest": "source/HAIP-Code-of-Conduct-2023-10-30-en.pdf",
@@ -250,6 +300,26 @@
     "url": "https://web.archive.org/web/20240927054607/https://pariscall.international/assets/files/paris-call.pdf"
   },
   {
+    "accessed": "2026-11-26",
+    "bytes": 188246,
+    "dest": "source/reaim-2023-call-to-action-en.pdf",
+    "instrument_id": "reaim-call-to-action-2023",
+    "media_type": "application/pdf",
+    "note": "Official four-page English PDF of the REAIM 2023 Call to Action, published by the Government of the Netherlands.",
+    "sha256": "9bdfacd893b27fe5f97803debdea73f727e341b29c38fa081f9c2db7b4a5d5d3",
+    "url": "https://www.government.nl/site/binaries/site-content/collections/documents/2023/02/16/reaim-2023-call-to-action/REAIM+2023+Call+to+Action.pdf"
+  },
+  {
+    "accessed": "2026-11-26",
+    "bytes": 262210,
+    "dest": "source/reaim-2026-pathways-to-action-en.pdf",
+    "instrument_id": "reaim-pathways-to-action-2026",
+    "media_type": "application/pdf",
+    "note": "Official eight-page English PDF of the REAIM 2026 Pathways to Action, published by the Spanish Ministry of Foreign Affairs, European Union and Cooperation.",
+    "sha256": "1c7d431a7e88c234f1a2cfdc0a6bc5682ed29871fcf0043b71de9009b4113dc0",
+    "url": "https://exteriores.gob.es/en/REAIM2026/Documents/REAIM%202026%20Pathways%20to%20Action.pdf"
+  },
+  {
     "accessed": "2026-11-23",
     "bytes": 287516,
     "dest": "source/SADEA-2020-08-06-en.pdf",
@@ -268,6 +338,16 @@
     "note": "Official English PDF of the 2009 SCO Agreement on Cooperation in Ensuring International Information Security, 13 pages.",
     "sha256": "523da084c32baf3d96e72447a6e923d1d33034d3e6d7bb164d6aedd3e2810536",
     "url": "https://eng.sectsco.org/files/207508/207508"
+  },
+  {
+    "accessed": "2026-11-26",
+    "bytes": 78224,
+    "dest": "source/seoul-declaration-2024-en.html",
+    "instrument_id": "seoul-declaration-2024",
+    "media_type": "text/html; charset=utf-8",
+    "note": "Official GOV.UK HTML publication of the Seoul Declaration adopted at the Leaders' Session of the AI Seoul Summit on 21 May 2024.",
+    "sha256": "27d360d5604d1a7438c96df9a9b0c7b0ac9af936d21166f61436e1262b03c431",
+    "url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024"
   },
   {
     "accessed": "2026-11-25",
@@ -388,6 +468,16 @@
     "note": "Official UN document A/RES/80/58 (English).",
     "sha256": "65edd5d41f159a1bc98fcaf31d0eb8b6d9868d706bf939a05e690ec98cd30261",
     "url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FRES%2F80%2F58&t=pdf"
+  },
+  {
+    "accessed": "2026-11-26",
+    "bytes": 213542,
+    "dest": "source/A_HRC_RES_63_15-en.pdf",
+    "instrument_id": "un-hrc-res-63-15",
+    "media_type": "application/pdf",
+    "note": "Official six-page English PDF of Human Rights Council resolution 63/15, A/HRC/RES/63/15, adopted on 6 October 2026.",
+    "sha256": "6af79dea664c0aea1fe4612759cd042c2f1037909cf8624f3ce74567d2d8f390",
+    "url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf"
   },
   {
     "accessed": "2026-11-25",

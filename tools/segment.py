@@ -169,6 +169,35 @@ def segment_pact(body: str) -> list[dict]:
     return units
 
 
+def page_units(
+    body: str, pages: list[dict], start: int = 0, end: int | None = None
+) -> list[dict]:
+    """Create one exact unit per PDF page, clipped to an optional range."""
+    limit = len(body) if end is None else min(end, len(body))
+    units: list[dict] = []
+    for page in pages:
+        unit_start = max(page["char_start"], start)
+        unit_end = min(page["char_end"] + 1, limit)
+        if unit_start >= unit_end:
+            continue
+        text = body[unit_start:unit_end].strip("\n")
+        if not text:
+            continue
+        offset = body.index(text, unit_start, unit_end)
+        units.append(
+            {
+                "unit_id": "",
+                "instrument_id": "",
+                "kind": "page",
+                "label": f"Page {page['page']}",
+                "text": text,
+                "char_start": offset,
+                "char_end": offset + len(text),
+            }
+        )
+    return units
+
+
 def _article_matches(body: str) -> list[re.Match]:
     """Find article headings, including inline headings in PDF text.
 
@@ -328,17 +357,36 @@ def main() -> int:
             "numbered",
             "whole",
             "pact",
+            "pages",
         ],
     )
     parser.add_argument("--text", default="text/en.txt")
     parser.add_argument("--pages", default="pages.json")
     parser.add_argument("--output", default="units.jsonl")
+    parser.add_argument(
+        "--start",
+        type=int,
+        default=0,
+        help="optional character offset at which segmentation starts",
+    )
+    parser.add_argument(
+        "--end",
+        type=int,
+        help="optional character offset at which segmentation ends",
+    )
     args = parser.parse_args()
 
     base = CORPUS_DIR / args.instrument_id
-    body = (base / args.text).read_text(encoding="utf-8")
+    full_body = (base / args.text).read_text(encoding="utf-8")
+    body = full_body[args.start : args.end]
     pages = json.loads((base / args.pages).read_text(encoding="utf-8"))["pages"]
-    units = segment(body, args.mode)
+    if args.mode == "pages":
+        units = page_units(full_body, pages, args.start, args.end)
+    else:
+        units = segment(body, args.mode)
+        for unit in units:
+            unit["char_start"] += args.start
+            unit["char_end"] += args.start
     with (base / args.output).open("w", encoding="utf-8") as fh:
         for idx, unit in enumerate(units, 1):
             unit["unit_id"] = f"{args.instrument_id}-u{idx:04d}"

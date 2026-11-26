@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 86531,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official GOV.UK HTML publication of the Bletchley Declaration, including the list of participating countries and the note recording New Zealand's accession on 23 October 2024.",
+      "path": "source/bletchley-declaration-2023-en.html",
+      "role": "original",
+      "sha256": "3508fb432ce64b227e822e5a492cfe93d27fdb48349b0b59a14522a69667657f",
+      "source_url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023"
+    },
+    {
+      "bytes": 8467,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "94f3ffaeb88930dee0c5d1d3adaa08d55aa3a2ab134d25abd4bf3b19e8b1fa15"
+    },
+    {
+      "bytes": 129,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "ceed2fa8182257ecfe2ca5ad1d23d257fcb393ad97ddac708d1f3f573f65e57b"
+    },
+    {
+      "bytes": 8782,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "59b1e0f5c66a13e881f021bfa959f8386e446db1c720b2b135fba55184616fa6"
+    }
+  ],
+  "instrument_id": "bletchley-declaration-2023",
+  "primary_text": "text/en.txt"
+}

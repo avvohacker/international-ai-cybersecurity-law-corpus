@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 108084,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official English text of the G7 Digital and Technology Ministerial Declaration, published by the UK Department for Science, Innovation and Technology on 1 June 2026.",
+      "path": "source/g7-digital-technology-ministerial-declaration-2026-en.html",
+      "role": "original",
+      "sha256": "5acea3d5af5c60787214c3b05fbae9fee3e123a8cc139f64fe3b2596903b80d8",
+      "source_url": "https://www.gov.uk/government/publications/g7-digital-and-technology-ministerial-declaration-29-may-2026/g7-digital-and-technology-ministerial-declaration-29-may-2026"
+    },
+    {
+      "bytes": 18529,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "ccd60db7f0716ceb059473677dab642aa2d29472520c45bf67e5cc21a9e55929"
+    },
+    {
+      "bytes": 130,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "2568dadfd8528d4ceada6eaf36a62706a6a6ed968cfe8e7cfd3d822804f2c111"
+    },
+    {
+      "bytes": 18868,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "a25233f68fcdad3d9fbd0f5b08222324b2936dd58e4867a5148df471d21dda04"
+    }
+  ],
+  "instrument_id": "g7-digital-technology-ministerial-declaration-2026",
+  "primary_text": "text/en.txt"
+}

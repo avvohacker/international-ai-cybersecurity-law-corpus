@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 188246,
+      "media_type": "application/pdf",
+      "note": "Official four-page English PDF of the REAIM 2023 Call to Action, published by the Government of the Netherlands.",
+      "path": "source/reaim-2023-call-to-action-en.pdf",
+      "role": "original",
+      "sha256": "9bdfacd893b27fe5f97803debdea73f727e341b29c38fa081f9c2db7b4a5d5d3",
+      "source_url": "https://www.government.nl/site/binaries/site-content/collections/documents/2023/02/16/reaim-2023-call-to-action/REAIM+2023+Call+to+Action.pdf"
+    },
+    {
+      "bytes": 8878,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "5e27362e14c7d85e739a6b2840a3cb61e08d02b2afedff0195e4f64c94e1a543"
+    },
+    {
+      "bytes": 366,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "2f8073beec2291f5508579515a5e9cc5f292747a3f514efa6e1d2ad62d6bd8b3"
+    },
+    {
+      "bytes": 13262,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "9880bfe1a287b5673be3d0d5e7a603bc95639c83ff03701c07d3f161256107df"
+    }
+  ],
+  "instrument_id": "reaim-call-to-action-2023",
+  "primary_text": "text/en.txt"
+}

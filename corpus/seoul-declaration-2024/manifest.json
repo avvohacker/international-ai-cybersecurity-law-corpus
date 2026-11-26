@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 78224,
+      "media_type": "text/html; charset=utf-8",
+      "note": "Official GOV.UK HTML publication of the Seoul Declaration adopted at the Leaders' Session of the AI Seoul Summit on 21 May 2024.",
+      "path": "source/seoul-declaration-2024-en.html",
+      "role": "original",
+      "sha256": "27d360d5604d1a7438c96df9a9b0c7b0ac9af936d21166f61436e1262b03c431",
+      "source_url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024"
+    },
+    {
+      "bytes": 4716,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "c604e8057566bd244a1cde3f57687c8214cbdc59fd0aa49f2743b8ef2f978c48"
+    },
+    {
+      "bytes": 129,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "0df6f3ffa90836f83db7c9f500fe6aa08633d7454925536eb5e95657953224c3"
+    },
+    {
+      "bytes": 6691,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "6ab57b8e41d85e6cf63a6153f8aac7edf78ca0dd9919e6d98f22e6a15816536b"
+    }
+  ],
+  "instrument_id": "seoul-declaration-2024",
+  "primary_text": "text/en.txt"
+}

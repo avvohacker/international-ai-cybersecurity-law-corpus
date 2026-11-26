@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-26",
+      "bytes": 213542,
+      "media_type": "application/pdf",
+      "note": "Official six-page English PDF of Human Rights Council resolution 63/15, A/HRC/RES/63/15, adopted on 6 October 2026.",
+      "path": "source/A_HRC_RES_63_15-en.pdf",
+      "role": "original",
+      "sha256": "6af79dea664c0aea1fe4612759cd042c2f1037909cf8624f3ce74567d2d8f390",
+      "source_url": "https://digitallibrary.un.org/record/4130748/files/A_HRC_RES_63_15-EN.pdf"
+    },
+    {
+      "bytes": 21986,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "14b1f5055682f18c68912b8c8c9183af9ee0cc156dcb1eaf9b2849539a54f8a4"
+    },
+    {
+      "bytes": 531,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "2f734e5d47a9294e5c484d3f421863b7f07593e110ca5fa6c817db023a0f9657"
+    },
+    {
+      "bytes": 27370,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "4b6c1f424f4ca79d5d04b12f8affcdc99dbcf6b9eefa50c905fbfd20e2fee540"
+    }
+  ],
+  "instrument_id": "un-hrc-res-63-15",
+  "primary_text": "text/en.txt"
+}
