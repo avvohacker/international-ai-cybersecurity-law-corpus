@@ -1,0 +1,121 @@
+{
+  "binding_status": "non_binding",
+  "category": "technical_standard",
+  "dates": {
+    "adopted": null,
+    "notes": "PAR approved on 30 June 2016; IEEE SA Standards Board approval on 16 June 2021; published on 15 September 2021. The IEEE SA page records the standard as active.",
+    "published": "2021-09-15",
+    "verified_on": "2026-11-26"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "Not an AI-specific standard: it addresses ethical concerns in system design generally, and its application to AI systems is not prescribed by the text.",
+    "A voluntary technical standard, not a treaty: no signature, ratification, depositary or legal obligation.",
+    "Metadata only: the IEEE SA catalogue page and launch notice were read, but the full standard was not analysed for this record.",
+    "Certification, conformity assessment and organisational use are not assessed."
+  ],
+  "id": "ieee-7000-2021",
+  "instrument_type": "standard",
+  "issuer": [
+    {
+      "name": "IEEE Standards Association (IEEE SA)",
+      "role": "issuer",
+      "url": "https://standards.ieee.org/"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "IEEE publishes the standard in English. No authentic-language clause applies to a technical standard."
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "field": "title",
+        "date": "2026-11-26",
+        "method": "official_page_read",
+        "source_ids": [
+          "ieee-standard"
+        ],
+        "locator": "IEEE 7000-2021 standard page: title, status, history, PAR and Board approval, C/S2ESC, EMELC-WG."
+      },
+      {
+        "field": "status",
+        "date": "2026-11-26",
+        "method": "official_page_read",
+        "source_ids": [
+          "ieee-news"
+        ],
+        "locator": "IEEE SA news release: announcement page of 15 September 2021, title and summary."
+      }
+    ],
+    "discovered_via": "IEEE Standards Association catalogue, following the standards-layer candidate register.",
+    "search_dates": [
+      "2026-11-26"
+    ]
+  },
+  "related": [],
+  "relevance": {
+    "ai_provisions": [
+      "Model process for eliciting ethical values from stakeholders and tracing them through an operational concept, value propositions, ethical requirements and risk-based design; a general systems-engineering process used in the IEEE 7000 family of AI-ethics standards."
+    ],
+    "excluded_scope": "General systems-engineering standard, not an AI-specific instrument; voluntary and not law.",
+    "reason": "IEEE 7000-2021 establishes a model process for addressing ethical concerns during system design. It is not AI-specific, but it is the central standard in the IEEE 7000 family applied to AI ethics and is therefore recorded in the technical-standards layer at metadata level."
+  },
+  "rights": {
+    "licence": "IEEE copyright",
+    "note": "The standard is available free of charge through the IEEE GET Program and by subscription; it is not open-licensed. This corpus stores metadata and links only.",
+    "status": "restricted",
+    "url": "https://standards.ieee.org/ieee/7000/6781/"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "ieee-standard",
+      "kind": "official_primary",
+      "note": "Standard page: active standard, published 2021-09-15, Board approval 2021-06-16, PAR approval 2016-06-30, committee C/S2ESC, working group EMELC-WG; free access through the IEEE GET Program.",
+      "publisher": "IEEE Standards Association",
+      "url": "https://standards.ieee.org/ieee/7000/6781/"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "ieee-news",
+      "kind": "official_secondary",
+      "note": "IEEE SA news release of 15 September 2021 announcing the launch of IEEE 7000-2021 and summarising its purpose.",
+      "publisher": "IEEE Standards Association",
+      "url": "https://standards.ieee.org/news/ieee-7000"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Active standard. A published IEEE standard, not a treaty; there is no signature, ratification, depositary or entry-into-force condition.",
+  "title": {
+    "official": "IEEE 7000-2021: IEEE Standard Model Process for Addressing Ethical Concerns during System Design",
+    "short": "IEEE 7000-2021"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Title, status, publication date and approval dates checked on the IEEE SA standard page.",
+        "date": "2026-11-26",
+        "result": "IEEE 7000-2021, active standard, published 2021-09-15, Board approval 2021-06-16, PAR approval 2016-06-30."
+      },
+      {
+        "check": "Issuing committee and working group checked on the IEEE SA standard page.",
+        "date": "2026-11-26",
+        "result": "C/S2ESC (Software & Systems Engineering Standards Committee); EMELC-WG (Engineering Methodologies for Ethical Life-Cycle Concerns)."
+      },
+      {
+        "check": "Legal nature checked: voluntary technical standard, not a treaty and not AI-specific.",
+        "date": "2026-11-26",
+        "result": "Technical standard; no binding legal effect; general systems-engineering scope."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata only. The full standard was not acquired or analysed; the IEEE SA page states that the PDF is available through the IEEE GET Program."
+  }
+}

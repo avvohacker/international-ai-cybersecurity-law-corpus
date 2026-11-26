@@ -319,7 +319,10 @@ def classify(
         if has_anti_bot_marker(status, headers, body):
             return "anti_bot", "challenge_on_200"
         return "ok", "http_2xx"
-    if status in (401, 403, 405, 406, 409, 429, 451):
+    if status in (401, 403, 405, 406, 407, 409, 429, 451):
+        # 407 is an intermediary demanding proxy authentication (for example
+        # CloudFront refusing a datacenter address for the whole host), not a
+        # missing resource. Keep it with the blocked responses, not broken.
         return "anti_bot", f"http_{status}"
     if status in (404, 410):
         return "broken", f"http_{status}"

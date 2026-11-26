@@ -1,0 +1,133 @@
+{
+  "binding_status": "non_binding",
+  "category": "technical_standard",
+  "dates": {
+    "adopted": null,
+    "notes": "Date of ratification (DOR) 2026-07-12; date of availability (DAV) 2026-07-22; date of announcement (DOA) 2026-10-31; date of publication (DOP) and date of withdrawal (DOW) 2027-01-31. Cited in the Official Journal as OJ L, 2026/2274 (2026-10-14) for Directive 2024/1689.",
+    "published": "2026-07-22",
+    "verified_on": "2026-11-26"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "A European standard, not a treaty or an international instrument: no signature, ratification or depositary.",
+    "Paywalled: the standard is sold through the national standards bodies; only the CEN-CENELEC metadata was read.",
+    "Other JTC 21 work items (for example prEN 18228 on AI risk management, prEN 18283 on bias and prEN 18285 on conformity assessment) are not catalogued individually.",
+    "National adoption and the presumption of conformity attached to the OJEU citation are not assessed."
+  ],
+  "id": "cen-en-18286-2026",
+  "instrument_type": "standard",
+  "issuer": [
+    {
+      "name": "CEN and CENELEC, CEN/CLC/JTC 21 'Artificial Intelligence'",
+      "role": "issuer"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en",
+      "fr",
+      "de"
+    ],
+    "note": "CEN publishes European standards in its three official language versions (English, French and German). The metadata page was read in English."
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "field": "title",
+        "date": "2026-11-26",
+        "method": "official_page_read",
+        "source_ids": [
+          "cen-project"
+        ],
+        "locator": "CEN/CLC/JTC 21 project JT021039, EN 18286:2026: title, scope, status Published, DOR/DAV/DOA/DOP/DOW, M/613, OJ L 2026/2274."
+      },
+      {
+        "field": "status",
+        "date": "2026-11-26",
+        "method": "official_page_read",
+        "source_ids": [
+          "cen-ai-page"
+        ],
+        "locator": "Artificial Intelligence topic page: JTC 21 established 1 June 2021, five working groups, harmonised standards in support of the EU AI Act, eNorm mandate 593."
+      }
+    ],
+    "discovered_via": "CEN-CENELEC standards database and AI topic page, following the standards-layer candidate register.",
+    "search_dates": [
+      "2026-11-26"
+    ]
+  },
+  "related": [
+    {
+      "id": "eu-ai-act",
+      "note": "Developed under standardisation request M/593 as amended by M/613 to support Regulation (EU) 2024/1689; cited in OJ L 2026/2274.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Quality management system for organisations that provide AI systems, primarily those placing on the market or putting into service high-risk AI systems; intended to support applicable regulatory requirements under the EU AI Act."
+    ],
+    "excluded_scope": "Voluntary European standard; it supports legal conformity but is not itself law and creates no obligation.",
+    "reason": "EN 18286:2026 is a published European standard developed by CEN/CLC/JTC 21 under the AI Act standardisation request. It is catalogued at metadata level as part of the standards layer; the committee itself is not an instrument."
+  },
+  "rights": {
+    "licence": "CEN-CENELEC copyright",
+    "note": "European standards are sold through the national standards bodies. This corpus stores metadata and links only and does not reproduce the standard.",
+    "status": "restricted",
+    "url": "https://standards.cencenelec.eu/ords/f?p=CEN:110:::::FSP_PROJECT,FSP_ORG_ID:80556,2916257&cs=12A382BDB5385F509EBAA7CD4808AFBF3"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "cen-project",
+      "kind": "official_primary",
+      "note": "CEN project page: EN 18286:2026, Quality management system for EU AI Act regulatory purposes, work item JT021039, status Published, DAV 2026-07-22, mandate M/613, OJ L 2026/2274 (2026-10-14).",
+      "publisher": "CEN-CENELEC",
+      "url": "https://standards.cencenelec.eu/ords/f?p=CEN:110:::::FSP_PROJECT,FSP_ORG_ID:80556,2916257&cs=12A382BDB5385F509EBAA7CD4808AFBF3"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "cen-ai-page",
+      "kind": "official_secondary",
+      "note": "CEN-CENELEC Artificial Intelligence topic page: JTC 21 established on 1 June 2021, over 300 experts from more than 20 countries, five working groups, harmonised standards supporting the EU AI Act.",
+      "publisher": "CEN-CENELEC",
+      "url": "https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "Published European standard (CEN status: Published). Not a treaty; there is no signature, ratification, depositary or entry-into-force condition.",
+  "title": {
+    "official": "EN 18286:2026 Artificial intelligence - Quality management system for EU AI Act regulatory purposes",
+    "short": "EN 18286:2026"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Reference, title, work item, scope and publication status checked on the CEN-CENELEC project page.",
+        "date": "2026-11-26",
+        "result": "EN 18286:2026, work item JT021039, status Published, DAV 2026-07-22."
+      },
+      {
+        "check": "Mandate and Official Journal citation checked on the CEN-CENELEC project page.",
+        "date": "2026-11-26",
+        "result": "Mandate M/613; cited in OJ L, 2026/2274 (2026-10-14) for Directive 2024/1689 (Regulation (EU) 2024/1689 in the OJEU)."
+      },
+      {
+        "check": "Committee context checked on the CEN-CENELEC AI topic page.",
+        "date": "2026-11-26",
+        "result": "CEN/CLC/JTC 21, established 1 June 2021, five working groups, developing harmonised standards in support of the EU AI Act."
+      },
+      {
+        "check": "Legal nature checked: voluntary European standard, not a treaty.",
+        "date": "2026-11-26",
+        "result": "Technical standard; no binding legal effect of its own."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata only. The standard is sold through the national standards bodies and was not acquired or analysed."
+  }
+}

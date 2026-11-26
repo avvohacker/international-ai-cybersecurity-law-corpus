@@ -39,6 +39,7 @@ from typing import Any
 from corpuslib import CATALOG_DIR, dump_json
 
 PAYWALLED = {
+    "cen-en-18286-2026",
     "iso-iec-22989-2022",
     "iso-iec-23053-2022",
     "iso-iec-23894-2023",
@@ -86,7 +87,7 @@ def classify(inst: dict[str, Any]) -> tuple[str, str]:
     if (inst.get("text") or {}).get("full_text"):
         return "stored", "Full text stored and segmented."
     if iid in PAYWALLED:
-        return "paywalled", "ISO/IEC standard sold by the standards body; not stored."
+        return "paywalled", "Standard sold by the standards body; not stored."
     if iid in SUMMARY_ONLY:
         return "summary_only", "Only an official summary is public; no full instrument text."
     if iid in INTERNAL_LAW:

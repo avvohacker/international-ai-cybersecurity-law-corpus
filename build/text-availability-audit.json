@@ -198,6 +198,16 @@
       "title": "CCW GGE on LAWS — 2026 report and negotiating mandate"
     },
     {
+      "availability": "paywalled",
+      "binding_status": "non_binding",
+      "category": "technical_standard",
+      "id": "cen-en-18286-2026",
+      "official_source": "https://standards.cencenelec.eu/ords/f?p=CEN:110:::::FSP_PROJECT,FSP_ORG_ID:80556,2916257&cs=12A382BDB5385F509EBAA7CD4808AFBF3",
+      "official_source_kind": "official_primary",
+      "reason": "Standard sold by the standards body; not stored.",
+      "title": "EN 18286:2026"
+    },
+    {
       "availability": "stored",
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
@@ -475,13 +485,23 @@
       "title": "ICCPR"
     },
     {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "technical_standard",
+      "id": "ieee-7000-2021",
+      "official_source": "https://standards.ieee.org/ieee/7000/6781/",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "IEEE 7000-2021"
+    },
+    {
       "availability": "paywalled",
       "binding_status": "non_binding",
       "category": "technical_standard",
       "id": "iso-iec-22989-2022",
       "official_source": "https://www.iso.org/standard/74296.html",
       "official_source_kind": "official_primary",
-      "reason": "ISO/IEC standard sold by the standards body; not stored.",
+      "reason": "Standard sold by the standards body; not stored.",
       "title": "ISO/IEC 22989:2022"
     },
     {
@@ -491,7 +511,7 @@
       "id": "iso-iec-23053-2022",
       "official_source": "https://www.iso.org/standard/74438.html",
       "official_source_kind": "official_primary",
-      "reason": "ISO/IEC standard sold by the standards body; not stored.",
+      "reason": "Standard sold by the standards body; not stored.",
       "title": "ISO/IEC 23053:2022"
     },
     {
@@ -501,7 +521,7 @@
       "id": "iso-iec-23894-2023",
       "official_source": "https://www.iso.org/standard/77304.html",
       "official_source_kind": "official_primary",
-      "reason": "ISO/IEC standard sold by the standards body; not stored.",
+      "reason": "Standard sold by the standards body; not stored.",
       "title": "ISO/IEC 23894:2023"
     },
     {
@@ -511,7 +531,7 @@
       "id": "iso-iec-42001-2023",
       "official_source": "https://www.iso.org/standard/42001.html",
       "official_source_kind": "official_primary",
-      "reason": "ISO/IEC standard sold by the standards body; not stored.",
+      "reason": "Standard sold by the standards body; not stored.",
       "title": "ISO/IEC 42001:2023"
     },
     {
@@ -521,8 +541,18 @@
       "id": "iso-iec-42006-2025",
       "official_source": "https://www.iso.org/standard/42006",
       "official_source_kind": "official_primary",
-      "reason": "ISO/IEC standard sold by the standards body; not stored.",
+      "reason": "Standard sold by the standards body; not stored.",
       "title": "ISO/IEC 42006:2025"
+    },
+    {
+      "availability": "official_text_located",
+      "binding_status": "non_binding",
+      "category": "technical_standard",
+      "id": "itu-t-y3172-2019",
+      "official_source": "https://www.itu.int/rec/T-REC-Y.3172-201906-I/en",
+      "official_source_kind": "official_primary",
+      "reason": "Official text located at the cited source; record is metadata-only.",
+      "title": "ITU-T Y.3172"
     },
     {
       "availability": "stored",
@@ -1007,10 +1037,10 @@
       "transient": 2
     },
     "internal_law": 3,
-    "official_text_located": 26,
-    "paywalled": 5,
+    "official_text_located": 28,
+    "paywalled": 6,
     "stored": 36,
     "summary_only": 2
   },
-  "total": 72
+  "total": 75
 }

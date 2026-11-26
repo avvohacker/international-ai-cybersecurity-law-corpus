@@ -1,0 +1,119 @@
+{
+  "binding_status": "non_binding",
+  "category": "technical_standard",
+  "dates": {
+    "adopted": "2019-06-22",
+    "notes": "Approved on 22 June 2019 under the ITU-T Alternative Approval Process (AAP); edition 06/2019. The free English PDF was posted on 8 August 2019. The ITU catalogue records the status as in force.",
+    "published": null,
+    "verified_on": "2026-11-26"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "A technical recommendation, not a treaty: no signature, ratification, depositary or legal obligation.",
+    "Metadata only: the recommendation page and catalogue record were read, but the full text was not analysed for this record.",
+    "National implementation and deployment in networks are not assessed."
+  ],
+  "id": "itu-t-y3172-2019",
+  "instrument_type": "standard",
+  "issuer": [
+    {
+      "name": "International Telecommunication Union, Telecommunication Standardization Sector (ITU-T)",
+      "role": "issuer"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "The recommendation page read for this record is the English version. No authentic-language clause applies to a technical recommendation."
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "field": "title",
+        "date": "2026-11-26",
+        "method": "official_page_read",
+        "source_ids": [
+          "itu-rec"
+        ],
+        "locator": "Recommendation Y.3172 (06/19) page: title, approval date, status, free-access list."
+      },
+      {
+        "field": "status",
+        "date": "2026-11-26",
+        "method": "official_page_read",
+        "source_ids": [
+          "itu-rec-db"
+        ],
+        "locator": "ITU-T Y.3172 (06/2019) database record: Y.3000-Y.3499 series, AAP, Study Group 13."
+      }
+    ],
+    "discovered_via": "ITU-T recommendation catalogue, following the standards-layer candidate register.",
+    "search_dates": [
+      "2026-11-26"
+    ]
+  },
+  "related": [],
+  "relevance": {
+    "ai_provisions": [
+      "Architectural framework for machine learning in future networks including IMT-2020: architectural requirements, an ML pipeline, ML management and orchestration, and guidelines for applying the framework in underlying networks."
+    ],
+    "excluded_scope": "Voluntary technical recommendation; no legal obligation, no regulation and no party list.",
+    "reason": "It is the ITU-T recommendation that specifies an architectural framework for machine learning in future networks including IMT-2020. It belongs to the technical-standards layer, not international law, and is catalogued at metadata level so that the standard is recorded without reproducing it."
+  },
+  "rights": {
+    "licence": "ITU copyright",
+    "note": "The English PDF and EPUB are in the ITU free-access list; the Word version is restricted to TIES users. This corpus stores metadata and links only and does not reproduce the recommendation.",
+    "status": "restricted",
+    "url": "https://www.itu.int/rec/T-REC-Y.3172-201906-I/en"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "itu-rec",
+      "kind": "official_primary",
+      "note": "Recommendation page: approved 2019-06-22, status in force, English PDF and EPUB freely available.",
+      "publisher": "International Telecommunication Union",
+      "url": "https://www.itu.int/rec/T-REC-Y.3172-201906-I/en"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "itu-rec-db",
+      "kind": "official_secondary",
+      "note": "Recommendation database record: Y.3000-Y.3499 series, approval process AAP, maintenance responsibility ITU-T Study Group 13, citation handle.itu.int/11.1002/1000/13894.",
+      "publisher": "International Telecommunication Union",
+      "url": "https://www.itu.int/itu-t/recommendations/rec.aspx?rec=13894"
+    }
+  ],
+  "status": "adopted",
+  "status_note": "In force. A published ITU-T recommendation, not a treaty; there is no signature, ratification, depositary or entry-into-force condition.",
+  "title": {
+    "official": "Recommendation ITU-T Y.3172 (06/2019): Architectural framework for machine learning in future networks including IMT-2020",
+    "short": "ITU-T Y.3172"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Title, edition, approval date and status checked on the ITU-T recommendation page.",
+        "date": "2026-11-26",
+        "result": "Recommendation ITU-T Y.3172 (06/2019), approved 2019-06-22, status in force."
+      },
+      {
+        "check": "Series, approval process and study group checked on the ITU-T recommendation database record.",
+        "date": "2026-11-26",
+        "result": "Y.3000-Y.3499 series; AAP approval; maintenance responsibility ITU-T Study Group 13."
+      },
+      {
+        "check": "Legal nature checked: voluntary technical recommendation, not a treaty.",
+        "date": "2026-11-26",
+        "result": "Technical standard; no binding legal effect."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Metadata only. The recommendation is freely downloadable from ITU but its full text was not acquired, segmented or analysed for this record."
+  }
+}
