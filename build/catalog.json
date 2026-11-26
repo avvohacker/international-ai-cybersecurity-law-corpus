@@ -5263,10 +5263,10 @@
       "dates": {
         "adopted": "2024-05-17",
         "entered_into_force": null,
-        "notes": "Adopted by the Committee of Ministers on 17 May 2024 at its 133rd Session; opened for signature at Vilnius on 5 September 2024. Published in the EU Official Journal on 13 May 2026 (OJ L, 2026/1081). Not in force on the verification date; party data checked against the Treaty Office chart status of 25 November 2026.",
+        "notes": "Adopted by the Committee of Ministers on 17 May 2024 at its 133rd Session; opened for signature at Vilnius on 5 September 2024. Published in the EU Official Journal on 13 May 2026 (OJ L, 2026/1081). Not in force on the verification date; party data checked against the Treaty Office chart status of 17 November 2026.",
         "opened_for_signature": "2024-09-05",
         "published": "2026-05-13",
-        "verified_on": "2026-11-25"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -5334,7 +5334,7 @@
       },
       "parties": {
         "act": "treaty_signature",
-        "as_of": "2026-11-25",
+        "as_of": "2026-11-17",
         "counts": {
           "ratifications": {
             "basis": "verified_total",
@@ -5644,7 +5644,7 @@
         }
       ],
       "status": "not_in_force",
-      "status_note": "As of the Treaty Office chart status date 25 November 2026: 21 signatories in total (19 signatures not followed by ratification and 2 ratifications), and 19 signatures without ratification. The two ratifications are Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). Article 30(3) requires five ratifications including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. Not in force.",
+      "status_note": "As of the Treaty Office chart status date 17 November 2026: 21 signatories in total (19 signatures not followed by ratification and 2 ratifications), and 19 signatures without ratification. The two ratifications are Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). Article 30(3) requires five ratifications including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. Not in force.",
       "text": {
         "extraction_note": "The stored English text is textually identical, on a whitespace-insensitive comparison, to the 12-page Council of Europe Treaty Series PDF of CETS 225 acquired on 25 November 2026. Running headers, underscore rules, page numbers and line wrapping were removed. The certified bilingual copy acquired on 25 November 2026 includes the corrected French text; the authentic French pages (3, 5, ..., 27 of the 27-page PDF) were extracted to text/fr.txt with page offsets in pages-fr.json. The French text is segmented into 36 article units in units-fr.jsonl; pages-fr.json records both the 1-based French sequence and the corresponding PDF page. The English column of the certified copy has not been re-diffed page by page against the stored English transcription.",
         "files": [
@@ -5687,8 +5687,8 @@
             "result": "Still not in force (2 of the 5 required ratifications); no Conference of the Parties, rules of procedure or reporting format constituted. Articles 23(4) and 24(2) assign the rules and the reporting format to the Conference itself."
           },
           {
-            "check": "Per-party signature and ratification table checked against the official Treaty Office chart, status 25/11/2026.",
-            "date": "2026-11-25",
+            "check": "Per-party signature and ratification table checked against the official Treaty Office chart, status 17/11/2026.",
+            "date": "2026-11-26",
             "result": "21 signatories; 19 signatures without ratification; 2 ratifications: Bosnia and Herzegovina 28/10/2026 and the European Union 15/05/2026; no deposits after 28/10/2026; not in force; unchanged since the previous check."
           },
           {
@@ -17566,7 +17566,7 @@
         "notes": "Signed at the Shanghai ceremony on 16 July 2026; open for signature from 1 May to 31 July 2026. The official Chinese text was published by the National People's Congress on 18 November 2026 and its articles were read for this record. China's NPC Standing Committee approved ratification on 6 November 2026; that is a domestic authorisation, not a deposit. No instrument of ratification, acceptance, approval or accession was verified with the depositary, and no depositary notification of entry into force was located. Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026, published on the official legal-information portal on 18 November 2026; that is also a domestic act, and no Russian deposit was verified.",
         "opened_for_signature": "2026-05-01",
         "signed": "2026-07-16",
-        "verified_on": "2026-11-25"
+        "verified_on": "2026-11-26"
       },
       "domains": [
         "ai"
@@ -17617,7 +17617,7 @@
       },
       "parties": {
         "act": "treaty_signature",
-        "as_of": "2026-11-25",
+        "as_of": "2026-11-26",
         "counts": {
           "ratifications": {
             "basis": "unknown",
@@ -17887,7 +17887,7 @@
       "provenance": {
         "assertions": [
           {
-            "date": "2026-11-25",
+            "date": "2026-11-26",
             "field": "status",
             "locator": "Article 15 (three instruments of ratification, acceptance or approval); MFA press conference of 9 November 2026; Russian Government decree No. 1532 of 17 November 2026",
             "method": "official_page_read",
@@ -17899,7 +17899,7 @@
             ]
           },
           {
-            "date": "2026-11-25",
+            "date": "2026-11-26",
             "field": "parties",
             "locator": "MFA statements of 9 November 2026 and 31 July 2026; Indonesian government list of 17 July 2026; October 2026 progress report; NDRC press conference of 3 November 2026; MDDI parliamentary reply of 9 September 2026",
             "method": "official_page_read",
@@ -17914,7 +17914,7 @@
             ]
           },
           {
-            "date": "2026-11-25",
+            "date": "2026-11-26",
             "field": "legal_nature",
             "locator": "Agreement Articles 1 (legal personality), 5–8 (Council, decision-making, Secretariat and financing), 14 (signature and accession), 15 (entry into force) and 18 (depositary)",
             "method": "official_text_read",
@@ -18104,7 +18104,7 @@
         }
       ],
       "status": "unknown",
-      "status_note": "Treaty, binding on States that become parties, but entry into force is not confirmed as of 25 November 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; both are domestic acts, recorded separately from international consent, and no deposited instrument was verified. The number of deposits is unknown, not zero: China is the depositary under Article 18 and no public depositary register or notification was located. China's MFA reports 38 founding members, but the signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. On 3 November 2026 the NDRC said China is advancing WAICO's 'material operation' process, wording that describes work in progress rather than constituted organs. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer'; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore's Ministry of Digital Development and Information told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it; the reply does not say whether the invitation is to membership or observer status, and Singapore has not accepted. The 37/38 discrepancy is recorded, not resolved.",
+      "status_note": "Treaty, binding on States that become parties, but entry into force is not confirmed as of 26 November 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; both are domestic acts, recorded separately from international consent, and no deposited instrument was verified. The number of deposits is unknown, not zero: China is the depositary under Article 18 and no public depositary register or notification was located. China's MFA reports 38 founding members, but the signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. On 3 November 2026 the NDRC said China is advancing WAICO's 'material operation' process, wording that describes work in progress rather than constituted organs. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer'; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore's Ministry of Digital Development and Information told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it; the reply does not say whether the invitation is to membership or observer status, and Singapore has not accepted. The 37/38 discrepancy is recorded, not resolved.",
       "text": {
         "extraction_note": "Official Chinese text extracted from the NPC page and segmented into 18 article units. The English Digital Watch reproduction was consulted but is not stored or used for the text.",
         "full_text": true,
@@ -18168,6 +18168,11 @@
             "check": "Entry into force, deposits, organs, observer status and Singapore's invitation re-checked on official sources.",
             "date": "2026-11-25",
             "result": "No depositary register or notification was located. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; both are domestic acts with no verified deposit. The NDRC said on 3 November 2026 that China is advancing the organization's 'material operation' process, which describes work in progress; no act constituting the Council or Secretariat, appointing a Secretary-General, or adopting rules or a budget was located. Bangladesh's 1 August 2026 observer announcement has no recorded Council admission; Singapore's MDDI said on 9 September 2026 that it would consider an invitation, without stating whether it is to membership or observer status. The 38/37 count is unchanged and the 38th member is still unnamed."
+          },
+          {
+            "check": "Deposits, organs, the 38th founding member and the Global AI Governance Action Plan rechecked after the 25 November review.",
+            "date": "2026-11-26",
+            "result": "No change: China's MFA still reports 38 founding members without naming the 38th; no depositary register or notification, and no act constituting the Council or Secretariat, appointing a Secretary-General or adopting rules or a budget was located. China's NPC approval of 6 November 2026 and Russia's acceptance of 17 November 2026 remain domestic acts with no verified deposit. The Global AI Governance Action Plan, published at the 2025 World AI Conference on 26 July 2025, is a Chinese-proposed conference action plan with no State adherent list, so it is not catalogued as a separate instrument."
           }
         ],
         "level": "metadata_verified",

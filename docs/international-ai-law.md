@@ -2,7 +2,7 @@
 
 **Status:** 26 November 2026. **Scope:** the 60 AI-domain instruments recorded in `catalog/instruments/` and counted in [`docs/coverage.md`](coverage.md) [35]. This is a summary of the record, not a claim that the record is complete. Bracketed numbers refer to the citation list at the end; each entry gives the record, the source ID and the official URL. Statements about absence are statements about this corpus and the searches recorded in [`docs/research-log.md`](research-log.md) [31], not assertions that no such source exists anywhere.
 
-**How to cite:** International AI and Cybersecurity Law Corpus, “The International Law of AI: A Short Source-Verified Account,” 25 November 2026, `docs/international-ai-law.md`.
+**How to cite:** International AI and Cybersecurity Law Corpus, “The International Law of AI: A Short Source-Verified Account,” 26 November 2026, `docs/international-ai-law.md`.
 
 ## 1. The short answer
 
@@ -12,7 +12,7 @@ The corpus does not record a universal binding AI treaty in force [1][2][31][35]
 
 ### 2.1 CETS 225 is not in force; WAICO's entry into force is unconfirmed
 
-**CETS 225.** The Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law was adopted on 17 May 2024 and opened for signature on 5 September 2024. The Treaty Office chart of 25 November 2026 records 21 signatures and 2 ratifications: Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). It is not in force. Article 30(3) requires five ratifications, including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. The Conference of the Parties therefore does not yet exist [1].
+**CETS 225.** The Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law was adopted on 17 May 2024 and opened for signature on 5 September 2024. The Treaty Office chart of 17 November 2026 records 21 signatures and 2 ratifications: Bosnia and Herzegovina (28 October 2026) and the European Union (15 May 2026). It is not in force. Article 30(3) requires five ratifications, including at least three Council of Europe member States; three more ratifications, at least two by member States, are needed. The Conference of the Parties therefore does not yet exist [1].
 
 **WAICO.** The Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization was signed on 16 July 2026. China's Ministry of Foreign Affairs reports 38 founding members; the signing records identify 37: 29 States at the 16 July ceremony and eight later signatories named on 30–31 July 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's National People's Congress approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026, but both are domestic acts, not international deposits. No depositary register or notification was located: the number of deposited instruments is unknown, not zero, and entry into force is therefore unconfirmed rather than negated [2].
 
