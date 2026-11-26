@@ -3,7 +3,7 @@
   "category": "ai_treaty",
   "dates": {
     "closed_for_signature": "2026-07-31",
-    "notes": "Signed at the Shanghai ceremony on 16 July 2026; open for signature from 1 May to 31 July 2026. The official Chinese text was published by the National People's Congress on 18 November 2026 and its articles were read for this record. China's NPC Standing Committee approved ratification on 6 November 2026; that is a domestic authorisation, not a deposit. No instrument of ratification, acceptance, approval or accession was verified with the depositary, and no depositary notification of entry into force was located. Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026, published on the official legal-information portal on 18 November 2026; that is also a domestic act, and no Russian deposit was verified.",
+    "notes": "Signed at the Shanghai ceremony on 16 July 2026; open for signature from 1 May to 31 July 2026. The official Chinese text was published by the National People's Congress on 18 November 2026 and its articles were read for this record. China's NPC Standing Committee approved ratification on 6 November 2026; that is a domestic authorisation, not a deposit. No instrument of ratification, acceptance, approval or accession was verified with the depositary, and no depositary notification of entry into force was located. Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026, published on the official legal-information portal on 18 November 2026; that is also a domestic act, and no Russian deposit was verified. The NDRC and MFA convened a WAICO promotion meeting on 17 July 2026 with representatives of signatory States; the official account describes discussions on the organization's construction and operation, not a Council plenary or a constitutive act.",
     "opened_for_signature": "2026-05-01",
     "signed": "2026-07-16",
     "verified_on": "2026-11-26"
@@ -18,7 +18,7 @@
     "Observer status is not a party status: Article 11 allows the Council to admit non-member States and intergovernmental organisations as observers. No Council admission of Bangladesh is recorded.",
     "No public depositary register or status table for signatures, ratifications and accessions was located; Article 18 designates China as depositary.",
     "The Organization's functions are limited to the civilian domain; military AI is outside the Agreement.",
-    "Articles 5–8 provide for a Council, a Secretariat and financing. No evidence was located that the Council or Secretariat has been constituted, that rules of procedure or a budget have been adopted, or that implementing instruments exist. On 3 November 2026 the NDRC said China is advancing the organization's 'material operation' process ('正在推动世界人工智能合作组织的实体化运行进程'), wording that describes work in progress rather than constituted organs. This is an unverified point, not a finding that the organs do not exist.",
+    "Articles 5–8 provide for a Council, a Secretariat and financing. No evidence was located that the Council or Secretariat has been constituted, that rules of procedure or a budget have been adopted, or that implementing instruments exist. On 3 November 2026 the NDRC said China is advancing the organization's 'material operation' process ('正在推动世界人工智能合作组织的实体化运行进程'), wording that describes work in progress rather than constituted organs. A WAICO promotion meeting convened by the NDRC and MFA on 17 July 2026 discussed the organization's construction and operation with representatives of signatory States; it was a working meeting, not a Council plenary, and the official account records no constitutive act. This is an unverified point, not a finding that the organs do not exist.",
     "No deposited or certified copy was acquired; the stored text is the official NPC Chinese publication. The English reproduction on Digital Watch was consulted but is not stored."
   ],
   "id": "waico-establishment-agreement-2026",
@@ -329,13 +329,14 @@
       {
         "date": "2026-11-26",
         "field": "status",
-        "locator": "Article 15 (three instruments of ratification, acceptance or approval); MFA press conference of 9 November 2026; Russian Government decree No. 1532 of 17 November 2026",
+        "locator": "Article 15 (three instruments of ratification, acceptance or approval); MFA press conference of 9 November 2026; Russian Government decree No. 1532 of 17 November 2026; NDRC account of the WAICO promotion meeting of 17 July 2026",
         "method": "official_page_read",
         "note": "No depositary notification located; entry into force not confirmed, so no definitive in-force or not-in-force status is asserted.",
         "source_ids": [
           "npc-agreement-text",
           "mfa-ratification",
-          "russia-decree-1532"
+          "russia-decree-1532",
+          "ndrc-waico-promotion-2026-07-20"
         ]
       },
       {
@@ -365,7 +366,8 @@
     ],
     "discovered_via": "CSIS 2026 analysis of global AI governance cited WAICO; the record was opened after the official MFA signing and ratification sources were located.",
     "search_dates": [
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-26"
     ]
   },
   "related": [
@@ -439,6 +441,16 @@
       "note": "NDRC press conference of 3 November 2026 on the 15th Five-Year Plan. The transcript says China is advancing the process of material operation of the World AI Cooperation Organization ('正在推动世界人工智能合作组织的实体化运行进程') and that 38 countries have joined as founding members ('已有38国作为创始成员国加入'). The wording describes a process under way, not constituted organs.",
       "publisher": "National Development and Reform Commission of the People's Republic of China",
       "url": "https://www.ndrc.gov.cn/xwdt/wszb/swwfbhpyzdxdn/wzsl/202611/t20261103_1408523.html"
+    },
+    {
+      "accessed": "2026-11-26",
+      "http_status": 200,
+      "id": "ndrc-waico-promotion-2026-07-20",
+      "kind": "official_primary",
+      "language": "zh",
+      "note": "NDRC account, published 20 July 2026, of the WAICO promotion meeting held in Shanghai on 17 July 2026. The NDRC and MFA met representatives of the States that signed the Establishment Agreement to discuss AI governance, practical cooperation and the organization's construction and operation. The account describes a promotion meeting, not a Council plenary, and records no appointment, rules of procedure or budget.",
+      "publisher": "National Development and Reform Commission of the People's Republic of China",
+      "url": "https://www.ndrc.gov.cn/fggz/202607/t20260720_1406588.html"
     },
     {
       "accessed": "2026-11-25",
@@ -544,7 +556,7 @@
     }
   ],
   "status": "unknown",
-  "status_note": "Treaty, binding on States that become parties, but entry into force is not confirmed as of 26 November 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; both are domestic acts, recorded separately from international consent, and no deposited instrument was verified. The number of deposits is unknown, not zero: China is the depositary under Article 18 and no public depositary register or notification was located. China's MFA reports 38 founding members, but the signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. On 3 November 2026 the NDRC said China is advancing WAICO's 'material operation' process, wording that describes work in progress rather than constituted organs. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer'; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore's Ministry of Digital Development and Information told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it; the reply does not say whether the invitation is to membership or observer status, and Singapore has not accepted. The 37/38 discrepancy is recorded, not resolved.",
+  "status_note": "Treaty, binding on States that become parties, but entry into force is not confirmed as of 26 November 2026. Article 15 requires three instruments of ratification, acceptance or approval. China's NPC approved ratification on 6 November 2026 and Russia's Government accepted the Agreement by decree No. 1532 of 17 November 2026; both are domestic acts, recorded separately from international consent, and no deposited instrument was verified. The number of deposits is unknown, not zero: China is the depositary under Article 18 and no public depositary register or notification was located. China's MFA reports 38 founding members, but the signing records individually identify 37: 29 States at the 16 July 2026 ceremony and eight later signatories named on 30-31 July 2026. The October 2026 progress report says nine States joined after the initial 29; eight are named, so one of the nine remains unnamed. On 3 November 2026 the NDRC said China is advancing WAICO's 'material operation' process, wording that describes work in progress rather than constituted organs. A WAICO promotion meeting convened by the NDRC and MFA on 17 July 2026 discussed the organization's construction and operation with signatory representatives but was not a Council plenary. Bangladesh announced on 1 August 2026 that it would join 'initially as an observer'; Article 11 requires an observer application and Council approval, and no admission is recorded. Singapore's Ministry of Digital Development and Information told Parliament on 9 September 2026 that Singapore had received an invitation and would consider it; the reply does not say whether the invitation is to membership or observer status, and Singapore has not accepted. The 37/38 discrepancy is recorded, not resolved.",
   "title": {
     "official": "Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization",
     "short": "WAICO Establishment Agreement"
@@ -604,7 +616,7 @@
       {
         "check": "Deposits, organs, the 38th founding member and the Global AI Governance Action Plan rechecked after the 25 November review.",
         "date": "2026-11-26",
-        "result": "No change: China's MFA still reports 38 founding members without naming the 38th; no depositary register or notification, and no act constituting the Council or Secretariat, appointing a Secretary-General or adopting rules or a budget was located. China's NPC approval of 6 November 2026 and Russia's acceptance of 17 November 2026 remain domestic acts with no verified deposit. The Global AI Governance Action Plan, published at the 2025 World AI Conference on 26 July 2025, is a Chinese-proposed conference action plan with no State adherent list, so it is not catalogued as a separate instrument."
+        "result": "No change in the count: the MFA statement of 9 November 2026 and Wang Yi's article of 12 August 2026 report 38 founding members without naming the 38th. The October 2026 progress report says 29 States signed at the ceremony and nine later, naming Brunei, Vietnam, Georgia and Tanzania and saying five other countries also signed; the 31 July 2026 MFA account names eight of the nine, so one remains unnamed. No depositary register or notification, and no deposited instrument, was located. The NDRC and MFA convened a WAICO promotion meeting on 17 July 2026 with representatives of signatory States to discuss the organization's construction and operation; the account describes a working meeting, not a Council plenary, and no act constituting the Council or Secretariat, appointing a Secretary-General or adopting rules or a budget was located. China's NPC approval of 6 November 2026 and Russia's acceptance of 17 November 2026 remain domestic acts with no verified deposit. The Global AI Governance Action Plan, published at the 2025 World AI Conference on 26 July 2025, is a Chinese-proposed conference action plan with no State adherent list, so it is not catalogued as a separate instrument."
       }
     ],
     "level": "metadata_verified",

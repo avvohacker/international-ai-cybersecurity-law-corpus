@@ -60,7 +60,7 @@ None of these instruments creates a legal obligation, ratification, depositary o
 
 The UN Global Dialogue on AI Governance and the Independent International Scientific Panel were established by resolution 79/325. The Dialogue's inaugural session was held in Geneva on 6–7 July 2026 with delegations from 163 countries; the 2027 session is scheduled for New York on 3–4 May 2027. The Dialogue issues no binding recommendations [12][30].
 
-WAICO is a treaty-based intergovernmental organization with a Council and a Secretariat; its 37 named members include no G7 economy or EU member State, and the 38th reported member is unnamed [2]. Neither WAICO nor CETS 225 has begun institutional operation: WAICO's organs depend on entry into force, and CETS 225's Conference of the Parties does not yet exist [1][2]. The CCW GGE on LAWS has no adopted instrument; its 2026 report contains elements of an instrument, and the Seventh Review Conference continued the mandate to 2028 [29].
+WAICO is a treaty-based intergovernmental organization with a Council and a Secretariat; its 37 named members include no G7 economy or EU member State, and the 38th reported member is unnamed [2]. Neither WAICO nor CETS 225 has begun institutional operation: WAICO's organs depend on entry into force, and CETS 225's Conference of the Parties does not yet exist [1][2]. A WAICO promotion meeting on 17 July 2026, convened by the NDRC and MFA, was not a Council plenary and did not constitute organs [2]. The CCW GGE on LAWS has no adopted instrument; its 2026 report contains elements of an instrument, and the Seventh Review Conference continued the mandate to 2028 [29].
 
 The OECD and UNESCO instruments are recommendations, not treaties; the records describe voluntary implementation and no sanctions [15][16]. Pax Silica is recorded as a political declaration; the record notes no treaty, ratification, depositary, monitoring or enforcement [24].
 
@@ -69,7 +69,7 @@ No recorded institution is a universal regulator with binding decisions.
 ## 5. Gaps and limits
 
 - **WAICO party data.** The 38th founding member is not named; 37 are identified. Bangladesh announced on 1 August 2026 that it would join “initially as an observer”; Article 11 requires an application and Council approval, and no admission is recorded. Singapore has been reported as considering an invitation; it is not a member [2].
-- **WAICO text.** The official deposited text was not acquired; the record reads the Agreement from a reproduction [2].
+- **WAICO text.** The official deposited or certified copy was not acquired; the record reads the official Chinese text published by the National People's Congress, and the English reproduction was consulted only as a cross-check [2].
 - **No AI-specific Security Council resolution.** None was located in the searches recorded in the research log [31].
 - **Scope limits.** The corpus does not systematically cover customary international law, general principles, *jus cogens*, Security Council resolutions or international humanitarian law [32].
 - **Cyber layer.** The 2018 Paris Call for Trust and Security in Cyberspace [20] is catalogued in the separate cyber layer and is outside the 60 AI-domain records summarised here.

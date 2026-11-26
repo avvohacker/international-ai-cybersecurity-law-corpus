@@ -1,10 +1,10 @@
 {
-  "checked": 262,
+  "checked": 263,
   "audited_on": "2026-11-26",
   "scope": "catalog",
   "instruments": 75,
   "summary": {
-    "ok": 174,
+    "ok": 175,
     "anti_bot": 77,
     "broken": 0,
     "transient": 11,
@@ -618,7 +618,7 @@
       "url": "https://eccis.org/document/5864",
       "status": null,
       "outcome": "transient",
-      "reason": "timeout",
+      "reason": "dns",
       "detail": "URLError"
     },
     {
@@ -2592,6 +2592,16 @@
       "source_id": "ndrc-3-nov-2026",
       "label": "National Development and Reform Commission of the People's Republic of China",
       "url": "https://www.ndrc.gov.cn/xwdt/wszb/swwfbhpyzdxdn/wzsl/202611/t20261103_1408523.html",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "waico-establishment-agreement-2026",
+      "source_id": "ndrc-waico-promotion-2026-07-20",
+      "label": "National Development and Reform Commission of the People's Republic of China",
+      "url": "https://www.ndrc.gov.cn/fggz/202607/t20260720_1406588.html",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
