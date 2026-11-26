@@ -1,3 +1,4 @@
+0010318d59882e7cde48ce9e836724955c217b6300f72fbca3859dde81a6f6dd  corpus/brazil-china-ai-mou-2025/text/pt.txt
 0047da9137451ee7e3150077c2a9b352911c9a75792fc8208f925a5fba4d83b7  corpus/un-ga-res-79-325/manifest.json
 010d6342f4d1168c241a6ad54a307444fdfef3b1f21d36076bc396df8f1ea286  corpus/au-continental-ai-strategy-2024/pages.json
 0148d9e46c860bd488e8f4095800904ebad94e44bef00d103730744595710171  corpus/un-cybercrime-convention-2024/units.jsonl
@@ -200,6 +201,7 @@
 9bdfacd893b27fe5f97803debdea73f727e341b29c38fa081f9c2db7b4a5d5d3  corpus/reaim-call-to-action-2023/source/reaim-2023-call-to-action-en.pdf
 9c00b046b87b349c1f0bf6998abeafdb598b366919e6986a4099434cb46dfa3a  corpus/eu-gpai-code-of-practice-2025/pages.json
 9c4516e5ac42b7e4211597a151a5c5705426239702fed8ea4f9b5bb3ebe8cf38  corpus/san-francisco-declaration-2026/text/en.txt
+9c6e85b5f780e61632ef68d23fd1145d8f65d22f29954607176040fbccae0433  corpus/brazil-china-ai-mou-2025/units.jsonl
 9c85533e3f116a87d0ea3e7659727043d665e6ab6b455329a26dd2b460ceeddb  corpus/sadea-2020/units.jsonl
 9e2b2223290e4f950f7082c6cac290273ba6683f08aa5b6e0d2fd903306dc447  corpus/brics-ai-statement-2025/text/en.txt
 9e7ce3fc8aaf78ea94c30791d229cd92db411ec0fd144e3111b5ffd9cea031b3  corpus/coe-ets-189/source/ets-189-en-2003.pdf
@@ -243,6 +245,7 @@ c20a59a5f260d40726092ecbf024f3d98ff71c408fe627dc4eaf8df2dec0db63  corpus/afcfta-
 c5429f73786c0a0c170a78278016339ab86f914b239290ba1d6623cc07734e3f  corpus/au-continental-ai-strategy-2024/source/au-continental-ai-strategy-2024-en.pdf
 c604e8057566bd244a1cde3f57687c8214cbdc59fd0aa49f2743b8ef2f978c48  corpus/seoul-declaration-2024/text/en.txt
 c63fbe7781e8ecd7cdaf50344199995841037911f3cef8a0964c4b4c8909a6a2  corpus/iccpr-1966/source/iccpr-1966-en.pdf
+c692fe6e58e44f3c2a5ad94f929e3a0b692c200854095d4ee00ca7a508be9f65  corpus/brazil-china-ai-mou-2025/pages.json
 c76a6c993f18106821061ea1a0d97ed1021249662cd84c238c0252783ba1fca1  corpus/waico-establishment-agreement-2026/units.jsonl
 c83972f4d7974cdc1772db63b40c26e925418b3c1cb8d9e4201812fd45f47a7f  corpus/coe-cets-225/units.jsonl
 ca399f465dac1aaa66b99732fb3742e42222b5f2d6359bbc7759a834e66ae74e  corpus/iccpr-1966/manifest.json
@@ -290,6 +293,7 @@ ef107839aca13d3b1077f80f3a188637b46f9356c034b1eaa036f8904dc16ad1  corpus/eu-gpai
 efbb437aa78dcc19e26883de001fd49117a9ed352483f001d6b5ebe8af855544  corpus/un-ga-res-80-58/pages.json
 efd1ff1bfe5708423d2ebb3e4882fb673f827a0b5eb3d8411573894f5064a830  corpus/asean-ai-guide-2024/text/en.txt
 f01906ba0581d7329f685d49656e9a7cb3c5d0a8790219e1600c1edb30893d08  corpus/vclt-1969/source/vclt-1969-en.pdf
+f02eb64d7170cbe0d36579b49b1310709c56ce985c2f1f5c1b77dbd32abe146a  corpus/brazil-china-ai-mou-2025/manifest.json
 f0dc13647ce947d06ef86deaa1e88cc9f93b2d1999282681088428497c0bab3c  corpus/us-eu-ttc-ai-safety-dialogue-2024/units.jsonl
 f1527d45875dd6db9c0db39dfc4a7bc3962008c169c6ba6c261eac889426c2fc  corpus/ksdpa-2022/manifest.json
 f27378b88ae79766a451a78e349646868a47294495564427f4bc3f7cda2dc64a  corpus/un-hrc-res-63-15/manifest.json

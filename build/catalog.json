@@ -2,7 +2,7 @@
   "counts": {
     "by_binding": {
       "binding": 22,
-      "non_binding": 53
+      "non_binding": 54
     },
     "by_category": {
       "agreement_ai_provisions": 5,
@@ -10,23 +10,23 @@
       "cyber_treaty": 9,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 42,
+      "non_binding_instrument": 43,
       "preparatory_interpretive": 2,
       "regional_law": 1,
       "supranational_law": 3,
       "technical_standard": 8
     },
     "by_domain": {
-      "ai": 60,
+      "ai": 61,
       "cyber": 15,
       "joint": 0
     },
     "by_verification": {
-      "full_text_checked": 10,
+      "full_text_checked": 11,
       "metadata_verified": 65
     },
-    "full_texts": 60,
-    "total": 75,
+    "full_texts": 61,
+    "total": 76,
     "with_local_original": 60
   },
   "full_text_ids": [
@@ -38,6 +38,7 @@
     "au-continental-ai-strategy-2024",
     "au-malabo-convention-2014",
     "bletchley-declaration-2023",
+    "brazil-china-ai-mou-2025",
     "brics-ai-statement-2025",
     "budapest-convention-2001",
     "ccw-gge-laws-2026",
@@ -2144,6 +2145,307 @@
         ],
         "level": "metadata_verified",
         "notes": "The official English text is stored and hashed. Extraction and unit integrity were checked, but the declaration was not subjected to a new end-to-end legal read in this cycle, so the record remains metadata-verified."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
+        "entered_into_force": "2025-05-13",
+        "notes": "Signed in Beijing on 13 May 2025. Article 6(1) provides that the MOU enters into force on signature for three years and is automatically renewed for successive three-year periods unless one Party gives at least three months' written notice before the end of the term. Article 6(3) requires mutual agreement for termination. Article 7 states that the Chinese, Portuguese and English texts are equally authentic and that the English text prevails on divergence. The 'entered_into_force' date is the effective date of this non-binding interinstitutional arrangement, not a treaty ratification or deposit.",
+        "published": "2025-05-13",
+        "signed": "2025-05-13",
+        "verified_on": "2026-11-26"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "The Chinese and English authentic texts were not acquired; the Portuguese text states that the English text prevails on divergence.",
+        "The official PDF was read through the web reader but could not be downloaded for storage because the gov.br host returned HTTP 429 and a challenge page to automated retrieval; the extracted Portuguese text is stored.",
+        "No public Concórdia entry for this 2025 act was located; the portal began including interinstitutional acts only in 2026 and adds them gradually.",
+        "The text provides for no ratification, deposit, registration, monitoring or reporting mechanism beyond the regular bilateral dialogue and the designated implementing bodies.",
+        "No renewal, modification or termination was recorded as of 26 November 2026.",
+        "The classification as a non-binding interinstitutional act rests on the official Brazilian distinction and on the agency-level signatories; it is not based on the MOU title alone."
+      ],
+      "id": "brazil-china-ai-mou-2025",
+      "instrument_type": "mou",
+      "issuer": [
+        {
+          "name": "National Development and Reform Commission of the People's Republic of China",
+          "role": "co_issuer",
+          "url": "https://www.ndrc.gov.cn/"
+        },
+        {
+          "name": "Ministry of Development, Industry, Trade and Services of the Federative Republic of Brazil",
+          "role": "co_issuer",
+          "url": "https://www.gov.br/mdic/pt-br"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "zh",
+          "pt",
+          "en"
+        ],
+        "locator": "Article 7",
+        "note": "Article 7: Chinese, Portuguese and English texts are equally authentic; the English text prevails in case of divergent interpretation. The Portuguese text is stored; the Chinese and English texts were not acquired.",
+        "translations": []
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "The Parties are China's National Development and Reform Commission and Brazil's Ministry of Development, Industry, Trade and Services, not the two States. The Brazilian Ministry of Foreign Affairs' official Concórdia guidance distinguishes an act in the name of the Brazilian State from an 'ato internacional interinstitucional', concluded by a ministry or public entity with its foreign counterpart; the latter is not concluded in the name of the Brazilian State and 'must always be non-binding and must not create international legal obligations for Brazil'. The MOU's Article 6 'entra em vigor' clause fixes the effective date of that administrative cooperation arrangement; it is not a treaty entry-into-force procedure. The text as a whole provides for no ratification, deposit or registration. The instrument is therefore a non-binding political/administrative act, not a treaty.",
+        "source_ids": [
+          "concordia-faq",
+          "mre-atos-internacionais",
+          "mre-mou-pt"
+        ]
+      },
+      "parties": {
+        "act": "political_signature",
+        "as_of": "2026-11-26",
+        "counts": {
+          "political_signatures": {
+            "basis": "verified_total",
+            "source_ids": [
+              "mre-mou-pt",
+              "mre-acts-page"
+            ],
+            "total": 2,
+            "verified": 2
+          },
+          "ratifications": {
+            "basis": "not_applicable",
+            "total": null,
+            "verified": 0
+          }
+        },
+        "entries": [
+          {
+            "notes": [
+              "Signed by the National Development and Reform Commission (NDRC), an agency of the State Council of China."
+            ],
+            "party": "China",
+            "political_signature": "2025-05-13",
+            "role": "signatory"
+          },
+          {
+            "notes": [
+              "Signed by the Ministry of Development, Industry, Trade and Services (MDIC); the MDIC press release records signature by Executive Secretary Márcio Elias Rosa."
+            ],
+            "party": "Brazil",
+            "political_signature": "2025-05-13",
+            "role": "signatory"
+          }
+        ],
+        "notifications": [],
+        "objections": [],
+        "reservations": [],
+        "source_ids": [
+          "mre-mou-pt",
+          "mre-acts-page",
+          "mdic-news"
+        ],
+        "summary": "Two agency signatories: China's National Development and Reform Commission and Brazil's Ministry of Development, Industry, Trade and Services. The MOU is an interinstitutional act, not a treaty between the two States.",
+        "unknowns": [
+          "No ratification, deposit or treaty registration is provided; the instrument is not a treaty.",
+          "No public Concórdia entry was located for this 2025 act.",
+          "No joint committee report, work programme or review output was located beyond the regular dialogue described in Articles 1 and 2.",
+          "No renewal, modification or termination was recorded as of 26 November 2026."
+        ],
+        "withdrawals": []
+      },
+      "provenance": {
+        "assertions": [
+          {
+            "date": "2026-11-26",
+            "field": "title",
+            "locator": "Title and preamble",
+            "method": "official_text_read",
+            "source_ids": [
+              "mre-mou-pt"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "dates",
+            "locator": "Article 6 and Article 7",
+            "method": "official_text_read",
+            "source_ids": [
+              "mre-mou-pt"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "legal_nature",
+            "locator": "Opening and Article 6",
+            "method": "official_page_read",
+            "source_ids": [
+              "concordia-faq",
+              "mre-atos-internacionais",
+              "mre-mou-pt"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "parties",
+            "locator": "Opening and signature block",
+            "method": "official_text_read",
+            "source_ids": [
+              "mre-mou-pt",
+              "mre-acts-page",
+              "mdic-news"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "provisions",
+            "locator": "Article 1 and Article 2",
+            "method": "official_text_read",
+            "source_ids": [
+              "mre-mou-pt"
+            ]
+          },
+          {
+            "date": "2026-11-26",
+            "field": "languages",
+            "locator": "Article 7",
+            "method": "official_text_read",
+            "source_ids": [
+              "mre-mou-pt"
+            ]
+          }
+        ],
+        "discovered_via": "Latin America coverage gap; Brazilian Ministry of Foreign Affairs list of acts adopted during the May 2025 state visit to China.",
+        "search_dates": [
+          "2026-11-26"
+        ]
+      },
+      "related": [
+        {
+          "id": "us-uk-ai-safety-mou-2024",
+          "note": "Another bilateral AI MOU classified as non-binding; unlike this instrument, its text was not published.",
+          "relation": "related"
+        },
+        {
+          "id": "brics-ai-statement-2025",
+          "note": "Brazil and China both participated in the 2025 BRICS statement on global AI governance; this MOU is a separate bilateral cooperation instrument.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "Article 1 establishes a regular intergovernmental dialogue on AI and cooperation on AI infrastructure and high-quality datasets.",
+          "Article 1(2) provides for joint work on large language and multimodal models, technical exchanges and a joint AI laboratory.",
+          "Article 1(3) provides for cooperation on AI applications and platforms.",
+          "Article 1(4) provides for sharing practices on AI testing, evaluation, certification and regulatory policies, including security-detection tools and evaluation standards.",
+          "Article 1(5) provides for AI education and professional training.",
+          "Article 2 designates the NDRC and MDIC as lead entities and their departments as implementing bodies, with regular meetings."
+        ],
+        "excluded_scope": "Non-binding interinstitutional cooperation on AI development, applications, safety testing, regulation and education. No treaty obligation, ratification, depositary, enforcement, military-AI commitment or general AI regulation.",
+        "reason": "A bilateral AI-specific memorandum of understanding between China's NDRC and Brazil's MDIC, signed on 13 May 2025. It creates a regular dialogue and cooperation across AI infrastructure, models, applications, safety testing, regulation and education. It is an interinstitutional act, not a treaty, and is not counted among binding instruments.",
+        "source_ids": [
+          "mre-mou-pt"
+        ]
+      },
+      "rights": {
+        "licence": "Brazilian Government official publication",
+        "note": "Official government publication. The Portuguese text is stored for research and verification; reusers should consult the Ministry of Foreign Affairs' terms of use.",
+        "status": "public_official_text",
+        "url": "https://www.gov.br/pt-br/termos-de-uso"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "mre-mou-pt",
+          "kind": "official_primary",
+          "language": "pt",
+          "note": "Official Portuguese text of the MOU, seven articles. Opened and read end-to-end through the official PDF. The PDF could not be downloaded for storage because the host returned HTTP 429 and a challenge page to automated retrieval; the extracted text is stored in text/pt.txt.",
+          "publisher": "Ministry of Foreign Affairs of the Federative Republic of Brazil",
+          "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/atos-adotados-por-ocasiao-da-visita-de-estado-do-presidente-luiz-inacio-lula-da-silva-a-pequim-china-12-e-13-de-maio-de-2025/mou-mdic-ndrc-ai-portuguese.pdf"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "mre-acts-page",
+          "kind": "official_primary",
+          "language": "pt",
+          "note": "Official MRE note listing the acts adopted during the state visit. Item 3 is this MOU; the page gives the date 13 May 2025 and links the Portuguese text.",
+          "publisher": "Ministry of Foreign Affairs of the Federative Republic of Brazil",
+          "url": "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/atos-adotados-por-ocasiao-da-visita-de-estado-do-presidente-luiz-inacio-lula-da-silva-a-pequim-china-12-e-13-de-maio-de-2025"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "mdic-news",
+          "kind": "official_primary",
+          "language": "pt",
+          "note": "MDIC press release on the China mission. It records the AI MOU among the 20 partnerships signed on 13 May 2025, identifies the five cooperation fields and names Executive Secretary Márcio Elias Rosa as signatory for MDIC.",
+          "publisher": "Ministry of Development, Industry, Trade and Services of the Federative Republic of Brazil",
+          "url": "https://www.gov.br/mdic/pt-br/assuntos/noticias/2025/maio/na-china-mdic-assina-parcerias-para-economia-digital"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "concordia-faq",
+          "kind": "official_primary",
+          "language": "pt",
+          "note": "Official Concórdia FAQ of the Brazilian Ministry of Foreign Affairs. It defines an 'ato internacional interinstitucional' as an act concluded by a Brazilian ministry or public entity with its foreign counterpart, not in the name of the Brazilian State, and states that such an act 'deve ser sempre não vinculante e não criar obrigações ou compromissos jurídicos internacionais para o Brasil'.",
+          "publisher": "Ministry of Foreign Affairs of the Federative Republic of Brazil",
+          "url": "https://concordia.itamaraty.gov.br/perguntas-frequentes"
+        },
+        {
+          "accessed": "2026-11-26",
+          "http_status": 200,
+          "id": "mre-atos-internacionais",
+          "kind": "official_primary",
+          "language": "pt",
+          "note": "Official MRE page on international acts. It states that interinstitutional acts of an international nature are not international acts in the strict sense and may be concluded by ministries and agencies with foreign counterparts provided they do not create enforceable legal commitments for Brazil.",
+          "publisher": "Ministry of Foreign Affairs of the Federative Republic of Brazil",
+          "url": "https://www.gov.br/mre/pt-br/assuntos/atos-internacionais/atos-internacionais"
+        }
+      ],
+      "status": "in_force",
+      "status_note": "Non-binding interinstitutional MOU between China's NDRC and Brazil's MDIC. Article 6 provides that the MOU 'enters into force' on signature for three years and renews automatically; that is the effective date of the administrative cooperation arrangement, not treaty entry into force. The Brazilian MFA's Concórdia guidance classifies acts concluded by ministries or public entities with foreign counterparts as 'atos internacionais interinstitucionais', which are not concluded in the name of the Brazilian State and must always be non-binding; they must not create international legal obligations for Brazil. The text provides for no ratification, deposit, registration or treaty dispute settlement; disputes are settled by friendly consultations. It is therefore recorded as a non-binding political/administrative act, not a treaty.",
+      "text": {
+        "extraction_note": "Portuguese text extracted from the official MRE PDF with the web reader and normalized to plain text. The PDF could not be stored because the host returned HTTP 429 and a challenge page to automated retrieval. The whole document is one citable unit.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "pt",
+        "primary_text": "text/pt.txt",
+        "units_mode": "whole"
+      },
+      "title": {
+        "english": "Memorandum of Understanding on Strengthening Cooperation in Artificial Intelligence between the National Development and Reform Commission of the People's Republic of China and the Ministry of Development, Industry, Trade and Services of the Federative Republic of Brazil",
+        "official": "Memorando de Entendimento sobre o Reforço da Cooperação em Inteligência Artificial entre a Comissão Nacional de Desenvolvimento e Reforma da República Popular da China e o Ministério do Desenvolvimento, Indústria, Comércio e Serviços da República Federativa do Brasil",
+        "short": "Brazil–China AI MOU"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official Portuguese text opened and read end-to-end.",
+            "date": "2026-11-26",
+            "result": "Seven articles. The Parties are the NDRC and MDIC. Article 1 lists five cooperation fields; Article 2 designates lead and implementing bodies; Article 6 provides for entry into force on signature, a three-year term and automatic renewal; Article 7 records the three authentic texts and the prevalence of English."
+          },
+          {
+            "check": "Official MRE list and MDIC release checked for date, signatories and context.",
+            "date": "2026-11-26",
+            "result": "The MRE note lists the MOU as item 3 among the acts adopted during the 12–13 May 2025 state visit and links the Portuguese text. The MDIC release records the signature on 13 May 2025 by Executive Secretary Márcio Elias Rosa and describes the five cooperation fields."
+          },
+          {
+            "check": "Legal nature checked against official Brazilian guidance, not inferred from the title.",
+            "date": "2026-11-26",
+            "result": "The Concórdia FAQ distinguishes acts in the name of the Brazilian State from interinstitutional acts concluded by ministries or public entities with foreign counterparts. The latter are not concluded in the name of the State, must always be non-binding and must not create international legal obligations for Brazil. The MRE page on international acts makes the same distinction. The NDRC and MDIC are the Parties, so the MOU is an interinstitutional act, not a treaty."
+          },
+          {
+            "check": "Final clauses and formal status checked.",
+            "date": "2026-11-26",
+            "result": "Article 6 uses 'entra em vigor na data de sua assinatura' for a three-year, automatically renewable arrangement. Article 7 provides for three equally authentic texts. The text as a whole provides for no ratification, deposit or registration; no treaty depositary is designated."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "The official Portuguese text was read end-to-end and is stored. The Chinese and English authentic texts were not acquired. The legal classification is based on the official Brazilian distinction between an act in the name of the State and an interinstitutional act, together with the agency-level signatories; the MOU's entry-into-force clause is recorded and explained rather than treated as a treaty marker."
       }
     },
     {

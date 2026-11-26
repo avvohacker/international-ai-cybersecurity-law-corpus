@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "bytes": 6869,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/pt.txt",
+      "role": "text",
+      "sha256": "0010318d59882e7cde48ce9e836724955c217b6300f72fbca3859dde81a6f6dd"
+    },
+    {
+      "bytes": 129,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "c692fe6e58e44f3c2a5ad94f929e3a0b692c200854095d4ee00ca7a508be9f65"
+    },
+    {
+      "bytes": 7169,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "9c6e85b5f780e61632ef68d23fd1145d8f65d22f29954607176040fbccae0433"
+    }
+  ],
+  "instrument_id": "brazil-china-ai-mou-2025",
+  "primary_text": "text/pt.txt"
+}
