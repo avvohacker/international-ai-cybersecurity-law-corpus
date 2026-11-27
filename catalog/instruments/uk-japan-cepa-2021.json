@@ -1,0 +1,238 @@
+{
+  "binding_status": "binding",
+  "category": "agreement_ai_provisions",
+  "dates": {
+    "entered_into_force": "2021-01-01",
+    "notes": "Signed at Tokyo on 23 October 2020; entered into force on 1 January 2021.",
+    "signed": "2020-10-23",
+    "verified_on": "2026-11-27"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "No full text was stored: the official treaty PDF was read for Article 8.83 and the authentic-texts clause, so the record is metadata-only.",
+    "Artificial intelligence appears only in Article 8.83(2)(i), as one topic in a cooperative electronic-commerce dialogue; there is no dedicated AI article.",
+    "No AI-specific prohibition, standard, market-access condition, enforcement mechanism or dedicated regulator is created.",
+    "No meeting or output of the electronic-commerce dialogue on AI was verified.",
+    "Only the English text was read; the Japanese authentic text was not read.",
+    "No accession procedure or third-party accession is recorded."
+  ],
+  "id": "uk-japan-cepa-2021",
+  "instrument_type": "agreement",
+  "issuer": [
+    {
+      "name": "United Kingdom and Japan",
+      "role": "co_issuer"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en",
+      "ja"
+    ],
+    "note": "The authentic-texts clause states that the Agreement is drawn up in duplicate in English and Japanese, both texts being equally authentic; only the English text was read.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "A bilateral comprehensive economic partnership agreement with final provisions. Article 8.83(2)(i) expressly includes artificial intelligence among the topics of the electronic-commerce regulatory dialogue, but creates no AI-specific regime.",
+    "source_ids": [
+      "govuk-treaty"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-27",
+    "counts": {
+      "accessions": {
+        "basis": "not_applicable",
+        "note": "Bilateral agreement; no accession procedure or third-party accession is recorded.",
+        "total": null,
+        "verified": 0
+      },
+      "parties": {
+        "basis": "verified_total",
+        "source_ids": [
+          "govuk-treaty",
+          "mofa-bluebook"
+        ],
+        "total": 2,
+        "verified": 2
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "note": "Bilateral agreement; entry into force followed completion of each Party's domestic procedures, and no separate ratification tally is maintained.",
+        "total": null,
+        "verified": 0
+      },
+      "signatures": {
+        "basis": "verified_total",
+        "source_ids": [
+          "govuk-treaty"
+        ],
+        "total": 2,
+        "verified": 2
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "entry_into_force": "2021-01-01",
+        "notes": [],
+        "party": "Japan",
+        "role": "signatory",
+        "signature": "2020-10-23"
+      },
+      {
+        "entry_into_force": "2021-01-01",
+        "notes": [],
+        "party": "United Kingdom",
+        "role": "signatory",
+        "signature": "2020-10-23"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "govuk-treaty",
+      "mofa-bluebook"
+    ],
+    "summary": "Two Parties: the United Kingdom and Japan. The Agreement entered into force on 1 January 2021; no accession procedure is recorded.",
+    "unknowns": [
+      "No accession procedure or third-party accession is recorded.",
+      "The full treaty text was not stored; only the English text was read."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-27",
+        "field": "status",
+        "locator": "GOV.UK treaty PDF title page: signed at Tokyo on 23 October 2020; Japan MOFA Diplomatic Bluebook 2021 page: entry into force on 1 January 2021",
+        "method": "official_page_read",
+        "source_ids": [
+          "govuk-treaty",
+          "mofa-bluebook"
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "field": "parties",
+        "locator": "GOV.UK treaty PDF title page and Japan MOFA Bluebook: United Kingdom and Japan",
+        "method": "official_page_read",
+        "source_ids": [
+          "govuk-treaty",
+          "mofa-bluebook"
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "field": "provisions",
+        "locator": "Article 8.83(2)(i), Cooperation on electronic commerce",
+        "method": "official_text_read",
+        "source_ids": [
+          "govuk-treaty"
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "field": "legal_nature",
+        "locator": "GOV.UK treaty PDF title page, Article 8.83 and authentic-texts clause",
+        "method": "official_page_read",
+        "source_ids": [
+          "govuk-treaty"
+        ]
+      }
+    ],
+    "discovered_via": "Targeted official-registry search for AI provisions in national treaty series; UK–Japan CEPA located through the official GOV.UK treaty publication.",
+    "search_dates": [
+      "2026-11-27"
+    ]
+  },
+  "related": [
+    {
+      "id": "depa-2020",
+      "note": "A digital-economy agreement with a dedicated AI and emerging-technology article; different parties and subject matter.",
+      "relation": "related"
+    },
+    {
+      "id": "uksdea-2022",
+      "note": "A bilateral digital-economy agreement with an AI article; different parties and subject matter.",
+      "relation": "related"
+    },
+    {
+      "id": "aukfta-2023",
+      "note": "A bilateral free trade agreement with an express AI and emerging-technologies article; different parties and subject matter.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Article 8.83(2)(i): the Parties agree to maintain a dialogue on regulatory matters relating to electronic commerce, including on 'emerging technology, including artificial intelligence and the Internet of Things'."
+    ],
+    "excluded_scope": "AI is one item in a cooperative dialogue list. The Agreement creates no AI-specific prohibition, standard, market-access condition, enforcement mechanism or dedicated regulator.",
+    "reason": "A binding bilateral comprehensive economic partnership agreement in force with an express AI reference in its electronic-commerce cooperation article. The reference is programmatic and does not create an AI-specific regime; the Agreement is not an AI-specific treaty."
+  },
+  "rights": {
+    "licence": "Crown copyright and Government of Japan terms",
+    "note": "Official treaty text published by the UK Government; the record links to the official PDF and stores no copy.",
+    "status": "public_official_text",
+    "url": "https://assets.publishing.service.gov.uk/media/5f92ecb8d3bf7f35f06ae3bd/CS_Japan_1.2020_UK_Japan_Agreement_Comprehensive_Economic_Partnership__v1.pdf"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "id": "govuk-treaty",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "UK/Japan Agreement for a Comprehensive Economic Partnership, Volume 1 (CP 311), signed at Tokyo on 23 October 2020. Article 8.83(2)(i) lists emerging technology, including artificial intelligence and the Internet of Things; the authentic-texts clause makes the English and Japanese texts equally authentic.",
+      "publisher": "UK Foreign, Commonwealth and Development Office",
+      "url": "https://assets.publishing.service.gov.uk/media/5f92ecb8d3bf7f35f06ae3bd/CS_Japan_1.2020_UK_Japan_Agreement_Comprehensive_Economic_Partnership__v1.pdf"
+    },
+    {
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "id": "mofa-bluebook",
+      "kind": "official_secondary",
+      "note": "Japan Ministry of Foreign Affairs, Diplomatic Bluebook 2021: the Japan–UK CEPA entered into force on 1 January 2021 after signature on 23 October 2020.",
+      "publisher": "Ministry of Foreign Affairs of Japan",
+      "url": "https://www.mofa.go.jp/policy/other/bluebook/2021/en_html/chapter3/c030102.html"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force between the United Kingdom and Japan since 1 January 2021. Article 8.83(2)(i) lists emerging technology, including artificial intelligence and the Internet of Things, among the topics of the electronic-commerce regulatory dialogue. Two Parties and no accessions.",
+  "title": {
+    "official": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Japan for a Comprehensive Economic Partnership",
+    "short": "UK–Japan Comprehensive Economic Partnership Agreement (CEPA)"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Signature and entry-into-force dates checked on the official UK treaty PDF and Japan MOFA Bluebook.",
+        "date": "2026-11-27",
+        "result": "Signed at Tokyo on 23 October 2020; entered into force on 1 January 2021."
+      },
+      {
+        "check": "AI provision read in the official English text.",
+        "date": "2026-11-27",
+        "result": "Article 8.83(2)(i) includes 'emerging technology, including artificial intelligence and the Internet of Things' in the electronic-commerce regulatory dialogue."
+      },
+      {
+        "check": "Legal nature and authentic languages checked in the official text.",
+        "date": "2026-11-27",
+        "result": "Bilateral treaty; the authentic-texts clause makes the English and Japanese texts equally authentic; no AI-specific obligation or dedicated article was located."
+      },
+      {
+        "check": "Full-text availability checked.",
+        "date": "2026-11-27",
+        "result": "No full treaty text was stored; the record is metadata-only and relies on the official PDF and MOFA status page."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "The English text of Article 8.83 and the authentic-texts clause were read. The 426-page treaty was not acquired or read end-to-end."
+  }
+}

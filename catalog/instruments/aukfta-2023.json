@@ -1,0 +1,247 @@
+{
+  "binding_status": "binding",
+  "category": "agreement_ai_provisions",
+  "dates": {
+    "entered_into_force": "2023-05-31",
+    "notes": "Signed on 17 December 2021 according to DFAT; the UK Treaty Series records signature at London on 16 December and at Adelaide on 17 December 2021. Entered into force on 31 May 2023.",
+    "signed": "2021-12-17",
+    "verified_on": "2026-11-27"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "No full text was stored: only Chapter 20 (Innovation) and the official DFAT status page were read, so the record is metadata-only.",
+    "Article 20.7 excludes Chapter 20 from dispute settlement; the AI cooperation clause is therefore not enforceable through the FTA's dispute-settlement chapter.",
+    "No meeting or output of the Strategic Innovation Dialogue on AI was verified.",
+    "Only the English text was read; no authentic-language clause was verified in the chapter extract.",
+    "No accession procedure or third-party accession is recorded."
+  ],
+  "id": "aukfta-2023",
+  "instrument_type": "agreement",
+  "issuer": [
+    {
+      "name": "United Kingdom and Australia",
+      "role": "co_issuer"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en"
+    ],
+    "note": "English is the language of the official text read. No separate authentic-language clause was verified in the chapter extract.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "A bilateral free trade agreement with final provisions and a dedicated innovation chapter. Article 20.4 expressly addresses artificial intelligence and emerging technologies, but its obligations are cooperative and Chapter 20 is excluded from dispute settlement by Article 20.7.",
+    "source_ids": [
+      "dfat-page",
+      "dfat-chapter-20"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-27",
+    "counts": {
+      "accessions": {
+        "basis": "not_applicable",
+        "note": "Bilateral agreement; no accession procedure or third-party accession is recorded.",
+        "total": null,
+        "verified": 0
+      },
+      "parties": {
+        "basis": "verified_total",
+        "source_ids": [
+          "dfat-page"
+        ],
+        "total": 2,
+        "verified": 2
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "note": "Bilateral free trade agreement; entry into force followed completion of each Party's domestic procedures, and no separate ratification tally is maintained.",
+        "total": null,
+        "verified": 0
+      },
+      "signatures": {
+        "basis": "verified_total",
+        "source_ids": [
+          "dfat-page"
+        ],
+        "total": 2,
+        "verified": 2
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "entry_into_force": "2023-05-31",
+        "notes": [],
+        "party": "Australia",
+        "role": "signatory",
+        "signature": "2021-12-17"
+      },
+      {
+        "entry_into_force": "2023-05-31",
+        "notes": [],
+        "party": "United Kingdom",
+        "role": "signatory",
+        "signature": "2021-12-17"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "dfat-page",
+      "dfat-chapter-20"
+    ],
+    "summary": "Two Parties: Australia and the United Kingdom. The Agreement entered into force on 31 May 2023; no accession procedure is recorded.",
+    "unknowns": [
+      "No accession procedure or third-party accession is recorded.",
+      "The full treaty text was not stored; only Chapter 20 was read."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-27",
+        "field": "status",
+        "locator": "DFAT A-UKFTA page: signed 17 December 2021 and entered into force 31 May 2023",
+        "method": "official_page_read",
+        "source_ids": [
+          "dfat-page"
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "field": "parties",
+        "locator": "DFAT A-UKFTA page: Australia and the United Kingdom",
+        "method": "official_page_read",
+        "source_ids": [
+          "dfat-page"
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "field": "provisions",
+        "locator": "Chapter 20, Article 20.4 (Artificial Intelligence and Emerging Technologies) and Article 20.7 (Non-Application of Dispute Settlement)",
+        "method": "official_text_read",
+        "source_ids": [
+          "dfat-chapter-20"
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "field": "legal_nature",
+        "locator": "DFAT A-UKFTA page and Chapter 20 Articles 20.4 and 20.7",
+        "method": "official_page_read",
+        "source_ids": [
+          "dfat-page",
+          "dfat-chapter-20"
+        ]
+      }
+    ],
+    "discovered_via": "Targeted official-registry search for AI provisions in national treaty series; DFAT Australia–UK FTA Chapter 20 located through the official treaty text.",
+    "search_dates": [
+      "2026-11-27"
+    ]
+  },
+  "related": [
+    {
+      "id": "depa-2020",
+      "note": "A digital-economy agreement with a dedicated AI and emerging-technology article; different parties and subject matter.",
+      "relation": "related"
+    },
+    {
+      "id": "sadea-2020",
+      "note": "A bilateral digital-economy agreement with an AI article; different parties and subject matter.",
+      "relation": "related"
+    },
+    {
+      "id": "uksdea-2022",
+      "note": "A bilateral digital-economy agreement with an AI article; different parties and subject matter.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Article 20.4(1): the Parties recognise that emerging technologies, including artificial intelligence and other digital technologies, are becoming increasingly important in the global economy and offer significant social and economic benefits.",
+      "Article 20.4(2): the Parties shall cooperate, where appropriate through the Strategic Innovation Dialogue, in activities that may include sharing research and industry practices, promoting responsible adoption, encouraging commercialisation, developing international standards, facilitating investment and promoting trade in emerging technologies.",
+      "Article 20.4(3): the Parties shall endeavour to collaborate on governance frameworks through relevant international fora, in particular the Global Partnership on Artificial Intelligence, and to take into account the OECD Principles on Artificial Intelligence adopted on 22 May 2019."
+    ],
+    "excluded_scope": "Chapter 20 is excluded from dispute settlement by Article 20.7. The AI clause creates no AI-specific prohibition, standard, market-access condition, enforcement mechanism or dedicated regulator.",
+    "reason": "A binding bilateral free trade agreement in force with an express article on artificial intelligence and emerging technologies. The AI clause is cooperative and non-justiciable; the Agreement is not an AI-specific treaty."
+  },
+  "rights": {
+    "licence": "Commonwealth of Australia and Crown copyright terms",
+    "note": "Official treaty text published by the Australian Government and the UK Treaty Series. No open licence identified; the record links to the official text and stores no copy.",
+    "status": "public_official_text",
+    "url": "https://www.dfat.gov.au/trade/agreements/in-force/aukfta/official-text/australia-uk-fta-chapter-20-innovation"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "id": "dfat-page",
+      "kind": "official_secondary",
+      "note": "DFAT A-UKFTA page: signed 17 December 2021 and entered into force 31 May 2023; identifies Australia and the United Kingdom as the Parties.",
+      "publisher": "Australian Department of Foreign Affairs and Trade",
+      "url": "https://www.dfat.gov.au/trade/agreements/in-force/aukfta"
+    },
+    {
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "id": "dfat-chapter-20",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official Chapter 20 (Innovation) of the Australia–UK FTA. Article 20.4 is headed 'Artificial Intelligence and Emerging Technologies'; Article 20.7 excludes Chapter 20 from dispute settlement.",
+      "publisher": "Australian Department of Foreign Affairs and Trade",
+      "url": "https://www.dfat.gov.au/trade/agreements/in-force/aukfta/official-text/australia-uk-fta-chapter-20-innovation"
+    },
+    {
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "id": "uk-treaty-series",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "UK Treaty Series No. 37 (2023), CP 936, Free Trade Agreement between the United Kingdom of Great Britain and Northern Ireland and Australia; records signature at London on 16 December and Adelaide on 17 December 2021 and entry into force on 31 May 2023.",
+      "publisher": "UK Foreign, Commonwealth and Development Office",
+      "url": "https://assets.publishing.service.gov.uk/media/6504a782fc63f6001495738d/TS_37.2023_UK_Australia_Free_Trade_Agreement_vol1.pdf"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force between Australia and the United Kingdom since 31 May 2023. Article 20.4 is an express AI and emerging-technologies provision in the Innovation chapter; Article 20.7 excludes Chapter 20 from dispute settlement. Two Parties and no accessions.",
+  "title": {
+    "official": "Free Trade Agreement between the United Kingdom of Great Britain and Northern Ireland and Australia",
+    "short": "Australia–UK Free Trade Agreement (A-UKFTA)"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Signature and entry-into-force dates checked on the official DFAT page.",
+        "date": "2026-11-27",
+        "result": "Signed 17 December 2021; entered into force 31 May 2023."
+      },
+      {
+        "check": "AI provisions read in the official DFAT Chapter 20.",
+        "date": "2026-11-27",
+        "result": "Article 20.4 expressly covers artificial intelligence and emerging technologies; Article 20.4(3) refers to the Global Partnership on Artificial Intelligence and the OECD AI Principles."
+      },
+      {
+        "check": "Dispute-settlement scope checked in the official chapter.",
+        "date": "2026-11-27",
+        "result": "Article 20.7 provides that neither Party shall have recourse to dispute settlement under Chapter 30 for any matter arising under Chapter 20."
+      },
+      {
+        "check": "Full-text availability checked.",
+        "date": "2026-11-27",
+        "result": "No full treaty text was stored; the record is metadata-only and relies on the official Chapter 20 and DFAT status page."
+      }
+    ],
+    "level": "metadata_verified",
+    "notes": "Official Chapter 20 was read in full for the AI and dispute-settlement provisions. The full 2021 FTA was not acquired or read end-to-end."
+  }
+}

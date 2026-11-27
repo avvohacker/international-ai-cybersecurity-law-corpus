@@ -1,13 +1,13 @@
 {
-  "checked": 280,
+  "checked": 285,
   "audited_on": "2026-11-27",
   "scope": "catalog",
-  "instruments": 79,
+  "instruments": 81,
   "summary": {
-    "ok": 182,
-    "anti_bot": 88,
+    "ok": 181,
+    "anti_bot": 90,
     "broken": 0,
-    "transient": 10,
+    "transient": 14,
     "live_but_unreachable": 3
   },
   "results": [
@@ -176,9 +176,9 @@
       "source_id": "las-convention-text",
       "label": "League of Arab States",
       "url": "https://web.archive.org/web/20240423123401/https://www.leagueofarabstates.net/ar/legalnetwork/Documents/%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -346,6 +346,36 @@
       "source_id": "stored-senlii-transcription",
       "label": "SenLII English transcription",
       "url": "https://senlii.org/en/akn/aa-au/act/convention/2014/cyber-security-and-personal-data-protection/eng@2014-06-27/source.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "aukfta-2023",
+      "source_id": "dfat-chapter-20",
+      "label": "Australian Department of Foreign Affairs and Trade",
+      "url": "https://www.dfat.gov.au/trade/agreements/in-force/aukfta/official-text/australia-uk-fta-chapter-20-innovation",
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "TimeoutError"
+    },
+    {
+      "instrument_id": "aukfta-2023",
+      "source_id": "dfat-page",
+      "label": "Australian Department of Foreign Affairs and Trade",
+      "url": "https://www.dfat.gov.au/trade/agreements/in-force/aukfta",
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "TimeoutError"
+    },
+    {
+      "instrument_id": "aukfta-2023",
+      "source_id": "uk-treaty-series",
+      "label": "UK Foreign, Commonwealth and Development Office",
+      "url": "https://assets.publishing.service.gov.uk/media/6504a782fc63f6001495738d/TS_37.2023_UK_Australia_Free_Trade_Agreement_vol1.pdf",
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
@@ -546,10 +576,10 @@
       "source_id": "ccw-gge-page",
       "label": "United Nations Office for Disarmament Affairs",
       "url": "https://meetings.unoda.org/meeting/79329",
-      "status": 200,
-      "outcome": "anti_bot",
-      "reason": "challenge_on_200",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "TimeoutError"
     },
     {
       "instrument_id": "ccw-gge-laws-2026",
@@ -806,9 +836,9 @@
       "source_id": "stored-wayback-official",
       "label": "Official PDF, archived copy",
       "url": "https://web.archive.org/web/20220516075219/https://rm.coe.int/1680a49dab",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -906,9 +936,9 @@
       "source_id": "coe-report",
       "label": "Council of Europe Treaty Office",
       "url": "https://web.archive.org/web/20261117082757/https://rm.coe.int/1680afae67",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -946,9 +976,9 @@
       "source_id": "stored-wayback-official",
       "label": "Official PDF, archived copy",
       "url": "https://web.archive.org/web/2024/https://rm.coe.int/168008160f",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -1006,10 +1036,10 @@
       "source_id": "depa-mfat-overview",
       "label": "New Zealand Ministry of Foreign Affairs and Trade",
       "url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/overview",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
-      "detail": ""
+      "status": null,
+      "outcome": "transient",
+      "reason": "timeout",
+      "detail": "TimeoutError"
     },
     {
       "instrument_id": "depa-2020",
@@ -2042,9 +2072,9 @@
       "source_id": "state-san-francisco-archived",
       "label": "U.S. Department of State",
       "url": "https://web.archive.org/web/20261117015744/https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -2115,6 +2145,26 @@
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "uk-japan-cepa-2021",
+      "source_id": "govuk-treaty",
+      "label": "UK Foreign, Commonwealth and Development Office",
+      "url": "https://assets.publishing.service.gov.uk/media/5f92ecb8d3bf7f35f06ae3bd/CS_Japan_1.2020_UK_Japan_Agreement_Comprehensive_Economic_Partnership__v1.pdf",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "uk-japan-cepa-2021",
+      "source_id": "mofa-bluebook",
+      "label": "Ministry of Foreign Affairs of Japan",
+      "url": "https://www.mofa.go.jp/policy/other/bluebook/2021/en_html/chapter3/c030102.html",
+      "status": 403,
+      "outcome": "anti_bot",
+      "reason": "http_403",
       "detail": ""
     },
     {
@@ -2422,9 +2472,9 @@
       "source_id": "unesdoc-pdf",
       "label": "UNESCO Digital Library",
       "url": "https://web.archive.org/web/20261029235825/https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_75c9fb6b-92a6-4982-b772-79f540c9fc39?_=381137eng.pdf",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
