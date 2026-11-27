@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "bytes": 8098,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "cd90262e56dbb0ec90dd461ac4bf0647cd452ba92b666e283d3e0e2a84f8bb39"
+    },
+    {
+      "bytes": 129,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "263d19e02baa19c6e174a50ce12a1eb73548dfe8eec11e29479bd0b2455273dc"
+    },
+    {
+      "bytes": 8744,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "ad58ff834166fffe2436d258edbc5bf580a86ca0a24db99b7cf74b10f1cde9fb"
+    }
+  ],
+  "instrument_id": "georgia-uzbekistan-ict-2026",
+  "primary_text": "text/en.txt"
+}

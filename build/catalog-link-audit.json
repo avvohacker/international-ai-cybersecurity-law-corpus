@@ -1,13 +1,13 @@
 {
-  "checked": 276,
+  "checked": 280,
   "audited_on": "2026-11-27",
   "scope": "catalog",
-  "instruments": 78,
+  "instruments": 79,
   "summary": {
-    "ok": 179,
-    "anti_bot": 86,
+    "ok": 182,
+    "anti_bot": 88,
     "broken": 0,
-    "transient": 11,
+    "transient": 10,
     "live_but_unreachable": 3
   },
   "results": [
@@ -806,9 +806,9 @@
       "source_id": "stored-wayback-official",
       "label": "Official PDF, archived copy",
       "url": "https://web.archive.org/web/20220516075219/https://rm.coe.int/1680a49dab",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -1332,6 +1332,46 @@
       "detail": ""
     },
     {
+      "instrument_id": "georgia-uzbekistan-ict-2026",
+      "source_id": "georgia-economy",
+      "label": "Ministry of Economy and Sustainable Development of Georgia",
+      "url": "https://www.economy.ge/index.php?page=news&nw=3140&lang=en",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "georgia-uzbekistan-ict-2026",
+      "source_id": "matsne-record",
+      "label": "Legislative Herald of Georgia",
+      "url": "https://matsne.gov.ge/en/document/view/6934666",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "georgia-uzbekistan-ict-2026",
+      "source_id": "matsne-text",
+      "label": "Legislative Herald of Georgia",
+      "url": "https://matsne.gov.ge/en/document/download/6934666/0/1",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "georgia-uzbekistan-ict-2026",
+      "source_id": "uzbekistan-president",
+      "label": "President of the Republic of Uzbekistan",
+      "url": "https://president.uz/en/lists/view/9378",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
       "instrument_id": "gpai-2023-ministerial-declaration",
       "source_id": "oecd-gpai-declaration-pdf",
       "label": "OECD / Global Partnership on Artificial Intelligence",
@@ -1696,9 +1736,9 @@
       "source_id": "paris-call-csv",
       "label": "Official supporters CSV",
       "url": "https://web.archive.org/web/20240927013736/https://pariscall.international/supporters.csv",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -1706,9 +1746,9 @@
       "source_id": "paris-call-page",
       "label": "Official homepage counters",
       "url": "https://web.archive.org/web/20251117075315/https://pariscall.international/en",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -1810,9 +1850,9 @@
       "source_id": "state-pax-silica-archived",
       "label": "U.S. Department of State",
       "url": "https://web.archive.org/web/20261117055013/https://www.state.gov/pax-silica",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -1880,9 +1920,9 @@
       "source_id": "state-text-pdf-archived",
       "label": "U.S. Department of State",
       "url": "https://web.archive.org/web/20240221131548/https://www.state.gov/wp-content/uploads/2023/10/Latest-Version-Political-Declaration-on-Responsible-Military-Use-of-AI-and-Autonomy.pdf",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -1950,9 +1990,9 @@
       "source_id": "spain-page",
       "label": "Ministry of Foreign Affairs, European Union and Cooperation, Spain",
       "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx",
-      "status": 503,
-      "outcome": "transient",
-      "reason": "http_503",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -2002,9 +2042,9 @@
       "source_id": "state-san-francisco-archived",
       "label": "U.S. Department of State",
       "url": "https://web.archive.org/web/20261117015744/https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {

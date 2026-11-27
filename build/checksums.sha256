@@ -60,6 +60,7 @@
 21332fd7d36fe39031ef8aa47e103268eb6c4fe5af0b2fc7641a80b0f95b5077  corpus/eu-gpai-code-of-practice-2025/text/en.txt
 2488714c67c31231688a769dbba896e8510df91905e5df98aa630feae236caa0  corpus/un-ga-res-79-62/manifest.json
 2568dadfd8528d4ceada6eaf36a62706a6a6ed968cfe8e7cfd3d822804f2c111  corpus/g7-digital-technology-ministerial-declaration-2026/pages.json
+263d19e02baa19c6e174a50ce12a1eb73548dfe8eec11e29479bd0b2455273dc  corpus/georgia-uzbekistan-ict-2026/pages.json
 26d752f5d4d8c09fdbf39dc000d6ccc79a4ba1381da2bd382155865655653b11  corpus/arab-unified-ai-strategy-2025/source/arab-unified-ai-strategy-2025-ar.pdf
 27d360d5604d1a7438c96df9a9b0c7b0ac9af936d21166f61436e1262b03c431  corpus/seoul-declaration-2024/source/seoul-declaration-2024-en.html
 29579cc3e25332a5d77f7ed70abfb07d9a5a0edcb2ca37bb31885b14d3c51b30  corpus/un-ga-res-78-241/source/A_RES_78_241-en.pdf
@@ -159,6 +160,7 @@
 7a72934d3de35794dcea3272571630436393de03bd598319b40c014449b76012  corpus/iccpr-1966/text/en.txt
 7b1f43c61788e17247ea4cf05ff2823e83eb3f67db284f54cc25f238c898a18b  corpus/us-eu-ttc-ai-safety-dialogue-2024/text/en.txt
 7c59b81f68a7ec19ea51bc4af7197a197e6d1b948b06e9f3b58a7bbb0cf4dfbc  corpus/new-delhi-declaration-2026/text/en.txt
+7c7163fb7f18c3b7a55a67356bdabab8977be1740b197375db25fda05ff24612  corpus/georgia-uzbekistan-ict-2026/manifest.json
 7dd0fb5ea3c4eb13f227d1ff9cd2082ad4d0fc24de38ca9e49bf80748fe9e3cf  corpus/china-global-ai-governance-initiative-2023/text/en.txt
 7e600c935b540f32b1d49f57c34545501abeb3991183a06ba3eb50a0f974b1d0  corpus/sco-information-security-agreement-2009/text/en.txt
 7fabd6bd6d1eb7a8a4c2b79172c1837aa60ed8483da13b0f70eab2f503048d9a  corpus/un-ga-res-80-58/text/en.txt
@@ -228,6 +230,7 @@ a6b67d5414379ff813dedae9358475ad2bef2ce52549fde838ef4d05e41f1d1e  corpus/un-ga-r
 a80518926d328d3819f6ca32ae62f9635f56f42b38f3984f904ce4befbc30db2  corpus/new-delhi-declaration-2026/source/new-delhi-declaration-2026-en.html
 a940058c669fd8a28db97203b0921e87744648dc5e5fbe5c465aa9e20f4fa085  corpus/coe-ets-189/units.jsonl
 ac62bef44e17795a0948039be904bfd8139b71f0767afa7a0b25356e8c188d3f  corpus/un-ga-res-79-325/pages.json
+ad58ff834166fffe2436d258edbc5bf580a86ca0a24db99b7cf74b10f1cde9fb  corpus/georgia-uzbekistan-ict-2026/units.jsonl
 ada2097ffc84e5bc9fd5c6e7e115af6b4b499120c7755ec00c79544a2a50b7b9  corpus/new-delhi-declaration-2026/units.jsonl
 ada2ebb2178b1b935191da51796940961ca5e946095fc4d26841db6b3a426203  corpus/oecd-digital-security-critical-activities-2019/units.jsonl
 ae63abb67a0cf3dbccb15f8d34cd2dfac968149a04a24c0ed46d770806de377e  corpus/un-ga-res-79-1/pages.json
@@ -263,6 +266,7 @@ cbd8ef3d27a6b05652ef21ed150fb3cc5a1257ffd17188d482165d5febd85ffa  corpus/san-fra
 cc64e3acd95c4f61292f1057117d73fbc66817c5ebddd5573aba0952c370db41  corpus/waico-establishment-agreement-2026/text/zh.txt
 ccb27947171ef563034c5f568994749ce20a9d09397a1aeb27f56b5e6e5d76ec  corpus/political-declaration-military-ai-2023/pages.json
 ccd60db7f0716ceb059473677dab642aa2d29472520c45bf67e5cc21a9e55929  corpus/g7-digital-technology-ministerial-declaration-2026/text/en.txt
+cd90262e56dbb0ec90dd461ac4bf0647cd452ba92b666e283d3e0e2a84f8bb39  corpus/georgia-uzbekistan-ict-2026/text/en.txt
 cdb3c117e8e51282ab61fad8af9d5cd1acaf1773a5eadce178c3d10498ca864a  corpus/eu-gpai-code-of-practice-2025/source/gpai-code-copyright-2025-en.pdf
 ce137a93c42e4c60255add6d9041449e69755c2a011c39131d25a41f1aeda30a  corpus/clad-ibero-ai-charter-2023/text/es.txt
 ceed2fa8182257ecfe2ca5ad1d23d257fcb393ad97ddac708d1f3f573f65e57b  corpus/bletchley-declaration-2023/pages.json

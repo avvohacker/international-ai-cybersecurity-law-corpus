@@ -1,0 +1,275 @@
+{
+  "binding_status": "binding",
+  "category": "agreement_ai_provisions",
+  "dates": {
+    "entered_into_force": "2026-07-03",
+    "notes": "Signed at Tbilisi on 3 July 2026. Article 10 provides that the Agreement enters into force on the date of signature; the Matsne record gives an activating date of 3 July 2026 and publication on 9 July 2026.",
+    "signed": "2026-07-03",
+    "verified_on": "2026-11-27"
+  },
+  "domains": [
+    "ai"
+  ],
+  "gaps": [
+    "The signed originals were not acquired; the stored English text is a transcription of the official Matsne appendix, not a byte-identical copy.",
+    "Only the official English text was read; the equally authentic Georgian and Uzbek texts were not acquired.",
+    "The Agreement has no dedicated AI article and creates no AI-specific prohibition, standard, market-access condition or enforcement mechanism; AI appears in the preamble and as one area of cooperation in Article 2.",
+    "No implementing programme, joint project, funding decision or institutional mechanism under the Agreement was verified.",
+    "The Agreement is bilateral and has no depositary register or accession procedure; it is not mapped."
+  ],
+  "id": "georgia-uzbekistan-ict-2026",
+  "instrument_type": "agreement",
+  "issuer": [
+    {
+      "name": "Government of Georgia and Government of the Republic of Uzbekistan",
+      "role": "co_issuer"
+    }
+  ],
+  "languages": {
+    "authentic": [
+      "en",
+      "ka",
+      "uz"
+    ],
+    "note": "Article 10 states that the Agreement is done in Georgian, Uzbek and English, all texts being equally authentic, and that the English text prevails in case of divergence. Only the English text was read.",
+    "translations": []
+  },
+  "legal_nature": {
+    "qualification": "treaty",
+    "rationale": "An international agreement between two Governments with final provisions, entry into force on signature, a four-year term with automatic renewal, and termination by diplomatic notification. Georgia registers it as an International Treaty and Agreement. The AI references are cooperative obligations inside a binding treaty, not a separate AI-specific regime.",
+    "source_ids": [
+      "matsne-record",
+      "matsne-text"
+    ]
+  },
+  "parties": {
+    "act": "treaty_signature",
+    "as_of": "2026-11-27",
+    "counts": {
+      "accessions": {
+        "basis": "not_applicable",
+        "note": "Bilateral agreement; no accession procedure or third-party accession is recorded.",
+        "total": null,
+        "verified": 0
+      },
+      "parties": {
+        "basis": "verified_total",
+        "source_ids": [
+          "matsne-record",
+          "matsne-text"
+        ],
+        "total": 2,
+        "verified": 2
+      },
+      "ratifications": {
+        "basis": "not_applicable",
+        "note": "Article 10 provides entry into force on signature; no separate ratification tally is maintained.",
+        "total": null,
+        "verified": 0
+      },
+      "signatures": {
+        "basis": "verified_total",
+        "source_ids": [
+          "matsne-record",
+          "matsne-text",
+          "georgia-economy",
+          "uzbekistan-president"
+        ],
+        "total": 2,
+        "verified": 2
+      }
+    },
+    "declarations": [],
+    "entries": [
+      {
+        "entry_into_force": "2026-07-03",
+        "notes": [],
+        "party": "Georgia",
+        "role": "signatory",
+        "signature": "2026-07-03"
+      },
+      {
+        "entry_into_force": "2026-07-03",
+        "notes": [],
+        "party": "Uzbekistan",
+        "role": "signatory",
+        "signature": "2026-07-03"
+      }
+    ],
+    "notifications": [],
+    "objections": [],
+    "reservations": [],
+    "source_ids": [
+      "matsne-record",
+      "matsne-text",
+      "georgia-economy",
+      "uzbekistan-president"
+    ],
+    "summary": "Two Parties: Georgia and Uzbekistan. The Agreement entered into force on signature on 3 July 2026; no depositary register, ratification tally or accession procedure is maintained.",
+    "unknowns": [
+      "The signed originals and the Georgian and Uzbek texts were not acquired.",
+      "No depositary register or separate ratification record exists for this bilateral Agreement."
+    ],
+    "withdrawals": []
+  },
+  "provenance": {
+    "assertions": [
+      {
+        "date": "2026-11-27",
+        "field": "status",
+        "locator": "Matsne record: document type 'International Treaty and Agreement of Georgia', activating date 03/07/2026, published 09/07/2026; Article 10",
+        "method": "official_page_read",
+        "source_ids": [
+          "matsne-record",
+          "matsne-text"
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "field": "parties",
+        "locator": "Matsne record and Article 10: Governments of Georgia and Uzbekistan; signing reports of 3 July 2026",
+        "method": "official_page_read",
+        "source_ids": [
+          "matsne-record",
+          "matsne-text",
+          "georgia-economy",
+          "uzbekistan-president"
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "field": "legal_nature",
+        "locator": "Article 10 (entry into force, duration and termination); Matsne document type",
+        "method": "official_text_read",
+        "source_ids": [
+          "matsne-record",
+          "matsne-text"
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "field": "provisions",
+        "locator": "Preamble and Article 2, list of areas and final paragraph",
+        "method": "official_text_read",
+        "source_ids": [
+          "matsne-text"
+        ]
+      }
+    ],
+    "discovered_via": "Targeted search of Central Asian and Caucasus bilateral agreements; the official Matsne record and the Georgian and Uzbek government signing reports.",
+    "search_dates": [
+      "2026-11-27"
+    ]
+  },
+  "related": [
+    {
+      "id": "depa-2020",
+      "note": "A binding digital-economy agreement with dedicated AI cooperation provisions; different parties and subject matter.",
+      "relation": "related"
+    },
+    {
+      "id": "sadea-2020",
+      "note": "A binding bilateral digital-economy agreement with an AI article; different parties and subject matter.",
+      "relation": "related"
+    },
+    {
+      "id": "uksdea-2022",
+      "note": "A binding bilateral digital-economy agreement with an AI article; different parties and subject matter.",
+      "relation": "related"
+    }
+  ],
+  "relevance": {
+    "ai_provisions": [
+      "Preamble: the Parties recognise their mutual interest in expanding cooperation in areas including artificial intelligence.",
+      "Article 2: the Parties are to encourage cooperation between relevant organisations, universities and businesses in information technology, postal services, artificial intelligence and digitalization.",
+      "Article 2, final paragraph: the Parties agree to support projects in areas including the application of artificial intelligence, provided that they do not contradict their commitments under other international treaties."
+    ],
+    "excluded_scope": "The Agreement's object is cooperation in ICTs, digitalization, innovations and postal services. AI is one cooperative area, not a dedicated AI treaty, and the text creates no AI-specific prohibition, standard, market-access condition or enforcement mechanism.",
+    "reason": "A binding bilateral agreement with express AI cooperation provisions. It is the first binding bilateral instrument in the corpus connecting Central Asia and the Caucasus with AI, but its AI clauses are programmatic and cooperative."
+  },
+  "rights": {
+    "licence": "Legislative Herald of Georgia terms",
+    "note": "Official treaty text published by the Legislative Herald of Georgia. No open licence identified; the text is stored for research and verification. Reusers should consult the publisher's terms.",
+    "status": "public_official_text",
+    "url": "https://matsne.gov.ge/en/document/view/6934666"
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "id": "matsne-record",
+      "kind": "registry",
+      "note": "Official Matsne record: document number 30-80; issuer the Minister of Foreign Affairs of Georgia; document type 'International Treaty and Agreement of Georgia'; date of issuing 03/07/2026; published 09/07/2026; activating date 03/07/2026.",
+      "publisher": "Legislative Herald of Georgia",
+      "url": "https://matsne.gov.ge/en/document/view/6934666"
+    },
+    {
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "id": "matsne-text",
+      "kind": "official_primary",
+      "language": "en",
+      "note": "Official English text appendix to document 30-80, published by the Legislative Herald of Georgia; read in full and transcribed. The download endpoint blocked automated binary retrieval, so no original file is stored; the transcription is hashed in the manifest.",
+      "publisher": "Legislative Herald of Georgia",
+      "url": "https://matsne.gov.ge/en/document/download/6934666/0/1"
+    },
+    {
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "id": "georgia-economy",
+      "kind": "official_secondary",
+      "note": "Ministry of Economy and Sustainable Development of Georgia, 3 July 2026: confirms that an agreement on cooperation in information and communication technologies and digitalization was signed during the Uzbek President's official visit.",
+      "publisher": "Ministry of Economy and Sustainable Development of Georgia",
+      "url": "https://www.economy.ge/index.php?page=news&nw=3140&lang=en"
+    },
+    {
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "id": "uzbekistan-president",
+      "kind": "official_secondary",
+      "note": "President of the Republic of Uzbekistan, 3 July 2026: lists the Agreement on Cooperation in Information and Communication Technologies and Digitalization among the bilateral documents exchanged in Tbilisi.",
+      "publisher": "President of the Republic of Uzbekistan",
+      "url": "https://president.uz/en/lists/view/9378"
+    }
+  ],
+  "status": "in_force",
+  "status_note": "In force between Georgia and Uzbekistan on signature, 3 July 2026, under Article 10; the Matsne record gives an activating date of 3 July 2026. Two Parties and no accessions. The Agreement replaces the 1995 bilateral telecommunications agreement. No depositary register or separate ratification process is maintained.",
+  "text": {
+    "extraction_note": "Transcribed from the official English appendix to Matsne document 30-80. Page headers and PDF extraction artifacts were removed; the transcription is stored and hashed but is not a byte-identical copy of the source. A single logical page is recorded because the source is an HTML text appendix with no usable page map.",
+    "full_text": true,
+    "manifest": "manifest.json",
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "treaty"
+  },
+  "title": {
+    "official": "Agreement between the Government of Georgia and the Government of the Republic of Uzbekistan on Cooperation in the Fields of Information and Communication Technologies, Digitalization, Innovations and Post",
+    "short": "Georgia–Uzbekistan ICT Agreement"
+  },
+  "verification": {
+    "checks": [
+      {
+        "check": "Official Matsne record checked for document type, number, issuing date, publication date and activating date.",
+        "date": "2026-11-27",
+        "result": "Document 30-80; International Treaty and Agreement of Georgia; issued 3 July 2026; published 9 July 2026; activating date 3 July 2026."
+      },
+      {
+        "check": "Official English text read in full and checked for AI references.",
+        "date": "2026-11-27",
+        "result": "AI is named in the preamble and in Article 2, both in the list of cooperation areas and in the final paragraph on projects."
+      },
+      {
+        "check": "Final provisions checked for entry into force, duration and termination.",
+        "date": "2026-11-27",
+        "result": "Article 10: entry into force on signature; four-year term with automatic four-year renewal; termination on three months' diplomatic notification; the 1995 telecommunications agreement ceases to be effective."
+      },
+      {
+        "check": "Signing confirmed by both Governments' official reports.",
+        "date": "2026-11-27",
+        "result": "The Georgian Ministry of Economy and the President of Uzbekistan both record the signing in Tbilisi on 3 July 2026."
+      }
+    ],
+    "level": "full_text_checked",
+    "notes": "The official English text was read end-to-end and segmented into 10 article units. No original binary was acquired: the Matsne download endpoint blocked automated retrieval, so the stored text is a transcription with its own SHA-256. The Georgian and Uzbek authentic texts were not read."
+  }
+}

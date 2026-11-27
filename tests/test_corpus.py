@@ -125,7 +125,7 @@ class TestCatalogue(unittest.TestCase):
             self.assertTrue(domains, iid)
             self.assertLessEqual(set(domains), {"ai", "cyber"}, iid)
             self.assertEqual(len(domains), len(set(domains)), iid)
-        self.assertEqual(sum(1 for inst in instruments.values() if "ai" in inst["domains"]), 63)
+        self.assertEqual(sum(1 for inst in instruments.values() if "ai" in inst["domains"]), 64)
         self.assertEqual(sum(1 for inst in instruments.values() if "cyber" in inst["domains"]), 15)
 
     def test_budapest_record_is_cyber_domain(self) -> None:
@@ -237,6 +237,7 @@ class TestCatalogue(unittest.TestCase):
                 "both texts being equally authentic",
             ],
             "un-ga-res-78-265": ["78/265.", "21 March 2024"],
+            "georgia-uzbekistan-ict-2026": ["ARTICLE 10", "artificial intelligence"],
             "depa-2020": ["Article 8.2: Artificial Intelligence"],
             "sadea-2020": ["ARTICLE 31", "Artificial Intelligence"],
             "g7-hiroshima-code-2023": ["voluntary guidance"],
@@ -254,7 +255,7 @@ class TestCatalogue(unittest.TestCase):
         self.assertEqual(articles[0]["label"], "Article 1 — Object and purpose")
         self.assertEqual(articles[-1]["label"], "Article 36 — Notification")
 
-    def test_fifteen_binding_instruments_have_text_and_units(self) -> None:
+    def test_sixteen_binding_instruments_have_text_and_units(self) -> None:
         expected = {
             "afcfta-digital-trade-protocol-2024": (52, "Article 52"),
             "arab-convention-it-offences-2010": (43, "Article 43"),
@@ -271,6 +272,7 @@ class TestCatalogue(unittest.TestCase):
             "un-cybercrime-convention-2024": (68, "Article 68"),
             "vclt-1969": (85, "Article 85"),
             "waico-establishment-agreement-2026": (18, "第十八条"),
+            "georgia-uzbekistan-ict-2026": (10, "Article 10"),
         }
         for iid, (count, last_label) in expected.items():
             inst = read_instrument(iid)
@@ -357,14 +359,14 @@ class TestCatalogue(unittest.TestCase):
         import audit_texts
 
         data = audit_texts.audit()
-        self.assertEqual(data["total"], 78)
-        self.assertEqual(sum(data["summary"].values()), 78)
-        self.assertEqual(data["summary"]["stored"], 63)
+        self.assertEqual(data["total"], 79)
+        self.assertEqual(sum(data["summary"].values()), 79)
+        self.assertEqual(data["summary"]["stored"], 64)
         self.assertEqual(data["summary"]["official_text_located"], 4)
         self.assertEqual(data["summary"]["internal_law"], 3)
         self.assertEqual(data["summary"]["paywalled"], 6)
         self.assertEqual(data["summary"]["summary_only"], 2)
-        self.assertEqual(len({row["id"] for row in data["records"]}), 78)
+        self.assertEqual(len({row["id"] for row in data["records"]}), 79)
 
     def test_cets_french_units_are_exact_and_page_anchored(self) -> None:
         base = ROOT / "corpus" / "coe-cets-225"
@@ -916,7 +918,7 @@ class TestCatalogue(unittest.TestCase):
 
     def test_candidate_register_counts(self) -> None:
         entries = json.loads((ROOT / "catalog" / "candidates.json").read_text(encoding="utf-8"))
-        self.assertEqual(len(entries), 47)
+        self.assertEqual(len(entries), 48)
         decisions = {"included": 0, "pending": 0, "excluded": 0}
         instruments = corpuslib.load_instruments()
         for entry in entries:
@@ -925,7 +927,7 @@ class TestCatalogue(unittest.TestCase):
                 self.assertIn(entry["instrument_id"], instruments)
             else:
                 self.assertIsNone(entry["instrument_id"])
-        self.assertEqual(decisions, {"included": 30, "pending": 6, "excluded": 11})
+        self.assertEqual(decisions, {"included": 31, "pending": 6, "excluded": 11})
 
     def test_regional_and_reaim_records(self) -> None:
         regional = (
@@ -1315,9 +1317,9 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(summary["counts"]["by_category"]["supranational_law"], 3)
         self.assertEqual(summary["counts"]["by_category"]["regional_law"], 1)
         self.assertEqual(summary["counts"]["by_category"]["cyber_treaty"], 9)
-        self.assertEqual(summary["counts"]["total"], 78)
-        self.assertEqual(summary["counts"]["by_domain"], {"ai": 63, "cyber": 15, "joint": 0})
-        self.assertEqual(summary["counts"]["by_binding"], {"binding": 22, "non_binding": 56})
+        self.assertEqual(summary["counts"]["total"], 79)
+        self.assertEqual(summary["counts"]["by_domain"], {"ai": 64, "cyber": 15, "joint": 0})
+        self.assertEqual(summary["counts"]["by_binding"], {"binding": 23, "non_binding": 56})
 
     def test_site_maps_are_complete_and_neutral(self) -> None:
         import build_site
@@ -1433,7 +1435,7 @@ class TestBuild(unittest.TestCase):
         page = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
         ids = set(re.findall(r'<li[^>]*data-instrument-id="([^"]+)"', page))
         self.assertEqual(ids, set(corpuslib.load_instruments()))
-        self.assertEqual(page.count('data-instrument-id='), 78)
+        self.assertEqual(page.count('data-instrument-id='), 79)
         for label in (
             "00 · Index",
             "01 · Overlook",
@@ -1475,13 +1477,13 @@ class TestBuild(unittest.TestCase):
         self.assertIn("Cyber Resilience Act", page)
         self.assertIn("EU Artificial Intelligence Act", page)
         self.assertIn("treaty-based international instruments", page)
-        self.assertIn("13 in force", page)
+        self.assertIn("14 in force", page)
         self.assertIn("5 are not confirmed in force", page)
         self.assertIn("Article 18 VCLT", page)
-        self.assertNotIn("18 instruments are binding international law", page)
+        self.assertNotIn("19 instruments are binding international law", page)
         self.assertNotIn('class="cyber-status"', page)
         self.assertEqual(page.count('data-weight="highlight"'), 17)
-        self.assertEqual(page.count('data-weight="record"'), 61)
+        self.assertEqual(page.count('data-weight="record"'), 62)
         instruments = corpuslib.load_instruments()
         highlighted = re.findall(
             r'data-weight="highlight" data-instrument-id="([^"]+)"', page
@@ -1494,8 +1496,8 @@ class TestBuild(unittest.TestCase):
             if inst["binding_status"] == "binding"
             and inst["category"] not in {"supranational_law", "regional_law"}
         }
-        self.assertEqual(len(international_binding - set(highlighted)), 11)
-        self.assertEqual(page.count("Treaty-based instrument without a map"), 11)
+        self.assertEqual(len(international_binding - set(highlighted)), 12)
+        self.assertEqual(page.count("Treaty-based instrument without a map"), 12)
         for iid in ("eu-ai-act", "eu-nis2-directive-2022", "eu-cyber-resilience-act-2024"):
             self.assertNotIn(f'data-weight="highlight" data-instrument-id="{iid}"', page)
             self.assertIn(f'data-weight="record" data-instrument-id="{iid}"', page)
@@ -1508,7 +1510,7 @@ class TestBuild(unittest.TestCase):
         self.assertLess(page.find('id="timeline"'), page.find('id="unseen"'))
         self.assertLess(page.find('id="unseen"'), page.find('id="catalogue"'))
         self.assertEqual(page.count('class="tl-item tl-event unseen-item"'), 11)
-        self.assertEqual(page.count('class="tl-item tl-instrument"'), 78)
+        self.assertEqual(page.count('class="tl-item tl-instrument"'), 79)
         self.assertNotIn("Three sets: AI, cyber and treaty-based international law", page)
         self.assertIn("The story, with the instruments in it", page)
         self.assertIn("The argument around the record", page)
@@ -1949,19 +1951,19 @@ class TestBuild(unittest.TestCase):
             if inst["binding_status"] == "binding"
             and inst["category"] not in {"supranational_law", "regional_law"}
         ]
-        self.assertEqual(len(international_treaty_based), 18)
+        self.assertEqual(len(international_treaty_based), 19)
         self.assertEqual(
             sum(1 for inst in international_treaty_based if inst["status"] == "in_force"),
-            13,
+            14,
         )
         self.assertIn(
-            '<p class="stat-number">18</p><p class="stat-label">'
+            '<p class="stat-number">19</p><p class="stat-label">'
             "treaty-based international instruments</p>",
             page,
         )
-        self.assertIn("13 in force · 5 not confirmed", page)
-        self.assertIn("Of the 18 international instruments with binding form", page)
-        self.assertIn("13 are in force and 5 are not confirmed in force", page)
+        self.assertIn("14 in force · 5 not confirmed", page)
+        self.assertIn("Of the 19 international instruments with binding form", page)
+        self.assertIn("14 are in force and 5 are not confirmed in force", page)
         self.assertNotIn("International binding ·", page)
         self.assertIn(f"{len(instruments)} instruments", page)
         self.assertIn(
@@ -2000,8 +2002,8 @@ class TestBuild(unittest.TestCase):
         self.assertIn(
             f"The corpus contains {build_site.number_word(ai_count)} AI-specific treaties", page
         )
-        self.assertIn("It is not 63 AI treaties.", page)
-        self.assertIn("63 AI-domain records and 15 cybersecurity-only records", page)
+        self.assertIn("It is not 64 AI treaties.", page)
+        self.assertIn("64 AI-domain records and 15 cybersecurity-only records", page)
         self.assertNotIn("193 States", page)
         self.assertNotIn("28 States and the EU", page)
 
@@ -2208,8 +2210,8 @@ class TestLinkAudit(unittest.TestCase):
 
     def test_catalog_targets_cover_all_official_sources(self) -> None:
         targets = self.audit.catalog_targets()
-        self.assertEqual(len(targets), 271)
-        self.assertEqual(len({target.instrument_id for target in targets}), 78)
+        self.assertEqual(len(targets), 275)
+        self.assertEqual(len({target.instrument_id for target in targets}), 79)
         self.assertTrue(
             all(target.url.startswith(("https://", "http://")) for target in targets)
         )
@@ -2241,7 +2243,7 @@ class TestLinkAudit(unittest.TestCase):
             if (match := re.match(r"^(\d+)\. ", line))
         }
         self.assertEqual(cited, listed)
-        self.assertEqual(listed, set(range(1, 52)))
+        self.assertEqual(listed, set(range(1, 53)))
 
     def test_targets_cover_all_panels(self) -> None:
         import build_site

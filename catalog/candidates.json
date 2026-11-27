@@ -609,5 +609,18 @@
     "searched_on": "2026-11-25",
     "evidence": "Official Spanish REAIM 2026 page listing 45 States; official eight-page PDF; RSIS commentary recording 40 at the time of writing.",
     "gaps": "Open to further endorsements; no individual dates; China and the United States not listed; full text stored and segmented; not mapped."
+  },
+  {
+    "id": "georgia-uzbekistan-ict-2026",
+    "title": "Agreement between the Government of Georgia and the Government of the Republic of Uzbekistan on Cooperation in the Fields of Information and Communication Technologies, Digitalization, Innovations and Post",
+    "issuer": "Governments of Georgia and the Republic of Uzbekistan",
+    "decision": "included",
+    "instrument_id": "georgia-uzbekistan-ict-2026",
+    "reason": "Official Matsne record and English text read. Binding bilateral treaty signed at Tbilisi on 3 July 2026; Article 10 provides entry into force on signature; Article 2 expressly includes artificial-intelligence cooperation. Added after the targeted Central Asia/Caucasus bilateral search.",
+    "candidate_type": "treaty",
+    "official_url": "https://matsne.gov.ge/en/document/view/6934666",
+    "searched_on": "2026-11-27",
+    "evidence": "Official Matsne record (document 30-80, International Treaty and Agreement of Georgia, activating date 3 July 2026); official English text appendix; Georgian Ministry of Economy report of 3 July 2026; President of Uzbekistan report of 3 July 2026.",
+    "gaps": "AI provisions are cooperative and programmatic, not a dedicated AI regime; the signed originals and the Georgian and Uzbek texts were not acquired; bilateral agreement, not mapped."
   }
 ]

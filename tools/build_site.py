@@ -2162,7 +2162,7 @@ def main() -> int:
         if "cyber" in inst["domains"] and inst["category"] == "non_binding_instrument"
     )
     ai_breakdown = (
-        f"{ai_count} AI-specific treaties, {trade_count} trade agreements with AI provisions, "
+        f"{ai_count} AI-specific treaties, {trade_count} agreements with AI provisions, "
         f"{general_treaty_count} general background treaties, "
         f"{category_counts.get('technical_standard', 0)} technical standards, "
         f"{category_counts.get('preparatory_interpretive', 0)} implementation texts, "
