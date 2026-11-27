@@ -84,8 +84,14 @@ PROBE_MARKERS = (
 def classify(inst: dict[str, Any]) -> tuple[str, str]:
     """Return the availability class and a short reason for one record."""
     iid = inst["id"]
-    if (inst.get("text") or {}).get("full_text"):
+    text = inst.get("text") or {}
+    if text.get("full_text"):
         return "stored", "Full text stored and segmented."
+    if text.get("full_text") is False:
+        return (
+            "official_text_located",
+            "Official original stored, but no citable full text or units were produced; see the record's extraction note.",
+        )
     if iid in PAYWALLED:
         return "paywalled", "Standard sold by the standards body; not stored."
     if iid in SUMMARY_ONLY:

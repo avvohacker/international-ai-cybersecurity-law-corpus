@@ -115,6 +115,7 @@
       "id": "oecd-gpai-declaration-pdf",
       "kind": "official_primary",
       "language": "en",
+      "local_path": "source/gpai-2023-ministerial-declaration-en.pdf",
       "note": "Official OECD.AI PDF reprint of GPAI(2023)2, 3 pages, 158,914 bytes; downloaded and stored. The one.oecd.org endpoint returned HTTP 403 to the automated client on 26 November 2026.",
       "publisher": "OECD / Global Partnership on Artificial Intelligence",
       "sha256": "f23c0ce391981242b608f14972db5c3b5adfcce86aa900fc194a8f879530ee62",

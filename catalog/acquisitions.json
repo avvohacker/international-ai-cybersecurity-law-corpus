@@ -40,6 +40,16 @@
     "url": "https://www.alecso.org/publications/uploads/2025/08/etic.pdf"
   },
   {
+    "accessed": "2026-11-27",
+    "bytes": 1154648,
+    "dest": "source/arab-charter-ai-ethics-2025-ar.pdf",
+    "instrument_id": "arab-charter-ai-ethics-2025",
+    "media_type": "application/pdf",
+    "note": "Official 60-page Arabic PDF of the Arab Charter on Artificial Intelligence Ethics, published by AICTO. The file is stored unaltered; its embedded text layer is corrupted and is not treated as citable full text.",
+    "sha256": "a36ffc96a59a0a1da980da7f205daac6b144c9cf9edc3277c689aabe4eb2fe6e",
+    "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf"
+  },
+  {
     "accessed": "2026-11-25",
     "bytes": 764323,
     "dest": "source/arab-convention-2010-ar-archive.pdf",
@@ -321,16 +331,6 @@
   },
   {
     "accessed": "2026-11-26",
-    "bytes": 158914,
-    "dest": "source/gpai-2023-ministerial-declaration-en.pdf",
-    "instrument_id": "gpai-2023-ministerial-declaration",
-    "media_type": "application/pdf",
-    "note": "Official OECD.AI PDF reprint of GPAI(2023)2, the 2023 Ministerial Declaration approved by the GPAI Ministerial Council in New Delhi on 13 December 2023. Three pages; page 1 is an image cover. The one.oecd.org endpoint returned HTTP 403 to the automated client on 26 November 2026.",
-    "sha256": "f23c0ce391981242b608f14972db5c3b5adfcce86aa900fc194a8f879530ee62",
-    "url": "https://wp.oecd.ai/app/uploads/2025/01/2023-GPAI-Ministerial-Declaration.pdf"
-  },
-  {
-    "accessed": "2026-11-26",
     "bytes": 108084,
     "dest": "source/g7-digital-technology-ministerial-declaration-2026-en.html",
     "instrument_id": "g7-digital-technology-ministerial-declaration-2026",
@@ -348,6 +348,26 @@
     "note": "Hiroshima Process International Code of Conduct, official Japanese MIC publication.",
     "sha256": "14cfe36633502daa48231b49ca7f186c53a72add181b328047665763ecb13ac4",
     "url": "https://www.soumu.go.jp/hiroshimaaiprocess/pdf/document05_en.pdf"
+  },
+  {
+    "accessed": "2026-11-27",
+    "bytes": 146449,
+    "dest": "source/the-guiding-manual-ai-ethics-gcc-2023-en.pdf",
+    "instrument_id": "gcc-ai-ethics-manual-2023",
+    "media_type": "application/pdf",
+    "note": "Official 14-page English version 1.0 (November 2023) of the GCC Guiding Manual on the Ethics of Artificial Intelligence Use in Member States of the Gulf Cooperation Council, published on Bahrain's national portal.",
+    "sha256": "1da4a5ca7fbca5284d54a64bb6210a7c294d92b644bfba7ddab3d6feab725ffe",
+    "url": "https://www.bahrain.bh/wps/wcm/connect/f863157d-2753-4ef7-a4dd-21f8f7c01cdb/The+Guiding+Manual+on+the+Ethics+of+Artificial+Intelligenc+for+GCC+Member+States.pdf?MOD=AJPERES&CVID=psWZnfZ"
+  },
+  {
+    "accessed": "2026-11-26",
+    "bytes": 158914,
+    "dest": "source/gpai-2023-ministerial-declaration-en.pdf",
+    "instrument_id": "gpai-2023-ministerial-declaration",
+    "media_type": "application/pdf",
+    "note": "Official OECD.AI PDF reprint of GPAI(2023)2, 3 pages, 158,914 bytes. The file was already stored in the corpus but had not been entered in the acquisition register.",
+    "sha256": "f23c0ce391981242b608f14972db5c3b5adfcce86aa900fc194a8f879530ee62",
+    "url": "https://wp.oecd.ai/app/uploads/2025/01/2023-GPAI-Ministerial-Declaration.pdf"
   },
   {
     "accessed": "2026-11-26",

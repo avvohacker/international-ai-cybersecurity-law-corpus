@@ -4,16 +4,22 @@
   "dates": {
     "adopted": null,
     "notes": "AICTO publishes the Arabic text as the Arab Charter on AI Ethics 2025; the document itself is dated July 2025 and describes its character as technical advisory guidance. A 2026 UN ESCWA review dates ministerial approval to January 2026. No single official instrument fixes the exact adoption day, so the field is left null rather than inferred.",
-    "verified_on": "2026-11-25"
+    "verified_on": "2026-11-27"
   },
   "domains": [
     "ai"
   ],
+  "text": {
+    "manifest": "manifest.json",
+    "full_text": false,
+    "primary_language": "ar",
+    "extraction_note": "The official 60-page Arabic PDF is stored, but its embedded text layer is corrupted. No text file or units were produced; the PDF remains the authoritative stored original."
+  },
   "gaps": [
     "Non-binding advisory text: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
     "The exact adoption date is not settled: AICTO publishes the 2025 text and UN ESCWA dates ATICM approval to January 2026; no official instrument fixes the day.",
     "No itemised list of approving States or vote was located.",
-    "No full text is stored; the record is metadata-only.",
+    "The official Arabic PDF is stored, but its embedded text layer is corrupted and no citable full text or units are produced.",
     "Only the Arabic text was verified; no official English translation was located.",
     "The relationship between this Charter and the separate ALECSO Charter on AI Ethics is not institutionally defined in either text.",
     "Implementation, monitoring and the proposed Arab AI Ethics Label are not assessed."
@@ -51,7 +57,8 @@
   "provenance": {
     "discovered_via": "AICTO publications page and UN ESCWA regional AI policy review.",
     "search_dates": [
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-27"
     ]
   },
   "related": [
@@ -83,18 +90,19 @@
   },
   "rights": {
     "licence": "AICTO terms",
-    "note": "Official AICTO publication; no open licence identified. Metadata only in this corpus.",
+    "note": "Official AICTO publication; no open licence identified. The 60-page Arabic PDF is stored unaltered for research and is not relicensed.",
     "status": "public_official_text",
     "url": "https://www.aicto.org/"
   },
   "sources": [
     {
-      "accessed": "2026-11-25",
+      "accessed": "2026-11-27",
       "http_status": 200,
       "id": "aicto-charter-pdf",
       "kind": "official_primary",
       "language": "ar",
-      "note": "Official 60-page Arabic text published by AICTO. The cover names the Arab Working Group on Artificial Intelligence, League of Arab States, and dates the document July 2025; the text describes itself as technical advisory guidance.",
+      "local_path": "source/arab-charter-ai-ethics-2025-ar.pdf",
+      "note": "Official 60-page Arabic text published by AICTO. The cover names the Arab Working Group on Artificial Intelligence, League of Arab States, and dates the document July 2025; the text describes itself as technical advisory guidance. Stored unaltered; the embedded text layer is corrupted and is not used as citable full text.",
       "publisher": "Arab Information and Communication Technologies Organization (AICTO)",
       "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf"
     },
@@ -130,7 +138,7 @@
     }
   ],
   "status": "adopted",
-  "status_note": "Non-binding advisory charter, not a treaty. AICTO publishes the text as the 2025 Arab Charter on AI Ethics; the document is dated July 2025 and states that it is technical advisory guidance, not a substitute for national law. UN ESCWA dates ATICM approval to January 2026, while no official instrument fixes the day. The record does not select a date. No signature, ratification, depositary or entry-into-force mechanism exists.",
+  "status_note": "Non-binding advisory charter, not a treaty. AICTO publishes the text as the 2025 Arab Charter on AI Ethics; the document is dated July 2025 and states that it is technical advisory guidance, not a substitute for national law. UN ESCWA dates ATICM approval to January 2026, while no official instrument fixes the day. The record does not select a date. No signature, ratification, depositary or entry-into-force mechanism exists. The official PDF is stored unaltered; its text layer is corrupted.",
   "title": {
     "english": "Arab Charter on Artificial Intelligence Ethics",
     "official": "الميثاق العربي لأخلاقيات الذكاء الاصطناعي",
@@ -157,9 +165,14 @@
         "check": "Legal nature checked.",
         "date": "2026-11-25",
         "result": "The text is advisory and non-binding; it has no signature, ratification, depositary, entry-into-force or enforcement clause."
+      },
+      {
+        "check": "Official PDF acquired and file integrity checked.",
+        "date": "2026-11-27",
+        "result": "The 60-page AICTO PDF (1,154,648 bytes; sha256 a36ffc96a59a0a1da980da7f205daac6b144c9cf9edc3277c689aabe4eb2fe6e) is stored as source/arab-charter-ai-ethics-2025-ar.pdf. Extraction produced corrupted, repeated characters, so no text file or units were produced."
       }
     ],
     "level": "metadata_verified",
-    "notes": "Metadata verified from the official AICTO publication, Egyptian MCIT and UN ESCWA. The record is metadata-only: no full text is stored. The adoption date is deliberately not asserted because no single official instrument fixes the day."
+    "notes": "Metadata verified from the official AICTO publication, Egyptian MCIT and UN ESCWA. The official 60-page PDF is stored, but its text layer is corrupted, so the record remains without citable full text or units. The adoption date is deliberately not asserted because no single official instrument fixes the day."
   }
 }

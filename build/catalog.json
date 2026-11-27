@@ -2,7 +2,7 @@
   "counts": {
     "by_binding": {
       "binding": 22,
-      "non_binding": 55
+      "non_binding": 56
     },
     "by_category": {
       "agreement_ai_provisions": 5,
@@ -10,24 +10,24 @@
       "cyber_treaty": 9,
       "draft_negotiation": 1,
       "general_treaty": 2,
-      "non_binding_instrument": 44,
+      "non_binding_instrument": 45,
       "preparatory_interpretive": 2,
       "regional_law": 1,
       "supranational_law": 3,
       "technical_standard": 8
     },
     "by_domain": {
-      "ai": 62,
+      "ai": 63,
       "cyber": 15,
       "joint": 0
     },
     "by_verification": {
-      "full_text_checked": 12,
+      "full_text_checked": 13,
       "metadata_verified": 65
     },
-    "full_texts": 62,
-    "total": 77,
-    "with_local_original": 61
+    "full_texts": 63,
+    "total": 78,
+    "with_local_original": 63
   },
   "full_text_ids": [
     "afcfta-digital-trade-protocol-2024",
@@ -58,6 +58,7 @@
     "g20-ai-prosperity-objectives-2026",
     "g7-digital-technology-ministerial-declaration-2026",
     "g7-hiroshima-code-2023",
+    "gcc-ai-ethics-manual-2023",
     "gpai-2023-ministerial-declaration",
     "ibero-ai-declaration-2024",
     "iccpr-1966",
@@ -609,7 +610,7 @@
       "dates": {
         "adopted": null,
         "notes": "AICTO publishes the Arabic text as the Arab Charter on AI Ethics 2025; the document itself is dated July 2025 and describes its character as technical advisory guidance. A 2026 UN ESCWA review dates ministerial approval to January 2026. No single official instrument fixes the exact adoption day, so the field is left null rather than inferred.",
-        "verified_on": "2026-11-25"
+        "verified_on": "2026-11-27"
       },
       "domains": [
         "ai"
@@ -618,7 +619,7 @@
         "Non-binding advisory text: it creates no legal obligation, ratification, depositary, monitoring, reporting or enforcement.",
         "The exact adoption date is not settled: AICTO publishes the 2025 text and UN ESCWA dates ATICM approval to January 2026; no official instrument fixes the day.",
         "No itemised list of approving States or vote was located.",
-        "No full text is stored; the record is metadata-only.",
+        "The official Arabic PDF is stored, but its embedded text layer is corrupted and no citable full text or units are produced.",
         "Only the Arabic text was verified; no official English translation was located.",
         "The relationship between this Charter and the separate ALECSO Charter on AI Ethics is not institutionally defined in either text.",
         "Implementation, monitoring and the proposed Arab AI Ethics Label are not assessed."
@@ -656,7 +657,8 @@
       "provenance": {
         "discovered_via": "AICTO publications page and UN ESCWA regional AI policy review.",
         "search_dates": [
-          "2026-11-25"
+          "2026-11-25",
+          "2026-11-27"
         ]
       },
       "related": [
@@ -688,18 +690,19 @@
       },
       "rights": {
         "licence": "AICTO terms",
-        "note": "Official AICTO publication; no open licence identified. Metadata only in this corpus.",
+        "note": "Official AICTO publication; no open licence identified. The 60-page Arabic PDF is stored unaltered for research and is not relicensed.",
         "status": "public_official_text",
         "url": "https://www.aicto.org/"
       },
       "sources": [
         {
-          "accessed": "2026-11-25",
+          "accessed": "2026-11-27",
           "http_status": 200,
           "id": "aicto-charter-pdf",
           "kind": "official_primary",
           "language": "ar",
-          "note": "Official 60-page Arabic text published by AICTO. The cover names the Arab Working Group on Artificial Intelligence, League of Arab States, and dates the document July 2025; the text describes itself as technical advisory guidance.",
+          "local_path": "source/arab-charter-ai-ethics-2025-ar.pdf",
+          "note": "Official 60-page Arabic text published by AICTO. The cover names the Arab Working Group on Artificial Intelligence, League of Arab States, and dates the document July 2025; the text describes itself as technical advisory guidance. Stored unaltered; the embedded text layer is corrupted and is not used as citable full text.",
           "publisher": "Arab Information and Communication Technologies Organization (AICTO)",
           "url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf"
         },
@@ -735,7 +738,13 @@
         }
       ],
       "status": "adopted",
-      "status_note": "Non-binding advisory charter, not a treaty. AICTO publishes the text as the 2025 Arab Charter on AI Ethics; the document is dated July 2025 and states that it is technical advisory guidance, not a substitute for national law. UN ESCWA dates ATICM approval to January 2026, while no official instrument fixes the day. The record does not select a date. No signature, ratification, depositary or entry-into-force mechanism exists.",
+      "status_note": "Non-binding advisory charter, not a treaty. AICTO publishes the text as the 2025 Arab Charter on AI Ethics; the document is dated July 2025 and states that it is technical advisory guidance, not a substitute for national law. UN ESCWA dates ATICM approval to January 2026, while no official instrument fixes the day. The record does not select a date. No signature, ratification, depositary or entry-into-force mechanism exists. The official PDF is stored unaltered; its text layer is corrupted.",
+      "text": {
+        "extraction_note": "The official 60-page Arabic PDF is stored, but its embedded text layer is corrupted. No text file or units were produced; the PDF remains the authoritative stored original.",
+        "full_text": false,
+        "manifest": "manifest.json",
+        "primary_language": "ar"
+      },
       "title": {
         "english": "Arab Charter on Artificial Intelligence Ethics",
         "official": "الميثاق العربي لأخلاقيات الذكاء الاصطناعي",
@@ -762,10 +771,15 @@
             "check": "Legal nature checked.",
             "date": "2026-11-25",
             "result": "The text is advisory and non-binding; it has no signature, ratification, depositary, entry-into-force or enforcement clause."
+          },
+          {
+            "check": "Official PDF acquired and file integrity checked.",
+            "date": "2026-11-27",
+            "result": "The 60-page AICTO PDF (1,154,648 bytes; sha256 a36ffc96a59a0a1da980da7f205daac6b144c9cf9edc3277c689aabe4eb2fe6e) is stored as source/arab-charter-ai-ethics-2025-ar.pdf. Extraction produced corrupted, repeated characters, so no text file or units were produced."
           }
         ],
         "level": "metadata_verified",
-        "notes": "Metadata verified from the official AICTO publication, Egyptian MCIT and UN ESCWA. The record is metadata-only: no full text is stored. The adoption date is deliberately not asserted because no single official instrument fixes the day."
+        "notes": "Metadata verified from the official AICTO publication, Egyptian MCIT and UN ESCWA. The official 60-page PDF is stored, but its text layer is corrupted, so the record remains without citable full text or units. The adoption date is deliberately not asserted because no single official instrument fixes the day."
       }
     },
     {
@@ -6078,7 +6092,7 @@
           "id": "coe-text-certified-bilingual",
           "kind": "official_primary",
           "language": "en+fr",
-          "local_path": "corpus/coe-cets-225/source/cets-225-fr-en-certified-2025-05-20.pdf",
+          "local_path": "source/cets-225-fr-en-certified-2025-05-20.pdf",
           "note": "Certified bilingual copy of CETS 225 in its corrected French version, adopted under the Committee of Ministers decision of 30 April 2025 and dated Strasbourg, 20 May 2025. The 27-page PDF includes the authentic French text, which is segmented into 36 article units. Stored at corpus/coe-cets-225/source/cets-225-fr-en-certified-2025-05-20.pdf; SHA-256 in catalog/acquisitions.json.",
           "publisher": "Council of Europe Treaty Office",
           "sha256": "591b9daf1ee6a2ad2fe84ef896e964f656c97fa1fff8332eb6ebc64cc82f865c",
@@ -8844,6 +8858,197 @@
       "binding_status": "non_binding",
       "category": "non_binding_instrument",
       "dates": {
+        "adopted": null,
+        "notes": "The cover is dated \"Version 1.0 | November 2023\". No exact adoption day or formal adoption instrument is printed. A GCC Secretariat news item of 7 October 2025 lists the manual among the Council's achievements, and Bahrain's Information & eGovernment Authority states that the manual was issued by the Ministerial Committee for eGovernment.",
+        "verified_on": "2026-11-27"
+      },
+      "domains": [
+        "ai"
+      ],
+      "gaps": [
+        "The manual is non-binding guidance; no enforceable obligations or review mechanism are created.",
+        "No exact adoption day, formal decision number or complete list of approving states is printed in the acquired text.",
+        "The Arabic original was not acquired; this record relies on the official English version.",
+        "National implementation, designated ethics committees and practical use of the manual are not assessed.",
+        "The issuing committee appears as the Ministerial Committee for eGovernment in the 2023 PDF and Bahrain's 2025 page, and as the Ministerial Committee for Digital Government in the GCC Secretariat's 2025 account."
+      ],
+      "id": "gcc-ai-ethics-manual-2023",
+      "instrument_type": "guidance",
+      "issuer": [
+        {
+          "name": "Gulf Cooperation Council (GCC)",
+          "role": "issuer"
+        },
+        {
+          "name": "Ministerial Committee for eGovernment",
+          "role": "issuer"
+        }
+      ],
+      "languages": {
+        "authentic": [
+          "ar"
+        ],
+        "note": "Arabic is the original language of the GCC manual. The acquired 14-page English version 1.0 (November 2023) is an official GCC/Bahrain publication and is the version read for this record; the Arabic original was not acquired. No language-authenticity clause was located.",
+        "translations": [
+          "en"
+        ]
+      },
+      "legal_nature": {
+        "qualification": "political_act",
+        "rationale": "The text is a guiding manual addressed to GCC member states and relevant entities. It contains no treaty, signature, ratification, depositary, entry-into-force or enforcement clause; it expressly states that it does not replace or override the duties or rights of states.",
+        "source_ids": [
+          "gcc-manual-en"
+        ]
+      },
+      "provenance": {
+        "assertions": [
+          {
+            "date": "2026-11-27",
+            "field": "dates",
+            "locator": "Cover, page 1: \"Version 1.0 | November 2023\"; final provisions, page 14",
+            "method": "official_text_read",
+            "note": "The official PDF is a non-binding GCC manual, version 1.0 dated November 2023; no exact adoption day is printed.",
+            "source_ids": [
+              "gcc-manual-en"
+            ]
+          },
+          {
+            "date": "2026-11-27",
+            "field": "scope",
+            "locator": "Contents, page 2; principles, pp. 5-13",
+            "method": "official_text_read",
+            "note": "The manual contains four values and seven ethical principles with implementation recommendations.",
+            "source_ids": [
+              "gcc-manual-en"
+            ]
+          }
+        ],
+        "discovered_via": "GCC Secretariat and Bahraini government publications",
+        "notes": "Bahrain attributes the manual to the Ministerial Committee for eGovernment; the GCC Secretariat calls that committee the Ministerial Committee for Digital Government. The record preserves both official formulations.",
+        "search_dates": [
+          "2026-11-27"
+        ]
+      },
+      "related": [
+        {
+          "id": "arab-charter-ai-ethics-2025",
+          "note": "Later Arab regional AI ethics charter; the GCC manual is a subregional precursor.",
+          "relation": "related"
+        },
+        {
+          "id": "alecso-charter-ai-ethics-2025",
+          "note": "Separate Arab AI-ethics charter with an education, culture and science scope.",
+          "relation": "related"
+        },
+        {
+          "id": "arab-unified-ai-strategy-2025",
+          "note": "Arab League AI strategy; the GCC manual is a subregional instrument.",
+          "relation": "related"
+        }
+      ],
+      "relevance": {
+        "ai_provisions": [
+          "human dignity, freedom and autonomy",
+          "respect for Islamic Sharia, national constitutions and Gulf unity",
+          "environmental protection and sustainability",
+          "peaceful use of AI for the well-being of GCC citizens",
+          "human decision-making and human oversight",
+          "safety and harm prevention",
+          "justice, fairness and non-discrimination",
+          "privacy and data protection",
+          "transparency, explainability and interpretability",
+          "responsibility, accountability and awareness",
+          "integrity and non-falsification",
+          "protection of vulnerable groups and accessibility",
+          "national implementation through policies, legislation and ethics committees"
+        ],
+        "excluded_scope": "The manual is non-binding guidance. It does not create directly enforceable rights or obligations, and it does not prescribe a regional enforcement, supervision or dispute-settlement mechanism.",
+        "reason": "The first GCC-wide AI ethics instrument located in official sources. It records a 2023 subregional consensus framework that sits between the 2025 Arab Charter and national AI policies, and it is directly relevant to the project's coverage of regional AI governance in the Middle East."
+      },
+      "rights": {
+        "licence": "GCC/Bahrain government publication; no open licence identified",
+        "note": "Official government publication reproduced for research. The PDF is stored unaltered; no relicense is asserted.",
+        "status": "public_official_text"
+      },
+      "sources": [
+        {
+          "accessed": "2026-11-27",
+          "http_status": 200,
+          "id": "gcc-manual-en",
+          "kind": "official_primary",
+          "language": "en",
+          "local_path": "source/the-guiding-manual-ai-ethics-gcc-2023-en.pdf",
+          "note": "\"The Guiding Manual on the Ethics of Artificial Intelligence Use in Member States of the Gulf Cooperation Council (GCC), Version 1.0\" - official 14-page English PDF dated November 2023, hosted on Bahrain's national portal. It was read end-to-end and segmented into 14 page units.",
+          "publisher": "Gulf Cooperation Council / Kingdom of Bahrain",
+          "url": "https://www.bahrain.bh/wps/wcm/connect/f863157d-2753-4ef7-a4dd-21f8f7c01cdb/The+Guiding+Manual+on+the+Ethics+of+Artificial+Intelligenc+for+GCC+Member+States.pdf?MOD=AJPERES&CVID=psWZnfZ"
+        },
+        {
+          "accessed": "2026-11-27",
+          "http_status": 200,
+          "id": "gcc-sg-2025",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Official GCC Secretariat news item dated 7 October 2025. It lists \"the guiding manual on the ethics of artificial intelligence use\" among the achievements reported to the Supreme Council and attributes it to the Ministerial Committee for Digital Government.",
+          "publisher": "GCC General Secretariat",
+          "url": "https://www.gcc-sg.org/en/MediaCenter/News/Pages/news-2025-10-7-2.aspx"
+        },
+        {
+          "accessed": "2026-11-27",
+          "http_status": 200,
+          "id": "bahrain-iga-2025",
+          "kind": "official_secondary",
+          "language": "en",
+          "note": "Official Bahraini page dated 27 July 2025. It states that the GCC AI Ethics Manual was issued by the Ministerial Committee for eGovernment and adopted alongside Bahrain's National AI Policy.",
+          "publisher": "Information & eGovernment Authority, Kingdom of Bahrain",
+          "url": "https://www.iga.gov.bh/en/article/bahrain-launches-national-ai-policy-and-adopts-gcc-ethics-manual"
+        }
+      ],
+      "status": "adopted",
+      "status_note": "Non-binding guidance approved for use by GCC member states; it is not a treaty and creates no signature, ratification or depositary regime. The acquired official English text is version 1.0 dated November 2023.",
+      "text": {
+        "extraction_note": "Extracted from the official 14-page English PDF with pypdf. The text is clean; page 1 contains the title and version line, and pages 2-14 contain the contents, values, principles and final provisions.",
+        "full_text": true,
+        "manifest": "manifest.json",
+        "primary_language": "en",
+        "primary_text": "text/en.txt",
+        "units_mode": "pages"
+      },
+      "title": {
+        "english": "The Guiding Manual on the Ethics of Artificial Intelligence Use in Member States of the Gulf Cooperation Council (GCC)",
+        "official": "The Guiding Manual on the Ethics of Artificial Intelligence Use in Member States of the Gulf Cooperation Council (GCC)",
+        "short": "GCC AI Ethics Manual"
+      },
+      "verification": {
+        "checks": [
+          {
+            "check": "Official English text read end-to-end.",
+            "date": "2026-11-27",
+            "result": "The 14-page version 1.0 text was read from the official PDF, including the four values, seven principles, implementation recommendations, promotion and final provisions."
+          },
+          {
+            "check": "Issuer and date checked against official sources.",
+            "date": "2026-11-27",
+            "result": "The PDF identifies the GCC and version 1.0 dated November 2023. Bahrain's iGA attributes the manual to the Ministerial Committee for eGovernment; the GCC Secretariat's 2025 account calls that committee the Ministerial Committee for Digital Government."
+          },
+          {
+            "check": "Legal nature and scope checked.",
+            "date": "2026-11-27",
+            "result": "The text describes a guiding manual addressed to member states and relevant entities. It is not a treaty and contains no signature, ratification, entry-into-force or enforcement provisions."
+          },
+          {
+            "check": "Stored file, hash and units verified.",
+            "date": "2026-11-27",
+            "result": "The official PDF is stored as source/the-guiding-manual-ai-ethics-gcc-2023-en.pdf (146,449 bytes; sha256 1da4a5ca7fbca5284d54a64bb6210a7c294d92b644bfba7ddab3d6feab725ffe) and produces 14 page units."
+          }
+        ],
+        "level": "full_text_checked",
+        "notes": "The official English version was read in full and is citable. No official Arabic file was acquired, so the Arabic original wording has not been checked in this record. The committee's English name varies between the 2023 PDF, the 2025 GCC Secretariat account and Bahrain's 2025 page; the record preserves the variation rather than choosing one."
+      }
+    },
+    {
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "dates": {
         "adopted": "2023-12-13",
         "notes": "Approved by the GPAI Ministerial Council at its fifth meeting in New Delhi on 13 December 2023, in the context of the GPAI Summit. The OECD document is dated 14 December 2023. The declaration records political commitments; it is not a treaty and has no signature, ratification, depositary or entry-into-force procedure.",
         "published": "2023-12-14",
@@ -8957,6 +9162,7 @@
           "id": "oecd-gpai-declaration-pdf",
           "kind": "official_primary",
           "language": "en",
+          "local_path": "source/gpai-2023-ministerial-declaration-en.pdf",
           "note": "Official OECD.AI PDF reprint of GPAI(2023)2, 3 pages, 158,914 bytes; downloaded and stored. The one.oecd.org endpoint returned HTTP 403 to the automated client on 26 November 2026.",
           "publisher": "OECD / Global Partnership on Artificial Intelligence",
           "sha256": "f23c0ce391981242b608f14972db5c3b5adfcce86aa900fc194a8f879530ee62",

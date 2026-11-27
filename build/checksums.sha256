@@ -48,6 +48,7 @@
 1c7d431a7e88c234f1a2cfdc0a6bc5682ed29871fcf0043b71de9009b4113dc0  corpus/reaim-pathways-to-action-2026/source/reaim-2026-pathways-to-action-en.pdf
 1cc7cf27f676a51f4b94c980136785d05d3c4239e13d1f48f2a130a103d21f4b  corpus/budapest-convention-2001/pages.json
 1cd5d3488079eb468bb711db5dba4fd6133681d81ff9621ac96477e813017d18  corpus/g20-ai-prosperity-objectives-2026/pages.json
+1da4a5ca7fbca5284d54a64bb6210a7c294d92b644bfba7ddab3d6feab725ffe  corpus/gcc-ai-ethics-manual-2023/source/the-guiding-manual-ai-ethics-gcc-2023-en.pdf
 1e626e1599a3f14ebde5b1886b338fa3f2a5432706fc6d543e99fd379379c05b  corpus/arab-unified-ai-strategy-2025/manifest.json
 1e67e9f961bb5479ad661f6442077cdbed8325ddbebefa08358ce4a611029bf6  corpus/cis-it-crimes-agreement-2018/manifest.json
 1e969f2b09d43e8616cd901abe6075fe7cc3dc6c0038f658e08845225996b7dd  corpus/afcfta-digital-trade-protocol-2024/source/afcfta-emerging-tech-annex-2025-en.pdf
@@ -72,6 +73,7 @@
 314c0e72f1dad6d8fb1702e7c89d8f722a9a5e6f99006491db70dcf102233688  corpus/unesco-ethics-ai-2021/source/unesco-ai-ethics-recommendation-2022-en.pdf
 31f36cb3ce15fe4af4fe067af306f6f28dee60992676ced438039ff876c895a9  corpus/un-ga-res-80-57/text/en.txt
 32ade143a4d0d22ca5f5989d0cc830a9366672f806872c1a2f04c4a4ff5a7c32  corpus/cis-it-crimes-agreement-2018/units.jsonl
+33740bbcc5a0afa95f690e2ee1de2b9749e9e817e6d27a7bec9d656aa2db63e6  corpus/gpai-2023-ministerial-declaration/manifest.json
 338fe3d93071adf2fdf989b0d6d5e4fbc1ee57d878ec6eca818c967d42bbffa5  corpus/alecso-charter-ai-ethics-2025/manifest.json
 3508fb432ce64b227e822e5a492cfe93d27fdb48349b0b59a14522a69667657f  corpus/bletchley-declaration-2023/source/bletchley-declaration-2023-en.html
 354d07150f997365985e78a03febf85ce7bd624d2807952ecb955caa73f01863  corpus/un-ga-res-78-311/manifest.json
@@ -86,6 +88,7 @@
 40dea8a81f81eabbc041aa4e38625dc27f5a7cc7f912c6ef9133b91e551aae8c  corpus/waico-establishment-agreement-2026/pages.json
 40e4cce64933fd0b28ca8b7aaca9f98325416c657f2f51e7e2d8f88d58f3aff9  corpus/arab-convention-it-offences-2010/manifest.json
 41c0612434d8ead3de9855df5d605adfabd2f0e40dbe55c42136451173ecb779  corpus/pall-mall-code-of-practice-2025/manifest.json
+42553dda2edc693d9bb00e458c845daf65c0ce71dced860cca5cd37a8135e8b3  corpus/gcc-ai-ethics-manual-2023/pages.json
 42b3617389f75217f3568d3f7d2a248ce44d2b3851607e3afeb86bddab7cd4da  corpus/pax-silica-declaration-2025/text/en.txt
 42c3095301238dd8fdd778bfe0c5d950fab014f54b80e07c51ae89399c3676d1  corpus/san-francisco-declaration-2026/pages.json
 43177445d3a134afe1dc40d7bd48442d4289aa4f838095706e8e1406a4f3377d  corpus/un-cybercrime-convention-2024/manifest.json
@@ -107,6 +110,7 @@
 4f6e5a1970135e3edb356ca259753e884f8343f88e30fd2b83a76afcd4361592  corpus/us-eu-ttc-ai-safety-dialogue-2024/manifest.json
 523da084c32baf3d96e72447a6e923d1d33034d3e6d7bb164d6aedd3e2810536  corpus/sco-information-security-agreement-2009/source/sco-2009-en.pdf
 525992a332744a5e2519deac58c02586c8519075144f131222ed264cf8e0d216  corpus/un-ga-res-79-62/units.jsonl
+53062b6cbd54cd4985a721159d75d642ee79ec32e2f3ad95b8bb734f1a2a6e42  corpus/gcc-ai-ethics-manual-2023/text/en.txt
 56532469cbe6223415d1449e73a75064f160e79ea83ee030d95b1a5d3bd4eab4  corpus/afcfta-digital-trade-protocol-2024/source/afcfta-digital-trade-protocol-2025-en.pdf
 587f8d22b561aff72dc1b8d38bb66cccb6236eb451948ac41a4d2aed22d25253  corpus/depa-2020/source/DEPA-signing-text-2020-06-11-en.pdf
 591b9daf1ee6a2ad2fe84ef896e964f656c97fa1fff8332eb6ebc64cc82f865c  corpus/coe-cets-225/source/cets-225-fr-en-certified-2025-05-20.pdf
@@ -115,7 +119,9 @@
 59687cd71fb2cc357b32dd8b0a01ac4ed057ff504a3c5451ac5adfef879ca1c7  corpus/au-continental-ai-strategy-2024/units.jsonl
 59b1e0f5c66a13e881f021bfa959f8386e446db1c720b2b135fba55184616fa6  corpus/bletchley-declaration-2023/units.jsonl
 59df5c4d2d806da5c7253af1754fded34f00955cad73b24d78899e2ffea9ad65  corpus/china-global-ai-governance-initiative-2023/manifest.json
+5a35544e546c0c8abfa7a79890f479477750f455dd6245182a7e871345d35d96  corpus/arab-charter-ai-ethics-2025/manifest.json
 5acea3d5af5c60787214c3b05fbae9fee3e123a8cc139f64fe3b2596903b80d8  corpus/g7-digital-technology-ministerial-declaration-2026/source/g7-digital-technology-ministerial-declaration-2026-en.html
+5be0494a740a861811b9fded6f6319e1c8436bb6b7f6e008eb596d7de2c0d883  corpus/gcc-ai-ethics-manual-2023/units.jsonl
 5e27362e14c7d85e739a6b2840a3cb61e08d02b2afedff0195e4f64c94e1a543  corpus/reaim-call-to-action-2023/text/en.txt
 5ec5fbe9c40842231266b3d10065b5dd97910062f46f69d1efdb70ba15d2c07e  corpus/au-malabo-convention-2014/source/au-malabo-convention-2014-en-senlii-transcription.pdf
 5f973018298280fc9fee8a2f058cf78d18527518922628dfc25eaf1929b4e5ea  corpus/arab-convention-it-offences-2010/source/arab-convention-2010-en-reproduction.pdf
@@ -189,7 +195,6 @@
 9605ff00ef0d34ff0b607befd17bc6d00c4369d9204a2c364bec387c2cab8583  corpus/coe-cets-224/pages.json
 96dc25e7785665a716632e00765f962f0a11b11516855167afb9bb42c75095cd  corpus/pall-mall-code-of-practice-2025/source/pall-mall-code-2025-en.html
 97122b6fd60c9f0b10d8a8e086734497a65922c0fdafcea83393f785248636d7  corpus/sco-information-security-agreement-2009/manifest.json
-9722401e9314e7ca5cc03d4d58db7a7e298d8a4c3063089727b28abadc724da8  corpus/gpai-2023-ministerial-declaration/manifest.json
 97f4bc0f71b5b6cc1fde55e43fa25fed045756de87c7a673610f9dea9d861646  corpus/pall-mall-code-of-practice-2025/units.jsonl
 980167593e59a50fea9d041979eea519df2c01267f8f92c52c9a8b2577ad449f  corpus/arab-unified-ai-strategy-2025/text/ar.txt
 9880bfe1a287b5673be3d0d5e7a603bc95639c83ff03701c07d3f161256107df  corpus/reaim-call-to-action-2023/units.jsonl
@@ -215,6 +220,7 @@ a1f639c06ed763d092a29332932f1bfe0870348df5375e0e60f06efc33761eef  corpus/unesco-
 a2320013354fc759950a3688fade8ed63b618630084b77ba8b56b64aceba220c  corpus/san-francisco-declaration-2026/units.jsonl
 a25233f68fcdad3d9fbd0f5b08222324b2936dd58e4867a5148df471d21dda04  corpus/g7-digital-technology-ministerial-declaration-2026/units.jsonl
 a35861b04edbe2d0d30de13701d45186fbca9a9744ba3a3bb988877ae8d38363  corpus/paris-ai-action-summit-statement-2025/text/en.txt
+a36ffc96a59a0a1da980da7f205daac6b144c9cf9edc3277c689aabe4eb2fe6e  corpus/arab-charter-ai-ethics-2025/source/arab-charter-ai-ethics-2025-ar.pdf
 a376d5d57f8d388850bc02cf43d0284d7fa1710b24d866470d57daff4946c947  corpus/arab-convention-it-offences-2010/pages.json
 a3dd501b421a559307d5a94de102dabcf52f5b777af3322dc5c7375a26f6aa8d  corpus/g20-ai-prosperity-objectives-2026/units.jsonl
 a53a0b155f177b7ad8d311630b117f04b85c4cac0c995ce653bf0cb8a78cdae2  corpus/ksdpa-2022/units.jsonl
@@ -275,6 +281,7 @@ dd52b7aea7e041a07b4d3b730461194d4d9857b808df69a35ee95fb0710ae5ea  corpus/g20-ai-
 de7ee302f60e6263afb3e5f11587897eb1a0ef48d30209e944ea3648bc66ddb1  corpus/depa-2020/units.jsonl
 de84079f3d9ac1a2923fbd0ce0f59c0d657697bb4d01a3532f24210fdfb3c964  corpus/g7-hiroshima-code-2023/manifest.json
 dfca6db0705410562402916cc5f131879617d9c3151f3c87896d848f5f0e71db  corpus/un-ga-res-79-62/pages.json
+e015dfcb6399bf16ac136ed8a95306139224ac192d1b96de3512e7b305f16b02  corpus/gcc-ai-ethics-manual-2023/manifest.json
 e0f23e37b61841d9031ec08bb3d34dbe358aea3f728c29f37511a1b0f7aaff26  corpus/china-global-ai-governance-initiative-2023/pages.json
 e0ff3ada7d36d98a73844ad32028e9a9712e38eef35a8cc4f3dadb9ff14c0754  corpus/coe-recommendation-algorithmic-systems-2020/pages.json
 e2205acc1766f98a153a3a2963fe66f0de0eea610062981b555b6bac1d307cc8  corpus/coe-cets-224/manifest.json

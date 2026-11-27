@@ -543,6 +543,30 @@ SOURCES = [
         "Archived copy (Internet Archive, snapshot 17 November 2026) of the official State Department release reproducing the full text of the San Francisco Declaration on the Secure Foundations of Enduring Prosperity, signed 15 November 2026. The live state.gov page returned HTTP 407.",
         "2026-11-26",
     ),
+    (
+        "arab-charter-ai-ethics-2025",
+        "source/arab-charter-ai-ethics-2025-ar.pdf",
+        "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf",
+        "application/pdf",
+        "Official 60-page Arabic PDF of the Arab Charter on Artificial Intelligence Ethics, published by AICTO. The file is stored unaltered; its embedded text layer is corrupted and is not treated as citable full text.",
+        "2026-11-27",
+    ),
+    (
+        "gcc-ai-ethics-manual-2023",
+        "source/the-guiding-manual-ai-ethics-gcc-2023-en.pdf",
+        "https://www.bahrain.bh/wps/wcm/connect/f863157d-2753-4ef7-a4dd-21f8f7c01cdb/The+Guiding+Manual+on+the+Ethics+of+Artificial+Intelligenc+for+GCC+Member+States.pdf?MOD=AJPERES&CVID=psWZnfZ",
+        "application/pdf",
+        "Official 14-page English version 1.0 (November 2023) of the GCC Guiding Manual on the Ethics of Artificial Intelligence Use in Member States of the Gulf Cooperation Council, published on Bahrain's national portal.",
+        "2026-11-27",
+    ),
+    (
+        "gpai-2023-ministerial-declaration",
+        "source/gpai-2023-ministerial-declaration-en.pdf",
+        "https://wp.oecd.ai/app/uploads/2025/01/2023-GPAI-Ministerial-Declaration.pdf",
+        "application/pdf",
+        "Official OECD.AI PDF reprint of GPAI(2023)2, 3 pages, 158,914 bytes. The file was already stored in the corpus but had not been entered in the acquisition register.",
+        "2026-11-26",
+    ),
 ]
 
 

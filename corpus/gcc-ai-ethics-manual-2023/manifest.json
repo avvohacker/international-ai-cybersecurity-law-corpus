@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-27",
+      "bytes": 146449,
+      "media_type": "application/pdf",
+      "note": "Official 14-page English version 1.0 (November 2023) of the GCC Guiding Manual on the Ethics of Artificial Intelligence Use in Member States of the Gulf Cooperation Council, published on Bahrain's national portal.",
+      "path": "source/the-guiding-manual-ai-ethics-gcc-2023-en.pdf",
+      "role": "original",
+      "sha256": "1da4a5ca7fbca5284d54a64bb6210a7c294d92b644bfba7ddab3d6feab725ffe",
+      "source_url": "https://www.bahrain.bh/wps/wcm/connect/f863157d-2753-4ef7-a4dd-21f8f7c01cdb/The+Guiding+Manual+on+the+Ethics+of+Artificial+Intelligenc+for+GCC+Member+States.pdf?MOD=AJPERES&CVID=psWZnfZ"
+    },
+    {
+      "bytes": 32398,
+      "media_type": "text/plain; charset=utf-8",
+      "path": "text/en.txt",
+      "role": "text",
+      "sha256": "53062b6cbd54cd4985a721159d75d642ee79ec32e2f3ad95b8bb734f1a2a6e42"
+    },
+    {
+      "bytes": 1176,
+      "media_type": "application/json",
+      "path": "pages.json",
+      "role": "metadata",
+      "sha256": "42553dda2edc693d9bb00e458c845daf65c0ce71dced860cca5cd37a8135e8b3"
+    },
+    {
+      "bytes": 35776,
+      "media_type": "application/x-ndjson",
+      "path": "units.jsonl",
+      "role": "units",
+      "sha256": "5be0494a740a861811b9fded6f6319e1c8436bb6b7f6e008eb596d7de2c0d883"
+    }
+  ],
+  "instrument_id": "gcc-ai-ethics-manual-2023",
+  "primary_text": "text/en.txt"
+}

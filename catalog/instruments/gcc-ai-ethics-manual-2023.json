@@ -1,0 +1,191 @@
+{
+  "id": "gcc-ai-ethics-manual-2023",
+  "title": {
+    "official": "The Guiding Manual on the Ethics of Artificial Intelligence Use in Member States of the Gulf Cooperation Council (GCC)",
+    "short": "GCC AI Ethics Manual",
+    "english": "The Guiding Manual on the Ethics of Artificial Intelligence Use in Member States of the Gulf Cooperation Council (GCC)"
+  },
+  "dates": {
+    "adopted": null,
+    "verified_on": "2026-11-27",
+    "notes": "The cover is dated \"Version 1.0 | November 2023\". No exact adoption day or formal adoption instrument is printed. A GCC Secretariat news item of 7 October 2025 lists the manual among the Council's achievements, and Bahrain's Information & eGovernment Authority states that the manual was issued by the Ministerial Committee for eGovernment."
+  },
+  "status": "adopted",
+  "status_note": "Non-binding guidance approved for use by GCC member states; it is not a treaty and creates no signature, ratification or depositary regime. The acquired official English text is version 1.0 dated November 2023.",
+  "category": "non_binding_instrument",
+  "instrument_type": "guidance",
+  "binding_status": "non_binding",
+  "domains": [
+    "ai"
+  ],
+  "legal_nature": {
+    "qualification": "political_act",
+    "rationale": "The text is a guiding manual addressed to GCC member states and relevant entities. It contains no treaty, signature, ratification, depositary, entry-into-force or enforcement clause; it expressly states that it does not replace or override the duties or rights of states.",
+    "source_ids": [
+      "gcc-manual-en"
+    ]
+  },
+  "issuer": [
+    {
+      "name": "Gulf Cooperation Council (GCC)",
+      "role": "issuer"
+    },
+    {
+      "name": "Ministerial Committee for eGovernment",
+      "role": "issuer"
+    }
+  ],
+  "relevance": {
+    "reason": "The first GCC-wide AI ethics instrument located in official sources. It records a 2023 subregional consensus framework that sits between the 2025 Arab Charter and national AI policies, and it is directly relevant to the project's coverage of regional AI governance in the Middle East.",
+    "ai_provisions": [
+      "human dignity, freedom and autonomy",
+      "respect for Islamic Sharia, national constitutions and Gulf unity",
+      "environmental protection and sustainability",
+      "peaceful use of AI for the well-being of GCC citizens",
+      "human decision-making and human oversight",
+      "safety and harm prevention",
+      "justice, fairness and non-discrimination",
+      "privacy and data protection",
+      "transparency, explainability and interpretability",
+      "responsibility, accountability and awareness",
+      "integrity and non-falsification",
+      "protection of vulnerable groups and accessibility",
+      "national implementation through policies, legislation and ethics committees"
+    ],
+    "excluded_scope": "The manual is non-binding guidance. It does not create directly enforceable rights or obligations, and it does not prescribe a regional enforcement, supervision or dispute-settlement mechanism."
+  },
+  "languages": {
+    "authentic": [
+      "ar"
+    ],
+    "translations": [
+      "en"
+    ],
+    "note": "Arabic is the original language of the GCC manual. The acquired 14-page English version 1.0 (November 2023) is an official GCC/Bahrain publication and is the version read for this record; the Arabic original was not acquired. No language-authenticity clause was located."
+  },
+  "sources": [
+    {
+      "id": "gcc-manual-en",
+      "kind": "official_primary",
+      "publisher": "Gulf Cooperation Council / Kingdom of Bahrain",
+      "url": "https://www.bahrain.bh/wps/wcm/connect/f863157d-2753-4ef7-a4dd-21f8f7c01cdb/The+Guiding+Manual+on+the+Ethics+of+Artificial+Intelligenc+for+GCC+Member+States.pdf?MOD=AJPERES&CVID=psWZnfZ",
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "language": "en",
+      "local_path": "source/the-guiding-manual-ai-ethics-gcc-2023-en.pdf",
+      "note": "\"The Guiding Manual on the Ethics of Artificial Intelligence Use in Member States of the Gulf Cooperation Council (GCC), Version 1.0\" - official 14-page English PDF dated November 2023, hosted on Bahrain's national portal. It was read end-to-end and segmented into 14 page units."
+    },
+    {
+      "id": "gcc-sg-2025",
+      "kind": "official_secondary",
+      "publisher": "GCC General Secretariat",
+      "url": "https://www.gcc-sg.org/en/MediaCenter/News/Pages/news-2025-10-7-2.aspx",
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official GCC Secretariat news item dated 7 October 2025. It lists \"the guiding manual on the ethics of artificial intelligence use\" among the achievements reported to the Supreme Council and attributes it to the Ministerial Committee for Digital Government."
+    },
+    {
+      "id": "bahrain-iga-2025",
+      "kind": "official_secondary",
+      "publisher": "Information & eGovernment Authority, Kingdom of Bahrain",
+      "url": "https://www.iga.gov.bh/en/article/bahrain-launches-national-ai-policy-and-adopts-gcc-ethics-manual",
+      "accessed": "2026-11-27",
+      "http_status": 200,
+      "language": "en",
+      "note": "Official Bahraini page dated 27 July 2025. It states that the GCC AI Ethics Manual was issued by the Ministerial Committee for eGovernment and adopted alongside Bahrain's National AI Policy."
+    }
+  ],
+  "rights": {
+    "status": "public_official_text",
+    "licence": "GCC/Bahrain government publication; no open licence identified",
+    "note": "Official government publication reproduced for research. The PDF is stored unaltered; no relicense is asserted."
+  },
+  "verification": {
+    "level": "full_text_checked",
+    "checks": [
+      {
+        "date": "2026-11-27",
+        "check": "Official English text read end-to-end.",
+        "result": "The 14-page version 1.0 text was read from the official PDF, including the four values, seven principles, implementation recommendations, promotion and final provisions."
+      },
+      {
+        "date": "2026-11-27",
+        "check": "Issuer and date checked against official sources.",
+        "result": "The PDF identifies the GCC and version 1.0 dated November 2023. Bahrain's iGA attributes the manual to the Ministerial Committee for eGovernment; the GCC Secretariat's 2025 account calls that committee the Ministerial Committee for Digital Government."
+      },
+      {
+        "date": "2026-11-27",
+        "check": "Legal nature and scope checked.",
+        "result": "The text describes a guiding manual addressed to member states and relevant entities. It is not a treaty and contains no signature, ratification, entry-into-force or enforcement provisions."
+      },
+      {
+        "date": "2026-11-27",
+        "check": "Stored file, hash and units verified.",
+        "result": "The official PDF is stored as source/the-guiding-manual-ai-ethics-gcc-2023-en.pdf (146,449 bytes; sha256 1da4a5ca7fbca5284d54a64bb6210a7c294d92b644bfba7ddab3d6feab725ffe) and produces 14 page units."
+      }
+    ],
+    "notes": "The official English version was read in full and is citable. No official Arabic file was acquired, so the Arabic original wording has not been checked in this record. The committee's English name varies between the 2023 PDF, the 2025 GCC Secretariat account and Bahrain's 2025 page; the record preserves the variation rather than choosing one."
+  },
+  "text": {
+    "manifest": "manifest.json",
+    "full_text": true,
+    "primary_language": "en",
+    "primary_text": "text/en.txt",
+    "units_mode": "pages",
+    "extraction_note": "Extracted from the official 14-page English PDF with pypdf. The text is clean; page 1 contains the title and version line, and pages 2-14 contain the contents, values, principles and final provisions."
+  },
+  "gaps": [
+    "The manual is non-binding guidance; no enforceable obligations or review mechanism are created.",
+    "No exact adoption day, formal decision number or complete list of approving states is printed in the acquired text.",
+    "The Arabic original was not acquired; this record relies on the official English version.",
+    "National implementation, designated ethics committees and practical use of the manual are not assessed.",
+    "The issuing committee appears as the Ministerial Committee for eGovernment in the 2023 PDF and Bahrain's 2025 page, and as the Ministerial Committee for Digital Government in the GCC Secretariat's 2025 account."
+  ],
+  "related": [
+    {
+      "id": "arab-charter-ai-ethics-2025",
+      "relation": "related",
+      "note": "Later Arab regional AI ethics charter; the GCC manual is a subregional precursor."
+    },
+    {
+      "id": "alecso-charter-ai-ethics-2025",
+      "relation": "related",
+      "note": "Separate Arab AI-ethics charter with an education, culture and science scope."
+    },
+    {
+      "id": "arab-unified-ai-strategy-2025",
+      "relation": "related",
+      "note": "Arab League AI strategy; the GCC manual is a subregional instrument."
+    }
+  ],
+  "provenance": {
+    "discovered_via": "GCC Secretariat and Bahraini government publications",
+    "search_dates": [
+      "2026-11-27"
+    ],
+    "assertions": [
+      {
+        "field": "dates",
+        "source_ids": [
+          "gcc-manual-en"
+        ],
+        "locator": "Cover, page 1: \"Version 1.0 | November 2023\"; final provisions, page 14",
+        "date": "2026-11-27",
+        "method": "official_text_read",
+        "note": "The official PDF is a non-binding GCC manual, version 1.0 dated November 2023; no exact adoption day is printed."
+      },
+      {
+        "field": "scope",
+        "source_ids": [
+          "gcc-manual-en"
+        ],
+        "locator": "Contents, page 2; principles, pp. 5-13",
+        "date": "2026-11-27",
+        "method": "official_text_read",
+        "note": "The manual contains four values and seven ethical principles with implementation recommendations."
+      }
+    ],
+    "notes": "Bahrain attributes the manual to the Ministerial Committee for eGovernment; the GCC Secretariat calls that committee the Ministerial Committee for Digital Government. The record preserves both official formulations."
+  }
+}

@@ -38,7 +38,7 @@
       "id": "arab-charter-ai-ethics-2025",
       "official_source": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf",
       "official_source_kind": "official_primary",
-      "reason": "Official text located at the cited source; record is metadata-only.",
+      "reason": "Official original stored, but no citable full text or units were produced; see the record's extraction note.",
       "title": "Arab Charter on AI Ethics"
     },
     {
@@ -340,6 +340,16 @@
       "official_source_kind": "official_primary",
       "reason": "Full text stored and segmented.",
       "title": "G7 Hiroshima AI Process Code of Conduct"
+    },
+    {
+      "availability": "stored",
+      "binding_status": "non_binding",
+      "category": "non_binding_instrument",
+      "id": "gcc-ai-ethics-manual-2023",
+      "official_source": "https://www.bahrain.bh/wps/wcm/connect/f863157d-2753-4ef7-a4dd-21f8f7c01cdb/The+Guiding+Manual+on+the+Ethics+of+Artificial+Intelligenc+for+GCC+Member+States.pdf?MOD=AJPERES&CVID=psWZnfZ",
+      "official_source_kind": "official_primary",
+      "reason": "Full text stored and segmented.",
+      "title": "GCC AI Ethics Manual"
     },
     {
       "availability": "stored",
@@ -805,8 +815,8 @@
     "internal_law": 3,
     "official_text_located": 4,
     "paywalled": 6,
-    "stored": 62,
+    "stored": 63,
     "summary_only": 2
   },
-  "total": 77
+  "total": 78
 }

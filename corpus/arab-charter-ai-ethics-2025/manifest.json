@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "accessed": "2026-11-27",
+      "bytes": 1154648,
+      "media_type": "application/pdf",
+      "note": "Official 60-page Arabic PDF of the Arab Charter on Artificial Intelligence Ethics, published by AICTO. The file is stored unaltered; its embedded text layer is corrupted and is not treated as citable full text.",
+      "path": "source/arab-charter-ai-ethics-2025-ar.pdf",
+      "role": "original",
+      "sha256": "a36ffc96a59a0a1da980da7f205daac6b144c9cf9edc3277c689aabe4eb2fe6e",
+      "source_url": "https://www.aicto.org/wp-content/uploads/2025/10/Arab_Charter_AI_Ethics_2025.pdf"
+    }
+  ],
+  "instrument_id": "arab-charter-ai-ethics-2025",
+  "primary_text": null
+}

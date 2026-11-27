@@ -1,13 +1,13 @@
 {
-  "checked": 273,
-  "audited_on": "2026-11-26",
+  "checked": 276,
+  "audited_on": "2026-11-27",
   "scope": "catalog",
-  "instruments": 77,
+  "instruments": 78,
   "summary": {
-    "ok": 181,
-    "anti_bot": 82,
+    "ok": 179,
+    "anti_bot": 86,
     "broken": 0,
-    "transient": 10,
+    "transient": 11,
     "live_but_unreachable": 3
   },
   "results": [
@@ -446,9 +446,9 @@
       "source_id": "brics-presidency-pdf",
       "label": "BRICS 2025 Presidency, Federative Republic of Brazil",
       "url": "https://web.archive.org/web/20260418114944/https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
-      "status": 429,
-      "outcome": "anti_bot",
-      "reason": "http_429",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
       "detail": ""
     },
     {
@@ -626,7 +626,7 @@
       "source_id": "eurlex-decision",
       "label": "Official Journal of the European Union",
       "url": "https://data.europa.eu/eli/dec_impl/2026/2274/oj",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -876,7 +876,7 @@
       "source_id": "eu-decision-2026-1080",
       "label": "EU Council Decision",
       "url": "https://eur-lex.europa.eu/eli/dec/2026/1080/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -886,7 +886,7 @@
       "source_id": "eu-oj-2026-1081",
       "label": "EU Official Journal",
       "url": "https://eur-lex.europa.eu/eli/agree_internation/2026/1081/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -1076,7 +1076,7 @@
       "source_id": "eurlex-act",
       "label": "Official Journal of the European Union",
       "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -1086,7 +1086,7 @@
       "source_id": "eurlex-consolidated",
       "label": "Official Journal of the European Union",
       "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -1096,7 +1096,7 @@
       "source_id": "eurlex-summary",
       "label": "EUR-Lex",
       "url": "https://eur-lex.europa.eu/EN/legal-content/summary/rules-for-trustworthy-artificial-intelligence-in-the-eu.html",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -1116,7 +1116,7 @@
       "source_id": "eurlex-cra",
       "label": "Official Journal of the European Union",
       "url": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -1186,7 +1186,7 @@
       "source_id": "eurlex-nis2",
       "label": "Official Journal of the European Union",
       "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng",
-      "status": 200,
+      "status": 202,
       "outcome": "ok",
       "reason": "http_2xx",
       "detail": ""
@@ -1299,6 +1299,36 @@
       "status": 200,
       "outcome": "ok",
       "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "gcc-ai-ethics-manual-2023",
+      "source_id": "bahrain-iga-2025",
+      "label": "Information & eGovernment Authority, Kingdom of Bahrain",
+      "url": "https://www.iga.gov.bh/en/article/bahrain-launches-national-ai-policy-and-adopts-gcc-ethics-manual",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
+      "detail": ""
+    },
+    {
+      "instrument_id": "gcc-ai-ethics-manual-2023",
+      "source_id": "gcc-manual-en",
+      "label": "Gulf Cooperation Council / Kingdom of Bahrain",
+      "url": "https://www.bahrain.bh/wps/wcm/connect/f863157d-2753-4ef7-a4dd-21f8f7c01cdb/The+Guiding+Manual+on+the+Ethics+of+Artificial+Intelligenc+for+GCC+Member+States.pdf?MOD=AJPERES&CVID=psWZnfZ",
+      "status": 200,
+      "outcome": "ok",
+      "reason": "http_2xx",
+      "detail": ""
+    },
+    {
+      "instrument_id": "gcc-ai-ethics-manual-2023",
+      "source_id": "gcc-sg-2025",
+      "label": "GCC General Secretariat",
+      "url": "https://www.gcc-sg.org/en/MediaCenter/News/Pages/news-2025-10-7-2.aspx",
+      "status": 200,
+      "outcome": "anti_bot",
+      "reason": "challenge_on_200",
       "detail": ""
     },
     {
@@ -1666,9 +1696,9 @@
       "source_id": "paris-call-csv",
       "label": "Official supporters CSV",
       "url": "https://web.archive.org/web/20240927013736/https://pariscall.international/supporters.csv",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -1780,9 +1810,9 @@
       "source_id": "state-pax-silica-archived",
       "label": "U.S. Department of State",
       "url": "https://web.archive.org/web/20261117055013/https://www.state.gov/pax-silica",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -1850,9 +1880,9 @@
       "source_id": "state-text-pdf-archived",
       "label": "U.S. Department of State",
       "url": "https://web.archive.org/web/20240221131548/https://www.state.gov/wp-content/uploads/2023/10/Latest-Version-Political-Declaration-on-Responsible-Military-Use-of-AI-and-Autonomy.pdf",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 429,
+      "outcome": "anti_bot",
+      "reason": "http_429",
       "detail": ""
     },
     {
@@ -1920,9 +1950,9 @@
       "source_id": "spain-page",
       "label": "Ministry of Foreign Affairs, European Union and Cooperation, Spain",
       "url": "https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx",
-      "status": 200,
-      "outcome": "ok",
-      "reason": "http_2xx",
+      "status": 503,
+      "outcome": "transient",
+      "reason": "http_503",
       "detail": ""
     },
     {

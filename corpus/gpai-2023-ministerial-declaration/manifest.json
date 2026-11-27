@@ -4,7 +4,7 @@
       "accessed": "2026-11-26",
       "bytes": 158914,
       "media_type": "application/pdf",
-      "note": "Official OECD.AI PDF reprint of GPAI(2023)2, the 2023 Ministerial Declaration approved by the GPAI Ministerial Council in New Delhi on 13 December 2023. Three pages; page 1 is an image cover. The one.oecd.org endpoint returned HTTP 403 to the automated client on 26 November 2026.",
+      "note": "Official OECD.AI PDF reprint of GPAI(2023)2, 3 pages, 158,914 bytes. The file was already stored in the corpus but had not been entered in the acquisition register.",
       "path": "source/gpai-2023-ministerial-declaration-en.pdf",
       "role": "original",
       "sha256": "f23c0ce391981242b608f14972db5c3b5adfcce86aa900fc194a8f879530ee62",

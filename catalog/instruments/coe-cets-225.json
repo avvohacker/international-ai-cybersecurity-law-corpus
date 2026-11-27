@@ -378,7 +378,7 @@
       "id": "coe-text-certified-bilingual",
       "kind": "official_primary",
       "language": "en+fr",
-      "local_path": "corpus/coe-cets-225/source/cets-225-fr-en-certified-2025-05-20.pdf",
+      "local_path": "source/cets-225-fr-en-certified-2025-05-20.pdf",
       "note": "Certified bilingual copy of CETS 225 in its corrected French version, adopted under the Committee of Ministers decision of 30 April 2025 and dated Strasbourg, 20 May 2025. The 27-page PDF includes the authentic French text, which is segmented into 36 article units. Stored at corpus/coe-cets-225/source/cets-225-fr-en-certified-2025-05-20.pdf; SHA-256 in catalog/acquisitions.json.",
       "publisher": "Council of Europe Treaty Office",
       "sha256": "591b9daf1ee6a2ad2fe84ef896e964f656c97fa1fff8332eb6ebc64cc82f865c",
